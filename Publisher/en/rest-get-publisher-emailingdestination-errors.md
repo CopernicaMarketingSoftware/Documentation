@@ -1,12 +1,12 @@
-# REST API: GET errors (Publisher mailing)
+# REST API: GET errors (Publisher mailing destination)
 
-Each emailing is tracked, which allows Copernica to provide you with 
-emailing statistics. Errors are one of these statistics. You can 
-retrieve the errors for an emailing by sending an HTTP GET call to the following URL:
+You can retrieve the statistics per emailing destination just like you 
+would retrieve the statistics of a mailing. You can 
+retrieve the errors for an emailing destination by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v2/emailing/$id/errors?access_token=xxxx`
+`https://api.copernica.com/v2/emailingdestination/$id/errors?access_token=xxxx`
 
-Where the `$id` should be replaced with the ID of the emailing. This method 
+Where the `$id` should be replaced with the ID of the emailing destination. This method 
 also support the use of the [fields parameter](./rest-fields-parameter) 
 for the **timestamp** field.
 
@@ -38,7 +38,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // execute the call
-print_r($api->get("publisher/emailing/{$emailingID}/errors/"));
+print_r($api->get("publisher/emailingdestination/{$emailingID}/errors/"));
 ```
 
 This example requires the [REST API class](./rest-php).
@@ -46,12 +46,12 @@ This example requires the [REST API class](./rest-php).
 ## More information
 
 * [Overview of all REST API calls](./rest-api)
-* [Retrieve a Publisher emailing](./rest-get-publisher-emailing)
-* [Get abuses for a Publisher emailing](./rest-get-publisher-emailing-abuses)
-* [Get clicks for a Publisher emailing](./rest-get-publisher-emailing-clicks)
-* [Get deliveries for a Publisher emailing](./rest-get-publisher-emailing-deliveries)
-* [Get impressions for a Publisher emailing](./rest-get-publisher-emailing-impressions)
-* [Get unsubscribes for a Publisher emailing](./rest-get-publisher-emailing-unsubscribes)
+* [Retrieve a Publisher emailing destination](./rest-get-publisher-emailingdestination)
+* [Get abuses for a Publisher emailing destination](./rest-get-publisher-emailingdestination-abuses)
+* [Get clicks for a Publisher emailing destination](./rest-get-publisher-emailingdestination-clicks)
+* [Get deliveries for a Publisher emailing destination](./rest-get-publisher-emailingdestination-deliveries)
+* [Get impressions for a Publisher emailing destination](./rest-get-publisher-emailingdestination-impressions)
+* [Get unsubscribes for a Publisher emailing destination](./rest-get-publisher-emailingdestination-unsubscribes)
 
 
 

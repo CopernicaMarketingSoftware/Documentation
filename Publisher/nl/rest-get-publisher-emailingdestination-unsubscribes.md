@@ -1,13 +1,12 @@
-# REST API: GET unsubscribes (Publisher mailing)
+# REST API: GET unsubscribes (Publisher mailing destination)
 
-Er worden statistieken bijgehouden over elke mailing die verstuurd wordt met 
-Copernica om je meer inzicht te geven in de prestatie hiervan. Unsubscribes zijn 
-een van de statistieken die voor een mailing worden bijgehouden. Je kan deze opvragen met een 
+Net zoals je van een mailing statistieken op kunt vragen kun je ook de statistieken 
+per emailing destination opvragen. Je kan deze opvragen met een 
 HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v2/emailing/$id/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v2/emailingdestination/$id/unsubscribes?access_token=xxxx`
 
-Hier moet `$id` vervangen worden door de ID van de mailing. Deze methode 
+Hier moet `$id` vervangen worden door de ID van de mailing destination. Deze methode 
 ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestamp** veld.
 
@@ -37,7 +36,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-print_r($api->get("publisher/emailing/{$emailingID}/unsubscribes/"));
+print_r($api->get("publisher/emailingdestination/{$emailingID}/unsubscribes/"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).

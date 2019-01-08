@@ -1,13 +1,12 @@
-# REST API: GET errors (Publisher mailing)
+# REST API: GET errors (Publisher mailing destination)
 
-Er worden statistieken bijgehouden over elke mailing die verstuurd wordt met 
-Copernica om je meer inzicht te geven in de prestatie hiervan. Errors zijn 
-een van de statistieken die voor een mailing worden bijgehouden. Je kan deze opvragen met een 
+Net zoals je van een mailing statistieken op kunt vragen kun je ook de statistieken 
+per emailing destination opvragen. Je kan deze opvragen met een 
 HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v2/emailing/$id/errors?access_token=xxxx`
+`https://api.copernica.com/v2/emailingdestination/$id/errors?access_token=xxxx`
 
-Hier moet `$id` vervangen worden door de ID van de mailing. Deze methode 
+Hier moet `$id` vervangen worden door de ID van de mailing destination. Deze methode 
 ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestamp** veld.
 
@@ -39,7 +38,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-print_r($api->get("publisher/emailing/{$emailingID}/errors/"));
+print_r($api->get("publisher/emailingdestination/{$emailingID}/errors/"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
@@ -47,9 +46,9 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 ## Meer informatie
 
 * [Overzicht van alle REST API calls](./rest-api)
-* [Opvragen van een Publisher emailing](./rest-get-publisher-emailing)
-* [Opvragen van abuses voor een Publisher emailing](./rest-get-publisher-emailing-abuses)
-* [Opvragen van clicks voor een Publisher emailing](./rest-get-publisher-emailing-clicks)
-* [Opvragen van deliveries voor een Publisher emailing](./rest-get-publisher-emailing-deliveries)
-* [Opvragen van impressions voor een Publisher emailing](./rest-get-publisher-emailing-impressions)
-* [Opvragen van unsubscribes voor een Publisher emailing](./rest-get-publisher-emailing-unsubscribes)
+* [Opvragen van een Publisher emailing destination](./rest-get-publisher-emailingdestination)
+* [Opvragen van abuses voor een Publisher emailing destination](./rest-get-publisher-emailingdestination-abuses)
+* [Opvragen van clicks voor een Publisher emailing destination](./rest-get-publisher-emailingdestination-clicks)
+* [Opvragen van deliveries voor een Publisher emailing destination](./rest-get-publisher-emailingdestination-deliveries)
+* [Opvragen van impressions voor een Publisher emailing destination](./rest-get-publisher-emailingdestination-impressions)
+* [Opvragen van unsubscribes voor een Publisher emailing destination](./rest-get-publisher-emailingdestination-unsubscribes)

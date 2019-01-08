@@ -45,9 +45,9 @@ This example requires the [REST API class](./rest-php).
 
 * [Overview of all REST API calls](./rest-api)
 * [Retrieve a Publisher emailing](./rest-get-publisher-emailing)
-* [Get abuses for a Publisher emailing](./rest-get-publisher-abuses)
-* [Get clicks for a Publisher emailing](./rest-get-publisher-clicks)
-* [Get errors for a Publisher emailing](./rest-get-publisher-errors)
-* [Get impressions for a Publisher emailing](./rest-get-publisher-impressions)
-* [Get unsubscribes for a Publisher emailing](./rest-get-publisher-unsubscribes)
+* [Get abuses for a Publisher emailing](./rest-get-publisher-emailing-abuses)
+* [Get clicks for a Publisher emailing](./rest-get-publisher-emailing-clicks)
+* [Get errors for a Publisher emailing](./rest-get-publisher-emailing-errors)
+* [Get impressions for a Publisher emailing](./rest-get-publisher-emailing-impressions)
+* [Get unsubscribes for a Publisher emailing](./rest-get-publisher-emailing-unsubscribes)
 
