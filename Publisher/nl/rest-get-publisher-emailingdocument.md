@@ -1,39 +1,41 @@
-# REST API: GET emailingdocument (Publisher)
+# REST API: GET emailing document (Publisher)
 
-Dit is een methode om meta gegevens van een emailingdocument op te vragen. 
-Deze methode ondersteunt geen parameters. De methode is aan te 
-roepen met een HTTP GET request naar de volgende URL:
+Je kunt de REST API gebruiken om een overzicht van een emailing document op te vragen 
+door een HTTP GET verzoek te versturen naar de volgende URL:
 
 `https://api.copernica.com/v2/publisher/emailingdocument/$id?access_token=xxxx`
 
-Als `$id` kun je de numerieke identifier van een emailingdocument opgeven.
+Hier moet `$id` vervangen worden door de ID van het emailing document.
 
-## Geretourneerde velden
+## Teruggegeven velden
 
-* id: 			uniek ID;
-* template_id: 	uniek ID van template;
-* name: 		naam van document;
-* from_address: afzenderadres van document;
-* subject: 		onderwerp van document;
-* source: 		broncode van het document;
+Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 
-## Voorbeeld in PHP
+* **id**: De ID van het emailing document.    
+* **template_id**: De ID van de bijhorende template.
+* **name**: De naam van het document. 
+* **from_address**: Het 'from address' van het document.
+* **subject**: Het onderwerp van het document.
+* **source**: De bron van het document.
 
-Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
+## PHP voorbeeld
+
+Het onderstaande script demonstreert hoe je deze API methode gebruikt. 
+Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 
 ```php
 // vereiste scripts
-require_once("copernica_rest_api.php");
+require_once('copernica_rest_api.php');
 
-// verander dit in je access token
+// verander dit naar je access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// voer de opdracht uit en print het resultaat
-print_r($api->get("publisher/emailingdocument/id"));
+// voer het verzoek uit
+print_r($api->get("publisher/emailingdocument/{$emailingDocumentID}"));
 ```
 
-Dit voorbeeld vereist de [REST API klasse](rest-php).
+Dit voorbeeld vereist de [REST API klasse](./rest-php)
 
 ## Meer informatie
 
-* [Overzicht van alle API calls](rest-api)
+* [Overzicht van alle REST API calls](./rest-api)
