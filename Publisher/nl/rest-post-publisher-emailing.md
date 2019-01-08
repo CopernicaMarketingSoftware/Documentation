@@ -1,10 +1,10 @@
-# REST API: POST emailing (Marketing Suite)
+# REST API: POST emailing (Publisher)
 
-Je kunt ook een mailing voor de Marketing Suite versturen met onze 
+Je kunt ook een mailing voor de Publisher versturen met onze 
 REST API als je al een template en database voorbereid hebt. Door een HTTP 
 POST verzoek te sturen naar het volgende adres kun je een mailing versturen:
 
-`https://api.copernica.com/v2/ms/emailing?access_token=xxxx`
+`https://api.copernica.com/v2/publisher/emailing?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -12,9 +12,9 @@ Er zijn drie (verplichte) parameters beschikbaar:
 
 * **target**: De ID van de target van de mailing.
 * **targettype**: Het type van de target (database, collectie, selectie, miniselectie, profiel of subprofiel)
-* **template**: De ID van de template om te gebruiken.
+* **document**: De ID van de template om te gebruiken.
 
-Zorg ervoor dat je template volledig is voor je de mailing verstuurd. 
+Zorg ervoor dat je document volledig is voor je de mailing verstuurd. 
 De mailing kan namelijk niet verstuurd worden zonder een onderwerp of 
 afstuurder. Zorg er ook voor dat je [sender domain](./sender-domains) 
 correct geconfigureerd is.
@@ -41,7 +41,7 @@ $parameters = array(
 );
 
 // voer het verzoek uit
-print_r($api->post("ms/emailing", $parameters));
+print_r($api->post("publisher/emailing", $parameters));
 
 // het ID van het aangemaakte verzoek wordt teruggegeven bij een succesvol verzoek
 ```
@@ -51,5 +51,5 @@ Het bovenstaande voorbeeld vereist onze [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle REST API calls](./rest-api)
-* [Opvragen van alle Marketing Suite mailings](./rest-get-ms-emailings)
-* [Aanmaken van een Publisher mailing](./rest-post-publisher-emailing)
+* [Opvragen van alle Publisher mailings](./rest-get-publisher-emailings)
+* [Aanmaken van een Marketing Suite mailing](./rest-post-ms-emailing)
