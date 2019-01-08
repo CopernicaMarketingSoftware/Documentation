@@ -35,7 +35,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-print_r($api->get("publisher/emailing/{$emailingID}", $parameters));
+print_r($api->get("publisher/emailing/{$emailingID}"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php)

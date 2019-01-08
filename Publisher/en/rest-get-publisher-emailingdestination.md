@@ -5,7 +5,9 @@ GET call to the following URL:
 
 `https://api.copernica.com/v2/publisher/emailingdestination/$id?access_token=xxxx`
 
-Where `$id` should be replaced with the ID of the mailing destination you want summarized.
+Where `$id` should be replaced with the ID of the mailing destination you want summarized. 
+This method also support the use of the [fields parameter](./rest-fields-parameter) 
+for the **timestamp** field.
 
 ## Returned fields
 
@@ -31,7 +33,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // execute the call
-print_r($api->get("publisher/emailingdestination/{$emailingDestinationID}", $parameters));
+print_r($api->get("publisher/emailingdestination/{$emailingDestinationID}"));
 ```
 
 This example requires the [REST API class](./rest-php)

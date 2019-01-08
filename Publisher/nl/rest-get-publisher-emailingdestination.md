@@ -5,7 +5,9 @@ door een HTTP GET verzoek te versturen naar de volgende URL:
 
 `https://api.copernica.com/v2/publisher/emailingdestination/$id?access_token=xxxx`
 
-Hier moet `$id` vervangen worden door de ID van de mailing destination.
+Hier moet `$id` vervangen worden door de ID van de mailing destination. Deze methode 
+ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
+voor het **timestampsent** veld.
 
 ## Teruggegeven velden
 
@@ -31,7 +33,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-print_r($api->get("publisher/emailingdestination/{$emailingDestinationID}", $parameters));
+print_r($api->get("publisher/emailingdestination/{$emailingDestinationID}"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php)
