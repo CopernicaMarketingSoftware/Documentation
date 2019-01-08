@@ -10,10 +10,10 @@ You can find all the call to retrieve all Marketing Suite emailings [here](./res
 ## Available parameters
 
 * **type**: The type of mailing between mass or individual, defaults to both.
-* **followups**: Whether to include mailings triggered by a follow-up. Use "yes" to only 
-get mailings triggered by a follow-up, "no" to only get regular mailings and nothing 
-to retrieve all mailings.
-* **test**: Whether to include test mailings ("test", "normal", "both"). Defaults to "both".
+* **followups**: Indicates if we only use follow-up mailings ("yes"), only mailings 
+that were *not* the result of a follow-up ("no") or all mailings ("both"). Defaults to "both".
+* **test**: Indicates if we only use test mailings ("yes"), only mailings 
+that were *not* a test ("no") or all mailings ("both"). Defaults to "both".
 * **mindestinations**: Only retrieve mailings at least this many destinations.
 * **maxdestinations**: Only retrieve mailings with at most this many destinations.
 * **fromdate**: Only retrieve mailings sent after this date.

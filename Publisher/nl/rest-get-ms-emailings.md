@@ -12,9 +12,8 @@ Je kunt de methode om alle Publisher emailings op te vragen [hier](./rest-get-pu
 * **type**: Het type mailing. Dit kan een massa ('mass') mailing zijn of 
 een individuele ('individual') mailing. De methode zal standaard beide 
 opvragen.
-* **followups**: Gebruik 'yes' om alleen mailings getriggered door opvolgacties op te vragen en 
-'no' om alleen reguliere mailings op te vragen. De methode zal standaard beide 
-opvragen.
+* **followups**: Geeft aan of we alleen opvolgactie mailings ("yes") gebruiken, alleen mailings 
+die *niet* het resultaat waren van een opvolgactie ("no") of alle mailings ("both"). Standaardwaarde "both".
 * **mindestinations**: Vraag alleen mailings met dit minimum aantal ontvangers op.
 * **maxdestinations**: Vraag alleen mailings met dit maximum aantal ontvangers op.
 * **fromdate**: Vraag alleen mailings na deze datum op.
