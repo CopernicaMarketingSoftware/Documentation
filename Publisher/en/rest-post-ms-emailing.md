@@ -43,7 +43,7 @@ $parameters = array(
 // execute the call
 print_r($api->post("ms/emailing", $parameters));
 
-// return the id of created request if succesful
+// returns the id of created request if succesful
 ```
 
 This example requires our [REST API class](rest-php).
