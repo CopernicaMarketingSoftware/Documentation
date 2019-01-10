@@ -31,11 +31,11 @@ given parameters. For each mailing we return the following:
 * **timestamp**: Timestamp of the mailing
 * **destinations**: Amount of destinations the mailing was sent to
 * **type**: Type of mailing (individual or mass)
-* **embedded**: Whether the mailing contains embedded images or not
+* **document_id**: The ID of the document used for the mailing.
+* **template_id**: The ID of the template used for the mailing.
+* **clicks**: The total amount of clicks that this mailing received.
+* **impressions**: The total amount of impressions that this mailing received.
 * **contenttype**: Type of mailing content
-* **registerclicks**: Whether clicks are registered or not
-* **registerimpressions**: Whether impressions are registered or not
-* **registererrors**: Whether errors are registered or not
 * **target**: Contains the target type and the ID and type of other 
 entities above it (for example the database a collection belongs to)
 

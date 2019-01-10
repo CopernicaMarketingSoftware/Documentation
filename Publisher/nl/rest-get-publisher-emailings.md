@@ -30,19 +30,17 @@ het totale aantal resultaten. Deze array bevat ook een data array met
 de mailings die de parameters matchen. Elke mailing is een array die 
 de volgende informatie bevat:
 
-* **id**: ID van de mailing
-* **timestamp**: Tijdstempel van de mailing
+* **id**: ID van de mailing.
+* **timestamp**: Tijdstempel van de mailing.
 * **destinations**: Hoeveelheid (geplande) ontvangers van de mailing.
 * **type**: Type van de mailing. Een individuele mailing is 'individual' 
 en een massa mailing is 'massa'.
-* **embedded**: Of de mailing afbeeldingen bevat of niet.
+* **document_id**: De ID van het document gebruikt voor de mailing.
+* **template_id**: De ID van de template gebruikt voor de mailing.
 * **contenttype**: Type content van de mailing.
-* **registerclicks**: Of kliks geregistreerd zijn voor deze mailing of niet.
-* **registerimpressions**: Of impressies geregistreerd zijn voor deze mailing of niet.
-* **registererrors**: Of errors geregistreerd zijn voor deze mailing of niet.
 * **target**: Bevat het type van het doelwit van de mailing en de ID 
 en types van de entiteiten hierboven (bijvoorbeeld de database waar een 
-collectie onder valt)
+collectie onder valt).
 
 ## PHP Voorbeeld
 
