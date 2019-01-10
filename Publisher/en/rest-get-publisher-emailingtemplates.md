@@ -25,8 +25,7 @@ with emailing templates. Each template contains the following information:
 
 ## PHP example
 
-The script below demonstrates how to use this API method. Don't forget 
-to replace the ID in the URL before executing the call.
+The script below demonstrates how to use this API method.
 
 ```php
 // dependencies

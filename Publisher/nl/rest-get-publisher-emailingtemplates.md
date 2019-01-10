@@ -27,7 +27,6 @@ in het **data** veld. Elke template bevat de volgende informatie:
 ## PHP voorbeeld
 
 Het onderstaande script demonstreert hoe je deze API methode gebruikt. 
-Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 
 ```php
 // vereiste scripts
