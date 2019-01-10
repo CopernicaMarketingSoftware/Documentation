@@ -11,8 +11,8 @@ The following parameters are available for this call:
 
 * **archived**: Boolean that indicates whether to only include archived templates (true) 
 or only templates that are not archived (false). Returns both by default.
-* **modifiedfromdate**: Date after which the template should have been modified in YYYY-MM-DD HH:MM:SS format.
-* **modifiedtodate**: Date before which the template should have been modified in YYYY-MM-DD HH:MM:SS format.
+* **modifiedfromdate**: Date after which the templates should have been modified in YYYY-MM-DD HH:MM:SS format.
+* **modifiedtodate**: Date before which the templates should have been modified in YYYY-MM-DD HH:MM:SS format.
 
 ## Returned fields
 

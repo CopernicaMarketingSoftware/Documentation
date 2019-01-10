@@ -21,7 +21,7 @@ Deze methode geeft een JSON object met een array van emailing templates
 in het **data** veld. Elke template bevat de volgende informatie:
 
 * **id**: De ID van de template.    
-* **name**: De naam van het template. 
+* **name**: De naam van de template. 
 * **archived**: De archiefstatus van de template.
 
 ## PHP voorbeeld
