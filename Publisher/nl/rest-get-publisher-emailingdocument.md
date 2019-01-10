@@ -12,7 +12,7 @@ Hier moet `$id` vervangen worden door de ID van het emailing document.
 Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 
 * **id**: De ID van het emailing document.    
-* **template_id**: De ID van de bijhorende template.
+* **template**: De ID van de bijhorende template.
 * **name**: De naam van het document. 
 * **from_address**: Het 'from address' van het document.
 * **subject**: Het onderwerp van het document.

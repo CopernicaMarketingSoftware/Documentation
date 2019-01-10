@@ -20,7 +20,7 @@ The method returns a JSON object where the **data* field contains an array
 with emailing documents. Each document contains the following information:
 
 * **id**: The ID of the document.    
-* **template_id**: The ID of the corresponding template.
+* **template**: The ID of the corresponding template.
 * **name**: The name of the document.
 * **from_address**: The *from address* of the document.
 * **subject**: The subject of the document.

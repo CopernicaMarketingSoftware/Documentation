@@ -21,7 +21,7 @@ Deze methode geeft een JSON object met een array van emailing documents
 in het **data** veld. Elk document bevat de volgende informatie:
 
 * **id**: De ID van het document.
-* **template_id**: De ID van de bijhorende template.
+* **template**: De ID van de bijhorende template.
 * **name**: De naam van het document. 
 * **from_address**: Het afzenderadres van het document.
 * **subject**: Het onderwerp van het document.

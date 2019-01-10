@@ -12,7 +12,7 @@ Where `$id` should be replaced with the ID of the emailing document you want sum
 The method returns a JSON object containing the following information:
 
 * **id**: The ID of the document.    
-* **template_id**: The ID of the corresponding template.
+* **template**: The ID of the corresponding template.
 * **name**: The name of the document.
 * **from_address**: The from address for the document.
 * **subject**: The subject of the document.
