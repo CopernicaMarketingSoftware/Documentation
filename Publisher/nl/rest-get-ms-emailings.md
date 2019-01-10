@@ -30,7 +30,7 @@ de volgende informatie bevat:
 
 * **id**: De ID van de mailing.
 * **timestamp**: Tijdstempel van de mailing.
-* **template_id**: De ID van de template die gebruikt is voor deze mailing.
+* **template**: De ID van de template die gebruikt is voor deze mailing.
 * **destinations**: Hoeveelheid (geplande) ontvangers van de mailing.
 * **type**: Type van de mailing. Een individuele mailing is 'individual' 
 en een massa mailing is 'massa'.

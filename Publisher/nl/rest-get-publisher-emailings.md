@@ -35,8 +35,8 @@ de volgende informatie bevat:
 * **destinations**: Hoeveelheid (geplande) ontvangers van de mailing.
 * **type**: Type van de mailing. Een individuele mailing is 'individual' 
 en een massa mailing is 'massa'.
-* **document_id**: De ID van het document gebruikt voor de mailing.
-* **template_id**: De ID van de template gebruikt voor de mailing.
+* **document**: De ID van het document gebruikt voor de mailing.
+* **template**: De ID van de template gebruikt voor de mailing.
 * **contenttype**: Type content van de mailing.
 * **target**: Bevat het type van het doelwit van de mailing en de ID 
 en types van de entiteiten hierboven (bijvoorbeeld de database waar een 

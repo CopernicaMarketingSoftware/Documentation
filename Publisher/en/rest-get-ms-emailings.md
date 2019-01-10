@@ -27,7 +27,7 @@ given parameters. For each mailing we return the following:
 
 * **id**: The ID of the mailing.
 * **timestamp**: Timestamp of the mailing.
-* **template_id**: The ID of the template that was used to send the mailing.
+* **template**: The ID of the template that was used to send the mailing.
 * **destinations**: Amount of destinations the mailing was sent to.
 * **type**: Type of mailing (individual or mass).
 * **clicks**: The total amount of clicks that this mailing received.
