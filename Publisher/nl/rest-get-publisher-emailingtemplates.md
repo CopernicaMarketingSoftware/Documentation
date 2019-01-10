@@ -5,6 +5,16 @@ door een HTTP GET verzoek te versturen naar de volgende URL:
 
 `https://api.copernica.com/v2/publisher/emailingtemplates?access_token=xxxx`
 
+## Beschikbare parameters
+
+De volgende parameters zijn beschikbaar voor deze API call:
+
+* **archived**: Boolean die aangeeft of alleen templates uit het archief 
+worden opgehaald (true) of alleen templates die niet gearchiveerd zijn (false). 
+Standaard worden alle templates opgehaald.
+* **modifiedfromdate**: Datum waarna de template bewerkt moet zijn in YYYY-MM-DD HH:MM:SS formaat
+* **modifiedtodate**: Datum waarvoor de template bewerkt moet zijn in YYYY-MM-DD HH:MM:SS formaat
+
 ## Teruggegeven velden
 
 Deze methode geeft een JSON object met een array van emailing templates 
@@ -26,8 +36,13 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// parameters voor het verzoek (sluit gearchiveerde templates uit)
+$params = new array(
+    'archived'  => false
+);
+
 // voer het verzoek uit
-print_r($api->get("publisher/emailingtemplates"));
+print_r($api->get("publisher/emailingtemplates", $params));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php)
