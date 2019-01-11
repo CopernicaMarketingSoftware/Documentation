@@ -19,7 +19,7 @@ for good measure we'll describe the different aspects of databases below anyway.
 | Date and time fields 	| Date field (yyyy-mm-dd). Time field contains the hours, minutes and seconds. 					|
 | Email field       	| Email field is textfield, intended to safe emailaddresses.                                    |
 | Phone field        	| Can be specified for fax, mobile and other phonenumbers.				                        |
-| Multiple choice field | Can be used to provide multiple options.					                                    |
+| Multiple choice field | Can be used to provide multiple options. Option followed by * is the default value.					                                    |
 | Country code field   	| Accepts country codes by ISO 3166 standards.					                                |
 
 You can easily set the values of your field with the "Edit multiple profiles" 
