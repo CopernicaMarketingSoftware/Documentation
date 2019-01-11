@@ -13,7 +13,7 @@ Er zijn verschillende veldtypes beschikbaar voor het opslaan van specifieke gege
 | Datumveld          | Het datumveld bevat de datum (yyyy-mm-dd)                                                            |
 | Datum- en tijdveld | Het datumveld bevat de datum (yyyy-mm-dd) en het tijdveld bevat de uren, minuten en seconden.        |
 | Landcode veld      | Accepteert landcodes volgens de ISO 3166 standaard. NL, BE etc.                                      |
-| Meerkeuzeveld      | Kan worden gebruikt om meerdere opties te tonen, bovenste optie is standaardwaarde.                  |
+| Meerkeuzeveld      | Kan worden gebruikt om meerdere opties te tonen, optie gevolgd door een * is de standaardwaarde      |
 | Groot veld         | Tekstveld tot 16 mln. tekens. Wordt niet aangeraden, omdat je niet kunt indexeren.                   |
 | Reverentieveld     | Veld dat kan refereren naar een andere database, dit doormiddel van een ID.                          |
 
