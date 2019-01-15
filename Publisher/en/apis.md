@@ -52,4 +52,3 @@ For the time being, the full documentation on the REST API can be found
 ## More information
 
 * [REST API methods](./rest-api)
-* [REST events](./rest-get-events)

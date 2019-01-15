@@ -10,7 +10,6 @@ contains an overview of all API calls.
 * [Introduction & registration](./rest-introduction)
 * [Sending and receiving HTTP requests](./rest-requests)
 * [External OAuth2 links](./rest-oauth)
-* [REST events](./rest-get-events.md)
 
 We are currently on version 2 of the REST API. [This article](./rest-introduction#REST-version) 
 explains the new version in full detail.
@@ -40,7 +39,7 @@ Use the links to jump to the type of API call you are looking for.
 * [Publisher Mailings](./rest-api#Publisher-Mailings)
 * [Marketing Suite Mailings](./rest-api#Marketing-Suite-Mailings)
 * [Datarequests](./rest-api#Datarequests)
-* [Logfiles & Statistics](./rest-api#Logfiles-&-Statistics)
+* [Logfiles](./rest-api#Logfiles)
 
 ## Account
 In the table below you can find a call to retrieve account information.
@@ -179,7 +178,6 @@ like your customers or orders. The relevant API calls can be found below.
 | GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                   | Fetch all profile interests                        |
 | POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                  | Create profile interest(s)                         |
 | PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                   | Update profile interest(s)                         |
-| GET    | [api.copernica.com/v2/profile/$id/events](./rest-get-profile-events)                         | Fetch all profile events                           |
 | POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)              | Create a request for all data stored for a profile |
 
 ### Subprofile
@@ -192,7 +190,6 @@ like your customers or orders. The relevant API calls can be found below.
 | DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                              | Delete a subprofile                                   |
 | GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Fetch all subprofile fields                           |
 | PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                   | Update one or multiple subprofile fields              |
-| GET    | [api.copernica.com/v2/subprofile/$id/events](./rest-get-subprofile-events)                   | Fetch all subprofile events                           |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Create a request for all data stored for a subprofile |
 
 ## Email Addresses
@@ -201,7 +198,6 @@ The table below contains all calls pertaining to a specific email address.
 
 | Type   | Address                                                                                      | Description                                                 |
 |--------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| GET    | [api.copernica.com/v2/email/$email/events](./rest-get-email-events)                          | Retrieve all events related to the email address            |
 | POST   | [api.copernica.com/v2/email/$email/datarequest](./rest-post-email-datarequest)               | Create a request for all data available for an emailaddress |
 
 ## Publisher Mailings
@@ -213,10 +209,7 @@ templates and mailings.
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | GET    | [api.copernica.com/v2/publisher/emailings](./rest-get-publisher-emailings)                   | Fetch all mailings                           |
 | GET    | [api.copernica.com/v2/publisher/emailingdocument/$id](./rest-get-publisher-emailingdocument) | Fetch the document information               |
-| GET    | [api.copernica.com/v2/publisher/document/$id/events](./rest-get-publisher-document-events)   | Fetch all document events                    |
 | GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                   | Fetch the message information                |
-| GET    | [api.copernica.com/v2/publisher/message/$id/events](./rest-get-publisher-message-events)     | Fetch all message events                     |
-| GET    | [api.copernica.com/v2/publisher/template/$id/events](./rest-get-publisher-template-events)   | Fetch all template events                    |
 
 ## Marketing Suite Mailings
 
@@ -228,8 +221,6 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Fetch all mailings                           |
 | GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Fetch the message information                |
 | GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Fetch the message body                       |
-| GET    | [api.copernica.com/v2/ms/message/$id/events](./rest-get-ms-message-events)                   | Fetch all message events                     |
-| GET    | [api.copernica.com/v2/ms/template/$id/events](./rest-get-ms-template-events)                 | Fetch all template events                    |
 
 ## Datarequests
 
@@ -245,24 +236,13 @@ calls.
 | GET    | [api.copernica.com/v2/datarequest/$id/data](./rest-get-datarequest-data)                     | Fetch the data of a previous data request                   |
 | GET    | [api.copernica.com/v2/datarequest/$id/status](./rest-get-datarequest-status)                 | Fetch the status of a previous data request                 |
 
-## Logfiles & Statistics
+## Logfiles
 
 Copernica keeps extensive logfiles about everything that happens to your 
-emails after sending, including [events](./-rest-get-events). You can 
-find all calls related to logfiles and statistics 
-in the table below.
+emails after sending. You can find all calls related to logfiles in the table below.
 
 | Type   | Address                                                                                      | Description                                      |
 |--------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
-| GET    | [api.copernica.com/v2/tags/$tag/events](./rest-get-tags-events)                              | Fetch all events for a tag                       |
-| GET    | [api.copernica.com/v2/ms/message/$id/events](./rest-get-ms-message-events)                   | Fetch all MS message events                      |
-| GET    | [api.copernica.com/v2/ms/template/$id/events](./rest-get-ms-template-events)                 | Fetch all MS template events                     |
-| GET    | [api.copernica.com/v2/publisher/document/$id/events](./rest-get-publisher-document-events)   | Fetch all Publisher document events              |
-| GET    | [api.copernica.com/v2/publisher/message/$id/events](./rest-get-publisher-message-events)     | Fetch all Publisher message events               |
-| GET    | [api.copernica.com/v2/publisher/template/$id/events](./rest-get-publisher-template-events)   | Fetch all Publisher template events              |
-| GET    | [api.copernica.com/v2/profile/$id/events](./rest-get-profile-events)                         | Fetch all profile events                         |
-| GET    | [api.copernica.com/v2/subprofile/$id/events](./rest-get-subprofile-events)                   | Fetch all subprofile events                      |
-| GET    | [api.copernica.com/v2/email/$email/events](./rest-get-email-events)                          | Retrieve all events related to the email address |
 | GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles)                                         | Fetch logfile dates                              |
 | GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-names)                                   | Fetch logfile names                              |
 | GET    | [api.copernica.com/v2/logfile/$filename/csv](./rest-get-logfiles-csv)                        | Fetch logfiles in CSV format                     |

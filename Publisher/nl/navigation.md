@@ -43,7 +43,6 @@
 * [Stijl](./css-and-xslt.md)
 * [API documentatie](./apis.md)
     * [REST API](./rest-api.md)
-    * [REST events](./rest-get-events.md)
     * [WebHooks](./webhooks.md)
     * [SOAP API](./soap-api-documentation.md)
 * [Tips, tricks en achtergrond](./tips-and-tricks)

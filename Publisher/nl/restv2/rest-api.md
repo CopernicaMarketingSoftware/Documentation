@@ -9,7 +9,6 @@ Deze pagina bevat een overzicht van alle API calls.
 * [Introductie en registratie](rest-introduction)
 * [HTTP requests versturen en ontvangen](rest-requests)
 * [Externe OAuth2 koppelingen](rest-oauth)
-* [REST events](./rest-get-events.md)
 
 De meest recente versie van de API is versie 2. [Dit artikel](./rest-introduction#REST-versie) 
 gaat hier dieper op in.
@@ -39,7 +38,7 @@ navigeren:
 * [Publisher Mailings](./rest-api#Publisher-Mailings)
 * [Marketing Suite Mailings](./rest-api#Marketing-Suite-Mailings)
 * [Dataverzoeken](./rest-api#Dataverzoeken)
-* [Logfiles & Statistieken](./rest-api#Logfiles-&-Statistieken)
+* [Logfiles](./rest-api#Logfiles)
 
 ## Account
 
@@ -181,7 +180,6 @@ in de onderstaande tabel.
 | GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                   | Opvragen van alle profiel interesses             |
 | POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                  | Aanmaken van profiel interesse(s)                |
 | PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                   | Updaten van profiel interesse(s)                 |
-| GET    | [api.copernica.com/v2/profile/$id/events](./rest-get-profile-events)                         | Opvragen van profiel events                      |
 | POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)              | Aanmaken van een dataverzoek voor een profiel    |
 
 ### Subprofielen
@@ -194,7 +192,6 @@ in de onderstaande tabel.
 | DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                              | Verwijderen van een subprofiel                   |
 | GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Opvragen van alle subprofiel velden              |
 | PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                   | Updaten van een of meerdere subprofiel velden    |
-| GET    | [api.copernica.com/v2/subprofile/$id/events](./rest-get-subprofile-events)                   | Opvragen van subprofiel events                   |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Aanmaken van een dataverzoek voor een subprofiel |
 
 ## E-mailadressen
@@ -203,7 +200,6 @@ De onderstaande tabel bevat alle calls beschikbaar voor een specifiek e-mailadre
 
 | Type   | Adres                                                                                        | Omschrijving                                      |
 |--------|----------------------------------------------------------------------------------------------|---------------------------------------------------|
-| GET    | [api.copernica.com/v2/email/$email/events](./rest-get-email-events)                          | Opvragen van alle events voor een e-mailadres     |
 | POST   | [api.copernica.com/v2/email/$email/datarequest](./rest-post-email-datarequest)               | Aanmaken van een dataverzoek voor een e-mailadres |
 
 ## Publisher Mailings
@@ -215,10 +211,7 @@ documenten, templates en mailings.
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | GET    | [api.copernica.com/v2/publisher/emailings](./rest-get-publisher-emailings)                   | Opvragen van alle mailings                   |
 | GET    | [api.copernica.com/v2/publisher/emailingdocument/$id](./rest-get-publisher-emailingdocument) | Opvragen van document informatie             |
-| GET    | [api.copernica.com/v2/publisher/document/$id/events](./rest-get-publisher-document-events)   | Opvragen van document events                 |
 | GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                   | Opvragen van bericht informatie              |
-| GET    | [api.copernica.com/v2/publisher/message/$id/events](./rest-get-publisher-message-events)     | Opvragen van bericht events                  |
-| GET    | [api.copernica.com/v2/publisher/template/$id/events](./rest-get-publisher-template-events)   | Opvragen van template events                 |
 
 ## Marketing Suite Mailings
 
@@ -230,8 +223,6 @@ templates en mailings.
 | GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Opvragen van alle mailings                   |
 | GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Opvragen van bericht informatie              |
 | GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Opvragen van bericht body                    |
-| GET    | [api.copernica.com/v2/ms/message/$id/events](./rest-get-ms-message-events)                   | Opvragen van bericht events                  |
-| GET    | [api.copernica.com/v2/ms/template/$id/events](./rest-get-ms-template-events)                 | Opvragen van template events                 |
 
 ## Dataverzoeken
 
@@ -250,20 +241,10 @@ calls kun je dataverzoeken aanmaken en de data en status van deze verzoeken opvr
 ## Logfiles & Statistieken
 
 Copernica houdt uitgebreide data bij over alles gerelateerd aan een 
-mailing, waaronder [events](./rest-get-events). Je kunt alle calls 
-gerelateerd aan logfiles en statistieken in de onderstaande tabel vinden.
+mailing. Je kunt alle calls gerelateerd aan logfiles in de onderstaande tabel vinden.
 
 | Type   | Adres                                                                                        | Omschrijving                                  |
 |--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
-| GET    | [api.copernica.com/v2/tags/$tag/events](./rest-get-tags-events)                              | Fetch all events for a tag                    |
-| GET    | [api.copernica.com/v2/ms/message/$id/events](./rest-get-ms-message-events)                   | Fetch all MS message events                   |
-| GET    | [api.copernica.com/v2/ms/template/$id/events](./rest-get-ms-template-events)                 | Fetch all MS template events                  |
-| GET    | [api.copernica.com/v2/publisher/document/$id/events](./rest-get-publisher-document-events)   | Fetch all Publisher document events           |
-| GET    | [api.copernica.com/v2/publisher/message/$id/events](./rest-get-publisher-message-events)     | Fetch all Publisher message events            |
-| GET    | [api.copernica.com/v2/publisher/template/$id/events](./rest-get-publisher-template-events)   | Fetch all Publisher template events           |
-| GET    | [api.copernica.com/v2/profile/$id/events](./rest-get-profile-events)                         | Fetch all profile events                      |
-| GET    | [api.copernica.com/v2/subprofile/$id/events](./rest-get-subprofile-events)                   | Fetch all subprofile events                   |
-| GET    | [api.copernica.com/v2/email/$email/events](./rest-get-email-events)                          | Opvragen van alle events voor een e-mailadres |
 | GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles)                                         | Opvragen logfile datums                       |
 | GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-names)                                   | Opvragen logfile namen                        |
 | GET    | [api.copernica.com/v2/logfile/$filename/csv](./rest-get-logfiles-csv)                        | Opvragen logfiles in CSV                      |
