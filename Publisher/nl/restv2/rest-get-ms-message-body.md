@@ -25,4 +25,3 @@ Je kunt het gewenste type in de URL toevoegen.
 
 * [Alle API calls](./rest-api)
 * [GET message](./rest-get-message)
-* [GET message events](./rest-get-message-events)

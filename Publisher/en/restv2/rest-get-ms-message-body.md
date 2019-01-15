@@ -25,4 +25,3 @@ desired type in the URL.
 
 * [All API calls](./rest-api)
 * [GET message](./rest-get-message)
-* [GET message events](./rest-get-message-events)
