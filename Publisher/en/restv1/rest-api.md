@@ -1,4 +1,7 @@
-# The REST API
+# REST API Version 1
+
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
 
 The REST API allows you to retrieve and update the data that is stored inside
 Copernica from out of your own website or app. You can write your own scripts 
@@ -12,11 +15,9 @@ Copernica with your own system, without any human interference.
 * [Setting up Copernica REST service](./setting-up-copernica-rest-service)
 * [REST events](./rest-get-events.md)
 
-
 ## REST API: method reference
 
 The following table lists all methods that are accessible through HTTP GET, POST, PUT en DELETE.
-
 
 ## GET
 
