@@ -5,7 +5,7 @@ Copernica om je meer inzicht te geven in de prestatie hiervan. Impressions zijn
 een van de statistieken die voor een mailing worden bijgehouden. 
 Je kan deze opvragen met een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v2/impressions?access_token=xxxx`
+`https://api.copernica.com/v2/publisher/impressions?access_token=xxxx`
 
 Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestamp** veld.

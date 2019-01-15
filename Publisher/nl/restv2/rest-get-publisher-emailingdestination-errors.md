@@ -4,7 +4,7 @@ Net zoals je van een mailing statistieken op kunt vragen kun je ook de statistie
 per emailing destination opvragen. Je kan deze opvragen met een 
 HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v2/emailingdestination/$id/errors?access_token=xxxx`
+`https://api.copernica.com/v2/publisher/emailingdestination/$id/errors?access_token=xxxx`
 
 Hier moet `$id` vervangen worden door de ID van de mailing destination. Deze methode 
 ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 

@@ -4,7 +4,7 @@ Each emailing is tracked, which allows Copernica to provide you with
 emailing statistics. Abuses are one of these statistics. You can 
 retrieve all abuses by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v2/abuses?access_token=xxxx`
+`https://api.copernica.com/v2/publisher/abuses?access_token=xxxx`
 
 This method also support the use of the [fields parameter](./rest-fields-parameter) 
 for the **timestamp** field.

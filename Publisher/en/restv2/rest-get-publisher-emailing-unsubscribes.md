@@ -4,7 +4,7 @@ Each emailing is tracked, which allows Copernica to provide you with
 emailing statistics. Unsubscribes are one of these statistics. You can 
 retrieve the unsubscribes for an emailing by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v2/emailing/$id/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v2/publisher/emailing/$id/unsubscribes?access_token=xxxx`
 
 Where the `$id` should be replaced with the ID of the emailing. This method 
 also support the use of the [fields parameter](./rest-fields-parameter) 

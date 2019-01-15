@@ -1,8 +1,9 @@
-# REST API: GET destinations (Publisher mailing)
+# REST API: GET destinations (MS mailing)
 
-Je kan de destinations van een emailing opvragen met een HTTP GET call naar de volgende URL:
+Je kan de destinations van een (Marketing Suite) emailing opvragen met 
+een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v2/publisher/emailing/$id/destinations?access_token=xxxx`
+`https://api.copernica.com/v2/ms/emailing/$id/destinations?access_token=xxxx`
 
 Hier moet `$id` vervangen worden door de ID van de mailing. Deze methode 
 ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
@@ -15,7 +16,6 @@ is de volgende informatie beschikbaar:
 
 * **ID**: De ID van de destination.
 * **timestampsent**: De tijdstempel van het aankomen van de mailing bij deze destination.
-* **internal**: De interne ID van deze destination.
 * **profile**: De ID van het profiel van deze destination.
 * **subprofile**: De ID van het subprofiel van deze destination (als deze beschikbaar is).
 * **mailing**: De ID van de mailing.
@@ -32,7 +32,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-print_r($api->get("publisher/emailing/{$emailingID}/destinations/"));
+print_r($api->get("ms/emailing/{$emailingID}/destinations/"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
@@ -40,7 +40,7 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 ## More information
 
 * [Overview of all REST API calls](./rest-api)
-* [Retrieve a Publisher emailing](./rest-get-publisher-emailing)
+* [Retrieve a MS emailing](./rest-get-ms-emailing)
 
 
 
