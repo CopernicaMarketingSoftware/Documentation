@@ -1,5 +1,8 @@
 # REST API: GET message
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 If you want to get some general information from a mail sent with Marketing
 Suite you can make a simple a GET request to the following URL:
 

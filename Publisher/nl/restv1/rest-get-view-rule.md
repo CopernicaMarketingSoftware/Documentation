@@ -1,5 +1,8 @@
 # REST API: GET view rule
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Selecties gebruiken *regels* om te beslissen welke profielen worden gebruikt in de selectie en welke niet. Profielen die tenminste een regel matchen worden toegevoegd. Om de informatie van een enkele regel op te vragen kan er een HTTP GET verzoek worden verstuurd naar de volgende URL:
 
 `https://api.copernica.com/v1/view/$id/rule/$id?access_token=xxxx`

@@ -1,5 +1,8 @@
 # REST API: GET miniview
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een methode om alle metadata van een selectie binnen een collectie op te vragen. Deze methode ondersteunt geen parameters en wordt aangeroepen met een HTTP GET verzoek aan de volgende URL:
 
 `https://api.copernica.com/v1/miniview/$id?access_token=xxxx`

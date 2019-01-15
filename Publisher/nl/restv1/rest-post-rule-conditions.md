@@ -1,5 +1,8 @@
 # REST API: POST rule conditions
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een methode om *conditions* voor een *rule* aan te maken. 
 Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
 

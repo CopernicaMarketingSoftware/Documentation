@@ -1,10 +1,12 @@
 # OAuth2 
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 OAuth 2.0 is het standaardprotocol voor autorisatie. OAuth 2.0 vervangt 
 het werk dat is verricht op het oorspronkelijke OAuth protocol dat in 2006
 is ontworpen. Door OAuth 2.0 kunnen gebruikers toegang verlenen tot gegevens,
 zonder hun gebruikersnaam en wachtwoord uit handen te geven.  
-
 
 ## Waarvoor heb je dit nodig?
 

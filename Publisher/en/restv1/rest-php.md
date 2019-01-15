@@ -1,5 +1,8 @@
 # REST API example
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Below you'll find a REST API script, written in PHP.
 With this script you can easily make your first HTTP
 request. All calls are supported: GET, POST, PUT & DELETE.

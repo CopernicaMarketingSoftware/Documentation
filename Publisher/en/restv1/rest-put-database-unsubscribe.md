@@ -1,5 +1,8 @@
 # REST API: PUT database unsubscribe
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 For every database, you can set the unsubscribe algorithm separately. 
 When Copernica’s servers receive an unsubscription the unsubscribe behaviour 
 determines what happens with the profile: should it be edited or removed?

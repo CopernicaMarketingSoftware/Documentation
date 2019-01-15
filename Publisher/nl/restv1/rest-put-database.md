@@ -1,5 +1,8 @@
 # REST API: bijwerken gegevens van een database
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Methode om de properties van een database bij te werken. Dit is een HTTP PUT
 methode die toegankelijk is via het volgende adres:
 

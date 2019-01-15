@@ -1,5 +1,8 @@
 # REST API: GET collection miniviews
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Wat selecties zijn voor een database, zijn miniselecties voor een collectie.
 Om op te vragen welke miniselecties er op een collectie beschikbaar zijn,
 kun je een HTTP GET request naar het volgende adres sturen:

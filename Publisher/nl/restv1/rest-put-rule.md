@@ -1,5 +1,8 @@
 # REST API: PUT rule
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Dit is een methode om de eigenschappen van een bestaande regel aan te passen. Om deze uit te voeren kan er een HTTP PUT verzoek worden verstuurd naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id?access_token=xxxx`

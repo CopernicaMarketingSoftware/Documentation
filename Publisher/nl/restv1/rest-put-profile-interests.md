@@ -1,5 +1,8 @@
 # REST API: PUT profile interests
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Om de interesses van een profiel te overschrijven, kun je een HTTP PUT
 request sturen naar de volgende URL:
 

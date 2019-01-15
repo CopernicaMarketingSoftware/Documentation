@@ -1,5 +1,8 @@
 # REST API: POST database collections
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Om een collectie (een tweede laag dus) aan een database toe te voegen, kun
 je een HTTP POST request sturen naar het volgende adres:
 

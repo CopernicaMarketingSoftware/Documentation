@@ -1,5 +1,8 @@
 # REST API: PUT profile
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Dit is een methode om de eigenschappen van een bestaand profiel aan te passen. Het kan aangeroepen worden met een HTTP PUT verzoek naar de volgende URL:
 
 `https://api.copernica.com/v1/profile/$id?access_token=xxxx`

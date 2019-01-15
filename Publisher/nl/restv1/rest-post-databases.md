@@ -1,5 +1,8 @@
 # REST API: POST databases
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Methode om een nieuwe database aan te maken. Dit is een HTTP POST methode
 naar het volgende adres:
 

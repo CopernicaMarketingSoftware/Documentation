@@ -1,5 +1,8 @@
 # REST API: GET miniview rules
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 A miniview is to a collection what view is to the database. To retrieve 
 the rules of such a selection you can send an HTTP GET request to this 
 address:

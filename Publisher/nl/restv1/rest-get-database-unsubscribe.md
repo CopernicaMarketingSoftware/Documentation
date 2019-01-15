@@ -1,5 +1,8 @@
 # REST API: GET database unsubscribe
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Bij elke database kun je het afmeldalgoritme instellen. Hiermee wordt bepaald
 hoe met afmeldingen moet worden omgaan. Er wordt bijvoorbeeld bepaald of een 
 profiel moet worden verwijderd of dat het moet worden aangepast.

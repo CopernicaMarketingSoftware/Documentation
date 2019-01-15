@@ -1,5 +1,8 @@
 # REST API: Geregistreerd misbruik in de Marketing Suite
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Elk bericht dat verstuurd is met Marketing suite en een misbruik notificatie 
 heeft veroorzaakt wordt opgeslagen in de cdm-abuse log files. Je kunt de 
 inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 

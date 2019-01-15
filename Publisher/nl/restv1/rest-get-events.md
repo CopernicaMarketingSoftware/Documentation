@@ -1,5 +1,8 @@
 # REST API: GET events
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Copernica houdt alle processen rondom je mailing in de gaten. De events die worden gelogd zijn:
 afleveringen, bounces, clicks, opens, etc. Deze events komen terecht in de log files. Vervolgens
 kun je deze log files opvragen via de REST API. Het kan natuurlijk ook voorkomen dat je opzoek bent 

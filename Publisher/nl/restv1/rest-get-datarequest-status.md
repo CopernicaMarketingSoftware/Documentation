@@ -1,5 +1,8 @@
 # REST API: GET data request status
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Met dit verzoek kun je de status van jouw dataverzoek opvragen.
 
 Voor dit verzoek kun je een HTTP GET request sturen naar de volgende URL:

@@ -1,5 +1,8 @@
 # REST API: PUT minirule
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 A minirule is to a miniview what a rule is to a view. A method to edit 
 the properties of an existing minirule can be called by sending an HTTP 
 PUT request to the following URL:

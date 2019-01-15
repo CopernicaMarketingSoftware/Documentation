@@ -1,5 +1,8 @@
 # REST API: PUT minirule
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een minirule is voor een miniview wat een regel is voor een selectie. 
 Om de eigenschappen van een minirule aan te passen kan er een HTTP PUT 
 verzoek verstuurd worden naar de volgende URL:

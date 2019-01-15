@@ -1,5 +1,8 @@
 # REST API: POST view rules
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Deze methode voegt een regel toe aan een bestaande selectie. Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd worden naar de volgende URL:
 
 `https://api.copernica.com/v1/view/$id/rules?access_token=xxxx`

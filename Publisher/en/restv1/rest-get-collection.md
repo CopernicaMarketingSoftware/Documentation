@@ -1,5 +1,8 @@
 # REST API: GET collection
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 A collection is somewhat like a second layer within a database. These collections
 have a numerical ID which can be used to fetch information with an HTTP GET request
 to the following URL:

@@ -1,9 +1,11 @@
 # De REST API in een notendop
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Je kunt gemakkelijk een applicatie aanmelden via het dashboard van de Copernica 
 website. Na het opgeven van een naam, krijg je een API key. Met deze key kun je
 vervolgens calls maken naar de Copernica REST API.
-
 
 ## HTTP requests
 
@@ -19,10 +21,6 @@ soorten requests:
 
 * HTTP POST en HTTP PUT verschillen in de praktijk niet zoveel van elkaar. 
 In de toekomst kan het onderscheid echter wel van belang zijn.
-
-met het oog op de toekomst 
-wordt aangeraden om het onderscheid wel te hanteren.*
-
 
 ## Meer informatie
 

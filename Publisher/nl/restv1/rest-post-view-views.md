@@ -1,5 +1,8 @@
 # REST API: POST view views
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Copernica ondersteund ook genestelde selecties. Om een genestelde selectie aan te passen kan er een HTTP post request gestuurd worden naar de volgende URL:
 
 `https://api.copernica.com/view/$id/views?access_token=xxxx`

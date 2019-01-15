@@ -1,5 +1,8 @@
 # REST API: DELETE collection field
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Deze methode verwijdert een veld uit een collectie. De methode kan aangeroepen worden met een HTTP DELETE verzoek aan de volgende URL:
 
 `https://api.copernica.com/v1/collection/$id/field/$id?access_token=xxxx`

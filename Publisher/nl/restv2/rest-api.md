@@ -11,7 +11,9 @@ Deze pagina bevat een overzicht van alle API calls.
 * [Externe OAuth2 koppelingen](rest-oauth)
 
 De meest recente versie van de API is versie 2. [Dit artikel](./rest-introduction#REST-versie) 
-gaat hier dieper op in.
+gaat hier dieper op in en legt uit hoe je overschakelt. Nog niet klaar om 
+over te stappen? Je kunt de documentatie voor versie 1 [hier](../restv1/rest-api.md) 
+vinden.
 
 ## Types voor methodes
 

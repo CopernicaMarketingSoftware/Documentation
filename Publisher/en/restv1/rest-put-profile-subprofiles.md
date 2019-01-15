@@ -1,5 +1,8 @@
 # REST API: PUT profile subprofiles
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 To update or add subprofiles to a profile an HTTP PUT request can be sent to the following URL:
 
 `https://api.copernica.com/v1/subprofile/$id/fields?access_token=xxxx`

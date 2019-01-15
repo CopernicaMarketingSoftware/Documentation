@@ -1,5 +1,8 @@
 # REST API: GET profile subprofiles
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Subprofielen zijn voor collecties wat reguliere profielen zijn in een database. 
 Om een lijst van subprofielen van een profiel uit een collectie op te
 vragen kun je een HTTP GET verzoek sturen naar de volgende URL:

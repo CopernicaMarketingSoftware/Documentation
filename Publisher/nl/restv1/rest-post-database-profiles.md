@@ -1,5 +1,8 @@
 # REST API: POST database profiles
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Als je een profiel wilt aanmaken, dien je een HTTP POST request te sturen
 naar de volgende URL.
 

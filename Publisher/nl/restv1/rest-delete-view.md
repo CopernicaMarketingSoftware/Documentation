@@ -1,5 +1,8 @@
 # REST API: DELETE view
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Om een selectie van profielen te verwijderen kan er een HTTP DELETE verzoek gestuurd worden naar de volgende URL:
 
 `https://api.copernica.com/v1/view/$id?access_token=xxxx`

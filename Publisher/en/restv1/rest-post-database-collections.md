@@ -1,5 +1,8 @@
 # REST API: POST database collection
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 A collection is similar to a second layer within the database. To add such 
 a collection to an existing database you can send an HTTP POST request to 
 the following URL:

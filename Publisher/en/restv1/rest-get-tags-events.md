@@ -1,5 +1,8 @@
 # REST API: GET tags events
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 To request the events for a specific tag you can send an HTTP GET request
 to the following URL:
 

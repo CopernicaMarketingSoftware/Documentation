@@ -1,5 +1,8 @@
 # REST API: POST profile interests
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 To add interests to a profile an HTTP post request can be sent to the 
 following URL:
 

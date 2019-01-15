@@ -1,5 +1,8 @@
 # REST API: GET miniview rules
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een miniview is voor een collectie wat een view/selectie is voor een database. Om de regels van zo'n miniview op te vragen kun je een HTTP GET verzoek versturen naar de volgende URL:
 
 `https://api.copernica.com/v1/miniview/$id/rules?access_token=xxxx`

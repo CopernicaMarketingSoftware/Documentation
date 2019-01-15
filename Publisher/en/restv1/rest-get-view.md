@@ -1,5 +1,8 @@
 # REST API: GET view
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 A method to request all metadata from a database. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
 

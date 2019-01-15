@@ -1,5 +1,8 @@
 # REST API: POST profile data
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Deze methode stuurt een verzoek om alle data die beschikbaar zijn voor een
 profiel bij elkaar te zoeken en hier een JSON bestand van te maken. Je kan er voor 
 kiezen om een e-mail te krijgen wanneer dit proces is afgerond. Dit mailtje bevat

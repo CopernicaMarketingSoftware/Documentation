@@ -1,5 +1,8 @@
 # REST API: GET data request data
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 With this request you can get the data of your data request.
 
 To make this request you send an HTTP GET request to the following URL:

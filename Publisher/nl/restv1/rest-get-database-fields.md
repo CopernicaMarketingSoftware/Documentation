@@ -1,5 +1,8 @@
 # REST API: GET database fields
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Methode om een overzicht op te vragen van alle beschikbare velden in een database. 
 Dit is een HTTP GET call naar het volgende adres:
 

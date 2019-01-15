@@ -1,5 +1,8 @@
 # REST API: paging
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Heel veel REST methodes retourneren een lijst van objecten. De methode om
 [databases op te vragen](rest-get-databases) retourneert bijvoorbeeld een lijst
 van databases, en de methode om [profielen op te vragen](rest-get-database-profiles)

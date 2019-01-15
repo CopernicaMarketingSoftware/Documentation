@@ -1,5 +1,8 @@
 # REST API: PUT miniview
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een miniview is voor een collectie wat een selectie is voor een database. Om een miniview aan te passen kan er een HTTP PUT verzoek verstuurd worden naar de volgende URL:
 
 `https://api.copernica.com/v1/miniview/$id?access_token=xxxx`

@@ -1,5 +1,8 @@
 # REST API: GET view
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een methode om de metadata van een database op te vragen. De methode kan aangeroepen worden met een HTTP GET verzoek aan de volgende URL:
 
 `https://api.copernica.com/v1/view/$id?access_token=xxxx`

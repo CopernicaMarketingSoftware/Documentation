@@ -1,5 +1,8 @@
 # REST API: GET logfiles
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Copernica houdt logfiles bij met verschillende informatie zoals clicks, geopende mails, errors, geaccepteerde berichten, etc. Deze logfiles kunnen opgevraagd worden met de API. Zie [Namen van logfiles voor een datum opvragen](./rest-get-logfiles-names.md) voor meer informatie over de verschillende logfiles die beschikbaar zijn. Door een HTTP GET verzoek te sturen naar de volgende URL kun je een lijst terugkrijgen van alle datums waarvoor logfiles zijn opgeslagen.
 
 `https://api.copernica.com/v1/logfiles?access_token=xxxx`

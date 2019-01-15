@@ -1,5 +1,8 @@
 # REST API: POST database profile
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 The HTTP POST method to add a profile to an existing database is 
 available at the following address:
 

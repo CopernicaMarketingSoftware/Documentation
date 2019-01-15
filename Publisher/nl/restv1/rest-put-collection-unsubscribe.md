@@ -1,5 +1,8 @@
 # REST API: PUT collection unsubscribe
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Voor elke collectie kunnen apart de instellingen voor unsubscribes worden aangepast. Wanneer Copernica's servers een verzoek voor uitschrijving ontvangen geeft deze instelling aan wat er in de collectie gebeurt.
 
 Om de instellingen hiervoor aan te passen kan er een HTTP PUT verzoek gedaan worden aan de volgende URL:

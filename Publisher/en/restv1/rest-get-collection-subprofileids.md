@@ -1,5 +1,8 @@
 # REST API: GET subprofile identifiers
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 This is a simple method to fetch all IDs of subprofiles in a collection.
 To use the method send an HTTP GET request to the following URL:
 

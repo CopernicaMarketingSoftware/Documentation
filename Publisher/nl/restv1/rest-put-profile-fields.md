@@ -1,5 +1,8 @@
 # REST API: PUT profile fields
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Om de velden van een profiel bij te werken, moet je een HTTP PUT request
 sturen naar de volgende URL:
 

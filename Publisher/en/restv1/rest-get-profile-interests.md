@@ -1,5 +1,8 @@
 # REST API: GET profile interests
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 There are several different ways to request the interests of a profile. 
 Which method is best depends on how you want to use it. You can request 
 a list of interest names, interest ID's or an array of JSON objects.

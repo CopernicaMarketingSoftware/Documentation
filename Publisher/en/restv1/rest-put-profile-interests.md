@@ -1,5 +1,8 @@
 # REST API: PUT profile interests
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 To overwrite existing interests of a profile or add an interest an HTTP PUT 
 request can be sent to the following URL:
 

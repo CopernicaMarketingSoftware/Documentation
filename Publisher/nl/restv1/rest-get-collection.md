@@ -1,5 +1,8 @@
 # REST API: GET collection
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een collectie is een "tweede laag" binnen een database. Als je de numerieke
 identifier van een collectie weet, dan kun je met een HTTP GET request de
 gegevens van de collectie ophalen:

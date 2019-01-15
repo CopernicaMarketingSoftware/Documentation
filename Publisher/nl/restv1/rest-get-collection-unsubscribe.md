@@ -1,5 +1,8 @@
 # REST API: GET collection unsubscribe
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Net als bij databases, kun je ook bij collecties het afmeldalgoritme instellen. 
 Als er op de servers van Copernica een afmelding binnenkomt wordt deze instelling 
 gebruikt om te bepalen hoe we met de afmelding moeten omgaan: moet het subprofiel

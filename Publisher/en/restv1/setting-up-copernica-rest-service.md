@@ -1,5 +1,8 @@
 # Setting up the REST service
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 The Copernica REST API allows you to create applications that can access
 and modify all data in a Copernica account, and for example start
 campaigns.

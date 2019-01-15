@@ -1,5 +1,8 @@
 # The REST API in a nutshell
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 The REST API is very easy to use. From a technical standpoint is simply comes
 down that your website or app sends HTTP requests to Copernica's servers:
 HTTP GET requests to fetch data, and POST and PUT requests to modify data.

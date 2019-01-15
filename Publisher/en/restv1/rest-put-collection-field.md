@@ -1,5 +1,8 @@
 # REST API: PUT collection field
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Method to edit a certain field in a collection. To use this method you can make an HTTP PUT request to the following URL:
 
 `https://api.copernica/com/v1/collection/$id/field/$id?access_token=xxxx`

@@ -1,5 +1,8 @@
 # REST API: the fields parameter
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 There are several API methods that are able to use the *fields* parameter 
 in the URL to select profiles and subprofiles. You could use this, for example, 
 to only select profiles where "country" is "the netherlands", or profiles 

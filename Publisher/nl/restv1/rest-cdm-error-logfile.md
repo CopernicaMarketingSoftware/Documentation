@@ -1,5 +1,8 @@
 # REST API: Error registratie in Marketing Suite
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Elk bericht dat een error heeft veroorzaakt en is verstuurd vanuit Marketing 
 Suite is opgeslagen in de cdm-error log files. Je kunt de 
 inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 

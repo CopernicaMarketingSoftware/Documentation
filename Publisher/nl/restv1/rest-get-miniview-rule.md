@@ -1,5 +1,8 @@
 # REST API: GET miniview rule
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Selecties gebruiken regels om te bepalen welke profielen zij bevatten. Profielen die tenminste een selectie regel matchen worden geselecteerd. Om de eigenschappen en condities van een enkele regel op te vragen kun je een HTTP GET verzoek sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/miniview/$id/minirule/$id?access_token=xxxx`

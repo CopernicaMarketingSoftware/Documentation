@@ -1,5 +1,8 @@
 # REST API: GET collection miniviews
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 What selections are to a database is what miniselections, or miniviews, 
 are to a collection. To fetch the miniselections applied to this collection 
 the following HTTP GET request can be used:

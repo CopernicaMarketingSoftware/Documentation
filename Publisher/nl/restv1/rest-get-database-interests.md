@@ -1,5 +1,8 @@
 # REST API: GET database interests
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een overzicht van alle beschikbare interesses in een database kun je opvragen
 met de volgende URL:
 

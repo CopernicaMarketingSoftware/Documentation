@@ -1,5 +1,8 @@
 # REST API: GET database collections
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 This method is used to request all collections in a database. It is an 
 HTTP GET call to the following address:
 

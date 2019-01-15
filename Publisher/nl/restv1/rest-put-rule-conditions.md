@@ -1,5 +1,8 @@
 # REST API: PUT rule conditions
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een methode om *conditions* voor een *rule* aan te passen. 
 Je kunt de methode aanroepen met een HTTP PUT request naar de volgende URL:
 

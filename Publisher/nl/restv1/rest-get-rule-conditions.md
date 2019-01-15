@@ -1,5 +1,8 @@
 # REST API: GET rule conditions
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een methode om conditions van een rule op te vragen. 
 Je kunt de method aanroepen met een HTTP GET request naar de volgende URL:
 

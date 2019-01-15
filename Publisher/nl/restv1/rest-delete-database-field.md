@@ -1,5 +1,8 @@
 # REST API: DELETE database field
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Als je een HTTP DELETE request stuurt naar de volgende URL, verwijder je een 
 veld uit een database:
 

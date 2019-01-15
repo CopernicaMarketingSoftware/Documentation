@@ -1,5 +1,8 @@
 # REST API: GET old document events
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Als je events bij een Publisher document wilt downloaden, dan kun je die
 opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL:
 

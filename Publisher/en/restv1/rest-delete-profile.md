@@ -1,5 +1,8 @@
 # REST API: DELETE profile
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a profile:
 

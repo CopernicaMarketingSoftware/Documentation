@@ -1,5 +1,8 @@
 # REST API: POST email data request
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 With this method you can post a request to collect all data available about
 an email address, apart from the profile/subprofile information. If we
 receive such a request we will collect all the data and store this data

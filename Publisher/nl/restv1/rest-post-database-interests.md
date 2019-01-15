@@ -1,5 +1,8 @@
 # REST API: POST database interests
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 De HTTP POST methode om een interesse toe te voegen aan een bestaande database
 is beschikbaar via het volgende adres:
 

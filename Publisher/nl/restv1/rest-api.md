@@ -1,14 +1,17 @@
-# De REST API
+# REST API Versie 1
+
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
 
 Met de REST API kun je automatische koppelingen met Copernica maken. 
 Je kunt bijvoorbeeld je website of app zo programmeren dat, met behulp 
 van de REST API, gegevens in je Copernica-account worden ophaald, gecreëerd, geüpdatet of verwijderd.
 Dit gaat automatisch, dus buiten de *user interface* om.
 
-* [De REST API in een notendop](rest-introduction)
-* [HTTP requests sturen en antwoorden ontvangen](rest-requests)
-* [OAuth2 koppelingen](rest-oauth)
-* [REST events](rest-get-events.md)
+* [De REST API in een notendop](./rest-introduction)
+* [HTTP requests sturen en antwoorden ontvangen](./rest-requests)
+* [OAuth2 koppelingen](./rest-oauth.md)
+* [REST events](./rest-get-events.md)
 
 
 ## REST API: overzicht van methodes

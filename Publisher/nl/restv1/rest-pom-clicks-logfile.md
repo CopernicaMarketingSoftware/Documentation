@@ -1,5 +1,8 @@
 # REST API: Click registratie in de Publisher
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Elke klik op een link in de berichten verstuurd met de publisher is
 opgeslagen in de cdm-click log files. Hou er wel rekening mee dat klik 
 tracking alleen met het [nieuwe tracking systeem](https://www.copernica.com/nl/blog/post/nieuw-link-tracking-systeem "Nieuw link tracking systeem") 

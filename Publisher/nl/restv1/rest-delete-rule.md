@@ -1,5 +1,8 @@
 # REST API: DELETE rule
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een regel kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/rule/$id?access_token=xxxx`

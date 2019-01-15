@@ -1,5 +1,8 @@
 # REST API: Algemene Marketing Suite informatie
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Elk bericht dat wordt verstuurd via Marketing Suite wordt opgeslagen in de 
 cdm-attempts logfiles. Je kunt deze downloaden in CSV, JSON of XML formaat.
 Instructies hiervoor kun je vinden onder "Meer informatie over logfiles", 

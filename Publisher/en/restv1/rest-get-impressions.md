@@ -1,5 +1,8 @@
 # REST API: GET impressions
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 All impressions that have been registered by Copernica can be fetched by
 sending a HTTP GET request to the following URL:
 

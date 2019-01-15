@@ -1,5 +1,8 @@
 # REST API: GET databases
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Je kunt alle informatie omtrent databases opvragen 
 met de onderstaande methode. Dit is een HTTP GET 
 call naar het volgende adres:

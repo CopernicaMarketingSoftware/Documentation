@@ -1,5 +1,8 @@
 # REST API: GET subprofile fields
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Om alleen de velden van een subprofiel op te vragen, kun je een HTTP GET
 request sturen naar de volgende URL:
 

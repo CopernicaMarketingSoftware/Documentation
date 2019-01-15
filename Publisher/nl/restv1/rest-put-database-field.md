@@ -1,5 +1,8 @@
 # REST API: PUT database field
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Als je de eigenschappen van een databaseveld wilt bijwerken, zoals de naam
 of het type van het veld, dan kun je dit doen door een HTTP PUT request naar
 de volgende URL te sturen:

@@ -1,5 +1,8 @@
 # REST API voorbeeld
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Hieronder vind je een REST API script, geschreven in PHP.
 Met dit voorbeeld kun je gemakkelijk een HTTP request doen.
 Alle calls worden ondersteund. Je kunt dus gebruik maken

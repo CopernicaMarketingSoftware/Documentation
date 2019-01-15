@@ -1,5 +1,8 @@
 # REST API: POST database
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 This method is used to create a new database with the REST API. It uses 
 an HTTP POST request to the following address:
 

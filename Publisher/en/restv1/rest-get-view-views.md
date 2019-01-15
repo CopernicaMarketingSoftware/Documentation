@@ -1,5 +1,8 @@
 # REST API: GET view views
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Copernica supports nested selections. To obtain a list of all selections that
 are nested under a higher level selection you can send a HTTP GET request
 to the following URL:

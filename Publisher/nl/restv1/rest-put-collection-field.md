@@ -1,5 +1,8 @@
 # REST API: PUT collection field
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Methode om een bepaald veld in een collectie aan te passen. Om deze methode uit te voeren kun je een HTTP PUT verzoek sturen aan de volgende URL:
 
 `https://api.copernica/com/v1/collection/$id/field/$id?access_token=xxxx`

@@ -1,5 +1,8 @@
 # REST API: GET message
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Als je algemene informatie van een met Marketing Suite verstuurde mail wilt
 hebben, dan kun je een eenvoudige HTTP GET call naar de volgende URL sturen.
 

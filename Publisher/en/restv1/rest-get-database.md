@@ -1,4 +1,8 @@
 # REST API: GET database
+
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 A method to request all metadata from a database. This method does not 
 support parameters. By sending a GET request to the following URL, 
 you can fetch the database metadata:

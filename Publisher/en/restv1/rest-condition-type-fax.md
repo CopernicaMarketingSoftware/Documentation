@@ -1,5 +1,8 @@
 # REST conditions: Fax
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Conditions are smaller parts of rules. Only one condition has to be 
 satisfied to satisfy a rule. Every condition has a few specific properties.
 

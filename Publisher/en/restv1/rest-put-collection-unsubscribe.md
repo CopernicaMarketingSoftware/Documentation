@@ -1,5 +1,8 @@
 # REST API: PUT collection unsubscribe
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 For every collection you may also set the unsubscribe settings separately. 
 When Copernica’s servers receive an unsubscription the unsubscribe 
 behaviour determines what happens with the profile: should it be edited 

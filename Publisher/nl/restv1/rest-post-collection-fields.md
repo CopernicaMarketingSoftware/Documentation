@@ -1,5 +1,8 @@
 # REST API: POST collection fields
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Methode om een veld toe te voegen aan een bestaande collectie. Dit is een HTTP 
 POST call naar het volgende adres:
 

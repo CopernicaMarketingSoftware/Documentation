@@ -1,5 +1,8 @@
 # REST API: GET minirule conditions
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Dit is een methode om alle condities van een miniregel (voor een miniview) op te vragen. Deze methode ondersteunt geen parameters. De methode is aan te roepen met een HTTP GET request naar de volgende URL:
 
 `https://api.copernica.com/v1/minirule/$id/conditions?access_token=xxxx`

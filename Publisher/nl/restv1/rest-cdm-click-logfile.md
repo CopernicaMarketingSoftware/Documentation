@@ -1,5 +1,8 @@
 # REST API: Click registratie in de Marketing Suite
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Elke klik op een link in de berichten verstuurd met de Marketing Suite is
 opgeslagen in de cdm-click log files. Je kunt de 
 inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 

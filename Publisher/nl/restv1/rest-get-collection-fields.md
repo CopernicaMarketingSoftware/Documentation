@@ -1,5 +1,8 @@
 # REST API: GET collection fields
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een collectie is een geneste tweede laag bij een database. Een collectie 
 heeft dus ook velden. Om deze velden op te vragen kun je een HTTP GET request
 sturen naar het volgende adres:

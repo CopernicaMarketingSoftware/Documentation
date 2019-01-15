@@ -1,5 +1,8 @@
 # REST API: PUT collection
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Method to change the properties of a collection. This method can be used by 
 sending an HTTP PUT request to the following URL:
 

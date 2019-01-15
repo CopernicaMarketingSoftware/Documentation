@@ -1,5 +1,8 @@
 # REST API: GET database interests
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 A list of all available interests in a database can be requested using 
 the following URL:
 

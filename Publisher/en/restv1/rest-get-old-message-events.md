@@ -1,5 +1,8 @@
 # REST API: GET Publisher message events
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 If you are interested in the events of a message sent with Publisher you
 can make a GET request to the following URL:
 

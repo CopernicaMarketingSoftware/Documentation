@@ -1,5 +1,8 @@
 # REST API: GET identity
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 This method can be used if you want to find out the account that is linked to
 an API access token. By sending a GET request to the following URL, you can
 fetch the account information:

@@ -1,5 +1,8 @@
 # REST API: GET profile interests
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Er zijn verschillende methodes om de interesses van een profiel op te 
 vragen. Welke methode het meest geschikt is hangt af van hoe je deze wilt 
 gebruiken. Je kunt namelijk een array met de namen van interesses opvragen, 

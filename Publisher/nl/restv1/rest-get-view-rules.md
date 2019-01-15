@@ -1,5 +1,8 @@
 # REST API: GET view rules
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Om alle regels uit een selectie op te vragen kun je een HTTP GET request sturen naar de volgende URL:
 
 `https://api.copernica.com/v1/view/$id/rules?access_token=xxxx`

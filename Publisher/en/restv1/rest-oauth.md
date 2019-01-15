@@ -1,5 +1,8 @@
 # OAuth authentication
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 The authentication system of the Copernica REST API uses OAuth2. This is a 
 powerful and standardized protocol that is used by many websites and 
 applications to control access to the API. The OAuth2 protocol makes a clear 

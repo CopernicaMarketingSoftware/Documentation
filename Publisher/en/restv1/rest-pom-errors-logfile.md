@@ -1,5 +1,8 @@
 # Errors Record Information
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Every message sent with Publisher that triggered an error is logged in the
 pom-errors log files. You can download the content of these files in CSV,
 JSON, and XML format using the [REST logfiles API](rest-get-logfiles),

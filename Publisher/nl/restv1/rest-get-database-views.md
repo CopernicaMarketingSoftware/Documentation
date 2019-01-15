@@ -1,5 +1,8 @@
 # REST API: GET database views
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Je kunt bekijken welke selecties beschikbaar zijn door een HTTP GET request te 
 sturen naar de volgende URL:
 

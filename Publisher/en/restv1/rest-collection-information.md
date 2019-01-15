@@ -1,5 +1,8 @@
 # REST Collection information
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Databases in Copernica can be extended with additional collections of
 data.
 

@@ -1,5 +1,8 @@
 # REST API: POST database views
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Om een nieuwe selectie aan te maken, moet je 
 een HTTP POST request sturen naar de volgende 
 URL. De selectie wordt dan direct onder de 

@@ -1,5 +1,8 @@
 # REST API: paging
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Many REST methods, e.g. the method to [fetch databases](rest-get-databases)
 and the method to [fetch profiles](rest-get-profile), return lists of objects.
 In order to reduce the amount of time a REST API call takes and to prevent a

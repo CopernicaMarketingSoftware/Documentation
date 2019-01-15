@@ -1,5 +1,8 @@
 # REST condities: MiniView
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Condities zijn kleinere onderdelen van regels. Er hoeft maar aan een 
 conditie van een regel te worden voldaan om aan de regel te voldoen. 
 Elke conditie heeft specifieke eigenschappen.

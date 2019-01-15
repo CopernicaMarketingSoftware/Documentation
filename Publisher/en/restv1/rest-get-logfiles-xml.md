@@ -1,5 +1,8 @@
 # REST API: GET XML logfiles
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Copernica keeps logfiles which you can request with the API. This method 
 can be used to download a logfile as XML using its filename. If you don't 
 know the filename please see "More information" for instructions. To 

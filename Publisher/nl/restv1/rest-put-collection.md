@@ -1,5 +1,8 @@
 # REST API: PUT collection
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Als je de gegevens van een collectie wilt bijwerken,
 kun je dit doen door een HTTP PUT verzoek naar de volgende URL te sturen:
 

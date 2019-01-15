@@ -1,5 +1,8 @@
 # REST API: GET message body
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Als je de inhoud van een bericht verzonden met de Marketing Suite wil 
 opvragen kun je een GET request sturen naar de volgende URL:
 

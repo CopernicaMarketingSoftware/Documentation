@@ -1,5 +1,8 @@
 # REST API: PUT database profiles
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 If you want to modify multiple profiles with a single call to the API, you
 can send a HTTP PUT request to the following URL:
 

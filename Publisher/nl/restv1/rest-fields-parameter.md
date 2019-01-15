@@ -1,5 +1,8 @@
 # REST API: de fields parameter
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Er is een aantal API methodes waarbij je een *fields* parameter aan de URL
 kunt (of moet) meegeven om profielen of subprofielen te selecteren. Met deze parameter 
 kun je bijvoorbeeld aangeven dat de desbetreffende API methode alleen betrekking 

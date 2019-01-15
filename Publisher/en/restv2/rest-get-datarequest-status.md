@@ -1,5 +1,8 @@
 # REST API: GET data request status
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 You can get the status of your data request by sending an HTTP GET request 
 to the following URL:
 
@@ -45,9 +48,9 @@ This example requires the [REST API class](./rest-php).
 
 ## More information
 
-* [All REST calls](./rest-api)
-* [Data request for a profile](./rest-post-profile-datarequest)
-* [Data request for a subprofile](./rest-post-subprofile-datarequest)
+* [Overview of all REST API methods](./rest-api.md)
+* [Data request for a profile](./rest-post-profile-datarequest.md)
+* [Data request for a subprofile](./rest-post-subprofile-datarequest.md)
 * [Data by an email address](./rest-post-email-datarequest)
 * [Data from a data request](./rest-get-datarequest-data)
 * [Privacy](./privacy)

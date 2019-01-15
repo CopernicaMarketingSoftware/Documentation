@@ -1,5 +1,8 @@
 # REST API: POST miniview rules
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Method to add a rule to an existing selection from a collection (miniview, 
 see [view documentation](rest-post-view-rules) for selections from a 
 database). This is an HTTP POST call to the following URL:

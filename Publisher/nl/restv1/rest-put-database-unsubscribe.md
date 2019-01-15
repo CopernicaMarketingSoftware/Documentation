@@ -1,5 +1,8 @@
 # REST API: PUT database unsubscribe
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Bij elke database kun je het afmeldalgoritme instellen. Als er op de servers
 van Copernica een afmelding binnenkomt wordt deze instelling gebruikt om te
 bepalen hoe we met de afmelding moeten omgaan: moet het profiel worden verwijderd,

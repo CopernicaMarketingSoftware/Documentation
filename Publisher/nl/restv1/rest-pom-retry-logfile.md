@@ -1,5 +1,8 @@
 # REST API: Herzend registratie in Marketing Suite
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Als een bericht uit Marketing Suite niet meteen aankomt proberen we het 
 opnieuw te verzenden, deze herzendingen worden bijgehouden in de cdm-retry 
 log files. Je kunt de inhoud hiervan downloaden in CSV, JSON en XML formaat. 

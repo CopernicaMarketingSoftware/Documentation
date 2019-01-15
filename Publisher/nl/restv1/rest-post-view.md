@@ -1,5 +1,8 @@
 # REST API - POST view
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Deze methode voegt een selection/view toe aan de database. Om deze methode uit te voeren kun 
 je een HTTP POST verzoek sturen naar de volgende URL:
 

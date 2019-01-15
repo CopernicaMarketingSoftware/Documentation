@@ -1,5 +1,8 @@
 # REST API: GET logfiles .xml
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Copernica houdt logfiles bij die je op kunt vragen met de API. 
 Deze methode kan gebruikt worden om een logfile op te vragen als een CSV 
 bestand met de bestandsnaam. Instructies voor het opvragen van een bestandsnaam 

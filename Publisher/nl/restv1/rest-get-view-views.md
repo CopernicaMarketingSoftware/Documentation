@@ -1,5 +1,8 @@
 # REST API: GET view views
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Selecties kunnen worden genest. Om op te vragen welke selecties er direct
 onder een andere selectie vallen, kun je een HTTP GET request naar de 
 volgende URL sturen:

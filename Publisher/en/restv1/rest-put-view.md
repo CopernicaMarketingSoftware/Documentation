@@ -1,5 +1,8 @@
 # REST API: PUT view
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 A method to edit a selection from a database. It is called using the 
 following URL:
 

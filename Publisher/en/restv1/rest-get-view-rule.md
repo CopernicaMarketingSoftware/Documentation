@@ -1,5 +1,8 @@
 # REST API: GET view rule
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Selections use *rules* to decide which profiles are included in the selection
 and which profiles are not. Profile that match at least on of the selection rules 
 are included in the selection. To retrieve the properties and the conditions of a 

@@ -1,5 +1,8 @@
 # REST API: GET database profiles
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 De methode om profielen uit een database op te vragen is een HTTP GET methode
 en beschikbaar via het volgende adres:
 

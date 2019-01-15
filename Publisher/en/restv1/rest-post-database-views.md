@@ -1,5 +1,8 @@
 # REST API: POST database view
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 In order to create a new selection using the REST API, you need to send 
 an HTTP POST request to the following URL. The selection will then be 
 created, nested underneath the database.

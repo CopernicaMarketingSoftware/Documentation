@@ -1,5 +1,8 @@
 # REST API: POST minirule conditions
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Een methode om condities voor een miniregel aan te passen. De method kan 
 aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
 

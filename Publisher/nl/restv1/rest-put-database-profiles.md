@@ -1,5 +1,8 @@
 # REST API: PUT database profiles
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Er is een API methode om meerdere profielen tegelijk te bewerken. Dit kun je
 doen met behulp van een HTTP PUT request naar de volgende URL:
 

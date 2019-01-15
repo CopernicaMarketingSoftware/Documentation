@@ -1,5 +1,8 @@
 # Rest API: GET events
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Everything that happens with your mailings gets logged: deliveries, bounces, clicks, opens, etc..
 All these events are written to log files. These log files are accessible through the 
 REST API. Yet, if you are only interested in particular events that fulfill a certain 

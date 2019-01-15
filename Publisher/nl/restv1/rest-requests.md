@@ -1,5 +1,8 @@
 # Requests en replies van de REST API
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Als je een website of app hebt gekoppeld aan [de REST API](rest-api) van Copernica,
 dan kan deze applicatie HTTP requests sturen naar het *endpoint* van de API
 op onze server. Het adres van dit endpoint is *https://api.copernica.com/v1/path/to/resource?access_token=yourtoken*.

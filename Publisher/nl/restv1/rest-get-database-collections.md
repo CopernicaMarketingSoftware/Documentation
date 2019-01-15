@@ -1,5 +1,8 @@
 # REST API: GET database collections
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Je kunt collecties van een database opvragen middels een HTTP GET 
 request:
 

@@ -1,5 +1,8 @@
 # REST API: GET identity
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Je kunt makkelijk nagaan welke accountgegevens bij een bepaalde 
 access token hoort. De onderstaande methode retourneert de 
 gegevens van een specifieke access token. 

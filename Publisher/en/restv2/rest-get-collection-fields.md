@@ -18,7 +18,7 @@ The following parameters can be added to the URL as variables for the request:
 * **total**: boolean value for showing available fields
 
 More information about the use of these parameters can be found in the 
-[article on paging](rest-paging).
+[article on paging](./rest-paging.md).
 
 ## Returned fields
 
@@ -50,11 +50,11 @@ $parameters = array(
 print_r($api->get("collection/{$collectionID}/fields", $parameters));
 ```
 
-The example above requires the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](./rest-php.md).
 
 ## More information
 
-* [List of all API calls](rest-api)
-* [POST collection field](rest-post-collection-fields)
-* [PUT collection field](rest-put-collection-field)
-* [DELETE collection field](rest-delete-collection-field)
+* [Overview of all REST API calls](./rest-api.md)
+* [POST collection field](./rest-post-collection-fields.md)
+* [PUT collection field](./rest-put-collection-field.md)
+* [DELETE collection field](./rest-delete-collection-field.md)

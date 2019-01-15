@@ -12,7 +12,8 @@ contains an overview of all API calls.
 * [External OAuth2 links](./rest-oauth)
 
 We are currently on version 2 of the REST API. [This article](./rest-introduction#REST-version) 
-explains the new version in full detail.
+explains the new version (and how to switch) in full detail. Not ready to switch? 
+You can find the documentation for version 1 [here](../restv1/rest-api.md).
 
 ## Method types
 

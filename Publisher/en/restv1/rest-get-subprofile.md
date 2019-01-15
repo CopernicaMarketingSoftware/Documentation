@@ -1,5 +1,8 @@
 # REST API: GET subprofile
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 This is a simple method to request all information from a subprofile given 
 its ID. The profile information can be requested with an HTTP GET call to the
 following URL:

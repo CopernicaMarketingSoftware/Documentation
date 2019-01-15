@@ -1,5 +1,8 @@
 # REST API requests and replies
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 Once you have connected a website or app to [the Copernica REST API](./rest-api.md),
 you can start sending HTTP requests to the API endpoint. The address of this 
 endpoint is *https://api.copernica.com/v1/path/to/resource?access_token=yourtoken*,

@@ -1,5 +1,8 @@
 # REST API: GET subprofile identifiers
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 A simple method for fetching the identifiers of all subprofiles in a miniselection.
 Execute this method by sending an HTTP GET request to the following URL:
 

@@ -1,5 +1,8 @@
 # REST API: GET logfiles names
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Copernica houdt logfiles bij over bijvoorbeeld clicks, opens, errors, 
 ontvangen berichten, etc. Deze logfiles kunnen gedownload worden met de API 
 of via het dashboard. Door een HTTP GET verzoek te sturen naar de volgende 

@@ -1,5 +1,8 @@
 # REST API: GET database profile identifiers
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 It’s very easy to request just the IDs of profiles in a database. 
 Just send an HTTP GET request to the following URL:
 

@@ -1,5 +1,8 @@
 # REST API: Ontvangst registratie in Marketing Suite
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Elke mail die verstuurd is via Marketing Suite en is aangekomen wordt 
 opgeslagen in de cdm-delivery log files. Je kunt de 
 inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 

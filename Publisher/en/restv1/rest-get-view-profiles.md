@@ -1,5 +1,8 @@
 # REST API: GET view profiles
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 2](../restv2/rest-api.md) of the REST API.
+
 To retrieve all profiles in a selection, send a HTTP GET request to this address:
 
 `https://api.copernica.com/v1/view/$id/profiles?access_token=xxxx`

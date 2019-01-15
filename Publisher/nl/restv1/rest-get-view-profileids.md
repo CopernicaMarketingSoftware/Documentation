@@ -1,5 +1,8 @@
 # REST API: GET view profile id
 
+Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
+API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
+
 Als je alleen maar de ID's van de profielen in een selectie wilt opvragen,
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 
 naar het volgende adres:
