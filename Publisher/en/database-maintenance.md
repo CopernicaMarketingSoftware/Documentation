@@ -9,7 +9,7 @@ and a good [sender reputation](./sender-reputation "Sender reputation").
 ## Maintenance tips
 
 1.  Keep all data in one central file or program. This prevents you from 
-    searching for it and having to update multiple files. With the [REST API](./rest-api) 
+    searching for it and having to update multiple files. With the [REST API](./restv2/rest-api.md) 
     it's also possible to download the data that Copernica gathers to 
     your own server.
 2.  Provide insight into your data by using clear descriptive names, tabs 

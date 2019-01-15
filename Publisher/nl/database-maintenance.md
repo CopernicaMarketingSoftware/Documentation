@@ -11,7 +11,7 @@ hoog te houden.
 ## Onderhoud
 
 1.  Bewaar alle relatiegegevens centraal in één bestand of programma. Zo
-    hoef je ook maar op een plek te zoeken en updaten. Met de [REST API](./rest-api) 
+    hoef je ook maar op een plek te zoeken en updaten. Met de [REST API](./restv2/rest-api.md) 
     is het ook mogelijk om de data weer van Copernica naar je eigen server 
     te krijgen.
 2.  Breng overzicht in je bestand door middel van duidelijke benamingen,

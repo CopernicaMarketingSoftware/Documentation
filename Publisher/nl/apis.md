@@ -55,4 +55,4 @@ kun je met de REST API deze bestanden downloaden.
 
 ## Meer informatie
 
-* [REST API methodes](./rest-api)
+* [REST API methodes](./restv2/rest-api)

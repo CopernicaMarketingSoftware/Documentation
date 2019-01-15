@@ -21,7 +21,7 @@ moet je uiteraard aan deze regulaties voldoen.
 
 In de Marketing Suite vind je onder **Configuration** een GDPR kopje waar 
 je de data voor een (sub)profiel of e-mailadres op kunt vragen. Je kunt 
-deze data ook opvragen via onze [REST API](./rest-api).
+deze data ook opvragen via onze [REST API](./restv2/rest-api).
 
 ### Persoonlijke data opvragen met de REST API
 
@@ -33,16 +33,16 @@ een webadres. Kies je daar echter niet voor dan kun je de status van de
 data en de data zelf opvragen met aparte calls. Je vindt alle gerelateerde 
 calls hieronder:
 
-* [Data verzoek voor een e-mailadres](./rest-post-email-datarequest)
-* [Data verzoek voor een profiel](./rest-post-profile-datarequest)
-* [Data verzoek voor een subprofiel](./rest-post-subprofile-datarequest)
-* [Data van een dataverzoek](./rest-get-datarequest-data)
-* [Status van een dataverzoek](./rest-get-datarequest-status)
+* [Data verzoek voor een e-mailadres](./restv2/rest-post-email-datarequest.md)
+* [Data verzoek voor een profiel](./restv2/rest-post-profile-datarequest.md)
+* [Data verzoek voor een subprofiel](./restv2/rest-post-subprofile-datarequest.md)
+* [Data van een dataverzoek](./restv2/rest-get-datarequest-data.md)
+* [Status van een dataverzoek](./restv2/rest-get-datarequest-status.md)
 
 ## Meer informatie
 
 Heb je meer informatie nodig over hoe je data op kunt slaan bij Copernica 
 of wil je weten hoe onze API werkt? De artikelen hieronder helpen je op weg.
 
-* [Database management](./database-introduction)
-* [REST API introductie](./rest-introduction)
+* [Database management](./database-introduction.md)
+* [REST API introductie](./restv2/rest-introduction.md)

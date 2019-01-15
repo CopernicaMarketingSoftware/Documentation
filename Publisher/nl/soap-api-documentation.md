@@ -7,7 +7,7 @@ software. Zo houd je alle gegevens en je marketingcampagnes continu
 up-to-date.
 
 Copernica beschikt overigens ook over een REST-API. Meer informatie
-over de REST-API vind je [hier](./rest-api "REST-API").
+over de REST-API vind je [hier](./restv2/rest-api.md "REST-API").
 
 ## SOAP API van Copernica
 
@@ -62,4 +62,4 @@ database of relatieprofielen.
 
 ## Meer information
 
-* [REST API](./rest-api)
+* [REST API](./restv2/rest-api.md "REST-API")

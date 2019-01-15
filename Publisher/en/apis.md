@@ -47,8 +47,8 @@ kept in log files and can be read from the dashboard. Besides that, you
 can download these files using the REST API.
 
 For the time being, the full documentation on the REST API can be found 
-[here](./rest-api), and the SOAP API [here](https://archive.copernica.com/en/support/rest/the-copernica-rest-api).
+[here](./restv2/rest-api), and the SOAP API [here](./soap-api-documentation).
 
 ## More information
 
-* [REST API methods](./rest-api)
+* [REST API methods](./restv2/rest-api)

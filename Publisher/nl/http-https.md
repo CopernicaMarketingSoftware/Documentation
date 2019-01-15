@@ -12,7 +12,7 @@ naar een webpagina of afbeelding op het web. HTTP legt ook vast welke
 responses een webserver terug kan geven.
 
 Een voorbeeld van een HTTP request zijn de calls die je kunt versturen 
-met de [REST API](./rest-api). Je stuurt hiermee namelijk een vraag voor 
+met de [REST API](./restv2/rest-api.md). Je stuurt hiermee namelijk een vraag voor 
 informatie naar de webserver en krijgt hierop een response.
 
 ## Soorten requests
@@ -50,7 +50,7 @@ gebruiken op je eigen domein:
 
 ## Meer informatie
 
-* [API's](./apis)
-* [REST API](./rest-api)
-* [Websites](./websites)
-* [Tips, tricks en achtergrond](./tips-and-tricks)
+* [API's](./apis.md)
+* [REST API](./restv2/rest-api.md)
+* [Websites](./websites.md)
+* [Tips, tricks en achtergrond](./tips-and-tricks.md)

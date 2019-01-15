@@ -7,7 +7,7 @@ Copernica with the data from your own software to keep all information
 and your marketing campaigns up to date.
 
 Copernica also supports a REST API. You can find more information about it 
-[here](./rest-api "REST-API").
+[here](./restv2/rest-api.md "REST-API").
 
 ## Copernica's SOAP API
 
@@ -55,4 +55,4 @@ about all changes in the database of Copernica.
 
 ## More information
 
-* [The Copernica REST API](./rest-api)
+* [The Copernica REST API](./restv2/rest-api.md)

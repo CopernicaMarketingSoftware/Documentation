@@ -29,7 +29,7 @@ en geef het volledige rapport met statistieken weer. Als je nu weer op
 ## Statistieken exporteren
 
 De resultaten van een mailing kunnen geëxporteerd worden via Publisher of 
-met de [REST API](./rest-api). Je kunt deze files vervolgens gebruiken 
+met de [REST API](./restv2/rest-api.md). Je kunt deze files vervolgens gebruiken 
 voor analyse of berekeningen met bijvoorbeeld Excel.
 
 1.  Selecteer eerst de mailing of template waarvan je de statistieken wil 

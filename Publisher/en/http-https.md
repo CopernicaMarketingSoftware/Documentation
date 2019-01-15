@@ -10,7 +10,7 @@ determines which requests can be send to the webserver. Each request also
 contains a URL to the webpage or an image on the web. HTTP also determines 
 which responses can be given by a webserver.
 
-An example of an HTTP request are the calls you can send with the [REST API](./rest-api). 
+An example of an HTTP request are the calls you can send with the [REST API](./restv2/rest-api). 
 You can use these calls to send a request for information to the webserver 
 and get a response.
 
@@ -49,6 +49,6 @@ these steps:
 ## More information
 
 * [API's](./apis)
-* [REST API](./rest-api)
+* [REST API](./restv2/rest-api)
 * [Websites](./websites)
 * [Tips, tricks and background](./tips-and-tricks)
