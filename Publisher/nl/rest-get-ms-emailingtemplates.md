@@ -22,7 +22,8 @@ in het **data** veld. Elke template bevat de volgende informatie:
 
 * **id**: De ID van de template.    
 * **name**: De naam van de template.
-* **from_address**: Het *from address* van de template.
+* **from_address**: Een array met de naam en het emailadres van de 
+afzender van de template.
 * **subject**: Het onderwerp van de template.
 * **type**: Het type van de template ('json' of 'html').
 

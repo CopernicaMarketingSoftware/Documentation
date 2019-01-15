@@ -22,7 +22,8 @@ with emailing templates. Each template contains the following information:
 
 * **id**: The ID of the template.    
 * **name**: The name of the template.
-* **from_address**: The *from address* of the template.
+* **from_address**: An array containing the name and the email 
+address corresponding to the *from address* of the template.
 * **subject**: The subject of the template.
 * **type**: The type of the template ('json' or 'html').
 
