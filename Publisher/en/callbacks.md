@@ -8,17 +8,17 @@ Under the heading Database management, on the Profiles page, you can manage the 
 * URL: The url to which the Callback refers to.
 * Method: Format of the data that is sent.
 * Action Type: The action triggering the callback.
-* Disable With API callss (optional): Should the Callback be triggered if comming from an [API] (./rest-api) call.
+* Disable With API callss (optional): Should the Callback be triggered if comming from an [API](./rest-api) call.
 * Disable When importing (optional): Should the Callback be triggered when doing an import.
 
 For the "Action Type" you can choose the following options:
-* [create] (./callbacks-variables): When creating a (sub) profile.
-* [update] (./callbacks-variables): When updating a (sub) profile.
-* [delete] (./callbacks-variables): When deleting a (sub) profile.
+* [create](./callbacks-variables): When creating a (sub) profile.
+* [update](./callbacks-variables): When updating a (sub) profile.
+* [delete](./callbacks-variables): When deleting a (sub) profile.
 * all: All the above.
 
 ## Callback conditions
-Conditions are also supported by the Callbacks. For example, conditions can be used to only trigger the callbacks containing the name "Mike". Click [here] (./selections-conditions-partcondition) to read more about making conditions.
+Conditions are also supported by the Callbacks. For example, conditions can be used to only trigger the callbacks containing the name "Mike". Click [here](./selections-conditions-partcondition) to read more about making conditions.
 
 ## Webhook security
 All our HTTP requests contain a signature, messages can be validated through this signature. An signature contains the following fields:
@@ -28,7 +28,7 @@ All our HTTP requests contain a signature, messages can be validated through thi
 * X-Copernica ID: Your Copernica account id.
 * Digest: The message summary.
 
-Click [Callback security] (./callbacks-security)for further reading about the security of webhooks.
+Click [Callback security](./callbacks-security)for further reading about the security of webhooks.
 
 # More Information
-* [Callback security] (./callbacks-security)
+* [Callback security](./callbacks-security)
