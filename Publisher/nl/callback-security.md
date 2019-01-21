@@ -10,9 +10,9 @@ De `Digest` wordt toegevoegd aan de hand van de [RFC 3230](https://tools.ietf.or
 De `X-Copernica-ID` is de id van je Copernica account. De header bevat de gegevens in de vorm van `X-Copernica-ID: account_<id>`.
 
 ### Signature
-De headers worden ondertekend door middel van een gestandaardiseerde methode, kijk [hier]( href="https://tools.ietf.org/html/draft-cavage-http-signatures-10") voor meer informatie over deze methode.
+De headers worden ondertekend door middel van een gestandaardiseerde methode, kijk [hier](https://tools.ietf.org/html/draft-cavage-http-signatures-10) voor meer informatie over deze methode.
 
-De `keyId` header bevat een URL die verwijst naar een geldig [DKIM](dkim)-record. Om de veiligheid te waarborgen, worden deze sleutels elke maand automatisch gegenereerd.
+De `keyId` header bevat een URL die verwijst naar een geldig [DKIM](./dkim)-record. Om de veiligheid te waarborgen, worden deze sleutels elke maand automatisch gegenereerd.
 
 Als extra beveiligingsmaatregel moeten de headers in de signature ten minste de volgende velden bevatten:
 *   (request-target):    De URL waarna deze request verwijst (bijv. /path/to/your/script.php) 
