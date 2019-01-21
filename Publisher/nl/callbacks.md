@@ -8,16 +8,16 @@ op de pagina Profielen kunt je onder het kopje Databasebeheer de callbacks per d
 *   URL:                                        De url waarnaar deze callback verwijst.
 *   Methode:                                    Format van de data dat verstuurd wordt.
 *   Type actie:                                 De actie die de callback aanroept.
-*   uitschakelijk Bij API callss (optioneel):   Dienen de callbacks aangeroepen te worden bij een [API](rest-api) call.
+*   uitschakelijk Bij API callss (optioneel):   Dienen de callbacks aangeroepen te worden bij een [API](./rest-api) call.
 
 Voor de "Type actie" kan gekozen worden uit de volgende mogelijkheden:
-*   [create]():      Bij het aanmaken van een nieuw (sub)profiel.
-*   [update]():      Bij het wijzigen van een (sub)profiel.
-*   [delete]():      Bij het verwijderen van een (sub)profiel.
-*   all:             Bij alle boven genoemde acties.
+*   [create](./callbacks-variables):      Bij het aanmaken van een nieuw (sub)profiel.
+*   [update](./callbacks-variables):      Bij het wijzigen van een (sub)profiel.
+*   [delete](./callbacks-variables):      Bij het verwijderen van een (sub)profiel.
+*   all:                                  Bij alle boven genoemde acties.
 
 ## Callback condities
-Het mooie van onze Callback systeem is dat je callbacks kunt conditioneren. De condities kunnen bijvoorbeeld gebruikt worden om alleen de callbacks aan te roepen met de naam "piet". Lees [hier](selections-conditions-partcondition) meer over het maken van condities.
+Het mooie van onze Callback systeem is dat je callbacks kunt conditioneren. De condities kunnen bijvoorbeeld gebruikt worden om alleen de callbacks aan te roepen met de naam "piet". Lees [hier](./selections-conditions-partcondition) meer over het maken van condities.
 
 ## Webhook beveiliging
 All onze HTTP requests bevatten een signature, door middel van deze signature kunnen berichten afkomstig van Copernica gevalideerd worden. Een HTTP request afkomstig van Copernica bevat de volgende headers: 
@@ -27,7 +27,7 @@ All onze HTTP requests bevatten een signature, door middel van deze signature ku
 *   X-Copernica-ID:       Je Copernica account id.
 *   Digest:               De berichtsamenvatting.
 
-Raadpleeg de pagina [Callback security](callbacks-security) voor meer informatie over de beveiliging van webhooks.
+Raadpleeg de pagina [Callback security](./callbacks-security) voor meer informatie over de beveiliging van webhooks.
 
 # More Information
-- [Callback beveiliging](callbacks-security)
+*   [Callback beveiliging](./callbacks-security)
