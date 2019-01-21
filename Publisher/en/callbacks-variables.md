@@ -17,4 +17,4 @@ Callbacks can be used to receive real-time data about a (sub)profile that is cre
 | interests     | current interests of the subprofile                                       | array     |
 
 # More information
-* [Callbacks] (./callbacks)
+* [Callbacks](./callbacks)
