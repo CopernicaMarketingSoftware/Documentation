@@ -232,9 +232,11 @@ documenten, templates en mailings.
 
 | Type   | Adres                                                                                                                            | Omschrijving                                       |
 |--------|----------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/emailingdocuments](./rest-get-publisher-emailingdocuments)                                       | Opvragen van alle documenten                       |
 | GET    | [api.copernica.com/v2/publisher/emailingdocument/$id](./rest-get-publisher-emailingdocument)                                     | Opvragen van document informatie                   |
 | GET    | [api.copernica.com/v2/publisher/emailingdocument/$id/emailings](./rest-get-publisher-emailingdocument-emailings)                 | Opvragen van mailings voor een document            |
 | GET    | [api.copernica.com/v2/publisher/emailingdocument/$id/statistics](./rest-get-publisher-emailingdocument-statistics)               | Opvragen van statistieken voor een document        |
+| GET    | [api.copernica.com/v2/publisher/emailingtemplates](./rest-get-publisher-emailingtemplates)                                       | Opvragen van alle templates                        |
 | GET    | [api.copernica.com/v2/publisher/emailingtemplate/$id](./rest-get-publisher-emailingtemplate)                                     | Opvragen van template informatie                   |
 | GET    | [api.copernica.com/v2/publisher/emailingtemplate/$id/emailings](./rest-get-publisher-emailingtemplate-emailings)                 | Opvragen van mailings voor een template            |
 | GET    | [api.copernica.com/v2/publisher/emailingtemplate/$id/emailingdocuments](./rest-get-publisher-emailingtemplate-emailingdocuments) | Opvragen van alle documenten voor een template     |
@@ -274,6 +276,7 @@ templates en mailings.
 | GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Opvragen van een mailing                     |
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Aanmaken van een mailing                     |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van destinations voor een mailing   |
+| GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Opvragen van alle templates                  |
 | GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Opvragen van bericht informatie              |
 | GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Opvragen van bericht body                    |
 

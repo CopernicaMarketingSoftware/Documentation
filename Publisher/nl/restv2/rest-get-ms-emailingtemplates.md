@@ -9,9 +9,9 @@ door een HTTP GET verzoek te versturen naar de volgende URL:
 
 De volgende parameters zijn beschikbaar voor deze API call:
 
-* **name**: The name the template should have.   
-* **keyword**: The keyword that should be linked to the template.
-* **type**: The type of templates you want to retrieve ('json' or 'html'). By default both will be returned.
+* **name**: Naam van de template   
+* **keyword**: Trefwoorden van de template
+* **type**: Type van de template ('json' or 'html'). Standaard zullen beide opgevraagd worden.
 * **created_before**: Datum waarvoor de template aangemaakt moet zijn in YYYY-MM-DD HH:MM:SS formaat.
 * **created_after**: Datum waarna de template aangemaakt moet zijn in YYYY-MM-DD HH:MM:SS formaat.
 

@@ -229,9 +229,11 @@ templates and mailings.
 
 | Type   | Address                                                                                                                          | Description                                            |
 |--------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/emailingdocuments](./rest-get-publisher-emailingdocuments)                                       | Fetch all documents                                    |
 | GET    | [api.copernica.com/v2/publisher/emailingdocument/$id](./rest-get-publisher-emailingdocument)                                     | Fetch the document information                         |
 | GET    | [api.copernica.com/v2/publisher/emailingdocument/$id/emailings](./rest-get-publisher-emailingdocument-emailings)                 | Fetch all emailings for a document                     |
 | GET    | [api.copernica.com/v2/publisher/emailingdocument/$id/statistics](./rest-get-publisher-emailingdocument-statistics)               | Fetch the statistics for a document                    |
+| GET    | [api.copernica.com/v2/publisher/emailingtemplates](./rest-get-publisher-emailingtemplates)                                       | Fetch all templates                                    |
 | GET    | [api.copernica.com/v2/publisher/emailingtemplate/$id](./rest-get-publisher-emailingtemplate)                                     | Fetch the template information                         |
 | GET    | [api.copernica.com/v2/publisher/emailingtemplate/$id/emailings](./rest-get-publisher-emailingtemplate-emailings)                 | Fetch all emailings for a template                     |
 | GET    | [api.copernica.com/v2/publisher/emailingtemplate/$id/emailingdocuments](./rest-get-publisher-emailingtemplate-emailingdocuments) | Fetch all documents for a template                     |
@@ -271,6 +273,7 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Fetch a mailing                              |
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Create a mailing                             |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing         |
+| GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Fetch all templates                          |
 | GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Fetch the message information                |
 | GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Fetch the message body                       |
 
