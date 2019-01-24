@@ -16,10 +16,12 @@ aanroepen om meerdere profielen te bewerken, zie de
 
 ## Beschikbare parameters
 
-Naast de parameters die zich al in de URL bevinden moeten er ook waarden 
-voor het profiel meegegeven worden in de body van het POST verzoek. Vergeet 
-vooral het e-mailadres niet mee te geven, zodat je het profiel straks 
-met je emailcampagnes kunt bereiken.
+Naast de parameters die je aan de URL meegeeft, moet je ook body data aan het
+POST request toevoegen. In de body van het verzoek kun je twee arrays meegeven: 
+'fields' bevat de velden voor het profiel en 'interests' de interesses. 
+Alleen de velden zijn verplicht. De interesses kunnen als een 
+associatieve array ('voetbal' => 1, 'honkbal' => 0) of als een lijst ('voetbal') 
+meegegeven worden.
 
 ## Voorbeeld in PHP
 
@@ -32,17 +34,32 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// veldwaarden voor het profiel
+// de velden voor het nieuwe profiel
+$fields = array(
+    'voornaam'      =>  'John',
+    'achternaam'    =>  'Doe',
+    'email'         =>  'johndoe@example.com'
+);
+
+// de interesses voor het nieuwe profiel
+$interests = array(
+    'voetbal'  => 1,
+    'honkbal'  => 0
+);
+
+// de interesses kun je ook op deze manier specificeren
+$interests = array("voetbal");
+
+// de velden en interesses vormen samen de data voor het verzoek
 $data = array(
-    'firstname' =>  'John',
-    'lastname'  =>  'Doe',
-    'email'     =>  'johndoe@example.com'
+    'fields'    => $fields,
+    'interests' => $interests
 );
 
 // voer het verzoek uit
 $api->post("database/{$databaseID}/profiles", $data);
 
-// retourneer het ID van het aangemaakte profiel indien het verzoek succesvol uitgevoerd is
+// retourneer de ID van het aangemaakte profiel als het verzoek succesvol was
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

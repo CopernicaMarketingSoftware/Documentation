@@ -41,8 +41,10 @@ to immediately return, while it updates the profiles in the background.
 ## Body data
 
 Besides the parameters that you append to the URL, you must also include a
-request body in the PUT request. The body should contain the fields to
-assign to matching profiles.
+request body in the POST request. The body has two components: 'fields' (required) and 
+'interests' (optional). Both will be added to the new profile. The interests 
+can be added from a list ("football") or with an associative array 
+("football" => 1, "baseball" => 0).
 
 ## PHP example
 
@@ -57,11 +59,23 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// body data to pass to the call (new profile data)
-$data = array(
+// fields for the new profile
+$fields = array(
     'firstname' =>  'John',
     'lastname'  =>  'Doe',
     'email'     =>  'johndoe@example.com'
+);
+
+// interests for the new profile
+$interests = array(
+    'football'  => 1,
+    'baseball'  => 0
+);
+
+// the fields + interests form the data for the call
+$data = array(
+    'fields'    =>  $fields,
+    'interests' =>  $interests
 );
 
 // parameters for profile selection

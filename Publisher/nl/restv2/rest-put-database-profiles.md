@@ -42,9 +42,12 @@ dan onmiddellijk, terwijl de operatie in de achtergrond wordt voortgezet.
 ## Body data
 
 Naast de parameters die je aan de URL meegeeft, moet je ook body data aan het
-PUT request toevoegen. In de body van het request plaats je de velden die je 
-wilt bijwerken, met de bijbehorende data. Deze body data wordt ook gebruikt
-als de **create** parameter op 'true' staat en een profiel wordt aangemaakt.
+PUT request toevoegen. In de body van het verzoek kun je twee arrays meegeven: 
+'fields' bevat de velden voor het profiel en 'interests' de interesses. 
+Alleen de velden zijn verplicht. De interesses kunnen als een 
+associatieve array ('voetbal' => 1, 'honkbal' => 0) of als een lijst ('voetbal') 
+meegegeven worden. Deze body data wordt ook gebruikt als de **create** parameter 
+op 'true' staat en een profiel wordt aangemaakt.
 
 ## Voorbeeld
 
@@ -61,16 +64,28 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters voor het selecteren van profielen
 $parameters = array(
-    'fields'    =>  array("customerid==4567"),
+    'fields'    =>  array("klantID==4567"),
     'async'     =>  1,
     'create'    =>  0
 );
 
-// data om gematchede profielen mee te updaten
-$data = array(
+// velden voor het nieuwe profiel
+$fields = array(
     'firstname' =>  'John',
     'lastname'  =>  'Doe',
-    'email'     =>  'johndoe@example.com'
+    'email'     =>  'johndoe@voorbeeld.com'
+);
+
+// interesses voor het nieuwe profiel
+$interests = array(
+    'football'  => 1,
+    'baseball'  => 0
+);
+
+// de velden en interesses vormen samen de data voor het verzoek
+$data = array(
+    'fields'    =>  $fields,
+    'interests' =>  $interests
 );
 
 // voer het verzoek uit

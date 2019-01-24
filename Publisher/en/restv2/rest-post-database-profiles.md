@@ -19,9 +19,10 @@ is the method to edit several profiles (see:
 ## Body data
 
 Besides the parameters that you append to the URL, you must also include a
-request body in the POST request. The body should contain the fields values
-of the profile. Make sure you include an email address so you can reach the 
-profile with your email campaigns!
+request body in the POST request. The body has two components: 'fields' (required) and 
+'interests' (optional). Both will be added to the new profile. The interests 
+can be added from a list ("football") or with an associative array 
+("football" => 1, "baseball" => 0).
 
 ## PHP example
 
@@ -35,16 +36,32 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // field values for the profile
-$data = array(
+$fields = array(
     'firstname' =>  'John',
     'lastname'  =>  'Doe',
     'email'     =>  'johndoe@example.com'
 );
 
+// interest values for the new profile
+$interests = array(
+    'football'  =>  1,
+    'baseball'  => 0
+);
+
+// defining the interests like this is also valid
+$interests = array("football");
+
+// the fields and interests together form the data for the 
+// call
+$data = array(
+    'fields'    => $fields,
+    'interests' => $interests
+);
+
 // do the call
 $api->post("database/{$databaseID}/profiles", $data);
 
-// return id of created request if successful
+// return id of the created profile if successful
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
