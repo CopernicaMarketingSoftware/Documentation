@@ -5,16 +5,28 @@ Controleer voordat je webhook instelt of je server de inkomende datastroom wel a
 
 ## Callbacks instellen
 op de pagina Profielen kunt je onder het kopje Databasebeheer de callbacks per database of collectie beheren. Bij het aanmaken van een callback krijgt je een scherm te zien met de volgende opties:
-*   URL:                                        De url waarnaar deze callback verwijst.
-*   Methode:                                    Format van de data dat verstuurd wordt.
-*   Type actie:                                 De actie die de callback aanroept.
-*   uitschakelijk Bij API callss (optioneel):   Dienen de callbacks aangeroepen te worden bij een [API](./rest-api) call.
+*   URL:              De url waarnaar deze callback verwijst.
+*   Methode:          Format van de data dat verstuurd wordt.
+*   Type actie:       De actie die de callback aanroept.
+*   Triggers:         Triggers die de webhooks kunnen aanroepen.
 
 Voor de "Type actie" kan gekozen worden uit de volgende mogelijkheden:
 *   [create](./callbacks-variables):      Bij het aanmaken van een nieuw (sub)profiel.
 *   [update](./callbacks-variables):      Bij het wijzigen van een (sub)profiel.
 *   [delete](./callbacks-variables):      Bij het verwijderen van een (sub)profiel.
 *   all:                                  Bij alle boven genoemde acties.
+
+### Triggers
+Een webhook kan op meerdere momenten aangeroepen worden. een profiel kan bijvoorbeeld gewijzigd worden door een API call. Dit is niet altijd wenselijk, door middel van de triggers kunnen deze calls genegeerd worden door de `rest` trigger te deselecteren. De callbacks kent de volgende triggers:
+*  publisher:    Handmatige update in publisher
+*  rest:         Binnenkomende rest API call
+*  soap:         Binnenkomende soap API call
+*  click:        Update door middel van een click
+*  open:         Update door middel van een open
+*  failure:      Bij het de raportage van een failure mail
+*  bounce:       Bij het de raportage van een bounce
+*  import:       Een database import
+*  copy:         Het copieren van een database
 
 ## Callback condities
 Het mooie van onze Callback systeem is dat je callbacks kunt conditioneren. De condities kunnen bijvoorbeeld gebruikt worden om alleen de callbacks aan te roepen met de naam "piet". Lees [hier](./selections-conditions-partcondition) meer over het maken van condities.
