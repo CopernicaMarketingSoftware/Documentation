@@ -8,8 +8,7 @@ Under the heading Database management, on the Profiles page, you can manage the 
 * URL: The url to which the Callback refers to.
 * Method: Format of the data that is sent.
 * Action Type: The action triggering the callback.
-* Disable With API callss (optional): Should the Callback be triggered if comming from an [API](./rest-api) call.
-* Disable When importing (optional): Should the Callback be triggered when doing an import.
+* Trigger: What can trigger this callback.
 
 For the "Action Type" you can choose the following options:
 * [create](./callbacks-variables): When creating a (sub) profile.
@@ -17,12 +16,24 @@ For the "Action Type" you can choose the following options:
 * [delete](./callbacks-variables): When deleting a (sub) profile.
 * all: All the above.
 
+### Triggers
+A webhook can be triggered in many ways, a profile can for instance be modified by a API call, this is not always the desired behaivior. To disable these calls you can unselect the rest trigger and the webhook will no longer be called when a (sub) profile is modified by the API. The following triggers are specified:
+*  publisher:    Manual change in publisher
+*  rest:         Incoming rest API call
+*  soap:         Incoming soap API call
+*  click:        Click-handler running on a tracking-server
+*  open:         Open-handler running on a tracking-server
+*  failure:      When a failed delivery is reported
+*  bounce:       When an incoming bounce is reported
+*  import:       When doing a mass database import
+*  copy:         When copieng a database
+
 ## Callback conditions
 Conditions are also supported by the Callbacks. For example, conditions can be used to only trigger the callbacks containing the name "Mike". Click [here](./selections-conditions-partcondition) to read more about making conditions.
 
 ## Webhook security
 All our HTTP requests contain a signature, messages can be validated through this signature. An signature contains the following fields:
-* (request-target): The url after which this request refers (eg /path/to/your/script.php).
+* (request-target): The url which this request refers to (eg /path/to/your/script.php).
 * Host: The host name.
 * Date: The date this request was made.
 * X-Copernica ID: Your Copernica account id.
