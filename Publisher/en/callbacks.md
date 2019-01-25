@@ -26,7 +26,7 @@ A webhook can be triggered in many ways, a profile can for instance be modified 
 *  failure:      When a failed delivery is reported
 *  bounce:       When an incoming bounce is reported
 *  import:       When doing a mass database import
-*  copy:         When copieng a database
+*  copy:         When copying a database
 
 ## Callback conditions
 Conditions are also supported by the Callbacks. For example, conditions can be used to only trigger the callbacks containing the name "Mike". Click [here](./selections-conditions-partcondition) to read more about making conditions.
