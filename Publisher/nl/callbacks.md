@@ -1,5 +1,5 @@
 # Callbacks
-Een webhook is een manier om geinformeerd te worden van gewijzigde gegevens door middel van een HTTP POST-request. Webhooks worden in de Publisher "Callbacks" genoemd. Callbacks kunnen aangeroepen worden bij een wijziging in een (sub)profiel.
+Een webhook is een manier om geïnformeerd te worden van gewijzigde gegevens door middel van een HTTP POST-request. Webhooks worden in de Publisher "Callbacks" genoemd. Callbacks kunnen aangeroepen worden bij een wijziging in een (sub)profiel.
 
 Controleer voordat je een webhook instelt of je server de inkomende datastroom wel aankan. De webhooks die geactiveerd worden bij het openen van een mail, ontvangen vaak grote aantallen notificaties. Als je niet zeker weet of je server al deze notificaties aankan of als je geen behoefte hebt aan real-time terugkoppeling, is het beter om de "algemene statistieken" te gebruiken.
 
