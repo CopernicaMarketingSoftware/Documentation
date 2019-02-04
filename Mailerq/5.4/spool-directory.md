@@ -27,13 +27,15 @@ other methods to send mails to MailerQ.
 
 ## Config file options
 
-In the config file there are four options relevant for the spool directory:
+In the config file there are six options relevant for the spool directory:
 
 ```
 spool-directory:        /path/to/directory
 spool-delay:            0       (default: 0)
 spool-remove:           true    (default: true
 spool-extract:          true    (default: true)
+spool-open-files:       10      (default: 10)
+spool-threads:          1       (default: 1)
 ```
 
 The "spool-directory" is the most important one. It contains the path to the
@@ -52,3 +54,7 @@ All mails that you drop in the spool directory are scanned for headers that
 start with "x-mq-*". Such headers are filtered out and converted to JSON
 properties that control the delivery of the mail. If you do not want to
 scan for such headers, you can use the "spool-extract" variable to disable this.
+
+MailerQ supports processing multiple files in the spool directory simultaneously.
+The variable "spool-open-files" sets the maximum number of files MailerQ has
+open at any given time. To use more threads for processing files, you can set "spool-threads".
