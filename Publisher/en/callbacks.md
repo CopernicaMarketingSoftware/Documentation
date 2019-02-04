@@ -1,7 +1,7 @@
 # Callbacks
-a webhook is a way to be kept informed by means of an HTTP POST request. In Publisher, webhooks are called Callbacks. Callbacks can be triggered when you create, update or delete a (sub) profile.
+A webhook is a way to keep informed of changes by means of an HTTP POST request. In the Publisher, webhooks are called Callbacks. Callbacks can be triggered when you create, update or delete a (sub) profile.
 
-Before you set up Callback, check whether your server can handle the incoming data stream. In particular, the webhooks that are activated when importing a database or collection. If you are not sure whether your server can handle all these notifications, or if you do not need real-time feedback, it is recommended to use the general statistics.
+Before you set up a Callback, check whether your server can handle the incoming data stream. This is especially important for the webhooks that are activated when importing a database or collection. If you are not sure whether your server can handle all these notifications, or if you do not need real-time feedback, it is recommended to use the general statistics.
 
 ## Set up callbacks
 Under the heading Database management, on the Profiles page, you can manage the callbacks per database or collection. The following options will appear when creating or updating a callback.
