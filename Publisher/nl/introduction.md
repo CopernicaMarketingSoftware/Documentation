@@ -1,6 +1,6 @@
 # Introductie
 
-Copernica heeft een zeer uitgebreide e-mailtoolkit voor marketeers en developers. Naast Copernica's andere e-mailgeralateerde producten zoals [SMTPeter](https://www.smtpeter.com) en [MailerQ](https://www.mailerq.com) bestaat de Marketing Software ook uit twee verschillende producten, namelijk de Marketing Suite en de Publisher. Eigenlijk kun je dit het beste zien als twee interfaces op dezelfde tooling. De Marketing Suite stelt je in staat om snel en eenvoudig gepersonaliseerde templates met conditionele content te ontwikkelen en te versturen. Als je meer flexibiliteit nodig hebt in het ontwikkelen van e-mailtemplates, door bijvoorbeeld je templates dynamisch te laten opbouwen met atom/rss feeds, kun je gebruik maken van de Publisher. Ook webformulieren en sms berichten kun je binnen de omgeving van de Publisher maken.
+Copernica heeft een zeer uitgebreide e-mailtoolkit voor marketeers en developers. Naast Copernica's andere e-mailgeralateerde producten zoals [SMTPeter](https://www.smtpeter.com) en [MailerQ](https://www.mailerq.com) bestaat de Marketing Software ook uit twee verschillende producten, namelijk de Marketing Suite en de Publisher. Eigenlijk kun je dit het beste zien als twee interfaces op dezelfde tooling. De Marketing Suite stelt je in staat om snel en eenvoudig gepersonaliseerde templates met conditionele content te ontwikkelen en te versturen. Als je meer flexibiliteit nodig hebt in het ontwikkelen van e-mailtemplates, door bijvoorbeeld je templates dynamisch te laten opbouwen met atom of rss-feeds, kun je gebruik maken van de Publisher. Ook kan je webformulieren en sms-berichten binnen de omgeving van de Publisher maken.
 
 Via het Copernica dashboard, bereikbaar via [copernica.com](https://www.copernica.com), regel je alle zaken omtrent accounts en gebruikers. Ook navigeer je vanuit hier eenvoudig naar de Marketing Suite of Publisher. 
 
@@ -13,7 +13,7 @@ je ervoor dat Copernica namens jouw domein e-mails kan versturen. Na het opzette
 van je database, kun je beginnen met het maken van selecties en regels.
 
 Na het opzetten van de fundatie, kun je aan de slag met templates. Je doet 
-dit met de gebruiksvriendelijke template editor in de Marketing Suite of de meer flexibele variant uit de Publisher interface 
+dit met de gebruiksvriendelijke template-editor in de Marketing Suite of de meer flexibele variant uit de Publisher interface 
 Klaar met je templates? Dan hebben we alleen nog de geaddresseerden nodig en kan de mailing worden verstuurd.
 
 ## Checklist
@@ -28,11 +28,13 @@ te versturen.
 
 ## Je eerste mailing
 
-Voor het versturen van een eerste mailing heb je een verzendselectie met profielen nodig. Hierna kun je een template maken en deze selecteren. Hier vul je de gewenste informatie aan, zoals het onderwerp van de e-mail en bijvoorbeeld het domein dat je wilt gaan gebruiken om de e-mails mee te versturen. Daarnaast kun je ook concrete informatie achterlaten over het verzendtijdstip en de tags die je aan een e-mail mee wilt geven. Vervolgens kies je de ontvangers van je e-mail door de verzendselectie aan te wijzen als target. 
+Voor het versturen van een eerste mailing heb je een verzendselectie met profielen nodig en een document om te mailen. Als je de checklist hebt doorlopen, bestaat de verzendselectie al en is deze gevuld met gebruikers. Hierna kun je een template aanmaken en deze selecteren. In het template vul je de benodigde algemene informatie aan, bijvoorbeeld het onderwerp van de e-mail, de styling of het domein dat je wilt gaan gebruiken om de e-mails mee te versturen. Daarna kan je in het template een document maken en deze met concrete informatie vullen. 
+
+Vervolgens kan je de mailing gaan versturen. Daarvoor geef je aan wat het verzendtijdstip is en welke tags je aan een e-mail mee wilt geven. Als laatste kies je de ontvangers van je e-mail door de verzendselectie aan te wijzen als target en is je eerste mailing een feit!
 
 ## Meer informatie
 
-Deze documentatie kent veel verbredings en achtergrondartikelen, die je in staat stellen zeer geavanceerde, geautomatiseerde en gepersonaliseerd campagnes op te zetten en op die manier tot een uitstekende ROI op het e-mailkanaal kunnen leiden.
+Deze documentatie kent veel verbredings- en achtergrondartikelen, die je in staat stellen zeer geavanceerde, geautomatiseerde en gepersonaliseerd campagnes op te zetten en op die manier tot een uitstekende ROI op het e-mailkanaal kunnen leiden.
 
 * [Begrippenlijst](./definitions)
 * [Achtergrond artikelen](./tips-and-tricks)
