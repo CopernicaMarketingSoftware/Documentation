@@ -6,7 +6,7 @@ available at the following address:
 `https://api.copernica.com/v2/database/$id/profiles?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, 
-of the database you want to add an profile to. 
+of the database you want to add a profile to. 
 Profile information needs to be added to the message body of the HTTP request. 
 After a successful call the ID of the created request is returned.
 
