@@ -46,6 +46,21 @@ request body in the POST request. The body has two components: 'fields' (require
 can be added from a list ("football") or with an associative array 
 ("football" => 1, "baseball" => 0).
 
+## Returned fields
+
+If your request is not asynchronized the result will be a list of profiles. 
+This list of profiles can be empty (no matching profiles and 'create' set to 0), 
+contain the matching profiles or the newly created profile. Each profile 
+contains the following information:
+
+- **ID**: numerical ID of the profile
+- **fields**: associative array/object of field names and values
+- **interests**: array of  the interests the profile has
+- **database**: ID of the database the profile is stored in
+- **secret**: the “secret” code that is linked to a profile
+- **created**: the timestamp on which the profile was created, in YYYY-MM-DD hh:mm:ss format.
+- **modified**: the timestamp on which the profile was last modified,, in YYYY-MM-DD hh:mm:ss format.
+
 ## PHP example
 
 This PHP script demonstrates how you can use this API call. In this specific 

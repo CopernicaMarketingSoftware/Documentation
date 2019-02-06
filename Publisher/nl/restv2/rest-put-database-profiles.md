@@ -49,6 +49,21 @@ associatieve array ('voetbal' => 1, 'honkbal' => 0) of als een lijst ('voetbal')
 meegegeven worden. Deze body data wordt ook gebruikt als de **create** parameter 
 op 'true' staat en een profiel wordt aangemaakt.
 
+## Geretourneerde velden
+
+Als de profielen niet asynchroon worden aangemaakt is het resultaat van deze call 
+een lijst van profielen. Deze lijst kan leeg zijn (geen matchende profielen en 'create' 
+op 0), de matchende profielen bevatten of het nieuw aangemaakte profiel. Voor elk 
+profiel zijn de volgende velden beschikbaar:
+
+* **ID**: numeriek ID van het profiel
+* **database**: ID van de database waarin het profiel is opgeslagen
+* **secret**: de "geheime" code die aan een profiel is gekoppeld
+* **created**: tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
+* **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
+* **fields**: associative array / object van veldnamen en veldwaardes
+* **interests**: array van de interesses van het profiel
+
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
