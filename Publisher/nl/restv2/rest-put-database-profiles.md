@@ -103,8 +103,8 @@ $data = array(
     'interests' =>  $interests
 );
 
-// voer het verzoek uit
-$api->put("database/{$databaseID}/profiles", $parameters, $data);
+// voer het verzoek uit en print het resultaat
+print_r($api->put("database/{$databaseID}/profiles", $parameters, $data));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

@@ -100,8 +100,8 @@ $parameters = array(
     'create'    =>  0
 );
     
-// do the call
-$api->put("database/{$databaseID}/profiles", $data, $parameters);
+// do the call and print the result
+print_r($api->put("database/{$databaseID}/profiles", $data, $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
