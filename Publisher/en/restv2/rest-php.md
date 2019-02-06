@@ -55,7 +55,17 @@ class CopernicaRestAPI
         $answer = curl_exec($curl);
 
         // do we have a JSON output? we can be nice and parse it for the user
-        if (curl_getinfo($curl, CURLINFO_CONTENT_TYPE) == 'application/json') return json_decode($answer, true);
+        if (curl_getinfo($curl, CURLINFO_CONTENT_TYPE) == 'application/json') {
+            
+            // the JSON parsed output
+            $jsonOut = json_decode($answer, true);
+            
+            // if we have a json error then we have some garbage in the out
+            if (json_last_error() != JSON_ERROR_NONE) throw new Exception('Unexpected input: '.$answer);
+            
+            // return the json
+            return $jsonOut;
+        }
         
         // clean up curl resource
         curl_close($curl);
@@ -65,30 +75,77 @@ class CopernicaRestAPI
     }
 
     /**
-     *  Do a POST request
-     *  @param  string      Resource name
-     *  @param  array       Associative array with data to post
-     *  @return mixed       False on failure or the id of the created item           
+     *  Execute a POST request.
+     * 
+     *  @param  string          Resource name
+     *  @param  array           Associative array with data to post
+     *  
+     *  @return mixed           ID of created entity, or simply true/false 
+     *                          to indicate success or failure
      */
     public function post($resource, array $data = array())
     {
+        // Pass the request on
+        return $this->sendData($resource, $data, array(), "POST");
+    }
+    
+    /**
+     *  Execute a PUT request.
+     * 
+     *  @param  string          Resource name
+     *  @param  array           Associative array with data to post
+     *  @param  array           Associative array with additional parameters
+     *  
+     *  @return mixed           ID of created entity, or simply true/false 
+     *                          to indicate success or failure
+     */
+    public function put($resource, array $data = array(), array $parameters = array())
+    {
+        // Pass the request on
+        return $this->sendData($resource, $data, $parameters, "PUT");
+    }
+
+    /**
+     *  Execute a request to create/edit data. (PUT + POST) 
+     * 
+     *  @param  string          Resource name
+     *  @param  array           Associative array with data to post
+     *  @param  array           Associative array with additional parameters
+     *  @param  string          Method to use
+     *  
+     *  @return mixed           ID of created entity, or simply true/false 
+     *                          to indicate success or failure
+     */
+    public function sendData($resource, array $data = array(), array $parameters = array(), $method = "POST")
+    {
         // the query string
-        $query = http_build_query(array('access_token' => $this->token));
+        $query = http_build_query(array('access_token' => $this->token) + $parameters);
 
         // construct curl resource
         $curl = curl_init("{$this->host}/v{$this->version}/$resource?$query");
 
         // data will be json encoded
         $data = json_encode($data);
-
-        // additional options
-        curl_setopt_array($curl, array(
+        
+        // set the options for a POST method
+        if ($method == "POST") $options = array(
             CURLOPT_POST            =>  true,
             CURLOPT_HEADER          =>  true,
             CURLOPT_RETURNTRANSFER  =>  true,
             CURLOPT_HTTPHEADER      =>  array('content-type: application/json'),
             CURLOPT_POSTFIELDS      =>  $data
-        ));
+        );
+        // set the options for a PUT method
+        else $options = array(
+            CURLOPT_CUSTOMREQUEST   =>  'PUT',
+            CURLOPT_HEADER          =>  true,
+            CURLOPT_RETURNTRANSFER  =>  true,
+            CURLOPT_HTTPHEADER      =>  array('content-type: application/json', 'content-length: '.strlen($data)),
+            CURLOPT_POSTFIELDS      =>  $data
+        );
+
+        // additional options
+        curl_setopt_array($curl, $options);
 
         // do the call
         $answer = curl_exec($curl);
@@ -101,45 +158,11 @@ class CopernicaRestAPI
         if (!$httpCode || $httpCode == 400) return false;
 
         // try and get the X-Created id from the header
+        // if we have none we just return true for a succesful request
         if (!preg_match('/X-Created:\s?(\d+)/i', $answer, $matches)) return true;
 
         // return the id of the created item
         return $matches[1];
-    }
-
-    /**
-     *  Do a PUT request
-     *  @param  string      Resource name
-     *  @param  array       Associative array with data to post
-     *  @param  array       Associative array with additional parameters
-     *  @return bool
-     */
-    public function put($resource, array $data = array(), array $parameters = array())
-    {
-        // the query string
-        $query = http_build_query(array('access_token' => $this->token) + $parameters);
-
-        // construct curl resource
-        $curl = curl_init("{$this->host}/v{$this->version}/$resource?$query");
-
-        // data will be json encoded
-        $data = json_encode($data);
-
-        // additional options
-        curl_setopt_array($curl, array(
-            CURLOPT_CUSTOMREQUEST   =>  'PUT',
-            CURLOPT_HTTPHEADER      =>  array('content-type: application/json', 'content-length: '.strlen($data)),
-            CURLOPT_POSTFIELDS      =>  $data
-        ));
-
-        // do the call
-        $answer = curl_exec($curl);
-
-        // clean up curl resource
-        curl_close($curl);
-
-        // done
-        return $answer;
     }
 
     /**
@@ -175,7 +198,7 @@ class CopernicaRestAPI
 ## Use in your own application
 
 Just copy and paste the script in your own application. 
-The script below lets you call the API from every script. The version 
+The script below lets you call the API from every script. The `$version` 
 variable should be replaced with a '2' for the newest version of the API. 
 It will default to the older version 1 for backwards compatibility with 
 existing scripts.
