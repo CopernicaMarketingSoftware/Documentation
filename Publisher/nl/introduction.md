@@ -13,8 +13,7 @@ je ervoor dat Copernica namens jouw domein e-mails kan versturen. Na het opzette
 van je database, kun je beginnen met het maken van selecties en regels.
 
 Na het opzetten van de fundatie, kun je aan de slag met templates. Je doet 
-dit met de gebruiksvriendelijke template-editor in de Marketing Suite of de meer flexibele variant uit de Publisher interface 
-Klaar met je templates? Dan hebben we alleen nog de geaddresseerden nodig en kan de mailing worden verstuurd.
+dit met de gebruiksvriendelijke template-editor in de Marketing Suite of de meer flexibele variant uit de Publisher interface.
 
 ## Checklist
  
@@ -25,16 +24,21 @@ te versturen.
 * [Sender domain instellen](quick-sender-domain-guide)
 * [Database inrichten](database-management)
 * [Profielen importeren](database-import)
+* Templates ontwerpen:
+  * [Marketing Suite](emailings-ms-templates)
+  * [Publisher](emailings-publisher-templates)
 
 ## Je eerste mailing
 
-Voor het versturen van een eerste mailing heb je een verzendselectie met profielen nodig en een document om te mailen. Als je de checklist hebt doorlopen, bestaat de verzendselectie al en is deze gevuld met gebruikers. Hierna kun je een template aanmaken en deze selecteren. In het template vul je de benodigde algemene informatie aan, bijvoorbeeld het onderwerp van de e-mail, de styling of het domein dat je wilt gaan gebruiken om de e-mails mee te versturen. Daarna kan je in het template een document maken en deze met concrete informatie vullen. 
-
-Vervolgens kan je de mailing gaan versturen. Daarvoor geef je aan wat het verzendtijdstip is en welke tags je aan een e-mail mee wilt geven. Als laatste kies je de ontvangers van je e-mail door de verzendselectie aan te wijzen als target en is je eerste mailing een feit!
+Voor het versturen van een eerste mailing heb je een verzendselectie met profielen nodig en een document om te mailen. Als je de checklist hebt doorlopen, bestaat de verzendselectie al en is deze gevuld met gebruikers. Ook bestaat er al een template en document dat verstuurd kan worden. Vervolgens kan je de mailing gaan inplannen. Daarvoor geef je aan wat het verzendtijdstip is en welke tags je aan een e-mail mee wilt geven. Als laatste kies je de ontvangers van je e-mail door de verzendselectie aan te wijzen als target en is je eerste mailing een feit!
 
 ## Meer informatie
 
 Deze documentatie kent veel verbredings- en achtergrondartikelen, die je in staat stellen zeer geavanceerde, geautomatiseerde en gepersonaliseerd campagnes op te zetten en op die manier tot een uitstekende ROI op het e-mailkanaal kunnen leiden.
 
-* [Begrippenlijst](./definitions)
-* [Achtergrond artikelen](./tips-and-tricks)
+* [Begrippenlijst](definitions)
+* [Opvolgacties](database-follow-ups)
+* Emails personaliseren:
+  * [Marketing Suite](emailings-ms-personalization)
+  * [Publisher](emailings-publisher-personalization)
+* [Achtergrond artikelen](tips-and-tricks)
