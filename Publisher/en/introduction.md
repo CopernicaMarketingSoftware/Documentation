@@ -6,7 +6,7 @@ Using the Copernica dashboard, accessible through [copernica.com](https://www.co
 
 # Set up
 
-Before you are able to send emailings using Copernica, you need to configure your sender domain. This configuration consists og two steps: setting up your sender domain and entering the correct DNS-settings. This will allow Copernica's servers to send emails on your behalf. Aside from this, you will need to fill your database and set up rules and selections.
+Before you are able to send emails using Copernica, you need to configure your sender domain. This configuration consists of two steps: setting up your sender domain and entering the correct DNS-settings. This will allow Copernica's servers to send emails on your behalf. Aside from this, you will need to fill your database and set up rules and selections.
 
 Now that you have a database with users and a configured sender domain, all that's left is an email to send. You can create an email with our user-friendly template editor available in the Marketing Suite or the more flexible editor used by Publisher.
 
@@ -20,7 +20,7 @@ to send your first email using Copernica.
 * [Creating a template](templates)
 
 ## Your first mailing
-Before you can send your first mailing, you will need a send selection with profiles and a document to email. If you have followed the checklist above, you will have all that is necessary to send your first email! When preparing you first bulk mailing, you must specify at what time the email must be sent, what tags should be included, and specify the selection with the recipients. Once you have entered this informayion and pressed the send button, your first mailing has become real!
+Before you can send your first mailing, you will need a send selection with profiles and a document to send. If you have followed the checklist above, you will have all that is necessary to send your first email! When preparing your first bulk mailing, you must specify at what time the email must be sent, what tags should be included, and specify the selection with the recipients. Once you have entered this information and pressed the send button, your first mailing has become real!
 
 ## More information
 
@@ -29,7 +29,7 @@ you're ready to get advanced! Want to customize emails for your customers?
 Want to automate your campaigns? You can find all the information you 
 need in the links below.
 
-* [Glossary](./definitions)
-* [Personalization](./personalization)
-* [Follow-ups](./followups)
-* [Background articles](./tips-and-tricks)
+* [Glossary](definitions)
+* [Personalization](personalization)
+* [Follow-ups](followups)
+* [Background articles](tips-and-tricks)
