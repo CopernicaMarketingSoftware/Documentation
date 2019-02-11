@@ -24,9 +24,8 @@ te versturen.
 * [Sender domain instellen](quick-sender-domain-guide)
 * [Database inrichten](database-management)
 * [Profielen importeren](database-import)
-* Templates ontwerpen:
-  * [Marketing Suite](emailings-ms-templates)
-  * [Publisher](emailings-publisher-templates)
+* [Templates: Marketing Suite](emailings-ms-templates)
+* [Templates: Publisher](emailings-publisher-templates)
 
 ## Je eerste mailing
 
@@ -38,7 +37,6 @@ Deze documentatie kent veel verbredings- en achtergrondartikelen, die je in staa
 
 * [Begrippenlijst](definitions)
 * [Opvolgacties](database-follow-ups)
-* Emails personaliseren:
-  * [Marketing Suite](emailings-ms-personalization)
-  * [Publisher](emailings-publisher-personalization)
+* [Personalisatie: Marketing Suite](emailings-ms-personalization)
+* [Personalisatie: Publisher](emailings-publisher-personalization)
 * [Achtergrond artikelen](tips-and-tricks)
