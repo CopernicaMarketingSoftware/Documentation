@@ -276,6 +276,7 @@ templates en mailings.
 | GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Opvragen van een mailing                     |
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Aanmaken van een mailing                     |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van destinations voor een mailing   |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Opvragen van statistieken voor een mailing   |
 | GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Opvragen van alle templates                  |
 | GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Opvragen van bericht informatie              |
 | GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Opvragen van bericht body                    |

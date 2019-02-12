@@ -253,14 +253,14 @@ templates and mailings.
 
 ### Mailing statistics
 
-| Type   | Address                                                                                                                      | Description                                            |
-|--------|------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| GET    | [api.copernica.com/v2/publisher/abuses](./rest-get-publisher-abuses)                                                         | Fetch all abuses for Publisher                         |
-| GET    | [api.copernica.com/v2/publisher/clicks](./rest-get-publisher-clicks)                                                         | Fetch all clicks for Publisher                         |
-| GET    | [api.copernica.com/v2/publisher/deliveries](./rest-get-publisher-deliveries)                                                 | Fetch all deliveries for Publisher                     |
-| GET    | [api.copernica.com/v2/publisher/errors](./rest-get-publisher-errors)                                                         | Fetch all errors for Publisher                         |
-| GET    | [api.copernica.com/v2/publisher/impressions](./rest-get-publisher-impressions)                                               | Fetch all impressions for Publisher                    |
-| GET    | [api.copernica.com/v2/publisher/unsubscribes](./rest-get-publisher-unsubscribes)                                             | Fetch all unsubscribes for Publisher                   |
+| Type   | Address                                                                          | Description                                            |
+|--------|----------------------------------------------------------------------------------|--------------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/abuses](./rest-get-publisher-abuses)             | Fetch all abuses for Publisher                         |
+| GET    | [api.copernica.com/v2/publisher/clicks](./rest-get-publisher-clicks)             | Fetch all clicks for Publisher                         |
+| GET    | [api.copernica.com/v2/publisher/deliveries](./rest-get-publisher-deliveries)     | Fetch all deliveries for Publisher                     |
+| GET    | [api.copernica.com/v2/publisher/errors](./rest-get-publisher-errors)             | Fetch all errors for Publisher                         |
+| GET    | [api.copernica.com/v2/publisher/impressions](./rest-get-publisher-impressions)   | Fetch all impressions for Publisher                    |
+| GET    | [api.copernica.com/v2/publisher/unsubscribes](./rest-get-publisher-unsubscribes) | Fetch all unsubscribes for Publisher                   |
 
 ## Marketing Suite Mailings
 
@@ -273,6 +273,7 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Fetch a mailing                              |
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Create a mailing                             |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing         |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Fetch the statistics for a mailing           |
 | GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Fetch all templates                          |
 | GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Fetch the message information                |
 | GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Fetch the message body                       |
