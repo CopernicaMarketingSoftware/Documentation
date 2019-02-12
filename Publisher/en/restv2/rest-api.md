@@ -227,29 +227,29 @@ templates and mailings.
 
 ### Documents & Templates
 
-| Type   | Address                                                                                                                          | Description                                            |
-|--------|----------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| GET    | [api.copernica.com/v2/publisher/emailingdocuments](./rest-get-publisher-emailingdocuments)                                       | Fetch all documents                                    |
-| GET    | [api.copernica.com/v2/publisher/emailingdocument/$id](./rest-get-publisher-emailingdocument)                                     | Fetch the document information                         |
-| GET    | [api.copernica.com/v2/publisher/emailingdocument/$id/emailings](./rest-get-publisher-emailingdocument-emailings)                 | Fetch all emailings for a document                     |
-| GET    | [api.copernica.com/v2/publisher/emailingdocument/$id/statistics](./rest-get-publisher-emailingdocument-statistics)               | Fetch the statistics for a document                    |
-| GET    | [api.copernica.com/v2/publisher/emailingtemplates](./rest-get-publisher-emailingtemplates)                                       | Fetch all templates                                    |
-| GET    | [api.copernica.com/v2/publisher/emailingtemplate/$id](./rest-get-publisher-emailingtemplate)                                     | Fetch the template information                         |
-| GET    | [api.copernica.com/v2/publisher/emailingtemplate/$id/emailings](./rest-get-publisher-emailingtemplate-emailings)                 | Fetch all emailings for a template                     |
-| GET    | [api.copernica.com/v2/publisher/emailingtemplate/$id/emailingdocuments](./rest-get-publisher-emailingtemplate-emailingdocuments) | Fetch all documents for a template                     |
+| Type   | Address                                                                                              | Description                                            |
+|--------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/documents](./rest-get-publisher-documents)                           | Fetch all documents                                    |
+| GET    | [api.copernica.com/v2/publisher/document/$id](./rest-get-publisher-document)                         | Fetch the document information                         |
+| GET    | [api.copernica.com/v2/publisher/document/$id/emailings](./rest-get-publisher-document-emailings)     | Fetch all emailings for a document                     |
+| GET    | [api.copernica.com/v2/publisher/document/$id/statistics](./rest-get-publisher-document-statistics)   | Fetch the statistics for a document                    |
+| GET    | [api.copernica.com/v2/publisher/templates](./rest-get-publisher-templates)                           | Fetch all templates                                    |
+| GET    | [api.copernica.com/v2/publisher/template/$id](./rest-get-publisher-template)                         | Fetch the template information                         |
+| GET    | [api.copernica.com/v2/publisher/template/$id/emailings](./rest-get-publisher-template-emailings)     | Fetch all emailings for a template                     |
+| GET    | [api.copernica.com/v2/publisher/template/$id/documents](./rest-get-publisher-template-documents)     | Fetch all documents for a template                     |
 
-### Mailing destinations
+### Destinations
 
-| Type   | Address                                                                                                                      | Description                                            |
-|--------|------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
-| GET    | [api.copernica.com/v2/publisher/emailingdestinations/$id](./rest-get-publisher-emailingdestination)                          | Fetch an emailing destination                          |
-| GET    | [api.copernica.com/v2/publisher/emailingdestinations/$id/fields](./rest-get-publisher-emailingdestination-fields)            | Fetch an emailing destination including profile fields |
-| GET    | [api.copernica.com/v2/publisher/emailingdestination/$id/abuses](./rest-get-publisher-emailingdestination-abuses)             | Fetch the abuses for an emailing destination           |
-| GET    | [api.copernica.com/v2/publisher/emailingdestination/$id/clicks](./rest-get-publisher-emailingdestination-clicks)             | Fetch the clicks for an emailing destination           |
-| GET    | [api.copernica.com/v2/publisher/emailingdestination/$id/deliveries](./rest-get-publisher-emailingdestination-deliveries)     | Fetch the deliveries for an emailing destination       |
-| GET    | [api.copernica.com/v2/publisher/emailingdestination/$id/errors](./rest-get-publisher-emailingdestination-errors)             | Fetch the errors for an emailing destination           |
-| GET    | [api.copernica.com/v2/publisher/emailingdestination/$id/impressions](./rest-get-publisher-emailingdestination-impressions)   | Fetch the impressions for an emailing destination      |
-| GET    | [api.copernica.com/v2/publisher/emailingdestination/$id/unsubscribes](./rest-get-publisher-emailingdestination-unsubscribes) | Fetch the unsubscribes for an emailing destination     |
+| Type   | Address                                                                                                       | Description                                            |
+|--------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/destination/$id](./rest-get-publisher-destination)                            | Fetch an emailing destination                          |
+| GET    | [api.copernica.com/v2/publisher/destinations/$id/fields](./rest-get-publisher-destination-fields)             | Fetch an emailing destination including profile fields |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/abuses](./rest-get-publisher-destination-abuses)              | Fetch the abuses for an emailing destination           |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/clicks](./rest-get-publisher-destination-clicks)              | Fetch the clicks for an emailing destination           |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/deliveries](./rest-get-publisher-destination-deliveries)      | Fetch the deliveries for an emailing destination       |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/errors](./rest-get-publisher-destination-errors)              | Fetch the errors for an emailing destination           |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/impressions](./rest-get-publisher-destination-impressions)    | Fetch the impressions for an emailing destination      |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/unsubscribes](./rest-get-publisher-destination-unsubscribes)  | Fetch the unsubscribes for an emailing destination     |
 
 ### Mailing statistics
 
