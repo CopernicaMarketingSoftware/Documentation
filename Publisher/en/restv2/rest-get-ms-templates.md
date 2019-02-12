@@ -37,8 +37,9 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// parameters for the call
+// parameters for the call (only retrieve JSON templates)
 $params = new array(
+    type    = 'json'
 );
 
 // execute the call
