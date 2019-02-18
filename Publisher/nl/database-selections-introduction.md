@@ -43,7 +43,7 @@ Regels en condities verschillen wel degelijk van elkaar. Een conditie is een
 onderdeel van een regel; er kunnen namelijk meerdere condities in een regel
 zitten. Oftewel, binnen een **OF**- of **OF NIET**-regel worden
 **EN**-condities aan elkaar gelinkt. De profielen worden toegekend aan een
-selectie als aan één van de verschillende regels wordt voldaan.
+selectie als aan een van de verschillende regels wordt voldaan.
 
 Als profielen in een selectie moeten voldoen aan een of meerdere voorwaarden,
 gebruik je een **OF**-regel met **EN**-conditie(s). Als profielen juist niet
