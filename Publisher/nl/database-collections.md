@@ -1,9 +1,8 @@
 # Collecties
-
 Een **collectie** is een soort minidatabase binnen een profiel. Een profiel kan
 bijvoorbeeld een collectie orders, een collectie gedownloade whitepapers, of
 een collectie contactpersonen (wanneer een profiel een bedrijf is in het geval
-van een B2B database) bevatten. Een collectie wordt, net als de database,
+van een B2B-database) bevatten. Een collectie wordt, net als de database,
 opgebouwd uit velden naar keuze. Een collectie wordt gevuld met zogeheten
 **subprofielen** en deze bevatten, gelijk aan profielen, informatie over
 kenmerken als naam, aantal, prijs en categorie.
