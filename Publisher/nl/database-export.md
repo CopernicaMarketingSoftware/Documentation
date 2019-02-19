@@ -1,15 +1,13 @@
 # Exporteren van profielgegevens
-
 Naast importeren is het ook mogelijk om profielen en subprofielen te exporteren.
-Je kunt een hele database in één keer exporteren, of in onderdelen (bijvoorbeeld
-per collectie). Bij een export wordt een bestand in een formaat naar keuze
-gegenereert, dat je kunt downloaden of laten e-mailen.
+Je kunt een hele database in één keer exporteren, of in onderdele
+n (bijvoorbeeld per collectie). Bij een export wordt een bestand in een formaat
+naar keuze gegenereert, dat je kunt downloaden of laten e-mailen.
 
 Als je graag in real-time de clicks, opens e.d. van profielen wilt ontvangen
 kun je ook een [WebHook](./webhooks) instellen.
 
 ## Extra opmerkingen
-
 * De velden *ID*, *Toegangscode* en *Profiel aangemaakt* zijn velden
 waarvan de waarde door het systeem is toegekend.
 * Je kunt maximaal 1 collectie in een CSV bestand opnemen. Als je meerdere
@@ -22,13 +20,13 @@ zodat je bestand kunt maken met bijvoorbeeld een alternatieve datumnotatie.
 Dit is zeker handig als je de exports per mail wilt versturen.
 
 ## Scheidingsteken instellen
-
 Het scheidingsteken is een speciaal teken waarmee in het exportbestand de
 velden van elkaar worden gescheiden. Vaak is dit een tab, maar je kunt ook een
 komma of puntkomma kiezen. Als er in je database profielen voorkomen die zelf
 een scheidingsteken in hun velden hebben staan (bijvoorbeeld een harde tab in
 een woonplaatsveld), kies dan de optie *"Met quotes"*. De waardes worden dan
-tussen quotes geplaatst zodat er geen conflicten met het scheidingsteken optreden.
+tussen quotes geplaatst zodat er geen conflicten met het scheidingsteken
+optreden.
 
 ## FTP
 
@@ -66,20 +64,21 @@ privatekey wanneer de export wordt aangemaakt, bij het uitvoeren van de export
 decoderen wij de privatekey weer.
 
 ## Exporteren van e-mailstatistieken
-
-Ook de resultaten van mailings kunnen worden geëxporteerd. Zie [dit artikel](./statistics-export)
-voor meer informatie.
+Ook de resultaten van mailings kunnen worden geëxporteerd. Zie
+[dit artikel](./statistics-export) voor meer informatie.
 
 Als je profielen of subprofielen wilt exporteren gebaseerd op e-mailresultaten,
-maak dan een selectie aan met de conditietype *Check op resultaten e-mailcampagnes*.
-Gebruik dan de exportfunctie in het onderdeel *profielen* om de profielgegevens
-uit de selectie te downloaden.
+maak dan een selectie aan met de conditietype
+*Check op resultaten e-mailcampagnes*. Gebruik dan de exportfunctie in het
+onderdeel *profielen* om de profielgegevens uit de selectie te downloaden.
 
 ## Exporteren in de Marketing Suite
-Klik op de database of collectie waar de export gestart voor dient te worden. Klik op het **blauwe tandwiel** rechtsboven > **Exporteren** > **Nieuwe export aanmaken**. Geef de export een naam, kies vervolgens de juiste opties zoals hierboven beschreven. 
+Klik op de database of collectie waar de export gestart voor dient te worden.
+Klik op het **blauwe tandwiel** rechtsboven > **Exporteren** >
+**Nieuwe export aanmaken**. Geef de export een naam, kies vervolgens de juiste
+opties zoals hierboven beschreven.
 
 ## Exporteren in de Publisher
-
 Om een database of collectie te exporteren moet je deze eerst selecteren
 onder **Profielen**. Je kunt daarna onder **Huidige weergave** de optie
 vinden om te exporteren of importeren.
