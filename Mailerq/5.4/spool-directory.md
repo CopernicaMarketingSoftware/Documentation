@@ -27,10 +27,11 @@ other methods to send mails to MailerQ.
 
 ## Config file options
 
-In the config file there are six options relevant for the spool directory:
+In the config file the following options are relevant for the spool directory:
 
 ```
 spool-directory:        /path/to/directory
+spool-fail-directory    /path/to/directory
 spool-delay:            0       (default: 0)
 spool-remove:           true    (default: true
 spool-extract:          true    (default: true)
@@ -49,6 +50,10 @@ After publishing the message to the inbox queue, MailerQ removes the input file.
 If you do not want this, you can set "spool-remove" to false. However, it is not 
 recommended to disable removing files, because emails might get redelivered 
 if MailerQ is restarted and starts scanning the spool directory again.
+
+If the contents of a file cannot be processed, MailerQ can move the file to another
+directory. The path of the directory can be set using the "spool-fail-directory"
+option. If this setting is left empty, files are not moved from the spool directory.
 
 All mails that you drop in the spool directory are scanned for headers that
 start with "x-mq-*". Such headers are filtered out and converted to JSON
