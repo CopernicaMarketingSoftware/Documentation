@@ -251,7 +251,7 @@ templates and mailings.
 | GET    | [api.copernica.com/v2/publisher/destination/$id/impressions](./rest-get-publisher-destination-impressions)    | Fetch the impressions for an emailing destination      |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/unsubscribes](./rest-get-publisher-destination-unsubscribes)  | Fetch the unsubscribes for an emailing destination     |
 
-### Mailing statistics
+### Statistics
 
 | Type   | Address                                                                          | Description                                            |
 |--------|----------------------------------------------------------------------------------|--------------------------------------------------------|
@@ -267,6 +267,8 @@ templates and mailings.
 The table below contains all API calls related to Marketing Suite templates 
 and emailings.
 
+### Mailings
+
 | Type   | Address                                                                                      | Description                                  |
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Fetch all mailings                           |
@@ -274,7 +276,19 @@ and emailings.
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Create a mailing                             |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing         |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Fetch the statistics for a mailing           |
+
+### Templates
+
+| Type   | Address                                                                                      | Description                                  |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Fetch all templates                          |
+| GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Fetch a template                             |
+| GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Fetch the statistics for a template          |
+
+### Messages
+
+| Type   | Address                                                                                      | Description                                  |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Fetch the message information                |
 | GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Fetch the message body                       |
 
