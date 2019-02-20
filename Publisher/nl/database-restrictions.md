@@ -8,14 +8,14 @@ is te vinden in de Marketing Suite.
 
 ## Gebruiksmogelijkheden instellen
 Copernica voorkomt dat een nieuwe database of selectie direct gebruikt kan
-worden. Hiermee voorkom je dat per ongeluk mailings worden verstuurd naar een
-selectie of database, terwijl dat niet de bedoeling was. De databases en
+worden. Hiermee voorkom je dat er per ongeluk mailings worden verstuurd naar
+een selectie of database, terwijl dat niet de bedoeling was. De databases en
 selecties die gebruikt mogen worden voor mailings moeten specifiek ingeschakeld
 worden.
 
 ## Databaserestricties
 Databaserestricties zijn regels die je kunt toevoegen aan een database
-of collectie. Wijzigingen en toevoegingen aan een database, moeten dan
+of collectie. Wijzigingen en toevoegingen aan een database moeten dan
 aan de vooropgestelde regels voldoen om te worden doorgevoerd.
 Je kunt bijvoorbeeld de minimumleeftijd instellen of zorgen dat de
 gebruikersnaam altijd uniek is. Er bestaat daarnaast een optie
@@ -29,9 +29,9 @@ Bij een "OR" regel hoeft het profiel, maar aan één van de voorwaarden te
 voldoen om toegelaten te worden.
 
 ## Reguliere expressies
-Reguliere expressies (vaak afgekort naar *regex*) is een krachtig methode
+Reguliere expressie (vaak afgekort naar *regex*) is een krachtig methode
 om restricties in te stellen. Deze expressies kunnen patronen herleiden en
-de uitkomst goed of afkeuren. De volgende regex laat alleen postcodes toe
+de uitkomst goed- of afkeuren. De volgende regex laat alleen postcodes toe
 die bestaan uit 4 getallen, gevolgd door twee letters (1000AA).
 
 ```javascript
@@ -55,5 +55,6 @@ Als je deze nog niet hebt aangemaakt kun je in onderstaande artikelen lezen
 hoe je dit doet.
 
 * [Database management](./database-introduction)
-* [Database velden en collecties](./database-fields-and-collections)
+* [Database velden](./database-fields)
+* [Database collecties](./database-collections)
 * [Database uitschrijfgedrag](./database-unsubscribe-behavior)
