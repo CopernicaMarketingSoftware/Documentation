@@ -2,15 +2,14 @@
 
 All delivery attempts like received emails, downloads and errors can be logged by MailerQ in different log files. The log file settings can be specified in the "/etc/mailerq/config.txt" config file.
 
-## Error Logs
-
-All abnormal events are logged to the error log file. This includes failures like databases that are suddenly offline or RabbitMQ connections that are lost. The name of the error log file can be set with the error-log setting. If this setting is kept empty no error log is logged.
+## Application Log
+Information about MailerQ is logged to the application log. This includes failures like databases that are suddenly offline or RabbitMQ connections that are lost. Currently the log levels Info, Warning and Critical are supported. The error log has been deprecated in favor of the application log. The application log can be set using the option application-log, and supports logging to stdout, stderr, syslog and files. If this setting is kept empty no logs are stored.
 
 ```txt
-error-log:      /var/log/mailerq/errors.log
+application-log:      syslog,/var/log/mailerq/mailerq.log
 ```
 
-The file must, of course, be writable for MailerQ.
+Files must, of course, be writable for MailerQ.
 
 ## Flexible log format
 
