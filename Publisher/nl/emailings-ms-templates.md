@@ -43,22 +43,22 @@ in het midden of de hele template aangepast worden.
 Zoals hierboven genoemd zijn er verschillende content blokken, deze worden hier
 kort beschreven.
 
-| Blokken           | Omschrijving                                                                  |
-|--------------------|------------------------------------------------------------------------------|
-|Kolommen| Geeft structuur aan mailing door deze bijvoorbeeld te verdelen in 2,3 of 4 kolommen|
-|Kop| Bevat een titel|
-|Knop| Knop met een url naar de webomgeving|
-|Lijn| Een lijn die in verschillende stijlen en diktes gebruikt kan worden|
-|Afbeelding| Bevat een afbeelding met een url naar webomgeving|
-|Witruimte| Bevat witruimte van een bepaalde hoogte|
-|Tekst-HTML| Bevat zelfgeschreven HTML of tekst via de teksteditor|
-|Tekst-Geen Opmaak|Bevat tekst waar geen opmaak meegegeven kan worden, vergelijkbaar met tekstversie|
-|Hyperlink-link| Bevat een opgegeven url|
-|Hyperlink-uitschrijven| Bevat [{$unsubscribe}](./emailings-ms-unsubscribe), hiermee schrijven klanten zich uit|
-|Hyperlink-webversie| Bevat [{$webversion}](./emailings-ms-webversion), link ,naar de webversie|
-|Video| Bevat een Youtube of Vimeo video|
-|Volg ons| Bevat knoppen naar verschillende sociale media |
-|Delen| Bevat bericht om te delen via sociale media |
+| Blokken               | Omschrijving                                                                              |
+|-----------------------|-------------------------------------------------------------------------------------------|
+| Kolommen              | Geeft structuur aan mailing door deze bijvoorbeeld te verdelen in 2,3 of 4 kolommen       |
+| Kop                   | Bevat een titel                                                                           |
+| Knop                  | Knop met een url naar de webomgeving                                                      |
+| Lijn                  | Een lijn die in verschillende stijlen en diktes gebruikt kan worden                       |
+| Afbeelding            | Bevat een afbeelding met een url naar webomgeving                                         |
+| Witruimte             | Bevat witruimte van een bepaalde hoogte                                                   |
+| Tekst-HTML            | Bevat zelfgeschreven HTML of tekst via de teksteditor                                     |
+| Tekst-Geen Opmaak     | Bevat tekst waar geen opmaak meegegeven kan worden, vergelijkbaar met tekstversie         |
+| Hyperlink-link        | Bevat een opgegeven url                                                                   |
+| Hyperlink-uitschrijven| Bevat [{$unsubscribe}](./emailings-ms-unsubscribe), hiermee schrijven klanten zich uit    |
+| Hyperlink-webversie   | Bevat [{$webversion}](./emailings-ms-webversion), link ,naar de webversie                 |
+| Video                 | Bevat een Youtube of Vimeo video                                                          |
+| Volg ons              | Bevat knoppen naar verschillende sociale media                                            |
+| Delen                 | Bevat bericht om te delen via sociale media                                               |
 
 ### Kolommen
 Het kolommen blok wordt gebruikt om structuur binnen het template aan te
