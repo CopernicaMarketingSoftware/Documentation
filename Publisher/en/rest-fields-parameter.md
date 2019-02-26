@@ -18,10 +18,10 @@ The value of a fields parameter always has the format of "field operator value"
 like "country==netherlands" or "age>18". The following operators are available:
 
 * **==**: equal to
-* **!=** en **&lt;&gt;**: not equal to
+* **!=** or **&lt;&gt;**: not equal to
 * **&lt;**, **&gt;**: smaller than, greater than
 * **&lt;=**, **&gt;=**: smaller or equal to, greater or equal to
-* **=~** en **!~**: *like*, *not like*
+* **=~** or **!~**: *like*, *not like*
 
 The *like* and *not like* operators can be used to match profiles. If you use 
 such an operator you can use the % and \_ wildcards. The \_ replaces exactly 
