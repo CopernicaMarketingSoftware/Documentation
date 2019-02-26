@@ -37,7 +37,7 @@ aanpassen door in deze velden de code toe te passen.
 
 ## Beschikbare personalisatievariabelen
 In dit object staan de gegevens van het profiel
-waarnaar het bericht is gestuurd, of, in het geval van een mailing naar
+waarnaar het bericht is gestuurd of, in het geval van een mailing naar
 subprofielen, van het bij het subprofiel behorende profiel. Dit profiel object
 heeft een aantal eigenschappen:
 
@@ -46,7 +46,7 @@ heeft een aantal eigenschappen:
 * **{$profile.secret}**: de *geheime code* die bij het profiel is opgeslagen
 * **{$profile.code}**: alias voor {$profile.secret}, dus de geheime code
 * **{$profile.created}**: tijdstip waarop het profiel is aangemaakt (in YYYY-MM-DD hh:mm:ss formaat)
-* **{$profile.referrers}**: een optioneel array van profielen die verwijzen naar dit profiel d.m.v. een *referentieveld*
+* **{$profile.referrers}**: een optionele array van profielen die verwijzen naar dit profiel d.m.v. een *referentieveld*
 * **{$profile.*veldnaam*}**: elk veld van het profiel is toegankelijk via {$profile.*veldnaam*}
 * **{$profile.*interesse*}**: elke interesse van het profiel is toegankelijk via {$profile.*interesse*}, en heeft de waarde "yes" of "no"
 * **{$profile.*collectie*}**: indien er subprofielen zijn, is elke collectie van subprofielen benaderbaar via {$profie.*collectienaam*}
@@ -60,7 +60,7 @@ de volgende members:
 * **{$subprofile.secret}**: de *geheime code* die bij het profiel is opgeslagen
 * **{$subprofile.code}**: alias voor {$subprofile.secret}, dus de geheime code
 * **{$subprofile.created}**: tijdstip waarop het subprofiel is aangemaakt (in YYYY-MM-DD hh:mm:ss formaat)
-* **{$subprofile.profile}**: het profiel object (zie hierboven) waartoe dit subprofiel hoort
+* **{$subprofile.profile}**: het profiel object (zie hierboven) waar dit subprofiel toe behoort
 * **{$subprofile.*veldnaam*}**: elk veld van het subprofiel is toegankelijk via {$subprofile.*veldnaam*}
 
 ## Personalisatie modifiers
