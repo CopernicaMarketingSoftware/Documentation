@@ -57,8 +57,8 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // de array voor de gewenste datum en/of het gewenste type van de logfiles
 $parameters = array(
-    type =>     "cdm-attempts",
-    date =>     "2019-01-01",
+    'type' =>     "cdm-attempts",
+    'date' =>     "2019-01-01",
 );
 
 // voer het verzoek uit en print het resultaat

@@ -54,8 +54,8 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // the array used to specify the date and/or type
 $parameters = array(
-    type =>     "cdm-attempts",
-    date =>     "2019-01-01",
+    'type' =>     "cdm-attempts",
+    'date' =>     "2019-01-01",
 );
 
 // do the call, and print result
