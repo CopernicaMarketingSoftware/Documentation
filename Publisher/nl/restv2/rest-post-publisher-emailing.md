@@ -16,7 +16,7 @@ Er zijn drie (verplichte) parameters beschikbaar:
 
 Zorg ervoor dat je document volledig is voor je de mailing verstuurd. 
 De mailing kan namelijk niet verstuurd worden zonder een onderwerp of 
-afstuurder. Zorg er ook voor dat je [sender domain](./sender-domains) 
+afstuurder. Zorg er ook voor dat je [sender domain](../sender-domains) 
 correct geconfigureerd is.
 
 ## PHP voorbeeld

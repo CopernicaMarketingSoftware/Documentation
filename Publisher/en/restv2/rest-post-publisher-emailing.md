@@ -16,7 +16,7 @@ There are three parameteres available, all of them required.
 
 Make sure your document is complete before posting the call. The mailing 
 can not be sent without a valid subject and from address. You should also 
-make sure your [sender domain](./sender-domains) is configured correctly 
+make sure your [sender domain](../sender-domains) is configured correctly 
 before attempting to send a mailing.
 
 ## PHP example
