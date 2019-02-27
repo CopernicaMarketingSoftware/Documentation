@@ -29,18 +29,18 @@ HTTP requests.
 
 ## Overview
 
-Use the links to jump to the type of API call you are looking for.
+Use the links below to jump to the type of API call you are looking for.
 
-* [Account](./rest-api#Account)
-* [Databases & Collections](./rest-api#Databases-&-Collections)
-* [Views & Miniviews](./rest-api#Views-&-Miniviews)
-* [Rules & Minirules](./rest-api#Rules-&-Minirules)
-* [Profiles & Subprofiles](./rest-api#Profiles-&-Subprofiles)
-* [Email Addresses](./rest-api#Email-Addresses)
-* [Publisher Mailings](./rest-api#Publisher-Mailings)
-* [Marketing Suite Mailings](./rest-api#Marketing-Suite-Mailings)
-* [Datarequests](./rest-api#Datarequests)
-* [Logfiles](./rest-api#Logfiles)
+* [Account](rest-api#account)
+* [Databases & Collections](rest-api#databases-&-collections)
+* [Views & Miniviews](rest-api#views-&-miniviews)
+* [Rules & Minirules](rest-api#rules-&-minirules)
+* [Profiles & Subprofiles](rest-api#profiles-&-subprofiles)
+* [Email Addresses](rest-api#email-addresses)
+* [Publisher Mailings](rest-api#publisher-mailings)
+* [Marketing Suite Mailings](rest-api#marketing-suite-mailings)
+* [Datarequests](rest-api#datarequests)
+* [Logfiles](rest-api#logfiles)
 
 ## Account
 In the table below you can find a call to retrieve account information.

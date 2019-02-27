@@ -31,16 +31,16 @@ Meer informatie over HTTP request kun je vinden in de [introductie](./rest-intro
 Gebruik de onderstaande links om naar de gewenste API calls te 
 navigeren:
 
-* [Account](./rest-api#Account)
-* [Databases & Collecties](./rest-api#Databases-&-Collecties)
-* [Selecties & Miniselecties](./rest-api#Selecties-&-Miniselecties)
-* [Regels & Miniregels](./rest-api#Regels-&-Miniregels)
-* [Profielen & Subprofielen](./rest-api#Profielen-&-Subprofielen)
-* [E-mailadressen](./rest-api#E-mailadressen)
-* [Publisher Mailings](./rest-api#Publisher-Mailings)
-* [Marketing Suite Mailings](./rest-api#Marketing-Suite-Mailings)
-* [Dataverzoeken](./rest-api#Dataverzoeken)
-* [Logfiles](./rest-api#Logfiles)
+* [Account](./rest-api#account)
+* [Databases & Collecties](./rest-api#databases-&-collecties)
+* [Selecties & Miniselecties](./rest-api#selecties-&-miniselecties)
+* [Regels & Miniregels](./rest-api#regels-&-miniregels)
+* [Profielen & Subprofielen](./rest-api#profielen-&-subprofielen)
+* [E-mailadressen](./rest-api#e-mailadressen)
+* [Publisher Mailings](./rest-api#publisher-mailings)
+* [Marketing Suite Mailings](./rest-api#marketing-suite-mailings)
+* [Dataverzoeken](./rest-api#dataverzoeken)
+* [Logfiles](./rest-api#logfiles)
 
 ## Account
 
