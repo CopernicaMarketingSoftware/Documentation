@@ -35,7 +35,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters for the call (exclude archived templates)
-$params = new array(
+$params = array(
     'archived'  => false
 );
 

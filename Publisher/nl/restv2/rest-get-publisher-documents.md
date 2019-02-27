@@ -39,7 +39,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters voor het verzoek (sluit gearchiveerde documenten uit)
-$params = new array(
+$params = array(
     'archived'  => false
 );
 
