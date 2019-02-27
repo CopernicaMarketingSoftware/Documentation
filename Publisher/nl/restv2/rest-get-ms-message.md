@@ -18,14 +18,14 @@ Een JSON met de algemene informatie.
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 
 ```php
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestAPI("your-access-token", 2);
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // voer de methode uit en print het resultaat
-    print_r($api->get("ms/message/{$berichtID}"));
+// verander dit naar je access token
+$api = new CopernicaRestAPI("your-access-token", 2);
+
+// voer de methode uit en print het resultaat
+print_r($api->get("ms/message/{$berichtID}"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
