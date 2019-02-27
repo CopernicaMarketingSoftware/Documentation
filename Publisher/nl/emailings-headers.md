@@ -1,15 +1,15 @@
 # Headers
 Headers worden gebruikt om informatie mee te geven aan een e-mail.
 Er zijn gestandaardiseerde headers zoals "From" en "Subject", maar je
-kunt ook zogenaamde "x-headers" gebruiken.
+kunt ook zogenaamde "X-headers" gebruiken.
 
-In Marketing Suite vind je al deze headers bovenaan de Template Editor
+In de Marketing Suite vind je al deze headers bovenaan de Template Editor
 bij het aanmaken van een e-mail. In Publisher kun je deze vinden bij het
 aanmaken van een mailing onder het **E-mailings** menu.
 
-## BCC header
+## BCC-header
 De BCC (Blind Carbon Copy) kan gebruikt worden om kopieën van e-mails te
-versturen naar een of meerdere adressen, zonder dat deze elkaars e-mailadres
+versturen naar een of meerdere adressen, zonder dat deze elkaars e-mailadres <
 te zien krijgen. Zo is er minder kans dat de adressen bij spammers
 belanden, of dat er per ongeluk een lange ketting van "Allen beantwoorden"
 e-mails ontstaat. Ook kunnen de adressen niet gebruikt worden door virussen
