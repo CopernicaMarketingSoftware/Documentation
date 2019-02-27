@@ -21,14 +21,14 @@ in het gewenste formaat.
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen vanuit een PHP script:
 
 ```php
-    // vereiste scripts
-    require_once('copernica_rest_api.php');
-    
-    // verander dit naar je access token
-    $api = new CopernicaRestAPI("your-access-token", 2);
+// vereiste scripts
+require_once('copernica_rest_api.php');
 
-    // voer het verzoek uit en print het resultaat
-    print_r($api->get("logfiles"));
+// verander dit naar je access token
+$api = new CopernicaRestAPI("your-access-token", 2);
+
+// voer het verzoek uit en print het resultaat
+print_r($api->get("logfiles"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
