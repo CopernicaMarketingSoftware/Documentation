@@ -6,7 +6,7 @@ het toevoegen van een dergelijke uitschrijflink. De meest gemakkelijke en
 laagdrempelige manier om een uitschrijflink toe te voegen is de tag
 **{$unsubscribe}**.
 
-**Belangrijke noot:**: Wanneer je gebruik maakt van {$unsubscribe},
+**Belangrijke noot:** wanneer je gebruik maakt van {$unsubscribe},
 dien je tevens het [uitschrijfgedrag in te stellen op de database of
 collectie](database-unsubscribe-behavior) waaraan je de e-mailing richt!
 
