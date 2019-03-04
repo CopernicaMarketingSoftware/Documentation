@@ -3,7 +3,7 @@ Voordat je gaat verzenden in de Marketing Suite, is het belangrijk dat je mail
 goed [getest](./emailings-ms-testing.md) is. Als je dit hebt gedaan, is het
 tijd om de mail in te roosteren voor verzending. Klik in een e-mailtemplate op
 **E-mailing verzenden**. In het volgende venster wordt gevraagd om een
-[selectie](./database-selections-introductions.md) te kiezen om naar te
+[selectie](./database-selections-introduction.md) te kiezen om naar te
 versturen. Kies de selectie waar je naartoe wilt versturen. Hierbij kan er
 gevraagd worden om de selectie te autoriseren voor de e-mail. Dit wordt gedaan
 zodat je niet onbewust naar de verkeerde selectie kan mailen.
