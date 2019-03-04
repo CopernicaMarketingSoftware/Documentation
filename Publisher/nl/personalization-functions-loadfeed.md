@@ -14,7 +14,7 @@ Een feed vanuit Content inladen:
 
 Vervang *id van de feed* met het ID van de feed uit het het onderdeel
 Content in Copernica. Het ID achterhaal je door in Content met je muis 
-over de feed te gaan. Hierdoor zie je bijvoorbeeld *Feed #123" verschijnen, 
+over de feed te gaan. Hierdoor zie je bijvoorbeeld *Feed #123* verschijnen, 
 gebruik dan 123 als ID.
 
 ## Externe feed inladen
