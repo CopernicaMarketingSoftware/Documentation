@@ -8,6 +8,7 @@ content section or just a feed that's curated and hosted somewhere else.
 
 
 You can load a feed in from the *content* section, just like this:
+
 `{loadfeed feed='id of the feed'}`
 
 Replace the *id of the feed* with the actual feed ID. To find this ID, 
