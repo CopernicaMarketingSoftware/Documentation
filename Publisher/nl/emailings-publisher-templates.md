@@ -3,11 +3,11 @@ De Publisher hanteert een andere manier om mooie en werkende templates te
 verwezenlijken. In vergelijking met de Marketing Suite is de aanpak wat
 technischer en meer ingewikkeld, omdat kennis van HTML en CSS vereist is. De
 Publisher heeft echter wel enkele functionaliteiten die in de Marketing Suite
-niet bestaan, dit omdat de Publisher al veel langer in ontwikkeling is. Ook
+niet bestaan, omdat de Publisher al veel langer in ontwikkeling is. Ook
 zorgt de manier van werken, namelijk met HTML, voor meer vrijheid.
 
 ## Werken met Publisher templates
-In de Publisher omgeving wordt een template/documentstructuur
+In de Publisher omgeving wordt een template-/documentstructuur
 gebruikt. Een template bevat de globale opmaak van de mail en de elementen die
 voor elke mailing vaststaan (zoals logo's en een afmeldlink). Verder bevat een
 template vooral blanco plekken die later kunnen worden ingevuld. Als je
@@ -15,12 +15,12 @@ een mailing wilt samenstellen maak je op basis van een template een
 document aan, en kun je de blanco plekken vullen met teksten en afbeeldingen.
 Een document is dus eigenlijk een ingevulde template.
 
-Vaak worden de templates worden gemaakt door webdesigners of programmeurs die
+Vaak worden de templates gemaakt door webdesigners of programmeurs die
 handig zijn met HTML. Zij bepalen de opmaak van de mailing en wijzen de
 plaatsen aan waar teksten en afbeeldingen kunnen worden geplaatst (de layout).
-Als een template eenmaal is gebouwd kan deze door bijvoorbeeld een marketeer
-worden voorzien van teksten en afbeeldingen, en kunnen er mailings mee worden
-verstuurd. Voor die tweede stap is geen kennis van HTML vereist.
+Als een template eenmaal is gebouwd, kan deze door bijvoorbeeld een marketeer
+worden voorzien van teksten en afbeeldingen. Zo kunnen er complete mailings mee
+worden verstuurd. Voor die tweede stap is geen kennis van HTML vereist.
 
 In dit artikel gaan we dieper in op het ontwerpen van templates. Het is echter
 geen beginnerscursus HTML. We gaan er van uit dat je over voldoende kennis van
@@ -50,10 +50,11 @@ door veel van je ontvangers kan worden gelezen.
 </html>
 ```
 
-Op documentniveau kan een tekst worden geplaatst op de plek van de [text] tag.
+Op documentniveau kan er nu een tekst worden geplaatst op de plek van de
+[text]-tag.
 
 ## Contentblokken
-Zoals gezegd bestaat een template uit HTML code. Deze kun je zelf maken en je
+Zoals gezegd bestaat een template uit HTML-code. Deze kun je zelf maken en je
 kunt er blanco plekken in opnemen die later op documentniveau worden voorzien
 van content. Je bepaalt hiermee waar later afbeeldingen en teksten mogen
 worden geplaatst. Deze blanco plekken noemen we *contentblokken*.
@@ -63,7 +64,7 @@ Er zijn drie *tags* waarmee je **contentblokken** maakt: [text], [image] en
 dat daar op documentniveau content kan worden geplaatst. De werking van de
 [text] en [image] tags spreekt voor zich: op elke plek in de template waar je
 deze tags plaatst, kunnen later op documentniveau teksten en afbeeldingen
-worden geplaatst. De looptags behoeven wat meer uitleg, en stellen je in staat
+worden geplaatst. De loop-tags behoeven wat meer uitleg, en stellen je in staat
 om op documentniveau herhalingen in te voeren. Als je bijvoorbeeld gebruikers
 in staat wilt stellen om mailings te maken met een variabel aantal paragrafen
 of een variabel aantal artikelen, dan kun en dit doen door loopblokken in de
@@ -99,7 +100,7 @@ speciaal teken herkent, dan vervang je de blokhaken gewoon door
 </style>
 ```
 
-Als je een heel groot stuk CSS code hebt dat vol staat met blokhaken, en waar
+Als je een heel groot stuk CSS-code hebt dat vol staat met blokhaken, en waar
 bovendien nergens gebruik wordt gemaakt van contentblokken (zodat alle
 blokhaken in dat stuk geen speciale template betekenis hebben), dan kun je ook
 [literal] en [/literal] gebruiken. Met deze tags kun je een deel van je
@@ -120,7 +121,7 @@ Foto's en plaatjes worden meestal pas op documentniveau toegevoegd. Maar ook
 in de template kun je al afbeeldingen plaatsen, zoals het bedrijfslogo
 dat voor elke mailing immers hetzelfde is. Hier is niks moeilijks aan, en
 kun je met doodnormale HTML &lt;img&gt; tags doen. Maar let wel op
-dat de afbeelding waar je naar verwijst, ook aan de template is gekoppeld.
+dat de afbeelding waar je naar verwijst, ook aan het template is gekoppeld.
 
 Via het dropdown menu van Publisher kun je het dialoogscherm "Bestanden en
 afbeeldingen" openen. In dit dialoogvenster kun je alle afbeeldingen en
@@ -149,17 +150,17 @@ horloges (piepklein!). Maar ook op gewone laptops en ouderwetse desktops met
 speciaal daarvoor ontwikkelde e-mailprogramma's als Outlook of Thunderbird, of
 met webmail omgevingen als Gmail of Hotmail. Bovendien gebruiken veel mensen
 verouderde software en filteren e-mailprogramma's en providers berichten en
-worden scripts en ingewikkelde CSS codes vaak uit mails verwijderd. Een
+worden scripts en ingewikkelde CSS-code vaak uit mails verwijderd. Een
 template moet dus wel tegen een stootje kunnen. Een eenvoudige template is een
 stuk minder kwetsbaar dan een complexe template, en leidt tot minder problemen
-en een groter bereik.
+en daardoor tot een groter bereik.
 
 ## Aanmaken templates/documenten
-Klik links boven op **Template**>**Nieuwe template** om een nieuwe template aan
+Klik linksboven op **Template**>**Nieuwe template** om een nieuwe template aan
 te maken. In het volgende venster kan er een naam gegeven worden aan de
 template en kan de template eventueel met voorbeeldcode gevuld worden. In het
 venster rechts kan het template bekeken en aangepast worden. In het broncode
-template tabblad kan de html van de template aangepast worden. Hier dienen ook
+template tabblad kan de HTML van de template aangepast worden. Hier dienen ook
 de bovengenoemde contentblokken aangemaakt worden. Om deze contentblokken te
 vullen moet er een document aangemaakt worden. Klik op **Document**>
 **Nieuw document** om een document aan het template toe te voegen. Dit document
@@ -173,7 +174,7 @@ kunnen mappen toegevoegd of aangemaakt worden. Om een template die geselecteerd
 is naar een map te verplaatsen klik dan op **Template**>
 **Verplaats in/uit map**.
 Het is ook mogelijk om templates te archiveren. Dit zorgt ervoor dat deze niet
-meer ingeladen worden en ze verdwijnen uit het overzicht, dit schept meer
+meer ingeladen worden en zullen ze verdwijnen uit het overzicht, dit schept meer
 structuur en scheelt tijd. Klik op  **Template**>**Archiveren** om 1 template
 te archiveren klik op **Template**>**Archiveren van meerdere documenten** om
 meerdere templates te archiveren. Linksonder kan het vinkje bij **Archief**
