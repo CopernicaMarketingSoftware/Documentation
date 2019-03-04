@@ -1,19 +1,19 @@
 # Data-scripts
-Met data-scripts kun je allerlei opvolgacties aan hyperlinks
+Met data-scripts kun je allerlei opvolgacties aan diverse triggers
 koppelen. Deze scripts worden door Copernica uitgevoerd, zodra
-iemand op zo'n hyperlink klikt. Dit werkt ongeveer hetzelfde
+zo'n trigger wordt geactiveerd. Dit werkt ongeveer hetzelfde
 als de scripts die je in een "onclick" van een hyperlink
 plaatst, met een belangrijk verschil: de scripts worden niet
 door de browser uitgevoerd, maar op de servers van Copernica.
-In de Marketing Suite hoef je alleen maar data-scripts toe
-te voegen op een van de volgende manieren:
+In de Marketing Suite kun je data-scripts toevoegen op een van de volgende
+manieren:
 
 * Je kunt ze in het "data-script" plaatsen van een &lt;a&gt; tag;
 * Je kunt ze met de "drag-and-drop" editor invoeren.
 
 Let op: Voor data-scripts heb je het nieuwe link tracking systeem nodig.
 Als je Marketing Suite gebruikt hoef je geen extra stappen te ondernemen en
-in Publisher kun je dit handmatig activeren in je account instellingen.
+in Publisher kun je dit handmatig activeren in de instellingen van je account.
 
 ## Beschikbare data-scripts
 Er zijn verschillende soorten objecten die je in je
@@ -34,7 +34,7 @@ allen het [data data-script](./data-object-data)
 dat je kunt gebruiken om informatie in op te slaan.
 
 ## Voorbeeld
-Je kunt gemakkelijk een profile aanpassen als iemand op een
+Je kunt gemakkelijk een profiel aanpassen als iemand op een
 link klikt:
 
 ```html
