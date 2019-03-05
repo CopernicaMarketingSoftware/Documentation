@@ -1,11 +1,12 @@
 # Contentblokken in de Publisher
-Dit kun je gebruiken in de broncode van een e-mailtemplate. Er zijn 3 soorten
-content blokken/tags. Deze tags worden in dit artikel nader toegelicht.
+Contentblokken kun je gebruiken in de broncode van een e-mailtemplate. Er zijn
+3 soorten content blokken/tags. Deze tags worden in dit artikel nader
+toegelicht.
 
 ## Text tags
 Als je zelf een template maakt, kun je in de broncode van de template [text]
 tags opnemen. Op de plaats van de [text] tag in de template kan op
-documentniveau later tekst worden ingevoerd.
+documentniveau later tekst worden toegevoegd.
 
 ![](../images/textblockcode.png)
 
@@ -24,35 +25,35 @@ Zorg er voor dat je voor elke text tag een andere naam gebruikt.
 ### De editor
 Op documentniveau kan een tekst worden geplaatst op de plek van de [text] tag.
 Normaal gesproken wordt hier een handige *what-you-see-is-what-you-get*
-(WYSIWYG) editor voor gebruikt, waarmee het makkelijk is om de ingevoerde tekst
-op te maken en van (eenvoudige) opmaak te voorzien. Deze editor is voor de
-meeste mensen die  op documentniveau werken, vaak marketeers, het prettigst in
+(WYSIWYG) editor voor gebruikt, waarmee het makkelijk is om de tekst in te
+voeren en van (eenvoudige) opmaak te voorzien. Deze editor is voor de
+meeste mensen die op documentniveau werken, vaak marketeers, het prettigst in
 het gebruik.
 
 Indien gewenst kan de marketeer als hij of zij een tekst bewerkt de handige
-editor uitschakelen en overstappen op een ruwe HTML editor. Hij of zij moet dan
-zelf de HTML code invoeren die op de plek van de [text] tag wordt geplaatst.
+editor uitschakelen en overstappen op een ruwe HTML-editor. Hij of zij moet dan
+zelf de HTML-code invoeren die op de plek van de [text] tag wordt geplaatst.
 
 Als je bij het maken van een template al van te voren weet dat een gebruiker de
-voorkeur geeft aan deze HTML editor in plaats van de WYSIWYG editor, dan kun je
+voorkeur geeft aan deze HTML-editor in plaats van de WYSIWYG editor, dan kun je
 dat in de template aangeven.
 
 `[text name="example1" editor="poor"]`
 
 We hebben de prettig te gebruiken WYSIWIG editor de "rich" editor genoemd. Deze
 editor heeft immers allerlei tools en knopjes die het leven makkelijker maken
-en verrijken. Voor de andere editor, waarmee je zelf de pure HTML code moet
+en verrijken. Voor de andere editor, waarmee je zelf de pure HTML-code moet
 invoeren, gebruiken we het tegenovergestelde als naam: "poor".
 
 `[text name="example2" editor="rich"]`
 
-### Inleidende en afsluitende HTML code
+### Inleidende en afsluitende HTML-code
 Je kunt ook een attribuut *begin* en *end* aan de [text] tag toevoegen.
 
 `[text name="example" begin="<b>" end="</b>"]`
 
-Als op documentniveau het tekstblok leeg blijft dan wordt de waarde van de
-*begin* en *end* tags gegenereerd. Er komen dan dus ook geen &lt;b&gt; en
+Als op documentniveau het tekstblok leeg blijft, wordt de waarde van de
+*begin* en *end* tags niet gegenereerd. Er komen dan dus ook geen &lt;b&gt; en
 &lt;/b&gt; in het uiteindelijke document. Maar als er wel een tekst wordt
 ingevoerd, dan wordt de waardes van deze attributen automatisch rond de
 ingevoerde tekst geplaatst.
@@ -68,17 +69,16 @@ gezet door de gebruiker een afbeelding worden ingevoerd.
 Ook hier geldt weer, net als bij de andere *tags* die je in een template kunt
 plaatsen, dat het sterk is aan te raden om een attribuut *name* aan de tag toe
 te voegen. Hierdoor kunnen op documentniveau de afbeeldingen worden gekoppeld
-aan de juiste image tags, zelfs als je later de template wijzigt en de volgorde
-van de tags verandert. Elke afbeelding binnen de template moet een unieke naam
-hebben.
+aan de juiste image tags. Zelfs als je dan later de template wijzigt en de
+volgorde van de tags verandert. Elke afbeelding binnen de template moet een
+unieke naam hebben.
 
 ### Formaat
 De afbeelding die op documentniveau door de gebruiker wordt ingevoerd, wordt
-normaal gesproken ongewijzigd overgenomen, zelfs als de afbeelding veel te
-groot is en daardoor de vormgeving uit zijn verband trekt. Maar er zijn
-allerlei  attributen om dit te voorkomen. Met deze attributen kun je het
-formaat van een  afbeelding afdwingen, of een minimum- en/of maximumgrootte
-opgeven.
+normaal gesproken ongewijzigd overgenomen, zelfs als de afbeelding te groot is
+en daardoor de vormgeving uit zijn verband trekt. Er zijn echter allerlei
+attributen om dit te voorkomen. Met deze attributen kun je het formaat van een
+afbeelding afdwingen, of een minimum- en/of maximumgrootte opgeven.
 
 Als je er zeker van wilt zijn dat een afbeelding altijd 100x100
 pixels groot is, ook als een groter of kleiner plaatje wordt geüpload, dan kun
@@ -87,7 +87,7 @@ je dit doen door middel van de volgende code:
 `[image name="example" width="100" height="100"]`
 
 Afbeeldingen die niet precies 100x100 pixels groot zijn worden automatisch
-vergroot of verkleind. Naast deze precies afgedongen grootte die je met de
+vergroot of verkleind. Naast deze exact afgedwongen grootte die je met de
 *width* en *height* attributen instelt, kun je ook een minimum- of
 maximumgrootte opgeven. Als de breedte van een afbeelding bijvoorbeeld binnen
 de 100 en 150 pixels moet blijven, doe je dit als volgt:
@@ -100,25 +100,24 @@ worden vergroot of verkleind, waarbij de verhouding tussen breedte en hoogte
 zoveel mogelijk wordt behouden: een foto wordt dus niet uitgerekt.
 
 ### Optionele afbeeldingen
-Als een gebruiker besluit om een afbeelding leeg te laten ontstaat een
+Als een gebruiker besluit om een afbeelding leeg te laten, ontstaat er een
 lege plek in het document. Een [image] tag die niet wordt ingevuld, wordt
 namelijk standaard voorzien van een doorzichtige afbeelding. Er komt dus
 in het uiteindelijke document in principe altijd een &lt;img&gt; tag op de
 plaats van de [image] tag.
 
-Maar het kan ook anders. Als je aangeeft dat een afbeelding *optioneel* is,
-dan wordt er alleen een afbeelding in het document geplaatst als de gebruiker
+Het kan ook anders. Als je aangeeft dat een afbeelding *optioneel* is,
+wordt er alleen een afbeelding in het document geplaatst als de gebruiker
 ook zelf expliciet op documentniveau een afbeelding op de plaats van de
 [image] tag plaatst. Als de gebruiker geen afbeelding uploadt, dan zal er ook
-geen &lt;img&gt; tag in het uiteindelijke document staan.
+geen &lt;img&gt; tag in het uiteindelijke document komen.
 
 `[image name="example" optional="yes"]`
 
-### Inleidende en afsluitende HTML code
-
+### Inleidende en afsluitende HTML-code
 Als op documentniveau een afbeelding wordt geüpload, dan wordt in het document
 een &lt;img&gt; tag geplaatst met deze afbeelding. Voor en na deze &lt;img&gt;
-tag wordt de HTML code geplaatst die je in de "begin" en "end" attributen
+tag wordt de HTML-code geplaatst die je in de "begin" en "end" attributen
 hebt gezet:
 
 `[image name="example" begin="<div class=x>" end="</div>"]`
@@ -127,16 +126,14 @@ Met bovenstaande code zorg je er voor dat er altijd een &lt;div&gt; element
 rond de afbeelding wordt gezet. De *begin* en *end* attributen zijn optioneel.
 
 ### Class toevoegen
-
-Voeg een class toe aan het image blok. Hiermee kun je de afbeelding responsive
-maken.
+Het is ook mogelijk om een class mee te geven aan een [image] tag. Hiermee kun
+je door middel van CSS de afbeelding responsive maken.
 
 `[image name='nameofblock' class='className']`
 
 ## Loop tags
-
-Vermoedelijk de ingewikkeldste tag die je in templates kunt gebruiken, is de
-[loop] tag. Maar hij is wel erg handig! Je kunt met de [loop] tags code
+Waarschijnlijk de ingewikkeldste tag die je in templates kunt gebruiken, is de
+[loop] tag. Hij kan alleen wel erg handig zijn! Je kunt met de [loop] tags code
 markeren die op documentniveau herhaald kan worden. Hierdoor kun je
 bijvoorbeeld templates maken die net zo makkelijk kunnen worden gebruikt voor
 een nieuwsbrief met één artikel, als voor een nieuwsbrief met tien artikelen.
@@ -152,7 +149,7 @@ krachtig templatesysteem krijgt.
 Bovenstaand voorbeeld is erg simpel en niet erg praktisch. Je ziet pas echt de
 kracht als je binnen de loop weer andere tags opneemt. Bijvoorbeeld als je de
 gebruiker op documentniveau in staat wilt stellen om meerdere paragrafen met
-tekst en afbeeldingen op te nemen:
+tekst en afbeeldingen toe te voegen:
 
 ```html
 [loop name="myloop"]
@@ -168,9 +165,8 @@ tekst en afbeeldingen op te nemen:
 Op documentniveau kan een gebruiker zelf kiezen hoeveel iteraties (herhalingen)
 van de loop er in de mailing moeten worden geplaatst. Nul is ook een geldige
 waarde, waardoor je loop blocks ook kunt gebruiken voor conditionele content:
-als de gebruiker kiest voor nul iteraties verschijnt de HTML code niet in de
-mailing, en bij een waarde van 1 of hoger verschijnt de code wel in de mailing
-(en misschien zelfs meerdere keren).
+als de gebruiker kiest voor nul iteraties verschijnt de HTML-code niet in de
+mailing, en bij een waarde van 1 of hoger verschijnt de code wel in de mailing.
 
 Ook voor loopblokken geldt, net als bij alle andere soorten blokken, dat het
 is aan te raden om elk blok een eigen unieke naam mee te geven. Bij loopblokken
@@ -178,7 +174,6 @@ heeft de naam zelfs een extra functie, omdat je de naam kunt gebruiken voor
 scripting en *if* statements (hierover later meer).
 
 ### Minimum en maximum waardes
-
 De gebruiker is vrij om zelf te bepalen hoeveel iteraties hij op documentniveau
 wilt gebruiken. Nul is ook een geldige waarde is. Als je het aantal iteraties
 wilt beperken, of als je juist een minimum aantal iteraties wilt instellen, kun
@@ -193,10 +188,9 @@ je hiervoor de *min* en *max* attributen gebruiken.
 Beide attributen zijn optioneel. Je kunt ze ook allebei weglaten, of maar één
 van de attributen opnemen.
 
-### Inleidende en afsluitende HTML code
-
+### Inleidende en afsluitende HTML-code
 Met de *begin* en *end* attributen kun je eventueel inleidende en afsluitende
-HTML code aan het loop blok koppelen. Deze code wordt alleen in het document
+HTML-code aan het loop blok koppelen. Deze code wordt alleen in het document
 opgenomen indien het aantal iteraties hoger is dan 0.
 
 ```html
@@ -209,12 +203,11 @@ opgenomen indien het aantal iteraties hoger is dan 0.
 
 Het bovenstaande (eenvoudige) voorbeeld bevat een tabel met een variabel
 aantal rijen. Als binnen het document het aantal iteraties op nul wordt gezet,
-dan wordt er helemaal geen tabel in het document geplaatst. De &lt;table&gt;
-tags worden alleen gebruikt als het aantal iteraties groter is.
+wordt er helemaal geen tabel in het document geplaatst. De &lt;table&gt;
+tags worden dus alleen gebruikt als het aantal iteraties groter is dan nul.
 
 
 ### Templatevariabelen
-
 Als je gebruik maakt van loop bloks, kun je ook templatevariabelen gebruiken.
 Templatevariabelen lijken erg op personalisatievariabelen, maar ze bevatten
 geen informatie over de geadresseerde, maar over de staat van de loop.
@@ -240,7 +233,7 @@ Deze variabelen kun je gebruiken om de opmaak van de loops wat te verfraaien:
 
 Hierboven zie je een loop van paragrafen waarbij op documentniveau kan worden
 ingesteld hoeveel paragrafen er in de mailing moeten worden opgenomen. Tussen
-elke twee paragrafen staan een horizontale lijn (dit is de &lt;hr/&gt; tag).
+elke twee paragrafen staat een horizontale lijn (dit is de &lt;hr/&gt; tag).
 Het if-statement zorgt er voor dat de scheidingslijn alleen tussen de
 paragrafen komt te staan, en niet ook onder de laatste paragraaf.
 
@@ -256,4 +249,4 @@ en functies mee aan te geven, maar vierkante haakjes. De [image], [text] en
 [loop] blokken zijn dus eigenlijk gewone Smarty functies, en de
 [$loop.naamvanloop.*]  variabelen zijn gewone Smarty variabelen. Je kunt daarom
 binnen een template alle trucjes en mogelijkheden van Smarty benutten, zolang
-je maar gebruik maakt  van vierkante haakjes in plaats van accolades.
+je maar gebruik maakt van vierkante haakjes in plaats van accolades.
