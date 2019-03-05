@@ -31,11 +31,12 @@ de volgende informatie bevat:
 * **id**: De ID van de mailing.
 * **timestamp**: Tijdstempel van de mailing.
 * **template**: De ID van de template die gebruikt is voor deze mailing.
+* **subject**: Het onderwerp van de mailing.
+* **from_address**: Een array met de naam ('name') en het e-mailadres ('email') 
+van de afzender.
 * **destinations**: Hoeveelheid (geplande) ontvangers van de mailing.
 * **type**: Type van de mailing. Een individuele mailing is 'individual' 
 en een massa mailing is 'massa'.
-* **clicks**: De hoeveelheid clicks die deze mailing ontvangen heeft.
-* **impressions**: De hoeveelheid impressies die deze mailing ontvangen heeft.
 * **target**: Bevat het type van het doelwit van de mailing en de ID 
 en types van de entiteiten hierboven (bijvoorbeeld de database waar een 
 collectie onder valt).

@@ -14,13 +14,14 @@ Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 * **id**: De ID van de mailing. 
 * **timestamp**: De tijdstempel van de mailing.
 * **destinations**: Het aantal destinations van de mailing.
+* **document**: ID van het emailing document
+* **template**: ID van de emailing template
+* **subject**: Het onderwerp van de mailing
+* **from_address**: Een array met de naam ('name') en het e-mailadres ('email') van de afzender.
 * **type**: Het type van de mailing: 'mass' (massa mailing) of 'individual' (individuele mailing). Vraagt 
 standaard beide op.
 * **embedded**: Boolean die aangeeft of de afbeeldingen in de mailing ingebed zijn of niet.
 * **contenttype**: Het type content in de mailing: 'html', 'text' of 'both' (beide).
-* **registerclicks**: Boolean die aangeeft of kliks geregistreerd worden voor deze mailing of niet.
-* **registerimpressions**: Boolean die aangeeft of impressies geregistreerd worden voor deze mailing of niet.
-* **registererrors**: Boolean die aangeeft of errors geregistreerd worden voor deze mailing of niet.
 * **target**: Array die het target type en de ID en het type van zijn sources bevat (een source is bijvoorbeeld de database waartoe een collectie behoort).
 
 ## PHP voorbeeld

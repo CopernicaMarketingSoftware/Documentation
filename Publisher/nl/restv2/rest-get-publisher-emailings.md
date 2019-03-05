@@ -30,17 +30,18 @@ het totale aantal resultaten. Deze array bevat ook een data array met
 de mailings die de parameters matchen. Elke mailing is een array die 
 de volgende informatie bevat:
 
-* **id**: ID van de mailing.
-* **timestamp**: Tijdstempel van de mailing.
-* **destinations**: Hoeveelheid (geplande) ontvangers van de mailing.
-* **type**: Type van de mailing. Een individuele mailing is 'individual' 
-en een massa mailing is 'massa'.
-* **document**: De ID van het document gebruikt voor de mailing.
-* **template**: De ID van de template gebruikt voor de mailing.
-* **contenttype**: Type content van de mailing.
-* **target**: Bevat het type van het doelwit van de mailing en de ID 
-en types van de entiteiten hierboven (bijvoorbeeld de database waar een 
-collectie onder valt).
+* **id**: De ID van de mailing. 
+* **timestamp**: De tijdstempel van de mailing.
+* **destinations**: Het aantal destinations van de mailing.
+* **document**: ID van het emailing document
+* **template**: ID van de emailing template
+* **subject**: Het onderwerp van de mailing
+* **from_address**: Een array met de naam ('name') en het e-mailadres ('email') van de afzender.
+* **type**: Het type van de mailing: 'mass' (massa mailing) of 'individual' (individuele mailing). Vraagt 
+standaard beide op.
+* **embedded**: Boolean die aangeeft of de afbeeldingen in de mailing ingebed zijn of niet.
+* **contenttype**: Het type content in de mailing: 'html', 'text' of 'both' (beide).
+* **target**: Array die het target type en de ID en het type van zijn sources bevat (een source is bijvoorbeeld de database waartoe een collectie behoort).
 
 ## PHP Voorbeeld
 
