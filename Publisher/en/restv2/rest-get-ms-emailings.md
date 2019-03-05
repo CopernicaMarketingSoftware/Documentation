@@ -28,10 +28,10 @@ given parameters. For each mailing we return the following:
 * **id**: The ID of the mailing.
 * **timestamp**: Timestamp of the mailing.
 * **template**: The ID of the template that was used to send the mailing.
+* **subject**: The subject of the mailing.
+* **from_address**: An array containing the 'name' and 'email' address of the sender.
 * **destinations**: Amount of destinations the mailing was sent to.
 * **type**: Type of mailing (individual or mass).
-* **clicks**: The total amount of clicks that this mailing received.
-* **impressions**: The total amount of impressions that this mailing received.
 * **target**: Contains the target type and the ID and type of other 
 entities above it (for example the database a collection belongs to).
 
