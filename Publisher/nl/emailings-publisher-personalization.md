@@ -1,11 +1,11 @@
 # Personaliseren binnen de Publisher
 In de Publisher kun je van alles personaliseren. Je doet dit met behulp
-van de zogeheten Smarty code. In het onderstaande artikel staan een aantal
-voorbeeldscenario's uitgelegd waarin je personalisatie kunt toevoegen aan je
+van de zogeheten Smarty code. In het onderstaande artikel worden een aantal
+voorbeeldscenario's toegelicht waarin je personalisatie kunt toevoegen aan je
 mailings en nieuwsbrieven.
 
-Met Smarty kun je gemakkelijk personaliseren. Er zijn echter
-wel wat belangrijke dingen om op te letten als je werkt met Smarty:
+Er zijn echter wel een aantal belangrijke dingen om op te letten als je werkt
+met Smarty:
 
 * SMARTY is *hoofdlettergevoelig*. **{$profile.name}** is dus wat anders dan `{$profile.NAME}`;
 * Accolades gebruiken kan met de [literal](./publisher-personalization-functions#literal) functie.
@@ -36,9 +36,9 @@ met het volgende e-mailadres: {$profile.email}.
 ### Data uit een collectie weergeven
 Je kunt ook eenvoudig data uit een collectie weergeven. Dit kun je op
 verschillende manieren doen. Om data uit de eerste rij van de collectie weer te
-geven kun je deze syntax gebruiken.
+geven, kun je deze syntax gebruiken.
 
-Vergeet in de Publisher niet de blokhaken te escapen.
+Let op: vergeet in de Publisher niet de blokhaken te escapen.
 
 ```text
 [literal]
@@ -54,7 +54,7 @@ Om data uit de volgende rij weer te geven kun je [0] vervangen door [1].
 [/literal]
 ```
 
-Om data uit de laatste (en nieuwste) rij weer te geven kun je de count
+Om data uit de laatste (en nieuwste) rij weer te geven kun je de 'count'
 modifier gebruiken om het aantal subprofielen te tellen waarna je
 van het totaal 1 moet aftrekken omdat wij beginnen met nul.
 
@@ -64,11 +64,11 @@ van het totaal 1 moet aftrekken omdat wij beginnen met nul.
 [/literal]
 ```
 
-### Template variables
+### Template variabelen
 Je kunt ook extra personalisatie variabelen toevoegen door deze aan te maken
-in het Template menu. Hier definieer je de naam, tijdens het aanmaken van
-het document geef je er een waarde aan. Gebruik de waarde vervolgens met
-**{$property.name}**, waar je "name" vervangt door de naam van je variabele.
+in het Template menu. Hier definieer je de naam en waarde van de variabele.
+Gebruik de waarde vervolgens met **{$property.name}**, waar je "name" vervangt
+door de naam van je variabele.
 
 Stel bijvoorbeeld dat je gebruikers een score wil geven gebaseerd op hun
 aankopen en deze wil gebruiken in je e-mail. Later heb je deze score niet meer
@@ -93,7 +93,7 @@ Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
 Je gebruikt bijvoorbeeld **tolower** om de variabele **{$profile.name}** te
 bewerken. Dit ziet er dan zo uit: **{$profile.name|tolower}**.
-Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken.
+Tevens kun je ook een aantal 'modifiers' achter elkaar gebruiken.
 Je kunt bijvoorbeeld **{$profile.name|tolower|ucfirst}** gebruiken om te zorgen
 dat alle namen met een hoofdletter beginnen en de resterende letters altijd
 kleine letters zijn.
@@ -135,14 +135,14 @@ dit artikel lezen](loadprofile-and-loadsubprofile).
 
 ## Accolades
 Als je accolades in een template of een document wilt opnemen die niet als
-Smarty code hoeven te worden herkend, dan kun je dit op twee manieren doen:
+Smarty code moeten worden herkend, kun je dit op twee manieren doen:
 door [{ldelim}](./publisher-personalization-functions#ldelim) en
 [{rdelim}](./publisher-personalization-functions#rdelim) te gebruiken, of door
 van {literal} en {/literal} gebruik te maken.
 
-Om voor een groot stuk HTML code de Smarty engine uit te schakelen kun je
+Om voor een groot stuk HTML-code de Smarty engine uit te schakelen, kun je
 {literal} en {/literal} gebruiken. Alle tekst die tussen {literal} en
-{/literal} staat wordt niet Smarty gecontroleerd op accolades. Alle accolades
+{/literal} staat, wordt niet Smarty gecontroleerd op accolades. Alle accolades
 worden letterlijk overgenomen, zelfs als het wel geldige Smarty variabelen
 lijken te zijn:
 
@@ -176,14 +176,15 @@ Er zijn vier mogelijke instellingen:
     * preview mode, met gepersonaliseerde content
     * preview mode, nog niet gepersonaliseerd
 
-Eigenlijk zijn het twee verschillende instellingen: (1) wil je het document
-weergeven in bewerkmodes of previewmodus, en (2) wil je dat de Smarty
-variabelen direct worden ingevuld of niet?
+Eigenlijk zijn het twee verschillende instellingen:
+
+    * wil je het document weergeven in bewerkmodes of previewmodus?
+    * wil je dat de Smarty variabelen direct worden ingevuld of niet?
 
 Als je het document in bewerkmodus weergeeft, dan zijn de contentblokken
 aanklikbaar. Dit is meestal de handigste mode omdat je direct de teksten die
-je wilt wijzigen kunt aanklikken. Af en schakel je over naar de previewmodus
-om te zien hoe de ontvanger het bericht zal zien.
+je wilt wijzigen kunt aanklikken. Als dit af is, schakel je over naar de
+previewmodus om te zien hoe de ontvanger het bericht zal zien.
 
 Daarnaast kun je kiezen of je de ruwe Smarty variabelen wilt zien of niet.
 Als je kiest voor het tonen van variabelen, dan zie je de variabelen
@@ -216,27 +217,26 @@ kunnen hebben.
 ## Waar kun je Smarty-personalisatie gebruiken?
 Je kunt vrijwel overal Smarty personalisatie toepassen:
 
-* In de onderwerpregel van een e-mail;
-* In e-mails en webdocumenten;
-* Andere e-mail headers (zoals afzenderadres, CC, BCC, x-headers);
-* Gepersonaliseerde website content;
-* Webformulieren (standaardwaardes, labels, etc.);
-* Hyperlinks en mailto links;
-* UTM parameters (bij het uitbreiden van hyperlinks);
-* Opvolgacties;
-* Etc.
+    * In de onderwerpregel van een e-mail;
+    * In e-mails en webdocumenten;
+    * Andere e-mail headers (zoals afzenderadres, CC, BCC, x-headers);
+    * Gepersonaliseerde website content;
+    * Webformulieren (standaardwaardes, labels, etc.);
+    * Hyperlinks en mailto links;
+    * UTM parameters (bij het uitbreiden van hyperlinks);
+    * Opvolgacties;
+    * Etc.
 
 Op een paar plekken kun je geen gebruik maken van personaliseren:
 
-* In enquêtes
-* In content feeds
+    * In enquêtes
+    * In content feeds
 
 ## Personalisatieinstellingen
 Bij elk document en template kun je de personalisatie-instellingen wijzigen.
 Met deze instellingen bepaal je onder meer in welke taal [datums](./using-the-
-smarty-date-function.md)
-worden weergegeven. Je vindt deze instelling linksonder de geopende
-template of document.
+smarty-date-function.md) worden weergegeven. Je vindt deze instelling
+linksonder de geopende template of document.
 
 ![](../images/personalisatieinstellingen.png)
 
@@ -245,10 +245,10 @@ documenten. Als je geen expliciete keuze voor deze instellingen op
 documentniveau maakt, dan valt het document terug op de instellingen van de
 template. Je kunt de volgende vier settings veranderen:
 
-* taal: de taal die wordt gebruikt voor het weergeven van datums
-* tijdzone: de tijdzone om te bepalen hoe tijdstippen worden opgemaakt
-* codering: de wijze waarop "rare" tekens worden gecodeerd
-* html filteren: moeten personalisatievariabelen automatisch worden gefilterd?
+    * taal: de taal die wordt gebruikt voor het weergeven van datums
+    * tijdzone: de tijdzone om te bepalen hoe tijdstippen worden opgemaakt
+    * codering: de wijze waarop "rare" tekens worden gecodeerd
+    * html filteren: moeten personalisatievariabelen automatisch worden gefilterd?
 
 ### Taal en tijdzone
 In het artikel over het [weergeven van datums en tijden](./using-the-smarty-
