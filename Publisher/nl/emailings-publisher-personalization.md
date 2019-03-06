@@ -234,8 +234,8 @@ Op een paar plekken kun je geen gebruik maken van personaliseren:
 
 ## Personalisatieinstellingen
 Bij elk document en template kun je de personalisatie-instellingen wijzigen.
-Met deze instellingen bepaal je onder meer in welke taal [datums](./using-the-
-smarty-date-function.md) worden weergegeven. Je vindt deze instelling
+Met deze instellingen bepaal je onder meer in welke taal [datums](./publisher-
+personalization-variables#data-en-tijden-dynamisch-weergeven) worden weergegeven. Je vindt deze instelling
 linksonder de geopende template of document.
 
 ![](../images/personalisatieinstellingen.png)
