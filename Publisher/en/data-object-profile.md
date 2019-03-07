@@ -18,9 +18,8 @@ tab.
 * **removed**: Timestamp of profile removal (Read-only)
 * **unsubscribed**: A boolean value whether the profile is explicitly unsubscribed (Read-only)
 * **database**: An object that gives access to the [database](./data-object-database) that hold the profile (Read-only)
-* **fields**: A hash map of all profiles fields. Names of fields are set as properties (Read and write)
-* **interests**: A hash map of all profiles interests. Names of interests are
-  set as properties (Read and write)
+* **fields**: All fields of the profile, accessible by name (read/write). Can be used like "profile.fields.testfield = 'newval';" (write) or "var testval = profile.fields.testfield;" (read).
+* **interests**: All interests of the profile, accessible by name (read/write). Can be used like "profile.interests.testinterest = true;" (write) or "var testval = profile.interests.testinterest;" (read).
 * **data**: See the documentation on [the data object](./data-object-data)
 
 ## Available methods
