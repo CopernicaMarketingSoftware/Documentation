@@ -285,6 +285,13 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Fetch a template                             |
 | GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Fetch the statistics for a template          |
 
+### Destinations
+
+| Type   | Address                                                                                      | Description                                  |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Fetch a destination                          | 
+| GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing         |
+
 ### Messages
 
 | Type   | Address                                                                                      | Description                                  |
