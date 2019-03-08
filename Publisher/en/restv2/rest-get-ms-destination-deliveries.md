@@ -14,13 +14,13 @@ for the **timestamp** field.
 The method returns a JSON object with several deliveries. For each delivery 
 the following information is available:
 
-**ID**: The ID of the delivery.         
-**mailing**: The ID of the mailing.
-**timestamp**: The timestamp of delivery.
-**attempts**: Number of attempts made before the delivery.
-**destination**: The ID of the destination that was delivered to.
-**profile**: The ID of the profile that was delivered to.
-**subprofile**: The ID of the subprofile that was delivered to.
+* **ID**: The ID of the delivery.         
+* **mailing**: The ID of the mailing.
+* **timestamp**: The timestamp of delivery.
+* **attempts**: Number of attempts made before the delivery.
+* **destination**: The ID of the destination that was delivered to.
+* **profile**: The ID of the profile that was delivered to.
+* **subprofile**: The ID of the subprofile that was delivered to.
 
 ## PHP example
 

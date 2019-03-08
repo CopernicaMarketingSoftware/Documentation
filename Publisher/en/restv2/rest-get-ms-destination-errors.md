@@ -14,16 +14,16 @@ for the **timestamp** field.
 The method returns a JSON object with several errors. For each error 
 the following information is available:
 
-**ID**: The ID of the error.
-**mailing**: The ID of the mailing.
-**timestamp**: The timestamp of the error.
-**status**: The status of the error.
-**errorcode**: The code associated with this error.
-**description**: A description of the error.
-**errortype**: The type of error this was recognized as.
-**destination**: The ID of the destination that caused an error.
-**profile**: The ID of the profile that caused an error.
-**subprofile**: The ID of the subprofile that caused an error.
+* **ID**: The ID of the error.
+* **mailing**: The ID of the mailing.
+* **timestamp**: The timestamp of the error.
+* **status**: The status of the error.
+* **errorcode**: The code associated with this error.
+* **description**: A description of the error.
+* **errortype**: The type of error this was recognized as.
+* **destination**: The ID of the destination that caused an error.
+* **profile**: The ID of the profile that caused an error.
+* **subprofile**: The ID of the subprofile that caused an error.
 
 ## PHP example
 

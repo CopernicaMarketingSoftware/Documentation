@@ -14,14 +14,14 @@ for the **timestamp** field.
 The method returns a JSON object with several XXX. For each XXX 
 the following information is available:
 
-**ID**: The ID of the impression.         
-**mailing**: The ID of the mailing.
-**timestamp**: The timestamp of the mailing. 
-**ip**: The IP where the impression occurred from.
-**user-agent**: User agent string of the machine the impression occurred from.
-**destination**: The ID of the destination that caused an impression.
-**profile**: The ID of the profile that caused an impression.
-**subprofile**: The ID of the subprofile that caused an impression.
+* **ID**: The ID of the impression.         
+* **mailing**: The ID of the mailing.
+* **timestamp**: The timestamp of the impression. 
+* **ip**: The IP where the impression occurred from.
+* **user-agent**: User agent string of the machine the impression occurred from.
+* **destination**: The ID of the destination that caused an impression.
+* **profile**: The ID of the profile that caused an impression.
+* **subprofile**: The ID of the subprofile that caused an impression.
 
 ## PHP example
 
