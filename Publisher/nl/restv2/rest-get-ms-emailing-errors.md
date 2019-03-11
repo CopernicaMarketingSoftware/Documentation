@@ -51,3 +51,4 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 * [Opvragen van emailing clicks voor MS](./rest-get-ms-emailing-clicks)
 * [Opvragen van emailing deliveries voor MS](./rest-get-ms-emailing-deliveries)
 * [Opvragen van emailing impressions voor MS](./rest-get-ms-emailing-impressions)
+* [Opvragen van destination unsubscribes voor MS](./rest-get-ms-destination-unsubscribes)

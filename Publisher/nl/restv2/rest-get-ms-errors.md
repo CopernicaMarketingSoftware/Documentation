@@ -50,3 +50,4 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 * [Opvragen van clicks voor MS](./rest-get-ms-clicks)
 * [Opvragen van deliveries voor MS](./rest-get-ms-deliveries)
 * [Opvragen van impressions voor MS](./rest-get-ms-impressions)
+* [Opvragen van unsubscribes voor MS](./-rest-get-ms-unsubscribes)

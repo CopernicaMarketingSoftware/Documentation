@@ -51,3 +51,4 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 * [Opvragen van destination clicks voor MS](./rest-get-ms-destination-clicks)
 * [Opvragen van destination deliveries voor MS](./rest-get-ms-destination-deliveries)
 * [Opvragen van destination impressions voor MS](./rest-get-ms-destination-impressions)
+* [Opvragen van destination unsubscribes voor MS](./rest-get-ms-destination-unsubscribes)
