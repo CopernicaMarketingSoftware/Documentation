@@ -9,6 +9,12 @@ retrieve all clicks by sending an HTTP GET call to the following URL:
 This method also support the use of the [fields parameter](./rest-fields-parameter) 
 for the **timestamp** field.
 
+## Parameters
+
+There is one parameter available for this method. The 'unique' parameter 
+indicates whether only unique clicks should be retrieved or not. By default 
+all clicks will be returned.
+
 ## Returned fields
 
 The method returns a JSON object with several clicks. For each click 
@@ -32,11 +38,16 @@ This script demonstrates how to use this API method:
 // dependencies
 require_once('copernica_rest_api.php');
 
+// retrieve only unique clicks
+$data = array(
+    'unique'    =>  true
+);
+
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // execute the call
-print_r($api->get("ms/clicks"));
+print_r($api->get("ms/clicks", $data));
 ```
 
 This example requires the [REST API class](./rest-php).
@@ -48,3 +59,4 @@ This example requires the [REST API class](./rest-php).
 * [Get all deliveries](./rest-get-ms-deliveries)
 * [Get all errors](./rest-get-ms-errors)
 * [Get all impressions](./rest-get-ms-impressions)
+* [Get all unsubscribes](./rest-get-ms-unsubscribes)
