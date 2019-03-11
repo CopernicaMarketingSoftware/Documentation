@@ -19,15 +19,15 @@ bewerkmodus. Met deze button kun je de weergave van het document veranderen.
 
 Er zijn vier mogelijke instellingen:
 
-    * bewerkmode, met gepersonaliseerde content
-    * bewerkmode, nog niet gepersonaliseerd (smarty variabelen zijn zichtbaar)
-    * preview mode, met gepersonaliseerde content
-    * preview mode, nog niet gepersonaliseerd
+* bewerkmode, met gepersonaliseerde content
+* bewerkmode, nog niet gepersonaliseerd (smarty variabelen zijn zichtbaar)
+* preview mode, met gepersonaliseerde content
+* preview mode, nog niet gepersonaliseerd
 
 Eigenlijk zijn het twee verschillende instellingen:
 
-    * Wil je het document weergeven in bewerkmodes of previewmodus?
-    * Wil je dat de Smarty variabelen direct worden ingevuld of niet?
+* Wil je het document weergeven in bewerkmodes of previewmodus?
+* Wil je dat de Smarty variabelen direct worden ingevuld of niet?
 
 Als je het document in bewerkmodus weergeeft, dan zijn de contentblokken
 aanklikbaar. Dit is meestal de handigste modus, omdat je direct de teksten die
