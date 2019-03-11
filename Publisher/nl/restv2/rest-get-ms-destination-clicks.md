@@ -10,6 +10,12 @@ Je kan de clicks voor een specifieke destination opvragen met een HTTP GET call 
 Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestamp** veld.
 
+## Parameters
+
+Er is een parameter beschikbaar voor deze methode; de 'unique' parameter 
+geeft aan of er alleen unieke clicks teruggegeven moeten worden. Standaard 
+zullen alle clicks worden geretourneerd.
+
 ## Teruggegeven velden
 
 Deze methode geeft een JSON object terug met clicks. Voor elke click 
@@ -36,8 +42,13 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token 
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// alleen unieke clicks opvragen
+$data = array(
+    'unique'    =>  true
+);
+
 // voer het verzoek uit
-print_r($api->get("ms/destination/{$destinationID}/clicks"));
+print_r($api->get("ms/destination/{$destinationID}/clicks", $data));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).

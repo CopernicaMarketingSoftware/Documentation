@@ -1,12 +1,12 @@
-# REST API: GET unsubscribes (Marketing Suite)
+# REST API: GET destination unsubscribes (Marketing Suite)
 
 Er worden statistieken bijgehouden over elke mailing die verstuurd wordt met 
 Copernica om je meer inzicht te geven in de prestatie hiervan. Unsubscribe clicks zijn 
 een van de statistieken die worden bijgehouden en representeren de kliks op de 
-uitschrijflinks in de mailings die je verstuurt. 
-Je kan deze opvragen met een HTTP GET call naar de volgende URL:
+uitschrijflinks in de mailings die je verstuurt. Je kan de clicks voor 
+een specifieke destination opvragen met een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v2/ms/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v2/ms/destination/{$destinationID}/unsubscribes?access_token=xxxx`
 
 Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestamp** veld.
@@ -48,7 +48,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-print_r($api->get("ms/unsubscribes", $data));
+print_r($api->get("ms/destination/{$destinationID}/unsubscribes", $data));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
@@ -56,8 +56,9 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 ## Meer informatie
 
 * [Overzicht van alle REST API calls](./rest-api)
-* [Opvragen van abuses voor MS](./rest-get-ms-abuses)
-* [Opvragen van clicks voor MS](./rest-get-ms-clicks)
-* [Opvragen van deliveries voor MS](./rest-get-ms-deliveries)
-* [Opvragen van errors voor MS](./rest-get-ms-errors)
-* [Opvragen van impressions voor MS](./rest-get-ms-impressions)
+* [Opvragen van alle unsubscribes](./rest-get-ms-unsubscribes)
+* [Opvragen van destination abuses voor MS](./rest-get-ms-destination-abuses)
+* [Opvragen van destination clicks voor MS](./rest-get-ms-destination-clicks)
+* [Opvragen van destination deliveries voor MS](./rest-get-ms-destination-deliveries)
+* [Opvragen van destination errors voor MS](./rest-get-ms-destination-errors)
+* [Opvragen van destination impressions voor MS](./rest-get-ms-destination-impressions)
