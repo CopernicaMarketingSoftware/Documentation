@@ -50,3 +50,4 @@ This example requires the [REST API class](./rest-php).
 * [Get destination clicks](./rest-get-ms-destination-clicks)
 * [Get destination deliveries](./rest-get-ms-destination-deliveries)
 * [Get destination impressions](./rest-get-ms-destination-impressions)
+* [Get destination unsubscribes](./rest-get-ms-destination-unsubscribes)

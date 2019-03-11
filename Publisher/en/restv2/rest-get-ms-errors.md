@@ -49,3 +49,4 @@ This example requires the [REST API class](./rest-php).
 * [Get all clicks](./rest-get-ms-clicks)
 * [Get all deliveries](./rest-get-ms-deliveries)
 * [Get all impressions](./rest-get-ms-impressions)
+* [Get all unsubscribes](./rest-get-ms-unsubscribes)

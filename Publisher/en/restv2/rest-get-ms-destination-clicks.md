@@ -49,3 +49,4 @@ This example requires the [REST API class](./rest-php).
 * [Get destination deliveries](./rest-get-ms-destination-deliveries)
 * [Get destination errors](./rest-get-ms-destination-errors)
 * [Get destination impressions](./rest-get-ms-destination-impressions)
+* [Get destination unsubscribes](./rest-get-ms-destination-unsubscribes)

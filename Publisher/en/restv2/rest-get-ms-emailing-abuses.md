@@ -47,3 +47,4 @@ This example requires the [REST API class](./rest-php).
 * [Get emailing deliveries](./rest-get-ms-emailing-deliveries)
 * [Get emailing errors](./rest-get-ms-emailing-errors)
 * [Get emailing impressions](./rest-get-ms-emailing-impressions)
+* [Get emailing unsubscribes](./rest-get-ms-emailing-unsubscribes)

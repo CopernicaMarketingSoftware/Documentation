@@ -48,3 +48,4 @@ This example requires the [REST API class](./rest-php).
 * [Get emailing clicks](./rest-get-ms-emailing-clicks)
 * [Get emailing deliveries](./rest-get-ms-emailing-deliveries)
 * [Get emailing errors](./rest-get-ms-emailing-errors)
+* [Get emailing unsubscribes](./rest-get-ms-emailing-unsubscribes)

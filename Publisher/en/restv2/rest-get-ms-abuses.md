@@ -46,3 +46,4 @@ This example requires the [REST API class](./rest-php).
 * [Get all deliveries](./rest-get-ms-deliveries)
 * [Get all errors](./rest-get-ms-errors)
 * [Get all impressions](./rest-get-ms-impressions)
+* [Get all unsubscribes](./rest-get-ms-unsubscribes)
