@@ -1,6 +1,6 @@
 # Een mailing versturen met de Publisher
-Het mailen van meerdere relaties ineens noemen wij een bulkmailing.
-Onder deze vernoeming van het menu Mailings vind je de opties voor het
+Het mailen van meerdere relaties in een keer noemen wij een bulkmailing.
+Onder deze naam in het menu **Mailings** vind je de opties voor het
 verzenden van een e-mail aan meerdere relaties.
 
 Het versturen van een bulkmailing verloopt in 4 stappen:
@@ -16,14 +16,14 @@ Het versturen van een bulkmailing verloopt in 4 stappen:
     gecontroleerd, zoals de aanwezigheid van een uitschrijflink en of de
     spamscore niet te hoog is.
 4.  In de laatste stap kan je je instellingen nog even nalopen en als je
-    tevreden bent kan je de mailing definitief versturen.
+    tevreden bent, kan je de mailing definitief versturen.
 
 **Let op:** Als je eenmaal op de verzendknop hebt gedrukt en hebt
 bevestigd, wordt de mailing definitief verstuurd. De mailing kan dan
 niet meer worden geannuleerd.
 
 Voor het versturen van een bulkmailing dient het volgende in orde te
-zijn
+zijn:
 
 -   Er bestaat in de database of collectie een veld dat je hebt
     aangewezen als e-mailveld. In dit veld zijn de e-mailadressen van de
@@ -45,9 +45,8 @@ Voer optioneel een omschrijving in.
 
 ## Tijdstip van verzenden
 Je kan een mailing eenmalig en direct versturen. Maar het is ook
-mogelijk om een mailing in te roosteren voor latere verzending. Het is
-tevens mogelijk de mailing periodiek te versturen. Bijvoorbeeld
-wekelijks.
+mogelijk om een mailing in te roosteren voor latere verzending of periodiek te
+versturen, bijvoorbeeld wekelijks.
 
 Ga naar het tabblad **Wanneer** om de datum en tijd van de verzending te
 bepalen. Ook kan je in dit tabblad bepalen hoe vaak de mailing herhaald
@@ -61,8 +60,8 @@ ingesteld dat ze volstaan voor de meeste gebruikers.
 
 ![](../images/NL-bulk-opties.png)
 
-**Types**: Verzend alleen de HTML versie, alleen platte tekst of beiden.
-In het laatste geval wordt de platte tekst getoond wanneer een ontvanger
+**Types**: Verzend alleen de HTML-versie, alleen de tekstversie of beiden.
+In het laatste geval wordt de tekstversie getoond wanneer een ontvanger
 geen HTML kan weergeven.
 
 -   **Personaliseer** de mailing wanneer je gebruik maakt van
@@ -76,7 +75,7 @@ geen HTML kan weergeven.
     externe server worden verwijderd.
 -   Vertraag eventueel de aflevering van de e-mail door de verzendsnelheid
     te beperken. Hiermee kan je tegengaan dat de server van jouw website
-    overbelast raakt omdat te veel ontvangers naar uw website klikken.
+    overbelast raakt omdat te veel ontvangers naar je website navigeren.
     De verzendsnelheid is van toepassing op de gehele bulkmailing. Voor
     het instellen van afleverlimieten per ontvangende server kan je de
     afleverinstellingen van het account beter wijzigen.
@@ -87,20 +86,21 @@ te stellen voor dezelfde bulkmailing. De verschillende versies worden
 eerst naar een beperkt aantal contacten verstuurd om te zien welke
 versie het meeste resultaat oplevert onder die contacten. Op basis van
 de resultaten van deze testgroepen, stuurt de applicatie vervolgens de
-hoogst scorende versie naar de overige contacten.
+hoogst scorende versie naar de overige contacten. Zie hiervoor ook
+[dit artikel](./emailings-publisher-testing#split-run).
 
 ## Controle van de mailing
 Voordat je de mailing kan versturen, worden er nog een aantal controles
-uitgevoerd op je document, je instellingen en dergelijke. Voor de beste
+uitgevoerd op je document en je instellingen. Voor de beste
 resultaten, is het beter dat je volledig schoon door de controle komt.
 Krijg je een waarschuwing, maar weet je niet hoe je deze kan verhelpen?
-Raadpleeg dan het artikel over de issue checker.
+Neem dan contact op met onze supportafdeling.
 
 ![](../images/NL-bulk-issuechecker.png)
 
 ## Overzicht van de instellingen
 In de laatste stap heb je nog de mogelijkheid al je instellingen nog
-even te doorlopen. Nadat je dit hebt gedaan kan je de mailing gaan
+even te doorlopen. Nadat je dit hebt gedaan, kan je de mailing gaan
 versturen. Zodra je de opdracht hebt gegeven en bevestigd, zal de
 mailing direct beginnen met versturen.
 
