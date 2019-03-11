@@ -21,6 +21,7 @@ De volgende velden zijn beschikbaar:
 * **abuses**: Aantal abuses gerapporteerd voor deze mailing.
 * **clicks**: Array met de velden 'total' en 'unique' voor het aantal kliks 
 en het aantal unieke kliks respectievelijk.
+* **deliveries**: Aantal deliveries voor deze mailing.
 * **errors**: Aantal errors ontvangen voor deze mailing.
 * **impressions**: Array met de velden 'total' en 'unique' voor het aantal impressies 
 en het aantal unieke impressies respectievelijk.

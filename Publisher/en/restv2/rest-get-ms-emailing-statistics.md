@@ -20,6 +20,7 @@ The following fields are available:
 * **abuses**: The number of abuses for this mailing.
 * **clicks**: An array with fields 'total' and 'unique' for the total 
 number of clicks and number of unique clicks respectively.
+* **deliveries**: The number of deliveries for this mailing
 * **errors**: The number of errors for this mailing.
 * **impressions**: An array with fields 'total' and 'unique' for the 
 total number impressions and number of unique impressions respectively.
