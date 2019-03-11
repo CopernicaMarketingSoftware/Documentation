@@ -1,5 +1,4 @@
 # Een mailing versturen met de Publisher
-
 Het mailen van meerdere relaties ineens noemen wij een bulkmailing.
 Onder deze vernoeming van het menu Mailings vind je de opties voor het
 verzenden van een e-mail aan meerdere relaties.
@@ -35,7 +34,6 @@ zijn
     -miniselectie.
 
 ## De bestemming van de mailing instellen
-
 -   Kies bij *selectie* de bestemming van een mailing. Dit kan een
     database, selectie, collectie of minicollectie zijn.
 -   Selecteer de optie om de mailing niet te versturen naar adressen die
@@ -46,7 +44,6 @@ Voer optioneel een omschrijving in.
 ![](../images/NL-bulk-inroosteren.png)
 
 ## Tijdstip van verzenden
-
 Je kan een mailing eenmalig en direct versturen. Maar het is ook
 mogelijk om een mailing in te roosteren voor latere verzending. Het is
 tevens mogelijk de mailing periodiek te versturen. Bijvoorbeeld
@@ -59,7 +56,6 @@ moet worden en met welke interval.
 ![](../images/NL-bulk-inroosteren.png)
 
 ## Extra instellingen voor bulkmailings
-
 Bepaal de instellingen voor de verzending. Deze zijn standaard zo
 ingesteld dat ze volstaan voor de meeste gebruikers.
 
@@ -86,7 +82,6 @@ geen HTML kan weergeven.
     afleverinstellingen van het account beter wijzigen.
 
 ## Split-run mailing
-
 Bij een split-run e-mailing is het mogelijk verschillende documenten op
 te stellen voor dezelfde bulkmailing. De verschillende versies worden
 eerst naar een beperkt aantal contacten verstuurd om te zien welke
@@ -94,9 +89,7 @@ versie het meeste resultaat oplevert onder die contacten. Op basis van
 de resultaten van deze testgroepen, stuurt de applicatie vervolgens de
 hoogst scorende versie naar de overige contacten.
 
-Controle van de mailing
------------------------
-
+## Controle van de mailing
 Voordat je de mailing kan versturen, worden er nog een aantal controles
 uitgevoerd op je document, je instellingen en dergelijke. Voor de beste
 resultaten, is het beter dat je volledig schoon door de controle komt.
@@ -105,9 +98,7 @@ Raadpleeg dan het artikel over de issue checker.
 
 ![](../images/NL-bulk-issuechecker.png)
 
-Overzicht van de instellingen
------------------------------
-
+## Overzicht van de instellingen
 In de laatste stap heb je nog de mogelijkheid al je instellingen nog
 even te doorlopen. Nadat je dit hebt gedaan kan je de mailing gaan
 versturen. Zodra je de opdracht hebt gegeven en bevestigd, zal de
