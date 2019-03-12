@@ -6,7 +6,7 @@ opvolgacties aan te maken en bestaande opvolgacties te bewerken.
 
 ![](../images/overview1.png)
 
-**Afbeelding:** een database met hieraan een heel web aan opvolgacties*
+**Afbeelding:** een database met hieraan een heel web aan opvolgacties
 
 ## Waar vind ik de Follow-up manager?
 Je vindt de follow-up manager achter een extra tab bij de database,
@@ -17,7 +17,7 @@ document, formulier of enquete.
 **Afbeelding:** deze database heeft twee opvolgacties. Wanneer een nieuw
 profiel is aangemaakt wordt automatisch een e-mail verzonden naar het
 profiel. Wanneer een profiel wordt gewijzigd, wordt het profiel na 5
-dagen automatisch verwijderd.*
+dagen automatisch verwijderd.
 
 ## Nieuwe opvolgactie maken
 Je kunt een opvolgactie aanmaken in het menu van een database, collectie,
@@ -28,9 +28,9 @@ Bestaande opvolgacties kunnen vanuit het overzicht gemakkelijk worden
 aangepast door op de actie zelf te klikken.
 
 ### Aanleiding
-Aanleiding zijn gebeurtenissen die ertoe leiden dat de actie wordt uitgevoerd.
-Je kunt bij elke trigger ook nog extra condities instellen op velden en
-interesses.
+De aanleiding (of *trigger*) is gebeurtenis die ertoe leidt dat de actie wordt
+uitgevoerd. Je kunt bij elke trigger ook nog extra condities instellen op
+velden en interesses.
 
 | Database                          | Collectie                          |
 |-----------------------------------|------------------------------------|
@@ -47,19 +47,18 @@ interesses.
 | Klik geregistreerd        |                              |                       |
 
 ### Acties
-Een opvolgactie kan de volgende acties uitvoeren:
+Met een opvolgactie kunnen de volgende acties worden uitgevoerd:
 
 -   Verstuur een Publisher document
 -   Verstuur een Marketing Suite template
--   Verstuur een PDF document als fax
+-   Verstuur een PDF-document als fax
 -   Verstuur een document naar een mobiel
 -   Verstuur een tekst e-mail
 -   Verstuur een SMS
 -   Maak een actiepunt aan
--   Maak een nieuw (sub)profiel
--   Pas de gegevens van een (sub)profiel aan
+-   Maak een nieuw (sub-)profiel
+-   Pas de gegevens van een (sub-)profiel aan
 -   Verwijder de gegevens van de geadresseerde
-
 
 ## Condities
 Het is daarnaast ook mogelijk om condities mee te geven aan opvolgacties. Om
@@ -70,7 +69,7 @@ Klik op **conditie bewerken** om een conditie aan te passen of toe te voegen.
 Klik op [Voer een JavaScript conditie in](./advanced-javascript-conditions) om
 een Javascript conditie aan te maken of gebruik de editor om een conditie aan
 te maken. De actie of aanleiding zal alleen gestart worden als er aan deze
-conditie voldaan wordt.
+conditie wordt voldaan.
 
 ## Beschikbare variabelen in opvolgacties
 Binnen opvolgacties zijn er extra variabelen beschikbaar gemaakt waarmee je
