@@ -7,12 +7,12 @@ databases, database callbacks en enquêtes.
 
 Let op: Probeer geen condities in te voeren zonder goed begrip van onderstaande
 uitleg of gedegen kennis van JavaScript. Daarmee kunt u uw mailings verstoren.
-Gebruik voor eenvoudige condities de Eenvoudige script editor
+Gebruik voor eenvoudige condities de eenvoudige script editor
 
 Hieronder geven we een uitleg bij JavaScript condities beschikbaar in de
 software.
 
-Ga direct naar de beschikbare variabelen voor
+Ga direct naar de beschikbare variabelen voor:
 
 - [Profielgegevens](#profielgegevens)
 - [Subprofielgegevens](#subprofielgegevens)
@@ -22,13 +22,13 @@ Ga direct naar de beschikbare variabelen voor
 - [Split run mailings](#splitrun)
 
 ## JavaScript condities
-Onder andere bij opvolgacties, webformulieren en blokken in een HTML document
+Onder andere bij opvolgacties, webformulieren en blokken in een HTML-document
 kun je JavaScript conditie plaatsen. Deze condities worden door de applicatie
 geevalueerd om te achterhalen of een opvolgacties moet worden uitgevoerd, of
 een bepaald blok in een document moet worden opgenomen, of om te controleren of
 een bepaald profielovereenkomt met de ingevulde gegevens van een formulier.
-Indien een conditie naar true evalueert, dan wordt de opvolgactie uitgevoerd,
-en als de conditie naar false evalueert dan gebeurt dat niet.
+Indien een conditie naar *true* evalueert, dan wordt de opvolgactie uitgevoerd.
+Wanneer de conditie naar *false* evalueertm, dan gebeurt dat niet.
 
 Deze condities zijn dus JavaScript condities en kunnen daarom heel krachtig
 zijn. Een voorbeeld van een (eenvoudige) conditie is:
@@ -43,7 +43,9 @@ Amsterdam. Overigens kun je bij opvolgacties twee verschillende condities
 plaatsen: een conditie die wordt geevalueerd op het moment van de aanleiding
 van de opvolgactie (bijvoorbeeld een klik op een hyperlink in een mailing) en
 een conditie die wordt geevalueerd op het moment dat de opvolgactie
-daadwerkelijk wordt uitgevoerd. Dit kan van pas komen als je een opvolgactie
+daadwerkelijk wordt uitgevoerd.
+
+Dit kan van pas komen als je een opvolgactie
 maakt waarbij een tweede mailing wordt ingeroosterd op het moment dat iemand op
 een hyperlink klikt. Deze tweede mailing wordt een week later verstuurd. Maar
 als iemand zich in de tussentijd uitschrijft voor de nieuwsbrief, dan is het
@@ -68,12 +70,10 @@ Omdat het allerlaatste statement in bovenstaand script "1 > 0" altijd naar true
 evalueert, zal ook de hele conditie naar true evalueren. Alle voorgaande
 statements zijn daarin dus niet relevant.
 
-**In verreweg de meeste condities is het helemaal niet nodig om ingewikkelde
+In verreweg de meeste condities is het helemaal niet nodig om ingewikkelde
 functies te gebruiken, maar volstaat een enkele test zoals je zag in het
-allereerste voorbeeld.**
-
-**Maar welke variabelen kun je nu eigenlijk in de conditie uitlezen? Hieronder
-volgt een kort overzicht.**
+allereerste voorbeeld. Welke variabelen kun je nu eigenlijk in de
+conditie uitlezen? Hieronder volgt een kort overzicht.
 
 ### Profielgegevens
 Indien een profiel beschikbaar is - en dit is bijna altijd het geval -
@@ -93,14 +93,14 @@ Ook hier zijn, net als bij een profiel, de variabelen 'subprofile.id' en
 'subprofile.code' beschikbaar.
 
 ### Collecties
- Collecties kunnen worden benaderd middels de profiel variabele. In de
- onderstaande praktijkvoorbeelden is te zien hoe dit in zijn werk gaat.
+Collecties kunnen worden benaderd middels de profiel variabele. In de
+onderstaande praktijkvoorbeelden is te zien hoe dit in zijn werk gaat.
 
 #### Benadering vanuit een profiel
- Wanneer bijvoorbeeld een opvolgactie in gang wordt gezet op basis van een
- profiel, is de variabele profile beschikbaar om een collectie te kunnen
- benaderen. Middels profile.collectienaam is dan een collectie bereikbaar.
- Hier volgen enkele voorbeelden:
+Wanneer er bijvoorbeeld een opvolgactie in gang wordt gezet op basis van een
+profiel, is de variabele profile beschikbaar om een collectie te kunnen
+benaderen. Middels profile.collectienaam is dan een collectie bereikbaar.
+Hier volgen enkele voorbeelden:
 
 
     // hier wordt gekeken of er twee subprofielen in de collectie 'orders' zitten
@@ -113,13 +113,13 @@ Ook hier zijn, net als bij een profiel, de variabelen 'subprofile.id' en
 
 
 #### Benadering vanuit een subprofiel
- Als een opvolgactie in gang is gezet vanuit een subprofiel, is naast de
- profile variable ook de subprofile variabele beschikbaar. De beschikbare
- profile variabele is het profiel waar de subprofielen bij horen. Op dezelfde
- manier als in de voorbeelden van benadering vanuit een profiel zoals
- beschreven in de vorige paragraaf, kunnen condities worden opgesteld. Echter
- kan bij de benadering van het subprofiel ook de subprofiel gegevens worden
- gebruikt in de conditie.
+Als een opvolgactie in gang is gezet vanuit een subprofiel, is naast de
+profile variabele ook de subprofile variabele beschikbaar. De beschikbare
+profile variabele is het profiel waar de subprofielen bij horen. Op dezelfde
+manier als in de voorbeelden van benadering vanuit een profiel zoals
+beschreven in de vorige paragraaf, kunnen condities worden opgesteld. Echter
+kan bij de benadering van het subprofiel ook de subprofiel gegevens worden
+gebruikt in de conditie.
 
     /**
       *   Check if an order has been paid for
@@ -157,8 +157,8 @@ In opvolgacties naar aanleiding van een enquête, en ook in de e-mails die
 naar aanleiding van deze opvolgacties worden opgestart, zijn variabelen
 beschikbaar met gegevens over de ingevulde enquête.
 
-De variabele 'survey.xml' bevat een XML representatie van de ingevulde
-enquête. 'survey.html' bevat een HTML representatie van de ingevulde
+De variabele 'survey.xml' bevat een XML-representatie van de ingevulde
+enquête. 'survey.html' bevat een HTML-representatie van de ingevulde
 enquete, en 'survey.questions' bevat een array van alle vragen die zijn
 ingevuld. Elke vraag uit dit array bestaat op zijn beurt uit een variabele
 'question' waarin de oorspronkelijke vraag staat, een variabele 'type' met het
@@ -177,17 +177,17 @@ conditie doen:
 
 `survey.questions[2].answer.match(/ja/);`
 
-! Let op: als computers en programmeurs gaan tellen beginnen ze bij nul.
+**Let op**: als computers en programmeurs gaan tellen beginnen ze bij nul.
 Vraag drie voor een mens is dus vraag twee voor een computer. Echter, door
-een fout in de software is er één uitzondering: de enquêtevraag
-(questions) begint bij 1 met tellen.
+in de software is er één uitzondering: de enquêtevraag (questions)
+begint bij 1 met tellen.
 
 Als je een opvolgactie alleen wilt uitvoeren indien er bij meerkeuzevraag 7
 minstens 3 antwoorden zijn ingevoerd, kan dit op de volgende manier:
 
 `survey.questions[7].answer.length >= 3`
 
-Zoals hierboven al geschreven zijn alle variabelen in de conditie ook
+Zoals hierboven al geschreven, zijn alle variabelen in de conditie ook
 beschikbaar als smarty variabelen! Je kunt dus in een document dat naar
 aanleiding van een ingevulde enquete wordt verstuurd deze variabelen ook
 uitlezen! Zo kun je een notificatie naar iemand sturen waarin je meldt welke
@@ -221,7 +221,7 @@ uitlezen via {$webform.fields.veldnaam}.
 Naast de standaardopties die worden aangeboden in de applicatie is het
 mogelijk zelf condities op te stellen om te (laten) bepalen welk document
 uiteindelijk verstuurd moet gaan worden. Op basis van de beschikbare
-variabelen (zie de onderstaande lijst) is het mogelijk zelf aan te geven welk
+variabelen (zie de onderstaande tabel) is het mogelijk zelf aan te geven welk
 document het meest effectief is.
 
 Kies voor 'Aangepaste condities' en klik op 'Bewerk aangepaste condities' om
@@ -242,7 +242,7 @@ Beschikbare variabelen:
 | errors_distinct           | integer   | Het aantal bestemmingen waar een foutmelding is geregistreerd                     |
 | errors_standardized       | integer   | Het gemiddeld aantal fouten per ontvanger binnen een opgegeven tijdspanne         |
 | links                     | Array     | Bevat informatie voor alle links in een document                                  |
-| url                       | string    | De locatie waar de URL naar verwijst                                              |
+| url                       | String    | De locatie waar de URL naar verwijst                                              |
 
 ### Aangepaste split-run conditie: Voorbeeld 1
 Je wilt zowel de kliks als impressies meten maar vindt de kliks
