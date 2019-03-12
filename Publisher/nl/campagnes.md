@@ -7,5 +7,6 @@ in onze [training](https://www.copernica.com/nl/aboutus/events). Wil je toch
 graag een custom campagne opstarten? Neem dan contact op met een van onze vele
 [partners](https://www.copernica.com/nl/support/partners).
 
+* [Welkom](./campaign-welcome.md)
 * [Double optin](./campaign-tutorial-double-opt-in.md)
 * [Verjaardag](./how-to-create-a-birthday-selection.md)
