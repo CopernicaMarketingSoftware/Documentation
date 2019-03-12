@@ -11,7 +11,7 @@ manieren:
 * Je kunt ze in het "data-script" plaatsen van een &lt;a&gt; tag;
 * Je kunt ze met de "drag-and-drop" editor invoeren.
 
-Let op: Voor data-scripts heb je het nieuwe link tracking systeem nodig.
+**Let op**: voor data-scripts heb je het nieuwe link tracking systeem nodig.
 Als je Marketing Suite gebruikt hoef je geen extra stappen te ondernemen en
 in Publisher kun je dit handmatig activeren in de instellingen van je account.
 
