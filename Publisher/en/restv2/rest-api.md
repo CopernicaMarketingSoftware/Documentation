@@ -189,8 +189,10 @@ like your customers or orders. The relevant API calls can be found below.
 |--------|----------------------------------------------------------------------------------------------|-------------------------------------------------------|
 | POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Create a new subprofile                               |
 | GET    | [api.copernica.com/v2/subprofile/$id](./rest-get-subprofile)                                 | Fetch the subprofile information                      |
+| PUT    | [api.copernica.com/v2/subprofile/$id](./rest-put-subprofile)                                 | Update the subprofile information                     |
 | DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                              | Delete a subprofile                                   |
 | GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Fetch all subprofile fields                           |
+| PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                   | Update the subprofile fields                          |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Create a request for all data stored for a subprofile |
 
 ## Email Addresses

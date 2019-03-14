@@ -191,8 +191,10 @@ in de onderstaande tabel.
 |--------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
 | POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Aanmaken van een subprofiel                      |
 | GET    | [api.copernica.com/v2/subprofile/$id](./rest-get-subprofile)                                 | Opvragen van subprofiel informatie               |
+| PUT    | [api.copernica.com/v2/subprofile/$id](./rest-put-subprofile)                                 | Updaten van subprofiel informatie                |
 | DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                              | Verwijderen van een subprofiel                   |
 | GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Opvragen van alle subprofiel velden              |
+| PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                   | Updaten van subprofiel velden                    |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Aanmaken van een dataverzoek voor een subprofiel |
 
 ## E-mailadressen
