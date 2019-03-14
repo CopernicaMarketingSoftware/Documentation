@@ -11,21 +11,68 @@ Where the `$id` should be replaced with the ID of the mailing.
 * **begintime**: Start date (and time) for the statistics.
 * **endtime**: End date (and time) for the statistics.
 
-## Returned fields
+## Return value
 
-The **data** field of returned JSON object contains the statistics. 
-The following fields are available:
+### Fields
+
+The following fields are available in the JSON object:
 
 * **destinations**: The number of destinations for this mailing.
-* **abuses**: The number of abuses for this mailing.
+* **abuses**: An array with field 'total' for the total 
+number of abuses.
 * **clicks**: An array with fields 'total' and 'unique' for the total 
 number of clicks and number of unique clicks respectively.
-* **deliveries**: The number of deliveries for this mailing
-* **errors**: The number of errors for this mailing.
+* **errors**: An array with field 'total' for the total 
+number of errors.
 * **impressions**: An array with fields 'total' and 'unique' for the 
 total number impressions and number of unique impressions respectively.
-* **retries**: The number of retries for this mailing.
-* **unsubscribes**: The number of unsubscribes for this mailing.
+* **retries**: An array with field 'total' for the total 
+number of retries.
+* **unsubscribes**: An array with field 'total' for the total 
+number of unsubscribes.
+
+### Example
+
+The JSON output will look something like this:
+
+```json
+Array
+(
+    [destinations]  =>  1
+    [abuses] => Array
+        (
+            [total] => 0
+        )
+        
+    [clicks] => Array
+        (
+            [total] => 3
+            [unique] => 1
+        )
+        
+    [errors] => Array
+        (
+            [total] => 0
+        )
+        
+    [impressions] => Array
+        (
+            [total] => 1
+            [unique] => 1
+        )
+        
+    [retries] => Array
+        (
+            [total] => 0
+        )
+        
+    [unsubscribes]  =>  Array
+        (   
+            [total] => 1
+        )
+        
+)
+```
 
 ## PHP example
 

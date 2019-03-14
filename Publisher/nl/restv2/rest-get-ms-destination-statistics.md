@@ -7,20 +7,62 @@ te sturen naar de volgende URL:
 
 Hier moet `$id` vervangen worden door de ID van de destination.
 
-## Teruggegeven velden
+## Teruggegeven waarde
 
-Het **data** veld van het teruggegeven JSON object bevat de statistieken. 
-De volgende velden zijn beschikbaar:
+### Velden
 
-* **abuses**: Aantal abuses gerapporteerd voor deze destination.
+Het JSON object bevat de volgende velden:
+
+* **abuses**: Array met het veld 'total' voor het aantal abuses.
 * **clicks**: Array met de velden 'total' en 'unique' voor het aantal kliks 
 en het aantal unieke kliks respectievelijk.
-* **deliveries**: Aantal deliveries voor deze destination.
-* **errors**: Aantal errors ontvangen voor deze destination.
+* **deliveries**: Array met het veld 'total' voor het aantal deliveries.
+* **errors**: Array met het veld 'total' voor het aantal errors.
 * **impressions**: Array met de velden 'total' en 'unique' voor het aantal impressies 
 en het aantal unieke impressies respectievelijk.
-* **retries**: Aantal retries voor deze destination.
-* **unsubscribes**: Aantal unsubscribes voor deze destination.
+* **retries**: Array met het veld 'total' voor het aantal retries.
+* **unsubscribes**: Array met het veld 'total' voor het aantal unsubscribes.
+
+### Voorbeeld
+
+Hieronder vind je een voorbeeld van zo'n JSON object:
+
+```json
+Array
+(
+    [abuses] => Array
+        (
+            [total] => 0
+        )
+        
+    [clicks] => Array
+        (
+            [total] => 3
+            [unique] => 1
+        )
+        
+    [deliveries] => Array
+        (
+            [total] => 1
+        )
+        
+    [errors] => Array
+        (
+            [total] => 0
+        )
+        
+    [impressions] => Array
+        (
+            [total] => 0
+        )
+        
+    [retries] => Array
+        (
+            [total] => 0
+        )
+        
+)
+```
 
 ## PHP voorbeeld
 

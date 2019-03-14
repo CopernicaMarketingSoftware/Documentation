@@ -6,17 +6,58 @@ You can retrieve the statistics for a Publisher destination by sending an HTTP G
 
 Where the `$id` should be replaced with the ID of the destination.
 
-## Returned fields
+## Return value
 
-The **data** field of returned JSON object contains the statistics. 
-The following fields are available:
+### Fields
 
-* **abuses**: The abuses that this mailing received.
-* **clicks**: The clicks that this mailing received.
-* **deliveries**: The deliveries to this destination.
-* **errors**: The errors that this mailing received.
-* **impressions**: The impressions that this mailing received.
-* **unsubscribes**: The unsubscribes that this mailing received.
+The JSON object contains the following fields:
+
+* **abuses**: An array with a 'total' field for the abuses that this mailing received.
+* **clicks**: An array with a 'total' field for the clicks that this mailing received.
+* **deliveries**: An array with a 'total' field for the deliveries to this destination.
+* **errors**: An array with a 'total' field for the errors that this mailing received.
+* **impressions**: An array with a 'total' field for the impressions that this mailing received.
+* **unsubscribes**: An array with a 'total' field for the unsubscribes that this mailing received.
+
+### Example
+
+The JSON output will look something like this:
+
+```json
+Array
+(
+    [abuses] => Array
+        (
+            [total] => 0
+        )
+        
+    [clicks] => Array
+        (
+            [total] => 3
+        )
+        
+    [deliveries] => Array
+        (
+            [total] => 1
+        )
+        
+    [errors] => Array
+        (
+            [total] => 0
+        )
+        
+    [impressions] => Array
+        (
+            [total] => 0
+        )
+        
+    [unsubscribes] => Array
+        (
+            [total] => 0
+        )
+
+)
+```
 
 ## PHP example
 
