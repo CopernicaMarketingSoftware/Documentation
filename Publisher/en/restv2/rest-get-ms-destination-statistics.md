@@ -12,6 +12,7 @@ Where the `$id` should be replaced with the ID of the destination.
 
 The following fields are available in the JSON object:
 
+* **ID**: The identifier of the destination
 * **abuses**: An array with field 'total' for the total 
 number of abuses.
 * **clicks**: An array with fields 'total' and 'unique' for the total 
@@ -32,6 +33,7 @@ The JSON output will look something like this:
 ```json
 Array
 (
+    [ID]     => 1234
     [abuses] => Array
         (
             [total] => 0

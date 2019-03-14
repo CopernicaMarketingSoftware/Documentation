@@ -13,6 +13,7 @@ Hier moet `$id` vervangen worden door de ID van de destination.
 
 Het JSON object bevat de volgende velden:
 
+* **ID**: De identifier van de destination
 * **abuses**: Array met het veld 'total' voor het aantal abuses.
 * **clicks**: Array met de velden 'total' en 'unique' voor het aantal kliks 
 en het aantal unieke kliks respectievelijk.
@@ -30,6 +31,7 @@ Hieronder vind je een voorbeeld van zo'n JSON object:
 ```json
 Array
 (
+    [ID]     => 1234
     [abuses] => Array
         (
             [total] => 0
