@@ -1,0 +1,331 @@
+# De REST API
+
+Met de REST API kun je automatische koppelingen met Copernica maken. 
+Je kunt bijvoorbeeld je website of app zo programmeren dat, met behulp 
+van de REST API, gegevens in je Copernica-account worden ophaald, gecreëerd, 
+geüpdatet of verwijderd. Dit gaat automatisch, dus buiten de *user interface* om. 
+Deze pagina bevat een overzicht van alle API calls.
+
+* [Introductie en registratie](rest-introduction)
+* [HTTP requests versturen en ontvangen](rest-requests)
+* [Externe OAuth2 koppelingen](rest-oauth)
+* [Paging](./rest-paging)
+
+De meest recente versie van de API is versie 2. [Dit artikel](./rest-introduction#REST-versie) 
+gaat hier dieper op in en legt uit hoe je overschakelt. Nog niet klaar om 
+over te stappen? Je kunt de documentatie voor versie 1 [hier](../restv1/rest-api.md) 
+vinden.
+
+## Types voor methodes
+
+Er zijn vier verschillende soorten methodes in de REST API:
+
+* **GET**: Wordt gebruikt om data op te vragen
+* **POST**: Wordt gebruikt om nieuwe data aan te maken
+* **PUT**: Wordt gebruikt om data te overschrijven
+* **DELETE**: Wordt gebruikt om data te verwijderen
+
+Meer informatie over HTTP request kun je vinden in de [introductie](./rest-introduction).
+
+## Inhoud
+
+Gebruik de onderstaande links om naar de gewenste API calls te 
+navigeren:
+
+* [Account](./rest-api#account)
+* [Databases & Collecties](./rest-api#databases-&-collecties)
+* [Selecties & Miniselecties](./rest-api#selecties-&-miniselecties)
+* [Regels & Miniregels](./rest-api#regels-&-miniregels)
+* [Profielen & Subprofielen](./rest-api#profielen-&-subprofielen)
+* [E-mailadressen](./rest-api#e-mailadressen)
+* [Publisher Mailings](./rest-api#publisher-mailings)
+* [Marketing Suite Mailings](./rest-api#marketing-suite-mailings)
+* [Dataverzoeken](./rest-api#dataverzoeken)
+* [Logfiles](./rest-api#logfiles)
+
+## Account
+
+In de onderstaande tabel vind je een methode om account informatie op te vragen.
+
+| Type   | Adres                                                                                        | Omschrijving                                 |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/identity](./rest-get-identity)                                         | Opvragen van account informatie              |
+
+## Databases & Collecties
+
+Je kunt je databases en collecties bekijken en onderhouden met API calls. 
+In de onderstaande tabel vindt je alle calls gerelateerd aan databases, 
+collecties en hun eigenschappen.
+
+### Databases
+
+| Type   | Adres                                                                                        | Omschrijving                                   |
+|--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
+| GET    | [api.copernica.com/v2/databases](./rest-get-databases)                                       | Opvragen van alle databases                    |
+| POST   | [api.copernica.com/v2/databases](./rest-post-databases)                                      | Aanmaken van een nieuwe database               |
+| GET    | [api.copernica.com/v2/database/$id](./rest-get-database)                                     | Opvragen van database informatie               |
+| PUT    | [api.copernica.com/v2/database/$id](./rest-put-database)                                     | Updaten van database informatie                |
+| GET    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-get-database-unsubscribe)             | Opvragen van database uitschrijfgedrag         |
+| PUT    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-put-database-unsubscribe)             | Updaten van database uitschrijfgedrag          |
+| GET    | [api.copernica.com/v2/database/$id/views](./rest-get-database-views)                         | Opvragen van alle database selecties           |
+| POST   | [api.copernica.com/v2/database/$id/views](./rest-post-database-views)                        | Aanmaken van een database selectie             |
+| GET    | [api.copernica.com/v2/database/$id/collections](./rest-get-database-collections)             | Opvragen van alle database collecties          |
+| POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Aanmaken van een nieuwe database collectie     |
+| GET    | [api.copernica.com/v2/database/$id/fields](./rest-get-database-fields)                       | Opvragen van alle database velden              |
+| POST   | [api.copernica.com/v2/database/$id/fields](./rest-post-database-fields)                      | Aanmaken van een nieuw database veld           |
+| PUT    | [api.copernica.com/v2/database/$id/field/$id](./rest-put-database-field)                     | Updaten van een database veld                  |
+| DELETE | [api.copernica.com/v2/database/$id/field/$id](./rest-delete-database-field)                  | Verwijderen van een database veld              |
+| GET    | [api.copernica.com/v2/database/$id/interests](./rest-get-database-interests)                 | Opvragen van alle database interesses          |
+| POST   | [api.copernica.com/v2/database/$id/interests](./rest-post-database-interests)                | Aanmaken van een nieuwe database interesse     |
+| GET    | [api.copernica.com/v2/database/$id/profileids](./rest-get-database-profileids)               | Opvragen van alle database profiel IDs         |
+| GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Opvragen van alle database profielen           |
+| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een nieuw database profiel        |
+| PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Updaten van een of meerdere database profielen |
+
+### Collecties
+
+| Type   | Adres                                                                                        | Omschrijving                                    |
+|--------|----------------------------------------------------------------------------------------------|-------------------------------------------------|
+| POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Aanmaken van een collectie                      |
+| GET    | [api.copernica.com/v2/collection/$id](./rest-get-collection)                                 | Opvragen van collectie informatie               |
+| PUT    | [api.copernica.com/v2/collection/$id](./rest-put-collection)                                 | Updaten van collectie informatie                |
+| GET    | [api.copernica.com/v2/collection/$id/unsubscribe](./rest-get-collection-unsubscribe)         | Opvragen van collectie uitschrijfgedrag         |
+| PUT    | [api.copernica.com/v2/collection/$id/unsubscribe](./rest-put-collection-unsubscribe)         | Updaten van collectie uitschrijfgedrag          |
+| GET    | [api.copernica.com/v2/collection/$id/miniviews](./rest-get-collection-miniviews)             | Opvragen van alle collectie miniselecties       |
+| POST   | [api.copernica.com/v2/collection/$id/miniviews](./rest-post-collection-miniviews)            | Aanmaken van een nieuwe collectie miniselectie  |
+| GET    | [api.copernica.com/v2/collection/$id/fields](./rest-get-collection-fields)                   | Opvragen van alle collectie velden              |
+| POST   | [api.copernica.com/v2/collection/$id/fields](./rest-put-collection-fields)                   | Aanmaken van een collectie veld                 |
+| PUT    | [api.copernica.com/v2/collection/$id/field/$id](./rest-put-collection-field)                 | Updaten van een collectie veld                  |
+| DELETE | [api.copernica.com/v2/collection/$id/field/$id](./rest-delete-collection-field)              | Verwijderen van een collectie veld              |
+| GET    | [api.copernica.com/v2/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Opvragen van alle collectie subprofiel IDs      |
+| GET    | [api.copernica.com/v2/collection/$id/subprofiles](./rest-get-collection-subprofiles)         | Opvragen van alle collectie subprofielen        |
+
+## Selecties & Miniselecties
+
+Selecties vallen onder de database, terwijl miniselecties onder een collectie vallen. 
+Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
+
+### Selecties
+
+| Type   | Adres                                                                                        | Omschrijving                                 |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/view/$id](./rest-get-view)                                             | Opvragen van selectie informatie             |
+| PUT    | [api.copernica.com/v2/view/$id](./rest-put-view)                                             | Updaten van selectie informatie              |
+| DELETE | [api.copernica.com/v2/view/$id](./rest-delete-view)                                          | Verwijderen van een selectie                 |
+| GET    | [api.copernica.com/v2/view/$id/views](./rest-get-view-views)                                 | Opvragen van alle genestelde selecties       |
+| POST   | [api.copernica.com/v2/view/$id/views](./rest-post-view-views)                                | Aanmaken van een genestelde selectie         |
+| GET    | [api.copernica.com/v2/view/$id/subprofileids](./rest-get-view-subprofileids)                 | Opvragen van alle selectie subprofiel IDs    |
+| GET    | [api.copernica.com/v2/view/$id/subprofiles](./rest-get-view-subprofiles)                     | Opvragen van alle selectie subprofielen      |
+| GET    | [api.copernica.com/v2/view/$id/rules](./rest-get-view-rules)                                 | Opvragen van alle selectie regels            |
+| GET    | [api.copernica.com/v2/view/$id/rule/$id](./rest-get-view-rule)                               | Opvragen van een selectie regel              |
+| POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Aanmaken van een selectie regel              |
+
+### Miniselecties
+
+| Type   | Adres                                                                                        | Omschrijving                                   |
+|--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
+| POST   | [api.copernica.com/v2/collection/$id/miniviews](./rest-post-collection-miniviews)            | Aanmaken van een miniselectie                  |
+| GET    | [api.copernica.com/v2/miniview/$id](./rest-get-miniview)                                     | Opvragen van miniselectie informatie           |
+| PUT    | [api.copernica.com/v2/miniview/$id](./rest-put-miniview)                                     | Updaten van miniselectie informatie            |
+| DELETE | [api.copernica.com/v2/miniview/$id](./rest-delete-miniview)                                  | Verwijderen van een miniselectie               |
+| GET    | [api.copernica.com/v2/miniview/$id/subprofileids](./rest-get-miniview-subprofileids)         | Opvragen van alle miniselectie subprofiel IDs  |
+| GET    | [api.copernica.com/v2/miniview/$id/subprofiles](./rest-get-miniview-subprofiles)             | Opvragen van alle miniselectie subprofielen    |
+| GET    | [api.copernica.com/v2/miniview/$id/minirules](./rest-get-miniview-rules)                     | Opvragen van alle miniselectie miniregels      |
+| GET    | [api.copernica.com/v2/miniview/$id/minirule/$id](./rest-get-miniview-rule)                   | Opvragen van een miniselectie miniregel        |
+| POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Aanmaken van een nieuwe miniselectie miniregel |
+
+## Regels & Miniregels
+
+Regels en miniregels bestaan uit een of meerdere condities om selecties en 
+miniselecties aan te maken onder een database of collectie respectievelijk. 
+Je kunt alle API calls gerelateerd aan (mini)regels in de tabel hieronder 
+vinden.
+
+### Regels
+
+| Type   | Adres                                                                                        | Omschrijving                                   |
+|--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
+| GET    | [api.copernica.com/v2/rule/$id](./rest-get-rule)                                             | Opvragen van regel informatie                  |
+| PUT    | [api.copernica.com/v2/rule/$id](./rest-put-rule)                                             | Updaten van regel informatie                   |
+| POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Aanmaken van een nieuwe selectie regel         |
+| POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Aanmaken van een nieuwe miniselectie miniregel |
+| DELETE | [api.copernica.com/v2/rule/$id](./rest-delete-rule)                                          | Verwijderen van een regel                      |
+| POST   | [api.copernica.com/v2/rule/$id/conditions](./rest-post-rule-conditions)                      | Aanmaken van een regel conditie                |
+
+### Miniregels
+
+| Type   | Adres                                                                                        | Omschrijving                                 |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/minirule/$id](./rest-get-minirule)                                     | Opvragen van miniregel informatie            |
+| PUT    | [api.copernica.com/v2/minirule/$id](./rest-put-minirule)                                     | Updaten van miniregel informatie             |
+| POST   | [api.copernica.com/v2/minirule/$id/conditions](./rest-post-minirule-conditions)              | Aanmaken van een nieuwe miniregel conditie   |
+| DELETE | [api.copernica.com/v2/minirule/$id](./rest-delete-minirule)                                  | Verwijderen van een miniregel                |
+
+## Profielen & Subprofielen
+
+Profielen en subprofielen kunnen gebruikt worden om entiteiten in je database 
+op te slaan, zoals je klanten of orders. Je vindt de relevante API calls 
+in de onderstaande tabel.
+
+### Profielen
+
+| Type   | Adres                                                                                        | Omschrijving                                     |
+|--------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
+| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een database profiel                |
+| GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                       | Opvragen van profiel informatie                  |
+| PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                       | Updaten van profiel informatie                   |
+| DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                    | Verwijderen van een profiel                      |
+| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)               | Opvragen van alle profiel subprofielen           |
+| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Aanmaken van een nieuw profiel subprofiel        |
+| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)               | Updaten van een of meerdere profiel subprofielen |
+| GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                         | Opvragen van alle profiel velden                 |
+| PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                         | Updaten van een of meerdere profiel velden       |
+| GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                   | Opvragen van alle profiel interesses             |
+| POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                  | Aanmaken van profiel interesse(s)                |
+| PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                   | Updaten van profiel interesse(s)                 |
+| POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)              | Aanmaken van een dataverzoek voor een profiel    |
+
+### Subprofielen
+
+| Type   | Adres                                                                                        | Omschrijving                                     |
+|--------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
+| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Aanmaken van een subprofiel                      |
+| GET    | [api.copernica.com/v2/subprofile/$id](./rest-get-subprofile)                                 | Opvragen van subprofiel informatie               |
+| PUT    | [api.copernica.com/v2/subprofile/$id](./rest-put-subprofile)                                 | Updaten van subprofiel informatie                |
+| DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                              | Verwijderen van een subprofiel                   |
+| GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Opvragen van alle subprofiel velden              |
+| PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                   | Updaten van een of meerdere subprofiel velden    |
+| POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Aanmaken van een dataverzoek voor een subprofiel |
+
+## E-mailadressen
+
+De onderstaande tabel bevat alle calls beschikbaar voor een specifiek e-mailadres.
+
+| Type   | Adres                                                                                        | Omschrijving                                      |
+|--------|----------------------------------------------------------------------------------------------|---------------------------------------------------|
+| POST   | [api.copernica.com/v2/email/$email/datarequest](./rest-post-email-datarequest)               | Aanmaken van een dataverzoek voor een e-mailadres |
+
+## Publisher Mailings
+
+In de onderstaande tabel vind je alle API calls gerelateerd aan Publisher 
+documenten, templates en mailings.
+
+### Mailings
+
+| Type   | Adres                                                                                                    | Omschrijving                                  |
+|--------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/emailings](./rest-get-publisher-emailings)                               | Opvragen van alle mailings                    |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id](./rest-get-publisher-emailing)                             | Opvragen van een mailing                      |
+| POST   | [api.copernica.com/v2/publisher/emailing](./rest-post-publisher-emailing)                                | Aanmaken van een mailing                      |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/destinations](./rest-get-publisher-emailing-destinations)   | Opvragen van destinations voor een mailing    |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/snapshot](./rest-get-publisher-emailing-snapshot)           | Opvragen van een snapshot voor een mailing    |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/statistics](./rest-get-publisher-emailing-statistics)       | Opvragen van de statistieken voor een mailing |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/abuses](./rest-get-publisher-emailing-abuses)               | Opvragen van abuses voor een mailing          |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/clicks](./rest-get-publisher-emailing-clicks)               | Opvragen van clicks voor een mailing          |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/deliveries](./rest-get-publisher-emailing-deliveries)       | Opvragen van deliveries voor een mailing      |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/errors](./rest-get-publisher-emailing-errors)               | Opvragen van errors voor een mailing          |    
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)     | Opvragen van impressies voor een mailing      |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)   | Opvragen van unsubscribes voor een mailing    |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Opvragen van de testgroepen voor een mailing  |
+| GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                               | Opvragen van bericht informatie                    |
+
+### Documenten & Templates
+
+| Type   | Adres                                                                                                            | Omschrijving                                       |
+|--------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/documents](./rest-get-publisher-documents)                                       | Opvragen van alle documenten                       |
+| GET    | [api.copernica.com/v2/publisher/document/$id](./rest-get-publisher-document)                                     | Opvragen van document informatie                   |
+| GET    | [api.copernica.com/v2/publisher/document/$id/emailings](./rest-get-publisher-document-emailings)                 | Opvragen van mailings voor een document            |
+| GET    | [api.copernica.com/v2/publisher/document/$id/statistics](./rest-get-publisher-document-statistics)               | Opvragen van statistieken voor een document        |
+| GET    | [api.copernica.com/v2/publisher/templates](./rest-get-publisher-templates)                                       | Opvragen van alle templates                        |
+| GET    | [api.copernica.com/v2/publisher/template/$id](./rest-get-publisher-template)                                     | Opvragen van template informatie                   |
+| GET    | [api.copernica.com/v2/publisher/template/$id/emailings](./rest-get-publisher-template-emailings)                 | Opvragen van mailings voor een template            |
+| GET    | [api.copernica.com/v2/publisher/template/$id/emailingdocuments](./rest-get-publisher-template-documents)         | Opvragen van alle documenten voor een template     |
+
+### Destinations (bestemmingen)
+
+| Type   | Adres                                                                                                        | Omschrijving                                       |
+|--------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/destination/$id/](./rest-get-publisher-destination)                          | Opvragen van een ontvanger                         |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/fields](./rest-get-publisher-destination-fields)             | Opvragen van een ontvanger inclusief profielvelden |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/abuses](./rest-get-publisher-destination-abuses)             | Opvragen van abuses voor een ontvanger             |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/clicks](./rest-get-publisher-destination-clicks)             | Opvragen van clicks voor een ontvanger             |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/deliveries](./rest-get-publisher-destination-deliveries)     | Opvragen van deliveries voor een ontvanger         |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/errors](./rest-get-publisher-destination-errors)             | Opvragen van errors voor een ontvanger             |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/impressions](./rest-get-publisher-destination-impressions)   | Opvragen van impressies voor een ontvanger         |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/unsubscribes](./rest-get-publisher-destination-unsubscribes) | Opvragen van unsubscribes voor een ontvanger       |
+
+### Mailing Statistieken
+
+| Type   | Adres                                                                                                                        | Omschrijving                                       |
+|--------|------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/abuses](./rest-get-publisher-abuses)                                                         | Opvragen van alle abuses voor Publisher            |
+| GET    | [api.copernica.com/v2/publisher/clicks](./rest-get-publisher-clicks)                                                         | Opvragen van alle clicks voor Publisher            |
+| GET    | [api.copernica.com/v2/publisher/deliveries](./rest-get-publisher-deliveries)                                                 | Opvragen van alle deliveries voor Publisher        |
+| GET    | [api.copernica.com/v2/publisher/errors](./rest-get-publisher-errors)                                                         | Opvragen van alle errors voor Publisher            |
+| GET    | [api.copernica.com/v2/publisher/impressions](./rest-get-publisher-impressions)                                               | Opvragen van alle impressions voor Publisher       |
+| GET    | [api.copernica.com/v2/publisher/unsubscribes](./rest-get-publisher-unsubscribes)                                             | Opvragen van alle unsubscribes voor Publisher      |
+
+## Marketing Suite Mailings
+
+In de onderstaande tabel vind je alle API calls gerelateerd aan Marketing Suite 
+templates en mailings.
+
+### Mailings
+
+| Type   | Adres                                                                                        | Omschrijving                                 |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Opvragen van alle mailings                   |
+| GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Opvragen van een mailing                     |
+| POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Aanmaken van een mailing                     |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van destinations voor een mailing   |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Opvragen van statistieken voor een mailing   |
+
+### Templates
+
+| Type   | Adres                                                                                        | Omschrijving                                 |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Opvragen van alle templates                  |
+| GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Opvragen van een template                    |
+| GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Opvragen van statistieken voor een template  |
+
+### Destinations
+
+| Type   | Adres                                                                                        | Omschrijving                                 |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Opvragen van een destination                 |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van destinations voor een mailing   |
+
+### Messages
+
+| Type   | Adres                                                                                        | Omschrijving                                 |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Opvragen van bericht informatie              |
+| GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Opvragen van bericht body                    |
+
+## Dataverzoeken
+
+Nadat alle data voor een dataverzoek is verzameld wordt de data voor een 
+korte periode op de Copernica servers opgeslagen. Met de onderstaande 
+calls kun je dataverzoeken aanmaken en de data en status van deze verzoeken opvragen.
+
+| Type   | Adres                                                                                        | Omschrijving                                 |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| POST   | [api.copernica.com/v2/email/$email/datarequest](./rest-post-email-datarequest)               | Aanmaken dataverzoek voor een e-mailadres    |
+| POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)              | Aanmaken dataverzoek voor een profiel        |
+| POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Aanmaken dataverzoek voor een subprofiel     |
+| GET    | [api.copernica.com/v2/datarequest/$id/data](./rest-get-datarequest-data)                     | Opvragen data van een dataverzoek            |
+| GET    | [api.copernica.com/v2/datarequest/$id/status](./rest-get-datarequest-status)                 | Opvragen status van een dataverzoek          |
+
+## Logfiles
+
+Copernica houdt uitgebreide data bij over alles gerelateerd aan een 
+mailing. Je kunt alle calls gerelateerd aan logfiles in de onderstaande tabel vinden.
+
+| Type   | Adres                                                                                        | Omschrijving                                  |
+|--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
+| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles)                                         | Opvragen logfile datums                       |
+| GET    | [api.copernica.com/v2/logfiles](./rest-get-logfiles-names)                                   | Opvragen logfile namen                        |
+| GET    | [api.copernica.com/v2/logfile/$filename/csv](./rest-get-logfiles-csv)                        | Opvragen logfiles in CSV                      |
+| GET    | [api.copernica.com/v2/logfile/$filename/json](./rest-get-logfiles-json)                      | Opvragen logfiles in JSON                     |
+| GET    | [api.copernica.com/v2/logfile/$filename/xml](./rest-get-logfiles-xml)                        | Opvragen logfiles in XML                      |

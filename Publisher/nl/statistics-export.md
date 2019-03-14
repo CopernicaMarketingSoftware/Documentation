@@ -5,6 +5,7 @@
 Deze functionaliteit is helaas (nog) niet beschikbaar in Marketing Suite.
 
 ## Publisher
+
 ### Mailing/template statistieken
 
 De resultaten van een mailing kunnen geëxporteerd worden via Publisher of 
@@ -35,4 +36,4 @@ en geef het volledige rapport met statistieken weer. Als je nu weer op
 ## Meer informatie
 
 * [Statistieken](./statistics)
-* [Exporteren met de REST API](./rest-get-logfiles-names)
+* [Exporteren met de REST API](./restv2/rest-get-logfiles-names.md)
