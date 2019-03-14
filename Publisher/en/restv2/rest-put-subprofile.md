@@ -1,11 +1,11 @@
-# REST API: PUT profile
+# REST API: PUT subprofile
 
-A method to edit the properties of an existing profile. It is called 
+A method to edit the properties of an existing subprofile. It is called 
 using the following URL:
 
-`https://api.copernica.com/v2/profile/$id?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id?access_token=xxxx`
 
-The `$id` needs to be replaced with the ID of the profile you want to 
+The `$id` needs to be replaced with the ID of the subprofile you want to 
 edit the properties of.
 
 ## Available data
@@ -13,9 +13,8 @@ edit the properties of.
 The following data can be placed in the message body of the HTTP 
 PUT command:
 
-- **fields**: Fields that the profile contains
-- **interests**: Interests that the profile contains
-- **secret**: The secret code that is associated with the profile
+- **fields**: Fields that the subprofile contains
+- **secret**: The secret code that is associated with the subprofile
 
 ## PHP example
 
@@ -35,16 +34,11 @@ $data = array(
         'lastname'  =>  'Doe',
         'email'     =>  'johndoe@example.com'
     ),
-    'interests' = array(
-        'football'  =>  0,
-        'tennis'    =>  1,
-        'hockey'    =>  1
-    ),
     'secret' => "geheimecode"
 );
 
 // do the call, and print result
-print_r($api->put("profile/{$profileID}", $data));
+print_r($api->put("subprofile/{$subprofileID}", $data));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
@@ -52,5 +46,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [PUT profile fields](./rest-put-profile-fields)
-* [PUT profile interests](./rest-put-profile-interests)
+* [PUT profile](./rest-put-profile)
+* [PUT subprofile fields](./rest-put-subprofile-fields)
