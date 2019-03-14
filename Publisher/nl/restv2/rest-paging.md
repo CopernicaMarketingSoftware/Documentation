@@ -7,9 +7,9 @@ retourneert een lijst van profielen. Zo zijn er nog veel meer.
 
 Om te voorkomen dat een REST API call te lang duurt, en om te voorkomen dat een 
 enkelvoudige call te veel resources van onze API servers vraagt, wordt de output 
-van al deze methodes echter standaard beperkt. Er worden niet meer dan 100 objecten 
+van al deze methodes echter beperkt. Er worden niet meer dan 1000 objecten 
 teruggegeven, zelfs als er wel meer databases of profielen bestaan. Als je meer 
-objecten wilt opvragen, zul je meerdere calls achter elkaar moeten doen.
+objecten wilt opvragen kun je daarvoor meerdere calls uitvoeren.
 
 ## Teruggegeven data
 
@@ -36,26 +36,14 @@ en *limit* zijn interessant als niet alle objecten konden worden teruggegeven.
 De property *start* bevat het aantal overgeslagen objecten, en *limit* het
 aantal tot waar de output is beperkt. In bovenstaand voorbeeld wordt dus een
 lijst van 100 objecten geretourneerd, waarbij de eerste 50 zijn overgeslagen.
+Als je geen limiet mee geeft zal het aantal objecten automatisch tot 100 worden beperkt.
 
 De property *total* bevat het totaal aantal beschikbare elementen. In bovenstaand
-voorbeeld staat het op 335, wat veel meer is dan de 100 objecten die zijn teruggegeven.
-Je weet dus dat je aanvullende calls moet doen om meer gegevens op te vragen.
-
-## Paging parameters
-
-Elke methode die een lijst van objecten retourneert ondersteunt standaard
-drie parameters die je aan de URL kan toevoegen: *start*, *limit* en *total*.
-De *start* en *limit* parameters zijn numerieke parameters die je kunt gebruiken
-om op te geven welke deel je van de beschikbare objecten je wilt opvragen: waar 
-de lijst moet starten (hoeveel eerdere elementen worden overgeslagen), en 
-hoeveel elementen moeten worden teruggegeven.
-
-De parameter *total* is een boolean parameter die je op false kunt zetten om
-aan te geven dat je geen interesse hebt in het totaal aantal beschikbare objecten. 
-Het uitrekenen van het totaal aantal beschikbare objecten is een relatief zware
-operatie. Als jouw script de property *total* in de geretourneerde JSON negeert, 
-dan kun je net zo goed al van te voren aangeven dat deze property niet hoeft
-te worden berekend. Dit maakt de API call iets sneller.
+voorbeeld staat het op 335. Aangezien er maar 100 elementen op zijn gevraagd zouden 
+er dus extra calls uitgevoerd moeten worden om de overige 235 element op te vragen. 
+Daarnaast is het belangrijk om te onthouden dat de *total* berekenen een zware operatie 
+kan zijn als je een uitgebreide collectie aan elementen hebt. Je kunt *total* op 
+'false' zetten om je API calls sneller te maken.
 
 ## Voorbeeld in PHP
 

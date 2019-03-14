@@ -32,7 +32,8 @@ and how many are available.
 The property *start* is the numerical identifier from which to start the list,
 and the *limit* property states the maximum number of objects to be returned.
 The *count* property contains the number of objects actually returned.
-In the above example, 100 objects were returned whose identifiers range from 50 to 149.
+In the above example, 100 objects were returned whose identifiers range from 50 to 149. 
+If you don't add a limit to your call the default value of 100 will be used.
 
 The property *total* contains the total number of available objects.
 In the above example the total is 335, which means it takes at least 4 calls
