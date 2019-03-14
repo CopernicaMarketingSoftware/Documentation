@@ -223,7 +223,7 @@ templates and mailings.
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)     | Fetch the impressions for a mailing          |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)   | Fetch the unsubscribes for a mailing         |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Fetch the testgroups for a mailing           |
-| GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                               | Fetch the message information                          |
+| GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                               | Fetch the message information                |
 
 ### Documents & Templates
 
