@@ -130,6 +130,7 @@ You can find methods that relate to a specific (mini)view below.
 | DELETE | [api.copernica.com/v2/miniview/$id](./rest-delete-miniview)                                  | Delete a miniview                            |
 | GET    | [api.copernica.com/v2/miniview/$id/subprofileids](./rest-get-miniview-subprofileids)         | Fetch all miniview subprofile IDs            |
 | GET    | [api.copernica.com/v2/miniview/$id/subprofiles](./rest-get-miniview-subprofiles)             | Fetch all miniview subprofiles               |
+| GET    | [api.copernica.com/v2/miniview/$id/views](./rest-get-miniview-views)                         | Fetch all views for a miniview               |
 | GET    | [api.copernica.com/v2/miniview/$id/minirules](./rest-get-miniview-rules)                     | Fetch all miniview minirules                 |
 | GET    | [api.copernica.com/v2/miniview/$id/minirule/$id](./rest-get-miniview-rule)                   | Fetch a miniview minirule                    |
 | POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Create a new miniview minirule               |

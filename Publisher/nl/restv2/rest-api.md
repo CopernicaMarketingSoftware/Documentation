@@ -130,6 +130,7 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 | DELETE | [api.copernica.com/v2/miniview/$id](./rest-delete-miniview)                                  | Verwijderen van een miniselectie               |
 | GET    | [api.copernica.com/v2/miniview/$id/subprofileids](./rest-get-miniview-subprofileids)         | Opvragen van alle miniselectie subprofiel IDs  |
 | GET    | [api.copernica.com/v2/miniview/$id/subprofiles](./rest-get-miniview-subprofiles)             | Opvragen van alle miniselectie subprofielen    |
+| GET    | [api.copernica.com/v2/miniview/$id/views](./rest-get-miniview-views)                         | Opvragen van selecties voor een miniselectie   |
 | GET    | [api.copernica.com/v2/miniview/$id/minirules](./rest-get-miniview-rules)                     | Opvragen van alle miniselectie miniregels      |
 | GET    | [api.copernica.com/v2/miniview/$id/minirule/$id](./rest-get-miniview-rule)                   | Opvragen van een miniselectie miniregel        |
 | POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Aanmaken van een nieuwe miniselectie miniregel |
