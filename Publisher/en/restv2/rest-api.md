@@ -77,6 +77,7 @@ structure.
 | DELETE | [api.copernica.com/v2/database/$id/field/$id](./rest-delete-database-field)                  | Delete a database field                      |
 | GET    | [api.copernica.com/v2/database/$id/interests](./rest-get-database-interests)                 | Fetch all database interests                 |
 | POST   | [api.copernica.com/v2/database/$id/interests](./rest-post-database-interests)                | Create a new database interest               |
+| PUT    | [api.copernica.com/v2/interest](./rest-put-interest)                                         | Update a database interest                   |
 | GET    | [api.copernica.com/v2/database/$id/profileids](./rest-get-database-profileids)               | Fetch all database profile IDs               |
 | GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Fetch all database profiles                  |
 | POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Create a new database profile                |

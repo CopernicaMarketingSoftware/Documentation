@@ -77,6 +77,7 @@ collecties en hun eigenschappen.
 | DELETE | [api.copernica.com/v2/database/$id/field/$id](./rest-delete-database-field)                  | Verwijderen van een database veld              |
 | GET    | [api.copernica.com/v2/database/$id/interests](./rest-get-database-interests)                 | Opvragen van alle database interesses          |
 | POST   | [api.copernica.com/v2/database/$id/interests](./rest-post-database-interests)                | Aanmaken van een nieuwe database interesse     |
+| PUT    | [api.copernica.com/v2/interest](./rest-put-interest)                                         | Updaten van een database interesse             |
 | GET    | [api.copernica.com/v2/database/$id/profileids](./rest-get-database-profileids)               | Opvragen van alle database profiel IDs         |
 | GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Opvragen van alle database profielen           |
 | POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een nieuw database profiel        |
