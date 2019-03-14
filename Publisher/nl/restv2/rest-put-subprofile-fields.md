@@ -1,12 +1,12 @@
-# REST API: PUT profile fields
+# REST API: PUT subprofile fields
 
-Om de velden van een profiel bij te werken, moet je een HTTP PUT request
+Om de velden van een subprofiel bij te werken, moet je een HTTP PUT request
 sturen naar de volgende URL:
 
-`https://api.copernica.com/v2/profile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id/fields?access_token=xxxx`
 
-De code `$id` moet je vervangen door de numerieke identifier van het profiel 
-waarvan je de velden wilt veranderen. De nieuwe veldwaardes van het profiel
+De code `$id` moet je vervangen door de numerieke identifier van het subprofiel 
+waarvan je de velden wilt veranderen. De nieuwe veldwaardes van het subprofiel
 kun je in de body van het bericht plaatsen.
 
 ## Body data
@@ -39,7 +39,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->put("profile/{$profielID}/fields", array(), $data);
+$api->put("subprofile/{$subprofielID}/fields", array(), $data);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
@@ -47,6 +47,6 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Opvragen van profieldata](rest-get-profile)
-* [Een profiel bijwerken](rest-put-profile)
-* [Een profiel verwijderen](rest-delete-profile)
+* [Opvragen van subprofiel data](rest-get-subprofile)
+- [Subprofielen aan een profiel toevoegen](./rest-put-profile-subprofiles)
+- [Subprofiel verwijderen](rest-delete-subprofile)
