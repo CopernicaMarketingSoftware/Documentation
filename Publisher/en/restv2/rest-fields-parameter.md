@@ -75,7 +75,6 @@ $api = new CopernicaRestApi("your-access-token");
 
 // parameters to pass to the call
 $parameters = array(
-    'limit'     =>  100,
     'orderby'   =>  'country',
     'fields'    =>  array("age>16", "age<=65")
 );
