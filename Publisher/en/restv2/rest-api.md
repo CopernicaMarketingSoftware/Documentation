@@ -94,7 +94,7 @@ structure.
 | GET    | [api.copernica.com/v2/collection/$id/miniviews](./rest-get-collection-miniviews)             | Fetch all collection miniviews               |
 | POST   | [api.copernica.com/v2/collection/$id/miniviews](./rest-post-collection-miniviews)            | Create a new collection miniview             |
 | GET    | [api.copernica.com/v2/collection/$id/fields](./rest-get-collection-fields)                   | Fetch all collection fields                  |
-| POST   | [api.copernica.com/v2/collection/$id/fields](./rest-put-collection-fields)                   | Create a new collection field                |
+| POST   | [api.copernica.com/v2/collection/$id/fields](./rest-post-collection-fields)                  | Create a new collection field                |
 | PUT    | [api.copernica.com/v2/collection/$id/field/$id](./rest-put-collection-field)                 | Update a collection field                    |
 | DELETE | [api.copernica.com/v2/collection/$id/field/$id](./rest-delete-collection-field)              | Delete a collection field                    |
 | GET    | [api.copernica.com/v2/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Fetch all collection subprofile IDs          |
@@ -114,8 +114,8 @@ You can find methods that relate to a specific (mini)view below.
 | DELETE | [api.copernica.com/v2/view/$id](./rest-delete-view)                                          | Delete a view                                |
 | GET    | [api.copernica.com/v2/view/$id/views](./rest-get-view-views)                                 | Fetch all nested views                       |
 | POST   | [api.copernica.com/v2/view/$id/views](./rest-post-view-views)                                | Create a nested view                         |
-| GET    | [api.copernica.com/v2/view/$id/subprofileids](./rest-get-view-subprofileids)                 | Fetch all view subprofile IDs                |
-| GET    | [api.copernica.com/v2/view/$id/subprofiles](./rest-get-view-subprofiles)                     | Fetch all view subprofiles                   |
+| GET    | [api.copernica.com/v2/view/$id/profileids](./rest-get-view-profileids)                       | Fetch all view profile IDs                   |
+| GET    | [api.copernica.com/v2/view/$id/profiles](./rest-get-view-profiles)                           | Fetch all view profiles                      |
 | GET    | [api.copernica.com/v2/view/$id/rules](./rest-get-view-rules)                                 | Fetch all view rules                         |
 | GET    | [api.copernica.com/v2/view/$id/rule/$id](./rest-get-view-rule)                               | Fetch a view rule                            |
 | POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Create a new view rule                       |
@@ -192,7 +192,6 @@ like your customers or orders. The relevant API calls can be found below.
 | PUT    | [api.copernica.com/v2/subprofile/$id](./rest-put-subprofile)                                 | Update the subprofile information                     |
 | DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                              | Delete a subprofile                                   |
 | GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Fetch all subprofile fields                           |
-| PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                   | Update one or multiple subprofile fields              |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Create a request for all data stored for a subprofile |
 
 ## Email Addresses

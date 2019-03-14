@@ -94,7 +94,7 @@ collecties en hun eigenschappen.
 | GET    | [api.copernica.com/v2/collection/$id/miniviews](./rest-get-collection-miniviews)             | Opvragen van alle collectie miniselecties       |
 | POST   | [api.copernica.com/v2/collection/$id/miniviews](./rest-post-collection-miniviews)            | Aanmaken van een nieuwe collectie miniselectie  |
 | GET    | [api.copernica.com/v2/collection/$id/fields](./rest-get-collection-fields)                   | Opvragen van alle collectie velden              |
-| POST   | [api.copernica.com/v2/collection/$id/fields](./rest-put-collection-fields)                   | Aanmaken van een collectie veld                 |
+| POST   | [api.copernica.com/v2/collection/$id/fields](./rest-post-collection-fields)                  | Aanmaken van een collectie veld                 |
 | PUT    | [api.copernica.com/v2/collection/$id/field/$id](./rest-put-collection-field)                 | Updaten van een collectie veld                  |
 | DELETE | [api.copernica.com/v2/collection/$id/field/$id](./rest-delete-collection-field)              | Verwijderen van een collectie veld              |
 | GET    | [api.copernica.com/v2/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Opvragen van alle collectie subprofiel IDs      |
@@ -114,8 +114,8 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 | DELETE | [api.copernica.com/v2/view/$id](./rest-delete-view)                                          | Verwijderen van een selectie                 |
 | GET    | [api.copernica.com/v2/view/$id/views](./rest-get-view-views)                                 | Opvragen van alle genestelde selecties       |
 | POST   | [api.copernica.com/v2/view/$id/views](./rest-post-view-views)                                | Aanmaken van een genestelde selectie         |
-| GET    | [api.copernica.com/v2/view/$id/subprofileids](./rest-get-view-subprofileids)                 | Opvragen van alle selectie subprofiel IDs    |
-| GET    | [api.copernica.com/v2/view/$id/subprofiles](./rest-get-view-subprofiles)                     | Opvragen van alle selectie subprofielen      |
+| GET    | [api.copernica.com/v2/view/$id/profileids](./rest-get-view-profileids)                       | Opvragen van alle selectie profiel IDs       |
+| GET    | [api.copernica.com/v2/view/$id/profiles](./rest-get-view-profiles)                           | Opvragen van alle selectie profielen         |
 | GET    | [api.copernica.com/v2/view/$id/rules](./rest-get-view-rules)                                 | Opvragen van alle selectie regels            |
 | GET    | [api.copernica.com/v2/view/$id/rule/$id](./rest-get-view-rule)                               | Opvragen van een selectie regel              |
 | POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Aanmaken van een selectie regel              |
@@ -191,10 +191,8 @@ in de onderstaande tabel.
 |--------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
 | POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Aanmaken van een subprofiel                      |
 | GET    | [api.copernica.com/v2/subprofile/$id](./rest-get-subprofile)                                 | Opvragen van subprofiel informatie               |
-| PUT    | [api.copernica.com/v2/subprofile/$id](./rest-put-subprofile)                                 | Updaten van subprofiel informatie                |
 | DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                              | Verwijderen van een subprofiel                   |
 | GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Opvragen van alle subprofiel velden              |
-| PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                   | Updaten van een of meerdere subprofiel velden    |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Aanmaken van een dataverzoek voor een subprofiel |
 
 ## E-mailadressen

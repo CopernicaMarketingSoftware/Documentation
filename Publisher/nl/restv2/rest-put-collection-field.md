@@ -22,8 +22,7 @@ De volgende variabelen kunnen meegegeven worden aan de body van het verzoek:
 - **textlines**: Hoeveelheid regels beschikbaar in text velden
 - **hidden**: Boolean waarde om aan te geven of een veld altijd verborgen moet worden voor een gebruiker
 - **index**: Boolean waarde om aan te geven of er een index aangemaakt moet worden op het veld
-            
-
+        
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden.

@@ -1,4 +1,4 @@
-# REST API: GET emailings for a template (Publisher)
+# REST API: GET emailings (Publisher template)
 
 You can use the REST API to retrieve all emailings in which a template 
 was used with an HTTP GET call to the following URL:
