@@ -10,6 +10,7 @@ contains an overview of all API calls.
 * [Introduction & registration](./rest-introduction)
 * [Sending and receiving HTTP requests](./rest-requests)
 * [External OAuth2 links](./rest-oauth)
+* [Paging](./rest-paging)
 
 We are currently on version 2 of the REST API. [This article](./rest-introduction#REST-version) 
 explains the new version (and how to switch) in full detail. Not ready to switch? 
@@ -43,6 +44,7 @@ Use the links below to jump to the type of API call you are looking for.
 * [Logfiles](rest-api#logfiles)
 
 ## Account
+
 In the table below you can find a call to retrieve account information.
 
 | Type   | Address                                                                                      | Description                                   |

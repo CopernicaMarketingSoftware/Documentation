@@ -9,6 +9,7 @@ Deze pagina bevat een overzicht van alle API calls.
 * [Introductie en registratie](rest-introduction)
 * [HTTP requests versturen en ontvangen](rest-requests)
 * [Externe OAuth2 koppelingen](rest-oauth)
+* [Paging](./rest-paging)
 
 De meest recente versie van de API is versie 2. [Dit artikel](./rest-introduction#REST-versie) 
 gaat hier dieper op in en legt uit hoe je overschakelt. Nog niet klaar om 
