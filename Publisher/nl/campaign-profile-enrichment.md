@@ -1,7 +1,7 @@
 # Profielverrijking 
 Profielverrijking is een proces waarbij je een klant steeds beter leert kennen. In principe stel je voor iedere klant een gedragsprofiel op in je database die in de loop der tijd uitgebreid wordt met nieuwe informatie. Op basis van deze informatie kan je vervolgens persoonsgerichte campagnes uitsturen. 
 
-De sleutel tot succesvolle e-mailcampagnes is relevantie. Als je alleen een naam en e-mailadres hebt van de klant is het echter moeilijk om te bepalen wat nu precies ‘relevant’ voor hen is, daarom is het verzamelen van gegevens zo belangrijk. Bij profielverrijking vergaar je steeds meer gegevens van de ontvanger als gevolg van een actie vanuit de verzender. Hieronder leggen we uit hoe je profielverrijking in Copernica kan instellen, deze concepten worden verder uitgelegd in onze [profielverrijkings blog](link naar blog).
+De sleutel tot succesvolle e-mailcampagnes is relevantie. Als je alleen een naam en e-mailadres hebt van de klant is het echter moeilijk om te bepalen wat nu precies ‘relevant’ voor hen is, daarom is het verzamelen van gegevens zo belangrijk. Bij profielverrijking vergaar je steeds meer gegevens van de ontvanger als gevolg van een actie vanuit de verzender. Hieronder leggen we uit hoe je profielverrijking in Copernica kan instellen, deze concepten worden verder uitgelegd in onze [profielverrijkings blog](https://www.copernica.com/nl/blog/post/campagne-uitgelicht-1-leer-je-klant-beter-kennen-met-profielverrijking).
 
 ## Profielverrijking via webformulieren
 De meeste nieuwe klanten zullen binnenkomen via een webformulier of via een automatische koppeling. Voor dit voorbeeld gaan we even van het eerste uit. Er zijn twee manieren in Copernica om een webformulier aan een database te koppelen. Je kan een HTML formulier genereren en deze op je eigen website plaatsen of je maakt een webformulier in Copernica en zet deze op een Copernica landingspagina. 
@@ -33,7 +33,7 @@ http://jouwdomein.nl/websitepagina?profile={$profile.id}&code={$profile.code}
 ```
 {$profile.id} zorgt ervoor dat het formulier weet welk profiel aangepast moet worden en {$profile.code} is een code die wij gebruiken ter verificatie. Let hierbij op dat het formulier een wijzigingsformulier is met sleutelvelden.
 
-**Tip**: Vraag op deze pagina niet te veel informatie, zoals beschreven in onze [blog](link naar blog)
+**Tip**: Vraag op deze pagina niet te veel informatie, zoals beschreven in onze [blog](https://www.copernica.com/nl/blog/post/campagne-uitgelicht-1-leer-je-klant-beter-kennen-met-profielverrijking)
 
 ## Interesses op basis van kliks
 Het is niet altijd nodig om je ontvangers te vragen om zelf informatie te delen. Het is ook mogelijk om op basis van gedrag achter informatie te komen. In het voorbeeld hieronder willen we de schoenmaat van een klant weten, echter willen we dit niet vragen. 
@@ -89,7 +89,7 @@ Hier wordt het Email gebruikt om de orders aan een profiel te koppelen. Alle waa
 - Vergeet niet bij de tab instellingen aan te geven dat je sleutelvelden gebruikt
 
 #### Mini-selectie & Selectie
-Nu we een collectie met Orders hebben ofwel geïmporteerd of door een koppeling, kunnen we nu groepen hierin maken. Het is nu mogelijk om klanten te segmenteren op basis van prijs. Bijvoorbeeld iedereen die 5 orders gedaan van tussen de 80 en 120 euro.  Hiervoor hebben we 2 dingen nodig een [miniselectie](./database-collections#selecties-en-miniselecties:) die de juiste orders selecteert en een normale selectie die de eigenaren van die orders selecteert.
+Nu we een collectie met Orders hebben ofwel geïmporteerd of door een koppeling, kunnen we nu groepen hierin maken. Het is nu mogelijk om klanten te segmenteren op basis van prijs. Bijvoorbeeld iedereen die vijf orders gedaan van tussen de 80 en 120 euro.  Hiervoor hebben we twee dingen nodig een [miniselectie](./database-collections#selecties-en-miniselecties:) die de juiste orders selecteert en een normale selectie die de eigenaren van die orders selecteert.
 - Ga naar **Profielen** in de **Publisher** en ga naar **Databasebeheer > Selecties beheren**
 - Klik op **Mini selectie aanmaken**, hang deze onder de juiste collectie en geef het een naam
 - Voeg een check op veldwaarde toe waarbij het veld Prijs groter is dan 80, vergelijk deze waarde numeriek
@@ -98,8 +98,8 @@ Nu we een collectie met Orders hebben ofwel geïmporteerd of door een koppeling,
 - Klik op **Overzicht van alle selecties**
 - Klik op **Selectie aanmaken**, hang deze onder de juiste selectie en geef het een naam
 - Voeg de conditie check op inhoud miniselectie toe
-- Kies de net aangemaakt miniselectie zet het minimum op 5 en het maximum op een heel hoog getal zoals 99999999
-- Je hebt nu een selectie gemaakt waarbij ieder profiel 5 of meer aankopen van tussen de 80 en 120 euro gedaan heeft
+- Kies de net aangemaakt miniselectie zet het minimum op vijf en het maximum op een heel hoog getal zoals 99999999
+- Je hebt nu een selectie gemaakt waarbij ieder profiel vijf of meer aankopen van tussen de 80 en 120 euro gedaan heeft
 
 **Tip**: Je kan deze profielen ook een kenmerk geven door iedereen in de selectie aan te passen. Dit kan met de functie **Huidige weergave > Meerdere wijzigen/verwijderen**.
 
