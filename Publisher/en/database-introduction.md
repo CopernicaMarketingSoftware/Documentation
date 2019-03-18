@@ -44,7 +44,7 @@ you build, maintain and export your databases.
 
 * [Importing a database](./database-import)
 * [Exporting a database](./database-export)
-* [Managing databases with the REST API](./rest-api)
+* [Managing databases with the REST API](./restv2/rest-api)
 
 ### Maintenance and tips
 

@@ -36,10 +36,10 @@ door databaserestricties en gebruiksmogelijkheden in te stellen.
 De volgende artikelen helpen je op weg bij het opzetten van een
 database en het onderhouden ervan.
 
-* [Selecties](database-selections-introduction)
-* [Databasevelden](database-fields)
-* [Database restricties](database-restrictions)
-* [Importeren](database-import)
-* [Exporteren](database-export)
-* [Databases beheren met de REST API](rest-api)
-* [Tips voor het beheren van je database](database-maintenance)
+* [Selecties](./database-selections-introduction.md)
+* [Databasevelden](./database-fields.md)
+* [Database restricties](./database-restrictions.md)
+* [Importeren](./database-import.md)
+* [Exporteren](./database-export.md)
+* [Databases beheren met de REST API](./restv2/rest-api.md)
+* [Tips voor het beheren van je database](./database-maintenance.md)

@@ -18,11 +18,11 @@ manner. As a customer of Copernica you have to comply with these regulations.
 
 In the Marketing Suite you can retrieve the data of a (sub)profile or 
 email address by navigating the GDPR tab in the **Configuration** menu. 
-You can also retrieve data using our [REST API](./rest-api).
+You can also retrieve data using our [REST API](./restv2/rest-api).
 
 ### Retrieving personal data with the REST API
 
-Copernica's [REST API](./rest-api) offers the option to retrieve all data 
+Copernica's [REST API](./restv2/rest-api) offers the option to retrieve all data 
 stored on an email address, profile or subprofile. To retrieve the data 
 you submit a request for the data of a (sub)profile or email address first. 
 You can choose to send the data directly through an email or a POST call 
@@ -30,11 +30,11 @@ to a web address. If you do not wish to use these methods you can use
 other API calls to retrieve the status of your request and download the 
 data when ready. You will find all relevant API calls below:
 
-* [Data request for an email address](./rest-post-email-datarequest)
-* [Data request for a profile](./rest-post-profile-datarequest)
-* [Data request for a subprofile](./rest-post-subprofile-datarequest)
-* [Data from a data request](./rest-get-datarequest-data)
-* [Status of a data request](./rest-get-datarequest-status)
+* [Data request for an email address](./restv2/rest-post-email-datarequest)
+* [Data request for a profile](./restv2/rest-post-profile-datarequest)
+* [Data request for a subprofile](./restv2/rest-post-subprofile-datarequest)
+* [Data from a data request](./restv2/rest-get-datarequest-data)
+* [Status of a data request](./restv2/rest-get-datarequest-status)
 
 ## More information
 
@@ -42,4 +42,4 @@ Need some more information about data storage at Copernica or do you want
 to know how our API works? The articles below will help you on your way.
 
 * [Database management](./database-introduction)
-* [Introduction to the REST API](./rest-introduction)
+* [Introduction to the REST API](./restv2/rest-introduction)
