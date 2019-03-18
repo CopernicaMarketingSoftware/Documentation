@@ -30,20 +30,6 @@ voor enkele selecties.
 * [Database schoonhouden](./database-maintenance)
 * [Selecties optimalizeren en sneller maken](./selections-optimization)
 
-## Sender domains
-
-Sender domains zorgen ervoor dat Copernica in jouw naam mag mailen. Er zijn 
-namelijk vele technieken om misbruik van jouw naam te voorkomen. Daarnaast 
-zorgen de sender domains dat Copernica alles up-to-date houdt, zodat 
-je dat zelf niet hoeft te doen.
-
-* [Sender domains globaal](./sender-domains)
-* [DKIM](./dkim)
-* [DMARC](./dmarc)
-* [DNS](./dns)
-* [MX](./mx)
-* [SPF](./spf)
-
 ## Tutorials
 
 Hieronder vind je tutorials voor veelvoorkomende toepassingen.
@@ -59,6 +45,20 @@ Hieronder vind je tutorials voor veelvoorkomende toepassingen.
 Hieronder vind je veelvoorkomende Smarty toepassingen.
 * [Toepassingen met datum variabelen](./smarty-date-statements)
 * [Gegevens ophalen met de Load(sub)profile-tag](./loadprofile-and-loadsubprofile)
+
+## Sender domains
+
+Sender domains zorgen ervoor dat Copernica in jouw naam mag mailen. Er zijn 
+namelijk vele technieken om misbruik van jouw naam te voorkomen. Daarnaast 
+zorgen de sender domains dat Copernica alles up-to-date houdt, zodat 
+je dat zelf niet hoeft te doen.
+
+* [Sender domains globaal](./sender-domains)
+* [DKIM](./dkim)
+* [DMARC](./dmarc)
+* [DNS](./dns)
+* [MX](./mx)
+* [SPF](./spf)
 
 ### Andere
 
