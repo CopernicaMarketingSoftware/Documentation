@@ -8,39 +8,42 @@ geldt dat als een enkele opt-in.
 
 Het is echter nog beter voor je sender reputation als je altijd een dubbele
 opt-in gebruikt. Een dubbele opt-in bevestigt dat een gebruiker jouw e-mail
-wil ontvangen door te vragen om een confirmatie van hun inschrijving, meestal
+wilt ontvangen door te vragen om een confirmatie van hun inschrijving, meestal
 door op een link te klikken die ze per email ontvangen.
 
 ## Aanmaken in Marketing Suite
 1. Er is een [databaseveld](./database-fields) nodig die de dubbele optin
 bewaart. Ga naar **Database & Profielen**, klik op het blauwe tandwiel en ga
 vervolgens naar **Structuur bewerken**. Voeg een DoubleOptin veld toe met type
-[meerkeuzeveld](./database-fields) en met standaardwaarde Ja, Nee.
+[meerkeuzeveld](./database-fields) met waardes "Ja"/"Nee" en standaardwaarde
+"Nee".
 
 2. Nu dient er een [opvolgactie](./follow-up-manager-ms) aangemaakt te worden,
-die een mailing verstuurd bij een nieuw profiel. Klik weer op het blauwe
-tandwiel en klik vervolgens op **Opvolgacties**. Kies voor een nieuwe
-opvolgactie door op **Create followup** te klikken. De reden waarom deze
-opvolgactie start is **Profile created**, selecteer deze optie en klik op
-proceed. Klik aan de linkerkant op **Send email** en verbindt dit blok aan
-**FollowUp start**. Klik op edit in het send email blok om de welkomstmail te
-selecteren. Als dit gedaan is sluit je de opvolgactie en sla je deze op.
+die een mailing verstuurd wanneer er een nieuw profiel wordt aangemaakt.
+Klik weer op het blauwe tandwiel en klik vervolgens op **Opvolgacties**.
+Kies voor een nieuwe opvolgactie door op **Create followup** te klikken. De
+reden waarom deze opvolgactie start is **Profile created**, selecteer deze
+optie en klik op proceed. Klik aan de linkerkant op **Send email** en verbindt
+dit blok aan **FollowUp start**. Klik op **edit** in het **send email**-blok
+om de welkomstmail te selecteren. Als dit gedaan is, sluit je de opvolgactie en
+sla je deze op.
 
 3. Als laatste stap gaan we een opvolgactie aan de mail koppelen. Klik op
 **Email designer** en ga klik de welkomstmail aan. Selecteer de button die het
 emailadres gaat bevestigen, klik rechts op **Follow-up** en klik vervolgens op
 aanpassen. Klik aan de linkerkant op **Update destination** en verbindt dit
-blok aan **Klik op een knop**. Klik op edit in het update destination blok en
-zet het veld DoubleOptin naar nieuwe waarde Ja.
+blok aan **Klik op een knop**. Klik op **edit** in het update destination blok
+en zet het veld DoubleOptin naar nieuwe waarde "Ja".
 
-4. Zet deze actie **alleen** in de Marketing Suite. Zet hem niet ook nog in de
-Publisher, dan krijgen klanten 2 welkomstmail.
+**Let op:** zet deze actie **alleen** in de Marketing Suite. Zet hem niet ook
+nog in de Publisher, dan krijgen klanten 2 mails.
 
 ## Aanmaken in Publisher
 1. Er is een [databaseveld](./database-fields) nodig die de dubbele optin
 bewaart. Ga naar **Profielen** en klik op
 **Databasebeer > Databasevelden wijzigen**. Voeg een DoubleOptin veld toe met
-type [meerkeuzeveld](./database-fields) en met standaardwaarde Ja, Nee.
+type [meerkeuzeveld](./database-fields) met waardes "Ja"/"Nee" en
+standaardwaarde "Nee".
 
 2. Nu dient er een [opvolgactie](./follow-up-manager-ms) aangemaakt te worden,
 die een mailing verstuurd bij een nieuw profiel. Klik
@@ -58,5 +61,5 @@ gebruiken. Klik bovenin op **Document naam > Opvolgacties** en klik op
 **Wijzig gegevens van het (sub)profiel** en er is geen wachttijd. Klik op
 volgende, stel in dat veld 1 **DoubleOptin** is en dat waarde 1 **Ja** is.
 
-4. Zet deze actie **alleen** in de Publisher. Zet hem niet in de Marketing
-Suite, dan krijgen klanten 2 welkomstmail.
+**Let op:** zet deze actie **alleen** in de Publisher. Zet hem niet ook in de
+Marketing Suite, dan krijgen klanten 2 mails.
