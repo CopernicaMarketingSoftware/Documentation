@@ -30,6 +30,22 @@ voor enkele selecties.
 * [Database schoonhouden](./database-maintenance)
 * [Selecties optimalizeren en sneller maken](./selections-optimization)
 
+## Tutorials
+
+Hieronder vind je tutorials voor veelvoorkomende toepassingen.
+
+* [Formulieren: Webformulier aanmaken en op een website plaatsen](./create-and-publish-a-webform)
+* [Selecties: Bounces afhandelen](./automatically-process-bounces) 
+* [Selecties: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
+* [Selecties: Nieuwsbriefselectie](./create-a-mailing-list)
+* [Selecties: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+
+## Smarty
+
+Hieronder vind je veelvoorkomende Smarty toepassingen.
+* [Toepassingen met datum variabelen](./smarty-date-statements)
+* [Gegevens ophalen met de Load(sub)profile-tag](./loadprofile-and-loadsubprofile)
+
 ## Sender domains
 
 Sender domains zorgen ervoor dat Copernica in jouw naam mag mailen. Er zijn 
@@ -43,16 +59,6 @@ je dat zelf niet hoeft te doen.
 * [DNS](./dns)
 * [MX](./mx)
 * [SPF](./spf)
-
-## Tutorials
-
-Hieronder vind je tutorials voor veelvoorkomende toepassingen.
-
-* [Formulieren: Webformulier aanmaken en op een website plaatsen](./create-and-publish-a-webform)
-* [Selecties: Bounces afhandelen](./automatically-process-bounces) 
-* [Selecties: Dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
-* [Selecties: Nieuwsbriefselectie](./create-a-mailing-list)
-* [Selecties: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 
 ### Andere
 
