@@ -1,0 +1,11 @@
+# Smarty: Toepassingen met datum variabelen
+
+Hieronder vind je enkele Smarty voorbeelden op basis van een datumveld.
+
+*Deze tutorial is geschreven voor de Publisher*
+
+## Ophogen/verlagen van de huidige datum
+      {"+3 days"|date_format:'%d-%m-%Y'}
+
+Bovenstaand voorbeeld telt 3 dagen bij de huidige datum op. Enkele andere mogelijkheden zijn *minute, month, year, week*.
+
