@@ -18,4 +18,4 @@ Enkele andere mogelijkheden zijn *minute, month, year, week*.
 
 
 
-[Smarty documentatie](https://www.smarty.net/docsv2/en/language.modifier.date.format.tpl)
+Meer opties vind je in de [Smarty documentatie](https://www.smarty.net/docsv2/en/language.modifier.date.format.tpl)
