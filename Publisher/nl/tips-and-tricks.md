@@ -54,6 +54,12 @@ Hieronder vind je tutorials voor veelvoorkomende toepassingen.
 * [Selecties: Nieuwsbriefselectie](./create-a-mailing-list)
 * [Selecties: Verjaardagsselectie](./how-to-create-a-birthday-selection)
 
+## Smarty
+
+Hieronder vind je veelvoorkomende Smarty toepassingen.
+* [Toepassingen met datum variabelen](./smarty-date-statements)
+* [Gegevens ophalen met de Load(sub)profile-tag](./loadprofile-and-loadsubprofile)
+
 ### Andere
 
 Hier vind je nog meer uitleg en tips over verschillende onderwerpen.
