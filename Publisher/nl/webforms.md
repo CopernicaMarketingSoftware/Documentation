@@ -17,6 +17,8 @@ je database. Eventuele selecties worden aangepast op basis van de nieuwe
 data op het moment dat deze door Copernica wordt geupdate. Je kunt ook een
 bevestigingsmail of een bedankmail sturen met opvolgacties.
 
+[Lees hier meer over het toevoegen van een webformulier aan je website](./create-and-publish-a-webform).
+
 ### Aanmaken in website
 
 Als je een webformulier aanmaakt tijdens het creëren van een website ben
