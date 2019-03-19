@@ -51,9 +51,7 @@ Eerst zal je een nieuwe template aan moeten maken en een website onder
 om de template naar je eigen smaak aan te passen. Als je tevreden bent
 met de stijl, kun je content blocks toe gaan voegen. Dit moet in de template
 gebeuren zodat je ze later in kan vullen. De onderstaande tabel laat
-voorbeelden zien van hoe je de blokken gebruikt. Vergeet niet de ratio
-tussen tekst en afbeeldingen in de gaten te houden; Deze kan invloed hebben
-op je [spam score](./some-tips-to-lower-your-email-spam-score).
+voorbeelden zien van hoe je de blokken gebruikt.
 
 | Content blok           | Voorbeeld                                          | Gebruik                                           |
 |------------------------|----------------------------------------------------|---------------------------------------------------|
