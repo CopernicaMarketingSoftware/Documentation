@@ -1,15 +1,15 @@
 # Tips, tricks en achtergrond
 De Copernica software heeft vele functionaliteiten die gebaseerd zijn op
 vele technieken en kennis over het verzenden van email. We hebben daarom
-een lijstje samengesteld van tips en tricks om het resultaat van je mailings
-te verbeteren en meer bekend te maken met de software. Sommige van deze
+een lijst samengesteld van tips en tricks om het resultaat van je mailings
+te verbeteren en je meer bekend te maken met de software. Sommige van deze
 artikelen zullen gebaseerd zijn op achtergrondkennis, terwijl andere dieper
-ingaan op de software. Als je een onbekend woord tegenkomt kun je de
+ingaan op de software. Als je een onbekende term tegenkomt kun je de
 [begrippenlijst](./definitions) raadplegen.
 
 ## Reputatie en onderhoud
-Je reputatie bij email clienten is heel belangrijk. Als deze niet in orde
-is kan het zijn dat je emails niet bij je klanten aankomen. Een schone
+Je reputatie bij email clients is heel belangrijk. Als deze niet in orde
+is, kan het zijn dat je emails niet bij je klanten aankomen. Een schone
 database, lage spamscore en nette HTML dragen allemaal bij aan een goede
 reputatie, maar in de onderstaande artikelen geven we je nog veel meer tips.
 
@@ -30,13 +30,13 @@ voor enkele selecties.
 ## Tutorials
 Hieronder vind je tutorials voor veelvoorkomende toepassingen.
 
-* [Formulieren: Webformulier aanmaken en op een website plaatsen](./create-
+* [Formulieren: webformulier aanmaken en op een website plaatsen](./create-
 and-publish-a-webform)
-* [Selecties: Bounces afhandelen](./automatically-process-bounces)
-* [Selecties: Dubbele opt-in creëren](create-a-double-optin-for
+* [Selecties: bounces afhandelen](./automatically-process-bounces)
+* [Selecties: dubbele opt-in creëren](create-a-double-optin-for
 -new-subscribers).
-* [Selecties: Nieuwsbriefselectie](./create-a-mailing-list)
-* [Selecties: Verjaardagsselectie](./how-to-create-a-birthday-selection)
+* [Selecties: nieuwsbriefselectie](./create-a-mailing-list)
+* [Selecties: verjaardagsselectie](./how-to-create-a-birthday-selection)
 
 ## Smarty
 Hieronder vind je veelvoorkomende Smarty toepassingen.
