@@ -18,14 +18,15 @@ die hun eigen e-mail versturen maken hier over het algemeen weinig gebruik
 van.
 
 Copernica biedt wel de mogelijkheid om de software en licentie voor meerdere
-collega's beschikbaar te maken. Echter, hiervoor is wel een persoonsgebonden
+collega's beschikbaar te maken. Hiervoor is echter wel een persoonsgebonden
 login voor nodig. Het kan ook handig zijn om extra gebruikers af te nemen,
 zodat werknemers toegang kunnen krijgen tot verschillende afdelingen,
 vestigingen of ondernemingen. Alle prijzen omtrent gebruikers en accounts
-kun je bekijken op onze tarieven pagina.
+kun je bekijken op onze
+[tarieven pagina](https://www.copernica.com/nl/tarieven).
 
 ### E-mail
-Er zijn drie betaalopties voor e-mail: Met krediet, aan het einde van de
+Er zijn drie betaalopties voor e-mail: met krediet, aan het einde van de
 maand of met een abonnement.
 
 Betalen met krediet of aan het einde van de maand is handiger als je
@@ -34,7 +35,8 @@ meer e-mails dan je nodig hebt. Als je betaalt met krediet moet je wel
 altijd genoeg hebben voor het aantal e-mails. Je kan niet 10.001 e-mails
 versturen als je maar krediet hebt voor 10.000 e-mails. Krediet wordt
 daarnaast overgeheveld naar de volgende maand. De kosten voor
-e-mails zijn variabel en zijn beschikbaar op onze tarieven pagina.
+e-mails zijn variabel en zijn beschikbaar op onze
+[tarieven pagina](https://www.copernica.com/nl/tarieven).
 
 Een abonnement is erg geschikt voor mensen die al weten hoeveel e-mail ze
 zullen versturen per maand. Het abonnement loopt een jaar, maar kan in de
@@ -45,7 +47,7 @@ maakt e-mailen wel voordeliger!
 ### API calls
 API calls worden op dezelfde manier in rekening gebracht als het model voor
 het versturen van e-mails. Je kunt dus gebruik maken van variabele prijsopbouw
-alsook het gebruik van bundels.
+zoals ook het geval is bij het gebruik van bundels.
 
 ### Andere variabele kosten
 Naast e-mail kun je ook mailings versturen met SMS en fax. De prijs per
@@ -53,8 +55,8 @@ fax of SMS staat vast en er zijn momenteel geen bundels beschikbaar.
 Daarnaast kun je in Publisher websites en enquêtes hosten, waarvoor de
 kosten ook variabel zijn. Er zijn ook dedicated IP adressen beschikbaar,
 waar de prijs wordt berekend aan de hand van de hoeveelheid per maand.
-Daarnaast zijn er [Litmus](./litmus) previews beschikbaar om je e-mails
-te previewen in verschillende omgevingen. Je betaalt per preview.
+Daarnaast zijn er [Litmus](./litmus)-previews beschikbaar om je e-mails
+te previewen in verschillende omgevingen. Je betaalt daarvoor per preview.
 
 ## Facturering
 Als je kiest voor betalen aan het einde van de maand of een abonnement
