@@ -2,14 +2,13 @@
 Copernica houdt een log bij van alle verzonden e-mails. We houden
 informatie bij over *events*: deliveries, bounces, clicks, pogingen
 om af te leveren, et cetera. Deze *logfiles* kunnen worden opgehaald
-door middel van een
-[REST API call](./rest-get-logfiles),
-maar de MarketingSuite heeft er ook een interface voor; je vindt hem
-onder het tabblad 'Operations Log' in het linkermenu.
+door middel van een [REST API call](./rest-get-logfiles),
+maar de Marketing Suite heeft er ook een interface voor. Deze is te vinden
+onder het tabblad _'Operations Log'_ in het linker menu.
 
 In de Operations Log kun je de logfiles van verzonden berichten inzien
 van een specifieke dag. De bestanden zijn opgedeeld per applicatie
-(MarketingSuite of Publisher) en per soort logfile (click, delivery,
+(Marketing Suite of Publisher) en per soort logfile (click, delivery,
 etc.). Wanneer je klikt op een categorie, zie je de mailings van die dag
 aangegeven met hun *destination ID* en andere informatie.
 
