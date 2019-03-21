@@ -56,7 +56,7 @@ The `unique` property however is only applied if previously no rules have matche
             },
             {
                 "domain" : {
-                    "equals" : "www.example.com
+                    "equals" : "www.example.com"
                 },
                 "params" : {
                     "utm_medium" : "example"
