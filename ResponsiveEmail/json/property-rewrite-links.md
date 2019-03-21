@@ -88,8 +88,6 @@ to the hyperlinks. There are more properties to be set:
 
 ### Rewrite rule properties
 
-# fix this table
-
 | Property | Value | Desc.                                                                                  |
 |:---------|-------|----------------------------------------------------------------------------------------|
 | params | _object_ | Parameters to be added to matching urls                                               |
