@@ -39,34 +39,42 @@ The `unique` property however is only applied if previously no rules have matche
         "links": [
             {
                 "domain" : {
-                    "contains": "apple"
+                    "contains" : "apple"
                 },
-                "params": {
-                    "utm_medium": "apple"
+                "params" : {
+                    "utm_medium" : "apple"
                 },
                 "protocol" : "https"
             },
             {
                 "path" : {
-                    "match": "*property-rewrite-links",
+                    "match" : "*property-rewrite-links",
                 },
                 "params": {
                     "utm_medium" : "rewrite"
+                }
+            },
+            {
+                "domain" : {
+                    "equals" : "www.example.com
                 },
-                "last": true
+                "params" : {
+                    "utm_medium" : "example"
+                },
+                "last" : true
             },
             {
                 "url" : {
                     "regex": "^https://www.responsiveemail.com./json",
                 }
                 "params": {
-                    "utm_medium": "responsive-email"
+                    "utm_medium" : "responsive-email"
                 },
-                "unique": true
+                "unique" : true
             },
             {
-                "params": {
-                    "test": "default"
+                "params" : {
+                    "test" : "default"
                 }
             }
         ]
@@ -77,8 +85,9 @@ The `unique` property however is only applied if previously no rules have matche
 As you can see the first rule states that all links where the domain contains `apple` should
 be affected and will get the parameter `utm_medium=apple` and the protocol `https`.
 The second rule only applies if the path ends with `property-rewrite-links` and it will
-get `utm_medium=rewrite`, but after this rule has matched no other rules will be applied.
-Third rule will try to do a regex match over the full URL and it'll get `utm_medium=responsive-email`,
+get `utm_medium=rewrite`. Third, we check if we have an exact match with `www.example.com` but 
+after this rule has matched no other rules will be applied. The fourth rule will try 
+to do a regex match over the full URL and it'll get `utm_medium=responsive-email`,
 but only if no previous rules were matched. And finally, if we manage to reach this point
 we're just adding `test=default`.
 
