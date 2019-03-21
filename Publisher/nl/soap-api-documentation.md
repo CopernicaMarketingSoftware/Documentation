@@ -6,6 +6,7 @@ Synchroniseer zo de gegevens vanuit Copernica met de gegevens uit jouw
 software. Zo houd je alle gegevens en je marketingcampagnes continu
 up-to-date.
 
+Je kunt een overzicht van alle calls [hier](https://www.copernica.com/nl/support/apireference) vinden. 
 Copernica beschikt overigens ook over een REST-API. Meer informatie
 over de REST-API vind je [hier](./restv2/rest-api.md "REST-API").
 
@@ -18,7 +19,7 @@ kunnen programmeurs snel aan de slag met de API, en is de API vanuit
 elke gangbare programmeertaal en ontwikkelomgeving aan te roepen.
 
 Ga voor de volledige SOAP API object reference naar
-[https://www.copernica.com/en/support/apireference](https://www.copernica.com/en/support/apireference)
+[het overzicht van SOAP calls](https://www.copernica.com/nl/support/apireference).
 
 [Download SOAP API voorbeeldscript voor
 PHP](../downloads/soaptest_php_1-5.zip "Download SOAP API voorbeeldscript voor PHP")
@@ -62,4 +63,5 @@ database of relatieprofielen.
 
 ## Meer information
 
+* [Overzicht van SOAP calls](https://www.copernica.com/nl/support/apireference)
 * [REST API](./restv2/rest-api.md "REST-API")
