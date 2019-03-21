@@ -96,8 +96,8 @@ to the hyperlinks. There are more properties to be set:
 | protocol | _string_ | Protocol to change                                                                  |
 | component | _object_ | The url component we apply a matching rule to                                      |
 | equals | _string_ | A string we use to do a basic string compare with the specified url component         |
-| match | _string_ | A wildcard string we have to match with the hostname first                             |
-| contains| _string_ | The hostname should contain this string before applying the rules                    |
-| regex | _string_ | Match with this regular expression                                                     |
+| match | _string_ | A wildcard string we have to match with the url component                              |
+| contains| _string_ | The url component should contain this string                                         |
+| regex | _string_ | Match the url component with this regular expression                                   |
 | last | _boolean_ | Stop processing any other rules after this rule matched                                |
 | unique | _boolean_ | Only apply this rule if no previous rules matched                                    |
