@@ -55,9 +55,13 @@ mail. The following properties are recognized by MailerQ:
         <td>ips</td>
         <td>ip addresses to send the message from</td>
     </tr>
+        <tr>
+        <td>pool</td>
+        <td>pool identifier to send the message from</td>
+    </tr>
     <tr>
-        <td>delayed</td>
-        <td>time to send the mail</td>
+        <td>nextattempt</td>
+        <td>properties for when the next attempt should be</td>
     </tr>
     <tr>
         <td>maxdelivertime</td>
@@ -102,6 +106,10 @@ mail. The following properties are recognized by MailerQ:
     <tr>
         <td>headers</td>
         <td>add or change the mime headers</td>
+    </tr>
+    <tr>
+        <td>priority</td>
+        <td>the priorityu of the message</td>
     </tr>
 </table>
 
@@ -289,7 +297,6 @@ you can use personalization data in almost all fields.
 For more information about using personalization, check our 
 [personalization documentation](personalization).
 
-
 ## Local IP addresses
 
 MailerQ can send out mail from all IP addresses configured on your server and will always try
@@ -325,6 +332,27 @@ smtp-defaultips:    1.2.3.4; 1.2.3.5; 1.2.3.6
 If this property is missing or left empty, MailerQ will instead opt to use ALL
 available IP addresses on the host server.
 However, we do recommend recommend that you set this property if you have many IPs configured on your server.
+
+## IP Pools
+
+Outside of being able to set single IP addresses, a pool can also be specified. First, setup an IP pool
+in the Management Console and assign some IPs to the pool. Then, to set the pool, you may simply set the 
+identifier in the json:
+````
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "pool": "example-pool"
+}
+````
+
+MailerQ will then only use the IPs that are _currently_ assigned to that pool. This way, if an IP performs poorly,
+it can easily be removed from the pool and MailerQ will no longer use it for the messages with the pool assigned, 
+instead of having to rewrite every specific message to remove the IP where applicable.
+
+Note that the pools are mutually exclusive with the IPs, that is, if the `ips` property is set in the JSON, the `pool`
+property will be ignored, as a specific set of IPs is more specific than a pool setting.
 
 ## Delivery time
 
@@ -669,6 +697,12 @@ to appended (same syntax as prepend). The headers described in "replace"
 will replace the first occurrence and remove the other headers with the same key.
 If no existing header is found, it will simply be appended. 
 The "update" option works similar, but it non-existing headers will not be appended.
+
+## Priority
+
+To give the message a priority, the `priority` field should be used. This setting will only have
+an effect if the `rabbitmq-maxpriority` is set in the config file, since the queues will then be 
+constructed as priority queues.
 
 ## Setting custom message properties
 
