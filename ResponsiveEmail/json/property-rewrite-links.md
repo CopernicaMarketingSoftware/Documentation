@@ -65,7 +65,7 @@ The `unique` property however is only applied if previously no rules have matche
             },
             {
                 "url" : {
-                    "regex": "^https://www.responsiveemail.com./json",
+                    "regex": "^https://www.responsiveemail.com.",
                 }
                 "params": {
                     "utm_medium" : "responsive-email"
