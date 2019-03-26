@@ -14,7 +14,7 @@ your matching rule to. This component is a JSON object. Matching rules are defin
 inside these objects. Supported URL components are `domain`, `path` and `url`. 
 Matching rules that are specified inside the domain component means that these rules will
 only be applied to the domain of the URL. The path component means that the rule will 
-only be  applied to the path of the URL. Finaly, using the url component means 
+only be  applied to the path of the URL. Finally, using the url component means 
 that the rule will be applied to the full URL. 
 
 The matching rules you can specify inside a component are `equals`, `contains`, `match` and `regex`. 
