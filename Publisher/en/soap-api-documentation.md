@@ -57,5 +57,5 @@ about all changes in the database of Copernica.
 
 ## More information
 
-* [Overview of SOAP calls](https://www.copernica.com/en/support/apireference).)
+* [Overview of SOAP calls](https://www.copernica.com/en/support/apireference)
 * [The Copernica REST API](./restv2/rest-api.md)
