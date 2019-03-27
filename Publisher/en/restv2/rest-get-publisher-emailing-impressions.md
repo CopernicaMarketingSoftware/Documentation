@@ -18,7 +18,7 @@ the following information is available:
 * **ID**: The ID of the impression.        
 * **timestamp**: The timestamp of the impression.
 * **ip**: The IP from which the impression came.
-* **user-agent**: The user agent string of the user the impression came from.
+* **useragent**: The user agent string of the user the impression came from.
 * **referer**: The referer of the user the impression came from.
 * **emailing**: The ID of the mailing.
 * **destination**: The ID of the destination.
