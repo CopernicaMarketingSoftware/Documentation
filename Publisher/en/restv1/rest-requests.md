@@ -29,19 +29,23 @@ because it allows you to send nested data structures. But we also recognize
 traditional "x-www-form-urlencoded" data. The following example demonstrates the
 request that you should send to the API to add a profile to database with ID 1234:
 
+```
     POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
     Host: api.copernica.com
     Content-Type: application/json
     
     {"email":"info@example.com"}
+```
 
 Instead of JSON encoding, you can also use the old-fashioned form encoding: 
 
+```
     POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
     Host: api.copernica.com
     Content-Type: application/x-www-form-urlencoded
     
     email=info@example.com
+```
 
 De content-type header is only used for POST and PUT requests. For GET and 
 DELETE requests we do not accept body data.
@@ -49,20 +53,27 @@ DELETE requests we do not accept body data.
 ## The response from Copernica
 
 The reply that you receive from the API servers depends on the type of 
-request that you sent. For GET requests you normally receive a "200 OK" reply,
-with the requested data encoded as JSON string in the response body.
+requests that you sent, as well as the result. Common responses, possible 
+for all request types, are "200 OK" for a successful request and "400 Bad Request" 
+for a failed request. In case of a failed request the error message will 
+be included in the response body.
 
-The other request types (POST, PUT and DELETE) also use a "200 OK" status code
-to report success, but they do not include data in the response body. These
-methods add a special HTTP header to the response that refers to the entity
-that was just modified or created. The header of a successful POST or PUT
-request contains a *X-location* header with the URL of the just created or modified
-resource, for example "X-location: https://api.copernica.com/v1/profile/$profileID"
-for calls that create or update profiles. The response to a successful 
-DELETE request holds an "X-deleted" header: "X-deleted: profile $profileID".
+A successful GET request will be met with a "200 OK" reply and 
+the response body will contain the requested data encoded in a JSON string. 
+Another possible code is "301 Moved Permanently" for calls that have been moved.
 
-For failed API calls a "400 Bad request" response is sent back. The body then
-holds a JSON message describing the error.
+Other status codes include the "201 Created" code for a successful POST request 
+and the "303 See Other" code for a PUT request that was moved. POST and PUT 
+requests can also contain **X-location** headers with the URL of the entities 
+that were created. For example `X-location: https://api.copernica.com/v1/profile/$profileID`
+for calls that create or update profiles.
+
+DELETE requests can also result in a "204 No Content" response in case the 
+data that was meant to be deleted could not be located. Successful DELETE 
+requests hold an **X-deleted** header, like `X-deleted: profile $profileID`.
+
+POST, PUT and DELETE calls that did not result in an error will not contain 
+any data in their response body.
 
 ## More information
 

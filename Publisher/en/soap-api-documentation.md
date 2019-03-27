@@ -6,6 +6,7 @@ an integration with your own software. Synchronize all data from
 Copernica with the data from your own software to keep all information
 and your marketing campaigns up to date.
 
+You can find an overview of all calls [here](https://www.copernica.com/en/support/apireference). 
 Copernica also supports a REST API. You can find more information about it 
 [here](./restv2/rest-api.md "REST-API").
 
@@ -16,7 +17,8 @@ to integrate the API in development environments as Java Netbeans and
 Microsoft Visual Studio. By using the SOAP standard, programmers will
 quickly be able to start working with Copernica. Also, the API can be
 invoked from every standard programming language and development
-environment.
+environment. To view all of the available calls you can refer to the 
+[overview](https://www.copernica.com/en/support/apireference).
 
 [Download SOAP API example script for
 PHP](../downloads/soaptest_php_1-5.zip "SOAP API example script for PHP")
@@ -55,4 +57,5 @@ about all changes in the database of Copernica.
 
 ## More information
 
+* [Overview of SOAP calls](https://www.copernica.com/en/support/apireference).)
 * [The Copernica REST API](./restv2/rest-api.md)
