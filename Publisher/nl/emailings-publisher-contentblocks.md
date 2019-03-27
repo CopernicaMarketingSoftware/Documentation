@@ -99,21 +99,6 @@ hoogte van een plaatje. Afbeeldingen die niet voldoen aan de opgegeven limieten
 worden vergroot of verkleind, waarbij de verhouding tussen breedte en hoogte
 zoveel mogelijk wordt behouden: een foto wordt dus niet uitgerekt.
 
-### Optionele afbeeldingen
-Als een gebruiker besluit om een afbeelding leeg te laten, ontstaat er een
-lege plek in het document. Een [image] tag die niet wordt ingevuld, wordt
-namelijk standaard voorzien van een doorzichtige afbeelding. Er komt dus
-in het uiteindelijke document in principe altijd een &lt;img&gt; tag op de
-plaats van de [image] tag.
-
-Het kan ook anders. Als je aangeeft dat een afbeelding *optioneel* is,
-wordt er alleen een afbeelding in het document geplaatst als de gebruiker
-ook zelf expliciet op documentniveau een afbeelding op de plaats van de
-[image] tag plaatst. Als de gebruiker geen afbeelding uploadt, dan zal er ook
-geen &lt;img&gt; tag in het uiteindelijke document komen.
-
-`[image name="example" optional="yes"]`
-
 ### Inleidende en afsluitende HTML-code
 Als op documentniveau een afbeelding wordt geüpload, dan wordt in het document
 een &lt;img&gt; tag geplaatst met deze afbeelding. Voor en na deze &lt;img&gt;
