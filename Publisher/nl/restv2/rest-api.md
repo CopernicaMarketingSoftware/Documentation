@@ -171,21 +171,22 @@ in de onderstaande tabel.
 
 ### Profielen
 
-| Type   | Adres                                                                                        | Omschrijving                                     |
-|--------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
-| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een database profiel                |
-| GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                       | Opvragen van profiel informatie                  |
-| PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                       | Updaten van profiel informatie                   |
-| DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                    | Verwijderen van een profiel                      |
-| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)               | Opvragen van alle profiel subprofielen           |
-| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Aanmaken van een nieuw profiel subprofiel        |
-| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)               | Updaten van een of meerdere profiel subprofielen |
-| GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                         | Opvragen van alle profiel velden                 |
-| PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                         | Updaten van een of meerdere profiel velden       |
-| GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                   | Opvragen van alle profiel interesses             |
-| POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                  | Aanmaken van profiel interesse(s)                |
-| PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                   | Updaten van profiel interesse(s)                 |
-| POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)              | Aanmaken van een dataverzoek voor een profiel    |
+| Type   | Adres                                                                                          | Omschrijving                                          |
+|--------|------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                    | Aanmaken van een database profiel                     |
+| GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                         | Opvragen van profiel informatie                       |
+| PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                         | Updaten van profiel informatie                        |
+| DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                      | Verwijderen van een profiel                           |
+| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)                 | Opvragen van alle profiel subprofielen                |
+| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)                | Aanmaken van een nieuw profiel subprofiel             |
+| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)                 | Updaten van een of meerdere profiel subprofielen      |
+| GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                           | Opvragen van alle profiel velden                      |
+| PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                           | Updaten van een of meerdere profiel velden            |
+| GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                     | Opvragen van alle profiel interesses                  |
+| POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                    | Aanmaken van profiel interesse(s)                     |
+| PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                     | Updaten van profiel interesse(s)                      |
+| GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings) | Opvragen van alle Publisher mailings voor een profiel |
+| POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)                | Aanmaken van een dataverzoek voor een profiel         |
 
 ### Subprofielen
 
@@ -214,22 +215,23 @@ documenten, templates en mailings.
 
 ### Mailings
 
-| Type   | Adres                                                                                                    | Omschrijving                                  |
-|--------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------|
-| GET    | [api.copernica.com/v2/publisher/emailings](./rest-get-publisher-emailings)                               | Opvragen van alle mailings                    |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id](./rest-get-publisher-emailing)                             | Opvragen van een mailing                      |
-| POST   | [api.copernica.com/v2/publisher/emailing](./rest-post-publisher-emailing)                                | Aanmaken van een mailing                      |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/destinations](./rest-get-publisher-emailing-destinations)   | Opvragen van destinations voor een mailing    |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/snapshot](./rest-get-publisher-emailing-snapshot)           | Opvragen van een snapshot voor een mailing    |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/statistics](./rest-get-publisher-emailing-statistics)       | Opvragen van de statistieken voor een mailing |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/abuses](./rest-get-publisher-emailing-abuses)               | Opvragen van abuses voor een mailing          |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/clicks](./rest-get-publisher-emailing-clicks)               | Opvragen van clicks voor een mailing          |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/deliveries](./rest-get-publisher-emailing-deliveries)       | Opvragen van deliveries voor een mailing      |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/errors](./rest-get-publisher-emailing-errors)               | Opvragen van errors voor een mailing          |    
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)     | Opvragen van impressies voor een mailing      |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)   | Opvragen van unsubscribes voor een mailing    |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Opvragen van de testgroepen voor een mailing  |
-| GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                               | Opvragen van bericht informatie                    |
+| Type   | Adres                                                                                                    | Omschrijving                                          |
+|--------|----------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/emailings](./rest-get-publisher-emailings)                               | Opvragen van alle mailings                            |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id](./rest-get-publisher-emailing)                             | Opvragen van een mailing                              |
+| POST   | [api.copernica.com/v2/publisher/emailing](./rest-post-publisher-emailing)                                | Aanmaken van een mailing                              |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/destinations](./rest-get-publisher-emailing-destinations)   | Opvragen van destinations voor een mailing            |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/snapshot](./rest-get-publisher-emailing-snapshot)           | Opvragen van een snapshot voor een mailing            |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/statistics](./rest-get-publisher-emailing-statistics)       | Opvragen van de statistieken voor een mailing         |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/abuses](./rest-get-publisher-emailing-abuses)               | Opvragen van abuses voor een mailing                  |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/clicks](./rest-get-publisher-emailing-clicks)               | Opvragen van clicks voor een mailing                  |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/deliveries](./rest-get-publisher-emailing-deliveries)       | Opvragen van deliveries voor een mailing              |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/errors](./rest-get-publisher-emailing-errors)               | Opvragen van errors voor een mailing                  |    
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)     | Opvragen van impressies voor een mailing              |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)   | Opvragen van unsubscribes voor een mailing            |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Opvragen van de testgroepen voor een mailing          |
+| GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                               | Opvragen van bericht informatie                       |
+| GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)           | Opvragen van alle Publisher mailings voor een profiel |
 
 ### Documenten & Templates
 

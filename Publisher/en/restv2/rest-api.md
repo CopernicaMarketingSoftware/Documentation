@@ -169,21 +169,22 @@ like your customers or orders. The relevant API calls can be found below.
 
 ### Profile
 
-| Type   | Address                                                                                      | Description                                        |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------------|
-| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Create a new database profile                      |
-| GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                       | Fetch the profile information                      |
-| PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                       | Update the profile information                     |
-| DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                    | Delete a profile                                   |
-| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)               | Fetch all profile subprofiles                      |
-| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Create a new profile subprofile                    |
-| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)               | Update one or multiple profile subprofiles         |
-| GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                         | Fetch all profile fields                           |
-| PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                         | Update one or multiple profile fields              |
-| GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                   | Fetch all profile interests                        |
-| POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                  | Create profile interest(s)                         |
-| PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                   | Update profile interest(s)                         |
-| POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)              | Create a request for all data stored for a profile |
+| Type   | Address                                                                                        | Description                                        |
+|--------|------------------------------------------------------------------------------------------------|----------------------------------------------------|
+| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                    | Create a new database profile                      |
+| GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                         | Fetch the profile information                      |
+| PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                         | Update the profile information                     |
+| DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                      | Delete a profile                                   |
+| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)                 | Fetch all profile subprofiles                      |
+| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)                | Create a new profile subprofile                    |
+| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)                 | Update one or multiple profile subprofiles         |
+| GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                           | Fetch all profile fields                           |
+| PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                           | Update one or multiple profile fields              |
+| GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                     | Fetch all profile interests                        |
+| POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                    | Create profile interest(s)                         |
+| PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                     | Update profile interest(s)                         |
+| GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings) | Fetch all Publisher mailings for a profile         |
+| POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)                | Create a request for all data stored for a profile |
 
 ### Subprofile
 
@@ -228,6 +229,7 @@ templates and mailings.
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)   | Fetch the unsubscribes for a mailing         |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Fetch the testgroups for a mailing           |
 | GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                               | Fetch the message information                |
+| GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)           | Fetch all Publisher mailings for a profile   |
 
 ### Documents & Templates
 
