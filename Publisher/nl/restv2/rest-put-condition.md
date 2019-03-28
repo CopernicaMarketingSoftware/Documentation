@@ -1,15 +1,15 @@
-# REST API: POST rule conditions
+# REST API: PUT condition
 
-Een methode om een conditie voor een regel aan te maken. 
-Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
+Een methode om een conditie aan te passen.
+Je kunt de method aanroepen met een HTTP PUT request naar de volgende URL:
 
-`https://api.copernica.com/v2/rule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v2/condition/$id?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de regel waaraan je de condition wilt toevoegen.
+De `$id` moet hier vervangen worden door de ID van de conditie.
 
 ## Beschikbare parameters
 
-* **type**: Het type van de conditie.
+* **type**: Het type van de conditie
 
 Aan deze call moet tenminste het type meegegeven worden. Daarnaast zijn er 
 per conditie verschillende parameters beschikbaar. Je kunt 
@@ -46,13 +46,12 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters voor de methode
 $data = array(
-    'type' => 'date'
+    'type'          => 'date',
+    'after-time'    => '01-01-2000'
 );
 
 // voer het verzoek uit en print het resultaat
-$api->post("rule/{$regelID}/conditions", array(), $data);
-
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
+$api->put("condition/{$conditieID}", array(), $data);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
@@ -60,5 +59,3 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API methodes](rest-api)
-* [GET rule](./rest-get-rule)
-* [POST view rules](./rest-post-view-rules)

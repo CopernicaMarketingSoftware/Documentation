@@ -10,8 +10,6 @@ the ID of the created request is returned.
 
 ## Available parameters
 
-The message body can hold the following properties for a condition:
-
 - **type**: type of condition
 
 Based on the condition type, specific properties are set. For an overview

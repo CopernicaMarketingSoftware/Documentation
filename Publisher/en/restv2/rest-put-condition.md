@@ -1,4 +1,4 @@
-# REST API: POST rule conditions
+# REST API: PUT condition
 
 A method to update a condition. It is called by sending an HTTP PUT request to the following URL:
 
@@ -7,8 +7,6 @@ A method to update a condition. It is called by sending an HTTP PUT request to t
 In this, `$id` needs to be replaced by the numerical identifier of the condition.
 
 ## Available parameters
-
-The message body can hold the following properties for a condition:
 
 - **type**: type of condition
 
@@ -50,9 +48,7 @@ $data = array(
 );
 
 // do the call, and print result
-$api->post("condition/{$conditionID}/", array(), $data);
-
-// return id of created request if successful
+$api->put("condition/{$conditionID}/", array(), $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
@@ -60,7 +56,3 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [GET rules](./rest-get-view-rules)
-* [GET rule](./rest-get-rule)
-* [PUT rule](./rest-put-rule)
-* [PUT rule condition](./rest-put-rule-conditions)
