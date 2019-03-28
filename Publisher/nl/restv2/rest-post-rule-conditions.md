@@ -44,7 +44,7 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters voor de methode
 $data = array(
-    'type' = 'Date'
+    'type' => 'date'
 );
 
 // voer het verzoek uit en print het resultaat

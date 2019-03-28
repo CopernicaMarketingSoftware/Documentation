@@ -1,12 +1,10 @@
 # REST API: POST rule conditions
 
-A method to add a condition for a rule. It is called by sending an HTTP POST request to the following URL:
+A method to update a condition. It is called by sending an HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v2/rule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v2/condition/$id?access_token=xxxx`
 
-In this, `$id` needs to be replaced by the numerical identifier or the name 
-of the rule you wish to edit the conditions of. After a successful call 
-the ID of the created request is returned.
+In this, `$id` needs to be replaced by the numerical identifier of the condition.
 
 ## Available parameters
 
@@ -47,11 +45,12 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters to pass to the call
 $data = array(
-	'type' => 'date'
+	'type'          => 'date',
+    'after-time'    => '01-01-2000'
 );
 
 // do the call, and print result
-$api->post("rule/{$rule}/conditions", array(), $data);
+$api->post("condition/{$conditionID}/", array(), $data);
 
 // return id of created request if successful
 ```

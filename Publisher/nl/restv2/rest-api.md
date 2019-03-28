@@ -86,21 +86,21 @@ collecties en hun eigenschappen.
 
 ### Collecties
 
-| Type   | Adres                                                                                        | Omschrijving                                    |
-|--------|----------------------------------------------------------------------------------------------|-------------------------------------------------|
-| POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Aanmaken van een collectie                      |
-| GET    | [api.copernica.com/v2/collection/$id](./rest-get-collection)                                 | Opvragen van collectie informatie               |
-| PUT    | [api.copernica.com/v2/collection/$id](./rest-put-collection)                                 | Updaten van collectie informatie                |
-| GET    | [api.copernica.com/v2/collection/$id/unsubscribe](./rest-get-collection-unsubscribe)         | Opvragen van collectie uitschrijfgedrag         |
-| PUT    | [api.copernica.com/v2/collection/$id/unsubscribe](./rest-put-collection-unsubscribe)         | Updaten van collectie uitschrijfgedrag          |
-| GET    | [api.copernica.com/v2/collection/$id/miniviews](./rest-get-collection-miniviews)             | Opvragen van alle collectie miniselecties       |
-| POST   | [api.copernica.com/v2/collection/$id/miniviews](./rest-post-collection-miniviews)            | Aanmaken van een nieuwe collectie miniselectie  |
-| GET    | [api.copernica.com/v2/collection/$id/fields](./rest-get-collection-fields)                   | Opvragen van alle collectie velden              |
-| POST   | [api.copernica.com/v2/collection/$id/fields](./rest-post-collection-fields)                  | Aanmaken van een collectie veld                 |
-| PUT    | [api.copernica.com/v2/collection/$id/field/$id](./rest-put-collection-field)                 | Updaten van een collectie veld                  |
-| DELETE | [api.copernica.com/v2/collection/$id/field/$id](./rest-delete-collection-field)              | Verwijderen van een collectie veld              |
-| GET    | [api.copernica.com/v2/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Opvragen van alle collectie subprofiel IDs      |
-| GET    | [api.copernica.com/v2/collection/$id/subprofiles](./rest-get-collection-subprofiles)         | Opvragen van alle collectie subprofielen        |
+| Type   | Adres                                                                                        | Omschrijving                          |
+|--------|----------------------------------------------------------------------------------------------|---------------------------------------|
+| POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Aanmaken van een collectie            |
+| GET    | [api.copernica.com/v2/collection/$id](./rest-get-collection)                                 | Opvragen van collectie informatie     |
+| PUT    | [api.copernica.com/v2/collection/$id](./rest-put-collection)                                 | Updaten van collectie informatie      |
+| GET    | [api.copernica.com/v2/collection/$id/unsubscribe](./rest-get-collection-unsubscribe)         | Opvragen van uitschrijfgedrag         |
+| PUT    | [api.copernica.com/v2/collection/$id/unsubscribe](./rest-put-collection-unsubscribe)         | Updaten van uitschrijfgedrag          |
+| GET    | [api.copernica.com/v2/collection/$id/miniviews](./rest-get-collection-miniviews)             | Opvragen van alle miniselecties       |
+| POST   | [api.copernica.com/v2/collection/$id/miniviews](./rest-post-collection-miniviews)            | Aanmaken van een miniselectie         |
+| GET    | [api.copernica.com/v2/collection/$id/fields](./rest-get-collection-fields)                   | Opvragen van alle velden              |
+| POST   | [api.copernica.com/v2/collection/$id/fields](./rest-post-collection-fields)                  | Aanmaken van een veld                 |
+| PUT    | [api.copernica.com/v2/collection/$id/field/$id](./rest-put-collection-field)                 | Updaten van een veld                  |
+| DELETE | [api.copernica.com/v2/collection/$id/field/$id](./rest-delete-collection-field)              | Verwijderen van een veld              |
+| GET    | [api.copernica.com/v2/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Opvragen van alle subprofiel IDs      |
+| GET    | [api.copernica.com/v2/collection/$id/subprofiles](./rest-get-collection-subprofiles)         | Opvragen van alle subprofielen        |
 
 ## Selecties & Miniselecties
 
