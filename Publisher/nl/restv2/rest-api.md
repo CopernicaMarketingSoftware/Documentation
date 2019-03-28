@@ -153,6 +153,7 @@ condities in de tabel hieronder vinden.
 | PUT    | [api.copernica.com/v2/rule/$id](./rest-put-rule)                                             | Updaten van regel informatie                   |
 | DELETE | [api.copernica.com/v2/rule/$id](./rest-delete-rule)                                          | Verwijderen van een regel                      |
 | POST   | [api.copernica.com/v2/rule/$id/conditions](./rest-post-rule-conditions)                      | Aanmaken van een regel conditie                |
+| PUT    | [api.copernica.com/v2/condition/$type/$id](./rest-put-condition)                             | Updaten van een conditie                       |
 | DELETE | [api.copernica.com/v2/condition/$type/$id](./rest-delete-condition)                          | Verwijderen van een conditie                   |
 
 ### Miniregels (voor miniselecties)

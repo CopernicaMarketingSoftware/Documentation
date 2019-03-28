@@ -151,8 +151,9 @@ to rules and their conditions in the table below.
 | GET    | [api.copernica.com/v2/rule/$id](./rest-get-rule)                                             | Fetch the rule information                   |
 | PUT    | [api.copernica.com/v2/rule/$id](./rest-put-rule)                                             | Update the rule information                  |
 | DELETE | [api.copernica.com/v2/rule/$id](./rest-delete-rule)                                          | Delete a rule                                |
-| POST   | [api.copernica.com/v2/rule/$id/conditions](./rest-post-rule-conditions)                      | Create a rule condition                      |
-| DELETE | [api.copernica.com/v2/condition/$type/$id](./rest-delete-condition)                          | Delete a rule condition                      |
+| POST   | [api.copernica.com/v2/rule/$id/conditions](./rest-post-rule-conditions)                      | Create a condition                           |
+| PUT    | [api.copernica.com/v2/condition/$type/$id](./rest-put-condition)                             | Update a condition                           |
+| DELETE | [api.copernica.com/v2/condition/$type/$id](./rest-delete-condition)                          | Delete a condition                           |
 
 ### Minirules (for miniselections)
 

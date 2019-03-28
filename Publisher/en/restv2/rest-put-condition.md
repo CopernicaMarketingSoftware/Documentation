@@ -2,13 +2,12 @@
 
 A method to update a condition. It is called by sending an HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v2/condition/$id?access_token=xxxx`
+`https://api.copernica.com/v2/condition/$type/$id?access_token=xxxx`
 
-In this, `$id` needs to be replaced by the numerical identifier of the condition.
+The `$type` and `$id` need to be replaced by the type and the numerical 
+identifier of the condition respectively.
 
 ## Available parameters
-
-- **type**: type of condition
 
 Based on the condition type, specific properties are set. For an overview
 of the supported conditions and the properties that they support, check
@@ -43,12 +42,11 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters to pass to the call
 $data = array(
-	'type'          => 'date',
     'after-time'    => '01-01-2000'
 );
 
 // do the call, and print result
-$api->put("condition/{$conditionID}/", array(), $data);
+$api->put("condition/{$conditionType}/{$conditionID}", array(), $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

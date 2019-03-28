@@ -3,16 +3,14 @@
 Een methode om een conditie aan te passen.
 Je kunt de method aanroepen met een HTTP PUT request naar de volgende URL:
 
-`https://api.copernica.com/v2/condition/$id?access_token=xxxx`
+`https://api.copernica.com/v2/condition/$type/$id?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de conditie.
+De `$type` en`$id` moeten hier vervangen worden door het type en de ID 
+van de conditie respectievelijk.
 
 ## Beschikbare parameters
 
-* **type**: Het type van de conditie
-
-Aan deze call moet tenminste het type meegegeven worden. Daarnaast zijn er 
-per conditie verschillende parameters beschikbaar. Je kunt 
+Er zijn per conditie verschillende parameters beschikbaar. Je kunt 
 precies lezen wat iedere conditie inhoudt door het bijhorende artikel in 
 de onderstaande links aan te klikken:
 
@@ -46,12 +44,11 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters voor de methode
 $data = array(
-    'type'          => 'date',
     'after-time'    => '01-01-2000'
 );
 
 // voer het verzoek uit en print het resultaat
-$api->put("condition/{$conditieID}", array(), $data);
+$api->put("condition/{$conditieType}/{$conditieID}", array(), $data);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
