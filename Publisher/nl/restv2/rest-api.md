@@ -294,12 +294,13 @@ templates en mailings.
 | GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Opvragen van een template                    |
 | GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Opvragen van statistieken voor een template  |
 
-### Destinations
+### Destinations (bestemmingen)
 
-| Type   | Adres                                                                                        | Omschrijving                                 |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Opvragen van een destination                 |
-| GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van destinations voor een mailing   |
+| Type   | Adres                                                                                        | Omschrijving                                  |
+|--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Opvragen van een bestemming                   |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van bestemmingen voor een mailing    |
+| GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Opvragen van statistieken voor een bestemming |
 
 ### Messages
 

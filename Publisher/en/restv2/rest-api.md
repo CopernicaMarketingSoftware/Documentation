@@ -298,6 +298,7 @@ and emailings.
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Fetch a destination                          | 
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing         |
+| GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Fetch the statistics for a destination       |
 
 ### Messages
 
