@@ -248,16 +248,17 @@ documenten, templates en mailings.
 
 ### Destinations (bestemmingen)
 
-| Type   | Adres                                                                                                        | Omschrijving                                       |
-|--------|--------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| GET    | [api.copernica.com/v2/publisher/destination/$id/](./rest-get-publisher-destination)                          | Opvragen van een ontvanger                         |
-| GET    | [api.copernica.com/v2/publisher/destination/$id/fields](./rest-get-publisher-destination-fields)             | Opvragen van een ontvanger inclusief profielvelden |
-| GET    | [api.copernica.com/v2/publisher/destination/$id/abuses](./rest-get-publisher-destination-abuses)             | Opvragen van abuses voor een ontvanger             |
-| GET    | [api.copernica.com/v2/publisher/destination/$id/clicks](./rest-get-publisher-destination-clicks)             | Opvragen van clicks voor een ontvanger             |
-| GET    | [api.copernica.com/v2/publisher/destination/$id/deliveries](./rest-get-publisher-destination-deliveries)     | Opvragen van deliveries voor een ontvanger         |
-| GET    | [api.copernica.com/v2/publisher/destination/$id/errors](./rest-get-publisher-destination-errors)             | Opvragen van errors voor een ontvanger             |
-| GET    | [api.copernica.com/v2/publisher/destination/$id/impressions](./rest-get-publisher-destination-impressions)   | Opvragen van impressies voor een ontvanger         |
-| GET    | [api.copernica.com/v2/publisher/destination/$id/unsubscribes](./rest-get-publisher-destination-unsubscribes) | Opvragen van unsubscribes voor een ontvanger       |
+| Type   | Adres                                                                                                        | Omschrijving                                        |
+|--------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/destination/$id/](./rest-get-publisher-destination)                          | Opvragen van een bestemming                         |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/fields](./rest-get-publisher-destination-fields)             | Opvragen van een bestemming inclusief profielvelden |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/statistics](./rest-get-publisher-destination-statistics)     | Opvragen van statistieken voor een bestemming       |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/abuses](./rest-get-publisher-destination-abuses)             | Opvragen van abuses voor een bestemming             |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/clicks](./rest-get-publisher-destination-clicks)             | Opvragen van clicks voor een bestemming             |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/deliveries](./rest-get-publisher-destination-deliveries)     | Opvragen van deliveries voor een bestemming         |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/errors](./rest-get-publisher-destination-errors)             | Opvragen van errors voor een bestemming             |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/impressions](./rest-get-publisher-destination-impressions)   | Opvragen van impressies voor een bestemming         |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/unsubscribes](./rest-get-publisher-destination-unsubscribes) | Opvragen van unsubscribes voor een bestemming       |
 
 ### Mailing Statistieken
 
