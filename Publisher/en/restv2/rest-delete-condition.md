@@ -1,12 +1,12 @@
-# REST API: DELETE interest
+# REST API: DELETE condition
 
-You can send an HTTP DELETE request to the following address to delete an 
-interest:
+You can send an HTTP DELETE request to the following address to delete a
+condition:
 
-`https://api.copernica.com/v2/interest/$id?access_token=xxxx`
+`https://api.copernica.com/v2/condition/$type/$id?access_token=xxxx`
 
-The `$id` needs to be replaced by the numerical identifier of the interest
-that you want to remove.
+The `$type` and `$id` need to be replaced by the condition type and 
+the numerical identifier of the condition respectively.
 
 ## PHP example
 
@@ -19,8 +19,8 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// execute the call
-$api->delete("interest/{$interestID}");
+// do the call
+$api->delete("condition/{$conditionType}/{$conditionID}");
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
