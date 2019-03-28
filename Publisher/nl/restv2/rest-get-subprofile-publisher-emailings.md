@@ -1,17 +1,15 @@
-# REST API: GET profile emailings (Publisher)
+# REST API: GET subprofile emailings (Publisher)
 
 Deze methode vraagt een lijst op van alle mailings verstuurd met Publisher 
-naar een specifiek profiel. 
+naar een specifiek subprofiel. 
 De methode maakt een HTTP call naar het volgende adres:
 
-`https://api.copernica.com/v2/profile/{$profileID}/publisher/emailings?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/{$subprofileID}/publisher/emailings?access_token=xxxx`
 
 Je kunt de methode om alle Marketing Suite mailings op te vragen [hier](./rest-get-ms-emailings) vinden.
 
 ## Beschikbare parameters
 
-* **include_subprofiles**: Boolean die aangeeft of mailings naar subprofiles 
-meegeteld moeten worden ('yes', 'no'). De standaardwaarde is 'yes'. 
 * **type**: Het type mailing. Dit kan een massa ('mass') mailing zijn of 
 een individuele ('individual') mailing. De methode zal standaard beide 
 opvragen.
@@ -69,7 +67,7 @@ $parameters = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("profile/{$profileID}/publisher/emailings", $parameters));
+print_r($api->get("subprofile/{$subprofileID}/publisher/emailings", $parameters));
 ```
 
 Het bovenstaande voorbeeld vereist de [CopernicaRestApi klasse](./rest-php).
