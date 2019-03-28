@@ -139,28 +139,30 @@ You can find methods that relate to a specific (mini)view below.
 ## Rules & Minirules
 
 Rules and minirules are made up of several conditions to create selections 
-under a database or collection respectively. You can find their related API calls 
-in the table below.
+under a database or collection respectively. You can find API calls related 
+to rules and their conditions in the table below.
 
 ### Rules
 
 | Type   | Address                                                                                      | Description                                  |
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Create a rule                                |
 | GET    | [api.copernica.com/v2/rule/$id](./rest-get-rule)                                             | Fetch the rule information                   |
 | PUT    | [api.copernica.com/v2/rule/$id](./rest-put-rule)                                             | Update the rule information                  |
-| POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Create a new view rule                       |
-| POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Create a new miniview minirule               |
 | DELETE | [api.copernica.com/v2/rule/$id](./rest-delete-rule)                                          | Delete a rule                                |
-| POST   | [api.copernica.com/v2/rule/$id/conditions](./rest-post-rule-conditions)                      | Create a new rule condition                  |
+| POST   | [api.copernica.com/v2/rule/$id/conditions](./rest-post-rule-conditions)                      | Create a rule condition                      |
+| DELETE | [api.copernica.com/v2/condition/$type/$id](./rest-delete-condition)                          | Delete a rule condition                      |
 
-### Minirule
+### Minirules (for miniselections)
 
 | Type   | Address                                                                                      | Description                                  |
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Create a new minirule                        |
 | GET    | [api.copernica.com/v2/minirule/$id](./rest-get-minirule)                                     | Fetch the minirule information               |
 | PUT    | [api.copernica.com/v2/minirule/$id](./rest-put-minirule)                                     | Update the minirule information              |
-| POST   | [api.copernica.com/v2/minirule/$id/conditions](./rest-post-minirule-conditions)              | Create a new minirule condition              |
 | DELETE | [api.copernica.com/v2/minirule/$id](./rest-delete-minirule)                                  | Delete a minirule                            |
+| POST   | [api.copernica.com/v2/minirule/$id/conditions](./rest-post-minirule-conditions)              | Create a minirule condition                  |
+| DELETE | [api.copernica.com/v2/minicondition/$type/$id](./rest-delete-minicondition)                  | Delete a minirule condition                  |
 
 ## Profiles & Subprofiles
 

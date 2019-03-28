@@ -140,28 +140,30 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 
 Regels en miniregels bestaan uit een of meerdere condities om selecties en 
 miniselecties aan te maken onder een database of collectie respectievelijk. 
-Je kunt alle API calls gerelateerd aan (mini)regels in de tabel hieronder 
-vinden.
+Je kunt alle API calls gerelateerd aan (mini)regels en de bijhorende 
+condities in de tabel hieronder vinden.
 
 ### Regels
 
 | Type   | Adres                                                                                        | Omschrijving                                   |
 |--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
+| POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Aanmaken van een regel                         |
 | GET    | [api.copernica.com/v2/rule/$id](./rest-get-rule)                                             | Opvragen van regel informatie                  |
 | PUT    | [api.copernica.com/v2/rule/$id](./rest-put-rule)                                             | Updaten van regel informatie                   |
-| POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Aanmaken van een nieuwe selectie regel         |
-| POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Aanmaken van een nieuwe miniselectie miniregel |
 | DELETE | [api.copernica.com/v2/rule/$id](./rest-delete-rule)                                          | Verwijderen van een regel                      |
 | POST   | [api.copernica.com/v2/rule/$id/conditions](./rest-post-rule-conditions)                      | Aanmaken van een regel conditie                |
+| DELETE | [api.copernica.com/v2/condition/$type/$id](./rest-delete-condition)                          | Verwijderen van een conditie                   |
 
-### Miniregels
+### Miniregels (voor miniselecties)
 
-| Type   | Adres                                                                                        | Omschrijving                                 |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| GET    | [api.copernica.com/v2/minirule/$id](./rest-get-minirule)                                     | Opvragen van miniregel informatie            |
-| PUT    | [api.copernica.com/v2/minirule/$id](./rest-put-minirule)                                     | Updaten van miniregel informatie             |
-| POST   | [api.copernica.com/v2/minirule/$id/conditions](./rest-post-minirule-conditions)              | Aanmaken van een nieuwe miniregel conditie   |
-| DELETE | [api.copernica.com/v2/minirule/$id](./rest-delete-minirule)                                  | Verwijderen van een miniregel                |
+| Type   | Adres                                                                                        | Omschrijving                                   |
+|--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
+| POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Aanmaken van een nieuwe miniregel              |
+| GET    | [api.copernica.com/v2/minirule/$id](./rest-get-minirule)                                     | Opvragen van miniregel informatie              |
+| PUT    | [api.copernica.com/v2/minirule/$id](./rest-put-minirule)                                     | Updaten van miniregel informatie               |
+| DELETE | [api.copernica.com/v2/minirule/$id](./rest-delete-minirule)                                  | Verwijderen van een miniregel                  |
+| POST   | [api.copernica.com/v2/minirule/$id/conditions](./rest-post-minirule-conditions)              | Aanmaken van een miniregel conditie            |
+| DELETE | [api.copernica.com/v2/minicondition/$type/$id](./rest-delete-minicondition)                  | Verwijderen van een miniregel conditie         |
 
 ## Profielen & Subprofielen
 
