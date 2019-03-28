@@ -292,6 +292,13 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Fetch a template                             |
 | GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Fetch the statistics for a template          |
 
+### Messages
+
+| Type   | Address                                                                                      | Description                                  |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Fetch the message information                |
+| GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Fetch the message body                       |
+
 ### Destinations
 
 | Type   | Address                                                                                      | Description                                  |
@@ -299,13 +306,6 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Fetch a destination                          | 
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing         |
 | GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Fetch the statistics for a destination       |
-
-### Messages
-
-| Type   | Address                                                                                      | Description                                  |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Fetch the message information                |
-| GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Fetch the message body                       |
 
 ## Datarequests
 
