@@ -66,7 +66,10 @@ bevat zich in de response body. Het is ook mogelijk een "301 Moved Permanently"
 respons te ontvangen wanneer een verzoek naar een nieuwe URL verplaatst is. 
 
 Andere status codes zijn bijvoorbeeld de "201 Created" respons voor een succesvol 
-POST verzoek en de "303 See Other" respons voor een PUT verzoek dat verplaatst is. 
+POST verzoek. In het geval van een succesvolle aanpassing door middel van een 
+PUT call zal er een "200 OK" code teruggegeven worden. In het geval van de PUT 
+call is het echter ook mogelijk dat er een of meerdere nieuwe entiteiten 
+aangemaakt worden, in welk geval er een "303 See Other" code geretourneerd zal worden. 
 POST en PUT verzoeken kunnen ook **X-location** headers bevatten met een URL 
 van de nieuw aangemaakte entiteit. Bijvoorbeeld `X-location: https://api.copernica.com/v1/profile/$profileID` 
 voor een nieuw aangemaakt profiel of geüpdatete profielen.
