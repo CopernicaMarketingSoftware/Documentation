@@ -1,11 +1,11 @@
-# REST API: DELETE condition
+# REST API: DELETE minicondition
 
-Een conditie kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
+Een miniconditie kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v2/condition/$type/$id?access_token=xxxx`
+`https://api.copernica.com/v2/minicondition/$type/$id?access_token=xxxx`
 
 De `$type` en `$id` moeten vervangen worden door het type en de ID van de 
-conditie respectievelijk.
+miniconditie respectievelijk.
 
 ## Voorbeeld in PHP
 
@@ -19,7 +19,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-$api->delete("condition/{$conditieType}/{$conditieID}");
+$api->delete("minicondition/{$miniconditieType}/{$miniconditieID}");
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
@@ -27,4 +27,4 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-
+* [Een conditie verwijderen](./rest-delete-condition)
