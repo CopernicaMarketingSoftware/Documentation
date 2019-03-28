@@ -10,12 +10,12 @@ can be manually installed.
 ## Installing on Debian/Ubuntu based systems
 
 We have two repositories, one for newer Ubuntu and Debian versions (Ubuntu
-12.04 and up, and Debian version 8 and higher), and a repository for the
+14.04 and up, and Debian version 8 and higher), and a repository for the
 older Debian 6 and Debian 7 versions.
 
 <table>
     <tr>
-        <td>Ubuntu 12.04 and up</td>
+        <td>Ubuntu 14.04 and up</td>
         <td>deb https://packages.copernica.com/debian stable main</td>
     </tr>
     <tr>

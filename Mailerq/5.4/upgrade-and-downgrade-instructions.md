@@ -22,7 +22,7 @@ To downgrade MailerQ from version 5.4+ to 5.3
 **Debian/Ubuntu:**
 
 ```txt
-sudo apt-get install -y --allow-downgrades mailerq-5.3 mailerq=5.3.1
+sudo apt-get install -y --allow-downgrades mailerq-5.3 mailerq=5.3.2
 sudo mailerq --repair-database
 ```
 

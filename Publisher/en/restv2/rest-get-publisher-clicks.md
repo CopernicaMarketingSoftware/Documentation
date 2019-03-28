@@ -20,7 +20,7 @@ the following information is available:
 * **link_title**: The title of the link that was clicked.
 * **timestamp**: The timestamp of the click.
 * **ip**: The IP where the click came from.
-* **user-agent**: The user agent string of the clicker.
+* **useragent**: The user agent string of the clicker.
 * **referer**: The referer of the clicker.
 * **emailing**: The ID of the emailing where the click came from.
 * **destination**: The destination where the click came from.

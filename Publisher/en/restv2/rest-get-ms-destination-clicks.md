@@ -19,7 +19,7 @@ the following information is available:
 * **link**: The link that was clicked.
 * **timestamp**: Timestamp of the click.
 * **ip**: The IP where the click occurred from.
-* **user-agent**: User agent string of the machine used to click.
+* **useragent**: User agent string of the machine used to click.
 * **destination**: The ID of the destination that clicked the link.
 * **profile**: The ID of the profile that clicked the link.
 * **subprofile**: The ID of the subprofile that clicked the link.

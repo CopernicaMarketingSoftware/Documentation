@@ -31,10 +31,6 @@ You can find MailerQ licenses on the [create License](/product/license "create l
 
 On the license page of your [personal profile](/product/license/all "personal profile") you can renew your current license. Renewing a license will create the exact same license, with the same IP addresses, but with a different end date. Make sure you use the 'create new license' option when you want to add new IP addreses.
 
-### What do I do when I want to add new IP-addresses?
-
-If you want to add new IP addresses to your license there are currently two ways to do so. The first one is to add them to your license when you create a new license. This is the easiest way if you have a monthly license. If you have an annual license or need to add new IPs right away you can contact [support](mailto:support@copernica.com "contact support"). We will have to manually add a new IP addresses to your license. In the future you will be able to do so on your profile page.
-
 ### What if I accidentally delete my license?
 
 In the license page of your [personal profile](/product/license/all "personal profile") you can download any of your current and old licenses.
