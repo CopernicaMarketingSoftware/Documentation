@@ -65,23 +65,24 @@ structure.
 | POST   | [api.copernica.com/v2/databases](./rest-post-databases)                                      | Create a new database                        |
 | GET    | [api.copernica.com/v2/database/$id](./rest-get-database)                                     | Fetch the database information               |
 | PUT    | [api.copernica.com/v2/database/$id](./rest-put-database)                                     | Update the database information              |
-| GET    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-get-database-unsubscribe)             | Fetch the database unsubscribe behavior      |
-| PUT    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-put-database-unsubscribe)             | Update the database unsubscribe behavior     |
-| GET    | [api.copernica.com/v2/database/$id/views](./rest-get-database-views)                         | Fetch all database views                     |
-| POST   | [api.copernica.com/v2/database/$id/views](./rest-post-database-views)                        | Create a new database view                   |
-| GET    | [api.copernica.com/v2/database/$id/collections](./rest-get-database-collections)             | Fetch all database collections               |
-| POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Create a new database collection             |
-| GET    | [api.copernica.com/v2/database/$id/fields](./rest-get-database-fields)                       | Fetch all database fields                    |
-| POST   | [api.copernica.com/v2/database/$id/fields](./rest-post-database-fields)                      | Create a new database field                  |
-| PUT    | [api.copernica.com/v2/database/$id/field/$id](./rest-put-database-field)                     | Update a database field                      |
-| DELETE | [api.copernica.com/v2/database/$id/field/$id](./rest-delete-database-field)                  | Delete a database field                      |
-| GET    | [api.copernica.com/v2/database/$id/interests](./rest-get-database-interests)                 | Fetch all database interests                 |
-| POST   | [api.copernica.com/v2/database/$id/interests](./rest-post-database-interests)                | Create a new database interest               |
-| PUT    | [api.copernica.com/v2/interest](./rest-put-interest)                                         | Update a database interest                   |
-| GET    | [api.copernica.com/v2/database/$id/profileids](./rest-get-database-profileids)               | Fetch all database profile IDs               |
-| GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Fetch all database profiles                  |
-| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Create a new database profile                |
-| PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Update one or multiple database profiles     |
+| GET    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-get-database-unsubscribe)             | Fetch the unsubscribe behavior               |
+| PUT    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-put-database-unsubscribe)             | Update the unsubscribe behavior              |
+| GET    | [api.copernica.com/v2/database/$id/views](./rest-get-database-views)                         | Fetch all views                              |
+| POST   | [api.copernica.com/v2/database/$id/views](./rest-post-database-views)                        | Create a view                                |
+| GET    | [api.copernica.com/v2/database/$id/collections](./rest-get-database-collections)             | Fetch all collections                        |
+| POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Create a collection                          |
+| GET    | [api.copernica.com/v2/database/$id/fields](./rest-get-database-fields)                       | Fetch all fields                             |
+| POST   | [api.copernica.com/v2/database/$id/fields](./rest-post-database-fields)                      | Create a field                               |
+| PUT    | [api.copernica.com/v2/database/$id/field/$id](./rest-put-database-field)                     | Update a field                               |
+| DELETE | [api.copernica.com/v2/database/$id/field/$id](./rest-delete-database-field)                  | Delete a field                               |
+| GET    | [api.copernica.com/v2/database/$id/interests](./rest-get-database-interests)                 | Fetch all interests                          |
+| POST   | [api.copernica.com/v2/database/$id/interests](./rest-post-database-interests)                | Create an interest                           |
+| PUT    | [api.copernica.com/v2/interest](./rest-put-interest)                                         | Update an interest                           |
+| DELETE | [api.copernica.com/v2/interest](./rest-delete-interest)                                      | Delete an interest                           |
+| GET    | [api.copernica.com/v2/database/$id/profileids](./rest-get-database-profileids)               | Fetch all profile IDs                        |
+| GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Fetch all profiles                           |
+| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Create a profile                             |
+| PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Update one or multiple profiles              |
 
 ### Collections
 

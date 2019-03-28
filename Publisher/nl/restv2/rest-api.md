@@ -65,23 +65,24 @@ collecties en hun eigenschappen.
 | POST   | [api.copernica.com/v2/databases](./rest-post-databases)                                      | Aanmaken van een nieuwe database               |
 | GET    | [api.copernica.com/v2/database/$id](./rest-get-database)                                     | Opvragen van database informatie               |
 | PUT    | [api.copernica.com/v2/database/$id](./rest-put-database)                                     | Updaten van database informatie                |
-| GET    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-get-database-unsubscribe)             | Opvragen van database uitschrijfgedrag         |
-| PUT    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-put-database-unsubscribe)             | Updaten van database uitschrijfgedrag          |
-| GET    | [api.copernica.com/v2/database/$id/views](./rest-get-database-views)                         | Opvragen van alle database selecties           |
-| POST   | [api.copernica.com/v2/database/$id/views](./rest-post-database-views)                        | Aanmaken van een database selectie             |
-| GET    | [api.copernica.com/v2/database/$id/collections](./rest-get-database-collections)             | Opvragen van alle database collecties          |
-| POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Aanmaken van een nieuwe database collectie     |
-| GET    | [api.copernica.com/v2/database/$id/fields](./rest-get-database-fields)                       | Opvragen van alle database velden              |
-| POST   | [api.copernica.com/v2/database/$id/fields](./rest-post-database-fields)                      | Aanmaken van een nieuw database veld           |
-| PUT    | [api.copernica.com/v2/database/$id/field/$id](./rest-put-database-field)                     | Updaten van een database veld                  |
-| DELETE | [api.copernica.com/v2/database/$id/field/$id](./rest-delete-database-field)                  | Verwijderen van een database veld              |
-| GET    | [api.copernica.com/v2/database/$id/interests](./rest-get-database-interests)                 | Opvragen van alle database interesses          |
-| POST   | [api.copernica.com/v2/database/$id/interests](./rest-post-database-interests)                | Aanmaken van een nieuwe database interesse     |
-| PUT    | [api.copernica.com/v2/interest](./rest-put-interest)                                         | Updaten van een database interesse             |
-| GET    | [api.copernica.com/v2/database/$id/profileids](./rest-get-database-profileids)               | Opvragen van alle database profiel IDs         |
-| GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Opvragen van alle database profielen           |
-| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een nieuw database profiel        |
-| PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Updaten van een of meerdere database profielen |
+| GET    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-get-database-unsubscribe)             | Opvragen van uitschrijfgedrag                  |
+| PUT    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-put-database-unsubscribe)             | Updaten van uitschrijfgedrag                   |
+| GET    | [api.copernica.com/v2/database/$id/views](./rest-get-database-views)                         | Opvragen van alle selecties                    |
+| POST   | [api.copernica.com/v2/database/$id/views](./rest-post-database-views)                        | Aanmaken van een selectie                      |
+| GET    | [api.copernica.com/v2/database/$id/collections](./rest-get-database-collections)             | Opvragen van alle collecties                   |
+| POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Aanmaken van een collectie                     |               
+| GET    | [api.copernica.com/v2/database/$id/fields](./rest-get-database-fields)                       | Opvragen van alle velden                       |
+| POST   | [api.copernica.com/v2/database/$id/fields](./rest-post-database-fields)                      | Aanmaken van een veld                          |              
+| PUT    | [api.copernica.com/v2/database/$id/field/$id](./rest-put-database-field)                     | Updaten van een veld                           |
+| DELETE | [api.copernica.com/v2/database/$id/field/$id](./rest-delete-database-field)                  | Verwijderen van een veld                       |
+| GET    | [api.copernica.com/v2/database/$id/interests](./rest-get-database-interests)                 | Opvragen van alle interesses                   |
+| POST   | [api.copernica.com/v2/database/$id/interests](./rest-post-database-interests)                | Aanmaken van een interesse                     |               
+| PUT    | [api.copernica.com/v2/interest](./rest-put-interest)                                         | Updaten van een interesse                      |
+| DELETE | [api.copernica.com/v2/interest](./rest-delete-interest)                                      | Verwijderen van een interesse                  |
+| GET    | [api.copernica.com/v2/database/$id/profileids](./rest-get-database-profileids)               | Opvragen van alle profiel IDs                  |
+| GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Opvragen van alle profielen                    |
+| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een profiel                       |              
+| PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Updaten van een of meerdere profielen          |
 
 ### Collecties
 
