@@ -8,10 +8,13 @@ are free to write your own scripts and programs that also modify this data.
 MailerQ supports multiple database platforms: MySQL(5.5+), MariaDB(5.5+),
 PostgreSQL(9.1+) and SQLite3. The SQLite database is by far the simplest to
 set up because it does not require a server process to run. All you need is
-the "sqlite3" library to be installed on your system.
+the "sqlite3" library to be installed on your system. _Althought it is the simplest
+to set up, we advise you to not use an SQLite database in production, because it makes 
+scaling up MailerQ a lot more difficult._
 
 The other database systems, MySQL, MariaDB and PostgreSQL, take a little
-more effort, but they are not too difficult to configure either. If you
+more effort, but they are not too difficult to configure either. This is the most
+future-proof, since it can be easily scaled or shared between instances. If you
 already have such a database server running, you only have to create a new
 database and put the address, login and password to that database in MailerQ's
 configuration file. MailerQ will do the rest: the tables will be created and
