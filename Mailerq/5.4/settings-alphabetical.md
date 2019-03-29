@@ -112,7 +112,10 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [spool-delay](spool-directory#config-file-options)                       | Delay for processing spool directory files
 | [spool-directory](spool-directory#config-file-options)                   | Path to the directory to monitor
 | [spool-extract](spool-directory#config-file-options)                     | Toggle scanning for headers in spool directory mail
+| [spool-fail-directory](spool-directory#config-file-options)              | Path to move files to that could not be picked up
+| [spool-open-files](spool-directory#config-file-options)                  | Amount of files that may be open simultaneously by the spool directory                    
 | [spool-remove](spool-directory#config-file-options)                      | Toggle removal of files from spool directory
+| [spool-threads](spool-directory#config-file-options)                     | Amount of threads to use for the spool directory
 | [storage-address](message-store-options)                                 | Address for external message storage
 | [storage-policy](message-store-options)                                  | Message store policy
 | [storage-reschedule](message-store-options)                              | Number of seconds to wait before a mail is retried
