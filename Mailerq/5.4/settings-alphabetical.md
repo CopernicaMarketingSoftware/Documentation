@@ -47,7 +47,9 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [rabbitmq-failure](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ failure queue
 | [rabbitmq-inbox](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ inbox queue
 | [rabbitmq-local](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ local queue 
+| [rabbitmq-lazy](rabbitmq-config#persisten-and-durable-settings)          | Lazy/non lazy RabbitMQ queues
 | [rabbitmq-maxpriority](rabbitmq-config#priority-queues)                  | Enable the use of priority queues 
+| [rabbitmq-max-messages](rabbitmq-config#max-messages)                    | Set a maximum number of messages per consumer thread
 | [rabbitmq-outbox](rabbitmq-config#rabbitmq-queues)                       | Your RabbitMQ outbox queue (must be unique if multiple instances of MailerQ are used)
 | [rabbitmq-persistent](rabbitmq-config#persistent-and-durable-settings)   | Persistent/not persistent RabbitMQ queues (default: false)
 | [rabbitmq-publishers](rabbitmq-config#multiple-threads)                  | Amount of publisher threads (default: 1)
@@ -143,6 +145,7 @@ $ mailerq --version
 |-----------------------------|--------------------------------------------------------|
 | daemon                      | Deamon process (deafault true)
 | disable-crash-report        | Disable crash report
+| disable-crash-post          | Disable automatic crash posting
 | extract-recipients          | Read in a mime message from standard input and filter out the destination addresses
 | ignore-dot                  | Instruct MailerQ that dots do not have a special meaning
 | list-ips                    | List IP addresses
