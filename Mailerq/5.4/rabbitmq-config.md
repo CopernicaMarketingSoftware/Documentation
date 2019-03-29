@@ -247,10 +247,10 @@ rabbitmq-maxpriority: 4
 ```
 
 The above config file option instructs MailerQ to set the "x-max-priority"
-property on the outbox queue to the given value. This setting is used
-during application startup when the outbox queue is declared. If the outbox
-queue already exists, it must match the "x-max-priority" setting of the
-existing queue.
+property on the outbox queue and tempqueues to the given value. This setting is used
+during application startup when the outbox queue is declared, and when new temporary
+queues are declared. If the outbox queue already exists, it must match the "x-max-priority" 
+setting of the existing queue.
 
 
 ## The exchange
@@ -319,6 +319,7 @@ two options:
 ```
 rabbitmq-durable:       true    (default: true)
 rabbitmq-persistent:    false   (default: false)
+rabbitmq-lazy:          false   (default: false)
 ```
 
 MailerQ creates several queues and exchanges in RabbitMQ. When MailerQ starts, it 
@@ -337,7 +338,15 @@ much, much faster than storing the messages to disk. It does however bring a hig
 risk, because if RabbitMQ crashes, the messages will be lost. Turning on persistency will 
 mean your messages are also saved to disk, and can survive a RabbitMQ crash. But at 
 the same time it makes things much slower. We therefore recommend leaving the 
-"rabbitmq-persistent" option off (set to "false"). 
+"rabbitmq-persistent" option off (set to "false").  Note that if you _do_ turn it on, 
+durable queues should also be turned on. Persistent messages are still lost if the queue 
+is not durable, because the queue no longer exists.
+
+The "rabbitmq-lazy" setting toggles whether queues are declared as lazy queues. Lazy
+queues ensure that messages are always written to disk. This lowers overall performance,
+but prevents sudden performance drops once RabbitMQ needs to flush to disk, giving 
+predictable performance. See the [RabbitMQ documentation](https://www.rabbitmq.com/lazy-queues.html)
+for more information on lazy queues.
 
 
 ## Multiple threads
@@ -392,3 +401,17 @@ The above setting only affects how MailerQ *publishes* messages to RabbitMQ.
 Messages consumed from RabbitMQ can still both be compressed or not, because 
 MailerQ always inspects the "content-encoding" header from the AMQP envelope.
 
+## Maximum Messages
+
+When consuming from the outbox queue, MailerQ loads a certain number of messages
+at the same time. This number can be tweaked to lower memory usage.
+
+```
+rabbitmq-max-messages:    1000    (default: 1000)
+```
+
+This number is interpreted per consumer thread. Therefore, the maximum total 
+number of messages from the outbox that are in memory at the same time is the 
+amount of consumers multiplied by the maximum number of messages. For example, 
+if "rabbitmq-consumers" is set to 5, and "rabbitmq-max-messages" is set to 200,
+the maximum total number of unacked messages from the outbox queue is 1000. 
