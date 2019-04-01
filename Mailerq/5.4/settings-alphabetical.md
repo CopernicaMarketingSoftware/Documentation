@@ -47,7 +47,9 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [rabbitmq-failure](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ failure queue
 | [rabbitmq-inbox](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ inbox queue
 | [rabbitmq-local](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ local queue 
+| [rabbitmq-lazy](rabbitmq-config#persisten-and-durable-settings)          | Lazy/non lazy RabbitMQ queues
 | [rabbitmq-maxpriority](rabbitmq-config#priority-queues)                  | Enable the use of priority queues 
+| [rabbitmq-max-messages](rabbitmq-config#max-messages)                    | Set a maximum number of messages per consumer thread
 | [rabbitmq-outbox](rabbitmq-config#rabbitmq-queues)                       | Your RabbitMQ outbox queue (must be unique if multiple instances of MailerQ are used)
 | [rabbitmq-persistent](rabbitmq-config#persistent-and-durable-settings)   | Persistent/not persistent RabbitMQ queues (default: false)
 | [rabbitmq-publishers](rabbitmq-config#multiple-threads)                  | Amount of publisher threads (default: 1)
@@ -110,7 +112,10 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [spool-delay](spool-directory#config-file-options)                       | Delay for processing spool directory files
 | [spool-directory](spool-directory#config-file-options)                   | Path to the directory to monitor
 | [spool-extract](spool-directory#config-file-options)                     | Toggle scanning for headers in spool directory mail
+| [spool-fail-directory](spool-directory#config-file-options)              | Path to move files to that could not be picked up
+| [spool-open-files](spool-directory#config-file-options)                  | Amount of files that may be open simultaneously by the spool directory                    
 | [spool-remove](spool-directory#config-file-options)                      | Toggle removal of files from spool directory
+| [spool-threads](spool-directory#config-file-options)                     | Amount of threads to use for the spool directory
 | [storage-address](message-store-options)                                 | Address for external message storage
 | [storage-policy](message-store-options)                                  | Message store policy
 | [storage-reschedule](message-store-options)                              | Number of seconds to wait before a mail is retried
@@ -143,6 +148,7 @@ $ mailerq --version
 |-----------------------------|--------------------------------------------------------|
 | daemon                      | Deamon process (deafault true)
 | disable-crash-report        | Disable crash report
+| disable-crash-post          | Disable automatic crash posting
 | extract-recipients          | Read in a mime message from standard input and filter out the destination addresses
 | ignore-dot                  | Instruct MailerQ that dots do not have a special meaning
 | list-ips                    | List IP addresses
