@@ -8,7 +8,7 @@ are free to write your own scripts and programs that also modify this data.
 MailerQ supports multiple database platforms: MySQL(5.5+), MariaDB(5.5+),
 PostgreSQL(9.1+) and SQLite3. The SQLite database is by far the simplest to
 set up because it does not require a server process to run. All you need is
-the "sqlite3" library to be installed on your system. _Althought it is the simplest
+the "sqlite3" library to be installed on your system. _Although it is the simplest
 to set up, we advise you to not use an SQLite database in production, because it makes 
 scaling up MailerQ a lot more difficult._
 
@@ -64,7 +64,7 @@ shared amongst multiple MailerQ instances? Then the SQLite database is sufficien
 MailerQ makes use of client libraries on your system to connect to the
 database. To connect to a MySQL or MariaDB database, you must make sure that either
 [libmysqlclient or libmariadbclient](system-dependencies) is installed on your system. For
-PostgreSql connections libpq has to be installed, and libsqlite3 is needed
+PostgreSQL connections libpq has to be installed, and libsqlite3 is needed
 for SQLite3 databases. If these libraries are not available on the system,
 it is not possible to connect to the database.
 
@@ -97,12 +97,11 @@ verified against the public keys found in DNS. If this is enabled, MailerQ will
 do a DNS query for each DKIM key to see if the private key indeed matches the
 published public key. Keys that do not match will not be used.
 
-This is a nice feature, but has as downside that it sometime takes a long time
-to run all these DNS queries - especially if you have a lot of DKIM keys in your
-database. To speed things up, you can increase the number of threads that are
-used for these DNS queries. The "database-threads" config file option sets
-the number of threads to be used for DNS lookups that are triggered by a
-database reload:
+Running all these DNS queries may sometimes take a long time, especially if you
+have a lot of DKIM keys in your database. To speed things up, you can increase
+the number of threads that are used for these DNS queries. The "database-threads"
+config file option sets the number of threads to be used for DNS lookups that are
+triggered by a database reload:
 
 ````
 database-threads:       10
@@ -166,20 +165,20 @@ instance can update its cache.
 
 MailerQ has a powerful [web based MTA management console](management-console "Management console").
 This console gives you access to the database using simple web forms.
-It is therefore in normal operations not at all necessary to run any
-queries on the database by yourself. But if you do like to access the data
+During normal operations, it is therefore not necessary to run any queries on the
+database yourself. But if you do like to access the data,
 you are free to do so.
 
-All tables in the database have a very straight forward structure.
+All tables in the database have a very straightforward structure.
 Because MailerQ is compatible with many different database systems, we do
-not use vendor specific SQL features and we've kept all tables as simple
+not use vendor specific SQL features and have kept all tables as simple
 as possible. The tables use well known data types, and no foreign
 keys or constraints. Booleans are stored as integers and "NULL" and "0" values
 have the same semantics. The value "0" is often used to set something to
 "unlimited", while "-1" values are used to fall back on the default setting.
 
-All data is stored in the tables in UTF8 encoding. If you use international
-domain names and/or international email address, you should store them in UTF8
+All data is stored in the tables in UTF-8 encoding. If you use international
+domain names and/or international email addresses, you should store them in UTF-8
 format in the database.
 
 The following tables are created:
@@ -187,7 +186,7 @@ The following tables are created:
 | Tables                    | Description
 |-----------------------    |-----------------------------------------------------------------------|
 | capacity                  | all delivery capacities, eg max number of connections
-| capacity_rules            | capacity rules per domain / mta   
+| capacity_rules            | capacity rules per domain / MTA IP   
 | dkim_keys                 | DKIM keys to sign outgoing mails
 | dkim_patterns             | rules that decide what DKIM keys to use
 | dns                       | overridden dns lookups
@@ -200,7 +199,7 @@ The following tables are created:
 | response_actions          | response action, eg send mail from a different IP
 | response_patterns         | patterns of responses that has to match
 | response_patterns_actions | what kind of response actions must be executed
-| rewrite_actions           | when a message is loaded you can eg send mail from a different IP
+| rewrite_actions           | actions to perform when a message is loaded eg send from a different IP
 | rewrite_triggers          | triggers to fire rewrite actions
 
 
@@ -229,7 +228,7 @@ up in this table.
 
 ### The flood_responses table
 
-The "flood_responses" table has an almost similar layout as the capacity table,
+The "flood_responses" table has a similar layout to the capacity table,
 but with a "pattern" and a "type" column instead of an IP address and a domain.
 For each failed delivery, the answer message from the remote server is checked
 agains the patterns in this table. If there is a match, MailerQ will start
@@ -237,7 +236,7 @@ using the delivery capacity set in this table.
 
 For example, if you insert a record in this table with pattern "flood detected"
 and type "substr", and MailerQ receives an answer from a remote server
-which a message like "message rejected, flood detected from your IP address",
+with a message like "message rejected, flood detected from your IP address",
 MailerQ automatically switches the send capacity to the associated capacity.
 
 Once again, the best way to get an idea of the meaning of the columns is
@@ -285,7 +284,7 @@ the message JSON, you can use the "delegates" table. For example, if you
 notice that "example.com" no longer accepts incoming connections from
 your "1.2.3.4" address, but that it does accept connections from "1.2.3.5",
 you can add a row to the "delegates" table. This row instructs MailerQ
-that it should send all mail that was originalle planned to be sent from
+that it should send all mail that was originally planned to be sent from
 "1.2.3.4" to "example.com" to be sent from address "1.2.3.5" instead.
 
 
@@ -318,7 +317,7 @@ insert a row into this table.
 
 To override the DNS resolver, you can add records to the "dns" table. MailerQ
 normally uses normal DNS queries to find out to which IP addresses mail should
-be sent. First it does a MX query to find the MX records, and then for each
+be sent. First it does an MX query to find the MX records, and then for each
 MX record MailerQ looks for the associated A or AAAA records to find the
 IP addresses.
 
