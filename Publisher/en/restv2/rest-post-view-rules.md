@@ -6,7 +6,6 @@ the following URL:
 `https://api.copernica.com/v2/view/$id/rules?access_token=xxxx`
 
 The `$id` should be replaced by the ID of the view you want to add a rule to. 
-The name of the rule and other values should be added to the message body. 
 After a successful call the ID of the created request is returned.
 
 ## Available parameters
@@ -15,12 +14,12 @@ The following properties can be assigned to a rule in the message body. At
 least the name of the rule is required.
 
 - **name**: Name of the rule. This should be unique within the set of view rule 
-names and is mandatory
-- **conditions**: Array of conditions profiles within the selection should conform to, 
-such as certain values within certain fields
+names and is mandatory.
 - **inverted**: Boolean value that when set to "True" will return only profiles 
 that do *not* adhere to the rule.
 - **disabled**: Boolean value that when set to "True" will disable the rule.
+
+Conditions can be added with the method [POST rule conditions](./rest-post-rule-conditions).
 
 ## PHP Example
 
@@ -35,16 +34,18 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // data to pass to the call
 $data = array(
-   'name'      =>  'rule-name',
-   'inverted'  =>  False
+   'name'       =>  'rule-name',
+   'inverted'   =>  false
+   'disabled'   =>  false,
 );
     
-// do the call
-$api->post("view/{$viewID}/rules", $data);
-
-// return id of created request if successful
+// execute the call and store the result
+$result = $api->post("view/{$viewID}/rules", $data);
 ```
 
+If the call was succesful the result you stored above should contain the 
+ID for the new rule. You can immediately use the ID to create new conditions 
+using the [POST rule conditions](./rest-post-rule-conditions) method.
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
