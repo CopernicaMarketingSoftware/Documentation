@@ -16,7 +16,6 @@ waarden moeten toegevoegd worden aan de message body.
 De volgende eigenschappen kunnen meegegeven worden in de message body. Er moet tenminste een naam worden meegegeven.
 
 - name:                     naam van de regel. Deze moet uniek zijn binnen de regelnamen in de selectie en is verplicht;
-- view:                     id van de selectie waar de regel bij hoort;
 - conditions:               array van condities waar profielen binnen de selectie aan moeten voldoen, zoals bepaalde waarden in bepaalde velden;
 - inversed:                 boolean waarde die met waarde "True" alleen profielen teruggeeft die juist *niet* aan de regel voldoen;
 - disabled:                 boolean waarde die aangeeft of de regel wel of niet uitgeschakeld is.
@@ -36,7 +35,6 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 // data voor de methode
 $data = array(
     'name'      =>  'rule-name',
-    'view'      =>  1234,
     'inverted'  =>  False
 );
 

@@ -16,7 +16,6 @@ least the name of the rule is required.
 
 - **name**: Name of the rule. This should be unique within the set of view rule 
 names and is mandatory
-- **view**: ID of the selection that the rule belongs to
 - **conditions**: Array of conditions profiles within the selection should conform to, 
 such as certain values within certain fields
 - **inverted**: Boolean value that when set to "True" will return only profiles 
@@ -37,7 +36,6 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 // data to pass to the call
 $data = array(
    'name'      =>  'rule-name',
-   'view'      =>  1234,
    'inverted'  =>  False
 );
     
