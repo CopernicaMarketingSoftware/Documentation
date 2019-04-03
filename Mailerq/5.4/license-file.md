@@ -1,8 +1,6 @@
 # License file
 
-To run MailerQ, you need a valid license file. This file contains the list
-of IP addresses and/or domains from which you are going to send out mail, plus
-the additional MailerQ features that you want to be enabled. You can get
+To run MailerQ, you need a valid license file. You can get
 free trial license files and commercial license files from the MailerQ website.
 
 **[Click here to get a license](/product/license)**

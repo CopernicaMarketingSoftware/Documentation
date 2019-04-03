@@ -27,14 +27,14 @@ default value. This default only works if you run RabbitMQ and MailerQ on
 the same server, and when you do not use a special vhost. 
 
 If you have a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), 
-you can use colons to separate the addresses: 
+you can use commas to separate the addresses: 
 ```
 rabbitmq-address: amqp://guest:guest@host1/vhost,amqp://guest:guest@host2/vhost,amqp://guest:guest@host3/vhost
 ```
 Running a cluster allows you to use [highly available queues](https://www.rabbitmq.com/ha.html).
 
 If your RabbitMQ server supports secure connections, you can configure MailerQ
-to connect to a "amqps://" address instead. The communication between MailerQ
+to connect to an "amqps://" address instead. The communication between MailerQ
 and RabbitMQ will then be encrypted.
 
 ```
@@ -143,9 +143,9 @@ in the "inbox" queue but goes to the "reports" queue instead. To summarize:
 * reports queue: incoming messages for local recipients that contain a delivery report
 * refused queue: incoming messages that were not accepted
 
-The last queue to mention is the "refused" queue. It is used for message that
+The last queue to mention is the "refused" queue. It is used for messages that
 were not accepted. For example, if you configure MailerQ to listen to one or 
-more SMTP ports, and you require incoming connections to authenticate, you might 
+more SMTP ports, and you require incoming connections to be authenticated, you might 
 receive messages over unauthenticated connections. These messages are rejected and
 do not end up in the "inbox" queue. However, for debugging and/or 
 security reasons you might still want to find out who is flooding your SMTP 
@@ -247,16 +247,15 @@ rabbitmq-maxpriority: 4
 ```
 
 The above config file option instructs MailerQ to set the "x-max-priority"
-property on the outbox queue and tempqueues to the given value. This setting is used
+property on the outbox queue and on temporary queues to the given value. This setting is used
 during application startup when the outbox queue is declared, and when new temporary
 queues are declared. If the outbox queue already exists, it must match the "x-max-priority" 
 setting of the existing queue. 
 
 In general, this number should be kept as small as possible, as there is a significant
 overhead for priority queues. For example, when a priority queue is created with an "x-max-priority"
-of 4, RabbitMQ internally creates 4 queues. This means that every queue in MailerQ from which
-is consumed is multiplied by the priority number. Therefore, priority queues beyond 2 or 3 levels
-is in general discouraged.
+of 4, RabbitMQ internally creates 4 queues. As this happens for every queue MailerQ consumes from,
+priority queues with more than two or three priority levels are generally discouraged.
 
 ## The exchange
 
@@ -275,7 +274,7 @@ rabbitmq-exchange: your_exchange
 ```
 
 To understand why you would need a custom exchange, you need a litte more
-insight knowledge of RabbitMQ. Although we constantly write that MailerQ publishes 
+inside knowledge of RabbitMQ. Although we constantly write that MailerQ publishes 
 message to specific queues, this is not exactly how RabbitMQ internally works. RabbitMQ 
 does not allow messages to be published directly to message queues. Instead, 
 it wants messages to be published to an exchange. The exchange then forwards the 
@@ -285,7 +284,7 @@ we actually mean that "MailerQ publishes a message to the exchange, and uses *th
 of the inbox queue* as the routing key so that the message *ends up in the inbox queue*." 
 In the end, the result is the same.
 
-To be fair, this exchange-routingkey-queue architecture can be pretty powerful. It 
+This exchange-routingkey-queue architecture can be pretty powerful. It 
 for example allows you to create your own (temporary) queue and bind it to 
 the same exchange as the outbox queue so that a *copy* of each message that goes
 to the outbox queue ends up in your private queue too. This allows you to monitor 
@@ -362,8 +361,8 @@ inbox queue and threads for publishing messages to the result queues and/or
 back to the outbox queue.
 
 You can specify in the config file that you want to start up multiple consumer
-and or multiple publisher threads. If you notice that the consumer of publisher
-threads are CPU bound, you can configure MailerQ to start up more queues.
+and/or multiple publisher threads. If you notice that the consumer of publisher
+threads are CPU bound, you can configure MailerQ to start up more threads.
 
 ```
 rabbitmq-consumers:     1 (default: 1)
@@ -419,4 +418,4 @@ This number is interpreted per consumer thread. Therefore, the maximum total
 number of messages from the outbox that are in memory at the same time is the 
 amount of consumers multiplied by the maximum number of messages. For example, 
 if "rabbitmq-consumers" is set to 5, and "rabbitmq-max-messages" is set to 200,
-the maximum total number of unacked messages from the outbox queue is 1000. 
+the maximum total number of unacknowledged messages from the outbox queue is 1000. 

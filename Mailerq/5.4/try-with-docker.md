@@ -35,5 +35,4 @@ and the RabbitMQ management console [here](http://172.17.0.2:15672).
 ## RabbitMQ
 By default, the image runs on its own network managed by Docker, which means that the 
 default username and password `guest` in RabbitMQ do not work. Therefore, on startup,
-an extra account `mailerq` is created, and the password to access the RabbitMQ management 
-console is printed to the standard output. 
+an extra account `mailerq` is created with password set to `mailerq`.
