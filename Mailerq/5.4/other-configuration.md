@@ -92,7 +92,7 @@ set in the config file.
 user:           <user name> (empty by default)
 ````
 
-The user name to change identify to after the SMTP and HTTP ports have been opened.
+The username to change identity to after the SMTP and HTTP ports have been opened.
 
 
 ## Lockfile
