@@ -30,8 +30,11 @@ Vervolgens halen we alle door dit profiel achtergelaten producten uit de collect
 Nu begint het echte werk. We gaan iteratief door alle opgehaalde subprofielen lopen, waarbij we ze netjes laten zien in een tabel en we de totale prijs van het mandje telkens optellen. Het doorlopen van alle subprofielen gebeurt met <em>foreach</em>. Omdat we alleen de producten uit het meest recente winkelmandje willen laten zien (welke we hebben opgehaald met het eerste gebruik van <em>loadsubprofile</em>), gebruiken we een <em>if-statement</em> om te bepalen of 'BasketID' van het product overeen komt met de ID van het opgehaalde mandje. De code om dit te controleren en om alleen bij de juiste subprofielen de naam van het product te laten zien is als volgt:
 ```
 
-{foreach from=$loadedProducts item=loadedProduct} {if $loadedProduct.BasketID == $loadedBasket.id} {$loadedProduct.Product} /if} {/foreach}
-
+{foreach from=$loadedProducts item=loadedProduct} 
+  {if $loadedProduct.BasketID == $loadedBasket.id}
+    {$loadedProduct.Product} 
+  {/if} 
+{/foreach}
 
 ```
 *N.B. Als je een link naar de pagina van het product wilt opnemen in je document, dan zul je die ook in de for-each moeten laten zien. Het is dan vereist om &lt;code&gt;-tags te gebruiken. Bijvoorbeeld: &lt;code&gt;{$loadedProduct.Link}&lt;/code&gt;. *
