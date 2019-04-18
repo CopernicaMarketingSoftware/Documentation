@@ -41,6 +41,7 @@ Nu begint het echte werk. We gaan iteratief door alle opgehaalde subprofielen lo
   {/if} 
 {/foreach}
 
+
 ```
 
 *N.B. Als je een link naar de pagina van het product wilt opnemen in je document, dan zul je die ook in de for-each moeten laten zien. Het is dan vereist om &lt;code&gt;-tags te gebruiken. Bijvoorbeeld: &lt;code&gt;{$loadedProduct.Link}&lt;/code&gt;. *
@@ -60,6 +61,7 @@ Het is voor de klant natuurlijk prettig om een zo compleet mogelijke weergave va
      {$productTotal} 
    {/if} 
 {/foreach}
+
 
 ```
 ### Totaalprijs ###
