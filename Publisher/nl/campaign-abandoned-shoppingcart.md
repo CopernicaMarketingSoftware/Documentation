@@ -2,7 +2,7 @@
 De verlaten winkelwagencampagne is een e-mail of een reeks e-mails die je stuurt naar klanten die hun winkelmandje achtergelaten hebben. Het doel van deze campagne is om de klant te stimuleren om alsnog over te gaan tot een aankoop.
 Uit een onderzoek van [Fresh Relevance](https://www.freshrelevance.com/resources/real-time-marketing-report-for-q3-2018) blijkt dat 57% van de winkelwagentjes verlaten achterblijft en uit [een overzicht van 41 onderzoeken](https://baymard.com/lists/cart-abandonment-rate) blijkt dat dit cijfer zelfs kan oplopen tot 81.40%. Hierdoor wordt er jaarlijks veel omzet misgelopen. Het goede nieuws is dat er een manier is om een deel van deze gemiste omzet toch binnen te halen
 
-In dit artikel wordt een een campagne opgestelt die ingezet wordt bij een verlaten winkelmandjes. We gaan hierbij uit van een werkende integratie tussen de webshop en Copernica, waarbij de lege winkelmandjes dus reeds in een database in Copernica te vinden zijn. Hieronder zie je enkele afbeeldingen van onze demo webshop.
+In dit artikel wordt een een campagne opgesteld die ingezet wordt bij een verlaten winkelmandjes. We gaan hierbij uit van een werkende integratie tussen de webshop en Copernica, waarbij de lege winkelmandjes dus reeds in een database in Copernica te vinden zijn. Hieronder zie je enkele afbeeldingen van onze demo webshop.
 
 Hier is een profiel met zijn subprofielen in collectie 'Orders' zichtbaar. In deze collectie staan alle orders, de bijbehorende producten staan in collectie 'OrderItems'. Deze scheiding wordt gemaakt om de losse producten te kunnen groeperen op basis van het ID van de order.
 
@@ -143,5 +143,25 @@ Voor de overzichtelijkheid is het verstandig om het mandje in een tabel weer te 
 ![](../images/shopping-cart-result.png)
 
 ## De opvolgactie ##
+Naast dat je document automatisch gevuld wordt, willen we ook dat de mailing automatisch verstuurd wordt. Dit doen we aan de hand van een opvolgactie. De opvolgactie wordt ingesteld op database, waarin we controleren of de status naar Basket is veranderd, vervolgens wacht de opvolgactie de aangegeven tijd. Na deze tijd controleren we nog 1 maal of de order nog steeds status Basket heeft en dan versturen we de mailing. In de onderstaande alinea's wordt beschreven hoe je deze opvolgactie in de Publisher of Markting Suite kan maken. **Let op gebruik maar 1 van de twee, omdat anders klanten 2 keer de mail ontvangen**
 
+### Marketing Suite opvolgactie
 
+ - Ga naar Database en Profielen
+ - Selecteer de database en vervolgens de Order collectie
+ - Klik op het tandwiel bovenin en selecteer opvolgacties
+ - Maak een nieuwe opvolgactie aan met als type Subprofiel bewerkt
+ - Voeg vervolgens het check bestemming blok en kies het veld Status en de waarde Basket
+ - Bevestig vervolgens een wachttijd hieraan vast met de aangegeven tijd
+ - Herhaal de bestemming blok stap om te controlen of de order nog steeds basket is
+ - Voeg als laatst een verzend email blok toe en kies hierin het juist document
+ 
+### Publisher opvolgactie
+
+ - Ga naar Profielen
+ - Selecteer de database en klik op de opvolgactie tab
+ - Klik op de collectie Orders en maak een nieuwe opvolgactie aan
+ - Kies als aanleiding dat een subprofiel is gewijzigd en kies het veld Status en de waarde Basket
+ - Als Actie kies je verstuur een opgemaakt document per e-mail en stel de wachtijd in
+ - Kies vervolgens het verlaten winkelwagen document en als bestemming het profiel zelf
+ - Stel als laatst op de actie een conditie in die checkt of het veld Status gelijk is aan Basket
