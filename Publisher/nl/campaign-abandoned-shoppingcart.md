@@ -6,12 +6,12 @@ In dit artikel wordt een een campagne opgestelt die ingezet wordt bij een verlat
 
 Hier is een profiel met zijn subprofielen in collectie 'Orders' zichtbaar. In deze collectie staan alle orders, de bijbehorende producten staan in collectie 'OrderItems'. Deze scheiding wordt gemaakt om de losse producten te kunnen groeperen op basis van het ID van de order.
 
-<img src="https://pic.vicinity.nl/image/127/0/127578/951ef5bfddf81d8cf98e08b2673a6cf5/database-tandenborstel.png" alt="" width="580" />
+![](../images/shopping-cart-order.png)
+
 
 Dit is collectie 'OrderItems', waarin de losse producten staan. In veld 'OrderID' staat het ID van de order zoals we die in 'Orders' vinden. Verder staat de prijs en een locatie van een afbeelding van het product in het subprofiel.
 
-
-<img src="https://pic.vicinity.nl/image/127/0/127579/9cf1c46374d8171bc4eb20223a4df44b/database-tandenborstel-2.png" alt="" width="580" />
+![](../images/shopping-cart-orderitems.png)
 
 ## Het document ##
 
