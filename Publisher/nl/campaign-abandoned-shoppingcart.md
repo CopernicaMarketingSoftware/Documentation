@@ -15,7 +15,7 @@ Dit is collectie 'OrderItems', waarin de losse producten staan. In veld 'OrderID
 
 ## Het document ##
 
-Nu we de basis van de email campagne hebben gebouwd, is het tijd om het document op te gaan bouwen. De motor achter het document is de [loadsubprofile](./loadprofile-and-loadsubprofile.md)-functie, waarmee subprofielen uit de database opgehaald kunnen worden (en ook uit andere databases dan die waar het geadresseerde profiel in zit).
+Nu we de basis van de e-mail campagne hebben gebouwd, is het tijd om het document op te gaan bouwen. De motor achter het document is de [loadsubprofile](./loadprofile-and-loadsubprofile.md)-functie, waarmee subprofielen uit de database opgehaald kunnen worden (en ook uit andere databases dan die waar het geadresseerde profiel in zit).
 
 ### Subprofielen laden met loadsubprofile ###
 Allereerst halen we het meest recente orders met status basket uit collectie 'Orders'. Hiervoor vragen we met behulp van <em>loadsubprofile</em> de subprofielen uit de collectie op, waarbij we de <em>limit</em> op 1 zetten en we (omgekeerd) sorteren op de veld 'Timestamp'. Vervolgens zeggen we dat het veld Status gelijk moet zijn aan basket, we willen namelijk geen complete orders tonen. 
@@ -143,25 +143,14 @@ Voor de overzichtelijkheid is het verstandig om het mandje in een tabel weer te 
 ![](../images/shopping-cart-result.png)
 
 ## De opvolgactie ##
-Naast dat je document automatisch gevuld wordt, willen we ook dat de mailing automatisch verstuurd wordt. Dit doen we aan de hand van een opvolgactie. De opvolgactie wordt ingesteld op database, waarin we controleren of de status naar Basket is veranderd, vervolgens wacht de opvolgactie de aangegeven tijd. Na deze tijd controleren we nog 1 maal of de order nog steeds status Basket heeft en dan versturen we de mailing. In de onderstaande alinea's wordt beschreven hoe je deze opvolgactie in de Publisher of Markting Suite kan maken. **Let op gebruik maar 1 van de twee, omdat anders klanten 2 keer de mail ontvangen**
+Naast dat je document automatisch gevuld wordt, willen we ook dat de mailing automatisch verstuurd wordt. Dit doen we aan de hand van een opvolgactie. De opvolgactie wordt ingesteld op database, waarin we controleren of de status naar Basket is veranderd, vervolgens wacht de opvolgactie de aangegeven tijd. Na deze tijd controleren we nog eenmaal of de order nog steeds status Basket heeft en dan versturen we de mailing. Hieronder wordt stapgewijs uitgelegd hoe je deze aanmaakt. 
 
-### Marketing Suite opvolgactie
-
- - Ga naar Database en Profielen
- - Selecteer de database en vervolgens de Order collectie
- - Klik op het tandwiel bovenin en selecteer opvolgacties
- - Maak een nieuwe opvolgactie aan met als type Subprofiel bewerkt
- - Voeg vervolgens het check bestemming blok en kies het veld Status en de waarde Basket
- - Bevestig vervolgens een wachttijd hieraan vast met de aangegeven tijd
- - Herhaal de bestemming blok stap om te controlen of de order nog steeds basket is
- - Voeg als laatst een verzend email blok toe en kies hierin het juist document
- 
-### Publisher opvolgactie
+### Instellen
 
  - Ga naar Profielen
  - Selecteer de database en klik op de opvolgactie tab
  - Klik op de collectie Orders en maak een nieuwe opvolgactie aan
- - Kies als aanleiding dat een subprofiel is gewijzigd en kies het veld Status en de waarde Basket
+ - Kies als aanleiding dat een subprofiel is aangemaakt of gewijzigd en kies het veld Status en de waarde Basket
  - Als Actie kies je verstuur een opgemaakt document per e-mail en stel de wachtijd in
  - Kies vervolgens het verlaten winkelwagen document en als bestemming het profiel zelf
  - Stel als laatst op de actie een conditie in die checkt of het veld Status gelijk is aan Basket
