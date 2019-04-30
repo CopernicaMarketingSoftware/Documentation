@@ -111,6 +111,29 @@ behind the field.
     <div class="colon">:</div>     
     <xsl:if test="required = 'yes'"><div class="required">*</div></xsl:if>  </div>
 
+### Engine specific style
+Certain engines have limited support for some CSS rules, or have a different
+interpretation of how the output should be styled. For this reason, it is
+possible to define engine-specific CSS rules. This is possible through
+HTML comments. In order to put such a comment inside of a template,
+the following syntax is used:
+
+    <xsl:comment>[if (IE)]>
+        &lt;link rel="stylesheet" type="text/css" href="https://example.com/path/to/css/ie.css" />
+    &lt;![endif]</xsl:comment>
+
+In this example, the *ie.css* stylesheet gets loaded when the email
+is rendered by a Internet Explorer engine. It is also possible to define
+such conditional styles with inline CSS. The following example changes
+the color of paragraph elements (`<p>`) when the email is rendered by
+a Microsoft Outlook engine, with engine version greater than 9.
+
+    <xsl:comment>[if (gt mso 9)]>
+            &lt;style>
+                p { color: red; }
+            &lt;/style>
+    &lt;![endif]</xsl:comment>
+
 ### Create your own XSLT
 
 The software adds a default XSLT to all content feeds, surveys and web

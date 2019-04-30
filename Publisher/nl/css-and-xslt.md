@@ -93,6 +93,29 @@ hier een ster achter geplaatst.
         <div class="required">*</div></xsl:if>
     </div>
 
+### Engine specifieke stijl
+Bepaalde engines ondersteunen niet alle CSS regels, of interpreteren deze
+op een ongewenste manier. Hiervoor is het mogelijk om stijlen te definieeren
+voor specifieke engines. Dit kan door middel van HTML commentaar. Binnen
+het gebruikte XSLT bestand kan zo een specifieke stijl als volgt
+gedefinieerd worden:
+
+    <xsl:comment>[if (IE)]>
+            &lt;link rel="stylesheet" type="text/css" href="https://example.com/path/to/css/ie.css" />
+    &lt;![endif]</xsl:comment>
+
+Hierbij wordt *ie.css* toegepast als de email in Internet Explorer
+geopend wordt. Het is ook mogelijk om inline stijlen te definieren op deze
+wijze. Het volgende voorbeeld past bijvoorbeeld de stijl van paragraaf (`<p>`)
+elementen aan als de email geopend wordt in een nieuwe versie van Microsoft
+Outlook.
+
+    <xsl:comment>[if (gt mso 9)]>
+            &lt;style>
+                p { color: red; }
+            &lt;/style>
+    &lt;![endif]</xsl:comment>
+
 ### XSLT maken
 De software bevat een standaard XSLT voor alle content. Het is daarom niet
 verplicht XSLT te maken voor het publiceren van content in de applicatie.
