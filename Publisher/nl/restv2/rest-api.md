@@ -306,6 +306,16 @@ templates en mailings.
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van bestemmingen voor een mailing    |
 | GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Opvragen van statistieken voor een bestemming |
 
+### Statistieken
+
+| Type   | Adres                                                                                        | Omschrijving                                  |
+|--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/abuses](./rest-get-ms-abuses)                                       | Opvragen van alle abuses                      |
+| GET    | [api.copernica.com/v2/ms/clicks](./rest-get-ms-clicks)                                       | Opvragen van alle clicks                      |
+| GET    | [api.copernica.com/v2/ms/deliveries](./rest-get-ms-deliveries)                               | Opvragen van alle deliveries                  |
+| GET    | [api.copernica.com/v2/ms/errors](./rest-get-ms-errors)                                       | Opvragen van alle errors                      |
+| GET    | [api.copernica.com/v2/ms/impressions](./rest-get-ms-impressions)                             | Opvragen van alle impressions                 |
+
 ### Messages
 
 | Type   | Adres                                                                                        | Omschrijving                                 |
