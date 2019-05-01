@@ -311,6 +311,18 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing         |
 | GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Fetch the statistics for a destination       |
 
+### Statistics
+
+| Type   | Address                                                                                      | Description                                  |
+|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/abuses](./rest-get-ms-abuses)                                       | Fetch all abuses                             |
+| GET    | [api.copernica.com/v2/ms/clicks](./rest-get-ms-clicks)                                       | Fetch all clicks                             |
+| GET    | [api.copernica.com/v2/ms/deliveries](./rest-get-ms-deliveries)                               | Fetch all deliveries                         |
+| GET    | [api.copernica.com/v2/ms/errors](./rest-get-ms-errors)                                       | Fetch all errors                             |
+| GET    | [api.copernica.com/v2/ms/impressions](./rest-get-ms-impressions)                             | Fetch all impressions                        |
+
+
+
 ## Datarequests
 
 The result of data requests is stored for a while after completion. With the 

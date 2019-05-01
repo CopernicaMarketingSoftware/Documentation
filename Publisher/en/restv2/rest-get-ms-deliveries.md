@@ -2,7 +2,7 @@
 
 Each emailing is tracked, which allows Copernica to provide you with 
 emailing statistics. Deliveries are one of these statistics. You can 
-retrieve all deliveries by sending an HTTP GET call to the following URL:
+retrieve all deliveries for an account by sending an HTTP GET call to the following URL:
 
 `https://api.copernica.com/v2/ms/deliveries?access_token=xxxx`
 

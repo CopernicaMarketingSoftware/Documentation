@@ -2,7 +2,7 @@
 
 Each emailing is tracked, which allows Copernica to provide you with 
 emailing statistics. Impressions are one of these statistics. You can 
-retrieve all impressions by sending an HTTP GET call to the following URL:
+retrieve all impressions for an account by sending an HTTP GET call to the following URL: 
 
 `https://api.copernica.com/v2/ms/impressions?access_token=xxxx`
 

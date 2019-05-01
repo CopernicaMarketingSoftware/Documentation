@@ -2,7 +2,7 @@
 
 Each emailing is tracked, which allows Copernica to provide you with 
 emailing statistics. Clicks are one of these statistics. You can 
-retrieve all clicks by sending an HTTP GET call to the following URL:
+retrieve all clicks for an account by sending an HTTP GET call to the following URL:
 
 `https://api.copernica.com/v2/ms/clicks?access_token=xxxx`
 
