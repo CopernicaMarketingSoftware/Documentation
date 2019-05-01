@@ -287,6 +287,11 @@ and emailings.
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Create a mailing                             |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing         |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Fetch the statistics for a mailing           |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Fetch all abuses for a mailing               |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/clicks](./rest-get-ms-emailing-clicks)                 | Fetch all clicks for a mailing               |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/deliveries](./rest-get-ms-emailing-deliveries)         | Fetch all deliveries for a mailing           |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/errors](./rest-get-ms-emailing-errors)                 | Fetch all errors for a mailing               |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/impressions](./rest-get-ms-emailing-impressions)       | Fetch all impressions for a mailing          |
 
 ### Templates
 
@@ -310,6 +315,11 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Fetch a destination                          | 
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing         |
 | GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Fetch the statistics for a destination       |
+| GET    | [api.copernica.com/v2/ms/destination/$id/abuses](./rest-get-ms-destination-abuses)           | Fetch all abuses for a destination           |
+| GET    | [api.copernica.com/v2/ms/destination/$id/clicks](./rest-get-ms-destination-clicks)           | Fetch all clicks for a destination           |
+| GET    | [api.copernica.com/v2/ms/destination/$id/deliveries](./rest-get-ms-destination-deliveries)   | Fetch all deliveries for a destination       |
+| GET    | [api.copernica.com/v2/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Fetch all errors for a destination           |
+| GET    | [api.copernica.com/v2/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Fetch all impressions for a destination      |
 
 ### Statistics
 
@@ -320,8 +330,18 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/deliveries](./rest-get-ms-deliveries)                               | Fetch all deliveries                         |
 | GET    | [api.copernica.com/v2/ms/errors](./rest-get-ms-errors)                                       | Fetch all errors                             |
 | GET    | [api.copernica.com/v2/ms/impressions](./rest-get-ms-impressions)                             | Fetch all impressions                        |
-
-
+| GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Fetch the statistics for a mailing           |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Fetch all abuses for a mailing               |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/clicks](./rest-get-ms-emailing-clicks)                 | Fetch all clicks for a mailing               |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/deliveries](./rest-get-ms-emailing-deliveries)         | Fetch all deliveries for a mailing           |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/errors](./rest-get-ms-emailing-errors)                 | Fetch all errors for a mailing               |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/impressions](./rest-get-ms-emailing-impressions)       | Fetch all impressions for a mailing          |
+| GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Fetch the statistics for a destination       |
+| GET    | [api.copernica.com/v2/ms/destination/$id/abuses](./rest-get-ms-destination-abuses)           | Fetch all abuses for a destination           |
+| GET    | [api.copernica.com/v2/ms/destination/$id/clicks](./rest-get-ms-destination-clicks)           | Fetch all clicks for a destination           |
+| GET    | [api.copernica.com/v2/ms/destination/$id/deliveries](./rest-get-ms-destination-deliveries)   | Fetch all deliveries for a destination       |
+| GET    | [api.copernica.com/v2/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Fetch all errors for a destination           |
+| GET    | [api.copernica.com/v2/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Fetch all impressions for a destination      |
 
 ## Datarequests
 
