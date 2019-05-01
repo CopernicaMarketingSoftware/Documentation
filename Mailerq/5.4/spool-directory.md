@@ -33,7 +33,7 @@ In the config file the following options are relevant for the spool directory:
 spool-directory:        /path/to/directory
 spool-fail-directory    /path/to/directory
 spool-delay:            0       (default: 0)
-spool-remove:           true    (default: true
+spool-remove:           true    (default: true)
 spool-extract:          true    (default: true)
 spool-open-files:       10      (default: 10)
 spool-threads:          1       (default: 1)

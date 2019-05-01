@@ -35,6 +35,7 @@
    * [Double optin](./campaign-tutorial-double-opt-in.md)
    * [Verjaardag](./how-to-create-a-birthday-selection.md)
    * [Profielverrijking](./campaign-profile-enrichment)
+   * [Verlaten winkelwagen](./campaign-abandoned-shoppingcart.md)
 * [Websites](./websites.md)
 * [Mobile](./mobile-mailing.md)
 * [PDF](./pdf-document.md)

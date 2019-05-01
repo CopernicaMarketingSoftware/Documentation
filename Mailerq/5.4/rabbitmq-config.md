@@ -407,15 +407,21 @@ MailerQ always inspects the "content-encoding" header from the AMQP envelope.
 
 ## Maximum Messages
 
-When consuming from the outbox queue, MailerQ loads a certain number of messages
-at the same time. This number can be tweaked to lower memory usage.
+When consuming from the outbox queue, or flushing a queue, MailerQ loads a certain 
+number of messages at the same time. These numbers can be tweaked to lower memory usage.
 
 ```
-rabbitmq-max-messages:    1000    (default: 1000)
+rabbitmq-qos:         1000    (default: 1000)
+rabbitmq-flush-qos:   1000    (default: 1000)
 ```
 
 This number is interpreted per consumer thread. Therefore, the maximum total 
 number of messages from the outbox that are in memory at the same time is the 
 amount of consumers multiplied by the maximum number of messages. For example, 
-if "rabbitmq-consumers" is set to 5, and "rabbitmq-max-messages" is set to 200,
+if "rabbitmq-consumers" is set to 5, and "rabbitmq-qos" is set to 200,
 the maximum total number of unacknowledged messages from the outbox queue is 1000. 
+
+The "rabbitmq-flush-qos" can be set to lower the loaded messages when a flush happens.
+Although MailerQ doesn't load in the messages, their bodies will be sent over TCP and 
+so the TCP buffer may be fully populated with all this data. As this can happen for 
+anything that is unpaused or resumes sending, a lot may be flushed at once.

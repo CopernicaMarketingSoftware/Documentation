@@ -60,3 +60,11 @@ Binnen de Publisher maak je een nieuw profiel aan door te klikken op
 **profiel > Nieuw profiel aanmaken**. Dan vul je vervolgens de waardes in die
 in het profiel dienen te komen en druk je op opslaan. Het is natuurlijk
 eenvoudiger om een grotere hoeveelheid data te [importeren](./database-import).
+
+## Meer informatie
+Het is belangrijk om een schone en goed onderhouden database te hebben als
+je succesvolle emailcampagnes wilt versturen. De onderstaande artikelen
+helpen je daarbij:
+
+* [Databases](./database-introduction)
+* [Database schoonhouden](./database-maintenance)

@@ -7,7 +7,7 @@ negatieve invloed op je e-mailreputatie.
 
 De klant is binnen Copernica vrij om zelf een selectiestructuur te bepalen,
 maar wij bieden ook een standaard selectiestructuur aan. Veel van onze
-gebruikers hanteren deze standaar dselectiestructuur. Daarmee halen ze
+gebruikers hanteren deze standaardselectiestructuur. Daarmee halen ze
 automatisch alle foutieve en dubbele e-mailadressen, bounces en
 uitschrijvingen uit hun verzendselectie.
 

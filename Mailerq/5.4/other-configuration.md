@@ -92,7 +92,7 @@ set in the config file.
 user:           <user name> (empty by default)
 ````
 
-The user name to change identify to after the SMTP and HTTP ports have been opened.
+The username to change identity to after the SMTP and HTTP ports have been opened.
 
 
 ## Lockfile
@@ -107,7 +107,7 @@ lock:           <filename> (default: /tmp/mailerq.pid)
 
 ## User Statistics
 
-MailerQ sends a hourly message to Copernica. This message contains some use statistics
+MailerQ sends a message to Copernica hourly. This message contains some usage statistics
 for that hour, e.g. the number of errors that occured. This information is used
 to improve MailerQ. Users with a paid license can disable this message by adding
 the `heartbeat` property to the config file:

@@ -47,9 +47,10 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [rabbitmq-failure](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ failure queue
 | [rabbitmq-inbox](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ inbox queue
 | [rabbitmq-local](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ local queue 
-| [rabbitmq-lazy](rabbitmq-config#persisten-and-durable-settings)          | Lazy/non lazy RabbitMQ queues
+| [rabbitmq-lazy](rabbitmq-config#persisten-and-durable-settings)          | Lazy/non lazy RabbitMQ queues (default: non-lazy)
 | [rabbitmq-maxpriority](rabbitmq-config#priority-queues)                  | Enable the use of priority queues 
-| [rabbitmq-max-messages](rabbitmq-config#max-messages)                    | Set a maximum number of messages per consumer thread
+| [rabbitmq-qos](rabbitmq-config#max-messages)                             | Set a maximum number of messages simultaneously consumed per consumer thread
+| [rabbitmq-flush-qos](rabbitmq-config#max-messages)                       | Set a maximum number of messages simultaneously consumed during flush
 | [rabbitmq-outbox](rabbitmq-config#rabbitmq-queues)                       | Your RabbitMQ outbox queue (must be unique if multiple instances of MailerQ are used)
 | [rabbitmq-persistent](rabbitmq-config#persistent-and-durable-settings)   | Persistent/not persistent RabbitMQ queues (default: false)
 | [rabbitmq-publishers](rabbitmq-config#multiple-threads)                  | Amount of publisher threads (default: 1)
@@ -100,7 +101,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [smtp-proxy](smtp-server#running-behind-haproxy)                         | IPs to treat as connection from proxy server
 | [smtp-range](smtp-server#controlling-access)                             | Range of IP address to allow incoming email for
 | [smtp-secure port](smtp-server#config-file-settings)                     | Ports for secure incoming MailerQ connections
-| [smtp-sink-address](smarthost#using-smarthost-for-debugging)                  | SMTP sink IP
+| [smtp-sink-address](smarthost#using-smarthost-for-debugging)             | SMTP sink domain name or ip address
 | [smtp-sink-password](smarthost#using-smarthost-for-debugging)            | SMTP sink password
 | [smtp-sink-port](smarthost#using-smarthost-for-debugging)                | SMTP sink port
 | [smtp-sink-username](smarthost#using-smarthost-for-debugging)            | SMTP sink username
@@ -134,7 +135,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [www-port](mgmt-setup#activation)                                        | Port number for the management console
 | [www-private-key](mgmt-setup#setting-up-a-secure-management-console)     | Private key for secure connection to management console
 | [www-secure-port](mgmt-setup#setting-up-a-secure-management-console)     | Secure (HTTPS) port number for the management console
-| [www-url](mgmt-setup#announcing-the-interface-on-the-cluster)            | The URL via which the mgmt console is accessible
+| [www-url](mgmt-setup#announcing-the-interface-on-the-cluster)            | The URL via which the management console is accessible
 
 ## Boolean options
 
