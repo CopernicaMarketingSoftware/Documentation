@@ -46,3 +46,4 @@ The example above requires the [CopernicaRestApi class](./rest-php).
 
 * [Overview of all API calls](./rest-api)
 * [Get MS mailings](./rest-get-ms-emailings)
+* [Get Publisher mailings](./rest-get-profile-publisher-emailings)
