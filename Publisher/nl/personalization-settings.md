@@ -14,7 +14,6 @@ vier settings veranderen:
 
 * taal: de taal die wordt gebruikt voor het weergeven van datums
 * tijdzone: de tijdzone om te bepalen hoe tijdstippen worden opgemaakt
-* codering: de wijze waarop "rare" tekens worden gecodeerd
 * html filteren: moeten personalisatievariabelen automatisch worden gefilterd?
 
 ## Taal en tijdzone
@@ -27,25 +26,6 @@ taal en tijdzone settings worden hierbij gebruikt om te bepalen in welke taal
 een datum wordt getoond (elke taal heeft immers andere namen voor de maanden en
 de dagen), en welke tijdzone moet worden gebruikt (*nu* in Tokyo is iets anders
 dan *nu* in New York).
-
-## Codering
-
-Lang verhaal kort: de codering moet je altijd op UTF-8 zetten. Dat is eigenlijk 
-altijd goed. De UTF-8 karakterset is namelijk een karakterset die eigenlijk alle 
-letters en tekens ter wereld op een efficiënte manier kan coderen.
-
-Hoe zit dat precies? Traditioneel kon e-mail alleen worden gebruikt voor ASCII 
-teksten: teksten die bestaan uit letters van het gewone alfabet, cijfers en een 
-kleine verzameling leestekens. Zeg maar de tekens die op een gewoon toetsenbord 
-staan. Buitenlandse tekens, waaronder ook karakters die voor ons gewoon zijn, zoals
-letters met een trema of een accent (bijvoorbeeld ë, ï of é) horen daar niet bij. 
-Als je toch een mail met dergelijke tekens moet versturen, dan moet je expliciet 
-in de header van het e-mailbericht opnemen in welke karakterset de mail is opgemaakt:
-de West-Europese, de Oost-Europese, Russisch, Chinees, enzovoort.
-
-De karakterset UTF-8 is later ontwikkeld, en bevat eigenlijk alle tekens ter 
-wereld bevat. Dit omvat de gewone toetsenbordtekens, maar ook de "rare" tekens
-uit andere landen. Dus als je voor UTF-8 kiest, zit je sowieso goed.
 
 ## Bewerkmodus
 
