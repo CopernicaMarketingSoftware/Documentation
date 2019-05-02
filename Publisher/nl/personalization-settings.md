@@ -5,7 +5,7 @@ Met deze instellingen bepaal je onder meer in welke taal [datums](./using-the-sm
 worden weergegeven. Je vindt deze instelling linksonder de geopende
 template of document.
 
-![](../images/personalisatieinstellingen.png)
+![](../images/personalisatieinstellingen2.png)
 
 Het formulier voor de instellingen vind je zowel bij templates als bij documenten.
 Als je geen expliciete keuze voor deze instellingen op documentniveau maakt, dan valt
