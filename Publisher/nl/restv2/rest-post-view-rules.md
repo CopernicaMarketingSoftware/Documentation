@@ -34,7 +34,7 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 // data voor de methode
 $data = array(
     'name'      =>  'rule-name',
-    'inverted'  =>  false,
+    'inversed'  =>  false,
     'disabled'  =>  false, 
 );
 
