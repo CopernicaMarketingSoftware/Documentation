@@ -210,7 +210,7 @@ Gebruik:
 
 ```text
 This will replace each number in the variable string with the string "a number"
-{$text|regex_replace:"\d":" a number "}
+{$text|regex_replace:"/\d/":" a number "}
 ```
 
 ## replace
