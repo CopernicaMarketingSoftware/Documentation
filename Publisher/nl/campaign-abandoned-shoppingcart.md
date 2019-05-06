@@ -43,7 +43,6 @@ Nu begint het echte werk. We gaan iteratief door alle opgehaalde subprofielen lo
 
 {foreach from=$loadedProducts item=loadedProduct} 
     {$loadedProduct.Product} 
-  {/if} 
 {/foreach}
 
 
