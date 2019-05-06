@@ -15,7 +15,8 @@ HTTP request. After a successful call the ID of the created request is returned.
 
 The following variables can be set in the message body:
 
-- **name**: the title of the new collection field (mandatory)
+- **name**: The title of the new collection field (mandatory). The name 
+for the collection should contain only letters and underscores.
 
 ## PHP example
 
