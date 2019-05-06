@@ -56,5 +56,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-- [Overview of all API method](rest-api)
+- [Overview of all API methods](rest-api)
 - [GET collection unsubscribe](rest-get-collection-unsubscribe)
