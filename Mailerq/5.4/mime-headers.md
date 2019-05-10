@@ -22,6 +22,10 @@ on the handling of your message.
         <td>IP address to send mail from</td>
     </tr>
     <tr>
+        <td>x-mq-pool</td>
+        <td>pool identifier to send the message from</td>
+    </tr>
+    <tr>
         <td>x-mq-tag</td>
         <td>adds a tag to the message</td>
     </tr>
