@@ -25,6 +25,7 @@ in het **data** veld. Elk document bevat de volgende informatie:
 * **name**: De naam van het document. 
 * **from_address**: Het afzenderadres van het document.
 * **subject**: Het onderwerp van het document.
+* **archived**: Geeft aan of dit document gearchiveerd is (1) of niet (null).
 * **source**: De bron van het document.
 
 ## PHP voorbeeld
