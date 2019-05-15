@@ -16,6 +16,7 @@ Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 * **name**: De naam van het document. 
 * **from_address**: Het 'from address' van het document.
 * **subject**: Het onderwerp van het document.
+* **archived**: Geeft aan of dit document gearchiveerd is (1) of niet (null).
 * **source**: De bron van het document.
 
 ## PHP voorbeeld

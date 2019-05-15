@@ -16,6 +16,7 @@ The method returns a JSON object containing the following information:
 * **name**: The name of the document.
 * **from_address**: The from address for the document.
 * **subject**: The subject of the document.
+* **archived**: The archive status of the document. (1 for archived, null for not archived)
 * **source**: The source of the document. 
 
 ## PHP example
