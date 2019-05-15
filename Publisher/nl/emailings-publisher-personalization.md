@@ -91,10 +91,10 @@ Bekijk het [overzicht van alle functies](publisher-personalization-functions)
 ## Personalisatie modifiers
 Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
-Je gebruikt bijvoorbeeld **tolower** om de variabele **{$profile.name}** te
-bewerken. Dit ziet er dan zo uit: **{$profile.name|tolower}**.
+Je gebruikt bijvoorbeeld **lower** om de variabele **{$profile.name}** te
+bewerken. Dit ziet er dan zo uit: **{$profile.name|lower}**.
 Tevens kun je ook een aantal 'modifiers' achter elkaar gebruiken.
-Je kunt bijvoorbeeld **{$profile.name|tolower|ucfirst}** gebruiken om te zorgen
+Je kunt bijvoorbeeld **{$profile.name|lower|ucfirst}** gebruiken om te zorgen
 dat alle namen met een hoofdletter beginnen en de resterende letters altijd
 kleine letters zijn.
 
