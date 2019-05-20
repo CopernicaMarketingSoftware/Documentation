@@ -30,6 +30,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [dsn-ret](sending-bounces#passing-dsn-settings)                          | Send full mail (FULL) or headers (HDRS) for notifications
 | [dns-threads](dns-settings)                                              | Number of threads used for DNS lookups
 | [dns-getaddrinfo](dns-settings)                                          | Whether the MailerQ resolver should rely on getaddrinfo() library calls
+| [dns-min-ttl](dns-settings)                                              | Minimum TTL to respect when doing domain lookups
 | [error-log](logging#error-logs)                                          | Full path to the error log
 | [heartbeat-enabled](other-configuration#user-statistics)                 | Toggle user statistics (default: true)
 | [license](other-configuration#license)                                   | MailerQ license file
