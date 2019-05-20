@@ -264,16 +264,30 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v2/publisher/destination/$id/impressions](./rest-get-publisher-destination-impressions)   | Opvragen van impressies voor een bestemming         |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/unsubscribes](./rest-get-publisher-destination-unsubscribes) | Opvragen van unsubscribes voor een bestemming       |
 
-### Mailing Statistieken
+### Statistieken
 
-| Type   | Adres                                                                                                                        | Omschrijving                                       |
-|--------|------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| GET    | [api.copernica.com/v2/publisher/abuses](./rest-get-publisher-abuses)                                                         | Opvragen van alle abuses voor Publisher            |
-| GET    | [api.copernica.com/v2/publisher/clicks](./rest-get-publisher-clicks)                                                         | Opvragen van alle clicks voor Publisher            |
-| GET    | [api.copernica.com/v2/publisher/deliveries](./rest-get-publisher-deliveries)                                                 | Opvragen van alle deliveries voor Publisher        |
-| GET    | [api.copernica.com/v2/publisher/errors](./rest-get-publisher-errors)                                                         | Opvragen van alle errors voor Publisher            |
-| GET    | [api.copernica.com/v2/publisher/impressions](./rest-get-publisher-impressions)                                               | Opvragen van alle impressions voor Publisher       |
-| GET    | [api.copernica.com/v2/publisher/unsubscribes](./rest-get-publisher-unsubscribes)                                             | Opvragen van alle unsubscribes voor Publisher      |
+| Type   | Adres                                                                                                        | Omschrijving                                      |
+|--------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
+| GET    | [api.copernica.com/v2/publisher/abuses](./rest-get-publisher-abuses)                                         | Opvragen van alle abuses voor Publisher           |
+| GET    | [api.copernica.com/v2/publisher/clicks](./rest-get-publisher-clicks)                                         | Opvragen van alle clicks voor Publisher           |
+| GET    | [api.copernica.com/v2/publisher/deliveries](./rest-get-publisher-deliveries)                                 | Opvragen van alle deliveries voor Publisher       |
+| GET    | [api.copernica.com/v2/publisher/errors](./rest-get-publisher-errors)                                         | Opvragen van alle errors voor Publisher           |
+| GET    | [api.copernica.com/v2/publisher/impressions](./rest-get-publisher-impressions)                               | Opvragen van alle impressions voor Publisher      |
+| GET    | [api.copernica.com/v2/publisher/unsubscribes](./rest-get-publisher-unsubscribes)                             | Opvragen van alle unsubscribes voor Publisher     |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/statistics](./rest-get-publisher-emailing-statistics)           | Opvragen van de statistieken voor een mailing     |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/abuses](./rest-get-publisher-emailing-abuses)                   | Opvragen van abuses voor een mailing              |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/clicks](./rest-get-publisher-emailing-clicks)                   | Opvragen van clicks voor een mailing              |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/deliveries](./rest-get-publisher-emailing-deliveries)           | Opvragen van deliveries voor een mailing          |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/errors](./rest-get-publisher-emailing-errors)                   | Opvragen van errors voor een mailing              |    
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)         | Opvragen van impressies voor een mailing          |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)       | Opvragen van unsubscribes voor een mailing        |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/statistics](./rest-get-publisher-destination-statistics)     | Opvragen van statistieken voor een bestemming     |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/abuses](./rest-get-publisher-destination-abuses)             | Opvragen van abuses voor een bestemming           |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/clicks](./rest-get-publisher-destination-clicks)             | Opvragen van clicks voor een bestemming           |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/deliveries](./rest-get-publisher-destination-deliveries)     | Opvragen van deliveries voor een bestemming       |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/errors](./rest-get-publisher-destination-errors)             | Opvragen van errors voor een bestemming           |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/impressions](./rest-get-publisher-destination-impressions)   | Opvragen van impressies voor een bestemming       |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/unsubscribes](./rest-get-publisher-destination-unsubscribes) | Opvragen van unsubscribes voor een bestemming     |
 
 ## Marketing Suite Mailings
 
@@ -282,29 +296,61 @@ templates en mailings.
 
 ### Mailings
 
-| Type   | Adres                                                                                        | Omschrijving                                 |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Opvragen van alle mailings                   |
-| GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Opvragen van een mailing                     |
-| POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Aanmaken van een mailing                     |
-| GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van destinations voor een mailing   |
-| GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Opvragen van statistieken voor een mailing   |
+| Type   | Adres                                                                                        | Omschrijving                                      |
+|--------|----------------------------------------------------------------------------------------------|---------------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Opvragen van alle mailings                        |
+| GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Opvragen van een mailing                          |
+| POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Aanmaken van een mailing                          |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van destinations voor een mailing        |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Opvragen van statistieken voor een mailing        |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Opvragen van alle abuses voor een emailing        |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/clicks](./rest-get-ms-emailing-clicks)                 | Opvragen van alle clicks voor een emailing        |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/deliveries](./rest-get-ms-emailing-deliveries)         | Opvragen van alle deliveries voor een emailing    |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/errors](./rest-get-ms-emailing-errors)                 | Opvragen van alle errors voor een emailing        |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/impressions](./rest-get-ms-emailing-impressions)       | Opvragen van alle impressions voor een emailing   |
 
 ### Templates
 
-| Type   | Adres                                                                                        | Omschrijving                                 |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Opvragen van alle templates                  |
-| GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Opvragen van een template                    |
-| GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Opvragen van statistieken voor een template  |
+| Type   | Adres                                                                                        | Omschrijving                                      |
+|--------|----------------------------------------------------------------------------------------------|---------------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Opvragen van alle templates                       |
+| GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Opvragen van een template                         |
+| GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Opvragen van statistieken voor een template       |
 
 ### Destinations (bestemmingen)
 
-| Type   | Adres                                                                                        | Omschrijving                                  |
-|--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
-| GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Opvragen van een bestemming                   |
-| GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van bestemmingen voor een mailing    |
-| GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Opvragen van statistieken voor een bestemming |
+| Type   | Adres                                                                                        | Omschrijving                                      |
+|--------|----------------------------------------------------------------------------------------------|---------------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Opvragen van een bestemming                       |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van bestemmingen voor een mailing        |
+| GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Opvragen van statistieken voor een bestemming     |
+| GET    | [api.copernica.com/v2/ms/destination/$id/abuses](./rest-get-ms-destination-abuses)           | Opvragen van alle abuses voor een bestemming      |
+| GET    | [api.copernica.com/v2/ms/destination/$id/clicks](./rest-get-ms-destination-clicks)           | Opvragen van alle clicks voor een bestemming      |
+| GET    | [api.copernica.com/v2/ms/destination/$id/deliveries](./rest-get-ms-destination-deliveries)   | Opvragen van alle deliveries voor een bestemming  |
+| GET    | [api.copernica.com/v2/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Opvragen van alle errors voor een bestemming      |
+| GET    | [api.copernica.com/v2/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Opvragen van alle impressions voor een bestemming |
+
+### Statistieken
+
+| Type   | Adres                                                                                        | Omschrijving                                      |
+|--------|----------------------------------------------------------------------------------------------|---------------------------------------------------|
+| GET    | [api.copernica.com/v2/ms/abuses](./rest-get-ms-abuses)                                       | Opvragen van alle abuses                          |
+| GET    | [api.copernica.com/v2/ms/clicks](./rest-get-ms-clicks)                                       | Opvragen van alle clicks                          |
+| GET    | [api.copernica.com/v2/ms/deliveries](./rest-get-ms-deliveries)                               | Opvragen van alle deliveries                      |
+| GET    | [api.copernica.com/v2/ms/errors](./rest-get-ms-errors)                                       | Opvragen van alle errors                          |
+| GET    | [api.copernica.com/v2/ms/impressions](./rest-get-ms-impressions)                             | Opvragen van alle impressions                     |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Opvragen van statistieken voor een mailing        |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Opvragen van alle abuses voor een emailing        |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/clicks](./rest-get-ms-emailing-clicks)                 | Opvragen van alle clicks voor een emailing        |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/deliveries](./rest-get-ms-emailing-deliveries)         | Opvragen van alle deliveries voor een emailing    |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/errors](./rest-get-ms-emailing-errors)                 | Opvragen van alle errors voor een emailing        |
+| GET    | [api.copernica.com/v2/ms/emailing/$id/impressions](./rest-get-ms-emailing-impressions)       | Opvragen van alle impressions voor een emailing   |
+| GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Opvragen van statistieken voor een bestemming     |
+| GET    | [api.copernica.com/v2/ms/destination/$id/abuses](./rest-get-ms-destination-abuses)           | Opvragen van alle abuses voor een bestemming      |
+| GET    | [api.copernica.com/v2/ms/destination/$id/clicks](./rest-get-ms-destination-clicks)           | Opvragen van alle clicks voor een bestemming      |
+| GET    | [api.copernica.com/v2/ms/destination/$id/deliveries](./rest-get-ms-destination-deliveries)   | Opvragen van alle deliveries voor een bestemming  |
+| GET    | [api.copernica.com/v2/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Opvragen van alle errors voor een bestemming      |
+| GET    | [api.copernica.com/v2/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Opvragen van alle impressions voor een bestemming |
 
 ### Messages
 

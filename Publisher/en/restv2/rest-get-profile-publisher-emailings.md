@@ -70,3 +70,4 @@ The example above requires the [CopernicaRestApi class](./rest-php).
 
 * [Overview of all API calls](./rest-api)
 * [Get Publisher mailings](./rest-get-publisher-emailings)
+* [Get Marketing Suite mailings for a profile](./rest-get-profile-ms-emailings)

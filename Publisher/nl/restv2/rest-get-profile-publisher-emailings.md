@@ -78,3 +78,4 @@ Het bovenstaande voorbeeld vereist de [CopernicaRestApi klasse](./rest-php).
 
 * [Overzicht van alle API calls](./rest-api)
 * [Opvragen van Publisher mailings](./rest-get-publisher-emailings)
+* [Opvragen van Marketing Suite mailings voor een profiel](./rest-get-profile-ms-emailings)

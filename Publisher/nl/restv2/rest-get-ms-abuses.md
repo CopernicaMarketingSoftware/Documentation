@@ -3,7 +3,7 @@
 Er worden statistieken bijgehouden over elke mailing die verstuurd wordt met 
 Copernica om je meer inzicht te geven in de prestatie hiervan. Abuses zijn 
 een van de statistieken die worden bijgehouden. 
-Je kan deze opvragen met een HTTP GET call naar de volgende URL:
+Je kan alle abuses voor een account opvragen met een HTTP GET call naar de volgende URL:
 
 `https://api.copernica.com/v2/ms/abuses?access_token=xxxx`
 

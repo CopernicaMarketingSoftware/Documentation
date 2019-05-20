@@ -30,7 +30,7 @@ deze gebruiker geen email meer wil ontvangen.
 
 Het volgende PHP script demonstreert hoe de methode gebruikt kan worden. 
 In dit geval gebruiken we een 'update' om het veld 'newsletter' op 'no' te zetten. 
-Je kunt nu een [nieuwsbrief selectie](./create-a-mailing-list) aanmaken om ervoor 
+Je kunt nu een [nieuwsbrief selectie](../create-a-mailing-list) aanmaken om ervoor 
 te zorgen dat deze uitschrijvers geen e-mails meer ontvangen.
 
 ```php
