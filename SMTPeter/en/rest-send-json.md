@@ -1,12 +1,27 @@
 # Send JSON data
 
-If you use the [send method of the REST API](rest-api) to send email,
-you can include a "mime" property holding the full MIME object
-that you want to send. However, you can also let SMTPeter create the
-MIME string for you. If you do not include a "mime" property in your
-request, but use separate "subject", "text", "html" and so properties,
-the MIME is created by SMTPeter. The following table lists all 
-supported properties:
+SMTPeter can generate and send messages based on JSON input. The
+properties in the JSON (like the subject and message body) are converted
+into a valid email message and sent to the recipient. This feature is
+especially useful if you do not want to bother about setting up a MIME
+string yourself.
+
+```json
+POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+Host: www.smtpeter.com
+Content-Type: application/json
+Content-Length: 7391
+
+{
+    "recipient":    "john@doe.com",
+    "subject":      "This is a test mail",
+    "from":         "info@example.com",
+    "text":         "This is the messge body...",
+    "html":         "<html><head>..."
+}
+```
+
+The following table lists all supported properties:
 
 | Property           | Description                          |
 |--------------------|--------------------------------------|
@@ -21,24 +36,16 @@ supported properties:
 | attachments        | Attachments to be added to the mail  |
 
 
-## Email addresses
+## Address format
 
-The "from", "to" and "cc" fields decide which email addresses are going
-to appear in the MIME object. The "from" variable must be a *single* email
-address, but there is no limit for the number of addresses that you use
+The "from", "to" and "cc" fields can be used to add email addresses to
+the message header. The "from" variable must be a *single* email
+address, while there is no limit to the number of addresses that you use
 for the "to" and the "cc" fields.
 
 The notation for the email addresses in the "from", "to" and "cc" fields
-is much more flexible than for the "envelope" and "recipient" fields.
-You can include display names or use angle brackets, and for the "to" and
-"cc" fields you can also use comma separated lists. How the adresses show 
-up to the recipients is explained in the article on [multiple recipients](./rest-send-multiple-recipients).
-
-Note that the address set in these "from", "to" and "cc" fields just 
-decide what addresses are included in the MIME data, and do not have 
-to be identical to the addresses used in the "envelope" and "recipient" 
-fields (although it is good practice to send email to the addresses 
-mentioned in "to").
+is very flexible: SMTPeter also recognizes display names and comma
+separated lists of addresses.
 
 ```json
 {
@@ -51,6 +58,14 @@ mentioned in "to").
     "cc": "John Doe <johndoe@example.org>"
 }
 ```
+
+**Important:** the addresses in "from", "to" and "cc" are not used for
+the e-mail delivery. You need a special "recipient" property for this.
+The "from", "to" and "cc" are only used to create the content of the e-mail 
+message, and it is thus in fact possible to create an e-mail with a
+different to-address than the address to which the mail is sent. For more
+information about this, check out the article on 
+[setting up the recipients](./rest-send-multiple-recipients).
 
 
 ## Subject, text and HTML
@@ -104,6 +119,8 @@ Or to both an email address and a URL:
 }
 ```
 
+It is your own responsibility to process the unsubscribes.
+
 
 ## Extra "x-*" headers
 
@@ -153,7 +170,6 @@ If all information is provided in a correct format you will get a [reaction from
 ## More information
 
 * [REST API](./rest-api)
-* [Advanced send options](./rest-send-advanced)
-* [Send MIME data](./rest-mime)
-* [Emailing multiple recipients](./rest-send-multiple-recipients)
-* [API reaction](./rest-api-reaction)
+* [Send MIME data](rest-mime)
+* [Send template based mails](rest-send-templates)
+* [Advanced delivery options](rest-send-advanced)
