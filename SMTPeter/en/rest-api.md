@@ -1,14 +1,13 @@
 # Send with REST API
 
-SMTPeter has a powerful and secure REST API which on top of the HTTPS protocol.
-To access the REST API, you need an API access token, which can be retrieved
-through the SMTPeter dashboard. Sending an email is as easy as sending
-an HTTP POST request to the following URL:
+SMTPeter has a powerful and secure REST API on top of the HTTPS protocol.
+Sending an email is as easy as sending an HTTP POST request to the 
+following URL:
 
 `https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}`
 
-Where `{YOUR_API_TOKEN}` is the token you have obtained from the dashboard.
-The body data of the POST call holds the information about the email and 
+Where `{YOUR_API_TOKEN}` is the API access token that can be obtained from the dashboard.
+The body data of the POST call should hold the information about the email and 
 optionally extra settings. A simple but complete call can look like this:
 
 ```text
@@ -25,8 +24,8 @@ Content-Length: 246
     "text":         "This is example content",
 }
 ```
-When sending this call, SMTPeter generates the e-mail message with the 
-specified `from`, `to`, `subject`, and `text` and sends it to the 
+This call will instruct SMTPeter to generate an e-mail message with the 
+specified `from`, `to`, `subject`, and `text` and to sends it to the 
 address specified in `recipient`. 
 
 This is just a simple example. More powerful mails (for example with html 

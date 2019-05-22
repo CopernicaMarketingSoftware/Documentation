@@ -1,4 +1,4 @@
-# Let SMTPeter create MIME data
+# Send JSON data
 
 If you use the [send method of the REST API](rest-api) to send email,
 you can include a "mime" property holding the full MIME object
