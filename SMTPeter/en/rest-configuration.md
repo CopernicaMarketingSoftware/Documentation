@@ -19,7 +19,6 @@ extra SPF settings, and you might need the private key that is currently
 in use.
 
 * [DKIM settings](rest-dkim)
-* [SPF settings](rest-spf)
 
 SMTPeter automatically rotates DKIM keys, so that you never have to worry
 about updating your own DKIM keys or DNS records. However, the REST API
