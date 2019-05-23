@@ -1,7 +1,7 @@
 # Send with REST API
 
 SMTPeter has a powerful and secure REST API on top of the HTTPS protocol.
-Sending an email is as easy as sending an HTTP POST request to the 
+Sending an email is as simple as sending a HTTP POST request to the 
 following URL:
 
 `https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}`
