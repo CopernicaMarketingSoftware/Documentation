@@ -17,14 +17,14 @@ Content-Length: 7391
 }
 ```
 
-The envelope-address should be an working address on your server, and it
-helps your deliverability greatly if the envelope domain is aligned with the 
-from address of the mail. So if your from-address is info@example.com, your 
-envelope address should also be set to something@example.com, using the same
-domain. Strictly speaking (and based on your DMARC setting), it often is
-sufficient when the envelope address and from address share the same 
-organizational domain: subdomain1.example.com is thus aligned with 
-subdomein2.example.com.
+The envelope-address should be a working address on your server, and it
+helps your deliverability greatly if the envelope is aligned with the 
+from address. So if your from-address is info@*example.com*, your 
+envelope address should be set to something@*example.com* (using the same
+domain). Strictly speaking (and based on your DMARC setting), the domains
+do not have to completely the same, and it often sufficient when the envelope 
+from address share the same *organizational domain*: subdomain1.example.com 
+is thus aligned with subdomein2.example.com.
 
 By adding the envelope address, you instruct SMTPeter not to track bounces,
 and deliver the delivery status notification messages to your envelope
