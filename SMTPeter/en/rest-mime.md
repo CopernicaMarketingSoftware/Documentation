@@ -4,7 +4,7 @@ The SMTPeter REST API can be used to send mails in many different forms.
 The most pure one lets you send a MIME formatted message, where it is
 your own responsibility to pass a correctly formatted message to
 SMTPeter. The following example shows a very minimal API where just the
-MIME message and the recipient is passed:
+MIME message and the recipient are passed:
 
 ```json
 POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
@@ -40,10 +40,9 @@ Cheers,
 Peter
 ```
 
-The above example shows just a simple MIME message. When you also want to 
-include a HTML version of your mail, and/or attachments, or when you want to
-use special character sets in your mail or in your message header, the message
-would be more complex. 
+The above example shows just a simple MIME message. When you also
+include a HTML version in the mail, and/or attachments, or when you use 
+special character sets in the message header, the message gets more complex. 
 
 The destination addess (john@doe.com in our example) often has to be specified
 twice: as "recipient" property in the JSON, and also in the "to:" field of the
@@ -52,10 +51,10 @@ mails to be sent to other addresses then listed inside the mail (this is for
 example how BCC works).
 
 
-## Don't want to write MIME?
+## Don't want to write MIME yourself?
 
 Writing your own MIME is optional, you can also pass in individual message 
-properties. The MIME will then be built by SMTPeter.
+properties to the REST API. The MIME will then be built by SMTPeter.
 
 ```json
 POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
@@ -77,24 +76,5 @@ The above API call is essentially the same as the first example, but this
 time the responsibility to generate the mail is passed on to SMTPeter. For
 more information on the supported properties, check out our [JSON documentation](./rest-send-json). 
 
-
-## Custom envelope address
-
-In a minimal API call, you only have to provide the recipient and the MIME data.
-SMTPeter takes care of the rest, including collecting the bounces and
-out-of-office replies that are sent back to the envelope address. If you want
-to do your own bounce-processing, you can add an *optional* envelope address:
-
-```json
-{
-    "recipient":    "john@doe.com",
-    "envelope":     "myaddress@example.com",
-    "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
-}
-```
-
-If you include an envelope address to collect bounces, you may also be interested
-in passing a [DSN variable](rest-dsn) to finetune the type of bounces to receive.
 The result of the send call is sent back in the [HTTP response](./rest-api-response).
-
 
