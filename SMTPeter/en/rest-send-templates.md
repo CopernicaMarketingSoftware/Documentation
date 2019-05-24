@@ -18,8 +18,8 @@ Content-Length: 67
 ```
 
 Templates can be identified by their unique numeric identifier (in our example: 
-12) or by their name (which is a string). Besides the template identifier 
-(either the numeric ID or the name) you also have to pass the recipient address
+12) or by their name (which is a string). Besides the template identifier, 
+you also have to send the recipient address with your call to the API
 ("john@doe.com" in the example). This is the address to which the mail is to be sent.
 Other properties are supported too, but they are all optional.
 
@@ -94,7 +94,9 @@ Content-Length: 653
 }
 ```
 
-In above example we use both technologies to [personalize the mail](./rest-send-personalize): we
-pass in extra data to fill the {$firstname}, {$familyname} and {$children}
-placeholders used inside the templates, and we [pass a "patch" property](./rest-send-modified)
-to make changes to the template.
+In above example we use both technologies to personalize the mail: we
+pass in extra [personalization variables](./rest-send-personalize) to fill 
+the {$firstname}, {$familyname} and {$children} placeholders, and we 
+[pass a "patch" property](./rest-send-modified) to make changes to the 
+template.
+
