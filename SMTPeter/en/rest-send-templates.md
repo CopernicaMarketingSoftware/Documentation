@@ -26,7 +26,7 @@ Other properties are supported too, but they are all optional.
 Internally, all templates are stored as JSON documents, formatted according
 to the specifications published on [www.responsiveemail.com](https://www.responsiveemail.com).
 Although the easiest way to send mailings based on templates is to use our 
-drag-and-drop editor, and refer in your API call to the created template,
+drag-and-drop editor, and refer in your API call to the template name or ID,
 you can also create your templates "by hand" and pass the full JSON source
 to the API call:
 

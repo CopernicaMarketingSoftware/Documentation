@@ -14,18 +14,18 @@ optionally extra settings. A simple but complete call can look like this:
 POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
-Content-Length: 246
+Content-Length: 247
 
 {
     "recipient":    "john@doe.com",
     "from":         "info@example.com",
-    "to":           "john@doe.com"
+    "to":           "john@doe.com",
     "subject":      "This is the subject",
     "text":         "This is example content",
 }
 ```
 This call will instruct SMTPeter to generate an e-mail message with the 
-specified `from`, `to`, `subject`, and `text` and to sends it to the 
+specified `from`, `to`, `subject`, and `text` and to send it to the 
 address specified in `recipient`. 
 
 This is just a simple example. More powerful mails (for example with html 
