@@ -55,6 +55,9 @@ voorkomen. De tweede regel doet eigenlijk hetzelfde voor softbounces. De andere
 2 regels zijn hetzelfde als de eerste 2 genoemde, maar deze zijn ingesteld voor
 Marketing Suite mailings.
 
+Wil je meer te weten komen over email bounces? Lees daar dan meer over in
+[dit artikel](https://www.copernica.com/nl/documentation/bounces).
+
 ### B_FoutiefEmailAdres
 Bevat alle profielen waarbij er in het e-mail veld geen e-mailadres staat.
 Denk hierbij aan het geval dat het veld leeg is of dat er geen '@'
@@ -85,7 +88,8 @@ Bevat alle profielen die zich hebben uitgeschreven voor de nieuwsbrief.
 
 Deze selectie bevat 1 regel met 1 conditie. De conditie controleert of het
 opt-in veld de waarde 'Nee' bevat. Pas dit eventueel aan naar het opt-in veld
-en waarde die past bij jouw database.
+en waarde die past bij jouw database. Het opt-in veld kan automatisch worden
+toegevoegd aan de database bij het aanmaken van de standaardselecties.
 
 ### F_Inactief
 Bevat alle profielen die niet actief zijn. Dit houdt in dat deze profielen
