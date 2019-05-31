@@ -109,7 +109,7 @@ mail. The following properties are recognized by MailerQ:
     </tr>
     <tr>
         <td>priority</td>
-        <td>the priorityu of the message</td>
+        <td>the priority of the message</td>
     </tr>
 </table>
 
