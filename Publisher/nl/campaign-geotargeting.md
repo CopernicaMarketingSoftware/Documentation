@@ -9,4 +9,4 @@ In onderstaand artikel wordt uitgelegd hoe geotargeting mogelijk is in Copernica
 Een van de beste manieren om de locatie van een klant te bepalen is van de postcodes. 
 Deze hebben namelijk een logische structuur om plaatsen te herkennen, via de nummers van een postcode kan je eenvoudig
 de plaats erbij vinden. Postcodes 1000-1100 zijn bijvoorbeeld regio Amsterdam. Voor geotargeting kunnen we een lijst gebruiken 
-waarbij alle postcodes aan plaatsen en provincies gekoppeld zijn, download deze lijst [hier](../downloads/Postcodes, gemeente, provincie.csv).
+waarbij alle postcodes aan plaatsen en provincies gekoppeld zijn, download deze lijst [hier](../downloads/geotargeting.csv).
