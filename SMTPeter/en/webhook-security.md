@@ -1,4 +1,4 @@
-# Security of a webhook
+# Webhook security
 
 To protect your data, we strongly recommend to use an HTTPS endpoint for 
 your webhook. This ensures that all calls from SMTPeter to your network are
@@ -17,7 +17,7 @@ strongly recommend that you check in your endpoint code if these headers
 are indeed set, and that the values are correct. Incoming calls without
 these headers, or where the values are not correct should be ignored.
 
-The format format of the headers is well-defined:
+The format of the headers is well-defined:
 
 - The "Digest" header is in line with [RFC 3230](https://tools.ietf.org/html/rfc3230#section-4.3.2).
 - The "Signature" header is defined in [an IETF draft](https://tools.ietf.org/html/draft-cavage-http-signatures-11).
