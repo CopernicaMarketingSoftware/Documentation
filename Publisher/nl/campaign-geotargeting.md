@@ -10,6 +10,7 @@ Een van de beste manieren om de locatie van een klant te bepalen is van de postc
 Deze hebben namelijk een logische structuur om plaatsen te herkennen, via de nummers van een postcode kan je eenvoudig
 de plaats erbij vinden. Postcodes 1000-1100 zijn bijvoorbeeld regio Amsterdam. 
 
+
   - Voor geotargeting kunnen we een lijst gebruiken waarbij alle postcodes aan plaatsen en provincies gekoppeld zijn, download deze lijst [hier](../downloads/geotargeting.csv).
  - Vervolgens importeren we deze lijst in een nieuwe database. Deze database noemen we **PlaastenDB**.
  - Gebruik voor de veld namen de namen uit de import. 
@@ -31,6 +32,7 @@ De meest eenvoudige manier van geotargeting kan dus gedaan worden op postcode. W
 
 Er zitten 4 cijfers in een postcode daarom staan er 4 sets aan blokhaken, elke set van blokhaken staat voor een nummer van de postcode. De postcodes van Amsterdam liggen tussen 1000-1099, kortom de eerste 2 cijfers staan vast. Het eerste cijfer is altijd een 1 oftewel [1] en het tweede cijfer is altijd een 0 oftewel [0]. De volgende cijfers liggen ergens tussen 0 en 9 oftewel [0-9]. De punt en de astriks zorgen ervoor dat letters van de postcode genegeerd worden. 
 
+
  - Om hiermee een selectie te maken, maken we vervolgens een conditie aan die checkt op veldwaarde.
  - Kies het postcode veld en geef als vergelijking **voldoet aan reguliere expressie**.
  - Vul bij waarde de bovenstaande reguliere expressie in en je hebt nu een selectie die iedereen uit regio Amsterdam selecteert. 
@@ -41,11 +43,12 @@ Er zitten 4 cijfers in een postcode daarom staan er 4 sets aan blokhaken, elke s
  
 ### Winkel Database
 
-De eerste stap is een database aanmaken waar al onze winkels in staan. Hierin zet je alle informatie die je wilt tonen in je email, denk hierbij aan adres, url naar een foto en een beschrijving. Het is aan te raden om postcode te splitsen in cijfers en letters, dit is voor een check bij de mailing straks handig. De onderstaande afbeelding geeft een voorbeeld van een Winkel datase:
+De eerste stap is een database aanmaken waar al onze winkels in staan. Hierin zet je alle informatie die je wilt tonen in je email, denk hierbij aan adres, url naar een foto en een beschrijving. Het is aan te raden om postcode te splitsen in cijfers en letters, dit is voor een check bij de mailing straks handig. De onderstaande afbeelding geeft een voorbeeld van een Winkel database:
 
 ![](../images/winkel_database.png)
  
  Maak een veld **StoreID** aan, dit veld bevat de waarde die uniek is per winkel. Dit kan prima een simpel cijfer zijn maar kan ook een winkel id zijn. We willen dat deze waarde ook bij het profiel komt te staan, zodat bekend is welke winkel het dichtstbij is. Dit doen we als volgt
+ 
  
  - Maak een veld **Winkel** aan in je klantendatabase.
  - Zorg dat je een selectie hebt waarin alle profielen uit een bepaalde regio van de winkel vallen.
@@ -54,6 +57,23 @@ De eerste stap is een database aanmaken waar al onze winkels in staan. Hierin ze
  
  ### Winkel informatie in mailings
  
+ De volgende stap is de winkel informatie tonen in een mailing, voor nu gaan we er even vanuit dat alle profielen een gelabelde winkel hebben in het veld Winkel. We willen de gelabelde winkel tonen aan de hand van het profiel, echter staat deze in een andere database. Dit kunnen we doen door de functie [loadprofile]./loadprofile-and-loadsubprofile) te gebruiken, hiermee kunnen we profielen uit een andere database inladen. Met onderstaande code kan de juiste winkel ingeladen worden vanuit ons voorbeeld:
  
+ ```
  
+ {loadprofile source="Winkels" StoreID=$Winkel assign="opgehaaldeWinkel"}
+    
+ De winkel is gevonden en is {$opgehaaldeWinkel.Naam} {$opgehaaldeWinkel.PostcodeCijfers} {$opgehaaldeWinkel.Plaats} 
+ 
+ ```
+ 
+ Hierbij is Winkels onze winkel database en wordt het veld Winkel gekoppeld aan het veld StoreID, hierdoor wordt alleen de juiste winkel opgehaald uit de database. Dit geeft als resultaat:
+ 
+ ```
+ 
+ De winkel is gevonden en is Copernica Amsterdam 1102 Amsterdam Zuidoost
+
+ ```
+ 
+
  
