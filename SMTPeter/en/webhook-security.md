@@ -1,15 +1,11 @@
 # Security of a webhook
 
-To prevent your confidential information from being intercepted and to protect 
-your sensitive data, we strongly recommend to use an HTTPS endpoint for 
-your webhook. This ensures that all calls from SMTPeter to your server are
-secure and cannot be intercepted.
-
-However, this is not the only measurement that you can take to secure your
-endpoint. Besides HTTPS, we also add a couple of extra headers to each 
-outgoing request. One of these headers contains a digital signature. You can 
-check this signature to verify that the call does indeed come from us, and
-not from some outsider that happened to find out your endpoint address.
+To protect your data, we strongly recommend to use an HTTPS endpoint for 
+your webhook. This ensures that all calls from SMTPeter to your network are
+secure and cannot be intercepted by third parties. However, even if you use 
+HTTPS, that does not prevent others from trying to send fake HTTP requests 
+to your endpoint too. To overcome this, all our HTTP calls contain a couple of 
+extra headers with your account ID and a digital signature.
 
 
 ## Extra headers
@@ -19,7 +15,7 @@ All our outgoing HTTP requests contain a "Digest", "X-Copernica-ID" and a
 body, the identifier of your SMTPeter account and a digital signature. We
 strongly recommend that you check in your endpoint code if these headers
 are indeed set, and that the values are correct. Incoming calls without
-these headers, or where the values are not correct should be ignored,
+these headers, or where the values are not correct should be ignored.
 
 The format format of the headers is well-defined:
 
@@ -27,11 +23,29 @@ The format format of the headers is well-defined:
 - The "Signature" header is defined in [an IETF draft](https://tools.ietf.org/html/draft-cavage-http-signatures-10).
 - The "X-Copernica-ID" header is set to "environment_XXX" (where XXX is the ID of your account)
 
+An example HTTP header could look like this:
+
+```
+POST /path/to/your/script HTTP/1.1
+Host: yourserver.yourdomain.com
+Date: Sun, 05 Jan 2014 21:31:40 GMT
+X-Copernica-ID: environment_1234
+Digest: SHA-256=X48E9qOokqqrvdts8nOJRJN3OWDUoyWxBf7kbu9DBPE=
+Content-Type: application/json
+Content-Length: 328746
+X-Nonce: fsd9f2
+Signature: keyId="one._domainkey.copernica.com",algorithm="rsa-sha256",
+     headers="(request-target) Host Date Content-length Content-type
+       X-Copernica-ID Digest X-nonce"
+     signature="vSdrb+dS3EceC9bcwHSo4MlyKS59iFIrhgYkz8+oVLEEzmYZZvRs
+       8rgOp+63LEM3v+MFHB32NfpB2bEKBIvB1q52LaEUHFv120V01IL+TAD48XaERZF
+       ukWgHoBTLMhYS2Gb51gWxpeIq8knRmPnYePbF5MOkR0Zkly4zKH7s1dE="
+```
 
 ## The signature and the public key
 
 The signature is created using a private key that only we have access to, and
-can be checked with a public key. We've published our public key in DNS in the
+can be verified with a public key. We've published our public key in DNS in the
 same way as we publish DKIM keys, see [RFC 6367](https://tools.ietf.org/html/rfc6376#section-3.6.1)
 for the DKIM specification. Note that the keys rotate once a month, so you
 should not use a hardcoded copy of our public key, but dynamically retrieve 
