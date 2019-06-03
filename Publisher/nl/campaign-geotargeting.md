@@ -100,8 +100,10 @@ De eerste stap is een database aanmaken waar al onze winkels in staan. Hierin ze
 
 ```
 
+<!-- Laat meer informatie uit via postcode op uit de PlaatsenDB -->
 {loadprofile source="PlaatsenDB" PC=$postcodeCijfers assign="locatie"}
 
+<!-- Haal alle winkels op met dezelfde postcode als het profiel -->
 {loadprofile source="Winkels" PostcodeCijfers=$postcodeCijfers assign="winkel"}
 
  ```
