@@ -28,6 +28,7 @@ The following table lists all supported properties:
 | from               | "From:" header                       |
 | to                 | "To:" header                         |
 | cc                 | "Cc:" header                         |
+| replyto            | "Reply-To:" header                   |
 | subject            | Subject of the mail                  |
 | text               | Text version of the mail             |
 | html               | HTML version of the mail             |
@@ -38,12 +39,12 @@ The following table lists all supported properties:
 
 ## Address format
 
-The "from", "to" and "cc" fields can be used to add email addresses to
+The "from", "to", "replyto" and "cc" fields can be used to add email addresses to
 the message header. The "from" variable must be a *single* email
 address, while there is no limit to the number of addresses that you use
-for the "to" and the "cc" fields.
+for the "to", "replyto" and the "cc" fields.
 
-The notation for the email addresses in the "from", "to" and "cc" fields
+The notation for the email addresses in the "from", "to", "replyto" and "cc" fields
 is very flexible: SMTPeter also recognizes display names and comma
 separated lists of addresses.
 
@@ -59,9 +60,9 @@ separated lists of addresses.
 }
 ```
 
-**Important:** the addresses in "from", "to" and "cc" are not used for
+**Important:** the addresses in "from", "to", "replyto" and "cc" are not used for
 the e-mail delivery. You need a special "recipient" property for this.
-The "from", "to" and "cc" are only used to create the content of the e-mail 
+The "from", "to", "replyto" and "cc" are only used to create the content of the e-mail 
 message, and it is thus in fact possible to create an e-mail with a
 different to-address than the address to which the mail is sent. For more
 information about this, check out the article on 
