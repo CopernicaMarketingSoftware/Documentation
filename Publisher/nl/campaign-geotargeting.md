@@ -57,7 +57,7 @@ Maak een veld **StoreID** aan, dit veld bevat de waarde die uniek is per winkel.
 
  ### Winkel informatie in mailings
 
- De volgende stap is de winkel informatie tonen in een mailing, voor nu gaan we er even vanuit dat alle profielen een gelabelde winkel hebben in het veld Winkel. We willen de gelabelde winkel tonen aan de hand van het profiel, echter staat deze in een andere database. Dit kunnen we doen door de functie [loadprofile]./loadprofile-and-loadsubprofile) te gebruiken, hiermee kunnen we profielen uit een andere database inladen. Met onderstaande code kan de juiste winkel ingeladen worden vanuit ons voorbeeld:
+ De volgende stap is de winkel informatie tonen in een mailing, voor nu gaan we er vanuit dat alle profielen een gelabelde winkel hebben in het veld Winkel. We willen de gelabelde winkel tonen aan de hand van het profiel, echter staat deze in een andere database. Dit kunnen we doen door de functie [loadprofile]./loadprofile-and-loadsubprofile) te gebruiken, hiermee kunnen we profielen uit een andere database inladen. Met onderstaande code kan de juiste winkel ingeladen worden vanuit ons voorbeeld:
 
  ```
 
@@ -80,7 +80,7 @@ Maak een veld **StoreID** aan, dit veld bevat de waarde die uniek is per winkel.
  De eerder genoemde stappen vereisen wat handwerk om de juiste persoon aan een winkel te koppelen. Hieronder wordt een methode beschreven hoe dit ook automatisch kan. Hiervoor berekenen we de dichtsbijzijnde winkel aan de hand van de postcode, we gaan er in dit senario vanuit dat de dichtsbijzijnde postcode ook de dichtsbijzijnde winkel is. Hiervoor worden meerdere stukken code gebruikt, deze zullen in delen uitgelegd worden en aan het einde van dit artikel staat de volledige code.
 
 
- De eerste stap is alleen de cijfers van de postcode te gebruiken, hiervoor gebruiken we [truncate](./personalization-modifiers#truncate) om de eerste 4 waardes te selecteren. Daarnaast hebben we 2 variable nodig, de variable **kortsteAfstand** om de afstand tot de postcode te bereken en de variable **besteWinkel**, deze bevat uiteindelijk de dichtsbijzijnde winkel.
+ De eerste stap is alleen de cijfers van de postcode te gebruiken, hiervoor gebruiken we [truncate](./personalization-modifiers#truncate) om de eerste 4 waardes te selecteren. Daarnaast hebben we 2 variabelen nodig, de variabele **kortsteAfstand** om de afstand tot de postcode te bereken en de variabele **besteWinkel**, deze bevat uiteindelijk de dichtsbijzijnde winkel.
 
 ```html
 
@@ -95,7 +95,7 @@ Maak een veld **StoreID** aan, dit veld bevat de waarde die uniek is per winkel.
 
 ```
 
- Vervolgens laden we meer informatie in over de postcode door loadprofile te gebruiken op de **PlaatsenDB**. Deze wordt toegewezen aan variable locatie, hieruit kunnen we alles over de locatie opvragen. Daarnaast willen we alle winkels ophalen waarvan de postcode cijfers matched met de postcode cijfers van een winkel. De kans hierop is echter vrij klein omdat de cijfers exact moeten matchen:
+ Vervolgens laden we meer informatie in over de postcode door loadprofile te gebruiken op de **PlaatsenDB**. Deze wordt toegewezen aan de variabele locatie, hieruit kunnen we alles over de locatie opvragen. Daarnaast willen we alle winkels ophalen waarvan de postcode-cijfers matchen met de postcode-cijfers van een winkel. De kans hierop is echter vrij klein omdat de cijfers exact moeten matchen:
 
 
 ```
@@ -108,7 +108,7 @@ Maak een veld **StoreID** aan, dit veld bevat de waarde die uniek is per winkel.
 
  ```
 
- Vervolgens checken we of deze winkel bestaat als dit het geval is dan wordt dit de beste winkel zo niet dan kijken we verder.
+ Vervolgens checken we of deze winkel bestaat. Als dit het geval is dan wordt dit de beste winkel, zo niet dan kijken we verder.
 
 
  ```
@@ -121,7 +121,7 @@ Maak een veld **StoreID** aan, dit veld bevat de waarde die uniek is per winkel.
 
  ```
 
- Als de winkel niet gevonden wordt dan er gezocht op plaats. Als er een plaats gevonden wordt dan zijn er twee opties, er zijn meerdere winkels in de plaats of er is maar 1 winkel in de plaatst. Als dat tweede het geval is dan wordt deze winkel automatisch de beste winkel. Als er meerdere winkels zijn dan berekenen we met [math equation](./publisher-personalization-functions#math) het verschil tussen de postcodes uit. De winkel met het laagste verschil wordt dan de beste winkel.
+ Als de winkel niet gevonden wordt, dan wordt er gezocht op plaats. Als er een plaats gevonden wordt, zijn er twee opties, er zijn meerdere winkels in de plaats of er is maar 1 winkel in de plaats. Als dat tweede het geval is dan wordt deze winkel automatisch de beste winkel. Als er meerdere winkels zijn dan berekenen we met [math equation](./publisher-personalization-functions#math) het verschil tussen de postcodes uit. De winkel met het laagste verschil wordt dan de beste winkel.
 
 
  ```
