@@ -120,7 +120,7 @@ De eerste stap is een database aanmaken waar al onze winkels in staan. Hierin ze
  
  ```
  
- Als de winkel niet gevonden wordt dan er gezocht op plaats. Als er een plaats gevonden wordt dan zijn er twee opties, er zijn meerdere winkels in de plaats of er is maar 1 winkel in de plaatst. Als dat tweede het geval is dan wordt deze winkel automatisch de beste winkel. Als er meerdere winkels zijn dan berekenen we met [math equation] het verschil tussen de postcodes uit. De winkel met het laagste verschil wordt dan 
+ Als de winkel niet gevonden wordt dan er gezocht op plaats. Als er een plaats gevonden wordt dan zijn er twee opties, er zijn meerdere winkels in de plaats of er is maar 1 winkel in de plaatst. Als dat tweede het geval is dan wordt deze winkel automatisch de beste winkel. Als er meerdere winkels zijn dan berekenen we met [math equation](./publisher-personalization-functions#math) het verschil tussen de postcodes uit. De winkel met het laagste verschil wordt dan de beste winkel.
  
  ```
  
@@ -159,6 +159,34 @@ De eerste stap is een database aanmaken waar al onze winkels in staan. Hierin ze
  
  ```
  
+ Als er op plaats ook geen winkel gevonden kan worden, dan wordt gekeken of er een match gevonden kan worden binnen de provincie. Dit werkt op dezelfde manier als de check op plaats.
+
+``` 
+ <!-- Haal alle winkels op met dezelfde provincie als het profiel -->
+      {loadprofile source="Winkels" Provincie=$locatie.PROVINCIE assign="winkel" multiple="true"}
+      
+            {foreach $winkel as $store}
+    
+        <!-- Bereken het verschil tussen de postcodes-->
+            {capture assign="verschil"}{math equation="abs(x-y)" x=$postcodeCijfers y=$store.PostcodeCijfers}{/capture}
+               
+       <!-- Kijk of de nieuwe afstand korter is --> 
+       {if $verschil lt $kortsteAfstand}
+                 
+        {$kortsteAfstand = $verschil}
+    
+        <!-- Zet deze winkel als beste winkel -->
+                  {$besteWinkel = $store}
+
+                {/if}         
+ 
+            {/foreach}
+ 
+ ````
+ 
+ Uiteindelijk zal hier een $besteWinkel uitkomen en hiermee kunnen we alle informatie van de winkel in mailings tonen. 
+ Hieronder staat de volledige code met commentaar erbij, om het begrijpelijker te maken. Dit zou voor elk account moeten werken als je de bovenstaande stappen gevolgd hebt, let vooral op de veldnamen die kunnen ervoor zorgen dat het niet werkt. 
+
  
  ```
  
