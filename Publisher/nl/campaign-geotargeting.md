@@ -97,6 +97,7 @@ De eerste stap is een database aanmaken waar al onze winkels in staan. Hierin ze
  
  Vervolgens laden we meer informatie in over de postcode door loadprofile te gebruiken op de **PlaatsenDB**. Deze wordt toegewezen aan variable locatie, hieruit kunnen we alles over de locatie opvragen. Daarnaast willen we alle winkels ophalen waarvan de postcode cijfers matched met de postcode cijfers van een winkel. De kans hierop is echter vrij klein omdat de cijfers exact moeten matchen:
  
+ 
 ```
 
 <!-- Laat meer informatie uit via postcode op uit de PlaatsenDB -->
@@ -121,6 +122,7 @@ De eerste stap is een database aanmaken waar al onze winkels in staan. Hierin ze
  ```
  
  Als de winkel niet gevonden wordt dan er gezocht op plaats. Als er een plaats gevonden wordt dan zijn er twee opties, er zijn meerdere winkels in de plaats of er is maar 1 winkel in de plaatst. Als dat tweede het geval is dan wordt deze winkel automatisch de beste winkel. Als er meerdere winkels zijn dan berekenen we met [math equation](./publisher-personalization-functions#math) het verschil tussen de postcodes uit. De winkel met het laagste verschil wordt dan de beste winkel.
+ 
  
  ```
  
@@ -160,6 +162,7 @@ De eerste stap is een database aanmaken waar al onze winkels in staan. Hierin ze
  ```
  
  Als er op plaats ook geen winkel gevonden kan worden, dan wordt gekeken of er een match gevonden kan worden binnen de provincie. Dit werkt op dezelfde manier als de check op plaats.
+
 
 ``` 
  <!-- Haal alle winkels op met dezelfde provincie als het profiel -->
