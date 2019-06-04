@@ -137,5 +137,5 @@ webformulier invoegt.
 
 ## Meer informatie
 
-* [Styling in Publisher](./emailing-publisher-styling)
+* [Styling in Publisher](./emailings-publisher-styling)
 * [CSS](./css)

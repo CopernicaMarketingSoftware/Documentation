@@ -68,7 +68,7 @@ drie opties:
 ## Meer informatie
 
 Styling in Publisher:
-* [Styling in Publisher](./emailing-publisher-styling)
+* [Styling in Publisher](./emailings-publisher-styling)
 * [XSLT](./xslt)
 
 Externe bronnen:
