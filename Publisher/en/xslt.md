@@ -77,15 +77,11 @@ being stripped from the HTML source code.
 To circumvent this problem comments for the HTML should be placed 
 within special tags as shown below:
 
-`
     <xsl:comment> This is a comment </xsl:comment>
-`
 
 Which will result in a comment in the HTML source code that looks like this:
 
-`
     <!-- This is a comment -->
-`
 
 ## Conditional code
 
@@ -93,9 +89,7 @@ Certain special HTML comments may also be recognized as special instructions
 instead of regular comments. The following code, for example, is an 
 instruction to show a message only if the Internet Explorer is being used:
 
-`
     <!--[if IE]> This line is only visible in Internet Explorer <![endif]-->
-`
 
 While most browsers and email clients will treat this like a regular comment. 
 Certain browsers, however, will recognize this `[if]` statement.
@@ -105,17 +99,13 @@ for browsers and email clients, as some of them handle styling differently.
 The same technique can be used to use specific stylesheets for specific clients 
 and browsers:
 
-`
     <!--[if IE]> <link rel="stylesheet" type="text/css" href="ie.css" /> <![endif]-->
-`
 
 This possibility also exists in XSLT, although the syntax is tricky:
 
-`
     <xsl:comment>[if IE]>
         &lt;link rel="stylesheet" type="text/css" href="ie.css" />
     &lt;![endif]</xsl:comment>
-`
 
 Please do note that the `<` characters inside the comment should be replaced with
 `&lt;` to ensure correct parsing.
@@ -125,11 +115,11 @@ Please do note that the `<` characters inside the comment should be replaced wit
 To link the XSLT stylesheet to the content you can simply use the XSLT 
 property in the tag that includes the feed, survey or webform.
 
-`
+```
     {feed name=my_feed xslt=myxslt}
     {survey name=my_survey xslt=myxslt}
     {webform name=my_webform xslt=myxslt}
-`
+```
 
 ## More information
 

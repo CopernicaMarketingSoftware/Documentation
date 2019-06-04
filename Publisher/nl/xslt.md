@@ -78,15 +78,11 @@ resulterende broncode worden gefilterd.
 Om dit probleem te voorkomen moeten HTML comments binnen speciale tags 
 geplaatst worden, zoals hieronder wordt getoond:
 
-`
     <xsl:comment> This is a comment </xsl:comment>
-`
 
 Dit resulteert in een HTML comment die er als volgt uit ziet:
 
-`
     <!-- This is a comment -->
-`
 
 ## Conditionele code
 
@@ -94,9 +90,7 @@ Bepaalde HTML comments worden door verschillende browsers en e-mailcliënten
 geïnterpreteerd als instructies. De volgende code wordt bijvoorbeeld in HTML 
 gebruikt om een stukje tekst alleen in de Internet Explorer browser te tonen:
 
-`
     <!--[if IE]> This line is only visible in Internet Explorer <![endif]-->
-`
 
 Hoewel de meeste browsers en e-mailcliënten dit als een normale comment 
 zullen beschouwen zullen sommige browser dit herkennen als een `[if]` statement.
@@ -107,17 +101,13 @@ styling niet correct afhandelen. Dezelfde techniek als hierboven kan
 ook gebruikt worden om specifieke stylesheets te gebruiken voor browsers 
 en e-mailcliënten:
 
-`
     <!--[if IE]> <link rel="stylesheet" type="text/css" href="ie.css" /> <![endif]-->
-`
 
 Deze mogelijkheid bestaat ook in XSLT, maar de syntax is enigzins ingewikkeld:
 
-`
     <xsl:comment>[if IE]>
         &lt;link rel="stylesheet" type="text/css" href="ie.css" />
     &lt;![endif]</xsl:comment>
-`
 
 Zorg er in dit geval voor dat de `<` karakters binnen de comment vervangen 
 worden door `&lt;` om deze correct te parsen. Anders zal deze comment 
@@ -129,11 +119,11 @@ Om XSLT stylesheets te linken aan content kun je deze simpelweg
 toevoegen aan de XSLT eigenschap in de tag die een feed, enquête of 
 webformulier invoegt.
 
-`
+```
     {feed name=my_feed xslt=myxslt}
     {survey name=my_survey xslt=myxslt}
     {webform name=my_webform xslt=myxslt}
-`
+```
 
 ## Meer informatie
 
