@@ -43,6 +43,6 @@
     * [Surveys](./surveys)
     * [Websites](./websites)
     * [Web forms](./webforms)
-    * [CSS and XSLT](./css-and-xslt)
+    * [Styling](./emailings-publisher-styling)
     * [RSS and ATOM feeds](./rss-and-atom-feeds)
     * [Advanced options](./advanced-options)
