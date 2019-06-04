@@ -10,6 +10,10 @@ CSS, starting from scratch or a standard style sheet to get you started.
 The standard style sheet contains clear comments (starting with /\* and ending with 
 \*/) to immediately get you familiar with the possibilities of CSS.
 
+Since CSS is a widely used technology this article will simply discuss its 
+application within our software. For more CSS resources see the 
+[more information](./css#more-information) section.
+
 ## Creating and managing stylesheets
 
 Webforms, feeds and surveys offer a default style sheet. To apply your own 
@@ -60,7 +64,12 @@ options:
 
 ## More information
 
+Articles on styling in Publisher:
 * [Styling in Publisher](./emailing-publisher-styling)
 * [XSLT](./xslt)
+
+External resources:
+* [Mozilla's introduction to CSS](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS) 
+* [CSS tutorial from tutorialspoint](https://www.tutorialspoint.com/css/)
 
 

@@ -12,6 +12,11 @@ aanmaken of een standaard CSS stylesheet aanpassen. De standaard stylesheet
 bevat duidelijke comments (beginnend met /\* en eindigend met \*/) waaraan 
 je kunt zien welke elementen aangepast worden en op welke manier.
 
+Aangezien CSS een wijdverspreide technologie is zullen we in dit artikel 
+slechts de toepassing binnen onze software bespreken. Onder 
+[meer informatie](./css#meer-informatie) kun je een aantal middelen 
+vinden om de taal zelf te leren.
+
 ## Aanmaken en onderhouden van stylesheets
 
 Webforms, feeds en enquêtes bieden de standaard stylesheet aan. Om een 
@@ -62,7 +67,13 @@ drie opties:
 
 ## Meer informatie
 
+Styling in Publisher:
 * [Styling in Publisher](./emailing-publisher-styling)
 * [XSLT](./xslt)
+
+Externe bronnen:
+* [Mozilla's introductie tot CSS (Engels)](https://developer.mozilla.org/en-US/docs/Learn/CSS/Introduction_to_CSS) 
+* [CSS tutorial van tutorialspoint (Engels)](https://www.tutorialspoint.com/css/)
+* [CSS tutorial van learnlayout (Nederlands)](http://nl.learnlayout.com/)
 
 
