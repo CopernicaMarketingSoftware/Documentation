@@ -19,7 +19,7 @@ these headers, or where the values are not correct should be ignored.
 
 The format of the headers is well-defined:
 
-- The "Digest" header is in line with [RFC 3230](https://tools.ietf.org/html/rfc3230#section-4.3.2).
+- The "Digest" header is in line with [RFC 3230](https://tools.ietf.org/html/rfc3230#section-4.3.2) and [RFC 5843](https://tools.ietf.org/html/rfc5843).
 - The "Signature" header is defined in [an IETF draft](https://tools.ietf.org/html/draft-cavage-http-signatures-11).
 - The "X-Copernica-ID" header is set to "environment_XXX" (where XXX is the ID of your account)
 
