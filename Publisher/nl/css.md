@@ -19,11 +19,11 @@ vinden om de taal zelf te leren.
 
 ## Aanmaken en onderhouden van stylesheets
 
-Webforms, feeds en enquêtes bieden de standaard stylesheet aan. Om een 
+Webformulieren, feeds en enquêtes bieden de standaard stylesheet aan. Om een 
 stylesheet toe te passen ga je naar het **Stijl** component, waar je 
 een nieuwe stylesheet aan kan maken of de standaard stylesheet aan kunt passen. 
-De stylesheet is dan echter niet gekoppeld aan het webform specifiek, maar 
-aan de pagina of template waar de webform op gepubliceerd wordt. 
+De stylesheet is dan echter niet gekoppeld aan het webformulier specifiek, maar 
+aan de pagina of template waar het webformulier op gepubliceerd wordt. 
 Je kunt een stylesheet linken aan een pagina, document of template in de 
 respectievelijke context menus hiervan. Hetzelfde geldt voor enquêtes en 
 feeds.
