@@ -15,14 +15,15 @@ information about the open.
 
 With each POST call the following variables are passed to your script:
 
-| Variable  | Description                                                        |
-|-----------|--------------------------------------------------------------------|
-| id        | Unique identifier of the message that was opened                   |
-| recipient | Email address of the person that opened the mail                   |
-| ip        | IP address of the opened                                           |
-| url       | The original image url (the url <i>before</i> it was rewritten)    |
-| useragent | Optional user agent string (extracted from http request header)    |
-| referer   | Optional referer (extracted from http request header)              |
+| Variable  | Description                                                     |
+|-----------|-----------------------------------------------------------------|
+| id        | unique identifier of the message that was opened                |
+| recipient | email address of the person that opened the mail                |
+| ip        | ip address of the opened                                        |
+| time      | time when the url was opened                                    |
+| useragent | optional user agent string (extracted from http request header) |
+| referer   | optional referer (extracted from http request header)           |
+| tags      | the tags that you associated with the mail                      |
 
 The "ID" and "recipient" variables allow you to link the open to the 
 originally sent email message.
