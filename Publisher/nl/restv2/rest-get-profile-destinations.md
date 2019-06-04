@@ -32,15 +32,15 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-print_r($api->get("profile/{$emailingID}/destinations/"));
+print_r($api->get("profile/{$profileID}/destinations/"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
 
-## More information
+## Meer informatie
 
-* [Overview of all REST API calls](./rest-api)
-* [Retrieve a profile](./rest-get-profile)
+* [Overzicht van alle calls](./rest-api)
+* [Opvragen van een profiel](./rest-get-profile)
 
 
 

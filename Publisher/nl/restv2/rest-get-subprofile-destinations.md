@@ -1,11 +1,11 @@
-# REST API: GET destinations (MS mailing)
+# REST API: GET destinations (subprofiel)
 
-Je kan de destinations van een (Marketing Suite) emailing opvragen met 
+Je kan de destinations van een subprofiel opvragen met 
 een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v2/ms/emailing/$id/destinations?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id/destinations?access_token=xxxx`
 
-Hier moet `$id` vervangen worden door de ID van de mailing. Deze methode 
+Hier moet `$id` vervangen worden door de ID van het subprofiel. Deze methode 
 ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestampsent** veld.
 
@@ -17,7 +17,7 @@ is de volgende informatie beschikbaar:
 * **ID**: De ID van de destination.
 * **timestampsent**: De tijdstempel van het aankomen van de mailing bij deze destination.
 * **profile**: De ID van het profiel van deze destination.
-* **subprofile**: De ID van het subprofiel van deze destination (als deze beschikbaar is).
+* **subprofile**: De ID van het subprofiel van deze destination.
 * **mailing**: De ID van de mailing.
 
 ## PHP voorbeeld
@@ -32,7 +32,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-print_r($api->get("ms/emailing/{$emailingID}/destinations/"));
+print_r($api->get("subprofile/{$subprofileID}/destinations/"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
@@ -40,7 +40,7 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 ## Meer informatie
 
 * [Overzicht van alle calls](./rest-api)
-* [Opvragen van een Marketing Suite mailing](./rest-get-ms-emailing)
+* [Opvragen van een subprofiel](./rest-get-subprofile)
 
 
 
