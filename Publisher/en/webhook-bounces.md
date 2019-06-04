@@ -29,8 +29,8 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 |-----------|--------------------------------------------------------------------------|
 | id        | original message id with which the bounce is associated                  |
 | recipient | email address to which the original mail was sent                        |
-| mailfrom  | "MAIL FROM" address that was used for delivering the incoming bounce     |
-| rcptto    | "RCPT TO" address that was used for delivering the incoming bounce       |
+| envelope  | envelope address to send the bounce to                                   |
+| time      | timestamp for the bounce                                                 |
 | mime      | the MIME data that was sent (the message itself)                         |
 | tags      | the tags that you associated with the mail                               |
 

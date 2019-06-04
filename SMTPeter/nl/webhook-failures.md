@@ -28,7 +28,6 @@ Je kunt alsnog alle bounces ontvangen als je dat wilt. Zelfs degene die we niet
 hebben getraceerd met de failures webhook. 
 In dat geval kun je additioneel een [webhook opzetten voor bounces](webhook-bounces "Webhooks voor bounces").
 
-
 ## Formaat
 
 SMTPeter gebruikt HTTP POST calls om data naar je toe te sturen. Dit kan gedaan

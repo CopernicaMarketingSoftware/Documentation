@@ -53,13 +53,14 @@ consequent ook naar de bounce webhooks.
 De bounce webhook wordt door middel van het HTTP POST mechanisme verstuurd. 
 De volgende variabelen worden dan ingevoerd:
 
-| Variabelen| Omschrijving                                                                      |
-|-----------|-----------------------------------------------------------------------------------|
-| id        | origineel message id van de bounce in kwestie                                     |
-| recipient | e-mailadres waar de originele mail naartoe is verstuurd                           |
-| mailfrom  | "MAIL FROM" adres dat is gebruikt voor aflevering van de inkomende bounce         |
-| rcptto    | "RCPT TO" adres dat is gebruikt voor aflevering van de inkomende bounce           |
-| mime      | de MIME data dat is verstuurd, dit is het daadwerkelijk ontvangen bounce bericht  |
+| Variabele  | Omschrijving                                                       |  
+|------------|--------------------------------------------------------------------|
+| id         | originele bericht ID voor de bounce                                |
+| recipient  | e-mailadres waarnaar de originele mail werd verstuurd              |
+| envelope   | adres om bounces aan te retourneren                                |
+| time       | tijdstempel van de bounce                                          |
+| mime       | de verstuurde MIME data (het bericht zelf)                         |
+| tags       | de tags gelinkt aan de mail                                        |
 
 De "ID" en "recipient" variabelen stellen je in staat om de inkomende bounce
 te linken aan het oorspronkelijke bericht dat werd verstuurd. De "mailfrom", 
