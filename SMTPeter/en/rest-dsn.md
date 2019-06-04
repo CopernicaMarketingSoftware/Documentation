@@ -1,30 +1,48 @@
-# REST and DSN messages
+# Processing bounces
 
-If you use the REST API to send email, you're probably doing this to 
-send out email from your website or app, and you do not want to process 
-bounces yourself. However, if you do want to receive bounces, you should
-add an "envelope" property with the address to which the bounces should
-be sent.
+Normally, SMTPeter takes care of processing bounces and out-of-office
+replies. However, if you do want to receive bounce messages too, you should
+pass an extra "envelope" property with each call to the API "/v1/send" method:
 
 ```json
+POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+Host: www.smtpeter.com
+Content-Type: application/json
+Content-Length: 7391
+
 {
-    "envelope":     "youraddress@yourdomain.com",
-    "recipient":    "example@example.com",
-    "mime":         "...."
+    "recipient":    "john@doe.com",
+    "envelope":     "myaddress@example.com",
+    "mime":         "MIME-Version: 1.0\r\nFrom: <info@example.com>\r\n...."
 }
 ```
 
+The envelope-address should be a working address on your server, and it
+helps your deliverability greatly if the envelope is aligned with the 
+from address. So if your from-address is info@*example.com*, your 
+envelope address should be set to something@*example.com* (using the same
+domain). Strictly speaking (and based on your DMARC setting), the domains
+do not have to completely the same, and it often sufficient when the envelope 
+from address share the same *organizational domain*: subdomain1.example.com 
+is thus aligned with subdomein2.example.com.
+
 By adding the envelope address, you instruct SMTPeter not to track bounces,
 and deliver the delivery status notification messages to your envelope
-address.
+address. If you send email to many recipients you may also receive a lot of 
+bounces. This could fill up your mailbox quite quickly.
 
 
 ## Custom DSN properties
 
-With the "dsn" variable you can set when and what kind of delivery 
-notifications you like to receive.
+If you pass your own envelope address, you may also use the optional "dsn"
+property to further finetune what type of bounces you're most interested in.
 
 ```json
+POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+Host: www.smtpeter.com
+Content-Type: application/json
+Content-Length: 7391
+
 {
     "envelope":     "youraddress@yourdomain.com",
     "recipient":    "example@example.com",
@@ -46,6 +64,4 @@ With the "ret" field you control whether the full original email is
 included in the bounce, or just the headers. Possible values are "FULL" 
 and "HDRS". Default is "HDRS".
 
-Keep in mind that if you send email to many recipients you may also
-receive a lot of bounces. This could fill up your mailbox quite quickly.
 

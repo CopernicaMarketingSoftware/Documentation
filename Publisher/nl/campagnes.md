@@ -10,3 +10,6 @@ graag een custom campagne opstarten? Neem dan contact op met een van onze vele
 * [Welkom](./campaign-welcome.md)
 * [Double optin](./campaign-tutorial-double-opt-in.md)
 * [Verjaardag](./how-to-create-a-birthday-selection.md)
+* [Profielverrijking](./campaign-profile-enrichment)
+* [Verlaten winkelwagen](./campaign-abandoned-shoppingcart.md)
+* [Geotargeting](./campaign-geotargeting.md)

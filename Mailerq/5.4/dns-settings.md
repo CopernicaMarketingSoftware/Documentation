@@ -36,7 +36,7 @@ a DNS query to a DNS server if necessary. This is exactly what you want.
 
 However, this standard "getaddrinfo" function does not expose the time-to-live 
 (TTL) value to its caller, which is needed to know for how long DNS results can be cached. 
-MailerQ is therefore conservative and assumes that all TTL's are set to 60 
+MailerQ is therefore conservative and assumes that all TTLs are set to 60 
 seconds. This low TTL value causes a lot of unnecessary DNS lookups, because 
 DNS queries are repeated every single minute, while in reality most TTL are 
 set to a much higher values (for example 24 or 48 hours).
