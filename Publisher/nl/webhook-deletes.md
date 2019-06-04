@@ -8,31 +8,55 @@ server met daarin alle relevante informatie over het zojuist verwijderde profiel
 
 ## Variabelen
 
-Met elk POST bericht worden onder andere de volgende variabelen meegestuurd:
+Het POST verzoek voor verwijderde profielen bevat de volgende variabelen:
 
-| Variabele          | Omschrijving
-|--------------------|----------------------------------------------------------------------------------------|
-| profile/subprofile | het unieke ID van het profiel/subprofiel dat verwijderd werd                           |
-| type               | welk type actie er op het (sub)profiel was uitgevoerd ('create', 'update' of 'delete') |
-| timestamp          | het tijdstip waarop het (sub)profiel verwijderd werd (in YYYY-MM-DD HH:MM:SS formaat)  |
+| Variabele  | Omschrijving                                                                      |
+|------------|-----------------------------------------------------------------------------------|
+| profile    | het unieke ID van het profiel dat verwijderd werd                                 |
+| type       | welk type actie er op het profiel was uitgevoerd ('create', 'update' of 'delete') |
+| timestamp  | het tijdstip waarop het profiel verwijderd werd (in YYYY-MM-DD HH:MM:SS formaat)  |
+| database   | unieke identifier van de database waar het profiel bij hoort                      |
+
+Voor subprofielen zijn dit de volgende variabelen:
+
+| Variabele  | Omschrijving                                                                         |
+|------------|--------------------------------------------------------------------------------------|
+| subprofile | het unieke ID van het subprofiel dat verwijderd werd                                 |
+| type       | welk type actie er op het subprofiel was uitgevoerd ('create', 'update' of 'delete') |
+| timestamp  | het tijdstip waarop het subprofiel verwijderd werd (in YYYY-MM-DD HH:MM:SS formaat)  |
+| profile    | unieke identifier van het profiel van het subprofiel                                 |
+| database   | unieke identifier van de database van het subprofiel                                 |
+| collection | unieke identifier van de collectie van het subprofiel                                |
 
 De variabele "action" heeft altijd de waarde 'delete'; dit helpt je om deze
 berichten te onderscheiden van de berichten die verstuurd worden als een
 profiel [aangemaakt](webhook-creates) of [aangepast](webhook-updates) wordt.
 Daarnaast wordt er informatie over het profiel of subprofiel meegestuurd. 
-Voor profielen zijn dit de volgende variabelen:
 
-| Variabele  | Omschrijving                                                   |
-|------------|----------------------------------------------------------------|
-| database   | unieke identifier van de database waar het profiel bij hoort   |
+## Example
 
-Voor subprofielen zijn dit de volgende variabelen:
+Een gedecodeerd POST verzoek voor een profiel ziet er bijvoorbeeld zo uit:
 
-| Variabele  | Omschrijving                                                |
-|------------|-------------------------------------------------------------|
-| profile    | unieke identifier van het profiel van het subprofiel        |
-| database   | unieke identifier van de database van het subprofiel        |
-| collection | unieke identifier van de collectie van het subprofiel       |
+```json
+    {
+        "action":       "delete",
+        "profile":      123,
+        "timestamp":    "1979-02-12 12:49:23",
+        "database":     1,
+    }
+```
+    
+Het verzoek voor een subprofiel ziet er bijvoorbeeld zo uit:
+
+```json
+    {
+        "action":       "delete",
+        "subprofile":   456,
+        "timestamp":    "1979-02-12 12:49:23",
+        "profile":      123
+        "collection":   2,
+    }
+```
 
 ## Meer informatie
 
