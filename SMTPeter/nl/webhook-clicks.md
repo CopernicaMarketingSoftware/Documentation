@@ -12,40 +12,17 @@ met relevante informatie over de klik.
 
 Met elke POST call worden de volgende vaiabelen toegestuurd:
 
-<table>
-    <tr>
-        <td>id</td>
-        <td>unieke <em>identifier</em> van de e-mail waarop werd geklikt</td>
-    </tr>
-    <tr>
-        <td><em>recipient</em></td>
-        <td>e-mailadres van de gebruiker die heeft geklikt</td>
-    </tr>
-    <tr>
-        <td>ip</td>
-        <td>ip adres van de gebruiker die heeft geklikt</td>
-    </tr>
-    <tr>
-        <td>url</td>
-        <td>de url waarop is geklikt (dit is de link naar de SMTPeter server)</td>
-    </tr>
-    <tr>
-        <td>original</td>
-        <td>de originele url (dit is de link waarnaar de gebruiker werd doorverbonden)</td>
-    </tr>
-    <tr>
-        <td>useragent</td>
-        <td>optionele *user agent* string (uit de http header gehaald)</td>
-    </tr>
-    <tr>
-        <td>referer</td>
-        <td>optionele referer (uit de http header gehaald)</td>
-    </tr>
-    <tr>
-        <td>tags</td>
-        <td>de <em>tags</em> die je associërt met een e-mail</td>
-    </tr>
-</table>
+| Variabele | Omschrijving                                             |
+|-----------|----------------------------------------------------------|
+| id        | unieke identifier van de e-mail waarop werd geklikt      |
+| recipient | e-mailadres van de gebruiker die heeft geklikt           |
+| ip        | ip adres van de gebruiker die heeft geklikt              |
+| time      | tijd van klikken                                         |
+| original  | de originele url                                         |
+| useragent | optionele user agent string (vanuit http request header) |
+| referer   | optionele referer (vanuit http request header)           |
+| tags      | tags geassocieerd met de mail                            |
+
 
 De "id", "recipient" en "tags" variabelen stellen je in staat om de klik te linken aan de 
 originele verstuurde e-mail.

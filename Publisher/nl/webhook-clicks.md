@@ -19,11 +19,11 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
 
 | Variabele | Omschrijving                                             |
 |-----------|----------------------------------------------------------|
-| id        | unieke identifier van het geklikte bericht               |
-| recipient | e-mailadres van de klikker                               |
-| ip        | ip adres van de klikker                                  |
+| id        | unieke identifier van de e-mail waarop werd geklikt      |
+| recipient | e-mailadres van de gebruiker die heeft geklikt           |
+| ip        | ip adres van de gebruiker die heeft geklikt              |
 | time      | tijd van klikken                                         |
-| original  | de originele URL                                         |
+| original  | de originele url                                         |
 | useragent | optionele user agent string (vanuit http request header) |
 | referer   | optionele referer (vanuit http request header)           |
 | tags      | tags geassocieerd met de mail                            |
