@@ -44,6 +44,9 @@ calls:
 | code        | Optional smtp error code                                                          |
 | extended    | Optional extended smtp status code                                                |
 | description | Optional description of the error                                                 |
+| time        | Timestamp of the error                                                            |
+| action      | Action that occurred                                                              |
+| tags        | Tags you associated with this mailing                                             |
 
 ## More information
 

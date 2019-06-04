@@ -35,32 +35,17 @@ SMTPeter gebruikt HTTP POST calls om data naar je toe te sturen. Dit kan gedaan
 worden over HTTP of over HTTPS. De volgende variabelen worden gebruikt in POST 
 calls:
 
-<table>
-    <tr>
-        <td>id</td>
-        <td>unieke <em>identifier</em> van de e-mail waarvoor het failure report geldt</td>
-    </tr>
-    <tr>
-        <td><em>recipient</em></td>
-        <td>e-mailadres van de gebruiker waar de failure voor geldt</td>
-    </tr>
-    <tr>
-        <td>state</td>
-        <td><em>state</em> in het smtp protocol waar de <em>failure</em> plaatsvond</td>
-    </tr>
-    <tr>
-        <td>code</td>
-        <td>optionele smtp error code</td>
-    </tr>
-    <tr>
-        <td>extended</td>
-        <td>optionele extended smtp status code</td>
-    </tr>
-    <tr>
-        <td>description</td>
-        <td>optionele omschrijving van de error</td>
-    </tr>
-</table>
+| Variabele    | Description                                                                |
+|--------------|----------------------------------------------------------------------------|
+| id           | unieke id van de fout                                                      |
+| recipient    | e-mailadres van de fout                                                    |
+| state        | staat in het smtp protocol van de fout ("bounce" voor asynchrone bounces)  |
+| code         | optionele smtp error code                                                  |
+| extended     | optionele extended smtp status code                                        |
+| description  | optionele omschrijving van de fout                                         |
+| time         | tijdstempel van de fout                                                    |
+| action       | actie die voorgekomen is                                                   |
+| tags         | tags geassocieerd met het bericht                                          |
 
 ## Meer informatie
 

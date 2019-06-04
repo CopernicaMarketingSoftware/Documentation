@@ -36,14 +36,16 @@ fouten ook een [webhook voor bounces](webhook-bounces) instellen.
 De Marketing Suite stuurt via HTTP of via HTTPS een POST bericht naar jouw server.
 Met elk POST bericht worden de volgende variabelen meegestuurd:
 
-| Variabele     | Description                                                                |
+| Variabele    | Description                                                                |
 |--------------|----------------------------------------------------------------------------|
 | id           | unieke id van de fout                                                      |
-| recipient    | e-mailadres van de fout                                                     |
-| state        | staat in het smtp protocol van de fout ("bounce" voor asynchrone bounces) |
-| code         | optionele smtp error code                                                   |
+| recipient    | e-mailadres van de fout                                                    |
+| state        | staat in het smtp protocol van de fout ("bounce" voor asynchrone bounces)  |
+| code         | optionele smtp error code                                                  |
 | extended     | optionele extended smtp status code                                        |
 | description  | optionele omschrijving van de fout                                         |
+| time         | tijdstempel van de fout                                                    |
+| action       | actie die voorgekomen is                                                   |
 | tags         | tags geassocieerd met het bericht                                          |
 
 De variabelen "id", "recipient" en "tags" stellen je in staat om de foutmelding te koppelen aan de oorspronkelijke mail.

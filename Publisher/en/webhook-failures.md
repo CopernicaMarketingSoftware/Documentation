@@ -41,6 +41,8 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 | code         | optional smtp error code                                                                  |
 | extended     | optional extended smtp status code                                                        |
 | description  | optional description of the error                                                         |
+| time         | timestamp of the failure                                                                  |
+| action       | describes the action                                                                      |
 | tags         | the tags that you associated with the mail                                                |
 
 The "id", "recipient" and "tags" variables allow you to link the failure to
