@@ -14,44 +14,46 @@ Associative arrays such as "parameters" and "fields" are sent per key-value pair
 e.g. *parameters[key]=value*.
 Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
-| Variables          | Description                                                                             |
-|--------------------|-----------------------------------------------------------------------------------------|
-| profile/subprofile | unique identifier of the profile/subprofile that was updated                            |
-| type               | which type of action was performed on the (sub)profile ('create', 'update' or 'delete') |
-| parameters         | parameters that the action was performed with                                           |
-| timestamp          | time when the (sub)profile was updated (in YYYY-MM-DD HH:MM:SS format)                  |
+For profiles this consists of the following variables:
+
+| Variable   | Description                                                                             |
+|------------|-----------------------------------------------------------------------------------------|
+| profile    | unique identifier of the profile that was updated                                       |
+| type       | which type of action was performed on the (sub)profile ('create', 'update' or 'delete') |
+| parameters | parameters that the action was performed with                                           |
+| timestamp  | time when the (sub)profile was updated (in YYYY-MM-DD HH:MM:SS format)                  |
+| id         | unique identifier of the profile                                                        |
+| database   | unique identifier of the database to which the profile belongs                          |
+| fields     | current fields of the profile                                                           |
+| interests  | current interests of the profile                                                        |
+| created    | time when the profile was created (in YYYY-MM-DD HH:MM:SS format)                       |
+| modified   | time when the profile was modified (in YYYY-MM-DD HH:MM:SS format)                      |
+
+For subprofiles, this consists of the following variables:
+
+| Variable    | Description                                                                             |
+|-------------|-----------------------------------------------------------------------------------------|
+| subprofile  | unique identifier of the subprofile that was updated                                    |
+| type        | which type of action was performed on the (sub)profile ('create', 'update' or 'delete') |
+| parameters  | parameters that the action was performed with                                           |
+| timestamp   | time when the (sub)profile was updated (in YYYY-MM-DD HH:MM:SS format)                  |
+| id          | unique identifier of the subprofile                                                     |
+| profile     | unique identifier of the profile to which this subprofile belongs                       |
+| database    | unique identifier of the database to which this subprofile belongs                      |
+| collection  | unique identifier of the collection to which this subprofile belongs                    |
+| fields      | current fields of the subprofile                                                        |
+| created     | time when the subprofile was created (in YYYY-MM-DD HH:MM:SS format)                    |
+| modified    | time when the subprofile was modified (in YYYY-MM-DD HH:MM:SS format)                   |
 
 The "action" variable will always have the value 'update'; this helps discern
 these messages from messages that are sent when a profile is
 [created](webhook-creates) or [deleted](webhook-deletes).
-Additional information about the profile or subprofile is also sent. 
-For profiles this consists of the following variables:
-
-| Variable  | Description                                                        |
-|-----------|--------------------------------------------------------------------|
-| id        | unique identifier of the profile                                   |
-| database  | unique identifier of the database to which the profile belongs     |
-| fields    | current fields of the profile                                      |
-| interests | current interests of the profile                                   |
-| created   | time when the profile was created (in YYYY-MM-DD HH:MM:SS format)  |
-| modified  | time when the profile was modified (in YYYY-MM-DD HH:MM:SS format) |
-
-For subprofiles, this consists of the following variables:
-
-| Variable   | Description                                                           |
-|------------|-----------------------------------------------------------------------|
-| id         | unique identifier of the subprofile                                   |
-| profile    | unique identifier of the profile to which this subprofile belongs     |
-| database   | unique identifier of the database to which this subprofile belongs    |
-| collection | unique identifier of the collection to which this subprofile belongs  |
-| fields     | current fields of the subprofile                                      |
-| created    | time when the subprofile was created (in YYYY-MM-DD HH:MM:SS format)  |
-| modified   | time when the subprofile was modified (in YYYY-MM-DD HH:MM:SS format) |
 
 ## Example
 
 A decoded POST request for a profile might look similar to this:
 
+```json
 {
     "action":       "update",
     "profile":      123,
@@ -72,9 +74,11 @@ A decoded POST request for a profile might look similar to this:
     "created":      "1979-02-12 12:49:23",
     "modified":     "1979-02-12 12:49:23"
 }
+```
 
 An example for a subprofile looks like this:
 
+```json
 {
     "action":       "update",
     "subprofile":   123,
@@ -93,6 +97,7 @@ An example for a subprofile looks like this:
     "created":    "1979-02-12 12:49:23",
     "modified":   "1979-02-12 12:49:23"
 }
+```
 
 ## More information
 
