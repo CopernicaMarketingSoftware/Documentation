@@ -133,5 +133,5 @@ property in the tag that includes the feed, survey or webform.
 
 ## More information
 
-* [Styling in Publisher](./emailing-publisher-styling)
+* [Styling in Publisher](./emailings-publisher-styling)
 * [CSS](./css)

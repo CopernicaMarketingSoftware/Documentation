@@ -65,7 +65,7 @@ options:
 ## More information
 
 Articles on styling in Publisher:
-* [Styling in Publisher](./emailing-publisher-styling)
+* [Styling in Publisher](./emailings-publisher-styling)
 * [XSLT](./xslt)
 
 External resources:
