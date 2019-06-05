@@ -24,6 +24,50 @@ en een massa mailing is 'massa'.
 en types van de entiteiten hierboven (bijvoorbeeld de database waar een 
 collectie onder valt).
 
+### JSON voorbeeld
+
+De JSON voor de mailing, die je kunt vinden onder de 'data' eigenschap 
+in de output ziet er bijvoorbeeld zo uit:
+
+```json
+Array
+(
+    [id] => 139
+    [timestamp] => 2015-01-13 15:09:49
+    [template] => 519
+    [subject] => Test
+    [from_address] => Array
+        (
+            [name] => Copernica
+            [email] => support@copernica.com
+        )
+
+    [destinations] => 5
+    [type] => mass
+    [target] => Array
+        (
+            [type] => database
+            [sources] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 7078
+                            [type] => database
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 7616
+                            [type] => database
+                        )
+
+                )
+
+        )
+
+)
+```
+
 ## PHP voorbeeld
 
 Het onderstaande script demonstreert hoe je deze API methode gebruikt. 

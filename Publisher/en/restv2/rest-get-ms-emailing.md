@@ -21,6 +21,50 @@ The method returns a JSON object containing the following information:
 * **target**: Contains the target type and the ID and type of other 
 entities above it (for example the database a collection belongs to).
 
+### JSON example
+
+The JSON for the emailing looks something like this and can be found in 
+the 'data' property of the output:
+
+```json
+Array
+(
+    [id] => 139
+    [timestamp] => 2015-01-13 15:09:49
+    [template] => 519
+    [subject] => Test
+    [from_address] => Array
+        (
+            [name] => Copernica
+            [email] => support@copernica.com
+        )
+
+    [destinations] => 5
+    [type] => mass
+    [target] => Array
+        (
+            [type] => database
+            [sources] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 7078
+                            [type] => database
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 7616
+                            [type] => database
+                        )
+
+                )
+
+        )
+
+)
+```
+
 ## PHP example
 
 The script below demonstrates how to use this API method. Don't forget 

@@ -6,14 +6,13 @@ De methode maakt een HTTP call naar het volgende adres:
 
 `https://api.copernica.com/v2/profile/{$profileID}/ms/emailings?access_token=xxxx`
 
-Je kunt de methode om alle Marketing Suite mailings op te vragen [hier](./rest-get-ms-emailings) vinden.
+Vergeet niet hier `{$profileID}` te vervangen door de ID van het profiel 
+waarvoor je de mailings op wilt vragen.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON array terug met een start index, limiet en 
-het totale aantal resultaten. Deze array bevat ook een data array met 
-de mailings die de parameters matchen. Elke mailing is een array die 
-de volgende informatie bevat:
+Deze methode geeft een JSON object met emailings. 
+Elke emailing bevat de volgende velden:
 
 * **id**: De ID van de mailing.
 * **timestamp**: Tijdstempel van de mailing.
@@ -27,6 +26,50 @@ en een massa mailing is 'massa'.
 * **target**: Bevat het type van het doelwit van de mailing en de ID 
 en types van de entiteiten hierboven (bijvoorbeeld de database waar een 
 collectie onder valt).
+
+### JSON voorbeeld
+
+De JSON die terug wordt gegeven bevat een property 'data', die een array 
+met alle emailings bevat. Een enkele emailing ziet er bijvoorbeeld zo uit:
+
+```json
+Array
+(
+    [id] => 139
+    [timestamp] => 2015-01-13 15:09:49
+    [template] => 519
+    [subject] => Test
+    [from_address] => Array
+        (
+            [name] => Copernica
+            [email] => support@copernica.com
+        )
+
+    [destinations] => 5
+    [type] => mass
+    [target] => Array
+        (
+            [type] => database
+            [sources] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 7078
+                            [type] => database
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 7616
+                            [type] => database
+                        )
+
+                )
+
+        )
+
+)
+```
 
 ## PHP Voorbeeld
 

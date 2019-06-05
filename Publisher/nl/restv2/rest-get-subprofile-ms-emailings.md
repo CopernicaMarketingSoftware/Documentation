@@ -6,7 +6,8 @@ De methode maakt een HTTP call naar het volgende adres:
 
 `https://api.copernica.com/v2/subprofile/{$subprofileID}/ms/emailings?access_token=xxxx`
 
-Je kunt de methode om alle Marketing Suite mailings op te vragen [hier](./rest-get-ms-emailings) vinden.
+Vergeet niet hier `{$subprofileID}` te vervangen door de ID van het subrofiel 
+waarvoor je de mailings op wilt vragen.
 
 ## Teruggegeven velden
 

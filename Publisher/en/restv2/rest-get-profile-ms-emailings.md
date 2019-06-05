@@ -5,13 +5,12 @@ specific profile. This is an HTTP GET call to the following address:
 
 `https://api.copernica.com/v2/profile/{$profileID}/ms/emailings?access_token=xxxx`
 
-This method also supports [paging parameters](./rest-paging).
+Don't forget to replace `{$profileID}` by the ID of the profile you 
+want to retrieve the emailings for.
 
 ## Returned fields
 
-The method returns a JSON array containing the start index, limit and 
-count. It also contains a data array with the mailings matching the 
-given parameters. For each mailing we return the following:
+The method returns a JSON object containing the following information for each mailing:
 
 * **id**: The ID of the mailing.
 * **timestamp**: Timestamp of the mailing.
@@ -22,6 +21,50 @@ given parameters. For each mailing we return the following:
 * **type**: Type of mailing (individual or mass).
 * **target**: Contains the target type and the ID and type of other 
 entities above it (for example the database a collection belongs to).
+
+### JSON example
+
+The JSON object will contain a property 'data' with an array containing all 
+the emailings. The JSON for a single emailing looks something like this:
+
+```json
+Array
+(
+    [id] => 139
+    [timestamp] => 2015-01-13 15:09:49
+    [template] => 519
+    [subject] => Test
+    [from_address] => Array
+        (
+            [name] => Copernica
+            [email] => support@copernica.com
+        )
+
+    [destinations] => 5
+    [type] => mass
+    [target] => Array
+        (
+            [type] => database
+            [sources] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 7078
+                            [type] => database
+                        )
+
+                    [1] => Array
+                        (
+                            [id] => 7616
+                            [type] => database
+                        )
+
+                )
+
+        )
+
+)
+```
 
 ## PHP Example
 

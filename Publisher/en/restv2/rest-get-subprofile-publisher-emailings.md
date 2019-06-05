@@ -5,6 +5,9 @@ This is an HTTP GET call to the following address:
 
 `https://api.copernica.com/v2/subprofile/{$subprofileID}/publisher/emailings?access_token=xxxx`
 
+Don't forget to replace `{$subprofileID}` by the ID of the subprofile you 
+want to retrieve the emailings for.
+
 ## Available parameters
 
 * **type**: The type of mailing between mass or individual, defaults to both.
