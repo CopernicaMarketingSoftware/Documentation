@@ -26,16 +26,63 @@ filtered if you don't pass any of them.
 The method returns a JSON object with several emailings in the **data** field. 
 Each emailing contains the following fields:
 
-* **id**: The ID of the mailing.
-* **timestamp**: The timestamp.
+* **id**: The ID of the mailing
+* **timestamp**: The timestamp
+* **document**: ID of the document used for the mailing
+* **template**: ID of the template used for the mailing
+* **subject**: Subject of the mailing
+* **from_address**: The from address of the mailing as an array. (With properties 'name' and 'email')
 * **destinations**: The number of destinations.
+* **testgroups**: Amount of testgroups
+* **finalgroup**: ID of the final group (only relevant in case of a splitrun)
 * **type**: The type of mailing: mass or individual.
-* **embedded**: Indicates whether the images in the mailing are embedded or not. 
+* **clicks**: Amount of clicks for this mailing
+* **impressions**: Amount of opens for this mailing
 * **contenttype**: The type of content in the mailing: html, text or both.
-* **registerclicks**: Boolean to indicate whether clicks should be registered for this mailing or not.
-* **registerimpressions**: Boolean to indicate whether impressions should be registered for this mailing or not.
-* **registererrors**: Boolean to indicate whether errors should be registered for this mailing or not.
 * **target**: Array containing the target type and the ID and type of its sources (for example the database a collection belongs to).
+
+### Example
+
+The JSON might look something like this:
+
+```json
+Array
+(
+    [id] => 1181
+    [timestamp] => 2010-04-14 15:02:14
+    [document] => 104
+    [template] => 61
+    [subject] => "Hello!"
+    [from_address] => Array
+        (
+            [name] => Copernica BV
+            [email] => support@copernica.com
+        )
+
+    [destinations] => 1
+    [testgroups] => 0
+    [finalgroup] => 1409
+    [type] => individual
+    [clicks] => 5
+    [impressions] => 2
+    [contenttype] => html
+    [target] => Array
+        (
+            [type] => database
+            [sources] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 478
+                            [type] => database
+                        )
+
+                )
+
+        )
+
+)
+```
 
 ## PHP example
 
