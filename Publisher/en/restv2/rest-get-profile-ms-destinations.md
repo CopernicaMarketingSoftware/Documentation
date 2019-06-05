@@ -1,8 +1,9 @@
-# REST API: GET destinations (profile)
+# REST API: GET MS destinations (profile)
 
-You can retrieve the destinations for a profile by sending an HTTP GET call to the following URL:
+You can retrieve the Marketing Suite destinations for a profile by 
+sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v2/profile/$id/destinations?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id/ms/destinations?access_token=xxxx`
 
 Where the `$id` should be replaced with the ID of the profile. This method 
 also support the use of the [fields parameter](./rest-fields-parameter) 
@@ -31,7 +32,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // execute the call
-print_r($api->get("profile/{$profileID}/destinations/"));
+print_r($api->get("profile/{$profileID}/ms/destinations/"));
 ```
 
 This example requires the [REST API class](./rest-php).
@@ -40,6 +41,7 @@ This example requires the [REST API class](./rest-php).
 
 * [Overview of all REST API calls](./rest-api)
 * [Retrieve a profile](./rest-get-profile)
+* [Retrieve a MS destination](./rest-get-ms-destination)
 
 
 
