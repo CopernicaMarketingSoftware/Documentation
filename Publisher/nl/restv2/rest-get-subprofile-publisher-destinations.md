@@ -1,9 +1,9 @@
-# REST API: GET destinations (subprofiel)
+# REST API: GET Publisher destinations (subprofiel)
 
-Je kan de destinations van een subprofiel opvragen met 
+Je kan de Publisher destinations van een subprofiel opvragen met 
 een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v2/subprofile/$id/destinations?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id/publisher/destinations?access_token=xxxx`
 
 Hier moet `$id` vervangen worden door de ID van het subprofiel. Deze methode 
 ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
@@ -16,6 +16,7 @@ is de volgende informatie beschikbaar:
 
 * **ID**: De ID van de destination.
 * **timestampsent**: De tijdstempel van het aankomen van de mailing bij deze destination.
+* **internal**: De interne ID van deze destination.
 * **profile**: De ID van het profiel van deze destination.
 * **subprofile**: De ID van het subprofiel van deze destination.
 * **mailing**: De ID van de mailing.
@@ -32,7 +33,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-print_r($api->get("subprofile/{$subprofileID}/destinations/"));
+print_r($api->get("subprofile/{$subprofileID}/publisher/destinations/"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
@@ -41,6 +42,7 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 
 * [Overzicht van alle calls](./rest-api)
 * [Opvragen van een subprofiel](./rest-get-subprofile)
+* [Opvragen van een Publisher destination](./rest-get-publisher-destination)
 
 
 

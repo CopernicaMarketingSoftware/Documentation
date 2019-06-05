@@ -175,34 +175,41 @@ in de onderstaande tabel.
 
 ### Profielen
 
-| Type   | Adres                                                                                          | Omschrijving                                          |
-|--------|------------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                    | Aanmaken van een database profiel                     |
-| GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                         | Opvragen van profiel informatie                       |
-| PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                         | Updaten van profiel informatie                        |
-| DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                      | Verwijderen van een profiel                           |
-| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)                 | Opvragen van alle profiel subprofielen                |
-| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)                | Aanmaken van een nieuw profiel subprofiel             |
-| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)                 | Updaten van een of meerdere profiel subprofielen      |
-| GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                           | Opvragen van alle profiel velden                      |
-| PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                           | Updaten van een of meerdere profiel velden            |
-| GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                     | Opvragen van alle profiel interesses                  |
-| POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                    | Aanmaken van profiel interesse(s)                     |
-| PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                     | Updaten van profiel interesse(s)                      |
-| GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings) | Opvragen van alle Publisher mailings voor een profiel |
-| POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)                | Aanmaken van een dataverzoek voor een profiel         |
+| Type   | Adres                                                                                                | Omschrijving                                                      |
+|--------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                          | Aanmaken van een database profiel                                 |
+| GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                               | Opvragen van profiel informatie                                   |
+| PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                               | Updaten van profiel informatie                                    |
+| DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                            | Verwijderen van een profiel                                       |
+| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)                       | Opvragen van alle profiel subprofielen                            |
+| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)                      | Aanmaken van een nieuw profiel subprofiel                         |
+| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)                       | Updaten van een of meerdere profiel subprofielen                  |
+| GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                                 | Opvragen van alle profiel velden                                  |
+| PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                                 | Updaten van een of meerdere profiel velden                        |
+| GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                           | Opvragen van alle profiel interesses                              |
+| POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                          | Aanmaken van profiel interesse(s)                                 |
+| PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                           | Updaten van profiel interesse(s)                                  |
+| GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)       | Opvragen van alle Publisher mailings voor een profiel             |
+| GET    | [api.copernica.com/v2/profile/$id/ms/emailings](./rest-get-profile-ms-emailings)                     | Opvragen van alle Marketing Suite mailings voor een profiel       |
+| GET    | [api.copernica.com/v2/profile/$id/publisher/destinations](./rest-get-profile-publisher-destinations) | Opvragen van alle Publisher destinations voor een profiel         |
+| GET    | [api.copernica.com/v2/profile/$id/ms/destinations](./rest-get-profile-ms-destinations)               | Opvragen van alle Marketing Suite destinations voor een profiel   |
+| POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)                      | Aanmaken van een dataverzoek voor een profiel                     |
 
 ### Subprofielen
 
-| Type   | Adres                                                                                        | Omschrijving                                     |
-|--------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
-| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Aanmaken van een subprofiel                      |
-| GET    | [api.copernica.com/v2/subprofile/$id](./rest-get-subprofile)                                 | Opvragen van subprofiel informatie               |
-| PUT    | [api.copernica.com/v2/subprofile/$id](./rest-put-subprofile)                                 | Updaten van subprofiel informatie                |
-| DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                              | Verwijderen van een subprofiel                   |
-| GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Opvragen van alle subprofiel velden              |
-| PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                   | Updaten van subprofiel velden                    |
-| POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Aanmaken van een dataverzoek voor een subprofiel |
+| Type   | Adres                                                                                                        | Omschrijving                                                          |
+|--------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)                              | Aanmaken van een subprofiel                                           |
+| GET    | [api.copernica.com/v2/subprofile/$id](./rest-get-subprofile)                                                 | Opvragen van subprofiel informatie                                    |
+| PUT    | [api.copernica.com/v2/subprofile/$id](./rest-put-subprofile)                                                 | Updaten van subprofiel informatie                                     |
+| DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                                              | Verwijderen van een subprofiel                                        |
+| GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                                   | Opvragen van alle subprofiel velden                                   |
+| PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                                   | Updaten van subprofiel velden                                         |
+| GET    | [api.copernica.com/v2/subprofile/$id/publisher/emailings](./rest-get-subprofile-publisher-emailings)         | Opvragen van alle Publisher mailings voor een subprofiel              |
+| GET    | [api.copernica.com/v2/subprofile/$id/ms/emailings](./rest-get-subprofile-ms-emailings)                       | Opvragen van alle Marketing Suite mailings voor een subprofiel        |    
+| GET    | [api.copernica.com/v2/subprofile/$id/publisher/destinations](./rest-get-subprofile-publisher-destinations)   | Opvragen van alle Publisher destinations voor een subprofiel          |
+| GET    | [api.copernica.com/v2/subprofile/$id/ms/destinations](./rest-get-subprofile-ms-destinations)                 | Opvragen van alle Marketing Suite destinations voor een subprofiel    |
+| POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)                        | Aanmaken van een dataverzoek voor een subprofiel                      |
 
 ## E-mailadressen
 

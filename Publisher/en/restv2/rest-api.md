@@ -173,34 +173,41 @@ like your customers or orders. The relevant API calls can be found below.
 
 ### Profile
 
-| Type   | Address                                                                                        | Description                                        |
-|--------|------------------------------------------------------------------------------------------------|----------------------------------------------------|
-| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                    | Create a new database profile                      |
-| GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                         | Fetch the profile information                      |
-| PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                         | Update the profile information                     |
-| DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                      | Delete a profile                                   |
-| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)                 | Fetch all profile subprofiles                      |
-| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)                | Create a new profile subprofile                    |
-| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)                 | Update one or multiple profile subprofiles         |
-| GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                           | Fetch all profile fields                           |
-| PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                           | Update one or multiple profile fields              |
-| GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                     | Fetch all profile interests                        |
-| POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                    | Create profile interest(s)                         |
-| PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                     | Update profile interest(s)                         |
-| GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings) | Fetch all Publisher mailings for a profile         |
-| POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)                | Create a request for all data stored for a profile |
+| Type   | Address                                                                                              | Description                                           |
+|--------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                          | Create a new database profile                         |
+| GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                               | Fetch the profile information                         |
+| PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                               | Update the profile information                        |
+| DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                            | Delete a profile                                      |
+| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)                       | Fetch all profile subprofiles                         |
+| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)                      | Create a new profile subprofile                       |
+| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)                       | Update one or multiple profile subprofiles            |
+| GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                                 | Fetch all profile fields                              |
+| PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                                 | Update one or multiple profile fields                 |
+| GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                           | Fetch all profile interests                           |
+| POST   | [api.copernica.com/v2/profile/$id/interests](./rest-post-profile-interests)                          | Create profile interest(s)                            |
+| PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                           | Update profile interest(s)                            |
+| GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)       | Fetch all Publisher mailings for a profile            |
+| GET    | [api.copernica.com/v2/profile/$id/ms/emailings](./rest-get-profile-ms-emailings)                     | Fetch all Marketing Suite mailings for a profile      |
+| GET    | [api.copernica.com/v2/profile/$id/publisher/destinations](rest-get-profile-publisher-destinations)   | Fetch all Publisher destinations for a profile        |
+| GET    | [api.copernica.com/v2/profile/$id/ms/destination](rest-get-profile-ms-destinations)                  | Fetch all Marketing Suite destinations for a profile  |
+| POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)                      | Create a request for all data stored for a profile    |
 
 ### Subprofile
 
-| Type   | Address                                                                                      | Description                                           |
-|--------|----------------------------------------------------------------------------------------------|-------------------------------------------------------|
-| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)              | Create a new subprofile                               |
-| GET    | [api.copernica.com/v2/subprofile/$id](./rest-get-subprofile)                                 | Fetch the subprofile information                      |
-| PUT    | [api.copernica.com/v2/subprofile/$id](./rest-put-subprofile)                                 | Update the subprofile information                     |
-| DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                              | Delete a subprofile                                   |
-| GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                   | Fetch all subprofile fields                           |
-| PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                   | Update the subprofile fields                          |
-| POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Create a request for all data stored for a subprofile |
+| Type   | Address                                                                                                  | Description                                             |
+|--------|----------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
+| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)                          | Create a new subprofile                                 |
+| GET    | [api.copernica.com/v2/subprofile/$id](./rest-get-subprofile)                                             | Fetch the subprofile information                        |
+| PUT    | [api.copernica.com/v2/subprofile/$id](./rest-put-subprofile)                                             | Update the subprofile information                       |
+| DELETE | [api.copernica.com/v2/subprofile/$id](./rest-delete-subprofile)                                          | Delete a subprofile                                     |
+| GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                               | Fetch all subprofile fields                             |
+| PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                               | Update the subprofile fields                            |
+| GET    | [api.copernica.com/v2/subprofile/$id/publisher/emailings](./rest-get-subprofile-publisher-emailings)     | Fetch all Publisher mailings for a subprofile           |
+| GET    | [api.copernica.com/v2/subprofile/$id/ms/emailings](./rest-get-subprofile-ms-emailings)                   | Fetch all Marketing Suite mailings for a subprofile     |
+| GET    | [api.copernica.com/v2/subprofile/$id/publisher/destinations](rest-get-subprofile-publisher-destinations) | Fetch all Publisher destinations for a subprofile       |
+| GET    | [api.copernica.com/v2/subprofile/$id/ms/destination](rest-get-subprofile-ms-destinations)                | Fetch all Marketing Suite destinations for a subprofile |
+| POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)                    | Create a request for all data stored for a subprofile   |
 
 ## Email Addresses
 
