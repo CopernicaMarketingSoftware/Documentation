@@ -24,25 +24,80 @@ die *geen* test waren ("no") of alle mailings ("both"). Standaardwaarde "both".
 
 Deze methode ondersteunt ook [paging parameters](./rest-paging).
 
+## Beschikbare parameters
+
+* **type**: Het type mailings om op te vragen: Massa ('mass') mailings, individuele ('individual') mailings 
+of alle mailings ('both').
+* **followups**: Geeft aan of we alleen emailings van opvolgacties ('yes') opvragen, 
+alleen emailings die geen gevolg zijn van een opvolgactie ('no') of alle emailings ('both').
+* **test**: Geeft aan of we alleen test emailings ('yes') opvragen, alleen 
+mailings die geen test waren ('no') of alle mailings ('both').
+
+De standaardwaarde van al deze parameters is 'both'. Als je geen parameters 
+meegeeft krijg je dus alle emailings zonder dat er een filter wordt toegepast.
+
 ## Teruggegeven velden
 
-Deze methode geeft een JSON array terug met een start index, limiet en 
-het totale aantal resultaten. Deze array bevat ook een data array met 
-de mailings die de parameters matchen. Elke mailing is een array die 
-de volgende informatie bevat:
+Deze methode geeft een JSON object met meerdere emailings onder het **data** 
+veld. Elke mailing bevat de volgende informatie:
 
 * **id**: De ID van de mailing. 
 * **timestamp**: De tijdstempel van de mailing.
+* **document**: ID van het document gebruikt voor de mailing.
+* **template**: ID van de template gebruikt voor de mailing.
+* **subject**: Onderwerp van de mailing.
+* **from_address**: Afzenderadres van de mailing als een array (met 'name' en 'email' als waarden)
 * **destinations**: Het aantal destinations van de mailing.
-* **document**: ID van het emailing document
-* **template**: ID van de emailing template
-* **subject**: Het onderwerp van de mailing
-* **from_address**: Een array met de naam ('name') en het e-mailadres ('email') van de afzender.
-* **type**: Het type van de mailing: 'mass' (massa mailing) of 'individual' (individuele mailing). Vraagt 
-standaard beide op.
-* **embedded**: Boolean die aangeeft of de afbeeldingen in de mailing ingebed zijn of niet.
+* **testgroups**: Het aantal testgroepen (alleen bij AB test of splitrun)
+* **finalgroup**: ID van de finalgroup (alleen relevant voor een splitrun mailing)
+* **type**: Het type van de mailing: 'mass' (massa mailing) of 'individual' (individuele mailing).
+* **clicks**: Aantal kliks voor deze mailing.
+* **impressions**: Aantal opens voor deze mailing.
 * **contenttype**: Het type content in de mailing: 'html', 'text' of 'both' (beide).
 * **target**: Array die het target type en de ID en het type van zijn sources bevat (een source is bijvoorbeeld de database waartoe een collectie behoort).
+
+### Voorbeeld
+
+De JSON ziet er bijvoorbeeld zo uit:
+
+```json
+Array
+(
+    [id] => 1181
+    [timestamp] => 2010-04-14 15:02:14
+    [document] => 104
+    [template] => 61
+    [subject] => "Hello!"
+    [from_address] => Array
+        (
+            [name] => Copernica BV
+            [email] => support@copernica.com
+        )
+
+    [destinations] => 1
+    [testgroups] => 0
+    [finalgroup] => 1409
+    [type] => individual
+    [clicks] => 5
+    [impressions] => 2
+    [contenttype] => html
+    [target] => Array
+            (
+            [type] => database
+            [sources] => Array
+                (
+                    [0] => Array
+                        (
+                            [id] => 478
+                            [type] => database
+                        )
+
+                )
+
+        )
+
+)
+```
 
 ## PHP Voorbeeld
 

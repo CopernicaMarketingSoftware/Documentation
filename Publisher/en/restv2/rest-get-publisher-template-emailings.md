@@ -23,8 +23,8 @@ filtered if you don't pass any of them.
 
 ## Returned fields
 
-The method returns a JSON object with several emailings in the **data** field. 
-Each emailing contains the following fields:
+The method returns a JSON object representing an emailing in the **data** field. 
+The emailing contains the following fields:
 
 * **id**: The ID of the mailing
 * **timestamp**: The timestamp
