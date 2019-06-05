@@ -27,7 +27,7 @@ The emailing contains the following fields:
 * **contenttype**: The type of content in the mailing: html, text or both.
 * **target**: Array containing the target type and the ID and type of its sources (for example the database a collection belongs to).
 
-### Example
+## JSON Example
 
 The JSON might look something like this:
 

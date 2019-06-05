@@ -39,7 +39,7 @@ veld. De mailing bevat de volgende informatie:
 * **contenttype**: Het type content in de mailing: 'html', 'text' of 'both' (beide).
 * **target**: Array die het target type en de ID en het type van zijn sources bevat (een source is bijvoorbeeld de database waartoe een collectie behoort).
 
-### Voorbeeld
+## JSON Voorbeeld
 
 De JSON ziet er bijvoorbeeld zo uit:
 

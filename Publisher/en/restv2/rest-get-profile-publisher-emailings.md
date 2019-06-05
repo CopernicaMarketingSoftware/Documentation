@@ -21,8 +21,6 @@ that were *not* a test ("no") or all mailings ("both"). Defaults to "both".
 * **fromdate**: Only retrieve mailings sent after this date.
 * **todate**: Only retrieve mailings sent before this date.
 
-This method also supports [paging parameters](./rest-paging).
-
 ## Returned fields
 
 The method returns a JSON object with several emailings in the **data** field. 
@@ -43,7 +41,7 @@ Each emailing contains the following fields:
 * **contenttype**: The type of content in the mailing: html, text or both.
 * **target**: Array containing the target type and the ID and type of its sources (for example the database a collection belongs to).
 
-### Example
+## JSON Example
 
 The JSON might look something like this:
 
