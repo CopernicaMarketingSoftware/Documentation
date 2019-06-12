@@ -11,8 +11,8 @@ for the **timestamp** field.
 
 ## Returned fields
 
-The method returns a JSON object with several abuses. For each abuse 
-the following information is available:
+The method returns a JSON object with several abuses under the 'data' property. 
+For each abuse the following information is available:
 
 * **ID**: The ID of the abuse.
 * **mailing**: The ID of the mailing.
@@ -21,6 +21,24 @@ the following information is available:
 * **destination**: The ID of the destination that reported the abuse.
 * **profile**: The ID of the profile that reported the abuse.
 * **subprofile**: The ID of the subprofile that reported the abuse.
+
+### JSON example
+
+A single abuse might look something like this:
+
+```json
+{  
+   "ID":"12",
+   "mailing":"233482",
+   "timestamp":"2019-03-05 14:44:52",
+   "report":{  
+
+   },
+   "destination":"1264524",
+   "profile":null,
+   "subprofile":null
+}
+```
 
 ## PHP example
 

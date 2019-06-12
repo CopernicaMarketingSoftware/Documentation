@@ -26,6 +26,23 @@ with emailing templates. Each template contains the following information:
 * **subject**: The template subject.
 * **type**: The template type ('json' or 'html').
 
+### JSON example
+
+A single template will look something like this:
+
+```json
+{  
+   "id":"2820",
+   "name":"Theme: conference",
+   "from_address":{  
+      "name":"Infinity",
+      "email":"info@valtaf.nl"
+   },
+   "subject":"Infinity conference",
+   "type":"json"
+}
+```
+
 ## PHP example
 
 The script below demonstrates how to use this API method.

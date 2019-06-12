@@ -17,6 +17,23 @@ The method returns a JSON object containing the following information:
 * **subject**: The template subject.
 * **type**: The template type ('json' or 'html').
 
+### JSON example 
+
+The JSON will look something like this:
+
+```json
+{  
+   "id":"2820",
+   "name":"Theme: conference",
+   "from_address":{  
+      "name":"Infinity",
+      "email":"info@valtaf.nl"
+   },
+   "subject":"Infinity conference",
+   "type":"json"
+}
+```
+
 ## PHP example
 
 The script below demonstrates how to use this API method. Don't forget 

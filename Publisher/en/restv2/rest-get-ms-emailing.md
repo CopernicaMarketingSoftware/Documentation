@@ -27,42 +27,27 @@ The JSON for the emailing looks something like this and can be found in
 the 'data' property of the output:
 
 ```json
-Array
-(
-    [id] => 139
-    [timestamp] => 2015-01-13 15:09:49
-    [template] => 519
-    [subject] => Test
-    [from_address] => Array
-        (
-            [name] => Copernica
-            [email] => support@copernica.com
-        )
-
-    [destinations] => 5
-    [type] => mass
-    [target] => Array
-        (
-            [type] => database
-            [sources] => Array
-                (
-                    [0] => Array
-                        (
-                            [id] => 7078
-                            [type] => database
-                        )
-
-                    [1] => Array
-                        (
-                            [id] => 7616
-                            [type] => database
-                        )
-
-                )
-
-        )
-
-)
+{  
+   "id":"169",
+   "timestamp":"2015-01-13 15:09:49",
+   "template":"579",
+   "subject":"Test",
+   "from_address":{  
+      "name":"Test",
+      "email":"test@copernica.com"
+   },
+   "destinations":25,
+   "type":"mass",
+   "target":{  
+      "type":"database",
+      "sources":[  
+         {  
+            "id":"7578",
+            "type":"database"
+         }
+      ]
+   }
+}
 ```
 
 ## PHP example

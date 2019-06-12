@@ -34,42 +34,32 @@ en het aantal unieke impressies respectievelijk.
 Hieronder vind je een voorbeeld van zo'n JSON object:
 
 ```json
-Array
-(
-    [destinations]  =>  1
-    [abuses] => Array
-        (
-            [total] => 0
-        )
-        
-    [clicks] => Array
-        (
-            [total] => 3
-            [unique] => 1
-        )
-        
-    [errors] => Array
-        (
-            [total] => 0
-        )
-        
-    [impressions] => Array
-        (
-            [total] => 1
-            [unique] => 1
-        )
-        
-    [retries] => Array
-        (
-            [total] => 0
-        )
-        
-    [unsubscribes]  =>  Array
-        (   
-            [total] => 1
-        )
-        
-)
+{  
+   "destinations":"13801",
+   "abuses":{  
+      "total":0
+   },
+   "clicks":{  
+      "total":15,
+      "unique":11
+   },
+   "deliveries":{  
+      "total":39
+   },
+   "errors":{  
+      "total":0
+   },
+   "impressions":{  
+      "total":24,
+      "unique":18
+   },
+   "retries":{  
+      "total":0
+   },
+   "unsubscribes":{  
+      "total":0
+   }
+}
 ```
 
 ## PHP voorbeeld

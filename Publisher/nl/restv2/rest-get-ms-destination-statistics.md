@@ -13,7 +13,7 @@ Hier moet `$id` vervangen worden door de ID van de destination.
 
 Het JSON object bevat de volgende velden:
 
-* **ID**: De identifier van de destination
+* **ID**: ID van de statistieken voor deze destination.
 * **abuses**: Array met het veld 'total' voor het aantal abuses.
 * **clicks**: Array met de velden 'total' en 'unique' voor het aantal kliks 
 en het aantal unieke kliks respectievelijk.
@@ -22,48 +22,34 @@ en het aantal unieke kliks respectievelijk.
 * **impressions**: Array met de velden 'total' en 'unique' voor het aantal impressies 
 en het aantal unieke impressies respectievelijk.
 * **retries**: Array met het veld 'total' voor het aantal retries.
-* **unsubscribes**: Array met het veld 'total' voor het aantal unsubscribes.
 
 ### Voorbeeld
 
 Hieronder vind je een voorbeeld van zo'n JSON object:
 
 ```json
-Array
-(
-    [ID]     => 1234
-    [abuses] => Array
-        (
-            [total] => 0
-        )
-        
-    [clicks] => Array
-        (
-            [total] => 3
-            [unique] => 1
-        )
-        
-    [deliveries] => Array
-        (
-            [total] => 1
-        )
-        
-    [errors] => Array
-        (
-            [total] => 0
-        )
-        
-    [impressions] => Array
-        (
-            [total] => 0
-        )
-        
-    [retries] => Array
-        (
-            [total] => 0
-        )
-        
-)
+{  
+   "ID":"735929",
+   "abuses":{  
+      "total":0
+   },
+   "clicks":{  
+      "total":3,
+      "unique":2
+   },
+   "deliveries":{  
+      "total":0
+   },
+   "errors":{  
+      "total":1
+   },
+   "impressions":{  
+      "total":4
+   },
+   "retries":{  
+      "total":0
+   }
+}
 ```
 
 ## PHP voorbeeld

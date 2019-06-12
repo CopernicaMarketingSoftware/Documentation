@@ -12,7 +12,7 @@ Where the `$id` should be replaced with the ID of the destination.
 
 The following fields are available in the JSON object:
 
-* **ID**: The identifier of the destination
+* **ID**: ID of the destination statistics report.
 * **abuses**: An array with field 'total' for the total 
 number of abuses.
 * **clicks**: An array with fields 'total' and 'unique' for the total 
@@ -31,41 +31,28 @@ number of retries.
 The JSON output will look something like this:
 
 ```json
-Array
-(
-    [ID]     => 1234
-    [abuses] => Array
-        (
-            [total] => 0
-        )
-        
-    [clicks] => Array
-        (
-            [total] => 3
-            [unique] => 1
-        )
-        
-    [deliveries] => Array
-        (
-            [total] => 1
-        )
-        
-    [errors] => Array
-        (
-            [total] => 0
-        )
-        
-    [impressions] => Array
-        (
-            [total] => 0
-        )
-        
-    [retries] => Array
-        (
-            [total] => 0
-        )
-        
-)
+{  
+   "ID":"735929",
+   "abuses":{  
+      "total":0
+   },
+   "clicks":{  
+      "total":3,
+      "unique":2
+   },
+   "deliveries":{  
+      "total":0
+   },
+   "errors":{  
+      "total":1
+   },
+   "impressions":{  
+      "total":4
+   },
+   "retries":{  
+      "total":0
+   }
+}
 ```
 
 ## PHP example

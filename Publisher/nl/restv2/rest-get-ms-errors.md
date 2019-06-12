@@ -12,8 +12,8 @@ voor het **timestamp** veld.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug met errors. Voor elke error 
-is de volgende informatie beschikbaar:
+Deze methode geeft een JSON object terug met errors onder het 'data' veld. 
+Voor elke error is de volgende informatie beschikbaar:
 
 * **ID**: The ID van de error.
 * **mailing**: The ID van de mailing.
@@ -25,6 +25,25 @@ is de volgende informatie beschikbaar:
 * **destination**: De ID van de destination die de error veroorzaakte.
 * **profile**: De ID van het profiel die de error veroorzaakte.
 * **subprofile**: De ID van het subprofiel die de error veroorzaakte.
+
+### JSON voorbeeld
+
+Een enkele error ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"2",
+   "mailing":"234",
+   "timestamp":"2015-03-09 15:36:39",
+   "status":null,
+   "errorcode":"0",
+   "description":"No valid from address is set",
+   "errortype":"",
+   "destination":"764416",
+   "profile":null,
+   "subprofile":null
+}
+```
 
 ## PHP voorbeeld
 

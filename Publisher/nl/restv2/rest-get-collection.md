@@ -10,11 +10,58 @@ Als `$id` moet je de numerieke identifier van de collectie opgeven.
 
 ## Geretourneerde velden
 
+De methode retourneert een JSON object dat de volgende velden bevat:
+
 | Variabele    | Omschrijving                                      |
 |--------------|---------------------------------------------------|
-| name         | Naam van de collectie                             |
-| database     | ID van de database waartoe de collectie behoort   |
-| fields       | Array met de velden in de collectie               |
+| ID           | ID van de collectie.                              |
+| name         | Naam van de collectie.                            |
+| database     | ID van de database waartoe de collectie behoort.  |
+| fields       | Array met de velden in de collectie.              |
+
+### JSON voorbeeld
+
+De JSON voor een collectie ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"25935",
+   "name":"Orders",
+   "database":"7453",
+   "fields":{  
+      "start":0,
+      "limit":100,
+      "count":7,
+      "data":[  
+         {  
+            "ID":"9277",
+            "name":"email",
+            "type":"email",
+            "value":"test@copernica.nl",
+            "displayed":true,
+            "ordered":false,
+            "length":"100",
+            "textlines":"0",
+            "hidden":false,
+            "index":false
+         },
+         {  
+            "ID":"9879",
+            "name":"order_number",
+            "type":"integer",
+            "value":"0",
+            "displayed":true,
+            "ordered":false,
+            "length":"100",
+            "textlines":"0",
+            "hidden":false,
+            "index":false
+         }
+      ],
+      "total":2
+   }
+}
+```
 
 ## Voorbeeld in PHP
 

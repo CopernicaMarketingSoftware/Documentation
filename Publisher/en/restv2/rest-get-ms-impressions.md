@@ -11,7 +11,7 @@ for the **timestamp** field.
 
 ## Returned fields
 
-The method returns a JSON object with several XXX. For each XXX 
+The method returns a JSON object with several impressions. For each impression 
 the following information is available:
 
 * **ID**: The ID of the impression.         
@@ -22,6 +22,23 @@ the following information is available:
 * **destination**: The ID of the destination that caused an impression.
 * **profile**: The ID of the profile that caused an impression.
 * **subprofile**: The ID of the subprofile that caused an impression.
+
+### JSON example
+
+A single impression might look something like this:
+
+```json
+{  
+   "ID":"1",
+   "mailing":"412",
+   "timestamp":"2014-10-09 13:41:46",
+   "ip":"2a03:e280:0:1::1",
+   "useragent":"Mozilla\/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko\/20100101 Firefox\/8.0",
+   "destination":"112",
+   "profile":13453,
+   "subprofile":null
+}
+```
 
 ## PHP example
 

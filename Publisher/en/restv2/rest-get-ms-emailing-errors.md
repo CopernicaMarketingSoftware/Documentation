@@ -25,6 +25,25 @@ the following information is available:
 * **profile**: The ID of the profile that caused an error.
 * **subprofile**: The ID of the subprofile that caused an error.
 
+### JSON example
+
+A single error might look something like this:
+
+```json
+{  
+   "ID":"2",
+   "mailing":"234",
+   "timestamp":"2015-03-09 15:36:39",
+   "status":null,
+   "errorcode":"0",
+   "description":"No valid from address is set",
+   "errortype":"",
+   "destination":"764416",
+   "profile":null,
+   "subprofile":null
+}
+```
+
 ## PHP example
 
 This script demonstrates how to use this API method:
