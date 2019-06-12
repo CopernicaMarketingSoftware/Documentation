@@ -13,8 +13,8 @@ voor het **timestamp** veld.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug met clicks. Voor elke click 
-is de volgende informatie beschikbaar:
+Deze methode geeft een JSON object terug met clicks onder het 'data' veld. 
+Voor elke click is de volgende informatie beschikbaar:
 
 * **ID**: ID van de click.
 * **link_id**: ID van de geklikte link.
@@ -28,6 +28,27 @@ is de volgende informatie beschikbaar:
 * **destination**: De destination waar de click vandaan kwam.
 * **profile**: De ID van het profiel waar de click vandaan kwam.
 * **subprofile**: De ID van het subprofiel waar de click vandaan kwam (als deze beschikbaar is).
+
+### JSON voorbeeld
+
+De JSON van een enkele click ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"19431",
+   "link_id":"3145",
+   "link":"{webversion}",
+   "link_title":"",
+   "timestamp":"2010-11-03 15:07:33",
+   "ip":"0.0.0.0",
+   "useragent":"Firefox 3.6, WinXP",
+   "referer":null,
+   "emailing":"1914",
+   "destination":"823456",
+   "profile":"2290961",
+   "subprofile":null
+}
+```
 
 ## PHP voorbeeld
 

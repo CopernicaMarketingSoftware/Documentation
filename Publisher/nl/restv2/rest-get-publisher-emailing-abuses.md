@@ -13,8 +13,8 @@ voor het **timestamp** veld.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug met abuses. Voor elke abuse 
-is de volgende informatie beschikbaar:
+Deze methode geeft een JSON object terug met abuses onder het 'data' veld. 
+Voor elke abuse is de volgende informatie beschikbaar:
 
 * **ID**: ID van de abuse.
 * **timestamp**: Tijdstempel van de abuse.
@@ -26,6 +26,25 @@ is de volgende informatie beschikbaar:
 * **destination**: ID van de destination.
 * **profile**: ID van het profiel.
 * **subprofile**: ID van het subprofiel (als deze beschikbaar is)
+
+### JSON voorbeeld
+
+Een enkele abuse ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"2",
+   "timestamp":"2009-12-01 10:00:00",
+   "recognized_as":"arf",
+   "feedback_type":"opt-out",
+   "arf_version":"0.1",
+   "details":"",
+   "emailing":"613",
+   "destination":"60716",
+   "profile":"2231853",
+   "subprofile":null
+}
+```
 
 ## PHP voorbeeld
 

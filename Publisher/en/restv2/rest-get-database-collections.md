@@ -12,7 +12,7 @@ name of the database of which you want to request the collections.
 
 The following parameters can be added to the URL as variables:
 
-| Parameter | Description |
+| Parameter | Description                                                        |
 |-----------|--------------------------------------------------------------------|
 | **start** | The first collection to be requested.                              |
 | **limit** | Length of the requested batch.                                     |

@@ -13,8 +13,8 @@ voor het **timestamp** veld.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug met deliveries. Voor elke delivery 
-is de volgende informatie beschikbaar:
+Deze methode geeft een JSON object terug met deliveries onder het 'data' veld. 
+Voor elke delivery is de volgende informatie beschikbaar:
 
 * **ID**: De ID van de delivery.     
 * **timestamp**: De tijdstempel van de delivery.
@@ -24,6 +24,23 @@ is de volgende informatie beschikbaar:
 * **destination**: De ID van de destination.
 * **profile**: De ID van het profiel waaraan het bericht geleverd is.
 * **subprofile**: De ID van het subprofiel waaraan het bericht geleverd is (als deze beschikbaar is).
+
+### JSON voorbeeld
+
+De JSON voor een enkele delivery ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"1",
+   "timestamp":"2010-01-04 12:17:51",
+   "attempt":"0",
+   "smtp-response":"test",
+   "emailing":"671",
+   "destination":"57092",
+   "profile":"2384041",
+   "subprofile":null
+}
+```
 
 ## PHP voorbeeld
 

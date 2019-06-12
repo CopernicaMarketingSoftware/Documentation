@@ -35,45 +35,31 @@ number of clicks and number of unique clicks respectively.
 The JSON output will look something like this:
 
 ```json
-Array
-(
-    [abuses] => Array
-        (
-            [total] => 0
-            [unique] => 0
-        )
-
-    [clicks] => Array
-        (
-            [total] => 2
-            [unique] => 1
-        )
-
-    [errors] => Array
-        (
-            [total] => 0
-            [unique] => 0
-        )
-
-    [impressions] => Array
-        (
-            [total] => 4
-            [unique] => 4
-        )
-
-    [unsubscribes] => Array
-        (
-            [total] => 1
-            [unique] => 1
-        )
-
-    [unknown] => Array
-        (
-            [total] => 0
-        )
-
-
-)
+{  
+   "clicks":{  
+      "total":"53",
+      "unique":"14"
+   },
+   "impressions":{  
+      "total":"80",
+      "unique":"49"
+   },
+   "errors":{  
+      "total":"2412",
+      "unique":"2289"
+   },
+   "unsubscribes":{  
+      "total":"0",
+      "unique":"0"
+   },
+   "abuses":{  
+      "total":"0",
+      "unique":"0"
+   },
+   "unknown":{  
+      "total":"22"
+   }
+}
 ```
 
 ## PHP example

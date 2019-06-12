@@ -32,42 +32,32 @@ The emailing contains the following fields:
 The JSON might look something like this:
 
 ```json
-Array
-(
-    [id] => 1181
-    [timestamp] => 2010-04-14 15:02:14
-    [document] => 104
-    [template] => 61
-    [subject] => "Hello!"
-    [from_address] => Array
-        (
-            [name] => Copernica BV
-            [email] => support@copernica.com
-        )
-
-    [destinations] => 1
-    [testgroups] => 0
-    [finalgroup] => 1409
-    [type] => individual
-    [clicks] => 5
-    [impressions] => 2
-    [contenttype] => html
-    [target] => Array
-        (
-            [type] => database
-            [sources] => Array
-                (
-                    [0] => Array
-                        (
-                            [id] => 478
-                            [type] => database
-                        )
-
-                )
-
-        )
-
-)
+{  
+   "id":"1281",
+   "timestamp":"2010-04-14 15:02:14",
+   "document":"114",
+   "template":"621",
+   "subject":"Reminder",
+   "from_address":{  
+      "name":"test",
+      "email":"test@copernica.nl"
+   },
+   "destinations":"3",
+   "testgroups":0,
+   "type":"individual",
+   "clicks":"5",
+   "impressions":"2",
+   "contenttype":"html",
+   "target":{  
+      "type":"database",
+      "sources":[  
+         {  
+            "id":"214",
+            "type":"database"
+         }
+      ]
+   }
+}
 ```
 
 ## PHP example

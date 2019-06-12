@@ -12,6 +12,7 @@ Where the `$id` should be replaced with the ID of the destination.
 
 The JSON object contains the following fields:
 
+* **ID**: ID of the destination
 * **abuses**: An array with a 'total' field for the abuses that this mailing received.
 * **clicks**: An array with a 'total' field for the clicks that this mailing received.
 * **deliveries**: An array with a 'total' field for the deliveries to this destination.
@@ -24,39 +25,30 @@ The JSON object contains the following fields:
 The JSON output will look something like this:
 
 ```json
-Array
-(
-    [abuses] => Array
-        (
-            [total] => 0
-        )
-        
-    [clicks] => Array
-        (
-            [total] => 3
-        )
-        
-    [deliveries] => Array
-        (
-            [total] => 1
-        )
-        
-    [errors] => Array
-        (
-            [total] => 0
-        )
-        
-    [impressions] => Array
-        (
-            [total] => 0
-        )
-        
-    [unsubscribes] => Array
-        (
-            [total] => 0
-        )
-
-)
+{  
+   "ID":"893915",
+   "abuses":{  
+      "total":4
+   },
+   "clicks":{  
+      "total":4
+   },
+   "deliveries":{  
+      "total":5
+   },
+   "errors":{  
+      "total":4
+   },
+   "impressions":{  
+      "total":1
+   },
+   "retries":{  
+      "total":4
+   },
+   "unsubscribes":{  
+      "total":0
+   }
+}
 ```
 
 ## PHP example

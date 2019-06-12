@@ -13,6 +13,7 @@ Hier moet `$id` vervangen worden door de ID van de destination.
 
 Het JSON object bevat de volgende velden:
 
+* **ID**: ID van de destination
 * **abuses**: Array met het veld 'total' voor het aantal abuses.
 * **clicks**: Array met het veld 'total' voor het aantal clicks.
 * **deliveries**: Array met het veld 'total' voor het aantal deliveries.
@@ -26,39 +27,30 @@ Het JSON object bevat de volgende velden:
 Hieronder vind je een voorbeeld van zo'n JSON object:
 
 ```json
-Array
-(
-    [abuses] => Array
-        (
-            [total] => 0
-        )
-        
-    [clicks] => Array
-        (
-            [total] => 3
-        )
-        
-    [deliveries] => Array
-        (
-            [total] => 1
-        )
-        
-    [errors] => Array
-        (
-            [total] => 0
-        )
-        
-    [impressions] => Array
-        (
-            [total] => 0
-        )
-        
-    [unsubscribes] => Array
-        (
-            [total] => 0
-        )
-
-)
+{  
+   "ID":"893915",
+   "abuses":{  
+      "total":4
+   },
+   "clicks":{  
+      "total":4
+   },
+   "deliveries":{  
+      "total":5
+   },
+   "errors":{  
+      "total":4
+   },
+   "impressions":{  
+      "total":1
+   },
+   "retries":{  
+      "total":4
+   },
+   "unsubscribes":{  
+      "total":0
+   }
+}
 ```
 
 ## PHP voorbeeld

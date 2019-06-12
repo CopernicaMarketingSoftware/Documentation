@@ -11,8 +11,8 @@ for the **timestamp** field.
 
 ## Returned fields
 
-The method returns a JSON object with several errors. For each error  
-the following information is available:
+The method returns a JSON object with the errors stored in the 'data' field. 
+For each error the following information is available:
 
 * **ID**: The ID of the error.          
 * **timestamp**: The timestamp on which the error occurred.
@@ -24,6 +24,25 @@ the following information is available:
 * **destination**: The ID of the destination.
 * **profile**: The ID of the profile.
 * **subprofile**: The ID of the subprofile (if applicable).
+
+### JSON example
+
+The JSON for a single error looks similar to this:
+
+```json
+{  
+   "ID":"16",
+   "timestamp":"2008-06-25 14:23:05",
+   "errorcode":"5.1.2",
+   "description":"Resolver error: no mailservers found for domain",
+   "errortype":"nohost",
+   "errortypedescription":"Map domain name to IP address",
+   "emailing":"401",
+   "destination":"54215",
+   "profile":"52647",
+   "subprofile":null
+}
+```
 
 ## PHP example
 
