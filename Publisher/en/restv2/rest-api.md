@@ -88,6 +88,7 @@ structure.
 
 | Type   | Address                                                                                      | Description                                  |
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
+| GET    | [api.copernica.com/v2/database/$id/collections](./rest-get-database-collections)             | Fetch all collections for a database         |
 | POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Create a new collection                      |
 | GET    | [api.copernica.com/v2/collection/$id](./rest-get-collection)                                 | Fetch the collection information             |
 | PUT    | [api.copernica.com/v2/collection/$id](./rest-put-collection)                                 | Update the collection information            |
