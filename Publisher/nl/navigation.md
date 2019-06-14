@@ -38,6 +38,7 @@
    * [Profielverrijking](./campaign-profile-enrichment)
    * [Verlaten winkelwagen](./campaign-abandoned-shoppingcart.md)
    * [Geotargeting](./campaign-geotargeting.md)
+   * [Retentie](./campaign-retention.md)
 * [Websites](./websites.md)
 * [Mobile](./mobile-mailing.md)
 * [PDF](./pdf-document.md)
