@@ -1,4 +1,4 @@
-# Retenties campagnes
+# Retentie campagnes
 Naast nieuwe klanten werven is het ook belangrijk om je huidige klantenbestand te onderhouden. Dit doen we door middel van retentie campagnes, hieronder staat beschreven hoe je een aantal retentie campagnes kan aanmaken in Copernica. Voor meer achtergrondinformatie over de retentie campagnes lees dan onze [Campagne Uitgelicht blog](https://www.copernica.com/nl/blog/post/campagne-uitgelicht-editie-4-retentiecampagnes) over retentie campagnes. 
 
 ## Loyaliteit
