@@ -1,9 +1,16 @@
 # Retenties campagnes
 Naast nieuwe klanten werven is het ook belangrijk om je huidige klantenbestand te onderhouden. Dit doen we door middel van retentie campagnes, hieronder staat beschreven hoe je een aantal retentie campagnes kan aanmaken in Copernica. Voor meer achtergrondinformatie over de retentie campagnes lees dan onze [Campagne Uitgelicht blog](https://www.copernica.com/nl/blog/post/campagne-uitgelicht-editie-4-retentiecampagnes) over retentie campagnes. 
 
-
 ## Loyaliteit
+Eén effectieve manier waarmee je klanten kan stimuleren om herhaalaankopen te doen, is door een loyaliteitsprogramma uit te rollen, bijvoorbeeld door klanten punten toe te kennen bij elke aankoop. Hiervoor hebben we wel een  [collectie](./database-collections)  nodig waarin alle gekochte orders van een klant staan, daar gaan we in dit geval ook vanuit.  We gaan een veld maken in Copernica die geupdate wordt nadat een order voltooid is. 
+ 
+- Maak in je [database](./database-profiles) een nieuw veld aan **Loyalty** en geef dit als type **numeriek veld**.  
+- Maak een opvolgactie op de collectie waar alle gekochte orders in staan. 
+- Geef als aanleiding dat er een **Er is een subprofiel aangemaakt of gewijzigd** en geef als extra conditie dat het veld status veranderd moet zijn naar **complete**. Hiermee checken we of de order compleet binnenkomt of erna veranderd wordt. 
+- Geef als actie dat er een wijziging gedaan moet worden in het (sub)profiel en er is geen wachttijd. 
+- Vul in de actie in dat het profiel gewijzigd wordt, selecteer het Loyalty veld en zet de volgende waarde erin {math equation=”x+y” x=$Loyalty y=5}. Dit zorgt ervoor dat er 5 punten voor elke nieuwe aankoop bij het veld Loyalty gezet worden.
 
+Dit veld kan vervolgens in mailings getoond worden met {$profile.Loyalty} of kan gebruikt worden om selecties op te maken.  
 
 ## Persoonlijk content tonen
 
