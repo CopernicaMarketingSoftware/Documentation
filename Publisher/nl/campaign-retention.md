@@ -8,9 +8,9 @@ Eén effectieve manier waarmee je klanten kan stimuleren om herhaalaankopen te d
 - Maak een opvolgactie op de collectie waar alle gekochte orders in staan. 
 - Geef als aanleiding dat er een **Er is een subprofiel aangemaakt of gewijzigd** en geef als extra conditie dat het veld status veranderd moet zijn naar **complete**. Hiermee checken we of de order compleet binnenkomt of erna veranderd wordt. 
 - Geef als actie dat er een wijziging gedaan moet worden in het (sub)profiel en er is geen wachttijd. 
-- Vul in de actie in dat het profiel gewijzigd wordt, selecteer het Loyalty veld en zet de volgende waarde erin {math equation=”x+y” x=$Loyalty y=5}.  De [math equation](./publisher-personalization-functions#math) functie zorgt ervoor dat er 5 punten voor elke nieuwe aankoop bij het veld Loyalty gezet worden.
+- Vul in de actie in dat het profiel gewijzigd wordt, selecteer het Loyalty veld en zet de volgende waarde erin **{math equation=”x+y” x=$Loyalty y=5}**.  De [math equation](./publisher-personalization-functions#math) functie zorgt ervoor dat er 5 punten voor elke nieuwe aankoop bij het veld Loyalty gezet worden.
 
-Dit veld kan vervolgens in mailings getoond worden met {$profile.Loyalty} of kan gebruikt worden om selecties op te maken.  
+Dit veld kan vervolgens in mailings getoond worden met **{$profile.Loyalty}** of kan gebruikt worden om selecties op te maken.  
 
 ## Persoonlijk content tonen
 Als je via een externe tool persoonlijke aanbiedingen Copernica kan inschieten, dan kun je deze tonen in Mailings of er campagnes mee starten. Stel je schiet een een persoonlijke aanbieding in een Copernica collectie en wil gelijk een mailing hierover sturen naar het profiel. 
@@ -19,7 +19,7 @@ Als je via een externe tool persoonlijke aanbiedingen Copernica kan inschieten, 
 - Geef als aanleiding dat er een nieuw subprofiel is aangemaakt en geef als actie **verstuur een opgemaakt email document**.
 - Stel vervolgens de mailing in die je wilt versturen naar het profiel. 
 
-Om in de mailing het juiste subprofiel te tonen, gebruiken we de [personalisatie variable](./publisher-personalization-variables) **{$mailing.trigger}**. Mailing.trigger bevat het subprofiel die de opvolgactie gestart heeft. Het werkt hetzelfde als {$profile}  of {$subprofile}.
+Om in de mailing het juiste subprofiel te tonen, gebruiken we de [personalisatie variable](./publisher-personalization-variables) **{$mailing.trigger}**. Mailing.trigger bevat het subprofiel die de opvolgactie gestart heeft. Het werkt hetzelfde als **{$profile}**  of **{$subprofile}**.
 We kunnen de mail personaliseren door onderstaande te doen:
 ```
 Dit is toont de naam van een product :  {$mailing.trigger.Naam}
