@@ -21,9 +21,18 @@ contains the following fields:
 * **subprofile**: The ID of the subprofile of the destination (if applicable).
 * **mailing**: The ID of the mailing.
 
+### Retrieving (sub)profile fields
+
+An alternative method offers the option to retrieve the (sub)profile fields 
+along with the regular returned fields. In this case the (sub)profile returned 
+field will contain an array with keys 'ID' and 'fields'. You can send an 
+HTTP GET request to the following URL to execute the method:
+
+`https://api.copernica.com/v2/publisher/destination/$id/fields?access_token=xxxx`
+
 ### JSON example
 
-The JSON for the destination might look something like this:
+The JSON for the destination might look something like this (excluding the fields):
 
 ```json
 {  
@@ -57,3 +66,6 @@ This example requires the [REST API class](./rest-php)
 ## More information
 
 * [Overview of all REST API calls](./rest-api)
+* [GET profile fields](./rest-get-profile-fields)
+* [GET subprofile fields](./rest-get-subprofile-fields)
+

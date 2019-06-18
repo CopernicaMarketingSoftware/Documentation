@@ -21,7 +21,17 @@ Deze bevat de volgende velden:
 * **subprofile**: De ID van het subprofiel van deze destination (als deze beschikbaar is).
 * **mailing**: De ID van de mailing.
 
-## JSON voorbeeld
+### (Sub)profielvelden opvragen
+
+Het is daarnaast mogelijk om ook de velden van het corresponderende (sub)profiel 
+op te vragen. In dit geval zullen de 'profile' en 'subprofile' velden een 
+array bevatten met velden 'ID' voor de identifier en 'fields' voor 
+de (subprofiel) velden. Je kunt de methode aanroepen met een HTTP GET call 
+naar de volgende URL:
+
+`https://api.copernica.com/v2/publisher/destination/$id/fields?access_token=xxxx`
+
+### JSON voorbeeld
 
 De JSON voor de destination ziet er bijvoorbeeld zo uit:
 
@@ -57,3 +67,5 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php)
 ## Meer informatie
 
 * [Overzicht van alle REST API calls](./rest-api)
+* [Opvragen van profiel velden](./rest-get-profile-fields)
+* [Opvragen van subprofiel velden](./rest-get-subprofile-fields)
