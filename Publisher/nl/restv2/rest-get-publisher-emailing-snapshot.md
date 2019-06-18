@@ -17,6 +17,19 @@ De volgende velden zijn beschikbaar:
 * **from_address**: Het 'from address' van de mailing.
 * **subject**: Het onderwerp van de mailing.
 
+### JSON voorbeeld
+
+De JSON voor een snapshot ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "document":"58",
+   "name":"New emailing",
+   "from_address":"\"Test\" <test@copernica.com>",
+   "subject":"Title!"
+}
+```
+
 ## PHP voorbeeld
 
 Het volgende script demonstreert hoe je deze API methode kunt gebruiken:
