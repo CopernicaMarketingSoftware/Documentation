@@ -17,8 +17,23 @@ the following information is available:
 * **timestampsent**: The timestamp on which the mailing was sent to this recipient.
 * **internal**: The internal ID of the destination.
 * **profile**: The ID of the profile of the destination.
-* **subprofile**: The ID of the subprofile of the destination.
+* **subprofile**: The ID of the subprofile of the destination (if applicable).
 * **mailing**: The ID of the mailing.
+
+### JSON example
+
+The JSON for a single destination might look something like this:
+
+```json
+{  
+   "ID":"56ed14bf71f7bc4e200e712e646ed32f",
+   "timestampsent":"2014-08-26 10:14:15",
+   "internal":"802345",
+   "profile":"9180926",
+   "subprofile":null,
+   "mailing":"42913"
+}
+```
 
 ## PHP example
 

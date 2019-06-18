@@ -18,8 +18,23 @@ is de volgende informatie beschikbaar:
 * **timestampsent**: De tijdstempel van het aankomen van de mailing bij deze destination.
 * **internal**: De interne ID van deze destination.
 * **profile**: De ID van het profiel van deze destination.
-* **subprofile**: De ID van het subprofiel van deze destination.
+* **subprofile**: De ID van het subprofiel van deze destination (als deze beschikbaar is).
 * **mailing**: De ID van de mailing.
+
+## JSON voorbeeld
+
+De JSON voor een enkele destination ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"56ed14bf71f7bc4e200e712e646ed32f",
+   "timestampsent":"2014-08-26 10:14:15",
+   "internal":"802345",
+   "profile":"9180926",
+   "subprofile":null,
+   "mailing":"42913"
+}
+```
 
 ## PHP voorbeeld
 
