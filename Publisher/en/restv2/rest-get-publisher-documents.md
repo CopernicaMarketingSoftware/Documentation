@@ -22,10 +22,26 @@ with emailing documents. Each document contains the following information:
 * **id**: The ID of the document.    
 * **template**: The ID of the corresponding template.
 * **name**: The name of the document.
-* **from_address**: The *from address* of the document.
+* **from_address**: The from address for the document.
 * **subject**: The subject of the document.
 * **archived**: The archive status of the document. (1 for archived, null for not archived)
-* **source**: The source of the document.
+* **source**: The source of the document. 
+
+### JSON example
+
+The JSON for the document might look something like this:
+
+```json
+{  
+   "id":"79",
+   "template":"31",
+   "name":"Hallo",
+   "from_address":"\"test\" <test@copernica.nl>",
+   "subject":"test",
+   "archived":null,
+   "source":"<html><head><title>Title</title></head><body><p>Paragraph</p></body></html>"
+}
+```
 
 ## PHP example
 

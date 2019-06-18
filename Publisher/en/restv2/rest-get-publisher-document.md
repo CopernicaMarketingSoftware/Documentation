@@ -19,6 +19,22 @@ The method returns a JSON object containing the following information:
 * **archived**: The archive status of the document. (1 for archived, null for not archived)
 * **source**: The source of the document. 
 
+### JSON example
+
+The JSON for the document might look something like this:
+
+```json
+{  
+   "id":"79",
+   "template":"31",
+   "name":"Hallo",
+   "from_address":"\"test\" <test@copernica.nl>",
+   "subject":"test",
+   "archived":null,
+   "source":"<html><head><title>Title</title></head><body><p>Paragraph</p></body></html>"
+}
+```
+
 ## PHP example
 
 The script below demonstrates how to use this API method. Don't forget 

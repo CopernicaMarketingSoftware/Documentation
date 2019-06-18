@@ -20,13 +20,29 @@ Standaard worden alle documenten opgehaald.
 Deze methode geeft een JSON object met een array van emailing documents 
 in het **data** veld. Elk document bevat de volgende informatie:
 
-* **id**: De ID van het document.
+* **id**: De ID van het emailing document.    
 * **template**: De ID van de bijhorende template.
 * **name**: De naam van het document. 
-* **from_address**: Het afzenderadres van het document.
+* **from_address**: Het 'from address' van het document.
 * **subject**: Het onderwerp van het document.
 * **archived**: Geeft aan of dit document gearchiveerd is (1) of niet (null).
 * **source**: De bron van het document.
+
+### JSON voorbeeld
+
+De JSON voor een document ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "id":"79",
+   "template":"31",
+   "name":"Hallo",
+   "from_address":"\"test\" <test@copernica.nl>",
+   "subject":"test",
+   "archived":null,
+   "source":"<html><head><title>Title</title></head><body><p>Paragraph</p></body></html>"
+}
+```
 
 ## PHP voorbeeld
 
