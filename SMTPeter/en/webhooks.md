@@ -28,10 +28,7 @@ Webhook. You can set several triggers in the Webhooks tab such
 as opens, clicks, profile edits and bounces.
 
 The data you receive is very rich and allows you to easily link it to the 
-data already present in your system. SMTPeter receives the IP address and 
-HTTP headers of the incoming request and adds the e-mail address, profile 
-data and linked tags to send to you. Based on this information it is 
-easy to add the information to the correct profile.
+data already present in your system.
 
 ## Setting up Webhooks
 
@@ -70,10 +67,9 @@ it's actually SMTPeter sending you the data.
 
 ## More information
 
-* [Statistics](./statistics)
-* [Logfiles](./logfiles-ms)
+* [Logfiles](./logfiles-smtpeter)
 * [REST API](./rest-api)
-* [SOAP API](./soap-api-documentation)
+* [SMTP API](./smtp-api)
 * [Webhooks for bounces](webhook-bounces)
 * [Webhooks for failures](webhook-failures)
 * [Webhooks for clicks](webhook-clicks)

@@ -9,8 +9,9 @@ that this functionality is currently only available in the Marketing Suite.
 While Webhooks are very useful, they should be used with caution as they 
 can generate large amounts of calls. If you are unsure about your server 
 capacity or do not need real-time feedback you can also view the 
+[statistics](./statistics "Viewing statistics in the Marketing Suite") or 
 [logfiles](./logfiles-ms "How to retrieve Marketing Suite logfiles") or 
-use one of [Copernica's API's](./apis "Copernica's SOAP and REST APIs").
+use one of [Copernica's APIs](./apis "Copernica's SOAP and REST APIs").
 
 There are several types of Webhooks. The articles linked below explain 
 these types in more detail:
@@ -73,7 +74,7 @@ the 'Check now' button in the Webhook menu to test all your Webhooks.
 
 ## Security
 
-To protect your endpoint from abuse and false information injection, SMTPeter 
+To protect your endpoint from abuse and false information injection, Copernica 
 [signs all requests](./webhook-security) to your endpoint, so you can be sure 
 it's actually Copernica sending you the data. 
 
