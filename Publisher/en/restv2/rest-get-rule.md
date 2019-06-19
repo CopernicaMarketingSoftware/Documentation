@@ -9,22 +9,74 @@ following URL:
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the rule you wish to request the selections for.
 
-## Available parameters
-
-There are no available parameters for this method.
-
 ## Returned fields
 
-This method returns a JSON rule object with the following properties:
+This method returns rule data. The following properties are returned:
 
-- **id** ID of the rule
-- **name**: name of the rule
-- **description**: description of the rule
-- **view**: ID of the selection that the rule belongs to
-- **conditions**: array of conditions for the rule
-- **inversed**: boolean value to indicate whether the rule should be inversed. 
-If set to "True" only profiles *not* conforming to the conditions are selected
-- **disabled**: boolean value to indicate whether the rule should be disabled or not
+* **ID**: ID of the rule
+* **name**: Name of the rule
+* **view**: ID of the selection to which the rule belongs
+* **disabled**: Boolean value whether the rule is disabled / not used to match profiles
+* **inverted**: Boolean value whether this is an inverted rule, meaning that profiles are included in the rule if they do *not* match the rule
+* **conditions**: Array of conditions in the rule
+
+### Conditions
+
+A rule on its own contains conditions. For a profile to match a rule, it 
+has to match all the conditions. The **conditions** property that is returned
+by this method holds an array of condition objects, with the following 
+properties per condition:
+
+* **ID**: numeric ID of the condition
+* **type**: condition type
+* **rule**: numeric ID of the rule to which the condition belongs
+
+Based on the condition type, specific properties are set. Specific condition 
+types are discussed in separate articles, which are linked in the "More 
+information" section.
+
+### JSON example
+
+The JSON for the rule might look something like this:
+
+```json
+{  
+    "ID":"4012",
+    "name":"Rule",
+    "view":"4184",
+    "conditions":{  
+    "start":0,
+    "limit":100,
+    "count":1,
+    "data":[  
+        {  
+            "ID":"2110",
+            "type":"Field",
+            "rule":"4039",
+            "comparison":"equals",
+            "field":{  
+                "ID":"22142",
+                "name":"subscribed",
+                "type":"text",
+                "value":"no",
+                "displayed":false,
+                "ordered":false,
+                "length":"255",
+                "textlines":"3",
+                "hidden":false,
+                "index":false
+            },
+            "value":"yes",
+            "other-field":false,
+            "numeric-comparison":false
+        }
+    ],
+    "total":1
+    },
+    "inversed":false,
+    "disabled":false
+}
+```
 
 ## PHP example
 
@@ -45,5 +97,28 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-* [Overview of all REST API methods](./rest-api)
-* [GET view rules](./rest-get-view-rules)
+* [Overview of all API calls](./rest-api.md)
+* [GET view rules](./rest-get-view-rules.md)
+* [POST view rule](./rest-post-view-rules.md)
+* [PUT rule](./rest-put-rule.md)
+* [DELETE rule](./rest-delete-rule.md)
+* [PUT rule condition](./rest-post-rule-conditions.md)
+* [DELETE rule condition](./rest-delete-condition.md)
+
+Since there are many condition types which behave very differently each 
+condition type is explained in a separate article below.
+
+* [Change conditions](./rest-condition-type-change.md)
+* [Date conditions](./rest-condition-type-date.md)
+* [DoubleField conditions](./rest-condition-type-doublefield.md)
+* [Email conditions](./rest-condition-type-email.md)
+* [Fax conditions](./rest-condition-type-fax.md)
+* [Field conditions](./rest-condition-type-field.md)
+* [Interest conditions](./rest-condition-type-interest.md)
+* [LastContact conditions](./rest-condition-type-lastcontact.md)
+* [Miniview conditions](./rest-condition-type-miniview.md)
+* [SMS conditions](./rest-condition-type-sms.md)
+* [Todo conditions](./rest-condition-type-todo.md)
+* [Survey conditions](./rest-condition-type-survey.md)
+* [Part conditions](./rest-condition-type-part.md)
+* [ReferView conditions](./rest-condition-type-referview.md)

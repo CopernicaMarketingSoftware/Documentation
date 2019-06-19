@@ -22,7 +22,7 @@ More information about the use of these parameters can be found in the
 
 ## Returned fields
 
-This method returns a list of fields from the database. Each field object
+This method returns a list of fields from the collection. Each field object
 contains the following information:
 
 * **ID**: numerical field ID
