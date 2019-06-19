@@ -5,30 +5,20 @@ Indien een ontvanger van een e-mail deze als spam markeert en de e-mailclient di
 ondersteunt, ontvangt SMTPeter hier een zogenaamd *abuse report* over. Hierin wordt
 beschreven over welke email de klacht gaat. 
 
-Met een webhook kun je meldingen over deze *abuse reports* voor jouw e-mails zelf ontvangen.
-Voor elke klacht wordt een HTTP POST call (HTTPS is ook mogelijk) naar jouw server
+Met een Webhook kun je meldingen over deze *abuse reports* voor jouw e-mails zelf ontvangen.
+Voor elke klacht wordt een HTTP/HTTPS POST call naar jouw server
 verstuurd met relevante informatie over de klacht.
 
 ## Variabelen
 
 Met elke POST call worden de volgende variabelen meegestuurd:
 
-<table>
-    <tr>
-        <td>id</td>
-        <td>unieke <em>identifier</em> van de e-mail waarop waar de klacht over gaat</td>
-    </tr>
-    <tr>
-        <td>mailfrom</td>
-        <td>e-mail adres van de partij waar de klacht vandaan komt</td>
-    </tr>
-    <tr>
-        <td>mime</td>
-        <td>de mime van het ontvangen rapport</td>
-    </tr>
-</table>
+| Variabele | Omschrijving                                              |
+|-----------|-----------------------------------------------------------|
+| id        | Unieke identifier van het bericht dat een abuse triggerde |
+| emailfrom | E-mailaddres van de email client die de klacht indient    |
+| mime      | MIME versie van het ontvangen bericht                     |
 
 ## Meer informatie
 
 * [Webhooks](./webhooks)
-* [Webhooks instellen](./webhook-setup)

@@ -2,7 +2,7 @@
 
 Als je in real-time op de hoogte gebracht wil worden wanneer een
 profiel of subprofiel uit een van je database verwijderd wordt,
-kun je hiervoor een webhook instellen.
+kun je hiervoor een Webhook instellen.
 Voor elk verwijderd profiel sturen we via HTTP of HTTPS een POST bericht naar jouw
 server met daarin alle relevante informatie over het zojuist verwijderde profiel.
 
@@ -10,28 +10,26 @@ server met daarin alle relevante informatie over het zojuist verwijderde profiel
 
 Het POST verzoek voor verwijderde profielen bevat de volgende variabelen:
 
-| Variabele  | Omschrijving                                                                      |
-|------------|-----------------------------------------------------------------------------------|
-| profile    | het unieke ID van het profiel dat verwijderd werd                                 |
-| type       | welk type actie er op het profiel was uitgevoerd ('create', 'update' of 'delete') |
-| timestamp  | het tijdstip waarop het profiel verwijderd werd (in YYYY-MM-DD HH:MM:SS formaat)  |
-| database   | unieke identifier van de database waar het profiel bij hoort                      |
+| Variabele  | Omschrijving                                                     |
+|------------|------------------------------------------------------------------|
+| type       | Type actie dat de Webhook triggerde ('type')                     |
+| timestamp  | Tijdstempel van de verwijdering (YYYY-MM-DD HH:MM:SS formaat)    |
+| time       | Unix tijd van de failure                                         |
+| profile    | Unieke ID van het profiel dat verwijderd werd                    |
+| database   | Unieke identifier van de database van het profiel                |
+| fields     | Velden van het verwijderde profiel                               |
 
 Voor subprofielen zijn dit de volgende variabelen:
 
-| Variabele  | Omschrijving                                                                         |
-|------------|--------------------------------------------------------------------------------------|
-| subprofile | het unieke ID van het subprofiel dat verwijderd werd                                 |
-| type       | welk type actie er op het subprofiel was uitgevoerd ('create', 'update' of 'delete') |
-| timestamp  | het tijdstip waarop het subprofiel verwijderd werd (in YYYY-MM-DD HH:MM:SS formaat)  |
-| profile    | unieke identifier van het profiel van het subprofiel                                 |
-| database   | unieke identifier van de database van het subprofiel                                 |
-| collection | unieke identifier van de collectie van het subprofiel                                |
-
-De variabele "action" heeft altijd de waarde 'delete'; dit helpt je om deze
-berichten te onderscheiden van de berichten die verstuurd worden als een
-profiel [aangemaakt](webhook-creates) of [aangepast](webhook-updates) wordt.
-Daarnaast wordt er informatie over het profiel of subprofiel meegestuurd. 
+| Variabele  | Omschrijving                                                     |
+|------------|------------------------------------------------------------------|
+| type       | Type actie dat de Webhook triggerde ('type')                     |
+| timestamp  | Tijdstempel van de verwijdering (YYYY-MM-DD HH:MM:SS formaat)    |
+| time       | Unix tijd van de failure                                         |
+| profile    | Unieke identifier van het profiel van het subprofiel             |
+| subprofile | Unieke ID van het subprofiel dat verwijderd werd                 |
+| database   | Unieke identifier van de database van het subprofiel             |
+| collection | Unieke identifier van de collectie van het subprofiel            |
 
 ## Example
 

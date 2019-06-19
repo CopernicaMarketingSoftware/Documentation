@@ -2,7 +2,7 @@
 
 Als je in real-time op de hoogte gebracht wil worden wanneer een
 profiel of subprofiel in een van je database aangepast wordt,
-kun je hiervoor een webhook instellen.
+kun je hiervoor een Webhook instellen.
 Voor elk aangepast profiel sturen we via HTTP of HTTPS een POST bericht naar jouw
 server met daarin alle relevante informatie over het zojuist aangepaste profiel.
 
@@ -14,38 +14,34 @@ Arrays zoals "interests" worden worden per item verstuurd als *interests[]=xyz*.
 
 Voor profielen zijn dit de volgende variabelen:
 
-| Variabelen  | Omschrijving                                                      |
-|-------------|-------------------------------------------------------------------|
-| profile     | unieke identifier van het profiel dat werd aangepast              |
-| type        | type actie uitgevoerd op profiel ('create', 'update' or 'delete') |
-| parameters  | parameter voor uitvoeren actie                                    |
-| timestamp   | tijd van aanpassing (in YYYY-MM-DD HH:MM:SS format)               |
-| id          | unieke identifier van het profiel                                 |
-| database    | unieke identifier van de database van het profiel                 |
-| fields      | huidige velden van het profiel                                    |
-| interests   | huidige interesses van het profiel                                |
-| created     | tijd van aanmaken (in YYYY-MM-DD HH:MM:SS format)                 |
-| modified    | tijd van laatste aanpassing (in YYYY-MM-DD HH:MM:SS format)       |
+| Variabelen    | Omschrijving                                                      |
+|---------------|-------------------------------------------------------------------|
+| type          | Type actie dat de Webhook triggerde ('update')                    |
+| parameters    | Parameters voor uitvoeren van de actie                            |
+| timestamp     | Tijdstempel van de failure (YYYY-MM-DD HH:MM:SS formaat)          |
+| time          | Unix tijd van de failure                                          |
+| profile       | unieke identifier van het profiel dat werd aangepast              |
+| database      | unieke identifier van de database van het profiel                 |
+| created       | tijd van aanmaken (in YYYY-MM-DD HH:MM:SS format)                 |
+| modified      | tijd van laatste aanpassing (in YYYY-MM-DD HH:MM:SS format)       |
+| fields        | huidige velden van het profiel                                    |
+| interests     | huidige interesses van het profiel                                |
 
 Voor subprofielen zijn dit de volgende variabelen:
 
-| Variabele   | Omschrijving                                                         |
-|-------------|----------------------------------------------------------------------|
-| subprofile  | unieke identifier van het subprofiel dat werd aangepast              |
-| type        | type actie uitgevoerd op subprofiel ('create', 'update' or 'delete') |
-| parameters  | parameter voor uitvoeren actie                                       |
-| timestamp   | tijd van aanpassing (in YYYY-MM-DD HH:MM:SS format)                  |
-| id          | unieke identifier van het subprofiel                                 |
-| profile     | unieke identifier van het profiel van het subprofiel                 |
-| database    | unieke identifier van de database van het subprofiel                 |
-| collection  | unieke identifier van de collectie van het subprofiel                |
-| fields      | huidige velden van het subprofiel                                    |
-| created     | tijd van aanmaken (in YYYY-MM-DD HH:MM:SS format)                    |
-| modified    | tijd van laatste aanpassing (in YYYY-MM-DD HH:MM:SS format)          |
-
-De variabele "action" heeft altijd de waarde 'update'; dit helpt je om deze
-berichten te onderscheiden van de berichten die verstuurd worden als een
-profiel [aangemaakt](webhook-creates) of [verwijderd](webhook-deletes) wordt.
+| Variabele     | Omschrijving                                                      |
+|---------------|-------------------------------------------------------------------|
+| type          | Type actie dat de Webhook triggerde ('update')                    |
+| parameters    | Parameters voor uitvoeren van de actie                            |
+| timestamp     | Tijdstempel van de update (YYYY-MM-DD HH:MM:SS formaat)           |
+| time          | Unix tijd van de update                                           |
+| profile       | Unieke identifier van het profiel van het subprofiel              |
+| subprofile    | Unieke identifier van het subprofiel dat werd aangepast           |
+| database      | Unieke identifier van de database van het subprofiel              |
+| collection    | Unieke identifier van de collectie van het subprofiel             |
+| created       | Tijd van aanmaken (in YYYY-MM-DD HH:MM:SS format)                 |
+| modified      | Tijd van laatste aanpassing (in YYYY-MM-DD HH:MM:SS format)       |
+| fields        | Huidige velden van het subprofiel                                 |
 
 ## Voorbeeld
 

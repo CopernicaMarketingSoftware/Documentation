@@ -5,11 +5,10 @@ is opened for which this option was set, the image will not be downloaded from y
 own server, but from the cache on SMTPeter web servers in stead. This
 allows us to track all opens, and to use that for statistics.
 
-If you set up a webhook for opens, SMTPeter notifies you in realtime
+If you set up a Webhook for opens, SMTPeter notifies you in real-time
 about each registered image download. For each open that we monitor we send 
 a HTTP POST call (HTTPS is possible too) to your server with the relevant 
 information about the open.
-
 
 ## Variables
 
@@ -17,18 +16,18 @@ With each POST call the following variables are passed to your script:
 
 | Variable  | Description                                                     |
 |-----------|-----------------------------------------------------------------|
-| id        | unique identifier of the message that was opened                |
-| recipient | email address of the person that opened the mail                |
-| ip        | ip address of the opened                                        |
-| time      | time when the url was opened                                    |
-| useragent | optional user agent string (extracted from http request header) |
-| referer   | optional referer (extracted from http request header)           |
-| tags      | the tags that you associated with the mail                      |
+| id        | Unique identifier of the message that was opened                |
+| type      | Type of action that triggered the Webhook ('open')              |
+| recipient | Email address of the person that opened the mail                |
+| ip        | IP address from which the message was opened                    |
+| time      | Time when the message was opened                                |
+| useragent | Optional user agent string (extracted from HTTP request header) |
+| referer   | Optional referer (extracted from HTTP request header)           |
+| tags      | The tags that you associated with the mail                      |
 
-The "ID" and "recipient" variables allow you to link the open to the 
-originally sent email message.
+The 'id' and 'recipient' and 'tags' variables allow you to link the incoming bounce
+to the original outgoing message that was sent.
 
 ## More information
 
 * [Webhooks](./webhooks)
-* [Set up a webhook](./webhook-setup)

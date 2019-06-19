@@ -1,6 +1,6 @@
 # Webhooks: (sub)profile updates
 
-If you set up a profile update webhook, you are notified in real-time
+If you set up a profile update Webhook, you are notified in real-time
 whenever a profile or subprofile is updated in one of your databases.
 For each event we send an HTTP(S) POST call to your server with the 
 relevant information about the profile at the time of the update.
@@ -16,38 +16,34 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 For profiles this consists of the following variables:
 
-| Variable   | Description                                                                             |
-|------------|-----------------------------------------------------------------------------------------|
-| profile    | unique identifier of the profile that was updated                                       |
-| type       | which type of action was performed on the (sub)profile ('create', 'update' or 'delete') |
-| parameters | parameters that the action was performed with                                           |
-| timestamp  | time when the (sub)profile was updated (in YYYY-MM-DD HH:MM:SS format)                  |
-| id         | unique identifier of the profile                                                        |
-| database   | unique identifier of the database to which the profile belongs                          |
-| fields     | current fields of the profile                                                           |
-| interests  | current interests of the profile                                                        |
-| created    | time when the profile was created (in YYYY-MM-DD HH:MM:SS format)                       |
-| modified   | time when the profile was modified (in YYYY-MM-DD HH:MM:SS format)                      |
+| Variable   | Description                                                                  |
+|------------|------------------------------------------------------------------------------|
+| type       | Type of action that triggered the Webhook ('update')                         |
+| parameters | Parameters that the action was performed with                                |
+| timestamp  | Timestamp for when the profile was updated (in YYYY-MM-DD HH:MM:SS format)   |
+| time       | Unix time for when the profile was updated                                   |
+| profile    | Unique identifier of the profile that was updated                            |
+| database   | Unique identifier of the database to which the profile belongs               |
+| created    | Timestamp for when the profile was created (in YYYY-MM-DD HH:MM:SS format)   |
+| modified   | Timestamp for when the profile was modified (in YYYY-MM-DD HH:MM:SS format)  |
+| fields     | Current fields of the profile                                                |
+| interests  | Current interests of the profile                                             |
 
 For subprofiles, this consists of the following variables:
 
-| Variable    | Description                                                                             |
-|-------------|-----------------------------------------------------------------------------------------|
-| subprofile  | unique identifier of the subprofile that was updated                                    |
-| type        | which type of action was performed on the (sub)profile ('create', 'update' or 'delete') |
-| parameters  | parameters that the action was performed with                                           |
-| timestamp   | time when the (sub)profile was updated (in YYYY-MM-DD HH:MM:SS format)                  |
-| id          | unique identifier of the subprofile                                                     |
-| profile     | unique identifier of the profile to which this subprofile belongs                       |
-| database    | unique identifier of the database to which this subprofile belongs                      |
-| collection  | unique identifier of the collection to which this subprofile belongs                    |
-| fields      | current fields of the subprofile                                                        |
-| created     | time when the subprofile was created (in YYYY-MM-DD HH:MM:SS format)                    |
-| modified    | time when the subprofile was modified (in YYYY-MM-DD HH:MM:SS format)                   |
-
-The "action" variable will always have the value 'update'; this helps discern
-these messages from messages that are sent when a profile is
-[created](webhook-creates) or [deleted](webhook-deletes).
+| Variable    | Description                                                                     |
+|-------------|---------------------------------------------------------------------------------|
+| type        | Type of action that triggered the Webhook ('update')                            |
+| parameters  | Parameters that the action was performed with                                   |
+| timestamp   | Time when the subprofile was updated (in YYYY-MM-DD HH:MM:SS format)            |
+| time        | Unix time for when the subprofile was updated                                   |
+| profile     | Unique identifier of the profile to which this subprofile belongs               |
+| subprofile  | Unique identifier of the subprofile that was updated                            |
+| database    | Unique identifier of the database to which this subprofile belongs              |
+| collection  | Unique identifier of the collection to which this subprofile belongs            |
+| created     | Timestamp for when the subprofile was created (in YYYY-MM-DD HH:MM:SS format)   |
+| modified    | Timestamp for when the subprofile was modified (in YYYY-MM-DD HH:MM:SS format)  |
+| fields      | Current fields of the subprofile                                                |
 
 ## Example
 
@@ -102,5 +98,5 @@ An example for a subprofile looks like this:
 ## More information
 
 * [Webhooks](./webhooks)
-* [Creation feedback](./webhook-creates)
-* [Delete feedback](./webhook-deletes)
+* [Creation Webhook](./webhook-creates)
+* [Delete Webhook](./webhook-deletes)
