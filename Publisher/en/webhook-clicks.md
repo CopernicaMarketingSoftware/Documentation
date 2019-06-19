@@ -21,14 +21,16 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 | Variable  | Description                                                     |
 |-----------|-----------------------------------------------------------------|
-| id        | unique identifier of the message that was clicked               |
-| recipient | email address of the clicker                                    |
-| ip        | ip address of the clicker                                       |
-| time      | time when the url was opened                                    |
-| original  | the original url                                                |
-| useragent | optional user agent string (extracted from http request header) |
-| referer   | optional referer (extracted from http request header)           |
-| tags      | the tags that you associated with the mail                      |
+| id        | Unique identifier of the message that was clicked               |
+| type      | Type of action that triggered the webhook ('click')             |
+| timestamp | Timestamp for the bounce (in YYYY-MM-DD HH:MM:SS format)        |
+| time      | Unix time for the bounce                                        |
+| recipient | Email address of the user that clicked                          |
+| ip        | IP address of the user that clicked                             |
+| original  | The original url                                                |
+| useragent | Optional user agent string (extracted from http request header) |
+| referer   | Optional referer (extracted from http request header)           |
+| tags      | The tags that you associated with the mail                      |
 
 The "id", "recipient" and "tags" variables allow you to link the click to the 
 originally sent email message.

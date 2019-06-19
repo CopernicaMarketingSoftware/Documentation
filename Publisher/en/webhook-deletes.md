@@ -16,27 +16,26 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 For profiles the response consists of the following variables:
 
-| Variable  | Description                                                                             |
-|-----------|-----------------------------------------------------------------------------------------|
-| profile   | unique identifier of the profile that was deleted                                       |    
-| type      | which type of action was performed on the (sub)profile ('create', 'update' or 'delete') |
-| timestamp | time when the (sub)profile was deleted (in YYYY-MM-DD HH:MM:SS format)                  |
-| database  | unique identifier of the database to which the profile belongs                          |
+| Variable  | Description                                                                               |
+|-----------|-------------------------------------------------------------------------------------------|
+| type      | Type of action that triggered the webhook ('delete')                                      |
+| timestamp | Timestamp for when the profile was deleted (in YYYY-MM-DD HH:MM:SS format)                |
+| time      | Unix time for when the profile was deleted                                                |
+| profile   | Unique identifier of the profile that was deleted                                         |   
+| database  | Unique identifier of the database to which the profile belongs                            |
+| fields    | The fields that belong to the deleted profile                                             |
 
 For subprofiles, it consists of the following variables:
 
-| Variable   | Description                                                                             |
-|------------|-----------------------------------------------------------------------------------------|
-| subprofile | unique identifier of the subprofile that was deleted                                    |
-| type       | which type of action was performed on the (sub)profile ('create', 'update' or 'delete') |
-| timestamp  | time when the (sub)profile was deleted (in YYYY-MM-DD HH:MM:SS format)                  |
-| profile    | unique identifier of the profile to which this subprofile belongs                       |
-| database   | unique identifier of the database to which this subprofile belongs                      |
-| collection | unique identifier of the collection to which this subprofile belongs                    |
-
-The "action" variable will always have the value 'delete'; this helps discern
-these messages from messages that are sent when a profile is
-[created](webhook-creates) or [updated](webhook-updates).
+| Variable   | Description                                                                              |
+|------------|------------------------------------------------------------------------------------------|
+| type       | Type of action that triggered the webhook ('delete')                                     |
+| timestamp  | Time for when the subprofile was deleted (in YYYY-MM-DD HH:MM:SS format)                 |
+| time       | Unix time for when the subprofile was deleted                                            |
+| profile    | Unique identifier of the profile to which this subprofile belongs                        |
+| subprofile | Unique identifier of the subprofile that was deleted                                     |
+| database   | Unique identifier of the database to which this subprofile belongs                       |
+| collection | Unique identifier of the collection to which this subprofile belongs                     |
 
 ## Example
 

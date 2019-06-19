@@ -16,34 +16,34 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 For profiles this consists of the following variables:
 
-| Variable   | Description                                                                             |
-|------------|-----------------------------------------------------------------------------------------|
-| profile    | unique identifier of the profile that was updated                                       |
-| type       | which type of action was performed on the (sub)profile ('create', 'update' or 'delete') |
-| parameters | parameters that the action was performed with                                           |
-| timestamp  | time when the (sub)profile was updated (in YYYY-MM-DD HH:MM:SS format)                  |
-| id         | unique identifier of the profile                                                        |
-| database   | unique identifier of the database to which the profile belongs                          |
-| fields     | current fields of the profile                                                           |
-| interests  | current interests of the profile                                                        |
-| created    | time when the profile was created (in YYYY-MM-DD HH:MM:SS format)                       |
-| modified   | time when the profile was modified (in YYYY-MM-DD HH:MM:SS format)                      |
+| Variable   | Description                                                                  |
+|------------|------------------------------------------------------------------------------|
+| type       | Type of action that triggered the webhook ('update')                         |
+| parameters | Parameters that the action was performed with                                |
+| timestamp  | Timestamp for when the profile was updated (in YYYY-MM-DD HH:MM:SS format)   |
+| time       | Unix time for when the profile was updated                                   |
+| profile    | Unique identifier of the profile that was updated                            |
+| database   | Unique identifier of the database to which the profile belongs               |
+| created    | Timestamp for when the profile was created (in YYYY-MM-DD HH:MM:SS format)   |
+| modified   | Timestamp for when the profile was modified (in YYYY-MM-DD HH:MM:SS format)  |
+| fields     | Current fields of the profile                                                |
+| interests  | Current interests of the profile                                             |
 
 For subprofiles, this consists of the following variables:
 
-| Variable    | Description                                                                             |
-|-------------|-----------------------------------------------------------------------------------------|
-| subprofile  | unique identifier of the subprofile that was updated                                    |
-| type        | which type of action was performed on the (sub)profile ('create', 'update' or 'delete') |
-| parameters  | parameters that the action was performed with                                           |
-| timestamp   | time when the (sub)profile was updated (in YYYY-MM-DD HH:MM:SS format)                  |
-| id          | unique identifier of the subprofile                                                     |
-| profile     | unique identifier of the profile to which this subprofile belongs                       |
-| database    | unique identifier of the database to which this subprofile belongs                      |
-| collection  | unique identifier of the collection to which this subprofile belongs                    |
-| fields      | current fields of the subprofile                                                        |
-| created     | time when the subprofile was created (in YYYY-MM-DD HH:MM:SS format)                    |
-| modified    | time when the subprofile was modified (in YYYY-MM-DD HH:MM:SS format)                   |
+| Variable    | Description                                                                     |
+|-------------|---------------------------------------------------------------------------------|
+| type        | Type of action that triggered the webhook ('update')                            |
+| parameters  | Parameters that the action was performed with                                   |
+| timestamp   | Time when the subprofile was updated (in YYYY-MM-DD HH:MM:SS format)            |
+| time        | Unix time for when the subprofile was updated                                   |
+| profile     | Unique identifier of the profile to which this subprofile belongs               |
+| subprofile  | Unique identifier of the subprofile that was updated                            |
+| database    | Unique identifier of the database to which this subprofile belongs              |
+| collection  | Unique identifier of the collection to which this subprofile belongs            |
+| created     | Timestamp for when the subprofile was created (in YYYY-MM-DD HH:MM:SS format)   |
+| modified    | Timestamp for when the subprofile was modified (in YYYY-MM-DD HH:MM:SS format)  |
+| fields      | Current fields of the subprofile                                                |
 
 The "action" variable will always have the value 'update'; this helps discern
 these messages from messages that are sent when a profile is
