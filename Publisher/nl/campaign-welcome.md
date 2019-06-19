@@ -7,7 +7,7 @@ single optin gebruikt. Wil je een dubbele optin campagne? Klik dan
 
 ## Aanmaken in Marketing Suite
 Ga naar **Database & Profielen**, selecteer de juiste database, klik op
-het blauwe tandwiel en klik vervolgens op **Opvolgacties**. Kies voor een
+het tandwiel en klik vervolgens op **Opvolgacties**. Kies voor een
 nieuwe opvolgactie door op **Create followup** te klikken.
 
 De reden waarom deze opvolgactie start is **Profile created**, selecteer deze

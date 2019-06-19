@@ -61,7 +61,7 @@ databaseveldenmenu door op 'interesse toevoegen' te klikken.
 
 ## Databasevelden aanpassen of aanmaken Marketing Suite
 Om de structuur van je databasevelden aan te passen klik je rechtsboven op het
-**blauwe tandwiel**, hiermee kom je in het menu om de database aan te passen
+**tandwiel**, hiermee kom je in het menu om de database aan te passen
 in de Marketing Suite. Ga vervolgens naar **structuur bewerken** om de velden
 aan te maken/passen.
 Er zal een lijst worden getoond met alle velden uit de database, klik op

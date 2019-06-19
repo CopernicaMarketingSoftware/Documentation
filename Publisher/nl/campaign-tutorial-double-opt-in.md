@@ -13,14 +13,14 @@ door op een link te klikken die ze per email ontvangen.
 
 ## Aanmaken in Marketing Suite
 1. Er is een [databaseveld](./database-fields) nodig die de dubbele optin
-bewaart. Ga naar **Database & Profielen**, klik op het blauwe tandwiel en ga
+bewaart. Ga naar **Database & Profielen**, klik op het tandwiel en ga
 vervolgens naar **Structuur bewerken**. Voeg een DoubleOptin veld toe met type
 [meerkeuzeveld](./database-fields) met waardes "Ja"/"Nee" en standaardwaarde
 "Nee".
 
 2. Nu dient er een [opvolgactie](./follow-up-manager-ms) aangemaakt te worden,
 die een mailing verstuurd wanneer er een nieuw profiel wordt aangemaakt.
-Klik weer op het blauwe tandwiel en klik vervolgens op **Opvolgacties**.
+Klik weer op het tandwiel en klik vervolgens op **Opvolgacties**.
 Kies voor een nieuwe opvolgactie door op **Create followup** te klikken. De
 reden waarom deze opvolgactie start is **Profile created**, selecteer deze
 optie en klik op proceed. Klik aan de linkerkant op **Send email** en verbindt

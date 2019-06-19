@@ -101,7 +101,7 @@ de database terug te zetten. Hier zijn wel kosten aan verbonden.
 
 ## Importeren in de Marketing Suite
 Klik op de database of collectie waar de import gestart voor dient te worden.
-Klik op het **blauwe tandwiel** rechtsboven > **Importeren** >
+Klik op het **tandwiel** rechtsboven > **Importeren** >
 **Nieuwe import aanmaken**. Geef de import een naam, kies het juiste
 scheidingsteken en upload het bestand. Kies vervolgens de juiste opties zoals
 hierboven beschreven.
