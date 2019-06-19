@@ -20,22 +20,38 @@ More information on the meaning of these parameters can be found [in the article
 
 ## Returned fields
 
-For every selection, the following properties are returned:
+The method returns a JSON object with views in the **data** field. 
+Each view has the following fields: 
 
-- **ID**: the numerical identifier of the selection
-- **name**: the name of the selection
-- **description**: optional description of the selection
-- **parent-type**: used to display whether a selection is placed 
-directly under a database, or nested under another selection
-- **parent-id**: ID of the parent selection/database
-- **has-children**: boolean value: whether or not the database has 
-selections nested underneath it
-- **has-referred**: boolean value: whether or not there are other 
-selections that refer to this selection.
-- **has-rules**: boolean value: whether or not the selection has 
-selection rules
-- **database**: ID of the database this selection belongs to.
-- **lastbuilt**: timestamp of the last time the view was built
+* **ID**: Unique numerical identifier.
+* **name**: Name of the selection.
+* **description**: Description of the selection.
+* **parent-type**: Type of the parent: view or database.
+* **parent-id**: ID of the database or view.
+* **has-children**: Boolean value: whether or not the database has selections nested underneath it.
+* **has-referred**: Boolean value: whether or not there are other selections that refer to this selection.
+* **has-rules**: Boolean value: whether or not the selection has selection rules.
+* **database**: ID of the database this selection belongs to.
+* **last-built**: Timestamp of the last time the view was built.
+
+### JSON example
+
+The JSON for a single view might look something like this:
+
+```json
+{  
+   "ID":"4184",
+   "name":"Leadscoring",
+   "description":"",
+   "parent-type":"database",
+   "parent-id":"7616",
+   "has-children":false,
+   "has-referred":false,
+   "has-rules":true,
+   "database":"7616",
+   "last-built":"2019-04-17 00:21:26"
+}
+```
 
 ## PHP example
 

@@ -8,22 +8,39 @@ aangeroepen worden met een HTTP GET verzoek aan de volgende URL:
 Hier moet de `$id` vervangen worden met de numerieke identifier van de 
 database waarvan de selecties moeten worden opgevraagd.
 
-## Beschikbare parameters
-
-Er zijn geen beschikbare parameters voor deze methode.
-
 ## Geretourneerde velden
 
-- **id**: unieke numerieke identifier van selectie
-- **name**: naam van de selectie
-- **description**: beschrijving van de selectie
-- **parent-type**: type van de parent (view/database)
-- **parent-id**: id van de parent
-- **has-children**: geeft aan of de selectie zelf selecties bevat
-- **has-referred**: geeft aan of er andere selecties zijn die naar deze selectie refereren.
-- **has-rules**: geeft aan of de selectie regels heeft
-- **database**: id van de database waar deze selectie onder valt
-- **last-built**: tijdstip laatste opbouw van de selectie
+De methode retourneert een JSON object met de volgende velden:
+
+* **id**: Unieke numerieke identifier van selectie.
+* **name**: Naam van de selectie.
+* **description**: Beschrijving van de selectie.
+* **parent-type**: Type van de parent (view/database).
+* **parent-id**: ID van de parent.
+* **has-children**: Boolean die aangeeft of de selectie zelf selecties bevat.
+* **has-referred**: Boolean die aangeeft of er andere selecties zijn die naar deze selectie refereren.
+* **has-rules**: Boolean die aangeeft of de selectie regels heeft.
+* **database**: ID van de database waar deze selectie onder valt.
+* **last-built**: Tijdstempel laatste bouw van de selectie.
+
+### JSON voorbeeld
+
+De JSON voor een selectie ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"1384",
+   "name":"Leadscoring",
+   "description":"",
+   "parent-type":"database",
+   "parent-id":"7616",
+   "has-children":false,
+   "has-referred":false,
+   "has-rules":true,
+   "database":"7616",
+   "last-built":"2019-04-17 00:21:26"
+}
+```
 
 ## Voorbeeld in PHP
 

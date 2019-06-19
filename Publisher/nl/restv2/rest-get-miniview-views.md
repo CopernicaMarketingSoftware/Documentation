@@ -21,20 +21,38 @@ Meer informatie over de betekenis van deze parameters vind je in het
 
 ## Geretourneerde velden
 
-De methode retourneert een lijst van selecties. Voor elke selectie
-worden de volgende eigenschappen teruggegeven:
+De methode retourneert een JSON object met selecties onder het **data** veld. 
+Elke selectie bevat de volgende velden:
 
-* **id**: 				Numeriek id van de selectie;
-* **name**: 			Naam van de selectie;
-* **description**: 		Omschrijving van de selectie;
-* **parent-type**: 		Mogelijke waardes: "database" of "view", gebruikt om aan te geven of 
-dit een selectie direct onder een database is, of een geneste selectie onder een andere selectie;
-* **parent-id**: 		Id van de database of selectie waar deze selectie onder valt;
-* **has-children**: 	Boolean waarde; heeft deze selectie geneste selecties onder zich?
-* **has-referred**: 	Boolean waarde; zijn er andere selectie die verwijzen naar deze selectie?
-* **has-rules**: 		Boolean waarde; zijn er selectie-regels voor deze selectie ingesteld?
-* **database**:			Id van de database waar deze selectie onder valt
-* **lastbuilt**:        Tijdstip wanneer de selectie voor het laatst is opgebouwd
+* **id**: Unieke numerieke identifier van selectie.
+* **name**: Naam van de selectie.
+* **description**: Beschrijving van de selectie.
+* **parent-type**: Type van de parent (view/database).
+* **parent-id**: ID van de parent.
+* **has-children**: Boolean die aangeeft of de selectie zelf selecties bevat.
+* **has-referred**: Boolean die aangeeft of er andere selecties zijn die naar deze selectie refereren.
+* **has-rules**: Boolean die aangeeft of de selectie regels heeft.
+* **database**: ID van de database waar deze selectie onder valt.
+* **last-built**: Tijdstempel laatste bouw van de selectie.
+
+### JSON voorbeeld
+
+De JSON voor een enkele selectie ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"1384",
+   "name":"Leadscoring",
+   "description":"",
+   "parent-type":"database",
+   "parent-id":"7616",
+   "has-children":false,
+   "has-referred":false,
+   "has-rules":true,
+   "database":"7616",
+   "last-built":"2019-04-17 00:21:26"
+}
+```
 
 ## Voorbeeld in PHP
 
