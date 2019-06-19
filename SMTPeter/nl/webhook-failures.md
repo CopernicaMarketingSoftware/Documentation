@@ -36,15 +36,20 @@ calls:
 
 | Variabele    | Description                                                                |
 |--------------|----------------------------------------------------------------------------|
-| id           | unieke id van de fout                                                      |
-| recipient    | e-mailadres van de fout                                                    |
-| state        | staat in het smtp protocol van de fout ("bounce" voor asynchrone bounces)  |
-| code         | optionele smtp error code                                                  |
-| extended     | optionele extended smtp status code                                        |
-| description  | optionele omschrijving van de fout                                         |
-| time         | tijdstempel van de fout                                                    |
-| action       | actie die voorgekomen is                                                   |
-| tags         | tags geassocieerd met het bericht                                          |
+| id           | Unieke id van het bericht dat de failure triggerde                         |
+| type         | Type van de actie die de webhook triggerde ('failure')                     |
+| timestamp    | Tijdstempel van de failure (YYYY-MM-DD HH:MM:SS formaat)                   |
+| time         | Unix tijd van de failure                                                   |
+| recipient    | E-mailadres van de ontvanger die de failure triggerde                      |
+| action       | Actie die voorgekomen is ('failure' of 'failed')                           |
+| state        | Staat in het SMTP protocol van de fout ("bounce" voor asynchrone bounces)  |
+| code         | Optionele SMTP error code                                                  |
+| extended     | Optionele extended SMTP status code                                        |
+| description  | Optionele omschrijving van de fout                                         |
+| tags         | Tags geassocieerd met het bericht                                          |
+
+De 'id', 'recipient' en 'tags' variabelen stellen je in staat om de klik te linken aan de 
+originele verstuurde e-mail.
 
 ## Meer informatie
 

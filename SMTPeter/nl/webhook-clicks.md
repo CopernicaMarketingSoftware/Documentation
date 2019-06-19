@@ -5,7 +5,7 @@ toestaat. Op deze manier worden alle kliks van je gebruikers geregistreerd. Dit
 gebeurt automatisch, snel en eigenlijk onbewust voor de gebruiker. 
 
 Met een webhook kun je meldingen over kliks zelf live ontvangen. Voor elke 
-klik wordt een HTTP POST call (HTTPS is ook mogelijk) naar je server verstuurd
+klik wordt een HTTP/HTTPS POST call naar je server verstuurd
 met relevante informatie over de klik.
 
 ## Variabelen
@@ -14,17 +14,18 @@ Met elke POST call worden de volgende vaiabelen toegestuurd:
 
 | Variabele | Omschrijving                                             |
 |-----------|----------------------------------------------------------|
-| id        | unieke identifier van de e-mail waarop werd geklikt      |
-| recipient | e-mailadres van de gebruiker die heeft geklikt           |
-| ip        | ip adres van de gebruiker die heeft geklikt              |
-| time      | tijd van klikken                                         |
-| original  | de originele url                                         |
-| useragent | optionele user agent string (vanuit http request header) |
-| referer   | optionele referer (vanuit http request header)           |
-| tags      | tags geassocieerd met de mail                            |
+| id        | Unieke identifier van de e-mail waarop werd geklikt      |
+| type      | Type actie die de webhook triggerde ('click')            |
+| timestamp | Tijdstempel van de klik (YYYY-MM-DD HH:MM:SS formaat)    |
+| time      | Unix tijd van de klik                                    |
+| recipient | E-mailadres van de gebruiker die heeft geklikt           |
+| ip        | IP adres van de gebruiker die heeft geklikt              |
+| original  | De originele url                                         |
+| useragent | Optionele user agent string (vanuit http request header) |
+| referer   | Optionele referer (vanuit http request header)           |
+| tags      | Tags geassocieerd met de mail                            |
 
-
-De "id", "recipient" en "tags" variabelen stellen je in staat om de klik te linken aan de 
+De 'id', 'recipient' en 'tags' variabelen stellen je in staat om de klik te linken aan de 
 originele verstuurde e-mail.
 
 ## Meer informatie

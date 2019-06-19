@@ -25,7 +25,6 @@ to your webserver so that it becomes accessible via either
 You can remove the text file from your server after the address has been 
 validated.
 
-
 ## Testing the webhook
 
 The SMTPeter dashboard comes with a useful tool to test your webhook. 

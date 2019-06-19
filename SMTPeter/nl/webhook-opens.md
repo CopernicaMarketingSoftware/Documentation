@@ -7,7 +7,7 @@ kunt nagaan om te analyseren.
 
 Door het opzetten van een webhook voor *opens* krijg je live meldingen
 over elke geregistreerde opening (van de afbeelding). Voor elke opening sturen
-we een HTTP POST call (HTTPS is ook mogelijk) naar je server met relevante
+we een HTTP/HTTPS POST call naar je server met relevante
 informatie over het openen.
 
 ## Variabelen
@@ -16,16 +16,18 @@ Met elke POST call worden de volgende variabelen toegestuurd:
 
 | Variabele  | Omschrijving                                             |
 |------------|----------------------------------------------------------|
-| id         | unieke identifier van het geopende bericht               |
-| recipient  | e-mailadres van de persoon die de e-mail heeft geopend   |
-| ip         | ip adres van degene die heeft geopend                    |
-| time       | tijd van openen                                          |
-| useragent  | optionele user agent string (vanuit http request header) |
-| referer    | optionele referer (vanuit http request header)           |
-| tags       | tags geassocieerd met het bericht                        |
+| id         | Unieke identifier van het geopende bericht               |
+| type       | Type van de actie die de webhook triggerde ('open')      |
+| timestamp  | Tijdstempel van de bounce (YYYY-MM-DD HH:MM:SS formaat)  |
+| time       | Unix tijd van de bounce                                  |
+| recipient  | E-mailadres van de opener                                |
+| ip         | IP adres van de opener                                   |
+| useragent  | Optionele user agent string (vanuit HTTP request header) |
+| referer    | Optionele referer (vanuit HTTP request header)           |
+| tags       | Tags geassocieerd met het bericht                        |
 
-De "id" en "recipient" variabelen stellen je in staat om het aantal openingen te 
-linken aan de originele verstuurde e-mail.
+De 'id', 'recipient' en 'tags' variabelen stellen je in staat om de klik te linken aan de 
+originele verstuurde e-mail.
 
 ## Meer informatie
 

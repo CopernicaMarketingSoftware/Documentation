@@ -65,7 +65,7 @@ variables are submitted:
 | mime      | The MIME data that was sent (the message itself)                         |
 | tags      | The tags that you associated with the mail                               |
 
-The "id" and "recipient" variables allow you to link the incoming bounce
+The 'id' and 'recipient' and 'tags' variables allow you to link the incoming bounce
 to the original outgoing message that was sent.
 
 ## More information

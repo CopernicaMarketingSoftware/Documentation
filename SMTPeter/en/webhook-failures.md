@@ -6,6 +6,9 @@ for both synchronous failures (failures during the SMTP handshake)
 as well as asynchronous failures (messages that were initially accepted,
 but for which we received a failure report later on).
 
+If you are interested in all messages that are sent back to the envelope 
+address you can also set up a [webhooks for bounces](webhook-failures).
+
 ## Synchronous vs. asynchronous
 
 The SMTP protocol allows receiving servers to either accept or reject a 
@@ -24,29 +27,31 @@ mail servers, and even a couple of big email senders still send back
 notifications in a format that they invented themselves. Although we do
 our best to recognize all types of bounce messages and pass them on to
 the webhooks, it is not always possible to process such non-standardized
-asynchronous bounces, and to pass them to webhooks.
+asynchronous bounces, and to pass them to webhooks. You can also receive 
+all bounces by setting up a [webhook for bounces](webhook-bounces).
 
-If you want to receive all failures, even the ones that we did not recognize,
-you can set up a [webhook for bounces](webhook-bounces) besides
-the failure webhook.
-
-## Format
+## Variables
 
 SMTPeter uses HTTP POST calls to send the data to you. This can be done
 over HTTP or over HTTPS. The following variables are used in the POST
 calls:
 
-| Variable    | Description                                                                       |
-|-------------|-----------------------------------------------------------------------------------|
-| id          | Unique id of the message for which this is a failure report                       |
-| recipient   | Email address for which this is a failure                                         |
-| state       | State in the smtp protocol where the failure occured ("bounce" for async bounces) |
-| code        | Optional smtp error code                                                          |
-| extended    | Optional extended smtp status code                                                |
-| description | Optional description of the error                                                 |
-| time        | Timestamp of the error                                                            |
-| action      | Action that occurred                                                              |
-| tags        | Tags you associated with this mailing                                             |
+| Variable     | Description                                                                               |
+|--------------|-------------------------------------------------------------------------------------------|
+| id           | Unique id of the message for which this is a failure report                               |
+| type         | Type of action that triggered the webhook ('failure')                                     |
+| timestamp    | Timestamp for the failure (in YYYY-MM-DD HH:MM:SS format)                                 |
+| time         | Unix time for the failure                                                                 |
+| recipient    | Email address for which this is a failure                                                 |
+| action       | Action that triggered the webhook ('failure' or 'failed')                                 |
+| state        | State in the SMTP protocol where the failure occurred ("bounce" for asynchronous bounces) |
+| code         | Optional SMTP error code                                                                  |
+| extended     | Optional extended SMTP status code                                                        |
+| description  | Optional description of the error                                                         |
+| tags         | The tags that you associated with the mail                                                |
+
+The 'id' and 'recipient' and 'tags' variables allow you to link the incoming bounce
+to the original outgoing message that was sent.
 
 ## More information
 

@@ -19,6 +19,7 @@ With each POST call the following variables are sent over:
 | emailfrom | Email address of complaining email client                            |
 | mime      | MIME version of the received report                                  |
 
+The 'id' variable allows you to link the incoming abuse to the original outgoing message that was sent.
 
 ## More information
 

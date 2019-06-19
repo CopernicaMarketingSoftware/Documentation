@@ -16,15 +16,18 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
 
 | Variabele  | Omschrijving                                             |
 |------------|----------------------------------------------------------|
-| id         | unieke identifier van het geopende bericht               |
-| recipient  | e-mailadres van de opener                                |
-| ip         | ip adres van de opener                                   |
-| time       | tijd van openen                                          |
-| useragent  | optionele user agent string (vanuit http request header) |
-| referer    | optionele referer (vanuit http request header)           |
-| tags       | tags geassocieerd met het bericht                        |
+| id         | Unieke identifier van het geopende bericht               |
+| type       | Type van de actie die de webhook triggerde ('open')      |
+| timestamp  | Tijdstempel van de bounce (YYYY-MM-DD HH:MM:SS formaat)  |
+| time       | Unix tijd van de bounce                                  |
+| recipient  | E-mailadres van de opener                                |
+| ip         | IP adres van de opener                                   |
+| useragent  | Optionele user agent string (vanuit HTTP request header) |
+| referer    | Optionele referer (vanuit HTTP request header)           |
+| tags       | Tags geassocieerd met het bericht                        |
 
-De variabelen "id", "recipient" en "tags" stellen je in staat om de open te koppelen aan de oorspronkelijke mail.
+De variabelen 'id', 'recipient' en 'tags' stellen je in staat om de
+binnenkomende bounce te koppelen aan de oorspronkelijke mail.
 
 ## Meer informatie
 

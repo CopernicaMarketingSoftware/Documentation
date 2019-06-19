@@ -25,9 +25,11 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 | Variable  | Description                                                     |
 |-----------|-----------------------------------------------------------------|
 | id        | Unique identifier of the message that was opened                |
+| type      | Type of action that triggered the webhook ('open')              |
+| timestamp | Timestamp for the failure (in YYYY-MM-DD HH:MM:SS format)       |
+| time      | Unix time for the failure                                       |
 | recipient | Email address of the person that opened the mail                |
 | ip        | IP address from which the message was opened                    |
-| time      | Time when the message was opened                                |
 | useragent | Optional user agent string (extracted from HTTP request header) |
 | referer   | Optional referer (extracted from HTTP request header)           |
 | tags      | The tags that you associated with the mail                      |

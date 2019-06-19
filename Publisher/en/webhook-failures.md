@@ -39,14 +39,15 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 | Variable     | Description                                                                               |
 |--------------|-------------------------------------------------------------------------------------------|
 | id           | Unique id of the message for which this is a failure report                               |
-| recipient    | Email address for which this is a failure                                                 |
-| action       | Action that triggered the webhook ('failure' or 'failed')                                 |
-| state        | State in the smtp protocol where the failure occurred ("bounce" for asynchronous bounces) |
-| code         | Optional SMTP error code                                                                  |
-| extended     | Optional extended smtp status code                                                        |
-| description  | Optional description of the error                                                         |
+| type         | Type of action that triggered the webhook ('failure')                                     |
 | timestamp    | Timestamp for the failure (in YYYY-MM-DD HH:MM:SS format)                                 |
 | time         | Unix time for the failure                                                                 |
+| recipient    | Email address for which this is a failure                                                 |
+| action       | Action that triggered the webhook ('failure' or 'failed')                                 |
+| state        | State in the SMTP protocol where the failure occurred ("bounce" for asynchronous bounces) |
+| code         | Optional SMTP error code                                                                  |
+| extended     | Optional extended SMTP status code                                                        |
+| description  | Optional description of the error                                                         |
 | tags         | The tags that you associated with the mail                                                |
 
 The "id", "recipient" and "tags" variables allow you to link the failure to

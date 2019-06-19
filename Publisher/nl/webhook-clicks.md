@@ -20,16 +20,18 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
 | Variabele | Omschrijving                                             |
 |-----------|----------------------------------------------------------|
 | id        | Unieke identifier van de e-mail waarop werd geklikt      |
+| type      | Type actie die de webhook triggerde ('click')            |
+| timestamp | Tijdstempel van de klik (YYYY-MM-DD HH:MM:SS formaat)    |
+| time      | Unix tijd van de klik                                    |
 | recipient | E-mailadres van de gebruiker die heeft geklikt           |
 | ip        | IP adres van de gebruiker die heeft geklikt              |
-| time      | Tijd van klikken                                         |
 | original  | De originele url                                         |
 | useragent | Optionele user agent string (vanuit http request header) |
 | referer   | Optionele referer (vanuit http request header)           |
 | tags      | Tags geassocieerd met de mail                            |
 
-De variabelen "id", "recipient" en "tags" stellen je in staat om de klik 
-te koppelen aan de oorspronkelijke mail.
+De variabelen 'id', 'recipient' en 'tags' stellen je in staat om de
+binnenkomende bounce te koppelen aan de oorspronkelijke mail.
 
 ## Meer informatie
 

@@ -14,39 +14,34 @@ Arrays zoals "interests" worden worden per item verstuurd als *interests[]=xyz*.
 
 Voor elk profiel worden de volgende waarden meegegeven:
 
-| Variabelen  | Omschrijving                                                                             |
-|-------------|------------------------------------------------------------------------------------------|
-| profile     | unieke identifier van het profiel dat werd aangemaakt                                    |
-| type        | welke actie werd uitgevoerd op het betreffende profiel ('create', 'update' or 'delete')  |
-| parameters  | parameters voor het uitvoeren van de actie                                               |
-| timestamp   | tijd voor het uitvoeren van de actie (in YYYY-MM-DD HH:MM:SS format)                     |
-| id          | unieke identifier van het profiel                                                        |
-| database    | unieke identifier van de database van het profiel                                        |
-| fields      | huidige velden van het profiel                                                           |
-| interests   | huidige interesses van het profiel                                                       |
-| created     | tijd van aanmaken (in YYYY-MM-DD HH:MM:SS format)                                        |
-| modified    | tijd van laatste aanpassing (in YYYY-MM-DD HH:MM:SS format)                              |
+| Variabelen  | Omschrijving                                                                    |
+|-------------|---------------------------------------------------------------------------------|
+| type        | Type actie dat de Webhook heeft getriggerd ('create')                           |
+| parameters  | Parameters voor het uitvoeren van de actie                                      |
+| timestamp   | Tijdstempel van het aanmaken van het profiel (in YYYY-MM-DD HH:MM:SS format)    |
+| time        | Unix tijd van het updaten van het profiel                                       |
+| profile     | Unieke identifier van het profiel dat werd aangemaakt                           |
+| database    | Unieke identifier van de database van het profiel                               |
+| created     | Tijd van aanmaken (in YYYY-MM-DD HH:MM:SS format)                               |
+| modified    | Tijd van laatste aanpassing (in YYYY-MM-DD HH:MM:SS format)                     |
+| fields      | Huidige velden van het profiel                                                  |
+| interests   | Huidige interesses van het profiel                                              |
 
 Voor subprofielen zijn dit de volgende variabelen:
 
-| Variabele   | Omschrijving                                                                            |
-|-------------|-----------------------------------------------------------------------------------------|
-| subprofile  | unieke identifier van het subprofiel dat werd aangemaakt                                |
-| type        | welke actie werd uitgevoerd op het betreffende profiel ('create', 'update' or 'delete') |
-| parameters  | parameters voor het uitvoeren van de actie                                              |
-| timestamp   | tijd voor het uitvoeren van de actie (in YYYY-MM-DD HH:MM:SS format)                    |
-| id          | unieke identifier van het subprofiel                                                    |
-| profile     | unieke identifier van het profiel van het subprofiel                                    |
-| database    | unieke identifier van de database van het subprofiel                                    |
-| collection  | unieke identifier van de collectie van het subprofiel                                   |
-| fields      | huidige velden van het subprofiel                                                       |
-| created     | tijd van aanmaken (in YYYY-MM-DD HH:MM:SS format)                                       |
-| modified    | tijd van laatste aanpassing (in YYYY-MM-DD HH:MM:SS format)                             |
-
-De variabele "action" heeft altijd de waarde 'create'; dit helpt je om deze
-berichten te onderscheiden van de berichten die verstuurd worden als een
-profiel [aangepast](webhook-updates) of [verwijderd](webhook-deletes) wordt.
-Daarnaast wordt er informatie over het profiel of subprofiel meegestuurd. 
+| Variabele   | Omschrijving                                                                    |
+|-------------|---------------------------------------------------------------------------------|
+| type        | Type actie dat de Webhook heeft getriggerd ('create')                           |
+| parameters  | Parameters voor het uitvoeren van de actie                                      |
+| timestamp   | Tijdstempel van het aanmaken van het profiel (in YYYY-MM-DD HH:MM:SS format)    |
+| time        | Unix tijd van het updaten van het profiel                                       |
+| profile     | Unieke identifier van het profiel van het subprofiel                            |
+| subprofile  | Unieke identifier van het subprofiel dat werd aangemaakt                        |
+| database    | Unieke identifier van de database van het subprofiel                            |
+| collection  | Unieke identifier van de collectie van het subprofiel                           |
+| created     | Tijdstempel van aanmaken (in YYYY-MM-DD HH:MM:SS format)                        |
+| modified    | Tijdstempel van laatste aanpassing (in YYYY-MM-DD HH:MM:SS format)              |
+| fields      | Huidige velden van het subprofiel                                               |
 
 ## Voorbeeld
 

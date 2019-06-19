@@ -62,8 +62,8 @@ De volgende variabelen worden dan ingevoerd:
 | mime       | De verstuurde MIME data (het bericht zelf)               |
 | tags       | De tags gelinkt aan de mail                              |
 
-De "ID" en "recipient" variabelen stellen je in staat om de inkomende bounce
-te linken aan het oorspronkelijke bericht dat werd verstuurd.
+De 'id', 'recipient' en 'tags' variabelen stellen je in staat om de klik te linken aan de 
+originele verstuurde e-mail.
 
 ## Meer informatie
 

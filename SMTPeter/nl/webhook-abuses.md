@@ -6,7 +6,7 @@ ondersteunt, ontvangt SMTPeter hier een zogenaamd *abuse report* over. Hierin wo
 beschreven over welke email de klacht gaat. 
 
 Met een webhook kun je meldingen over deze *abuse reports* voor jouw e-mails zelf ontvangen.
-Voor elke klacht wordt een HTTP POST call (HTTPS is ook mogelijk) naar jouw server
+Voor elke klacht wordt een HTTP/HTTPS POST call naar jouw server
 verstuurd met relevante informatie over de klacht.
 
 ## Variabelen
