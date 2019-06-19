@@ -1,6 +1,6 @@
 # Webhooks: (sub)profile updates
 
-If you set up a profile update webhook, you are notified in real-time
+If you set up a profile update Webhook, you are notified in real-time
 whenever a profile or subprofile is updated in one of your databases.
 For each event we send an HTTP(S) POST call to your server with the 
 relevant information about the profile at the time of the update.
@@ -18,7 +18,7 @@ For profiles this consists of the following variables:
 
 | Variable   | Description                                                                  |
 |------------|------------------------------------------------------------------------------|
-| type       | Type of action that triggered the webhook ('update')                         |
+| type       | Type of action that triggered the Webhook ('update')                         |
 | parameters | Parameters that the action was performed with                                |
 | timestamp  | Timestamp for when the profile was updated (in YYYY-MM-DD HH:MM:SS format)   |
 | time       | Unix time for when the profile was updated                                   |
@@ -33,7 +33,7 @@ For subprofiles, this consists of the following variables:
 
 | Variable    | Description                                                                     |
 |-------------|---------------------------------------------------------------------------------|
-| type        | Type of action that triggered the webhook ('update')                            |
+| type        | Type of action that triggered the Webhook ('update')                            |
 | parameters  | Parameters that the action was performed with                                   |
 | timestamp   | Time when the subprofile was updated (in YYYY-MM-DD HH:MM:SS format)            |
 | time        | Unix time for when the subprofile was updated                                   |
@@ -44,10 +44,6 @@ For subprofiles, this consists of the following variables:
 | created     | Timestamp for when the subprofile was created (in YYYY-MM-DD HH:MM:SS format)   |
 | modified    | Timestamp for when the subprofile was modified (in YYYY-MM-DD HH:MM:SS format)  |
 | fields      | Current fields of the subprofile                                                |
-
-The "action" variable will always have the value 'update'; this helps discern
-these messages from messages that are sent when a profile is
-[created](webhook-creates) or [deleted](webhook-deletes).
 
 ## Example
 
@@ -102,5 +98,5 @@ An example for a subprofile looks like this:
 ## More information
 
 * [Webhooks](./webhooks)
-* [Creation feedback](./webhook-creates)
-* [Delete feedback](./webhook-deletes)
+* [Creation Webhook](./webhook-creates)
+* [Delete Webhook](./webhook-deletes)

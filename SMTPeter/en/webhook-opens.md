@@ -5,7 +5,7 @@ is opened for which this option was set, the image will not be downloaded from y
 own server, but from the cache on SMTPeter web servers in stead. This
 allows us to track all opens, and to use that for statistics.
 
-If you set up a webhook for opens, SMTPeter notifies you in real-time
+If you set up a Webhook for opens, SMTPeter notifies you in real-time
 about each registered image download. For each open that we monitor we send 
 a HTTP POST call (HTTPS is possible too) to your server with the relevant 
 information about the open.
@@ -17,7 +17,7 @@ With each POST call the following variables are passed to your script:
 | Variable  | Description                                                     |
 |-----------|-----------------------------------------------------------------|
 | id        | Unique identifier of the message that was opened                |
-| type      | Type of action that triggered the webhook ('open')              |
+| type      | Type of action that triggered the Webhook ('open')              |
 | recipient | Email address of the person that opened the mail                |
 | ip        | IP address from which the message was opened                    |
 | time      | Time when the message was opened                                |
@@ -31,4 +31,4 @@ to the original outgoing message that was sent.
 ## More information
 
 * [Webhooks](./webhooks)
-* [Set up a webhook](./webhook-setup)
+* [Set up a Webhook](./webhook-setup)

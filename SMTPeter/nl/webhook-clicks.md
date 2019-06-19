@@ -4,7 +4,7 @@ SMTPeter kan alle *hyperlinks* in je e-mails herschrijven als je *click-tracking
 toestaat. Op deze manier worden alle kliks van je gebruikers geregistreerd. Dit 
 gebeurt automatisch, snel en eigenlijk onbewust voor de gebruiker. 
 
-Met een webhook kun je meldingen over kliks zelf live ontvangen. Voor elke 
+Met een Webhook kun je meldingen over kliks zelf live ontvangen. Voor elke 
 klik wordt een HTTP/HTTPS POST call naar je server verstuurd
 met relevante informatie over de klik.
 
@@ -15,7 +15,7 @@ Met elke POST call worden de volgende vaiabelen toegestuurd:
 | Variabele | Omschrijving                                             |
 |-----------|----------------------------------------------------------|
 | id        | Unieke identifier van de e-mail waarop werd geklikt      |
-| type      | Type actie die de webhook triggerde ('click')            |
+| type      | Type actie die de Webhook triggerde ('click')            |
 | timestamp | Tijdstempel van de klik (YYYY-MM-DD HH:MM:SS formaat)    |
 | time      | Unix tijd van de klik                                    |
 | recipient | E-mailadres van de gebruiker die heeft geklikt           |

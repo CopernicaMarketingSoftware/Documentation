@@ -1,6 +1,6 @@
 # Webhooks: (sub)profile deletions
 
-If you set up a profile deletion webhook, you are notified in real-time
+If you set up a profile deletion Webhook, you are notified in real-time
 whenever a profile or subprofile is deleted from your account's databases.
 For each event we send an HTTP(S) POST call to your server with the 
 relevant information about the profile that was removed.
@@ -18,7 +18,7 @@ For profiles the response consists of the following variables:
 
 | Variable  | Description                                                                               |
 |-----------|-------------------------------------------------------------------------------------------|
-| type      | Type of action that triggered the webhook ('delete')                                      |
+| type      | Type of action that triggered the Webhook ('delete')                                      |
 | timestamp | Timestamp for when the profile was deleted (in YYYY-MM-DD HH:MM:SS format)                |
 | time      | Unix time for when the profile was deleted                                                |
 | profile   | Unique identifier of the profile that was deleted                                         |   
@@ -29,7 +29,7 @@ For subprofiles, it consists of the following variables:
 
 | Variable   | Description                                                                              |
 |------------|------------------------------------------------------------------------------------------|
-| type       | Type of action that triggered the webhook ('delete')                                     |
+| type       | Type of action that triggered the Webhook ('delete')                                     |
 | timestamp  | Time for when the subprofile was deleted (in YYYY-MM-DD HH:MM:SS format)                 |
 | time       | Unix time for when the subprofile was deleted                                            |
 | profile    | Unique identifier of the profile to which this subprofile belongs                        |
@@ -66,5 +66,5 @@ An example for a subprofile looks like this:
 ## More information
 
 * [Webhooks](./webhooks)
-* [Creation feedback](./webhook-creates)
-* [Update feedback](./webhook-updates)
+* [Creation Webhook](./webhook-creates)
+* [Update Webhook](./webhook-updates)

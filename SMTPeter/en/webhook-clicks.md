@@ -7,7 +7,7 @@ redirected to the original URL. This all happens automatically and very fast
 and is most of the time unnoticeable for your receiver. This technology
 allows SMTPeter to track all clicks on your mails.
 
-If you set up a click webhook, SMTPeter also notifies you in real-time
+If you set up a click Webhook, SMTPeter also notifies you in real-time
 about these clicks. For each click we send a HTTP/HTTPS POST call to your 
 server with the relevant information about the click.
 
@@ -18,7 +18,7 @@ With each POST call the following variables are sent over:
 | Variable  | Description                                                     |
 |-----------|-----------------------------------------------------------------|
 | id        | Unique identifier of the message that was clicked               |
-| type      | Type of action that triggered the webhook ('click')             |
+| type      | Type of action that triggered the Webhook ('click')             |
 | timestamp | Timestamp for the bounce (in YYYY-MM-DD HH:MM:SS format)        |
 | time      | Unix time for the bounce                                        |
 | recipient | Email address of the user that clicked                          |
@@ -34,4 +34,4 @@ to the original outgoing message that was sent.
 ## More information
 
 * [Webhooks](./webhooks)
-* [Set up a webhook](./webhook-setup)
+* [Set up a Webhook](./webhook-setup)

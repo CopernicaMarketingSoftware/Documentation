@@ -2,7 +2,7 @@
 
 Als je in real-time op de hoogte gebracht wil worden wanneer een
 profiel of subprofiel uit een van je database verwijderd wordt,
-kun je hiervoor een webhook instellen.
+kun je hiervoor een Webhook instellen.
 Voor elk verwijderd profiel sturen we via HTTP of HTTPS een POST bericht naar jouw
 server met daarin alle relevante informatie over het zojuist verwijderde profiel.
 

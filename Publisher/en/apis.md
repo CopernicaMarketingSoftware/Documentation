@@ -2,7 +2,7 @@
 
 There are multiple ways to link Copernica to other applications. 
 Copernica has two APIs to read or edit data in Copernica and due to 
-[*WebHooks*](./webhooks) it's possible to get notifications of clicks, opens and 
+[*Webhooks*](./webhooks) it's possible to get notifications of clicks, opens and 
 bounces in real time.
 
 ## REST vs. SOAP
@@ -14,7 +14,7 @@ SOAP layer between calls.
 
 ## WebHooks
 
-Except API calls, Copernica also supports webhooks. WebHooks, 
+Except API calls, Copernica also supports Webhooks. Webhooks, 
 in their essence, are the opposite of API calls: instead of requesting 
 data from the application, the applications sends you information.
 
@@ -28,16 +28,16 @@ through the dashboard in MarketingSuite. You have to explicitly specify
 which events you want to be notified on and what address should be used 
 to approach your scripts.
 
-The downside of webhooks is that you're not in control over the 
+The downside of Webhooks is that you're not in control over the 
 speed of calls. Especially when you set up a webhook that is 
 triggered each time an email is opened, the stream of calls could become 
 enormous. If your servers aren't capable of handling such a large stream 
-of data, it's best not to use webhooks.
+of data, it's best not to use Webhooks.
 
 ## Log files
 
-All events that are sent to webhooks, are also written onto logfiles. 
-If you're not able to handle webhooks due to lack of processing 
+All events that are sent to Webhooks, are also written onto logfiles. 
+If you're not able to handle Webhooks due to lack of processing 
 power or when your script temporarily goes offline, it's always possible 
 to read in the logfiles and find the events anyway.
 

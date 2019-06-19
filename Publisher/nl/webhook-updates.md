@@ -2,7 +2,7 @@
 
 Als je in real-time op de hoogte gebracht wil worden wanneer een
 profiel of subprofiel in een van je database aangepast wordt,
-kun je hiervoor een webhook instellen.
+kun je hiervoor een Webhook instellen.
 Voor elk aangepast profiel sturen we via HTTP of HTTPS een POST bericht naar jouw
 server met daarin alle relevante informatie over het zojuist aangepaste profiel.
 

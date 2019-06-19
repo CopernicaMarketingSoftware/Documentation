@@ -1,6 +1,6 @@
 # Webhooks: (sub)profile creations
 
-If you set up a profile creation webhook you are notified in real-time
+If you set up a profile creation Webhook you are notified in real-time
 whenever a profile or subprofile in one of your databases.
 For each event we send an HTTP(S) POST call to your server with the 
 relevant information about the newly created profile.
@@ -18,7 +18,7 @@ A created profile returns the following variables:
 
 | Variables          | Description                                                                  |
 |--------------------|------------------------------------------------------------------------------|
-| type               | Type of action that triggered the webhook ('create')                         |
+| type               | Type of action that triggered the Webhook ('create')                         |
 | parameters         | Parameters that the action was performed with                                |
 | timestamp          | Timestamp for when the profile was created (in YYYY-MM-DD HH:MM:SS format)   |
 | time               | Unix time for when the profile was created                                   |
@@ -33,7 +33,7 @@ A created subprofile returns the following variables:
 
 | Variables          | Description                                                                      |
 |--------------------|----------------------------------------------------------------------------------|
-| type               | Type of action that triggered the webhook ('create')                             |
+| type               | Type of action that triggered the Webhook ('create')                             |
 | parameters         | Parameters that the action was performed with                                    |
 | timestamp          | Timestamp for when the subprofile was created (in YYYY-MM-DD HH:MM:SS format)    |
 | time               | Unix time for when the subprofile was created                                    |
@@ -102,5 +102,5 @@ An example for a subprofile looks like this:
 ## More information
 
 * [Webhooks](./webhooks)
-* [Update webhook](./webhook-updates)
-* [Delete webhook](./webhook-deletes)
+* [Update Webhook](./webhook-updates)
+* [Delete Webhook](./webhook-deletes)

@@ -1,40 +1,80 @@
 # Webhooks
 
-SMTPeter allows you to set up Webhooks, previously named Feedback Loops. 
-These Webhooks can be 
-used to receive realtime event notifications. Every time when something happens
-on the SMTPeter servers (like an incoming bounce, a failed  delivery or 
-when someone clicks on a link), SMTPeter makes a call to your server to 
-notify you about this event.
+SMTPeter has a tab named `WEBHOOKS`, previously 
+called Feedback Loops. Webhooks are processes that notify their 
+user of events that happen in real time through HTTP POST. This allows 
+you to always have the most recent results of your mailing.
 
-The webhook is sent over the HTTP or HTTPS protocol using the HTTP POST
-mechanism. When you [set up a webhook](webhook-setup), you register 
-a web address and specify the type of events that you are interested in. 
-Once your URL has been validated, SMTPeter starts making calls to it.
+While Webhooks are very useful, they should be used with caution as they 
+can generate large amounts of calls. If you are unsure about your server 
+capacity or do not need real-time feedback you can also view the 
+[logfiles](./logfiles-smtpeter "How to retrieve SMTPeter logfiles") or 
+use the [SMTP](./smtp-api) or [REST](./rest-api) APIs.
 
-## Watch out!
+There are several types of Webhooks. The articles linked below explain 
+these types in more detail:
 
-Before you set up a webhook, please do make sure that your server
-is capable of handling the load. Especially the webhook that is
-called when someone [opens a mail](webhook-opens) receives huge
-numbers of calls.
+* [Webhooks for bounces](webhook-bounces)
+* [Webhooks for failures](webhook-failures)
+* [Webhooks for clicks](webhook-clicks)
+* [Webhooks for opens](webhook-opens)
 
-If you're not sure whether your server can handle the load, or when you do
-not need realtime feedback, you better use the [REST API](rest-api) to 
-periodically download [the latest log files](rest-logfiles). The REST API 
-gives you access to exactly the same data as the webhooks, but you 
-stay in control and you decide when to fetch the data.
+## Webhooks in SMTPeter
+
+Webhooks can be used to sync data that passes through Copernica 
+directly into your own application. Webhooks require a script on 
+your own server to execute whenever information is provided through the 
+Webhook. You can set several triggers in the Webhooks tab such 
+as opens, clicks, profile edits and bounces.
+
+The data you receive is very rich and allows you to easily link it to the 
+data already present in your system. SMTPeter receives the IP address and 
+HTTP headers of the incoming request and adds the e-mail address, profile 
+data and linked tags to send to you. Based on this information it is 
+easy to add the information to the correct profile.
+
+## Setting up Webhooks
+
+The first step for setting up a Webhook is to navigate to the `WEBHOOK` 
+tab. To create a Webhook you pick a type and then add the callback URL, where 
+the data will be sent to after configuration.
+
+The next step is to verify your web address. This extra step ensures that 
+your potentially confidential data will be sent to the correct server. 
+In SMTPeter you will find a link to download the verification file, 
+which will be different for every new Webhook. The file should be placed 
+in the root of your webserver or in the directory of the script that will 
+handle the incoming HTTP POST requests. So if your script is in the following location:
+
+```text
+"https://example.com/dir/script.php"
+```
+
+You should have the text file, which will be named something like "smtpeter-xxxxx.txt" 
+in the same location:
+
+```text
+"https://example.com/dir/smtpeter-xxxxx.txt"
+```
+
+You can now verify the callback URL by clicking the link in the dashboard. 
+You may delete the text file after verification. You can test your new 
+Webhook by clicking 'Manage' next to it and using the testing tool or 
+the 'Check now' button in the Webhook menu to test all your Webhooks.
 
 ## Security
 
 To protect your endpoint from abuse and false information injection, SMTPeter 
-[signs all requests](webhook-security) to your endpoint. 
+[signs all requests](./webhook-security) to your endpoint, so you can be sure 
+it's actually SMTPeter sending you the data. 
 
-## Type of events
+## More information
 
-The following webhooks can be used:
-
-* [Webhooks for clicks](webhook-clicks)
+* [Statistics](./statistics)
+* [Logfiles](./logfiles-ms)
+* [REST API](./rest-api)
+* [SOAP API](./soap-api-documentation)
 * [Webhooks for bounces](webhook-bounces)
 * [Webhooks for failures](webhook-failures)
+* [Webhooks for clicks](webhook-clicks)
 * [Webhooks for opens](webhook-opens)

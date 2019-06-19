@@ -2,7 +2,7 @@
 
 Als je in real-time op de hoogte gebracht wil worden wanneer er een nieuw
 profiel of subprofiel in een van je database aangemaakt wordt,
-kun je hiervoor een webhook instellen.
+kun je hiervoor een Webhook instellen.
 Voor elk nieuw profiel sturen we via HTTP of HTTPS een POST bericht naar jouw
 server met daarin alle relevante informatie over het zojuist aangemaakte profiel.
 

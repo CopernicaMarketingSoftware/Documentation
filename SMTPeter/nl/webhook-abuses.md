@@ -5,7 +5,7 @@ Indien een ontvanger van een e-mail deze als spam markeert en de e-mailclient di
 ondersteunt, ontvangt SMTPeter hier een zogenaamd *abuse report* over. Hierin wordt
 beschreven over welke email de klacht gaat. 
 
-Met een webhook kun je meldingen over deze *abuse reports* voor jouw e-mails zelf ontvangen.
+Met een Webhook kun je meldingen over deze *abuse reports* voor jouw e-mails zelf ontvangen.
 Voor elke klacht wordt een HTTP/HTTPS POST call naar jouw server
 verstuurd met relevante informatie over de klacht.
 

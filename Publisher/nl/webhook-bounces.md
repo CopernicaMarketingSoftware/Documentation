@@ -2,19 +2,19 @@
 
 Normaal gesproken past Copernica het envelope-adres van mails aan,
 zodat alle [*bounces*](./bounces) en andere berichten naar de Marketing Suite 
-teruggestuurd worden. Je kan een webhook voor bounces instellen 
+teruggestuurd worden. Je kan een Webhook voor bounces instellen 
 om van deze bounces een notificatie te ontvangen. Als je alleen maar 
 geïnteresseerd bent in verzendfouten kan je ook de 
-[webhooks voor fouten](webhook-failures) gebruiken.
+[Webhooks voor fouten](webhook-failures) gebruiken.
 
 ## Soorten berichten
 
-De webhook voor bounces wordt gebruikt voor **alle** berichten die 
+De Webhook voor bounces wordt gebruikt voor **alle** berichten die 
 naar het envelope-adres teruggestuurd worden.
 Niet alleen de normale verzendstatusnotificaties, maar ook foutmeldingen
 van servers die het officiële format voor bounce-berichten niet respecteren.
 Al dit soort berichten worden naar Copernica verstuurd, die 
-via de webhook loop jou weer kunnen informeren.
+via de Webhook loop jou weer kunnen informeren.
 
 ## Variabelen
 

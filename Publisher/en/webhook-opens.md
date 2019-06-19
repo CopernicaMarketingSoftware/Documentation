@@ -25,7 +25,7 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 | Variable  | Description                                                     |
 |-----------|-----------------------------------------------------------------|
 | id        | Unique identifier of the message that was opened                |
-| type      | Type of action that triggered the webhook ('open')              |
+| type      | Type of action that triggered the Webhook ('open')              |
 | timestamp | Timestamp for the failure (in YYYY-MM-DD HH:MM:SS format)       |
 | time      | Unix time for the failure                                       |
 | recipient | Email address of the person that opened the mail                |
@@ -34,7 +34,7 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 | referer   | Optional referer (extracted from HTTP request header)           |
 | tags      | The tags that you associated with the mail                      |
 
-The "id", "recipient" and "tags" variables allow you to link the open to the 
+The 'id", 'recipient' and 'tags' variables allow you to link the click to the '
 originally sent email message.
 
 ## More information
