@@ -46,7 +46,7 @@ is, is de volgende stap is structuur aan je collectie geven door databasevelden
 toe te voegen.
 
 ## Aanmaken of wijzigen miniselectie Marketing Suite
-Klik op het **blauwe tandwiel** in de rechterbovenhoek, hierna volgt een menu,
+Klik op het **tandwiel** in de rechterbovenhoek, hierna volgt een menu,
 klik in dit menu op **Selecties aanmaken**. Geef de miniselectie een naam. Deze
 miniselectie kan vervolgens worden ingericht met regels en condities.
 

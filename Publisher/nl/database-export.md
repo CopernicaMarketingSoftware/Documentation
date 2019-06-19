@@ -73,7 +73,7 @@ onderdeel *profielen* om de profielgegevens uit de selectie te downloaden.
 
 ## Exporteren in de Marketing Suite
 Klik op de database of collectie waar de export gestart voor dient te worden.
-Klik op het **blauwe tandwiel** rechtsboven > **Exporteren** >
+Klik op het **tandwiel** rechtsboven > **Exporteren** >
 **Nieuwe export aanmaken**. Geef de export een naam, kies vervolgens de juiste
 opties zoals hierboven beschreven.
 

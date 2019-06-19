@@ -110,7 +110,7 @@ bepaalde periode.
 Je kunt ook een aantal profielen selecteren uit een gesorteerde lijst.
 
 ## Aanmaken of wijzigen (mini)selectie Marketing Suite
-Klik op het **blauwe tandwiel** in de rechterbovenhoek, hierna volgt een menu,
+Klik op het **tandwiel** in de rechterbovenhoek, hierna volgt een menu,
 klik in dit menu op **Selecties aanmaken**. Geef de selectie een naam en kies
 of de selectie direct onder de database valt (reguliere selectie) of dat deze
 onder een andere selectie valt (subselectie). Deze selectie kan vervolgens
