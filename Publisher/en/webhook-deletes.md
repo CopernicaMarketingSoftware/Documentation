@@ -36,6 +36,7 @@ For subprofiles, it consists of the following variables:
 | subprofile | Unique identifier of the subprofile that was deleted                                     |
 | database   | Unique identifier of the database to which this subprofile belongs                       |
 | collection | Unique identifier of the collection to which this subprofile belongs                     |
+| fields     | The fields that belong to the deleted subprofile                                         |
 
 ## Example
 
