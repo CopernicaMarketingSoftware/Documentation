@@ -71,4 +71,3 @@ to the original outgoing message that was sent.
 ## More information
 
 * [Webhooks](./webhooks)
-* [Set up a webhook](./webhook-setup)

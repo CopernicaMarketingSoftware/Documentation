@@ -25,4 +25,3 @@ The 'id' variable allows you to link the incoming abuse to the original outgoing
 ## More information
 
 * [Webhooks](./webhooks)
-* [Set up a webhook](./webhook-setup)

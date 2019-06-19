@@ -22,4 +22,3 @@ Met elke POST call worden de volgende variabelen meegestuurd:
 ## Meer informatie
 
 * [Webhooks](./webhooks)
-* [Webhooks instellen](./webhook-setup)

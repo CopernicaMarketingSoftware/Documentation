@@ -68,4 +68,3 @@ originele verstuurde e-mail.
 ## Meer informatie
 
 * [Webhooks](./webhooks)
-* [Webhooks instellen](./webhook-setup)

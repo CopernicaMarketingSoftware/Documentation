@@ -32,4 +32,3 @@ originele verstuurde e-mail.
 ## Meer informatie
 
 * [Webhooks](./Webhook)
-* [Webhooks instellen](./webhook-setup)
