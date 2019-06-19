@@ -9,18 +9,33 @@ met een HTTP GET verzoek aan de volgende URL:
 De `$id` hier moet vervangen worden door de ID of de naam van de collectie 
 waarvoor je de selecties op wil vragen.
 
-## Ondersteunde parameters
-
-Er zijn geen ondersteunde parameters voor deze methode.
-
 ## Teruggegeven velden
 
-- **ID**: unieke numerieke identifier van de selectie
-- **name**: naam van de selectie
-- **description**: omschrijving van de selectie
-- **parent-type**: bovenliggende structuur van de selectie; selectie of collectie
-- **parent-id**: ID van de bovenliggende selectie/collectie
-- **collection**: ID van de collectie waar deze miniselectie onder valt.
+De methode retourneert een JSON object met de volgende eigenschappen:
+
+* **id**:               ID van de miniselectie
+* **name**:             Naam van de miniselectie
+* **description**:      Omschrijving van de miniselectie
+* **parent-type**:      Type van de parent, in dit geval 'collection'
+* **parent-id**:        ID van de parent van de miniselectie, in dit geval de collection ID
+* **collection**:       ID van de collectie waar deze miniselectie onder valt
+* **last-built**:       Tijdstempel van laatste miniselectie bouw
+
+### JSON voorbeeld
+
+De JSON voor de miniselectie ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"1525",
+   "name":"Miniselection",
+   "description":"",
+   "parent-type":"collection",
+   "parent-id":"21448",
+   "collection":"21448",
+   "last-built":"2019-06-19 00:48:37"
+}
+```
 
 ## Voorbeeld in PHP
 

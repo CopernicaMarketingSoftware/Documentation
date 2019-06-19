@@ -9,18 +9,33 @@ sending an HTTP GET request to the following URL:
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the collection you wish to request the miniselections for.
 
-## Available parameters
-
-There are no available parameters for this method.
-
 ## Returned fields
 
-- **ID**: unique numerical identifier
-- **name**: name of the selection
-- **description**: description of the selection
-- **parent-type**: type of the parent: view or collection
-- **parent-id**: id of the database or view
-- **collection**: id of the collection this miniselection belongs to
+The method returns a JSON object with the following fields: 
+
+* **ID**: Unique numerical identifier
+* **name**: Name of the selection
+* **description**: Description of the selection
+* **parent-type**: Type of the parent: view or collection
+* **parent-id**: ID of the database or view
+* **collection**: ID of the collection this miniview belongs to
+* **last-built**: Timestamp of last build
+
+### JSON example
+
+The JSON for a miniview might look something like this:
+ 
+```
+{  
+   "ID":"1525",
+   "name":"Miniselection",
+   "description":"",
+   "parent-type":"collection",
+   "parent-id":"21448",
+   "collection":"21448",
+   "last-built":"2019-06-19 00:48:37"
+}
+```
 
 ## PHP example
 

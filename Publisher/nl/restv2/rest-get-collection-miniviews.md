@@ -20,17 +20,34 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
 
-## Geretourneerde velden
+## Teruggegeven velden
 
-De methode retourneert een lijst van miniselecties. Voor elke selectie
-worden de volgende eigenschappen teruggegeven:
+De methode retourneert een JSON object met miniselecties onder het **data** 
+veld. Voor elke selectie worden de volgende eigenschappen teruggegeven:
 
-* id:               numeriek id van de miniselectie;
-* name:             naam van de miniselectie;
-* description:      omschrijving van de miniselectie;
-* parent-type:      dit is altijd de string "collection";
-* parent-id:        id van de collectie waar deze miniselectie onder valt.
-* collection:       id van de collectie waar deze miniselectie onder valt.
+* **id**:               ID van de miniselectie
+* **name**:             Naam van de miniselectie
+* **description**:      Omschrijving van de miniselectie
+* **parent-type**:      Type van de parent, in dit geval 'collection'
+* **parent-id**:        ID van de parent van de miniselectie, in dit geval de collection ID
+* **collection**:       ID van de collectie waar deze miniselectie onder valt
+* **last-built**:       Tijdstempel van laatste miniselectie bouw
+
+### JSON voorbeeld
+
+De JSON voor een enkele miniselectie ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"1525",
+   "name":"Miniselection",
+   "description":"",
+   "parent-type":"collection",
+   "parent-id":"21448",
+   "collection":"21448",
+   "last-built":"2019-06-19 00:48:37"
+}
+```
 
 ## Voorbeeld in PHP
 
