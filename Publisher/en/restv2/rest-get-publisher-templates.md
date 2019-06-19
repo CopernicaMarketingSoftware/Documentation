@@ -23,6 +23,18 @@ with emailing templates. Each template contains the following information:
 * **name**: The name of the template.
 * **archived**: The archive status of the template.
 
+### JSON example
+
+The JSON for a single template will look something like this:
+
+```json
+{  
+   "id":"551",
+   "name":"TestTemplate",
+   "archived":false
+}
+```
+
 ## PHP example
 
 The script below demonstrates how to use this API method.

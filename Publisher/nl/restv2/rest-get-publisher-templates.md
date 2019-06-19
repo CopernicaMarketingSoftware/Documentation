@@ -24,6 +24,18 @@ in het **data** veld. Elke template bevat de volgende informatie:
 * **name**: De naam van de template. 
 * **archived**: De archiefstatus van de template.
 
+### JSON voorbeeld
+
+De JSON voor een enkele template ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "id":"551",
+   "name":"TestTemplate",
+   "archived":false
+}
+```
+
 ## PHP voorbeeld
 
 Het onderstaande script demonstreert hoe je deze API methode gebruikt. 
