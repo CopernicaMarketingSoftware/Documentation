@@ -60,12 +60,12 @@ track a profile's subscription to these newsletters using a group of
 interests. Interests can be created in the Publisher in the
 **Edit database field...** menu under **Database Management**. In the Marketing
 Suite interests can be created by going to **Manage fields** which can by found
-by clicking on the blue gear in the top-right corner of the
+by clicking on the gear in the top-right corner of the
 **Database & Profiles** section.
 
 ## Creating or editing database fields in the Marketing Suite
 To change the structure of your database, go to the section
-**Database & Profiles** and click on the blue gear in the top-right corner.
+**Database & Profiles** and click on the gear in the top-right corner.
 Here you will find the option **Manage fields** where you will find the list
 of fields currently in the database and the option to add new fields or
 edit the ones that currently exist. Doing so will allow you to give the field
