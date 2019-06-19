@@ -14,13 +14,37 @@ requesting the information of.
 This method returns profile information. The profile object contains the 
 following properties:
 
-* **ID**: numerical ID of the profile
+* **ID**: Numerical ID of the profile
+* **fields**: Associative array of field names and values
+* **interests**: Array of interests for the profile
 * **database**: ID of the database where the profile is stored
-* **secret**: the "secret" code linked to a profile
-* **created**: timestamp for creation of profile in YYYY-MM-DD hh:mm:ss format
-* **modified**: timestamp for last edit of profile in YYYY-MM-DD hh:mm:ss format
-* **fields**: associative array / object of field names and values
-* **interests**: array of the interests of the profile
+* **secret**: The "secret" code linked to a profile
+* **created**: Timestamp for creation of profile in YYYY-MM-DD hh:mm:ss format
+* **modified**: Timestamp for last edit of profile in YYYY-MM-DD hh:mm:ss format
+* **removed**: Indicates whether the profile has been removed or not
+
+### JSON example
+
+The JSON for a profile might look something like this:
+
+```json
+{  
+   "ID":"18381",
+   "fields":{  
+      "name":"Test",
+      "email":"test@example.com",
+   },
+   "interests":[  
+      "baseball",
+      "soccer"
+   ],
+   "database":"7616",
+   "secret":"e5903b43c08g011f7a1e1f2644f618be",
+   "created":"2013-01-06 14:19:51",
+   "modified":"2019-02-21 13:26:21",
+   "removed":false
+}
+```
 
 ## PHP example
 
