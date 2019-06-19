@@ -9,9 +9,7 @@ Allereerst voer je een feedback URL in:
 En bijgaand het type van de webhook dat je aan wilt maken (*clicks*, *bounces* etc.).
 Dat is alles.
 
-
 ## URL validatie
-
 
 Voordat SMTPeter begint met het maken van calls naar je URL, moet het
 webadres eerst gevalideerd worden. SMTPeter doet dit om te voorkomen dat 
@@ -42,7 +40,6 @@ of
 ```
 
 Je kunt het tekstbestand verwijderen als het adres is gevalideerd.
-
 
 ## Test de webhook
 

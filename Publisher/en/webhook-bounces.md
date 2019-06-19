@@ -11,12 +11,12 @@ If you are only interested in failed deliveries then you can also use
 
 ## Type of messages
 
-The bounce webhook is used for **all** messages that are 
+The bounce webhook is used for literally **all** messages that are 
 sent back to the envelope address. This includes the regular
-delivery status notifications and error messages from servers that do 
-not respect the official format for bounce messages. 
-All these type of messages are sent back to Copernica and you can opt 
-to have them delivered to you in real-time with a webhook.
+delivery status notifications, but also out-of-office replies, vacation
+mails, or error messages from servers that do not respect the official
+format for bounce messages. All these type of messages are sent back to
+Copernica and with a Webhook you can also receive these messages in real-time.
 
 ## Variables
 
@@ -29,7 +29,7 @@ Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
 | Variable  | Description                                                              |  
 |-----------|--------------------------------------------------------------------------|
-| id        | Unique message id with which the bounce is associated                    |
+| id        | Unique message ID with which the bounce is associated                    |
 | type      | Type of action that triggered the webhook ('bounce')                     |
 | timestamp | Timestamp for the bounce (in YYYY-MM-DD HH:MM:SS format)                 |
 | time      | Unix time for the bounce                                                 |

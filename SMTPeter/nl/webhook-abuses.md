@@ -13,20 +13,11 @@ verstuurd met relevante informatie over de klacht.
 
 Met elke POST call worden de volgende variabelen meegestuurd:
 
-<table>
-    <tr>
-        <td>id</td>
-        <td>unieke <em>identifier</em> van de e-mail waarop waar de klacht over gaat</td>
-    </tr>
-    <tr>
-        <td>mailfrom</td>
-        <td>e-mail adres van de partij waar de klacht vandaan komt</td>
-    </tr>
-    <tr>
-        <td>mime</td>
-        <td>de mime van het ontvangen rapport</td>
-    </tr>
-</table>
+| Variabele | Omschrijving                                              |
+|-----------|-----------------------------------------------------------|
+| id        | Unieke identifier van het bericht dat een abuse triggerde |
+| emailfrom | E-mailaddres van de email client die de klacht indient    |
+| mime      | MIME versie van het ontvangen bericht                     |
 
 ## Meer informatie
 

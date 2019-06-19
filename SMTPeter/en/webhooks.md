@@ -34,8 +34,7 @@ To protect your endpoint from abuse and false information injection, SMTPeter
 
 The following webhooks can be used:
 
+* [Webhooks for clicks](webhook-clicks)
 * [Webhooks for bounces](webhook-bounces)
 * [Webhooks for failures](webhook-failures)
-* [Webhooks for clicks](webhook-clicks)
 * [Webhooks for opens](webhook-opens)
-* [Webhooks for abuses](webhook-abuses)

@@ -3,16 +3,16 @@
 SMTPeter normally modifies the envelope address of all mails that flow
 through it to track bounces and other messages that are sent back. All
 bounce messages are therefore sent back to SMTPeter. You can however set 
-up a "bounce" webhook to be notified about these bounces too.
+up a 'bounce' webhook to be notified about these bounces too.
 
 ## Type of messages
 
-The bounce webhook is used for literally _all_ messages that are 
+The bounce webhook is used for literally **all** messages that are 
 sent back to the envelope address. This includes the regular
 delivery status notifications, but also out-of-office replies, vacation
 mails, or error messages from servers that do not respect the official
 format for bounce messages. All these type of messages are sent back to
-SMTPeter and to you, if you set up a webhook.
+SMTPeter and with a Webhook you can also receive these messages in real-time.
 
 ## Bounces vs Delivery Status Notifications
 
@@ -49,23 +49,24 @@ sent to the bounce webhooks. The bounce webhook thus receives
 two sort of messages: official Delivery Status Notifications, *and*
 bounces and out-of-office replies that could not be recognized.
 
-## Format
+## Variables
 
-The bounce webhook is sent over HTTP POST, and the following
+The bounce webhook is sent over HTTP POST and the following
 variables are submitted:
 
 | Variable  | Description                                                              |  
 |-----------|--------------------------------------------------------------------------|
-| id        | original message id with which the bounce is associated                  |
-| recipient | email address to which the original mail was sent                        |
-| envelope  | envelope address to send the bounce to                                   |
-| time      | timestamp for the bounce                                                 |
-| mime      | the MIME data that was sent (the message itself)                         |
-| tags      | the tags that you associated with the mail                               |
+| id        | Original message ID with which the bounce is associated                  |
+| type      | Type of action that triggered the webhook ('bounce')                     |
+| timestamp | Timestamp for the bounce (in YYYY-MM-DD HH:MM:SS format)                 |
+| time      | Unix time for the bounce                                                 |
+| recipient | Email address to which the original mail was sent                        |
+| envelope  | Envelope address to send the bounce to                                   |
+| mime      | The MIME data that was sent (the message itself)                         |
+| tags      | The tags that you associated with the mail                               |
 
-The "ID" and "recipient" variables allow you to link the incoming bounce
-to the original outgoing message that was sent. The "mailfrom", "rcptto"
-and "data" fields hold the message that was received by SMTPeter.
+The "id" and "recipient" variables allow you to link the incoming bounce
+to the original outgoing message that was sent.
 
 ## More information
 

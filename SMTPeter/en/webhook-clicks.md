@@ -11,7 +11,6 @@ If you set up a click webhook, SMTPeter also notifies you in realtime
 about these clicks. For each click we send a HTTP POST call (HTTPS is possible 
 too) to your server with the relevant information about the click.
 
-
 ## Variables
 
 With each POST call the following variables are sent over:

@@ -6,7 +6,6 @@ traceren en ook om andere *events* te kunnen onderscheppen.
 Naast dat SMTPeter alles automatisch ontvangt, kan je er voor kiezen om
 zelf ook meldingen over *Webhooks* te ontvangen.
 
-
 ## Type meldingen
 
 De webhook voor bounces traceert letterlijk _alle_ meldingen
@@ -47,26 +46,26 @@ SMTPeter herkent dat deze meldingen niet naar de reguliere error log file
 moeten worden geschreven en stuurt ze dus naar de bounce log file en 
 consequent ook naar de bounce webhooks.
 
-
-## Formaat
+## Variabelen
 
 De bounce webhook wordt door middel van het HTTP POST mechanisme verstuurd. 
 De volgende variabelen worden dan ingevoerd:
 
-| Variabele  | Omschrijving                                                       |  
-|------------|--------------------------------------------------------------------|
-| id         | originele bericht ID voor de bounce                                |
-| recipient  | e-mailadres waarnaar de originele mail werd verstuurd              |
-| envelope   | adres om bounces aan te retourneren                                |
-| time       | tijdstempel van de bounce                                          |
-| mime       | de verstuurde MIME data (het bericht zelf)                         |
-| tags       | de tags gelinkt aan de mail                                        |
+| Variabele  | Omschrijving                                             |  
+|------------|----------------------------------------------------------|
+| id         | Unieke ID voor het bericht dat de bounce triggerde       |
+| type       | Type actie dat de Webhook triggerde ('bounce')           |
+| timestamp  | Tijdstempel van de bounce (YYYY-MM-DD HH:MM:SS formaat)  |
+| time       | Unix tijd van de bounce                                  |
+| recipient  | E-mailadres waarnaar de originele mail werd verstuurd    |
+| envelope   | Adres om bounces aan te retourneren                      |
+| mime       | De verstuurde MIME data (het bericht zelf)               |
+| tags       | De tags gelinkt aan de mail                              |
 
 De "ID" en "recipient" variabelen stellen je in staat om de inkomende bounce
-te linken aan het oorspronkelijke bericht dat werd verstuurd. De "mailfrom", 
-"rcptto" en "data" velden bevatten de melding die door SMTPeter is ontvangen.
+te linken aan het oorspronkelijke bericht dat werd verstuurd.
 
 ## Meer informatie
 
 * [Webhooks](./webhooks)
-* [Webhookss instellen](./webhook-setup)
+* [Webhooks instellen](./webhook-setup)

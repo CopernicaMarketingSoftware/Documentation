@@ -10,7 +10,6 @@ het HTTP POST mechanisme. Tijdens het [aanmaken van een webhook](webhook-setup "
 registreer je een web adres en geef je aan welke events moeten worden aangeleverd.
 SMTPeter begint met het maken van calls als de URL is gevalideerd.  
 
-
 ## Pas op!
 
 Voordat je begint met het aanmaken van een webhook, is het handig om te checken of
@@ -23,13 +22,11 @@ nodig? Dan kun je beter de [REST API](rest-send "Verzenden via REST") gebruiken 
 te downloaden. De REST API levert exact dezelfde informatie als de webhooks.
 Echter, met de REST API hou je de controle en bepaal je zelf welke data je wilt opvragen.
 
-
 ## Types van de events
 
 De volgende webhooks kunnen worden gebruikt:
 
-* [Webhooks voor bounces](webhook-bounces "Webhooks voor bounces")
-* [Webhooks voor failures](webhook-failures "Webhooks voor failures")
-* [Webhooks voor clicks](webhook-clicks "Webhooks voor kliks")
-* [Webhooks voor opens](webhook-opens "Webhooks voor opens")
-* [Webhooks voor abuses](webhook-abuses "Webhooks voor abuses")
+* [Webhooks voor bounces](webhook-bounces)
+* [Webhooks voor clicks](webhook-clicks)
+* [Webhooks voor failures](webhook-failures)
+* [Webhooks voor opens](webhook-opens)
