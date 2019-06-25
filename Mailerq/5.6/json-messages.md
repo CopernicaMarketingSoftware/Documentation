@@ -553,9 +553,32 @@ This option should be an array of the protocols you want to use (DKIM and/or ARC
     } ]
 }           
 ````
-
 The first key is used for both DKIM and ARC signing, whereas the second key is only
 used for ARC signing.
+
+### Canonicalization
+A DKIM can be signed using different forms of canonicalization. Default is `relaxed/simple`.
+````json
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "...",
+    "dkim": [ {
+        "domain": "example.com",
+        "selector": "x",
+        "key": "-----BEGIN RSA PRIVATE KEY-----\n.....",
+        "canonicalization" : "simple/simple"
+    }, {
+        "domain": "example.com",
+        "selector": "y",
+        "key": "-----BEGIN RSA PRIVATE KEY-----\n.....",
+        "canonicalization": "relaxed/relaxed"
+    } ]
+}           
+````
+In the example, the first key is signed with `simple/simple` canonicalization, and the second
+key is signed with `relaxed/relaxed` canonicalization.
+
 
 ## Delivery Status Notifications
 
