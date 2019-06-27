@@ -54,6 +54,6 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php)
 
 ## Meer informatie
 
-* [Overzicht van alle REST API calls](./rest-api)
-* [Opvragen van een Marketing Suite document](./rest-get-publisher-document)
-* [Opvragen van alle Marketing Suite templates](./rest-get-publisher-templates)
+* [Overzicht van alle API calls](rest-api)
+* [Opvragen van alle templates](./rest-get-ms-templates)
+* [Opvragen van de body van een template](./rest-get-ms-template-body)

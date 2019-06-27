@@ -33,3 +33,4 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
+* [Opvragen van een message body](./rest-get-ms-message-body)

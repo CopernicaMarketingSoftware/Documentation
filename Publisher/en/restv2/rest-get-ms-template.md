@@ -55,5 +55,5 @@ This example requires the [REST API class](./rest-php)
 ## More information
 
 * [Overview of all REST API calls](./rest-api)
-* [Retrieve a Marketing Suite document](./rest-get-ms-document)
-* [Retrieve all Marketing Suite templates](./rest-get-ms-templates)
+* [GET templates](./rest-get-ms-templates)
+* [GET template body](./rest-get-ms-template-body)
