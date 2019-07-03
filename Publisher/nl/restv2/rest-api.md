@@ -37,7 +37,6 @@ navigeren:
 * [Selecties & Miniselecties](./rest-api#selecties-&-miniselecties)
 * [Regels & Miniregels](./rest-api#regels-&-miniregels)
 * [Profielen & Subprofielen](./rest-api#profielen-&-subprofielen)
-* [E-mailadressen](./rest-api#e-mailadressen)
 * [Publisher Mailings](./rest-api#publisher-mailings)
 * [Marketing Suite Mailings](./rest-api#marketing-suite-mailings)
 * [Dataverzoeken](./rest-api#dataverzoeken)
@@ -211,14 +210,6 @@ in de onderstaande tabel.
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/destinations](./rest-get-subprofile-publisher-destinations)   | Opvragen van alle Publisher destinations voor een subprofiel          |
 | GET    | [api.copernica.com/v2/subprofile/$id/ms/destinations](./rest-get-subprofile-ms-destinations)                 | Opvragen van alle Marketing Suite destinations voor een subprofiel    |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)                        | Aanmaken van een dataverzoek voor een subprofiel                      |
-
-## E-mailadressen
-
-De onderstaande tabel bevat alle calls beschikbaar voor een specifiek e-mailadres.
-
-| Type   | Adres                                                                                        | Omschrijving                                      |
-|--------|----------------------------------------------------------------------------------------------|---------------------------------------------------|
-| POST   | [api.copernica.com/v2/email/$email/datarequest](./rest-post-email-datarequest)               | Aanmaken van een dataverzoek voor een e-mailadres |
 
 ## Publisher Mailings
 
