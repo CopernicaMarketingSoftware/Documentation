@@ -12,18 +12,17 @@ Where `$id` should be replaced with the ID of the mailing you want summarized.
 
 The method returns a JSON object containing the following information:
 
-* **id**: The ID of the mailing.
-* **start**: The start date of the mailing (YYYY-MM-DD HH:MM:SS format).
-* **rrule**: The RRule for the mailing (more information below)
-* **template**: The ID of the template that was used to send the mailing.
-* **next**: The timestamp of the next occurrence of this mailing
-* **previous** The timestamp of the previous occurrence of this mailing.
-* **subject**: The subject of the mailing.
-* **from_address**: An array containing the 'name' and 'email' address of the sender.
-* **destinations**: Amount of destinations the mailing was sent to.
-* **type**: Type of mailing (individual or mass).
-* **target**: Contains the target type and the ID and type of other 
-entities above it (for example the database a collection belongs to).
+* **id**            : The ID of the mailing.
+* **start**         : The start date of the mailing (YYYY-MM-DD HH:MM:SS format).
+* **rrule**         : The RRule for the mailing (more information below)
+* **template**      : The ID of the template that was used to send the mailing.
+* **next**          : The timestamp of the next occurrence of this mailing
+* **previous**      : The timestamp of the previous occurrence of this mailing.
+* **subject**       : The subject of the mailing.
+* **from_address**  : An array containing the 'name' and 'email' address of the sender.
+* **destinations**  : Amount of destinations the mailing was sent to.
+* **type**          : Type of mailing (individual or mass).
+* **target**        : Contains the target type and the ID and type of other entities above it (for example the database a collection belongs to).
 
 ### RRules
 

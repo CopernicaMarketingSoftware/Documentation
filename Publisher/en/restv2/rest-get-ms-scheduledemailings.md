@@ -11,13 +11,11 @@ You can find the call to retrieve all Publisher emailings [here](./rest-get-emai
 
 ## Available parameters
 
-* **active**: Only return active mailings ('true') or non-active mailings ('false'). 
-Leave blank for both.
-* **repeated**: Only return repeated mailings ('true') or non-repeated mailings ('false'). 
-Leave blank for both.
-* **mass**: Retrieve only mass mailings ('true') or all ('false'/default).
-* **nextrunbefore**: Next run must be sent before this timestamp (YYYY-MM-DD HH:MM:SS format).
-* **nextrunafter**: Next run must be sent after this timestamp (YYYY-MM-DD HH:MM:SS format).
+* **active**        : Only return active mailings ('true') or non-active mailings ('false'). Leave blank for both.
+* **repeated**      : Only return repeated mailings ('true') or non-repeated mailings ('false'). Leave blank for both.
+* **mass**          : Retrieve only mass mailings ('true') or all ('false'/default).
+* **nextrunbefore** : Next run must be sent before this timestamp (YYYY-MM-DD HH:MM:SS format).
+* **nextrunafter**  : Next run must be sent after this timestamp (YYYY-MM-DD HH:MM:SS format).
 
 This method also supports [paging parameters](./rest-paging).
 
@@ -26,18 +24,17 @@ This method also supports [paging parameters](./rest-paging).
 The method returns a JSON object with several scheduled emailings under 
 the **data** property. Each emailing contains the following fields:
 
-* **id**: The ID of the mailing.
-* **start**: The start date of the mailing (YYYY-MM-DD HH:MM:SS format).
-* **rrule**: The RRule for the mailing (more information below)
-* **template**: The ID of the template that was used to send the mailing.
-* **next**: The timestamp of the next occurrence of this mailing
-* **previous** The timestamp of the previous occurrence of this mailing.
-* **subject**: The subject of the mailing.
-* **from_address**: An array containing the 'name' and 'email' address of the sender.
-* **destinations**: Amount of destinations the mailing was sent to.
-* **type**: Type of mailing (individual or mass).
-* **target**: Contains the target type and the ID and type of other 
-entities above it (for example the database a collection belongs to).
+* **id**            : The ID of the mailing.
+* **start**         : The start date of the mailing (YYYY-MM-DD HH:MM:SS format).
+* **rrule**         : The RRule for the mailing (more information below)
+* **template**      : The ID of the template that was used to send the mailing.
+* **next**          : The timestamp of the next occurrence of this mailing
+* **previous**      : The timestamp of the previous occurrence of this mailing.
+* **subject**       : The subject of the mailing.
+* **from_address**  : An array containing the 'name' and 'email' address of the sender.
+* **destinations**  : Amount of destinations the mailing was sent to.
+* **type**          : Type of mailing (individual or mass).
+* **target**        : Contains the target type and the ID and type of other entities above it (for example the database a collection belongs to).
 
 ### RRules
 
