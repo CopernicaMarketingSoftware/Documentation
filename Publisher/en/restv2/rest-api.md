@@ -37,7 +37,6 @@ Use the links below to jump to the type of API call you are looking for.
 * [Views & Miniviews](rest-api#views-&-miniviews)
 * [Rules & Minirules](rest-api#rules-&-minirules)
 * [Profiles & Subprofiles](rest-api#profiles-&-subprofiles)
-* [Email Addresses](rest-api#email-addresses)
 * [Publisher Mailings](rest-api#publisher-mailings)
 * [Marketing Suite Mailings](rest-api#marketing-suite-mailings)
 * [Datarequests](rest-api#datarequests)
@@ -209,14 +208,6 @@ like your customers or orders. The relevant API calls can be found below.
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/destinations](rest-get-subprofile-publisher-destinations) | Fetch all Publisher destinations for a subprofile       |
 | GET    | [api.copernica.com/v2/subprofile/$id/ms/destination](rest-get-subprofile-ms-destinations)                | Fetch all Marketing Suite destinations for a subprofile |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)                    | Create a request for all data stored for a subprofile   |
-
-## Email Addresses
-
-The table below contains all calls pertaining to a specific email address.
-
-| Type   | Address                                                                                      | Description                                                 |
-|--------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| POST   | [api.copernica.com/v2/email/$email/datarequest](./rest-post-email-datarequest)               | Create a request for all data available for an emailaddress |
 
 ## Publisher Mailings
 

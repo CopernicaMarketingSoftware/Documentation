@@ -6,8 +6,7 @@ opvragen kun je een GET request sturen naar de volgende URL:
 `https://api.copernica.com/v2/ms/message/$id/body/$type?access_token=xxxx`
 
 De `$id` is hier de unieke string is die het bericht identificeert en `$type` 
-het formaat is voor het bericht. Vergeet je access token niet toe te voegen! 
-Deze methode kan niet aangeroepen worden met een PHP script.
+het formaat is voor het bericht. Deze methode kan niet aangeroepen worden met een PHP script.
 
 ## Types
 
@@ -23,5 +22,5 @@ Je kunt het gewenste type in de URL toevoegen.
 
 ## Meer informatie
 
-* [Alle API calls](./rest-api)
-* [GET message](./rest-get-message)
+* [Overzicht van alle API calls](rest-api)
+* [Opvragen van een message](./rest-get-message)

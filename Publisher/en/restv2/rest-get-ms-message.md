@@ -32,4 +32,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-* [List of all API calls](rest-api)
+* [Overview of all REST API calls](./rest-api)
+* [GET message body](./rest-get-message-body)
