@@ -1,9 +1,9 @@
 # De REST API
 
-Met de REST API kun je automatische koppelingen met Copernica maken. 
-Je kunt bijvoorbeeld je website of app zo programmeren dat, met behulp 
-van de REST API, gegevens in je Copernica-account worden ophaald, gecreëerd, 
-geüpdatet of verwijderd. Dit gaat automatisch, dus buiten de *user interface* om. 
+Met de REST API kun je automatische koppelingen met Copernica maken.
+Je kunt bijvoorbeeld je website of app zo programmeren dat, met behulp
+van de REST API, gegevens in je Copernica-account worden ophaald, gecreëerd,
+geüpdatet of verwijderd. Dit gaat automatisch, dus buiten de *user interface* om.
 Deze pagina bevat een overzicht van alle API calls.
 
 * [Introductie en registratie](rest-introduction)
@@ -11,9 +11,9 @@ Deze pagina bevat een overzicht van alle API calls.
 * [Externe OAuth2 koppelingen](rest-oauth)
 * [Paging](./rest-paging)
 
-De meest recente versie van de API is versie 2. [Dit artikel](./rest-introduction#REST-versie) 
-gaat hier dieper op in en legt uit hoe je overschakelt. Nog niet klaar om 
-over te stappen? Je kunt de documentatie voor versie 1 [hier](../restv1/rest-api.md) 
+De meest recente versie van de API is versie 2. [Dit artikel](./rest-introduction#REST-versie)
+gaat hier dieper op in en legt uit hoe je overschakelt. Nog niet klaar om
+over te stappen? Je kunt de documentatie voor versie 1 [hier](../restv1/rest-api.md)
 vinden.
 
 ## Types voor methodes
@@ -29,7 +29,7 @@ Meer informatie over HTTP request kun je vinden in de [introductie](./rest-intro
 
 ## Inhoud
 
-Gebruik de onderstaande links om naar de gewenste API calls te 
+Gebruik de onderstaande links om naar de gewenste API calls te
 navigeren:
 
 * [Account](./rest-api#account)
@@ -52,8 +52,8 @@ In de onderstaande tabel vind je een methode om account informatie op te vragen.
 
 ## Databases & Collecties
 
-Je kunt je databases en collecties bekijken en onderhouden met API calls. 
-In de onderstaande tabel vindt je alle calls gerelateerd aan databases, 
+Je kunt je databases en collecties bekijken en onderhouden met API calls.
+In de onderstaande tabel vindt je alle calls gerelateerd aan databases,
 collecties en hun eigenschappen.
 
 ### Databases
@@ -69,18 +69,18 @@ collecties en hun eigenschappen.
 | GET    | [api.copernica.com/v2/database/$id/views](./rest-get-database-views)                         | Opvragen van alle selecties                    |
 | POST   | [api.copernica.com/v2/database/$id/views](./rest-post-database-views)                        | Aanmaken van een selectie                      |
 | GET    | [api.copernica.com/v2/database/$id/collections](./rest-get-database-collections)             | Opvragen van alle collecties                   |
-| POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Aanmaken van een collectie                     |               
+| POST   | [api.copernica.com/v2/database/$id/collections](./rest-post-database-collections)            | Aanmaken van een collectie                     |
 | GET    | [api.copernica.com/v2/database/$id/fields](./rest-get-database-fields)                       | Opvragen van alle velden                       |
-| POST   | [api.copernica.com/v2/database/$id/fields](./rest-post-database-fields)                      | Aanmaken van een veld                          |              
+| POST   | [api.copernica.com/v2/database/$id/fields](./rest-post-database-fields)                      | Aanmaken van een veld                          |
 | PUT    | [api.copernica.com/v2/database/$id/field/$id](./rest-put-database-field)                     | Updaten van een veld                           |
 | DELETE | [api.copernica.com/v2/database/$id/field/$id](./rest-delete-database-field)                  | Verwijderen van een veld                       |
 | GET    | [api.copernica.com/v2/database/$id/interests](./rest-get-database-interests)                 | Opvragen van alle interesses                   |
-| POST   | [api.copernica.com/v2/database/$id/interests](./rest-post-database-interests)                | Aanmaken van een interesse                     |               
+| POST   | [api.copernica.com/v2/database/$id/interests](./rest-post-database-interests)                | Aanmaken van een interesse                     |
 | PUT    | [api.copernica.com/v2/interest](./rest-put-interest)                                         | Updaten van een interesse                      |
 | DELETE | [api.copernica.com/v2/interest](./rest-delete-interest)                                      | Verwijderen van een interesse                  |
 | GET    | [api.copernica.com/v2/database/$id/profileids](./rest-get-database-profileids)               | Opvragen van alle profiel IDs                  |
 | GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Opvragen van alle profielen                    |
-| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een profiel                       |              
+| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een profiel                       |
 | PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Updaten van een of meerdere profielen          |
 
 ### Collecties
@@ -104,7 +104,7 @@ collecties en hun eigenschappen.
 
 ## Selecties & Miniselecties
 
-Selecties vallen onder de database, terwijl miniselecties onder een collectie vallen. 
+Selecties vallen onder de database, terwijl miniselecties onder een collectie vallen.
 Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 
 ### Selecties
@@ -139,9 +139,9 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 
 ## Regels & Miniregels
 
-Regels en miniregels bestaan uit een of meerdere condities om selecties en 
-miniselecties aan te maken onder een database of collectie respectievelijk. 
-Je kunt alle API calls gerelateerd aan (mini)regels en de bijhorende 
+Regels en miniregels bestaan uit een of meerdere condities om selecties en
+miniselecties aan te maken onder een database of collectie respectievelijk.
+Je kunt alle API calls gerelateerd aan (mini)regels en de bijhorende
 condities in de tabel hieronder vinden.
 
 ### Regels
@@ -169,8 +169,8 @@ condities in de tabel hieronder vinden.
 
 ## Profielen & Subprofielen
 
-Profielen en subprofielen kunnen gebruikt worden om entiteiten in je database 
-op te slaan, zoals je klanten of orders. Je vindt de relevante API calls 
+Profielen en subprofielen kunnen gebruikt worden om entiteiten in je database
+op te slaan, zoals je klanten of orders. Je vindt de relevante API calls
 in de onderstaande tabel.
 
 ### Profielen
@@ -206,14 +206,14 @@ in de onderstaande tabel.
 | GET    | [api.copernica.com/v2/subprofile/$id/fields](./rest-get-subprofile-fields)                                   | Opvragen van alle subprofiel velden                                   |
 | PUT    | [api.copernica.com/v2/subprofile/$id/fields](./rest-put-subprofile-fields)                                   | Updaten van subprofiel velden                                         |
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/emailings](./rest-get-subprofile-publisher-emailings)         | Opvragen van alle Publisher mailings voor een subprofiel              |
-| GET    | [api.copernica.com/v2/subprofile/$id/ms/emailings](./rest-get-subprofile-ms-emailings)                       | Opvragen van alle Marketing Suite mailings voor een subprofiel        |    
+| GET    | [api.copernica.com/v2/subprofile/$id/ms/emailings](./rest-get-subprofile-ms-emailings)                       | Opvragen van alle Marketing Suite mailings voor een subprofiel        |
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/destinations](./rest-get-subprofile-publisher-destinations)   | Opvragen van alle Publisher destinations voor een subprofiel          |
 | GET    | [api.copernica.com/v2/subprofile/$id/ms/destinations](./rest-get-subprofile-ms-destinations)                 | Opvragen van alle Marketing Suite destinations voor een subprofiel    |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)                        | Aanmaken van een dataverzoek voor een subprofiel                      |
 
 ## Publisher Mailings
 
-In de onderstaande tabel vind je alle API calls gerelateerd aan Publisher 
+In de onderstaande tabel vind je alle API calls gerelateerd aan Publisher
 documenten, templates en mailings.
 
 ### Mailings
@@ -229,7 +229,7 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/abuses](./rest-get-publisher-emailing-abuses)               | Opvragen van abuses voor een mailing                      |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/clicks](./rest-get-publisher-emailing-clicks)               | Opvragen van clicks voor een mailing                      |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/deliveries](./rest-get-publisher-emailing-deliveries)       | Opvragen van deliveries voor een mailing                  |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/errors](./rest-get-publisher-emailing-errors)               | Opvragen van errors voor een mailing                      |    
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/errors](./rest-get-publisher-emailing-errors)               | Opvragen van errors voor een mailing                      |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)     | Opvragen van impressies voor een mailing                  |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)   | Opvragen van unsubscribes voor een mailing                |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Opvragen van de testgroepen voor een mailing              |
@@ -280,7 +280,7 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/abuses](./rest-get-publisher-emailing-abuses)                   | Opvragen van abuses voor een mailing              |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/clicks](./rest-get-publisher-emailing-clicks)                   | Opvragen van clicks voor een mailing              |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/deliveries](./rest-get-publisher-emailing-deliveries)           | Opvragen van deliveries voor een mailing          |
-| GET    | [api.copernica.com/v2/publisher/emailing/$id/errors](./rest-get-publisher-emailing-errors)                   | Opvragen van errors voor een mailing              |    
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/errors](./rest-get-publisher-emailing-errors)                   | Opvragen van errors voor een mailing              |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)         | Opvragen van impressies voor een mailing          |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)       | Opvragen van unsubscribes voor een mailing        |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/statistics](./rest-get-publisher-destination-statistics)     | Opvragen van statistieken voor een bestemming     |
@@ -293,7 +293,7 @@ documenten, templates en mailings.
 
 ## Marketing Suite Mailings
 
-In de onderstaande tabel vind je alle API calls gerelateerd aan Marketing Suite 
+In de onderstaande tabel vind je alle API calls gerelateerd aan Marketing Suite
 templates en mailings.
 
 ### Mailings
@@ -303,6 +303,9 @@ templates en mailings.
 | GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Opvragen van alle mailings                                        |
 | GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Opvragen van een mailing                                          |
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Aanmaken van een mailing                                          |
+| GET    | [api.copernica.com/v2/ms/scheduledemailings](./rest-get-ms-scheduledemailings)               | Opvragen van alle ingeroosterde mailings                          |
+| GET    | [api.copernica.com/v2/ms/scheduledemailing/$id](./rest-get-ms-scheduledemailing)             | Opvragen van een ingeroosterde mailing                            |
+| POST   | [api.copernica.com/v2/ms/scheduledemailing/](./rest-get-ms-scheduledemailing)                | Aanmaken van een ingeroosterde mailing                            |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van destinations voor een mailing                        |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Opvragen van statistieken voor een mailing                        |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Opvragen van alle abuses voor een emailing                        |
@@ -367,8 +370,8 @@ templates en mailings.
 
 ## Dataverzoeken
 
-Nadat alle data voor een dataverzoek is verzameld wordt de data voor een 
-korte periode op de Copernica servers opgeslagen. Met de onderstaande 
+Nadat alle data voor een dataverzoek is verzameld wordt de data voor een
+korte periode op de Copernica servers opgeslagen. Met de onderstaande
 calls kun je dataverzoeken aanmaken en de data en status van deze verzoeken opvragen.
 
 | Type   | Adres                                                                                        | Omschrijving                                 |
@@ -381,7 +384,7 @@ calls kun je dataverzoeken aanmaken en de data en status van deze verzoeken opvr
 
 ## Logfiles
 
-Copernica houdt uitgebreide data bij over alles gerelateerd aan een 
+Copernica houdt uitgebreide data bij over alles gerelateerd aan een
 mailing. Je kunt alle calls gerelateerd aan logfiles in de onderstaande tabel vinden.
 
 | Type   | Adres                                                                                        | Omschrijving                                  |
