@@ -305,7 +305,7 @@ templates en mailings.
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Aanmaken van een mailing                                          |
 | GET    | [api.copernica.com/v2/ms/scheduledemailings](./rest-get-ms-scheduledemailings)               | Opvragen van alle ingeroosterde mailings                          |
 | GET    | [api.copernica.com/v2/ms/scheduledemailing/$id](./rest-get-ms-scheduledemailing)             | Opvragen van een ingeroosterde mailing                            |
-| POST   | [api.copernica.com/v2/ms/scheduledemailing/](./rest-get-ms-scheduledemailing)                | Aanmaken van een ingeroosterde mailing                            |
+| POST   | [api.copernica.com/v2/ms/scheduledemailing/](./rest-post-ms-scheduledemailing)               | Aanmaken van een ingeroosterde mailing                            |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van destinations voor een mailing                        |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Opvragen van statistieken voor een mailing                        |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Opvragen van alle abuses voor een emailing                        |

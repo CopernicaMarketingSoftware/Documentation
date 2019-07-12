@@ -53,5 +53,5 @@ Het bovenstaande voorbeeld vereist onze [REST API klasse](rest-php).
 * [Overzicht van alle REST API calls](./rest-api)
 * [Opvragen van alle Marketing Suite mailings](./rest-get-ms-emailings)
 * [Aanmaken van een ingeroosterde
-   Marketing Suite mailing](./rest-post-ms-scheduled-emailing)
+   Marketing Suite mailing](./rest-post-ms-scheduledemailing)
 * [Aanmaken van een Publisher mailing](./rest-post-publisher-emailing)
