@@ -18,13 +18,8 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [database-threads](database-access#threads-for-dns-lookups)              | Number of threads to use for DNS lookups for DKIM keys in the database when data is refreshed
 | [database-ttl](database-access#time-to-live)                             | Time to live: Database reload interval (Default 600s)
 | [database-validate](database-access#fixing-values-in-the-database)       | Check and fix database settings on startup
-| [download-log-compression](logging#download-logs)                        | Download log compression
-| [download-log-directory](logging#download-logs)                          | Download log directory
 | [download-log-format](logging#download-logs)                             | Download log format
-| [download-log-history](logging#download-logs)                            | Download log history
-| [download-log-maxage](logging#download-logs)                             | Download log maximum age
-| [download-log-maxsize](logging#download-logs)                            | Download log maximum size
-| [download-log-prefix](logging#download-logs)                             | Download log prefix
+| [download-log-file](logging#download-logs)                               | Download log filename
 | [download-proxy](responsiveemail)                                        | Route outgoing download requests through a proxy
 | [dsn-advertise](sending-bounces#receiving-dsn-settings)                  | Toggle announcement about DSN extension and parameters
 | [dsn-notify](sending-bounces#mime-headers-and-config-file-settings)      | Events that trigger a notify
@@ -64,25 +59,12 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [rabbitmq-retry](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ retry queue
 | [rabbitmq-success](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ success queue
 | [rabbitmq-verify](rabbitmq-config#rabbitmq-address)                      | Should the server certificate be verified (only used for amqps:// connections)
-| [received-log-compression](logging#received-messages)                    | Received log compression
-| [received-log-directory](logging#received-messages)                      | Received log directory
 | [received-log-format](logging#received-messages)                         | Received log format
-| [received-log-history](logging#received-messages)                        | Received log history
-| [received-log-maxage](logging#received-messages)                         | Received log maximum age
-| [received-log-maxsize](logging#received-messages)                        | Received log maximum size
-| [received-log-prefix](logging#received-messages)                         | Received log prefix
+| [received-log-file](logging#received-messages)                           | Received log filename
 | [retry-interval](other-configuration)                                    | Interval for retrying to send
-| [send-bin-log-directory](logging#send-logs)                              | Binary send log directory
-| [send-bin-log-history](logging#send-logs)                                | Binary send log history
-| [send-bin-log-maxage](logging#send-logs)                                 | Binary send log maximum age
-| [send-bin-log-maxsize](logging#send-logs)                                | Binary send log maximum size
-| [send-log-compression](logging#send-logs)                                | Send log compression
-| [send-log-directory](logging#send-logs)                                  | Send log directory
+| [send-bin-log-file](logging#send-logs)                                   | Binary send log filename
+| [send-log-file](logging#send-logs)                                       | Send log filename
 | [send-log-format](logging#send-logs)                                     | Send log format
-| [send-log-history](logging#send-logs)                                    | Send log history
-| [send-log-maxage](logging#send-logs)                                     | Send log maximum age
-| [send-log-maxsize](logging#send-logs)                                    | Send log maximum size
-| [send-log-prefix](logging#send-logs)                                     | Send log prefix
 | [server-id](multiple-instances#server-id)                                | Server ID to prevent multiple instances from assigning same message ID
 | [smarthost](smarthost#how-to-configure-the-smarthost-feature)            | Smarthost name (only needed if Smarthost is desired)
 | [smarthost-password](smarthost#how-to-configure-the-smarthost-feature)   | Smarthost password

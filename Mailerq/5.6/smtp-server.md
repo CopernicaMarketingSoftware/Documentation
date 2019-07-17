@@ -232,15 +232,29 @@ All incoming connections that match one of these ranges will be treated
 as proxied connections, and the first bytes will be treated as PROXY header,
 and not as SMTP traffic.
 
+### Validating email addresses
+
+For the JSON, email address validation can be [loosened](other-configuration#validate-email-addresses),
+so that attempts will be made despite an email address not being fully RFC compliant. To allow
+injection of such messages, the `smtp-validate-address` option should be set. This option is for the
+email supplied at the `MAIL FROM` and `RCPT TO` stage. 
+
+By enabling injection for invalid emails, yet requiring RFC compliant emails during the sending phase,
+the mails can be initially accepted and processed by the rest of the infrastructure via RabbitMQ, instead
+of having to acount for the possibility that the injection goes wrong.
+
+```txt
+smtp-validate-address:  loose
+```
 
 ### Other settings
 
 The following variables may also be useful when you set up an SMTP server:
 
 ```
-smtp-maxsize:       100MB
-smtp-connections:   100
-smtp-threads:       1
+smtp-maxsize:           100MB
+smtp-connections:       100
+smtp-threads:           1
 ```
 
 In the initial SMTP handshake the client advertises its capabilities 
