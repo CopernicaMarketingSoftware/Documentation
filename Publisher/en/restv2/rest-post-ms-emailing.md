@@ -1,7 +1,7 @@
 # REST API: POST emailing (Marketing Suite)
 
-You can post a Marketing Suite mailing with our REST API if you have 
-already completed a template and prepared your database. To send a new 
+You can post a Marketing Suite mailing with our REST API if you have
+already completed a template and prepared your database. To send a new
 mailing you send an HTTP POST request to the following URL:
 
 `https://api.copernica.com/v2/ms/emailing?access_token=xxxx`
@@ -14,14 +14,14 @@ There are three parameteres available, all of them required.
 * **targettype**: The type of the target (database, collection, view, miniview, profile or subprofile)
 * **template**: The ID of the template to use.
 
-Make sure your template is complete before posting the call. The mailing 
-can not be sent without a valid subject and from address. You should also 
-make sure your [sender domain](./sender-domains) is configured correctly 
+Make sure your template is complete before posting the call. The mailing
+can not be sent without a valid subject and from address. You should also
+make sure your [sender domain](./sender-domains) is configured correctly
 before attempting to send a mailing.
 
 ## PHP example
 
-The following script demonstrates how to call the API method. Don't 
+The following script demonstrates how to call the API method. Don't
 forget to substitute the parameters for your own target and template.
 
 ```php
@@ -52,4 +52,5 @@ This example requires our [REST API class](rest-php).
 
 * [Overview of all REST API calls](./rest-api)
 * [Retrieve all Marketing Suite mailings](./rest-get-ms-emailings)
+* [Send a scheduled Marketing Suite mailing](./rest-post-ms-scheduledemailing)
 * [Send a Publisher mailing](./rest-post-publisher-emailing)

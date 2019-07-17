@@ -54,6 +54,9 @@ sleutelvelden instelt (ook als je alleen maar nieuwe profielen wilt toevoegen),
 omdat Copernica anders niet herkent dat de twee "Jan Bakker"-regels bij elkaar
 horen.
 
+**Let op:** als je een import gebruikt om subprofielen te updaten, zal je ook
+een sleutelveld moeten toevoegen om
+
 ## Periodieke imports
 Je kunt de importmodule ook gebruiken voor periodieke imports. Je moet dan
 geen bestand uploaden, maar het adres (de URL) van een bestand opgeven.
@@ -110,3 +113,14 @@ hierboven beschreven.
 Om een bestand te importeren dien je eerst een database te selecteren onder
 **Profielen**. Je kunt daarna onder **Huidige weergave** de optie vinden om te
 **exporteren of importeren**.
+
+## Meer informatie
+Je database zal nu correct zijn toegevoegd aan Copernica. Nu zal je
+wellicht deze willen restricteren voor bepaarde gebruikers of data moeten
+filteren. Zie hierover meer in de volgende artikelen:
+
+* [Databasebeheer](./database-introduction)
+* [Data exporteren](./database-export)
+* [Databasevelden](./database-fields)
+* [Database selecties](./database-selections-introduction)
+* [Database restricties](./database-restrictions)
