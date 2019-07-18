@@ -247,15 +247,21 @@ rabbitmq-maxpriority: 4
 ```
 
 The above config file option instructs MailerQ to set the "x-max-priority"
-property on the outbox queue and on temporary queues to the given value. This setting is used
-during application startup when the outbox queue is declared, and when new temporary
-queues are declared. If the outbox queue already exists, it must match the "x-max-priority" 
-setting of the existing queue. 
+property on the queues it creates. This setting is used
+during application startup when the queues are declared, and when new temporary
+queues are declared. If queues already exist, they must match the "x-max-priority" 
+setting of the existing queues. 
+
+The reason MailerQ declares all queues to be priority queues is so that messages that are higher
+priority can be picked up sooner in every part of the chain, also its reports and its results. The same
+holds for messages that are injected, as they can also have a priority setting set, allowing for injected
+messages also to be picked up sooner.
 
 In general, this number should be kept as small as possible, as there is a significant
 overhead for priority queues. For example, when a priority queue is created with an "x-max-priority"
-of 4, RabbitMQ internally creates 4 queues. As this happens for every queue MailerQ consumes from,
+of 4, RabbitMQ internally creates 4 queues. As this happens for every queue MailerQ declares,
 priority queues with more than two or three priority levels are generally discouraged.
+
 
 ## The exchange
 
