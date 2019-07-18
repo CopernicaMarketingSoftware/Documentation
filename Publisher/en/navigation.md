@@ -20,7 +20,7 @@
     * [Litmus](./litmus.md)
 * [Automation](./automation)
     * [Personalization](./personalization.md)
-    * [Follow-ups](./followups.md)
+    * [Follow-ups](./database-follow-ups.md)
     * [Selections](./selections-introduction.md)
     * [Data-scripts](./data-object.md)
 * [Statistics](./statistics)
