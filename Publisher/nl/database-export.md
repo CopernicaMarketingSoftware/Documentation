@@ -7,17 +7,6 @@ naar keuze gegenereert, dat je kunt downloaden of laten e-mailen.
 Als je graag in real-time de clicks, opens e.d. van profielen wilt ontvangen,
 kun je ook een [webhook](./webhooks) instellen.
 
-## Extra opmerkingen
-* De velden *ID*, *Toegangscode* en *Profiel aangemaakt* zijn velden
-waarvan de waarde door het systeem is toegekend.
-* Je kunt maximaal 1 collectie in een CSV-bestand opnemen. Als je meerdere
-collecties tegelijk wilt exporteren, kies dan XML als bestandstype.
-* UTF-8 is in de meeste gevallen de beste encoding voor outputbestanden
-en wordt aangeraden
-* Datumvelden worden geëxporteerd in het formaat dat je zelf opgeeft,
-zodat je bestand kunt maken met bijvoorbeeld een alternatieve datumnotatie.
-* Om bestanden klein te houden kun je compressie inschakelen.
-Dit is zeker handig als je de exports per mail wilt versturen.
 
 ## Scheidingsteken instellen
 Het scheidingsteken is een speciaal teken waarmee in het exportbestand de
@@ -81,3 +70,26 @@ opties zoals hierboven beschreven.
 Om een database of collectie te exporteren moet je deze eerst selecteren
 onder **Profielen**. Je kunt daarna onder **Huidige weergave** de optie
 vinden om te exporteren of importeren.
+
+## Extra opmerkingen
+Er zijn een aantal onderdelen van de export functionaliteit die verwarrend
+kunnen zijn, daarvan noemen wij de belangrijkste in deze opsomming:
+* De velden *ID*, *Toegangscode* en *Profiel aangemaakt* zijn velden
+waarvan de waarde door het systeem is toegekend.
+* Je kunt maximaal 1 collectie in een CSV-bestand opnemen. Als je meerdere
+collecties tegelijk wilt exporteren, kies dan XML als bestandstype.
+* UTF-8 is in de meeste gevallen de beste encoding voor outputbestanden
+en wordt aangeraden
+* Datumvelden worden geëxporteerd in het formaat dat je zelf opgeeft,
+zodat je bestand kunt maken met bijvoorbeeld een alternatieve datumnotatie.
+* Om bestanden klein te houden kun je compressie inschakelen.
+Dit is zeker handig als je de exports per mail wilt versturen.
+
+# Meer informatie
+Wij raden onze klanten altijd aan om hun databases up to date te krijgen
+voordat zij beginnen met het exporteren van data. Dit zorgt ervoor dat de data
+die je exporteert een goede weergave van je klantenbestand is. Om je hierbij
+te helpen, kan je de volgende artikelen raadplegen:
+
+* [Databasemanagement](./database-management)
+* [Importeren](./database-import)
