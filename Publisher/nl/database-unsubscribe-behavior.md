@@ -24,3 +24,12 @@ bijvoorbeeld het profiel aanpassen of volledig verwijderen.
 In de Publisher ga je naar het **Profiles** menu en selecteer je de database
 naar keuze. Onder **Database management** kun je de uitschrijf opties vinden
 en naar wens instellen.
+
+## Meer informatie
+De belangrijkste profielen zijn natuurlijk degene die je mailings willen
+ontvangen. Als je echter de data van uitgeschreven profielen bewaart,
+heb je een selectie nodig om deze profielen uit te sluiten van mailings.
+Lees hierover meer in de volgende artikelen:
+
+* [Databasemanagement](./database-management)
+* [Selecties](./database-selection-introduction)
