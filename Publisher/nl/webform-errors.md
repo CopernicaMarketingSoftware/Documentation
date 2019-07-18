@@ -1,4 +1,4 @@
-# Foutmeldingen bij het instellen van een content webformulier
+# Foutmeldingen bij instellen van een content webformulier
 
 Bij het aanmaken van een webformulier kunnen verschillende foutmeldingen zichtbaar zijn.  
 Hieronder wordt per foutmelding aangegeven hoe je dit kunt oplossen.
