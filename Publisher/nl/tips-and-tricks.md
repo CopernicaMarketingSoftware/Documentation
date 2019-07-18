@@ -38,6 +38,10 @@ and-publish-a-webform)
 * [Selecties: nieuwsbriefselectie](./create-a-mailing-list)
 * [Selecties: verjaardagsselectie](./how-to-create-a-birthday-selection)
 
+## Veel gestelde vragen
+Hieronder vind je enkele veel voorkomende vragen
+* [Foutmeldingen bij het instellen van een content webformulier](./webform-errors)
+
 ## Smarty
 Hieronder vind je veelvoorkomende Smarty toepassingen.
 * [Toepassingen met datum variabelen](./smarty-date-statements)

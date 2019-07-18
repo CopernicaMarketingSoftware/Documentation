@@ -124,6 +124,14 @@ requests through an http proxy, the required uri would be `http://example.org:88
 proxy running on the host example.org on port 8888. For the SOCKS proxy, the URI would be
 `socks://example.org:8888` for a SOCKS proxy running on port 8888.  
 
+For the HTTP proxy, the proxy itself should support the CONNECT request. The HTTP proxy will
+be used as a tunnel, so this should be the case for both secure and insecure requests. The DNS
+gets resolved by MailerQ, so the final outgoing request will be similar to the request below.
+
+```
+CONNECT 1.2.3.4:80 HTTP/1.1
+```
+
 ## Lockfile
 
 To prevent that MailerQ starts more than once, MailerQ stores its process ID 
