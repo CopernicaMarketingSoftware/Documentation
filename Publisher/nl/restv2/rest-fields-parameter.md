@@ -30,6 +30,7 @@ matchen. Als je een like-operator gebruikt dan kun je gebruik maken van de % en 
 Het teken % matcht met een willekeurige reeks tekens, en _ met precies één teken.
 Als je bijvoorbeeld alle profielen wilt opvragen waarvan de voornaam begint met de
 letter 'M', dan kun je in de *fields* parameter de waarde "voornaam=~M%" plaatsen.
+
 Wil je alle profielen met '@copernica' ophalen, gebruik je "emailaddress=~%@copernica%".
 
 
