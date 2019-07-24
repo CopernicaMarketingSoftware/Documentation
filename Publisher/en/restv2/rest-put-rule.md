@@ -1,11 +1,11 @@
 # REST API: PUT rule
 
-A method to edit the properties of an existing rule. It is called using 
+A method to edit the properties of an existing rule. It is called using
 the following URL:
 
 `https://api.copernica.com/v2/rule/$id?access_token=xxxx`
 
-The `$id` needs to be replaced with the ID of the rule you want to edit 
+The `$id` needs to be replaced with the ID of the rule you want to edit
 the properties of.
 
 ## Available data
@@ -16,7 +16,7 @@ The following data can be placed in the message body of the HTTP PUT command:
 - **description**: description of the rule
 - **view**: ID of the selection that the rule belongs to
 - **conditions**: array of conditions for the rule
-- **inversed**: boolean value to indicate whether the rule should be inversed. 
+- **inversed**: boolean value to indicate whether the rule should be inversed.
 If set to "True" only profiles *not* conforming to the conditions are selected
 - **disabled**: boolean value to indicate whether the rule should be disabled or not
 
@@ -37,7 +37,7 @@ $data = array(
 );
 
 // do the call, and print result
-print_r($api->put("rule/{$ruleID}", array(), $data));
+print_r($api->put("rule/{$ruleID}", $data));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

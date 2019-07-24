@@ -5,7 +5,7 @@ request sturen naar de volgende URL:
 
 `https://api.copernica.com/v2/profile/$id/interests?access_token=xxxx`
 
-De code `$id` moet je vervangen door de numerieke identifier van het profiel 
+De code `$id` moet je vervangen door de numerieke identifier van het profiel
 waarvan je de interesses wilt veranderen. De nieuwe interesses van het profiel
 kun je in de body van het bericht plaatsen.
 
@@ -23,7 +23,7 @@ de interessenamen, en de velden boolean waardes om te bepalen of de interesse
 aan of uit wordt geschakeld. Eventuele interesses die je **niet** in het object
 opneemt, worden automatisch uitgeschakeld.
 
-Als je de huidige interesses niet wilt uitschakelen, maar slechts nieuwe toe 
+Als je de huidige interesses niet wilt uitschakelen, maar slechts nieuwe toe
 wilt voegen kun je dat doen met [deze methode](./rest-post-profile-interests).
 
 ## Voorbeeld
@@ -31,14 +31,14 @@ wilt voegen kun je dat doen met [deze methode](./rest-post-profile-interests).
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 In de API call worden de interesses van een profiel met ID 4567 aangepast.
 Voor het eerste profiel worden de interesses "tennis" en "hockey" geactiveerd, en
-alle andere interesses (zelfs de interesses die niet expliciet zijn vermeld) 
-uitgeschakeld (tweede methode). Daarna wordt voor het tweede profiel de interesse 
+alle andere interesses (zelfs de interesses die niet expliciet zijn vermeld)
+uitgeschakeld (tweede methode). Daarna wordt voor het tweede profiel de interesse
 'voetbal' geactiveerd en alle andere interesses uitgeschakeld (eerste methode).
 
 ```php
     // vereiste scripts
     require_once('copernica_rest_api.php');
-    
+
     // verander dit naar je access token
     $api = new CopernicaRestAPI("your-access-token", 2);
 
@@ -48,15 +48,15 @@ uitgeschakeld (tweede methode). Daarna wordt voor het tweede profiel de interess
         'tennis'    =>  1,
         'hockey'    =>  1
     );
-    
+
     // voer het verzoek uit
-    $api->put("profile/{$profielID1}/interests", $parameters, $data);
+    $api->put("profile/{$profielID1}/interests", $data);
 
     // data voor het tweede verzoek
     $data = array('voetbal');
-    
+
     // voer het verzoek uit
-    $api->put("profile/{$profielID2}/interests", $parameters, $data);
+    $api->put("profile/{$profielID2}/interests", $data);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

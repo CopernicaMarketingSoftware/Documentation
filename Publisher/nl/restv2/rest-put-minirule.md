@@ -1,7 +1,7 @@
 # REST API: PUT minirule
 
-Een minirule is voor een miniview wat een regel is voor een selectie. 
-Om de eigenschappen van een minirule aan te passen kan er een HTTP PUT 
+Een minirule is voor een miniview wat een regel is voor een selectie.
+Om de eigenschappen van een minirule aan te passen kan er een HTTP PUT
 verzoek verstuurd worden naar de volgende URL:
 
 `https://api.copernica.com/v2/minirule/$id?access_token=xxxx`
@@ -35,12 +35,12 @@ $data = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->put("minirule/{$miniruleID}", array(), $data));
+print_r($api->put("minirule/{$miniruleID}", $data));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
 
-## Meer informatie 
+## Meer informatie
 
 - [Overzicht van alle API methodes](rest-api)
 - [GET minirule](./rest-get-minirule)
