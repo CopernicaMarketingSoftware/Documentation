@@ -12,17 +12,57 @@ Hier moet `$id` vervangen worden door de ID van het emailing document.
 * **begintime**: Start datum (en tijd) voor de statistieken.
 * **endtime**: Eind datum (en tijd) voor de statistieken.
 
-## Teruggegeven velden
+## Teruggegeven waarde
 
-Het **data** veld van het teruggegeven JSON object bevat de statistieken. 
-De volgende velden zijn beschikbaar:
+### Velden
 
-* **abuses**: De abuses ontvangen voor dit document.
-* **clicks**: De clicks ontvangen voor dit document.
-* **errors**: De errors ontvangen voor dit document.
-* **impressions**: De impressions ontvangen voor dit document.
-* **unsubscribes**: De unsubscribes ontvangen voor dit document.
-* **unknown**: De statistieken die niet binnen de bovenstaande categorieën vallen.
+Het JSON object bevat de volgende velden:
+
+* **abuses**: Array met de velden 'total' en 'unique' voor het aantal kliks 
+en het aantal unieke abuses respectievelijk.
+* **clicks**: Array met de velden 'total' en 'unique' voor het aantal kliks 
+en het aantal unieke kliks respectievelijk.
+* **errors**: Array met de velden 'total' en 'unique' voor het aantal kliks 
+en het aantal unieke errors respectievelijk.
+* **impressions**: Array met de velden 'total' en 'unique' voor het aantal impressies 
+en het aantal unieke impressies respectievelijk.
+* **unsubscribes**: Array met de velden 'total' en 'unique' voor het aantal kliks 
+en het aantal unieke unsubscribes respectievelijk.
+* **unknown**: Array met het velden 'total' voor de statistieken die niet binnen 
+de bovenstaande categorieën vallen.
+
+### Voorbeeld
+
+Hieronder vind je een voorbeeld van zo'n JSON object:
+
+```json
+{  
+   "clicks":{  
+      "total":"53",
+      "unique":"14"
+   },
+   "impressions":{  
+      "total":"80",
+      "unique":"49"
+   },
+   "errors":{  
+      "total":"2412",
+      "unique":"2289"
+   },
+   "unsubscribes":{  
+      "total":"0",
+      "unique":"0"
+   },
+   "abuses":{  
+      "total":"0",
+      "unique":"0"
+   },
+   "unknown":{  
+      "total":"22"
+   }
+}
+```
+
 
 ## PHP voorbeeld
 

@@ -17,6 +17,23 @@ The method returns a JSON object containing the following information:
 * **subject**: The template subject.
 * **type**: The template type ('json' or 'html').
 
+### JSON example 
+
+The JSON will look something like this:
+
+```json
+{  
+   "id":"2820",
+   "name":"Theme: conference",
+   "from_address":{  
+      "name":"Infinity",
+      "email":"info@valtaf.nl"
+   },
+   "subject":"Infinity conference",
+   "type":"json"
+}
+```
+
 ## PHP example
 
 The script below demonstrates how to use this API method. Don't forget 
@@ -38,5 +55,5 @@ This example requires the [REST API class](./rest-php)
 ## More information
 
 * [Overview of all REST API calls](./rest-api)
-* [Retrieve a Marketing Suite document](./rest-get-ms-document)
-* [Retrieve all Marketing Suite templates](./rest-get-ms-templates)
+* [GET templates](./rest-get-ms-templates)
+* [GET template body](./rest-get-ms-template-body)

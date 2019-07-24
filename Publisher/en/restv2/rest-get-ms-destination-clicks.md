@@ -11,18 +11,36 @@ for the **timestamp** field.
 
 ## Returned fields
 
-The method returns a JSON object with several clicks. For each click 
-the following information is available:
+The method returns a JSON object with several clicks under the 'data' property. 
+For each click the following fields is available:
 
 * **ID**: The ID of the click.  
 * **mailing**: The ID of the mailing.
 * **link**: The link that was clicked.
 * **timestamp**: Timestamp of the click.
 * **ip**: The IP where the click occurred from.
-* **user-agent**: User agent string of the machine used to click.
+* **useragent**: User agent string of the machine used to click.
 * **destination**: The ID of the destination that clicked the link.
 * **profile**: The ID of the profile that clicked the link.
 * **subprofile**: The ID of the subprofile that clicked the link.
+
+### JSON example
+
+A single click might look something like this:
+
+```json
+{  
+   "ID":"1",
+   "mailing":"2",
+   "link":"http:\/\/www.myshop.nl\/promotions\/customer\/{$profile.customerid}",
+   "timestamp":"2014-10-14 11:33:22",
+   "ip":"2a03:e280:0:1::1",
+   "useragent":"Mozilla\/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko\/20100101 Firefox\/8.0",
+   "destination":"1",
+   "profile":null,
+   "subprofile":null
+}
+```
 
 ## PHP example
 

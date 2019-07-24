@@ -27,6 +27,23 @@ in het **data** veld. Elke template bevat de volgende informatie:
 * **subject**: Het onderwerp van de template
 * **type**: Het type van de template ('json' of 'html').
 
+### JSON voorbeeld
+
+Een enkele template ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "id":"2820",
+   "name":"Theme: conference",
+   "from_address":{  
+      "name":"Infinity",
+      "email":"info@valtaf.nl"
+   },
+   "subject":"Infinity conference",
+   "type":"json"
+}
+```
+
 ## PHP voorbeeld
 
 Het onderstaande script demonstreert hoe je deze API methode gebruikt. 

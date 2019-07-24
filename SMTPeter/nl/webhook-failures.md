@@ -13,56 +13,42 @@ wijzen of te accepteren. SMTPeter maakt een *call*, naar de door jou
 aangegeven URL als een e-mail wordt afgewezen. Het kan ook voorkomen dat
 een e-mail wordt geaccepteerd om vervolgens later alsnog afgewezen te worden.
 Deze *asynchronous errors* worden ook door SMTPeter opgepikt en vervolgens
-meegegeven aan de webhook.
+meegegeven aan de Webhook.
 
 De meeste *e-mail servers* gebruiken vaak de officiele *Delivery Status Notification*
 om *bounce* meldingen te versturen. Dit formaat stelt SMTPeter in staat om automatisch
-bounces te herkennen, te loggen en te rapporteren via webhooks. Echter,
+bounces te herkennen, te loggen en te rapporteren via Webhooks. Echter,
 deze officiele standaard wordt niet door iedere e-mail server gebruikt en
 sommige grote spelers sturen zelfs eigen bedachte notificaties. We doen uiteraard
-ons uiterste best om alle type bounces te registreren en aan de webhook 
+ons uiterste best om alle type bounces te registreren en aan de Webhook 
 mee te geven, maar dit lukt niet altijd vanwege de vele verschillende formaten
 waarin bounces worden gemeld. 
 
-Je kunt alsnog alle bounces ontvangen als je dat wilt. Zelfs degene die we niet
-hebben getraceerd met de failures webhook. 
-In dat geval kun je additioneel een [webhook opzetten voor bounces](webhook-bounces "Webhooks voor bounces").
+Het is ook mogelijk alle bounces te ontvangen met een [Webhook voor bounces](webhook-bounces).
 
-
-## Formaat
+## Variabelen
 
 SMTPeter gebruikt HTTP POST calls om data naar je toe te sturen. Dit kan gedaan
 worden over HTTP of over HTTPS. De volgende variabelen worden gebruikt in POST 
 calls:
 
-<table>
-    <tr>
-        <td>id</td>
-        <td>unieke <em>identifier</em> van de e-mail waarvoor het failure report geldt</td>
-    </tr>
-    <tr>
-        <td><em>recipient</em></td>
-        <td>e-mailadres van de gebruiker waar de failure voor geldt</td>
-    </tr>
-    <tr>
-        <td>state</td>
-        <td><em>state</em> in het smtp protocol waar de <em>failure</em> plaatsvond</td>
-    </tr>
-    <tr>
-        <td>code</td>
-        <td>optionele smtp error code</td>
-    </tr>
-    <tr>
-        <td>extended</td>
-        <td>optionele extended smtp status code</td>
-    </tr>
-    <tr>
-        <td>description</td>
-        <td>optionele omschrijving van de error</td>
-    </tr>
-</table>
+| Variabele    | Description                                                                |
+|--------------|----------------------------------------------------------------------------|
+| id           | Unieke id van het bericht dat de failure triggerde                         |
+| type         | Type van de actie die de Webhook triggerde ('failure')                     |
+| timestamp    | Tijdstempel van de failure (YYYY-MM-DD HH:MM:SS formaat)                   |
+| time         | Unix tijd van de failure                                                   |
+| recipient    | E-mailadres van de ontvanger die de failure triggerde                      |
+| action       | Actie die voorgekomen is ('failure' of 'failed')                           |
+| state        | Staat in het SMTP protocol van de fout ("bounce" voor asynchrone bounces)  |
+| code         | Optionele SMTP error code                                                  |
+| extended     | Optionele extended SMTP status code                                        |
+| description  | Optionele omschrijving van de fout                                         |
+| tags         | Tags geassocieerd met het bericht                                          |
+
+De 'id', 'recipient' en 'tags' variabelen stellen je in staat om de klik te linken aan de 
+originele verstuurde e-mail.
 
 ## Meer informatie
 
 * [Webhooks](./webhooks)
-* [Webhooks instellen](./webhook-setup)

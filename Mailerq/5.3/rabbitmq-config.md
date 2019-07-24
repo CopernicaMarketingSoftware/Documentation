@@ -27,7 +27,7 @@ default value. This default only works if you run RabbitMQ and MailerQ on
 the same server, and when you do not use a special vhost. 
 
 If you have a [cluster of RabbitMQ nodes](https://www.rabbitmq.com/clustering.html), 
-you can use colons to separate the addresses: 
+you can use commas to separate the addresses: 
 ```
 rabbitmq-address: amqp://guest:guest@host1/vhost,amqp://guest:guest@host2/vhost,amqp://guest:guest@host3/vhost
 ```

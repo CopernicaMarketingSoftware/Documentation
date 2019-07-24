@@ -11,17 +11,69 @@ Where the `$id` should be replaced with the ID of the mailing.
 * **begintime**: Start date (and time) for the statistics.
 * **endtime**: End date (and time) for the statistics.
 
-## Returned fields
+## Return value
 
-The **data** field of returned JSON object contains the statistics. 
-The following fields are available:
+### Fields
 
-* **abuses**: The abuses that this mailing received.
-* **clicks**: The clicks that this mailing received.
-* **errors**: The errors that this mailing received.
-* **impressions**: The impressions that this mailing received.
-* **unsubscribes**: The unsubscribes that this mailing received.
-* **unknown**: The statistics not fitting the categories above.
+The following fields are available in the JSON object:
+
+* **abuses**: An array with fields 'total' and 'unique' for the total 
+number of clicks and number of unique clicks respectively.
+* **clicks**: An array with fields 'total' and 'unique' for the total 
+number of clicks and number of unique clicks respectively.
+* **errors**: An array with fields 'total' and 'unique' for the total 
+number of clicks and number of unique clicks respectively.
+* **impressions**: An array with fields 'total' and 'unique' for the total 
+number of clicks and number of unique clicks respectively.
+* **unsubscribes**: An array with fields 'total' and 'unique' for the total 
+number of clicks and number of unique clicks respectively.
+* **unknown**: An array with the field 'total' for all of the statistics not fitting the categories above.
+
+### Example
+
+The JSON output will look something like this:
+
+```json
+Array
+(
+    [abuses] => Array
+        (
+            [total] => 0
+            [unique] => 0
+        )
+
+    [clicks] => Array
+        (
+            [total] => 2
+            [unique] => 1
+        )
+
+    [errors] => Array
+        (
+            [total] => 0
+            [unique] => 0
+        )
+
+    [impressions] => Array
+        (
+            [total] => 4
+            [unique] => 4
+        )
+
+    [unsubscribes] => Array
+        (
+            [total] => 1
+            [unique] => 1
+        )
+
+    [unknown] => Array
+        (
+            [total] => 0
+        )
+
+
+)
+```
 
 ## PHP example
 

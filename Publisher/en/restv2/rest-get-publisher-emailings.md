@@ -23,21 +23,56 @@ This method also supports [paging parameters](./rest-paging).
 
 ## Returned fields
 
-The method returns a JSON array containing the start index, limit and 
-count. It also contains a data array with the mailings matching the 
-given parameters. For each mailing we return the following:
+The method returns a JSON object with several emailings in the **data** field. 
+Each emailing contains the following fields:
 
-* **id**: ID of the mailing
-* **timestamp**: Timestamp of the mailing
-* **document**: The ID of the document used for the mailing.
-* **template**: The ID of the template used for the mailing.
-* **subject**: The subject of the mailing
-* **from_address**: An array containing the 'name' and 'email' of the sender.
-* **destinations**: Amount of destinations the mailing was sent to
-* **type**: Type of mailing (individual or mass)
-* **contenttype**: Type of mailing content
-* **target**: Contains the target type and the ID and type of other 
-entities above it (for example the database a collection belongs to)
+* **id**: The ID of the mailing
+* **timestamp**: The timestamp
+* **document**: ID of the document used for the mailing
+* **template**: ID of the template used for the mailing
+* **subject**: Subject of the mailing
+* **from_address**: The from address of the mailing as an array. (With properties 'name' and 'email')
+* **destinations**: The number of destinations.
+* **testgroups**: Amount of testgroups
+* **finalgroup**: ID of the final group (only relevant in case of a splitrun)
+* **type**: The type of mailing: mass or individual.
+* **clicks**: Amount of clicks for this mailing
+* **impressions**: Amount of opens for this mailing
+* **contenttype**: The type of content in the mailing: html, text or both.
+* **target**: Array containing the target type and the ID and type of its sources (for example the database a collection belongs to).
+
+## JSON Example
+
+The JSON might look something like this:
+
+```json
+{  
+   "id":"1281",
+   "timestamp":"2010-04-14 15:02:14",
+   "document":"114",
+   "template":"621",
+   "subject":"Reminder",
+   "from_address":{  
+      "name":"test",
+      "email":"test@copernica.nl"
+   },
+   "destinations":"3",
+   "testgroups":0,
+   "type":"individual",
+   "clicks":"5",
+   "impressions":"2",
+   "contenttype":"html",
+   "target":{  
+      "type":"database",
+      "sources":[  
+         {  
+            "id":"214",
+            "type":"database"
+         }
+      ]
+   }
+}
+```
 
 ## PHP Example
 

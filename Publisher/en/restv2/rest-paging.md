@@ -14,6 +14,7 @@ Whenever a method returns a list of objects, this list is always wrapped in a JS
 This object has a number of properties that can be used to determine whether
 the list is complete or whether the output was limited and more entries are available.
 
+```
     {
         "start":    50,
         "limit":    100,
@@ -21,6 +22,7 @@ the list is complete or whether the output was limited and more entries are avai
         "total":    335,
         "data":     [ .... ]
     }
+```
 
 The most important property is *data*, which contains an array with the requested objects;
 e.g. an array of databases or an array of profiles.

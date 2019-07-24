@@ -22,7 +22,7 @@ Meer informatie over de betekenis van deze parameters vind je in het
 
 ## Geretourneerde velden
 
-De methode retourneert een lijst van velden in de database. Voor elk veld
+De methode retourneert een lijst van velden in de collectie. Voor elk veld
 worden de volgende eigenschappen teruggegeven:
 
 * id: 	numeriek id van het veld

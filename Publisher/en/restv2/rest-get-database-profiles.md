@@ -12,12 +12,12 @@ of the database you want to request profiles from.
 
 The following parameters can be added to the URL as variables:
 
-- **start**: the first profile to be requested
-- **limit**: the length of the batch that is requested
-- **total**: whether or not the total number of profiles in the database should be counted
-- **fields**: optional parameter to set conditions for profiles that should be returned
-- **orderby**: name or id of the field you want to use to sort the returned profiles
-- **order**: whether the profiles should be ordered in ascending or descending order.
+* **start**: The first profile to be requested.
+* **limit**: The length of the batch that is requested.
+* **total**: Whether or not the total number of profiles in the database should be counted.
+* **fields**: Optional parameter to set conditions for profiles that should be returned.
+* **orderby**: Name or ID of the field you want to use to sort the returned profiles.
+* **order**: Whether the profiles should be ordered in ascending or descending order.
 
 More information on the meaning of start, limit and total parameters can 
 be found in the [article on paging](rest-paging).
@@ -33,21 +33,46 @@ it. When you do so, profiles are sorted by the value in that field.
 Instead of a field to sort on, you can also assign one of the following 
 special values to “order”:
 
-- **id**: this is the default value, profiles are sorted by ID.
-- **random**: profiles are returned in random order
-- **modified**: profiles are sorted on the timestamp they were last modified on.
+* **id**: The default value, profiles are ordered based on their ID
+* **random**: Profiles are randomly ordered
+* **modified**: Profiles are ordered based on the *modified* timestamp.
 
 ## Returned fields
 
-The method returns a list of profiles. For each profile, the following properties are returned:
+This method returns a JSON object with profiles under the **data** field. 
+The following properties are available for each profile:
 
-- **ID**: numerical ID of the profile
-- **fields**: associative array/object of field names and values
-- **interests**: array of  the interests the profile has
-- **database**: ID of the database the profile is stored in
-- **secret**: the “secret” code that is linked to a profile
-- **created**: the timestamp on which the profile was created, in YYYY-MM-DD hh:mm:ss format.
-- **modified**: the timestamp on which the profile was last modified,, in YYYY-MM-DD hh:mm:ss format.
+* **ID**: Numerical ID of the profile
+* **fields**: Associative array of field names and values
+* **interests**: Array of interests for the profile
+* **database**: ID of the database where the profile is stored
+* **secret**: The "secret" code linked to a profile
+* **created**: Timestamp for creation of profile in YYYY-MM-DD hh:mm:ss format
+* **modified**: Timestamp for last edit of profile in YYYY-MM-DD hh:mm:ss format
+* **removed**: Indicates whether the profile has been removed or not
+
+### JSON example
+
+The JSON for a profile might look something like this:
+
+```json
+{  
+   "ID":"18381",
+   "fields":{  
+      "name":"Test",
+      "email":"test@example.com",
+   },
+   "interests":[  
+      "baseball",
+      "soccer"
+   ],
+   "database":"7616",
+   "secret":"e5903b43c08g011f7a1e1f2644f618be",
+   "created":"2013-01-06 14:19:51",
+   "modified":"2019-02-21 13:26:21",
+   "removed":false
+}
+```
 
 ## PHP example
 

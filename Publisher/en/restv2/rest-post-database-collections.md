@@ -15,9 +15,8 @@ HTTP request. After a successful call the ID of the created request is returned.
 
 The following variables can be set in the message body:
 
-- **name**: the title of the new collection field (mandatory)
-- **database**: ID of the existing database to put collection in
-- **fields**: fields in the collection
+- **name**: The title of the new collection field (mandatory). The name 
+for the collection should contain only letters and underscores.
 
 ## PHP example
 
@@ -33,11 +32,10 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 // data to pass to the call
 $data = array(
     'name'      =>  'some_collection',
-    'database'  =>  'some_database'
 );
 
 // do the call
-$api->post("database/{$databaseID}/interests", $data);
+$api->post("database/{$databaseID}/collections", $data);
 
 // return id of created request if successful
 ```

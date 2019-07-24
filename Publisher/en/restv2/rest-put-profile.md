@@ -52,6 +52,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API methods](./rest-api)
-* [PUT profile](./rest-put-profile)
 * [PUT profile fields](./rest-put-profile-fields)
 * [PUT profile interests](./rest-put-profile-interests)

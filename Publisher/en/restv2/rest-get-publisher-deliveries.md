@@ -11,8 +11,8 @@ for the **timestamp** field.
 
 ## Returned fields
 
-The method returns a JSON object with several deliveries. For each delivery 
-the following information is available:
+The method returns a JSON object with several deliveries under the 'data' property. 
+For each delivery the following information is available:
 
 * **ID**: The ID of the delivery.     
 * **timestamp**: The timestamp of delivery.
@@ -22,6 +22,23 @@ the following information is available:
 * **destination**: The ID of the destination.
 * **profile**: The ID of the profile that was delivered to.
 * **subprofile**: The ID of the subprofile that was delivered to (if applicable).
+
+### JSON example
+
+The JSON for a single delivery looks somewhat like this:
+
+```json
+{  
+   "ID":"1",
+   "timestamp":"2010-01-04 12:17:51",
+   "attempt":"0",
+   "smtp-response":"test",
+   "emailing":"671",
+   "destination":"57092",
+   "profile":"2384041",
+   "subprofile":null
+}
+```
 
 ## PHP example
 

@@ -25,23 +25,56 @@ Deze methode ondersteunt ook [paging parameters](./rest-paging).
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON array terug met een start index, limiet en 
-het totale aantal resultaten. Deze array bevat ook een data array met 
-de mailings die de parameters matchen. Elke mailing is een array die 
-de volgende informatie bevat:
+Deze methode geeft een JSON object met meerdere emailings onder het **data** 
+veld. Elke mailing bevat de volgende informatie:
 
 * **id**: De ID van de mailing. 
 * **timestamp**: De tijdstempel van de mailing.
+* **document**: ID van het document gebruikt voor de mailing.
+* **template**: ID van de template gebruikt voor de mailing.
+* **subject**: Onderwerp van de mailing.
+* **from_address**: Afzenderadres van de mailing als een array (met 'name' en 'email' als waarden)
 * **destinations**: Het aantal destinations van de mailing.
-* **document**: ID van het emailing document
-* **template**: ID van de emailing template
-* **subject**: Het onderwerp van de mailing
-* **from_address**: Een array met de naam ('name') en het e-mailadres ('email') van de afzender.
-* **type**: Het type van de mailing: 'mass' (massa mailing) of 'individual' (individuele mailing). Vraagt 
-standaard beide op.
-* **embedded**: Boolean die aangeeft of de afbeeldingen in de mailing ingebed zijn of niet.
+* **testgroups**: Het aantal testgroepen (alleen bij AB test of splitrun)
+* **finalgroup**: ID van de finalgroup (alleen relevant voor een splitrun mailing)
+* **type**: Het type van de mailing: 'mass' (massa mailing) of 'individual' (individuele mailing).
+* **clicks**: Aantal kliks voor deze mailing.
+* **impressions**: Aantal opens voor deze mailing.
 * **contenttype**: Het type content in de mailing: 'html', 'text' of 'both' (beide).
 * **target**: Array die het target type en de ID en het type van zijn sources bevat (een source is bijvoorbeeld de database waartoe een collectie behoort).
+
+## JSON Voorbeeld
+
+De JSON ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "id":"1281",
+   "timestamp":"2010-04-14 15:02:14",
+   "document":"114",
+   "template":"621",
+   "subject":"Reminder",
+   "from_address":{  
+      "name":"test",
+      "email":"test@copernica.nl"
+   },
+   "destinations":"3",
+   "testgroups":0,
+   "type":"individual",
+   "clicks":"5",
+   "impressions":"2",
+   "contenttype":"html",
+   "target":{  
+      "type":"database",
+      "sources":[  
+         {  
+            "id":"214",
+            "type":"database"
+         }
+      ]
+   }
+}
+```
 
 ## PHP Voorbeeld
 

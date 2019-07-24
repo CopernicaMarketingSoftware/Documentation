@@ -1,6 +1,6 @@
 # Webhooks: (sub)profile deletions
 
-If you set up a profile deletion webhook, you are notified in real-time
+If you set up a profile deletion Webhook, you are notified in real-time
 whenever a profile or subprofile is deleted from your account's databases.
 For each event we send an HTTP(S) POST call to your server with the 
 relevant information about the profile that was removed.
@@ -14,43 +14,46 @@ Associative arrays such as "parameters" and "fields" are sent per key-value pair
 e.g. *parameters[key]=value*.
 Arrays such as "interests" are sent per item, e.g. *interests[]=xyz*.
 
-| Variables          | Description                                                                             |
-|--------------------|-----------------------------------------------------------------------------------------|
-| profile/subprofile | unique identifier of the profile/subprofile that was deleted                            |
-| type               | which type of action was performed on the (sub)profile ('create', 'update' or 'delete') |
-| timestamp          | time when the (sub)profile was deleted (in YYYY-MM-DD HH:MM:SS format)                  |
+For profiles the response consists of the following variables:
 
-The "action" variable will always have the value 'delete'; this helps discern
-these messages from messages that are sent when a profile is
-[created](webhook-creates) or [updated](webhook-updates).
-Additional information about the profile or subprofile is also sent 
-for profiles this consists of the following variables:
+| Variable  | Description                                                                               |
+|-----------|-------------------------------------------------------------------------------------------|
+| type      | Type of action that triggered the Webhook ('delete')                                      |
+| timestamp | Timestamp for when the profile was deleted (in YYYY-MM-DD HH:MM:SS format)                |
+| time      | Unix time for when the profile was deleted                                                |
+| profile   | Unique identifier of the profile that was deleted                                         |   
+| database  | Unique identifier of the database to which the profile belongs                            |
+| fields    | The fields that belong to the deleted profile                                             |
 
-| Variable  | Description                                                    |
-|-----------|----------------------------------------------------------------|
-| database  | unique identifier of the database to which the profile belongs |
+For subprofiles, it consists of the following variables:
 
-For subprofiles, this consists of the following variables:
-
-| Variable   | Description                                                          |
-|------------|----------------------------------------------------------------------|
-| profile    | unique identifier of the profile to which this subprofile belongs    |
-| database   | unique identifier of the database to which this subprofile belongs   |
-| collection | unique identifier of the collection to which this subprofile belongs |
+| Variable   | Description                                                                              |
+|------------|------------------------------------------------------------------------------------------|
+| type       | Type of action that triggered the Webhook ('delete')                                     |
+| timestamp  | Time for when the subprofile was deleted (in YYYY-MM-DD HH:MM:SS format)                 |
+| time       | Unix time for when the subprofile was deleted                                            |
+| profile    | Unique identifier of the profile to which this subprofile belongs                        |
+| subprofile | Unique identifier of the subprofile that was deleted                                     |
+| database   | Unique identifier of the database to which this subprofile belongs                       |
+| collection | Unique identifier of the collection to which this subprofile belongs                     |
+| fields     | The fields that belong to the deleted subprofile                                         |
 
 ## Example
 
 A decoded POST request for a profile might look similar to this:
 
+```json
     {
         "action":       "delete",
         "profile":      123,
         "timestamp":    "1979-02-12 12:49:23",
         "database":     1,
     }
+```
     
 An example for a subprofile looks like this:
 
+```json
     {
         "action":       "delete",
         "subprofile":   456,
@@ -58,9 +61,10 @@ An example for a subprofile looks like this:
         "profile":      123
         "collection":   2,
     }
+```
 
 ## More information
 
 * [Webhooks](./webhooks)
-* [Creation feedback](./webhook-creates)
-* [Update feedback](./webhook-updates)
+* [Creation Webhook](./webhook-creates)
+* [Update Webhook](./webhook-updates)

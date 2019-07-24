@@ -1,4 +1,4 @@
-# REST API: GET emailings (Publisher)
+# REST API: GET profile emailings (Publisher)
 
 Deze methode vraagt een lijst op van alle mailings verstuurd met Publisher 
 naar een specifiek profiel. 
@@ -6,7 +6,8 @@ De methode maakt een HTTP call naar het volgende adres:
 
 `https://api.copernica.com/v2/profile/{$profileID}/publisher/emailings?access_token=xxxx`
 
-Je kunt de methode om alle Marketing Suite mailings op te vragen [hier](./rest-get-ms-emailings) vinden.
+Vergeet niet hier `{$profileID}` te vervangen door de ID van het profiel 
+waarvoor je de mailings op wilt vragen.
 
 ## Beschikbare parameters
 
@@ -26,25 +27,70 @@ die *geen* test waren ("no") of alle mailings ("both"). Standaardwaarde "both".
 
 Deze methode ondersteunt ook [paging parameters](./rest-paging).
 
+## Beschikbare parameters
+
+* **type**: Het type mailings om op te vragen: Massa ('mass') mailings, individuele ('individual') mailings 
+of alle mailings ('both').
+* **followups**: Geeft aan of we alleen emailings van opvolgacties ('yes') opvragen, 
+alleen emailings die geen gevolg zijn van een opvolgactie ('no') of alle emailings ('both').
+* **test**: Geeft aan of we alleen test emailings ('yes') opvragen, alleen 
+mailings die geen test waren ('no') of alle mailings ('both').
+
+De standaardwaarde van al deze parameters is 'both'. Als je geen parameters 
+meegeeft krijg je dus alle emailings zonder dat er een filter wordt toegepast.
+
 ## Teruggegeven velden
 
-Deze methode geeft een JSON array terug met een start index, limiet en 
-het totale aantal resultaten. Deze array bevat ook een data array met 
-de mailings die de parameters matchen. Elke mailing is een array die 
-de volgende informatie bevat:
+Deze methode geeft een JSON object met meerdere emailings onder het **data** 
+veld. Elke mailing bevat de volgende informatie:
 
 * **id**: De ID van de mailing. 
 * **timestamp**: De tijdstempel van de mailing.
+* **document**: ID van het document gebruikt voor de mailing.
+* **template**: ID van de template gebruikt voor de mailing.
+* **subject**: Onderwerp van de mailing.
+* **from_address**: Afzenderadres van de mailing als een array (met 'name' en 'email' als waarden)
 * **destinations**: Het aantal destinations van de mailing.
-* **document**: ID van het emailing document
-* **template**: ID van de emailing template
-* **subject**: Het onderwerp van de mailing
-* **from_address**: Een array met de naam ('name') en het e-mailadres ('email') van de afzender.
-* **type**: Het type van de mailing: 'mass' (massa mailing) of 'individual' (individuele mailing). Vraagt 
-standaard beide op.
-* **embedded**: Boolean die aangeeft of de afbeeldingen in de mailing ingebed zijn of niet.
+* **testgroups**: Het aantal testgroepen (alleen bij AB test of splitrun)
+* **finalgroup**: ID van de finalgroup (alleen relevant voor een splitrun mailing)
+* **type**: Het type van de mailing: 'mass' (massa mailing) of 'individual' (individuele mailing).
+* **clicks**: Aantal kliks voor deze mailing.
+* **impressions**: Aantal opens voor deze mailing.
 * **contenttype**: Het type content in de mailing: 'html', 'text' of 'both' (beide).
 * **target**: Array die het target type en de ID en het type van zijn sources bevat (een source is bijvoorbeeld de database waartoe een collectie behoort).
+
+## JSON Voorbeeld
+
+De JSON ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "id":"1281",
+   "timestamp":"2010-04-14 15:02:14",
+   "document":"114",
+   "template":"621",
+   "subject":"Reminder",
+   "from_address":{  
+      "name":"test",
+      "email":"test@copernica.nl"
+   },
+   "destinations":"3",
+   "testgroups":0,
+   "type":"individual",
+   "clicks":"5",
+   "impressions":"2",
+   "contenttype":"html",
+   "target":{  
+      "type":"database",
+      "sources":[  
+         {  
+            "id":"214",
+            "type":"database"
+         }
+      ]
+   }
+}
+```
 
 ## PHP Voorbeeld
 
@@ -78,3 +124,4 @@ Het bovenstaande voorbeeld vereist de [CopernicaRestApi klasse](./rest-php).
 
 * [Overzicht van alle API calls](./rest-api)
 * [Opvragen van Publisher mailings](./rest-get-publisher-emailings)
+* [Opvragen van Marketing Suite mailings voor een profiel](./rest-get-profile-ms-emailings)

@@ -70,7 +70,7 @@ export PATH=`pwd`/depot_tools:"$PATH"
 gclient
 fetch v8
 cd v8
-git checkout lkgr
+git checkout 5.9-lkgr
 gclient sync
 gn gen out.gn/library --args='is_debug=false is_component_build=true v8_enable_i18n_support=false'
 ninja -C out.gn/library libv8.so

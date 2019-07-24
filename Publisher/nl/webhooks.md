@@ -1,85 +1,98 @@
 # Webhooks
 
-In het menu van de Marketing Suite zie je een kopje met `WEBHOOKS` staan.
-Hier kun je instellen dat Copernica je real-time notificaties via HTTP POST
-stuurt als er een events zoals kliks, opens of errors plaatsvinden.
+Onder het `CONFIGURATIE` tabblad in de Marketing Suite kun je het 
+Webhook menu vinden onder het 'Account' kopje. Voorheen werden Webhooks 
+Feedback Loops genoemd. Webhooks zijn processen die in real-time een 
+notificatie naar gebruikers versturen door middel van een HTTP POST verzoek. 
+Hierdoor kun je altijd de meest recente resultaten van je mailing gereed hebben. 
+Deze functionaliteit is exclusief voor de Marketing Suite.
 
-WAARSCHUWING: Sommige webhooks kunnen grote aantallen calls veroorzaken. 
-Zorg er dus voor dat je server de lading aankan voordat je een webhook instelt.
+Hoewel Webhooks erg nuttig kunnen zijn moeten deze wel met zorg gebruikt worden 
+aangezien Webhooks grote hoeveelheden verzoeken kunnen versturen. Als je 
+niet zeker bent van de capaciteit van je servers of geen real-time statistieken 
+nodig hebt kun je ook de [logfiles](./logfiles-ms "Opvragen van Marketing Suite logfiles") 
+of [statistieken](./statistics "Statistieken bekijken") inzien of een van 
+[Copernica's API's](./apis "Copernica's SOAP en REST API's") gebruiken.
+
+Er zijn verschillende types voor Webhooks. De onderstaande artikelen 
+gaan dieper in op deze types:
+
+* [Webhooks for bounces](webhook-bounces)
+* [Webhooks for failures](webhook-failures)
+* [Webhooks for clicks](webhook-clicks)
+* [Webhooks for opens](webhook-opens)
+* [Webhooks for (sub)profile creations](webhook-creates)
+* [Webhooks for (sub)profile updates](webhook-updates)
+* [Webhooks for (sub)profile removals](webhook-deletes)
 
 ## Webhooks met Marketing Suite
 
-Onder `WEBHOOKS` kun je al je loops instellen. Je kunt ze 
-bijvoorbeeld gebruiken als je de gegevens in je eigen applicatie wilt bijwerken
-naar aanleiding van dergelijke events. Op je eigen server plaats je hiervoor 
-een script dat de calls van Copernica opvangt, en onder het kopje webhooks 
-(in de Marketing Suite) stel je in wanneer het script moet worden aangeroepen. 
-De rest gaat vanzelf.
+Webhooks kunnen bijvoorbeeld gebruikt worden om data van Copernica 
+te synchronizeren met je eigen applicatie. Webhooks vereisen echter wel een 
+script op je eigen server om de juiste handelingen uit te voeren wanneer er 
+informatie wordt aangeleverd door de Webhook. Je kunt hiervoor verschillende 
+trigger instellen, waaronder kliks, opens, profielen die worden aangepast, etc.
 
-Het aardige van de webhooks is dat de data die Copernica naar jou
-stuurt veel rijker is dan de data die in eerste instantie bij Copernica 
-binnenkomt. Als Copernica een klik of een open registreert, dan zien we alleen
-het IP adres en de HTTP headers van de binnenkomende request. Het e-mailadres, 
-de profieldata en de aan de mailing gekoppelde tags zoeken we er snel bij
-voordat we de webhook aanroepen. De data die jouw script ontvangt bevat
-hierdoor alle data die het makkelijk maakt om de terugmelding te koppelen
-aan gegevens in jouw systeem.
+De data die terug wordt gestuurd is uitgebreid en is ontworpen om makkelijk 
+te kunnen linken met data in je eigen systeem. Copernica ontvangt het IP adres 
+en de HTTP headers van het verzoek en voegt het e-mailadres, de profiel 
+data en de gelinkte tags toe om naar jou te verzenden. Met deze informatie 
+kun je deze makkelijk linken met bijvoorbeeld een profiel in je eigen database.
 
-## Webhook instellen
+Door te navigeren naar een database of collectie kun je ook makkelijk de 
+Webhooks inzien die erop van toepassing zijn, zodat het duidelijk is 
+wat voor data hier vandaan kan komen.
 
-Klik op het kopje `WEBHOOKS` binnen de Marketing Suite. Via het 
-configuratiemenu kun je het adres instellen waar de HTTP POST call naar
-toe wordt gestuurd. Het wijst zich eigenlijk vanzelf: je geeft aan in 
-welke events je geïnteresseerd bent, en wat het adres van je script is.
+## Webhooks configureren
 
-Je kunt gebruik maken van de volgende webhooks:
+De eerste stap voor het opzetten van een Webhook is om naar het `CONFIGURATIE` 
+menu te navigeren, waar je het Webhook menu kan vinden onder het account 
+'kopje'. Bij het aanmaken van een Webhook kies je hier eerst een type voor 
+en een URL, de callback URL genoemd. Naar deze callback URL wordt straks de 
+data verzonden.
 
-* [Webhooks voor bounces](webhook-bounces)
-* [Webhooks voor failures](webhook-failures)
-* [Webhooks voor clicks](webhook-clicks)
-* [Webhooks voor opens](webhook-opens)
-* [Webhooks voor creates](webhook-creates)
-* [Webhooks voor updates](webhook-updates)
-* [Webhooks voor deletes](webhook-deletes)
+De volgende stap is om het webadres te verifiëren. Door deze extra 
+stap wordt voorkomen dat de mogelijke vertrouwelijke data in de verkeerde 
+handen valt. In de Marketing Suite vind je hierna een link waarmee je het 
+verificatie bestand kunt downloaden. Deze zal verschillend zijn voor elke 
+nieuwe Webhook. Dit bestand kun je vervolgens in de root van je webserver plaatsen 
+of op de plek waar het script staat dat de HTTP POST verzoeken zal afhandelen. 
+Als dit dus de locatie van je script is:
 
-## URL validatie
+```text
+"https://example.com/dir/script.php"
+```
 
-We hebben een veiligheidssysteem ingebouwd in de webhooks. Om te 
-voorkomen dat we per ongeluk data naar een server sturen die niet aan jou
-toebehoort en dat jouw gegevens hierdoor in handen van anderen vallen, moet 
-je eerst bewijzen dat je toegang hebt tot de ingestelde server. Nadat je een 
-webhook hebt aangemaakt moet je daarom een klein verificatiebestandje
-op de server plaatsen. Pas als het Copernica is gelukt om precies dit
-verificatiebestand te downloaden weten we zeker dat de server aan jou 
-toebehoort en gaan we de data versturen door middel van calls.
+Zou het tekst bestand, dat een naam zal hebben als "smtpeter-xxxxx.txt", 
+in dezelfde folder geplaatst moeten worden:
 
-De naam en inhoud van het bestand is uniek voor elke webhook en kan
-vanaf het dashboard opgevraagd worden. Je moet het bestand ofwel naar de root
-van je server kopiëren ofwel naar dezelfde folder waar ook het webhook script
-zich bevindt.
-Als je dus "https://domein.nl/dir/script.php" als webhook script hebt opgesteld,
-dan moet je het bestand "smtpeter-xxxxx.txt" zodanig op je webserver plaatsen
-dat het via "https://domein.nl/dir/smtpeter-xxxxx.txt"
-of via "https://domein.nl/smtpeter-xxxxx.txt" beschikbaar is.
+```text
+"https://example.com/dir/smtpeter-xxxxx.txt"
+```
 
-Nadat je webhook is gevalideerd, kan het bestand weer verwijderd worden.
+Je kunt nu de callback URL verifiëren door op de link in de Marketing Suite 
+te klikken. Hierna mag het tekstbestand verwijderd worden. Je kunt je 
+Webhook testen door het menu voor de Webhook te openen en de tool onder 
+de callback URL te gebruiken om te testen. Het is ook mogelijk al je Webhooks 
+te testen in het Webhook menu.
 
-## De webhook testen
+## Veiligheid
 
-Het dashboard beschikt over een krachtige tool om je webhook mee te testen.
-Vul simpelweg de post data in die je WebHook moet ontvangen en verstuur direct een voorbeeldnotificatie.
-
-## Calls afhandelen
-
-Controleer voordat je webhook instelt of je server de inkomende datastroom 
-wel aankan. Vooral de webhook die geactiveerd wordt [wanneer iemand een mail opent](webhook-opens),
-ontvangt grote aantallen notificaties.
-
-Als je niet zeker weet of je server al deze notificaties aankan,
-of als je geen behoefte hebt aan real-time terugkoppeling,
-is het beter om de [algemene statistieken](./statistics) te gebruiken.
+Om jouw script te behoeden voor misbruik en incorrecte informatie voegt Copernica 
+[signatures](./webhook-security) toe aan het verzoek. Door de juiste checks 
+te implementeren kun je zo verzekeren dat alleen data van Copernica 
+jouw systeem binnenkomt.
 
 ## Meer informatie
 
 * [Statistieken](./statistics)
-* [Uitschrijfgedrag](./database-unsubscribe-behavior)
+* [Logfiles](./logfiles-ms)
+* [REST API](./rest-api)
+* [SOAP API](./soap-api-documentation)
+* [Webhooks voor bounces](webhook-bounces)
+* [Webhooks voor failures](webhook-failures)
+* [Webhooks voor kliks](webhook-clicks)
+* [Webhooks voor opens](webhook-opens)
+* [Webhooks voor aangemaakte (sub)profielen](webhook-creates)
+* [Webhooks voor geüpdatete (sub)profielen](webhook-updates)
+* [Webhooks voor verwijderde (sub)profielen](webhook-deletes)

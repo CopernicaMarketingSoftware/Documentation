@@ -10,15 +10,12 @@ samengesteld en gehost.
 
 Een feed vanuit Content inladen:
 
-`{loadfeed feed='adres van de feed'}`
+`{loadfeed feed='id van de feed'}`
 
-Vervang *naam* met het adres van de feed uit het het onderdeel
-Content in Copernica. 
-
-Dit adres achterhaal je door in Content de feed aan te klikken die je
-wilt gebruiken. Je vindt hier zowel het adres van de Atom en de RSS
-versie. Beide kunnen worden gebruikt binnen Copernica publicaties.
-
+Vervang *id van de feed* met het ID van de feed uit het het onderdeel
+Content in Copernica. Het ID achterhaal je door in Content met je muis 
+over de feed te gaan. Hierdoor zie je bijvoorbeeld *Feed #123* verschijnen, 
+gebruik dan 123 als ID.
 
 ## Externe feed inladen
 

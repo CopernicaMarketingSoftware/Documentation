@@ -19,6 +19,22 @@ De volgende velden zijn beschikbaar:
 * **timestamp**: De tijdstempel van de mailing.
 * **destinations**: Het aantal destinations in deze testgroep.
 
+### JSON voorbeeld
+
+De JSON voor een testgroep ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"2481",
+   "document":"12",
+   "name":"Testgroup 1",
+   "from_address":"\"Mr. Test\" <test@copernica.com>",
+   "subject":"Emailing!",
+   "timestamp":"2010-10-12 12:37:26",
+   "destinations":"1"
+}
+```
+
 ## PHP voorbeeld
 
 Het volgende script demonstreert hoe je deze API methode kunt gebruiken:

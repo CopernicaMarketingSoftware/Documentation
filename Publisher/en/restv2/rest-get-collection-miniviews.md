@@ -22,15 +22,32 @@ More information on the meaning of these parameters can be found in the
 
 ## Returned fields
 
-The method returns a list of miniselections. For each selection the following 
-information is returned:
+The method returns a JSON object with miniselections in the **data** 
+field. For each selection the following information is returned:
 
-* **ID**: numerical ID of the miniselection
-* **name**: name of the miniselection
-* **description**: description of the miniselection
-* **parent-type**: the parent-type is always the string "collection"
-* **parent-id**: ID of the collection this miniselection belongs to
-* **collection**: ID of the collection this miniselection belongs to
+* **ID**: Unique numerical identifier
+* **name**: Name of the selection
+* **description**: Description of the selection
+* **parent-type**: Type of the parent: view or collection
+* **parent-id**: ID of the database or view
+* **collection**: ID of the collection this miniview belongs to
+* **last-built**: Timestamp of last build
+
+### JSON example
+
+The JSON for a miniview might look something like this:
+ 
+```json
+{  
+   "ID":"1525",
+   "name":"Miniselection",
+   "description":"",
+   "parent-type":"collection",
+   "parent-id":"21448",
+   "collection":"21448",
+   "last-built":"2019-06-19 00:48:37"
+}
+```
 
 ## PHP example
 

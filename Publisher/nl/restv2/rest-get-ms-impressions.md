@@ -3,7 +3,7 @@
 Er worden statistieken bijgehouden over elke mailing die verstuurd wordt met 
 Copernica om je meer inzicht te geven in de prestatie hiervan. Impressions zijn 
 een van de statistieken die worden bijgehouden. 
-Je kan deze opvragen met een HTTP GET call naar de volgende URL:
+Je kan alle impressies voor een account opvragen met een HTTP GET call naar de volgende URL:
 
 `https://api.copernica.com/v2/ms/impressions?access_token=xxxx`
 
@@ -12,17 +12,34 @@ voor het **timestamp** veld.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug met impressions. Voor elke impression 
-is de volgende informatie beschikbaar:
+Deze methode geeft een JSON object terug met impressions onder het 'data' veld. 
+Voor elke impression is de volgende informatie beschikbaar:
 
 * **ID**: De ID van de impression.         
 * **mailing**: De ID van de mailing.
 * **timestamp**: Tijdstempel van de impression. 
 * **ip**: De IP waar de impression vandaan kwam.
-* **user-agent**: User agent string van de machine waar de impression vandaan kwam.
+* **useragent**: User agent string van de machine waar de impression vandaan kwam.
 * **destination**: De ID van de destination die de impression veroorzaakte.
 * **profile**: De ID van het profiel die de impression veroorzaakte.
 * **subprofile**: De ID van het subprofiel die de impression veroorzaakte.
+
+### JSON voorbeeld
+
+Een enkele impression ziet er bijvoorbeeld zo uit.
+
+```json
+{  
+   "ID":"1",
+   "mailing":"412",
+   "timestamp":"2014-10-09 13:41:46",
+   "ip":"2a03:e280:0:1::1",
+   "useragent":"Mozilla\/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko\/20100101 Firefox\/8.0",
+   "destination":"112",
+   "profile":13453,
+   "subprofile":null
+}
+```
 
 ## PHP voorbeeld
 

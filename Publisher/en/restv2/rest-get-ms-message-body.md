@@ -6,8 +6,7 @@ you can send a GET request to the following URL:
 `https://api.copernica.com/v2/ms/message/$id/body/$type?access_token=xxx`
 
 where `$id` is the unique string that identifies a message and `$type` is 
-the format for the message. Don't forget to add your access token! 
-This method can not be called with a PHP script.
+the format for the message. This method can not be called with a PHP script.
 
 ## Types
 
@@ -23,5 +22,5 @@ desired type in the URL.
 
 ## More information
 
-* [All API calls](./rest-api)
-* [GET message](./rest-get-message)
+* [Overview of all REST API calls](./rest-api)
+* [GET message](./rest-get-ms-message)

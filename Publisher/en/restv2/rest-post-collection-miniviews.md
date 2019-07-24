@@ -16,9 +16,6 @@ HTTP request. After a successful call the ID of the created request is returned.
 The following variables can be added to the body of the HTTP POST call:
 
 - **name**: The name of the selection that is to be created. (mandatory)
-- **description**: an optional description of the new selection.
-- **parent-type**: used to display whether a selection is placed directly under a collection, or nested under another selection
-- **parent-id**: ID of the parent selection/collection
 
 ## PHP example
 
@@ -34,7 +31,6 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 // data to pass to the call
 $data = array(
     'name'      =>  'my-selection',
-    'description'	=> 'example selection',
 );
 
 // do the call

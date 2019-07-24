@@ -12,8 +12,8 @@ for the **timestamp** field.
 
 ## Returned fields
 
-The method returns a JSON object with several unsubscribes. For each unsubscribe 
-the following information is available:
+The method returns a JSON object with several unsubscribes in the 'data' field. 
+For each unsubscribe the following information is available:
 
 * **ID**: The ID of the unsubscribe. 
 * **timestamp**: The timestamp of the unsubscribe.
@@ -23,6 +23,23 @@ the following information is available:
 * **destination**: The ID of the destination.
 * **profile**: The ID of the profile.
 * **subprofile**: The ID of the subprofile (if applicable).
+
+### JSON example
+
+A single unsubscribe might look something like this:
+
+```json
+{  
+   "ID":"1",
+   "timestamp":"2011-11-09 12:42:35",
+   "source":"link",
+   "success":true,
+   "emailing":"42341",
+   "destination":"847259",
+   "profile":"5063195",
+   "subprofile":null
+}
+```
 
 ## PHP example
 

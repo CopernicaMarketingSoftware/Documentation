@@ -1,4 +1,4 @@
-# Getting started with MailerQ 5.3
+# Getting started with MailerQ 5.4
 
 MailerQ runs on Linux. To get MailerQ up and running on your own computer or on a server you
 need to take a couple of simple steps:

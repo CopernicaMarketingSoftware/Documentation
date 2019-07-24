@@ -11,8 +11,8 @@ for the **timestamp** field.
 
 ## Returned fields
 
-The method returns a JSON object with several abuses. For each abuse 
-the following information is available:
+The method returns a JSON object with several abuses under the 'data' field. 
+For each abuse the following information is available:
 
 * **ID**: ID of the abuse.
 * **timestamp**: Timestamp of the abuse.
@@ -24,6 +24,25 @@ the following information is available:
 * **destination**: ID of the destination.
 * **profile**: ID of the profile.
 * **subprofile**: ID of the subprofile (if applicable)
+
+### JSON example
+
+A single abuse might look something like this:
+
+```json
+{  
+   "ID":"2",
+   "timestamp":"2009-12-01 10:00:00",
+   "recognized_as":"arf",
+   "feedback_type":"opt-out",
+   "arf_version":"0.1",
+   "details":"",
+   "emailing":"613",
+   "destination":"60716",
+   "profile":"2231853",
+   "subprofile":null
+}
+```
 
 ## PHP example
 

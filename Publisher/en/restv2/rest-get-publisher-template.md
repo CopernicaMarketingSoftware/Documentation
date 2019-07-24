@@ -15,6 +15,18 @@ The method returns a JSON object containing the following information:
 * **name**: The name of the template.
 * **archived**: The archive status of the template.
 
+### JSON Example
+
+The JSON for a template will look something like this:
+
+```json
+{  
+   "id":"551",
+   "name":"TestTemplate",
+   "archived":false
+}
+```
+
 ## PHP example
 
 The script below demonstrates how to use this API method. Don't forget 

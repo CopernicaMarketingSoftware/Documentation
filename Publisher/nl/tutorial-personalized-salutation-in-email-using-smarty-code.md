@@ -1,5 +1,4 @@
 # Persoonlijke aanhef maken
-
 Met behulp van smarty code kan je op vrij eenvoudige wijze je
 nieuwsbrief van een persoonlijke noot voorzien. In dit artikel leer je
 hoe je met behulp van smarty voorwaarden (if en else- statements) de
@@ -15,7 +14,6 @@ Let op 2: Smarty variabelen zijn hoofdlettergevoelig. {$profile.voornaam} is
 dus wat anders dan {$profile.Voornaam}.
 
 ## Eenvoudige informele aanhef
-
 Wanneer je van al je relaties de voornaam weet kan je de aanhef
 gemakkelijk personaliseren door te verwijzen naar het veld waarin de
 voornaam is opgeslagen. In dit voorbeeld het veld *Voornaam*
@@ -27,13 +25,12 @@ voornaam is opgeslagen. In dit voorbeeld het veld *Voornaam*
 Echter, een ontvanger waarvan je geen voornaam weet, zal boven de mail
 de aanhef 'Beste ', lezen. Om dit te voorkomen, doet je het volgende:
 
-`{if $Voornaam != ""}Beste {$Voornaam}{else}Beste relatie{/if},`
+`{if $profile.Voornaam != ""}Beste {$profile.Voornaam}{else}Beste relatie{/if},`
 
 Vrij vertaald: als in het veld *Voornaam* een waarde is gevonden, dan
 wordt deze waarde getoond. Toon anders de waarde *Beste relatie*.
 
 ## Formele aanhef
-
 Indien je geadresseerden formeel wilt aanspreken dien je ook het
 geslacht (M/V) van je relaties te weten:
 
@@ -55,14 +52,12 @@ gepersonaliseerd, en *Geachte relatie* als aanhef getoond.
 [Meer over voorwaarden in personalisatie](./personalizing-from-a-profile-or-subprofile.md "Personalisatie uit een profiel of subprofiel")
 
 ## Opmaak van personalisatie
-
 Het kan voorkomen dat gegevens in je database onderling qua hoofdletter
 gebruik van elkaar afwijken, of gegevens helemaal ontbreken. Gelukkig
 zijn er in Smarty speciale filterfuncties beschikbaar om deze
 afwijkingen correct af te vangen.
 
 ### lower
-
 Dit filter wordt gebruikt om alle hoofdletters te verwijderen.
 
 Als de variabele {$profile.Naam|lower} de waarde heeft: **'Karel APPEL'**, dan
@@ -70,7 +65,6 @@ zorgt de code {$profile.Naam|lower} ervoor dat wordt weergegeven: **'karel
 appel'**
 
 ### ucfirst
-
 Dit filter zorgt ervoor dat het eerste karakter uit een string
 (tekenreeks) een hoofdletter wordt.
 
@@ -86,7 +80,6 @@ de waarde ‘Van der’ in het document komen te staan.
 [Meer smarty filters en toepassingen](./filter-data-with-smarty-modifiers.md "Opmaak van smarty personalisatie (Smarty filters)")
 
 ### Initialen afvangen
-
 Je wilt personaliseren met *Beste Voornaam*,
 
 Echter, nu wil het geval dat je van sommige relaties alleen de

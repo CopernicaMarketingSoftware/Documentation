@@ -15,9 +15,6 @@ als message body aan het HTTP request worden toegevoegd.
 De volgende variabele moet in de body van de HTTP POST call worden geplaatst.
 
 - **name**: Naam van de nieuw aan te maken selectie (verplicht).
-- **description**: Beschrijving van de nieuwe selectie
-- **parent-type**: Geeft aan of de selectie onder een onder selectie of de database is geplaatst
-- **parent-id**: ID van de selectie/database waar de selectie onder valt
 
 ## Voorbeeld
 
@@ -33,8 +30,6 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 // data voor de methode
 $data = array(
     'name'          =>  'mijn-selectie', 
-    'description'	=> 'voorbeeld selectie',
-    'has-rules'	    => False
 );
 
 // voer het verzoek uit

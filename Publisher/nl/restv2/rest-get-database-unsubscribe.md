@@ -29,6 +29,19 @@ staan en dus niet worden verwijderd, maar dat ze wel worden aangepast. De
 teruggegeven "fields" setting bevat een object met de nieuwe profielwaardes. 
 Zo kun je de data bewaren.
 
+### JSON voorbeeld
+
+De JSON voor het afmeldalgoritme ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "behavior":"update",
+   "fields":{  
+      "newsletter":"no"
+   }
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:

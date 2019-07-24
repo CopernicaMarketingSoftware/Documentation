@@ -7,12 +7,14 @@ Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
 
 De `$id` moet hier vervangen worden door de ID van de regel waaraan je de condition wilt toevoegen.
 
-## Verschillende type condities
+## Beschikbare parameters
 
-Je kunt verschillende condities aan een regel toevoegen. 
-De precieze eigenschappen hangen af van het type van de conditie. 
-In onderstaande lijst zijn alle conditions weergegeven. Je kunt 
-precies lezen wat iedere conditie inhoudt door erop te klikken:
+* **type**: Het type van de conditie.
+
+Aan deze call moet tenminste het type meegegeven worden. Daarnaast zijn er 
+per conditie verschillende parameters beschikbaar. Je kunt 
+precies lezen wat iedere conditie inhoudt door het bijhorende artikel in 
+de onderstaande links aan te klikken:
 
 - [Change conditie](./rest-condition-type-change.md)
 - [Date conditie](./rest-condition-type-date.md)
@@ -44,7 +46,7 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters voor de methode
 $data = array(
-    'type' = 'Date'
+    'type' => 'date'
 );
 
 // voer het verzoek uit en print het resultaat

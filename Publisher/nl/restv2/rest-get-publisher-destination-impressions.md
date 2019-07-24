@@ -12,8 +12,8 @@ voor het **timestamp** veld.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug met impressions. Voor elke impression 
-is de volgende informatie beschikbaar:
+Deze methode geeft een JSON object terug met impressions onder het 'data' 
+veld. Voor elke impression is de volgende informatie beschikbaar:
 
 * **ID**: De ID van de impression.
 * **timestamp**: De tijdstempel van de impression.
@@ -24,6 +24,24 @@ is de volgende informatie beschikbaar:
 * **destination**: De ID van de destination.
 * **profile**: De ID van het profiel.
 * **subprofile**: De ID van het subprofiel (als deze beschikbaar is).
+
+### JSON voorbeeld
+
+Een enkele impressie ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"44807",
+   "timestamp":"2010-07-20 14:34:32",
+   "ip":"0.0.0.0",
+   "useragent":"Microsoft Outlook 2007, WinXP",
+   "referer":null,
+   "emailing":"1328",
+   "destination":"822758",
+   "profile":"2590894",
+   "subprofile":null
+}
+```
 
 ## PHP voorbeeld
 

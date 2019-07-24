@@ -12,19 +12,69 @@ name of the database of which you want to request the collections.
 
 The following parameters can be added to the URL as variables:
 
-- **start**: the first collection to be requested
-- **limit**: length of the requested batch
-- **total**: whether or not the total number of collections should be counted
+| Parameter | Description                                                        |
+|-----------|--------------------------------------------------------------------|
+| **start** | The first collection to be requested.                              |
+| **limit** | Length of the requested batch.                                     |
+| **total** | Whether or not the total number of collections should be counted.  |
 
 More information on the meaning of these parameters can be found [in the article on paging](rest-paging).
 
 ## Returned fields
 
-The method returns a list of collections in the database. For each collection, the following properties are displayed:
+The method returns a JSON object that contains a 'data' property with 
+all the collections for the database. Each collection contains the following fields:
 
-- **name**: the name of the collection in the database
-- **database**: ID of database of the collection
-- **fields**: fields in the collection
+| Variable      | Description                                     |
+|---------------|-------------------------------------------------|
+| **ID**        | The ID of the collection.                       |
+| **name**      | Name of the collection.                         |
+| **database**  | ID of the database this collection belongs to.  |
+| **fields**    | Array with the fields in the collection.        |
+
+### JSON example
+
+The JSON for a single collection might look something like this:
+
+```json
+{  
+   "ID":"25935",
+   "name":"Orders",
+   "database":"7453",
+   "fields":{  
+      "start":0,
+      "limit":100,
+      "count":7,
+      "data":[  
+         {  
+            "ID":"9277",
+            "name":"email",
+            "type":"email",
+            "value":"test@copernica.nl",
+            "displayed":true,
+            "ordered":false,
+            "length":"100",
+            "textlines":"0",
+            "hidden":false,
+            "index":false
+         },
+         {  
+            "ID":"9879",
+            "name":"order_number",
+            "type":"integer",
+            "value":"0",
+            "displayed":true,
+            "ordered":false,
+            "length":"100",
+            "textlines":"0",
+            "hidden":false,
+            "index":false
+         }
+      ],
+      "total":2
+   }
+}
+```
 
 ## PHP example
 

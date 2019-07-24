@@ -1,6 +1,6 @@
 # REST API: GET emailing (Marketing Suite)
 
-Je kunt de REST API gebruiken om een overzicht van een mailing op te vragen 
+Je kunt de REST API gebruiken om een overzicht van een mailing op te vragen
 door een HTTP GET verzoek te versturen naar de volgende URL:
 
 `https://api.copernica.com/v2/ms/emailing/$id?access_token=xxxx`
@@ -15,18 +15,47 @@ Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 * **timestamp**: Tijdstempel van de mailing.
 * **template**: De ID van de template die gebruikt is voor deze mailing.
 * **subject**: Het onderwerp van de mailing.
-* **from_address**: Een array met de naam ('name') en het e-mailadres ('email') 
+* **from_address**: Een array met de naam ('name') en het e-mailadres ('email')
 van de afzender.
 * **destinations**: Hoeveelheid (geplande) ontvangers van de mailing.
-* **type**: Type van de mailing. Een individuele mailing is 'individual' 
+* **type**: Type van de mailing. Een individuele mailing is 'individual'
 en een massa mailing is 'massa'.
-* **target**: Bevat het type van het doelwit van de mailing en de ID 
-en types van de entiteiten hierboven (bijvoorbeeld de database waar een 
+* **target**: Bevat het type van het doelwit van de mailing en de ID
+en types van de entiteiten hierboven (bijvoorbeeld de database waar een
 collectie onder valt).
+
+### JSON voorbeeld
+
+De JSON voor de mailing, die je kunt vinden onder de 'data' eigenschap
+in de output ziet er bijvoorbeeld zo uit:
+
+```json
+{
+   "id":"169",
+   "timestamp":"2015-01-13 15:09:49",
+   "template":"579",
+   "subject":"Test",
+   "from_address":{
+      "name":"Test",
+      "email":"test@copernica.com"
+   },
+   "destinations":25,
+   "type":"mass",
+   "target":{
+      "type":"database",
+      "sources":[
+         {
+            "id":"7578",
+            "type":"database"
+         }
+      ]
+   }
+}
+```
 
 ## PHP voorbeeld
 
-Het onderstaande script demonstreert hoe je deze API methode gebruikt. 
+Het onderstaande script demonstreert hoe je deze API methode gebruikt.
 Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 
 ```php
@@ -46,3 +75,5 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php)
 
 * [Overzicht van alle REST API calls](./rest-api)
 * [Vraag alle Marketing Suite mailings op](./rest-get-ms-emailings)
+* [Vraag een ingeroosterde
+   Marketing Suite mailing op](./rest-get-ms-scheduledemailing)

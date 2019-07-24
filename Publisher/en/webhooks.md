@@ -1,21 +1,35 @@
 # Webhooks
 
-In the Marketing Suite menu you find a tab called `WEBHOOKS`, previously 
-called Feedback Loops. Webhooks are processes that notify their 
+In the Marketing Suite configuration menu you can find the menu `Webhooks`, 
+previously called Feedback Loops. Webhooks are processes that notify their 
 user of events that happen in real time through HTTP POST. This allows 
 you to always have the most recent results of your mailing. Please note 
 that this functionality is currently only available in the Marketing Suite.
 
-WARNING: Some webhooks generate a large amount of calls. Please make 
-sure your server is capable of handling the load before setting up a 
-WebHook.
+While Webhooks are very useful, they should be used with caution as they 
+can generate large amounts of calls. If you are unsure about your server 
+capacity or do not need real-time feedback you can also view the 
+[statistics](./statistics "Viewing statistics in the Marketing Suite") or 
+[logfiles](./logfiles-ms "How to retrieve Marketing Suite logfiles") or 
+use one of [Copernica's APIs](./apis "Copernica's SOAP and REST APIs").
+
+There are several types of Webhooks. The articles linked below explain 
+these types in more detail:
+
+* [Webhooks for bounces](webhook-bounces)
+* [Webhooks for failures](webhook-failures)
+* [Webhooks for clicks](webhook-clicks)
+* [Webhooks for opens](webhook-opens)
+* [Webhooks for (sub)profile creations](webhook-creates)
+* [Webhooks for (sub)profile updates](webhook-updates)
+* [Webhooks for (sub)profile removals](webhook-deletes)
 
 ## Webhooks with Marketing Suite
 
 Webhooks can be used to sync data that passes through Copernica 
 directly into your own application. Webhooks require a script on 
 your own server to execute whenever information is provided through the 
-WebHook. You can set several triggers in the Webhooks tab such 
+Webhook. You can set several triggers in the Webhooks menu such 
 as opens, clicks, profile edits and bounces.
 
 The data you receive is very rich and allows you to easily link it to the 
@@ -24,65 +38,56 @@ HTTP headers of the incoming request and adds the e-mail address, profile
 data and linked tags to send to you. Based on this information it is 
 easy to add the information to the correct profile.
 
+By navigating to a database or collection you can also easily view all 
+Webhooks that are linked to it, making it easy to see 
+which Webhooks apply to this specific set of data.
+
 ## Setting up Webhooks
 
-Click on the tab called `WEBHOOKS` inside the Marketing Suite.
-In the Webhooks menu, you can fill in the address the HTTP POST 
-call is sent to in the manage menu. It's pretty self explanatory: 
-select the events you're interested in and provide the location of 
-your script.
+The first step for setting up a Webhook is to navigate to the `CONFIGURATION` 
+menu, where you can find the Webhooks menu under the 'Account' section. 
+To create a Webhook you pick a type and then add the callback URL, where 
+the data will be sent to after configuration.
 
-There are several types of webhooks. The articles linked below explain 
-these types in more detail:
+The next step is to verify your web address. This extra step ensures that 
+your potentially confidential data will be sent to the correct server. 
+In the Marketing Suite you will find a link to download the verification file, 
+which will be different for every new Webhook. The file should be placed 
+in the root of your webserver or in the directory of the script that will 
+handle the incoming HTTP POST requests. So if your script is in the following location:
 
+```text
+"https://example.com/dir/script.php"
+```
+
+You should have the text file, which will be named something like "smtpeter-xxxxx.txt" 
+in the same location:
+
+```text
+"https://example.com/dir/smtpeter-xxxxx.txt"
+```
+
+You can now verify the callback URL by clicking the link in the Marketing Suite. 
+You may delete the text file after verification. You can test your new 
+Webhook by clicking 'Manage' next to it and using the testing tool or 
+the 'Check now' button in the Webhook menu to test all your Webhooks.
+
+## Security
+
+To protect your endpoint from abuse and false information injection, Copernica 
+[signs all requests](./webhook-security) to your endpoint, so you can be sure 
+it's actually Copernica sending you the data. 
+
+## More information
+
+* [Statistics](./statistics)
+* [Logfiles](./logfiles-ms)
+* [REST API](./rest-api)
+* [SOAP API](./soap-api-documentation)
 * [Webhooks for bounces](webhook-bounces)
 * [Webhooks for failures](webhook-failures)
 * [Webhooks for clicks](webhook-clicks)
 * [Webhooks for opens](webhook-opens)
-* [Webhooks for profile creations](webhook-creates)
-* [Webhooks for profile updates](webhook-updates)
-* [Webhooks for profile removals](webhook-deletes)
-
-## Webhook for specific database or collection
-
-The Marketing Suite gives you the possibility to see all webhooks that 
-are linked to a certain database or collection, making it easy to see 
-which webhooks apply to this specific set of data.
-
-## URL validation
-
-Before calls are made to your URL, the web address first has
-to be validated. The Marketing Suite does this to prevent
-that users accidentally instruct us to send confidential 
-information to a wrong server. During the validation
-procedure you are asked to copy a small text file to your webserver, 
-so that we can see that the server really belongs to you.
-
-The name and contents of the text file is unique for each webhook 
-and can be fetched from the Marketing Suite. You must copy it to one of
-two possible locations: to the root of your webserver, or to the same directory 
-where your webhook script is located. Thus: if you've set up "https://domain.com/dir/script.php"
-as your webhook script, you must copy the "smtpeter-xxxxx.txt" file
-to your webserver so that it becomes accessible via either 
-"https://domain.com/dir/smtpeter-xxxxx.txt" or "https://domain.com/smtpeter-xxxxx.txt".
-
-You can remove the text file from your server after the address has been 
-validated.
-
-## Testing the webhook
-
-The dashboard comes with a useful tool to test your webhook. You can 
-enter the post data that you want to send to your WebHook and send it right away.
-
-## Handling the calls
-
-As mentioned before webhooks may generate a lot of calls. This can 
-be taxing on your server, so make sure it can handle the load. Especially 
-the [webhook for opens](webhook-opens) may cause a huge number of calls. 
-If you are unsure about the server capacity or not interested in real-time 
-feedback you can also use the [general statistics](statistics).
-
-## More information
-
-- [Statistics](./statistics)
-- [Unsubscribe behaviour](./database-unsubscribe-behavior)
+* [Webhooks for (sub)profile creations](webhook-creates)
+* [Webhooks for (sub)profile updates](webhook-updates)
+* [Webhooks for (sub)profile removals](webhook-deletes)

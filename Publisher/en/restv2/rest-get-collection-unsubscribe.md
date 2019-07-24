@@ -12,13 +12,26 @@ The `$id` should be replaced by the numerical identifier or the name of the data
 
 ## Returned fields
 
-- **behavior**: the setting itself
-- **fields**: the new profile setting (only applicable if ‘behavior’ is set to ‘update’)
+* **behavior**: the setting itself
+* **fields**: the new profile setting (only applicable if ‘behavior’ is set to ‘update’)
 
 The **behavior** can be one of three possible values: 'nothing', 'remove' and 'update'. 
 'nothing' means unsubscriptions are simply ignored (which is very impolite), 
 'remove' deletes unsubscribers and 'update' makes sure something is 
 changed in the profile so you know it shouldn’t receive email any longer.
+
+### JSON example
+
+The JSON for the unsubscribe behaviour might look something like this:
+
+```json
+{  
+   "behavior":"update",
+   "fields":{  
+      "newsletter":"no"
+   }
+}
+```
 
 ## PHP example
 The following example demonstrates how to use the API method:

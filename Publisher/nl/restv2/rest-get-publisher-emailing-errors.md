@@ -13,8 +13,8 @@ voor het **timestamp** veld.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug met errors. Voor elke error 
-is de volgende informatie beschikbaar:
+Deze methode geeft een JSON object terug met errors in een array onder het 
+'data' veld. Voor elke error is de volgende informatie beschikbaar:
 
 * **ID**: De ID van de error.          
 * **timestamp**: De tijdstempel van de error.
@@ -26,6 +26,25 @@ is de volgende informatie beschikbaar:
 * **destination**: De ID van de destination.
 * **profile**: De ID van het profiel.
 * **subprofile**: De ID van het subprofiel (als deze beschikbaar is).
+
+### JSON voorbeeld
+
+Een enkele error ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"16",
+   "timestamp":"2008-06-25 14:23:05",
+   "errorcode":"5.1.2",
+   "description":"Resolver error: no mailservers found for domain",
+   "errortype":"nohost",
+   "errortypedescription":"Map domain name to IP address",
+   "emailing":"401",
+   "destination":"54215",
+   "profile":"52647",
+   "subprofile":null
+}
+```
 
 ## PHP voorbeeld
 

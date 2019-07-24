@@ -12,22 +12,70 @@ de database waar je de collecties van wilt opvragen.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* start: 		eerste collectie die wordt opgevraagd;
-* limit: 		lengte van de batch die wordt opgevraagd;
-* total: 		toon wel/niet het totaal aantal beschikbare collecties.
+| Parameter | Beschrijving                                            |
+|-----------|---------------------------------------------------------|
+| **start** | Eerste collectie die wordt opgevraagd;                  |
+| **limit** | Lengte van de batch die wordt opgevraagd;               |
+| **total** | Toon wel/niet het totaal aantal beschikbare collecties. |
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
 
 ## Geretourneerde velden
 
-De methode retourneert een lijst van collecties in de database. Voor elke collectie
-worden de volgende eigenschappen teruggegeven:
+De methode retourneert een JSON object dat de collecties voor de databases 
+bevat onder het 'data' veld. Elke collectie bevat de volgende velden:
 
-* id: 			numerieke identifier van de collectie;
-* name: 		naam van de collectie;
-* database: 	numerieke identifier van de database waartoe de collectie behoort;
-* fields: 		array van velden binnen de collectie.
+| Variabele    | Omschrijving                                      |
+|--------------|---------------------------------------------------|
+| ID           | ID van de collectie.                              |
+| name         | Naam van de collectie.                            |
+| database     | ID van de database waartoe de collectie behoort.  |
+| fields       | Array met de velden in de collectie.              |
+
+### JSON voorbeeld
+
+De JSON voor een collectie ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"25935",
+   "name":"Orders",
+   "database":"7453",
+   "fields":{  
+      "start":0,
+      "limit":100,
+      "count":7,
+      "data":[  
+         {  
+            "ID":"9277",
+            "name":"email",
+            "type":"email",
+            "value":"test@copernica.nl",
+            "displayed":true,
+            "ordered":false,
+            "length":"100",
+            "textlines":"0",
+            "hidden":false,
+            "index":false
+         },
+         {  
+            "ID":"9879",
+            "name":"order_number",
+            "type":"integer",
+            "value":"0",
+            "displayed":true,
+            "ordered":false,
+            "length":"100",
+            "textlines":"0",
+            "hidden":false,
+            "index":false
+         }
+      ],
+      "total":2
+   }
+}
+```
 
 ## Voorbeeld in PHP
 

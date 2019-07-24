@@ -12,19 +12,48 @@ Hier moet `$id` vervangen worden door de ID van de template.
 * **begintime**: Start datum (en tijd) voor de statistieken.
 * **endtime**: Eind datum (en tijd) voor de statistieken.
 
-## Teruggegeven velden
+## Teruggegeven waarde
 
-Het **data** veld van het teruggegeven JSON object bevat de statistieken. 
-De volgende velden zijn beschikbaar:
+### Velden
+
+Het JSON object bevat de volgende velden:
 
 * **destinations**: Aantal ontvangers van deze template.
-* **abuses**: Aantal abuses gerapporteerd voor deze template.
+* **abuses**: Array met het veld 'total' voor het aantal abuses.
 * **clicks**: Array met de velden 'total' en 'unique' voor het aantal kliks 
 en het aantal unieke kliks respectievelijk.
-* **errors**: Aantal errors ontvangen voor deze template.
+* **deliveries**: Array met het veld 'total' voor het aantal deliveries.
+* **errors**: Array met het veld 'total' voor het aantal errors.
 * **impressions**: Array met de velden 'total' en 'unique' voor het aantal impressies 
 en het aantal unieke impressies respectievelijk.
-* **retries**: Aantal retries voor deze template.
+* **retries**: Array met het veld 'total' voor het aantal retries.
+
+### Voorbeeld
+
+Hieronder vind je een voorbeeld van zo'n JSON object:
+
+```json
+{  
+   "destinations":"527347",
+   "abuses":{  
+      "total":0
+   },
+   "clicks":{  
+      "total":0,
+      "unique":0
+   },
+   "errors":{  
+      "total":5
+   },
+   "impressions":{  
+      "total":4,
+      "unique":1
+   },
+   "retries":{  
+      "total":30
+   }
+}
+```
 
 ## PHP voorbeeld
 

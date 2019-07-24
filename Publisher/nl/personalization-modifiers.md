@@ -2,10 +2,10 @@
 
 Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
-Je gebruikt bijvoorbeeld **tolower** om de variabele **{$name}** te
-bewerken. Dit ziet er dan zo uit: **{$name|tolower}**.
+Je gebruikt bijvoorbeeld **lower** om de variabele **{$name}** te
+bewerken. Dit ziet er dan zo uit: **{$name|lower}**.
 Tot slot, je kunt ook een aantal 'modifiers' achter elkaar gebruiken.
-Je kunt bijvoorbeeld **{$name|tolower|ucfirst}** gebruiken om te zorgen dat alle
+Je kunt bijvoorbeeld **{$name|lower|ucfirst}** gebruiken om te zorgen dat alle
 namen met een hoofdletter beginnen en de resterende letters altijd kleine
 letters zijn.
 
@@ -37,7 +37,7 @@ De volgende tabel laat alle geldige modifiers zien:
 | [strlen](personalization-modifiers#strlen)                                                 | tel het aantal tekens in een string                                                                          |
 | [strstr](personalization-modifiers#strstr):"substring":before = false                      | geef de string terug, startend van de eerste eerste verschijning van substring als before = false. Geef anders de string terug tot aan de eerste verschijning.                                                                                                                                                                                     |                     
 | [substr](personalization-modifiers#substr):start position:length                           | geef de substring terug vanaf startpositie. Optioneel opgedeeld na een bepaalde lengte aan karakters         |
-| [lower](personalization-modifiers#tolower)                                                 | zet alle tekens om naar kleine letters                                                                       |
+| [lower](personalization-modifiers#lower)                                                 | zet alle tekens om naar kleine letters                                                                       |
 | [upper](personalization-modifiers#toupper)                                                 | zet alle tekens om naar grote letters                                                                        |
 | [trim](personalization-modifiers#trim)                                                     | trim de spaties en *endline* tekens aan beide kanten van het inputveld                                       |
 | [truncate](personalization-modifiers#truncate):length = 80:etc = "...":break_words = false | deel de inputvelden op die niet langer dan lengte en toevoegen zijn aan het eind. break_words = true staat het opdelen van delen van woorden toe.                                                                                                                                                                                                |
@@ -210,7 +210,7 @@ Gebruik:
 
 ```text
 This will replace each number in the variable string with the string "a number"
-{$text|regex_replace:"\d":" a number "}
+{$text|regex_replace:"/\d/":" a number "}
 ```
 
 ## replace
@@ -244,7 +244,7 @@ in het onderstaande voorbeeld. Een array wordt volledig berekend, behalve
 de *keys*.
 Gebruik:
 ```text
-{hash($text, 'sha256')}
+{hash('sha256', $text)}
 ```
 
 ## sha512
@@ -255,7 +255,7 @@ in het onderstaande voorbeeld. Een array wordt volledig berekend, behalve
 de *keys*.
 Gebruik:
 ```text
-{hash($text, 'sha512')}
+{hash('sha512', $text)}
 ```
 
 ## spacify

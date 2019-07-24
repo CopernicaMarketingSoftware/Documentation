@@ -11,19 +11,50 @@ Where the `$id` should be replaced with the ID of the template.
 * **begintime**: Start date (and time) for the statistics.
 * **endtime**: End date (and time) for the statistics.
 
-## Returned fields
+## Return value
 
-The **data** field of returned JSON object contains the statistics. 
-The following fields are available:
+### Fields
 
-* **destinations**: The number of destinations for this template.
-* **abuses**: The number of abuses for this template.
+The following fields are available in the JSON object:
+
+* **destinations**: The number of destinations for this mailing.
+* **abuses**: An array with field 'total' for the total 
+number of abuses.
 * **clicks**: An array with fields 'total' and 'unique' for the total 
 number of clicks and number of unique clicks respectively.
-* **errors**: The number of errors for this template.
+* **errors**: An array with field 'total' for the total 
+number of errors.
 * **impressions**: An array with fields 'total' and 'unique' for the 
 total number impressions and number of unique impressions respectively.
-* **retries**: The number of retries for this template.
+* **retries**: An array with field 'total' for the total 
+number of retries.
+
+### Example
+
+The JSON output will look something like this:
+
+```json
+{  
+   "destinations":"527347",
+   "abuses":{  
+      "total":0
+   },
+   "clicks":{  
+      "total":0,
+      "unique":0
+   },
+   "errors":{  
+      "total":5
+   },
+   "impressions":{  
+      "total":4,
+      "unique":1
+   },
+   "retries":{  
+      "total":30
+   }
+}
+```
 
 ## PHP example
 

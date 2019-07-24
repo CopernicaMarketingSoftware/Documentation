@@ -6,20 +6,54 @@ You can retrieve the statistics for a Marketing Suite destination by sending an 
 
 Where the `$id` should be replaced with the ID of the destination.
 
-## Returned fields
+## Return value
 
-The **data** field of returned JSON object contains the statistics. 
-The following fields are available:
+### Fields
 
-* **abuses**: The number of abuses for this destination.
+The following fields are available in the JSON object:
+
+* **ID**: ID of the destination statistics report.
+* **abuses**: An array with field 'total' for the total 
+number of abuses.
 * **clicks**: An array with fields 'total' and 'unique' for the total 
 number of clicks and number of unique clicks respectively.
-* **deliveries**: The amount of deliveries for this destination.
-* **errors**: The number of errors for this destination.
+* **deliveries**: An array with field 'total' for the total 
+number of deliveries.
+* **errors**: An array with field 'total' for the total 
+number of errors.
 * **impressions**: An array with fields 'total' and 'unique' for the 
 total number impressions and number of unique impressions respectively.
-* **retries**: The number of retries for this destination.
-* **unsubscribes**: The number of unsubscribes for this mailing.
+* **retries**: An array with field 'total' for the total 
+number of retries.
+
+### Example
+
+The JSON output will look something like this:
+
+```json
+{  
+   "ID":"735929",
+   "abuses":{  
+      "total":0
+   },
+   "clicks":{  
+      "total":3,
+      "unique":2
+   },
+   "deliveries":{  
+      "total":0
+   },
+   "errors":{  
+      "total":1
+   },
+   "impressions":{  
+      "total":4
+   },
+   "retries":{  
+      "total":0
+   }
+}
+```
 
 ## PHP example
 

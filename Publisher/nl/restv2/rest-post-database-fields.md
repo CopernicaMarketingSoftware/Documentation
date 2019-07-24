@@ -28,7 +28,7 @@ Een veld kan de volgende types hebben:
 * integer:          numerieke waarde;
 * float:            numeriek *floating point* nummer (komma-getal);
 * date:             datumveld dat verplicht moet zijn ingevuld;
-* empty_data:       datumveld dat ook leeg gelaten mag worden;
+* empty_date:       datumveld dat ook leeg gelaten mag worden;
 * datetime:         veld met datum + tijdstip dat moet zijn ingevuld;
 * empty_datetime:   veld met datum + tijdstip dat leeg mag worden gelaten;
 * text:             regulier tekstveld;

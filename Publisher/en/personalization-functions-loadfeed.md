@@ -8,14 +8,13 @@ content section or just a feed that's curated and hosted somewhere else.
 
 
 You can load a feed in from the *content* section, just like this:
-`loadfeed feed='address from the feed'}`
 
-Substitute *name* with the address from the feed. Again, you can find 
-this in the content section inside Copernica. You can extract the 
-address by going into the content section and clicking on the feed you 
-want to use. You'll see an Atom as well as a RSS version you can use. 
-In Copernica publication they can be used both.
+`{loadfeed feed='id of the feed'}`
 
+Replace the *id of the feed* with the actual feed ID. To find this ID, 
+navigate the the Content section within Copernica and hover with your mouse
+on top of the feed that you want to use. You will see for example *Feed #123*.
+In this example 123 would be the ID to use. 
 
 ## Load in external feeds
 

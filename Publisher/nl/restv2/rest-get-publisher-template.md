@@ -13,7 +13,19 @@ Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 
 * **id**: De ID van de template.    
 * **name**: De naam van het template. 
-* **archived**: De archiefstatus van de template.
+* **archived**: De archiefstatus van de template ('true' voor gearchiveerd en 'false' voor niet gearchiveerd).
+
+### JSON voorbeeld
+
+De JSON voor een template ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "id":"551",
+   "name":"TestTemplate",
+   "archived":false
+}
+```
 
 ## PHP voorbeeld
 

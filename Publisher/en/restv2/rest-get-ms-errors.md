@@ -2,7 +2,7 @@
 
 Each emailing is tracked, which allows Copernica to provide you with 
 emailing statistics. Errors are one of these statistics. You can 
-retrieve all errors by sending an HTTP GET call to the following URL:
+retrieve all errors for an account by sending an HTTP GET call to the following URL:
 
 `https://api.copernica.com/v2/ms/errors?access_token=xxxx`
 
@@ -11,8 +11,8 @@ for the **timestamp** field.
 
 ## Returned fields
 
-The method returns a JSON object with several errors. For each error 
-the following information is available:
+The method returns a JSON object with several errors under the 'data' 
+property. For each error the following information is available:
 
 * **ID**: The ID of the error.
 * **mailing**: The ID of the mailing.
@@ -24,6 +24,25 @@ the following information is available:
 * **destination**: The ID of the destination that caused an error.
 * **profile**: The ID of the profile that caused an error.
 * **subprofile**: The ID of the subprofile that caused an error.
+
+### JSON example
+
+A single error might look something like this:
+
+```json
+{  
+   "ID":"2",
+   "mailing":"234",
+   "timestamp":"2015-03-09 15:36:39",
+   "status":null,
+   "errorcode":"0",
+   "description":"No valid from address is set",
+   "errortype":"",
+   "destination":"764416",
+   "profile":null,
+   "subprofile":null
+}
+```
 
 ## PHP example
 

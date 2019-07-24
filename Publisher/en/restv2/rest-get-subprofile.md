@@ -11,17 +11,35 @@ requesting the information of.
 
 ## Returned fields
 
-This method returns subprofile information. The subprofile object contains the 
+This method returns subprofile information. The JSON object contains the 
 following properties:
 
-* **ID**: numerical ID of the subprofile
-* **profile**: numerical ID of the profile the subprofile belongs to
-* **collection**: ID of the collection where the subprofile is stored
-* **secret**: the "secret" code linked to a subprofile
-* **created**: timestamp for creation of subprofile in YYYY-MM-DD hh:mm:ss format
-* **modified**: timestamp for last edit of subprofile in YYYY-MM-DD hh:mm:ss format
-* **fields**: associative array / object of field names and values
-* **interests**: array of the interests of the subprofile
+* **ID**: Numerical ID of the subprofile.
+* **secret**: The "secret" code linked to a subprofile.
+* **fields**: Associative array of field names and values.
+* **profile**: Numerical ID of the profile the subprofile belongs to.
+* **collection**: ID of the collection where the subprofile is stored.
+* **created**: Timestamp for creation of subprofile in YYYY-MM-DD hh:mm:ss format.
+* **modified**: Timestamp for last edit of subprofile in YYYY-MM-DD hh:mm:ss format.
+* **removed**: Indicates whether the subprofile has been removed or not.
+
+### JSON example
+
+The JSON for the subprofile might look something like this:
+
+```json
+{  
+   "ID":"20285",
+   "secret":"132879300b4731870080b1cd301fd43d",
+   "fields":{  
+   },
+   "profile":"2139358",
+   "collection":"6312",
+   "created":"2008-08-25 16:14:56",
+   "modified":"2010-08-25 16:15:56",
+   "removed":false
+}
+```
 
 ## PHP example
 

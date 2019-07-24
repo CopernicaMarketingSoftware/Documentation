@@ -8,19 +8,37 @@ opvragen door middel van een eenvoudige HTTP GET call naar de volgende URL
 De code `$id` moet je vervangen door de numerieke identifier van het subprofiel
 dat je opvraagt.
 
-## Geretourneerde velden
+## Teruggegeven velden
 
 De methode retourneert gegevens van een subprofiel. De volgende eigenschappen 
 worden teruggegeven:
 
-* **ID**: numeriek ID van het profiel
-* **profile**: numeriek ID van het profiel waar het subprofiel onder hoort
-* **collection**: ID van de collectie waarin het profiel is opgeslagen
-* **secret**: de "geheime" code die aan een profiel is gekoppeld
-* **created**: tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
-* **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
-* **fields**: associative array / object van veldnamen en veldwaardes
-* **interests**: array van de interesses van het profiel
+* **ID**: ID van het subprofiel.
+* **secret**: De "geheime" code die aan een subprofiel is gekoppeld.
+* **fields**: Associative array / object van veldnamen en veldwaardes.
+* **profile**: ID van het profiel waar het subprofiel onder hoort.
+* **collection**: ID van de collectie waarin het subprofiel is opgeslagen.
+* **created**: Tijdstip waarop het subprofiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat.
+* **modified**: Tijdstip waarop het subprofiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat.
+* **removed**: Geeft aan of het subprofiel verwijderd is ('true') of niet ('false').
+
+### JSON voorbeeld
+
+De JSON voor een subprofiel ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"20285",
+   "secret":"132879300b4731870080b1cd301fd43d",
+   "fields":{  
+   },
+   "profile":"2139358",
+   "collection":"6312",
+   "created":"2008-08-25 16:14:56",
+   "modified":"2010-08-25 16:15:56",
+   "removed":false
+}
+```
 
 ## Voorbeeld in PHP
 

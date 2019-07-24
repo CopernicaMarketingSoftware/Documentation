@@ -12,12 +12,12 @@ database waar je de profielen van wilt opvragen.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **start**: eerste profiel dat wordt opgevraagd
-* **limit**: lengte van de batch die wordt opgevraagd
-* **total**: toon wel/niet het totaal aantal beschikbare/matchende profielen
-* **fields**: optionele parameter om alleen profielen op te halen die matchen met de opgegeven velden
-* **orderby**: naam of id van het veld waarop je de profielen wilt sorteren (standaard is dit het ID van elk profiel)
-* **order**: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
+* **start**: Eerste profiel dat wordt opgevraagd.
+* **limit**: Lengte van de batch die wordt opgevraagd.
+* **total**: Toon wel/niet het totaal aantal beschikbare/matchende profielen.
+* **fields**: Optionele parameter om alleen profielen op te halen die matchen met de opgegeven velden.
+* **orderby**: Naam of ID van het veld waarop je de profielen wilt sorteren (standaard is dit het ID van elk profiel).
+* **order**: Moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
 
 Meer informatie over de betekenis van de **start**, **limit** en **total** parameters 
 vind je in het [artikel over paging](rest-paging). 
@@ -33,22 +33,46 @@ worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of ID van 
 veld waarop je wilt sorteren, kun je ook een aantal speciale waardes aan de 
 parameter **order** geven:
 
-* **id**: dit is de standaardwaarde, profielen worden gesorteerd aan de hand van het ID
-* **random**: de profielen worden in willekeurige volgorde teruggegeven
+* **id**: dit is de standaardwaarde, profielen worden gesorteerd aan de hand van het ID.
+* **random**: de profielen worden in willekeurige volgorde teruggegeven.
 * **modified**: de profielen worden gesorteerd op basis het *modified* timestamp.
 
 ## Geretourneerde velden
 
-De methode retourneert een lijst van profielen. Voor elk profiel worden de 
-volgende eigenschappen teruggegeven:
+De methode retourneert een JSON object met de profielen onder het **data** 
+veld. Elk profiel bevat de volgende velden:
 
-* **ID**: numeriek ID van het profiel
+* **ID**: ID van het profiel
+* **fields**: Associative array van veldnamen en veldwaardes
+* **interests**: Array van de interesses van het profiel
 * **database**: ID van de database waarin het profiel is opgeslagen
-* **secret**: de "geheime" code die aan een profiel is gekoppeld
-* **created**: tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
-* **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
-* **fields**: associative array / object van veldnamen en veldwaardes
-* **interests**: array van de interesses van het profiel
+* **secret**: De "geheime" code die aan een profiel is gekoppeld
+* **created**: Tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
+* **modified**: Tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
+* **removed**: Geeft aan of het profiel verwijderd is of niet
+
+### JSON example
+
+De JSON voor een profiel ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"18381",
+   "fields":{  
+      "name":"Test",
+      "email":"test@example.com",
+   },
+   "interests":[  
+      "baseball",
+      "soccer"
+   ],
+   "database":"7616",
+   "secret":"e5903b43c08g011f7a1e1f2644f618be",
+   "created":"2013-01-06 14:19:51",
+   "modified":"2019-02-21 13:26:21",
+   "removed":false
+}
+```
 
 ## Voorbeeld in PHP
 

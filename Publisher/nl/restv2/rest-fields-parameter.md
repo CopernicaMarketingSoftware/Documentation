@@ -31,6 +31,8 @@ Het teken % matcht met een willekeurige reeks tekens, en _ met precies één tek
 Als je bijvoorbeeld alle profielen wilt opvragen waarvan de voornaam begint met de
 letter 'M', dan kun je in de *fields* parameter de waarde "voornaam=~M%" plaatsen.
 
+Wil je alle profielen met '@copernica' ophalen, gebruik je "emailaddress=~%@copernica%".
+
 
 ## Speciale velden
 

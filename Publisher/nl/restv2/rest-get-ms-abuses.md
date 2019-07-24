@@ -3,7 +3,7 @@
 Er worden statistieken bijgehouden over elke mailing die verstuurd wordt met 
 Copernica om je meer inzicht te geven in de prestatie hiervan. Abuses zijn 
 een van de statistieken die worden bijgehouden. 
-Je kan deze opvragen met een HTTP GET call naar de volgende URL:
+Je kan alle abuses voor een account opvragen met een HTTP GET call naar de volgende URL:
 
 `https://api.copernica.com/v2/ms/abuses?access_token=xxxx`
 
@@ -22,6 +22,24 @@ is de volgende informatie beschikbaar:
 * **destination**: De ID van de destination die de abuse rapporteerde.
 * **profile**: De ID van het profiel die de abuse rapporteerde.
 * **subprofile**: De ID van het subprofiel die de abuse rapporteerde.
+
+### JSON voorbeeld
+
+Een enkele abuse ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"12",
+   "mailing":"233482",
+   "timestamp":"2019-03-05 14:44:52",
+   "report":{  
+
+   },
+   "destination":"1264524",
+   "profile":null,
+   "subprofile":null
+}
+```
 
 ## PHP voorbeeld
 

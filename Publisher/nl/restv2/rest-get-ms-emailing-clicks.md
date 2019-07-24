@@ -31,6 +31,24 @@ is de volgende informatie beschikbaar:
 * **profile**: De ID van het profiel die de link klikte.
 * **subprofile**: De ID van het subprofiel die de link klikte.
 
+### JSON voorbeeld
+
+Een enkele klik ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"1",
+   "mailing":"2",
+   "link":"http:\/\/www.myshop.nl\/promotions\/customer\/{$profile.customerid}",
+   "timestamp":"2014-10-14 11:33:22",
+   "ip":"2a03:e280:0:1::1",
+   "useragent":"Mozilla\/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko\/20100101 Firefox\/8.0",
+   "destination":"1",
+   "profile":null,
+   "subprofile":null
+}
+```
+
 ## PHP voorbeeld
 
 Dit script demonstreert hoe je de API methode kunt gebruiken:

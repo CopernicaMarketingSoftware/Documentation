@@ -2,7 +2,7 @@
 
 Each emailing is tracked, which allows Copernica to provide you with 
 emailing statistics. Impressions are one of these statistics. You can 
-retrieve all impressions by sending an HTTP GET call to the following URL:
+retrieve all impressions for an account by sending an HTTP GET call to the following URL: 
 
 `https://api.copernica.com/v2/ms/impressions?access_token=xxxx`
 
@@ -11,17 +11,34 @@ for the **timestamp** field.
 
 ## Returned fields
 
-The method returns a JSON object with several XXX. For each XXX 
+The method returns a JSON object with several impressions. For each impression 
 the following information is available:
 
 * **ID**: The ID of the impression.         
 * **mailing**: The ID of the mailing.
 * **timestamp**: The timestamp of the impression. 
 * **ip**: The IP where the impression occurred from.
-* **user-agent**: User agent string of the machine the impression occurred from.
+* **useragent**: User agent string of the machine the impression occurred from.
 * **destination**: The ID of the destination that caused an impression.
 * **profile**: The ID of the profile that caused an impression.
 * **subprofile**: The ID of the subprofile that caused an impression.
+
+### JSON example
+
+A single impression might look something like this:
+
+```json
+{  
+   "ID":"1",
+   "mailing":"412",
+   "timestamp":"2014-10-09 13:41:46",
+   "ip":"2a03:e280:0:1::1",
+   "useragent":"Mozilla\/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko\/20100101 Firefox\/8.0",
+   "destination":"112",
+   "profile":13453,
+   "subprofile":null
+}
+```
 
 ## PHP example
 

@@ -14,8 +14,6 @@ moet als message body aan het HTTP request worden toegevoegd.
 De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 
 * name:             naam van de nieuw aan te maken collectie
-* database:         id van de database waarin de collectie komt te staan
-* fields:           beschikbare fields in de collection
 
 ## Voorbeeld in PHP
 

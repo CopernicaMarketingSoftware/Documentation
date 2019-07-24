@@ -13,13 +13,37 @@ dat je opvraagt.
 De methode retourneert gegevens van een profiel. De volgende eigenschappen 
 worden teruggegeven:
 
-* **ID**: numeriek ID van het profiel
+* **ID**: ID van het profiel
+* **fields**: Associative array van veldnamen en veldwaardes
+* **interests**: Array van de interesses van het profiel
 * **database**: ID van de database waarin het profiel is opgeslagen
-* **secret**: de "geheime" code die aan een profiel is gekoppeld
-* **created**: tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
-* **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
-* **fields**: associative array / object van veldnamen en veldwaardes
-* **interests**: array van de interesses van het profiel
+* **secret**: De "geheime" code die aan een profiel is gekoppeld
+* **created**: Tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
+* **modified**: Tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
+* **removed**: Geeft aan of het profiel verwijderd is of niet
+
+### JSON example
+
+De JSON voor een profiel ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"18381",
+   "fields":{  
+      "name":"Test",
+      "email":"test@example.com",
+   },
+   "interests":[  
+      "baseball",
+      "soccer"
+   ],
+   "database":"7616",
+   "secret":"e5903b43c08g011f7a1e1f2644f618be",
+   "created":"2013-01-06 14:19:51",
+   "modified":"2019-02-21 13:26:21",
+   "removed":false
+}
+```
 
 ## Voorbeeld
 

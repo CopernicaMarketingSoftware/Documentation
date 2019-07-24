@@ -48,5 +48,5 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 * [Overzicht van alle API calls](rest-api)
 * [Opvragen van profieldata](rest-get-profile)
-* [Alle profiel bijwerken](rest-put-profile)
-* [Profiel verwijderen](rest-delete-profile)
+* [Een profiel bijwerken](rest-put-profile)
+* [Een profiel verwijderen](rest-delete-profile)

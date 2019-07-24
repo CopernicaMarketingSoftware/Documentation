@@ -11,12 +11,29 @@ Where the `$id` should be replaced with the ID of the mailing.
 The **data** field of returned JSON object contains the test groups. 
 The following fields are available for each test group:
 
+* **ID**: The ID of the testgroup
 * **document**: The ID of the document of the mailing.
 * **name**: The name of the mailing snapshot sent to this group.
 * **from_address**: The 'from address' of the mailing.
 * **subject**: The subject of the mailing.
 * **timestamp**: The timestamp of the mailing.
 * **destinations**: The number of destinations in this group.
+
+### JSON example
+
+The JSON for a testgroup might look something like this:
+
+```json
+{  
+   "ID":"2481",
+   "document":"12",
+   "name":"Testgroup 1",
+   "from_address":"\"Mr. Test\" <test@copernica.com>",
+   "subject":"Emailing!",
+   "timestamp":"2010-10-12 12:37:26",
+   "destinations":"1"
+}
+```
 
 ## PHP example
 

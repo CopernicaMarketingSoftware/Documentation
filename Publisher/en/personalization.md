@@ -10,16 +10,16 @@ in the Marketing Suite as well as the Publisher:
 
 ## Personalizing with the Marketing Suite
 
-The fancy drag-and-drop, which you can find inside the 
-[Marketing Suite](https://ms.copernica.com), gives you 
-endless possibilities when creating your emails. 
+The fancy drag-and-drop, which you can find inside the
+[Marketing Suite](https://ms.copernica.com), gives you
+endless possibilities when creating your emails.
 The emails sent from this editor are automatically
 responsive and thus look great on every device or client.
 
 You can personalize emails in several ways: think about
-a personal greeting with first and last name, show specific 
+a personal greeting with first and last name, show specific
 piece of content based on interest or don't show a specific
-product because a customer has recently bought it. 
+product because a customer has recently bought it.
 
 ```text
 {$profile.<field>}
@@ -31,11 +31,11 @@ Dear {$profile.firstname}
 
 With this syntax, every piece of data from a database
 or collection field can be put inside an email. When sent,
-this code gets evaluated and substituted by the field value 
+this code gets evaluated and substituted by the field value
 in the profile of the receiver.
 
 It's always needed to specify exactly whether a field is
-called from a profile or from a subprofile. It's perfectly 
+called from a profile or from a subprofile. It's perfectly
 fine to call `{$profile.firstname}` or `{$subprofile.firstname}`.
 You just call the firstname property from a different place.
 
@@ -92,7 +92,7 @@ If there aren't’ any subprofiles
 
 ## Variables
 
-You can also use variables. This can be useful, for example, if you have created a template that suddenly has to use other database fields. 
+You can also use variables. This can be useful, for example, if you have created a template that suddenly has to use other database fields.
 
 First you have to define a variable. Then you can use this variable.
 
@@ -118,11 +118,11 @@ And you can calculate:
 ## Personalizing hyperlinks
 
 It's possible to extend the hyperlinks in your emails with data
-from a profile or subprofile. You can use unique credentials such as 
-(`$profile.id` and `$profile.code`) that you can incorporate in a hyperlink. 
-You can make a landing page that recognizes the ID and CODE. Than when users 
+from a profile or subprofile. You can use unique credentials such as
+(`$profile.id` and `$profile.code`) that you can incorporate in a hyperlink.
+You can make a landing page that recognizes the ID and CODE. Then when users
 click on that hyperlink, they can be automatically logged in on the page the
-hyperlink points to. 
+hyperlink points to.
 
 ```text
 https://www.example.com/gegevens-wijzigen?profile={$profile.id}&code={$profile.code}
@@ -130,7 +130,7 @@ https://www.example.com/gegevens-wijzigen?profile={$profile.id}&code={$profile.c
 
 ## Where can I personalize in the drag-and-drop editor?
 
-In the Marketing Suite you have an abundance of places where 
+In the Marketing Suite you have an abundance of places where
 you can apply personalization. These fields can be recognized
 by the Dollar `$` sign in the input field. You can for example
 edit the 'from name', subject or 'from adres' by adding the code
@@ -142,13 +142,13 @@ to each of these fields.
 * [Personalization modifiers overview](./personalization-modifiers.md)
 * [Personalization functions overview](./personalization-functions.md)
 
-Besides personalization there are many more fun things you can do with 
-your templates. You can add videos or GIFs to make your email more 
-interesting or add follow-ups to automate your campaigns. Find out more 
+Besides personalization there are many more fun things you can do with
+your templates. You can add videos or GIFs to make your email more
+interesting or add follow-ups to automate your campaigns. Find out more
 in the articles below.
 
 * [Videos and GIFs](./templates-video-gif)
-* [Follow-ups](./followups)
+* [Follow-ups](./database-follow-ups)
 
 
 

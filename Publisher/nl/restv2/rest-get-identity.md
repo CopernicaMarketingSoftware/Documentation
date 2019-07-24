@@ -12,12 +12,26 @@ door middel van een OAuth2 koppeling).
 
 ## Geretourneerde velden
 
-De methode retourneert accountgegevens:
+De methode retourneert een JSON object met een 'data' property die de 
+gegevens van de account bevat. De volgende velden zijn beschikbaar:
 
 * id:           unieke numerieke identifier van het account;
 * name:         naam van het account;
 * description:  omschrijving van het account;
 * company:      naam van het bedrijf dat betaalt voor het account.
+
+### JSON voorbeeld
+
+De output van een call ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "id":"34",
+   "name":"Development",
+   "description":"This is an account to test with",
+   "company":"Copernica BV"
+}
+```
 
 ## Voorbeeld in PHP
 

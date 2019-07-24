@@ -12,21 +12,55 @@ Hier moet `$id` vervangen worden door de ID van de mailing.
 * **begintime**: Start datum (en tijd) voor de statistieken.
 * **endtime**: Eind datum (en tijd) voor de statistieken.
 
-## Teruggegeven velden
+## Teruggegeven waarde
 
-Het **data** veld van het teruggegeven JSON object bevat de statistieken. 
-De volgende velden zijn beschikbaar:
+### Velden
+
+Het JSON object bevat de volgende velden:
 
 * **destinations**: Aantal ontvangers van deze mailing.
-* **abuses**: Aantal abuses gerapporteerd voor deze mailing.
+* **abuses**: Array met het veld 'total' voor het aantal abuses.
 * **clicks**: Array met de velden 'total' en 'unique' voor het aantal kliks 
 en het aantal unieke kliks respectievelijk.
-* **deliveries**: Aantal deliveries voor deze mailing.
-* **errors**: Aantal errors ontvangen voor deze mailing.
+* **deliveries**: Array met het veld 'total' voor het aantal deliveries.
+* **errors**: Array met het veld 'total' voor het aantal errors.
 * **impressions**: Array met de velden 'total' en 'unique' voor het aantal impressies 
 en het aantal unieke impressies respectievelijk.
-* **retries**: Aantal retries voor deze mailing.
-* **unsubscribes**: Aantal unsubscribes voor deze mailing.
+* **retries**: Array met het veld 'total' voor het aantal retries.
+* **unsubscribes**: Array met het veld 'total' voor het aantal unsubscribes.
+
+### Voorbeeld
+
+Hieronder vind je een voorbeeld van zo'n JSON object:
+
+```json
+{  
+   "destinations":"13801",
+   "abuses":{  
+      "total":0
+   },
+   "clicks":{  
+      "total":15,
+      "unique":11
+   },
+   "deliveries":{  
+      "total":39
+   },
+   "errors":{  
+      "total":0
+   },
+   "impressions":{  
+      "total":24,
+      "unique":18
+   },
+   "retries":{  
+      "total":0
+   },
+   "unsubscribes":{  
+      "total":0
+   }
+}
+```
 
 ## PHP voorbeeld
 

@@ -474,7 +474,7 @@ Met de loadfeed functie kun je eenvoudig feeds in je e-mail of webdocument laden
     {loadfeed feed='http://www.eendomein.nl/feed/feed.xml'}
 
 Vervang *http://www.eendomein.nl/feed/feed.xml*  met het adres (URL) van de feed die elders is gepubliceerd.
-Voor uitgebreide informatie over loadfeed met eigen styling klik dan [hier](./publisher-personalization-functions#loadfeed.md).
+Voor uitgebreide informatie over loadfeed met eigen styling klik dan [hier](./personalization-functions-loadfeed).
 
 ---
 

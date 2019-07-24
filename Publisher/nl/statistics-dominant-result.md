@@ -15,9 +15,12 @@ geregistreerd (en daarna geen uitschrijving of spamklacht). Als geen
 resultaat is gemeten, staat men in 'Geen terugkoppeling'.
 
 **Kerncijfers vs. het dominante resultaat**
+
 Bij de kerncijfers (getoond boven de dominante resultaten) worden alle
-impressies en alle kliks meegeteld, hierdoor zie je een verschil in
-aantallen impressies/kliks.
+impressies en alle kliks meegeteld en in het dominante resultaat éénmalig.
+
+*Voorbeeld: een profiel heeft een impressie en een klik dan is dit profiel bij de kerncijfers zowel bij de impressies als bij de kliks zichtbaar. Bij het dominante resultaat zal ditzelfde profiel enkel bij de kliks zichtbaar zijn (hoogste activiteit).*
+
 [Meer lezen over de
 kerncijfers](./statistics-key-figures.md)
 

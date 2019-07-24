@@ -22,6 +22,22 @@ the following information is available:
 * **profile**: The ID of the profile that was delivered to.
 * **subprofile**: The ID of the subprofile that was delivered to.
 
+### JSON example
+
+A single delivery might look something like this:
+
+```json
+{  
+   "ID":"1",
+   "mailing":"33",
+   "timestamp":"2014-11-06 13:43:17",
+   "attempts":1,
+   "destination":"312",
+   "profile":null,
+   "subprofile":null
+}
+```
+
 ## PHP example
 
 This script demonstrates how to use this API method:

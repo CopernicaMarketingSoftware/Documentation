@@ -37,10 +37,10 @@ print_r($api->get("ms/emailing/{$emailingID}/destinations/"));
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
 
-## More information
+## Meer informatie
 
-* [Overview of all REST API calls](./rest-api)
-* [Retrieve a MS emailing](./rest-get-ms-emailing)
+* [Overzicht van alle calls](./rest-api)
+* [Opvragen van een Marketing Suite mailing](./rest-get-ms-emailing)
 
 
 

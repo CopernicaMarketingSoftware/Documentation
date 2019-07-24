@@ -10,8 +10,6 @@ the ID of the created request is returned.
 
 ## Available parameters
 
-The message body can hold the following properties for a condition:
-
 - **type**: type of condition
 
 Based on the condition type, specific properties are set. For an overview
@@ -47,7 +45,7 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters to pass to the call
 $data = array(
-	'type' = 'date'
+	'type' => 'date'
 );
 
 // do the call, and print result

@@ -32,7 +32,7 @@ wish not to receive more email.
 
 The following PHP script demonstrates how to use the method. In this 
 example, when somebody unsubscribes, the field ‘newsletter’ is set to ‘no’. 
-Now you can create a [newsletter selection](./create-a-mailing-list) to make 
+Now you can create a [newsletter selection](../create-a-mailing-list) to make 
 sure your unsubscribers don't receive any more email.
 
 ```php
@@ -56,5 +56,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-- [Overview of all API method](rest-api)
+- [Overview of all API methods](rest-api)
 - [GET collection unsubscribe](rest-get-collection-unsubscribe)

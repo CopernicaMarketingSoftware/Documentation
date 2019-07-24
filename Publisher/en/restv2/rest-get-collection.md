@@ -10,9 +10,58 @@ The `$id` here should be replaced with the numerical identifier of the collectio
 
 ## Returned fields
 
-* **name**: name of the collection
-* **database**: ID of the database this collection belongs to.
-* **fields**:array with the fields in the collection
+The method returns a JSON object that contains the following fields:
+
+| Variable      | Description                                     |
+|---------------|-------------------------------------------------|
+| **ID**        | The ID of the collection.                       |
+| **name**      | Name of the collection.                         |
+| **database**  | ID of the database this collection belongs to.  |
+| **fields**    | Array with the fields in the collection.        |
+
+### JSON example
+
+The JSON for this method might look something like this:
+
+```json
+{  
+   "ID":"25935",
+   "name":"Orders",
+   "database":"7453",
+   "fields":{  
+      "start":0,
+      "limit":100,
+      "count":7,
+      "data":[  
+         {  
+            "ID":"9277",
+            "name":"email",
+            "type":"email",
+            "value":"test@copernica.nl",
+            "displayed":true,
+            "ordered":false,
+            "length":"100",
+            "textlines":"0",
+            "hidden":false,
+            "index":false
+         },
+         {  
+            "ID":"9879",
+            "name":"order_number",
+            "type":"integer",
+            "value":"0",
+            "displayed":true,
+            "ordered":false,
+            "length":"100",
+            "textlines":"0",
+            "hidden":false,
+            "index":false
+         }
+      ],
+      "total":2
+   }
+}
+```
 
 ## PHP example
 

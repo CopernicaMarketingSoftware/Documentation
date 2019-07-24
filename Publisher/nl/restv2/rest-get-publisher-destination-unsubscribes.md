@@ -12,8 +12,8 @@ voor het **timestamp** veld.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug met unsubscribes. Voor elke unsubscribe 
-is de volgende informatie beschikbaar:
+Deze methode geeft een JSON object terug met unsubscribes onder het 'data' 
+veld. Voor elke unsubscribe is de volgende informatie beschikbaar:
 
 * **ID**: De ID van de unsubscribe. 
 * **timestamp**: De tijdstempel van de unsubscribe.
@@ -23,6 +23,23 @@ is de volgende informatie beschikbaar:
 * **destination**: De ID van de destination.
 * **profile**: De ID van de profile.
 * **subprofile**: De ID van de subprofile (als deze beschikbaar is).
+
+### JSON voorbeeld
+
+Een enkele unsubscribe ziet er bijvoorbeeld als volgt uit:
+
+```json
+{  
+   "ID":"1",
+   "timestamp":"2011-11-09 12:42:35",
+   "source":"link",
+   "success":true,
+   "emailing":"42341",
+   "destination":"847259",
+   "profile":"5063195",
+   "subprofile":null
+}
+```
 
 ## PHP voorbeeld
 

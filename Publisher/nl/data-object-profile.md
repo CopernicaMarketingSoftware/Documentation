@@ -20,8 +20,8 @@ geselecteerd hebt onder het *Database & Profiles* tabje.
 * removed: 			tijdstip van verwijderen profile (read-only)
 * unsubscribed: 	boolean waarde die aangeeft of een profile uitgeschreven is (read-only)
 * database: 		[database](./data-object-database) van het profile (read-only)
-* fields:			hash map van de "fields" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write)
-* interests: 		hash map van de "interests" parameter van een profile. De naam wordt hier gebruikt als eigenschap (read and write)
+* fields:			velden behorend bij een profile, elk veld is een property (read/write) en kan worden gebruikt als ("profile.fields.testfield = 'newval';" (write) of "var testval = profile.fields.testfield;" (read) 
+* interests: 		interesses behorend bij een profile, elke interesse is een property (read/write) en kan worden gebruikt als ("profile.interests.testinterest = true;" (write) of "var testinterest = profile.interests.testinterest;" (read)
 * data: 			zie documentatie over het [data data-script](./data-object-data)
 
 ## Beschikbare functies

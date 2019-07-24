@@ -15,13 +15,25 @@ you already know the account to which you are linked.
 
 ## The returned data
 
-This method returns an object with account data. The object has the following
-properties:
+This method returns a JSON object containing the following fields:
 
 * **ID**: Unique numeric account identifier
 * **name**: Account name
 * **description**: Description of the account
 * **company**: The name of the company that pays for the account
+
+### JSON example
+
+The output might look something like this:
+
+```json
+{  
+   "id":"34",
+   "name":"Development",
+   "description":"This is an account to test with",
+   "company":"Copernica BV"
+}
+```
 
 ## PHP example
 

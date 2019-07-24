@@ -10,14 +10,28 @@ for the **timestampsent** field.
 
 ## Returned fields
 
-The method returns a JSON object with several destinations. For each destination 
-the following information is available:
+The method returns a JSON object with several destinations under the 'data' property. 
+For each destination the following information is available:
 
-* **ID**: The ID of the destination.
-* **timestampsent**: The timestamp on which the mailing was sent to this recipient.
-* **profile**: The ID of the profile of the destination.
-* **subprofile**: The ID of the subprofile of the destination (if applicable).
-* **mailing**: The ID of the mailing.
+* **ID**: Unique ID of the destination.           
+* **mailing**: ID of the mailing sent to this destination.
+* **timestampsent**: Timestamp of sending to the destination.
+* **profile**: Profile ID of the destination.
+* **subprofile**: Subprofile ID of the destination.
+
+### JSON example
+
+The destination might look something like this:
+
+```json
+{  
+   "ID":"783919",
+   "timestampsent":"2015-06-08 13:53:45",
+   "profile":"9033832",
+   "subprofile":null,
+   "mailing":"466"
+}
+```
 
 ## PHP example
 

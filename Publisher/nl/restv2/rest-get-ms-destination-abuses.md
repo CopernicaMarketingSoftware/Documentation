@@ -23,6 +23,24 @@ is de volgende informatie beschikbaar:
 * **profile**: De ID van het profiel die de abuse rapporteerde.
 * **subprofile**: De ID van het subprofiel die de abuse rapporteerde.
 
+### JSON voorbeeld
+
+Een enkele abuse ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"12",
+   "mailing":"233482",
+   "timestamp":"2019-03-05 14:44:52",
+   "report":{  
+
+   },
+   "destination":"1264524",
+   "profile":null,
+   "subprofile":null
+}
+```
+
 ## PHP voorbeeld
 
 Dit script demonstreert hoe je de API methode kunt gebruiken:

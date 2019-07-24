@@ -23,3 +23,5 @@ Hiermee kan je jouw webformulier inladen via een aangepaste of eigen <em>XSLT</
 ...waar je *adresxslt* vervangt met het internetadres van de <em>XSLT</em> die elders is gehost.
 
 Bijvoorbeeld: *http://www.uwbedrijf.nl/files/mijnxslt.xsl*
+
+Tutorial: [Webformulier aanmaken en op een website plaatsen](./create-and-publish-a-webform)

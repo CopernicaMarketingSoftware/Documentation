@@ -47,7 +47,10 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [rabbitmq-failure](rabbitmq-config#rabbitmq-queues)                      | Your RabbitMQ failure queue
 | [rabbitmq-inbox](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ inbox queue
 | [rabbitmq-local](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ local queue 
+| [rabbitmq-lazy](rabbitmq-config#persisten-and-durable-settings)          | Lazy/non lazy RabbitMQ queues (default: non-lazy)
 | [rabbitmq-maxpriority](rabbitmq-config#priority-queues)                  | Enable the use of priority queues 
+| [rabbitmq-qos](rabbitmq-config#max-messages)                             | Set a maximum number of messages simultaneously consumed per consumer thread
+| [rabbitmq-flush-qos](rabbitmq-config#max-messages)                       | Set a maximum number of messages simultaneously consumed during flush
 | [rabbitmq-outbox](rabbitmq-config#rabbitmq-queues)                       | Your RabbitMQ outbox queue (must be unique if multiple instances of MailerQ are used)
 | [rabbitmq-persistent](rabbitmq-config#persistent-and-durable-settings)   | Persistent/not persistent RabbitMQ queues (default: false)
 | [rabbitmq-publishers](rabbitmq-config#multiple-threads)                  | Amount of publisher threads (default: 1)
@@ -98,7 +101,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [smtp-proxy](smtp-server#running-behind-haproxy)                         | IPs to treat as connection from proxy server
 | [smtp-range](smtp-server#controlling-access)                             | Range of IP address to allow incoming email for
 | [smtp-secure port](smtp-server#config-file-settings)                     | Ports for secure incoming MailerQ connections
-| [smtp-sink-address](smarthost#using-smarthost-for-debugging)                  | SMTP sink IP
+| [smtp-sink-address](smarthost#using-smarthost-for-debugging)             | SMTP sink domain name or ip address
 | [smtp-sink-password](smarthost#using-smarthost-for-debugging)            | SMTP sink password
 | [smtp-sink-port](smarthost#using-smarthost-for-debugging)                | SMTP sink port
 | [smtp-sink-username](smarthost#using-smarthost-for-debugging)            | SMTP sink username
@@ -110,7 +113,10 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [spool-delay](spool-directory#config-file-options)                       | Delay for processing spool directory files
 | [spool-directory](spool-directory#config-file-options)                   | Path to the directory to monitor
 | [spool-extract](spool-directory#config-file-options)                     | Toggle scanning for headers in spool directory mail
+| [spool-fail-directory](spool-directory#config-file-options)              | Path to move files to that could not be picked up
+| [spool-open-files](spool-directory#config-file-options)                  | Amount of files that may be open simultaneously by the spool directory                    
 | [spool-remove](spool-directory#config-file-options)                      | Toggle removal of files from spool directory
+| [spool-threads](spool-directory#config-file-options)                     | Amount of threads to use for the spool directory
 | [storage-address](message-store-options)                                 | Address for external message storage
 | [storage-policy](message-store-options)                                  | Message store policy
 | [storage-reschedule](message-store-options)                              | Number of seconds to wait before a mail is retried
@@ -129,7 +135,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [www-port](mgmt-setup#activation)                                        | Port number for the management console
 | [www-private-key](mgmt-setup#setting-up-a-secure-management-console)     | Private key for secure connection to management console
 | [www-secure-port](mgmt-setup#setting-up-a-secure-management-console)     | Secure (HTTPS) port number for the management console
-| [www-url](mgmt-setup#announcing-the-interface-on-the-cluster)            | The URL via which the mgmt console is accessible
+| [www-url](mgmt-setup#announcing-the-interface-on-the-cluster)            | The URL via which the management console is accessible
 
 ## Boolean options
 
@@ -143,6 +149,7 @@ $ mailerq --version
 |-----------------------------|--------------------------------------------------------|
 | daemon                      | Deamon process (deafault true)
 | disable-crash-report        | Disable crash report
+| disable-crash-post          | Disable automatic crash posting
 | extract-recipients          | Read in a mime message from standard input and filter out the destination addresses
 | ignore-dot                  | Instruct MailerQ that dots do not have a special meaning
 | list-ips                    | List IP addresses
