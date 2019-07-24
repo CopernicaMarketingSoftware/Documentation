@@ -99,7 +99,7 @@ class CopernicaRestAPI
      *  @return mixed           ID of created entity, or simply true/false
      *                          to indicate success or failure
      */
-    public function put($resource, array $data = array(), array $parameters = array())
+    public function put($resource, $data, array $parameters = array())
     {
         // Pass the request on
         return $this->sendData($resource, $data, $parameters, "PUT");
