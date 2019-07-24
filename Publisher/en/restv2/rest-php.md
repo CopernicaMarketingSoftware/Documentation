@@ -29,7 +29,7 @@ class CopernicaRestAPI
     {
         // copy the token
         $this->token = $token;
-        
+
         // set the version
         $this->version = $version;
     }
@@ -56,31 +56,31 @@ class CopernicaRestAPI
 
         // do we have a JSON output? we can be nice and parse it for the user
         if (curl_getinfo($curl, CURLINFO_CONTENT_TYPE) == 'application/json') {
-            
+
             // the JSON parsed output
             $jsonOut = json_decode($answer, true);
-            
+
             // if we have a json error then we have some garbage in the out
             if (json_last_error() != JSON_ERROR_NONE) throw new Exception('Unexpected input: '.$answer);
-            
+
             // return the json
             return $jsonOut;
         }
-        
+
         // clean up curl resource
         curl_close($curl);
-        
+
         // it's not JSON so we out it just like that
         return $answer;
     }
 
     /**
      *  Execute a POST request.
-     * 
+     *
      *  @param  string          Resource name
      *  @param  array           Associative array with data to post
-     *  
-     *  @return mixed           ID of created entity, or simply true/false 
+     *
+     *  @return mixed           ID of created entity, or simply true/false
      *                          to indicate success or failure
      */
     public function post($resource, array $data = array())
@@ -88,32 +88,32 @@ class CopernicaRestAPI
         // Pass the request on
         return $this->sendData($resource, $data, array(), "POST");
     }
-    
+
     /**
      *  Execute a PUT request.
-     * 
+     *
      *  @param  string          Resource name
-     *  @param  array           Associative array with data to post
      *  @param  array           Associative array with additional parameters
-     *  
-     *  @return mixed           ID of created entity, or simply true/false 
+     *  @param  array           Associative array with data to post
+     *
+     *  @return mixed           ID of created entity, or simply true/false
      *                          to indicate success or failure
      */
-    public function put($resource, array $data = array(), array $parameters = array())
+    public function put($resource, array $parameters = array(), array $data = array())
     {
         // Pass the request on
         return $this->sendData($resource, $data, $parameters, "PUT");
     }
 
     /**
-     *  Execute a request to create/edit data. (PUT + POST) 
-     * 
+     *  Execute a request to create/edit data. (PUT + POST)
+     *
      *  @param  string          Resource name
      *  @param  array           Associative array with data to post
      *  @param  array           Associative array with additional parameters
      *  @param  string          Method to use
-     *  
-     *  @return mixed           ID of created entity, or simply true/false 
+     *
+     *  @return mixed           ID of created entity, or simply true/false
      *                          to indicate success or failure
      */
     public function sendData($resource, array $data = array(), array $parameters = array(), $method = "POST")
@@ -126,7 +126,7 @@ class CopernicaRestAPI
 
         // data will be json encoded
         $data = json_encode($data);
-        
+
         // set the options for a POST method
         if ($method == "POST") $options = array(
             CURLOPT_POST            =>  true,
@@ -197,10 +197,10 @@ class CopernicaRestAPI
 
 ## Use in your own application
 
-Just copy and paste the script in your own application. 
-The script below lets you call the API from every script. The `$version` 
-variable should be replaced with a '2' for the newest version of the API. 
-It will default to the older version 1 for backwards compatibility with 
+Just copy and paste the script in your own application.
+The script below lets you call the API from every script. The `$version`
+variable should be replaced with a '2' for the newest version of the API.
+It will default to the older version 1 for backwards compatibility with
 existing scripts.
 
 ```php
