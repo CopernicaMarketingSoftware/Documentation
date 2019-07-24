@@ -5,7 +5,7 @@ sturen naar de volgende URL:
 
 `https://api.copernica.com/v2/profile/$id/fields?access_token=xxxx`
 
-De code `$id` moet je vervangen door de numerieke identifier van het profiel 
+De code `$id` moet je vervangen door de numerieke identifier van het profiel
 waarvan je de velden wilt veranderen. De nieuwe veldwaardes van het profiel
 kun je in de body van het bericht plaatsen.
 
@@ -17,7 +17,7 @@ waardes. Als je de data als JSON data verstuurt, moet je dus een object met
 als **keys** de veldnamen en als **values** de veldwaardes versturen.
 
 Als je gebruik maakt van een traditioneel x-www-form-urlencoded formaat, dan
-moeten de variabelen de namen van de te wijzigen velden bevatten, en de 
+moeten de variabelen de namen van de te wijzigen velden bevatten, en de
 waardes van die variabelen zijn de nieuwe waardes van de profielvelden.
 
 ## Voorbeeld
@@ -39,7 +39,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->put("profile/{$profielID}/fields", array(), $data);
+$api->put("profile/{$profielID}/fields", $data);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

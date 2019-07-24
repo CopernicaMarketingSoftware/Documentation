@@ -42,7 +42,7 @@ $data = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->put("profile/{$profielID}", array(), $data));
+print_r($api->put("profile/{$profielID}", $data));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

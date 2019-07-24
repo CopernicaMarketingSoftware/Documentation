@@ -94,13 +94,13 @@ class CopernicaRestAPI
      *  Execute a PUT request.
      *
      *  @param  string          Resource name
-     *  @param  array           Associative array with additional parameters
      *  @param  array           Associative array with data to post
+     *  @param  array           Associative array with additional parameters
      *
      *  @return mixed           ID of created entity, or simply true/false
      *                          to indicate success or failure
      */
-    public function put($resource, array $parameters = array(), array $data = array())
+    public function put($resource, array $data = array(), array $parameters = array())
     {
         // Pass the request on
         return $this->sendData($resource, $data, $parameters, "PUT");
