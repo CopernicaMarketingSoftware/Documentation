@@ -225,6 +225,10 @@ goes through the following states:
 
 <table>
     <tr>
+        <td>unknown</td>
+        <td>unexpect delivery state</td>
+    </tr>
+    <tr>
         <td>process</td>
         <td>the input is checked and assigned to the from and to ip address between which it will be sent</td>
     </tr>
