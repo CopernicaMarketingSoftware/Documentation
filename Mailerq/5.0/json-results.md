@@ -271,6 +271,10 @@ goes through the following states:
         <td>message</td>
         <td>the full mime data followed by a dot has been sent</td>
     </tr>
+    <tr>
+        <td>unknown</td>
+        <td>the connection is in an unknown state, for example when a pipeline failed</td>
+    </tr>
 </table>
 
 During all of the above states errors might occur. If this happens, the state
