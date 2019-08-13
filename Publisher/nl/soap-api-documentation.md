@@ -22,7 +22,7 @@ Ga voor de volledige SOAP API object reference naar
 [het overzicht van SOAP calls](https://www.copernica.com/nl/support/apireference).
 
 [Download SOAP API voorbeeldscript voor
-PHP](../downloads/soaptest_php_1-5.zip "Download SOAP API voorbeeldscript voor PHP")
+PHP](../downloads/soaptest_php_1-6.zip "Download SOAP API voorbeeldscript voor PHP")
 *(zip)*
 
 [Download SOAP API voorbeeldscript voor

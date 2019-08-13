@@ -1,11 +1,11 @@
 # REST API: PUT rule
 
-Dit is een methode om de eigenschappen van een bestaande regel aan te passen. 
+Dit is een methode om de eigenschappen van een bestaande regel aan te passen.
 Om deze uit te voeren kan er een HTTP PUT verzoek worden verstuurd naar de volgende URL:
 
 `https://api.copernica.com/v2/rule/$id?access_token=xxxx`
 
-De `$id` moet hier vervangen worden door de ID van de regel waarvan 
+De `$id` moet hier vervangen worden door de ID van de regel waarvan
 je de eigenschappen aan wilt passen.
 
 
@@ -17,7 +17,7 @@ De volgende eigenschappen voor de regel kunnen toegevoegd worden aan de HTTP PUT
 - **description**: 		omschrijving van de regel
 - **view**: 			ID van de selectie waar de regel bij hoort
 - **conditions**: 		array van condities van de regel
-- **inversed**: 		boolean waarde om aan te geven of de regel wel of niet geïnverteerd moet worden. 
+- **inversed**: 		boolean waarde om aan te geven of de regel wel of niet geïnverteerd moet worden.
                         Als deze op "True" staat worden er alleen profielen teruggegeven die niet aan de condities voldoen.
 - **disabled**: 		boolean waarde om aan te geven of een regel uitgeschakeld moet worden of niet.
 
@@ -39,7 +39,7 @@ $data = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->put("rule/{$ruleID}", array(), $data));
+print_r($api->put("rule/{$ruleID}", $data));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

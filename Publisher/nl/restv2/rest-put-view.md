@@ -38,7 +38,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-api->put("view/{$viewID}", $parameters, $data);
+api->put("view/{$viewID}", $data);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

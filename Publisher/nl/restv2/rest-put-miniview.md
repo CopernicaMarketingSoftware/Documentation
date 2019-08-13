@@ -1,7 +1,7 @@
 # REST API: PUT miniview
 
-Een miniview is voor een collectie wat een selectie is voor een database. 
-Om een miniview aan te passen kan er een HTTP PUT verzoek verstuurd worden 
+Een miniview is voor een collectie wat een selectie is voor een database.
+Om een miniview aan te passen kan er een HTTP PUT verzoek verstuurd worden
 naar de volgende URL:
 
 `https://api.copernica.com/v2/miniview/$id?access_token=xxxx`
@@ -34,7 +34,7 @@ $data = array(
 );
 
 // voer het verzoek uit en print het resultaat
-print_r($api->put("miniview/{$miniviewID}", array(), $data));
+print_r($api->put("miniview/{$miniviewID}", $data));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
