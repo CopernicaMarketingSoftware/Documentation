@@ -17,7 +17,7 @@ of from/to.
 A GET request returns all currently active pauses. It returns a JSON array of pauses, see the example below.
 
 ```
-GET /rest/v1/pauses HTTP/1.0
+GET /v1/paused HTTP/1.0
 Authorization: Bearer ...
 ```
 
@@ -71,7 +71,8 @@ All fields are optional. To update a resource, add `?id=<id>` to the resource UR
 
 For example, the request below will pause sending to `hotmail.com` for a single campaign.
 ```
-POST /rest/v1/pauses/ HTTP/1.0
+POST /v1/paused HTTP/1.0
+Content-Type: application/json
 Authorization: Bearer ...
 
 {
@@ -86,8 +87,25 @@ Authorization: Bearer ...
 A DELETE request allows you to remove a pause. For example, the request below removes the pause with ID 123.
 
 ```
-DELETE /rest/v1/pauses/?id=123 HTTP/1.0
+DELETE /v1/paused?id=123 HTTP/1.0
 Authorization: Bearer ...
 ```
 
+## Injection
 
+MailerQ offers an HTTP injection API. Check out the [message format](json-messages) for the required structure of injected
+messages. 
+
+### POST
+```
+POST /v1/inject HTTP/1.0
+Authorization: Bearer ...
+
+{
+    "envelope": "my-sender-address@my-domain.com",
+    "recipient": "info@example.org",
+    "mime": "From: my-sender-address@my-domain.com\r\nTo: info@example.org\r\nSubject: ..."
+}
+``` 
+
+Injected messages simply get published to the [inbox queue](rabbitmq-config#rabbitmq-queues) specified in the config file.
