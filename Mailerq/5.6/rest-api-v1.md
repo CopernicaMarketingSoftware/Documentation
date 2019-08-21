@@ -113,6 +113,7 @@ messages.
 ```
 POST /v1/inject HTTP/1.0
 Authorization: Bearer ...
+Content-Type: application/json
 
 {
     "envelope": "my-sender-address@my-domain.com",
