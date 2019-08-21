@@ -162,6 +162,24 @@ In the above example, the email was injected using MailerQ as command
 line utility. The program was started by user "john", and two
 options were passed: "--extract-recipients" and "--ignore-dot".
 
+## REST API
+
+Message injected via MailerQ REST API hold information about who connected
+and the name of the authentication token in the `http` property.
+
+```
+{
+    "envelope": "whatever@example.com",
+    "recipient": "info@example.com",
+    "mime": "...",
+    "http": {
+        "authentication": "rest token name",
+        "remote-ip": "1.2.3.4",
+        "remote-port": 12345
+    }
+}
+```
+
 
 ## Check results
 

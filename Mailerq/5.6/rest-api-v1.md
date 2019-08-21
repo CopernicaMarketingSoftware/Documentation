@@ -10,14 +10,14 @@ to the API.
 ## Pauses
 
 MailerQ offers very fine-grained control over delivery flow, and allows you to pause almost any combination
-of from/to.
+of pool/mta and domain/ip.
 
 ### GET
 
 A GET request returns all currently active pauses. It returns a JSON array of pauses, see the example below.
 
 ```
-GET /v1/paused HTTP/1.0
+GET /v1/pauses HTTP/1.0
 Authorization: Bearer ...
 ```
 
@@ -29,67 +29,80 @@ Content-Type: application/json
 
 [
     {
-        "id": 1,
-        "from": "1.2.3.4",
-        "to": "123.2.3.4"
+        "mta": "1.2.3.4",
+        "ip": "123.2.3.4",
+        "cluster": false
     }, 
     {
-        "id": 2,
-        "from": "1.2.3.4",
-        "to": "gmail.com"
+        "mta": "1.2.3.4",
+        "domain": "gmail.com",
+        "cluster": false
     },
     {
-        "id": 3,
-        "to": "hotmail.com"
+        "domain": "hotmail.com",
+        "cluster: true
+    },
+    {
+        "pool": "shared-pool-1",
+        "domain": "yahoo.com",
+        "cluster": false
     }
 ]
 ```
-In this example, traffic from `1.2.3.4` to `123.2.3.4` and `gmail.com` is paused, and traffic to `hotmail.com` is paused.
+In this example, traffic from `1.2.3.4` to `123.2.3.4` and `gmail.com` is paused on the instance, all traffic from `shared-pool-1` to `yahoo.com` is paused, and traffic to `hotmail.com` is paused for the entire cluster. 
 
 ### POST
 
 A POST request allows you to create a new pause, or to update an existing one. For the request format, see
-the json below.
-
-```
-{
-    "from": "string|int|null",
-    "to": "string|null",
-    "tag": "string|null",
-    "cluster": bool,
-}
-```
-
-All fields are optional. To update a resource, add `?id=<id>` to the resource URI, to update pause with the ID of the pause. 
+the table below. All fields are optional.
 
 | Field | Required  | Type | Description
 |---|---|---|---|
-| from  | no  | string or int | The source entity that should be paused, either pool ID or MTA IP.
-| to  | no | string | The target entity that should be paused, either a FQDN or an IP.
-| tag  | no  | string | The tag that should be paused.
+| pool  | no  | string | Pool that the pause applies to. 
+| mta  | no | string | MTA IP that the pause applies to. 
+| domain | no | string | Domain that the pause applies to. 
+| ip | no | string | Remote IP that the pause applies to.
+| tag  | no  | string | The tag that the pause applies to.
 | cluster | no | bool | Whether or not this pause is for the entire cluster or only this instance.
+
+Do note that not all fields may be passed at the same time. `pool` and `mta` are mutually exclusive, and so are `domain`
+and `ip`. That means that they may not be supplied together, or they will result in a `400` response. 
 
 For example, the request below will pause sending to `hotmail.com` for a single campaign.
 ```
-POST /v1/paused HTTP/1.0
+POST /v1/pauses HTTP/1.0
 Content-Type: application/json
 Authorization: Bearer ...
 
 {
-    "to": "hotmail.com"
+    "domain": "hotmail.com"
     "tag": "Campaign1"
 }
 ```
+and equivalently, with urlencoded body
+```
+POST /v1/pauses HTTP/1.0
+Content-Type: application/x-www-form-urlencoded
+Authorization: Bearer ...
 
+domain=hotmail.com&tag=Campaign1
+```
 
 ### DELETE
 
-A DELETE request allows you to remove a pause. For example, the request below removes the pause with ID 123.
+A DELETE request allows you to remove a pause. For example, the request below removes the pause for the entire cluster
+to gmail.com from the list of pauses.
 
 ```
-DELETE /v1/paused?id=123 HTTP/1.0
+DELETE /v1/pauses HTTP/1.0
 Authorization: Bearer ...
+Content-Type: application/x-www-form-urlencoded
+
+cluster=true&domain=gmail.com
 ```
+
+The request format is exactly the same as a POST request, but with the DELETE method. Delete also supports both JSON and
+urlencoded requests.
 
 ## Injection
 
@@ -108,4 +121,6 @@ Authorization: Bearer ...
 }
 ``` 
 
-Injected messages simply get published to the [inbox queue](rabbitmq-config#rabbitmq-queues) specified in the config file.
+Injected messages simply get published to the [inbox queue](rabbitmq-config#rabbitmq-queues) specified in the config file. The injection endpoint does not support urlencoded post, only JSON directly. 
+
+Injected messages will get an extra `http` property, for its properties see [incoming messages](json-incoming#rest-api).
