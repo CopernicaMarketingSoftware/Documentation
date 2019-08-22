@@ -53,11 +53,6 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 // CHANGE 6 End date
   "availabilityEnds": "YYYY-MM-DDT00:00:00-01:00"
 },{
-  // Promotion card with single image.
-  // We recommend using an https URL.  It's not a requirement today, but may be in the future.
-  // Any image size will work and will just be cropped automatically.
-  // GIF & WEBP images are not supported and will be filtered out.
-  // Sample image is 538x138, 3.9 aspect ratio
   "@context": "http://schema.org/",
   "@type": "PromotionCard",
   
