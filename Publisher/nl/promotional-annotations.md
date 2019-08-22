@@ -15,7 +15,6 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 
 * Maak een nieuwe lege template met een document aan.
 <script>
-
 console.log("Hello world!");</script>
 
 ## Testen
