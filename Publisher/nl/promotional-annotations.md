@@ -15,9 +15,68 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 
 * Maak een nieuwe lege template met een document aan.
 
-<script>]]>console.log("test");<![CDATA[</script>
+* Vul de template met de volgende code
+
+* Pas de eerste YYYY-MM-DD aan naar twee dagen geleden en de tweede naar twee dagen in de toekomst. 
+
+""
+<!-- Paste your own code here, or change the existing code to experiment with what works -->
+<!-- Feel free to paste the entire HTML of your email -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+  <head>
+    <script type="application/ld+json">
+[{
+  "@context": "http://schema.org/",
+  "@type": "Organization",
+
+  // WARNING: Before sending email, either point the logo
+  // at your own image or delete the logo annotation.
+  //
+  // If showing a logo, we recommend using an https URL.
+  // It's not a requirement today, but may be in the future.
+  "logo": "https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
+},{
+  "@context": "http://schema.org/",
+  "@type": "EmailMessage",
+
+  // Use this optional alternative subject line to avoid duplicate text
+  // between the subject, deal badge, and discount code.
+  "subjectLine": "[Important] Please add subject line in annotation"
+},{
+  "@context": "http://schema.org/",
+  "@type": "DiscountOffer",
+
+  // Describe your discount, this will be shown as a badge (eg "25% off" or "free shipping")
+  "description": "20% off",
+
+  "discountCode": "PROMO",
+  "availabilityStarts": "2019-08-21T05:54:28-07:00",
+  "availabilityEnds": "2019-08-24T05:54:28-07:00"
+},{
+  // Promotion card with single image.
+  // We recommend using an https URL.  It's not a requirement today, but may be in the future.
+  // Any image size will work and will just be cropped automatically.
+  // GIF & WEBP images are not supported and will be filtered out.
+  // Sample image is 538x138, 3.9 aspect ratio
+  "@context": "http://schema.org/",
+  "@type": "PromotionCard",
+  "image": "https://www.google.com/gmail-for-marketers/promo-tab/markup-tool/sample.png"
+}]
+    </script>
+  </head>
+
+  <body>
+    <p>Email Body</p>
+    <p>Line 2</p>
+  </body>
+</html>
+""
 
 ## Testen
 
 ## Aanpassen 
+
+## Belangrijk om te weten
 
