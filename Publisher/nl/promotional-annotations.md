@@ -17,7 +17,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 
 * Vul de template met de volgende code
 
-* Pas de eerste YYYY-MM-DD aan naar twee dagen geleden en de tweede naar twee dagen in de toekomst. 
+* Onder de comments CHANGE 5 en CHANGE 6 vind je "YYYY-MM-DD". Pas de eerste aan naar twee dagen geleden en de tweede naar twee dagen in de toekomst. 
 
 ```
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
@@ -36,7 +36,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
   "@type": "EmailMessage",
 
 // CHANGE 2 Alternative subject line for annotations version
-  "subjectLine": "Alternative subject line for annotations version"
+  "subjectLine": "Alternative subject line for annotated version"
 },{
   "@context": "http://schema.org/",
   "@type": "DiscountOffer",
@@ -48,10 +48,10 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
   "discountCode": "PROMO",
 
 // CHANGE 5 Start date
-  "availabilityStarts": "2019-08-21T05:54:28-07:00",
+  "availabilityStarts": "YYYY-MM-DDT00:00:00-01:00",
 
 // CHANGE 6 End date
-  "availabilityEnds": "2019-08-24T05:54:28-07:00"
+  "availabilityEnds": "YYYY-MM-DDT00:00:00-01:00"
 },{
   // Promotion card with single image.
   // We recommend using an https URL.  It's not a requirement today, but may be in the future.
@@ -77,11 +77,25 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 ## Testen
 Om te testen of de annotations werken is het belangrijk om het volgende stappenplan nauwkeurig te volgen.
 
-* 
+* Verwijder alle e-mails in de promotions tab van Gmail en leeg de prullenbak.
+* Verstuur het document naar het zojuist aangemaakte Gmail adres.
+* Ga naar de inbox op je Android of iOS apparaat.
+* Als de mail niet direct in de promotions tab terecht komt, verplaats deze dan handmatig.
+* Refresh de promotions tab net zolang totdat de annotation verschijnt.
 
+Mocht dit na meermaals proberen niet lukken raadpleeg dan de [troubleshooting](https://developers.google.com/gmail/promotab/troubleshooting) pagina van de documententatie van Gmail.
 
+## Aanpassen en personaliseren
+De code van de test e-mail kan vervolgens getest worden in een al bestaande e-mailing.
 
-## Aanpassen 
+* Voeg alles tussen de '<head>' tag toe aan de head van een al bestaande e-mailing.
+* Verstuur deze zonder de annotation aan te passen als test naar het Gmail account.
+* Pas item voor item de inhoud aan, verwijder tussendoor telkens de vorige mail en leeg de prullenbak.
+* Als je gebruik wilt maken van smarty personalisatie dan dient de '[literal]' tijdelijk te worden afgesloten. Voor CHANGE 3 zou dit het volgende inhouden;
+  
+```
+// CHANGE 3 Badge discount description
+  "description": "[/literal]{$profile.VELDNAAM}[literal]",
+```
 
-## Belangrijk om te weten
-
+Op de website van Google bevindt zich een [test](https://developers.google.com/gmail/promotab/overview) tool om een voorbeeld te krijgen hoe de annotation eruit komt te zien.
