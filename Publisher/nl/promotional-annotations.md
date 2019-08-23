@@ -60,7 +60,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
         "image": "https://www.google.com/gmail-for-marketers/promo-tab/markup-tool/sample.png"
       }]
     [/literal]
-  </script>
+  </{'script'}>
   </head>
 
   <body>
