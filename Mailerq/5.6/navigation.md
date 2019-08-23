@@ -1,4 +1,4 @@
-* [Getting started](introduction.md "Getting started")
+* [Getting started](introduction "Getting started")
     * [System dependencies](system-dependencies "System dependencies")
     * [Try with Docker](try-with-docker "Try with Docker")
     * [Download instructions](download-instructions "Download instructions")
