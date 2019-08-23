@@ -25,42 +25,42 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
   <head>
     <{'script'} type="application/ld+json">
     [literal]
-[{
-  "@context": "http://schema.org/",
-  "@type": "Organization",
+      [{
+        "@context": "http://schema.org/",
+        "@type": "Organization",
 
-// CHANGE 1 Logo image
-  "logo": "https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
-},{
-  "@context": "http://schema.org/",
-  "@type": "EmailMessage",
+      // CHANGE 1 Logo image
+        "logo": "https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
+      },{
+        "@context": "http://schema.org/",
+        "@type": "EmailMessage",
 
-// CHANGE 2 Alternative subject line for annotations version
-  "subjectLine": "Alternative subject line for annotated version"
-},{
-  "@context": "http://schema.org/",
-  "@type": "DiscountOffer",
+      // CHANGE 2 Alternative subject line for annotations version
+        "subjectLine": "Alternative subject line for annotated version"
+      },{
+        "@context": "http://schema.org/",
+        "@type": "DiscountOffer",
 
-// CHANGE 3 Badge discount description
-  "description": "20% off",
+      // CHANGE 3 Badge discount description
+        "description": "20% off",
 
-// CHANGE 4 Discount code
-  "discountCode": "PROMO",
+      // CHANGE 4 Discount code
+        "discountCode": "PROMO",
 
-// CHANGE 5 Start date
-  "availabilityStarts": "YYYY-MM-DDT00:00:00-01:00",
+      // CHANGE 5 Start date
+        "availabilityStarts": "YYYY-MM-DDT00:00:00-01:00",
 
-// CHANGE 6 End date
-  "availabilityEnds": "YYYY-MM-DDT00:00:00-01:00"
-},{
-  "@context": "http://schema.org/",
-  "@type": "PromotionCard",
-  
-// CHANGE 7 image, 538x138 pixels is best, 3.9 aspect ratio is recommended, use png file format
-  "image": "https://www.google.com/gmail-for-marketers/promo-tab/markup-tool/sample.png"
-}]
-[/literal]
-    </script>
+      // CHANGE 6 End date
+        "availabilityEnds": "YYYY-MM-DDT00:00:00-01:00"
+      },{
+        "@context": "http://schema.org/",
+        "@type": "PromotionCard",
+
+      // CHANGE 7 image, 538x138 pixels is best, 3.9 aspect ratio is recommended, use png file format
+        "image": "https://www.google.com/gmail-for-marketers/promo-tab/markup-tool/sample.png"
+      }]
+    [/literal]
+  </script>
   </head>
 
   <body>
