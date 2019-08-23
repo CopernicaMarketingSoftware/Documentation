@@ -22,13 +22,13 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 * Onder de comments CHANGE 5 en CHANGE 6 vind je "YYYY-MM-DD". Pas de eerste aan naar twee dagen geleden en de tweede naar twee dagen in de toekomst. 
 
 ```
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
-<html>
-  <head>
-    <{'script'} type="application/ld+json">
-    [literal]
-      [{
-        "@context": "http://schema.org/",
+1. <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
+2. <html>
+3.   <head>
+4.     <{'script'} type="application/ld+json">
+5.     [literal]
+6.       [{
+7.         "@context": "http://schema.org/",
         "@type": "Organization",
 
       // CHANGE 1 Logo image
