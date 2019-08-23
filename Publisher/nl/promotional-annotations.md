@@ -6,7 +6,7 @@ Momenteel werken promotionele annotations alleen in de Android en iOS versies va
 ## Voorbereiding
 In Gmail is er een bepaalde groep met e-mail adressen die terug gehouden wordt van het weergeven van annotations. Om zeker te weten dat je annotations kan ontvangen kan je het beste een nieuw e-mail adres aanmaken.
 
-* Maak een e-mail adres aan dat eindigt op promotabtesting@gmail.com, bijvoorbeeld [bedrijfsnaam-promotabtesting@gmail.com](bedrijfsnaam-promotabtesting@gmail.com).
+* Maak een e-mail adres aan dat eindigt op promotabtesting@gmail.com, bijvoorbeeld [bedrijfsnaam_promotabtesting@gmail.com](bedrijfsnaam-promotabtesting@gmail.com).
 
 * Installeer de Android of iOS app van Gmail en log met het zojuist aangemaakte profiel in op de app.
 
