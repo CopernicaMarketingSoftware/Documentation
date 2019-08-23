@@ -21,6 +21,7 @@
     * [MailerQ as command-line utility](command-line-utility "MailerQ as command-line utility")
     * [Inject mail using SMTP](smtp-server "Inject mail using SMTP")
     * [Publish raw JSON to RabbitMQ](publish-to-rabbitmq "Publish raw JSON to RabbitMQ")
+    * [Inject mail using REST API](rest-api-v1#injection "Inject mail using REST API")
 * [Message specifications](message-specification)
     * [JSON for outgoing messages](json-messages "JSON Specification for outgoing messages")
     * [JSON for incoming messages](json-incoming "JSON Specification for incoming messages")
