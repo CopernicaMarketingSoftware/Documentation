@@ -17,9 +17,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 
 * Maak een nieuwe lege template met een document aan.
 
-* Vul de template met de volgende code
-
-* Onder de comments CHANGE 5 en CHANGE 6 vind je "YYYY-MM-DD". Pas de eerste aan naar twee dagen geleden en de tweede naar twee dagen in de toekomst. 
+* Vul de template met de volgende code.
 
 ```
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
@@ -70,6 +68,9 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
   </body>
 </html>
 ```
+
+* Onder de comments CHANGE 5 en CHANGE 6 vind je "YYYY-MM-DD". Pas de eerste aan naar twee dagen geleden en de tweede naar twee dagen in de toekomst. 
+
 
 ## Testen
 Om te testen of de annotations werken is het belangrijk om het volgende stappenplan nauwkeurig te volgen.
