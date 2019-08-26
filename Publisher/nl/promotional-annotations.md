@@ -29,35 +29,35 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
         "@context": "http://schema.org/",
         "@type": "Organization",
 
-      // CHANGE 1 Logo image
-        "logo": "https://www.gstatic.com/images/branding/product/1x/googleg_48dp.png"
+      // EDIT 1 Logo image
+        "logo": "https://pic.vicinity.nl/image/14579894/0ee297827761284dd8f78601d3a1c9f5/image.png"
       },{
         "@context": "http://schema.org/",
         "@type": "EmailMessage",
 
-      // CHANGE 2 Alternative subject line for annotations version
+      // EDIT 2 Alternative subject line for annotations version
         "subjectLine": "Alternative subject line for annotated version"
       },{
         "@context": "http://schema.org/",
         "@type": "DiscountOffer",
 
-      // CHANGE 3 Badge discount description
+      // EDIT 3 Badge discount description
         "description": "20% off",
 
-      // CHANGE 4 Discount code
+      // EDIT 4 Discount code
         "discountCode": "PROMO",
 
-      // CHANGE 5 Start date
+      // EDIT 5 Start date
         "availabilityStarts": "YYYY-MM-DDT00:00:00-01:00",
 
-      // CHANGE 6 End date
+      // EDIT 6 End date
         "availabilityEnds": "YYYY-MM-DDT00:00:00-01:00"
       },{
         "@context": "http://schema.org/",
         "@type": "PromotionCard",
 
-      // CHANGE 7 image, 538x138 pixels is best, 3.9 aspect ratio is recommended, use png file format
-        "image": "https://www.google.com/gmail-for-marketers/promo-tab/markup-tool/sample.png"
+      // EDIT 7 image, 538x138 pixels is best, 3.9 aspect ratio is recommended, use png or jpeg file format
+        "image": "https://pic.vicinity.nl/image/14579892/946b36fc985fa49220b501af8fc6aa4c/image.jpeg"
       }]
     [/literal]
   </{'script'}>
@@ -69,7 +69,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 </html>
 ```
 
-* Onder de comments CHANGE 5 en CHANGE 6 vind je "YYYY-MM-DD". Pas de eerste aan naar twee dagen geleden en de tweede naar twee dagen in de toekomst. 
+* Onder de comments EDIT 5 en EDIT 6 vind je "YYYY-MM-DD". Pas de eerste aan naar twee dagen geleden en de tweede naar twee dagen in de toekomst. 
 
 
 ## Testen
@@ -89,10 +89,10 @@ De code van de test e-mail kan vervolgens getest worden in een al bestaande e-ma
 * Voeg alles tussen de '<head>' tag toe aan de head van een al bestaande e-mailing.
 * Verstuur deze zonder de annotation aan te passen als test naar het Gmail account.
 * Pas item voor item de inhoud aan, verwijder tussendoor telkens de vorige mail en leeg de prullenbak.
-* Als je gebruik wilt maken van smarty personalisatie dan dient de '[literal]' tijdelijk te worden afgesloten. Voor CHANGE 3 zou dit het volgende inhouden;
+* Als je gebruik wilt maken van smarty personalisatie dan dient de '[literal]' tijdelijk te worden afgesloten. Voor EDIT 3 zou dit het volgende inhouden;
   
 ```
-// CHANGE 3 Badge discount description
+// EDIT 3 Badge discount description
   "description": "[/literal]{$profile.VELDNAAM}[literal]",
 ```
 
