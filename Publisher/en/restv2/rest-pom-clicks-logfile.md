@@ -1,10 +1,6 @@
-# Click Record Information
+# Click Record (new style) Information
 
-Every click on every link from messages sent via Publisher is
-logged in the pom-clicks log files. You can download the content of these
-files in CSV, JSON, and XML format using the [REST logfiles API](rest-get-logfiles),
-or the dashboard. These log files contain the following data in the
-respective order:
+Every click on a link from messages sent via Publisher is logged in "pom-clicks" log files. The data in a record depends on which tracking system is used, the article [new link tracking system](https://www.copernica.com/en/blog/post/new-link-tracking-system "New link tracking system") states more information about the different tracking systems. You can download the content of the "pom-clicks" log files in CSV, JSON, and XML format using the [REST logfiles API](rest-get-logfiles), or the dashboard. These log files contain the following data in the respective order:
 
 | Data         | Description                                             |
 | ------------ | ------------------------------------------------------- |
@@ -38,6 +34,7 @@ respective order:
 * [Marketing Suite unsubscribe log](./rest-cdm-impression-logfile)
 * [Publisher general log](./rest-pom-attempts-logfile)
 * [Publisher abuse log](./rest-pom-abuses-logfile)
+* [Publisher clicks (old style) log](./rest-pom-clicks-old-logfile)
 * [Publisher delivery log](./rest-pom-deliveries-logfile)
 * [Publisher error log](./rest-pom-errors-logfile)
 * [Publisher impressions log](./rest-pom-impressions-logfile)

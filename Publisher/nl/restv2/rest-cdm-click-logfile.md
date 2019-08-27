@@ -6,23 +6,23 @@ inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
 
-| Data         | Omschrijving                                     |
-| ------------ | -------------------------------------------------|
-| id           | ID van het geklikte bericht                      |
-| senderdomain | Domein van de verzender                          |
-| time         | Tijdstip van de click                            |
-| linkinfo     | ID van de geklikte link                          |
-| ip           | IP adres van de klikker                          |
-| header       | Header van de request van de klik                |
-| email        | Email van de oorspronkelijke ontvanger           |
-| tags         | Tags van het bericht, gescheiden door puntkommas |
-| countrycode  | Code van het land waarin geklikt werd            |
-| countryname  | Naam van het land waarin geklikt werd            |
-| regioncode   | Code van de regio waarin geklikt werd            |
-| city         | Naam van de stad waarin geklikt werd             |
-| profile      | ID van het profiel van de ontvanger              |
-| subprofile   | ID van het subprofiel van de ontvanger           |
-| template     | ID van het gebruikte template                    |
+| Data         | Omschrijving                                      |
+| ------------ | ------------------------------------------------- |
+| id           | ID van het geklikte bericht                       |
+| senderdomain | Domein van de verzender                           |
+| time         | Tijdstip van de click                             |
+| linkinfo     | ID van de geklikte link                           |
+| ip           | IP adres van de klikker                           |
+| header       | Header van de request van de klik                 |
+| email        | Email van de oorspronkelijke ontvanger            |
+| tags         | Tags van het bericht, gescheiden door puntkomma's |
+| countrycode  | Code van het land waarin geklikt werd             |
+| countryname  | Naam van het land waarin geklikt werd             |
+| regioncode   | Code van de regio waarin geklikt werd             |
+| city         | Naam van de stad waarin geklikt werd              |
+| profile      | ID van het profiel van de ontvanger               |
+| subprofile   | ID van het subprofiel van de ontvanger            |
+| template     | ID van het gebruikte template                     |
 
 ## Andere logfiles
 
@@ -35,7 +35,8 @@ bevatten de volgende informatie.
 * [Marketing suite uitschrijvingen log](./rest-cdm-unsubscribe-logfile)
 * [Publisher algemeen log](./rest-pom-attempts-logfile)
 * [Publisher misbruik log](./rest-pom-abuse-logfile)
-* [Publisher clicks log](./rest-pom-clicks-logfile)
+* [Publisher clicks (nieuwe stijl) log](./rest-pom-clicks-logfile)
+* [Publisher clicks (oude stijl) log](./rest-pom-clicks-logfile)
 * [Publisher ontvangst log](./rest-pom-delivery-logfile)
 * [Publisher error log](./rest-pom-error-logfile)
 * [Publisher impressies log](./rest-pom-impression-logfile)

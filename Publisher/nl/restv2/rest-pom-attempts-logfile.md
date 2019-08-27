@@ -7,7 +7,7 @@ of je kunt ze via het dashboard downloaden. De logfiles bevatten de volgende
 informatie. 
 
 | Data         | Omschrijving                                  |
-| ------------ | ----------------------------------------------|
+| ------------ | --------------------------------------------- |
 | id           | ID van het bericht                            |
 | time         | Tijdstip van verzending                       |
 | mailingid    | ID van de mailing                             |
@@ -31,7 +31,8 @@ informatie.
 * [Marketing suite herzendingen log](./rest-cdm-retry-logfile)
 * [Marketing suite uitschrijvingen log](./rest-cdm-unsubscribe-logfile)
 * [Publisher misbruik log](./rest-pom-abuse-logfile)
-* [Publisher clicks log](./rest-pom-clicks-logfile)
+* [Publisher clicks (nieuwe stijl) log](./rest-pom-clicks-logfile)
+* [Publisher clicks (oude stijl) log](./rest-pom-clicks-logfile)
 * [Publisher ontvangst log](./rest-pom-delivery-logfile)
 * [Publisher error log](./rest-pom-error-logfile)
 * [Publisher impressies log](./rest-pom-impression-logfile)
