@@ -171,18 +171,18 @@ the table below. All fields are optional.
 | code | yes | int | Numeric error code between 200 and 599 (smtp error codes). 
 | extended | false | string | Extended SMTP error code, e.g. 5.7.1.
 | description | false | string | Description to put in the message result.
-| pool  | no  | string | Pool that the pause applies to. 
-| mta  | no | string | MTA IP that the pause applies to. 
-| domain | no | string | Domain that the pause applies to.
-| tag  | no  | string | The tag that the pause applies to.
-| cluster | no | bool | Whether or not this pause is for the entire cluster or only this instance.
+| pool  | no  | string | Pool that the error applies to. 
+| mta  | no | string | MTA IP that the error applies to. 
+| domain | no | string | Domain that the error applies to.
+| tag  | no  | string | The tag that the error applies to.
+| cluster | no | bool | Whether or not this error is for the entire cluster or only this instance.
 
 Do note that not all fields may be passed at the same time. `pool` and `mta` are mutually exclusive. 
 That means that they may not be supplied together, or they will result in a `400` response. 
 
 For example, the request below will install a forced error with code `421` to `hotmail.com` for a single campaign.
 ```
-POST /v1/pauses HTTP/1.0
+POST /v1/errors HTTP/1.0
 Content-Type: application/json
 Authorization: Bearer ...
 
@@ -194,7 +194,7 @@ Authorization: Bearer ...
 ```
 and equivalently, with urlencoded body
 ```
-POST /v1/pauses HTTP/1.0
+POST /v1/errors HTTP/1.0
 Content-Type: application/x-www-form-urlencoded
 Authorization: Bearer ...
 
@@ -203,11 +203,11 @@ domain=hotmail.com&code=421&tag=Campaign1
 
 ### DELETE
 
-A DELETE request allows you to remove a pause. For example, the request below removes the pause for the entire cluster
-to gmail.com from the list of pauses.
+A DELETE request allows you to remove an error. For example, the request below removes the error for the entire cluster
+to gmail.com from the list of errors.
 
 ```
-DELETE /v1/pauses HTTP/1.0
+DELETE /v1/errors HTTP/1.0
 Authorization: Bearer ...
 Content-Type: application/x-www-form-urlencoded
 
