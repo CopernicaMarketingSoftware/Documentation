@@ -6,17 +6,17 @@ logfiles. Je kunt de inhoud hiervan downloaden in CSV, JSON en XML formaat.
 Zie "Meer informatie over logfiles" voor instructies van het opvragen hiervan. 
 De logfiles bevatten de volgende informatie.
 
-| Data         | Omschrijving                                 |
-| ------------ | -------------------------------------------- |
-| id           | ID van het bericht                           |
-| time         | Tijdstip van de verzendpoging                |
-| attempt      | Aantal pogingen tot tijdstip van de poging   |
-| email        | E-mailadres van de ontvanger                 |
-| tags         | Tags van de mail, gescheiden door puntkommas |
-| senderdomain | Domein van de verzender                      |
-| profile      | ID van het profiel van de ontvanger          |
-| subprofile   | ID van het subprofiel van de ontvanger       |
-| template     | ID van het gebruikte template                |
+| Data         | Omschrijving                                  |
+| ------------ | --------------------------------------------- |
+| id           | ID van het bericht                            |
+| time         | Tijdstip van de verzendpoging                 |
+| attempt      | Aantal pogingen tot tijdstip van de poging    |
+| email        | E-mailadres van de ontvanger                  |
+| tags         | Tags van de mail, gescheiden door puntkomma's |
+| senderdomain | Domein van de verzender                       |
+| profile      | ID van het profiel van de ontvanger           |
+| subprofile   | ID van het subprofiel van de ontvanger        |
+| template     | ID van het gebruikte template                 |
 
 ## Andere logfiles
 
@@ -29,7 +29,8 @@ De logfiles bevatten de volgende informatie.
 * [Marketing suite uitschrijvingen log](./rest-cdm-unsubscribe-logfile)
 * [Publisher algemeen log](./rest-pom-attempts-logfile)
 * [Publisher misbruik log](./rest-pom-abuse-logfile)
-* [Publisher clicks log](./rest-pom-clicks-logfile)
+* [Publisher clicks (nieuwe stijl) log](./rest-pom-clicks-logfile)
+* [Publisher clicks (oude stijl) log](./rest-pom-clicks-logfile)
 * [Publisher ontvangst log](./rest-pom-delivery-logfile)
 * [Publisher error log](./rest-pom-error-logfile)
 * [Publisher impressies log](./rest-pom-impression-logfile)

@@ -1,6 +1,6 @@
-# Click Record (new style) Information
+# Click Record (old style) Information
 
-Every click on a link from messages sent via Publisher is logged in "pom-clicks" log files. The data in a record depends on which tracking system is used, the article [new link tracking system](https://www.copernica.com/en/blog/post/new-link-tracking-system "New link tracking system") states more information about the different tracking systems. You can download the content of the "pom-clicks" log files in CSV, JSON, and XML format using the [REST logfiles API](rest-get-logfiles), or the dashboard. These log files contain the following data in the respective order:
+Every click on a link from messages sent via Publisher is logged in the "pom-clicks-old" log files. The data in a record depends on which tracking system is used, the article [new link tracking system](https://www.copernica.com/en/blog/post/new-link-tracking-system "New link tracking system") states more information about the different tracking systems. You can download the content of these files in CSV, JSON, and XML format using the [REST logfiles API](rest-get-logfiles), or the dashboard. These log files contain the following data in the respective order:
 
 | Data         | Description                                             |
 | ------------ | ------------------------------------------------------- |
@@ -14,7 +14,6 @@ Every click on a link from messages sent via Publisher is logged in "pom-clicks"
 | countryname  | The name of the country in which the click occurred     |
 | regioncode   | The code of the region in which the click occurred      |
 | city         | The name of the city in which the click occurred        |
-| linkinfo     | The link ID                                             |
 | senderdomain | The sender domain from which the message was sent       |
 | groupid      | The ID of the group to which the mail belonged to       |
 | profile      | The ID of the profile                                   |
@@ -34,7 +33,7 @@ Every click on a link from messages sent via Publisher is logged in "pom-clicks"
 * [Marketing Suite unsubscribe log](./rest-cdm-impression-logfile)
 * [Publisher general log](./rest-pom-attempts-logfile)
 * [Publisher abuse log](./rest-pom-abuses-logfile)
-* [Publisher clicks (old style) log](./rest-pom-clicks-old-logfile)
+* [Publisher clicks (new style) log](./rest-pom-clicks-logfile)
 * [Publisher delivery log](./rest-pom-deliveries-logfile)
 * [Publisher error log](./rest-pom-errors-logfile)
 * [Publisher impressions log](./rest-pom-impressions-logfile)

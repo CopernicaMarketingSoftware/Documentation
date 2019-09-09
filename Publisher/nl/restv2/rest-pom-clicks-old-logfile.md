@@ -1,13 +1,12 @@
-# REST API: Click registratie (nieuwe stijl) in de Publisher
+# REST API: Click registratie (oude stijl) in de Publisher
 
-Elke klik op een link in de berichten verstuurd met de publisher wordt opgeslagen in een "pom-clicks" log file. In publisher wordt het onderscheid gemaakt tussen clicks die geregistreerd zijn door het oude of nieuwe tracking syteem. In het artikel [nieuwe tracking systeem](https://www.copernica.com/nl/blog/post/nieuw-link-tracking-systeem "Nieuw link tracking systeem") kun je meer lezen over de verschillen tussen de twee systemen. De inhoud van de "pom-clicks" logfiles kun je downloaden in CSV, JSON en XML formaat, zie "Meer informatie over logfiles" voor instructies van het opvragen hiervan. De logfiles bevatten de volgende informatie.
+Elke klik op een link in de berichten verstuurd met de publisher wordt opgeslagen in een "pom-clicks-old" log file. In publisher wordt het onderscheid gemaakt tussen clicks die geregistreerd zijn door het oude of nieuwe tracking syteem. In het artikel [nieuwe tracking systeem](https://www.copernica.com/nl/blog/post/nieuw-link-tracking-systeem "Nieuw link tracking systeem") kun je meer lezen over de verschillen tussen de twee systemen. De inhoud van de "pom-clicks-old" logfiles kun je downloaden in CSV, JSON en XML formaat, zie "Meer informatie over logfiles" voor instructies van het opvragen hiervan. De logfiles bevatten de 
 
 | Data         | Omschrijving                                      |
 | ------------ | ------------------------------------------------- |
 | id           | ID van het geklikte bericht                       |
 | senderdomain | Domein van de verzender                           |
 | time         | Tijdstip van de click                             |
-| linkinfo     | ID van de geklikte link                           |
 | ip           | IP adres van de klikker                           |
 | header       | Header van de request van de klik                 |
 | email        | Email van de oorspronkelijke ontvanger            |
@@ -32,13 +31,12 @@ Elke klik op een link in de berichten verstuurd met de publisher wordt opgeslage
 * [Marketing suite uitschrijvingen log](./rest-cdm-unsubscribe-logfile)
 * [Publisher algemeen log](./rest-pom-attempts-logfile)
 * [Publisher misbruik log](./rest-pom-abuse-logfile)
-* [Publisher clicks (oude stijl) log](./rest-pom-clicks-logfile)
+* [Publisher clicks (nieuwe stijl) log](./rest-pom-clicks-logfile)
 * [Publisher ontvangst log](./rest-pom-delivery-logfile)
 * [Publisher error log](./rest-pom-error-logfile)
 * [Publisher impressies log](./rest-pom-impression-logfile)
 * [Publisher herzendingen log](./rest-pom-retry-logfile)
 * [Publisher uitschrijvingen log](./rest-pom-unsubscribe-logfile)
-
 
 ## Meer informatie over log files
 

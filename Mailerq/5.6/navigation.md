@@ -1,4 +1,4 @@
-* [Getting started](introduction.md "Getting started")
+* [Getting started](introduction "Getting started")
     * [System dependencies](system-dependencies "System dependencies")
     * [Try with Docker](try-with-docker "Try with Docker")
     * [Download instructions](download-instructions "Download instructions")
@@ -29,6 +29,7 @@
     * [Personalization](personalization "Personalization variables")
     * [MIME headers](mime-headers "Additional message properties for MIME format")
 * [Management console](management-console "Management console")
+* [REST API](rest-api-v1 "REST API")
 * [Examples](examples "MailerQ examples")
     *   [.NET/C# example](dotnet-example ".NET/C# example")
     *   [Java example](java-example "Java example")
