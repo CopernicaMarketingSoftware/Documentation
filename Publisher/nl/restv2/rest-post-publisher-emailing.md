@@ -8,11 +8,37 @@ POST verzoek te sturen naar het volgende adres kun je een mailing versturen:
 
 ## Beschikbare parameters
 
-Er zijn drie (verplichte) parameters beschikbaar:
+De volgende parameters zijn beschikbaar, waarvan alleen 'settings' optioneel is:
 
 * **target**: De ID van de target van de mailing.
 * **targettype**: Het type van de target (database, collectie, selectie, miniselectie, profiel of subprofiel)
 * **document**: De ID van de template om te gebruiken.
+* **settings**: Array die de instellingen van de mailing bevat. Deze kun je 
+bijvoorbeeld gebruiken om een mailing op een ander moment te versturen in plaats 
+van deze onmiddelijk te verzenden.
+
+De settings array kan de volgende opties bevatten:
+
+* **start**: De datum om de mailing te starten in tekstformaat, of 'false' 
+om aan te geven dat de mailing direct verstuurd moet worden.
+* **interval**: Het interval waarmee de mailing verstuurd moet worden als 
+een array met de parameters 'count' voor de hoeveelheid en 'unit' voor de 
+eenheid. Voor een mailing elke twee weken is 'count' bijvoorbeeld 2 en de 
+'unit' is 'week'.
+* **iterations**: Het aantal keren dat de mailing verstuurd moet worden. 
+Een negatief getal geeft een mailing voor onbepaalde tijd aan.
+* **description**: Beschrijving voor de mailing.
+* **nodoubles**: Geeft aan of dubbele adressen overgeslagen moeten worden ('true') 
+of niet ('false').
+* **personalized**: Geeft aan of de mails gepersonalizeerd moeten worden ('true') 
+of niet ('false').
+* **test**: Geeft aan of dit een test mailing is ('true') of niet ('false').
+* **contenttype**: Geeft het type content voor de mailing aan. Hier staat 'html' 
+voor HTML, 'text' voor een tekstversie en 'both' voor een mailing die beide bevat.
+* **embeddedimages**: Geeft aan of de afbeeldingen toegevoegd worden aan de mailing ('true') 
+of gehost worden op een aparte webserver ('false').
+* **cacheimages**: Geeft aan of externe afbeeldingen in de cache opgeslagen moeten worden ('true') 
+of niet ('false').
 
 Zorg ervoor dat je document volledig is voor je de mailing verstuurd. 
 De mailing kan namelijk niet verstuurd worden zonder een onderwerp of 
@@ -33,11 +59,22 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// emailing instellingen
+$settings = array(
+    'start'         => '2019-01-01'
+    'interval'      => array(   
+                                'count'    =>  6,
+                                'unit'     => 'month'
+                    ),
+    'iterations'    => -1
+);
+
 // parameters om mee te geven aan de call
 $parameters = array(
-    'target'                  => $targetID,
-    'targettype'              => $targetType,
-    'template'                => $templateID,
+    'target'        => $targetID,
+    'targettype'    => $targetType,
+    'template'      => $templateID,
+    'settings'      => $settings
 );
 
 // voer het verzoek uit
