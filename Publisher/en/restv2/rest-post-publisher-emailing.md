@@ -8,11 +8,31 @@ mailing you send an HTTP POST request to the following URL:
 
 ## Available parameters
 
-There are three parameteres available, all of them required.
+The call has several parameters, with the 'settings' parameter being 
+the only one that is optional.
 
 * **target**: The ID of the emailing target.
 * **targettype**: The type of the target (database, collection, view, miniview, profile or subprofile)
 * **document**: The ID of the document to use.
+* **settings**: An array with settings for the emailing. This can be used 
+to schedule emailings instead of sending immediately for example.
+
+The settings array offers the following options, all of which are optional:
+
+* **start**: String representing the start date or false to start immediately.
+* **interval**: An array containing the interval specification. Should contain 
+a 'count' and a 'unit'. To send an email every two weeks for example 'count' should be 
+set to 2 and 'unit' to 'week'.
+* **iterations**: Number of times you want to send the email. Entering a negative 
+number means the emailing will be sent indefinitely.
+* **description**: Description of the emailing.
+* **nodoubles**: Indicates whether double addresses should be skipped ('true') or not ('false').
+* **personalized**: Indicates whether each mail should be personalized ('true') or not ('false'). See
+the [article on personalization](../personalization.md) for more information.
+* **test**: Indicates whether the mailing is used for testing ('true') or not ('false').
+* **contenttype**: Indicates the content type ('html', 'text', 'both').
+* **embeddedimages**: Indicates whether the images are embedded ('true') or hosted on a separate webserver ('false').
+* **cacheimages**: Indicates whether external images should be cached ('true') or not ('false').
 
 Make sure your document is complete before posting the call. The mailing 
 can not be sent without a valid subject and from address. You should also 
