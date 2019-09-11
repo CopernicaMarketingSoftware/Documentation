@@ -15,7 +15,7 @@ bevatten de volgende informatie.
 | description  | Omschrijving van de error                           |
 | code         | Code van de error                                   |
 | email        | E-mailadres van de ontvanger                        |
-| tags         | Tags van het bericht, gescheiden door puntkommas    |
+| tags         | Tags van het bericht, gescheiden door puntkomma's   |
 | senderdomain | Domein van de verzender                             |
 | profile      | ID van het profiel van de ontvanger                 |
 | subprofile   | ID van het subprofiel van de ontvanger              |
@@ -32,7 +32,8 @@ bevatten de volgende informatie.
 * [Marketing suite uitschrijvingen log](./rest-cdm-unsubscribe-logfile)
 * [Publisher algemeen log](./rest-pom-attempts-logfile)
 * [Publisher misbruik log](./rest-pom-abuse-logfile)
-* [Publisher clicks log](./rest-pom-clicks-logfile)
+* [Publisher clicks (nieuwe stijl) log](./rest-pom-clicks-logfile)
+* [Publisher clicks (oude stijl) log](./rest-pom-clicks-logfile)
 * [Publisher ontvangst log](./rest-pom-delivery-logfile)
 * [Publisher error log](./rest-pom-error-logfile)
 * [Publisher impressies log](./rest-pom-impression-logfile)

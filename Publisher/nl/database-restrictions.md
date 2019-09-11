@@ -22,11 +22,11 @@ gebruikersnaam altijd uniek is. Er bestaat daarnaast een optie
 "dubbele veldwaarden blokkeren" waarmee je vervuiling van de database
 tegengaat.
 
-Je kunt restricties ook koppelen met "AND" en "OR" operators. Deze spreken
-vrijwel voor zich: als je een restrictie maakt met meerdere "AND" regels,
-kunnen alleen profielen worden opgeslagen die aan alle regels voldoen.
-Bij een "OR" regel hoeft het profiel, maar aan één van de voorwaarden te
-voldoen om toegelaten te worden.
+**Let op:** deze restricties worden alleen toegepast op nieuwe profielen en
+wijzigingen aan bestaande profielen. Om bestaande foutieve profielen te
+verwijderen, zal je voor deze een selectie moeten aanmaken met dezelfde
+voorwaarden als de databaserestricties en deze profielen te verwijderen met de
+functionaliteit **meerdere (sub-)profielen wijzigen/verwijderen...**.
 
 ## Reguliere expressies
 Reguliere expressie (vaak afgekort naar *regex*) is een krachtig methode
@@ -34,20 +34,7 @@ om restricties in te stellen. Deze expressies kunnen patronen herleiden en
 de uitkomst goed- of afkeuren. De volgende regex laat alleen postcodes toe
 die bestaan uit 4 getallen, gevolgd door twee letters (1000AA).
 
-```javascript
-^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$
-```
-
-Wat deze regex doet:
-
-1. `^` komt overeen met het begin van een string (tekenreeks)
-2. `[1-9]` komt overeen met een reeks van 1 tot 9
-3. `[0-9]{3}` gevolgd door drie keer een cijfer van 0 tot 9.
-4. `?` komt overeen met 0 of 1 spaties
-5. `(?!sa|sd|ss)` kijkt vooruit om te controleren of de rest niet "sa", "sd"
-of "ss" bevat.
-6. `[a-z]{2}` komt overeen met 2 letters
-7. `$` komt overeen met het einde van de string
+`^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$`
 
 ## Meer informatie
 Om restricties toe te voegen heb je een database en een aantal velden nodig.

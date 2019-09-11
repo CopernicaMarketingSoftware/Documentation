@@ -165,6 +165,8 @@ ingevulde informatie uit het formulier.
 Gebruik 0 (nul) als je wilt dat alle gevonden profielen moeten worden
 bijgewerkt.
 
+[Meer informatie over foutmeldingen bij een webformulier](./webform-errors)
+
 ### **Maak je ook gebruik van één of meerdere collecties?**
 Als je in het formulier velden hebt opgenomen uit diverse collecties,
 vergeet dan niet tevens de formulierinstellingen te wijzigen voor deze

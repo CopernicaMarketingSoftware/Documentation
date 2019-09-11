@@ -169,9 +169,6 @@ an idea of a possible valid JSON input, consider this:
                 "type": "image",
                 "src": "http://www.example.com/logo.png"
             }, {
-                "type": "feed",
-                "source": "http://rss.cnn.com/rss/edition.rss"
-            }, {
                 "type": "button",
                 "label": "Click the button!",
                 "link": {
@@ -188,7 +185,7 @@ an idea of a possible valid JSON input, consider this:
 ````
 
 The number of options is huge. You can construct responsive emails using
-images, HTML text, RSS feeds, social media, et cetera. MailerQ downloads
+images, HTML text, social media, et cetera. MailerQ downloads
 all the resources and converts the JSON code into a valid MIME strings.
 
 For more information about the supported JSON properties nested under the 
@@ -357,23 +354,28 @@ property will be ignored, as a specific set of IPs is more specific than a pool 
 ## Delivery time
 
 Messages loaded by MailerQ are delivered right away. If you want to delay a 
-delivery, you can add a "delayed" property to the JSON with the desired time 
-of delivery.
+delivery, you can add a "nextattempt" property to the JSON with the desired time 
+of delivery for the next attempt.
 
 ````
 {
     "envelope": "my-sender-address@my-domain.com",
     "recipient": "info@example.org",
     "mime": "...",
-    "delayed": "2017-01-10 00:00:00"
+    "nextattempt": {
+        "time": "2019-01-10 00:00:00"
+    }
 }
 ````
 
 In normal circumstances you want messages to be delivered right away, 
-so you do not need this "delayed" property. However, under the hood, MailerQ
-uses this "delayed" property when a mail cannot be delivered because of 
+so you do not need this "nextattempt" property. However, under the hood, MailerQ
+uses this "nextattempt" property when a mail cannot be delivered because of 
 greylisting. The message is then published back to the outbox queue 
-with a "delayed" property set to a couple of minutes after the initial attempt.
+with a "nextattempt" property set to a couple of minutes after the initial attempt.
+
+This property is also set when response patterns cause a mail to be retried again after
+a specified interval.
 
 
 ## Max delivery time and max attempts

@@ -19,23 +19,23 @@ je in de body van het HTTP request plaatsen.
 De volgende variabelen moeten in de body van het HTTP PUT commando worden
 geplaatst:
 
-* **behavior**: de nieuwe instelling van het afmeldgedrag. Ondersteunde waardes zijn "nothing", "remove" en "update". 
+* **behavior**: de nieuwe instelling van het afmeldgedrag. Ondersteunde waardes zijn "nothing", "remove" en "update".
 * **fields**: optioneel associatief array / object met daarin de nieuwe veldwaardes
 
-De drie values van 'behaviour' zijn 'nothing', 'remove' en 'update'. 
-Bij 'nothing' wordt het verzoek van de gebruiker genegeerd, bij 
-'remove' wordt het profiel uit de database verwijderd en bij 'update' 
-wordt het profiel geüpdate om aan te geven dat deze klant geen email 
-meer wil ontvangen. Op deze manier blijft de klant wel in de database 
-staan. De "fields" instelling geeft nieuwe veldwaardes in het geval 
-dat het profiel geüpdate wordt. In de andere gevallen heeft deze 
+De drie values van 'behaviour' zijn 'nothing', 'remove' en 'update'.
+Bij 'nothing' wordt het verzoek van de gebruiker genegeerd, bij
+'remove' wordt het profiel uit de database verwijderd en bij 'update'
+wordt het profiel geüpdate om aan te geven dat deze klant geen email
+meer wil ontvangen. Op deze manier blijft de klant wel in de database
+staan. De "fields" instelling geeft nieuwe veldwaardes in het geval
+dat het profiel geüpdate wordt. In de andere gevallen heeft deze
 parameter dus geen nut.
 
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen. In
 het voorbeeld wordt ingesteld dat, als iemand zich afmeldt, het veld 'newsletter'
-op 'no' wordt gezet. Je kunt dit bijvoorbeeld gebruiken om een 
+op 'no' wordt gezet. Je kunt dit bijvoorbeeld gebruiken om een
 [nieuwsbrief selectie](./create-a-mailing-list) aan te maken.
 
 ```php
@@ -52,7 +52,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-api->put("database/{$databaseID}", array(), $data);
+api->put("database/{$databaseID}", $data);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

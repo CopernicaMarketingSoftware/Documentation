@@ -1,6 +1,6 @@
 # Upgrade and downgrade instructions
 
-To upgrade MailerQ from version < 5.5 to 5.5+
+To upgrade MailerQ from version < 5.6 to 5.6+
 
 **Debian/Ubuntu:**
 
@@ -17,19 +17,19 @@ yum update
 mailerq --repair-database
 ```
 
-To downgrade MailerQ from version 5.5+ to 5.4
+To downgrade MailerQ from version 5.6+ to 5.5
 
 **Debian/Ubuntu:**
 
 ```txt
-sudo apt-get install -y --allow-downgrades mailerq-5.4
+sudo apt-get install -y --allow-downgrades mailerq-5.5
 sudo mailerq --repair-database
 ```
 
 **CentOS/RHEL:**
 
 ```txt
-yum remove mailerq-5.5
-yum install mailerq-5.4
+yum remove mailerq-5.6
+yum install mailerq-5.5
 mailerq --repair-database
 ```

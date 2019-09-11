@@ -232,24 +232,65 @@ All incoming connections that match one of these ranges will be treated
 as proxied connections, and the first bytes will be treated as PROXY header,
 and not as SMTP traffic.
 
+### Validating email addresses
+
+For the JSON, email address validation can be [loosened](other-configuration#validate-email-addresses),
+so that attempts will be made despite an email address not being fully RFC compliant. To allow
+injection of such messages, the `smtp-validate-address` option should be set. This option is for the
+email supplied at the `MAIL FROM` and `RCPT TO` stage. Valid values are `strict` and `loose`.
+
+
+By enabling injection for invalid emails, yet requiring RFC compliant emails during the sending phase,
+the mails can be initially accepted and processed by the rest of the infrastructure via RabbitMQ, instead
+of having to acount for the possibility that the injection goes wrong.
+
+```txt
+smtp-validate-address:  strict
+```
+
+
+### Connections
+
+To prevent that MailerQ exhausts the max number of open TCP connections
+that is allowed by the OS, you can set a "smtp-connections" setting. There will
+never be more than this number of total _incoming_ and _outgoing_ connections.
+
+```
+smtp-connections:       100
+smtp-connections-in:    50
+smtp-connections-out:   75
+```
+
+To prevent an excessive amount of either outgoing or incoming connections to block their
+counterparts from creating connections, the limits can also be adjusted separately. In the example
+above, the maximum amount of incoming connections are set to 50, but the maximum amount of outgoing
+connections are 75. When MailerQ is mostly sending, that means that MailerQ only allows 75 outgoing
+connections at the same time, which means that there are 25 connections reserved for the incoming
+connections. This guarantees that always at least 25 clients can be connected at the same time. If
+sending slows down, this number can grow up to 50, at which point it hits the incoming connection 
+limit, preventing it from taking up the connection space for outgoing connections.
+
+If only the global limit would be set in the example above, if MailerQ is connected to 100 endpoints,
+incoming connections would be queued until the connection limit dropped again. If there are already 100
+incoming connections, MailerQ would be unable to send any email, because the global connection
+limit is already exhausted. 
+
+Usually, you want all three values to be set, to guarantee that ever side has a reserved space
+for the amount of connections that they can make.
+
 
 ### Other settings
 
 The following variables may also be useful when you set up an SMTP server:
 
 ```
-smtp-maxsize:       100MB
-smtp-connections:   100
-smtp-threads:       1
+smtp-maxsize:           100MB
+smtp-threads:           1
 ```
 
 In the initial SMTP handshake the client advertises its capabilities 
 (like the max message size to accept). The config file setting "smtp-maxsize" 
 contains the maximum allowed input size for message.
-
-To prevent that MailerQ exhausts the max number of open TCP connections
-that is allowed by the OS, you can set a "smtp-connections" setting. There will
-never be more than this number of total _incoming_ and _outgoing_ connections.
 
 All SMTP traffic is handled by separate threads. The number of threads that 
 are started for SMTP traffic can be set with the "smtp-threads" setting. 
@@ -257,8 +298,7 @@ Increasing this value can give a real boost to MailerQ's performance and
 we recommend to set it close to the number of CPU's that you have in your
 machine. 
 
-**Important!** The "smtp-connections" and "smtp-threads" variables are 
-meaningful for _outgoing_ connections as well!
+**Important!** The "smtp-threads" variable is meaningful for _outgoing_ connections as well!
 
 
 ## Multiple IP addresses

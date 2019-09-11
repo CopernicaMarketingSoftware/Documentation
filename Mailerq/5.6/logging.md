@@ -2,6 +2,57 @@
 
 All delivery attempts like received emails, downloads and errors can be logged by MailerQ in different log files. The log file settings can be specified in the "/etc/mailerq/config.txt" config file.
 
+## Rotation
+
+In previous version of MailerQ (< 5.6), log rotation was handled in the application itself. This is not very flexible, and has
+therefore been removed. Instead, log rotation is now delegated to [logrotate](https://linux.die.net/man/8/logrotate). The
+packaged config file for logrotate looks as follows. For specific settings, or different filenames, see the [man page](https://linux.die.net/man/8/logrotate).
+
+```
+# 
+#   Logrotate config file for MailerQ
+#
+#   This file contains settings to automatically rotate the logfiles
+#   using logrotate. To see all possible settings, use `man 8 logrotate`.
+#
+
+# Settings for all the user formatted logfiles. If you renamed logfiles, or the files
+# are in a non-standard location, alter the glob below.
+/var/log/mailerq/*.log {
+    # General settings, may be altered.
+    rotate 20
+    daily
+    compress
+    missingok
+    notifempty
+    maxsize 100M
+
+    # Required setting for normal logfiles, because MailerQ monitors the filesystem 
+    # and needs time to close the writers to a logfile
+    delaycompress
+}
+
+# Settings for all the binary logfiles. If you renamed logfiles, or the files
+# are in a non-standard location, alter the glob below.
+/var/log/mailerq/*.bin {
+    # General settings, may be altered.
+    rotate 20
+    daily
+    missingok
+    notifempty
+    maxsize 100M
+
+    # Required setting for binary logfiles, because MailerQ reads out the logfiles for the 
+    # web interface and processing purposes.
+    nocompress
+}
+```
+
+Note that logrotate is not required. In fact, any application can simply remove the logfiles, and MailerQ
+opens it almost immediately. Naturally, if an application removes a logfile, the application should wait until
+MailerQ has finished writing and opened a new logfile. 
+
+
 ## Application Log
 Information about MailerQ is logged to the application log. This includes failures like databases that are suddenly offline or RabbitMQ connections that are lost. Currently the log levels Info, Warning and Critical are supported. The error log has been deprecated in favor of the application log. The application log can be set using the option application-log, and supports logging to stdout, stderr, syslog and files. If this setting is kept empty no logs are stored.
 
@@ -47,10 +98,7 @@ For more information about this templating language, you can read the [Smart-TPL
 
 MailerQ creates log files for all delivery attempts. The directory in
 which these log files are stored can be set here, as well as the
-name of the log file. Normally, MailerQ appends a number after each log file, for example: "attempts.log.12". MailerQ moves on to the next
-log file when the max size or max age of a file is reached. The history
-option holds the max number of old files to keep on disk before files
-are removed.
+name of the log file.
 
 The [management console web interface](management-console) uses binary log files to display real-time information of all delivery attempts.
 
@@ -58,17 +106,8 @@ The configuration file holds the following options:
 
 ```txt
 # Log of send attempts
-send-bin-log-directory:     /var/log/mailerq/
-send-bin-log-prefix:        send.bin
-send-bin-log-maxsize:       100MB
-send-bin-log-maxage:        3600
-send-bin-log-history:       20
-send-log-directory:         /var/log/mailerq/
-send-log-prefix:            send.log
-send-log-maxsize:           100MB
-send-log-maxage:            3600
-send-log-history:           20
-send-log-compression:       gzip
+send-bin-log-file:     /var/log/mailerq/send.bin
+send-log-file:         /var/log/mailerq/send.log
 send-log-format:       [{$date}] {$result.state}:{$result.result} {$attempt} <{if $email.envelope}{$email.envelope}{/if}> <{$email.recipient}> [{$result.from}] [{$result.to}] {$email.tags} {$result.code} {$result.status} {$result.description}
 ```
 
@@ -83,22 +122,8 @@ $date		formatted DateTime (e.g. 01-01-1970 11:53)
 
 The available properties are [specified in the JSON for outgoing messages](json-messages).
 
-The "send-log-directory" is the directory where log files with send attempts
-are stored. The directory must be writable for MailerQ. The "send-log-prefix"
-is the prefix for the send log. The default is "attempts.log".
-
-The "send-log-maxsize", "send-log-maxage" and "send-log-history" control
-log file rotation. When the current log file reaches its max age or its
-max size, MailerQ rotates the log files and continues writing to a fresh
-and new log file. The maxsize setting is required (default is 100MB), the
-maxage setting is optional. If you leave it out, MailerQ will only rotate
-the files when the current file reaches its max size. When log files are
-rotated, MailerQ only keeps the "send-log-history" latest log files on
-disk. All older files are removed.
-
-To reduce disk utilization, you can turn on log file compression with
-the "send-log-compression" setting. Only gzip compression is supported.
-
+The "send-log-file" is the location for the send log. The default is "send.log". Its
+directory must be writable for MailerQ.
 
 ## Received messages
 
@@ -108,13 +133,9 @@ settings:
 
 ```txt
 # Log of incoming messages
-received-log-directory:      /var/log/mailerq/
-received-log-prefix:         received.log
-received-log-history:        20
-received-log-maxsize:        100MB
-received-log-maxage:         3600
-received-log-compression:    gzip
-received-log-format:         [{$date}]{if $json.message_id} {$json.message_id} {/if}<{$json.envelope}> <{$json.recipient}> [{$json.connection.remote_ip}] [{$json.connection.local_ip}]
+received-bin-log-file:  /var/log/mailerq/received.log
+received-log-file:      /var/log/mailerq/received.log
+received-log-format:    [{$date}]{if $json.message_id} {$json.message_id} {/if}<{$json.envelope}> <{$json.recipient}> [{$json.connection.remote_ip}] [{$json.connection.local_ip}]
 ```
 
 You can specify your own log lines via the `received-log-format` setting. These are the available variables.
@@ -145,13 +166,9 @@ for the send-log:
 
 ```txt
 # Log of downloads
-download-log-directory:     /var/log/mailerq/
-download-log-prefix:        download.log
-download-log-history:       20
-download-log-maxsize:       100MB
-download-log-maxage:        3600
-download-log-compression:   gzip
-download-log-format:        {$date}, {$time}, {$url}
+download-bin-log-file: /var/log/mailerq/download.bin
+download-log-file:     /var/log/mailerq/download.log
+download-log-format:   {$date}, {$time}, {$url}
 ```
 
 You can specify your own log lines via the `download-log-format` setting. These are the available variables.
@@ -168,13 +185,9 @@ You can monitor who accessed the management console. The settings for the manage
 
 ```txt
 # Log of management console
-www-log-directory:              /var/log/mailerq/
-www-log-prefix:                 www.log
-www-log-history:                10
-www-log-maxsize:                100MB
-www-log-maxage:                 3600
-www-log-compression:            gzip
-www-log-format:                 {$date}, {$ip}, {$request}
+www-bin-log-file:    /var/log/mailerq/download.bin
+www-log-file:        /var/log/mailerq/
+www-log-format:      {$date}, {$ip}, {$request}
 ```
 
 You can specify your own log lines via the `www-log-format` setting. These are the available variables.
@@ -185,6 +198,21 @@ $ip		The IP that connected
 $request	A string with the request (e.g. "GET/settings")
 ```
 
+## Combining Logs
+
+From MailerQ 5.6 and onward, user formatted logs can be combined. Simply specify the same filename
+as a target for multiple logs. For example, to combine the user formatted send/receive logs, the config 
+settings below can be used.
+
+```txt
+send-log-file:          /var/log/mailerq/combined.log
+received-log-file:      /var/log/mailerq/combined.log
+```
+
+This only works for a single instance. If multiple instances point to the same file, no guarantees about
+data integrity will be made. Same holds for previous versions on MailerQ (< 5.6), there was no logic to guarantee 
+data integrity even on the same instance. This works fine for smaller loglines, but it depends on the platform 
+and the size of the logged information when this corruption will occur.
 
 ## A word about logging
 

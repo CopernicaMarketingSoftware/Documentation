@@ -1,10 +1,10 @@
 # The REST API
 
 The REST API allows you to retrieve and update the data that is stored inside
-Copernica from out of your own website or app. You can write your own scripts 
+Copernica from out of your own website or app. You can write your own scripts
 that send requests and instructions to our servers to fetch this data or
-to update it. You can use this API to automatically synchronize the data in 
-Copernica with your own system, without any human interference. This page 
+to update it. You can use this API to automatically synchronize the data in
+Copernica with your own system, without any human interference. This page
 contains an overview of all API calls.
 
 * [Introduction & registration](./rest-introduction)
@@ -12,8 +12,8 @@ contains an overview of all API calls.
 * [External OAuth2 links](./rest-oauth)
 * [Paging](./rest-paging)
 
-We are currently on version 2 of the REST API. [This article](./rest-introduction#REST-version) 
-explains the new version (and how to switch) in full detail. Not ready to switch? 
+We are currently on version 2 of the REST API. [This article](./rest-introduction#REST-version)
+explains the new version (and how to switch) in full detail. Not ready to switch?
 You can find the documentation for version 1 [here](../restv1/rest-api.md).
 
 ## Method types
@@ -25,7 +25,7 @@ There are four types of methods:
 * **PUT**: Used to overwrite existing data
 * **DELETE**: Used to delete data
 
-See the [introduction](./rest-introduction) for more information about 
+See the [introduction](./rest-introduction) for more information about
 HTTP requests.
 
 ## Overview
@@ -52,8 +52,8 @@ In the table below you can find a call to retrieve account information.
 
 ## Databases & Collections
 
-You can search and maintain your databases and collections with API calls. 
-The following table contains the calls related to database and collection 
+You can search and maintain your databases and collections with API calls.
+The following table contains the calls related to database and collection
 structure.
 
 ### Databases
@@ -104,7 +104,7 @@ structure.
                                                                                                                                                        |
 ## Views & Miniviews
 
-Views are selection under a database, while miniviews are selections under a collection. 
+Views are selection under a database, while miniviews are selections under a collection.
 You can find methods that relate to a specific (mini)view below.
 
 ### View
@@ -121,7 +121,7 @@ You can find methods that relate to a specific (mini)view below.
 | GET    | [api.copernica.com/v2/view/$id/rules](./rest-get-view-rules)                                 | Fetch all view rules                         |
 | GET    | [api.copernica.com/v2/view/$id/rule/$id](./rest-get-view-rule)                               | Fetch a view rule                            |
 | POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Create a new view rule                       |
-                                                                                                                                                       
+
 ### Miniview
 
 | Type   | Address                                                                                      | Description                                  |
@@ -139,8 +139,8 @@ You can find methods that relate to a specific (mini)view below.
 
 ## Rules & Minirules
 
-Rules and minirules are made up of several conditions to create selections 
-under a database or collection respectively. You can find API calls related 
+Rules and minirules are made up of several conditions to create selections
+under a database or collection respectively. You can find API calls related
 to rules and their conditions in the table below.
 
 ### Rules
@@ -168,7 +168,7 @@ to rules and their conditions in the table below.
 
 ## Profiles & Subprofiles
 
-Profiles and subprofiles can be used to represent entities in your database, 
+Profiles and subprofiles can be used to represent entities in your database,
 like your customers or orders. The relevant API calls can be found below.
 
 ### Profile
@@ -211,7 +211,7 @@ like your customers or orders. The relevant API calls can be found below.
 
 ## Publisher Mailings
 
-The table below contains all API calls related to Publisher documents, 
+The table below contains all API calls related to Publisher documents,
 templates and mailings.
 
 ### Mailings
@@ -277,7 +277,7 @@ templates and mailings.
 
 ## Marketing Suite Mailings
 
-The table below contains all API calls related to Marketing Suite templates 
+The table below contains all API calls related to Marketing Suite templates
 and emailings.
 
 ### Mailings
@@ -287,6 +287,9 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Fetch all mailings                                    |
 | GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Fetch a mailing                                       |
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Create a mailing                                      |
+| GET    | [api.copernica.com/v2/ms/scheduledemailings](./rest-get-ms-scheduledemailings)               | Fetch all scheduled mailings                          |
+| GET    | [api.copernica.com/v2/ms/scheduledemailing/$id](./rest-get-ms-scheduledemailing)             | Fetch a scheduled mailing                             |
+| POST   | [api.copernica.com/v2/ms/scheduledemailing](./rest-post-ms-scheduledemailing)                | Create a scheduled mailing                            |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing                  |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Fetch the statistics for a mailing                    |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Fetch all abuses for a mailing                        |
@@ -316,7 +319,7 @@ and emailings.
 
 | Type   | Address                                                                                      | Description                                             |
 |--------|----------------------------------------------------------------------------------------------|---------------------------------------------------------|
-| GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Fetch a destination                                     | 
+| GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Fetch a destination                                     |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing                    |
 | GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Fetch the statistics for a destination                  |
 | GET    | [api.copernica.com/v2/ms/destination/$id/abuses](./rest-get-ms-destination-abuses)           | Fetch all abuses for a destination                      |
@@ -351,8 +354,8 @@ and emailings.
 
 ## Datarequests
 
-The result of data requests is stored for a while after completion. With the 
-following methods you can retrieve the status and data of previously completed 
+The result of data requests is stored for a while after completion. With the
+following methods you can retrieve the status and data of previously completed
 calls.
 
 | Type   | Address                                                                                      | Description                                                 |
@@ -365,7 +368,7 @@ calls.
 
 ## Logfiles
 
-Copernica keeps extensive logfiles about everything that happens to your 
+Copernica keeps extensive logfiles about everything that happens to your
 emails after sending. You can find all calls related to logfiles in the table below.
 
 | Type   | Address                                                                                      | Description                                      |
