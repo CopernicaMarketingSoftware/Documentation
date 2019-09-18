@@ -13,9 +13,11 @@ fetch the miniviews of.
 
 The following parameters can be added to the URL as variables:
 
-* **start**: first miniselection to fetch
-* **limit**: length of the batch to fetch
-* **total**: boolean value for displaying the total amount of miniselections
+| Parameter | Description                                                       |
+|-----------|-------------------------------------------------------------------|
+| **start** | The first miniview to be requested.                               |
+| **limit** | Length of the requested batch.                                    |
+| **total** | Whether or not the total number of miniviews should be counted.   |
 
 More information on the meaning of these parameters can be found in the 
 [article on paging](./rest-paging).
@@ -25,13 +27,16 @@ More information on the meaning of these parameters can be found in the
 The method returns a JSON object with miniselections in the **data** 
 field. For each selection the following information is returned:
 
-* **ID**: Unique numerical identifier
-* **name**: Name of the selection
-* **description**: Description of the selection
-* **parent-type**: Type of the parent: view or collection
-* **parent-id**: ID of the database or view
-* **collection**: ID of the collection this miniview belongs to
-* **last-built**: Timestamp of last build
+| Variable          | Description                                                                               |
+|-------------------|-------------------------------------------------------------------------------------------|
+| **ID**            | Unique numerical identifier.                                                              |
+| **name**          | Name of the selection.                                                                    |
+| **description**   | Description of the selection.                                                             |
+| **parent-type**   | Type of the parent: view or collection.                                                   |
+| **parent-id**     | ID of the view or collection.                                                             |
+| **collection**    | ID of the collection this selection belongs to.                                           |
+| **last-built**    | Timestamp of the last time the view was built.                                            |
+| **intentions**    | Array with the intentions for the view (either 1 or null for email/sms/fax/pdf).          |
 
 ### JSON example
 

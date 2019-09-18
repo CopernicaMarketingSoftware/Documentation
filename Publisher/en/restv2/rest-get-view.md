@@ -12,16 +12,19 @@ name of the view you wish to request the selections for.
 
 The method returns a JSON object with the following fields: 
 
-* **ID**: Unique numerical identifier.
-* **name**: Name of the selection.
-* **description**: Description of the selection.
-* **parent-type**: Type of the parent: view or database.
-* **parent-id**: ID of the database or view.
-* **has-children**: Boolean value: whether or not the database has selections nested underneath it.
-* **has-referred**: Boolean value: whether or not there are other selections that refer to this selection.
-* **has-rules**: Boolean value: whether or not the selection has selection rules.
-* **database**: ID of the database this selection belongs to.
-* **last-built**: Timestamp of the last time the view was built.
+| Variable          | Description                                                                               |
+|-------------------|-------------------------------------------------------------------------------------------|
+| **ID**            | Unique numerical identifier.                                                              |
+| **name**          | Name of the selection.                                                                    |
+| **description**   | Description of the selection.                                                             |
+| **parent-type**   | Type of the parent: view or database.                                                     |
+| **parent-id**     | ID of the database or view.                                                               |
+| **has-children**  | Boolean value: whether or not the database has selections nested underneath it.           |
+| **has-referred**  | Boolean value: whether or not there are other selections that refer to this selection.    |
+| **has-rules**     | Boolean value: whether or not the selection has selection rules.                          |
+| **database**      | ID of the database this selection belongs to.                                             |
+| **last-built**    | Timestamp of the last time the view was built.                                            |
+| **intentions**    | Array with the intentions for the view (either 1 or null for email/sms/fax/pdf).          |
 
 ### JSON example
 

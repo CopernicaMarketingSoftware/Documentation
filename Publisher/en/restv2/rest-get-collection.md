@@ -12,12 +12,13 @@ The `$id` here should be replaced with the numerical identifier of the collectio
 
 The method returns a JSON object that contains the following fields:
 
-| Variable      | Description                                     |
-|---------------|-------------------------------------------------|
-| **ID**        | The ID of the collection.                       |
-| **name**      | Name of the collection.                         |
-| **database**  | ID of the database this collection belongs to.  |
-| **fields**    | Array with the fields in the collection.        |
+| Variable          | Description                                                                               |
+|-------------------|-------------------------------------------------------------------------------------------|
+| **ID**            | The ID of the collection.                                                                 |
+| **name**          | Name of the collection.                                                                   |
+| **database**      | ID of the database this collection belongs to.                                            |
+| **fields**        | Array with the fields in the collection.                                                  |
+| **intentions**    | Array with the intentions for the collection (either 1 or null for email/sms/fax/pdf).    |
 
 ### JSON example
 

@@ -11,16 +11,17 @@ to get the metadata of.
 
 ## Returned fields
 
-| Variable          | Description                                   |
-|-------------------|-----------------------------------------------|
-| **ID**            | Unique numerical identifier of the database.  |
-| **name**          | Name of the database.                         |
-| **description**   | Description of the database.                  |
-| **archived**      | Whether or not the database is archived.      |
-| **created**       | When the database was created.                |
-| **fields**        | Array of fields in the database.              |
-| **interests**     | Array with interests in the database.         |
-| **collections**   | Array with the collections in the database.   |
+| Variable          | Description                                                                           |
+|-------------------|---------------------------------------------------------------------------------------|
+| **ID**            | Unique numerical identifier of the database.                                          |
+| **name**          | Name of the database.                                                                 |
+| **description**   | Description of the database.                                                          |
+| **archived**      | Whether or not the database is archived.                                              |
+| **created**       | When the database was created.                                                        |
+| **fields**        | Array of fields in the database.                                                      |
+| **interests**     | Array with interests in the database.                                                 |
+| **collections**   | Array with the collections in the database.                                           |
+| **intentions**    | Array with the intentions for the database (either 1 or null for email/sms/fax/pdf).  |
 
 Fields, interests and collections are returned as arrays of objects. 
 If you want to know how these arrays are built, you can check out 

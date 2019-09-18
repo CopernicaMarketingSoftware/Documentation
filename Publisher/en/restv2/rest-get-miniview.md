@@ -13,13 +13,16 @@ name of the collection you wish to request the miniselections for.
 
 The method returns a JSON object with the following fields: 
 
-* **ID**: Unique numerical identifier
-* **name**: Name of the selection
-* **description**: Description of the selection
-* **parent-type**: Type of the parent: view or collection
-* **parent-id**: ID of the database or view
-* **collection**: ID of the collection this miniview belongs to
-* **last-built**: Timestamp of last build
+| Variable          | Description                                                                               |
+|-------------------|-------------------------------------------------------------------------------------------|
+| **ID**            | Unique numerical identifier.                                                              |
+| **name**          | Name of the selection.                                                                    |
+| **description**   | Description of the selection.                                                             |
+| **parent-type**   | Type of the parent: view or collection.                                                   |
+| **parent-id**     | ID of the view or collection.                                                             |
+| **collection**    | ID of the collection this selection belongs to.                                           |
+| **last-built**    | Timestamp of the last time the view was built.                                            |
+| **intentions**    | Array with the intentions for the view (either 1 or null for email/sms/fax/pdf).          |
 
 ### JSON example
 
