@@ -26,12 +26,13 @@ Meer informatie over de betekenis van deze parameters vind je in het
 De methode retourneert een JSON object dat de collecties voor de databases 
 bevat onder het 'data' veld. Elke collectie bevat de volgende velden:
 
-| Variabele    | Omschrijving                                      |
-|--------------|---------------------------------------------------|
-| ID           | ID van de collectie.                              |
-| name         | Naam van de collectie.                            |
-| database     | ID van de database waartoe de collectie behoort.  |
-| fields       | Array met de velden in de collectie.              |
+| Variabele         | Omschrijving                                                                      |
+|-------------------|-----------------------------------------------------------------------------------|
+| **ID**            | ID van de collectie.                                                              |
+| **name**          | Naam van de collectie.                                                            |
+| **database**      | ID van de database waartoe de collectie behoort.                                  |
+| **fields**        | Array met de velden in de collectie.                                              |
+| **intentions**    | Array met de intenties voor deze collectie (1 of null voor email/sms/fax/pdf).    |
 
 ### JSON voorbeeld
 

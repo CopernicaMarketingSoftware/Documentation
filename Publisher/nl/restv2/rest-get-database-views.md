@@ -12,9 +12,11 @@ database waar je de selecties van wilt opvragen.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* start: 		eerste database die wordt opgevraagd;
-* limit: 		lengte van de batch die wordt opgevraagd;
-* total: 		toon wel/niet het totaal aantal databases in de output.
+| Variabele | Omschrijving
+|-----------|-----------------------------------------------------------|
+| **start** | Eerste selectie die wordt opgevraagd.                     |
+| **limit** | Lengte van de batch die wordt opgevraagd.                 |
+| **total** | Toon wel/niet het totaal aantal beschikbare selecties.    |
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
@@ -24,16 +26,19 @@ Meer informatie over de betekenis van deze parameters vind je in het
 De methode retourneert een JSON object met selecties onder het **data** veld. 
 Elke selectie bevat de volgende velden:
 
-* **id**: Unieke numerieke identifier van selectie.
-* **name**: Naam van de selectie.
-* **description**: Beschrijving van de selectie.
-* **parent-type**: Type van de parent (view/database).
-* **parent-id**: ID van de parent.
-* **has-children**: Boolean die aangeeft of de selectie zelf selecties bevat.
-* **has-referred**: Boolean die aangeeft of er andere selecties zijn die naar deze selectie refereren.
-* **has-rules**: Boolean die aangeeft of de selectie regels heeft.
-* **database**: ID van de database waar deze selectie onder valt.
-* **last-built**: Tijdstempel laatste bouw van de selectie.
+| Variabele         | Omschrijving                                                                          |
+|-------------------|---------------------------------------------------------------------------------------|
+| **id**            | Unieke numerieke identifier van selectie.                                             |
+| **name**          | Naam van de selectie.                                                                 |
+| **description**   | Beschrijving van de selectie.                                                         |
+| **parent-type**   | Type van de parent (view/database).                                                   |
+| **parent-id**     | ID van de parent.                                                                     |
+| **has-children**  | Boolean die aangeeft of de selectie zelf selecties bevat.                             |
+| **has-referred**  | Boolean die aangeeft of er andere selecties zijn die naar deze selectie refereren.    |
+| **has-rules**     | Boolean die aangeeft of de selectie regels heeft.                                     |
+| **database**      | ID van de database waar deze selectie onder valt.                                     |
+| **last-built**    | Tijdstempel van de laatste bouw van de selectie.                                      |
+| **intentions**    | Array met de intenties voor deze selectie (1 of null voor email/sms/fax/pdf).         |
 
 ### JSON voorbeeld
 

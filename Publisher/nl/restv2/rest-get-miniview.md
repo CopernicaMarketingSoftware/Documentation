@@ -13,13 +13,16 @@ waarvoor je de selecties op wil vragen.
 
 De methode retourneert een JSON object met de volgende eigenschappen:
 
-* **id**:               ID van de miniselectie
-* **name**:             Naam van de miniselectie
-* **description**:      Omschrijving van de miniselectie
-* **parent-type**:      Type van de parent, in dit geval 'collection'
-* **parent-id**:        ID van de parent van de miniselectie, in dit geval de collection ID
-* **collection**:       ID van de collectie waar deze miniselectie onder valt
-* **last-built**:       Tijdstempel van laatste miniselectie bouw
+| Variabele         | Omschrijving                                                                      |
+|-------------------|-----------------------------------------------------------------------------------|
+| **id**            | ID van de miniselectie.                                                           |
+| **name**          | Naam van de miniselectie.                                                         |
+| **description**   | Omschrijving van de miniselectie.                                                 |
+| **parent-type**   | Type van de parent, in dit geval 'collection'.                                    |
+| **parent-id**     | ID van de parent van de miniselectie, in dit geval de collection ID.              |
+| **collection**    | ID van de collectie waar deze miniselectie onder valt.                            |
+| **last-built**    | Tijdstempel van laatste opbouw van de miniselectie.                               |
+| **intentions**    | Array met de intenties voor deze miniselectie (1 of null voor email/sms/fax/pdf). |
 
 ### JSON voorbeeld
 
