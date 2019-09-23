@@ -1,6 +1,6 @@
-# Function MQ_TimerStart
+# Function MQ_startTimer
 
-This function starts a timer. When the given time runs out, the callback will be invoked, unless the timer is stopped first with [MQ_TimerStop](mq_timerstop).
+This function starts a timer. When the given time runs out, the callback will be invoked, unless the timer is stopped first with [MQ_stopTimer](mq_stoptimer).
 
 ```c
 /**
@@ -11,11 +11,11 @@ This function starts a timer. When the given time runs out, the callback will be
  *  @param  callback    the callback to invoke when the timer runs out
  *  @param  data        customer user data to provide to the callback
  */
-MQ_Timer *MQ_TimerStart(MQ_Context *context, float timeout, void(*callback)(void *data), void *data);
+MQ_Timer *MQ_startTimer(MQ_Context *context, float timeout, void(*callback)(void *data), void *data);
 
 ```
 
-Using timer functionality, we can amend the example for the [MQ_IOWatch](mq_context#mq_iowatch) function so that it times out when no input is entered for at least five seconds.
+Using timer functionality, we can amend the example for the [MQ_ioWatch](mq_context#mq_iowatch) function so that it times out when no input is entered for at least five seconds.
 
 ```c
 #include <mailerq.h>
@@ -102,7 +102,7 @@ void timer_callback(void *data)
 
     // we did not receive any input for 5 seconds
     // so we stop listening to input
-    MQ_IOUnwatch(timers->io);
+    MQ_ioUnwatch(timers->io);
 
     // and free the timers
     free(timers);
@@ -122,10 +122,10 @@ void monitor(MQ_Context *context)
     timers->context = context;
 
     // monitor stdin for input
-    timers.io = MQ_IOWatch(context, STDIN, MQ_READ, callback, timers);
+    timers.io = MQ_ioWatch(context, STDIN, MQ_READ, callback, timers);
 
     // and stop monitoring after five seconds
-    timers.timer = MQ_TimerStart(context, 5.0, timer_callback, timers);
+    timers.timer = MQ_startTimer(context, 5.0, timer_callback, timers);
 }
 
 ```
