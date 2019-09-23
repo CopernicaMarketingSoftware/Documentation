@@ -29,7 +29,7 @@ MQ_EXPORT bool mq_smtp_out_data(MQ_Context *context, MQ_Connection *connection, 
     // to send a message, so this cannot be changed).
 
     // if we return true here, MailerQ will stop processing this message
-    // until either the MQ_Complete, MQ_Continue or MQ_Retry function is
+    // until either the MQ_complete, MQ_continue or MQ_retry function is
     // called. if none of the functions is called, MailerQ will wait for the
     // remote server to close the connection and mark it as an error.
     return true;
