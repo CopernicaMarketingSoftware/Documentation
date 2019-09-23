@@ -6,7 +6,7 @@ MailerQ has a non-blocking nature, and uses callbacks to [pass control to a plug
 *   Tell MailerQ to skip all other plugins
 *   Tell MailerQ to call the first plugin again
 
-The [MQ_continue()](mq_complete) implements the second behavior. If you call it, MailerQ will skip all subsequent plugins and continues with its original algorithm.
+The [MQ_complete()](mq_complete) implements the second behavior. If you call it, MailerQ will skip all subsequent plugins and continues with its original algorithm.
 
 ````c
 /**

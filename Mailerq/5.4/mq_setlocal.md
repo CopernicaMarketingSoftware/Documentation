@@ -1,4 +1,4 @@
-# Function MQ_SetLocal
+# Function MQ_setLocal
 
 Incoming messages are published to either the local message queue, or 
 to the regular inbox queue. In a normal setup, this is normally used

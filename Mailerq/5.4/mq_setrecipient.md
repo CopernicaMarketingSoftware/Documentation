@@ -1,4 +1,4 @@
-# Function MQ_SetRecipient
+# Function MQ_setRecipient
 
 If you want to change the recipient address that is associated with a
 [MQ_Message](mq_message), you can use this function. This function allows you to store a new recipient address in a message.

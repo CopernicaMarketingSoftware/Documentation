@@ -1,8 +1,8 @@
 # Cluster configuration
 
 If you run multiple MailerQ instances, you can set up a MailerQ cluster. 
-All instances will so be aware of the other running MailerQ servers,
-and share information and hand over undeliverable messages. 
+All instances will be aware of the other running MailerQ servers,
+share information and hand over undeliverable messages. 
 Setting up a cluster has many advantages:
 
 - the management console of each MailerQ instance has links to the other instances
@@ -49,7 +49,7 @@ It is also recommended to use the same relational database for each instance.
 By doing this, the instances use the same delivery throttles and DKIM keys.
 
 If your RabbitMQ server supports secure connections, you can configure MailerQ
-to connect to a "amqps://" address instead. The communication between MailerQ
+to connect to an "amqps://" address instead. The communication between MailerQ
 and RabbitMQ will then be encrypted.
 
 ```
@@ -69,8 +69,8 @@ config file option "cluster-verify" to "false".
 
 All instances create a private message queue in RabbitMQ and bind this private
 queue to the cluster exchange. By doing this, each MailerQ instance receives all 
-messages that are published by the other instances. Each instances also periodically 
-sends it's local IP addresses and some other configuration settings to this exchange. 
+messages that are published by the other instances. Each instance also periodically 
+sends its local IP addresses and some other configuration settings to this exchange. 
 The announcement messages end up in all the private queues of the instances, and 
 everyone in the cluster receives information about everyone.
 
@@ -83,8 +83,8 @@ can reload the delivery limits from the database.
 
 Be aware that both RabbitMQ and MailerQ support clustering, but that from a 
 technical standpoint this clustering has a whole different meaning. Clustering for 
-RabbitMQ means that queues are shared amongst different RabbitMQ instances, so that 
-no messages are lost when one of the RabbitMQ servers crash.
+RabbitMQ means that queues are mirrored across different RabbitMQ instances, so that 
+no messages are lost when one of the RabbitMQ servers crashes.
 
 For MailerQ clustering means something different: the individual servers communicate
 and share data with each other, but it does not necessarily mean that emails will
@@ -109,10 +109,10 @@ $ mailerq --list-cluster
 
 If you start MailerQ like this, it will connect to the cluster and wait for one
 second. All the MailerQ instances that announce themselves within that second
-are displayed. This are normally all instances. However, if your servers or internal
-network is overloaded, the 1 second period could be too limited. In that case you
-can change the "cluster-timeout" variable to use a different timeout. This setting
-can be set in the config file or via the command line:
+are displayed. Normally, all instances in the cluster report within this timeout.
+However, if your servers or internal network is overloaded, the 1 second period
+could be too limited. In that case you can change the "cluster-timeout" variable
+to use a different timeout. This setting can be set in the config file or via the command line:
 
 ```
 $ mailerq --list-cluster --cluster-timeout=5

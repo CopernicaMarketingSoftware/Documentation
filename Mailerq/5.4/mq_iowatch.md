@@ -1,4 +1,4 @@
-# Function MQ_IOWatch
+# Function MQ_ioWatch
 
 This function will start monitoring a file descriptor for the requested events.
 When one (or more) of these events occur, the given callback will be invoked.

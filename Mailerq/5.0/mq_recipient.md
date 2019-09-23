@@ -1,4 +1,4 @@
-# Function MQ_Recipient
+# Function MQ_recipient
 
 If you want to retrieve the recipient from a [MQ_Message](mq_message), you can use this function for it.
 It returns a NULL terminated string, or simply NULL if no recipient has been set.
@@ -17,4 +17,4 @@ This function has a different behavior if you call it on a message _that is bein
 
 For outgoing messages however, the recipient set in the JSON and the recipient that is returned by this function may be different. This function returns the recipient that is actually being used in the SMTP protocol for the "RCPT TO" instruction, and could be different than the one that was originally loaded from RabbitMQ (for example, when a plugin modified the recipient in the mean time).
 
-For more info, see the documentation about [MQ_SetRecipient](mq_setrecipient).
+For more info, see the documentation about [MQ_setRecipient](mq_setrecipient).

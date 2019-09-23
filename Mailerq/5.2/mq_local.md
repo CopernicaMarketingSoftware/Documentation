@@ -14,5 +14,5 @@ boolean.
 bool MQ_local(MQ_Message *message);
 ````
 
-For more info, see the documentation about [MQ_SetLocal](mq_setlocal).
+For more info, see the documentation about [MQ_setLocal](mq_setlocal).
 

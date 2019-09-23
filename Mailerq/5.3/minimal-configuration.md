@@ -29,8 +29,8 @@ one RabbitMQ server fails.
 
 ## Database address
 
-MailerQ stores all runtime settings in a relational database. This can be a Mysql,
-MariaDB, PostgreSql or Sqlite3 database. The Sqlite3 database is by far the
+MailerQ stores all runtime settings in a relational database. This can be a MySQL,
+MariaDB, PostgreSQL or SQLite3 database. The SQLite3 database is by far the
 easiest one to set up, because it does not require a database server
 and all you have to do is just enter the path to a file on your server where 
 MailerQ can store its runtime settings. This file does not even have to exist 

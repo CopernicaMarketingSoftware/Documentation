@@ -14,4 +14,4 @@ void MQ_resetTimer(MQ_Timer *timer, float timeout);
 
 ```
 
-For a detailed example, see [MQ_startTimer](mq_timerstart)
+For a detailed example, see [MQ_startTimer](mq_starttimer)

@@ -12,4 +12,4 @@ void MQ_stopTimer(MQ_Timer *timer);
 
 ```
 
-For a detailed example, see [MQ_startTimer](mq_timerstart)
+For a detailed example, see [MQ_startTimer](mq_starttimer)

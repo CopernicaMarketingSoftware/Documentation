@@ -1,4 +1,4 @@
-# Function MQ_SetEnvelope
+# Function MQ_setEnvelope
 
 If you want to change the envelope address that is associated with a
 [MQ_Message](mq_message), you can use this function. This function allows you to store a new envelope address in a message.

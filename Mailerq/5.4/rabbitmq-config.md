@@ -342,7 +342,7 @@ much, much faster than storing the messages to disk. It does however bring a hig
 risk, because if RabbitMQ crashes, the messages will be lost. Turning on persistency will 
 mean your messages are also saved to disk, and can survive a RabbitMQ crash. But at 
 the same time it makes things much slower. We therefore recommend leaving the 
-"rabbitmq-persistent" option off (set to "false").  Note that if you _do_ turn it on, 
+"rabbitmq-persistent" option off (set to "false"). Note that if you _do_ turn it on, 
 durable queues should also be turned on. Persistent messages are still lost if the queue 
 is not durable, because the queue no longer exists.
 

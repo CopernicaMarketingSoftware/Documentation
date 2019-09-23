@@ -1,6 +1,6 @@
 # Function MQ_stopTimer
 
-This function stops a timer that was previously created. Note that this function should only be called to stop a timer that has not yet fired yet, because a timer will automatically be cleaned up and calling MQ_stipTimer after this is not legal.
+This function stops a timer that was previously created. Note that this function should only be called to stop a timer that has not yet fired yet, because a timer will automatically be cleaned up and calling MQ_stopTimer after this is not legal.
 
 ```c
 /**

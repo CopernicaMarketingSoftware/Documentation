@@ -1,4 +1,4 @@
-# Function MQ_SetMime
+# Function MQ_setMime
 
 If you want to change the MIME data that is associated with a [MQ_Message](mq_message), you can use this function. This function sets the MIME data.
 
