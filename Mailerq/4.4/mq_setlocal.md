@@ -17,7 +17,7 @@ be published to the local message queue.
  *  @param  message     the message to change
  *  @param  local       new setting
  */
-void MQ_SetLocal(MQ_Message *message, bool local);
+void MQ_setLocal(MQ_Message *message, bool local);
 ````
 
 This function is only meaningful for incoming messages. You can call it

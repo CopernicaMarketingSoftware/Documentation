@@ -11,7 +11,7 @@ boolean.
  *  @param  message the message to retrieve the setting from
  *  @return         the local setting
  */
-bool MQ_Local(MQ_Message *message);
+bool MQ_local(MQ_Message *message);
 ````
 
 For more info, see the documentation about [MQ_SetLocal](mq_setlocal).

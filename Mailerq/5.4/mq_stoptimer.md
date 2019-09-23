@@ -1,6 +1,6 @@
-# Function MQ_TimerStop
+# Function MQ_stopTimer
 
-This function stops a timer that was previously created. Note that this function should only be called to stop a timer that has not yet fired yet, because a timer will automatically be cleaned up and calling MQ_TimerStop after this is not legal.
+This function stops a timer that was previously created. Note that this function should only be called to stop a timer that has not yet fired yet, because a timer will automatically be cleaned up and calling MQ_stopTimer after this is not legal.
 
 ```c
 /**
@@ -8,8 +8,8 @@ This function stops a timer that was previously created. Note that this function
  *
  *  @param  timer   the timer to stop
  */
-void MQ_TimerStop(MQ_Timer *timer);
+void MQ_stopTimer(MQ_Timer *timer);
 
 ```
 
-For a detailed example, see [MQ_TimerStart](mq_timerstart)
+For a detailed example, see [MQ_startTimer](mq_timerstart)

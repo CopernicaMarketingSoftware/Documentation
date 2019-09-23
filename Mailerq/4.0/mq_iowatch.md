@@ -13,7 +13,7 @@ When one (or more) of these events occur, the given callback will be invoked.
  *  @param  callback    callback to invoke when one or more of the events occur
  *  @param  data        custom data to supply to the callback
  */
-MQ_IOWatcher *MQ_IOWatch(MQ_Context *context, int fd, int events, void(*callback)(MQ_IOWatcher *watcher, int fd, int events, void *data), void *data);
+MQ_IOWatcher *MQ_ioWatch(MQ_Context *context, int fd, int events, void(*callback)(MQ_IOWatcher *watcher, int fd, int events, void *data), void *data);
 ````
 
 As an example, we will read from the standard input until an empty line is found, at which point we will stop listening to the input. This example makes no sense for a MailerQ plugin, but will illustrate the point.
@@ -57,7 +57,7 @@ void callback(MQ_IOWatcher *watcher, int fd, int events, void *data)
     if (length == 2)
     {
         // stop watching the file descriptor
-        MQ_IOUnwatch(watcher);
+        MQ_ioUnwatch(watcher);
     }
     else
     {
@@ -73,6 +73,6 @@ void callback(MQ_IOWatcher *watcher, int fd, int events, void *data)
 void monitor(MQ_Context *context)
 {
     // monitor stdin for input
-    MQ_IOWatch(context, STDIN, MQ_READ, callback, NULL);
+    MQ_ioWatch(context, STDIN, MQ_READ, callback, NULL);
 }
 ````

@@ -22,14 +22,14 @@ This method is designed to run asynchronously. You should not execute any blocki
 MQ_EXPORT bool mq_smtp_out_data(MQ_Context *context, MQ_Connection *connection, MQ_Message *message) {
     // in most cases, plugins implementing this function will alter the
     // message contents before it is sent. for this, you can use the
-    // MQ_SetMime() function. other message properties can of
+    // MQ_setMime() function. other message properties can of
     // course also be updated, but at this stage in the sending process
     // it most likely won't matter (we have already connected to the
     // SMTP server and have given it the email address to which we want
     // to send a message, so this cannot be changed).
 
     // if we return true here, MailerQ will stop processing this message
-    // until either the MQ_Complete, MQ_Continue or MQ_Retry function is
+    // until either the MQ_complete, MQ_continue or MQ_retry function is
     // called. if none of the functions is called, MailerQ will wait for the
     // remote server to close the connection and mark it as an error.
     return true;

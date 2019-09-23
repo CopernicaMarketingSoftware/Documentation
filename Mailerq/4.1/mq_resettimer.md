@@ -1,4 +1,4 @@
-# Function MQ_TimerReset
+# Function MQ_resetTimer
 
 This function is used to reset the timeout for a given timer without having to destroy and recreate the timer. 
 This function may not be called on a timer that has already expired.
@@ -10,8 +10,8 @@ This function may not be called on a timer that has already expired.
  *  @param  timer   the timer to reset
  *  @param  timeout the new timeout for the timer
  */
-void MQ_TimerReset(MQ_Timer *timer, float timeout);
+void MQ_resetTimer(MQ_Timer *timer, float timeout);
 
 ```
 
-For a detailed example, see [MQ_TimerStart](mq_timerstart)
+For a detailed example, see [MQ_startTimer](mq_timerstart)

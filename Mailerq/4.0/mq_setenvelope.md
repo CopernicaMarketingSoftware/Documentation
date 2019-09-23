@@ -11,7 +11,7 @@ If you want to change the envelope address that is associated with a
  *  @param  envelope    actual envelope address
  *  @param  size        length of the envelope string
  */
-void MQ_SetEnvelope(MQ_Message *message, const char *envelope, size_t size);
+void MQ_setEnvelope(MQ_Message *message, const char *envelope, size_t size);
 
 This function has a different behavior if you call it on a message _that is being received_ and on a message _that is being sent_. If you call it on a message that is being received, for example inside your [mq_smtp_in_message()](mq_smtp_in_message) function, it is simply an alias for setting the "envelope" property in the JSON. Changing the envelope address by calling this function, will also change the JSON that is going to be published to RabbitMQ.
 
