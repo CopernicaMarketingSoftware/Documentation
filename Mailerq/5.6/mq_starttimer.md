@@ -15,7 +15,7 @@ MQ_Timer *MQ_startTimer(MQ_Context *context, float timeout, void(*callback)(void
 
 ```
 
-Using timer functionality, we can amend the example for the [MQ_ioWatch](mq_context#mq_iowatch) function so that it times out when no input is entered for at least five seconds.
+Using timer functionality, we can amend the example for the [MQ_ioWatch](mq_iowatch) function so that it times out when no input is entered for at least five seconds.
 
 ```c
 #include <mailerq.h>
@@ -75,10 +75,10 @@ void io_callback(MQ_IOWatcher *watcher, int fd, int events, void *data)
     if (length == 2)
     {
         // stop watching the file descriptor
-        MQ_IOUnwatch(watcher);
+        MQ_ioUnwatch(watcher);
 
         // deactive the timer
-        MQ_TimerStop(timers->timer);
+        MQ_stopTimer(timers->timer);
 
         // clean up the timers
         free(timers);
@@ -86,7 +86,7 @@ void io_callback(MQ_IOWatcher *watcher, int fd, int events, void *data)
     else
     {
         // reset the timer to five seconds
-        MQ_TimerReset(timers->timer, 5.0);
+        MQ_resetTimer(timers->timer, 5.0);
     }
 }
 
