@@ -38,9 +38,7 @@ cluster-exchange:       cluster
 
 Both cluster settings are optional. If you leave them empty, the exchange 
 "cluster" is used, and the same server address as is set in the 
-"rabbitmq-address" setting. Note that the cluster exchange setting may not be the same
-as the "rabbit-address" setting, because the cluster type is different from the normal
-exhange type. This is so that cluster messages are spread out to all nodes in the cluster.
+"rabbitmq-address" setting.
 
 It is important that every running MailerQ instance _uses the same cluster settings_. 
 Even when your instances all have their own private RabbitMQ server, the instances 

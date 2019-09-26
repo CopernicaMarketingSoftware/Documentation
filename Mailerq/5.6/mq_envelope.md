@@ -1,4 +1,4 @@
-# Function MQ_Envelope
+# Function MQ_envelope
 
 If you want to retrieve the envelope from a [MQ_Message](mq_message), you can 
 use this function for it. It returns a pointer to a [MQ_Address](mq_address)

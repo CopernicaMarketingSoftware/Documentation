@@ -1,4 +1,4 @@
-# Function MQ_SetRecipient
+# Function MQ_setRecipient
 
 If you want to change the recipient address that is associated with a
 [MQ_Message](mq_message), you can use this function. This function allows you to store a new recipient address in a message.
@@ -11,7 +11,7 @@ If you want to change the recipient address that is associated with a
  *  @param  recipient   actual recipient address
  *  @param  size        length of the recipient string
  */
-void MQ_SetRecipient(MQ_Message *message, const char *recipient, size_t size);
+void MQ_setRecipient(MQ_Message *message, const char *recipient, size_t size);
 ````
 
 This function has a different behavior if you call it on a message _that is being received_ and on a message _that is being sent_. If you call it on a message that is being received, for example inside your [mq_smtp_in_message()](mq_smtp_in_message) function, it is simply an alias for setting the "recipient" property in the JSON. Changing the recipient address by calling this function, will also change the JSON that is going to be published to RabbitMQ.

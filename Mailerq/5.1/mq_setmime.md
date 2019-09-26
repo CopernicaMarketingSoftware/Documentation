@@ -1,4 +1,4 @@
-# Function MQ_SetMime
+# Function MQ_setMime
 
 If you want to change the MIME data that is associated with a [MQ_Message](mq_message), you can use this function. This function sets the MIME data.
 
@@ -10,7 +10,7 @@ If you want to change the MIME data that is associated with a [MQ_Message](mq_me
  *  @param  mime        actual mime string
  *  @param  size        length of the mime string
  */
-void MQ_SetMime(MQ_Message *message, const char *mime, size_t size);
+void MQ_setMime(MQ_Message *message, const char *mime, size_t size);
 ````
 
 This function has a different behavior if you call it on a message _that is being received_ and on a message _that is being sent_. If you call it on a message that is being received, for example inside your [mq_smtp_in_message()](mq_smtp_in_message) function, it is simply an alias for setting the "mime" property in the JSON. Changing the MIME by calling this function, will also change the JSON that is going to be published to RabbitMQ.

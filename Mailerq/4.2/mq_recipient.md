@@ -10,7 +10,7 @@ It returns a NULL terminated string, or simply NULL if no recipient has been set
  *  @param  message the message to retrieve the recipient from
  *  @return         the recipient
  */
-const char *MQ_Recipient(MQ_Message *message);
+const char *MQ_recipient(MQ_Message *message);
 ````
 
 This function has a different behavior if you call it on a message _that is being received_ and on a message _that is being sent_. If you call it on a message that is being received, for example inside your [mq_smtp_in_message()](mq_smtp_in_message) function, it is simply an alias for retrieving the "recipient" property from the JSON.

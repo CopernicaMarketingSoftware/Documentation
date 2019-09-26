@@ -34,7 +34,7 @@ rabbitmq-address: amqp://guest:guest@host1/vhost,amqp://guest:guest@host2/vhost,
 Running a cluster allows you to use [highly available queues](https://www.rabbitmq.com/ha.html).
 
 If your RabbitMQ server supports secure connections, you can configure MailerQ
-to connect to a "amqps://" address instead. The communication between MailerQ
+to connect to an "amqps://" address instead. The communication between MailerQ
 and RabbitMQ will then be encrypted.
 
 ```
@@ -90,12 +90,11 @@ automatically picks them up and delivers them.
 
 Watch out if you run multiple MailerQ instances. If the individual instances
 all send out mail from different IP addresses (because they run on different
-servers), it is better to use different outbox queues. Every MailerQ instance
+servers), it is better to use a different outbox queue for every instance. Every MailerQ instance
 consumes messages from its own queue. You must then also ensure that you publish
-messages to the right queue to have them being sent from the right server.
-But don't worry for mistakes. If you've set up a [MailerQ cluster](cluster),
-messages are automatically moved to the correct queue if they end up in a
-wrong outbox queue.
+messages to the right queue to have them being sent from the right server. If you've 
+set up a [MailerQ cluster](cluster), messages are automatically moved to the correct 
+queue if they end up in a wrong outbox queue.
 
 
 ### Queues for incoming messages
@@ -144,9 +143,9 @@ in the "inbox" queue but goes to the "reports" queue instead. To summarize:
 * reports queue: incoming messages for local recipients that contain a delivery report
 * refused queue: incoming messages that were not accepted
 
-The last queue to mention is the "refused" queue. It is used for message that
+The last queue to mention is the "refused" queue. It is used for messages that
 were not accepted. For example, if you configure MailerQ to listen to one or 
-more SMTP ports, and you require incoming connections to authenticate, you might 
+more SMTP ports, and you require incoming connections to be authenticated, you might 
 receive messages over unauthenticated connections. These messages are rejected and
 do not end up in the "inbox" queue. However, for debugging and/or 
 security reasons you might still want to find out who is flooding your SMTP 
@@ -271,7 +270,7 @@ rabbitmq-exchange: your_exchange
 ```
 
 To understand why you would need a custom exchange, you need a litte more
-insight knowledge of RabbitMQ. Although we constantly write that MailerQ publishes 
+inside knowledge of RabbitMQ. Although we constantly write that MailerQ publishes 
 message to specific queues, this is not exactly how RabbitMQ internally works. RabbitMQ 
 does not allow messages to be published directly to message queues. Instead, 
 it wants messages to be published to an exchange. The exchange then forwards the 
@@ -281,7 +280,7 @@ we actually mean that "MailerQ publishes a message to the exchange, and uses *th
 of the inbox queue* as the routing key so that the message *ends up in the inbox queue*." 
 In the end, the result is the same.
 
-To be fair, this exchange-routingkey-queue architecture can be pretty powerful. It 
+This exchange-routingkey-queue architecture can be pretty powerful. It 
 for example allows you to create your own (temporary) queue and bind it to 
 the same exchange as the outbox queue so that a *copy* of each message that goes
 to the outbox queue ends up in your private queue too. This allows you to monitor 
@@ -338,7 +337,9 @@ much, much faster than storing the messages to disk. It does however bring a hig
 risk, because if RabbitMQ crashes, the messages will be lost. Turning on persistency will 
 mean your messages are also saved to disk, and can survive a RabbitMQ crash. But at 
 the same time it makes things much slower. We therefore recommend leaving the 
-"rabbitmq-persistent" option off (set to "false"). 
+"rabbitmq-persistent" option off (set to "false"). Note that if you _do_ turn it on, 
+durable queues should also be turned on. Persistent messages are still lost if the queue 
+is not durable, because the queue no longer exists.
 
 
 ## Multiple threads
@@ -349,8 +350,8 @@ inbox queue and threads for publishing messages to the result queues and/or
 back to the outbox queue.
 
 You can specify in the config file that you want to start up multiple consumer
-and or multiple publisher threads. If you notice that the consumer of publisher
-threads are CPU bound, you can configure MailerQ to start up more queues.
+and/or multiple publisher threads. If you notice that the consumer of publisher
+threads are CPU bound, you can configure MailerQ to start up more threads.
 
 ```
 rabbitmq-consumers:     1 (default: 1)

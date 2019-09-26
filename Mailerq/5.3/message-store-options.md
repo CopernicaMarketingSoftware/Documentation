@@ -1,8 +1,8 @@
 # Message store options
 
 To reduce the load on RabbitMQ, MailerQ can use an external message store. 
-Only the email meta data (like the recipient, the envelope address, et cetera) 
-has then to be stored in the JSON object in RabbitMQ, while the full MIME 
+In this case, only email metadata (the recipient, the envelope address, et cetera) 
+has to be stored in the JSON object in RabbitMQ, while the full MIME 
 data can be stored in the message store.
 
 ```
@@ -61,10 +61,8 @@ the address string.
 
 [Click here for the MongoDB documentation](https://docs.mongodb.org/manual/reference/connection-string/)
 
-Some of our issues ran into issues with fetch operations. They reported 
-strange hiccups and that MailerQ did not always succeed in fetching data, 
-even when it is available. We've added a quick and dirty fix for this by 
-simply repeating the fetch operation a couple of times in case of a failure. 
+Sometimes MongoDB cannot succesfully retrieve data, even though it is available.
+In this case, it is useful to repeat the fetch operation a couple of times.
 To enable this feature, you can add a special option to the address:
 
 ````
@@ -96,7 +94,7 @@ Most mails are less than 16mb big. So you will mostly see *regular messages*
 in the database with the following properties:
 
 * **_id**: unique message identifier
-* **value**: the full mime message, normally stored as utf8 data
+* **value**: the full mime message, normally stored as UTF-8 data
 * **expire**: expiration timestamp
 * **modified**: last modified timestamp
 * **encoding**: either "gzip" or "identity"
@@ -123,7 +121,7 @@ Each individual part of a big message has the following properties:
 ## Directory specifics
 
 If you use the "directory://" storage backend, MailerQ stores all the
-messages in seperate files on the file system. To prevent that the number of
+messages in separate files on the file system. To prevent that the number of
 files in a directory becomes too big, MailerQ creates a nested directory 
 structure. By default, this directory structure is four files deep. If you
 want to use a different depth, you can specify this via a "depth" parameter:
@@ -158,7 +156,7 @@ starting storage operations.
 Before MailerQ publishes a message to RabbitMQ (for example, before it
 sends a received message to the inbox queue, or before it send a delayed
 message back to the outbox queue) it checks the storage policy to see
-whether the mime data should be sent to RabbitMQ too, or that the mime
+whether the mime data should be sent to RabbitMQ too, or whether the mime
 data should be stored in a different storage system.
 
 If you want all messages to be stored in the message store, use the "all"
@@ -192,7 +190,7 @@ likely to be pumped around between MailerQ and RabbitMQ for a number of times.
 Only "all", "out" and "none" are meaningful policies. For completeness however,
 we also support the "in" property which does exactly the opposite as the "out"
 policy: all incoming messages are stored in the message store, and only
-meta data is published to RabbitMQ. However, when a mail is delayed and
+metadata is published to RabbitMQ. However, when a mail is delayed and
 has to be published back to the outbox, the mime data is kept inside RabbitMQ.
 
 

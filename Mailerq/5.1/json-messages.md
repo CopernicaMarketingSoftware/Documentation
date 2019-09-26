@@ -161,9 +161,6 @@ an idea of a possible valid JSON input, consider this:
                 "type": "image",
                 "src": "http://www.example.com/logo.png"
             }, {
-                "type": "feed",
-                "source": "http://rss.cnn.com/rss/edition.rss"
-            }, {
                 "type": "button",
                 "label": "Click the button!",
                 "link": {
@@ -180,7 +177,7 @@ an idea of a possible valid JSON input, consider this:
 ````
 
 The number of options is huge. You can construct responsive emails using
-images, HTML text, RSS feeds, social media, et cetera. MailerQ downloads
+images, HTML text, social media, et cetera. MailerQ downloads
 all the resources and converts the JSON code into a valid MIME strings.
 
 For more information about the supported JSON properties nested under the 

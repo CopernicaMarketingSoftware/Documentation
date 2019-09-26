@@ -22,7 +22,7 @@ MQ_EXPORT void mq_context_initialize([MQ_Context](mq_context) *context) {
     // TODO: connect here and do other useful stuff
 
     // store the connection so it can be used in later callbacks
-    MQ_SetContextData(context, connection);
+    MQ_setContextData(context, connection);
 }
 ````
 
