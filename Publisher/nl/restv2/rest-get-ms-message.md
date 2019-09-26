@@ -11,7 +11,11 @@ Je kunt de methode om een Publisher bericht op te vragen [hier](./rest-get-publi
 
 ## Geretourneerde waarde
 
-Een JSON met de algemene informatie.
+* **ID**: Unieke identifier van het bericht.
+* **timestampsent**: Tijdstempel van versturen van het bericht.
+* **profile**: Corresponderend profiel ID.
+* **subprofile**: Corresponderend subprofiel ID.
+* **mailing**: ID van de mailing die bij dit bericht hoort.
 
 ## PHP Voorbeeld
 

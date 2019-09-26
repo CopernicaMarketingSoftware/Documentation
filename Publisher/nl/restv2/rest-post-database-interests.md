@@ -16,7 +16,7 @@ De volgende variabelen kunnen in de body van de HTTP POST call worden geplaats.
 * **name**: Naam van de nieuw aan te maken interesse (verplicht)
 * **group**: Optionele groepnaam. Interesses met dezelfde groepnaam worden bij elkaar gezet in de user interface
 
-## Voorbeeld
+## PHP voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
@@ -35,7 +35,6 @@ $data = array(
 
 // voer het verzoek uit
 $api->post("database/{$databaseID}/interests", $data);
-// bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
