@@ -18,7 +18,7 @@ The method returns a JSON object with the following fields:
 | **ID**            | Unique numerical identifier.                                                              |
 | **name**          | Name of the selection.                                                                    |
 | **description**   | Description of the selection.                                                             |
-| **parent-type**   | Type of the parent: view or collection.                                                   |
+| **parent-type**   | Type of the parent: collection in this case.                                              |
 | **parent-id**     | ID of the view or collection.                                                             |
 | **collection**    | ID of the collection this selection belongs to.                                           |
 | **last-built**    | Timestamp of the last time the view was built.                                            |

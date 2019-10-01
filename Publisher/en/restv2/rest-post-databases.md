@@ -9,9 +9,9 @@ After a successful call the ID of the created request is returned.
 
 ## Available parameters
 
-- **name**: name of the new database
-- **description**: optional description of the database
-- **archived**: optional boolean value to archive the database upon creation
+* **name**: name of the new database
+* **description**: optional description of the database
+* **archived**: optional boolean value to archive the database upon creation
 
 ## PHP example
 
@@ -40,5 +40,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-- [Overview of all API methods](rest-api)
-- [GET databases](rest-get-databases)
+* [Overview of all API methods](rest-api)
+* [GET databases](rest-get-databases)

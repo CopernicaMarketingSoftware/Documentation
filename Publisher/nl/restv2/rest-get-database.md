@@ -11,16 +11,17 @@ van een database.
 
 ## Geretourneerde velden
 
-| Variabele         | Omschrijving                                                     |
-|-------------------|------------------------------------------------------------------|
-| **id**            | Unieke identifier van de database.                               |
-| **name**          | Naam van de database;                                            |
-| **description**   | Omschrijving van de database;                                    |
-| **archived**      | Geeft aan of de database wel (1) of niet (null) gearchiveerd is. |
-| **created**       | Tijdstip waarop de database is aangemaakt.                       |
-| **fields**        | Array met de fields in de database.                              |
-| **interests**     | Array met de interests in de database.                           |
-| **collections**   | Array met de collections in de database.                         |
+| Variabele         | Omschrijving                                                                  |
+|-------------------|-------------------------------------------------------------------------------|
+| **id**            | Unieke identifier van de database.                                            |
+| **name**          | Naam van de database.                                                         |
+| **description**   | Omschrijving van de database.                                                 |
+| **archived**      | Geeft aan of de database wel (1) of niet (null) gearchiveerd is.              |
+| **created**       | Tijdstip waarop de database is aangemaakt.                                    |
+| **fields**        | Array met de fields in de database.                                           |
+| **interests**     | Array met de interests in de database.                                        |
+| **collections**   | Array met de collections in de database.                                      |
+| **intentions**    | Array met de intenties voor deze database (1 of null voor email/sms/fax/pdf). |
                                                                               
 Het is ook mogelijk om apart informatie over fields, interests en             
 collections op te vragen. In de onderstaande artikelen kun je ook zien 

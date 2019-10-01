@@ -13,9 +13,11 @@ collectie waar je de miniselecties van wilt opvragen.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **start**: eerste miniselectie die wordt opgevraagd
-* **limit**: lengte van de batch die wordt opgevraagd
-* **total**: toon wel/niet het totaal aantal beschikbare miniselecties
+| Variabele | Omschrijving
+|-----------|---------------------------------------------------------------|
+| **start** | Eerste miniselectie die wordt opgevraagd.                     |
+| **limit** | Lengte van de batch die wordt opgevraagd.                     |
+| **total** | Toon wel/niet het totaal aantal beschikbare miniselecties.    |
 
 Meer informatie over de betekenis van deze parameters vind je in het
 [artikel over paging](rest-paging).
@@ -25,13 +27,16 @@ Meer informatie over de betekenis van deze parameters vind je in het
 De methode retourneert een JSON object met miniselecties onder het **data** 
 veld. Voor elke selectie worden de volgende eigenschappen teruggegeven:
 
-* **id**:               ID van de miniselectie
-* **name**:             Naam van de miniselectie
-* **description**:      Omschrijving van de miniselectie
-* **parent-type**:      Type van de parent, in dit geval 'collection'
-* **parent-id**:        ID van de parent van de miniselectie, in dit geval de collection ID
-* **collection**:       ID van de collectie waar deze miniselectie onder valt
-* **last-built**:       Tijdstempel van laatste miniselectie bouw
+| Variabele         | Omschrijving                                                                      |
+|-------------------|-----------------------------------------------------------------------------------|
+| **id**            | ID van de miniselectie.                                                           |
+| **name**          | Naam van de miniselectie.                                                         |
+| **description**   | Omschrijving van de miniselectie.                                                 |
+| **parent-type**   | Type van de parent, in dit geval 'collection'.                                    |
+| **parent-id**     | ID van de parent van de miniselectie, in dit geval de collection ID.              |
+| **collection**    | ID van de collectie waar deze miniselectie onder valt.                            |
+| **last-built**    | Tijdstempel van laatste opbouw van de miniselectie.                               |
+| **intentions**    | Array met de intenties voor deze miniselectie (1 of null voor email/sms/fax/pdf). |
 
 ### JSON voorbeeld
 

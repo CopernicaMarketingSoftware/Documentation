@@ -12,16 +12,19 @@ database waarvan de selecties moeten worden opgevraagd.
 
 De methode retourneert een JSON object met de volgende velden:
 
-* **id**: Unieke numerieke identifier van selectie.
-* **name**: Naam van de selectie.
-* **description**: Beschrijving van de selectie.
-* **parent-type**: Type van de parent (view/database).
-* **parent-id**: ID van de parent.
-* **has-children**: Boolean die aangeeft of de selectie zelf selecties bevat.
-* **has-referred**: Boolean die aangeeft of er andere selecties zijn die naar deze selectie refereren.
-* **has-rules**: Boolean die aangeeft of de selectie regels heeft.
-* **database**: ID van de database waar deze selectie onder valt.
-* **last-built**: Tijdstempel laatste bouw van de selectie.
+| Variabele         | Omschrijving                                                                          |
+|-------------------|---------------------------------------------------------------------------------------|
+| **id**            | Unieke numerieke identifier van selectie.                                             |
+| **name**          | Naam van de selectie.                                                                 |
+| **description**   | Beschrijving van de selectie.                                                         |
+| **parent-type**   | Type van de parent (view/database).                                                   |
+| **parent-id**     | ID van de parent.                                                                     |
+| **has-children**  | Boolean die aangeeft of de selectie zelf selecties bevat.                             |
+| **has-referred**  | Boolean die aangeeft of er andere selecties zijn die naar deze selectie refereren.    |
+| **has-rules**     | Boolean die aangeeft of de selectie regels heeft.                                     |
+| **database**      | ID van de database waar deze selectie onder valt.                                     |
+| **last-built**    | Tijdstempel van de laatste bouw van de selectie.                                      |
+| **intentions**    | Array met de intenties voor deze selectie (1 of null voor email/sms/fax/pdf).         |
 
 ### JSON voorbeeld
 
