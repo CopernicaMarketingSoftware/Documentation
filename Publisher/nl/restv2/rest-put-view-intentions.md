@@ -1,7 +1,7 @@
 # REST API: POST view intentions
 
 Intentions geven aan welke communicatie methoden toegestaan zijn voor deze 
-database. De intentions voor email, sms, fax en pdf kunnen allemaal aan of 
+selectie. De intentions voor email, sms, fax en pdf kunnen allemaal aan of 
 uitgezet worden, om te voorkomen dat er per ongeluk mailings worden verstuurd.
 
 De HTTP POST methode om de intentions van een selectie aan te passen 
