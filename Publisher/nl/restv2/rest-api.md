@@ -82,6 +82,7 @@ collecties en hun eigenschappen.
 | GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Opvragen van alle profielen                    |
 | POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een profiel                       |
 | PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Updaten van een of meerdere profielen          |
+| PUT    | [api.copernica.com/v2/database/$id/intentions](./rest-put-database-intentions)               | Updaten van de intenties van de database       |
 
 ### Collecties
 
@@ -101,6 +102,7 @@ collecties en hun eigenschappen.
 | DELETE | [api.copernica.com/v2/collection/$id/field/$id](./rest-delete-collection-field)              | Verwijderen van een veld                       |
 | GET    | [api.copernica.com/v2/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Opvragen van alle subprofiel IDs               |
 | GET    | [api.copernica.com/v2/collection/$id/subprofiles](./rest-get-collection-subprofiles)         | Opvragen van alle subprofielen                 |
+| PUT    | [api.copernica.com/v2/collection/$id/intentions](./rest-put-collection-intentions)           | Updaten van de intenties van de collectie      |
 
 ## Selecties & Miniselecties
 
@@ -122,6 +124,7 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 | GET    | [api.copernica.com/v2/view/$id/rules](./rest-get-view-rules)                                 | Opvragen van alle selectie regels            |
 | GET    | [api.copernica.com/v2/view/$id/rule/$id](./rest-get-view-rule)                               | Opvragen van een selectie regel              |
 | POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Aanmaken van een selectie regel              |
+| PUT    | [api.copernica.com/v2/view/$id/intentions](./rest-put-view-intentions)                       | Updaten van de intenties van de selectie     |
 
 ### Miniselecties
 
@@ -137,6 +140,7 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 | GET    | [api.copernica.com/v2/miniview/$id/minirules](./rest-get-miniview-rules)                     | Opvragen van alle miniselectie miniregels      |
 | GET    | [api.copernica.com/v2/miniview/$id/minirule/$id](./rest-get-miniview-rule)                   | Opvragen van een miniselectie miniregel        |
 | POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Aanmaken van een nieuwe miniselectie miniregel |
+| PUT    | [api.copernica.com/v2/miniview/$id/intentions](./rest-put-miniview-intentions)               | Updaten van de intenties van de miniselectie   |
 
 ## Regels & Miniregels
 
