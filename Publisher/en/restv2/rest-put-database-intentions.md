@@ -1,5 +1,9 @@
 # REST API: POST database intentions
 
+The database intentions indicate what type of communication is allowed with 
+this database. The intentions for email, sms, fax and pdf can all be enabled 
+separately, to prevent accidental mailings.
+
 The HTTP POST call to edit the intentions of a database can be found at 
 the following address:
 

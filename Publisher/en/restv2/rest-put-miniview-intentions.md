@@ -1,5 +1,9 @@
 # REST API: POST miniview intentions
 
+The miniview intentions indicate what type of communication is allowed with 
+this miniview. The intentions for email, sms, fax and pdf can all be enabled 
+separately, to prevent accidental mailings.
+
 The HTTP POST call to edit the intentions of a miniview can be found at 
 the following address:
 

@@ -1,5 +1,9 @@
 # REST API: POST collection intentions
 
+The collection intentions indicate what type of communication is allowed with 
+this collection. The intentions for email, sms, fax and pdf can all be enabled 
+separately, to prevent accidental mailings.
+
 The HTTP POST call to edit the intentions of a collection can be found at 
 the following address:
 
