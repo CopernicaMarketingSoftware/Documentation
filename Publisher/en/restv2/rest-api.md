@@ -62,6 +62,7 @@ structure.
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | GET    | [api.copernica.com/v2/databases](./rest-get-databases)                                       | Fetch all databases                          |
 | POST   | [api.copernica.com/v2/databases](./rest-post-databases)                                      | Create a new database                        |
+| POST   | [api.copernica.com/v2/database/$id/copy](./rest-post-database-copy)                          | Copy a database                              |
 | GET    | [api.copernica.com/v2/database/$id](./rest-get-database)                                     | Fetch the database information               |
 | PUT    | [api.copernica.com/v2/database/$id](./rest-put-database)                                     | Update the database information              |
 | GET    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-get-database-unsubscribe)             | Fetch the unsubscribe behavior               |

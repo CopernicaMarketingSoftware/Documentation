@@ -62,6 +62,7 @@ collecties en hun eigenschappen.
 |--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
 | GET    | [api.copernica.com/v2/databases](./rest-get-databases)                                       | Opvragen van alle databases                    |
 | POST   | [api.copernica.com/v2/databases](./rest-post-databases)                                      | Aanmaken van een nieuwe database               |
+| POST   | [api.copernica.com/v2/database/$id/copy](./rest-post-database-copy)                          | Kopiëren van een database                      |
 | GET    | [api.copernica.com/v2/database/$id](./rest-get-database)                                     | Opvragen van database informatie               |
 | PUT    | [api.copernica.com/v2/database/$id](./rest-put-database)                                     | Updaten van database informatie                |
 | GET    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-get-database-unsubscribe)             | Opvragen van uitschrijfgedrag                  |
