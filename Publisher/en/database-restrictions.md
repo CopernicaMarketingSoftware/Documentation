@@ -16,7 +16,7 @@ target to be used in a mailing. This is a security measure to prevent you
 from emailing the wrong selection, for exampling sending mailings out to
 your entire database when some users have been unsubscribed. With the
 *intention settings* dialog you can enable mailing for your database or
-selection. You can allow fax, sms and email separately for each selection.
+selection. You can allow email, sms, fax and pdf separately for each selection.
 
 ## Database restrictions
 
