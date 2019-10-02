@@ -1,10 +1,10 @@
 # Promotionele annotations in Gmail
-Momenteel werken promotionele annotations alleen in de Android en iOS versies van Google. Ook zal Gmail alleen van de bovenste twee e-mails die in de zogenaamde promotions tab van Gmail terecht komen de annotation opmaak laten zien. Welke e-mails bovenaan komen en of ze standaard in de promotions tab terechtkomen wordt bepaald door een algoritme van Google waar voor zover bekend geen invloed op uit te oefenen is. Om deze reden kan het zo zijn dat de annotation bij persoon A wel wordt weergeven maar bij persoon B niet. Om te testen of de annotations goed zijn ingesteld is het het beste om als volgt te werk te gaan.
+Momenteel werken promotionele annotations alleen in de Android- en iOS-versies van Google. Ook zal Gmail alleen van de bovenste twee e-mails die in de zogenaamde 'promotions tab' van Gmail terecht komen de annotationopmaak laten zien. Welke e-mails bovenaan komen en of ze standaard in de promotions tab terechtkomen wordt bepaald door een algoritme van Google waar voor zover bekend geen invloed op uit te oefenen is. Om deze reden kan het zo zijn dat de annotation bij persoon A wel wordt weergeven maar bij persoon B niet. Om te testen of de annotations goed zijn ingesteld is het het beste om als volgt te werk te gaan.
 
 ![](../images/gmail.png)
 
 ## Voorbereiding
-In Gmail is er een bepaalde groep met e-mail adressen die terug gehouden wordt van het weergeven van annotations. Om zeker te weten dat je annotations kan ontvangen kan je het beste een nieuw e-mail adres aanmaken.
+In Gmail is er een bepaalde groep met e-mailadressen die terug gehouden wordt van het weergeven van annotations. Om zeker te weten dat je annotations kan ontvangen kan je het beste een nieuw e-mailadres aanmaken.
 
 * Maak een e-mail adres aan dat eindigt op [promotabtesting@gmail.com](https://accounts.google.com/signup), bijvoorbeeld [bedrijfsnaam.promotabtesting@gmail.com](https://accounts.google.com/signup).
 
@@ -17,7 +17,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 
 * Maak een nieuwe lege template met een document aan.
 
-* Vul de template met de volgende code.
+* Zet de volgende code in het template.
 
 ```
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
@@ -69,7 +69,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 </html>
 ```
 
-* Onder de comments EDIT 5 en EDIT 6 vind je "YYYY-MM-DD". Pas de eerste aan naar twee dagen geleden en de tweede naar twee dagen in de toekomst. 
+* Onder de comments EDIT 5 en EDIT 6 vind je "YYYY-MM-DD". Pas de eerste aan naar 'twee dagen geleden' en de tweede naar 'twee dagen in de toekomst'. 
 
 
 ## Testen
@@ -77,16 +77,16 @@ Om te testen of de annotations werken is het belangrijk om het volgende stappenp
 
 * Verwijder alle e-mails in de promotions tab van Gmail en leeg de prullenbak.
 * Verstuur het document naar het zojuist aangemaakte Gmail adres.
-* Ga naar de inbox op je Android of iOS apparaat.
+* Ga naar de inbox op je Android- of iOS-apparaat.
 * Als de mail niet direct in de promotions tab terecht komt, verplaats deze dan handmatig.
 * Refresh de promotions tab net zolang totdat de annotation verschijnt.
 
-Mocht dit na meermaals proberen niet lukken raadpleeg dan de [troubleshooting](https://developers.google.com/gmail/promotab/troubleshooting) pagina van de documententatie van Gmail.
+Mocht dit na meermaals proberen niet lukken raadpleeg dan de [troubleshooting](https://developers.google.com/gmail/promotab/troubleshooting) pagina van de documentatie van Gmail.
 
 ## Aanpassen en personaliseren
-De code van de test e-mail kan vervolgens getest worden in een al bestaande e-mailing.
+De code van de test e-mail kan vervolgens getest worden in een bestaande mailing.
 
-* Voeg alles tussen de '<head>' tag toe aan de head van een al bestaande e-mailing.
+* Voeg alles tussen de '<head>' tag toe aan de head van een bestaande mailing.
 * Verstuur deze zonder de annotation aan te passen als test naar het Gmail account.
 * Pas item voor item de inhoud aan, verwijder tussendoor telkens de vorige mail en leeg de prullenbak.
 * Als je gebruik wilt maken van smarty personalisatie dan dient de '[literal]' tijdelijk te worden afgesloten. Voor EDIT 3 zou dit het volgende inhouden;
@@ -96,4 +96,4 @@ De code van de test e-mail kan vervolgens getest worden in een al bestaande e-ma
   "description": "[/literal]{$profile.VELDNAAM}[literal]",
 ```
 
-Op de website van Google bevindt zich een [test](https://developers.google.com/gmail/promotab/overview) tool om een voorbeeld te krijgen hoe de annotation eruit komt te zien.
+Op de website van Google bevindt zich een [test-tool](https://developers.google.com/gmail/promotab/overview) om een voorbeeld te krijgen hoe de annotation eruit komt te zien.
