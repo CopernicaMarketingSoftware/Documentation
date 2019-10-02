@@ -7,7 +7,7 @@ many ways to do this:
 * [drop files into MailerQ's spool directory](spool-directory)
 * [use MailerQ as a Command Line utility to read messages from standard input](command-line-utility)
 * [send files to the built-in MailerQ SMTP server](smtp-server)
-* [send JSON-encoded email directly over REST API](rest-injection)
+* [send JSON-encoded email directly over REST API](rest-api-v1-inject)
 * [send JSON-encoded email directly to RabbitMQ](publish-to-rabbitmq)
 
 After sending the email, MailerQ publishes a JSON-encoded copy to the 

@@ -1,12 +1,4 @@
-
-# Injection over REST API
-
-## Authentication
-
-Authentication to the API can be done using tokens that can be inserted into
-the database directly, or created in the web interface. An `Authorization` header should be added
-to each request. For example, `Authorization: Bearer <token>` would be the correct way to authenticate
-to the API.
+# Rest API V1 Injection
 
 MailerQ offers an HTTP injection API. Check out the [message format](json-messages) for the required structure of injected
 messages. 
