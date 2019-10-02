@@ -38,7 +38,7 @@ you build, maintain and export your databases.
 ### Configuration
 * [Configuring a database](./quick-database-guide)
 * [Fields and collections](database-fields-and-collections)
-* [Database restrictions & intentions](database-restrictions-and-capabilities)
+* [Database restrictions & intentions](database-restrictions)
 * [Selections](./selections-introduction)
 
 ### Importing, exporting and updating

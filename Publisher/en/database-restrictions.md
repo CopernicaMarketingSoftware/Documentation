@@ -1,4 +1,5 @@
 # Database Restrictions
+
 The Copernica software is equipped with a couple of safety systems to prevent
 invalid data from ending up in your database and to prevent users from
 accidentally sending out a mailing to an incorrect target. The
@@ -9,6 +10,7 @@ is accidentally used to send out a mailing. These systems can be found in the
 *profile management* section of the Marketing Suite.
 
 ## Database intentions
+
 After creating a new database or selection you have to explicitly allow that
 target to be used in a mailing. This is a security measure to prevent you
 from emailing the wrong selection, for exampling sending mailings out to
@@ -17,6 +19,7 @@ your entire database when some users have been unsubscribed. With the
 selection. You can allow fax, sms and email separately for each selection.
 
 ## Database restrictions
+
 The database restriction form inside the "edit database fields" dialog can be
 used to add rules to a database or collection. When someone tries to add or
 edit a profile (either via the application or a webform), the submitted data is
@@ -32,6 +35,7 @@ restrictions on their next edit. You can also choose to remove the
 existing data with the "Edit multiple profiles" function.
 
 ## Regular expressions
+
 Regular expressions (often abbreviated to *regex*) are very powerful patterns to
 validate text. You can use them to add restrictions for data entering
 your database. Regular expressions can do things like "check whether the value
@@ -48,6 +52,7 @@ Regex is fairly standard and a lot more information can be found on the
 internet about it.
 
 ## More information
+
 To add restrictions you need a database with some fields. If you don't
 have those yet you can find out how to create them in the articles below.
 
