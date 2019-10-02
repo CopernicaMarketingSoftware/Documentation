@@ -7,7 +7,8 @@ naar het volgende adres:
 
 Hier moet de `$id` vervangen worden door de ID van de database die je 
 wil kopiëren. Als het verzoek succesvol wordt uitgevoerd geeft de methode 
-de ID van de gekopieërde database terug.
+de ID van de gekopieërde database terug. Het kan even duren voordat de 
+kopie klaar is.
 
 ## Beschikbare parameters
 

@@ -6,7 +6,8 @@ an HTTP POST request to the following address:
 `https://api.copernica.com/v2/database/$id/copy?access_token=xxxx`
 
 The `$id` in the URL should be replaced by the database you want to copy. 
-After a successful call the ID of copy is returned.
+After a successful call the ID of copy is returned. Please note that it 
+may take a while for the copy to be completed.
 
 ## Available parameters
 
