@@ -5,7 +5,7 @@ gepersonaliseerd door gebruik te maken van speciale codes. Deze codes
 worden automatisch vervangen door de bijbehorende gegevens van de
 geadresseerde. De speciale codes komen uit een scripttaal genaamd
 *Smarty*. Ga naar
-[http://www.smarty.net/docs/en/ (engels)](http://www.smarty.net/docs/en/) voor
+[http://www.smarty.net/docs/en/](http://www.smarty.net/docs/en/) (engels) voor
 een complete handleiding van de mogelijkheden van Smarty.
 
 Formulering van personalisatie
