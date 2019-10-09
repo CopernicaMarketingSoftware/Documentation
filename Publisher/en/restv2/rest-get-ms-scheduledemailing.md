@@ -20,7 +20,6 @@ The method returns a JSON object containing the following information:
 * **previous**      : The timestamp of the previous occurrence of this mailing.
 * **subject**       : The subject of the mailing.
 * **from_address**  : An array containing the 'name' and 'email' address of the sender.
-* **destinations**  : Amount of destinations the mailing was sent to.
 * **type**          : Type of mailing (individual or mass).
 * **target**        : Contains the target type and the ID and type of other entities above it (for example the database a collection belongs to).
 
@@ -50,7 +49,6 @@ the 'data' property of the output:
       "name":"Test",
       "email":"test@copernica.com"
    },
-   "destinations":200,
    "type":"mass",
    "target":{
       "type":"database",
