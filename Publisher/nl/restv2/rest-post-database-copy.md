@@ -12,15 +12,13 @@ kopie klaar is.
 
 ## Beschikbare parameters
 
-Deze methode vereist of een ID van een bestaande database om naartoe te 
-kopiëren of een naam voor de kopie. Als beide worden meegegeven wordt 
-alleen de ID gebruikt.
+Deze methode kan alleen een nieuwe database aanmaken. De naam hiervoor is 
+verplicht.
 
-* **target**: ID van een bestaande database om naartoe te kopiëren.
-* **name**: Naam voor de kopie van de database.
-* **options**: Array met opties voor het kopiëren.
+* **name**: Naam voor de kopie van de database. (verplicht)
+* **options**: Array met opties voor het kopiëren. (optioneel)
 
-De 'options' array bevat alle mogelijkheden voor het kopiëren van de database. 
+De 'options' array bevat alle optionele mogelijkheden voor het kopiëren van de database. 
 Je kunt hier de volgende variabelen meegeven:
 
 * **views**: Een boolean die aangeeft of de selecties mee gekopieërd moeten worden.
