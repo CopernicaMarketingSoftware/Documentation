@@ -332,10 +332,17 @@ templates en mailings.
 
 ### Destinations (bestemmingen)
 
+Binnen Copernica's Marketing Suite zijn de termen 'destination' (bestemming) 
+en 'message' (bericht) uitwisselbaar. Beide verwijzen naar een specifiek bericht 
+verzonden naar een specifieke bestemming. In onderstaande artikelen kun je 
+in zowel de tekst 'destination' door 'message' vervangen, of andersom. 
+Dit geldt ook voor de voorbeeldcode.
+
 | Type   | Adres                                                                                        | Omschrijving                                                  |
 |--------|----------------------------------------------------------------------------------------------|---------------------------------------------------------------|
 | GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Opvragen van een bestemming                                   |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van bestemmingen voor een mailing                    |
+| GET    | [api.copernica.com/v2/ms/destination/$id/body](./rest-get-ms-destination-body)               | Opvragen van de message body verzonden naar een bestemming    |
 | GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Opvragen van statistieken voor een bestemming                 |
 | GET    | [api.copernica.com/v2/ms/destination/$id/abuses](./rest-get-ms-destination-abuses)           | Opvragen van alle abuses voor een bestemming                  |
 | GET    | [api.copernica.com/v2/ms/destination/$id/clicks](./rest-get-ms-destination-clicks)           | Opvragen van alle clicks voor een bestemming                  |
@@ -366,13 +373,6 @@ templates en mailings.
 | GET    | [api.copernica.com/v2/ms/destination/$id/deliveries](./rest-get-ms-destination-deliveries)   | Opvragen van alle deliveries voor een bestemming  |
 | GET    | [api.copernica.com/v2/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Opvragen van alle errors voor een bestemming      |
 | GET    | [api.copernica.com/v2/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Opvragen van alle impressions voor een bestemming |
-
-### Messages
-
-| Type   | Adres                                                                                        | Omschrijving                                 |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Opvragen van bericht informatie              |
-| GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Opvragen van bericht body                    |
 
 ## Dataverzoeken
 

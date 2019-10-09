@@ -7,6 +7,9 @@ door een HTTP GET verzoek te versturen naar de volgende URL:
 
 Hier moet `$id` vervangen worden door de ID van de destination.
 
+Let op: De termen 'destination' en 'message' kunnen uitwisselbaar gebruikt worden, 
+ook in de voorbeeldcode.
+
 ## Teruggegeven velden
 
 Deze methode geeft een JSON object terug dat de volgende informatie bevat:
