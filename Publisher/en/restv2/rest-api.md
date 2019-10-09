@@ -314,19 +314,18 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Fetch a template                             |
 | GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Fetch the statistics for a template          |
 
-### Messages
+### Messages & Destinations
 
-| Type   | Address                                                                                      | Description                                  |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Fetch the message information                |
-| GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Fetch the message body                       |
-
-### Destinations
+Copernica uses the terms messages and destinations interchangeably in the 
+Marketing Suite. Both refer to a specific message sent to a specific profile 
+or subprofile. Please keep in mind that you can substitute 'message' by 'destination' 
+or vice versa in all of the articles below, including the code examples.
 
 | Type   | Address                                                                                      | Description                                             |
 |--------|----------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Fetch a destination                                     |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing                    |
+| GET    | [api.copernica.com/v2/ms/destination/$id/body](./rest-get-ms-destination-body)               | Fetch the message body sent to the destination          |
 | GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Fetch the statistics for a destination                  |
 | GET    | [api.copernica.com/v2/ms/destination/$id/abuses](./rest-get-ms-destination-abuses)           | Fetch all abuses for a destination                      |
 | GET    | [api.copernica.com/v2/ms/destination/$id/clicks](./rest-get-ms-destination-clicks)           | Fetch all clicks for a destination                      |

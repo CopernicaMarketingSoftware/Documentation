@@ -1,4 +1,4 @@
-# REST API: GET statistics (Marketing Suite destination)
+# REST API: GET destination/message statistics (Marketing Suite)
 
 You can retrieve the statistics for a Marketing Suite destination by sending an HTTP GET request to the following URL:
 
@@ -6,9 +6,10 @@ You can retrieve the statistics for a Marketing Suite destination by sending an 
 
 Where the `$id` should be replaced with the ID of the destination.
 
-## Return value
+Note: The terms 'destination' and 'message' can be used interchangeably 
+in this article, including the code examples.
 
-### Fields
+## Returned fields
 
 The following fields are available in the JSON object:
 
@@ -75,5 +76,5 @@ This example requires the [REST API class](./rest-php).
 ## More information 
 
 * [Overview of all REST API calls](./rest-api)
-* [Retrieve a Marketing Suite destination](./rest-get-ms-destination)
+* [Retrieve a destination/message](./rest-get-ms-destination)
 
