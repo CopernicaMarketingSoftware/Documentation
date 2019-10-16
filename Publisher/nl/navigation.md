@@ -55,4 +55,3 @@
     * [Licentie en facturering](./license-and-billing.md)
     * [Privacy](./privacy.md)
     * [Logfiles](./logfiles-ms.md)
-    * [Promotionele annotations] (./promotional-annotations.md)
