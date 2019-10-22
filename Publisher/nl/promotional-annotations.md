@@ -1,10 +1,13 @@
 # Promotionele annotations in Gmail
-Momenteel werken promotionele annotations alleen in de Android- en iOS-versies van Google. Ook zal Gmail alleen van de bovenste twee e-mails die in de zogenaamde 'promotions tab' van Gmail terecht komen de annotationopmaak laten zien. Welke e-mails bovenaan komen en of ze standaard in de promotions tab terechtkomen wordt bepaald door een algoritme van Google waar voor zover bekend geen invloed op uit te oefenen is. Om deze reden kan het zo zijn dat de annotation bij persoon A wel wordt weergeven maar bij persoon B niet. Om te testen of de annotations goed zijn ingesteld is het het beste om als volgt te werk te gaan.
+Google heeft het gebruik van promotionele annotations mogelijk gemaakt op de binnenkomende promotionele e-mails van hun gebruikers. Met deze techniek kan je afbeeldingen of informatie, bijvoorbeeld een couponcode, weergeven aan de ontvanger, zonder dat deze de e-mail hoeft te openenen. Hiermee laat je je nieuwsbrief extra uit het oog laten springen tussen alle andere binnenkomende nieuwsbrieven. Deze annotations zijn zichtbaar wanneer je nieuwsbrief in de promotions tab wordt geplaatst.
 
 ![](../images/gmail.png)
 
+#### Disclaimer
+Momenteel werken promotionele annotations alleen in de Android- en iOS-versies van Google. Daarnaast laat Gmail alleen van de bovenste twee e-mails die in de zogenaamde 'promotions tab' van Gmail terechtkomen de annotation-opmaak zien. Het zijn niet per se de twee meest recente e-mails die bovenin worden geplaatst. Welke e-mails bovenaan worden geplaatst en of ze standaard in de promotions tab terechtkomen, wordt bepaald door een algoritme van Google. Hierop is voor zover bekend geen verdere externe invloed op uit te oefenen. Om deze reden kan het zo zijn dat de annotation bij persoon A wel wordt weergeven, maar bij persoon B niet.
+
 ## Voorbereiding
-In Gmail is er een bepaalde groep met e-mailadressen die terug gehouden wordt van het weergeven van annotations. Om zeker te weten dat je annotations kan ontvangen kan je het beste een nieuw e-mailadres aanmaken.
+Zoals hierboven beschreven, zijn annotations nog niet voor alle Gmail gebruikers beschikbaar. Om zelf annotations te kunnen testen, moet je ze uiteraard wel tot je beschikking hebben. Volg de onderstaande stappen om dit te realiseren:
 
 * Maak een e-mail adres aan dat eindigt op [promotabtesting@gmail.com](https://accounts.google.com/signup), bijvoorbeeld [bedrijfsnaam.promotabtesting@gmail.com](https://accounts.google.com/signup).
 
