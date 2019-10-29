@@ -18,7 +18,8 @@ veld. Voor elke impression is de volgende informatie beschikbaar:
 * **ID**: De ID van de impression.
 * **timestamp**: De tijdstempel van de impression.
 * **ip**: De IP waar de impression vandaan kwam.
-* **user-agent**: De user agent string van de gebruiker die de mail opende.
+* **useragent**: De user agent string van de gebruiker die de mail opende.
+* **device**: Type apparaat waar de klik vandaan kwam ('desktop','tablet','mobile','unknown').
 * **referer**: De referer van de gebruiker die de mail opende.
 * **emailing**: De ID van de mailing.
 * **destination**: De ID van de destination.
