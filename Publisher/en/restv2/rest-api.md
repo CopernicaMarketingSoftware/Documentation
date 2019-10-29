@@ -115,6 +115,7 @@ You can find methods that relate to a specific (mini)view below.
 | Type   | Address                                                                                      | Description                   |
 |--------|----------------------------------------------------------------------------------------------|-------------------------------|
 | POST   | [api.copernica.com/v2/database/$id/views](./rest-post-database-views)                        | Create a view                 |
+| POST   | [api.copernica.com/v2/view/$id/copy](./rest-post-view-copy)                                  | Copy a view                   |
 | GET    | [api.copernica.com/v2/view/$id](./rest-get-view)                                             | Fetch the view information    |
 | PUT    | [api.copernica.com/v2/view/$id](./rest-put-view)                                             | Update the view information   |
 | DELETE | [api.copernica.com/v2/view/$id](./rest-delete-view)                                          | Delete a view                 |

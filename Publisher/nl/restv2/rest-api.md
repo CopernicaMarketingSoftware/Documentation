@@ -115,6 +115,7 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 | Type   | Adres                                                                                        | Omschrijving                                 |
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | POST   | [api.copernica.com/v2/database/$id/views](./rest-post-database-views)                        | Aanmaken van een selectie                    |
+| POST   | [api.copernica.com/v2/view/$id/copy](./rest-post-view-copy)                                  | Kopiëren van een selectie                    |
 | GET    | [api.copernica.com/v2/view/$id](./rest-get-view)                                             | Opvragen van selectie informatie             |
 | PUT    | [api.copernica.com/v2/view/$id](./rest-put-view)                                             | Updaten van selectie informatie              |
 | DELETE | [api.copernica.com/v2/view/$id](./rest-delete-view)                                          | Verwijderen van een selectie                 |
