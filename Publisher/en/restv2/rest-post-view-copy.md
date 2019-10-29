@@ -53,5 +53,7 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-- [Overview of all API methods](rest-api)
-- [GET views](rest-get-views)
+* [Overview of all API methods](./rest-api)
+* [GET views](./rest-get-views)
+* [GET view](./rest-get-view)
+* [DELETE view](./rest-delete-view)

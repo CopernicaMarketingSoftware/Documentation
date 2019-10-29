@@ -55,5 +55,6 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](./rest-api)
-* [Opvragen van een lijst van selecties](./rest-get-view)
+* [Opvragen van een lijst van selecties](./rest-get-views)
+* [Opvragen van een selectie](./rest-get-view)
 * [Verwijderen van een selectie](./rest-delete-view)
