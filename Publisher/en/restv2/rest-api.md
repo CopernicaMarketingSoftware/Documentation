@@ -196,8 +196,9 @@ like your customers or orders. The relevant API calls can be found below.
 | PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                           | Update profile interest(s)                            |
 | GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)       | Fetch all Publisher mailings for a profile            |
 | GET    | [api.copernica.com/v2/profile/$id/ms/emailings](./rest-get-profile-ms-emailings)                     | Fetch all Marketing Suite mailings for a profile      |
-| GET    | [api.copernica.com/v2/profile/$id/publisher/destinations](rest-get-profile-publisher-destinations)   | Fetch all Publisher destinations for a profile        |
-| GET    | [api.copernica.com/v2/profile/$id/ms/destination](rest-get-profile-ms-destinations)                  | Fetch all Marketing Suite destinations for a profile  |
+| GET    | [api.copernica.com/v2/profile/$id/publisher/destinations](./rest-get-profile-publisher-destinations) | Fetch all Publisher destinations for a profile        |
+| GET    | [api.copernica.com/v2/profile/$id/ms/destination](./rest-get-profile-ms-destinations)                | Fetch all Marketing Suite destinations for a profile  |
+| GET    | [api.copernica.com/v2/profile/$id/files](./rest-get-profile-files)                                   | Fetch all files for a profile                         |
 | POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)                      | Create a request for all data stored for a profile    |
 
 ### Subprofile
