@@ -37,6 +37,7 @@ Een enkele impressie ziet er bijvoorbeeld zo uit:
    "timestamp":"2010-07-20 14:34:32",
    "ip":"0.0.0.0",
    "useragent":"Microsoft Outlook 2007, WinXP",
+   "device":"desktop",
    "referer":null,
    "emailing":"1328",
    "destination":"822758",
