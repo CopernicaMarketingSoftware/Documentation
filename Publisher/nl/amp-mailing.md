@@ -3,7 +3,7 @@ De Copernica Publisher biedt de functionaliteit aan om een AMP versie aan je mai
 Voor alle mogelijkheden van AMP mailings kun je de [officiële documentatie](https://amp.dev/about/email/) raadplegen.
 
 ## Aan de slag
-Om je templates uit te breiden met AMP-onderdelen ga je naar je template onder het tabblad **Emailings**. Hier vind je een tabblad `AMP broncode` waar je de AMP code kunt invoegen. Een voorbeeldweergave van je AMP versie is zichtbaar onder het `AMP-versie` tabblad. In je AMP template kun je gebruik maken van tekst-, afbeelding- en loopblokken op de manier waarop je gewend bent bij het maken van [HTML templates](./templates-publisher#content-blocks). De Publisher ondersteunt gedeelde content in blokken tussen HTML en AMP templates. Meer informatie hierover volgt [verder op deze pagina](./amp-mailing#shared-block-structure).
+Om je templates uit te breiden met AMP-onderdelen ga je naar je template onder het tabblad **Emailings**. Hier vind je een tabblad `AMP broncode` waar je de AMP code kunt invoegen. Een voorbeeldweergave van je AMP versie is zichtbaar onder het `AMP-versie` tabblad. In je AMP template kun je gebruik maken van tekst-, afbeelding- en loopblokken op de manier waarop je gewend bent bij het maken van [HTML templates](./templates-publisher#contentblokken). De Publisher ondersteunt gedeelde content in blokken tussen HTML en AMP templates. Meer informatie hierover volgt [verder op deze pagina](./amp-mailing#shared-block-structure).
 
 ## Getting started
 In order to extend your templates with AMP parts, head over to your template under
