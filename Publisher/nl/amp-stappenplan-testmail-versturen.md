@@ -1,5 +1,4 @@
 # Stappenplan testmail versturen
-Voordat je een AMP testmail kunt versturen dien je een aantal stappen te doorlopen.
 
 ## Gmail account whitelisten
 Voordat je een AMP testmail kunt versturen dien je in Gmail het afzenderadres van je e-mail te whitelisten. Als je op je google account ingelogd bent kun je bij 'Instellingen -> Algemeen -> Dynamische e-mail' aangeven dat dynamische content weergegeven mag worden. 
