@@ -1,4 +1,4 @@
-# Versturen met AMP
+# Stappenplan versturen met AMP
 
 ## Testaccount whitelisten
 Voordat je een AMP testmail kunt versturen dien je het afzenderadres die je wilt gebruiken voor het versturen van je e-mails te whitelisten. Hieronder vind je per ISP een uitleg hoe je dit kunt doen:
