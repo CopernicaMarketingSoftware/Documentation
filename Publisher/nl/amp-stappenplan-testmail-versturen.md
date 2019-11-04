@@ -11,4 +11,4 @@ Voordat je een template maakt in Copernica raden wij je aan om gebruik te maken 
 Enkele AMP toepassingen voor in je templates kun je vinden in de [AMP documentatie](https://amp.dev/documentation/components/amp-carousel/?format=email).
 
 ## Test mail versturen via Copernica
-Zodra je template er vanuit de Playground goed uitziet kun je de mail overzetten naar de *AMP broncode* in je template binnen je Copernica omgeving. Je kunt nu een testmail versturen naar je Gmail adres om de AMP versie van je template in te zien.
+Zodra je template er vanuit de Playground goed uitziet kun je de mail overzetten naar de *AMP broncode* in je template binnen je Copernica omgeving. Je kunt nu een testmail versturen naar je Gmail adres om de AMP versie van je template in te zien. Vergeet niet om ook een HTML versie van je template te maken voor clients die het gebruik van AMP nog niet ondersteunen.
