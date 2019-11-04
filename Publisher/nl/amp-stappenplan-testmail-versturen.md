@@ -17,14 +17,11 @@ Hierbij een voorbeeld van de [AMP carousel](https://amp.dev/documentation/compon
 
 ```
 <amp-carousel width="450" height="300">
-  <amp-img src="[text name='afb1']" width="450" height="300"></amp-img>
-  <amp-img src="[text name='afb2']" width="450" height="300"></amp-img>
-  <amp-img src="[text name='afb3']" width="450" height="300"></amp-img>
+  [image name='afb1']
+  [image name='afb2']
+  [image name='afb3']
 </amp-carousel>
 ```
-
-In de tekstblokken kun je vervolgens de volledige URL van de afbeelding invoeren, bijvoorbeeld:
-https://media.copernica.com/logos/copernica-logo.svg
 
 ## Test mail versturen via Copernica
 Je kunt nu een testmail versturen naar je Gmail adres om de AMP versie van je template in te zien. Vergeet niet om ook een HTML versie van je template te maken voor clients die het gebruik van AMP nog niet ondersteunen.
