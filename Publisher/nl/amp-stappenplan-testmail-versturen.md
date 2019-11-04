@@ -10,5 +10,21 @@ Voordat je een template maakt in Copernica raden wij je aan om gebruik te maken 
 
 Enkele AMP toepassingen voor in je templates kun je vinden in de [AMP documentatie](https://amp.dev/documentation/components/amp-carousel/?format=email).
 
+## Naar Copernica kopieren en tags toevoegen
+Zodra je template er vanuit de Playground goed uitziet kun je de mail overzetten naar de *AMP broncode* binnen je Copernica template. Om teksten en afbeeldingen niet dubbel toe te moeten voegen kun je gebruik maken van onze [gedeelde blokstuctuur](./amp-mailing#gedeelde-blok-structuur) tussen je HTML en AMP template.
+
+Hierbij een voorbeeld van de [AMP carousel](https://amp.dev/documentation/components/amp-carousel/?format=email) in combinatie met Copernica blokken:
+
+```
+<amp-carousel width="450" height="300">
+  <amp-img src="[text name='afb1']" width="450" height="300"></amp-img>
+  <amp-img src="[text name='afb2']" width="450" height="300"></amp-img>
+  <amp-img src="[text name='afb3']" width="450" height="300"></amp-img>
+</amp-carousel>
+```
+
+In de tekstblokken kun je vervolgens de volledige URL van de afbeelding invoeren, bijvoorbeeld:
+https://media.copernica.com/logos/copernica-logo.svg
+
 ## Test mail versturen via Copernica
-Zodra je template er vanuit de Playground goed uitziet kun je de mail overzetten naar de *AMP broncode* in je template binnen je Copernica omgeving. Je kunt nu een testmail versturen naar je Gmail adres om de AMP versie van je template in te zien. Vergeet niet om ook een HTML versie van je template te maken voor clients die het gebruik van AMP nog niet ondersteunen.
+Je kunt nu een testmail versturen naar je Gmail adres om de AMP versie van je template in te zien. Vergeet niet om ook een HTML versie van je template te maken voor clients die het gebruik van AMP nog niet ondersteunen.
