@@ -13,7 +13,7 @@ Als je op je Outlook account ingelogd bent kun je bij 'Settings -> View all Outl
 
 Onder de optie 'Developer settings' kun je het e-mailadres opgeven van waaruit je de testmails gaat versturen met Copernica. Om gebruik te maken van de Google Playground raden wij je ook aan om het adres 'amp@gmail.dev' toe te staan.
 
-## Testmail versturen met de playground
+## Testmail versturen met de Gmail AMP for Email Playground
 Voordat je een template maakt in Copernica raden wij je aan om gebruik te maken van de [Gmail AMP for Email Playground](https://amp.gmail.dev/playground/) van Google. In deze Playground kun je een voorbeeld template maken waarbij je direct ziet wat goed en fout gaat in je code. Nadat je template de validatie status '*PASS*' heeft kun je direct een testmail sturen naar het e-mailadres waarmee je bij Gmail bent ingelogd.
 
 Enkele AMP toepassingen voor in je templates kun je vinden in de [AMP documentatie](https://amp.dev/documentation/components/amp-carousel/?format=email).
@@ -32,6 +32,6 @@ Hierbij een voorbeeld van de [AMP carousel](https://amp.dev/documentation/compon
 ```
 
 ## Test mail versturen via Copernica
-Je kunt nu een testmail versturen naar je Gmail adres om de AMP versie van je template in te zien. 
+Je kunt nu een testmail versturen naar je Gmail of Outlook.com adres om de AMP versie van je template in te zien. 
 
 **Belangrijk:** Vergeet niet om ook een HTML versie van je template te maken voor clients die het gebruik van AMP nog niet ondersteunen.
