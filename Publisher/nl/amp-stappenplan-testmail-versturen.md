@@ -24,4 +24,6 @@ Hierbij een voorbeeld van de [AMP carousel](https://amp.dev/documentation/compon
 ```
 
 ## Test mail versturen via Copernica
-Je kunt nu een testmail versturen naar je Gmail adres om de AMP versie van je template in te zien. Vergeet niet om ook een HTML versie van je template te maken voor clients die het gebruik van AMP nog niet ondersteunen.
+Je kunt nu een testmail versturen naar je Gmail adres om de AMP versie van je template in te zien. 
+
+**Belangrijk:** Vergeet niet om ook een HTML versie van je template te maken voor clients die het gebruik van AMP nog niet ondersteunen.
