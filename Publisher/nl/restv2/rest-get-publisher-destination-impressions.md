@@ -18,7 +18,8 @@ veld. Voor elke impression is de volgende informatie beschikbaar:
 * **ID**: De ID van de impression.
 * **timestamp**: De tijdstempel van de impression.
 * **ip**: De IP waar de impression vandaan kwam.
-* **user-agent**: De user agent string van de gebruiker die de mail opende.
+* **useragent**: De user agent string van de gebruiker die de mail opende.
+* **device**: Type apparaat waar de klik vandaan kwam ('desktop','tablet','mobile','unknown').
 * **referer**: De referer van de gebruiker die de mail opende.
 * **emailing**: De ID van de mailing.
 * **destination**: De ID van de destination.
@@ -35,6 +36,7 @@ Een enkele impressie ziet er bijvoorbeeld zo uit:
    "timestamp":"2010-07-20 14:34:32",
    "ip":"0.0.0.0",
    "useragent":"Microsoft Outlook 2007, WinXP",
+   "device":"desktop",
    "referer":null,
    "emailing":"1328",
    "destination":"822758",

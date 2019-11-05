@@ -23,7 +23,7 @@ Voor een **aanmeld** of **wijzig formulier** ga je **Websites** in de **Publishe
 ```
 
 #### Webformulier
-Op de volgende [pagina](./create-and-publish-a-webform) wordt beschreven hoe je een webforumlier aanmaakt in Copernica. Dit webformulier moet op een Copernica landingspagina staan. Deze pagina kan je inladen als iframe op je eigen website of hier naar toe linken vanuit een mailing. 
+Op de volgende [pagina](./create-and-publish-a-webform) wordt beschreven hoe je een webformulier aanmaakt in Copernica. Dit webformulier moet op een Copernica landingspagina staan. Deze pagina kan je inladen als iframe op je eigen website of hier naar toe linken vanuit een mailing. 
 
 #### Vervolgmail
 Nadat een klant zich heeft aangemeld voor de nieuwsbrief wil je een vervolgmail sturen. Deze mail kan een link bevatten naar een pagina waar een klant zijn/haar voorkeuren kan aangeven. Dit is een Copernica of eigen landingspagina met een formulier erop. Om te zorgen dat de data goed verwerkt kan worden dien je de volgende link te gebruiken.

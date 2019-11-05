@@ -62,6 +62,7 @@ structure.
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | GET    | [api.copernica.com/v2/databases](./rest-get-databases)                                       | Fetch all databases                          |
 | POST   | [api.copernica.com/v2/databases](./rest-post-databases)                                      | Create a new database                        |
+| POST   | [api.copernica.com/v2/database/$id/copy](./rest-post-database-copy)                          | Copy a database                              |
 | GET    | [api.copernica.com/v2/database/$id](./rest-get-database)                                     | Fetch the database information               |
 | PUT    | [api.copernica.com/v2/database/$id](./rest-put-database)                                     | Update the database information              |
 | GET    | [api.copernica.com/v2/database/$id/unsubscribe](./rest-get-database-unsubscribe)             | Fetch the unsubscribe behavior               |
@@ -82,6 +83,7 @@ structure.
 | GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Fetch all profiles                           |
 | POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Create a profile                             |
 | PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Update one or multiple profiles              |
+| PUT    | [api.copernica.com/v2/database/$id/intentions](./rest-put-database-intentions)               | Update the database intentions               |
 
 ### Collections
 
@@ -101,7 +103,8 @@ structure.
 | DELETE | [api.copernica.com/v2/collection/$id/field/$id](./rest-delete-collection-field)              | Delete a collection field                    |
 | GET    | [api.copernica.com/v2/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Fetch all collection subprofile IDs          |
 | GET    | [api.copernica.com/v2/collection/$id/subprofiles](./rest-get-collection-subprofiles)         | Fetch all collection subprofiles             |
-                                                                                                                                                       |
+| PUT    | [api.copernica.com/v2/collection/$id/intentions](./rest-put-collection-intentions)           | Update the collection intentions             |
+                                                                                                                                                       
 ## Views & Miniviews
 
 Views are selection under a database, while miniviews are selections under a collection.
@@ -109,34 +112,37 @@ You can find methods that relate to a specific (mini)view below.
 
 ### View
 
-| Type   | Address                                                                                      | Description                                  |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| POST   | [api.copernica.com/v2/database/$id/views](./rest-post-database-views)                        | Create a view                                |
-| GET    | [api.copernica.com/v2/view/$id](./rest-get-view)                                             | Fetch the view information                   |
-| PUT    | [api.copernica.com/v2/view/$id](./rest-put-view)                                             | Update the view information                  |
-| DELETE | [api.copernica.com/v2/view/$id](./rest-delete-view)                                          | Delete a view                                |
-| GET    | [api.copernica.com/v2/view/$id/views](./rest-get-view-views)                                 | Fetch all nested views                       |
-| POST   | [api.copernica.com/v2/view/$id/views](./rest-post-view-views)                                | Create a nested view                         |
-| GET    | [api.copernica.com/v2/view/$id/profileids](./rest-get-view-profileids)                       | Fetch all view profile IDs                   |
-| GET    | [api.copernica.com/v2/view/$id/profiles](./rest-get-view-profiles)                           | Fetch all view profiles                      |
-| GET    | [api.copernica.com/v2/view/$id/rules](./rest-get-view-rules)                                 | Fetch all view rules                         |
-| GET    | [api.copernica.com/v2/view/$id/rule/$id](./rest-get-view-rule)                               | Fetch a view rule                            |
-| POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Create a new view rule                       |
+| Type   | Address                                                                                      | Description                   |
+|--------|----------------------------------------------------------------------------------------------|-------------------------------|
+| POST   | [api.copernica.com/v2/database/$id/views](./rest-post-database-views)                        | Create a view                 |
+| POST   | [api.copernica.com/v2/view/$id/copy](./rest-post-view-copy)                                  | Copy a view                   |
+| GET    | [api.copernica.com/v2/view/$id](./rest-get-view)                                             | Fetch the view information    |
+| PUT    | [api.copernica.com/v2/view/$id](./rest-put-view)                                             | Update the view information   |
+| DELETE | [api.copernica.com/v2/view/$id](./rest-delete-view)                                          | Delete a view                 |
+| GET    | [api.copernica.com/v2/view/$id/views](./rest-get-view-views)                                 | Fetch all nested views        |
+| POST   | [api.copernica.com/v2/view/$id/views](./rest-post-view-views)                                | Create a nested view          |
+| GET    | [api.copernica.com/v2/view/$id/profileids](./rest-get-view-profileids)                       | Fetch all view profile IDs    |
+| GET    | [api.copernica.com/v2/view/$id/profiles](./rest-get-view-profiles)                           | Fetch all view profiles       |
+| GET    | [api.copernica.com/v2/view/$id/rules](./rest-get-view-rules)                                 | Fetch all view rules          |
+| GET    | [api.copernica.com/v2/view/$id/rule/$id](./rest-get-view-rule)                               | Fetch a view rule             |
+| POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Create a new view rule        |
+| PUT    | [api.copernica.com/v2/view/$id/intentions](./rest-put-view-intentions)                       | Update the view intentions    |
 
 ### Miniview
 
-| Type   | Address                                                                                      | Description                                  |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| POST   | [api.copernica.com/v2/collection/$id/miniviews](./rest-post-collection-miniviews)            | Create a new miniview                        |
-| GET    | [api.copernica.com/v2/miniview/$id](./rest-get-miniview)                                     | Fetch the miniview information               |
-| PUT    | [api.copernica.com/v2/miniview/$id](./rest-put-miniview)                                     | Update the miniview information              |
-| DELETE | [api.copernica.com/v2/miniview/$id](./rest-delete-miniview)                                  | Delete a miniview                            |
-| GET    | [api.copernica.com/v2/miniview/$id/subprofileids](./rest-get-miniview-subprofileids)         | Fetch all miniview subprofile IDs            |
-| GET    | [api.copernica.com/v2/miniview/$id/subprofiles](./rest-get-miniview-subprofiles)             | Fetch all miniview subprofiles               |
-| GET    | [api.copernica.com/v2/miniview/$id/views](./rest-get-miniview-views)                         | Fetch all views for a miniview               |
-| GET    | [api.copernica.com/v2/miniview/$id/minirules](./rest-get-miniview-rules)                     | Fetch all miniview minirules                 |
-| GET    | [api.copernica.com/v2/miniview/$id/minirule/$id](./rest-get-miniview-rule)                   | Fetch a miniview minirule                    |
-| POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Create a new miniview minirule               |
+| Type   | Address                                                                                      | Description                       |
+|--------|----------------------------------------------------------------------------------------------|-----------------------------------|
+| POST   | [api.copernica.com/v2/collection/$id/miniviews](./rest-post-collection-miniviews)            | Create a new miniview             |
+| GET    | [api.copernica.com/v2/miniview/$id](./rest-get-miniview)                                     | Fetch the miniview information    |
+| PUT    | [api.copernica.com/v2/miniview/$id](./rest-put-miniview)                                     | Update the miniview information   |
+| DELETE | [api.copernica.com/v2/miniview/$id](./rest-delete-miniview)                                  | Delete a miniview                 |
+| GET    | [api.copernica.com/v2/miniview/$id/subprofileids](./rest-get-miniview-subprofileids)         | Fetch all miniview subprofile IDs |
+| GET    | [api.copernica.com/v2/miniview/$id/subprofiles](./rest-get-miniview-subprofiles)             | Fetch all miniview subprofiles    |
+| GET    | [api.copernica.com/v2/miniview/$id/views](./rest-get-miniview-views)                         | Fetch all views for a miniview    |
+| GET    | [api.copernica.com/v2/miniview/$id/minirules](./rest-get-miniview-rules)                     | Fetch all miniview minirules      |
+| GET    | [api.copernica.com/v2/miniview/$id/minirule/$id](./rest-get-miniview-rule)                   | Fetch a miniview minirule         |
+| POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Create a new miniview minirule    |
+| PUT    | [api.copernica.com/v2/miniview/$id/intentions](./rest-put-miniview-intentions)               | Update the miniview intentions    |
 
 ## Rules & Minirules
 
@@ -190,8 +196,9 @@ like your customers or orders. The relevant API calls can be found below.
 | PUT    | [api.copernica.com/v2/profile/$id/interests](./rest-put-profile-interests)                           | Update profile interest(s)                            |
 | GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)       | Fetch all Publisher mailings for a profile            |
 | GET    | [api.copernica.com/v2/profile/$id/ms/emailings](./rest-get-profile-ms-emailings)                     | Fetch all Marketing Suite mailings for a profile      |
-| GET    | [api.copernica.com/v2/profile/$id/publisher/destinations](rest-get-profile-publisher-destinations)   | Fetch all Publisher destinations for a profile        |
-| GET    | [api.copernica.com/v2/profile/$id/ms/destination](rest-get-profile-ms-destinations)                  | Fetch all Marketing Suite destinations for a profile  |
+| GET    | [api.copernica.com/v2/profile/$id/publisher/destinations](./rest-get-profile-publisher-destinations) | Fetch all Publisher destinations for a profile        |
+| GET    | [api.copernica.com/v2/profile/$id/ms/destination](./rest-get-profile-ms-destinations)                | Fetch all Marketing Suite destinations for a profile  |
+| GET    | [api.copernica.com/v2/profile/$id/files](./rest-get-profile-files)                                   | Fetch all files for a profile                         |
 | POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)                      | Create a request for all data stored for a profile    |
 
 ### Subprofile
@@ -309,19 +316,18 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Fetch a template                             |
 | GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Fetch the statistics for a template          |
 
-### Messages
+### Messages & Destinations
 
-| Type   | Address                                                                                      | Description                                  |
-|--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| GET    | [api.copernica.com/v2/ms/message/$id](./rest-get-ms-message)                                 | Fetch the message information                |
-| GET    | [api.copernica.com/v2/ms/message/$id/body](./rest-get-ms-message-body)                       | Fetch the message body                       |
-
-### Destinations
+Copernica uses the terms messages and destinations interchangeably in the 
+Marketing Suite. Both refer to a specific message sent to a specific profile 
+or subprofile. Please keep in mind that you can substitute 'message' by 'destination' 
+or vice versa in all of the articles below, including the code examples.
 
 | Type   | Address                                                                                      | Description                                             |
 |--------|----------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | GET    | [api.copernica.com/v2/ms/destination/$id](./rest-get-ms-destination)                         | Fetch a destination                                     |
 | GET    | [api.copernica.com/v2/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing                    |
+| GET    | [api.copernica.com/v2/ms/destination/$id/body](./rest-get-ms-destination-body)               | Fetch the message body sent to the destination          |
 | GET    | [api.copernica.com/v2/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Fetch the statistics for a destination                  |
 | GET    | [api.copernica.com/v2/ms/destination/$id/abuses](./rest-get-ms-destination-abuses)           | Fetch all abuses for a destination                      |
 | GET    | [api.copernica.com/v2/ms/destination/$id/clicks](./rest-get-ms-destination-clicks)           | Fetch all clicks for a destination                      |

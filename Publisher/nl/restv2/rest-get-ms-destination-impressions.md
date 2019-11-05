@@ -1,4 +1,4 @@
-# REST API: GET destination impressions (Marketing Suite)
+# REST API: GET destination/message impressions (Marketing Suite)
 
 Er worden statistieken bijgehouden over elke mailing die verstuurd wordt met 
 Copernica om je meer inzicht te geven in de prestatie hiervan. Impressions zijn 
@@ -10,6 +10,9 @@ Je kan de impressions voor een specifieke destination opvragen met een HTTP GET 
 Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestamp** veld.
 
+Let op: De termen 'destination' en 'message' kunnen uitwisselbaar gebruikt worden, 
+ook in de voorbeeldcode.
+
 ## Teruggegeven velden
 
 Deze methode geeft een JSON object terug met impressions onder het 'data' veld. 
@@ -20,6 +23,7 @@ Voor elke impression is de volgende informatie beschikbaar:
 * **timestamp**: Tijdstempel van de impression. 
 * **ip**: De IP waar de impression vandaan kwam.
 * **useragent**: User agent string van de machine waar de impression vandaan kwam.
+* **device**: Type apparaat waar de klik vandaan kwam ('desktop','tablet','mobile','unknown').
 * **destination**: De ID van de destination die de impression veroorzaakte.
 * **profile**: De ID van het profiel die de impression veroorzaakte.
 * **subprofile**: De ID van het subprofiel die de impression veroorzaakte.
@@ -35,6 +39,7 @@ Een enkele impression ziet er bijvoorbeeld zo uit.
    "timestamp":"2014-10-09 13:41:46",
    "ip":"2a03:e280:0:1::1",
    "useragent":"Mozilla\/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko\/20100101 Firefox\/8.0",
+   "device":"desktop",
    "destination":"112",
    "profile":13453,
    "subprofile":null
@@ -62,8 +67,8 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 
 * [Overzicht van alle REST API calls](./rest-api)
 * [Opvragen van alle impressions](./rest-get-ms-impressions)
-* [Opvragen van destination abuses voor MS](./rest-get-ms-destination-abuses)
-* [Opvragen van destination clicks voor MS](./rest-get-ms-destination-clicks)
-* [Opvragen van destination deliveries voor MS](./rest-get-ms-destination-deliveries)
-* [Opvragen van destination errors voor MS](./rest-get-ms-destination-errors)
-* [Opvragen van destination unsubscribes voor MS](./rest-get-ms-destination-unsubscribes)
+* [Opvragen van destination/message abuses voor MS](./rest-get-ms-destination-abuses)
+* [Opvragen van destination/message clicks voor MS](./rest-get-ms-destination-clicks)
+* [Opvragen van destination/message deliveries voor MS](./rest-get-ms-destination-deliveries)
+* [Opvragen van destination/message errors voor MS](./rest-get-ms-destination-errors)
+* [Opvragen van destination/message unsubscribes voor MS](./rest-get-ms-destination-unsubscribes)

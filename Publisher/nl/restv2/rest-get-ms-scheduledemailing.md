@@ -14,21 +14,20 @@ Hier moet `$id` vervangen worden door de ID van de mailing.
 
 Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 
-* **id**: De ID van de mailing.
-* **start**: De startdatum van de mailing (YYYY-MM-DD HH:MM:SS formaat).
-* **rrule**: De RRule voor de mailing (optioneel, zie informatie hieronder).
-* **next**: Tijdstempel van volgende verzending.
-* **previous**: Tijdstempel van vorige verzending.
-* **template**: De ID van de template die gebruikt is voor deze mailing.
-* **subject**: Het onderwerp van de mailing.
+* **id**:           De ID van de mailing.
+* **start**:        De startdatum van de mailing (YYYY-MM-DD HH:MM:SS formaat).
+* **rrule**:        De RRule voor de mailing (optioneel, zie informatie hieronder).
+* **next**:         Tijdstempel van volgende verzending.
+* **previous**:     Tijdstempel van vorige verzending.
+* **template**:     De ID van de template die gebruikt is voor deze mailing.
+* **subject**:      Het onderwerp van de mailing.
 * **from_address**: Een array met de naam ('name') en het e-mailadres ('email') 
-van de afzender.
-* **destinations**: Hoeveelheid (geplande) ontvangers van de mailing.
-* **type**: Type van de mailing. Een individuele mailing is 'individual' 
-en een massa mailing is 'massa'.
-* **target**: Bevat het type van het doelwit van de mailing en de ID 
-en types van de entiteiten hierboven (bijvoorbeeld de database waar een 
-collectie onder valt).
+                    van de afzender.
+* **type**:         Type van de mailing. Een individuele mailing is 'individual' 
+                    en een massa mailing is 'massa'.
+* **target**:       Bevat het type van het doelwit van de mailing en de ID 
+                    en types van de entiteiten hierboven (bijvoorbeeld de database waar een 
+                    collectie onder valt).
 
 ### RRules
 
@@ -56,7 +55,6 @@ in de output ziet er bijvoorbeeld zo uit:
       "name":"Test",
       "email":"test@copernica.com"
    },
-   "destinations":200,
    "type":"mass",
    "target":{
       "type":"database",

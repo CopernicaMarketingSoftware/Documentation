@@ -6,18 +6,18 @@ an HTTP POST request to the following address:
 `https://api.copernica.com/v2/database/$id/copy?access_token=xxxx`
 
 The `$id` in the URL should be replaced by the database you want to copy. 
-After a successful call the ID of copy is returned.
+After a successful call the ID of copy is returned. Please note that it 
+may take a while for the copy to be completed.
 
 ## Available parameters
 
-The method requires either an existing database ID for the copy, or a 
-name for a new database. If both are given the name is ignored.
+This method can only be used to create a new database and takes the following 
+parameters:
 
-* **target**: ID of an existing database to copy to
-* **name**: Name for the new database
-* **options**: Array with options for copying
+* **name**: Name for the new database (required)
+* **options**: Array with options for copying (optional)
 
-The options array contains several variables defining what exactly should 
+The options array contains several optional variables defining what exactly should 
 be copied. You can set the following variables in the array:
 
 * **views**: Boolean that indicates whether the views should be included in the copy.

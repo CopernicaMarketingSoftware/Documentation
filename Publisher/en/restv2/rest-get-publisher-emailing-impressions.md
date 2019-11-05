@@ -19,6 +19,7 @@ field. For each impression the following information is available:
 * **timestamp**: The timestamp of the impression.
 * **ip**: The IP from which the impression came.
 * **useragent**: The user agent string of the user the impression came from.
+* **device**: The type of device the impression came from ('desktop','tablet','mobile','unknown').
 * **referer**: The referer of the user the impression came from.
 * **emailing**: The ID of the mailing.
 * **destination**: The ID of the destination.
@@ -35,6 +36,7 @@ The JSON representation of a single impression might look somewhat like this:
    "timestamp":"2010-07-20 14:34:32",
    "ip":"0.0.0.0",
    "useragent":"Microsoft Outlook 2007, WinXP",
+   "device":"desktop",
    "referer":null,
    "emailing":"1328",
    "destination":"822758",

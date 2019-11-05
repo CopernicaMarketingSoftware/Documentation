@@ -1,4 +1,4 @@
-# REST API: GET destination errors (Marketing Suite)
+# REST API: GET destination/message errors (Marketing Suite)
 
 Each emailing is tracked, which allows Copernica to provide you with 
 emailing statistics. Errors are one of these statistics. You can 
@@ -8,6 +8,9 @@ retrieve all errors for a specific destination by sending an HTTP GET call to th
 
 This method also support the use of the [fields parameter](./rest-fields-parameter) 
 for the **timestamp** field.
+
+Note: The terms 'destination' and 'message' can be used interchangeably 
+in this article, including the code examples.
 
 ## Returned fields
 
@@ -65,8 +68,8 @@ This example requires the [REST API class](./rest-php).
 
 * [Overview of all REST API calls](./rest-api)
 * [Get all errors](./rest-get-ms-errors)
-* [Get destination abuses](./rest-get-ms-destination-abuses)
-* [Get destination clicks](./rest-get-ms-destination-clicks)
-* [Get destination deliveries](./rest-get-ms-destination-deliveries)
-* [Get destination impressions](./rest-get-ms-destination-impressions)
-* [Get destination unsubscribes](./rest-get-ms-destination-unsubscribes)
+* [Get destination/message abuses](./rest-get-ms-destination-abuses)
+* [Get destination/message clicks](./rest-get-ms-destination-clicks)
+* [Get destination/message deliveries](./rest-get-ms-destination-deliveries)
+* [Get destination/message impressions](./rest-get-ms-destination-impressions)
+* [Get destination/message unsubscribes](./rest-get-ms-destination-unsubscribes)

@@ -1,4 +1,4 @@
-# REST API: GET destination deliveries (Marketing Suite)
+# REST API: GET destination/message deliveries (Marketing Suite)
 
 Er worden statistieken bijgehouden over elke mailing die verstuurd wordt met 
 Copernica om je meer inzicht te geven in de prestatie hiervan. Deliveries zijn 
@@ -9,6 +9,9 @@ Je kan de deliveries voor een specifieke destination opvragen met een HTTP GET c
 
 Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestamp** veld.
+
+Let op: De termen 'destination' en 'message' kunnen uitwisselbaar gebruikt worden, 
+ook in de voorbeeldcode.
 
 ## Teruggegeven velden
 
@@ -60,8 +63,8 @@ Dit voorbeeld vereist de [REST API klasse](./rest-php).
 
 * [Overzicht van alle REST API calls](./rest-api)
 * [Opvragen van alle deliveries](./rest-get-ms-deliveries)
-* [Opvragen van destination abuses voor MS](./rest-get-ms-destination-abuses)
-* [Opvragen van destination clicks voor MS](./rest-get-ms-destination-clicks)
-* [Opvragen van destination errors voor MS](./rest-get-ms-destination-errors)
-* [Opvragen van destination impressions voor MS](./rest-get-ms-destination-impressions)
-* [Opvragen van destination unsubscribes voor MS](./rest-get-ms-destination-unsubscribes)
+* [Opvragen van destination/message abuses voor MS](./rest-get-ms-destination-abuses)
+* [Opvragen van destination/message clicks voor MS](./rest-get-ms-destination-clicks)
+* [Opvragen van destination/message errors voor MS](./rest-get-ms-destination-errors)
+* [Opvragen van destination/message impressions voor MS](./rest-get-ms-destination-impressions)
+* [Opvragen van destination/message unsubscribes voor MS](./rest-get-ms-destination-unsubscribes)

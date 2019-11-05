@@ -1,4 +1,4 @@
-# REST API: GET destination clicks (Marketing Suite)
+# REST API: GET destination/message clicks (Marketing Suite)
 
 Each emailing is tracked, which allows Copernica to provide you with 
 emailing statistics. Clicks are one of these statistics. You can 
@@ -8,6 +8,9 @@ retrieve all clicks for a specific destination by sending an HTTP GET call to th
 
 This method also support the use of the [fields parameter](./rest-fields-parameter) 
 for the **timestamp** field.
+
+Note: The terms 'destination' and 'message' can be used interchangeably 
+in this article, including the code examples.
 
 ## Returned fields
 
@@ -63,8 +66,8 @@ This example requires the [REST API class](./rest-php).
 
 * [Overview of all REST API calls](./rest-api)
 * [Get all clicks](./rest-get-ms-clicks)
-* [Get destination abuses](./rest-get-ms-destination-abuses)
-* [Get destination deliveries](./rest-get-ms-destination-deliveries)
-* [Get destination errors](./rest-get-ms-destination-errors)
-* [Get destination impressions](./rest-get-ms-destination-impressions)
-* [Get destination unsubscribes](./rest-get-ms-destination-unsubscribes)
+* [Get destination/message abuses](./rest-get-ms-destination-abuses)
+* [Get destination/message deliveries](./rest-get-ms-destination-deliveries)
+* [Get destination/message errors](./rest-get-ms-destination-errors)
+* [Get destination/message impressions](./rest-get-ms-destination-impressions)
+* [Get destination/message unsubscribes](./rest-get-ms-destination-unsubscribes)

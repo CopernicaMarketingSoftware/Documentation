@@ -1,4 +1,4 @@
-# REST API: GET destination (Marketing Suite)
+# REST API: GET destination/message (Marketing Suite)
 
 You can use the REST API to retrieve a summary of a destination with an HTTP 
 GET call to the following URL:
@@ -6,6 +6,9 @@ GET call to the following URL:
 `https://api.copernica.com/v2/ms/destination/$id?access_token=xxxx`
 
 Where `$id` should be replaced with the ID of the destination you want summarized.
+
+Note: The terms 'destination' and 'message' can be used interchangeably 
+in this article, including the code examples.
 
 ## Returned fields
 

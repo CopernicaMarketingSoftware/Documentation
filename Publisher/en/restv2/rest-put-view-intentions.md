@@ -1,12 +1,16 @@
-# REST API: POST miniview intentions
+# REST API: POST view intentions
 
-The HTTP POST call to edit the intentions of a miniview can be found at 
+The view intentions indicate what type of communication is allowed with 
+this view. The intentions for email, sms, fax and pdf can all be enabled 
+separately, to prevent accidental mailings.
+
+The HTTP POST call to edit the intentions of a database can be found at 
 the following address:
 
-`https://api.copernica.com/v2/miniview/$id/intentions?access_token=xxxx`
+`https://api.copernica.com/v2/view/$id/intentions?access_token=xxxx`
 
 The `$id` in the URL should be replaced by the unique identifier of the 
-miniview.
+view.
 
 ## Available parameters
 
@@ -42,7 +46,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->post("miniview/{$miniviewID}/intentions", $data);
+$api->post("view/{$viewID}/intentions", $data);
 ```
 
 This method requires the [CopernicaRestAPI class](./rest-php).
@@ -51,6 +55,6 @@ This method requires the [CopernicaRestAPI class](./rest-php).
 
 * [Overview of all REST API calls](./rest-api)
 * [POST database intentions](./rest-post-database-intentions)
-* [POST view intentions](./rest-post-database-intentions)
 * [POST collection intentions](./rest-post-database-intentions)
+* [POST miniview intentions](./rest-post-database-intentions)
 

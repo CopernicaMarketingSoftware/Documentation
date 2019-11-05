@@ -1,4 +1,4 @@
-# REST API: GET destination impressions (Marketing Suite)
+# REST API: GET destination/message impressions (Marketing Suite)
 
 Each emailing is tracked, which allows Copernica to provide you with 
 emailing statistics. Impressions are one of these statistics. You can 
@@ -8,6 +8,9 @@ retrieve all impressions for a specific destination by sending an HTTP GET call 
 
 This method also support the use of the [fields parameter](./rest-fields-parameter) 
 for the **timestamp** field.
+
+Note: The terms 'destination' and 'message' can be used interchangeably 
+in this article, including the code examples.
 
 ## Returned fields
 
@@ -19,6 +22,7 @@ the following information is available:
 * **timestamp**: The timestamp of the impression. 
 * **ip**: The IP where the impression occurred from.
 * **useragent**: User agent string of the machine the impression occurred from.
+* **device**: The type of device the impression came from ('desktop','tablet','mobile','unknown').
 * **destination**: The ID of the destination that caused an impression.
 * **profile**: The ID of the profile that caused an impression.
 * **subprofile**: The ID of the subprofile that caused an impression.
@@ -34,6 +38,7 @@ A single impression might look something like this:
    "timestamp":"2014-10-09 13:41:46",
    "ip":"2a03:e280:0:1::1",
    "useragent":"Mozilla\/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko\/20100101 Firefox\/8.0",
+   "device":"desktop",
    "destination":"112",
    "profile":13453,
    "subprofile":null
@@ -61,8 +66,8 @@ This example requires the [REST API class](./rest-php).
 
 * [Overview of all REST API calls](./rest-api)
 * [Get all impressions](./rest-get-ms-impressions)
-* [Get destination abuses](./rest-get-ms-destination-abuses)
-* [Get destination clicks](./rest-get-ms-destination-clicks)
-* [Get destination deliveries](./rest-get-ms-destination-deliveries)
-* [Get destination errors](./rest-get-ms-destination-errors)
-* [Get destination unsubscribes](./rest-get-ms-destination-unsubscribes)
+* [Get destination/message abuses](./rest-get-ms-destination-abuses)
+* [Get destination/message clicks](./rest-get-ms-destination-clicks)
+* [Get destination/message deliveries](./rest-get-ms-destination-deliveries)
+* [Get destination/message errors](./rest-get-ms-destination-errors)
+* [Get destination/message unsubscribes](./rest-get-ms-destination-unsubscribes)
