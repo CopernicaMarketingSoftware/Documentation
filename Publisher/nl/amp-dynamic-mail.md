@@ -1,4 +1,4 @@
-# Dynamische en interactieve emailings
+# Dynamische en interactieve mailings
 AMP maakt emails krachtiger door de mogelijkheid te bieden ze dynamisch en interactief te maken. Een dynamische email kan zijn content updaten terwijl de email al verstuurd is, een interactieve email laat de gebruiker informatie updaten. Denk hierbij aan het tonen van de meest recente voorraad en het versturen van feedback door middel van een formulier.
 
 Praktische voorbeelden kun je vinden in de [Gmail AMP playground](https://amp.gmail.dev/playground/), kijk hier vooral bij <amp-list> en <amp-form>. Om dit in combinatie met Copernica te laten werken moet er een endpoint opgezet worden die communiceert met de Copernica API. Zo kan een POST request worden doorgestuurd naar een endpoint, welke deze verwerkt en een API call naar Copernica doet om informatie te updaten. Ook kan een endpoint een GET request doen met behulp van de Copernica API om dit als feed te exporteren welke gebruikt kan worden door AMP.
