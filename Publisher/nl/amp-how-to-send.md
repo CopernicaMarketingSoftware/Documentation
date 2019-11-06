@@ -11,7 +11,7 @@ Onder de optie 'Ontwikkelaarsinstellingen' kun je het e-mailadres opgeven van wa
 ### Outlook.com
 Als je op je Outlook account ingelogd bent kun je bij 'Settings -> View all Outlook settings -> Message handling -> Dynamic email' aangeven dat dynamische content weergegeven mag worden. 
 
-Onder de optie 'Developer settings' kun je het e-mailadres opgeven van waaruit je de testmails gaat versturen met Copernica. Om gebruik te maken van de Google Playground raden wij je ook aan om het adres 'amp@gmail.dev' toe te staan.
+Onder de optie 'Developer settings' kun je het e-mailadres opgeven van waaruit je de testmails gaat versturen met Copernica.
 
 ## Testmail versturen met de Gmail AMP for Email Playground
 Voordat je een template maakt in Copernica raden wij je aan om gebruik te maken van de [Gmail AMP for Email Playground](https://amp.gmail.dev/playground/) van Google. In deze Playground kun je een voorbeeld template maken waarbij je direct ziet wat goed en fout gaat in je code. Nadat je template de validatie status '*PASS*' heeft kun je direct een testmail sturen naar het e-mailadres waarmee je bij Gmail bent ingelogd.
@@ -43,7 +43,8 @@ Wanneer je klaar bent om met AMP te starten dan dien je je domein te registeren 
 De eerste stap is een productie klaar AMP email te versturen naar ampforemail.whitelisting@gmail.com en wacht vervolgens repons af tot je verder gaat.
 
 Hierna kan aanvragen om AMP verzender te worden als je aan de onderstaande eisen voldoet:
-- Je dient elke dag naar gemiddeld 100 gmail adressen te hebben verstuurd. 
+- DKIM, SPF and DMARC moeten goed ingesteld staan. Wanneer je gebruik maakt van Copernica senderdomains en deze zijn goedgekeurd staat dit goed ingesteld.
+- Je dient een minimale verzending in de orde van gemiddeld 100 berichten per dag te hebben vanaf het verzendadres. Dit houdt in dat je over een maand tijd minimaal 3000 Gmail adressen moet benaderen. 
 - Je moet voldoen aan de [bulk sender guidelines](https://support.google.com/mail/answer/81126) van Gmail.
 
 Je kan bij Gmail via het onderstaande forumulier aanvragen om AMP verzender te worden:
