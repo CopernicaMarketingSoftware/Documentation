@@ -40,6 +40,7 @@
    * [Geotargeting](./campaign-geotargeting.md)
    * [Retentie](./campaign-retention.md)
    * [Herhaalaankoop](./campaign-repeat-purchase.md)
+   * [Leadgeneratie](./campaign-leadgeneration.md)
 * [Websites](./websites.md)
 * [Mobile](./mobile-mailing.md)
 * [PDF](./pdf-document.md)
