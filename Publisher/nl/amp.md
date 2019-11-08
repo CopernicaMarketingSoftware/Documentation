@@ -2,7 +2,7 @@
 AMP voor email maakt het mogelijk om interactieve en dynamische emails te maken. AMP wordt in de Publisher van Copernica ondersteunt. Met de bijbehorende documentatie wordt je op weg geholpen in het maken van dynamische en interactieve mails in Copernica.
 
 ## Voordat je begint
-Voordat je begint met het versturen van een email met AMP content is het belangrijk om te kijken of je wel aan de voorwaarden voldoet om een AMP email te versturen.
+Voordat je begint met het versturen van een email met AMP content is het belangrijk om te kijken of je wel aan de voorwaarden voldoet om een AMP email te versturen. 
 
 * DKIM, SPF and DMARC moeten goed ingesteld staan. Wanneer je gebruik maakt van Copernica senderdomains en deze zijn goedgekeurd staat dit goed ingesteld.
 * Gmail vereist een minimale verzending in de orde van gemiddeld 100 berichten naar Gmail adressen per dag van het email adres vanaf waar gestuurd gaat worden. Dit houdt in dat je over een maand tijd ongeveer 3000 Gmail adressen moet benaderen.
