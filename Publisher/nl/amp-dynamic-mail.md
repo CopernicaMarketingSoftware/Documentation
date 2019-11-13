@@ -8,7 +8,7 @@ Om dynamische en interactieve e-mails te versturen maken we gebruik van externe 
 
 Niet alle e-mailclients laten het standaard toe om te communiceren met een ander domein, een zogenaamd Cross-Origin Resource Sharing (CORS) request. Om CORS requests te kunnen verwerken, moeten er een aantal headers en parameters ingesteld worden. Op deze manier weet de e-mailclient dat er op een juiste manier gecommuniceerd wordt. 
 
-Deze headers en parameters hoeven momenteel alleen voor Gmail, de Publisher en Google's testomgeving te worden ingesteld. Het instellen kan onder andere via PHP en Javascript. De makkelijkste manier is echter om dit server breed te doen met behulp van een .htaccess bestand. Plaats dit bestand op je server in een bovenliggende map van de plek waar de externe content staat.
+Deze headers en parameters hoeven momenteel alleen voor Gmail, de Publisher en Google's testomgeving te worden ingesteld, voor Outlook zijn deze headers niet vereist. Het instellen kan onder andere via PHP en Javascript. De makkelijkste manier is echter om dit server breed te doen met behulp van een .htaccess bestand. Plaats dit bestand op je server in een bovenliggende map van de plek waar de externe content staat.
 
 Een voorbeeld van een .htaccess bestand met de juiste headers vind je hieronder. Let erop dat ADRES en DOMEIN.NL vervangen moeten worden door het verzend adres.
 

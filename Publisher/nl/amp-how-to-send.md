@@ -4,12 +4,12 @@
 Voordat je een AMP testmail kunt versturen, dien je het afzenderadres dat je wilt gebruiken voor het versturen van je e-mails te whitelisten. Hieronder vind je per ISP een uitleg hoe je dit kunt doen:
 
 ### Gmail
-Als je op je Google account ingelogd bent kun je bij 'Instellingen &rightarrow; Algemeen &rightarrow; Dynamische e-mail' aangeven dat dynamische content weergegeven mag worden. 
+Als je op je Google account ingelogd bent kun je bij 'Instellingen → Algemeen → Dynamische e-mail' aangeven dat dynamische content weergegeven mag worden. 
 
 Onder de optie 'Ontwikkelaarsinstellingen' kun je het e-mailadres opgeven van waaruit je de testmails gaat versturen met Copernica. Om gebruik te maken van de Google Playground raden wij je ook aan om het adres 'amp@gmail.dev' toe te staan.
 
 ### Outlook.com
-Als je op je Outlook account ingelogd bent kun je bij 'Settings &rightarrow; View all Outlook settings &rightarrow; Message handling &rightarrow; Dynamic email' aangeven dat dynamische content weergegeven mag worden. 
+Als je op je Outlook account ingelogd bent kun je bij 'Settings → View all Outlook settings → Message handling → Dynamic email' aangeven dat dynamische content weergegeven mag worden. 
 
 Onder de optie 'Developer settings' kun je het e-mailadres opgeven van waaruit je de testmails gaat versturen met Copernica.
 
@@ -47,11 +47,11 @@ Hierna kan je aanvragen om AMP-verzender te worden, waarbij je aan de volgende e
 - Je dient een minimale verzending in de orde van gemiddeld 100 berichten per dag te hebben vanaf het verzendadres. Dit houdt in dat je over een maand tijd minimaal 3000 Gmail adressen moet benaderen.
 - Je moet voldoen aan de [bulk sender guidelines](https://support.google.com/mail/answer/81126) van Gmail.
 
-Je kan bij Gmail via [dit formulier](https://docs.google.com/forms/d/e/1FAIpQLScRYD2lohy28EVgXwDZUCC1yHw5qg-Gfz31jGuy8uSfi-hA0Q/viewform) aanvragen om AMP-verzender te worden.
+Je kan bij Gmail via [dit formulier](https://docs.google.com/forms/d/e/1FAIpQLScRYD2lohy28EVgXwDZUCC1yHw5qg-Gfz31jGuy8uSfi-hA0Q/viewform) aanvragen om AMP-verzender te worden. Na enkele werkdagen ontvang je een reactie met daarin of je bent goed- of afgekeurd.
 
-Voor meer informatie over AMP-registiratie bij Gmail klik dan [hier](https://developers.google.com/gmail/ampemail/register)
+Voor meer informatie over AMP-registiratie bij Gmail klik dan [hier](https://developers.google.com/gmail/ampemail/register).
 
 ### Outlook.com
-Bij Outlook is er geen sprake van een minimaal volume. Je dient wel een AMP e-mail getest te hebben. Vervolgens kan je [dit formulier](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzX-CbfWK8dJr5uYgzqdeDJUMkRSRFpJUEoxRUVOTFpXVEpWR0xJVlpSTy4u) invullen om AMP-afzender te worden.
+Bij Outlook is er geen sprake van een minimaal volume. Je dient wel een AMP e-mail getest te hebben. Vervolgens kan je [dit formulier](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzX-CbfWK8dJr5uYgzqdeDJUMkRSRFpJUEoxRUVOTFpXVEpWR0xJVlpSTy4u) invullen om AMP-afzender te worden. Na enkele werkdagen ontvang je een reactie met daarin of je bent goed- of afgekeurd.
 
-Voor meer informatie over AMP-registiratie bij outlook.com klik dan [hier](https://docs.microsoft.com/nl-nl/outlook/amphtml/register-outlook)
+Voor meer informatie over AMP-registiratie bij outlook.com klik dan [hier](https://docs.microsoft.com/nl-nl/outlook/amphtml/register-outlook).
