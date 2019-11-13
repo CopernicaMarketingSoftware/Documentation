@@ -13,7 +13,7 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST en DELETE:
 | GET            | www.smtpeter.com/v1/attachments      | Lijst van alle bijlages voor specifieke email                           |
 | GET            | www.smtpeter.com/v1/dkimkey          | DKIM opvragen met specifiek ID                                          |
 | GET            | www.smtpeter.com/v1/dkimkeys         | Alle DKIM opvragen voor een *sender domain*                             |
-| GET            | www.smtpeter.com/v1/dmarc            | Opvragen van alle datums waar mogelijk een *dmarc raport* voor is       |
+| GET            | www.smtpeter.com/v1/dmarc            | Opvragen van alle datums waar mogelijk een *dmarc rapport* voor is      |
 | GET            | www.smtpeter.com/v1/dns              | Voorgestelde *DNS record* voor een bepaald domein                       |
 | GET            | www.smtpeter.com/v1/domain           | Opvragen van specifiek sender domain                                    |
 | GET            | www.smtpeter.com/v1/domains          | Opvragen van alle sender domains                                        |
@@ -31,7 +31,7 @@ De volgende methodes zijn toegankelijk via HTTP GET, POST en DELETE:
 | GET            | www.smtpeter.com/v1/templates        | Opvragen van alle template identifiers                                  |
 | POST           | www.smtpeter.com/v1/dkimkey          | Voeg een nieuwe DKIM toe aan het 'sender domain'                        |
 | POST           | www.smtpeter.com/v1/domain           | Maak een nieuw domein aan of wijs een domein toe                        |
-| POST           | www.smtpeter.com/v1/webhook          | Configureren van een webhook (feedbackloop is deprecated)               |
+| POST           | www.smtpeter.com/v1/webhook          | Configureren van een webhook (voorheen feedbackloop)                    |
 | POST           | www.smtpeter.com/v1/send             | Versturen van data naar SMTP                                            |
 | POST           | www.smtpeter.com/v1/spf              | Het aanmaken van een spf record                                         |
 | POST           | www.smtpeter.com/v1/template         | Het aanmaken van een template                                           |

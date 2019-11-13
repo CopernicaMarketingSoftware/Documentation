@@ -23,11 +23,10 @@ geven, gevolgd door een `=` en de waarde van de optie.
 De volgende parameters kunnen aan de URLs als variabelen worden toegevoegd:
 
 ```text
-- **start**: de startdatum (jjjj-mm-dd) vanaf wanneer de events gedownload worden;
-- **end**:   de (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload moeten worden;
-- **tags**:  optionele tags waarop gefilterd kan worden.
+- **start**: De startdatum (jjjj-mm-dd) vanaf wanneer de events gedownload worden.
+- **end**:   De (exclusieve) eind datum (jjjj-mm-dd) tot wanneer de events gedownload moeten worden.
+- **tags**:  Optionele tags waarop gefilterd kan worden.
 ```
-
 
 ## Start en end parameters
 
@@ -89,15 +88,15 @@ Het `type` in de JSON geeft het type record. De beschikbare types
 staan in de onderstaande tabel. De beschikbare data wordt 
 beschreven op de betreffende pagina van het type.
 
-| Type                                        | Beschrijving                                     |
-| ------------------------------------------- | ------------------------------------------------ |
-| [attempt](get-logfiles "attempts log file") | Algemene informatie over het bericht             |
-| [bounce](get-logfiles "bounces log file")   | informatie over een bounce                       |
-| [click](get-logfiles "clicks log file")     | informatie over een gegenereerde klik            |
-| [delivery](get-logfiles "log-deliveries")   | informatie over de aflevering                    |
-| [failure](get-logfiles "log-failures")      | informatie over een mislukte aflevering          |
-| [open](get-logfiles "opens log file")       | informatie over wanneer een bericht is geopend   |
-| [response](get-logfiles "log-responses")    | informatie over door SMTPeter ontvangen reacties |
+| Type                                          | Beschrijving                                     |
+|-----------------------------------------------|--------------------------------------------------|
+| [attempt](log-attempts "attempts log file")   | Algemene informatie over het bericht             |
+| [bounce](log-bounces "bounces log file")      | Informatie over een bounce                       |
+| [click](log-clicks "clicks log file")         | Informatie over een gegenereerde klik            |
+| [delivery](log-deliveries "log-deliveries")   | Informatie over de aflevering                    |
+| [failure](log-failures "log-failures")        | Informatie over een mislukte aflevering          |
+| [open](log-opens "opens log file")            | Informatie over wanneer een bericht is geopend   |
+| [response](log-responses "log-responses")     | Informatie over door SMTPeter ontvangen reacties |
 
 
 ## Events op basis van een MESSAGE ID
@@ -170,5 +169,5 @@ andere periode door een `start` en/of `end` parameter op te geven.
 ## Meer informatie
 
 * [REST API](./rest-api)
-* [Niet-verzend REST calls](./rest-other-calls)
+* [REST calls niet gerelateerd aan verzending](./rest-other-calls)
 * [Alle REST calls](all-rest-calls)
