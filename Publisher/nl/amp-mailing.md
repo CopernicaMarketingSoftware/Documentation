@@ -33,3 +33,8 @@ In het bovenstaande voorbeeld worden de blokken `loop` en `afbeelding` gedeeld e
 Zorg er bij het maken van een AMP mailing voor dat je altijd een volledig HTML document hebt om op terug te vallen. AMP-clients kunnen de AMP-versie na een bepaalde periode of bij het doorsturen van een mailing mogelijk niet meer weergeven. Daarnaast ondersteunen nog niet alle clients AMP.
 
 Tot slot hebben AMP-clients een geldige SPF, DKIM en DMARC configuratie nodig, dus zorg ervoor dat je je [sender domains](./quick-sender-domain-guide) goed hebt ingesteld.
+
+## Overzicht
+Als je voor het eerst aan de slag gaat met AMP in combinatie met Copernica, raden wij aan de volgende artikelen ook nog door te nemen:
+* [Stappenplan versturen met AMP](./amp-how-to-send)
+* [Dynamische en interactieve mailings](./amp-dynamic-mail)
