@@ -28,5 +28,5 @@ verstuurd). Dit is in nieuwe bestanden opgelost.
 
 ## Meer informatie
 
-* [REST niet-zend calls](./rest-other-calls)
+* [REST calls niet gerelateerd aan verzending](./rest-other-calls)
 * [REST events opvragen](./rest-events)

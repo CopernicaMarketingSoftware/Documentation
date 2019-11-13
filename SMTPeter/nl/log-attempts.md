@@ -3,7 +3,7 @@
 Elk bericht dat via SMTPeter is verstuurd is gelogd in bestanden met prefix
 "attempts". Je kunt de inhoud van deze bestanden downloaden in CSV, JSON
 en XML formaat via de [REST logfiles API](rest-logfiles) of via het dashboard.
-Deze bestanden bevatten de volgende informatie:
+Voor elke attempt wordt de volgende informatie opgeslagen:
 
 | Naam       | Beschrijving                                                                                                                               |
 |------------|------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -17,5 +17,5 @@ Deze bestanden bevatten de volgende informatie:
 
 ## Meer informatie
 
-* [REST niet-zend calls](./rest-other-calls)
+* [REST calls niet gerelateerd aan verzending](./rest-other-calls)
 * [REST events opvragen](./rest-events)

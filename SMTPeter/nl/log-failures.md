@@ -3,7 +3,7 @@
 Log files met de prefix "failures" bevatten informatie over berichten waarvan
 de aflevering faalde. Je kunt de inhoud van deze bestanden downloaden in
 CSV, JSON en XML formaat via de [REST logfiles API](rest-logfiles) of via
-het dashboard. Deze bestanden bevatten de volgende informatie:
+het dashboard. Voor elke failure wordt de volgende informatie opgeslagen:
 
 | Name        | Description                                                                                                                                |
 | ----------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
@@ -24,5 +24,5 @@ het dashboard. Deze bestanden bevatten de volgende informatie:
 
 ## Meer informatie
 
-* [REST niet-zend calls](./rest-other-calls)
+* [REST calls niet gerelateerd aan verzending](./rest-other-calls)
 * [REST events opvragen](./rest-events)
