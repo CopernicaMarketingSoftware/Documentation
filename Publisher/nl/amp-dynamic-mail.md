@@ -54,7 +54,10 @@ Bij de volgende stappen is dit ook telkens de manier om te kijken of alles goed 
 5. Kopieer de code naar de Publisher en kijk of de preview goed wordt weergeven.
 6. Verstuur een test e-mail naar Gmail via de Publisher en kijk of de lijst in de e-mail wordt weergeven.
 
-
+## Overzicht
+Als je voor het eerst aan de slag gaat met AMP in combinatie met Copernica, raden wij aan de volgende artikelen ook door te nemen:
+* [AMP in Copernica](./amp-mailing)
+* [Stappenplan versturen met AMP](./amp-how-to-send)
 
 
 
