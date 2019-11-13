@@ -57,7 +57,7 @@ Bij Outlook is er geen sprake van een minimaal volume. Je dient wel een AMP e-ma
 Voor meer informatie over AMP-registiratie bij outlook.com klik dan [hier](https://docs.microsoft.com/nl-nl/outlook/amphtml/register-outlook).
 
 ## Overzicht
-Om te leren hoe AMP in Copernica werkt of hoe je een AMP mail opzet klik dan op onderstaande links:
+Om te leren hoe AMP in Copernica werkt of hoe je een AMP mail opzet, bekijk dan de onderstaande artikelen:
 * [AMP in Copernica](./amp-mailing)
 * [Dynamische en interactieve mailings](./amp-dynamic-mail)
 
