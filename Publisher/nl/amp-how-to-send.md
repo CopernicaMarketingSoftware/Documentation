@@ -55,3 +55,9 @@ Voor meer informatie over AMP-registiratie bij Gmail klik dan [hier](https://dev
 Bij Outlook is er geen sprake van een minimaal volume. Je dient wel een AMP e-mail getest te hebben. Vervolgens kan je [dit formulier](https://forms.office.com/Pages/ResponsePage.aspx?id=v4j5cvGGr0GRqy180BHbRzX-CbfWK8dJr5uYgzqdeDJUMkRSRFpJUEoxRUVOTFpXVEpWR0xJVlpSTy4u) invullen om AMP-afzender te worden. Na enkele werkdagen ontvang je een reactie met daarin of je bent goed- of afgekeurd.
 
 Voor meer informatie over AMP-registiratie bij outlook.com klik dan [hier](https://docs.microsoft.com/nl-nl/outlook/amphtml/register-outlook).
+
+## Overzicht
+Om te leren hoe AMP in Copernica werkt of hoe je een AMP mail opzet klik dan op onderstaande links:
+* [AMP in Copernica](./amp-mailing)
+* [Dynamische en interactieve mailings](./amp-dynamic-mail)
+
