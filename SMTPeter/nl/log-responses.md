@@ -4,8 +4,8 @@ Log files met de prefix "responses" bevatten informatie over reacties
 die je verstuurde e-mail gegeneerd heeft, met uitzondering van bounces.
 Een voorbeeld van zo'n antwoord is een "out-of-office-reply". Je kunt de
 inhoud van deze bestanden downloaden in CSV, JSON en XML formaat via de
-[REST logfiles API](rest-logfiles) of via het dashboard. Deze bestanden
-bevatten de volgende informatie:
+[REST logfiles API](rest-logfiles) of via het dashboard. 
+Voor elke reponse wordt de volgende informatie opgeslagen:
 
 | Naam        | Beschrijving                                                                                                                                        |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -19,5 +19,5 @@ bevatten de volgende informatie:
 
 ## Meer informatie
 
-* [REST niet-zend calls](./rest-other-calls)
+* [REST calls niet gerelateerd aan verzending](./rest-other-calls)
 * [REST events opvragen](./rest-events)

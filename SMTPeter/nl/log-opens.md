@@ -3,7 +3,7 @@
 Log files met de prefix "opens" bevatten informatie over wanneer een verzonden
 bericht geopend is. Je kunt de inhoud van deze bestanden downloaden in
 CSV, JSON en XML formaat via de [REST logfiles API](rest-logfiles) of via
-het dashboard. Deze bestanden bevatten de volgende informatie:
+het dashboard. Voor elke open wordt de volgende informatie opgeslagen:
 
 | Naam        | Beschrijving                                                                                                                            |
 | ----------- | --------------------------------------------------------------------------------------------------------------------------------------- |
@@ -23,5 +23,5 @@ het dashboard. Deze bestanden bevatten de volgende informatie:
 
 ## Meer informatie
 
-* [REST niet-zend calls](./rest-other-calls)
+* [REST calls niet gerelateerd aan verzending](./rest-other-calls)
 * [REST events opvragen](./rest-events)

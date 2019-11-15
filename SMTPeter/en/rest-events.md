@@ -1,7 +1,7 @@
 # Retrieve events
 
 Everything that passes through SMTPeter gets logged: deliveries, bounces,
-clicks, opens - all these events are written to log files. These logfiles 
+clicks, opens - all these events are written to log files. These log files 
 are accessible through the [REST API](rest-logfiles). However, if you
 are only interested in particular events that fulfill a certain requirement
 you can use the events rest call. All calls that are supported are:
@@ -20,9 +20,9 @@ extra options by adding an `&` after your access token, followed by the name
 of the option a `=` and the value of the option.
 The following parameters can be added to the URL as variables:
 
-- **start**: the start date (yyyy-mm-dd) from which you want to retrieve the events,
-- **end**:   the (exclusive) end date (yyyy-mm-dd) until you want to retrieve events,
-- **tags**:  optional tags you want to filter for.
+- **start**: The start date (yyyy-mm-dd) from which you want to retrieve the events.
+- **end**:   The (exclusive) end date (yyyy-mm-dd) until you want to retrieve events.
+- **tags**:  Optional tags you want to filter for.
 
 ## Start and end parameters
 
@@ -82,15 +82,15 @@ The `type` in the JSON describes which type of record it is. The types that
 are available are listed in the table below. The data that these types
 contain are described on the page of the particular log file.
 
-| Type                                        | Description                                           |
-| ------------------------------------------- | ----------------------------------------------------- |
-| [attempt](log-attempts "attempts log file") | General information about the message                 |
-| [bounce](log-bounces "bounces log file")    | information about a bounce                            |
-| [click](log-clicks "clicks log file")       | information about the clicks generated                |
-| [delivery](log-deliveries)                  | information about the delivery                        |
-| [failure](log-failures)                     | information about a failed delivery                   |
-| [open](log-opens "opens log file")          | information about when the message is opened          |
-| [response](log-responses)                   | information about response mails received by SMTPeter |
+| Type                                              | Description                                           |
+|---------------------------------------------------|-------------------------------------------------------|
+| [attempt](log-attempts "attempts log file")       | General information about the message                 |
+| [bounce](log-bounces "bounces log file")          | Information about a bounce                            |
+| [click](log-clicks "clicks log file")             | Information about the clicks generated                |
+| [delivery](log-deliveries "deliveries log file")  | Information about the delivery                        |
+| [failure](log-failures "failures log file")       | Information about a failed delivery                   |
+| [open](log-opens "opens log file")                | Information about when the message is opened          |
+| [response](log-responses "responses log file)     | Information about response mails received by SMTPeter |
 
 
 ## Events based on messageid
