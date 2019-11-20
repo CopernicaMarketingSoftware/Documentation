@@ -49,7 +49,7 @@ Een gedecodeerde JSON response voor een profiel ziet er bijvoorbeeld zo uit:
 
 ```json
     {
-        "action":       "create",
+        "type":         "create",
         "profile":      123,
         "parameters": {
             "name":     "Johny",
@@ -77,7 +77,7 @@ Een voorbeeld van een subprofiel ziet er zo uit:
 
 ```json
     {
-        "action":       "create",
+        "type":         "create",
         "subprofile":   123,
         "parameters": {
             "name":     "Johny",
