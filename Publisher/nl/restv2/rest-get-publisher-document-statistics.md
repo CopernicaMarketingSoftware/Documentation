@@ -8,9 +8,9 @@ te sturen naar de volgende URL:
 Hier moet `$id` vervangen worden door de ID van het emailing document.
 
 ## Beschikbare parameters
-
-* **begintime**: Start datum (en tijd) voor de statistieken.
-* **endtime**: Eind datum (en tijd) voor de statistieken.
+ 
+* **begintime**: Start datum (en tijd) voor de statistieken (YYYY-MM-DD HH:MM:SS formaat).
+* **endtime**: Eind datum (en tijd) voor de statistieken (YYYY-MM-DD HH:MM:SS formaat).
 
 ## Teruggegeven waarde
 

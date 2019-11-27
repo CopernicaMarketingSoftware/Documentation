@@ -7,6 +7,11 @@ HTTP GET request to the following URL:
 
 Where the `$id` should be replaced with the ID of the testgroup.
 
+## Available parameters
+
+* **begintime**: Start date (and time) for the statistics (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: End date (and time) for the statistics (YYYY-MM-DD HH:MM:SS format).
+
 ## Returned fields
 
 The return value is a JSON object containing the following fields:

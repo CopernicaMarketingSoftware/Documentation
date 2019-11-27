@@ -7,6 +7,11 @@ te sturen naar de volgende URL:
 
 Hier moet `$id` vervangen worden door de ID van de testgroep.
 
+## Beschikbare parameters
+
+* **begintime**: Start datum (en tijd) voor de statistieken (YYYY-MM-DD HH:MM:SS formaat).
+* **endtime**: Eind datum (en tijd) voor de statistieken (YYYY-MM-DD HH:MM:SS formaat).
+
 ## Teruggegeven velden
 
 De teruggegeven waarde is een JSON object met de volgende velden:

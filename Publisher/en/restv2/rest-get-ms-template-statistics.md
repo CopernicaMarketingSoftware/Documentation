@@ -8,8 +8,8 @@ Where the `$id` should be replaced with the ID of the template.
 
 ## Available parameters
 
-* **begintime**: Start date (and time) for the statistics.
-* **endtime**: End date (and time) for the statistics.
+* **begintime**: Start date (and time) for the statistics (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: End date (and time) for the statistics (YYYY-MM-DD HH:MM:SS format).
 
 ## Return value
 
