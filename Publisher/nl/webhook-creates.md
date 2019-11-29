@@ -7,6 +7,7 @@ Voor elk nieuw profiel sturen we via HTTP of HTTPS een POST bericht naar jouw
 server met daarin alle relevante informatie over het zojuist aangemaakte profiel.
 
 ## Variabelen
+Bij elke POST-oproep worden de variabelen in de onderstaande tabel verzonden. De POST-gegevens worden verzonden met het inhoudstype application/x-www-form-urlencoded.
 
 Associative arrays zoals "parameters" en "fields" worden per key-valuepaar verstuurd,
 bijvoorbeeld als *parameters[key]=value*.
