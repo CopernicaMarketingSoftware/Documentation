@@ -22,9 +22,8 @@ property. You can use these values in the "from" and "to" address too.
 }
 ````
 
-If you use the above JSON data for your mail, you can use inside the "from"
-and "to" address, the subject line, and inside the text and HTML versions
-of your email these variables.
+If you use the above JSON data for your mail, you can use these variables inside the "from" and "to" address, the subject line, and inside the text and HTML versions
+of your email.
 
 ````mime
 From: {$ourname} <info@example.org>
