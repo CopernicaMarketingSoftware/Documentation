@@ -60,8 +60,13 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// set the period
+$parameters = array(
+    'fields'    =>  array('timestamp>2019-01-01', 'timestamp<2019-02-01')
+);
+
 // execute the call
-print_r($api->get("publisher/destination/{$emailingDestinationID}/clicks/"));
+print_r($api->get("publisher/destination/{$emailingDestinationID}/clicks/", $parameters));
 ```
 
 This example requires the [REST API class](./rest-php).

@@ -57,8 +57,13 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token 
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// stel de periode in
+$parameters = array(
+    'fields'    =>  array('timestamp>2019-01-01', 'timestamp<2019-02-01')
+);
+
 // voer het verzoek uit
-print_r($api->get("publisher/emailing/{$emailingID}/errors/"));
+print_r($api->get("publisher/emailing/{$emailingID}/errors/", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
