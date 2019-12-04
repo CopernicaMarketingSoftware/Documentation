@@ -14,8 +14,8 @@ You can find the call to retrieve all Publisher emailings [here](./rest-get-emai
 that were *not* the result of a follow-up ("no") or all mailings ("both"). Defaults to "both".
 * **mindestinations**: Only retrieve mailings at least this many destinations.
 * **maxdestinations**: Only retrieve mailings with at most this many destinations.
-* **fromdate**: Only retrieve mailings sent after this date.
-* **todate**: Only retrieve mailings sent before this date.
+* **fromdate**: Only retrieve mailings sent after this date (YYYY-MM-DD HH:MM:SS format).
+* **todate**: Only retrieve mailings sent before this date (YYYY-MM-DD HH:MM:SS format).
 
 This method also supports [paging parameters](./rest-paging).
 

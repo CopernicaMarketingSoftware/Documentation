@@ -20,8 +20,8 @@ die *niet* het resultaat waren van een opvolgactie ("no") of alle mailings ("bot
 die *geen* test waren ("no") of alle mailings ("both"). Standaardwaarde "both".
 * **mindestinations**: Vraag alleen mailings met dit minimum aantal ontvangers op.
 * **maxdestinations**: Vraag alleen mailings met dit maximum aantal ontvangers op.
-* **fromdate**: Vraag alleen mailings na deze datum op.
-* **todate**: Vraag alleen mailings voor deze datum op.
+* **fromdate**: Vraag alleen mailings na deze datum op (YYYY-MM-DD HH:MM:SS formaat).
+* **todate**: Vraag alleen mailings voor deze datum op (YYYY-MM-DD HH:MM:SS formaat).
 
 Deze methode ondersteunt ook [paging parameters](./rest-paging).
 
