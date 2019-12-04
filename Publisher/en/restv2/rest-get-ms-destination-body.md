@@ -44,7 +44,7 @@ To request the message body you can use a script like the one below:
 
 ```php
 // import the helper class
-require_once('CopernicaRestAPI.php');
+require_once('copernica_rest_api.php');
 
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);

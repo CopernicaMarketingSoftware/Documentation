@@ -44,7 +44,7 @@ de body van een bericht op te vragen:
 
 ```php
 // import the helper class
-require_once('CopernicaRestAPI.php');
+require_once('copernica_rest_api.php');
 
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
