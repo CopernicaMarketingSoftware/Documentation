@@ -66,8 +66,14 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// stel de periode in
+$data = array(
+    'begintime' => "2019-01-01 00:00:00", 
+    'endtime'   => "2019-02-01 00:00:00"
+);
+
 // voer het verzoek uit
-print_r($api->get("ms/template/{$templateID}/statistics/"));
+print_r($api->get("ms/template/{$templateID}/statistics/", $data));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
