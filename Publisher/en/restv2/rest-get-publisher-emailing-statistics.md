@@ -70,8 +70,6 @@ Array
         (
             [total] => 0
         )
-
-
 )
 ```
 
@@ -86,8 +84,14 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// set the period
+$data = array(
+    'begintime' => "2019-01-01 00:00:00", 
+    'endtime'   => "2019-02-01 00:00:00"
+);
+
 // execute the call
-print_r($api->get("publisher/emailing/{$emailingID}/statistics/"));
+print_r($api->get("publisher/emailing/{$emailingID}/statistics/", $data));
 ```
 
 This example requires the [REST API class](./rest-php).
