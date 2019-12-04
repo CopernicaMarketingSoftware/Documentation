@@ -25,6 +25,7 @@ class CopernicaRestAPI
     /**
      *  Constructor
      *  @param  string      Access token
+     *  @param  int         Version parameter (optional)
      */
     public function __construct($token, $version = 2)
     {
