@@ -64,12 +64,6 @@ In this case a class is placed around the image, allowing the stylesheet
 to modify the layout of the image accordingly. It's also possible to 
 add other HTML code to these tags.
 
-## Add inline style
-
-Add inline style to your image block. 
-
-`[image name='example' inlinestyle='border: 1px sold red; margin-left: 20px;']`
-
 ## Add class
 
 Add a class to your image block. 
