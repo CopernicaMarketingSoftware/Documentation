@@ -68,12 +68,6 @@ wordt toegevoegd in het document.
 
 `[image name='nameofblock' begin='' end='']`
 
-### ** Inline style toevoegen**
-Voeg inline style toe aan het image blok. Hiermee kun je de afbeelding 
-responsive maken.
-
-`[image name='nameofblock' inlinestyle='border: 1px solid red; margin-left: 20px;']`
-
 ### ** Class toevoegen**
 Voeg een class toe aan het image blok. Hiermee kun je de afbeelding 
 responsive maken.
