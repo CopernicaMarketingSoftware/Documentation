@@ -4,7 +4,7 @@ Below you'll find a REST API script, written in PHP.
 With this script you can easily make your first HTTP
 request. All calls are supported: GET, POST, PUT & DELETE.
 
-[Download the helper class](../downloads/copernica_rest_api.php "Download the CopernicaRestAPI class")
+[Download the helper class](../../downloads/copernica_rest_api.php "Download the CopernicaRestAPI class")
 
 ## Use in your own application
 

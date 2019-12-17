@@ -47,7 +47,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // execute the call
-print_r($api->get("ms/destination/{$destinationID}", $parameters));
+print_r($api->get("ms/destination/{$destinationID}"));
 ```
 
 This example requires the [REST API class](./rest-php)
