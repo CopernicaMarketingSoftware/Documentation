@@ -7,8 +7,14 @@ Je kan alle errors voor een account opvragen met een HTTP GET call naar de volge
 
 `https://api.copernica.com/v2/ms/errors?access_token=xxxx`
 
-Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
-voor het **timestamp** veld.
+## Parameters
+
+De parameters voor deze methode kunnen ingesteld worden om alleen de 
+statistieken voor een bepaalde periode op te halen. De volgende optionele 
+parameters zijn beschikbaar:
+
+* **begintime**: De tijdstempel waarna de error gemeld moet zijn (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: De tijdstempel waarvoor de error gemeld moet zijn (YYYY-MM-DD HH:MM:SS format).
 
 ## Teruggegeven velden
 

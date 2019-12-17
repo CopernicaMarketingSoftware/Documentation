@@ -6,11 +6,16 @@ retrieve all impressions for a specific destination by sending an HTTP GET call 
 
 `https://api.copernica.com/v2/ms/destination/{$destinationID}/impressions?access_token=xxxx`
 
-This method also support the use of the [fields parameter](./rest-fields-parameter) 
-for the **timestamp** field.
-
 Note: The terms 'destination' and 'message' can be used interchangeably 
 in this article, including the code examples.
+
+## Parameters
+
+The parameters for this method can be set to retrieve the statistics from 
+a certain period. The following optional parameters are available:
+
+* **begintime**: The timestamp after which the impressions must have occurred (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: The timestamp before which the impressions must have occurred (YYYY-MM-DD HH:MM:SS format).
 
 ## Returned fields
 

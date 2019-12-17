@@ -7,11 +7,17 @@ Je kan de errors voor een specifieke destination opvragen met een HTTP GET call 
 
 `https://api.copernica.com/v2/ms/destination/{$destinationID}/errors?access_token=xxxx`
 
-Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
-voor het **timestamp** veld.
-
 Let op: De termen 'destination' en 'message' kunnen uitwisselbaar gebruikt worden, 
 ook in de voorbeeldcode.
+
+## Parameters
+
+De parameters voor deze methode kunnen ingesteld worden om alleen de 
+statistieken voor een bepaalde periode op te halen. De volgende optionele 
+parameters zijn beschikbaar:
+
+* **begintime**: De tijdstempel waarna de error gemeld moet zijn (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: De tijdstempel waarvoor de error gemeld moet zijn (YYYY-MM-DD HH:MM:SS format).
 
 ## Teruggegeven velden
 

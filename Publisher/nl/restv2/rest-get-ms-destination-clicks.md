@@ -15,9 +15,14 @@ ook in de voorbeeldcode.
 
 ## Parameters
 
-Er is een parameter beschikbaar voor deze methode; de 'unique' parameter 
-geeft aan of er alleen unieke clicks teruggegeven moeten worden. Standaard 
-zullen alle clicks worden geretourneerd.
+De parameters voor deze methode kunnen ingesteld worden om alleen de 
+statistieken voor een bepaalde periode op te halen en om te filteren op 
+alleen unieke clicks. De volgende optionele parameters zijn beschikbaar:
+
+* **begintime**: De tijdstempel waarna de click gemaakt moet zijn (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: De tijdstempel waarvoor de click gemaakt moet zijn (YYYY-MM-DD HH:MM:SS format).
+* **unique**: De boolean parameter die aangeeft of alleen unieke clicks ('true') of 
+alle clicks ('false') teruggegeven moeten worden. Standaard worden alle clicks teruggegeven.
 
 ## Teruggegeven velden
 

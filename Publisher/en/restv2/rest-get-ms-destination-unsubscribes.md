@@ -7,17 +7,16 @@ retrieve all unsubscribes for a specific destination by sending an HTTP GET call
 
 `https://api.copernica.com/v2/ms/destination/{$destinationID}/unsubscribes?access_token=xxxx`
 
-This method also support the use of the [fields parameter](./rest-fields-parameter) 
-for the **timestamp** field.
-
 Note: The terms 'destination' and 'message' can be used interchangeably 
 in this article, including the code examples.
 
 ## Parameters
 
-There is one parameter available for this method. The 'unique' parameter 
-indicates whether only unique unsubscribes should be retrieved or not. By default 
-all unsubscribes will be returned.
+The parameters for this method can be set to retrieve the statistics from 
+a certain period. The following optional parameters are available:
+
+* **begintime**: The timestamp after which the abuses must have occurred (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: The timestamp before which the abuses must have occurred (YYYY-MM-DD HH:MM:SS format).
 
 ## Returned fields
 

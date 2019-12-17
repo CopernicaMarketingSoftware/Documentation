@@ -7,11 +7,17 @@ Je kan de deliveries voor een specifieke destination opvragen met een HTTP GET c
 
 `https://api.copernica.com/v2/ms/destination/{$destinationID}/deliveries?access_token=xxxx`
 
-Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
-voor het **timestamp** veld.
-
 Let op: De termen 'destination' en 'message' kunnen uitwisselbaar gebruikt worden, 
 ook in de voorbeeldcode.
+
+## Parameters
+
+De parameters voor deze methode kunnen ingesteld worden om alleen de 
+statistieken voor een bepaalde periode op te halen. De volgende optionele 
+parameters zijn beschikbaar:
+
+* **begintime**: De tijdstempel waarna de delivery gemaakt moet zijn (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: De tijdstempel waarvoor de delivery gemaakt moet zijn (YYYY-MM-DD HH:MM:SS format).
 
 ## Teruggegeven velden
 

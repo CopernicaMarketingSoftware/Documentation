@@ -6,8 +6,13 @@ retrieve all abuses for a specific emailing by sending an HTTP GET call to the f
 
 `https://api.copernica.com/v2/ms/emailing/{$emailingID}/abuses?access_token=xxxx`
 
-This method also support the use of the [fields parameter](./rest-fields-parameter) 
-for the **timestamp** field.
+# Parameters
+
+The parameters for this method can be set to retrieve the statistics from 
+a certain period. The following optional parameters are available:
+
+* **begintime**: The timestamp after which the abuses must have occurred (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: The timestamp before which the abuses must have occurred (YYYY-MM-DD HH:MM:SS format).
 
 ## Returned fields
 

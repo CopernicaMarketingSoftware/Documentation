@@ -6,14 +6,17 @@ retrieve all clicks for a specific emailing by sending an HTTP GET call to the f
 
 `https://api.copernica.com/v2/ms/emailing/{$emailingID}/clicks?access_token=xxxx`
 
-This method also support the use of the [fields parameter](./rest-fields-parameter) 
-for the **timestamp** field.
+# Parameters
 
-## Parameters
+The parameters for this method can be set to retrieve the statistics from 
+a certain period and to only receive unique clicks. The latter means 
+that only one click per destination per link will be counted. 
+The following optional parameters are available:
 
-There is one parameter available for this method. The 'unique' parameter 
-indicates whether only unique clicks should be retrieved or not. By default 
-all clicks will be returned.
+* **begintime**: The timestamp after which the clicks must have occurred (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: The timestamp before which the clicks must have occurred (YYYY-MM-DD HH:MM:SS format).
+* **unique**: Boolean parameter that when set to true only retrieves unique clicks. By default all 
+clicks are returned.
 
 ## Returned fields
 

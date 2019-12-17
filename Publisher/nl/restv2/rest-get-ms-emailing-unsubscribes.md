@@ -13,9 +13,12 @@ voor het **timestamp** veld.
 
 ## Parameters
 
-Er is een parameter beschikbaar voor deze methode; de 'unique' parameter 
-geeft aan of er alleen unieke unsubscribes teruggegeven moeten worden. Standaard 
-zullen alle unsubscribes worden geretourneerd.
+De parameters voor deze methode kunnen ingesteld worden om alleen de 
+statistieken voor een bepaalde periode op te halen. De volgende optionele 
+parameters zijn beschikbaar:
+
+* **begintime**: De tijdstempel waarna de abuse gemeld moet zijn (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: De tijdstempel waarvoor de abuse gemeld moet zijn (YYYY-MM-DD HH:MM:SS format).
 
 ## Teruggegeven velden
 
