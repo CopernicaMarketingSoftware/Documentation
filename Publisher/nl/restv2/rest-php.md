@@ -5,7 +5,7 @@ Met dit voorbeeld kun je gemakkelijk een HTTP request doen.
 Alle calls worden ondersteund. Je kunt dus gebruik maken
 van: GET, POST, PUT en DELETE calls.
 
-[Download de hulpklasse](../../downloads/copernica_rest_api.php "Download de CopernicaRestAPI klasse")
+[Download de hulpklasse](../../documentation/downloads/copernica_rest_api.php "Download de CopernicaRestAPI klasse")
 
 ## Gebruik in eigen applicatie
 
