@@ -14,23 +14,16 @@ URL:
 
 `https://www.smtpeter.com/v1/datarequest/`
 
-A JSON should be send as a payload for the POST request. Within the JSON 
-you should specify the **email** (mandatory) and optionally a report address, 
-which we report back to when the data is available. The JSON should look 
-like this:
+The following parameters are available for this request:
 
-```json
-{
-    "email": $emailaddress
-    "report": $address          // optional
-}
-```
-The **email** variable should contain the email address. The **address** 
-variable can be an email address or a URL. In the case of an email address
-we will send you an email with the data attached, if the size limit for 
-attachments allows it, or a link where you can download the data. 
-If **address** is a URL, we will POST the date to the provided URL 
-(see below what the data looks like).
+* **email**: The email address to retrieve data for (required).
+* **monitor**: The monitor address for this request. This can be a URL 
+SMTPeter sends a POST request to or an email address where the data 
+will be added as an attachment. This parameter is optional and the data 
+can also be retrieved with a GET request.
+
+In the case of a successful request you will always receive a unique ID 
+as the output, which can be used to retrieve the data or status of the request.
 
 ## Return value of a POST request
 
