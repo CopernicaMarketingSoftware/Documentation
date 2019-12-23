@@ -35,7 +35,7 @@ are provided in the table below.
 | [pom-impressions](rest-pom-impressions-logfile)   | Info about impressions from mails sent with Publisher              |
 | [pom-retries](rest-pom-retries-logfile)           | Info about mails sent via Publisher for which we retry a delivery  |
 | [pom-unsubscribes](rest-pom-unsubscribes-logfile) | Info about mails sent via Publisher that triggered an unsubscribe  |
-| feedback-loop-errors                              | Info about errors in your feedback loops                           |
+| [feedback-loop-errors](rest-feedback-loop-errors) | Info about errors in your feedback loops                           |
 
 To download a log file please see the links under "More information" to 
 find the instructions for the desired logfile format.

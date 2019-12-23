@@ -20,7 +20,7 @@ datum als type. Als je geen van beide gebruikt krijg je de
 Deze methode geeft een JSON array terug met de namen van logfiles. De 
 types van de logfiles staan hieronder in de tabel.
 
-| prefix                                            | type informatie                                                                     |
+| Prefix                                            | Type informatie                                                                     |
 | --------------------------------------------------|-------------------------------------------------------------------------------------|
 | [cdm-attempts](rest-cdm-attempts-logfile)         | Algemene info over mails verstuurd met Marketing Suite (MS)                         |
 | [cdm-abuse](rest-cdm-abuse-logfile)               | Info over mails verstuurd met MS die een 'misbruik' notificatie veroorzaakten       |
@@ -38,7 +38,7 @@ types van de logfiles staan hieronder in de tabel.
 | [pom-impressions](rest-pom-impression-logfile)    | Info over impressies uit mails verstuurd via Publisher                              |
 | [pom-retries](rest-pom-retry-logfile)             | Info over herzonden mails verstuurd via Publisher                                   |
 | [pom-unsubscribes](rest-pom-unsubscribe-logfile)  | Info over uitschrijvingen als gevolg van een mail verstuurd via Publisher           |
-| feedback-loop-errors                              | Info over errors in je feedback loops                                               |
+| [feedback-loop-errors](rest-feedback-loop-errors) | Info over errors in je feedback loops                                               |
 
 Voor meer informatie over het downloaden van deze files in het gewenste formaat 
 kun je de documentatie onder het kopje "Meer informatie" bekijken.
