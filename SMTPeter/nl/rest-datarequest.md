@@ -2,11 +2,13 @@
 
 SMTPeter houdt data bij over e-mailadressen, die ook via een API call op te 
 vragen is. Het verzamelen van deze data neemt wat tijd in beslag, waardoor 
-we dit proces hebben opgesplits in twee delen. In het eerste deel dien je 
+we dit proces hebben opgesplitst in twee delen. In het eerste deel dien je 
 door middel van een POST request een verzoek bij ons in om de data te verzamelen. 
-Met een tweede call in de vorm van een GET request kun je vervolgens de data opvragen. 
-In dit artikel bespreken we de stappen om alle data van een e-mailadres 
-op te vragen.
+Je kunt hieraan een monitor adres meegeven, een e-mailadres waarnaar de 
+verzamelde data verstuurd wordt. Kies je ervoor dit niet te doen, 
+dan kun je met een tweede call in de vorm van een GET request de verzamelde 
+data opvragen. In dit artikel bespreken we de stappen om alle data van een 
+e-mailadres op te vragen.
 
 ## Creëren van een data verzoek
 
@@ -14,27 +16,17 @@ Om een data verzoek te creëren stuur je een POST request naar de volgende URL:
 
 `https://www.smtpeter.com/v1/datarequest/`
 
-Ook moet er een JSON meegestuurd worden met dit verzoek. In de JSON staat 
-de **email** (verplicht) en optioneel een adres om naar te rapporteren als 
-de data beschikbaar is. De JSON moet er als volgt uitzien:
+Voor dit verzoek zijn de volgende parameters beschikbaar:
 
-```json
-{
-    "email": $emailaddress
-    "report": $address          // optioneel
-}
-```
+* **email**: Het e-mailadres waar data verzameld moet worden (verplicht).
+* **monitor**: Het monitor adres voor dit verzoek. Dit kan een URL zijn 
+waarnaar wij een POST verzoek verzenden, of een e-mailadres waarin we de 
+data meesturen als een bijlage. Deze parameter is optioneel en de verzamelde 
+data kan ook opgevraagd worden door middel van een nieuw GET verzoek.
 
-Hier is **email** het e-mailadres. Het adres om naar te rapporteren kan 
-opgegeven worden als **address**, als een URL of e-mailadres. Als er een 
-e-mailadres is opgegeven bij **address** wordt er een e-mail verstuurd 
-naar het genoemde adres. De data wordt als bijlage meegestuurd indien 
-mogelijk, of gelinkt wanneer het bestand te groot is. Als er een URL 
-opgegeven wordt versturen wij door middel van een POST request de data 
-naar de genoemde URL. De structuur van de data vind je verder in dit artikel.
-
-In beide gevallen is het resultaat van deze POST request een unieke ID. 
-Met deze ID kan de data opgevraagd worden.
+Een succesvolle call geeft (ook met monitor) een unieke ID voor het 
+dataverzoek terug, waarmee de data en de status van het verzoek opgevraagd 
+kunnen worden.
 
 ## Opvragen van de status van een data verzoek
 
