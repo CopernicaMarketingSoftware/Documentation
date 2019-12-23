@@ -25,11 +25,6 @@ can also be retrieved with a GET request.
 In the case of a successful request you will always receive a unique ID 
 as the output, which can be used to retrieve the data or status of the request.
 
-## Return value of a POST request
-
-The result of this POST call is a unique identifier. This identifier can be
-used to get the data.
-
 ## Retrieving the status of a data request
 
 You can retrieve the status of a data request by sending an an HTTP GET 
