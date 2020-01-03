@@ -5,7 +5,9 @@ GET call to the following URL:
 
 `https://api.copernica.com/v2/ms/destination/$id?access_token=xxxx`
 
-Where `$id` should be replaced with the ID of the destination you want summarized.
+Where `$id` should be replaced with the ID of the destination you want summarized. 
+This can either be a numerical ID or the hashed ID, which is a string 
+containing letters and numbers.
 
 Note: The terms 'destination' and 'message' can be used interchangeably 
 in this article, including the code examples.
@@ -14,7 +16,8 @@ in this article, including the code examples.
 
 The method returns a JSON object containing the following information:
 
-* **ID**: Unique ID of the destination.           
+* **ID**: Unique ID of the destination.        
+* **messageID**: The hashed ID of the destination, also called the message ID.   
 * **mailing**: ID of the mailing sent to this destination.
 * **timestampsent**: Timestamp of sending to the destination.
 * **profile**: Profile ID of the destination.
@@ -27,6 +30,7 @@ The destination might look something like this:
 ```json
 {  
    "ID":"783919",
+   "messageID":"b4icbaqjswyrb7tc",
    "timestampsent":"2015-06-08 13:53:45",
    "profile":"9033832",
    "subprofile":null,
