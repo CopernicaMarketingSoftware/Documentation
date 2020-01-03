@@ -5,7 +5,9 @@ door een HTTP GET verzoek te versturen naar de volgende URL:
 
 `https://api.copernica.com/v2/ms/destination/$id?access_token=xxxx`
 
-Hier moet `$id` vervangen worden door de ID van de destination.
+Hier moet `$id` vervangen worden door de ID van de destination. Dit kan of 
+een numerieke ID zijn of een string van letters en getallen, deze wordt 
+ook wel de message ID genoemd.
 
 Let op: De termen 'destination' en 'message' kunnen uitwisselbaar gebruikt worden, 
 ook in de voorbeeldcode.
@@ -15,10 +17,26 @@ ook in de voorbeeldcode.
 Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 
 * **ID**: Unieke identifier van de destination.
+* **messageID**: De gehashte ID, ook wel de bericht ID.
 * **timestampsent**: Tijdstempel van versturen naar deze destination.
 * **profile**: Corresponderend profiel ID.
 * **subprofile**: Corresponderend subprofiel ID.
 * **mailing**: ID van de mailing die naar deze destination is verstuurd.
+
+## JSON example
+
+De JSON ziet er bijvoorbeeld zo uit:
+
+```json
+{  
+   "ID":"783919",
+   "messageID":"b4icbaqjswyrb7tc",
+   "timestampsent":"2015-06-08 13:53:45",
+   "profile":"9033832",
+   "subprofile":null,
+   "mailing":"466"
+}
+```
 
 ## PHP voorbeeld
 
