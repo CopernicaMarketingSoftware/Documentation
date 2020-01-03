@@ -9,6 +9,14 @@ Where the `$id` should be replaced with the ID of the destination.
 Note: The terms 'destination' and 'message' can be used interchangeably 
 in this article, including the code examples.
 
+## Parameters
+
+Using the parameters for this method you can select a certain period 
+to retrieve statistics for. The following parameters are available:
+
+* **begintime**: The starting date for the statistics (YYYY-MM-DD HH:MM:SS format).
+* **endtime**: The end date for the statistics (YYYY-MM-DD HH:MM:SS format).
+
 ## Returned fields
 
 The following fields are available in the JSON object:
@@ -67,8 +75,14 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// set the period using the parameters
+$data = array(
+    'begintime'     =>  '2020-01-01 00:00:00',
+    'endtime'       =>  '2020-02-01 00:00:00'
+);
+
 // execute the call
-print_r($api->get("ms/destination/{$destinationID}/statistics/"));
+print_r($api->get("ms/destination/{$destinationID}/statistics/", $data));
 ```
 
 This example requires the [REST API class](./rest-php).
