@@ -28,12 +28,8 @@ Het uitschrijfgedrag stel je in via **Profielen** > **Databasebeheer** >
 **Uitschrijfopties...**
 
 ## Doorverwijzen naar eigen landingspagina
-Nadat een ontvanger op de uitschrijflink heeft geklikt, wordt hij of zij
-doorverwezen naar een standaardpagina.
+Als je de ontvanger naar een pagina wilt sturen nadat deze op een link heeft geklikt kun je gebruik maken van [data-script](data-object):
 
-Om een eigen pagina te tonen, gebruik je de 'redirect' functie
+`<a href="https://www.eendomein.nl/landingspagina" data-script="profile.unsubscribe();">Klik hier</a>`
 
-`{unsubscribe redirect='http://www.eendomein.nl/eigenlandingspagina.html'}`
-
-De uitschrijver zal direct na het aanklikken van de uitschrijflink
-worden doorverwezen naar de pagina die je als redirect hebt opgegeven.
+Door bovenstaande code wordt de gebruiker uitgeschreven nadat er op deze link is geklikt.
