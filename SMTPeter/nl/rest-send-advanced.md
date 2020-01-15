@@ -17,7 +17,8 @@ de CSS code inline zet.
     "tags": [
         "tag1",
         "tag2"
-    ]
+    ],
+    "maxdelivertime": "YYYY-MM-DD hh:mm:ss"
 }
 ```
 
@@ -159,6 +160,25 @@ de json:
 }
 ```
 Een tag mag geen *whitespace* of puntkomma's bevatten.
+
+## Zet een aflevertijd
+
+Het afleveren van e-mails gebeurt niet altijd direct. Zo kan bijvoorbeeld een 
+e-mail server van de ontvangende partij tijdelijk offline zijn. Als je niet wil
+dat een e-mail na een bepaalde tijd nog afgeleverd wordt, kan je de maxdeliverytime
+property met een datum en tijdstip toevoegen aan de json:
+
+```json
+{
+    ...,
+    "maxdelivertime" : "YYYY-MM-DD hh:mm:ss",
+    ...
+}
+```
+Merk op dat de datum en tijd nauw luistert, een ander formaat dan hierboven werkt
+niet. Als de maxdelivertime is verstreken wordt het berichtje nooit afgeleverd.
+Je kan dit soort berichten terugvinden in de failure.logs. Merk op dat SMTPeter
+als standaard een bericht maximaal maar een dag probeert af te leveren.
 
 
 ## Meer informatie
