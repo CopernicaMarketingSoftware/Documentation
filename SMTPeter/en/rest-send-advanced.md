@@ -12,7 +12,12 @@ or you can tell SMTPeter to inlinize your CSS code.
     "trackclicks":  true,
     "trackopens":   false,
     "trackbounces": true,
-    "preventscam":  true
+    "preventscam":  true, 
+    "tags": [
+        "tag1",
+        "tag2"
+    ],
+    "maxdelivertime": "YYYY-MM-DD hh:mm:ss"
 }
 ```
 
@@ -156,6 +161,26 @@ Tags can be added as an array via the `tags` property in the json like:
 }
 ```
 It is not allowed to have white-spaces or semicolons in your tags.
+
+## Set a deliver time
+
+Delivering an email is not instant. E.g. the mail server of the receiving party
+is temporary offline. If you do not want to have your mail delivered after a
+specific time anymore you can add the maxdelivertime property to your json with
+a string containing the data and time up to which a message should be delivered.
+You can do this like:
+```json
+{
+    ...,
+    "maxdelivertime" : "YYYY-MM-DD hh:mm:ss",
+    ...
+}
+```
+Note that the the date time should be in UTC and that format is rather strict.
+If the maxdelivertime is exceeded your message will not be delivered. You can 
+track theses cases by checking the failure.logs. Note that as a default SMTPeter
+only tries to deliver a message for one day.
+
 
 ## More information
 
