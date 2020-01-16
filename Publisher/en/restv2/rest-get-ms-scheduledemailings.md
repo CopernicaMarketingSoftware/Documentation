@@ -92,6 +92,7 @@ $parameters = array(
     'limit'             => 10,
     'type'              => 'mass',
     'followups'         => 'no',
+    'registerclicks'    => 'yes',
 );
 
 // do the call, and print result

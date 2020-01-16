@@ -229,6 +229,7 @@ documenten, templates en mailings.
 | Type   | Adres                                                                                                    | Omschrijving                                              |
 |--------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | GET    | [api.copernica.com/v2/publisher/emailings](./rest-get-publisher-emailings)                               | Opvragen van alle mailings                                |
+| GET    | [api.copernica.com/v2/publisher/scheduledemailings](./rest-get-publisher-scheduledemailings)             | Opvragen van alle ingeroosterde mailings                  |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id](./rest-get-publisher-emailing)                             | Opvragen van een mailing                                  |
 | POST   | [api.copernica.com/v2/publisher/emailing](./rest-post-publisher-emailing)                                | Aanmaken van een mailing                                  |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/destinations](./rest-get-publisher-emailing-destinations)   | Opvragen van destinations voor een mailing                |
@@ -241,7 +242,7 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)     | Opvragen van impressies voor een mailing                  |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)   | Opvragen van unsubscribes voor een mailing                |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Opvragen van de testgroepen voor een mailing        
-| GET    | [api.copernica.com/v2/publisher/testgroup/$id/statistics](./rest-get-publisher-testgroup-statistics)       | Opvragen van de statistieken van een testgroep     |
+| GET    | [api.copernica.com/v2/publisher/testgroup/$id/statistics](./rest-get-publisher-testgroup-statistics)     | Opvragen van de statistieken van een testgroep     |
 | GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                               | Opvragen van bericht informatie                           |
 | GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)           | Opvragen van alle Publisher mailings voor een profiel     |
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/emailings](./rest-get-subprofile-publisher-emailings)     | Opvragen van alle Publisher mailings voor een subprofiel  |

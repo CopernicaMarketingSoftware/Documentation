@@ -227,6 +227,7 @@ templates and mailings.
 | Type   | Address                                                                                                  | Description                                   |
 |--------|----------------------------------------------------------------------------------------------------------|-----------------------------------------------|
 | GET    | [api.copernica.com/v2/publisher/emailings](./rest-get-publisher-emailings)                               | Fetch all mailings                            |
+| GET    | [api.copernica.com/v2/publisher/scheduledemailings](./rest-get-publisher-scheduledemailings)             | Fetch all scheduled mailings                  |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id](./rest-get-publisher-emailing)                             | Fetch a mailing                               |
 | POST   | [api.copernica.com/v2/publisher/emailing](./rest-post-publisher-emailing)                                | Create a mailing                              |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/destinations](./rest-get-publisher-emailing-destinations)   | Fetch the destinations for a mailing          |
