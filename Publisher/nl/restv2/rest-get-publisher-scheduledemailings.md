@@ -3,8 +3,8 @@
 Een scheduled emailing is een emailing die ingeroosterd is. De start datum 
 hiervoor kan in het verleden of de toekomst liggen en de emailing kan 
 een of meerdere keren verstuurd worden. Deze methode vraagt een lijst op 
-van alle scheduled mailings verstuurd met de 
-Marketing Suite. De methode maakt een HTTP call naar het volgende adres:
+van alle scheduled mailings verstuurd met de Publisher. 
+De methode maakt een HTTP call naar het volgende adres:
 
 `https://api.copernica.com/v2/ms/scheduledemailings?access=token=xxxx`
 
