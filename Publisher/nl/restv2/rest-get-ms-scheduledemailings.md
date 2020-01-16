@@ -99,7 +99,6 @@ $parameters = array(
     'limit'             => 10,
     'type'              => 'mass',
     'followups'         => 'no',
-    'registerclicks'    => 'yes',
 );
 
 // voer het verzoek uit en print het resultaat
