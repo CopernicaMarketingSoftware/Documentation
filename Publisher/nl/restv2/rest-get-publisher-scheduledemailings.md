@@ -22,8 +22,6 @@ of beide opgevraagd moeten worden ('both'). Standaard zullen alle mailings worde
 opgevraagd.
 * **fromdate**: Volgende verzending moet na deze tijdstemp plaatsvinden (YYYY-MM-DD HH:MM:SS formaat).
 
-Deze methode ondersteunt ook [paging parameters](./rest-paging).
-
 ## Teruggegeven velden
 
 Deze methode geeft een JSON object met scheduled emailings onder het **data** veld 
