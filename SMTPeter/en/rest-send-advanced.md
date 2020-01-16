@@ -176,10 +176,10 @@ You can do this like:
     ...
 }
 ```
-Note that the format of the date and time is rather strict. If the maxdelivertime
-is exceeded your message will not be delivered. You can track theses cases by checking
-the failure.logs. Note that as a default SMTPeter only tries to deliver a message
-for one day.
+Note that the the date time should be in UTC and that format is rather strict.
+If the maxdelivertime is exceeded your message will not be delivered. You can 
+track theses cases by checking the failure.logs. Note that as a default SMTPeter
+only tries to deliver a message for one day.
 
 
 ## More information

@@ -175,11 +175,11 @@ property met een datum en tijdstip toevoegen aan de json:
     ...
 }
 ```
-Merk op dat de datum en tijd nauw luistert, een ander formaat dan hierboven werkt
-niet. Als de maxdelivertime is verstreken wordt het berichtje nooit afgeleverd.
-Je kan dit soort berichten terugvinden in de failure.logs. Merk op dat SMTPeter
-als standaard een bericht maximaal maar een dag probeert af te leveren.
-
+Merk op dat de datum en tijd in UTC zijn en dat het formaat nauw luistert, een
+ander formaat dan hierboven werkt niet. Als de maxdelivertime is verstreken, wordt
+het berichtje nooit afgeleverd. Je kan dit soort berichten terugvinden in de
+failure.logs. Merk op dat SMTPeter als standaard een bericht maximaal maar een
+dag probeert af te leveren.
 
 ## Meer informatie
 
