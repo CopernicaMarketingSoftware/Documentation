@@ -21,20 +21,17 @@ reputatie, maar in de onderstaande artikelen geven we je nog veel meer tips.
 ## Veel gestelde vragen
 Hieronder vind je enkele veel voorkomende vragen
 * [Formulieren: foutmeldingen bij het instellen van een content webformulier](./webform-errors)
-* [Formulieren: webformulier aanmaken en op een website plaatsen](./create-
-and-publish-a-webform)
+* [Formulieren: webformulier aanmaken en op een website plaatsen](./create-and-publish-a-webform)
 
 ## Smarty
 Hieronder vind je veelvoorkomende Smarty toepassingen.
 * [Toepassingen met datum variabelen](./smarty-date-statements)
-* [Gegevens ophalen met de Load(sub)profile-tag](./loadprofile-and-
-loadsubprofile)
+* [Gegevens ophalen met de Load(sub)profile-tag](./loadprofile-and-loadsubprofile)
 
 ## Tutorials
 Hieronder vind je tutorials voor veelvoorkomende toepassingen.
 * [Selecties: bounces afhandelen](./automatically-process-bounces)
-* [Selecties: dubbele opt-in creëren](create-a-double-optin-for
--new-subscribers).
+* [Selecties: dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
 * [Selecties: nieuwsbriefselectie](./create-a-mailing-list)
 * [Selecties: verjaardagsselectie](./how-to-create-a-birthday-selection)
 
