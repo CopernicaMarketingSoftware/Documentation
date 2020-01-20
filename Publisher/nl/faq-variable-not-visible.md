@@ -55,4 +55,4 @@ Als er geen subprofiel aan je conditie voldoet, krijg je niets terug. In dit gev
 +1210558 -- Gum+
 ```
 
-Zoals je kunt zien komt er uit {$sp.Beschrijving} nu 'Pen' en 'Gum'. Aangezien dit niet gelijk is aan 'Potlood' zie je niets in je IF-statement.
+Zoals je kunt zien komt er uit {$sp.Beschrijving} nu 'Pen' en 'Gum'. Aangezien dit niet gelijk is aan 'Potlood' zie je niets in je if-statement.
