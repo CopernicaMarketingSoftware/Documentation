@@ -6,7 +6,7 @@ een of meerdere keren verstuurd worden. Deze methode vraagt een lijst op
 van alle scheduled mailings verstuurd met de Publisher. 
 De methode maakt een HTTP call naar het volgende adres:
 
-`https://api.copernica.com/v2/ms/scheduledemailings?access=token=xxxx`
+`https://api.copernica.com/v2/ms/scheduledemailings?access_token=xxxx`
 
 Je kunt de methode om alle Publisher emailings op te vragen [hier](./rest-get-publisher-emailings) vinden.
 
