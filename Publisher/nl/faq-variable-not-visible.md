@@ -7,6 +7,12 @@ Het tonen van deze waardes kan op een aantal punten foutgaan:
 ### Geen of standaardbestemming in andere database
 Het is van belang dat de gekozen standaardbestemming in dezelfde database zit als waar jij de waardes van wilt inzien in je e-mail. 
 
+De standaardbestemming kun je als volgt instellen:  
+    
+**Publisher:** Zoek het juiste profiel op in je database en open deze zodat de gegevens onderin het scherm zichtbaar worden. In de onderste balk is nu een optie 'Standaardbestemming' zichtbaar waar je het gekozen profiel als standaardbestemming kunt instellen.  
+
+**Marketing Suite:** Zoek het juiste profiel op in je database en open deze zodat de gegevens zichtbaar worden. Aan de linkerkant is nu een optie 'Standaardbestemming' zichtbaar waar je het gekozen profiel als standaardbestemming kunt instellen.  
+
 ### Hoofdlettergevoelig
 Als je veld in de database een hoofdletter bevat, zal dit ook in de tag met een hoofdletter opgenomen moeten worden. 
 
@@ -22,10 +28,10 @@ Als je bepaalde waardes verwacht uit de loadsubprofile-tag is het verstandig om 
 
 **Voorbeeld:**
 ```
-{loadsubprofile source="standaard:Aankopen" profile=$profile.id assign="loadedsubprofiles" multiple=true}
-{foreach from=$loadedsubprofiles item=sp}
-  {if $sp.Beschrijving == "Potlood"}
-    +{$profile.id} -- {$sp.id}+ <br />
+{loadsubprofile source="Standaard:Aankopen" profile=$profile.id assign="loadedsubprofiles" multiple=true}
+{foreach from=$loadedsubprofiles item=aankoop}
+  {if $aankoop.Beschrijving == "Potlood"}
+    +{$profile.id} -- {$aankoop.id}+ <br />
 	{/if}
 {/foreach}
 ```
@@ -40,10 +46,10 @@ Als er geen subprofiel aan je conditie voldoet, krijg je niets terug. In dit gev
 
 **Voorbeeld:**
 ```
-{loadsubprofile source="standaard:Aankopen" profile=$profile.id assign="loadedsubprofiles" multiple=true}
-{foreach from=$loadedsubprofiles item=sp}
-  +{$profile.id} -- {$sp.Beschrijving}+ <br />
-  {if $sp.Beschrijving == "Potlood"}
+{loadsubprofile source="Standaard:Aankopen" profile=$profile.id assign="loadedsubprofiles" multiple=true}
+{foreach from=$loadedsubprofiles item=aankoop}
+  +{$profile.id} -- {$aankoop.Beschrijving}+ <br />
+  {if $aankoop.Beschrijving == "Potlood"}
     // hier je tekst
 	{/if}
 {/foreach}
