@@ -1,31 +1,20 @@
-# REST API: GET scheduledemailings (Publisher)
+# REST API: GET scheduledemailing (Publisher)
 
 Een scheduled emailing is een emailing die ingeroosterd is. De start datum 
 hiervoor kan in het verleden of de toekomst liggen en de emailing kan 
-een of meerdere keren verstuurd worden. Deze methode vraagt een lijst op 
-van alle scheduled mailings ingeroosterd in Publisher. De methode maakt een HTTP call 
+een of meerdere keren verstuurd worden. Deze methode vraagt een scheduled 
+mailing verstuurd voor de Publisher op. De methode maakt een HTTP call 
 naar het volgende adres:
 
-`https://api.copernica.com/v2/ms/scheduledemailings?access_token=xxxx`
+`https://api.copernica.com/v2/ms/scheduledemailing/$id?access_token=xxxx`
 
-Je kunt de methode om alle Publisher emailings op te vragen [hier](./rest-get-publisher-emailings) vinden.
-
-## Beschikbare parameters
-
-De volgende parameters zijn beschikbaar voor de methode:
-
-* **type**: Geeft aan welk type mailings opgevraagd moeten worden: individuele 
-mailings ('individual'), massa mailings ('mass') of beide ('both'). Standaard 
-zulle beide types worden opgevraagd.
-* **test**: Geeft aan of alleen test mailings ('test'), standaard mailings ('normal') 
-of beide opgevraagd moeten worden ('both'). Standaard zullen alle mailings worden 
-opgevraagd.
-* **fromdate**: Volgende verzending moet na deze tijdstemp plaatsvinden (YYYY-MM-DD HH:MM:SS formaat).
+Je kunt de methode om alle Publisher scheduled emailings op te vragen 
+[hier](./rest-get-publisher-scheduledemailings) vinden.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object met scheduled emailings onder het **data** veld 
-terug. Elke emailing bevat de volgende velden:
+Deze methode geeft een JSON object met de scheduled emailing, die de 
+volgende velden bevat:
 
 * **id**:                   De ID van de ingeroosterde mailing.
 * **next**:                 De tijdstempel van de volgende mailing (YYYY-MM-DD HH:MM:SS formaat).
@@ -48,8 +37,7 @@ terug. Elke emailing bevat de volgende velden:
 
 ### JSON voorbeeld
 
-De JSON die terug wordt gegeven bevat een property 'data', die een array 
-met alle emailings bevat. Een enkele emailing ziet er bijvoorbeeld zo uit:
+De JSON die terug wordt gegeven ziet er bijvoorbeeld zo uit:
 
 ```json
 {
@@ -102,16 +90,8 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// parameters om aan de call mee te geven
-// in dit geval vragen we alleen emailings op die verstuurd zijn naar 
-// meerdere destinations en die geen test zijn
-$parameters = array(
-    'type'  => 'mass',
-    'test'  => 'normal',
-);
-
 // voer het verzoek uit en print het resultaat
-print_r($api->get("publisher/scheduledemailings", $parameters));
+print_r($api->get("publisher/scheduledemailing/{$emailingID}"));
 ```
 
 Het bovenstaande voorbeeld vereist de [CopernicaRestApi klasse](./rest-php).
@@ -119,5 +99,4 @@ Het bovenstaande voorbeeld vereist de [CopernicaRestApi klasse](./rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](./rest-api)
-* [Opvragen van verzonden Publisher mailings](./rest-get-publisher-emailings)
-* [Opvragen van ingeroosterde Marketing Suite mailings](./rest-get-ms-scheduledemailings)
+* [Opvragen van scheduled emailings in Publisher ](./rest-get-publisher-scheduledemailings)
