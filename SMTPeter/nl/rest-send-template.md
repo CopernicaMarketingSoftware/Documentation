@@ -10,7 +10,7 @@ editor, waardoor je geen HTML hoeft te scrhijven. Uiteraard kun je dit wel blijv
 als je daarvoor voor kiest. Ten tweede, het is niet alleen makkelijk om templates
 te maken, maar je kunt ze ook opslaan en bewerken. Zo heb je alle templates netjes op
 een plek, binnen het dashboard van SMTPeter. Tot slot, de gecreëerde templates worden
-gemaakt door middel van JSON. Door onze geavanceerde [Responsive E-mail](www.responsiveemail.com)
+gemaakt door middel van JSON. Door onze geavanceerde [Responsive E-mail](https://www.responsiveemail.com)
 service, worden alle JSON templates automatisch responsive gemaakt. Dit betekent
 dat de e-mails, ongeacht op welk type apparaat, altijd goed worden weergegeven.
 
