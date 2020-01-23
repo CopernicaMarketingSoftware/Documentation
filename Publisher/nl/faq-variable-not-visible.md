@@ -10,10 +10,10 @@ Het is van belang dat de gekozen standaardbestemming in dezelfde database zit al
 ### Hoofdlettergevoelig
 Als je veld in de database een hoofdletter bevat, zal dit ook in de tag met een hoofdletter opgenomen moeten worden. 
 
-Hieronder enkele voorbeelden:
-Emailadres	=	{$profile.Emailadres}
-emailadres	=	{$profile.emailadres}
-emailAdres	=	{$profile.emailAdres}
+Hieronder enkele voorbeelden:  
+Emailadres	=	{$profile.Emailadres}  
+emailadres	=	{$profile.emailadres}  
+emailAdres	=	{$profile.emailAdres}  
 
 Voor subprofielen geldt hetzelfde enkel dien je dan gebruik te maken van {$subprofile.veldnaam}. Dit werkt enkel als het subprofiel ook de bestemming van je e-mail is. Als je wilt versturen naar het profiel met gegevens uit het subprofiel dien je gebruik te maken van de loadsubprofile-tag. Meer hierover in de volgende alinea.
 
