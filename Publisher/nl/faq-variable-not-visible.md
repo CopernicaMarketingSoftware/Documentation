@@ -15,10 +15,10 @@ Emailadres	=	{$profile.Emailadres}
 emailadres	=	{$profile.emailadres}  
 emailAdres	=	{$profile.emailAdres}  
 
-Voor subprofielen geldt hetzelfde enkel dien je dan gebruik te maken van {$subprofile.veldnaam}. Dit werkt enkel als het subprofiel ook de bestemming van je e-mail is. Als je wilt versturen naar het profiel met gegevens uit het subprofiel dien je gebruik te maken van de loadsubprofile-tag. Meer hierover in de volgende alinea.
+Voor subprofielen geldt hetzelfde, enkel dien je dan gebruik te maken van {$subprofile.veldnaam}. Dit werkt alleen als het subprofiel ook de bestemming van je e-mail is. Als je wilt versturen naar het profiel met gegevens uit het subprofiel dien je gebruik te maken van de loadsubprofile-tag. Meer hierover in de volgende alinea.
 
 ## Waardes uit een loadsubprofile-tag
-Als je bepaalde waardes verwacht uit je loadsubprofile-tag is het verstandig om debug code toe te voegen aan je template. Zo kun je exact zien waar het fout gaat in je foreach of if-statements.
+Als je bepaalde waardes verwacht uit de loadsubprofile-tag is het verstandig om debug code toe te voegen aan je template. Zo kun je exact zien waar het fout gaat in je foreach of if-statements.
 
 **Voorbeeld:**
 ```
@@ -32,10 +32,10 @@ Als je bepaalde waardes verwacht uit je loadsubprofile-tag is het verstandig om 
 
 **Uitkomst:**
 ```
-+1210558 -- 406246+
++1 -- 99+
 ```
 
-Aan de hand hiervan kun je zien dat enkel subprofiel 406246 aan je if-statement voldoet.
+Aan de hand hiervan kun je zien dat enkel subprofiel 99 aan je if-statement voldoet.
 Als er geen subprofiel aan je conditie voldoet, krijg je niets terug. In dit geval zal je de debug code een regel hoger kunnen plaatsen, maar dan met een andere waarde.
 
 **Voorbeeld:**
@@ -51,8 +51,8 @@ Als er geen subprofiel aan je conditie voldoet, krijg je niets terug. In dit gev
 
 **Uitkomst:**
 ```
-+1210558 -- Pen+ 
-+1210558 -- Gum+
++1 -- Pen+ 
++1 -- Gum+
 ```
 
 Zoals je kunt zien komt er uit {$sp.Beschrijving} nu 'Pen' en 'Gum'. Aangezien dit niet gelijk is aan 'Potlood' zie je niets in je if-statement.
