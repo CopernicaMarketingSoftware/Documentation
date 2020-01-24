@@ -18,10 +18,12 @@ reputatie, maar in de onderstaande artikelen geven we je nog veel meer tips.
 * [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
 * [HTML errors reduceren](./reducing-html-errors)
 
-## Veel gestelde vragen
+## Veelgestelde vragen
 Hieronder vind je enkele veel voorkomende vragen
-* [Formulieren: foutmeldingen bij het instellen van een content webformulier](./webform-errors)
-* [Formulieren: webformulier aanmaken en op een website plaatsen](./create-and-publish-a-webform)
+* [Profielen: Waarom komt mijn profiel niet terug in mijn selectie?](./profile-in-selection)
+* [E-mailings: Waarom wordt mijn variabele niet getoond in mijn document?](./faq-variable-not-visible)
+* [Formulieren: Foutmeldingen bij het instellen van een content webformulier](./webform-errors)
+* [Formulieren: Webformulier aanmaken en op een website plaatsen](./create-and-publish-a-webform)
 
 ## Smarty
 Hieronder vind je veelvoorkomende Smarty toepassingen.
