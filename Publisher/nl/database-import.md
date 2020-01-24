@@ -34,7 +34,7 @@ Je kunt tijdens het koppelen van de kolommen ook *sleutelvelden* instellen.
 Sleutelvelden worden gebruikt om te zoeken binnen alle profielen in je database. 
 
 **Voorbeeld:**  
-In de meeste gevallen wordt het veld waar het e-mailadres in staat gekozen als sleutelveld. Met het voorbeeld van hierboven zal dit het veld 'Email' zijn. Bij het uitvoeren van de import wordt vervolgens gekeken of 'jan.dejong@voorbeeld.nl' al in de database staat. Als dit het geval is, dan wordt dit profiel aangepast op basis van de opgegeven instellingen.
+In de meeste gevallen wordt het veld waar het e-mailadres in staat gekozen als sleutelveld. Met het voorbeeld van hierboven zal dit het veld 'Email' zijn. Bij het uitvoeren van de import wordt vervolgens gekeken of *jan.dejong@voorbeeld.nl* al in de database staat. Als dit het geval is, dan wordt dit profiel aangepast op basis van de opgegeven instellingen.
 
 ## Instellingen
 Onder het tabblad 'Instelling' is het mogelijk om een aantal instellingen op te geven voor de import. 
@@ -54,7 +54,7 @@ Onder 'Niet-Matches' kun je aangeven of de ontbrekende (sub)profielen, waarvan o
 **Database:**  
 Hier kun je aangeven of de selecties, collecties en miniselecties na de import opnieuw worden opgebouwd zodat je selecties direct up-to-date en bruikbaar zijn. Deze optie staat standaard aan.
 
-**Schakel opvolgacties uit:**
+**Schakel opvolgacties uit:**  
 Omdat een import veel profielen aanmaakt en/of aanpast is het in een aantal gevallen verstandig om de opvolgacties tijdelijk uit te zetten. 
 
 ## Subprofielen importeren
