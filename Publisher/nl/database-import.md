@@ -1,23 +1,23 @@
 # Importeren van profielgegevens
 Er zijn verschillende manieren om nieuwe gegevens in te voeren of te importeren.
 Zo kun je profielen niet alleen met de hand toevoegen, maar kun je ze ook
-aanmaken of bewerken met de API, of importeren vanuit een CSV- of TSV-bestand
+aanmaken of bewerken met de API, of importeren vanuit een CSV- of TXT-bestand
 (dit zijn bestanden die je onder meer in spreadsheetprogramma's kunt maken).
 
-Het importeren van CSV- of TSV-bestanden is krachtig en kan ook worden gebruikt
+Het importeren van CSV- of TXT-bestanden is krachtig en kan ook worden gebruikt
 voor gelaagde databases met collecties en subprofielen. Ook kun je periodieke
 imports maken die automatisch worden herhaald.
 
 ## Importbestand voorbereiden
 Het bestand dat je wilt importeren moet aan een specifiek formaat voldoen.
-Het moet een tab- of kommagescheiden bestand zijn, waarvan de bovenste regel
+Het moet een tab-, komma of puntkommagescheiden bestand zijn, waarvan de bovenste regel
 de kolommen (de veldnamen) bevat die je gaat importeren. Het bestand moet een
 UTF-8 encoding hebben en wij raden het aan om quotes om veldwaardes te plaatsen.
 Hieronder geven we een voorbeeld van hoe dit bestand eruit kan zien.
 
-    Voornaam,Achternaam,Stad,Telefoonnummer
-    'Jan','de Jong','Amersfoort','0612456631'
-    'Roos','Schippers','Groningen','0612222444'
+    Voornaam,Achternaam,Email,Stad,Telefoonnummer
+    'Jan','de Jong','jan.dejong@voorbeeld.nl','Amersfoort','0612456631'
+    'Roos','Schippers','roos.schippers@voorbeeld.nl','Groningen','0612222444'
 
 Deze bestanden kunnen in bijna alle spreadsheetprogramma's gegenereerd worden.
 
@@ -29,11 +29,33 @@ spreekt deze koppeling voor zich: het veld "Voornaam" in het importbestand
 koppel je aan het veld "Voornaam" in de database. Als het benodigde veld nog
 niet aanwezig is in de database, kun je die ter plekke laten aanmaken.
 
+## Sleutelvelden
 Je kunt tijdens het koppelen van de kolommen ook *sleutelvelden* instellen.
-Sleutelvelden zijn de velden die Copernica gebruikt om regels uit je
-importbestand te koppelen aan profielen in de database wanneer je een
-profiel updatet. Als er geen match is, kun je instellen dat er een nieuw
-profiel moet worden aangemaakt.
+Sleutelvelden worden gebruikt om te zoeken binnen alle profielen in je database. 
+
+**Voorbeeld:**  
+In de meeste gevallen wordt het veld waar het e-mailadres in staat gekozen als sleutelveld. Met het voorbeeld van hierboven zal dit het veld 'Email' zijn. Bij het uitvoeren van de import wordt vervolgens gekeken of *jan.dejong@voorbeeld.nl* al in de database staat. Als dit het geval is, dan wordt dit profiel aangepast op basis van de opgegeven instellingen.
+
+## Instellingen
+Onder het tabblad 'Instelling' is het mogelijk om een aantal instellingen op te geven voor de import. 
+Hieronder vind je per optie een korte uitleg:
+
+**Type:**  
+Bij 'Type' kun je kiezen voor twee opties:  
+* geen matches zoeken, altijd nieuwe (sub)profielen aanmaken
+* zoek naar matches op basis van het sleutelveld
+
+Bij de eerste optie worden (sub)profielen altijd aangemaakt, ondanks dat het (sub)profiel misschien al bestaat.  
+
+Bij de tweede optie wordt er gezocht op basis van het opgegeven sleutelveld. Je kunt vervolgens bij 'Matches' aangeven of de gevonden (sub)profielen wel of niet bijgewerkt moet worden of dat deze verwijderd moeten worden. Het maximum wat je hier aan kunt geven is het aantal gevonden (sub)profielen die gewijzigd/verwijderd moeten worden. Het kan namelijk voorkomen dat het e-mailadres *jan.dejong@voorbeeld.nl* drie keer in de database voorkomt. Als je deze allen wilt aanpassen zal het maximum op 3 moeten worden gezet. 
+
+Onder 'Niet-Matches' kun je aangeven of de ontbrekende (sub)profielen, waarvan op basis van het sleutelveld geen profiel is gevonden in de database, moeten worden aangemaakt of dat deze niet moeten worden toegevoegd. Tot slot is het mogelijk om de huidige waardes in het profiel niet te overschrijven met lege velden in het import bestand.
+
+**Database:**  
+Hier kun je aangeven of de selecties, collecties en miniselecties na de import opnieuw worden opgebouwd zodat je selecties direct up-to-date en bruikbaar zijn. Deze optie staat standaard aan.
+
+**Schakel opvolgacties uit:**  
+Omdat een import veel profielen aanmaakt en/of aanpast is het in een aantal gevallen verstandig om de opvolgacties tijdelijk uit te zetten. 
 
 ## Subprofielen importeren
 Je kunt ook imports in gelaagde databases (databases met subprofielen) doen.

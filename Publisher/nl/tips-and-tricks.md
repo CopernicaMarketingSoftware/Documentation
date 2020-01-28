@@ -18,11 +18,6 @@ reputatie, maar in de onderstaande artikelen geven we je nog veel meer tips.
 * [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
 * [HTML errors reduceren](./reducing-html-errors)
 
-## Veel gestelde vragen
-Hieronder vind je enkele veel voorkomende vragen
-* [Formulieren: foutmeldingen bij het instellen van een content webformulier](./webform-errors)
-* [Formulieren: webformulier aanmaken en op een website plaatsen](./create-and-publish-a-webform)
-
 ## Smarty
 Hieronder vind je veelvoorkomende Smarty toepassingen.
 * [Toepassingen met datum variabelen](./smarty-date-statements)
