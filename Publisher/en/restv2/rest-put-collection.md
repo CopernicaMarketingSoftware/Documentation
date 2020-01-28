@@ -14,8 +14,6 @@ The following properties can be adjusted by placing their new values
 in the message body of the HTTP PUT command:
 
 * **name**: the new name of the collection
-* **database**: ID of the database the collection belongs to
-* **fields**: fields of the collection
 
 ## PHP example
 
