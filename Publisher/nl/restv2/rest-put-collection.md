@@ -14,8 +14,6 @@ De volgende variabele kan in de body van het HTTP PUT commando worden
 geplaatst:
 
 * **name**: de optionele nieuwe naam van de collectie
-* **database**: de ID van de database waar de collectie in staat
-* **fields**: velden in de collectie
 
 ## Voorbeeld in PHP
 
