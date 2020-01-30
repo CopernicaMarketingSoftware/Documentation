@@ -111,7 +111,7 @@ Je kunt vrijwel overal Smarty personalisatie toepassen:
 * Andere e-mail headers (zoals afzenderadres, CC, BCC, x-headers);
 * Gepersonaliseerde website content;
 * Webformulieren (standaardwaardes, labels, etc.);
-* Hyperlinks en mailto links;
+* Hyperlinks;
 * UTM parameters (bij het uitbreiden van hyperlinks);
 * Opvolgacties;
 * Etc.
