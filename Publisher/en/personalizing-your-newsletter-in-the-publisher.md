@@ -22,7 +22,7 @@ or document:
 
 * `{$profile.name}`
 * `{$profile.email}`
-* `{$profile.aanhef}`
+* `{$profile.salutation}`
 
 These personalization variables only work when you have
 the exact same fields in your database. Of course, the 
@@ -102,7 +102,7 @@ to get some inspiration:
 * Various email headers (from, CC, BCC, X-Mailer, etc.);
 * Personalized website content;
 * Webforms;
-* Hyperlinks and mailto: linksl
+* Hyperlinks;
 * Follow-up actions;
 * Etc.
 
