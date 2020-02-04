@@ -25,11 +25,9 @@
     </details>
 *   <details><summary>[Selections and miniselections](./selections-introduction.md)</summary>
 
-        <ul>
-            <li>[Management options for selections](./selections-settings.md)</li>
-            <li>[Rules and conditions](./selections-conditions.md)</li>
-            <li>[Optimizing selections](./selections-optimization.md)</li>
-        </ul>
+        * [Management options for selections](./selections-settings.md)</li>
+        * [Rules and conditions](./selections-conditions.md)</li>
+        * [Optimizing selections](./selections-optimization.md)</li>
     </details>
 *   <details><summary>[Templates](./templates.md)</summary>
 
