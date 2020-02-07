@@ -2,76 +2,57 @@
 
 The easiest way to get your hands on the software is to add the Copernica 
 repository to the source list of your package manager. You can then use
-"apt-get" or "yum" to install MailerQ, and to get updates. If you do not want 
-to use your package manager, you can download MailerQ manually. Check out our 
-[downloads page](/product/downloads) for a list of available files that
-can be manually installed.
+"apt" or "yum" package managers to install MailerQ, and to get updates. If 
+you do not want to use your package manager, you can download MailerQ 
+manually. Check out our [downloads page](/product/downloads) for a list of 
+available files that can be manually installed.
 
-## Installing on Debian/Ubuntu based systems
+## Installing MailerQ on Debian/Ubuntu based systems
 
-We have two repositories, one for newer Ubuntu and Debian versions (Ubuntu
-14.04 and up, and Debian version 8 and higher), and a repository for the
-older Debian 6 and Debian 7 versions.
+We have a single repository, for Ubuntu (14.04 and higher) and Debian 
+(8 and higher) versions.
 
 <table>
     <tr>
-        <td>Ubuntu 14.04 and up</td>
-        <td>deb https://packages.copernica.com/debian stable main</td>
-    </tr>
-    <tr>
-        <td>Debian 8 and up</td>
-        <td>deb https://packages.copernica.com/debian stable main</td>
-    </tr>
-    <tr>
-        <td>Debian 6 and Debian 7</td>
-        <td>deb https://packages.copernica.com/debian legacy main</td>
+        <td>Debian 8+ and Ubuntu 14.04+</td>
+        <td>deb https://packages.mailerq.com/debian stable main</td>
     </tr>
 </table>
 
 You can enter the following instructions to add our repository to your
 software list, and to download and install MailerQ.
 
-```txt
-$ wget https://packages.copernica.com/copernica.key
-$ sudo apt-key add copernica.key 
-$ rm copernica.key
-$ echo "deb https://packages.copernica.com/debian stable main" | sudo tee /etc/apt/sources.list.d/copernica.list
-$ sudo apt-get update
-$ sudo apt-get install mailerq
+```bash
+# Download and add the repository key
+wget -qO - https://packages.mailerq.com/mailerq.key | sudo apt-key add -
+# Add the MailerQ repository to apt
+echo "deb https://packages.mailerq.com/debian stable main" | sudo tee /etc/apt/sources.list.d/mailerq.list
+# Update the apt cache
+sudo apt update
+# Install the latest MailerQ
+sudo apt install mailerq
 ```
 
-Watch out: if you're on Debian 6 or Debian 7, make sure you replace the 
-word "stable" with "legacy"!
+## Installing MailerQ on Red Hat based systems
 
-
-## Installing on Red Hat based systems
-
-For Red Had based systems there are two repositories as well, one for
-the latest versions of these systems, and one for older releases.
+For Red Had based systems there is a single repository as well.
 
 <table>
     <tr>
         <td>CentOS 7+, Red Hat 7+, Fedora 22+</td>
-        <td>https://packages.copernica.com/rpm/copernica.repo</td>
-    </tr>
-    <tr>
-        <td>CentOS 6, Red Hat 6, Fedora 21</td>
-        <td>https://packages.copernica.com/rpm-legacy/copernica.repo</td>
+        <td>https://packages.mailerq.com/rpm/mailerq.repo</td>
     </tr>
 </table>
 
-To install MailerQ on a new version of CentOS, Red Hat or Fedora, enter
-the following instructions in your shell:
+To install MailerQ on a supported version of CentOS, Red Hat or Fedora, 
+enter the following instructions in your shell:
 
-```
-sudo wget https://packages.copernica.com/rpm/copernica.repo -O /etc/yum.repos.d/copernica.repo
-sudo yum update
+```bash
+# Add the MailerQ repository to yum
+sudo wget https://packages.mailerq.com/rpm/mailerq.repo -O /etc/yum.repos.d/mailerq.repo
+# Install the latest MailerQ
 sudo yum install mailerq
 ```
-
-Of course, if you're on an older system (CentOS 7, Red Hat 6 or Fedora 21),
-you should modify the repository URL to contain "rpm-legacy" instead of "rpm".
-
 
 ## Specific versions
 
@@ -79,44 +60,34 @@ Once you've added the MailerQ repository to the list of software sources,
 you can always get the latest stable version of MailerQ with the instructions
 "sudo apt-get install mailerq" for Debian/Ubuntu based systems or
 "sudo yum install mailerq" for Red Hat based systems. If you prefer an older
-version over the current stable one, or when you want to try the bleeding edge 
-development version, you should append a version number.
+version over the current stable one, you can append a version number.
 
-```
-sudo apt-get install mailerq-4.4
-sudo apt-get install mailerq-dev
-```
-```
-sudo yum install mailerq-4.4
-sudo yum install mailerq-dev
+```bash
+sudo apt-get install mailerq-5.6
 ```
 
-The development version has a "-dev" postfix. This dev version is automatically
-recompiled every 24 hours and contains the latest fixes and changes. 
-Although it is often not recommended to use it in production environments, it's
-a great way to keep an eye on MailerQ improvements.
-
+```bash
+sudo yum install mailerq-5.6
+```
 Note that if you run a specific version of MailerQ, the location of the config
 file changes too. By default, MailerQ loads it configuration from "/etc/mailerq/config.txt",
 but if you install an explicit version the version number is included in the 
-filename of the config file (for example "/etc/mailerq/config-4.4.txt" or 
-"/etc/mailerq/config-dev.txt").
+filename of the config file (for example "/etc/mailerq/config-5.6.txt").
+This allows for easy downgrades to a previously installed version.
 
 
 ## Dynamically linked versions
 
 All repositories mentioned above contain MailerQ versions that are statically 
-linked, which means that there are hardly any dependencies. However, due to licensing
+linked, which means that there are not many dependencies. However, due to licensing
 conditions, we are required to supply dynamically linked versions of MailerQ too.
 If you prefer using a dynamically linked version, add '-shared' to the package name.
 
 
+```bash
+sudo apt-get install mailerq-shared
 ```
-sudo apt-get install mailerq-5.0-shared
-sudo apt-get install mailerq-dev-shared
-```
-```
-sudo yum install mailerq-5.0-shared
-sudo yum install mailerq-dev-shared
+```bash
+sudo yum install mailerq-shared
 ```
 
