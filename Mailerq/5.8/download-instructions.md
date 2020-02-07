@@ -62,10 +62,12 @@ you can always get the latest stable version of MailerQ with the instructions
 "sudo yum install mailerq" for Red Hat based systems. If you prefer an older
 version over the current stable one, you can append a version number.
 
+#### Debian/Ubuntu
 ```bash
 sudo apt-get install mailerq-5.6
 ```
 
+#### Red Hat/CentOS/Fedora
 ```bash
 sudo yum install mailerq-5.6
 ```
@@ -83,10 +85,12 @@ linked, which means that there are not many dependencies. However, due to licens
 conditions, we are required to supply dynamically linked versions of MailerQ too.
 If you prefer using a dynamically linked version, add '-shared' to the package name.
 
-
+#### Debian/Ubuntu
 ```bash
 sudo apt-get install mailerq-shared
 ```
+
+#### Red Hat/CentOS/Fedora
 ```bash
 sudo yum install mailerq-shared
 ```
