@@ -20,7 +20,7 @@ We have a single repository, for Ubuntu (14.04 and higher) and Debian
 </table>
 
 You can enter the following instructions to add our repository to your
-software list, and to download and install MailerQ.
+package manager, and to download and install MailerQ.
 
 ```bash
 # Download and add the repository key
