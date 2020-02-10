@@ -70,5 +70,6 @@ Hieronder zie je een overzicht van enkele Smarty functies:
 | [{webonly}](./personalization-functions-webonly)                      | blok markeren dat alleen in de webversie wordt getoond                       |
 | [{webversion}](./emailings-publisher-webversion)                      | webversielink                      |
 
-## Tutorials
+## Tutorials / extra documentatie
 * [Persoonlijke aanhef maken](./tutorial-personalized-salutation-in-email-using-smarty-code)
+* [Hyperlinks uitbreiden en personaliseren](./personalizing-hyperlinks)
