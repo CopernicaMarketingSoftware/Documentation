@@ -52,7 +52,7 @@
     * [REST API v2](./restv2/rest-api.md)
     * [WebHooks](./webhooks.md)
     * [SOAP API](./soap-api-documentation.md)
-* [Smarty](./smarty-faq.md)
+* [Smarty](./publisher-personalization-functions.md)
 * [FAQ](./faq.md)
 * [Tips, tricks en achtergrond](./tips-and-tricks.md)
     * [Licentie en facturering](./license-and-billing.md)
