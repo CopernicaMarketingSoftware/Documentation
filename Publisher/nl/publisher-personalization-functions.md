@@ -22,10 +22,10 @@ Meer informatie over het personaliseren binnen de Publisher vind je [hier](./ema
 ## Personaliseren binnen de Marketing Suite
 In de Publisher is het mogelijk om enkel de veldnaam te gebruiken na het $-teken. In de Marketing Suite zal je echter altijd 'profile.' moeten meegeven.
 
-In de Publisher werkt`{$profile.naam}` en `{$naam}`.
+In de Publisher werkt`{$profile.naam}` en `{$naam}`.  
 In de Marketing Suite werkt enkel `{$profile.naam}`.
 
-hMeer informatie over het personaliseren binnen de Marketing Suite vind je [hier](./emailings-ms-personalization)
+Meer informatie over het personaliseren binnen de Marketing Suite vind je [hier](./emailings-ms-personalization)
 
 ## Smarty functies
 Er zijn veel standaard Smarty functies beschikbaar in de Publisher, een paar functies zijn
