@@ -1,5 +1,33 @@
 # Smarty
 
+## Personaliseren binnen de Publisher
+In de Publisher kun je van alles personaliseren. Je doet dit met behulp van de zogeheten Smarty code. 
+Een personalisatievariabele bestaat uit een dollarteken $, het woord profile of subprofile en de naam van een variabele, geplaatst tussen accolades. De volgende variabelen kun je bijvoorbeeld in een template of document gebruiken:
+
+* `{$profile.naam}`
+* `{$profile.email}`
+* `{$profile.aanhef}`
+
+Deze personalisatievariabelen werken natuurlijk alleen als je in de database ook velden met de "naam", "email" en "aanhef" hebt opgenomen, en als je voor de geadresseerden van de mailing deze gegevens hebt ingevuld. Als dat het geval is, dan kun je deze variabelen gewoon in je mailing gebruiken:
+
+```
+Beste {$profile.aanhef} {$profile.naam},
+
+Je ontvangt deze e-mail omdat bent aangemeld
+met het volgende e-mailadres: {$profile.email}.
+```
+
+Meer informatie over het personaliseren binnen de Publisher vind je [hier](./emailings-publisher-personalization).
+
+## Personaliseren binnen de Marketing Suite
+In de Publisher is het mogelijk om enkel de veldnaam te gebruiken na het $-teken. In de Marketing Suite zal je echter altijd 'profile.' moeten meegeven.
+
+In de Publisher werkt`{$profile.naam}` en `{$naam}`.
+In de Marketing Suite werkt enkel `{$profile.naam}`.
+
+hMeer informatie over het personaliseren binnen de Marketing Suite vind je [hier](./emailings-ms-personalization)
+
+## Smarty functies
 Er zijn veel standaard Smarty functies beschikbaar in de Publisher, een paar functies zijn
 specifiek voor Copernica zoals de *webonly* functie en de *unsubscribe* functie.
 
