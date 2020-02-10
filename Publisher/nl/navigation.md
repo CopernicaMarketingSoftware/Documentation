@@ -50,7 +50,6 @@
     * [Enquêtes](./surveys.md)
 * [API documentatie](./apis.md)
     * [REST API v2](./restv2/rest-api.md)
-    * [REST API v1](./restv1/rest-api.md)
     * [WebHooks](./webhooks.md)
     * [SOAP API](./soap-api-documentation.md)
 * [Veelgestelde vragen](./faq.md)
