@@ -37,6 +37,10 @@ dit geval. Dit is maar een simpele vergelijking, maar je kunt deze zo ingewikkel
 maken als je zelf wil. Dit voorbeeld gebruikt daarnaast de [assign functie](./personalization-functions-assign) 
 in de korte versie.
 
+Het is ook mogelijk om een waarde uit het (sub)profiel te gebruiken in je berekening:
+    
+    {math equation="x + y" x=$profile.FIELDNAME y=10}
+
 Als we een breuk uit willen rekenen echter is het handiger om decimalen 
 weer te geven. We willen dit resultaat ook opslaan, zodat we "1.33" krijgen 
 als we **{$frac}** in de template typen.
@@ -44,3 +48,5 @@ als we **{$frac}** in de template typen.
     {assign "height" 1}
     {assign "width" 3}
     {math equation="1 + x / y" assign="frac" format="%.2f" x=$height y=$width}
+    
+Meer informatie over de math equation functie van Smarty vind je [hier](https://www.smarty.net/docsv2/en/language.function.math.tpl).
