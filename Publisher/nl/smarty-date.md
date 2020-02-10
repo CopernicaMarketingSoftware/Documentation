@@ -3,13 +3,16 @@ In Smarty is het mogelijk om de huidige datum en/of tijdstip op te vragen middel
 Smarty.now heeft `date_format` als extra parameter waardoor je aan kunt geven hoe de output (de datum) eruit moet zien.
 
 **De meest gebruikte opties zijn:**  
-%Y  = jaar als een decimaal getal inclusief de eeuw  
-%y  = jaar als een decimaal getal zonder een eeuw (00 tot 99)  
-%m  = maand als een decimaal getal (01 tot 12)  
-%d  = dag van de maand als decimaal getal (01 tot 31)  
-%H  = uur van de dag als decimaal getal (00 tot 23)  
-%M  = minuut als decimaal getal (00 tot 59)  
-%S  = seconde als decimaal getal (00 tot 59)  
+| Optie                                                         | Omschrijving                                                         |
+|-----------------------------------------------------------------------|------------------------------------------------------------------------------|
+| %Y                        | jaar als een decimaal getal inclusief de eeuw                                             |
+| %y                        | jaar als een decimaal getal zonder een eeuw (00 tot 99)                                              |
+| %m                        | maand als een decimaal getal (01 tot 12)                                               |
+| %d                        | dag van de maand als decimaal getal (01 tot 31)                                             |
+| %H                        | uur van de dag als decimaal getal (00 tot 23)                                              |
+| %M                        | minuut als decimaal getal (00 tot 59)                                            |
+| %S                        | seconde als decimaal getal (00 tot 59)                                           |
+
 
 Hieronder volgen enkele voorbeelden:
 ```
