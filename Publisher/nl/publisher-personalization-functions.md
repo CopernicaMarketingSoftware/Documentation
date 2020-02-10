@@ -69,3 +69,6 @@ Hieronder zie je een overzicht van enkele Smarty functies:
 | [{webform}](./personalization-functions-webform)                      | inladen van een webformulier                                                 |
 | [{webonly}](./personalization-functions-webonly)                      | blok markeren dat alleen in de webversie wordt getoond                       |
 | [{webversion}](./emailings-publisher-webversion)                      | webversielink                      |
+
+## Tutorials
+* [Persoonlijke aanhef maken](./tutorial-personalized-salutation-in-email-using-smarty-code)
