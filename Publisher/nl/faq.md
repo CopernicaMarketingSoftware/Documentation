@@ -1,4 +1,4 @@
-# Veelgestelde vragen
+# FAQ
 Hieronder vind je enkele veel voorkomende vragen:
 
 ## Profielen
