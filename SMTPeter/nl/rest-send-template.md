@@ -6,7 +6,7 @@ Het gebruik van templates heeft een aantal voordelen ten opzichte van de eerder
 genoemde methodes. 
 
 Ten eerste, je maakt de templates met de handige drag-and-drop 
-editor, waardoor je geen HTML hoeft te scrhijven. Uiteraard kun je dit wel blijven doen
+editor, waardoor je geen HTML hoeft te schrijven. Uiteraard kun je dit wel blijven doen
 als je daarvoor voor kiest. Ten tweede, het is niet alleen makkelijk om templates
 te maken, maar je kunt ze ook opslaan en bewerken. Zo heb je alle templates netjes op
 een plek, binnen het dashboard van SMTPeter. Tot slot, de gecreëerde templates worden
