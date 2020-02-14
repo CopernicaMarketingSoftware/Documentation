@@ -1,9 +1,9 @@
 # Versiebeheer templates
 Per februari 2020 maken we bij Copernica gebruik van versiebeheer voor Publisher e-mailing templates. Hiervoor is gekozen zodat we nieuwe functionaliteiten kunnen toevoegen zonder dat bestaande templates verkeerd kunnen gaan functioneren.
 
-Onder `E-mailings → Template [naam] → Template-versiebeheer` is te zien of de template op de nieuwste versie staat. Als dit niet het geval is, kan je het template updaten naar de laatste versie. Alle templates aangemaakt voor februari 2020 maken gebruik van template versie 1. 
+Onder `E-mailings → Template [naam] → Template-versiebeheer` is te zien of de template op de nieuwste versie staat. Als dit niet het geval is, kan je de template updaten naar de laatste versie. Alle templates aangemaakt voor februari 2020 maken gebruik van versie 1. 
 
-Het kan voorkomen dat je wilt uploaden naar de meest recente versie, maar dit niet mogelijk is door een fout in de broncode van de template. In de update pop-up wordt zichtbaar waar de fout zich bevindt.
+Het kan voorkomen dat je wilt uploaden naar de meest recente versie, maar dit niet mogelijk blijkt te zijn door een fout in de broncode van de template. In de update pop-up wordt zichtbaar waar de fout zich bevindt.
 
 Voorbeeld:
 In je versie 1 template gebruik je de volgende broncode:
@@ -29,8 +29,8 @@ Zodra dit is aangepast. Is het mogelijk om de template te updaten naar de nieuws
 
 ## Versies
 
-| Versienummer             | Nieuwe opties                                                         |
+| Versienummer             | Nieuwe opties                                                                |
 |--------------------------|------------------------------------------------------------------------------|
-| 1                        | Standaard templates                                           |
-| 2                        | Syntax check op foutieve parameters                                           |
-| 3                        | Optie om 'style' parameter toe te voegen aan een image-tag                                           |
+| 1                        | Standaard templates                                                          |
+| 2                        | Syntax check op foutieve parameters                                          |
+| 3                        | Optie om 'style' parameter toe te voegen aan een image-tag                   |
