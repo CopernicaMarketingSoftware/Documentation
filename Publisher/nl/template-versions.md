@@ -15,7 +15,9 @@ De *style* parameter was in versie 1 nog niet mogelijk om te gebruiken, echter z
 
 De foutmelding ziet er als volgt uit:  
 ```
-Syntax error in template "eval:[image name="imageblok" style="border: 1..." on line 1 "[image name="imageblok" style="border: 1px solid red;"]" Unsupported parameter(s) in function 'image': style
+Syntax error in template "eval:[image name="imageblok" style="border: 1..." on line 1 
+"[image name="imageblok" style="border: 1px solid red;"]" Unsupported parameter(s) 
+in function 'image': style
 ```
 
 In dit geval dien je de broncode template aan te passen naar:  
