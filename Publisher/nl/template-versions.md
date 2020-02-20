@@ -1,9 +1,9 @@
 # Versiebeheer templates
-Per februari 2020 maken we bij Copernica gebruik van versiebeheer voor Publisher e-mailing templates. Hiervoor is gekozen zodat we nieuwe functionaliteiten kunnen toevoegen zonder dat bestaande templates verkeerd kunnen gaan functioneren.
+Per februari 2020 maken we bij Copernica gebruik van versiebeheer voor Publisher e-mailing templates. Op deze manier kunnen er nieuwe functionaliteiten worden toegevoegd, zonder dat dat impact heeft op de werking van bestaande templates.
 
 Onder **E-mailings → Template [naam] → Template-versiebeheer** is inzichtelijk of je template up to date is. Als dit niet het geval is, kan je de template upgraden naar de laatste versie. Alle templates aangemaakt voor februari 2020 maken gebruik van versie 1. 
 
-Het kan voorkomen dat je wilt upgraden naar de meest recente versie, maar dit niet mogelijk blijkt te zijn door een fout in de broncode van de template. In de upgrade pop-up wordt zichtbaar waar de fout zich bevindt.
+Wanneer er in de bron van de template code is opgenomen die fout is, of implicaties heeft in de nieuwe versie, wordt er bij het upgraden een foutmelding gegeven. In deze pop-up is te zien waar de fout zich bevindt.
 
 Voorbeeld:
 In je template (versie 1) gebruik je de volgende broncode:
@@ -11,7 +11,7 @@ In je template (versie 1) gebruik je de volgende broncode:
 [image name="imageblok" style="border: 1px solid red;"]
 ```
 
-De *style* parameter was in versie 1 nog niet mogelijk om te gebruiken, echter zien wij deze parameter geregeld terugkomen. Omdat de ‘style’ parameter in versie 3 is toegevoegd geven wij een waarschuwing bij het upgraden. Het kan namelijk zijn dat hier style in staat wat tegenwoordig niet meer relevant is.
+In versie 1 was het nog niet mogelijk om de style parameter te gebruiken in afbeelding tags. Deze zien we echter al wel veel voorkomen. Om te voorkomen dat er styling wordt toegepast die niet meer relevant is, wordt de waarschuwing gegeven.
 
 De foutmelding ziet er als volgt uit:  
 ```
@@ -25,7 +25,7 @@ In dit geval dien je de broncode template aan te passen naar:
 [image name="imageblok"]
 ```
 
-Dit zal geen invloed hebben op de lay-out van je e-mailing, aangezien de *style* parameter nog niet ondersteund werd in de oudere versie.
+Deze wijziging heeft geen verdere invloed op de lay-out van je document, aangezien de style parameter nog niet ondersteund werd in de oudere versie.
 
 Zodra dit is aangepast, is het mogelijk om de template te upgraden naar de nieuwste versie.
 
