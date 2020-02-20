@@ -1,5 +1,5 @@
 # E-mail voorkeuren
-Wanneer je verschillende soorten nieuwsbrieven verstuurd is het belangrijk om een webpagina te hebben waarop je klanten hun voorkeuren te kunnen updaten. Deze webpagina kan geheel binnen Copernica worden ingericht met behulp van een webformulier en XSLT. 
+Wanneer je verschillende soorten nieuwsbrieven verstuurt is het belangrijk om een webpagina te hebben waarop klanten hun voorkeuren kunnen updaten. Deze webpagina kan geheel binnen Copernica worden ingericht met behulp van een webformulier en XSLT. 
 
 In deze tutorial leggen we uit hoe de onderstaande voorkeuren pagina gemaakt wordt.
 ![Screenshot van voorkeurenpagina](https://pic.vicinity.nl/image/37852263/3b3bdf20523c02e42a3f96c3525404c0/Screenshot%20from%202020-02-20%2015-19-18.png)
@@ -12,9 +12,9 @@ Deze interesses maak je aan via **Databasebeheer -> Databasevelden wijzigen** wa
 ## Formulier
 Onder Content kunnen we een [webformulier](https://www.copernica.com/nl/documentation/webforms) aanmaken. Dit doe je door op **Webformulier -> Nieuw webformulier** te drukken, hier kan je vervolgens het formulier een naam geven en de database uit de vorige stap te selecteren.
 
-Via **Webformulier "Naam" -> Instellingen** kunnen we het gerag van het webformulier instellen. Hier kiezen we bij instelling voor; Inloggen als profiel uit de database "naam". Voor de tekst verzendknop en de vervolgpagina kunnen eigen waardes worden gekozen. 
+Via **Webformulier "Naam" -> Instellingen** kunnen we het gerag van het webformulier instellen. Hier kiezen we bij instelling voor; Inloggen als profiel uit de database "naam". Voor de tekst op de verzendknop en de vervolgpagina kunnen eigen waarden worden gekozen. 
 
-Vervoglens maken we de drie velden aan via **Webformulier "Naam" -> Veld toevoegen**, kies dan voor interesse. Als label kiezen we in dit geval de naam van de interesse waar we het veld aan koppelen, bij gekoppeld aan wordt de juiste interesse gekozen en het veld is vooraf ingevuld met (sub)profiel data. Herhaal dit voor de overige twee interesses.
+Vervolgens maken we de drie velden aan via **Webformulier "Naam" -> Veld toevoegen**, kies dan voor interesse. Als label kiezen we in dit geval de naam van de interesse waar we het veld aan koppelen, bij gekoppeld aan wordt de juiste interesse gekozen en het veld is vooraf ingevuld met (sub)profiel data. Herhaal dit voor de overige twee interesses.
 
 Onder preview zouden we nu het volgende moeten zien.
 ![Voorbeeld van de preview van het formulier](https://pic.vicinity.nl/image/37629028/ebf590883fadb92a54b735cc5738a5d8/Screenshot%20from%202020-02-17%2014-25-34.png)
@@ -159,7 +159,7 @@ De CSS kan net als de XSLT toegevoegd worden via Stijl waarna we op **Stylesheet
     }
 
 ## Website
-Het formulier moet opgeslagen worden op een Copernica [website](https://www.copernica.com/nl/documentation/websites). Voordat we een website kunnen aanmaken moet er eerst een domein aan gekoppeld zijn, de uitleg hiervoor kan [hier](https://www.copernica.com/nl/documentation/websites#domein-linken) gevonden worden.
+Het formulier moet opgeslagen worden op een Copernica [website](https://www.copernica.com/nl/documentation/websites). Voordat we een website kunnen aanmaken moet er eerst een domein aan gekoppeld zijn, de uitleg kan [hier](https://www.copernica.com/nl/documentation/websites#domein-linken) gevonden worden.
 
 Druk op **Template -> Nieuwe Template** om een lege template aan te maken.  Via **Tempalte "Naam" -> Stijl instellen** kiezen we dan het CSS bestand wat we hebben aangemaakt. Daarna maken we via **Website -> Nieuwe website** een nieuwe website en binnen deze website via **Webpagina -> Nieuwe webpagina** een webpagina aan, selecteer voor de webpagina de zojuist gemaakte template.
 
@@ -192,5 +192,5 @@ In de bewerkmodus kan dan een afbeelding en een introtekst worden ingevuld. De l
 ## Verwijzing in e-mail
 Om te zorgen dat een persoon automatisch ingelogd is wanneer het formulier wordt geopend voeg je de volgende link in je e-mail binnen Copernica toe: `http://subdomein.jouwdomein.nl/websitename?profile={$profile.id}&code={$profile.code}` 
 
-Met deze stappen is de voorkeurenpagina klaar om gebruikt en verstuurd te worden.
+Met deze stappen is de voorkeurenpagina klaar om gebruikt en verstuurt te worden.
 
