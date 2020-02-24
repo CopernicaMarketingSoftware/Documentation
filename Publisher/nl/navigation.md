@@ -48,6 +48,7 @@
 * [Content](./content.md)
     * [Webformulier](./webforms.md)
     * [Enquêtes](./surveys.md)
+* [Logfiles](./logfiles-ms.md)
 * [API documentatie](./apis.md)
     * [REST API v2](./restv2/rest-api.md)
     * [WebHooks](./webhooks.md)
