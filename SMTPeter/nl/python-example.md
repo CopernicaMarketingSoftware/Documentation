@@ -67,9 +67,12 @@ response = mySMTPeterConnection.post("send", data)
 pprint.pprint(response.json())
 ```
 
+Als het verzoek succesvol is uitgevoerd is de [API respons](./rest-api-response) 
+een array met message IDs en e-mailadressen.
+
 ## Meer informatie
 
 * [REST API configureren](./introduction-rest-api)
 * [REST API algemeen](./rest-api)
 * [Alle REST API calls](./all-rest-calls)
-* [PHP voorbeeld](./php-example)
+* [REST PHP voorbeeld](./php-example)
