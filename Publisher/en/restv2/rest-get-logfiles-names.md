@@ -17,7 +17,7 @@ use both. Using neither will return the [logfile dates](./rest-get-logfiles.md)
 This method returns a JSON array of logfile name. The types of logfiles
 are provided in the table below. 
 
-| prefix                                            | type of information                                                |
+| Prefix                                            | Type of information                                                |
 | --------------------------------------------------|--------------------------------------------------------------------|
 | [cdm-attempts](rest-cdm-attempts-logfile)         | General info about mails sent with Marketing Suite (MS)            |
 | [cdm-abuse](rest-cdm-abuse-logfile)               | Info about mails sent via MS that triggered a notification         |

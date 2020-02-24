@@ -34,7 +34,20 @@ and how many times it has been used.
 It is possible to download log files to your computer using the 
 'Download' button in the Operations Log. Another way of retrieving log 
 files is through the [REST API](./rest-get-logfiles), or to get notified 
-of events using [WebHooks](./webhooks).
+of events using [WebHooks](./webhooks). The following logfiles are available 
+for Marketing Suite:
+
+| Prefix                                            | Type of information                                                |
+| --------------------------------------------------|--------------------------------------------------------------------|
+| [cdm-attempts](rest-cdm-attempts-logfile)         | General info about mails sent with Marketing Suite (MS)            |
+| [cdm-abuse](rest-cdm-abuse-logfile)               | Info about mails sent via MS that triggered a notification         |
+| [cdm-click](rest-cdm-click-logfile)               | Info about clicks generated from mails sent with MS                |
+| [cdm-delivery](rest-cdm-delivery-logfile)         | Info about delivered mails sent with MS                            |
+| [cdm-error](rest-cdm-error-logfile)               | Info about mails sent with MS that triggered an error              |
+| [cdm-impression](rest-cdm-impression-logfile)     | Info about impressions from mails sent with MS                     |
+| [cdm-retry](rest-cdm-retry-logfile)               | Info about mails sent via MS for which we retry a delivery         |
+| [cdm-unsubscribe](rest-cdm-unsubscribe-logfile)   | Info about mails sent via MS that triggered an unsubscribe         |
+| [feedback-loop-errors](rest-feedback-loop-errors) | Info about errors in your feedback loops                           |
 
 ## More information
 

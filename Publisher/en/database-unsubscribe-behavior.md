@@ -1,4 +1,5 @@
 # Unsubscribe behaviour
+
 Copernica receives all sorts of feedback from users who want to unsubscribe
 from mailing lists. These triggers come in different ways. Usually they come
 in the form of unsubscribe links in mailings and feedback from a user
