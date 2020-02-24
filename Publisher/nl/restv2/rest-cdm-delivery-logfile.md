@@ -1,8 +1,9 @@
-# REST API: Ontvangst registratie in Marketing Suite
+# Ontvangst registratie in Marketing Suite
 
 Elke mail die verstuurd is via Marketing Suite en is aangekomen wordt 
-opgeslagen in de cdm-delivery logfiles. Je kunt de 
-inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
+opgeslagen in de "cdm-delivery" logfiles. Een record representeert hier 
+een email die succesvol is afgeleverd aan een enkele destination. Je kunt de 
+inhoud van deze logfile downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
 
@@ -36,7 +37,6 @@ bevatten de volgende informatie.
 * [Publisher impressies log](./rest-pom-impression-logfile)
 * [Publisher herzendingen log](./rest-pom-retry-logfile)
 * [Publisher uitschrijvingen log](./rest-pom-unsubscribe-logfile)
-
 
 ## Meer informatie over log files
 

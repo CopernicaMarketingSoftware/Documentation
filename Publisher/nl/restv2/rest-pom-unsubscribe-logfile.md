@@ -1,8 +1,11 @@
-# REST API: Geregistreerde uitschrijvingen in Marketing Suite
+# Geregistreerde uitschrijvingen in Publisher
 
-Berichten verzonden via Marketing Suite die een uitschrijving hebben veroorzaakt 
-worden bijgehouden in de cdm-unsubscribe log files. Je kunt de 
-inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
+Berichten verzonden via Publisher die een uitschrijving hebben veroorzaakt 
+worden bijgehouden in de "pom-unsubscribe" log files. Uitschrijvingen 
+worden geregistreerd door middel van uitschrijflinks. Afhankelijk van je 
+[uitschrijfgedrag](../database-unsubscribe-behavior) worden de uitschrijvers 
+dan niet meer gemaild of worden ze zelfs helemaal uit de database verwijderd. 
+Je kunt de inhoud van deze logfile downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
 
@@ -36,8 +39,7 @@ bevatten de volgende informatie.
 * [Publisher impressies log](./rest-pom-impression-logfile)
 * [Publisher herzendingen log](./rest-pom-retry-logfile)
 
-
-## Meer informatie over log files
+## Meer informatie over logfiles
 
 * [Overzicht van alle API calls](rest-api)
 * [Vraag namen van logfiles op](rest-get-logfiles-names)

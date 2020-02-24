@@ -1,6 +1,15 @@
-# REST API: Click registratie (oude stijl) in de Publisher
+# Click registratie (oude stijl) in de Publisher
 
-Elke klik op een link in de berichten verstuurd met de publisher wordt opgeslagen in een "pom-clicks-old" log file. In publisher wordt het onderscheid gemaakt tussen clicks die geregistreerd zijn door het oude of nieuwe tracking syteem. In het artikel [nieuwe tracking systeem](https://www.copernica.com/nl/blog/post/nieuw-link-tracking-systeem "Nieuw link tracking systeem") kun je meer lezen over de verschillen tussen de twee systemen. De inhoud van de "pom-clicks-old" logfiles kun je downloaden in CSV, JSON en XML formaat, zie "Meer informatie over logfiles" voor instructies van het opvragen hiervan. De logfiles bevatten de 
+Elke klik op een link in de berichten verstuurd met de publisher wordt 
+opgeslagen in een "pom-clicks-old" log file. In Publisher wordt het 
+onderscheid gemaakt tussen clicks die geregistreerd zijn door het oude 
+of nieuwe tracking syteem. In het artikel 
+[nieuwe tracking systeem](https://www.copernica.com/nl/blog/post/nieuw-link-tracking-systeem "Nieuw link tracking systeem") 
+kun je meer lezen over de verschillen tussen de twee systemen. 
+De inhoud van de "pom-clicks-old" logfiles kun je downloaden in 
+CSV, JSON en XML formaat, zie "Meer informatie over logfiles" voor 
+instructies van het opvragen hiervan. De logfiles bevatten de volgende 
+eigenschappen per klik:
 
 | Data         | Omschrijving                                      |
 | ------------ | ------------------------------------------------- |
@@ -38,7 +47,7 @@ Elke klik op een link in de berichten verstuurd met de publisher wordt opgeslage
 * [Publisher herzendingen log](./rest-pom-retry-logfile)
 * [Publisher uitschrijvingen log](./rest-pom-unsubscribe-logfile)
 
-## Meer informatie over log files
+## Meer informatie over logfiles
 
 * [Overzicht van alle API calls](rest-api)
 * [Vraag namen van logfiles op](rest-get-logfiles-names)

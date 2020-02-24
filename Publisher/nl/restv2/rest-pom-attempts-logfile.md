@@ -1,7 +1,9 @@
-# REST API: Algemene Marketing Suite informatie
+# Algemene Marketing Suite informatie
 
 Elk bericht dat wordt verstuurd via Marketing Suite wordt opgeslagen in de 
-cdm-attempts logfiles. Je kunt deze downloaden in CSV, JSON of XML formaat.
+cdm-attempts logfiles. Elke record representeert een enkele poging om een 
+email af te leveren, ongeacht het eindresultaat. 
+Je kunt deze downloaden in CSV, JSON of XML formaat.
 Instructies hiervoor kun je vinden onder "Meer informatie over logfiles", 
 of je kunt ze via het dashboard downloaden. De logfiles bevatten de volgende 
 informatie. 
@@ -39,8 +41,7 @@ informatie.
 * [Publisher herzendingen log](./rest-pom-retry-logfile)
 * [Publisher uitschrijvingen log](./rest-pom-unsubscribe-logfile)
 
-
-## Meer informatie over log files
+## Meer informatie over logfiles
 
 * [Overzicht van alle API calls](rest-api)
 * [Vraag namen van logfiles op](rest-get-logfiles-names)

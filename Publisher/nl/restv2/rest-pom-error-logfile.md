@@ -1,8 +1,11 @@
-# REST API: Error registratie in Marketing Suite
+# Error registratie in Marketing Suite
 
-Elk bericht dat een error heeft veroorzaakt en is verstuurd vanuit Marketing 
-Suite is opgeslagen in de cdm-error log files. Je kunt de 
-inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
+Elk bericht dat een error heeft veroorzaakt en is verstuurd vanuit Publisher 
+is opgeslagen in de "pom-error" logfiles. Tijdens het verzenden 
+van een emailing kunnen er vele errors voorkomen. De records in deze logfile 
+bevatten de beschikbare informatie over deze errors. Je kunt meer lezen 
+of errors, ook wel bounces genoemd, in [dit artikel](../bounces). Je kunt de 
+inhoud van deze logfile downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
 
@@ -40,8 +43,7 @@ bevatten de volgende informatie.
 * [Publisher herzendingen log](./rest-pom-retry-logfile)
 * [Publisher uitschrijvingen log](./rest-pom-unsubscribe-logfile)
 
-
-## Meer informatie over log files
+## Meer informatie over logfiles
 
 * [Overzicht van alle API calls](rest-api)
 * [Vraag namen van logfiles op](rest-get-logfiles-names)

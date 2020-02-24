@@ -1,8 +1,10 @@
-# REST API: Impressie registratie in Marketing Suite
+# Impressie registratie in Publisher
 
-Elke impressie van berichten verstuurd met de Marketing Suite is
-opgeslagen in de cdm-impression log files. Je kunt de 
-inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
+Elke impressie van berichten verstuurd met de Publisher is
+opgeslagen in de "pom-impression" logfiles. Elke record bevat een enkele 
+opening van een email door een ontvanger. Dit betekent dat er meerdere 
+impressies per ontvanger in je logfiles kunnen staan. Je kunt de 
+inhoud van deze logfile downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
 
@@ -42,8 +44,7 @@ bevatten de volgende informatie.
 * [Publisher herzendingen log](./rest-pom-retry-logfile)
 * [Publisher uitschrijvingen log](./rest-pom-unsubscribe-logfile)
 
-
-## Meer informatie over log files
+## Meer informatie over logfiles
 
 * [Overzicht van alle API calls](rest-api)
 * [Vraag namen van logfiles op](rest-get-logfiles-names)

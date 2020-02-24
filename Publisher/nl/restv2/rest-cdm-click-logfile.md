@@ -1,8 +1,9 @@
-# REST API: Click registratie in de Marketing Suite
+# Click registratie in de Marketing Suite
 
 Elke klik op een link in de berichten verstuurd met de Marketing Suite is
-opgeslagen in de cdm-click logfiles. Je kunt de 
-inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
+opgeslagen in de "cdm-click" logfiles. Elke record bevat informatie over 
+de link die aangeklikt is, maar ook over de gebruiker die de link aangeklikt heeft.
+Je kunt de inhoud van deze logfile downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
 

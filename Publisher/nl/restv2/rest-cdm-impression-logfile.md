@@ -1,8 +1,10 @@
-# REST API: Impressie registratie in Marketing Suite
+# Impressie registratie in Marketing Suite
 
 Elke impressie van berichten verstuurd met de Marketing Suite is
-opgeslagen in de cdm-impression logfiles. Je kunt de 
-inhoud hiervan downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
+opgeslagen in de "cdm-impression" logfiles. Elke record bevat een enkele 
+opening van een email door een ontvanger. Dit betekent dat er meerdere 
+impressies per ontvanger in je logfiles kunnen staan. Je kunt de 
+inhoud van deze logfile downloaden in CSV, JSON en XML formaat. Zie "Meer informatie 
 over logfiles" voor instructies van het opvragen hiervan. De logfiles 
 bevatten de volgende informatie.
 

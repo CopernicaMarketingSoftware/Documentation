@@ -1,8 +1,9 @@
-# REST API: Herzend registratie in Marketing Suite
+# Herzend registratie in Marketing Suite
 
 Als een bericht uit Marketing Suite niet meteen aankomt proberen we het 
-opnieuw te verzenden, deze herzendingen worden bijgehouden in de cdm-retry 
-logfiles. Je kunt de inhoud hiervan downloaden in CSV, JSON en XML formaat. 
+opnieuw te verzenden, deze herzendingen worden bijgehouden in de "cdm-retry" 
+logfiles. Elke nieuwe poging om het bericht af te leveren wordt bijgehouden 
+in deze logfile. Je kunt de inhoud hiervan downloaden in CSV, JSON en XML formaat. 
 Zie "Meer informatie over logfiles" voor instructies van het opvragen hiervan. 
 De logfiles bevatten de volgende informatie.
 
