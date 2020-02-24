@@ -29,6 +29,7 @@ Hieronder vind je tutorials voor veelvoorkomende toepassingen.
 * [Selecties: dubbele opt-in creëren](create-a-double-optin-for-new-subscribers).
 * [Selecties: nieuwsbriefselectie](./create-a-mailing-list)
 * [Selecties: verjaardagsselectie](./how-to-create-a-birthday-selection)
+* [Formulieren: E-mail voorkeuren bijhouden](./email-preferences)
 
 ## Sender domains
 Sender domains zorgen ervoor dat Copernica in jouw naam mag mailen. Er zijn
