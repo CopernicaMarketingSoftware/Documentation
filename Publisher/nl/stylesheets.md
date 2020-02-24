@@ -2,8 +2,7 @@
 
 De juiste stijl voor jouw email is erg belangrijk. Je kan er de 
 aandacht van je klanten mee trekken en laten zien wie je bent als bedrijf. 
-Omdat Copernica dit erg belangrijk vindt hebben wij een speciaal 'Stijl' 
-component waar je stylesheets kunt aanmaken en beheren. De stylesheet is 
+Omdat Copernica dit erg belangrijk vindt hebben wij een speciaal menuitem 'Stijl' waar je stylesheets kunt aanmaken en beheren. De stylesheet is 
 algemeen en kan specifiek worden aangepast voor [RSS en atom feeds](./rss-and-atom-feeds.md), 
 enquêtes en webformulieren. Dit komt allemaal in een file, gescheiden door tabs.
 

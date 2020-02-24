@@ -73,3 +73,5 @@ Hieronder zie je een overzicht van enkele Smarty functies:
 ## Tutorials / extra documentatie
 * [Persoonlijke aanhef maken](./tutorial-personalized-salutation-in-email-using-smarty-code)
 * [Hyperlinks uitbreiden en personaliseren](./personalizing-hyperlinks)
+* [Inladen van (sub)profiel data met de load(sub)profile-tag](./loadprofile-and-loadsubprofile)
+* [Feed inladen met de loadfeed-tag](./personalization-functions-loadfeed)
