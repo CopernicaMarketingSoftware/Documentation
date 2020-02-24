@@ -1,7 +1,10 @@
-# REST API: Attempts Record Information
+# Attempts Record Information
 
 Every message that is sent via Marketing Suite is logged in the cdm-attempts
-log files. You can download the content of these files in CSV, JSON, and XML
+log files. Each record represents one single attempt to deliver an email, 
+no matter the end result. If you are only interested in the deliveries 
+you can find them in the [cdm-delivery logfile](./rest-cdm-delivery).
+You can download the content of these files in CSV, JSON, and XML
 format using the [REST logfiles API](./rest-get-logfiles), or the dashboard. 
 These log files contain the following data in the respective order:
 

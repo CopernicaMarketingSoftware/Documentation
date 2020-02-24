@@ -1,7 +1,12 @@
 # Errors Record Information
 
 Every message sent with Publisher that triggered an error is logged in the
-pom-errors log files. You can download the content of these files in CSV,
+pom-errors log files. All kinds of errors can occur while 
+sending email, from hitting mailing limits to invalid email addresses. Each 
+record in these logfiles represents such an error and contains the known 
+information about the error. You can read more about errors, or bounces, 
+in [this article](../bounces). 
+You can download the content of these files in CSV,
 JSON, and XML format using the [REST logfiles API](rest-get-logfiles),
 or the dashboard. These log files contain the following data in the
 respective order:
@@ -21,7 +26,7 @@ respective order:
 | senderdomain | The sender domain name that was used                     |
 | groupid      | The group ID the mail belonged to                        |
 | profile      | The ID of the profile                                    |
-| subprofile   | The ID of the sub profile                                |
+| subprofile   | The ID of the subprofile                                 |
 | template     | The ID of the used template                              |
 | document     | The ID of the used document                              |
 

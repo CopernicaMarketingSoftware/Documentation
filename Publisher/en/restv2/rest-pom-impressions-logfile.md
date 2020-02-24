@@ -1,11 +1,12 @@
 # Impression Record Information
 
 Every impression from messages sent via Publisher is logged in the
-pom-impressions log files. You can download the content of these files in
-CSV, JSON, and XML format using the [REST logfiles API](rest-get-logfiles),
-or the dashboard. These log files contain the following data in the respective
-order:
-
+pom-impressions log files. Each record represents the opening 
+of an email by a destination, which means there can be multiple impressions
+for a single destination.
+You can download the content of these files in CSV, JSON, and XML format 
+using the [REST logfiles API](rest-get-logfiles), or the dashboard. 
+These log files contain the following data in the respective order:
 
 | Data         | Description                                                 |
 | ------------ | ----------------------------------------------------------- |
@@ -22,7 +23,7 @@ order:
 | senderdomain | The sender domain from which the original mail was sent     |
 | groupid      | The ID of the group the mail belonged to                    |
 | profile      | The ID of the profile                                       |
-| subprofile   | The ID of the sub profile                                   |
+| subprofile   | The ID of the subprofile                                    |
 | template     | The ID of the used template                                 |
 | document     | The ID of the used document                                 |
 

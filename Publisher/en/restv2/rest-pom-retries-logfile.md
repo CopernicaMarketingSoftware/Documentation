@@ -1,12 +1,13 @@
 # Retry Record Information
 
 For messages sent via Publisher that could not directly be delivered
-we retry the delivery. These retries are logged  in the the pom-retries log
-files. You can download the content of these files in CSV, JSON, and XML
+we retry the delivery. Each record in these logfiles represents one 
+additional attempt to deliver the message. These retries are logged in 
+the "pom-retries" log files. 
+You can download the content of these files in CSV, JSON, and XML
 format using the [REST logfiles API](rest-get-logfiles),
 or the dashboard. These log files contain the following data in the
 respective order:
-
 
 | Data         | Description                                               |
 | ------------ | --------------------------------------------------------- |

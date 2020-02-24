@@ -1,7 +1,12 @@
-# REST API: Error Record Information
+# Error Record Information
 
 Every message that triggered an error and was sent via Marketing Suite is 
-logged in the cdm-error log files. You can download the content of these
+logged in the cdm-error log files. All kinds of errors can occur while 
+sending email, from hitting mailing limits to invalid email addresses. Each 
+record in these logfiles represents such an error and contains the known 
+information about the error. You can read more about errors, or bounces, 
+in [this article](../bounces).
+You can download the content of these
 files in CSV, JSON, and XML format using the [REST logfiles API](./rest-get-logfiles),
 or the dashboard. These log files contain the following data in the
 respective order:

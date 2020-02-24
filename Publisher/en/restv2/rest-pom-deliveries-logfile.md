@@ -1,7 +1,8 @@
 # Delivery Record Information
 
 Every mail sent via Publisher that is delivered is logged in the 
-pom-deliveries log files. You can download the content of these files 
+"pom-deliveries" log files. One record represents one single message delivered 
+to a destination. You can download the content of these files 
 in CSV, JSON, and XML format using the [REST logfiles API](rest-get-logfiles),
 or the dashboard. These log files contain the following data in the
 respective order:
@@ -16,7 +17,7 @@ respective order:
 | senderdomain | The sender domain name that was used                                           |
 | groupid      | The ID of the group the mail belonged to                                       |
 | profile      | The ID of the profile                                                          |
-| subprofile   | The ID of the sub profile                                                      |
+| subprofile   | The ID of the subprofile                                                       |
 | template     | The ID of the used template                                                    |
 | document     | The ID of the used document                                                    |
 

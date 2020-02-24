@@ -1,9 +1,11 @@
-# REST API: Click Record Information
+# Click Record Information
 
 Every click on every link from messages sent via Marketing Suite is
-logged in the cdm-click log files. You can download the content of these
-files in CSV, JSON, and XML format using the [REST logfiles API](./rest-get-logfiles),
-or the dashboard. These log files contain the following data in the
+logged in the cdm-click log files. Each click contains some information 
+about the link that was clicked, as well as the user who clicked it. 
+You can download the content of these files in CSV, JSON, and XML format using 
+the [REST logfiles API](./rest-get-logfiles), or the dashboard. 
+These log files contain the following data in the
 respective order:
 
 | Data         | Description                                             |

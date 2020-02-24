@@ -1,6 +1,14 @@
 # Click Record (new style) Information
 
-Every click on a link from messages sent via Publisher is logged in "pom-clicks" log files. The data in a record depends on which tracking system is used, the article [new link tracking system](https://www.copernica.com/en/blog/post/new-link-tracking-system "New link tracking system") states more information about the different tracking systems. You can download the content of the "pom-clicks" log files in CSV, JSON, and XML format using the [REST logfiles API](rest-get-logfiles), or the dashboard. These log files contain the following data in the respective order:
+Every click on a link from messages sent via Publisher is logged in 
+"pom-clicks" log files. Each click contains some information 
+about the link that was clicked, as well as the user who clicked it. 
+The data in a record depends on which tracking system is used, 
+the article [new link tracking system](https://www.copernica.com/en/blog/post/new-link-tracking-system "New link tracking system") 
+states more information about the different tracking systems. 
+You can download the content of the "pom-clicks" log files in CSV, JSON, 
+and XML format using the [REST logfiles API](rest-get-logfiles), or the dashboard. 
+These log files contain the following data in the respective order:
 
 | Data         | Description                                             |
 | ------------ | ------------------------------------------------------- |

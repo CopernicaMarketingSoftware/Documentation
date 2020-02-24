@@ -1,14 +1,16 @@
 # Unsubscribe Record Information
 
 Messages sent via Publisher that triggered an unsubscribe are logged
-in the the pom-unsubscribes log files. You can download the content of these
-files in CSV, JSON, and XML format using the [REST logfiles API](rest-get-logfiles),
-or the dashboard. These log files contain the following data in the
-respective order:
+in the "pom-unsubscribes" log files. Unsubscribes are clicks on a link 
+that removes the user from the mailing list, or even deletes the 
+profile from the database depending on your [database unsubscribe behaviour](../database-unsubscribe-behavior). 
+You can download the content of these files in CSV, JSON, and XML format 
+using the [REST logfiles API](./rest-get-logfiles), or the dashboard. 
+These log files contain the following data in the respective order:
 
 | Data         | Description                                                        |
 | ------------ | ------------------------------------------------------------------ |
-| id           | The ID of the message that triggered the unsubscribe                |
+| id           | The ID of the message that triggered the unsubscribe               |
 | time         | The time when the unsubscribe was registered                       |
 | email        | The email address of the the message the triggered the unsubscribe |
 | tags         | The tags of the email (semicolon separated)                        |
