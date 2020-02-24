@@ -194,4 +194,3 @@ In de bewerkmodus kan een afbeelding en een introtekst worden ingevuld. De laats
 Om te zorgen dat een persoon automatisch ingelogd is wanneer het formulier wordt geopend voeg je de volgende link in je e-mail binnen Copernica toe: `http://subdomein.jouwdomein.nl/websitename?profile={$profile.id}&code={$profile.code}` 
 
 Met deze stappen is de voorkeurenpagina klaar om gebruikt en verstuurt te worden.
-
