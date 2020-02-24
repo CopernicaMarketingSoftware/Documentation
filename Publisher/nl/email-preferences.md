@@ -5,22 +5,22 @@ In deze tutorial leggen we uit hoe de onderstaande voorkeuren pagina gemaakt wor
 ![Screenshot van voorkeurenpagina](https://pic.vicinity.nl/image/37852263/3b3bdf20523c02e42a3f96c3525404c0/Screenshot%20from%202020-02-20%2015-19-18.png)
 
 ## Database
-In de database houden we de voorkeuren van nieuwsbrief bij in een [interesse](https://www.copernica.com/nl/documentation/database-fields#interesses) veld. In ons geval betekent dit dat wij drie verschillende interesses willen aanmaken; dagdeals, weekdeals en maanddeals.
+In de database houden we de voorkeuren van de nieuwsbrief bij in een [interesse](https://www.copernica.com/nl/documentation/database-fields#interesses) veld. In ons geval betekent dit dat wij drie verschillende interesses willen aanmaken; dagdeals, weekdeals en maanddeals.
 
-Deze interesses maak je aan via **Databasebeheer -> Databasevelden wijzigen** waarna je op Interesse toevoegen drukt. Groepeer alledrie de interesses onder Nieuwsbrieven zodat we bij een eventuele uitbreiding van interesses het overzicht kunnen behouden.
+Deze interesses maak je aan via **Databasebeheer -> Databasevelden wijzigen** waarna je op *Interesse toevoegen* drukt. Groepeer alledrie de interesses onder de groep *Nieuwsbrieven* zodat we bij een eventuele uitbreiding van interesses het overzicht kunnen behouden.
 
 ## Formulier
-Onder Content kunnen we een [webformulier](https://www.copernica.com/nl/documentation/webforms) aanmaken. Dit doe je door op **Webformulier -> Nieuw webformulier** te drukken, hier kan je vervolgens het formulier een naam geven en de database uit de vorige stap te selecteren.
+Onder Content kunnen we een [webformulier](https://www.copernica.com/nl/documentation/webforms) aanmaken. Dit doe je door op **Webformulier -> Nieuw webformulier** te drukken. Hier kan je vervolgens het formulier een naam geven en de database uit de vorige stap te selecteren.
 
 Via **Webformulier "Naam" -> Instellingen** kunnen we het gerag van het webformulier instellen. Hier kiezen we bij instelling voor; Inloggen als profiel uit de database "naam". Voor de tekst op de verzendknop en de vervolgpagina kunnen eigen waarden worden gekozen. 
 
-Vervolgens maken we de drie velden aan via **Webformulier "Naam" -> Veld toevoegen**, kies dan voor interesse. Als label kiezen we in dit geval de naam van de interesse waar we het veld aan koppelen, bij gekoppeld aan wordt de juiste interesse gekozen en het veld is vooraf ingevuld met (sub)profiel data. Herhaal dit voor de overige twee interesses.
+Vervolgens maken we de drie velden aan via **Webformulier "Naam" -> Veld toevoegen**. Kies vervolgens voor de optie 'interesse'. Als label kiezen we in dit geval de naam van de interesse waar we het veld aan koppelen, bij gekoppeld aan wordt de juiste interesse gekozen en het veld is vooraf ingevuld met (sub)profiel data. Herhaal dit voor de overige twee interesses.
 
 Onder preview zouden we nu het volgende moeten zien.
 ![Voorbeeld van de preview van het formulier](https://pic.vicinity.nl/image/37629028/ebf590883fadb92a54b735cc5738a5d8/Screenshot%20from%202020-02-17%2014-25-34.png)
 
 ## XSLT
-De XSLT zal ons formulier omzetten in bruikbare HTML, onder Stijl kunnen we via **XSLT -> Nieuwe XSLT** een nieuw bestand aanmaken. Het doel is een webformulier en we willen hem niet vullen met voorbeeldcode. De code die we er wel in willen plaatsen is de volgende:
+De XSLT zal ons formulier omzetten in bruikbare HTML. Onder Stijl kunnen we via **XSLT -> Nieuwe XSLT** een nieuw bestand aanmaken. Het doel is een webformulier en we willen hem niet vullen met voorbeeldcode. De code die we er in willen plaatsen is de volgende:
 
     <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
     <xsl:output omit-xml-declaration="no" />
@@ -53,7 +53,7 @@ De XSLT zal ons formulier omzetten in bruikbare HTML, onder Stijl kunnen we via 
     </xsl:stylesheet>
 
 ## CSS
-De CSS kan net als de XSLT toegevoegd worden via Stijl waarna we op **Stylesheet -> Nieuwe Stylesheet ** ook deze vullen we niet met voorbeeldcode maar met de volgende code:
+De CSS kan net als de XSLT toegevoegd worden via Stijl waarna we op **Stylesheet -> Nieuwe Stylesheet**. Ook deze vullen we niet met voorbeeldcode maar met de volgende code:
 
     /* Import LATO medium font */
     @import url("https://use.typekit.net/rze0amo.css");
@@ -161,9 +161,9 @@ De CSS kan net als de XSLT toegevoegd worden via Stijl waarna we op **Stylesheet
 ## Website
 Het formulier moet opgeslagen worden op een Copernica [website](https://www.copernica.com/nl/documentation/websites). Voordat we een website kunnen aanmaken moet er eerst een domein aan gekoppeld zijn, de uitleg kan [hier](https://www.copernica.com/nl/documentation/websites#domein-linken) gevonden worden.
 
-Druk op **Template -> Nieuwe Template** om een lege template aan te maken.  Via **Tempalte "Naam" -> Stijl instellen** kiezen we dan het CSS bestand wat we hebben aangemaakt. Daarna maken we via **Website -> Nieuwe website** een nieuwe website en binnen deze website via **Webpagina -> Nieuwe webpagina** een webpagina aan, selecteer voor de webpagina de zojuist gemaakte template.
+Druk op **Template -> Nieuwe Template** om een lege template aan te maken.  Via **Tempalte "Naam" -> Stijl instellen** kiezen we het CSS bestand wat we hebben aangemaakt. Vervolgens maken we via **Website -> Nieuwe website** een nieuwe website en binnen deze website via **Webpagina -> Nieuwe webpagina** een webpagina aan. Selecteer voor de webpagina de zojuist gemaakte template.
 
-De broncode van de template vullen we met deze HTML code;
+De broncode van de template vullen we met onderstaande HTML code;
 
     <!doctype html>
     
@@ -187,7 +187,8 @@ De broncode van de template vullen we met deze HTML code;
        }, false);
       </script>
     </html>
-In de bewerkmodus kan dan een afbeelding en een introtekst worden ingevuld. De laatste stap is dan in het blok met de naam Formulier onder Speciale inhoud voor Formulier te kiezen en dan het juiste formulier en de bijbehorende XSLT te kiezen.
+
+In de bewerkmodus kan een afbeelding en een introtekst worden ingevuld. De laatste stap is om in het blok met de naam *Formulier* onder *Speciale inhoud* voor Formulier te kiezen. Vervolgens kies je hier het juiste formulier en de bijbehorende XSLT.
 
 ## Verwijzing in e-mail
 Om te zorgen dat een persoon automatisch ingelogd is wanneer het formulier wordt geopend voeg je de volgende link in je e-mail binnen Copernica toe: `http://subdomein.jouwdomein.nl/websitename?profile={$profile.id}&code={$profile.code}` 
