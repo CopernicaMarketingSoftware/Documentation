@@ -44,11 +44,11 @@ in de [MIME door SMTPeter laten maken](rest-send-json) documentatie.
 
 De REST API is uitgebreid en geeft je vrijheid in het maken van keuzes:
 
-* [MIME data versturen](rest-mime)
-* [MIME data door SMTPeter laten versturen](rest-send-json)
-* [Versturen naar meerdere afzenders](rest-send-multiple-recipients)
-* [Versturen op basis van een template](rest-send-template)
-* [Geavanceerde verzendopties](rest-send-advanced)
-* [API respons](rest-api-reaction)
+* [MIME data versturen](./rest-mime)
+* [MIME data door SMTPeter laten versturen](./rest-send-json)
+* [Versturen naar meerdere afzenders](./rest-send-multiple-recipients)
+* [Versturen op basis van een template](./rest-send-template)
+* [Geavanceerde verzendopties](./rest-send-advanced)
+* [API respons](./rest-api-reaction)
 
 *Alle beschikbare REST calls kun je [hier](./all-rest-calls) vinden.*

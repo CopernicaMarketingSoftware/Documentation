@@ -34,15 +34,9 @@ class SMTPeter:
         # Make request and return response
         return requests.post(url, data=data_json, headers=headers)
 ```
-Using this class is easy:
 
-# your token
-token = "abcde"
-
-# initialize SMTPeter with token
-mySMTPeterConnection = SMTPeter(token)
-
-# The data we want to send
+Using this class is easy. Once you have prepared your data in JSON format 
+it might look something like this:
 
 ```json
 {
@@ -56,11 +50,28 @@ mySMTPeterConnection = SMTPeter(token)
 }
 ```
 
-# Post
+We can then send this data with the following script:
+
+```python
+# your token
+token = "abcde"
+
+# initialize SMTPeter with token
+mySMTPeterConnection = SMTPeter(token)
+
+# import your data in a variable data here with a method of your choosing
+
+# use the SMTPeter connection to call the POST method, using the 
+# data you just retrieved
 response = mySMTPeterConnection.post("send", data)
-# Print response
+
+# print the server response in JSON format
 pprint.pprint(response.json())
 ```
+
+If the email was sent successfully you should have received an array as the 
+[API response](./rest-api-response), which contains message IDs and their 
+corresponding email addresses.
 
 ## More infomation
 

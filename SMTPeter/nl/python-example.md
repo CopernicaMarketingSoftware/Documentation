@@ -30,17 +30,11 @@ class SMTPeter:
         # Make request and return response
         return requests.post(url, data=data_json, headers=headers)
 ```
-Het gebruik van deze class is makkelijk:
 
-*your token* = 
-"abcde"
+Het gebruik van deze klasse is makkelijk. Na het opstellen van je bericht 
+in JSON format ziet deze er bijvoorbeeld zo uit:
 
-initialize SMTPeter with token
-mySMTPeterConnection = SMTPeter(token)
-
-The data we want to send
-
-``` json
+```json
 {
     "envelope"  : "sender@example.com",
     "recipient" : "receiver@example.com",
@@ -52,11 +46,24 @@ The data we want to send
 }
 ```
 
-```python
-*Post response* = 
-mySMTPeterConnection.post("send", data)
+Je kunt de data vervolgens inladen met Python op de gewenste manier en 
+deze versturen met het volgende script:
 
-*Print response* =
+
+```python
+# jouw access token
+token = "abcde"
+
+# maak een SMTPeter connectie aan met jouw token
+mySMTPeterConnection = SMTPeter(token)
+
+# importeer hier je JSON data in een variabele genaamd 'data'
+
+# gebruik de SMTPeter connectie om een POST methode aan 
+# te roepen en geef de JSON data mee
+response = mySMTPeterConnection.post("send", data)
+
+# print de respons van de server in JSON format
 pprint.pprint(response.json())
 ```
 
