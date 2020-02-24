@@ -1,4 +1,5 @@
 # Logfiles in MarketingSuite
+
 Copernica houdt een log bij van alle verzonden e-mails. We houden
 informatie bij over *events*: deliveries, bounces, clicks, pogingen
 om af te leveren, et cetera. Deze *logfiles* kunnen worden opgehaald
@@ -29,13 +30,28 @@ Onder 'Template' staan gegevens over het template, zoals de ID en in
 hoeveel mailings het template gebruikt is.
 
 ## Downloaden van logfiles
+
 Je kunt logfiles downloaden door middel van de knop 'Download' in het
 overzicht van logfiles, maar je kunt ze ook ophalen door middel van de
 [REST API](./rest-get-logfiles),
 of je kunt notificaties krijgen van events door middel van
-[WebHooks](./webhooks).
+[WebHooks](./webhooks). De volgende soorten logfiles zijn beschikbaar voor 
+Marketing Suite:
+
+| Prefix                                            | Type informatie                                                                     |
+| --------------------------------------------------|-------------------------------------------------------------------------------------|
+| [cdm-attempts](rest-cdm-attempts-logfile)         | Algemene info over mails verstuurd met Marketing Suite (MS)                         |
+| [cdm-abuse](rest-cdm-abuse-logfile)               | Info over mails verstuurd met MS die een 'misbruik' notificatie veroorzaakten       |
+| [cdm-click](rest-cdm-click-logfile)               | Info over clicks in mails verstuurd via MS                                          |
+| [cdm-delivery](rest-cdm-delivery-logfile)         | Info over aangekomen mails verstuurd via MS                                         |
+| [cdm-error](rest-cdm-error-logfile)               | Info over errors in mails verstuurd via MS                                          |
+| [cdm-impression](rest-cdm-impression-logfile)     | Info over impressies uit mails verstuurd via MS                                     |
+| [cdm-retry](rest-cdm-retry-logfile)               | Info over herzonden mails verstuurd via MS                                          |
+| [cdm-unsubscribe](rest-cdm-unsubscribe-logfile)   | Info over uitschrijvingen als gevolg van een mail verstuurd via MS                  |
+| [feedback-loop-errors](rest-feedback-loop-errors) | Info over errors in je feedback loops                                               |
 
 ## Meer informatie
+
 * [REST API](./rest-get-logfiles)
 * [Statistieken](./statistics)
 * [WebHooks](./webhooks)
