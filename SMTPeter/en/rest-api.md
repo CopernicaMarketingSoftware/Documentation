@@ -33,9 +33,11 @@ or attachments) can be sent too. And you can supply the entire email
 contents (headers+body) yourself. Check out the following articles for
 more info:
 
-* [Send MIME data](rest-mime)
-* [Send JSON data](rest-send-json)
-* [Send template based mails](rest-send-templates)
-* [Advanced delivery options](rest-send-advanced)
+* [Send MIME data](./rest-mime)
+* [Send JSON data](./rest-send-json)
+* [Send to multiple recipients](./rest-send-multiple-recipients)
+* [Send template based mails](./rest-send-templates)
+* [Advanced delivery options](./rest-send-advanced)
+* [API response](./rest-api-reaction)
 
 *All available REST calls can be found right [here](./all-rest-calls).*
