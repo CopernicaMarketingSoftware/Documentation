@@ -8,6 +8,7 @@ To upgrade MailerQ from version < 5.7 to 5.7+
 sudo apt update
 sudo apt install -y mailerq
 sudo mailerq --repair-database
+sudo systemctl restart mailerq
 ```
 
 **CentOS/RHEL:**
@@ -15,6 +16,7 @@ sudo mailerq --repair-database
 ```txt
 yum update
 mailerq --repair-database
+systemctl restart mailerq
 ```
 
 To downgrade MailerQ from version 5.7+ to 5.6
@@ -24,6 +26,7 @@ To downgrade MailerQ from version 5.7+ to 5.6
 ```txt
 sudo apt-get install -y --allow-downgrades mailerq-5.6
 sudo mailerq --repair-database
+sudo systemctl restart mailerq
 ```
 
 **CentOS/RHEL:**
@@ -32,4 +35,5 @@ sudo mailerq --repair-database
 yum remove mailerq-5.7
 yum install mailerq-5.6
 mailerq --repair-database
+systemctl restart mailerq
 ```
