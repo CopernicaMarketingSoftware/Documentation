@@ -26,7 +26,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN">
 <html>
   <head>
-    <{'script'} type="application/ld+json">
+    <script type="application/ld+json">
     [literal]
       [{
         "@context": "http://schema.org/",
@@ -63,7 +63,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
         "image": "https://pic.vicinity.nl/image/14579892/946b36fc985fa49220b501af8fc6aa4c/image.jpeg"
       }]
     [/literal]
-  </{'script'}>
+  </script>
   </head>
 
   <body>
