@@ -61,6 +61,23 @@ contains the following information:
 - **created**: the timestamp on which the profile was created, in YYYY-MM-DD hh:mm:ss format.
 - **modified**: the timestamp on which the profile was last modified,, in YYYY-MM-DD hh:mm:ss format.
 
+The JSON might look something like this:
+```
+{
+    "ID":"1",
+    "fields":{
+        "firstname":"name",
+        "lastname":"doe"
+    },
+    "interests":[],
+    "database":"1",
+    "secret":"424525",
+    "created":"2000-01-01 00:00:00",
+    "modified":"2000-01-01 00:00:00",
+    "removed":false
+}
+```
+
 ## PHP example
 
 This PHP script demonstrates how you can use this API call. In this specific 

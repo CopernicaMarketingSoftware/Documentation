@@ -64,6 +64,23 @@ profiel zijn de volgende velden beschikbaar:
 * **fields**: associative array / object van veldnamen en veldwaardes
 * **interests**: array van de interesses van het profiel
 
+De JSON ziet er dan bijvoorbeeld zo uit:
+```
+{
+    "ID":"1",
+    "fields":{
+        "firstname":"name",
+        "lastname":"doe"
+    },
+    "interests":[],
+    "database":"1",
+    "secret":"424525",
+    "created":"2000-01-01 00:00:00",
+    "modified":"2000-01-01 00:00:00",
+    "removed":false
+}
+```
+
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
