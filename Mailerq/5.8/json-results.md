@@ -229,6 +229,10 @@ goes through the following states:
         <td>the input is checked and assigned to the from and to ip address between which it will be sent</td>
     </tr>
     <tr>
+        <td>suppression</td>
+        <td>suppression list is checked</td>
+    </tr>
+    <tr>
         <td>storage</td>
         <td>the mime data is loaded from external nosql storage</td>
     </tr>
@@ -239,6 +243,10 @@ goes through the following states:
     <tr>
         <td>personalize</td>
         <td>the message is personalized if personalization data is available</td>
+    </tr>
+    <tr>
+        <td>rewrite</td>
+        <td>the email is being rewritten</td>
     </tr>
     <tr>
         <td>dns</td>

@@ -22,6 +22,7 @@
 * [E-mailings Publisher](./emailings-publisher-templates.md)
     * [Contentblokken](./emailings-publisher-contentblocks.md)
     * [Personalisatie](./emailings-publisher-personalization.md)
+    * [Versiebeheer](./template-versions.md)
     * [Stijl](./emailings-publisher-styling.md)
     * [Uitschrijflink](./emailings-publisher-unsubscribe.md)
     * [Headers](./emailings-headers.md)
