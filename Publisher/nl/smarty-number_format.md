@@ -5,6 +5,7 @@ De meest gebruikte optie is:
 {$variabele|number_format:2:',':'.'}
 ```
 Zoals je hierboven ziet heeft `number_format` een aantal parameters:
+
 | Parameter                                                         | Omschrijving                                                         |
 |-----------------------------------------------------------------------|------------------------------------------------------------------------------|
 | 2                        | het aantal getoonde decimalen                                              |
@@ -30,7 +31,7 @@ Uitkomst:
 19999,95
 ```
 
-Mocht de waarde in een profielveld staan opgeslagen is het als volgt mogelijk om aan te roepen:
+Mocht de waarde in een profielveld staan opgeslagen is het mogelijk om deze als volgt op te halen:
 ```
 {$profile.VELDNAAM}|number_format:2:',':'.'}
 ```
