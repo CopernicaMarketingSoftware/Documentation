@@ -42,12 +42,14 @@ dan onmiddellijk, terwijl de operatie in de achtergrond wordt voortgezet.
 ## Body data
 
 Naast de parameters die je aan de URL meegeeft, moet je ook body data aan het
-PUT request toevoegen. In de body van het verzoek kun je twee arrays meegeven:
-'fields' bevat de velden voor het profiel en 'interests' de interesses.
-Alleen de velden zijn verplicht. De interesses kunnen als een
-associatieve array ('voetbal' => 1, 'honkbal' => 0) of als een lijst ('voetbal')
-meegegeven worden. Deze body data wordt ook gebruikt als de **create** parameter
-op 'true' staat en een profiel wordt aangemaakt.
+POST request toevoegen. In de body van het verzoek kun je twee optionele arrays meegeven: 
+'fields' bevat de velden voor het profiel en 'interests' de interesses. 
+De interesses kunnen als een associatieve array ('voetbal' => 1, 'honkbal' => 0) 
+of als een lijst ('voetbal') meegegeven worden. De profielvelden moeten 
+meegegeven worden als associatieve array.
+
+Let op! Hier wordt de body data op een andere manier meegegeven dan in 
+[versie 1](../restv1/rest-post-database-profiles) van de API.
 
 ## Geretourneerde velden
 

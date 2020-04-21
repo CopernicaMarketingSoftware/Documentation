@@ -41,10 +41,13 @@ to immediately return, while it updates the profiles in the background.
 ## Body data
 
 Besides the parameters that you append to the URL, you must also include a
-request body in the POST request. The body has two components: 'fields' (required) and 
-'interests' (optional). Both will be added to the new profile. The interests 
+request body in the POST request. The body has two optional components: 
+'fields' and 'interests'. Both will be added to the new profile. The interests 
 can be added from a list ("football") or with an associative array 
-("football" => 1, "baseball" => 0).
+("football" => 1, "baseball" => 0). Fields must be an associative array.
+
+Please note that this is a different input format than [version 1](../restv1/rest-post-database-profiles) of this 
+API call. 
 
 ## Returned fields
 
