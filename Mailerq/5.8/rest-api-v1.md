@@ -8,6 +8,9 @@ To authenticate to the API, an `Authorization` header should be added to each re
 
 The following endpoints are available in the current version of MailerQ.
 
-* [Inject](rest-api-v1-inject)
-* [Pauses](rest-api-v1-pauses)
-* [Errors](rest-api-v1-errors)
+* [Inject](rest-api-v1-inject) (since 5.6.3)
+* [Pauses](rest-api-v1-pauses) (since 5.6.3)
+* [Errors](rest-api-v1-errors) (since 5.6.4)
+* [IP Pools](rest-api-v1-pools) (since 5.8.5)
+* [Suppressions](rest-api-v1-suppressions) (since 5.8.5)
+* [External MTA IPs](rest-api-v1-externalmtas) (since 5.8.5)
