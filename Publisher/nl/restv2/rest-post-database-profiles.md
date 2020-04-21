@@ -17,11 +17,14 @@ aanroepen om meerdere profielen te bewerken, zie de
 ## Beschikbare parameters
 
 Naast de parameters die je aan de URL meegeeft, moet je ook body data aan het
-POST request toevoegen. In de body van het verzoek kun je twee arrays meegeven: 
+POST request toevoegen. In de body van het verzoek kun je twee optionele arrays meegeven: 
 'fields' bevat de velden voor het profiel en 'interests' de interesses. 
-Alleen de velden zijn verplicht. De interesses kunnen als een 
-associatieve array ('voetbal' => 1, 'honkbal' => 0) of als een lijst ('voetbal') 
-meegegeven worden.
+De interesses kunnen als een associatieve array ('voetbal' => 1, 'honkbal' => 0) 
+of als een lijst ('voetbal') meegegeven worden. De profielvelden moeten 
+meegegeven worden als associatieve array.
+
+Let op! Hier wordt de body data op een andere manier meegegeven dan in 
+[versie 1](../restv1/rest-post-database-profiles) van de API.
 
 ## Voorbeeld in PHP
 
