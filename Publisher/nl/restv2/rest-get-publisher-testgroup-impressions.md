@@ -10,6 +10,12 @@ HTTP GET call naar de volgende URL:
 
 Hier moet `$id` vervangen worden door de ID van de testgroep.
 
+## Ondersteunde parameters
+
+Voor deze methode wordt ook de 'unique' parameter ondersteund. Dit is een 
+boolean die aangeeft of alle clicks teruggegeven worden (false) of hooguit 
+een click per destination (true).
+
 ## Teruggegeven velden
 
 Deze methode geeft een JSON object terug met impressions onder het 'data' 
@@ -56,8 +62,13 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token 
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// data voor het verzoek
+$data = array(
+    'unique'    =>  true
+);
+
 // voer het verzoek uit
-print_r($api->get("publisher/testgroup/{$testgroupID}/impressions/", $parameters));
+print_r($api->get("publisher/testgroup/{$testgroupID}/impressions/", $data));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
