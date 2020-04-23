@@ -9,6 +9,11 @@ retrieve the impressions for a testgroup by sending an HTTP GET call to the foll
 
 Where the `$id` should be replaced with the ID of the testgroup.
 
+## Supported parameters
+
+The method supports the 'unique' parameter. This is a boolean that indicates 
+whether multiple impressions from a single destination are to be included.
+
 ## Returned fields
 
 The method returns a JSON object with several impressions stored in the 'data' 
