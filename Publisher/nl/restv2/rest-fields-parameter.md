@@ -33,6 +33,30 @@ letter 'M', dan kun je in de *fields* parameter de waarde "voornaam=~M%" plaatse
 
 Wil je alle profielen met '@copernica' ophalen, gebruik je "emailaddress=~%@copernica%".
 
+## Timestamp field
+
+Some Publisher calls concerning statistics support the timestamp parameter. 
+It can be used just like the other fields parameters and is used to gather 
+the statistics for a specific period. The operators can then be used to compare 
+timestamps given in YYYY-MM-DD hh:mm:ss format. The following example demonstrates 
+how to use the parameter:
+
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
+
+// voeg je access token in
+$api = new CopernicaRestApi("jouw-access-token", 2);
+
+// parameters voor het verzoek
+$parameters = array(
+    'orderby'   =>  'country',
+    'fields'    =>  array("timestamp>2020-01-01", "timestamp<=2020-01-31")
+);
+
+// voer het verzoek uit en print het resultaat
+print_r($api->get("publisher/{$emailingID}/abuses", $parameters));`
+```
 
 ## Speciale velden
 
@@ -78,20 +102,20 @@ In het onderstaande voorbeeld gebruiken we de *fields* parameter tijdens het
 [ophalen van profielen uit de database](./rest-get-database-profiles).
 
 ```php
-// dependencies
+// vereiste scripts
 require_once('copernica_rest_api.php');
 
-// change this into your access token
-$api = new CopernicaRestApi("your-access-token");
+// voeg je access token in
+$api = new CopernicaRestApi("jouw-access-token", 2);
 
-// parameters to pass to the call
+// parameters voor het verzoek
 $parameters = array(
     'limit'     =>  100,
     'orderby'   =>  'country',
     'fields'    =>  array("age>16", "age<=65")
 );
 
-// do the call, and print result
+// voer het verzoek uit en print het resultaat
 print_r($api->get("database/{$databaseID}/profiles", $parameters));`
 ```
 
