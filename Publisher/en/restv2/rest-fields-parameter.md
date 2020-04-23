@@ -52,7 +52,7 @@ $parameters = array(
 );
 
 // do the call, and print result
-print_r($api->get("publisher/$emailingID/abuses", $parameters));`
+print_r($api->get("publisher/{$emailingID}/abuses", $parameters));`
 ```
 
 ## Special fields
