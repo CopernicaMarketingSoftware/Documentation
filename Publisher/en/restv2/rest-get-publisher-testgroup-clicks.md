@@ -9,6 +9,11 @@ retrieve the clicks for a testgroup by sending an HTTP GET call to the following
 
 Where the `$id` should be replaced with the ID of the testgroup.
 
+## Supported parameters
+
+The method supports the 'unique' parameter. This is a boolean that indicates 
+whether multiple clicks from a single destination are to be included.
+
 ## Returned fields
 
 The method returns a JSON object with several clicks under the 'data' field. 
