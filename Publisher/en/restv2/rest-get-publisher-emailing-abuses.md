@@ -8,7 +8,7 @@ retrieve the abuses for an emailing by sending an HTTP GET call to the following
 
 Where the `$id` should be replaced with the ID of the emailing. This method 
 also support the use of the [fields parameter](./rest-fields-parameter) 
-for the **timestamp** field.
+for the **timestamp** of the emailing.
 
 ## Returned fields
 
