@@ -30,6 +30,31 @@ of any length. You could specifically fetch all profiles with a first name
 starting with an 'M' by adding "firstname=~M%" to the fields parameter, for 
 example.
 
+## Timestamp field
+
+Some Publisher calls concerning statistics support the timestamp parameter. 
+It can be used just like the other fields parameters and is used to gather 
+the statistics for a specific period. The operators can then be used to compare 
+timestamps given in YYYY-MM-DD hh:mm:ss format. The following example demonstrates 
+how to use the parameter:
+
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+
+// insert your access token
+$api = new CopernicaRestApi("your-access-token", 2);
+
+// parameters to pass to the call
+$parameters = array(
+    'orderby'   =>  'country',
+    'fields'    =>  array("timestamp>2020-01-01", "timestamp<=2020-01-31")
+);
+
+// do the call, and print result
+print_r($api->get("publisher/$emailingID/abuses", $parameters));`
+```
+
 ## Special fields
 
 The fields you use to make comparisons with are always fields from the database.
@@ -70,8 +95,8 @@ example below it is used in the [call to retrieve profiles](./rest-get-database-
 // dependencies
 require_once('copernica_rest_api.php');
 
-// change this into your access token
-$api = new CopernicaRestApi("your-access-token");
+// insert your access token
+$api = new CopernicaRestApi("your-access-token", 2);
 
 // parameters to pass to the call
 $parameters = array(
