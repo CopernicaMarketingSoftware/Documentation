@@ -64,8 +64,13 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// data for the call
+$data = array(
+    'unique'    =>  true
+);
+
 // execute the call
-print_r($api->get("publisher/testgroup/{$testgroupID}/clicks/", $parameters));
+print_r($api->get("publisher/testgroup/{$testgroupID}/clicks/", $data));
 ```
 
 This example requires the [REST API class](./rest-php).
