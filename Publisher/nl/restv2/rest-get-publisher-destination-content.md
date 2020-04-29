@@ -39,7 +39,7 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token 
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// stel de periode in
+// stel de type in
 $parameters = array(
     'type'    =>  ‘html+test+subject’
 );
