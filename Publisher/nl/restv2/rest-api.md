@@ -274,6 +274,7 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v2/publisher/destination/$id/errors](./rest-get-publisher-destination-errors)             | Opvragen van errors voor een bestemming                 |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/impressions](./rest-get-publisher-destination-impressions)   | Opvragen van impressies voor een bestemming             |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/unsubscribes](./rest-get-publisher-destination-unsubscribes) | Opvragen van unsubscribes voor een bestemming           |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/content](./rest-get-publisher-destination-content) | Opvragen van de verstuurde inhoud voor een bestemming           |
 | GET    | [api.copernica.com/v2/profile/$id/publisher/destinations](./rest-get-profile-publisher-destinations)         | Opvragen van Publisher destinations voor een profiel    |
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/destinations](./rest-get-subprofile-publisher-destinations)   | Opvragen van Publisher destinations voor een subprofiel |
 
