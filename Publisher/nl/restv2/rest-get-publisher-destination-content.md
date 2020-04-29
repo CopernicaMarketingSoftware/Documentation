@@ -2,48 +2,29 @@
 
 Voor een destination kan je de volledige gepersonaliseerde inhoud van de mailing die naar de bestemming is verstuurd opvragen. Je kan deze opvragen met een HTTP GET-call naar de volgende URL:
 
-`https://api.copernica.com/v2/publisher/destination/$id/content?type=$type&access_token=xxx`
+`https://api.copernica.com/v2/publisher/destination/$id/content/$type?access_token=xxx`
 
-Hier moet `$id` vervangen worden door de ID van de mailing destination. Deze methode 
-ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
-voor het **timestamp** veld.
+Hier moet `$id` vervangen worden door de ID van de mailing destination. Als optionele 
+parameter ondersteunt deze URL ook het type-veld dat de waarde `html, amp, text of subject` kan bevatten. Als je meerdere types tegelijk op wilt vragen, kan je deze combineren met een plus-teken (bijvoorbeeld `html+text`). Als je geen type meegeeft, worden alle types teruggegeven.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug met clicks onder het 'data' veld. 
-Voor elke click is de volgende informatie beschikbaar:
+Deze methode geeft een JSON object terug met de volgende waardes:
 
-* **ID**: ID van de click.
-* **link_id**: ID van de geklikte link.
-* **link**: De geklikte link.
-* **link_title**: Titel van de geklikte link.
-* **timestamp**: Tijdstempel van de click.
-* **ip**: De IP waar de click vandaan kwam.
-* **user-agent**: De user agent string van de clicker.
-* **referer**: De referer van de clicker.
-* **emailing**: De ID van de emailing waar de click vandaan kwam.
-* **destination**: De destination waar de click vandaan kwam.
-* **profile**: De ID van het profiel waar de click vandaan kwam.
-* **subprofile**: De ID van het subprofiel waar de click vandaan kwam (als deze beschikbaar is).
+* **html**: de HTML-inhoud van de mailing, indien opgevraagd;
+* **text**: de text-inhoud van de mailing, indien opgevraagd;
+* **amp**: de AMP-inhoud van de mailing, indien opgevraagd;
+* **subject**: de onderwerpsregel van de mailing, indien opgevraagd;
 
 ### JSON voorbeeld
 
-De JSON van een enkele click ziet er bijvoorbeeld zo uit:
+De JSON van een content call ziet er bijvoorbeeld zo uit:
 
 ```json
 {  
-   "ID":"19431",
-   "link_id":"3145",
-   "link":"{webversion}",
-   "link_title":"",
-   "timestamp":"2010-11-03 15:07:33",
-   "ip":"0.0.0.0",
-   "useragent":"Firefox 3.6, WinXP",
-   "referer":null,
-   "emailing":"1914",
-   "destination":"823456",
-   "profile":"2290961",
-   "subprofile":null
+    “html”: “<b>HTML content</b>”,
+    “text”: “Text content”,
+    “subject”: “This is a test mailing”
 }
 ```
 
@@ -60,11 +41,11 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // stel de periode in
 $parameters = array(
-    'fields'    =>  array('timestamp>2019-01-01', 'timestamp<2019-02-01')
+    'type'    =>  ‘html+test+subject’
 );
 
 // voer het verzoek uit
-print_r($api->get("publisher/destination/{$destinationID}/clicks/", $parameters));
+print_r($api->get("publisher/destination/{$destinationID}/content/", $parameters));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](./rest-php).
