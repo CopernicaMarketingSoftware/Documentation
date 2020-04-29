@@ -22,9 +22,9 @@ De JSON van een content call ziet er bijvoorbeeld zo uit:
 
 ```json
 {  
-    “html”: “<b>HTML content</b>”,
-    “text”: “Text content”,
-    “subject”: “This is a test mailing”
+    "html": "<b>HTML content</b>",
+    "text": "Text content",
+    "subject": "This is a test mailing"
 }
 ```
 
