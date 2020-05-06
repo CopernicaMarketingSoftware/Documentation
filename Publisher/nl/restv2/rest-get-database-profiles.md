@@ -6,7 +6,9 @@ en beschikbaar via het volgende adres:
 `https://api.copernica.com/v2/database/$id/profiles?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
-database waar je de profielen van wilt opvragen.
+database waar je de profielen van wilt opvragen. Deze methode kan traag zijn 
+als de database veel profielen bevat. Om deze methode sneller te maken kan 
+er gebruik gemaakt worden van de 'dataonly' parameter.
 
 ## Beschikbare parameters
 
@@ -18,6 +20,8 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 * **fields**: Optionele parameter om alleen profielen op te halen die matchen met de opgegeven velden.
 * **orderby**: Naam of ID van het veld waarop je de profielen wilt sorteren (standaard is dit het ID van elk profiel).
 * **order**: Moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
+* **dataonly**: Boolean. Wanneer deze de waarde 'true' heeft wordt alleen de 
+profieldata geladen, waardoor de methode sneller uitgevoerd kan worden.
 
 Meer informatie over de betekenis van de **start**, **limit** en **total** parameters 
 vind je in het [artikel over paging](rest-paging). 

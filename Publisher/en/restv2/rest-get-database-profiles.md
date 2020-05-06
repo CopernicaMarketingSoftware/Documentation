@@ -6,7 +6,9 @@ available at the following address:
 `https://api.copernica.com/v2/database/$id/profiles?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, 
-of the database you want to request profiles from.
+of the database you want to request profiles from. Since this can be 
+quite a time-consuming call it is possible to use the 'dataonly' property 
+to speed it up.
 
 ## Available parameters
 
@@ -18,6 +20,8 @@ The following parameters can be added to the URL as variables:
 * **fields**: Optional parameter to set conditions for profiles that should be returned.
 * **orderby**: Name or ID of the field you want to use to sort the returned profiles.
 * **order**: Whether the profiles should be ordered in ascending or descending order.
+* **dataonly**: Boolean. If set to true the method will only retrieve the profile data, 
+allowing the call to be processed faster.
 
 More information on the meaning of start, limit and total parameters can 
 be found in the [article on paging](rest-paging).

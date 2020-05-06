@@ -6,7 +6,10 @@ call naar de volgende URL:
 `https://api.copernica.com/v2/collection/$id/subprofiles?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van de 
-collectie waar je de subprofielen van wilt opvragen.
+collectie waar je de subprofielen van wilt opvragen. Deze methode kan traag zijn 
+als de database veel profielen bevat. Om deze methode sneller te maken kan 
+er gebruik gemaakt worden van de 'dataonly' parameter.
+
 
 ## Beschikbare parameters
 
@@ -18,6 +21,8 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 * **fields**: optionele parameter om alleen subprofielen op te halen die matchen met de opgegeven velden
 * **orderby**: naam of id van het veld waarop je de subprofielen wilt sorteren (standaard is dit het ID van elk subprofiel)
 * **order**: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
+* **dataonly**: Boolean. Wanneer deze de waarde 'true' heeft wordt alleen de 
+profieldata geladen, waardoor de methode sneller uitgevoerd kan worden.
 
 Meer informatie over de betekenis van de **start**, **limit** en **total** parameters 
 vind je in het [artikel over paging](rest-paging). 
