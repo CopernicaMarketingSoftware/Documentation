@@ -271,6 +271,7 @@ templates and mailings.
 | GET    | [api.copernica.com/v2/publisher/destination/$id/errors](./rest-get-publisher-destination-errors)              | Fetch the errors for an emailing destination           |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/impressions](./rest-get-publisher-destination-impressions)    | Fetch the impressions for an emailing destination      |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/unsubscribes](./rest-get-publisher-destination-unsubscribes)  | Fetch the unsubscribes for an emailing destination     |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/content](./rest-get-publisher-destination-content)  | Fetch the received content for an emailing destination     |
 | GET    | [api.copernica.com/v2/profile/$id/publisher/destinations](./rest-get-profile-publisher-destinations)          | Fetch the Publisher destinations for a profile         |
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/destinations](./rest-get-subprofile-publisher-destinations)    | Fetch the Publisher destinations for a subprofile      |
 
