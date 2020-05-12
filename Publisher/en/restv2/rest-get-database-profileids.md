@@ -10,8 +10,8 @@ the database.
 
 ## Available parameters
 
-This method only support paging parameters. More information on the meaning 
-of these parameters can be found [in the article on paging](./rest-paging.md).
+This method only support paging parameters. More information on these 
+parameters can be found [in the article on paging](./rest-paging.md).
 
 ## Returned fields
 

@@ -8,6 +8,11 @@ aangeroepen worden met een HTTP GET verzoek aan de volgende URL:
 Hier moet de `$id` vervangen worden met de numerieke identifier van de 
 database waarvan de selecties moeten worden opgevraagd.
 
+## Beschikbare parameters
+
+Deze methode ondersteunt alleen paging parameters. Meer informatie over 
+deze parameters vind je in het [artikel over paging](rest-paging).
+
 ## Geretourneerde velden
 
 De methode retourneert een JSON object met de volgende velden:

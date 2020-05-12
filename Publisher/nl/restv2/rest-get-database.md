@@ -9,6 +9,11 @@ roepen met een HTTP GET request naar de volgende URL:
 Als `$id` kun je de numerieke identifier van een database opgeven, of de naam
 van een database.
 
+## Beschikbare parameters
+
+Deze methode ondersteunt alleen paging parameters. Meer informatie over 
+deze parameters vind je in het [artikel over paging](rest-paging).
+
 ## Geretourneerde velden
 
 | Variabele         | Omschrijving                                                                  |
