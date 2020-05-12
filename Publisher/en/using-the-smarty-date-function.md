@@ -8,9 +8,9 @@ Here are some common examples:
 
     {$smarty.now|date_format} Dec 4, 2014
     {$smarty.now|date_format:"%D"} 12/04/14
-    {$smarty.now|date_format:“%d-%m-%Y”} 04-12-2014
+    {$smarty.now|date_format:"%d-%m-%Y"} 04-12-2014
     {$smarty.now|date_format:"%A, %e %B %Y"} Tuesday, 4 december 2014
-    {$smarty.now|date_format:“%A"} Tuesday
+    {$smarty.now|date_format:"%A"} Tuesday
     {$smarty.now|date_format:"%c"} Tu 04 dec 2014 15:20:28 CET
 
 Even more date_format conversion specifiers can be found here: [http://www.smarty.net/docsv2/en/language.modifier.date.format](http://www.smarty.net/docsv2/en/language.modifier.date.format)
