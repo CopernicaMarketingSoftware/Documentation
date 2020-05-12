@@ -9,6 +9,11 @@ you can fetch the database metadata:
 where `$id` should be replaced by the identifier of the database you want 
 to get the metadata of.
 
+## Available parameters
+
+This method only support paging parameters. More information on the meaning 
+of these parameters can be found [in the article on paging](./rest-paging.md).
+
 ## Returned fields
 
 | Variable          | Description                                                                           |
