@@ -14,9 +14,6 @@ er gebruik gemaakt worden van de 'dataonly' parameter.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **start**: Eerste profiel dat wordt opgevraagd.
-* **limit**: Lengte van de batch die wordt opgevraagd.
-* **total**: Toon wel/niet het totaal aantal beschikbare/matchende profielen.
 * **fields**: Optionele parameter om alleen profielen op te halen die matchen met de opgegeven velden.
 * **orderby**: Naam of ID van het veld waarop je de profielen wilt sorteren (standaard is dit het ID van elk profiel).
 * **order**: Moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
