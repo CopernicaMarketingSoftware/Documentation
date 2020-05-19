@@ -7,6 +7,13 @@ door een HTTP GET verzoek te versturen naar de volgende URL:
 
 Hier moet `$id` vervangen worden door de ID van het emailing document.
 
+## Beschikbare parameters
+
+Deze methode ondersteunt de **source** parameter. Deze boolean geeft aan of 
+de HTML bron van het bestand opgevraagd moet worden ('true') of niet ('false'). 
+Standaard zal deze op 'true' staan, maar de call kan sneller uitgevoerd worden 
+door deze op 'false' te zetten.
+
 ## Teruggegeven velden
 
 Deze methode geeft een JSON object terug dat de volgende informatie bevat:
@@ -14,7 +21,7 @@ Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 * **id**: De ID van het emailing document.    
 * **template**: De ID van de bijhorende template.
 * **name**: De naam van het document. 
-* **from_address**: Het 'from address' van het document.
+* **from_address**: Het afzenderadres van het document.
 * **subject**: Het onderwerp van het document.
 * **archived**: Geeft aan of dit document gearchiveerd is (1) of niet (null).
 * **source**: De bron van het document.

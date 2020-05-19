@@ -7,6 +7,12 @@ with an HTTP GET call to the following URL:
 
 Where `$id` should be replaced with the ID of the emailing document you want summarized.
 
+## Available parameters
+
+This method supports the **source** parameter, which indicates whether the 
+HTML source of the document should be retrieved or not. By default it is set 
+to 'true', but the method can be executed faster by setting this to 'false'.
+
 ## Returned fields
 
 The method returns a JSON object containing the following information:
