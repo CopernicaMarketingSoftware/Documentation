@@ -23,8 +23,8 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 * **dataonly**: Boolean. Wanneer deze de waarde 'true' heeft wordt alleen de 
 profieldata geladen, waardoor de methode sneller uitgevoerd kan worden.
 
-Meer informatie over de betekenis van de **start**, **limit** en **total** parameters 
-vind je in het [artikel over paging](rest-paging). 
+De paging parameters **start**, **limit** en **total** parameters worden 
+ook ondersteund. Meer over deze parameters vind je in het [artikel over paging](rest-paging). 
 
 De parameter **fields** kun je gebruiken om profielen te selecteren. Als je bijvoorbeeld
 alleen profielen wil opvragen waarbij de waarde van het veld "land" gelijk is aan
