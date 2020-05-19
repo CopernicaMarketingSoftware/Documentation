@@ -11,15 +11,14 @@ from which you want to retrieve the profiles.
 
 You can add one or more of the following parameters to the URL:
 
-* **start**: The first profile to be requested.
-* **limit**: The length of the batch that is requested.
-* **total**: Whether or not the total number of profiles in the database should be counted.
 * **fields**: Optional parameter to set conditions for profiles that should be returned.
 * **orderby**: Name or ID of the field you want to use to sort the returned profiles.
 * **order**: Whether the profiles should be ordered in ascending or descending order.
+* **dataonly**: Boolean. If set to true the method will only retrieve the profile data, 
+allowing the call to be processed faster.
 
-You can find more information about the **start**, **limit** and **total** parameters 
-in our [paging article](./rest-paging.md). 
+Paging parameters **start**, **limit** and **total** are also supported. More
+information about these parameters can be found in the [article on paging](rest-paging).
 
 The **fields** parameter can be used to filter the profiles. You can for example
 use this parameter to only fetch profiles for which the field "country" equals

@@ -8,6 +8,12 @@ opvragen door een HTTP GET verzoek naar de volgende URL te sturen:
 
 De `$id` moet vervangen worden met de ID van de miniselectie.
 
+## Beschikbare parameters
+
+Deze methode beschikt over de **dataonly** parameter. Door deze boolean 
+de waarde 'true' toe te wijzen wordt alleen de profieldata geladen, 
+waardoor de methode sneller uitgevoerd kan worden.
+
 ## Teruggegeven velden
 
 De methode retourneert een JSON object met de subprofielen onder het **data**

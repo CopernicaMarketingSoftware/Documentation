@@ -9,6 +9,15 @@ miniview you can send an HTTP GET request to the following URL:
 The `$id` should be replaced with the numerical identifier of the miniview 
 you're requesting the subprofiles of.
 
+## Available parameters
+
+This method supports the **dataonly** parameter. This boolean can be used 
+to only retrieve the profile data when set to true, allowing the call to be 
+processed faster.
+
+Paging parameters **start**, **limit** and **total** are also supported. More
+information about these parameters can be found in the [article on paging](rest-paging).
+
 ## Returned fields
 
 This method returns a JSON object with the subprofiles under the **data** 
