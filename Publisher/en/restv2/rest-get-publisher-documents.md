@@ -11,8 +11,13 @@ The following parameters are available for this call:
 
 * **archived**: Boolean that indicates whether to only include archived documents (true) 
 or only documents that are not archived (false). Returns both by default.
+* **source**: Boolean that indicates whether to include the HTML source. This is set to 'true' by default, 
+but the call can be executed faster when set to 'false'.
 * **modifiedfromdate**: Date after which the documents should have been modified in YYYY-MM-DD HH:MM:SS format.
 * **modifiedtodate**: Date before which the documents should have been modified in YYYY-MM-DD HH:MM:SS format.
+
+Paging parameters **start**, **limit** and **total** are also supported. More
+information about these parameters can be found in the [article on paging](rest-paging).
 
 ## Returned fields
 

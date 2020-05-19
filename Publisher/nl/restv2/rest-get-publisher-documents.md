@@ -12,8 +12,14 @@ De volgende parameters zijn beschikbaar voor deze API call:
 * **archived**: Boolean die aangeeft of alleen documenten uit het archief 
 worden opgehaald (true) of alleen documenten die niet gearchiveerd zijn (false). 
 Standaard worden alle documenten opgehaald.
+* **source**: Boolean die aangeeft of de HTML inhoud van het document opgevraagd moet 
+worden. Standaard staat de waarde op 'true', maar de methode is sneller wanneer 
+'false' wordt gebruikt.
 * **modifiedfromdate**: Datum waarna de documenten bewerkt moet zijn in YYYY-MM-DD HH:MM:SS formaat
 * **modifiedtodate**: Datum waarvoor de documenten bewerkt moet zijn in YYYY-MM-DD HH:MM:SS formaat
+
+De paging parameters **start**, **limit** en **total** parameters worden 
+ook ondersteund. Meer over deze parameters vind je in het [artikel over paging](rest-paging). 
 
 ## Teruggegeven velden
 
