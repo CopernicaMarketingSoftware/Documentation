@@ -1,2 +1,2 @@
-Je kunt dit blok gebruiken om de opvolgactie tijdelijk te pauzeren voor een
-vaste tijd waarna de campagne weer verder gaat.
+Je kunt dit blok gebruiken om de opvolgactie tijdelijk voor een
+vaste tijd te pauzeren waarna de campagne weer verder gaat.
