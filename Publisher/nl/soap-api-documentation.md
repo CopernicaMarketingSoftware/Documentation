@@ -44,15 +44,15 @@ methode waarmee je alle documenten opvraagt die op basis van dit template
 zijn aangemaakt. Naar overzicht van [SOAP API methodes](https://www.copernica.com/nl/support/apireference "SOAP API methodes")
 
 ## Voorbeeld downloaden
-**Waarschuwing:** de soap client in voorbeeldscript versie 1.5 (of ouder) 
-zal in de nabije toekomst niet meer werken. Gebruik daarom versie 1.6 (of nieuwer)
+**Waarschuwing:** de soap client in voorbeeldscript versie 1.6 (of ouder) 
+zal in de nabije toekomst niet meer werken. Gebruik daarom versie 2 (of nieuwer)
 om te garanderen dat jouw applicatie blijft werken wanneer de oude [login](https://www.copernica.com/nl/support/apireference/login) methode
 niet meer wordt ondersteund. Lees voor meer informatie de [upgrade-instructies](./soap-api-upgrade-login.md "Upgrade SOAP login")
 
-#### versie 1.6
+#### versie 2
 - Binnenkort beschikbaar
 
-#### versie 1.5
-- [PHP example](../downloads/soaptest_php_1-5.zip "SOAP API example script for PHP")
+#### versie 1.6
+- [PHP example](../downloads/soaptest_php_1-6.zip "SOAP API example script for PHP")
 - [Java example](../downloads/soaptest_java.zip "SOAP API example script for Java")
 - [C\# example](../downloads/soaptest_cs.zip "SOAP API example script for C#")

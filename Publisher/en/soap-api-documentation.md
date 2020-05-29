@@ -41,14 +41,14 @@ for example, has a method that requests all documents that were created
 based on this template. See the complete overview of [SOAP API methods](https://www.copernica.com/en/support/apireference "SOAP API methods").
 
 ## Download example
-**Warning:** example soap client version 1.5 (or older) will soon become deprecated and stop working. 
-Use version 1.6 (or higher) to be sure your application still works when the [login](https://www.copernica.com/en/support/apireference/login) method is removed.
+**Warning:** example soap client version 1.6 (or older) will soon become deprecated and stop working. 
+Use version 2 (or higher) to be sure your application still works when the [login](https://www.copernica.com/en/support/apireference/login) method is removed.
 [Read how to upgrade](./soap-api-upgrade-login.md "Find out what you need to do")
 
-#### version 1.6
+#### version 2
 - Soon available
 
-#### version 1.5
-- [PHP example](../downloads/soaptest_php_1-5.zip "SOAP API example script for PHP")
+#### version 1.6
+- [PHP example](../downloads/soaptest_php_1-6.zip "SOAP API example script for PHP")
 - [Java example](../downloads/soaptest_java.zip "SOAP API example script for Java")
 - [C\# example](../downloads/soaptest_cs.zip "SOAP API example script for C#")
