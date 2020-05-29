@@ -5,7 +5,7 @@ to the API. If your application is still using the [login](https://www.copernica
 to the SOAP API, you need to [take action](./soap-api-upgrade-login) as soon as possible.
 
 ## API application
-The application represents your application or website that need access
+The application represents your external application or website that need access
 to the API. Access tokens are grouped per application. The REST API uses 
 these applications for OAuth authentication. The SOAP API does not use 
 OAuth. Applications are used for the SOAP API only to generate access tokens.
