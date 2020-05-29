@@ -6,37 +6,30 @@ GET call to the following address:
 `https://api.copernica.com/v2/database/$id/fields?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier or the name 
-of the database of which you want to request the fields.
+of the database you want to request the fields of.
 
 ## Available parameters
 
-The following parameters can be added to the URL as variables:
-
-- **start**: the first field to be requested
-- **limit**: length of the requested batch
-- **total**: whether or not the total number of fields should be counted
-
-More information on the meaning of these parameters can be found [in the article on paging](rest-paging).
+This method only support paging parameters. More information on these 
+parameters can be found [in the article on paging](./rest-paging.md).
 
 ## Returned fields
 
 The method returns a list of fields in the database. For each field, 
 the following properties are displayed:
 
-- **ID**: ID of the field in the database
-- **name**: the name of the new field. (mandatory)
-- **type**: type of the new field
-- **value**: default value of the new field
-- **displayed**: boolean value to determine whether or not the field 
-should be placed into lists and grids in the user interface
-- **ordered**: boolean value to determine whether or not profiles should 
-be ordered by this field.
-- **length**: maximum text length
-- **textlines**: number of lines in forms to edit the field
-- **hidden**: boolean value to make sure a field is never shown in the 
-interface
-- **index**: boolean value that shows whether or not the field should 
-be indexed
+| Name          | Description                                                                                   |
+|---------------|-----------------------------------------------------------------------------------------------|
+| **ID**        | ID of the field in the database                                                               |
+| **name**      | The name of the field (mandatory)                                                             |
+| **type**      | Type of the field                                                                             |
+| **value**     | Default value of the field                                                                    |
+| **displayed** | Boolean value to determine whether or not the field should be displayed in the user interface |
+| **ordered**   | Boolean value to determine whether or not profiles should be ordered by this field            |
+| **length**    | Maximum text length for a text field                                                          |
+| **textlines** | Number of text lines allowed for the field (used in forms)                                    |
+| **hidden**    | Boolean value to determine whether or not the field should be hidden in the user interface    |
+| **index**     | Boolean value to determine whether or not the field should be indexed                         |
 
 ## PHP example
 

@@ -6,19 +6,12 @@ HTTP GET call to the following address:
 `https://api.copernica.com/v2/database/$id/collections?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier or the 
-name of the database of which you want to request the collections.
+name of the database you want to request the collections from.
 
 ## Available parameters
 
-The following parameters can be added to the URL as variables:
-
-| Parameter | Description                                                        |
-|-----------|--------------------------------------------------------------------|
-| **start** | The first collection to be requested.                              |
-| **limit** | Length of the requested batch.                                     |
-| **total** | Whether or not the total number of collections should be counted.  |
-
-More information on the meaning of these parameters can be found [in the article on paging](rest-paging).
+This method only support paging parameters. More information on these 
+parameters can be found [in the article on paging](./rest-paging.md).
 
 ## Returned fields
 
@@ -59,18 +52,7 @@ The JSON for a single collection might look something like this:
             "hidden":false,
             "index":false
          },
-         {  
-            "ID":"9879",
-            "name":"order_number",
-            "type":"integer",
-            "value":"0",
-            "displayed":true,
-            "ordered":false,
-            "length":"100",
-            "textlines":"0",
-            "hidden":false,
-            "index":false
-         }
+         ...
       ],
       "total":2
    }
@@ -97,11 +79,11 @@ $parameters = array(
 print_r($api->get("database/{$databaseID}/collections", $parameters));
 ```
 
-The example above requires the [CopernicaRestApi class](rest-php).
+The example above requires the [CopernicaRestApi class](./rest-php).
 
 ## More information
 
-- [Overview of all API methods](rest-api)
-- [POST database collections](rest-post-database-collections)
-- [GET collection fields](rest-get-collection-fields)
-- [POST collection fields](rest-post-collection-fields)
+* [Overview of all API methods](./rest-api)
+* [POST database collections](./rest-post-database-collections)
+* [GET collection fields](./rest-get-collection-fields)
+* [POST collection fields](./rest-post-collection-fields)
