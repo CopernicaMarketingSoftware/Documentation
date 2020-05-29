@@ -48,6 +48,9 @@ Use version 1.6 (or higher) to be sure your application still works when the [lo
 [Read how to upgrade](./soap-api-upgrade-login.md "Find out what you need to do")
 
 #### version 1.6
+- Soon available
+
+#### version 1.5
 - [PHP example](../downloads/soaptest_php_1-5.zip "SOAP API example script for PHP")
 - [Java example](../downloads/soaptest_java.zip "SOAP API example script for Java")
 - [C\# example](../downloads/soaptest_cs.zip "SOAP API example script for C#")
