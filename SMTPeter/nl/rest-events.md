@@ -69,7 +69,7 @@ Na het verzoek ontvang je de volgende JSON:
         "data" : {
             "veldnaam1" : "data1",
             "veldnaam2" : "data2",
-            /* ... */
+            ...
         }
     },
     {
@@ -77,10 +77,10 @@ Na het verzoek ontvang je de volgende JSON:
         "data" : {
             "veldnaam1" : "data1",
             "veldnaam2" : "data2",
-            /* ... */
+            ...
         }
     },
-    /* ... */
+    ...
 ]
 ```
 

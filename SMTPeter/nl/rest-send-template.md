@@ -41,9 +41,9 @@ bij de template property meegeven. Dit kan als string of als echte JSON:
     "recipient":    "john@doe.com",
     "template":     {
         "from":         "jane@doe.com",
-        "subject":      "this is the subject"
-
-        /* plus alle andere properties beschreven op https://www.responsiveemail.com */
+        "subject":      "this is the subject",
+        ...
+        /* plus alle andere eigenschappen beschreven op https://www.responsiveemail.com */
 
     }
 }

@@ -26,7 +26,7 @@ De call geeft een JSON array terug in het volgende formaat:
     {
         "id"    : 1,
         "name"  : "Test email"
-    }
+    },
     {   "id"    : 2,
         "name"  : "Test 123"
     }

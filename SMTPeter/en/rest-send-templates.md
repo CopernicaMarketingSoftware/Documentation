@@ -41,7 +41,7 @@ Content-Length: 1297
     "template":     {
         "from":         "jane@doe.com",
         "subject":      "this is the subject"
-
+        ...
         /* plus other properties described on https://www.responsiveemail.com */
     }
 }
