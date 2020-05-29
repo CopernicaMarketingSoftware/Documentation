@@ -1,5 +1,4 @@
 # SOAP API
-
 Are you a new user looking into API capabilities of Copernica? We recommend 
 using the [REST API v2](./restv2/rest-api.md "REST-API") which is faster 
 and easier to implement. 
