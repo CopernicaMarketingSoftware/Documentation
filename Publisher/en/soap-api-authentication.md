@@ -1,4 +1,4 @@
-# SOAP API Authentication
+# SOAP API authentication
 In May 2020 Copernica rolled out a new mechanism for SOAP API authentication. 
 This new system uses something called access token to grant applications access 
 to the API. If your application is still using the [login](https://www.copernica.com/en/support/apireference/login) to gain access 

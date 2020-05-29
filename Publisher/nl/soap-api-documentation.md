@@ -33,7 +33,7 @@ de [API-authenticatie](./soap-api-authentication.md "Toegang krijgen tot de SOAP
 
 #### Verouderd: login methode
 Gebruikt jouw applicatie nog steeds de oude [login](https://www.copernica.com/nl/support/apireference/login) methode
-om toegang te krijgen tot de API? Lees de [upgrade instructies](./soap-api-upgrade-login.md "Upgrade SOAP login") 
+om toegang te krijgen tot de API? Lees de [upgrade-instructies](./soap-api-upgrade-login.md "Upgrade SOAP login") 
 om erachter te komen hoe jouw applicatie aangepast moet worden.
 
 ## API methodes
@@ -48,7 +48,7 @@ zijn aangemaakt. Overzicht [SOAP API methodes](https://www.copernica.com/nl/supp
 **Waarschuwing:** de soap client in voorbeeldscript versie 1.5 (of ouder) 
 zal in de nabije toekomst niet meer werken. Gebruik daarom versie 1.6 (of nieuwer)
 om te garanderen dat jouw applicatie blijft werken wanneer de oude [login](https://www.copernica.com/en/support/apireference/login) methode
-niet meer ondersteunt wordt. [Lees upgrade instructies](./soap-api-upgrade-login.md "Upgrade SOAP login")
+niet meer ondersteunt wordt. [Lees upgrade-instructies](./soap-api-upgrade-login.md "Upgrade SOAP login")
 
 #### versie 1.6
 - Binnenkort beschikbaar
