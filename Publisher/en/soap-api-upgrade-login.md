@@ -5,7 +5,7 @@ to the API. If your application is still using the [login](https://www.copernica
 to gain access to the SOAP API, you need to take action as soon as possible. 
 
 ## What is an access_token?
-An `access_token` is a unique string that is linked to one of your API applications. 
+An `access_token` is a unique string that is linked to one of your [API applications](https://www.copernica.com/en/api/applications). 
 Each `access_token` provides access to only one Copernica account. This means that
 if your application has access to multiple Copernica accounts, you need multiple access tokens.
 [Read more about authentication](./soap-api-authentication)
