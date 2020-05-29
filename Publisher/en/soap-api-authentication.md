@@ -23,4 +23,4 @@ To improve security, access tokens also offers IP access restriction that
 allows you to specify from which IP address(es) your soap clients are 
 allowed to connect from. 
 
-[Back to documentation](./soap-api-documentation)
+[Back to overview](./soap-api-documentation)

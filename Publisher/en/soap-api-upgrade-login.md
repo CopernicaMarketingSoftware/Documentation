@@ -20,4 +20,4 @@ if your application has access to multiple Copernica accounts, you need multiple
 5. Fill the `access_token` in your application's soap client. 
 6. That's it, fire away!
 
-[Back to documentation](./soap-api-documentation)
+[Back to to overview](./soap-api-documentation)
