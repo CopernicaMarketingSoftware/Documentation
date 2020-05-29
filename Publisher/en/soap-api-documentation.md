@@ -26,7 +26,7 @@ account like profile creations, modifications or removals. These are just
 examples, you configure your own callback or webHook.
 
 
-## API Authentication 
+## API authentication 
 To gain access to the SOAP API, you need to provide a valid `access_token` 
 with each call to the API. Read how to create an `access_token` and how 
 the [API authentication](./soap-api-authentication.md "Setup access tokens") works.
@@ -35,7 +35,7 @@ the [API authentication](./soap-api-authentication.md "Setup access tokens") wor
 Is your application still using the old [login](https://www.copernica.com/en/support/apireference/login) 
 method to gain access to the API? Read how to update your soap client to [use access tokens](./soap-api-upgrade-login.md "Find out what you need to do").
 
-## API Methods
+## API methods
 All features of the Publisher Marketing Software are accessible via the API. 
 Every project is built up from smaller sub-objects. An object that represents 
 a database for example, has a method that requests all documents that were 

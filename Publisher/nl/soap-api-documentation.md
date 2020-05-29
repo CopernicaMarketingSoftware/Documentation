@@ -36,7 +36,7 @@ Gebruikt jouw applicatie nog steeds de oude [login](https://www.copernica.com/nl
 om toegang te krijgen tot de API? Lees de [upgrade instructies](./soap-api-upgrade-login.md "Upgrade SOAP login") 
 om erachter te komen hoe jouw applicatie aangepast moet worden.
 
-## API Methodes
+## API methodes
 Alle functionaliteiten van de Publisher Marketing Software zijn beschikbaar 
 via de SOAP API. Elk object is opgebouwd uit kleinere deelobjecten. Zo is 
 een object dat een database representeert bijvoorbeeld opgebouwd uit objecten 
