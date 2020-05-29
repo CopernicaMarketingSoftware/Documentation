@@ -11,19 +11,19 @@ running on different operating systems, with different technologies and
 programming languages.
 
 #### Full control with Copernica's object model
-The API uses a logical and structured object model. All data in the software 
-is represented by objects. Read the properties of these objects with SOAP API 
+The SOAP API uses a logical and structured object model. All data in the software 
+is represented by objects. Read the properties of these objects with the SOAP API 
 and then update them. 
 
 #### Powerful callback system
 We do not expect you to pull the API periodically to find out when you need 
 to update your data. To ease synchronization of data between Copernica and 
 your application, we offer two kind of callback mechanisms. The Publisher 
-Marketing Software uses a system called Callbacks. The Marketing Suite
-uses its successor called [webHooks](./webhooks.md). Copernica uses these 
-mechanisms to keep your application informed about changes in your Copernica 
-account like profile creations, modifications or removals. These are just 
-examples, you configure your own callback or webHook.
+uses a system called Callbacks. The Marketing Suite uses its successor called 
+[webHooks](./webhooks.md). Copernica uses these mechanisms to keep your 
+application informed about changes in your Copernica account like profile 
+creations, modifications or removals. These are just examples, you configure 
+your own callback or webHook.
 
 
 ## API authentication 
@@ -35,10 +35,10 @@ Is your application still using the old [login](https://www.copernica.com/en/sup
 method to gain access to the API? Read how to update your soap client to [use access tokens](./soap-api-upgrade-login.md "Find out what you need to do").
 
 ## API methods
-All features of the Publisher Marketing Software are accessible via the API. 
-Every project is built up from smaller sub-objects. An object that represents 
-a database for example, has a method that requests all documents that were 
-created based on this template. See complete [overview of SOAP API methods](https://www.copernica.com/en/support/apireference "SOAP API methods").
+All features of the Publisher are accessible via the API. Every project 
+is built up from smaller sub-objects. An object that represents a database 
+for example, has a method that requests all documents that were created 
+based on this template. See the complete overview of [SOAP API methods](https://www.copernica.com/en/support/apireference "SOAP API methods").
 
 ## Download example
 **Warning:** example soap client version 1.5 (or older) will soon become deprecated and stop working. 

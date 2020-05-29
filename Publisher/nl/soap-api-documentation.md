@@ -10,7 +10,7 @@ communicatie mogelijk maakt tussen applicaties via HTTP ongeacht besturingssyste
 technologieën of programmeertalen die je gebruikt.
 
 #### Volledige controle dankzij Copernica object model
-De API van maakt gebruik van een logisch en gestructureerd objectmodel. 
+De SOAP API maakt gebruik van een logisch en gestructureerd objectmodel. 
 Alle gegevens in de software worden door objecten gerepresenteerd. Lees 
 de eigenschappen van deze objecten uit met behulp van de SOAP API en werk 
 ze bij. 
@@ -19,7 +19,7 @@ ze bij.
 Je hoeft niet zelf telkens de API aan te roepen om erachter te komen welke 
 data je moet synchroniseren. Om het synchroniseren van data tussen Copernica 
 en jouw applicatie makkelijker te maken, worden er twee callback-mechanismen 
-aangeboden. De Publisher Marketing Software faciliteert een systeem genaamd Callbacks. 
+aangeboden. De Publisher faciliteert een systeem genaamd Callbacks. 
 De Marketing Suite gebruikt de opvolger hiervan genaamd [webHooks](./webhooks.md).
 Copernica gebruikt deze mechanismen om je applicatie op de hoogte brengen 
 van verschillende activiteiten zoals het aanmaken, aanpassen en verwijderen
@@ -36,18 +36,18 @@ om toegang te krijgen tot de API? Lees de [upgrade-instructies](./soap-api-upgra
 om erachter te komen hoe jouw applicatie aangepast moet worden.
 
 ## API methodes
-Alle functionaliteiten van de Publisher Marketing Software zijn beschikbaar 
-via de SOAP API. Elk object is opgebouwd uit kleinere deelobjecten. Zo is 
-een object dat een database representeert bijvoorbeeld opgebouwd uit objecten 
-die de profielen representeren. Een object dat een template omvat, heeft een 
+Alle functionaliteiten van de Publisher zijn beschikbaar via de SOAP API. 
+Elk object is opgebouwd uit kleinere deelobjecten. Zo is een object dat 
+een database representeert bijvoorbeeld opgebouwd uit objecten die de 
+profielen representeren. Een object dat een template omvat, heeft een 
 methode waarmee je alle documenten opvraagt die op basis van dit template 
-zijn aangemaakt. Overzicht [SOAP API methodes](https://www.copernica.com/nl/support/apireference "SOAP API methodes")
+zijn aangemaakt. Naar overzicht van [SOAP API methodes](https://www.copernica.com/nl/support/apireference "SOAP API methodes")
 
 ## Voorbeeld downloaden
 **Waarschuwing:** de soap client in voorbeeldscript versie 1.5 (of ouder) 
 zal in de nabije toekomst niet meer werken. Gebruik daarom versie 1.6 (of nieuwer)
-om te garanderen dat jouw applicatie blijft werken wanneer de oude [login](https://www.copernica.com/en/support/apireference/login) methode
-niet meer ondersteunt wordt. [Lees upgrade-instructies](./soap-api-upgrade-login.md "Upgrade SOAP login")
+om te garanderen dat jouw applicatie blijft werken wanneer de oude [login](https://www.copernica.com/nl/support/apireference/login) methode
+niet meer wordt ondersteund. Lees voor meer informatie de [upgrade-instructies](./soap-api-upgrade-login.md "Upgrade SOAP login")
 
 #### versie 1.6
 - Binnenkort beschikbaar
