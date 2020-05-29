@@ -21,7 +21,7 @@ Bij het aanmaken van een nieuwe token kan je toegangsrechten instellen.
 Tokens kunnen lees-, schrijf- of lees- en schrijfrechten krijgen. 
 
 ## IP-restrictie
-Om je applicatie veiliger te maken kan je een IP-restrictie instellen op 
-een `access_token`. Hierdoor werkt de token alleen vanaf bepaalde IP-adressen. 
+Maak je applicatie veiliger door te beperken vanaf welke IP-adressen
+een `access_token` gebruikt mag worden. 
 
 [Terug naar overzicht](./soap-api-documentation)

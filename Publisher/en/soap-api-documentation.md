@@ -28,8 +28,7 @@ examples, you configure your own callback or webHook.
 
 ## API authentication 
 To gain access to the SOAP API, you need to provide a valid `access_token` 
-with each call to the API. Read how to create an `access_token` and how 
-the [API authentication](./soap-api-authentication.md "Setup access tokens") works.
+with each call to the API. [Read more about API authentication](./soap-api-authentication.md "About API authentication")
 
 #### Deprecated: login method
 Is your application still using the old [login](https://www.copernica.com/en/support/apireference/login) 

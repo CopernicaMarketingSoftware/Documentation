@@ -28,10 +28,9 @@ in.
 
 ## API-authenticatie
 Om toegang te krijgen tot de SOAP API moet je een valide `access_token` meegeven
-elke keer dat je de API aanroept. Lees hoe je aan een `access_token` komt en hoe 
-de [API-authenticatie](./soap-api-authentication.md "Toegang krijgen tot de SOAP API") werkt.
+elke keer dat je de API aanroept. [Meer informatie over API-authenticatie](./soap-api-authentication.md "SOAP API-authenticatie").
 
-#### Verouderd: login methode
+#### Verouderd: login-methode
 Gebruikt jouw applicatie nog steeds de oude [login](https://www.copernica.com/nl/support/apireference/login) methode
 om toegang te krijgen tot de API? Lees de [upgrade-instructies](./soap-api-upgrade-login.md "Upgrade SOAP login") 
 om erachter te komen hoe jouw applicatie aangepast moet worden.

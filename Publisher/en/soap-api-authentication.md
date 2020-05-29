@@ -1,14 +1,14 @@
 # SOAP API authentication
 In May 2020 Copernica rolled out a new mechanism for SOAP API authentication. 
 This new system uses something called access token to grant applications access 
-to the API. If your application is still using the [login](https://www.copernica.com/en/support/apireference/login) to gain access 
-to the SOAP API, you need to [take action](./soap-api-upgrade-login) as soon as possible.
+to the API. If your application is still using the [login](https://www.copernica.com/en/support/apireference/login) method to gain access 
+to the SOAP API, you should follow the [upgrade instructions](./soap-api-upgrade-login) as soon as possible!
 
 ## API application
-The application represents your external application or website that need access
-to the API. Access tokens are grouped per application. The REST API uses 
-these applications for OAuth authentication. The SOAP API does not use 
-OAuth. Applications are used for the SOAP API only to generate access tokens.
+An application within Copernica represents your external application or website that need access
+to the Copernica API. Access tokens are grouped per application. The REST API uses 
+the applications for OAuth authentication. The SOAP API does not use 
+OAuth, it uses applications to generate access tokens.
 
 ## Access tokens
 An `access_token` is a unique string that is linked to one of your API applications. 
@@ -19,8 +19,7 @@ your access tokens in the [API access](https://www.copernica.com/en/api) dashboa
 Access tokens has either read, write or read and write access rights.
 
 ## IP access restriction
-To improve security, access tokens also offers IP access restriction that 
-allows you to specify from which IP address(es) your soap clients are 
-allowed to connect from. 
+Make your application safer by specifying from which IP address(es) 
+an `access_token` is allowed to be used.
 
 [Back to overview](./soap-api-documentation)
