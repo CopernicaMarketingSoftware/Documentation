@@ -7,14 +7,8 @@ GET call to the following address:
 
 ## Available parameters
 
-| Parameter | Description                                                        |
-|-----------|--------------------------------------------------------------------|
-| **start** | The first database to be requested.                                |
-| **limit** | Length of the requested batch.                                     |
-| **total** | Whether or not the total number of databases should be counted.    |
-
-More information on the meaning of start, limit and total parameters 
-can be found in the [article on paging](rest-paging).
+This method only support paging parameters. More information on these 
+parameters can be found [in the article on paging](./rest-paging.md).
 
 ## Returned fields
 
