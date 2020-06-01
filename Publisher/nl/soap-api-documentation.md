@@ -43,16 +43,16 @@ profielen representeren. Een object dat een template omvat, heeft een
 methode waarmee je alle documenten opvraagt die op basis van dit template 
 zijn aangemaakt. Naar overzicht van [SOAP API methodes](https://www.copernica.com/nl/support/apireference "SOAP API methodes")
 
-## Voorbeeld downloaden
+## Voorbeelden
 **Waarschuwing:** de soap client in voorbeeldscript versie 1.6 (of ouder) 
 zal in de nabije toekomst niet meer werken. Gebruik daarom versie 2 (of nieuwer)
 om te garanderen dat jouw applicatie blijft werken wanneer de oude [login](https://www.copernica.com/nl/support/apireference/login) methode
 niet meer wordt ondersteund. Lees voor meer informatie de [upgrade-instructies](./soap-api-upgrade-login.md "Upgrade SOAP login")
 
 #### versie 2
-- Binnenkort beschikbaar
+- [PHP script](../downloads/soaptest_php_2-0.zip "SOAP API example script for PHP")
 
 #### versie 1.6
-- [PHP example](../downloads/soaptest_php_1-6.zip "SOAP API example script for PHP")
-- [Java example](../downloads/soaptest_java.zip "SOAP API example script for Java")
-- [C\# example](../downloads/soaptest_cs.zip "SOAP API example script for C#")
+- [PHP script](../downloads/soaptest_php_1-6.zip "SOAP API example script for PHP")
+- [Java script](../downloads/soaptest_java.zip "SOAP API example script for Java")
+- [C\# script](../downloads/soaptest_cs.zip "SOAP API example script for C#")
