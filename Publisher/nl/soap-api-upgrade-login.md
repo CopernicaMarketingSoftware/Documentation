@@ -7,7 +7,7 @@ vervangen door een krachtiger en veiliger systeem met
 ## Upgrade-instructies
 **Alleen van toepassing als je gebruik maakt van het soapclient PHP script van Copernica**
 1. Maak een nieuw applicatie en token aan in je [API-toegang](https://www.copernica.com/nl/api) dashboard. Je kan meerdere tokens koppelen aan één applicatie of één token per applicatie. Er worden hier geen kosten in rekening gebracht. 
-2. Upgrade je SOAP client naar [versie 2.6](./soap-api-documentation#download-example).
+2. Upgrade je SOAP client naar [versie 2.0](./soap-api-documentation#download-example).
 3. Vul de `access_token` in je soap client.
 4. That's it!
 
