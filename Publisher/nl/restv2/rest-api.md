@@ -53,7 +53,7 @@ In de onderstaande tabel vind je een methode om account informatie op te vragen.
 ## Databases & Collecties
 
 Je kunt je databases en collecties bekijken en onderhouden met API calls.
-In de onderstaande tabel vindt je alle calls gerelateerd aan databases,
+In de onderstaande tabel vind je alle calls gerelateerd aan databases,
 collecties en hun eigenschappen.
 
 ### Databases
