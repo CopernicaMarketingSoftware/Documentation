@@ -160,7 +160,7 @@ an idea of a possible valid JSON input, consider this:
         "from": "my-sender-address@my-domain.com",
         "to": "info@example.org",
         "subject": "Example subject",
-        "textVersion": "This is the example message text",
+        "text": "This is the example message text",
         "headers": {
             "x-my-special-header": "special-value"
         },
