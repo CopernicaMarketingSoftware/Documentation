@@ -1,61 +1,54 @@
 # SOAP API
+Are you a new user looking into API capabilities of Copernica? We recommend 
+using the [REST API v2](./restv2/rest-api.md "REST-API") which is faster 
+and easier to implement. 
 
-Besides the existing integrations 
-for different systems, with our powerful SOAP API you are able to create
-an integration with your own software. Synchronize all data from
-Copernica with the data from your own software to keep all information
-and your marketing campaigns up to date.
+## About the API
+Copernica's SOAP API uses the standard SOAP protocol. The Simple Object 
+Access Protocol (SOAP) is an XML-based protocol to let applications exchange 
+information over HTTP. It provides a way to communicate between applications 
+running on different operating systems, with different technologies and 
+programming languages.
 
-You can find an overview of all calls [here](https://www.copernica.com/en/support/apireference). 
-Copernica also supports a REST API. You can find more information about it 
-[here](./restv2/rest-api.md "REST-API").
+#### Full control with Copernica's object model
+The SOAP API uses a logical and structured object model. All data in the software 
+is represented by objects. Read the properties of these objects with the SOAP API 
+and then update them. 
 
-## Copernica's SOAP API
+#### Powerful callback system
+We do not expect you to pull the API periodically to find out when you need 
+to update your data. To ease synchronization of data between Copernica and 
+your application, we offer two kind of callback mechanisms. The Publisher 
+uses a system called Callbacks. The Marketing Suite uses its successor called 
+[webHooks](./webhooks.md). Copernica uses these mechanisms to keep your 
+application informed about changes in your Copernica account like profile 
+creations, modifications or removals. These are just examples, you configure 
+your own callback or webHook.
 
-Copernica's SOAP API uses the SOAP standard. This means you'll be able
-to integrate the API in development environments as Java Netbeans and
-Microsoft Visual Studio. By using the SOAP standard, programmers will
-quickly be able to start working with Copernica. Also, the API can be
-invoked from every standard programming language and development
-environment. To view all of the available calls you can refer to the 
-[overview](https://www.copernica.com/en/support/apireference).
 
-[Download SOAP API example script for
-PHP](../downloads/soaptest_php_1-5.zip "SOAP API example script for PHP")
+## API authentication 
+To gain access to the SOAP API, you need to provide a valid `access_token` 
+with each call to the API. [Read more about API authentication](./soap-api-authentication.md "About API authentication")
 
-[Download SOAP API example script for
-Java](../downloads/soaptest_java.zip "SOAP API example script for Java")
+#### Deprecated: login method
+Is your application still using the old [login](https://www.copernica.com/en/support/apireference/login) 
+method to gain access to the API? Read how to update your soap client to [use access tokens](./soap-api-upgrade-login.md "Find out what you need to do").
 
-[Download SOAP API example script for
-C\#](../downloads/soaptest_cs.zip "SOAP API example script for C#")
+## API methods
+All features of the Publisher are accessible via the API. Every project 
+is built up from smaller sub-objects. An object that represents a database 
+for example, has a method that requests all documents that were created 
+based on this template. See the complete overview of [SOAP API methods](https://www.copernica.com/en/support/apireference "SOAP API methods").
 
-## Full control with Copernica's object model
+## Examples
+**Warning:** example soap client version 1.6 (or older) will soon become deprecated and stop working. 
+Use version 2 (or higher) to be sure your application still works when the [login](https://www.copernica.com/en/support/apireference/login) method is removed.
+[Read how to upgrade](./soap-api-upgrade-login.md "Find out what you need to do")
 
-Copernica's API uses a logical and structured object model. All data in
-the software is represented by objects. Read the properties of these
-objects with SOAP API and then update them. The methods can also be
-invoked. Every project is built up from smaller sub-objects. An object
-that represents a database for example, has a method that requests all 
-documents that were created based on this template.
+#### version 2
+- [PHP script](../downloads/soaptest_php_2-0.zip "SOAP API example script for PHP")
 
-## Use Copernica functionalities in the application
-
-The power of API is that all functionalities that can be executed in
-Copernica's user interface, can also be used in another application if
-you use the SOAP API. Use the API to build up databases for instance, or
-to create relation profiles, to create templates or to produce email
-documents.
-
-## Renewed callback system
-
-By synchronizing data between Copernica and an external location or
-database, you don't have to keep importing 
-data manually from Copernica and vice versa. Both systems do this fully
-automatically. In Copernica, one can easily set up callback URLs.
-Copernica will use this to keep the third party application informed
-about all changes in the database of Copernica.
-
-## More information
-
-* [Overview of SOAP calls](https://www.copernica.com/en/support/apireference)
-* [The Copernica REST API](./restv2/rest-api.md)
+#### version 1.6
+- [PHP script](../downloads/soaptest_php_1-6.zip "SOAP API example script for PHP")
+- [Java script](../downloads/soaptest_java.zip "SOAP API example script for Java")
+- [C\# script](../downloads/soaptest_cs.zip "SOAP API example script for C#")
