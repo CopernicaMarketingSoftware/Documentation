@@ -49,7 +49,7 @@ Een gedecodeerd POST verzoek voor een profiel ziet er bijvoorbeeld zo uit:
 
 ```json
 {
-    "action":       "update",
+    "type":         "update",
     "profile":      123,
     "parameters": {
         "mail":     "johny+newemail@example.com",
