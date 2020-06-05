@@ -53,35 +53,10 @@ Let op! Hier wordt de body data op een andere manier meegegeven dan in
 
 ## Geretourneerde velden
 
-Als de profielen niet asynchroon worden aangemaakt is het resultaat van deze call
-een lijst van profielen. Deze lijst kan leeg zijn (geen matchende profielen en 'create'
-op 0), de matchende profielen bevatten of het nieuw aangemaakte profiel. Voor elk
-profiel zijn de volgende velden beschikbaar:
-
-* **ID**: numeriek ID van het profiel
-* **database**: ID van de database waarin het profiel is opgeslagen
-* **secret**: de "geheime" code die aan een profiel is gekoppeld
-* **created**: tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
-* **modified**: tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
-* **fields**: associative array / object van veldnamen en veldwaardes
-* **interests**: array van de interesses van het profiel
-
-De JSON ziet er dan bijvoorbeeld zo uit:
-```
-{
-    "ID":"1",
-    "fields":{
-        "firstname":"name",
-        "lastname":"doe"
-    },
-    "interests":[],
-    "database":"1",
-    "secret":"424525",
-    "created":"2000-01-01 00:00:00",
-    "modified":"2000-01-01 00:00:00",
-    "removed":false
-}
-```
+Als deze methode met behulp van onze PHP hulpklasse succesvol een profiel 
+heeft aangemaakt wordt de ID van dit profiel teruggegeven. In alle andere 
+succesvolle gevallen wordt een 1 teruggegeven. Ook is de nieuwe profiel ID 
+altijd terug te vinden in de 'X-Created' header.
 
 ## Voorbeeld
 

@@ -51,35 +51,9 @@ API call.
 
 ## Returned fields
 
-If your request is not asynchronized the result will be a list of profiles. 
-This list of profiles can be empty (no matching profiles and 'create' set to 0), 
-contain the matching profiles or the newly created profile. Each profile 
-contains the following information:
-
-- **ID**: numerical ID of the profile
-- **fields**: associative array/object of field names and values
-- **interests**: array of  the interests the profile has
-- **database**: ID of the database the profile is stored in
-- **secret**: the “secret” code that is linked to a profile
-- **created**: the timestamp on which the profile was created, in YYYY-MM-DD hh:mm:ss format.
-- **modified**: the timestamp on which the profile was last modified,, in YYYY-MM-DD hh:mm:ss format.
-
-The JSON might look something like this:
-```
-{
-    "ID":"1",
-    "fields":{
-        "firstname":"name",
-        "lastname":"doe"
-    },
-    "interests":[],
-    "database":"1",
-    "secret":"424525",
-    "created":"2000-01-01 00:00:00",
-    "modified":"2000-01-01 00:00:00",
-    "removed":false
-}
-```
+If a profile is created succesfully with our PHP helper class it will output 
+the new profile ID. In all other cases of success it will return a 1. 
+A new profile ID can also be found in the 'X-Created' header.
 
 ## PHP example
 

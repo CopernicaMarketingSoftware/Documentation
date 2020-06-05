@@ -55,7 +55,7 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-- [Overview of all API methods](rest-api)
-- [POST database fields](rest-post-database-fields)
-- [PUT database field](rest-put-database-field)
-- [DELETE database field](rest-delete-database-field)
+* [Overview of all API methods](./rest-api)
+* [POST database fields](./rest-post-database-fields)
+* [PUT database field](./rest-put-database-field)
+* [DELETE database field](./rest-delete-database-field)
