@@ -90,38 +90,29 @@ https://www.smtpeter.com/v1/dns/yourdomain.com/status
 ```
 
 When you call this method, SMTPeter will query your DNS records and compare
-your settings with the recommended settings. If there is anything wrong
-with your DNS records, it is reported. The output for these REST calls
+your settings with the recommended settings. The output for these REST calls
 typically looks like this:
 
 ```json
 {
-    "dmarc":    "ok",
-    "dkim":     "perfect",
-    "spf":      "perfect",
-    "mx":       "error",
-    "a":        "perfect",
-    "remarks": {
-        "dmarc": "DMARC record not redirected to ours",
-        "mx":    "Bounce domain is not pointing to mail.smtpeter.com"
-    }
+    "dmarc":      "ok",
+    "dkim":       "error",
+    "spf":        "ok",
+    "mx":         "ok",
+    "a":          "ok",
+    "caa":        "ok",
+    "validation": "ok"
 }
 ```
 
-The properties "dmarc", "dkim" and "spf" give the status of your DMARC,
-DKIM and SPF records in DNS. The "mx" and "a" records tell you whether
-you have correctly set up MX and A records.
+The properties "dmarc", "dkim", "spf" and "caa" give the status of your DMARC,
+DKIM, SPF and CAA records in DNS. The "mx" and "a" records tell you whether
+you have correctly set up MX and A records. The "validation" property indicates
+whether you sender domain has been validated.
 
-The possible status values for the records are "perfect", "ok" and 
-"error". "Perfect" means that you exactly followed our suggestions. 
-In general, records that score a perfect will never have to be adjusted 
-again. The "ok" status is set if you did not follow our recommended setting,
-but you did set up valid DNS records (for example, if you did not use
-CNAME records for the clicks domain, but you did install the right IP
-address).
-
-If things are not perfect, an extra property "remarks" is added that holds
-human readable messages with improvement suggestions per record.
+The possible status values for the records are "ok" and "error". The "ok"
+status is set if you set up valid DNS records (for example, you did install
+the right IP address).
 
 
 ## More information
