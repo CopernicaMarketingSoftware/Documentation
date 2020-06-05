@@ -17,7 +17,6 @@ status code terug. Het 'v1' element in de URL geeft onze ontwikkelaars
 de mogelijkheid om de compatibiliteit te verleggen/verbreken in 
 toekomstige versies van de API.
 
-
 ## HTTP methodes
 
 SMTPeter stelt je in staat om 'requests' te doen via HTTP POST, HTTP GET

@@ -148,8 +148,8 @@ You will then receive a single JSON object:
     "bounces":      "bounces.example.com",
     "tracking":     "tracking.example.com",
     "https":        false,
-    "ips":          ["1.2.3.4", "2.3.4.5"]
-    "policy":       "none|quarantine|reject"
+    "ips":          ["1.2.3.4", "2.3.4.5"],
+    "policy":       "none|quarantine|reject",
     "percentage":   50,
     "startdate":    "2016-06-14",
     "enddate":      "2016-06-14",
@@ -182,8 +182,8 @@ You will receive an array with JSON objects holding the following information:
         "bounces":      "bounces.yoursenderdomain.com",
         "tracking":     "tracking.yoursenderdomain.com",
         "https":        true,
-        "ips":          ["1.2.3.4", "2.3.4.5"]
-        "policy":       "none|quarantine|reject"
+        "ips":          ["1.2.3.4", "2.3.4.5"],
+        "policy":       "none|quarantine|reject",
         "percentage":   100,
         "startdate":    "2016-01-01",
         "enddate":      "2016-01-18",
@@ -195,8 +195,8 @@ You will receive an array with JSON objects holding the following information:
         "bounces":      "bounces.example.com",
         "tracking":     "tracking.example.com",
         "https":        false,
-        "ips":          ["1.2.3.4", "2.3.4.5"]
-        "policy":       "none|quarantine|reject"
+        "ips":          ["1.2.3.4", "2.3.4.5"],
+        "policy":       "none|quarantine|reject",
         "percentage":   50,
         "startdate":    "2016-06-14",
         "enddate":      "2016-06-14",

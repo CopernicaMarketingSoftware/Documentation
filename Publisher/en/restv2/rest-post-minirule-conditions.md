@@ -50,10 +50,12 @@ $data = array(
 	'type' = 'date'
 )
 
-// do the call, and print result
-$api->post("minirule/{$ruleID}/conditions/", array(), $data);
+// do the call
+$result = $api->post("minirule/{$ruleID}/conditions", $data);
 
-// return id of created request if successful
+// print the result
+print_r($result);
+
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).

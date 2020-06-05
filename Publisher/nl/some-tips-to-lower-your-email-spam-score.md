@@ -58,7 +58,7 @@ door een beschrijving van de link, zoals hier:
 -   Gebruik altijd een "from" adres van je eigen domein, dus niet bijvoorbeeld 
     van een gratis adres zoals Gmail of Yahoo. Dit staat onprofessioneel en 
     de clients herkennen dit.
--   Beperk je gebrek van woorden geschreven in hoofdletters. Het wordt 
+-   Beperk je gebruik van woorden geschreven in hoofdletters. Het wordt 
     aangeraden dit helemaal niet te doen in je "from" adres of onderwerp, 
     maar het staat ook onprofessioneel om volledige zinnen in je email 
     in hoofdletters te schrijven.

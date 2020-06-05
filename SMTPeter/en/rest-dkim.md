@@ -27,8 +27,8 @@ The first method returns a JSON object holding the current key that is in use:
 ````json
 {
     "selector":     "zero",
-    "algorithm":    "sha256"
-    "public":       "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----",
+    "algorithm":    "sha256",
+    "public":       "-----BEGIN PUBLIC KEY-----\n...\n-----END PUBLIC KEY-----"
 }
 ````
 

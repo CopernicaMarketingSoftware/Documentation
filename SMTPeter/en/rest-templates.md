@@ -25,7 +25,7 @@ back a JSON array in the following format:
     {
         "id"    : 1,
         "name"  : "Test email"
-    }
+    },
     {   "id"    : 2,
         "name"  : "Test 123"
     }

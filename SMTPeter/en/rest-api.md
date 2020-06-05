@@ -21,7 +21,7 @@ Content-Length: 247
     "from":         "info@example.com",
     "to":           "john@doe.com",
     "subject":      "This is the subject",
-    "text":         "This is example content",
+    "text":         "This is example content"
 }
 ```
 This call will instruct SMTPeter to generate an e-mail message with the 

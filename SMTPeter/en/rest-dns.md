@@ -43,7 +43,7 @@ recommendations in the following format:
     {
         "name": "two._domainkey.example.com",
         "type": "CNAME",
-        "value": "dkimX2.smtpeter.com",
+        "value": "dkimX2.smtpeter.com"
     },
     {
         "name": "example.com",

@@ -8,14 +8,8 @@ call naar het volgende adres:
 
 ## Beschikbare parameters
 
-De volgende parameters kunnen aan de URL als parameters worden
-toegevoegd:
-
-| Parameter | Beschrijving                                            |
-|-----------|---------------------------------------------------------|
-| **start** | Eerste database die wordt opgevraagd;                   |
-| **limit** | Lengte van de batch die wordt opgevraagd;               |
-| **total** | Toon wel/niet het totaal aantal beschikbare databases.  |
+Deze methode ondersteunt alleen paging parameters. Meer informatie over 
+deze parameters vind je in het [artikel over paging](rest-paging).
 
 ## Geretourneerde velden
 
@@ -69,30 +63,7 @@ De JSON voor een enkele database ziet er bijvoorbeeld zo uit:
             "hidden":false,
             "index":false
          },
-         {  
-            "ID":"20990",
-            "name":"birthday",
-            "type":"date",
-            "value":"2018-03-16",
-            "displayed":true,
-            "ordered":false,
-            "length":"100",
-            "textlines":"3",
-            "hidden":false,
-            "index":false
-         },
-         {  
-            "ID":"20991",
-            "name":"email",
-            "type":"email",
-            "value":"bla@bla.nl",
-            "displayed":true,
-            "ordered":false,
-            "length":"100",
-            "textlines":"3",
-            "hidden":false,
-            "index":false
-         }
+         ...
       ],
       "total":3
    },
@@ -106,11 +77,7 @@ De JSON voor een enkele database ziet er bijvoorbeeld zo uit:
             "name":"soccer",
             "group":"sports"
          },
-         {  
-            "ID":"3054",
-            "name":"baseball",
-            "group":"sport"
-         }
+         ...
       ],
       "total":2
    },
@@ -140,18 +107,7 @@ De JSON voor een enkele database ziet er bijvoorbeeld zo uit:
                      "hidden":false,
                      "index":false
                   },
-                  {  
-                     "ID":"9475",
-                     "name":"order_number",
-                     "type":"integer",
-                     "value":"0",
-                     "displayed":true,
-                     "ordered":false,
-                     "length":"100",
-                     "textlines":"0",
-                     "hidden":false,
-                     "index":false
-                  }
+                  ...
                ],
                "total":2
             }

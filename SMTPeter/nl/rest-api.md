@@ -22,9 +22,9 @@ Content-Length: 246
 {
     "recipient":    "john@doe.com",
     "from":         "info@example.com",
-    "to":           "john@doe.com"
+    "to":           "john@doe.com",
     "subject":      "Dit is het onderwerp",
-    "text":         "Dit is de inhoud",
+    "text":         "Dit is de inhoud"
 }
 ```
 

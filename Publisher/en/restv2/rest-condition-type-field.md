@@ -37,15 +37,15 @@ $data = array(
     // select field condition
     'type' => 'Field',
 
-    // select field
-    'field' => 'has_children',
+    // select field (using field ID)
+    'field' => 123,
     
     // set value
     'value' => 'yes',
 );
 
 // do the call
-$result = $api->post("rule/id/conditions", $data);
+$result = $api->post("rule/{$id}/conditions", $data);
 
 // print the result
 print_r($result);
