@@ -37,7 +37,7 @@ Een gedecodeerd POST verzoek voor een profiel ziet er bijvoorbeeld zo uit:
 
 ```json
     {
-        "action":       "delete",
+        "type":         "delete",
         "profile":      123,
         "timestamp":    "1979-02-12 12:49:23",
         "database":     1,
@@ -48,7 +48,7 @@ Het verzoek voor een subprofiel ziet er bijvoorbeeld zo uit:
 
 ```json
     {
-        "action":       "delete",
+        "type":         "delete",
         "subprofile":   456,
         "timestamp":    "1979-02-12 12:49:23",
         "profile":      123

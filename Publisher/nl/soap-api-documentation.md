@@ -1,67 +1,58 @@
-# SOAP API Documentatie
+# SOAP API
+Ben je een nieuwe gebruiker op zoek naar informatie over de API mogelijkheden 
+van Copernica? Wij raden aan om de [REST API v2](./restv2/rest-api.md "REST-API") 
+te gebruiken die sneller is en makkelijker te implementeren.
 
-Behalve de bestaande integraties voor verschillende systemen, is het dankzij onze krachtige SOAP API ook
-mogelijk zelf een integratie met je eigen software te maken.
-Synchroniseer zo de gegevens vanuit Copernica met de gegevens uit jouw
-software. Zo houd je alle gegevens en je marketingcampagnes continu
-up-to-date.
+## Over de API
+De API van Copernica maakt gebruik van de SOAP-standaard. SOAP staat voor 
+Simple Object Access Protocol. Dit is een XML gebaseerde protocol die 
+communicatie mogelijk maakt tussen applicaties via HTTP ongeacht besturingssystemen, 
+technologieën of programmeertalen die je gebruikt.
 
-Je kunt een overzicht van alle calls [hier](https://www.copernica.com/nl/support/apireference) vinden. 
-Copernica beschikt overigens ook over een REST-API. Meer informatie
-over de REST-API vind je [hier](./restv2/rest-api.md "REST-API").
+#### Volledige controle dankzij Copernica object model
+De SOAP API maakt gebruik van een logisch en gestructureerd objectmodel. 
+Alle gegevens in de software worden door objecten gerepresenteerd. Lees 
+de eigenschappen van deze objecten uit met behulp van de SOAP API en werk 
+ze bij. 
 
-## SOAP API van Copernica
+#### Krachtig callback-systeem
+Je hoeft niet zelf telkens de API aan te roepen om erachter te komen welke 
+data je moet synchroniseren. Om het synchroniseren van data tussen Copernica 
+en jouw applicatie makkelijker te maken, worden er twee callback-mechanismen 
+aangeboden. De Publisher faciliteert een systeem genaamd Callbacks. 
+De Marketing Suite gebruikt de opvolger hiervan genaamd [webHooks](./webhooks.md).
+Copernica gebruikt deze mechanismen om je applicatie op de hoogte brengen 
+van verschillende activiteiten zoals het aanmaken, aanpassen en verwijderen
+van profielen. Dit zijn maar voorbeelden, je stelt zelf je callback of webHook 
+in.
 
-De API van Copernica maakt gebruik van de SOAP-standaard. Hierdoor
-integreer je de API gemakkelijk in ontwikkelomgevingen als Java Netbeans
-en Microsoft Visual Studio. Door gebruik te maken van de SOAP-standaard,
-kunnen programmeurs snel aan de slag met de API, en is de API vanuit
-elke gangbare programmeertaal en ontwikkelomgeving aan te roepen.
+## API-authenticatie
+Om toegang te krijgen tot de SOAP API moet je een valide `access_token` meegeven
+elke keer dat je de API aanroept. [Meer informatie over API-authenticatie](./soap-api-authentication.md "SOAP API-authenticatie").
 
-Ga voor de volledige SOAP API object reference naar
-[het overzicht van SOAP calls](https://www.copernica.com/nl/support/apireference).
+#### Verouderd: login-methode
+Gebruikt jouw applicatie nog steeds de oude [login](https://www.copernica.com/nl/support/apireference/login) methode
+om toegang te krijgen tot de API? Lees de [upgrade-instructies](./soap-api-upgrade-login.md "Upgrade SOAP login") 
+om erachter te komen hoe jouw applicatie aangepast moet worden.
 
-[Download SOAP API voorbeeldscript voor
-PHP](../downloads/soaptest_php_1-6.zip "Download SOAP API voorbeeldscript voor PHP")
-*(zip)*
+## API methodes
+Alle functionaliteiten van de Publisher zijn beschikbaar via de SOAP API. 
+Elk object is opgebouwd uit kleinere deelobjecten. Zo is een object dat 
+een database representeert bijvoorbeeld opgebouwd uit objecten die de 
+profielen representeren. Een object dat een template omvat, heeft een 
+methode waarmee je alle documenten opvraagt die op basis van dit template 
+zijn aangemaakt. Naar overzicht van [SOAP API methodes](https://www.copernica.com/nl/support/apireference "SOAP API methodes")
 
-[Download SOAP API voorbeeldscript voor
-Java](../downloads/soaptest_java.zip "Download SOAP API voorbeeldscript voor Java")
-*(zip)*
+## Voorbeelden
+**Waarschuwing:** de soap client in voorbeeldscript versie 1.6 (of ouder) 
+zal in de nabije toekomst niet meer werken. Gebruik daarom versie 2 (of nieuwer)
+om te garanderen dat jouw applicatie blijft werken wanneer de oude [login](https://www.copernica.com/nl/support/apireference/login) methode
+niet meer wordt ondersteund. Lees voor meer informatie de [upgrade-instructies](./soap-api-upgrade-login.md "Upgrade SOAP login")
 
-[Download SOAP API voorbeeldscript voor
-C\#](../downloads/soaptest_cs.zip "Download SOAP API voorbeeldscript voor C#")
-*(zip)*
+#### versie 2
+- [PHP script](../downloads/soaptest_php_2-0.zip "SOAP API example script for PHP")
 
-## Volledige controle dankzij Copernica object model
-
-De API van Copernica maakt gebruik van een logisch en gestructureerd
-objectmodel. Alle gegevens in de software worden door objecten
-gerepresenteerd. Lees de eigenschappen van deze objecten uit met behulp
-van de SOAP API en werk ze bij. De methodes zijn ook aan te roepen. Elk
-object is opgebouwd uit kleinere deelobjecten. Zo is een object dat een
-database representeert bijvoorbeeld opgebouwd uit objecten die de profielen
-representeren. Een object dat een template omvat, heeft een methode waarmee je alle documenten opvraagt die op
-basis van dit template zijn aangemaakt.
-
-## Gebruik functionaliteiten van Copernica in de applicatie
-
-De kracht van de API is dat alle acties die met de Copernica
-gebruikersinterface worden uitgevoerd, via de SOAP API ook zijn toe te
-passen binnen een eigen applicatie. Richt met de API bijvoorbeeld
-databases in, maak relatieprofielen aan of stel templates en
-e-maildocumenten samen.
-
-## Vernieuwd callback-systeem
-
-Door het synchroniseren van gegevens tussen Copernica en de externe
-applicatie, hoef je niet telkens handmatig nieuwe data te [importeren](./database-import)
-in Copernica en vice versa. De beide systemen lopen automatisch
-synchroon. Stel met Copernica gemakkelijk callback URL's in. Hierdoor
-houdt Copernica de externe applicatie op de hoogte van wijzigingen in de
-database of relatieprofielen.
-
-## Meer information
-
-* [Overzicht van SOAP calls](https://www.copernica.com/nl/support/apireference)
-* [REST API](./restv2/rest-api.md "REST-API")
+#### versie 1.6
+- [PHP script](../downloads/soaptest_php_1-6.zip "SOAP API example script for PHP")
+- [Java script](../downloads/soaptest_java.zip "SOAP API example script for Java")
+- [C\# script](../downloads/soaptest_cs.zip "SOAP API example script for C#")

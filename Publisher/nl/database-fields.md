@@ -14,14 +14,14 @@ Hieronder is een tabel weergegeven met alle beschikbare veldtypes.
 |--------------------|------------------------------------------------------------------------------------------------------|
 | Tekstveld          | Letters [A-Z], numerieke waardes [0-9] en/of underscores. Maximaal aantal karakters is 255.          |
 | Numeriek veld      | Alleen numerieke waardes [0-9]. Kan geen leeg veld zijn. Geef bijvoorbeeld standaardwaarde 0 op.     |
-| E-mailveld         | E-mailveld is een tekstveld, bedoeld voor het opslaan van e-mailadressen.                            |
+| E-mail veld        | E-mailveld is een tekstveld, bedoeld voor het opslaan van e-mailadressen.                            |
 | Telefoonveld       | Kan worden gespecificeerd voor fax, mobiele en andere telefoonnummers.                               |
 | Datumveld          | Het datumveld bevat de datum (yyyy-mm-dd)                                                            |
-| Datum- en tijdveld | Het datumveld bevat de datum (yyyy-mm-dd) en het tijdveld bevat de uren, minuten en seconden.        |
+| Datum + tijdveld   | Het datumveld bevat de datum (yyyy-mm-dd) en het tijdveld bevat de uren, minuten en seconden.        |
 | Landcode veld      | Accepteert landcodes volgens de ISO 3166 standaard. NL, BE etc.                                      |
 | Meerkeuzeveld      | Kan worden gebruikt om meerdere opties te tonen, optie gevolgd door een * is de standaardwaarde.     |
 | Groot veld         | Tekstveld tot 16 mln. tekens. Wordt niet aangeraden, omdat je het niet kunt indexeren.               |
-| Reverentieveld     | Veld dat kan refereren naar een andere database door middel van een ID.                              |
+| Referentieveld     | Veld dat kan refereren naar een andere database door middel van een ID.                              |
 
 ## Extra opties
 Als je velden aan het bewerken bent, kun je per veld een aantal extra opties

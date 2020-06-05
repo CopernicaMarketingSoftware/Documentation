@@ -3,7 +3,7 @@
 To overwrite existing interests of a profile or add an interest an HTTP PUT 
 request can be sent to the following URL:
 
-`https://api.copernica.com/v2/profile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id/interests?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, of 
 the database you want to add a selection to. This method adds the given 

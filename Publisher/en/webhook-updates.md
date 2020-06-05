@@ -51,7 +51,7 @@ A decoded POST request for a profile might look similar to this:
 
 ```json
 {
-    "action":       "update",
+    "type":         "update",
     "profile":      123,
     "parameters": {
         "mail":     "johny+newemail@example.com",
@@ -76,7 +76,7 @@ An example for a subprofile looks like this:
 
 ```json
 {
-    "action":       "update",
+    "type":         "update",
     "subprofile":   123,
     "parameters": {
         "mail":     "johny+newemail@example.com",

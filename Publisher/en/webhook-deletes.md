@@ -44,7 +44,7 @@ A decoded POST request for a profile might look similar to this:
 
 ```json
     {
-        "action":       "delete",
+        "type":         "delete",
         "profile":      123,
         "timestamp":    "1979-02-12 12:49:23",
         "database":     1,
@@ -55,7 +55,7 @@ An example for a subprofile looks like this:
 
 ```json
     {
-        "action":       "delete",
+        "type":         "delete",
         "subprofile":   456,
         "timestamp":    "1979-02-12 12:49:23",
         "profile":      123
