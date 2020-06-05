@@ -108,7 +108,7 @@ typically looks like this:
 The properties "dmarc", "dkim", "spf" and "caa" give the status of your DMARC,
 DKIM, SPF and CAA records in DNS. The "mx" and "a" records tell you whether
 you have correctly set up MX and A records. The "validation" property indicates
-whether you sender domain has been validated.
+whether your sender domain has been validated.
 
 The possible status values for the records are "ok" and "error". The "ok"
 status is set if you set up valid DNS records (for example, you did install
