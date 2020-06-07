@@ -15,7 +15,7 @@ The following methods are accessible via HTTP GET, POST and DELETE:
 | GET            | [www.smtpeter.com/v1/dkimkey](./rest-dkim)                       | Retrieve DKIM with specific ID                         |
 | GET            | www.smtpeter.com/v1/dkimkeys                                     | Retrieve DKIM for a *sender domain*                    |
 | GET            | [www.smtpeter.com/v1/dmarc](./rest-dmarc)                        | Retrieve all dates with available DMARC reports        |
-| GET            | www.smtpeter.com/v1/dns                                          | Proposed DNS record for a certain domain               |
+| GET            | [www.smtpeter.com/v1/dns](./rest-dns)                            | Proposed DNS record for a certain domain               |
 | GET            | [www.smtpeter.com/v1/domain](./rest-sender-domains)              | Request specific sender domain                         |
 | GET            | [www.smtpeter.com/v1/domains](./rest-sender-domains)             | Request all sender sender domain                       |
 | GET            | [www.smtpeter.com/v1/embeds](./rest-messages)                    | List of all embedded files + content id (cid)          |
