@@ -56,19 +56,19 @@ Image 1: Management Console: Email Throttling overview page (example)
 2. Create a throttle name:
 Specify a recognizable throttle name or description (eg.* 'All IPs to gmail.com'*)
 3. Add a throttle pattern: 
-	a. Specifying from which MTA IP address (or IP pools) to which domain this throttle will be linked. 
-	b. Leaving any field blank will result with an "all" value, which means sending will happen from all unspecified IPs and/or to all unspecified domains. This "all" value is represented with an asterisk ("\*\"). 
-	c. You can add multiple patterns to the same email throttle. Note that domain aliases (domains with similar MX records or similar MX IP addresses) are automatically recognized, so it won't be necessary to list all known aliases.
+	- Specifying from which MTA IP address (or IP pools) to which domain this throttle will be linked. 
+	- Leaving any field blank will result with an "all" value, which means sending will happen from all unspecified IPs and/or to all unspecified domains. This "all" value is represented with an asterisk ("\*\"). 
+	- You can add multiple patterns to the same email throttle. Note that domain aliases (domains with similar MX records or similar MX IP addresses) are automatically recognized, so it won't be necessary to list all known aliases.
 4. Specify Delivery limits:
-	a. for the entire domain which are applied to a combination of each of the sending IPs selected in the throttle patterns and the whole domain (or domain group) selected in the throttle patterns
-	b. for a single IP address behind the MX records of each domain selected in the throttle patterns.
+	- for the entire domain which are applied to a combination of each of the sending IPs selected in the throttle patterns and the whole domain (or domain group) selected in the throttle patterns
+	- for a single IP address behind the MX records of each domain selected in the throttle patterns.
 5. Specify connection limits per active SMTP connection
 6. Specify MailerQ internal queue limits. This allows you to balance the Quality of Service between retried messages and first attempts and between different ISPs.
 7. Click on the *'Show advanced'* button to open a larger, more granular setting choices including new entries for the *'Delivery limits'* section such as *'Bytes per minute'*, (which can be useful with some recipients, e.g. Eastern European ISPs)  *'Max number of starting connections'*. But also further entries in *'Connection limits'* section to specify finer SMTP connection limits as well as:
-	a. 'Connection Settings'
-	b. 'Greylisting'
-	c. 'SMTP timeouts'
-	d. 'Unexpected behaviors'
+	- 'Connection Settings'
+	- 'Greylisting'
+	- 'SMTP timeouts'
+	- 'Unexpected behaviors'
 8. Click on the *'Create throttle'* button to create and store the new email throttle and move to the Email throttle overview page. From the overview page you can shift the throttles to organize and prioritize them. If there are conflicting settings, the one higher on the list will be applied. From here you can delete the throttles or edit them instantaneously.
 
 For suggestions on best delivery results to specific ISPs, feel free to reach out to one of our experts via [info@mailerq.com](mailto:info@mailerq.com).

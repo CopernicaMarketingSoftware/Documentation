@@ -19,14 +19,14 @@ In the MailerQ Management Console:
 1. Email throttling settings in MailerQ can be easily accessed through the Setting menu page (left side menu bar) > *'Email Throttling'*. Here, you can view, edit existing, and create new Email Throttles. Once you have added Email Throttles, they will appear in this panel. 
 2. Click on the *'Create email throttle'*, a new window will appear, with a lot of choices and options.
 3. Adjust throttle settings:
-	a.Specify a name to easily recognize the specific schedule and a day, in this example *'Exponential IP Warmup Schedule - Day 1'*. 
-	b. We will not add a source IP and target domain pattern here as that is added during the later step in the Schedule rules.
-	c. Now we set the values that would be used during the first warm-up step/increment. Those will probably be relatively  low as this is the start of the warm-up. 
+	- Specify a name to easily recognize the specific schedule and a day, in this example *'Exponential IP Warmup Schedule - Day 1'*. 
+	- We will not add a source IP and target domain pattern here as that is added during the later step in the Schedule rules.
+	- Now we set the values that would be used during the first warm-up step/increment. Those will probably be relatively  low as this is the start of the warm-up. 
 
 ![Exponential IP Warmup Schedule - Day 1](../Images/email-throttle-1.png)
 Image 1: Email throttle: Exponential IP Warmup Schedule - Day 1
 	
-	d. When you are finished, store the throttle
+   - When you are finished, store the throttle
 
 4. Proceed to create a new Email Throttle following similar steps: give it a recognizable name that would match the specific warm-up and a day in the schedule, e.g continuing with our example, the next step is called *'Exponential IP Warmup Schedule - Day 5'*. Again you don't want to set the throttle pattern here as that will be added in the Email Throttle Schedules, but continue to add the settings, this time increasing the values, like in the image below.
 
@@ -43,9 +43,9 @@ Image 3: Seven Exponential IP Warmup Email throttles
 2. Add a new schedule by pressing on the *'Create schedule'* button. 
 3. Give that schedule a recognizable name, such as *'Exponential IP Warmup Schedule'*. Now you can edit the schedule and specify different rules and steps. 
 4. Create the steps of the schedule (these could be consecutive days or larger periods of times like in our given example):
-	a. Create a step and specify the *'Day of the Schedule'* and a specific *'Email throttle'*.
-	b. Match *'day 1'* with the Email Throttle *'Exponential IP Warmup Schedule - Day 1'*. Create the next step of *'day 5'* with the Email Throttle *'Exponential IP Warmup Schedule - Day 5'* and so on. 
-	c. You have now made an IP warm-up schedule that will automatically increase your sending based on the timeline you specified. 
+	- Create a step and specify the *'Day of the Schedule'* and a specific *'Email throttle'*.
+	- Match *'day 1'* with the Email Throttle *'Exponential IP Warmup Schedule - Day 1'*. Create the next step of *'day 5'* with the Email Throttle *'Exponential IP Warmup Schedule - Day 5'* and so on. 
+	- You have now made an IP warm-up schedule that will automatically increase your sending based on the timeline you specified. 
 
 ### Step 3: Warm-up cold IP addresses
 Now that we have our warm-up schedule set up, we want to try it out with a cold IP address. You can easily instruct MailerQ to warm up a new IP address using a certain schedule. 

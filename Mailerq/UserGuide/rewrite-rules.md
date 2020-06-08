@@ -23,11 +23,11 @@ Image 1: Management Console: Rewrite Rules overview page
 4. Once you click on *'Store rule'* you can specify rewrite conditions for that message selection by clicking on the *'Create rewrite condition'* button. A selection of several rewrite condition types will appear. You can base the condition on envelope address, subject line or any other property of the message object using JSON pointer notation. Select and specify the one you require, then create the condition.
 5. You can have the rule active indefinitely, or only during a certain specified timeframe.
 6. Click on *'Create rewrite action'* to select actions for that message. There are various actions you can choose from, including:
-	a. Adding, setting and removing MTA IPs
-	b. Setting or unsetting IP pools
-	c. Adding and removing tags
-	d. Delaying or failing mail.
-	e. Redirecting to a Smarthost
+	- Adding, setting and removing MTA IPs
+	- Setting or unsetting IP pools
+	- Adding and removing tags
+	- Delaying or failing mail.
+	- Redirecting to a Smarthost
 Select the intended action, specify the required fields and click on the *'Create rewrite action'* when done. Note, you can set multiple actions to a single Rewrite Rule.
 7. Once this is done, specify whether you want MailerQ to check other rules that match the message as well. 
 8. Once all has been set, click *'Store rule'* to activate it and return to the Rewrite Rules overview page. You can easily enable or disable different rules or organize them by their priority. The closer to the top the bigger the priority for that rule is over others.
