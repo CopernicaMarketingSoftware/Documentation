@@ -7,38 +7,37 @@ Defining *Flood Patterns* is very similar to Email Throttling. Whereas Email Thr
 
 ## How to set up Flood Pattern settings in MailerQ?
 ### Accessing and setting Flood Patterns via the Management Console:
-Make sure your MailerQ instance is running.
-Open MailerQ Management Console.
-Click on the Setting menu page (left side menu bar) > *'Flood Patterns'*. New patterns will be listed here for overview or editing. (Image 1)
+- Make sure your MailerQ instance is running.
+- Open MailerQ Management Console.
+- Click on the Setting menu page (left side menu bar) > *'Flood Patterns'*. New patterns will be listed here for overview or editing (Image 1).
 
 ![Flood Pattern overview](../Images/flood-patterns-1.png)
 Image 1: Management Console: Flood Pattern overview page
 
 #### Creating a new Flood Pattern via the Management Console:
-Once on the Flood Pattern overview page click on the *'Create Flood Pattern'* button. The new page will give you almost the same settings as the *'Email Throttle'* page, with a few extra options to specify a pattern and a duration of activity for these settings. 
-Specify a *'Flood Pattern name'*, which you can use to easily recognize and understand, (eg. *'General: Greylisted for 5 minutes' or 'Hotmail: IP blacklisted'*).
-Choose the pattern type: *Exact match, Regular expression, Wildcard or Substring*. There is also a form available under the *'Test pattern'* to test your pattern against different inputs. Below are a few examples of server responses and how you would use different patterns to match them:
+1. Once on the Flood Pattern overview page click on the *'Create Flood Pattern'* button. The new page will give you almost the same settings as the *'Email Throttle'* page, with a few extra options to specify a pattern and a duration of activity for these settings. 
+2. Specify a *'Flood Pattern name'*, which you can use to easily recognize and understand, (eg. *'General: Greylisted for 5 minutes' or 'Hotmail: IP blacklisted'*).
+3. Choose the pattern type: *Exact match, Regular expression, Wildcard or Substring*. There is also a form available under the *'Test pattern'* to test your pattern against different inputs. Below are a few examples of server responses and how you would use different patterns to match them:
 
-A. Greylisted for 5 minutes - **Exact match**
-![Exact match](../Images/flood-patterns-2.png)
+	A. Greylisted for 5 minutes - **Exact match**
+	![Exact match](../Images/flood-patterns-2.png)
 
-B. Messages from your IP \(192\.168\.2\.\d{1,3}\) are temporarily rejected - **Regular expression**
-![Regular expression](../Images/flood-patterns-3.png)
+	B. Messages from your IP \(192\.168\.2\.\d{1,3}\) are temporarily rejected - **Regular expression**
+	![Regular expression](../Images/flood-patterns-3.png)
 
-C. Messages from your IP (*) are temporarily rejected - **Wildcard**
-![Wildcard](../Images/flood-patterns-4.png)
+	C. Messages from your IP (\*\) are temporarily rejected - **Wildcard**
+	![Wildcard](../Images/flood-patterns-4.png)
 
+	D. Message deferred: please try again in a few minutes - **Substring**
+	![Substring](../Images/flood-patterns-5.png)
 
-Message deferred: please try again in a few minutes - **Substring**
-![Substring](../Images/flood-patterns-5.png)
+4. Once the pattern text is tested click on the *'Apply pattern'* button.
+5. Fill in the next two fields that would be appropriate for the corresponding server response. *'Pause communications (seconds)'* allows you to set the time for how long the pause shall be applied once the response pattern matches. 
+6. *'Reduced capacity duration (seconds)'* is the time for how long these reduced sending throttle settings shall be applied. For example, if the server response is a type of  *'mail limit reached'*, then it would be wise to pause communication (e.g. 60 seconds) and send in reduced capacity for another 60 seconds.
+7. The final step is to specify the sending capacity that should be applied when the specified response is received. Follow the same procedure as you did to set up Email Throttles, but with values that would respect the specific server response condition. An advanced description on how to use Email Throttles can be found (here)(https://www.mailerq.com/user-guide/article/email-throttling).
+8. Once finished, click *'Store Flood Pattern'* and proceed to create new Flood Patterns or other features on the settings page.
 
-Once the pattern text is tested click on the *'Apply pattern'* button.
-Fill in the next two fields that would be appropriate for the corresponding server response. *'Pause communications (seconds)'* allows you to set the time for how long the pause shall be applied once the response pattern matches. 
-*'Reduced capacity duration (seconds)'* is the time for how long these reduced sending throttle settings shall be applied. For example, if the server response is a type of  *'mail limit reached'*, then it would be wise to pause communication (e.g. 60 seconds) and send in reduced capacity for another 60 seconds.
-The final step is to specify the sending capacity that should be applied when the specified response is received. Follow the same procedure as you did to set up Email Throttles, but with values that would respect the specific server response condition. An advanced description on how to use Email Throttles can be found here .
-Once finished, click *'Store Flood Pattern'* and proceed to create new Flood Patterns or other features on the settings page.
-
-For questions and suggestions on the specific use case of Flood Patterns, feel free to reach out to one of our experts via info@mailerq.com.
+For questions and suggestions on the specific use case of Flood Patterns, feel free to reach out to one of our experts via [info@mailerq.com](mailto:info@mailerq.com).
 
 
 
