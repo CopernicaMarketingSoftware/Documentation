@@ -86,36 +86,27 @@ https://www.smtpeter.com/v1/dns/yourdomain.com/status
 ```
 
 SMTPeter vraagt je DNS Records op als je deze methode aanroept. Daarna worden deze 
-vergeleken met de aanbevolen instellingen. SMTPeter rapporteert je als er iets niet 
-klopt aan je instellingen. De output voor deze REST calls ziet er ongeveer zo uit:
+vergeleken met de aanbevolen instellingen. De output voor deze REST calls ziet er ongeveer zo uit:
 
 ```json
 {
     "dmarc":    "ok",
-    "dkim":     "perfect",
-    "spf":      "perfect",
-    "mx":       "error",
-    "a":        "perfect",
-    "remarks": {
-        "dmarc": "DMARC record not redirected to ours",
-        "mx":    "Bounce domain is not pointing to mail.smtpeter.com"
-    }
+    "dkim":     "error",
+    "spf":      "ok",
+    "mx":       "ok",
+    "a":        "ok",
+    "caa":      "ok",
+    "validation": "ok"
 }
 ```
 
-Je kunt zo makkelijk voor elke eigenschap zien of deze juist geconfigureerd 
-zijn.
+De eigenschappen "dmarc", "dkim", "spf" en "caa" geven de status van je DMARC, 
+DKIM, SPF en CAA records in je DNS aan. De "mx" en "a" eigenschappen vertellen je of 
+de MX en A records correct opgezet zijn. De "validation" eigenschap geeft aan 
+of je afzenderdomein correct ingesteld is.
 
-Zoals je in kunt zien in het voorbeeld, zijn er drie mogelijke waarden: "perfect", 
-"ok" en "error". De status moet natuurlijk perfect zijn als je onze suggesties 
-hebt gevolgd. Over het algemeen hoef je records niet meer aan te passen als ze
-eenmaal "perfect" zijn. Gebruik je niet onze aanbevolen instellingen en zijn de 
-records wel valide?? Dan staat je status op "ok". Dit gebeurt bijvoorbeeld 
-als je geen CNAME records hebt gebruikt voor het click domein, maar wel het 
-juiste IP adres hebt ingesteld.
-
-Tot slot, de eigenschap remarks wordt toegevoegd als een instelling niet op 
-"perfect" staat. Hierin vind je suggesties om je records te verbeteren.
+De mogelijke waardes zijn "ok" en "error". De "ok" status geeft aan dat je 
+correcte DNS records ingesteld hebt.
 
 ## Meer informatie
 
