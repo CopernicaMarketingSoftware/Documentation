@@ -140,7 +140,7 @@ of MailerQ when the Mail Transfer Agent receives a specific error from a
 receiving mail server.
 
 Read more about setting up Flood Patterns and other delivery settings in our
-[delivery throttling documentation](delivery-limits).
+[Delivery Throttling documentation](delivery-limits).
 
 ## DKIM Keys
 

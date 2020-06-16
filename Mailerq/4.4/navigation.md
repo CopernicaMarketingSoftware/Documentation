@@ -30,7 +30,7 @@
     * [MTA IPs](mgmt-ips "MTA IPs view of the management console")
     * [Domains](mgmt-domains "Domains view of the management console")
     * [Tags](mgmt-tags "Tag view of the management console")
-    * [Delivery throttling and Flood Patterns](mgmt-throttling "Managing delivery throttling via the management console")
+    * [Delivery Throttling and Flood Patterns](mgmt-throttling "Managing Delivery Throttling via the management console")
     * [DKIM Keys and ARC signing](mgmt-dkim "DKIM Keys view of the management console")
     * [Paused and redirected deliveries](mgmt-paused "Managing paused and redirected deliveries through the management console")
     * [Forced Errors](mgmt-forced "Blocking deliveries with a Forced Error")

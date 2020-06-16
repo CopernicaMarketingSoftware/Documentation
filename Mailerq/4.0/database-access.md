@@ -126,7 +126,7 @@ The following tables are created:
         <td>alternative delivery limits to use when certain responses come in</td>
     </tr>
     <tr>
-        <td>IPs</td>
+        <td>ips</td>
         <td>all MailerQ's IP addresses</td>
     </tr>
     <tr>
@@ -200,7 +200,7 @@ to just experiment with the management console, and then look at the data
 in this table.
 
 
-### The IPs table
+### The ips table
 
 On startup, MailerQ detects all IP addresses that are linked to the server,
 and stores these IP addresses in a database table. MailerQ does not use this

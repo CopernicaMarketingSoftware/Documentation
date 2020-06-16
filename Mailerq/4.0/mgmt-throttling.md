@@ -7,7 +7,7 @@ throttling settings for a single domain for all IP addresses or for all
 IP addresses.
 
 Read more about setting up global limits and other delivery settings in 
-our [delivery throttling documentation](delivery-limits).
+our [Delivery Throttling documentation](delivery-limits).
 
 ## Domain specific limits
 
