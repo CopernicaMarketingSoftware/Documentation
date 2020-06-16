@@ -27,7 +27,7 @@ queue where MailerQ picks them up to deliver them.
 ## Config file settings
 
 In the config file there are a number of variables that you can use
-to set the ports on which MailerQ should listen, and from which IPs MailerQ should
+to set the ports on which MailerQ should listen, and on which IPs MailerQ should
 accept incoming SMTP connections:
 
 ````

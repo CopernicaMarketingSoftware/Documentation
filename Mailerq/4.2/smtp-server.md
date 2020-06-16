@@ -33,7 +33,7 @@ up messages from the inbox queue, and store them in mailboxes or maildirs.
 ## Config file settings
 
 In the config file there are a number of variables that you can use
-to set the ports on which MailerQ should listen, and from which IPs MailerQ should
+to set the ports on which MailerQ should listen, and on which IPs MailerQ should
 accept incoming SMTP connections:
 
 ````
