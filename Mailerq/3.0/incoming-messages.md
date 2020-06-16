@@ -9,7 +9,7 @@ use the SMTP protocol to inject emails.
 ## Available ports
 
 In the config file there are a number of variables that you can use
-to set the ports on which MailerQ should listen, and from which ips MailerQ should
+to set the ports on which MailerQ should listen, and from which IPs MailerQ should
 accept incoming SMTP connections:
 
 ````
@@ -181,7 +181,7 @@ inbox queue if it came from a valid authenticated connection, or to the
 queue with refused messages if it came from an non-authenticated 
 client.
 
-## Local email addresses
+## Local Email Addresses
 
 MailerQ only accepts messages through SMTP when the connection has been 
 successfully authorized to send messages. In some cases you need to be 
@@ -189,6 +189,6 @@ able to accept messages to a specific (local) email address without having
 to authenticate first. 
 
 These can be set in the [MailerQ management console](management-console).
-All emails sent to specific addresses in the local email address list, will not 
+All emails sent to specific addresses in the Local Email Address list, will not 
 have to authenticate before sending and will be entered directly into the `rabbitmq-local`-queue. 
 

@@ -1,6 +1,6 @@
-# Management Console: Paused deliveries
+# Management Console: Paused Deliveries
 
-The Paused deliveries view shows you exactly what email deliveries are currently 
+The Paused Deliveries view shows you exactly what email deliveries are currently 
 paused. It shows which MTA is paused to which remote IP/domain and until 
 when the delivery is paused, and allows you to resume them.  You can
 manually pause email deliveries if necessary.  Manually paused MTAs are shown 

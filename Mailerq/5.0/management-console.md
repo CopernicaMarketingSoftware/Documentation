@@ -53,7 +53,7 @@ includes active web sockets.
 ## Setting up a secure management console
 
 If is a good idea to secure your management console, as it will also be
-used to manage private DKIM keys; by definition, these should be kept private 
+used to manage private DKIM Keys; by definition, these should be kept private 
 and thus not transferered over interceptable non-secure HTTP connections.
 
 The following configuration file variables are relevant for enabling 

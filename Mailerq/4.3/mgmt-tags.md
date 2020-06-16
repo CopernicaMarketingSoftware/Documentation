@@ -15,5 +15,5 @@ button, which will take you to a live overview of deliveries with this tag as th
 The green "Running" button allows you to pause deliveries with a certain tag, which will temporarily store
 these messages in a RabbitMQ queue belonging to the tag. Note however that pausing a tag is a temporary solution 
 and it is generally not advisable to keep messages in RabbitMQ if you do not plan on sending them.
-If you mean to block deliveries with a certain tag you can choose to configure a [forced error](mgmt-forced) instead of pausing the tag.
-Any forced error that is configured for a tag will be displayed on the tag overview page.
+If you mean to block deliveries with a certain tag you can choose to configure a [Forced Error](mgmt-forced) instead of pausing the tag.
+Any Forced Error that is configured for a tag will be displayed on the tag overview page.

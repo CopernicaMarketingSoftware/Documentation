@@ -1,9 +1,9 @@
 #  Email Throttle Schedules
 ## What are Email Throttle Schedules?
-**Email Throttle Schedules** is a functionality in MailerQ used for warming up IP addresses. When you put a new IP address into operation for sending, mailbox providers will initially be hesitant to accept large volumes of email from it. It is therefore important to gradually increase your sending speed and volume, a process also known as IP warm-up. This process allows mailbox providers to identify you as a legitimate sender. Warming up an IP address will minimize deliverability issues and maximize the results of your email campaigns. This warming up can easily be done with Email throttle schedules.
+**Email Throttle Schedules** is a functionality in MailerQ used for warming up IP addresses. When you put a new IP address into operation for sending, mailbox providers will initially be hesitant to accept large volumes of email from it. It is therefore important to gradually increase your sending speed and volume, a process also known as IP warm-up. This process allows mailbox providers to identify you as a legitimate sender. Warming up an IP address will minimize deliverability issues and maximize the results of your email campaigns. This warming up can easily be done with Email Throttle Schedules.
 
 ## What are IP warm-up possibilities in MailerQ?
-MailerQ IP warm-up is a two-step process using features *Email throttles* and *Email throttle schedules*. MailerQ allows you to set a pattern of which IPs to which ISPs you want to warm up as well as set a specific schedule. There can be a lot of different ways to specify your schedules, for example, for general use, for a certain ISP, an exponential warm-up schedule, a linear schedule etc. These schedules can be reused and changed for every new IP address that you are adding according to your needs and requirements. 
+MailerQ IP warm-up is a two-step process using features *Email throttles* and *Email Throttle Schedules*. MailerQ allows you to set a pattern of which IPs to which ISPs you want to warm up as well as set a specific schedule. There can be a lot of different ways to specify your schedules, for example, for general use, for a certain ISP, an exponential warm-up schedule, a linear schedule etc. These schedules can be reused and changed for every new IP address that you are adding according to your needs and requirements. 
 
 Once you successfully go through setting up Email Throttle Schedules, MailerQ will recognize the patterns and steps you created and start sending. The schedule day parameter will be incremented once per day for every combination of an IP to a domain it has sent that day.  That means that day 1 starts when the specific messages match the pattern combination (IP to ISP) and will move to the next scheduled step only once actual messages have been sent out. If you don't send any messages on a certain day, the schedule will not advance to the next step.
 
@@ -16,7 +16,7 @@ EXAMPLE ONLY: *Exponential IP warm-up schedule* for 30 days, increasing the thro
 Once we know how to warm up our cold IP(s) at a certain ISP, we'll have to create new Email Throttles for each step/increment (for this example day 1-4, day 5-9, day 10-14, and so on). We will need to create 7 *Email Throttles*. Make sure to not specify a pattern in these Email Throttles.  An advanced description on how to use Email throttles can be found [here](https://www.mailerq.com/user-guide/article/email-throttling). 
 
 In the MailerQ Management Console:
-1. Email throttling settings in MailerQ can be easily accessed through the Setting menu page (left side menu bar) > *'Email Throttling'*. Here, you can view, edit existing, and create new Email Throttles. Once you have added Email Throttles, they will appear in this panel. 
+1. Email Throttling settings in MailerQ can be easily accessed through the Setting menu page (left side menu bar) > *'Email Throttling'*. Here, you can view, edit existing, and create new Email Throttles. Once you have added Email Throttles, they will appear in this panel. 
 2. Click on the *'Create email throttle'*, a new window will appear, with a lot of choices and options.
 3. Adjust throttle settings:
 	- Specify a name to easily recognize the specific schedule and a day, in this example *'Exponential IP Warmup Schedule - Day 1'*. 
@@ -57,5 +57,5 @@ Image 4: Seven Exponential IP Warmup Schedules - Day 1,5,10,15,20,25 and 30
 
 At the end of the schedule the specified IPs will remain on the last determined Email throttle capacities. At this point you could either determine the last step to be matching the capacities specified by ISPs or you could move the IPs over to your other email throttle rules.
 
-For questions and suggestions on the specific use case of Email throttle schedules, feel free to reach out to one of our experts via [info@mailerq.com](mailto:info@mailerq.com)
+For questions and suggestions on the specific use case of Email Throttle Schedules, feel free to reach out to one of our experts via [info@mailerq.com](mailto:info@mailerq.com)
 

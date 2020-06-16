@@ -1,4 +1,4 @@
-# Rest API V1 Errors
+# REST API V1 Errors
 MailerQ offers very fine-grained control over delivery flow, and allows you to intercept it and forcing an error
 on any combination of pool/mta and domain.
 
@@ -69,7 +69,7 @@ the table below. All fields are optional.
 Do note that not all fields may be passed at the same time. `pool` and `mta` are mutually exclusive. 
 That means that they may not be supplied together, or they will result in a `400` response. 
 
-For example, the request below will install a forced error with code `421` to `hotmail.com` for a single campaign.
+For example, the request below will install a Forced Error with code `421` to `hotmail.com` for a single campaign.
 ```
 POST /v1/errors HTTP/1.0
 Content-Type: application/json

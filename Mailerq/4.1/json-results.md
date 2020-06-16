@@ -117,7 +117,7 @@ result of one delivery attempt. Every result object can have the following prope
     </tr>
     <tr>
         <td>mta</td>
-        <td>name of the receiving mta (reported when the connection was set up)</td>
+        <td>name of the receiving MTA (reported when the connection was set up)</td>
     </tr>
     <tr>
         <td>from</td>
@@ -169,7 +169,7 @@ used when the remote server returned an error code and/or human readable
 description to explain why the message was or was not accepted. 
 
 The "mta" property holds the name of the MTA that accepted the message.
-To get this mta name, MailerQ reads the answer from the initial welcome
+To get this MTA name, MailerQ reads the answer from the initial welcome
 message that the receiving server sent right after the connection was 
 set up.
 

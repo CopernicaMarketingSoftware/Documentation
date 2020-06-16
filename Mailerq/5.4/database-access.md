@@ -2,7 +2,7 @@
 
 MailerQ uses a relational database to store all sorts of configuration data
 and delivery settings. The data stored in the database includes the delivery
-throttles and DKIM keys. The database is read and updated by MailerQ, but you
+throttles and DKIM Keys. The database is read and updated by MailerQ, but you
 are free to write your own scripts and programs that also modify this data.
 
 MailerQ supports multiple database platforms: MySQL(5.5+), MariaDB(5.5+),
@@ -92,13 +92,13 @@ every minute.
 
 ## Threads for DNS lookups
 
-The private DKIM keys that are stored in the database can be configured to be
+The private DKIM Keys that are stored in the database can be configured to be
 verified against the public keys found in DNS. If this is enabled, MailerQ will
 do a DNS query for each DKIM key to see if the private key indeed matches the
 published public key. Keys that do not match will not be used.
 
 Running all these DNS queries may sometimes take a long time, especially if you
-have a lot of DKIM keys in your database. To speed things up, you can increase
+have a lot of DKIM Keys in your database. To speed things up, you can increase
 the number of threads that are used for these DNS queries. The "database-threads"
 config file option sets the number of threads to be used for DNS lookups that are
 triggered by a database reload:
@@ -187,13 +187,13 @@ The following tables are created:
 |-----------------------    |-----------------------------------------------------------------------|
 | capacity                  | all delivery capacities, eg max number of connections
 | capacity_rules            | capacity rules per domain / MTA IP   
-| dkim_keys                 | DKIM keys to sign outgoing mails
-| dkim_patterns             | rules that decide what DKIM keys to use
+| dkim_keys                 | DKIM Keys to sign outgoing mails
+| dkim_patterns             | rules that decide what DKIM Keys to use
 | dns                       | overridden dns lookups
-| errors                    | Forced errors
+| errors                    | Forced Errors
 | flood_responses           | alternative delivery limits to use when certain responses come in
 | ips                       | all MailerQ's IP addresses
-| locals                    | local email addresses
+| locals                    | Local Email Addresses
 | mtanames                  | alternative "EHLO" names
 | paused                    | deliveries on pause
 | response_actions          | response action, eg send mail from a different IP
@@ -213,7 +213,7 @@ holds the max number of connections that may be set up to a certain
 domain, or the max number of messages to send within a minute.
 
 The "localip" and "domain" columns  in this table can both be empty. If they are empty, the
-setting applies to all local ips and/or all domains. Only the most specific
+setting applies to all local IPs and/or all domains. Only the most specific
 record is used. Thus, if a mail is sent from IP 1.2.3.4 to domain example.com,
 the record with the same localip and same domain is used. If no such
 record exists, MailerQ looks for a record that only matches the domain or
@@ -253,7 +253,7 @@ programs or scripts can find out which IP addresses are available for sending
 out emails.
 
 
-### The dkim keys and patterns
+### The DKIM Keys and Patterns
 
 All DKIM private keys that are used for signing outgoing mails are stored
 in the "dkim_keys" table. Only the domain, the selector and the expire time for
@@ -269,7 +269,7 @@ whether the "sign" column holds a regular expression, or some other kind
 of pattern.
 
 
-### Local email addresses
+### Local Email Addresses
 
 Incoming mails are compared with the addresses stored in the local email
 address table. When there is a match, the mail is not sent to the regular
@@ -288,7 +288,7 @@ that it should send all mail that was originally planned to be sent from
 "1.2.3.4" to "example.com" to be sent from address "1.2.3.5" instead.
 
 
-### Paused deliveries
+### Paused Deliveries
 
 To pause deliveries from and/or to IP addresses or domains, you can insert
 records in the "paused" table. The "target" column in this table can hold

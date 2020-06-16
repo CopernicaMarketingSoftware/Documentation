@@ -19,12 +19,12 @@ Image 1: Management Console: Rewrite Rules overview page
 ### Creating new Rewrite Rules via the Management Console:
 1. Once on the Rewrite Rules overview page click on the *'Create a new Rewrite Rule'* button. A new window will appear to specify routing conditions.
 2. Specify a recognizable name (eg. Route to smarthost).
-3. In the Message selection part select the combination of MTA IP (or IP pool), target domain and a Tag that will trigger this specific routing action. 
+3. In the Message selection part select the combination of MTA IP (or IP Pool), target domain and a Tag that will trigger this specific routing action. 
 4. Once you click on *'Store rule'* you can specify rewrite conditions for that message selection by clicking on the *'Create rewrite condition'* button. A selection of several rewrite condition types will appear. You can base the condition on envelope address, subject line or any other property of the message object using JSON pointer notation. Select and specify the one you require, then create the condition.
 5. You can have the rule active indefinitely, or only during a certain specified timeframe.
 6. Click on *'Create rewrite action'* to select actions for that message. There are various actions you can choose from, including:
 	- Adding, setting and removing MTA IPs
-	- Setting or unsetting IP pools
+	- Setting or unsetting IP Pools
 	- Adding and removing tags
 	- Delaying or failing mail.
 	- Redirecting to a Smarthost

@@ -1,5 +1,5 @@
-# Rest API V1 Pools
-MailerQ offers IP pools for easy management of your sending IP addresses.
+# REST API V1 Pools
+MailerQ offers IP Pools for easy management of your sending IP addresses.
 
 ## GET
 
@@ -55,7 +55,7 @@ Content-Type: application/json
 
 ## POST
 
-A POST request to `pools` allows you to create a new IP pool. For the request format, see the table below. 
+A POST request to `pools` allows you to create a new IP Pool. For the request format, see the table below. 
 
 | Field | Required  | Type | Description
 |---|---|---|---|

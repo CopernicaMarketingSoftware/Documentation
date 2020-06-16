@@ -34,7 +34,7 @@
     * [Inject](rest-api-v1-inject "Publish raw JSON to REST API")
     * [Pauses](rest-api-v1-pauses "Pause delivery flow")
     * [Errors](rest-api-v1-errors "Stop delivery flow")
-    * [IP Pools](rest-api-v1-pools "Configure IP pools")
+    * [IP Pools](rest-api-v1-pools "Configure IP Pools")
     * [Suppressions](rest-api-v1-suppressions "Suppress delivery to email addersses or domains")
     * [External MTA IPs](rest-api-v1-externalmtas "Configure external MTA IPs")
 * [Examples](examples "MailerQ examples")

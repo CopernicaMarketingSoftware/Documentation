@@ -1,4 +1,4 @@
-# Management console: local email addresses
+# Management console: Local Email Addresses
 
 MailerQ features a [built in SMTP server](smtp-server).
 This SMTP server allows you to use SMTP to inject email into MailerQ. 
@@ -12,7 +12,7 @@ following queues:
 
 To decide whether an incoming message should be sent to the normal
 inbox queue, or to one of the other queues, you can use the management
-console the edit the list of local email addresses.
+console the edit the list of Local Email Addresses.
 
 All email addresses that are passed to the "RCPT TO" command are compared 
 with this list. If there is a match, the message will be published to 
@@ -21,7 +21,7 @@ the local queue instead of the inbox queue.
 
 ## Authentication
 
-The local email addresses are also used to decide whether authentication
+The Local Email Addresses are also used to decide whether authentication
 is required. If you've set an SMTP login and password in the config file 
 (or when a plugin handles authentication), MailerQ only accepts messages
 over secure and authenticated connections. Email messages that are sent
@@ -29,7 +29,7 @@ without using STARTTLS and without authentication, are normally rejected.
 
 However, emails sent to local addresses are always accepted, even when
 the client was not authenticated and/or when the connection was not secure.
-Clients that send a "RCPT TO" instruction with a local email address will
+Clients that send a "RCPT TO" instruction with a Local Email Address will
 always succeed in injecting their mail.
 
 

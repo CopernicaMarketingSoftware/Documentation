@@ -2,7 +2,7 @@
 
 MailerQ uses a relational database to store all sorts of configuration 
 data and delivery settings. The data stored in the database includes
-for example the delivery throttles and DKIM keys. The database is read
+for example the delivery throttles and DKIM Keys. The database is read
 and updated by MailerQ, but you are free to write your own scripts and
 programs that also modify this data.
 
@@ -126,20 +126,20 @@ The following tables are created:
         <td>alternative delivery limits to use when certain responses come in</td>
     </tr>
     <tr>
-        <td>ips</td>
+        <td>IPs</td>
         <td>all MailerQ's IP addresses</td>
     </tr>
     <tr>
         <td>dkim_keys</td>
-        <td>DKIM keys to sign outgoing mails</td>
+        <td>DKIM Keys to sign outgoing mails</td>
     </tr>
     <tr>
         <td>dkim_patterns</td>
-        <td>rules that decide what DKIM keys to use</td>
+        <td>rules that decide what DKIM Keys to use</td>
     </tr>
     <tr>
         <td>locals</td>
-        <td>local email addresses</td>
+        <td>Local Email Addresses</td>
     </tr>
     <tr>
         <td>delegates</td>
@@ -169,7 +169,7 @@ holds the max number of connections that may be set up to a certain
 domain, or the max number of messages to send within a minute.
 
 The "localip" and "domain" columns  in this table can both be empty. If they are empty, the
-setting applies to all local ips and/or all domains. Only the most specific
+setting applies to all local IPs and/or all domains. Only the most specific
 record is used. Thus, if a mail is sent from IP 1.2.3.4 to domain example.com,
 the record with the same localip and same domain is used. If no such 
 record exists, MailerQ looks for a record that only matches the domain or 
@@ -200,7 +200,7 @@ to just experiment with the management console, and then look at the data
 in this table.
 
 
-### The ips table
+### The IPs table
 
 On startup, MailerQ detects all IP addresses that are linked to the server,
 and stores these IP addresses in a database table. MailerQ does not use this
@@ -209,7 +209,7 @@ programs or scripts can find out which IP addresses are available for sending
 out emails.
 
 
-### The dkim keys and patterns
+### The DKIM Keys and Patterns
 
 All DKIM private keys that are used for signing outgoing mails are stored 
 in the "dkim_keys" table. Only the domain, the selector and the expire time for
@@ -225,7 +225,7 @@ whether the "sign" column holds a regular expression, or some other kind
 of pattern.
 
 
-### Local email addresses
+### Local Email Addresses
 
 Incoming mails are compared with the addresses stored in the local email
 address table. When there is a match, the mail is not sent to the regular
@@ -244,7 +244,7 @@ that it should send all mail that was originalle planned to be sent from
 "1.2.3.4" to "example.com" to be sent from address "1.2.3.5" instead.
 
 
-### Paused deliveries
+### Paused Deliveries
 
 To pause deliveries from and/or to IP addresses or domains, you can insert
 records in the "paused" table. The "target" column in this table can hold

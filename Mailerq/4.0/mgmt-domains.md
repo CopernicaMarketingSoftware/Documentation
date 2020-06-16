@@ -13,5 +13,5 @@ retrieval.
 -->
 
 Not every domain likes to receive email at high rates.  To throttle the number of
-emails sent to a specific domain, refer to the [Email throttling](mgmt-throttling) 
+emails sent to a specific domain, refer to the [Email Throttling](mgmt-throttling) 
 view.

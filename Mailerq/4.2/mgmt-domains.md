@@ -11,7 +11,7 @@ The current throttling settings applied to a domain can be reviewed in the "Emai
 section. Note that throttle settings are cascaded from general to specific, which means you may see
 more settings than you specified for the domain. Additionally, the domain may be throttled because of flood control.
 (you will be warned if this is the case)
-Refer to the [Email throttling page](mgmt-throttling) for more information about throttling and flood control.
+Refer to the [Email Throttling page](mgmt-throttling) for more information about throttling and flood control.
 If a throttle setting limits the amount of deliveries being sent it will be marked in red.
 
 The "Remote IPs" section lists the destination IPs found in the host's DNS record and indicates if there is
@@ -19,7 +19,7 @@ a problem with a specific IP.
 By pressing the green "Running" button you can pause deliveries to an individual IP. If an IP is paused, MailerQ
 will first look for other available IPs to send messages to; if no IP is found the message is put in a temporary queue in RabbitMQ.
 
-If one or more forced errors are configured for the domain they will appear in the "Forced errors" section.
+If one or more Forced Errors are configured for the domain they will appear in the "Forced Errors" section.
 
 To give you an idea of where your messages are in MailerQ, the "Queues" section contains counters indicating how many messages are 
 contained in each queue. MailerQ keeps an in-memory queue for the messages it plans to send as soon as possible, this is a fast

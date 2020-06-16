@@ -141,7 +141,7 @@ MailerQ allows you to set specific limits for each domain by settings these in t
 directly into the [database](database-access/). This makes it 
 possible to have different limits for mails sent to, for example gmail.com and hotmail.com. 
 
-To add them using the management console, all you have to do is go the the 'Email throttling' 
+To add them using the management console, all you have to do is go the the 'Email Throttling' 
 tab of the web-interface and press the 'add domain' button. Entering a domain name (e.g. Hotmail.com) 
 and pressing the 'add domain' button again, will take you to a form where you can add 
 limits for the domain. You can always remove or change throttling settings by clicking 
@@ -190,30 +190,30 @@ access documentation shows exactly which tables and which fields and field types
 [Read more about Database access](database-access).
 
 
-## Flood patterns
+## Flood Patterns
 
-Whilst email throttling can make sure you do not go over the limits set by receiving 
+Whilst Email Throttling can make sure you do not go over the limits set by receiving 
 parties most of the time, they will not stop mail servers from greylisting you all of 
 the time. However, when you do go over the limits, the receiving mail server often gives 
 a specific response, such as 'too many connections from your ip'. MailerQ allows you to 
 set Flood Patterns that activate when you get a specific response so you can temporarily 
 pause or slow down your email delivery.
 
-### Creating flood patterns
+### Creating Flood Patterns
 
-To set up a flood pattern you can either insert them directly into the [database](database-access) 
+To set up a Flood Pattern you can either insert them directly into the [database](database-access) 
 or add them using the management console. The database access documentation shows you 
 all you need to know about which tables are available, to add them using the management 
 console you have to go to the Flood Patterns tab and press 'create new pattern'. This will 
 take you to a form. 
 
 
-### Flood pattern creation form
+### Flood Pattern creation form
 
 The creation form has several fields you can set: 
 
 ### Name  
-Here you can name your flood pattern. We recommend using a descriptive name to make 
+Here you can name your Flood Pattern. We recommend using a descriptive name to make 
 it easy to recognize the pattern, for example: Limit the number of messages per connection. 
 
 
@@ -247,4 +247,4 @@ capacity form.
 
 After matchin a response and if you have set up reduced capacity, the delivery to the domain 
 will be slowed for the duration as set in the duration and capacity settings. The reduced 
-delivery capacity form is the same as the email throttling form we showed earlier. 
+delivery capacity form is the same as the Email Throttling form we showed earlier. 

@@ -1,4 +1,4 @@
-# Rest API V1 Injection
+# REST API V1 Injection
 
 MailerQ offers an HTTP injection API. Check out the [message format](json-messages) for the required structure of injected
 messages. 
