@@ -14,5 +14,6 @@ Hieronder vind je een wizard met veelgestelde vragen over bepaalde onderwerpen:
 [Websites](./support-wizard-websites)  
 [Webformulieren](./support-wizard-webformulieren)  
 [Enqûetes](./support-wizard-enquetes)  
-[Opvolgacties](./support-wizard-opvolgacties)  
+[Opvolgacties (Publisher)](./support-wizard-opvolgacties-publisher)  
+[Opvolgacties (Marketing Suite)](./support-wizard-opvolgacties-ms)  
 [Campagnes](./support-wizard-campagnes)  
