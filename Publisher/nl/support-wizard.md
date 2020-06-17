@@ -6,13 +6,18 @@ Hieronder vind je een wizard met veelgestelde vragen over bepaalde onderwerpen:
 [Javascript](./support-wizard-javascript)  
 [API](./support-wizard-api)
 
-## Copernica specifiek
+## Marketing Suite
 [Databases / selecties](./support-wizard-databases)   
 [Collecties / miniselecties](./support-wizard-collecties)  
-[Opvolgacties (Publisher)](./support-wizard-opvolgacties-publisher)  
-[Opvolgacties (Marketing Suite)](./support-wizard-opvolgacties-ms)  
-[E-mailings (Publisher)](./support-wizard-emailings-publisher)  
-[E-mailings (Marketing Suite)](./support-wizard-emailings-ms)  
+[Opvolgacties](./support-wizard-opvolgacties-ms)  
+[E-mailings](./support-wizard-emailings-ms)  
+[Campagnes](./support-wizard-campagnes)  
+
+## Publisher
+[Databases / selecties](./support-wizard-databases)   
+[Collecties / miniselecties](./support-wizard-collecties)  
+[Opvolgacties](./support-wizard-opvolgacties-publisher)  
+[E-mailings](./support-wizard-emailings-publisher)  
 [Campagnes](./support-wizard-campagnes)  
 [Websites](./support-wizard-websites)  
 [Webformulieren](./support-wizard-webformulieren)  
