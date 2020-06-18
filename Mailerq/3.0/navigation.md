@@ -4,7 +4,7 @@
 * [Send email](send-email "Send email with MailerQ")
 * [DKIM signing](dkim "Signing email with DKIM")
 * [Message properties](delivery-properties "Settings aditional delivery properties")
-* [Delivery throttling](delivery-limits "Delivery Throttling")
+* [Delivery Throttling](delivery-limits "Delivery Throttling")
 * [Incoming messages](incoming-messages "Incoming messages")
 * [Smarthost & debugging](smarthost "Smarthost & debugging")
 * [Delivery Status Notifications](sending-bounces "Delivery Status Notifications")

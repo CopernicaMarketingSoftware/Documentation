@@ -410,9 +410,9 @@ into inline "style=..." attributes in the HTML body.
 }           
 ````
 
-## DKIM keys
+## DKIM Keys
 
-You can include private DKIM keys in the JSON to let MailerQ sign the mail.
+You can include private DKIM Keys in the JSON to let MailerQ sign the mail.
 
 ````json
 {

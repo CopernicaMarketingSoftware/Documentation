@@ -15,7 +15,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [cluster-timeout](cluster#command-line-option)                           | Number of seconds the --list-cluster option waits
 | [cluster-verify](cluster#config-file-options)                            | Should the server certificate be verified (only used for amqps:// connections)
 | [database-address](database-access#database-settings-in-the-config-file) | Relational database for config data and delivery settings
-| [database-threads](database-access#threads-for-dns-lookups)              | Number of threads to use for DNS lookups for DKIM keys in the database when data is refreshed
+| [database-threads](database-access#threads-for-dns-lookups)              | Number of threads to use for DNS lookups for DKIM Keys in the database when data is refreshed
 | [database-ttl](database-access#time-to-live)                             | Time to live: Database reload interval (Default 600s)
 | [database-validate](database-access#fixing-values-in-the-database)       | Check and fix database settings on startup
 | [download-log-format](logging#download-logs)                             | Download log format

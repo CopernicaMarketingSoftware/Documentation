@@ -2,7 +2,7 @@
 
 If you want to completely block certain deliveries and don't plan on sending them at a later moment, you can
 manually force MailerQ to return an error whenever such a delivery is attempted. The Forced Errors view lists
-these forced errors and allows you to configure them.
+these Forced Errors and allows you to configure them.
 
 Deliveries can be blocked by specifying either the name of a tag or an MTA-domain combination, in which case you may use a 
 wildcard "*" to indicate that deliveries should be blocked from (or to) all IPs.

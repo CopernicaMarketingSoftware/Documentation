@@ -46,7 +46,7 @@ must still share the same values for the "cluster-address" and "cluster-exchange
 settings.
 
 It is also recommended to use the same relational database for each instance.
-By doing this, the instances use the same delivery throttles and DKIM keys.
+By doing this, the instances use the same delivery throttles and DKIM Keys.
 
 
 ## How does it work internally?

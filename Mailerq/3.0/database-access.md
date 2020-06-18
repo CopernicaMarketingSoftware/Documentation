@@ -98,7 +98,7 @@ The following tables are created
 *   [ips](documentation/database-access#ips "ips")
 *   [capacity](documentation/database-access#capacities "Capacity")
 *   [capacity_per_ip](documentation/database-access#capacities "Capacity per IP")
-*   [dkim_keys](documentation/database-access#dkim "DKIM keys")
+*   [dkim_keys](documentation/database-access#dkim "DKIM Keys")
 *   [dkim_patterns](documentation/database-access#dkim "DKIM patterns")
 *   [flood_responses](documentation/database-access#floodResponses "Flood Responses")
 
@@ -186,7 +186,7 @@ Data in this table is used to generate statistics. Since the data is never delet
 
 ### Table 'dkim_keys'
 
-The last table to discuss is the 'dkim_keys' table. This holds all DKIM keys that are used by MailerQ for signing the outgoing messages. Each record holds a domain name, DKIM selector, the algorithm to use and of course the private key. MailerQ reloads all DKIM keys every 10 minutes so it is advised to wait at least 10 minutes before you send out an email if you have just updated the database. DKIM keys stored via the management console are immediately active.
+The last table to discuss is the 'dkim_keys' table. This holds all DKIM Keys that are used by MailerQ for signing the outgoing messages. Each record holds a domain name, DKIM selector, the algorithm to use and of course the private key. MailerQ reloads all DKIM Keys every 10 minutes so it is advised to wait at least 10 minutes before you send out an email if you have just updated the database. DKIM Keys stored via the management console are immediately active.
 
 | Field name | Type            | Description                                                             |
 |------------|-----------------|-------------------------------------------------------------------------|

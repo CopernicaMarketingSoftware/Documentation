@@ -39,7 +39,7 @@ om restricties in te stellen. Deze expressies kunnen patronen herleiden en
 de uitkomst goed- of afkeuren. De volgende regex laat alleen postcodes toe
 die bestaan uit 4 getallen, gevolgd door twee letters (1000AA).
 
-`^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$`
+`/^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$/`
 
 ## Meer informatie
 

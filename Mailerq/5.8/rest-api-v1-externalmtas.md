@@ -1,4 +1,4 @@
-# Rest API V1 External MTAs
+# REST API V1 External MTAs
 MailerQ offers a setting to uses IP addresses that are not local to the server MailerQ is running on. We call these External MTAs.
 
 ## GET

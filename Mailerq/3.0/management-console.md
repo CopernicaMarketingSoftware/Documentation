@@ -56,7 +56,7 @@ location, you can change this dir with the `www-dir` variable.
 ## Setting up a secure management console
 
 If is a good idea to secure your management console, as it will also
-used to set up private DKIM keys, and such private keys are better
+used to set up private DKIM Keys, and such private keys are better
 kept private (hence the name) and not transfered over interceptable 
 non-secure HTTP connections.
 
@@ -122,9 +122,9 @@ example modify email throttle settings.
 ![MailerQ domains](../Images/mailerq-domains.png)
 
 
-## Email throttling
+## Email Throttling
 
-Setting up email throttling can be done in the MailerQ Management Console. 
+Setting up Email Throttling can be done in the MailerQ Management Console. 
 All throttling settings can be adjusted in real-time, making it easy to 
 improve your email delivery when needed. You can choose to set up 
 throttling settings for a single domain for all IP addresses or for all 
@@ -133,26 +133,26 @@ IP addresses.
 ![MailerQ domains](../Images/mailerq-email-throttling.png)
 
 
-## Flood patterns
+## Flood Patterns
 
-Flood patterns are rules that override the default throttling settings 
+Flood Patterns are rules that override the default throttling settings 
 of MailerQ when the Mail Transfer Agent receives a specific error from a
 receiving mail server.
 
-Read more about setting up flood patterns and other delivery settings in our
-[delivery throttling documentation](delivery-limits).
+Read more about setting up Flood Patterns and other delivery settings in our
+[Delivery Throttling documentation](delivery-limits).
 
-## DKIM keys
+## DKIM Keys
 
 MailerQ supports DKIM, Domain Key Identified Mail, a mehtod for email 
-authentication. Adding DKIM keys can be easily done in the management 
+authentication. Adding DKIM Keys can be easily done in the management 
 console.
 
 [Read more about signing email with DKIM](dkim "MailerQ DKIM documentation")
 
-## Paused deliveries
+## Paused Deliveries
 
-The paused deliveries tab in the Management Console of our Mail Transfer
+The Paused Deliveries tab in the Management Console of our Mail Transfer
 Agent shows you exactly what email deliveries are currently paused. It 
 shows which IP address is paused to which remote IP/domain and until 
 when the delivery is paused. You can also manually pause email 

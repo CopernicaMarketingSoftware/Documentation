@@ -56,7 +56,7 @@ Image 1: Management Console: Email Throttling overview page (example)
 2. Create a throttle name:
 Specify a recognizable throttle name or description (eg.* 'All IPs to gmail.com'*)
 3. Add a throttle pattern: 
-	- Specifying from which MTA IP address (or IP pools) to which domain this throttle will be linked. 
+	- Specifying from which MTA IP address (or IP Pools) to which domain this throttle will be linked. 
 	- Leaving any field blank will result with an "all" value, which means sending will happen from all unspecified IPs and/or to all unspecified domains. This "all" value is represented with an asterisk ("\*\"). 
 	- You can add multiple patterns to the same email throttle. Note that domain aliases (domains with similar MX records or similar MX IP addresses) are automatically recognized, so it won't be necessary to list all known aliases.
 4. Specify Delivery limits:

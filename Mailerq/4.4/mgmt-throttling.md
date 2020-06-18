@@ -1,6 +1,6 @@
-# Management Console: Email throttling view
+# Management Console: Email Throttling view
 
-Setting up email throttling can be done in the MailerQ Management Console. 
+Setting up Email Throttling can be done in the MailerQ Management Console. 
 All throttling settings can be adjusted in real-time, making it easy to 
 improve your email delivery when needed. You can choose to set up 
 throttling settings for a single domain for all IP addresses or for all 
@@ -9,7 +9,7 @@ IP addresses.
 ## Domain specific limits
 
 To add domain-specific limits using the management console, all you have to do 
-is go the the Email throttling view, and press the 'Add domain' button. Enter 
+is go the the Email Throttling view, and press the 'Add domain' button. Enter 
 a domain name (e.g. `hotmail.com`) and press the 'Add domain' button again.
 This will take you to a form where you can add limits for the domain. You can 
 always remove or change throttling settings by clicking on the domain in the 
@@ -58,13 +58,13 @@ Our database access documentation shows exactly which tables and which fields
 and field types MailerQ creates.  
 [Read more about database access](database-access).
 
-# Flood patterns view
+# Flood Patterns view
 
-Flood patterns are rules that override the default throttling settings 
+Flood Patterns are rules that override the default throttling settings 
 of MailerQ when the Mail Transfer Agent receives a specific error from a
 receiving mail server.
 
-Whilst email throttling can make sure you do not go over the limits set by 
+Whilst Email Throttling can make sure you do not go over the limits set by 
 receiving parties most of the time, they will not stop mail servers from 
 greylisting you all of the time. However, when you do go over the limits, the 
 receiving mail server often gives a specific response, such as "too many 
@@ -72,9 +72,9 @@ connections from your ip". MailerQ allows you to set Flood Patterns that
 activate when you get a specific response so you can temporarily pause or slow 
 down your email delivery.
 
-## Creating flood patterns
+## Creating Flood Patterns
 
-To set up a flood pattern you can either insert them directly into the 
+To set up a Flood Pattern you can either insert them directly into the 
 [database](database-access) or add them using the management console. The 
 database access documentation shows you all you need to know about which tables 
 are available, to add them using the management console you have to go to the 
@@ -84,7 +84,7 @@ The creation form has several fields you can set:
 
 ### Name  
 
-Here you can name your flood pattern. We recommend using a descriptive name to 
+Here you can name your Flood Pattern. We recommend using a descriptive name to 
 make it easy to recognize the pattern, like "Limit the number of messages per 
 connection". 
 

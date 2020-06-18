@@ -27,7 +27,7 @@ queue where MailerQ picks them up to deliver them.
 ## Config file settings
 
 In the config file there are a number of variables that you can use
-to set the ports on which MailerQ should listen, and from which ips MailerQ should
+to set the ports on which MailerQ should listen, and on which IPs MailerQ should
 accept incoming SMTP connections:
 
 ````
@@ -109,7 +109,7 @@ can be delivered). If you do not have to, it is therefore ofter faster to set up
 a firewall or an IP range to restrict access, than to require authentication.
 
 
-### Local email addresses
+### Local Email Addresses
 
 If you have a username and password installed, messages from unauthenticated 
 connections are normally rejected. However, if an incoming message is sent to 
@@ -151,7 +151,7 @@ field in the MIME header, you should use the "smtp-auth-results" config
 file variable. This variable can be set to a comma separated list holding 
 the possible values "local" and "nonlocal". If you set it to "local", the 
 authentication-results header will only be added to incoming emails that were 
-sent to a local email address. The "nonlocal" value does exactly the opposite.
+sent to a Local Email Address. The "nonlocal" value does exactly the opposite.
 
 
 ### Running behind HAProxy
@@ -255,7 +255,7 @@ smtp-extract:       true    (default: true)
 MailerQ can check whether incoming messages have valid DKIM signatures and
 whether the were sent from an IP address that is listed in SPF. You can
 enable this feature for _all_ incoming messages, or just for messages sent
-to local email addresses.
+to Local Email Addresses.
 
 ```
 smtp-check-spf:                 all

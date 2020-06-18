@@ -1,5 +1,5 @@
-# Rest API V1 Suppressions
-MailerQ offers suppression list functionality to prevent unwanted recipients from being tried and protect your reputation.
+# REST API V1 Suppressions
+MailerQ offers Suppression List functionality to prevent unwanted recipients from being tried and protect your reputation.
 
 ## GET
 
@@ -36,7 +36,7 @@ with the former also having the extended error code `5.1.1` and error descriptio
 
 ## POST
 
-A POST request allows you to create a new suppression list entry. For the request format, see the table below.
+A POST request allows you to create a new Suppression List entry. For the request format, see the table below.
 
 | Field | Required  | Type | Description
 |---|---|---|---|

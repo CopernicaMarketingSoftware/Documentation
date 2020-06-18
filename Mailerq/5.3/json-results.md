@@ -117,7 +117,7 @@ result of one delivery attempt. Every result object can have the following prope
     </tr>
     <tr>
         <td>mta</td>
-        <td>name of the receiving mta (reported when the connection was set up)</td>
+        <td>name of the receiving MTA (reported when the connection was set up)</td>
     </tr>
     <tr>
         <td>from</td>
@@ -169,7 +169,7 @@ used when the remote server returned an error code and/or human readable
 description to explain why the message was or was not accepted. 
 
 The "mta" property holds the name of the MTA that accepted the message.
-To get this mta name, MailerQ reads the answer from the initial welcome
+To get this MTA name, MailerQ reads the answer from the initial welcome
 message that the receiving server sent right after the connection was 
 set up.
 
@@ -512,7 +512,7 @@ that was issued by the receiving server. Both the "cipher" as the
 
 ## Overriding errors
 
-With the response pattern system, properties can be added to the result json. This is useful 
+With the Response Pattern system, properties can be added to the result json. This is useful 
 for your own classification and processing of messages, but there are also some special properties
 that can be used to override error handling logic.
 
@@ -540,6 +540,6 @@ that can be used to override error handling logic.
 </table>
 
 These properties are not set by MailerQ itself, but _can_ be set by setting these properties in
-a response pattern. If they are not present, MailerQ tries to figure out these properties by reasoning
+a Response Pattern. If they are not present, MailerQ tries to figure out these properties by reasoning
 about the response it got from the server.
 

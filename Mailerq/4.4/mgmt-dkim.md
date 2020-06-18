@@ -1,18 +1,18 @@
-# Management Console: DKIM keys and ARC signing
+# Management Console: DKIM Keys and ARC signing
 
 MailerQ supports DKIM (Domain Key Identified Mail) and ARC (Authenticated Received Chain), methods for email 
 authentication. Internally, MailerQ stores a list of private keys that
 are used for signing email messages. All messages that flow through
 MailerQ are matched with these keys, and get signed.
 
-The list of DKIM keys can be managed via the management console, or you
+The list of DKIM Keys can be managed via the management console, or you
 can access the database directly to insert or update the private keys. 
 Each of these keys can be used for DKIM and/or ARC signing.
 
 
-## Adding DKIM keys using the management console
+## Adding DKIM Keys using the management console
 
-To add a new DKIM key in the management console, simply go to the DKIM keys 
+To add a new DKIM key in the management console, simply go to the DKIM Keys 
 page and press the link to add a new DKIM key. Here you will see a 
 form to enter the domain name, selector and private key.
 
@@ -62,7 +62,7 @@ If you want to test the ARC algorithm first, you can visit our [ARC test page](h
 
 Although MailerQ has a powerful DKIM backend, the DKIM standards are quite complicated and signature
 verification may fail on a remote server for a variety of reasons.
-To get notified about these sorts of failures you may ask the target server to send failure reports for DKIM signatures that are not verifying properly. For DKIM keys specified in the management console this is done by ticking the corresponding box.
+To get notified about these sorts of failures you may ask the target server to send failure reports for DKIM signatures that are not verifying properly. For DKIM Keys specified in the management console this is done by ticking the corresponding box.
 
 Note that checking this box will only indicate to the remote server that you want to receive the reports.
 To specify on which address and how often you want to receive the reports, you should update your DNS records with the appropriate properties defined in [RFC 6651](https://tools.ietf.org/html/rfc6651).
@@ -99,9 +99,9 @@ A global pattern will sign ALL emails with the DKIM, no matter what from
 address is used. A global pattern is basically the same as using the "*" wildcard.
 
 
-## Adding DKIM keys to the message JSON
+## Adding DKIM Keys to the message JSON
 
-It is also possible to add DKIM keys to your email using the message JSON. 
+It is also possible to add DKIM Keys to your email using the message JSON. 
 It works just like all other [message properties](json-messages). 
 A JSON message holding a DKIM key will look something like this: 
 
@@ -128,12 +128,12 @@ the key.
 
 ## Sign a single message with multiple keys
 
-MailerQ allows you to sign a single message with multiple DKIM keys. 
+MailerQ allows you to sign a single message with multiple DKIM Keys. 
 This can be used for ESP feedback loops, such as [Google.com's FBL](https://support.google.com/mail/answer/6254652?hl=en). 
 These feedback loops allow you as sender to detect abuse of your services. 
 
-To install multiple DKIM keys in the JSON, you can assign an array of keys
-in the JSON data. A JSON message with mulitple DKIM keys will look something like this: 
+To install multiple DKIM Keys in the JSON, you can assign an array of keys
+in the JSON data. A JSON message with mulitple DKIM Keys will look something like this: 
 
 ````json
 {

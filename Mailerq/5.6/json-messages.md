@@ -332,7 +332,7 @@ However, we do recommend recommend that you set this property if you have many I
 
 ## IP Pools
 
-Outside of being able to set single IP addresses, a pool can also be specified. First, setup an IP pool
+Outside of being able to set single IP addresses, a pool can also be specified. First, setup an IP Pool
 in the Management Console and assign some IPs to the pool. Then, to set the pool, you may simply set the 
 identifier in the json:
 ````
@@ -374,7 +374,7 @@ uses this "nextattempt" property when a mail cannot be delivered because of
 greylisting. The message is then published back to the outbox queue 
 with a "nextattempt" property set to a couple of minutes after the initial attempt.
 
-This property is also set when response patterns cause a mail to be retried again after
+This property is also set when Response Patterns cause a mail to be retried again after
 a specified interval.
 
 
@@ -443,9 +443,9 @@ into inline "style=..." attributes in the HTML body.
 }           
 ````
 
-## DKIM keys
+## DKIM Keys
 
-You can include private DKIM keys in the JSON to let MailerQ sign the mail.
+You can include private DKIM Keys in the JSON to let MailerQ sign the mail.
 
 ````json
 {

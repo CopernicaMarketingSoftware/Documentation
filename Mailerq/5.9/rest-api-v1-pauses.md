@@ -1,4 +1,4 @@
-# Rest API V1 Pauses
+# REST API V1 Pauses
 
 MailerQ offers very fine-grained control over delivery flow, and allows you to pause almost any combination
 of pool/mta and domain/ip.

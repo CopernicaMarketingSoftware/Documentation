@@ -201,7 +201,7 @@ set it to 0, no DSN parameters can be passed to "MAIL FROM" and "RCPT TO".
 
 MailerQ can also be used to recognize incoming DSN messages. If you submit
 a DSN message to the SMTP port of MailerQ, and MailerQ detects that both the 
-recipient address is on the list of local email addresses **and** that the message
+recipient address is on the list of Local Email Addresses **and** that the message
 holds a report message, it publishes this report to the queue for incoming
 reports. The name for this queue can be set in the config file with the 
 "rabbitmq-reports" variable.

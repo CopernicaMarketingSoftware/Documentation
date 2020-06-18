@@ -32,7 +32,7 @@ Image 1: Management Console: Flood Pattern overview page
 	![Substring](../Images/flood-patterns-5.png)
 
 4. Once the pattern text is tested click on the *'Apply pattern'* button.
-5. Fill in the next two fields that would be appropriate for the corresponding server response. *'Pause communications (seconds)'* allows you to set the time for how long the pause shall be applied once the response pattern matches. 
+5. Fill in the next two fields that would be appropriate for the corresponding server response. *'Pause communications (seconds)'* allows you to set the time for how long the pause shall be applied once the Response Pattern matches. 
 6. *'Reduced capacity duration (seconds)'* is the time for how long these reduced sending throttle settings shall be applied. For example, if the server response is a type of  *'mail limit reached'*, then it would be wise to pause communication (e.g. 60 seconds) and send in reduced capacity for another 60 seconds.
 7. The final step is to specify the sending capacity that should be applied when the specified response is received. Follow the same procedure as you did to set up Email Throttles, but with values that would respect the specific server response condition. An advanced description on how to use Email Throttles can be found (here)(https://www.mailerq.com/user-guide/article/email-throttling).
 8. Once finished, click *'Store Flood Pattern'* and proceed to create new Flood Patterns or other features on the settings page.
