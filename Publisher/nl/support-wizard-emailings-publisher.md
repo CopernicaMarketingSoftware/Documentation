@@ -15,6 +15,8 @@
 - [(Sub)profiel gegevens inladen](./loadprofile-and-loadsubprofile)
 - [Hoe voeg ik een BCC of andere header toe?](./emailings-headers)
 - [Hoe werkt het inladen van externe content?](./emailings-publisher-external-content)
+- [AMP versie aanmaken](./amp)
+- [Opvolgacties toevoegen](./follow-up-manager-publisher)
 
 ### Statistieken
 - [Uitleg over de statistieken](./emailings-publisher-statistics)
