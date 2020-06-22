@@ -22,4 +22,4 @@
 
 ## Vraag niet gevonden?
 Heb je het antwoord op je vraag hier niet gevonden?  
-Stuur je vraag in via een e-mail naar [support@copernica.com](mailto:support@copernica.com)
+Stuur dan je vraag in via een e-mail naar [support@copernica.com](mailto:support@copernica.com)
