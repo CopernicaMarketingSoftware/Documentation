@@ -8,17 +8,17 @@ Hieronder vind je een wizard met veelgestelde vragen over bepaalde onderwerpen:
 
 ## Marketing Suite
 [Databases / selecties](./support-wizard-databases)   
-[Collecties / miniselecties](./support-wizard-collecties)  
-[Opvolgacties](./support-wizard-opvolgacties-ms)  
+[Collecties / miniselecties](./support-wizard-collections)  
+[Opvolgacties](./support-wizard-followups-ms)  
 [E-mailings](./support-wizard-emailings-ms)  
-[Campagnes](./support-wizard-campagnes)  
+[Campagnes](./support-wizard-campaigns)  
 
 ## Publisher
 [Databases / selecties](./support-wizard-databases)   
-[Collecties / miniselecties](./support-wizard-collecties)  
-[Opvolgacties](./support-wizard-opvolgacties-publisher)  
+[Collecties / miniselecties](./support-wizard-collections)  
+[Opvolgacties](./support-wizard-followups-publisher)  
 [E-mailings](./support-wizard-emailings-publisher)  
-[Campagnes](./support-wizard-campagnes)  
+[Campagnes](./support-wizard-campaigns)  
 [Websites](./support-wizard-websites)  
-[Webformulieren](./support-wizard-webformulieren)  
-[Enqûetes](./support-wizard-enquetes)  
+[Webformulieren](./support-wizard-webforms)  
+[Enqûetes](./support-wizard-surveys)  
