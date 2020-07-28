@@ -33,10 +33,10 @@ letter 'M', dan kun je in de *fields* parameter de waarde "voornaam=~M%" plaatse
 
 Wil je alle profielen met '@copernica' ophalen, gebruik je "emailaddress=~%@copernica%".
 
-## Timestamp field
+## Timestamp parameter
 
-Sommige Publisher calls voor statistieken ondersteunen ook een 'timestamp' 
-parameter. Deze kan gebruikt worden net als alle andere 'fields' parameters 
+Sommige Publisher calls voor statistieken ondersteunen ook een *timestamp* 
+parameter. Deze kan gebruikt worden net als alle andere *fields* parameters 
 om bijvoorbeeld de statistieken voor een periode op te vragen. Door operatoren 
 te gebruiken kunnen tijdstempels in YYYY-MM-DD hh:mm:ss format vergeleken worden. 
 Dat ziet er bijvoorbeeld zo uit:
@@ -119,7 +119,7 @@ $parameters = array(
 print_r($api->get("database/{$databaseID}/profiles", $parameters));`
 ```
 
-## Toepasselijke methodes
+## Relevante methodes
 
 De **fields** parameter kun je gebruiken bij de volgende API methodes:
 
