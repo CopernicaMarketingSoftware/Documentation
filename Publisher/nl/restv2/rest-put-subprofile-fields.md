@@ -39,7 +39,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->put("subprofile/{$subprofielID}/fields", array(), $data);
+$api->put("subprofile/{$subprofielID}/fields", $data, array());
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

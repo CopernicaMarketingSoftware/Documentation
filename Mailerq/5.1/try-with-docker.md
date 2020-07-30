@@ -11,9 +11,10 @@ docker pull mailerq/mailerq:5.1
 ```
 
 ## Running
-Now, create a trial if you have not already done so. Then, the simplest method is to 
-copy your license key from [here](https://www.mailerq.com/product/license/trial) and 
-supply it to Docker inside an environmental variable. To do this, you can run 
+Now, [create a trial](https://www.mailerq.com/request-trial) if you have not already done so.
+Then, the simplest method is to copy your license key from
+[here](https://www.mailerq.com/product/license) and supply it to Docker inside an
+environmental variable. To do this, you can run 
 ```
 docker run -e LICENSE_KEY=<your_license_key> -it mailerq/mailerq:5.1
 ```
