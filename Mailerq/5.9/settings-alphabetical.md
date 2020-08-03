@@ -6,10 +6,6 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 
 | Setting                                                                  | Description
 |--------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| [download-blacklist](responsiveemail#firewall-bypass)                    | IP addresses from which no resources can be downloaded
-| [download-cache](responsiveemail#config-file-variables)                  | Address of the cache (Used in ResponsiveEmail)
-| [download-ttl](responsiveemail#config-file-variables)                    | Max time to keep downloaded resources in the cache (Used in ResponsiveEmail)
-| [download-whitelist](responsiveemail#firewall-bypass)                    | Exceptions to the download-blacklist
 | [cluster-address](cluster#config-file-options)                           | Address for a cluster to share between instances
 | [cluster-exchange](cluster#config-file-options)                          | Set cluster exchange
 | [cluster-timeout](cluster#command-line-option)                           | Number of seconds the --list-cluster option waits
@@ -18,8 +14,12 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [database-threads](database-access#threads-for-dns-lookups)              | Number of threads to use for DNS lookups for DKIM Keys in the database when data is refreshed
 | [database-ttl](database-access#time-to-live)                             | Time to live: Database reload interval (Default 600s)
 | [database-validate](database-access#fixing-values-in-the-database)       | Check and fix database settings on startup
+| [download-blacklist](responsiveemail#firewall-bypass)                    | IP addresses from which no resources can be downloaded
+| [download-cache](responsiveemail#config-file-variables)                  | Address of the cache (Used in ResponsiveEmail)
 | [download-log-format](logging#download-logs)                             | Download log format
 | [download-log-file](logging#download-logs)                               | Download log filename
+| [download-ttl](responsiveemail#config-file-variables)                    | Max time to keep downloaded resources in the cache (Used in ResponsiveEmail)
+| [download-whitelist](responsiveemail#firewall-bypass)                    | Exceptions to the download-blacklist
 | [download-proxy](responsiveemail)                                        | Route outgoing download requests through a proxy
 | [dsn-advertise](sending-bounces#receiving-dsn-settings)                  | Toggle announcement about DSN extension and parameters
 | [dsn-notify](sending-bounces#mime-headers-and-config-file-settings)      | Events that trigger a notify
@@ -47,8 +47,9 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [rabbitmq-local](rabbitmq-config#rabbitmq-queues)                        | Your RabbitMQ local queue 
 | [rabbitmq-lazy](rabbitmq-config#persisten-and-durable-settings)          | Lazy/non lazy RabbitMQ queues (default: non-lazy)
 | [rabbitmq-maxpriority](rabbitmq-config#priority-queues)                  | Enable the use of priority queues 
-| [rabbitmq-qos](rabbitmq-config#max-messages)                             | Set a maximum number of messages simultaneously consumed per consumer thread
-| [rabbitmq-flush-qos](rabbitmq-config#max-messages)                       | Set a maximum number of messages simultaneously consumed during flush
+| [rabbitmq-qos](rabbitmq-config#quality-of-service)                       | Set a maximum number of messages simultaneously consumed per consumer thread
+| [rabbitmq-minqos](rabbitmq-config#quality-of-service)                    | Set a minimum number of messages simultaneously consumed per consumer thread
+| [rabbitmq-flush-qos](rabbitmq-config#quality-of-service)                 | Set a maximum number of messages simultaneously consumed during flush
 | [rabbitmq-outbox](rabbitmq-config#rabbitmq-queues)                       | Your RabbitMQ outbox queue (must be unique if multiple instances of MailerQ are used)
 | [rabbitmq-persistent](rabbitmq-config#persistent-and-durable-settings)   | Persistent/not persistent RabbitMQ queues (default: false)
 | [rabbitmq-publishers](rabbitmq-config#multiple-threads)                  | Amount of publisher threads (default: 1)
@@ -91,6 +92,8 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [smtp-sink-port](smarthost#using-smarthost-for-debugging)                | SMTP sink port
 | [smtp-sink-username](smarthost#using-smarthost-for-debugging)            | SMTP sink username
 | [smtp-threads](smtp-server#other-settings)                               | Number of threads started for SMTP traffic
+| [smtp-timeout](smtp-server#other-settings)                               | Max idle time on incoming SMTP connections
+| [smtp-protection](smtp-server#other-settings)                            | Enable SMTP incoming IP blacklist
 | [smtp-unmappable-ips](smtp-server#config-file-settings)                  | List of unmappable IP addresses
 | [smtp-username](smtp-server#controlling-access)                          | Username for authenticating to SMTP server
 | [spamassassin-host](smtp-server#testing-incoming-messages)               | Address for SpamAssassin daemon 

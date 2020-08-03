@@ -78,6 +78,10 @@ like this:
             "from": "1.2.3.4",
             "to": "10.11.12.13",
             "messages": 1,
+            "sent" : {
+                "connection": 355,
+                "data": 0
+            },
             "code": 451,
             "status": "5.0.0",
             "description": "Please come back later",
@@ -90,6 +94,10 @@ like this:
             "from": "1.2.3.4",
             "to": "10.11.12.14",
             "messages": 4,
+            "sent" : {
+                "connection": 5876,
+                "data": 4923
+            },
             "code": 250,
             "status": "2.0.0",
             "dsn": true,
@@ -142,6 +150,14 @@ result of one delivery attempt. Every result object can have the following prope
     <tr>
         <td>messages</td>
         <td>number of messages sent over the same connection</td>
+    </tr>
+    <tr>
+        <td>sent/connection</td>
+        <td>Amount of bytes sent over the same connection</td>
+    </tr>
+    <tr>
+        <td>sent/data</td>
+        <td>Amount of bytes of MIME (no SMTP commands) sent over the same connection</td>
     </tr>
     <tr>
         <td>code</td>
@@ -209,7 +225,15 @@ the emails back. This way, these properties can be logged using the [flexible lo
         "subject": "Test Subject",
         "headers": {
             "x-example-property": "some-mime-property"
-        }
+        },
+        "envelope": { 
+            "domain": "bounce.my-domain.com", 
+            "local": "my-sender-address" 
+        },
+        "recipient": { 
+            "domain": "example.org", 
+            "local": "info" 
+        } 
     }
 }
 ```

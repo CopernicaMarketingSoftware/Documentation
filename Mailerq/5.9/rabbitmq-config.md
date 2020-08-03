@@ -411,14 +411,16 @@ The above setting only affects how MailerQ *publishes* messages to RabbitMQ.
 Messages consumed from RabbitMQ can still both be compressed or not, because 
 MailerQ always inspects the "content-encoding" header from the AMQP envelope.
 
-## Maximum Messages
+## Quality of Service
 
 When consuming from the outbox queue, or flushing a queue, MailerQ loads a certain 
-number of messages at the same time. These numbers can be tweaked to lower memory usage.
+number of messages at the same time, also called QoS. 
+These numbers can be tweaked to lower memory usage.
 
 ```
 rabbitmq-qos:         1000    (default: 1000)
 rabbitmq-flush-qos:   1000    (default: 1000)
+rabbitmq-minqos:	  100	  (default: 100)
 ```
 
 This number is interpreted per consumer thread. Therefore, the maximum total 
@@ -431,3 +433,7 @@ The "rabbitmq-flush-qos" can be set to lower the loaded messages when a flush ha
 Although MailerQ doesn't load in the messages, their bodies will be sent over TCP and 
 so the TCP buffer may be fully populated with all this data. As this can happen for 
 anything that is unpaused or resumes sending, a lot may be flushed at once.
+
+"rabbitmq-minqos" is the lower bound for the QoS when MailerQ decides to scale back
+for performance reasons. The QoS will never go below this number, unless there aren't
+enought messages to reach it.

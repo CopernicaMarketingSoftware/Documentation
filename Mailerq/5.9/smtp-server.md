@@ -286,6 +286,8 @@ The following variables may also be useful when you set up an SMTP server:
 ```
 smtp-maxsize:           100MB
 smtp-threads:           1
+smtp-timeout:			300
+smtp-protection:		true
 ```
 
 In the initial SMTP handshake the client advertises its capabilities 
@@ -299,6 +301,14 @@ we recommend to set it close to the number of CPU's that you have in your
 machine. 
 
 **Important!** The "smtp-threads" variable is meaningful for _outgoing_ connections as well!
+
+When a client connects to the SMTP server but stops responding before the 
+transaction is complete, MailerQ will wait for a response for the amount
+of seconds set in "smtp-timeout"
+
+To protect your incoming SMTP server, you can set a list of IP addresses
+that you suspect of abuse. "smtp-protection" enables blocking of these 
+addresses when they connect.
 
 
 ## Multiple IP addresses

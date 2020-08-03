@@ -42,7 +42,7 @@ A POST request to allows you to add a new External MTA. For the request format, 
 | public_ip  | yes | string | The external IP address to use for sending
 | local_ip | yes | string | The local IP address to bind to
 | connect_port  | yes | int | The port to use for the external server
-| protocol  | no | string | The protocal to use to connect to the external server (currently only 'nat' is supported)
+| protocol  | yes | string | The protocal to use to connect to the external server ('nat' / 'socks' / 'http')
 
 For example, the request below will create the External MTA from the first example under GET with a json formatted body
 ```
