@@ -30,6 +30,32 @@ of any length. You could specifically fetch all profiles with a first name
 starting with an 'M' by adding "firstname=~M%" to the fields parameter, for 
 example.
 
+## ID field
+
+Some Publisher calls concerning statistics and results support the ID parameter.
+It can be used just like the other fields parameters and is used to gather the
+statistics or results that we have logged under the ID. This is especially useful
+when you want to keep track of all our statistics or results yourself. Just store
+the last ID you have obtained from your last call and only request results with
+IDs that are larger. The following example demonstrates how to use the paramter:
+
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+
+// insert your access token
+$api = new CopernicaRestApi("your-access-token", 2);
+
+// parameters to pass to the call
+$parameters = array(
+    'orderby'   =>  'country',
+    'fields'    =>  array("id>100000")
+);
+
+// do the call, and print result
+print_r($api->get("publisher/{$emailingID}/abuses", $parameters));`
+```
+
 ## Timestamp field
 
 Some Publisher calls concerning statistics support the timestamp parameter. 
@@ -55,7 +81,7 @@ $parameters = array(
 print_r($api->get("publisher/{$emailingID}/abuses", $parameters));`
 ```
 
-## Special fields
+## Special fields in databases
 
 The fields you use to make comparisons with are always fields from the database.
 If you make comparisons like "hometown==amsterdam" of "gender==male",

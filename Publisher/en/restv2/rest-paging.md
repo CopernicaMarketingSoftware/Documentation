@@ -36,6 +36,9 @@ and the *limit* property states the maximum number of objects to be returned.
 The *count* property contains the number of objects actually returned.
 In the above example, 100 objects were returned whose identifiers range from 50 to 149. 
 If you don't add a limit to your call the default value of 100 will be used.
+Note that although using a start is very convenient, obtaining data can become
+slow when its value is very large. In these cases you may want to filter specific
+IDs. For more information you can check our [Fields parameter page](./rest-fields-parameter.md)
 
 The property *total* contains the total number of available objects.
 In the above example the total is 335, which means it takes at least 4 calls
