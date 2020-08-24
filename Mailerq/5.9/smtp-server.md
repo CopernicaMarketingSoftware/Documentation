@@ -117,8 +117,9 @@ to the config file, with the list of ciphers that you'd like to support.
 By default, the whole universe can connect to the inbound SMTP server. You may
 want to restrict this. If you set a username and password in the config file,
 all inbound connections must first authenticate before they can inject emails.
-With the "smtp-range" setting you can also restrict the IP addresses from which
-you want to allow incoming email.
+For authentication to work, [secure connections](#secure-connections) have to 
+be configured first. With the "smtp-range" setting you can also restrict the 
+IP addresses from which you want to allow incoming email.
 
 ```
 smtp-range:         192.168.0.0/16
