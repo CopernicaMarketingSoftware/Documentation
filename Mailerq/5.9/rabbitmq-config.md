@@ -116,11 +116,13 @@ rabbitmq-reports:   reports
 rabbitmq-refused:   refused
 ```
 
-If you do not set an explicit "inbox" queue, all incoming messages 
+By default rabbitmq-inbox is set to "outbox", so all incoming messages 
 are automatically published to the "outbox" queue. This means that all 
-incoming messages are automatically sent out again. Leaving this "inbox" queue 
-empty is a very common thing to do, especially if you set up MailerQ as a 
-retransmitter.
+incoming messages are automatically relayed. You can set the "inbox"
+queue to a separate queue, if you for want to process the incoming messages
+in a different way.
+Leaving this "inbox" queue empty discards received messages that are not 
+recognized as reports or messages for local email addresses.
 
 The "refused", "reports" and "local" settings are optional too. If you leave
 them empty, MailerQ simply publishes all incoming message to the inbox queue
