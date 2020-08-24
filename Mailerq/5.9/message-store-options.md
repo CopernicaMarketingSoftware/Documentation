@@ -24,7 +24,8 @@ A number of different storage systems are supported: Couchbase, MongoDB
 or plain files stored on the local file system. In theory it is also
 possible to use MySQL, SQLite or PostgreSQL, but it is better
 not to use a relational database, because such systems are not optimized
-for document storage.
+for document storage. Messages can also be stored in an AWS S3 bucket,
+which can be useful when running MailerQ on AWS already.
 
 The address of the message store can be set with the "storage-address"
 config file variable. The following addresses are supported:
@@ -36,6 +37,7 @@ storage-address:        sqlite:///path/to/database/file
 storage-address:        mysql://user:password@hostname/databasename
 storage-address:        postgresql://user:password@hostname/databasename
 storage-address:        dir:///path/to/directory
+storage-address:		s3://accesskey:secretkey@region/bucketname
 ```
 
 If you have a cluster of Couchbase or MongoDB servers, you can split the
