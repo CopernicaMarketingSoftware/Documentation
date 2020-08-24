@@ -37,6 +37,10 @@ De property *start* bevat het aantal overgeslagen objecten, en *limit* het
 aantal tot waar de output is beperkt. In bovenstaand voorbeeld wordt dus een
 lijst van 100 objecten geretourneerd, waarbij de eerste 50 zijn overgeslagen.
 Als je geen limiet mee geeft zal het aantal objecten automatisch tot 100 worden beperkt.
+Merk op dat het gebruik van start, hoewel erg eenvoudig, bij grote waardes het proces
+van data ophalen erg vertraagd. In dit soort gevallen is het beter om data voor
+bepaalde IDs op te halen. Hoe dit precies kan is te lezen op onze 
+[Fields parameter pagina](./rest-fields-parameter.md)
 
 De property *total* bevat het totaal aantal beschikbare elementen. In bovenstaand
 voorbeeld staat het op 335. Aangezien er maar 100 elementen op zijn gevraagd zouden 
