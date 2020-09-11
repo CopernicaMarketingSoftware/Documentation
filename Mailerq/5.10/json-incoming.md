@@ -211,7 +211,7 @@ added to the JSON.
         "domain": "example.com",
         "selector": "dkim",
         "header.i": "fsjfksjfslkdf",
-        "header.b", "sodfidjsfdsjfsfjs"
+        "header.b": "sodfidjsfdsjfsfjs"
     }, {
         "dmarc": "pass",
         "header.from": "whatever@example.com"
