@@ -18,7 +18,7 @@ MailerQ offers granular control on sending capacities that you can specify with 
 
 ### Limits for active SMTP connections can control:
 
-- the maximum amount of bytes or messages sent over a single connection;
+- the maximum number of bytes or messages sent over a single connection;
 - the minimum messages sent over a connection before an additional connection is opened;
 - idle SMTP connections timeouts;
 - number of seconds a remote IP is marked as offline after a connection;

@@ -33,6 +33,33 @@ letter 'M', dan kun je in de *fields* parameter de waarde "voornaam=~M%" plaatse
 
 Wil je alle profielen met '@copernica' ophalen, gebruik je "emailaddress=~%@copernica%".
 
+## ID parameter
+
+Sommige Publisher calls voor statistieken en resultaten ondersteunen ook een *ID*
+paramter. Deze kan gebruikt worden net als alle andere *fields* parameters om
+bijvoorbeeld de statistieken die onder een bepaald ID zijn gelogd op te halen.
+Dit is met name handig als je alle statistieken die wij bijhouden ook zelf wilt
+opslaan. Bewaar het laatste ID dat je hebt verkregen via je laatste call en bij
+de volgende call haal je alleen IDs op die hoger zijn. Dat ziet er bijvoorbeeld
+zo uit:
+
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+
+// insert your access token
+$api = new CopernicaRestApi("your-access-token", 2);
+
+// parameters to pass to the call
+$parameters = array(
+    'orderby'   =>  'country',
+    'fields'    =>  array("id>100000")
+);
+
+// do the call, and print result
+print_r($api->get("publisher/{$emailingID}/abuses", $parameters));`
+```
+
 ## Timestamp parameter
 
 Sommige Publisher calls voor statistieken ondersteunen ook een *timestamp* 

@@ -8,7 +8,7 @@ HTTP GET call naar de volgende URL:
 `https://api.copernica.com/v2/publisher/deliveries?access_token=xxxx`
 
 Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
-voor het **timestamp** veld.
+voor het **id** en **timestamp** veld.
 
 ## Teruggegeven velden
 

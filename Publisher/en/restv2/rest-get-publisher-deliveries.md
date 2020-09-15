@@ -7,7 +7,7 @@ retrieve all deliveries by sending an HTTP GET call to the following URL:
 `https://api.copernica.com/v2/publisher/deliveries?access_token=xxxx`
 
 This method also support the use of the [fields parameter](./rest-fields-parameter) 
-for the **timestamp** field.
+for the **id** and **timestamp** field.
 
 ## Returned fields
 
