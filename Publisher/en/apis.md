@@ -1,16 +1,20 @@
 # Automatic links
 
-There are multiple ways to link Copernica to other applications. 
-Copernica has two APIs to read or edit data in Copernica and due to 
-[*Webhooks*](./webhooks) it's possible to get notifications of clicks, opens and 
-bounces in real time.
+Copernica can be linked to other applications using our API's. API's 
+(Application Programming Interfaces) allow for exchange of data and form 
+the bridge between applications. Copernica has a SOAP API as well as a 
+REST API, both of which can be used to read and edit information. Another 
+option to link applications is through the use of [*Webhooks*](./webhooks), 
+which Copernica uses to send real-time notifications about events like 
+clicks, opens and bounces.
 
 ## REST vs. SOAP
 
-Copernica has two different APIs: a REST API and a SOAP API, of which 
-the REST API is the newest. We advise to use the REST API if possible, 
-because it is easier to use. It's also faster due to the lack of complex 
-SOAP layer between calls.
+Before you start using an API you should know which API fits your needs 
+best. SOAP, for example, is language and platform independent, while REST 
+depends on HTTP. SOAP is also standardized and uses extensive XML files, while 
+our REST API uses smaller, more manageable JSON files. The REST API is faster 
+because of this. If you are new to APIs we recommend starting with REST.
 
 ## WebHooks
 
