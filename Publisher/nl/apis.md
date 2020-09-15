@@ -1,18 +1,21 @@
 # Automatische koppelingen
 
-Je kunt Copernica op verschillende manieren koppelen aan andere applicaties.
-Copernica heeft verschillende API's om gegevens vanuit Copernica uit te
-lezen of gegevens in Copernica bij te werken, en door middel van [*WebHooks*](./webhooks) 
-kan Copernica je *real time* notificaties sturen als er een event als
-een *klik*, *open* of *bounce* plaatsvindt.
+Copernica kan aan andere applicaties gekoppeld worden met behulp van onze 
+API's. API's (Application Programming Interfaces) maken het mogelijk 
+om data uit te wisselen en vormen zo de brug tussen applicaties. 
+Copernica heeft een SOAP API en een REST API, waarmee je gegevens uit kunt 
+lezen of bewerken. Een andere optie om applicaties te koppelen is het gebruik 
+van [*WebHooks*](./webhooks), waarmee Copernica je *real time* notificaties 
+kan sturen van acties als *kliks*, *opens* en *bounces*.
 
 ## REST vs. SOAP
 
-Copernica heeft twee verschillende API's: een REST API en een SOAP API. De 
-REST API is de nieuwste van de twee. We raden je daarom aan om, als het even
-kan, niet de SOAP API maar deze REST API te gebruiken: die is eenvoudiger 
-in het gebruik, en ook een stuk sneller omdat er geen ingewikkelde SOAP laag 
-tussen de aanroepen zit. 
+Voor je een API begint te gebruiken is het belangrijk om te weten welke API 
+het beste aansluit bij je doeleinden. SOAP is bijvoorbeeld taal- en platformonafhankelijk, 
+terwijl REST afhankelijk is van HTTP. SOAP is ook gestandaardizeerd en gebruikt 
+uitgebreide XML bestanden, terwijl onze REST API kleinere formats als JSON gebruikt, die 
+sneller verstuurd kunnen worden. De REST API is ook simpeler om te leren. 
+Als je nog nooit een API hebt gebruikt raden we je dan ook aan om te beginnen met REST.
 
 ## WebHooks
 
