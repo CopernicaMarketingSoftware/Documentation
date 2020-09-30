@@ -5,9 +5,9 @@ completely self-contained, and allows you to run MailerQ without the hassle of
 setting up its dependencies in under a minute.
 
 ## Installing
-First, to install the 5.4 version of the MailerQ image, run 
+First, to install the latest version of the MailerQ image, run 
 ```
-docker pull mailerq/mailerq:5.4
+docker pull mailerq/mailerq
 ```
 
 ## Running
@@ -16,15 +16,15 @@ Then, the simplest method is to copy your license key from
 [here](https://www.mailerq.com/product/license) and supply it to Docker inside an
 environmental variable. To do this, you can run 
 ```
-docker run -e LICENSE_KEY=<your_license_key> -it mailerq/mailerq:5.4
+docker run -e LICENSE_KEY=<your_license_key> -it mailerq/mailerq
 ```
 with your license key filled in. This way, the image will automatically download a 
 short-lived license on each startup, ideal for testing.
 
-Alternatively, you can manually download the `license.txt` file, and bind the image license
+Alternatively, if you already have a `license.txt` file, you can bind the image license
 file to the host file. To accomplish this, you can run
 ```
-docker run -v `pwd`/license.txt:/etc/mailerq/license.txt -it mailerq/mailerq:5.4
+docker run -v `pwd`/license.txt:/etc/mailerq/license.txt -it mailerq/mailerq
 ```
 with the `license.txt` in the current working directory.
 
