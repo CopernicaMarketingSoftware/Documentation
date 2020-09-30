@@ -45,8 +45,8 @@ based on this template. See the complete overview of [SOAP API methods](https://
 Use version 2 (or higher) to be sure your application still works when the [login](https://www.copernica.com/en/support/apireference/login) method is removed.
 [Read how to upgrade](./soap-api-upgrade-login.md "Find out what you need to do")
 
-#### version 2
-- [PHP script](../downloads/soaptest_php_2-0.zip "SOAP API example script for PHP")
+#### version 2.1
+- [PHP script](../downloads/soaptest_php_2-1.zip "SOAP API example script for PHP")
 
 #### version 1.6
 - [PHP script](../downloads/soaptest_php_1-6.zip "SOAP API example script for PHP")
