@@ -97,7 +97,7 @@ example(12, new ExampleClass());
 // invalid, wrong objects
 example(12, new DateTime(), new DateTime());
 
-// invalid, "x" and "z" are no objects
+// invalid, "y" and "z" are no objects
 example("x", "y", "z");
 ```
 
