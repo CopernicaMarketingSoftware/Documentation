@@ -3,7 +3,7 @@
 To run MailerQ, you need a valid license file. You can get
 free trial license files and commercial license files from the MailerQ website.
 
-**[Click here to get a license](/product/license)**
+**[Click here to get a license](/request-trial)**
 
 If you already have a license, but want to install a newer version of MailerQ,
 you need a new license file. This new license file can also be retrieved for free
