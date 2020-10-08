@@ -50,7 +50,7 @@ om te garanderen dat jouw applicatie blijft werken wanneer de oude [login](https
 niet meer wordt ondersteund. Lees voor meer informatie de [upgrade-instructies](./soap-api-upgrade-login.md "Upgrade SOAP login")
 
 #### version 2.1
-- [PHP script](../downloads/soaptest_php_2-1.zip "SOAP API example script for PHP")
+- [PHP script](https://www.copernica.com/Resources/soaptest_php_2.1.zip "SOAP API example script for PHP")
 
 #### versie 1.6
 - [PHP script](../downloads/soaptest_php_1-6.zip "SOAP API example script for PHP")
