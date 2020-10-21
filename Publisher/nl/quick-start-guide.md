@@ -1,7 +1,7 @@
 # Een snelle start
 
 Voordat je campagnes kunt versturen met Copernica zal je wat instellingen moeten doorvoeren. Als eerste dien je een sender domain in te stellen zodat Copernica e-mails kan versturen voor je.
-Hiervoor dien je een aantal aanpassingen door te voeren in de DNS instellingen van je domein. Hierna zullen wij ervoor zorgen dat je e-mails succesvol worden afgeleverd.
+Hiervoor dien je een aantal aanpassingen door te voeren in de DNS-instellingen van je domein. Hierna zullen wij ervoor zorgen dat je e-mails succesvol worden afgeleverd.
 De tweede stap is het importeren van nieuwe gegevens in je database. Na het importeren kun je selecties en condities aanmaken om profielen te segmenteren voor het versturen van de e-mail.
 
 Nadat je deze stappen hebt doorlopen kun je beginnen met het aanmaken van je eerste template.
