@@ -14,8 +14,8 @@ Om je te helpen hebben we een kleine checklist samengesteld met punten die je mo
 Als deze lijst is afgewerkt, ben je in staat om je eerste bulkmailing te versturen.
 
 - [Instellen van een sender domain](./quick-sender-domain-guide)
-- [Instellen van een database](./quick-database-guide)
-- [Aanmaken van je eerste template](./quick-mailing-guide)
+- [Instellen van een database](./database-profiles)
+- [Aanmaken van je eerste template](./emailings-ms-templates)
 
 ## Meer informatie
 
@@ -23,4 +23,4 @@ Wil je realtime updates ontvangen over je verzonden mailings? Voeg WebHooks toe 
 
 * [Begrippenlijst](./definitions)
 * [WebHooks](./webhooks)
-* [Database selecties](./selections-introduction)
+* [Database selecties](./database-selections-introduction)
