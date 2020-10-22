@@ -439,3 +439,17 @@ anything that is unpaused or resumes sending, a lot may be flushed at once.
 "rabbitmq-minqos" is the lower bound for the QoS when MailerQ decides to scale back
 for performance reasons. The QoS will never go below this number, unless there aren't
 enought messages to reach it.
+
+## Throttle
+
+To ensure messages are not lost, MailerQ uses publisher confirms by default. This makes sure
+that messages are not acknowledged _before_ RabbitMQ has accepted responsibility for it. This will
+inherently tie it to the quality of service settings. However, to further tweak performance, a
+throttle can be set. This throttle makes sure that only a certain number of messages are actually
+sent over the socket. The advantage of this is that it reduces the load on RabbitMQ, and keeps the
+socket open to bidirectional communication. It used to be the case that MailerQ could not adequately
+respond to flow control by RabbitMQ, eventually causing TCP backpressure, shutting down communication.
+
+```
+rabbitmq-throttle:      100     (default: 100)
+```

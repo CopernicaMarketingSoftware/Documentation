@@ -11,7 +11,6 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [cluster-timeout](cluster#command-line-option)                           | Number of seconds the --list-cluster option waits
 | [cluster-verify](cluster#config-file-options)                            | Should the server certificate be verified (only used for amqps:// connections)
 | [database-address](database-access#database-settings-in-the-config-file) | Relational database for config data and delivery settings
-| [database-threads](database-access#threads-for-dns-lookups)              | Number of threads to use for DNS lookups for DKIM Keys in the database when data is refreshed
 | [database-ttl](database-access#time-to-live)                             | Time to live: Database reload interval (Default 600s)
 | [database-validate](database-access#fixing-values-in-the-database)       | Check and fix database settings on startup
 | [download-blacklist](responsiveemail#firewall-bypass)                    | IP addresses from which no resources can be downloaded
@@ -24,8 +23,6 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [dsn-advertise](sending-bounces#receiving-dsn-settings)                  | Toggle announcement about DSN extension and parameters
 | [dsn-notify](sending-bounces#mime-headers-and-config-file-settings)      | Events that trigger a notify
 | [dsn-ret](sending-bounces#passing-dsn-settings)                          | Send full mail (FULL) or headers (HDRS) for notifications
-| [dns-threads](dns-settings)                                              | Number of threads used for DNS lookups
-| [dns-getaddrinfo](dns-settings)                                          | Whether the MailerQ resolver should rely on getaddrinfo() library calls
 | [dns-min-ttl](dns-settings)                                              | Minimum TTL to respect when doing domain lookups
 | [error-log](logging#error-logs)                                          | Full path to the error log
 | [heartbeat-enabled](other-configuration#user-statistics)                 | Toggle user statistics (default: true)

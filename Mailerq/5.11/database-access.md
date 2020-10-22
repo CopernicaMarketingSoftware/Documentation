@@ -90,28 +90,6 @@ If the database-ttl is set to 60 seconds, like we did above, the data is reloade
 every minute.
 
 
-## Threads for DNS lookups
-
-The private DKIM Keys that are stored in the database can be configured to be
-verified against the public keys found in DNS. If this is enabled, MailerQ will
-do a DNS query for each DKIM key to see if the private key indeed matches the
-published public key. Keys that do not match will not be used.
-
-Running all these DNS queries may sometimes take a long time, especially if you
-have a lot of DKIM Keys in your database. To speed things up, you can increase
-the number of threads that are used for these DNS queries. The "database-threads"
-config file option sets the number of threads to be used for DNS lookups that are
-triggered by a database reload:
-
-````
-database-threads:       10
-````
-
-The default value for this variable is one. If you notice that it takes a lot
-of time to start MailerQ because of all these DKIM key checks, you can
-experiment with higher values.
-
-
 ## Rebuilding the database
 
 When MailerQ starts, it normally first connects to the database and checks whether
