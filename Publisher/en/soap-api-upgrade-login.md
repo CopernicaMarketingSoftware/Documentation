@@ -14,7 +14,7 @@ secure system based on [access-tokens](./soap-api-authentication).
 4. That's it, fire away!
 
 **Instructions for all other users**
-1. Create a new application and access token in your [API access](https://www.copernica.com/en/api) dashboard. You can choose to setup one application with multiple tokens or one token per application. There are no costs involved with setting up applications or tokens.
+1. Create a new application and access token in your [API access](https://ms.copernica.com/#/admin/account/access-tokens) dashboard. You can choose to setup one application with multiple tokens or one token per application. There are no costs involved with setting up applications or tokens.
 2. Stop calling the deprecated [login](https://www.copernica.com/en/support/apireference/login) method.
 3. Update your client code to always send a valid `access_token` parameter with each call to the SOAP API.
 4. That's it, fire away!
