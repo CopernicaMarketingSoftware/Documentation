@@ -6,24 +6,20 @@ to the following URL:
 `https://api.copernica.com/v2/collection/$id/subprofiles?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the collection you
-want to fetch the subprofiles of. Since this can be 
-quite a time-consuming call it is possible to use the 'dataonly' property 
-to speed it up.
+want to request subprofiles from.
 
 ## Available parameters
 
 The following parameters can be added to the URL as variables for the call:
 
-* **start**: first subprofile to fetch
-* **limit**: length of the batch to fetch
-* **total**: boolean value to show total of available subprofiles
-* **fields**: optional parameter to only fetch subprofiles with certain field values
-* **orderby**: name or ID of field to sort subprofiles by (default = subprofile ID)
-* **order**: Ascending (asc) or descending (desc) order.
-* **dataonly**: Boolean. If set to true the method will only retrieve the profile data, 
-allowing the call to be processed faster.
+* **start**: First subprofile to fetch.
+* **limit**: Length of the batch to fetch.
+* **total**: Boolean. If set to false, the total number of available subprofiles is not calculated/returned; this can speed up API calls.
+* **fields**: Only fetch subprofiles with certain field values.
+* **orderby**: Name or ID of field to sort subprofiles by (default = subprofile ID).
+* **order**: Whether the subprofiles should be ordered in ascending (asc) or descending (desc) order.
 
-More information on the **start**, **limit** and **total** parameters can be found in 
+More information on the **start**, **limit** and **total** parameters can be found in
 the [article on paging](rest-paging).
 
 The parameter fields can be used to select subprofiles. In case you only want 

@@ -6,22 +6,21 @@ en beschikbaar via het volgende adres:
 `https://api.copernica.com/v2/database/$id/profiles?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
-database waar je de profielen van wilt opvragen. Deze methode kan traag zijn 
-als de database veel profielen bevat. Om deze methode sneller te maken kan 
-er gebruik gemaakt worden van de 'dataonly' parameter.
+database waar je de profielen van wilt opvragen.
 
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **fields**: Optionele parameter om alleen profielen op te halen die matchen met de opgegeven velden.
+* **start**: Eerste profiel dat wordt opgevraagd.
+* **limit**: Lengte van de batch die wordt opgevraagd.
+* **total**: Boolean. Wanneer deze waarde 'false' heeft wordt het totaal aantal beschikbare/matchende profielen niet berekend/getoond; dit kan API calls sneller maken.
+* **fields**: Vraag alleen profielen op die matchen met de opgegeven velden.
 * **orderby**: Naam of ID van het veld waarop je de profielen wilt sorteren (standaard is dit het ID van elk profiel).
-* **order**: Moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
-* **dataonly**: Boolean. Wanneer deze de waarde 'true' heeft wordt alleen de 
-profieldata geladen, waardoor de methode sneller uitgevoerd kan worden.
+* **order**: Moeten de profielen oplopend of aflopend (asc of desc) worden gesorteerd?
 
-De paging parameters **start**, **limit** en **total** parameters worden 
-ook ondersteund. Meer over deze parameters vind je in het [artikel over paging](rest-paging). 
+Meer informatie over de betekenis van de **start**, **limit** en **total** parameters
+vind je in het [artikel over paging](rest-paging).
 
 De parameter **fields** kun je gebruiken om profielen te selecteren. Als je bijvoorbeeld
 alleen profielen wil opvragen waarbij de waarde van het veld "land" gelijk is aan

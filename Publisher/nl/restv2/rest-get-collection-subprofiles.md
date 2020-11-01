@@ -6,25 +6,20 @@ call naar de volgende URL:
 `https://api.copernica.com/v2/collection/$id/subprofiles?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van de 
-collectie waar je de subprofielen van wilt opvragen. Deze methode kan traag zijn 
-als de database veel profielen bevat. Om deze methode sneller te maken kan 
-er gebruik gemaakt worden van de 'dataonly' parameter.
-
+collectie waar je de subprofielen van wilt opvragen.
 
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **start**: eerste profiel dat wordt opgevraagd
-* **limit**: lengte van de batch die wordt opgevraagd
-* **total**: toon wel/niet het totaal aantal beschikbare/matchende profielen
-* **fields**: optionele parameter om alleen subprofielen op te halen die matchen met de opgegeven velden
-* **orderby**: naam of id van het veld waarop je de subprofielen wilt sorteren (standaard is dit het ID van elk subprofiel)
-* **order**: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
-* **dataonly**: Boolean. Wanneer deze de waarde 'true' heeft wordt alleen de 
-profieldata geladen, waardoor de methode sneller uitgevoerd kan worden.
+* **start**: Eerste subprofiel dat wordt opgevraagd.
+* **limit**: Lengte van de batch die wordt opgevraagd.
+* **total**: Boolean. Wanneer deze waarde 'false' heeft wordt het totaal aantal beschikbare/matchende subprofielen niet berekend/getoond; dit kan API calls sneller maken.
+* **fields**: Vraag alleen subprofielen op die matchen met de opgegeven velden.
+* **orderby**: Naam of ID van het veld waarop je de subprofielen wilt sorteren (standaard is dit het ID van elk subprofiel).
+* **order**: Moeten de subprofielen oplopend of aflopend (asc of desc) worden gesorteerd?
 
-Meer informatie over de betekenis van de **start**, **limit** en **total** parameters 
+Meer informatie over de betekenis van de **start**, **limit** en **total** parameters
 vind je in het [artikel over paging](rest-paging). 
 
 De parameter **fields** kun je gebruiken om subprofielen te selecteren. Als je bijvoorbeeld
