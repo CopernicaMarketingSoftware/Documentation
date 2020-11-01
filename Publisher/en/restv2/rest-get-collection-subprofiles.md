@@ -26,17 +26,19 @@ allowing the call to be processed faster.
 More information on the **start**, **limit** and **total** parameters can be found in 
 the [article on paging](rest-paging).
 
-The parameter fields can be used to select subprofiles. In case you only want 
+The **fields** parameter can be used to select subprofiles. In case you only want 
 to fetch the profiles where the value of the field "country" is equal to 
 "Netherlands" you can assert this in the *fields* field. For more information on 
 using the *fields* parameter you can consult the [article on the fields parameter](rest-fields-parameter).
 
-The variable order can be set to the name or the ID of a field to sort the 
-subprofiles by it. There are also three special values to sort by:
+The **orderby** parameter can have the name or the ID of a field assigned to 
+it. When you do so, subprofiles are sorted by the value in that field. 
+Instead of a field to sort on, you can also assign one of the following 
+special values to **orderby**:
 
-* **id**: default value, sort subprofiles by ID
-* **random**: return subprofiles in a random order
-* **modified**: subprofiles are ordered by last modified
+* **id**: The default value; profiles are ordered based on their ID.
+* **random**: Subprofiles are randomly ordered.
+* **modified**: Subprofiles are ordered based on the *modified* timestamp.
 
 ## Returned fields
 

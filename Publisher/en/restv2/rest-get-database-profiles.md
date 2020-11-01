@@ -29,10 +29,10 @@ if you only want to request profiles where the field “country” equals
 this parameter can be found in the 
 [article on the “fields” parameter](rest-fields-parameter).
 
-The **order** variable can have the name or the ID of a field assigned to 
+The **orderby** parameter can have the name or the ID of a field assigned to 
 it. When you do so, profiles are sorted by the value in that field. 
 Instead of a field to sort on, you can also assign one of the following 
-special values to “order”:
+special values to **orderby**:
 
 * **id**: The default value, profiles are ordered based on their ID
 * **random**: Profiles are randomly ordered

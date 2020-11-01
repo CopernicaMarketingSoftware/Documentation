@@ -25,9 +25,10 @@ use this parameter to only fetch profiles for which the field "country" equals
 "France". More information about using this parameter can be found in our
 [article about this fields parameter](./rest-fields-parameter.md).
 
-You can assign the name or numeric identifier of a field to the parameter **order**.
-This will order the profiles on the given field.
-Besides a name or ID, you can also pass a couple of special values to this parameter:
+The **orderby** parameter can have the name or the ID of a field assigned to 
+it. When you do so, profiles are sorted by the value in that field. 
+Instead of a field to sort on, you can also assign one of the following 
+special values to **orderby**:
 
 * **id**: The default value, profiles are ordered based on their ID
 * **random**: Profiles are randomly ordered
