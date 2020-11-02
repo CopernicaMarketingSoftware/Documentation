@@ -55,6 +55,10 @@ installed if you want to use the Couchbase storage engine, and the Mongo C Drive
 is needed to connect to MongoDB.
 
 
+## S3 specifics
+
+MailerQ user for S3 bucket needs `s3:PutLifecycleConfiguration` permission to setup the lifecycle policy (equivalent of TTL in other message stores).
+
 ## MongoDB specifics
 
 The address string to connect to MongoDB is directly passed to the MongoDB
