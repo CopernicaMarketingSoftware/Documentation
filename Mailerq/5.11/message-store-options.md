@@ -57,7 +57,7 @@ is needed to connect to MongoDB.
 
 ## S3 specifics
 
-MailerQ user for S3 bucket needs `s3:PutLifecycleConfiguration` permission to setup the lifecycle policy (equivalent of TTL in other message stores).
+Currently S3 is only supported if the specified S3 user is also the owner of the S3 bucket.
 
 ## MongoDB specifics
 
