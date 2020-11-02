@@ -11,7 +11,7 @@ should be sent in the request body.
 
 Please keep in mind that this is a HTTP PUT request. This method is an
 exception to the rule that the Copernica REST API makes no distinction between
-HTTP POST and HTTP GET calls. For this method you must use HTTP PUT. If you
+HTTP POST and HTTP PUT calls. For this method you must use HTTP PUT. If you
 send a POST request, you [would be making a brand new profile](./rest-post-database-profiles.md). 
 
 ## Supported parameters
@@ -25,10 +25,10 @@ the request body. You can pass the following parameters to the URL:
 If you set this to 1, the method immediately returns and proceeds in 
 the background with updating profiles.
 
-The **fields** parameter is required. By passing this parameter to the the method
-you prevent that you overwrite all your profiles with a single API call. Only
-the profiles that match with the supplied fields are modified. You can find more
-information about this parameter in [the article about this parameter](./rest-fields-parameter.md).
+The **fields** parameter is required, to prevent overwriting all profiles in a
+database with a single API call. Only the profiles that match with the supplied
+fields are modified. You can find more information about this parameter in
+[the article about this parameter](./rest-fields-parameter.md).
 
 If there are no profiles that match the supplied **fields**, and when you have set
 **create** to 1, the REST API creates a brand new profile using
@@ -41,7 +41,7 @@ to immediately return, while it updates the profiles in the background.
 ## Body data
 
 Besides the parameters that you append to the URL, you must also include a
-request body in the POST request. The body has two optional components: 
+request body in the PUT request. The body has two optional components:
 'fields' and 'interests'. Both will be added to the new profile. The interests 
 can be added from a list ("football") or with an associative array 
 ("football" => 1, "baseball" => 0). Fields must be an associative array.

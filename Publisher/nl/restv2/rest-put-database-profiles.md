@@ -24,15 +24,15 @@ het kopje body data. Aan de URL kun je de volgende parameters toevoegen:
 * **create**: boolean parameter om aan te geven dat een nieuw profiel moet worden aangemaakt indien er geen matchende profielen zijn
 * **async**: boolean parameter om aan te geven dat de profiel asynchroon moeten worden aangemaakt. De API methode returned dan onmiddellijk, en gaat in de achtergrond verder met het bijwerken van profielen
 
-De **fields** parameter is verplicht. Deze parameter voorkomt dat je met een
-enkele API call alle profielen in de database bijwerkt. Alleen de matchende
-profielen worden bijgewerkt. Meer informatie over het gebruik van deze **fields**
+De **fields** parameter is verplicht, om te voorkomen dat een enkele API call
+alle profielen in de database kan bijwerken. Alleen de matchende profielen
+worden bijgewerkt. Meer informatie over het gebruik van deze **fields**
 parameter kun je vinden in een
 [artikel over de fields parameter](rest-fields-parameter).
 
-Als er geen matchende profielen zijn, dat kun je met de **create** parameter
-aangeven dat een nieuw profiel moet worden aangemaakt op basis van de meegegeven
-request data.
+Met de **create** parameter kun je aangeven dat als er geen matchende profielen
+zijn, een nieuw profiel moet worden aangemaakt op basis van de meegegeven
+body data.
 
 Het bijwerken van meerdere profielen kan een tijdrovende operatie zijn, met name
 als er veel matchende profielen zijn. Als je niet zo lang op een API
@@ -42,7 +42,7 @@ dan onmiddellijk, terwijl de operatie in de achtergrond wordt voortgezet.
 ## Body data
 
 Naast de parameters die je aan de URL meegeeft, moet je ook body data aan het
-POST request toevoegen. In de body van het verzoek kun je twee optionele arrays meegeven: 
+PUT request toevoegen. In de body van het verzoek kun je twee optionele arrays meegeven:
 'fields' bevat de velden voor het profiel en 'interests' de interesses. 
 De interesses kunnen als een associatieve array ('voetbal' => 1, 'honkbal' => 0) 
 of als een lijst ('voetbal') meegegeven worden. De profielvelden moeten 
@@ -78,7 +78,7 @@ $parameters = array(
     'create'    =>  0
 );
 
-// velden voor het nieuwe profiel
+// velden die bewerkt moeten worden
 $fields = array(
     'firstname' =>  'John',
     'lastname'  =>  'Doe',
