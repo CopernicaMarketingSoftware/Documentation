@@ -186,9 +186,9 @@ like your customers or orders. The relevant API calls can be found below.
 | GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                               | Fetch the profile information                         |
 | PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                               | Update the profile information                        |
 | DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                            | Delete a profile                                      |
-| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)                       | Fetch all profile subprofiles                         |
-| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)                      | Create a new profile subprofile                       |
-| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)                       | Update one or multiple profile subprofiles            |
+| GET    | [api.copernica.com/v2/profile/$id/subprofiles/$id](./rest-get-profile-subprofiles)                       | Fetch all profile subprofiles                         |
+| POST   | [api.copernica.com/v2/profile/$id/subprofiles/$id](./rest-post-profile-subprofiles)                      | Create a new profile subprofile                       |
+| PUT    | [api.copernica.com/v2/profile/$id/subprofiles/$id](./rest-put-profile-subprofiles)                       | Update one or multiple profile subprofiles            |
 | GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                                 | Fetch all profile fields                              |
 | PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                                 | Update one or multiple profile fields                 |
 | GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                           | Fetch all profile interests                           |
