@@ -15,6 +15,7 @@ The following parameters can be added to the URL as variables:
 * **start**: First ID to retrieve.
 * **limit**: Length of the batch.
 * **total**: Boolean. Indicates whether to show the total or not. Setting this to 'false' 
+will speed up the call.
 
 ### Paging
 
