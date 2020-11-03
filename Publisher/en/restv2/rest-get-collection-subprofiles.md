@@ -37,17 +37,10 @@ if you only want to request subprofiles where the field “country” equals
 this parameter can be found in the 
 [article on the “fields” parameter](rest-fields-parameter).
 
-<<<<<<< HEAD
 ### Ordering
 
 The **orderby** variable can be set to the name or the ID of a field to sort the 
 subprofiles by it. There are also three special values to sort by:
-=======
-The **orderby** parameter can have the name or the ID of a field assigned to 
-it. When you do so, subprofiles are sorted by the value in that field. 
-Instead of a field to sort on, you can also assign one of the following 
-special values to **orderby**:
->>>>>>> 880e0982abecbd44541a655fd75f2aab67a5773e
 
 * **id**: The default value; profiles are ordered based on their ID.
 * **random**: Subprofiles are randomly ordered.
