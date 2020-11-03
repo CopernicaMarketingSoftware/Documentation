@@ -1,7 +1,7 @@
 # REST API: GET database profiles
 
 De methode om profielen uit een database op te vragen is een HTTP GET methode
-en beschikbaar via het volgende adres:
+beschikbaar op het volgende adres:
 
 `https://api.copernica.com/v2/database/$id/profiles?access_token=xxxx`
 
@@ -14,29 +14,37 @@ er gebruik gemaakt worden van de 'dataonly' parameter.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **fields**: Optionele parameter om alleen profielen op te halen die matchen met de opgegeven velden.
-* **orderby**: Naam of ID van het veld waarop je de profielen wilt sorteren (standaard is dit het ID van elk profiel).
-* **order**: Moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
-* **dataonly**: Boolean. Wanneer deze de waarde 'true' heeft wordt alleen de 
-profieldata geladen, waardoor de methode sneller uitgevoerd kan worden.
+* **start**: Eerste ID om op te vragen
+* **limit**: Aantal profielen om op te vragen
+* **total**: Boolean. Geeft aan of het totale aantal profielen getoond moet worden. 
+De methode is sneller wanneer dit op 'false' staat.
+* **fields**: Optionele parameter om condities voor profielen mee in te stellen.
+* **orderby**: Naam of id van het veld om op te sorteren (standaard is dit de ID).
+* **order**: Geeft de volgorde aan; oplopend ('asc') of aflopend ('desc').
+* **dataonly**: Boolean. Wanneer deze de waarde 'true' heeft worden alleen de ID, velden, 
+interesses en datum van laatste aanpassing opgevraagd om de methode sneller te maken.
 
-De paging parameters **start**, **limit** en **total** parameters worden 
-ook ondersteund. Meer over deze parameters vind je in het [artikel over paging](rest-paging). 
+### Paging
 
-De parameter **fields** kun je gebruiken om profielen te selecteren. Als je bijvoorbeeld
+Meer over de **start**, **limit** en **total** parameters vind je in het [artikel over paging](rest-paging). 
+
+### Fields 
+
+De **fields** parameter kun je gebruiken om profielen te selecteren. Als je bijvoorbeeld
 alleen profielen wil opvragen waarbij de waarde van het veld "land" gelijk is aan
-"Nederland", kun je dat opgeven in het veld "fields". Meer informatie over het
-gebruik van deze *fields* parameter kun je vinden in een 
+"Nederland", kun je dat opgeven in deze parameter. Meer informatie over het
+gebruik van de **fields** parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
 
-De parameter **orderby** kun je de naam of het ID van een veld geven. De profielen
-worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of ID van het
-veld waarop je wilt sorteren, kun je ook een aantal speciale waardes aan de 
-parameter **orderby** geven:
+### Sorteren
 
-* **id**: dit is de standaardwaarde, profielen worden gesorteerd aan de hand van het ID.
-* **random**: de profielen worden in willekeurige volgorde teruggegeven.
-* **modified**: de profielen worden gesorteerd op basis het *modified* timestamp.
+De parameter **orderby** geeft het veld aan waarop gesorteerd moet worden. 
+In plaats van de naam of ID van het veld waarop je wilt sorteren, kun 
+je ook een aantal speciale waardes aan de parameter **orderby** geven:
+
+* **id**: Profielen worden gesorteerd aan de hand van de ID (standaard).
+* **random**: De profielen worden willekeurig gesorteerd.
+* **modified**: De profielen worden gesorteerd op volgorde van de laatste aanpassing.
 
 ## Geretourneerde velden
 
@@ -44,13 +52,16 @@ De methode retourneert een JSON object met de profielen onder het **data**
 veld. Elk profiel bevat de volgende velden:
 
 * **ID**: ID van het profiel
-* **fields**: Associative array van veldnamen en veldwaardes
+* **fields**: Associatieve array van veldnamen en veldwaardes
 * **interests**: Array van de interesses van het profiel
 * **database**: ID van de database waarin het profiel is opgeslagen
 * **secret**: De "geheime" code die aan een profiel is gekoppeld
 * **created**: Tijdstip waarop het profiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat
 * **modified**: Tijdstip waarop het profiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat
 * **removed**: Geeft aan of het profiel verwijderd is of niet
+
+Sommige van deze velden worden niet teruggegeven als de **dataonly** parameter 
+op 'false' staat.
 
 ### JSON example
 
