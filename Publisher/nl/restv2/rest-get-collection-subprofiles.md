@@ -33,10 +33,10 @@ alleen subprofielen wil opvragen waarbij de waarde van het veld "land" gelijk is
 gebruik van deze **fields** parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
 
-De variabele **order** kun je de naam of het id van een veld geven. De profielen
+De parameter **orderby** kun je de naam of het id van een veld geven. De subprofielen
 worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of id van het
 veld waarop je wilt sorteren, kun je ook een aantal speciale waardes aan de 
-parameter *order* geven:
+parameter **orderby** geven:
 
 * **id**: dit is de standaardwaarde, subprofielen worden gesorteerd aan de hand van het id
 * **random**: de subprofielen worden in willekeurige volgorde teruggegeven
