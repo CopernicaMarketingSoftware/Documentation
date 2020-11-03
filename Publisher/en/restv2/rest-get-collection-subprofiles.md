@@ -14,13 +14,13 @@ to speed it up.
 
 The following parameters can be added to the URL as variables:
 
-* **start**: First ID to retrieve
-* **limit**: Length of the batch
+* **start**: First ID to retrieve.
+* **limit**: Length of the batch.
 * **total**: Boolean. Indicates whether to show the total or not. Setting this to 'false' 
 will speed up the call.
 * **fields**: Optional parameter to set conditions for subprofiles that should be returned.
-* **orderby**: name or ID of field to sort subprofiles by (default = subprofile ID)
-* **order**: Ascending (asc) or descending (desc) order.
+* **orderby**: Name or ID of field to sort subprofiles by (defaults to ID).
+* **order**: Ascending ('asc') or descending ('desc') order.
 * **dataonly**: Boolean. If set to true the method will only retrieve the ID, fields, collection ID, 
 profile ID and modified date to speed up the call.
 
