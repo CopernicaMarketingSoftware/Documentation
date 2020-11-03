@@ -24,6 +24,8 @@ will speed up the call.
 * **dataonly**: Boolean. If set to true the method will only retrieve the ID, fields, collection ID, 
 profile ID and modified date to speed up the call.
 
+There is no parameter to set a condition for profile ID. There is a separate GET call to [fetch subprofiles for a profile](rest-get-profile-subprofiles).
+
 ### Paging
 
 More information on the **start**, **limit** and **total** parameters can be found in 
@@ -112,3 +114,4 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 * [List of all API calls](rest-api)
 * [GET collection profile identifiers](rest-get-collection-subprofiles)
+* [GET profile subprofiles](rest-get-profile-subprofiles)
