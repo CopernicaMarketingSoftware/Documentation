@@ -14,6 +14,10 @@ to speed it up.
 
 The following parameters can be added to the URL as variables:
 
+* **start**: First ID to retrieve
+* **limit**: Length of the batch
+* **total**: Boolean. Indicates whether to show the total or not. Setting this to 'false' 
+will speed up the call.
 * **fields**: Optional parameter to set conditions for profiles that should be returned.
 * **orderby**: Name or ID of the field you want to use to sort the returned profiles.
 * **order**: Whether the profiles should be ordered in ascending or descending order.

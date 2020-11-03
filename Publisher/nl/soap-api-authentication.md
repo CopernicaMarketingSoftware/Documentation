@@ -12,9 +12,10 @@ Volg dan onze [upgrade-instructies](./soap-api-upgrade-login).
 Een `access_token` is een unieke string die je met elke aanroep van de API
 meestuurt. Dit token identificeert het account dat je aanroept, maar ook de 
 identiteit van de aanroeper (de "applicatie"). Zorg dat je dit
-token altijd geheim houdt! De tokens kun je beheren en aanmaken via de
-[API-toegang dashboard](https://www.copernica.com/en/api) op copernica.com.
-Per token kun je de toegangsrechten (lezen en/of schrijven) instellen, en
+token altijd geheim houdt! De tokens kun je beheren en aanmaken via het
+[API-toegang dashboard](https://ms.copernica.com/#/admin/account/access-tokens) 
+in Marketing Suite.
+Per token kun je de toegangsrechten (REST en/of SOAP) instellen, en
 je kunt aangeven vanaf welke IP adressen aanroepen zijn toegestaan.
 
 De access-tokens zijn gegroepeerd per applicatie, waarbij een applicatie

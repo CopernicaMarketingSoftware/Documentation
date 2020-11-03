@@ -14,9 +14,11 @@ to speed it up.
 
 The following parameters can be added to the URL as variables:
 
+* **start**: First ID to retrieve
+* **limit**: Length of the batch
+* **total**: Boolean. Indicates whether to show the total or not. Setting this to 'false' 
+will speed up the call.
 * **fields**: Optional parameter to set conditions for profiles that should be returned.
-* **orderby**: Name or ID of the field you want to use to sort the returned profiles.
-* **order**: Whether the profiles should be ordered in ascending or descending order.
 * **dataonly**: Boolean. If set to true the method will only retrieve the ID, fields, interests, 
 and modified date to speed up the call.
 
@@ -27,10 +29,11 @@ the [article on paging](rest-paging).
 
 ### Fields
 
-The **fields** parameter can be used to filter the profiles. You can for example
-use this parameter to only fetch profiles for which the field "country" equals
-"France". More information about using this parameter can be found in our
-[article about this fields parameter](./rest-fields-parameter.md).
+The **fields** parameter can be used to select subprofiles. For example, 
+if you only want to request subprofiles where the field “country” equals 
+“The Netherlands”, you can do so using “fields”. More information on 
+this parameter can be found in the 
+[article on the “fields” parameter](rest-fields-parameter).
 
 ## Returned fields
 

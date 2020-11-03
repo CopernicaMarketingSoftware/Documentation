@@ -1,6 +1,6 @@
 # Introductie
 Copernica heeft een zeer uitgebreide e-mailtoolkit voor marketeers en
-developers. Naast Copernica's andere e-mailgeralateerde producten zoals
+developers. Naast Copernica's andere e-mailgerelateerde producten zoals
 [SMTPeter](https://www.smtpeter.com) en [MailerQ](https://www.mailerq.com)
 bestaat de Marketing Software ook uit twee verschillende producten, namelijk
 de Marketing Suite en de Publisher. Eigenlijk kun je dit het beste zien als

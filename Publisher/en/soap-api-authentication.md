@@ -11,7 +11,7 @@ to upgrade to the new system.
 An `access_token` is a unique string that you send with each call to the SOAP 
 API. This token uniquely identifies the account that is accessed, and the caller
 ("application") that makes the call. You should keep this token secret at all times. 
-The access tokens can be managed in the [API access](https://www.copernica.com/en/api) 
+The access tokens can be managed in the [API access](https://ms.copernica.com/#/admin/account/access-tokens) 
 dashboard, where you can limit each access token to just read and/or write access.
 For further security you can also limit the IP addresses from which your
 access token can be used.

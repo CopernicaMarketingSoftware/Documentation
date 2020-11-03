@@ -14,10 +14,11 @@ to speed it up.
 
 The following parameters can be added to the URL as variables:
 
-* **start**: first subprofile to fetch
-* **limit**: length of the batch to fetch
-* **total**: boolean value to show total of available subprofiles
-* **fields**: optional parameter to only fetch subprofiles with certain field values
+* **start**: First ID to retrieve
+* **limit**: Length of the batch
+* **total**: Boolean. Indicates whether to show the total or not. Setting this to 'false' 
+will speed up the call.
+* **fields**: Optional parameter to set conditions for subprofiles that should be returned.
 * **orderby**: name or ID of field to sort subprofiles by (default = subprofile ID)
 * **order**: Ascending (asc) or descending (desc) order.
 * **dataonly**: Boolean. If set to true the method will only retrieve the ID, fields, collection ID, 
@@ -30,19 +31,27 @@ the [article on paging](rest-paging).
 
 ### Fields
 
-The parameter fields can be used to select subprofiles. In case you only want 
-to fetch the profiles where the value of the field "country" is equal to 
-"Netherlands" you can assert this in the *fields* field. For more information on 
-using the *fields* parameter you can consult the [article on the fields parameter](rest-fields-parameter).
+The **fields** parameter can be used to select subprofiles. For example, 
+if you only want to request subprofiles where the field “country” equals 
+“The Netherlands”, you can do so using “fields”. More information on 
+this parameter can be found in the 
+[article on the “fields” parameter](rest-fields-parameter).
 
+<<<<<<< HEAD
 ### Ordering
 
 The **orderby** variable can be set to the name or the ID of a field to sort the 
 subprofiles by it. There are also three special values to sort by:
+=======
+The **orderby** parameter can have the name or the ID of a field assigned to 
+it. When you do so, subprofiles are sorted by the value in that field. 
+Instead of a field to sort on, you can also assign one of the following 
+special values to **orderby**:
+>>>>>>> 880e0982abecbd44541a655fd75f2aab67a5773e
 
-* **id**: default value, sort subprofiles by ID
-* **random**: return subprofiles in a random order
-* **modified**: subprofiles are ordered by last modified
+* **id**: The default value; profiles are ordered based on their ID.
+* **random**: Subprofiles are randomly ordered.
+* **modified**: Subprofiles are ordered based on the *modified* timestamp.
 
 The **order** variable can be used to sort in ascending ('asc') or descending 
 ('desc') order.

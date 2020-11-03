@@ -29,10 +29,10 @@ alleen profielen wil opvragen waarbij de waarde van het veld "land" gelijk is aa
 gebruik van deze *fields* parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
 
-De variabele **order** kun je de naam of het ID van een veld geven. De profielen
+De parameter **orderby** kun je de naam of het ID van een veld geven. De profielen
 worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of ID van het
 veld waarop je wilt sorteren, kun je ook een aantal speciale waardes aan de 
-parameter **order** geven:
+parameter **orderby** geven:
 
 * **id**: dit is de standaardwaarde, profielen worden gesorteerd aan de hand van het ID.
 * **random**: de profielen worden in willekeurige volgorde teruggegeven.
