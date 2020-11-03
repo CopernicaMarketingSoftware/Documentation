@@ -12,7 +12,7 @@ to speed it up.
 
 ## Available parameters
 
-The following parameters can be added to the URL as variables for the call:
+The following parameters can be added to the URL as variables:
 
 * **start**: first subprofile to fetch
 * **limit**: length of the batch to fetch
@@ -20,23 +20,32 @@ The following parameters can be added to the URL as variables for the call:
 * **fields**: optional parameter to only fetch subprofiles with certain field values
 * **orderby**: name or ID of field to sort subprofiles by (default = subprofile ID)
 * **order**: Ascending (asc) or descending (desc) order.
-* **dataonly**: Boolean. If set to true the method will only retrieve the profile data, 
-allowing the call to be processed faster.
+* **dataonly**: Boolean. If set to true the method will only retrieve the ID, fields, collection ID, 
+profile ID and modified date to speed up the call.
+
+### Paging
 
 More information on the **start**, **limit** and **total** parameters can be found in 
 the [article on paging](rest-paging).
+
+### Fields
 
 The parameter fields can be used to select subprofiles. In case you only want 
 to fetch the profiles where the value of the field "country" is equal to 
 "Netherlands" you can assert this in the *fields* field. For more information on 
 using the *fields* parameter you can consult the [article on the fields parameter](rest-fields-parameter).
 
-The variable order can be set to the name or the ID of a field to sort the 
+### Ordering
+
+The **orderby** variable can be set to the name or the ID of a field to sort the 
 subprofiles by it. There are also three special values to sort by:
 
 * **id**: default value, sort subprofiles by ID
 * **random**: return subprofiles in a random order
 * **modified**: subprofiles are ordered by last modified
+
+The **order** variable can be used to sort in ascending ('asc') or descending 
+('desc') order.
 
 ## Returned fields
 
@@ -51,6 +60,9 @@ property. Each subprofile contains the following fields:
 * **created**: Timestamp for creation of subprofile in YYYY-MM-DD hh:mm:ss format.
 * **modified**: Timestamp for last edit of subprofile in YYYY-MM-DD hh:mm:ss format.
 * **removed**: Indicates whether the subprofile has been removed or not.
+
+Please note that some of these fields will not be available if the **dataonly** 
+parameter has been set to true.
 
 ### JSON example
 

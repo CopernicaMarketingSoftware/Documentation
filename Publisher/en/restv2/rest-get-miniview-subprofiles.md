@@ -1,22 +1,38 @@
-# REST API: GET miniview subprofiles
+# REST API: GET miniview (miniselection) subprofiles
 
 Subprofiles are to a collection what regular profiles are to a database. 
-To request the subprofiles that represent a certain profile from a 
-miniview you can send an HTTP GET request to the following URL:
+You can request all subprofiles from a miniview with an HTTP GET call 
+to the following URL:
 
 `https://api.copernica.com/v2/miniview/$id/subprofile?access_token=xxxx`
 
-The `$id` should be replaced with the numerical identifier of the miniview 
-you're requesting the subprofiles of.
+The `$id` should be replaced with the numerical identifier of the miniview you
+want to fetch the subprofiles of. Since this can be 
+quite a time-consuming call it is possible to use the 'dataonly' property 
+to speed it up.
 
 ## Available parameters
 
-This method supports the **dataonly** parameter. This boolean can be used 
-to only retrieve the profile data when set to true, allowing the call to be 
-processed faster.
+The following parameters can be added to the URL as variables:
 
-Paging parameters **start**, **limit** and **total** are also supported. More
-information about these parameters can be found in the [article on paging](rest-paging).
+* **start**: first subprofile to fetch
+* **limit**: length of the batch to fetch
+* **total**: boolean value to show total of available subprofiles
+* **fields**: optional parameter to only fetch subprofiles with certain field values
+* **dataonly**: Boolean. If set to true the method will only retrieve the ID, fields, collection ID, 
+profile ID and modified date to speed up the call.
+
+### Paging 
+
+More information on the **start**, **limit** and **total** parameters can be found in 
+the [article on paging](rest-paging).
+
+### Fields
+ 
+The **fields** parameter can be used to filter the profiles. You can for example
+use this parameter to only fetch profiles for which the field "country" equals
+"France". More information about using this parameter can be found in our
+[article about this fields parameter](./rest-fields-parameter.md).
 
 ## Returned fields
 
@@ -31,6 +47,9 @@ property. Each subprofile contains the following fields:
 * **created**: Timestamp for creation of subprofile in YYYY-MM-DD hh:mm:ss format.
 * **modified**: Timestamp for last edit of subprofile in YYYY-MM-DD hh:mm:ss format.
 * **removed**: Indicates whether the subprofile has been removed or not.
+
+Please note that some of these fields will not be available if the **dataonly** 
+parameter has been set to true.
 
 ### JSON example
 
