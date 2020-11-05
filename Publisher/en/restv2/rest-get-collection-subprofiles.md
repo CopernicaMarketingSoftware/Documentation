@@ -113,5 +113,9 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-* [List of all API calls](rest-api)
-* [GET collection profile identifiers](rest-get-collection-subprofiles)
+* [Overview of available API methods](./rest-api)
+* [GET profile IDs](./rest-get-collection-profileids)
+* [GET profile subprofiles](./rest-get-profile-subprofiles)
+* [POST collection subprofiles](./rest-post-collection-subprofiles)
+* [PUT subprofile fields](./rest-put-subprofile-fields)
+* [DELETE subprofile](./rest-delete-subprofile)
