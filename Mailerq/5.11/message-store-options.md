@@ -57,7 +57,7 @@ is needed to connect to MongoDB.
 
 ## S3 specifics
 
-Currently S3 is only supported if the specified S3 user is also the owner of the S3 bucket.
+When using S3 as a storage it is currently required that the storage-threads setting is set to 1.
 
 ## MongoDB specifics
 
