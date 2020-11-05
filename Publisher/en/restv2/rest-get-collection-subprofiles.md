@@ -24,6 +24,9 @@ will speed up the call.
 * **dataonly**: Boolean. If set to true the method will only retrieve the ID, fields, collection ID, 
 profile ID and modified date to speed up the call.
 
+If you want to retrieve the subprofiles for a specific profile in a 
+collection you can use the method to [fetch subprofiles for a profile](./rest-get-profile-subprofiles).
+
 ### Paging
 
 More information on the **start**, **limit** and **total** parameters can be found in 

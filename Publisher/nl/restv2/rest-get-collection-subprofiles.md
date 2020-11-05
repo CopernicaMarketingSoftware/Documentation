@@ -24,6 +24,9 @@ De methode is sneller wanneer dit op 'false' staat.
 * **dataonly**: Boolean. Wanneer deze de waarde 'true' heeft worden alleen de ID, velden, 
 collectie ID, profiel ID en datum van laatste aanpassing opgevraagd om de methode sneller te maken.
 
+Als je de subprofielen per profiel wil opvragen kun je dit doen 
+door middel van de methode voor het [opvragen van subprofielen voor een profiel](./rest-get-profile-subprofiles).
+
 ### Paging
 
 Meer over de **start**, **limit** en **total** parameters vind je in het [artikel over paging](rest-paging). 
