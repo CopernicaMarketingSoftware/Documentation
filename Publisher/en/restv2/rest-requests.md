@@ -67,10 +67,7 @@ a PUT method will create a new entity, in which case a "303 See Other" code will
 refer you to the new entity. POST and PUT 
 requests can also contain **X-location** headers with the URL of the entities 
 that were created. For example `X-location: https://api.copernica.com/v1/profile/$profileID`
-for calls that create or update profiles.
-
-DELETE requests can also result in a "204 No Content" response in case the 
-data that was meant to be deleted could not be located. Successful DELETE 
+for calls that create or update profiles. Successful DELETE 
 requests hold an **X-deleted** header, like `X-deleted: profile $profileID`.
 
 POST, PUT and DELETE calls that did not result in an error will not contain 
