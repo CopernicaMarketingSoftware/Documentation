@@ -21,9 +21,8 @@ je database te analyseren. Vind je dat goed?".
 ![](../images/oauth-copernica.png)
 
 ## Applicatie aanmelden
-
 De hierboven beschreven koppeling kun je met OAuth2 maken. Om te beginnen 
-moet je je applicatie aanmelden via het [dashboard](/nl/applications).
+moet je je applicatie aanmelden via de [configuratie-module](https://ms.copernica.com/#/admin/company/applications) in Marketing Suite.
 Je moet hierbij een naam en omschrijving van je applicatie opgeven. Zorg dat
 dit een duidelijke naam en omschrijving is, want deze gegevens krijgen mensen 
 te zien als ze op de pagina "applicatie X wil graag toegang tot jouw gegevens"
