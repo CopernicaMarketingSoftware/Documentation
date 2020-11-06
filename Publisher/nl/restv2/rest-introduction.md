@@ -42,10 +42,8 @@ registreren bij Copernica om een access token te ontvangen.
 Copernica gebruikt het [*OAuth*](./rest-oauth.md) protocol om applicaties 
 toegang te geven tot de API. Dit is een gestandaardizeerd protocol waarvoor 
 je eerst je website of applicatie moet registreren. Je kan dit doen met 
-het registratie formulier op het [dashboard](/nl/applications) van de 
-Copernica website. Het is niet mogelijk te registreren in de Marketing Suite 
-of Publisher omgevingen. Na het voltooien van de registratie kun je met een ander 
-formulier op het dashboard een of meerdere accounts linken aan je applicatie.
+het registratie formulier in de [configuratie-module](https://ms.copernica.com/#/admin/company/applications) van Marketing Suite. Na het voltooien van de registratie kun je met een ander 
+[formulier](https://ms.copernica.com/#/admin/account/access-tokens) een of meerdere accounts linken aan je applicatie.
 
 Nadat je de applicatie geregistreerd hebt en aan je account hebt gelinkt 
 krijg je toegang tot je API access token. Dit is een lange reeks alphanumerieke 
