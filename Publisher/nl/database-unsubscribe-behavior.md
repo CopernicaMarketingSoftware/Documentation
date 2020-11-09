@@ -1,4 +1,4 @@
-# Database uitschrijfgedrag
+# Uitschrijfgedrag
 Het is wettelijk verplicht om een zichtbare en werkende uitschrijflink aan
 je (commerciële) mails toe te voegen. Copernica kan daarnaast ook op andere
 manieren feedback ontvangen dat jouw ontvangers zich uit willen schrijven.
