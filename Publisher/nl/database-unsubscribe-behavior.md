@@ -15,17 +15,11 @@ je kiest voor deze laatste optie, kun je bijvoorbeeld de waarde van het veld
 "nieuwsbrief" aanpassen. Op deze manier kun je uitschrijvers van je
 [nieuwsbriefselectie](create-a-mailing-list) uitsluiten.
 
-## Marketing Suite instellen
-In Marketing Suite navigeer je eerst naar je database. In de balk bovenin
-zie je een tandwiel. Je kunt hier instellen wat je met afmeldtriggers doet,
-bijvoorbeeld het profiel aanpassen of volledig verwijderen.
+### Instellen
+In je database kun je het uitschrijfgedrag instellen door naar **Configuratie > Omgaan met afmeldingen** te gaan. 
+Je kunt hier instellen wat je met afmeldtriggers doet, bijvoorbeeld het profiel aanpassen of volledig verwijderen.
 
-## Publisher instellen
-In de Publisher ga je naar het **Profiles** menu en selecteer je de database
-naar keuze. Onder **Database management** kun je de uitschrijf opties vinden
-en naar wens instellen.
-
-## Meer informatie
+### Meer informatie
 De belangrijkste profielen zijn natuurlijk degene die je mailings willen
 ontvangen. Als je echter de data van uitgeschreven profielen bewaart,
 heb je een selectie nodig om deze profielen uit te sluiten van mailings.
