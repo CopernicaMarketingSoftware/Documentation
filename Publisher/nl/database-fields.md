@@ -24,7 +24,7 @@ Hieronder is een tabel weergegeven met alle beschikbare veldtypes.
 | Groot veld         | Tekstveld tot 16 mln. tekens. Wordt niet aangeraden, omdat je het niet kunt indexeren.               |
 | Referentieveld     | Veld dat kan refereren naar een andere database door middel van een ID.                              |
 
-## Extra opties
+## Extra veldopties
 Als je velden aan het bewerken bent, kun je per veld een aantal extra opties
 selecteren. Het is bijvoorbeeld mogelijk om aan te geven dat een veld standaard
 gesorteerd is, of dat het verborgen moet blijven. Hieronder een korte uitleg
