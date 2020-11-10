@@ -5,9 +5,9 @@ kun je een HTTP POST request sturen naar de volgende URL:
 
 `https://api.copernica.com/v2/profile/$id/subprofiles/$id?access_token=xxxx`
 
-De eerste `$id` moet je vervangen door de numerieke identifier van het profiel 
+De eerste `$id` moet vervangen worden door de numerieke identifier van het profiel
 waaraan je een subprofiel wil toevoegen en de tweede `$id` moet vervangen worden
-met de identifier of naam van de collectie waarin je het subprofiel wil toevoegen.
+door de identifier of naam van de collectie waarin je het subprofiel wil toevoegen.
 De inhoud van het subprofiel kun je in de message body plaatsen.
 
 ## Body data
@@ -32,7 +32,7 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// data voor de methode
+// velden voor het nieuwe subprofiel
 $data = array(
     'firstname' =>  'John',
     'lastname'  =>  'Doe',

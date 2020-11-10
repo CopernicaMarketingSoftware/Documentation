@@ -1,20 +1,41 @@
 # REST API: PUT profile subprofiles
 
-To update or add subprofiles to a profile an HTTP PUT request can be sent to the following URL:
+If you want to modify multiple subprofiles with a single call to the API, you
+can send a HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v2/subprofile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id/subprofiles/$id?access_token=xxxx`
 
-The `$id` should be replaced with the ID of the subprofile you want to update or add
-information to.
+The first `$id` should be replaced with the ID of the profile which the
+subprofiles are linked to. The second `$id` should be replaced with the ID or
+name of collection the collection containing the subprofiles. The new
+field values should be sent in the request body.
 
-## Available data
-The new field values need to be added to the body of the message. 
-This data simply consists of the existing field names on the subprofile 
-you want to change and their new values. If you send your data in JSON format, 
-you’ll need to create an object with field names as keys and field values as values.
-If, however, you’re using a traditional x-www-form-urlencoded format, 
-the variables should contain the names of the fields you want to change, 
-and the values should be the new field values.
+Please keep in mind that this is a HTTP PUT request. This method is an
+exception to the rule that the Copernica REST API makes no distinction between
+HTTP POST and HTTP PUT calls. For this method you must use HTTP PUT. If you
+send a POST request, you [would be making a brand new subprofile](./rest-post-profile-subprofiles.md). 
+
+## Supported parameters
+
+You must use two different ways to pass data to this method; through the URL and
+the request body. You can pass the following parameters to the URL:
+
+* **fields**: required parameter to select the subprofiles that are going to be modified
+* **create**: boolean parameter that determines whether to create a new subprofile if none exist.
+
+The **fields** parameter is required, to prevent overwriting all profiles in a
+database with a single API call. Only the profiles that match with the supplied
+fields are modified. You can find more information about this parameter in
+[the article about this parameter](./rest-fields-parameter.md).
+
+If there are no subprofiles that match the supplied **fields**, and when you have set
+**create** to 1, the REST API creates a brand new subprofile using
+the fields passed in the HTTP request body.
+
+## Body data
+
+The field names and new values of the subprofiles' fields that should be updated
+must be passed in the data body.
 
 ## PHP example
 
@@ -27,15 +48,21 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
+// parameters for subprofile selection
+$parameters = array(
+    'fields'    =>  array("customerid==4567"),
+    'create'    =>  0
+);
+
 // data to pass to the call, the new fields
 $data = array(
     'firstname' =>  'John',
     'lastname'  =>  'Doe',
     'email'     =>  'johndoe@example.com'
 );
-  
+
 // do the call
-$api->put("subprofile/{$subprofileID}/fields", $data);
+$api->put("profile/{$profileID}/subprofiles/{$collectionID}", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
@@ -43,7 +70,6 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 * [Overview of all REST API calls](rest-api)
-* [PUT profile interests](rest-put-profile-interests)
-* [POST database profile](rest-post-database-profiles)
-* [GET subprofile](rest-get-subprofile)
-* [POST profile subprofile](rest-post-profile-subprofiles)
+* [PUT database profiles](rest-put-database-profiles)
+* [PUT subprofile fields](./rest-put-subprofile-fields)
+* [POST profile subprofiles](rest-post-profile-subprofiles)

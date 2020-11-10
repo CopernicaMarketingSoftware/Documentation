@@ -1,37 +1,39 @@
-# REST API: GET view profiles
+# REST API: GET view (selection) profiles
 
-To retrieve all profiles in a selection, send a HTTP GET request to this address:
+You can request all profiles from a view (selection) with an HTTP GET call 
+to the following URL:
 
 `https://api.copernica.com/v2/view/$id/profiles?access_token=xxxx`
 
-The `$id` code should be replaced with the numeric identifier of the selection
-from which you want to retrieve the profiles.
+The `$id` should be replaced with the numerical identifier of the view you
+want to fetch the profiles of. Since this can be 
+quite a time-consuming call it is possible to use the 'dataonly' property 
+to speed it up.
 
 ## Supported parameters
 
-You can add one or more of the following parameters to the URL:
+The following parameters can be added to the URL as variables:
 
+* **start**: First ID to retrieve
+* **limit**: Length of the batch
+* **total**: Boolean. Indicates whether to show the total or not. Setting this to 'false' 
+will speed up the call.
 * **fields**: Optional parameter to set conditions for profiles that should be returned.
-* **orderby**: Name or ID of the field you want to use to sort the returned profiles.
-* **order**: Whether the profiles should be ordered in ascending or descending order.
-* **dataonly**: Boolean. If set to true the method will only retrieve the profile data, 
-allowing the call to be processed faster.
+* **dataonly**: Boolean. If set to true the method will only retrieve the ID, fields, interests, 
+and modified date to speed up the call.
 
-Paging parameters **start**, **limit** and **total** are also supported. More
-information about these parameters can be found in the [article on paging](rest-paging).
+### Paging
 
-The **fields** parameter can be used to filter the profiles. You can for example
-use this parameter to only fetch profiles for which the field "country" equals
-"France". More information about using this parameter can be found in our
-[article about this fields parameter](./rest-fields-parameter.md).
+More information on the **start**, **limit** and **total** parameters can be found in 
+the [article on paging](rest-paging).
 
-You can assign the name or numeric identifier of a field to the parameter **order**.
-This will order the profiles on the given field.
-Besides a name or ID, you can also pass a couple of special values to this parameter:
+### Fields
 
-* **id**: The default value, profiles are ordered based on their ID
-* **random**: Profiles are randomly ordered
-* **modified**: Profiles are ordered based on the *modified* timestamp.
+The **fields** parameter can be used to select subprofiles. For example, 
+if you only want to request subprofiles where the field “country” equals 
+“The Netherlands”, you can do so using “fields”. More information on 
+this parameter can be found in the 
+[article on the “fields” parameter](rest-fields-parameter).
 
 ## Returned fields
 
@@ -46,6 +48,9 @@ The following properties are available for each profile:
 * **created**: Timestamp for creation of profile in YYYY-MM-DD hh:mm:ss format
 * **modified**: Timestamp for last edit of profile in YYYY-MM-DD hh:mm:ss format
 * **removed**: Indicates whether the profile has been removed or not
+
+Please note that some of these fields will not be available if the **dataonly** 
+parameter has been set to true.
 
 ### JSON example
 

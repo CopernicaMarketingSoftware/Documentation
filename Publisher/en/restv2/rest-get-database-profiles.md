@@ -1,7 +1,7 @@
 # REST API: GET database profiles
 
-The method to request profiles in a database is an HTTP GET request and 
-available at the following address:
+You can request all profiles from a database with an HTTP GET call 
+to the following URL:
 
 `https://api.copernica.com/v2/database/$id/profiles?access_token=xxxx`
 
@@ -14,14 +14,22 @@ to speed it up.
 
 The following parameters can be added to the URL as variables:
 
+* **start**: First ID to retrieve.
+* **limit**: Length of the batch.
+* **total**: Boolean. Indicates whether to show the total or not. Setting this to 'false' 
+will speed up the call.
 * **fields**: Optional parameter to set conditions for profiles that should be returned.
-* **orderby**: Name or ID of the field you want to use to sort the returned profiles.
-* **order**: Whether the profiles should be ordered in ascending or descending order.
-* **dataonly**: Boolean. If set to true the method will only retrieve the profile data, 
-allowing the call to be processed faster.
+* **orderby**: Name or ID of field to sort profiles by (defaults to ID).
+* **order**: Ascending ('asc') or descending ('desc') order.
+* **dataonly**: Boolean. If set to true the method will only retrieve the ID, fields, interests, 
+and modified date to speed up the call.
 
-Paging parameters **start**, **limit** and **total** are also supported. More
-information about these parameters can be found in the [article on paging](rest-paging).
+### Paging
+
+More information on the **start**, **limit** and **total** parameters can be found in 
+the [article on paging](rest-paging).
+
+### Fields
 
 The **fields** parameter can be used to select profiles. For example, 
 if you only want to request profiles where the field “country” equals 
@@ -29,14 +37,17 @@ if you only want to request profiles where the field “country” equals
 this parameter can be found in the 
 [article on the “fields” parameter](rest-fields-parameter).
 
-The **order** variable can have the name or the ID of a field assigned to 
-it. When you do so, profiles are sorted by the value in that field. 
-Instead of a field to sort on, you can also assign one of the following 
-special values to “order”:
+### Ordering
 
-* **id**: The default value, profiles are ordered based on their ID
-* **random**: Profiles are randomly ordered
-* **modified**: Profiles are ordered based on the *modified* timestamp.
+The **orderby** variable can be set to the name or the ID of a field to sort the 
+subprofiles by it. There are also three special values to sort by:
+
+* **id**: default value, sort subprofiles by ID
+* **random**: return subprofiles in a random order
+* **modified**: subprofiles are ordered by last modified
+
+The **order** variable can be used to sort in ascending ('asc') or descending 
+('desc') order.
 
 ## Returned fields
 
@@ -51,6 +62,9 @@ The following properties are available for each profile:
 * **created**: Timestamp for creation of profile in YYYY-MM-DD hh:mm:ss format
 * **modified**: Timestamp for last edit of profile in YYYY-MM-DD hh:mm:ss format
 * **removed**: Indicates whether the profile has been removed or not
+
+Please note that some of these fields will not be available if the **dataonly** 
+parameter has been set to true.
 
 ### JSON example
 

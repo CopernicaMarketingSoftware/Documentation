@@ -1,22 +1,26 @@
-# REST API: GET database views
+# REST API: GET miniview views
 
-To request which selections rely on a miniselection, do an HTTP GET 
-request to the following URL:
+You can request all views (selections that depend on a miniview (miniselection) 
+with an HTTP GET call to the following URL:
 
 `https://api.copernica.com/v2/miniview/$id/views?access_token=xxxx`
 
 In this, `$id` needs to be replaced by the numerical identifier or the 
-name of the miniview you wish to request the selections for.
+name of the miniview you wish to request the views for.
 
 ## Available parameters
 
 The following parameters can be added to the URL as variables:
 
-- **start**: the first interest to be requested
-- **limit**: length of the batch that is requested
-- **total**: whether or not the total amount of interests should be counted
+* **start**: First ID to retrieve.
+* **limit**: Length of the batch.
+* **total**: Boolean. Indicates whether to show the total or not. Setting this to 'false' 
+will speed up the call.
 
-More information on the meaning of these parameters can be found [in the article on paging](./rest-paging.md).
+### Paging
+
+More information on the **start**, **limit** and **total** parameters can be found in 
+the [article on paging](rest-paging).
 
 ## Returned fields
 

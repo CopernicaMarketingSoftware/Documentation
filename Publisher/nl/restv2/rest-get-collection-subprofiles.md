@@ -1,7 +1,7 @@
 # REST API: GET collection subprofiles
 
-Alle subprofielen uit een collectie kunnen opgevraagd worden met een HTTP GET 
-call naar de volgende URL:
+De methode om subprofielen uit een selectie op te vragen is een HTTP GET methode
+beschikbaar op het volgende adres:
 
 `https://api.copernica.com/v2/collection/$id/subprofiles?access_token=xxxx`
 
@@ -10,37 +10,44 @@ collectie waar je de subprofielen van wilt opvragen. Deze methode kan traag zijn
 als de database veel profielen bevat. Om deze methode sneller te maken kan 
 er gebruik gemaakt worden van de 'dataonly' parameter.
 
-
 ## Beschikbare parameters
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* **start**: eerste profiel dat wordt opgevraagd
-* **limit**: lengte van de batch die wordt opgevraagd
-* **total**: toon wel/niet het totaal aantal beschikbare/matchende profielen
-* **fields**: optionele parameter om alleen subprofielen op te halen die matchen met de opgegeven velden
-* **orderby**: naam of id van het veld waarop je de subprofielen wilt sorteren (standaard is dit het ID van elk subprofiel)
-* **order**: moeten de profielen oplopen of aflopend (asc of desc) worden gesorteerd?
-* **dataonly**: Boolean. Wanneer deze de waarde 'true' heeft wordt alleen de 
-profieldata geladen, waardoor de methode sneller uitgevoerd kan worden.
+* **start**: Eerste ID om op te vragen
+* **limit**: Aantal subprofielen om op te vragen
+* **total**: Boolean. Geeft aan of het totale aantal subprofielen getoond moet worden. 
+De methode is sneller wanneer dit op 'false' staat.
+* **fields**: Optionele parameter om condities voor subprofielen mee in te stellen.
+* **orderby**: Naam of id van het veld om op te sorteren (standaard is dit de ID).
+* **order**: Geeft de volgorde aan; oplopend ('asc') of aflopend ('desc').
+* **dataonly**: Boolean. Wanneer deze de waarde 'true' heeft worden alleen de ID, velden, 
+collectie ID, profiel ID en datum van laatste aanpassing opgevraagd om de methode sneller te maken.
 
-Meer informatie over de betekenis van de **start**, **limit** en **total** parameters 
-vind je in het [artikel over paging](rest-paging). 
+Als je de subprofielen per profiel wil opvragen kun je dit doen 
+door middel van de methode voor het [opvragen van subprofielen voor een profiel](./rest-get-profile-subprofiles).
 
-De parameter **fields** kun je gebruiken om subprofielen te selecteren. Als je bijvoorbeeld
+### Paging
+
+Meer over de **start**, **limit** en **total** parameters vind je in het [artikel over paging](rest-paging). 
+
+### Fields 
+
+De **fields** parameter kun je gebruiken om subprofielen te selecteren. Als je bijvoorbeeld
 alleen subprofielen wil opvragen waarbij de waarde van het veld "land" gelijk is aan
-"Nederland", kun je dat opgeven in het veld "fields". Meer informatie over het
-gebruik van deze **fields** parameter kun je vinden in een 
+"Nederland", kun je dat opgeven in deze parameter. Meer informatie over het
+gebruik van de **fields** parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
 
-De variabele **order** kun je de naam of het id van een veld geven. De profielen
-worden dan gesorteerd aan de hand van dit veld. In plaats van de naam of id van het
-veld waarop je wilt sorteren, kun je ook een aantal speciale waardes aan de 
-parameter *order* geven:
+### Sorteren
 
-* **id**: dit is de standaardwaarde, subprofielen worden gesorteerd aan de hand van het id
-* **random**: de subprofielen worden in willekeurige volgorde teruggegeven
-* **modified**: de subprofielen worden gesorteerd op basis het *modified* timestamp.
+De parameter **orderby** geeft het veld aan waarop gesorteerd moet worden. 
+In plaats van de naam of ID van het veld waarop je wilt sorteren, kun 
+je ook een aantal speciale waardes aan de parameter **orderby** geven:
+
+* **id**: Subprofielen worden gesorteerd aan de hand van de ID (standaard).
+* **random**: Subprofielen worden willekeurig gesorteerd.
+* **modified**: Subprofielen worden gesorteerd op volgorde van de laatste aanpassing.
 
 ## Teruggegeven velden
 
@@ -49,12 +56,15 @@ veld. Elk subprofiel bevat de volgende velden:
 
 * **ID**: ID van het subprofiel.
 * **secret**: De "geheime" code die aan een subprofiel is gekoppeld.
-* **fields**: Associative array / object van veldnamen en veldwaardes.
+* **fields**: Associatieve array / object van veldnamen en veldwaardes.
 * **profile**: ID van het profiel waar het subprofiel onder hoort.
 * **collection**: ID van de collectie waarin het subprofiel is opgeslagen.
 * **created**: Tijdstip waarop het subprofiel in aangemaakt, in YYYY-MM-DD hh:mm:ss formaat.
 * **modified**: Tijdstip waarop het subprofiel voor het laatst is bijgewerkt, in YYYY-MM-DD hh:mm:ss formaat.
 * **removed**: Geeft aan of het subprofiel verwijderd is ('true') of niet ('false').
+
+Sommige van deze velden worden niet teruggegeven als de **dataonly** parameter 
+op 'false' staat.
 
 ### JSON voorbeeld
 
@@ -100,8 +110,9 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 
 ## Meer informatie
 
-* [Overzicht van alle API calls](rest-api)
-* [Opvragen van profiel ID's](rest-get-collection-profileids)
-* [Subprofiel toevoegen aan een collectie](rest-post-collection-subprofiles)
-* [Subprofiel bijwerken](rest-put-subprofile-fields)
-* [Subprofiel verwijderen](rest-delete-subprofile)
+* [Overzicht van alle API calls](./rest-api)
+* [Opvragen van profiel ID's](./rest-get-collection-profileids)
+* [Subprofielen voor een profiel opvragen](./rest-get-profile-subprofiles)
+* [Subprofiel toevoegen aan een collectie](./rest-post-collection-subprofiles)
+* [Subprofiel bijwerken](./rest-put-subprofile-fields)
+* [Subprofiel verwijderen](./rest-delete-subprofile)

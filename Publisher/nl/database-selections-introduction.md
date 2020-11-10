@@ -1,4 +1,4 @@
-# Database selecties
+# Selecties
 Naast velden en collecties, kun je in Copernica ook gebruik maken van selecties.
 Met een selectie groepeer je een deel van de profielen in je database, zodat je
 ze als bestemming kunt behandelen in mailings en opvolgacties. Deze selecties
@@ -9,7 +9,7 @@ je nieuwsbrief, zodat je niet handmatig hoeft te kijken naar wie je moet mailen.
 
 Met selecties kun je je database nauwkeurig segmenteren, waardoor je gerichte
 mailings kunt sturen. De inhoud van selecties wordt automatisch bijgewerkt,
-zodat je selecties altijd de profielen bevatten die aan de voorwaarden van de
+zodat je selecties altijd de profielen bevatten die op dat moment aan de voorwaarden van de
 selectie voldoen.
 
 Naast 'gewone' selecties bestaan er ook
@@ -37,19 +37,30 @@ aan waar de subselectie onder dient te vallen.
 Zoals hierboven vermeld, moeten profielen in een selectie bepaalde
 eigenschappen hebben om bij die selectie te horen. Deze voorwaarden stel je in
 Copernica in door middel van selectieregels en -condities. Je kunt op van alles
-filteren, van een geboortedatum tot clicks in mailings in een bepaalde periode.
+filteren, van een geboortedatum tot kliks in mailings in een bepaalde periode.
 
 Regels en condities verschillen wel degelijk van elkaar. Een conditie is een
 onderdeel van een regel; er kunnen namelijk meerdere condities in een regel
-zitten. Oftewel, binnen een **OF**- of **OF NIET**-regel worden
-**EN**-condities aan elkaar gelinkt. De profielen worden toegekend aan een
-selectie als aan een van de verschillende regels wordt voldaan.
+zitten. De profielen moeten aan alle condities binnen een regel voldoen om in de selectie te vallen.
 
-Als profielen in een selectie moeten voldoen aan een of meerdere voorwaarden,
-gebruik je een **OF**-regel met **EN**-conditie(s). Als profielen juist niet
-moeten voldoen aan een of meerdere voorwaarden, gebruik je een
-**OF NIET**-regel met **EN**-conditie(s).
+Voorbeeld:  
+```
+-Regel 1, conditie 1, check op veldwaarde: de waarde van het veld 'Geslacht' moet gelijk zijn aan 'Vrouw'
+-Regel 1, conditie 2, check op veldwaarde: de waarde van het veld 'Leeftijd' moet gelijk zijn aan '30'
+```
+In dit geval dient het profiel zowel de waarde 'vrouw' als '30' te hebben.  
 
+Als profielen in een selectie moeten voldoen aan één of meerdere voorwaarden,
+gebruik je meerdere regels met verschillende condities. 
+
+Voorbeeld:  
+```
+-Regel 1, conditie 1, check op veldwaarde: de waarde van het veld 'Postcode' moet gelijk zijn aan '1101 AB'
+-Regel 2, conditie 1, check op veldwaarde: de waarde van het veld 'Postcode' moet gelijk zijn aan '1101 AC'
+```
+In bovenstaand voorbeeld komen zowel profielen met postcode '1101 AB' als '1101 AC' in je selectie terug.
+
+## Vergelijkingscondities
 Je kunt op een aantal manieren bepalen hoe profielen worden toegevoegd aan
 selecties. Deze filters worden binnen Copernica selectiecondities genoemd.
 Hieronder zijn de verschillende opties uiteengezet:
@@ -109,25 +120,14 @@ bepaalde periode.
 ### Sorteren en selecteren
 Je kunt ook een aantal profielen selecteren uit een gesorteerde lijst.
 
-## Aanmaken of wijzigen (mini)selectie Marketing Suite
-Klik op het **tandwiel** in de rechterbovenhoek, hierna volgt een menu,
-klik in dit menu op **Selecties aanmaken**. Geef de selectie een naam en kies
+## Aanmaken of wijzigen (mini)selectie
+Om een selectie aan te maken kies je in de linkerbovenhoek voor *Aanmaken > Maak een selectie aan*.
+Geef de selectie een naam en kies
 of de selectie direct onder de database valt (reguliere selectie) of dat deze
 onder een andere selectie valt (subselectie). Deze selectie kan vervolgens
 aangepast worden door regels en condities toe te voegen.
 
-Om een selectie aan te passen dient er weer naar hetzelfde menu gegaan te
-worden en aan de linkerkant de aan te passen selectie te selecteren. Klik
-vervolgens op  **Selectieregels bewerken**. In dit overzicht kunnen nieuwe
-regels of condities toegevoegd worden aan de selecties.
+Om een selectie aan te passen dien je naar de betreffende selectie te gaan en te klikken op de optie **Regels** in de toolbar.
 
-## Aanmaken of wijzigen (mini)selectie Publisher
-Klik op **Databasebeheer > Selecties beheren**. Om een nieuwe selectie te maken
-dient er geklikt te worden op **selectie aanmaken**. Kies de naam van de
-selectie en klik op **onder** om aan te geven onder welke selectie of database
-de nieuwe selectie zal vallen. Klik vervolgens op het tweede tabblad
-**Selectie condities**, hier kunnen extra regels en condities toegevoegd worden.
-Om een conditie aan dezelfde regel toe te voegen, klik op
-**Voeg een nieuwe 'EN' conditie toe aan deze 'OF' regel**. Wil je een nieuwe
-regel maken met een nieuwe conditie? Klik dan op
-**Voeg een nieuwe 'EN' conditie toe aan een nieuwe 'OF' regel**.
+## Selectietester
+Als je wilt weten aan welke voorwaarden je profiel voldoet van één of bovenliggende selecties kun je gebruik maken van de selectietester. Hiervoor zoek je een profiel op in je database en kies je voor **Configuratie > Selectietester**. Je klik hier op éen van je selecties en ziet direct aan welke voorwaarden het profiel wel en aan welke voorwaarden het profiel niet voldoet.

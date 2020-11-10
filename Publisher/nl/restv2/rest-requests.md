@@ -72,10 +72,7 @@ call is het echter ook mogelijk dat er een of meerdere nieuwe entiteiten
 aangemaakt worden, in welk geval er een "303 See Other" code geretourneerd zal worden. 
 POST en PUT verzoeken kunnen ook **X-location** headers bevatten met een URL 
 van de nieuw aangemaakte entiteit. Bijvoorbeeld `X-location: https://api.copernica.com/v1/profile/$profileID` 
-voor een nieuw aangemaakt profiel of geüpdatete profielen.
-
-DELETE verzoeken kunnen ook resulteren in een "204 No Content" respons 
-als de data die verwijderd had moeten worden niet gevonden is. Succesvolle 
+voor een nieuw aangemaakt profiel of geüpdatete profielen. Succesvolle 
 DELETE verzoeken bevatten een **X-deleted** header, bijvoorbeeld: `X-deleted: profile $profileID`.
 
 POST, PUT en DELETE calls die niet geresulteerd zijn in een error zullen 

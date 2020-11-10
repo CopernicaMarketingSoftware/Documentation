@@ -12,31 +12,45 @@ to speed it up.
 
 ## Available parameters
 
-The following parameters can be added to the URL as variables for the call:
+The following parameters can be added to the URL as variables:
 
-* **start**: first subprofile to fetch
-* **limit**: length of the batch to fetch
-* **total**: boolean value to show total of available subprofiles
-* **fields**: optional parameter to only fetch subprofiles with certain field values
-* **orderby**: name or ID of field to sort subprofiles by (default = subprofile ID)
-* **order**: Ascending (asc) or descending (desc) order.
-* **dataonly**: Boolean. If set to true the method will only retrieve the profile data, 
-allowing the call to be processed faster.
+* **start**: First ID to retrieve.
+* **limit**: Length of the batch.
+* **total**: Boolean. Indicates whether to show the total or not. Setting this to 'false' 
+will speed up the call.
+* **fields**: Optional parameter to set conditions for subprofiles that should be returned.
+* **orderby**: Name or ID of field to sort subprofiles by (defaults to ID).
+* **order**: Ascending ('asc') or descending ('desc') order.
+* **dataonly**: Boolean. If set to true the method will only retrieve the ID, fields, collection ID, 
+profile ID and modified date to speed up the call.
+
+If you want to retrieve the subprofiles for a specific profile in a 
+collection you can use the method to [fetch subprofiles for a profile](./rest-get-profile-subprofiles).
+
+### Paging
 
 More information on the **start**, **limit** and **total** parameters can be found in 
 the [article on paging](rest-paging).
 
-The parameter fields can be used to select subprofiles. In case you only want 
-to fetch the profiles where the value of the field "country" is equal to 
-"Netherlands" you can assert this in the *fields* field. For more information on 
-using the *fields* parameter you can consult the [article on the fields parameter](rest-fields-parameter).
+### Fields
 
-The variable order can be set to the name or the ID of a field to sort the 
+The **fields** parameter can be used to select subprofiles. For example, 
+if you only want to request subprofiles where the field “country” equals 
+“The Netherlands”, you can do so using “fields”. More information on 
+this parameter can be found in the 
+[article on the “fields” parameter](rest-fields-parameter).
+
+### Ordering
+
+The **orderby** variable can be set to the name or the ID of a field to sort the 
 subprofiles by it. There are also three special values to sort by:
 
-* **id**: default value, sort subprofiles by ID
-* **random**: return subprofiles in a random order
-* **modified**: subprofiles are ordered by last modified
+* **id**: The default value; profiles are ordered based on their ID.
+* **random**: Subprofiles are randomly ordered.
+* **modified**: Subprofiles are ordered based on the *modified* timestamp.
+
+The **order** variable can be used to sort in ascending ('asc') or descending 
+('desc') order.
 
 ## Returned fields
 
@@ -51,6 +65,9 @@ property. Each subprofile contains the following fields:
 * **created**: Timestamp for creation of subprofile in YYYY-MM-DD hh:mm:ss format.
 * **modified**: Timestamp for last edit of subprofile in YYYY-MM-DD hh:mm:ss format.
 * **removed**: Indicates whether the subprofile has been removed or not.
+
+Please note that some of these fields will not be available if the **dataonly** 
+parameter has been set to true.
 
 ### JSON example
 
@@ -96,5 +113,9 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-* [List of all API calls](rest-api)
-* [GET collection profile identifiers](rest-get-collection-subprofiles)
+* [Overview of available API methods](./rest-api)
+* [GET profile IDs](./rest-get-collection-profileids)
+* [GET profile subprofiles](./rest-get-profile-subprofiles)
+* [POST collection subprofiles](./rest-post-collection-subprofiles)
+* [PUT subprofile fields](./rest-put-subprofile-fields)
+* [DELETE subprofile](./rest-delete-subprofile)

@@ -55,6 +55,10 @@ installed if you want to use the Couchbase storage engine, and the Mongo C Drive
 is needed to connect to MongoDB.
 
 
+## S3 specifics
+
+When using S3 as a storage it is currently required that the storage-threads setting is set to 1.
+
 ## MongoDB specifics
 
 The address string to connect to MongoDB is directly passed to the MongoDB
@@ -116,7 +120,7 @@ Each individual part of a big message has the following properties:
 * **_id**: unique message identifier, this is unique for each part
 * **parent**: identifier of the master document
 * **value**: part of the message data
-* **offset**: the offset of the data into the full message
+* **start**: the offset of the data into the full message
 * **expire**: expiration timestamp
 * **modified**: last modified timestamp
 

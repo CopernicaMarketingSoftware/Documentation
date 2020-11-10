@@ -188,9 +188,9 @@ in de onderstaande tabel.
 | GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                               | Opvragen van profiel informatie                                   |
 | PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                               | Updaten van profiel informatie                                    |
 | DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                            | Verwijderen van een profiel                                       |
-| GET    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-get-profile-subprofiles)                       | Opvragen van alle profiel subprofielen                            |
-| POST   | [api.copernica.com/v2/profile/$id/subprofiles](./rest-post-profile-subprofiles)                      | Aanmaken van een nieuw profiel subprofiel                         |
-| PUT    | [api.copernica.com/v2/profile/$id/subprofiles](./rest-put-profile-subprofiles)                       | Updaten van een of meerdere profiel subprofielen                  |
+| GET    | [api.copernica.com/v2/profile/$id/subprofiles/$id](./rest-get-profile-subprofiles)                   | Opvragen van alle subprofielen voor een profiel                   |
+| POST   | [api.copernica.com/v2/profile/$id/subprofiles/$id](./rest-post-profile-subprofiles)                  | Aanmaken van een nieuw subprofiel                                 |
+| PUT    | [api.copernica.com/v2/profile/$id/subprofiles/$id](./rest-put-profile-subprofiles)                   | Updaten van een of meerdere subprofielen                          |
 | GET    | [api.copernica.com/v2/profile/$id/fields](./rest-get-profile-fields)                                 | Opvragen van alle profiel velden                                  |
 | PUT    | [api.copernica.com/v2/profile/$id/fields](./rest-put-profile-fields)                                 | Updaten van een of meerdere profiel velden                        |
 | GET    | [api.copernica.com/v2/profile/$id/interests](./rest-get-profile-interests)                           | Opvragen van alle profiel interesses                              |

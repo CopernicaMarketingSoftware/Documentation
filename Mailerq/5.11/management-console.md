@@ -7,6 +7,12 @@ settings to maximize deliverability on the fly. If you have multiple
 instances of MailerQ running in a cluster, you can easily switch between 
 them.
 
+## User Guide
+
+This article focuses on configuring access to the management console. 
+If you want to learn more about the features of the management console and 
+how to use them, we recommend reading our [User Guide](https://www.mailerq.com/user-guide)
+
 ![MailerQ Mail Transfer Agent Management Console](../Images/managment-console-full.jpg)
 
 ## Setting up the Management Console

@@ -1,7 +1,7 @@
-# REST API: GET miniviews views
+# REST API: GET miniview views
 
-Je kunt bekijken welke selecties afhankelijk zijn voor een miniselectie 
-door een HTTP GET request te sturen naar de volgende URL:
+De methode om de selecties die afhankelijk zijn van een miniselectie 
+op te vragen is een HTTP GET methode beschikbaar op het volgende adres:
 
 `https://api.copernica.com/v2/miniview/$id/views?access_token=xxxx`
 
@@ -12,12 +12,14 @@ miniselectie waar je de selecties van wilt opvragen.
 
 De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
-* start: 		eerste database die wordt opgevraagd;
-* limit: 		lengte van de batch die wordt opgevraagd;
-* total: 		toon wel/niet het totaal aantal databases in de output.
+* **start**: Eerste ID om op te vragen
+* **limit**: Aantal profielen om op te vragen
+* **total**: Boolean. Geeft aan of het totale aantal profielen getoond moet worden. 
+De methode is sneller wanneer dit op 'false' staat.
 
-Meer informatie over de betekenis van deze parameters vind je in het
-[artikel over paging](rest-paging).
+### Paging
+
+Meer over de **start**, **limit** en **total** parameters vind je in het [artikel over paging](rest-paging). 
 
 ## Geretourneerde velden
 
