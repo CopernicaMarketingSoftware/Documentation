@@ -111,6 +111,10 @@ mail. The following properties are recognized by MailerQ:
         <td>priority</td>
         <td>the priority of the message</td>
     </tr>
+    <tr>
+        <td>security</td>
+        <td>the security preference of the message</td>
+    </tr>
 </table>
 
 
@@ -728,6 +732,35 @@ The "update" option works similar, but it non-existing headers will not be appen
 To give the message a priority, the `priority` field should be used. This setting will only have
 an effect if the `rabbitmq-maxpriority` is set in the config file, since the queues will then be 
 constructed as priority queues.
+
+##  Security
+
+Since MailerQ 5.12, emails themselves can now also be given a security value. There
+are 4 different values for this field.
+
+<table>
+    <tr>
+        <td>optional</td>
+        <td>the message will make use of whatever is available, and will not specifically use STARTTLS</td>
+    </tr>
+    <tr>
+        <td>opportunistic</td>
+        <td>the message will use STARTTLS if it is available, but otherwise sends over an unsecured connection</td>
+    </tr>
+    <tr>
+        <td>required</td>
+        <td>a secure connection is required for the message to be sent</td>
+    </tr>
+    <tr>
+        <td>verified</td>
+        <td>the connection has to be secure, and the certificate and cipher have to match the email domain</td>
+    </tr>
+</table>
+
+For example, the following email will require an SSL connection to be set up to the remote server.
+Do keep in mind that this is only for the first hop; as there is no standard for setting this property
+on emails, if the message is transferred from the other server to its final destination, there is no way
+to enforce it being done over a secure connection.
 
 ## Setting custom message properties
 
