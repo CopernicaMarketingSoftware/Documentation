@@ -17,7 +17,6 @@ The following variables should be used:
 ````
 www-port:               8485 (default: 8485)
 www-ip:                 1.2.3.4 (default: 0.0.0.0, meaning all available IP's)
-www-password:           admin (empty by default)
 www-dir:                /usr/share/mailerq/www (default: /usr/share/mailerq/current/www)
 www-connections:        10
 ````
@@ -33,11 +32,43 @@ all IP addresses that are assigned to the server on which MailerQ runs. If you
 only want to make it accessible via one specific IP, you can set the `www-ip` 
 variable. Of course, the IP address that you assign must be bound to the server.
 
-The management console is protected with a password to prevent anyone from
-accessing it. This password can be set with the `www-password`
-variable. Besides setting a password, we also recommend to put the
-management console behind a firewall so that you will not have to worry
-about people breaking into it.
+The management console is protected with a username and password to prevent anyone from accessing it.
+Besides setting a password, we also recommend to put the management console behind a firewall 
+so that you will not have to worry about people breaking into it.
+
+Since MailerQ 5.12, there are many possible ways to let users authenticate to the management console.
+LDAP, RADIUS, linux users, HTTP endpoints, username/password files and lastly custom scripts.
+
+```
+www-auth:          hardcoded://username:password,username2,password2
+www-auth:          ldap://example.com:389/base_dn
+www-auth:          radius://identifier:secret@example.com:1812
+www-auth:          users://user1,mailerq,user2,client*
+www-auth:          http://example.com:80/some_endpoint
+www-auth:          file:///users.txt
+www-auth:          exec:///path/to/file
+```
+
+The first `hardcoded` is simply a comma separated list of username:password pairs, separated
+by the ':' character. Note that this is the least safe, since the passwords will be plainly 
+readable in the config file, in unhashed form.
+The `ldap` specifier will connect to the LDAP server and try to bind to DN=`uid=username,base_dn`.
+If this succeeds, the user is authenticated, if this fails, the user is rejected.
+The `radius` specified will simply request access to the radius server, with the shared secret `secret` and the identifier `identifier`. Make sure that the 
+client is set up correctly, or the server will reject the packets and MailerQ
+logins will fail.
+The `http` will perform HTTP BASIC authentication to the endpoint, and will therefore send along the 
+`Authorization: Basic ...` header. Any 2xx code is treated as a success, while any other code is 
+treated as a failure and a rejection.
+The `file` specifier will load a simple text file that contains the usernames and passwords separated 
+by the `:` character, but with the passwords in hashed form (similar to `/etc/passwd`). These passwords 
+can be generated using `mkpasswd -m sha-512` or `openssl passwd -6`, for example. 
+
+Lastly, the `exec` specifier will run the `/path/to/file` in a subprocess, and will check the return
+code. This way, you can easily implement any authentication you require in a script! For example, you
+can check a username and password combination in an SQL database, or you can ues the linux PAM modules, 
+or you can make very custom requests. This allows you to tie the management console authentication 
+directly into your existing user management infrastructure.
 
 All HTML, CSS and Javascripts that are necessary for the management 
 console are automatically installed into the `/usr/share/mailerq/current/www`

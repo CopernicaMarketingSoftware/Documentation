@@ -129,7 +129,7 @@ You can assign a semicolon separated list of IP ranges to the "smtp-range"
 variable. 
 
 There are many possible ways to let users authenticate to MailerQ. MailerQ supports
-LDAP, RADIUS, linux users, HTTP endpoints, and just username/password files.
+LDAP, RADIUS, linux users, HTTP endpoints, username/password files and lastly custom scripts.
 Keep in mind that if you set a username and password, the SMTP handshake becomes 
 a little slower (incoming connections first have to authenticate before a message 
 can be delivered). If you do not have to, it is therefore ofter faster to set up 
@@ -138,7 +138,7 @@ a firewall or an IP range to restrict access, than to require authentication.
 ```
 smtp-auth:          hardcoded://username:password,username2,password2
 smtp-auth:          ldap://example.com:389/base_dn
-smtp-auth:          radius://secret@example.com:1812
+smtp-auth:          radius://identifier:secret@example.com:1812
 smtp-auth:          users://user1,mailerq,user2,client*
 smtp-auth:          http://example.com:80/some_endpoint
 smtp-auth:          file:///users.txt
@@ -150,7 +150,9 @@ by the ':' character. Note that this is the least safe, since the passwords will
 readable in the config file, in unhashed form.
 The `ldap` specifier will connect to the LDAP server and try to bind to DN=`uid=username,base_dn`.
 If this succeeds, the user is authenticated, if this fails, the user is rejected.
-The `radius` specified will simply request access to the radius server, with the shared secret `secret`.
+The `radius` specified will simply request access to the radius server, with the shared secret `secret` and the identifier `identifier`. Make sure that the 
+client is set up correctly, or the server will reject the packets and MailerQ
+logins will fail.
 The `http` will perform HTTP BASIC authentication to the endpoint, and will therefore send along the 
 `Authorization: Basic ...` header. Any 2xx code is treated as a success, while any other code is 
 treated as a failure and a rejection.
