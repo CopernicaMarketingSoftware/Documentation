@@ -285,6 +285,10 @@ goes through the following states:
         <td>a tcp connection is set up</td>
     </tr>
     <tr>
+        <td>handshake</td>
+        <td>a handshake is being performed with the proxy server</td>
+    </tr>
+    <tr>
         <td>intro</td>
         <td>the TCP connection has been set up, waiting for initial welcome message from server</td>
     </tr>
@@ -339,6 +343,10 @@ goes through the following states:
     <tr>
         <td>message</td>
         <td>the full mime data followed by a dot has been sent</td>
+    </tr>
+    <tr>
+        <td>idle</td>
+        <td>smtp pipe was not processing any messages</td>
     </tr>
     <tr>
         <td>unknown</td>

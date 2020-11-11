@@ -68,6 +68,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [smarthost-password](smarthost#how-to-configure-the-smarthost-feature)   | Smarthost password
 | [smarthost-port](smarthost#how-to-configure-the-smarthost-feature)       | Smarthost port
 | [smarthost-username](smarthost#how-to-configure-the-smarthost-feature)   | Smarthost username
+| [smtp-auth](smtp-server#controlling-access)                              | Authentication string for authenticating to SMTP server
 | [smtp-auth-results](smtp-server#testing-incoming-messages)               | Toggle adding authentication results to MIME header
 | [smtp-certificate](smtp-server#secure-connections)                       | Certificate for secure SMTP connections
 | [smtp-check](smtp-server#testing-incoming-messages)                      | Comma separated list of checks to perform on incoming messages
@@ -79,7 +80,6 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [smtp-key](smtp-server#secure-connections)                               | Private key for secure SMTP connections
 | [smtp-mappable-ips](smtp-server#config-file-settings)                    | List of mappable IP adresses
 | [smtp-maxsize](smtp-server#other-settings)                               | Maximum message size to accept
-| [smtp-password](smtp-server#controlling-access)                          | Password for authenticating to SMTP server
 | [smtp-port](smtp-server#config-file-settings)                            | Ports for incoming MailerQ connections
 | [smtp-proxy](smtp-server#running-behind-haproxy)                         | IPs to treat as connection from proxy server
 | [smtp-range](smtp-server#controlling-access)                             | Range of IP address to allow incoming email for
@@ -92,7 +92,6 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [smtp-timeout](smtp-server#other-settings)                               | Max idle time on incoming SMTP connections
 | [smtp-protection](smtp-server#other-settings)                            | Enable SMTP incoming IP blacklist
 | [smtp-unmappable-ips](smtp-server#config-file-settings)                  | List of unmappable IP addresses
-| [smtp-username](smtp-server#controlling-access)                          | Username for authenticating to SMTP server
 | [spamassassin-host](smtp-server#testing-incoming-messages)               | Address for SpamAssassin daemon 
 | [spamassassin-port](smtp-server#testing-incoming-messages)               | Port for SpamAssassin daemon
 | [spool-delay](spool-directory#config-file-options)                       | Delay for processing spool directory files
@@ -111,6 +110,7 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [user](other-configuration#user)                                         | Change user for MTA
 | [validate-envelope](other-configuration)                                 | Validate envelope address before sending
 | [validate-recipient](other-configuration)                                | Validate recipient address before sending
+| [www-auth](mgmt-setup#activation)                                        | Management console authentication string
 | [www-cache-control](mgmt-setup#advanced-caching-options)                 | Enable or disable browser cache
 | [www-certificate](mgmt-setup#setting-up-a-secure-management-console)     | Certificate file for secure connection to management console
 | [www-ciphers](mgmt-setup#setting-up-a-secure-management-console)         | Supported ciphers for secure management console
@@ -118,7 +118,6 @@ the setting more in-depth. Or do you want to [search by topic](configuration "Co
 | [www-ip](multiple-instances#listening-ip/ports-combinations)             | Web interface IP (IP/port combination unique for every instance of MailerQ)
 | [www-dir](mgmt-setup#activation)                                         | Directory for installing MailerQ management console files
 | [www-host](multiple-instances#listening-ip/ports-combinations)           | Web interface host (IP/port combination unique for every instance of MailerQ)
-| [www-password](mgmt-setup#activation)                                    | Management console password
 | [www-port](mgmt-setup#activation)                                        | Port number for the management console
 | [www-private-key](mgmt-setup#setting-up-a-secure-management-console)     | Private key for secure connection to management console
 | [www-secure-port](mgmt-setup#setting-up-a-secure-management-console)     | Secure (HTTPS) port number for the management console
