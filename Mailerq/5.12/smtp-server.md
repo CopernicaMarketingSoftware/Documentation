@@ -128,6 +128,8 @@ smtp-range:         192.168.0.0/16
 You can assign a semicolon separated list of IP ranges to the "smtp-range"
 variable. 
 
+### Authentication
+
 There are many possible ways to let users authenticate to MailerQ. MailerQ supports
 LDAP, RADIUS, linux users, HTTP endpoints, username/password files and lastly custom scripts.
 Keep in mind that if you set a username and password, the SMTP handshake becomes 
