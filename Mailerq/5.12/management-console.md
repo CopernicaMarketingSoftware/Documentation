@@ -32,6 +32,8 @@ all IP addresses that are assigned to the server on which MailerQ runs. If you
 only want to make it accessible via one specific IP, you can set the `www-ip` 
 variable. Of course, the IP address that you assign must be bound to the server.
 
+## Authentication
+
 The management console is protected with a username and password to prevent anyone from accessing it.
 Besides setting a password, we also recommend to put the management console behind a firewall 
 so that you will not have to worry about people breaking into it.
