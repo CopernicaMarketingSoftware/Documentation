@@ -106,7 +106,7 @@ deze gegevens bestaat? Wat moet er gebeuren als er op basis van de gebruikte
 
 De webformulierinstellingen vind je in het *Webformulier* menu.
 
-- Ga naar Webformulier > *Intellingen...*
+- Ga naar Webformulier > *Instellingen...*
 - Ga naar het tabblad *Profielen bewerken*. Kies *Werking wijzigen* om de
 wizard te starten.
 
