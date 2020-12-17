@@ -243,6 +243,7 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)     | Opvragen van impressies voor een mailing                  |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)   | Opvragen van unsubscribes voor een mailing                |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Opvragen van de testgroepen voor een mailing        
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/finalgroup](./rest-get-publisher-emailing-finalgroup)       | Opvragen van de definitieve groep voor een mailing        
 | GET    | [api.copernica.com/v2/publisher/testgroup/$id/statistics](./rest-get-publisher-testgroup-statistics)     | Opvragen van de statistieken van een testgroep     |
 | GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                               | Opvragen van bericht informatie                           |
 | GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)           | Opvragen van alle Publisher mailings voor een profiel     |
