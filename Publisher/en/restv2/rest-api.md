@@ -241,6 +241,7 @@ templates and mailings.
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)     | Fetch the impressions for a mailing           |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)   | Fetch the unsubscribes for a mailing          |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Fetch the testgroups for a mailing            |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/finalgroup](./rest-get-publisher-emailing-finalgroup)       | Fetch the finalgroup for a mailing            |
 | GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                               | Fetch the message information                 |
 | GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)           | Fetch all Publisher mailings for a profile    |
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/emailings](./rest-get-subprofile-publisher-emailings)     | Fetch all Publisher mailings for a subprofile |
