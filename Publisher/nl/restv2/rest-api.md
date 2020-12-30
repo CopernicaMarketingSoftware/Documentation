@@ -49,6 +49,7 @@ In de onderstaande tabel vind je een methode om account informatie op te vragen.
 | Type   | Adres                                                                                        | Omschrijving                                 |
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | GET    | [api.copernica.com/v2/identity](./rest-get-identity)                                         | Opvragen van account informatie              |
+| GET    | [api.copernica.com/v2/consumption](./rest-get-consumption)                                   | Opvragen van account verbruik                |
 
 ## Databases & Collecties
 
