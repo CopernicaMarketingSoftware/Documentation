@@ -7,9 +7,6 @@ GET call to the following URL:
 
 Where `$id` should be replaced with the ID of the mailing you want summarized.
 
-## Optional parameter
-* **Unsubscribed**: Set to 'true' to retrieve the unsubscriptions.
-
 ## Returned fields
 
 The method returns a JSON object containing the following information:
