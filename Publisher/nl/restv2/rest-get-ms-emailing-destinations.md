@@ -9,6 +9,9 @@ Hier moet `$id` vervangen worden door de ID van de mailing. Deze methode
 ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestampsent** veld.
 
+## Optionele parameters
+* **Unsubscribed**: Plaats op 'true' om uitgeschreven destinations op te halen.
+
 ## Teruggegeven velden
 
 Deze methode geeft een JSON object terug met destinations. Voor elke destination 
