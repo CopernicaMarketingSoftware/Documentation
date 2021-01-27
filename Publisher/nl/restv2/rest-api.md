@@ -84,6 +84,7 @@ collecties en hun eigenschappen.
 | GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Opvragen van alle profielen                    |
 | POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een profiel                       |
 | PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Updaten van een of meerdere profielen          |
+| DE:ETE | [api.copernica.com/v2/database/$id/profiles](./rest-delete-database-profiles)                | Verwijderen van een of meerdere profielen      |
 | PUT    | [api.copernica.com/v2/database/$id/intentions](./rest-put-database-intentions)               | Updaten van de intenties van de database       |
 
 ### Collecties
@@ -185,7 +186,7 @@ in de onderstaande tabel.
 
 | Type   | Adres                                                                                                | Omschrijving                                                      |
 |--------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                          | Aanmaken van een database profiel                                 |
+| POST   | [api.copernica.com/v2///profiles](./rest-post-database-profiles)                          | Aanmaken van een database profiel                                 |
 | GET    | [api.copernica.com/v2/profile/$id](./rest-get-profile)                                               | Opvragen van profiel informatie                                   |
 | PUT    | [api.copernica.com/v2/profile/$id](./rest-put-profile)                                               | Updaten van profiel informatie                                    |
 | DELETE | [api.copernica.com/v2/profile/$id](./rest-delete-profile)                                            | Verwijderen van een profiel                                       |
