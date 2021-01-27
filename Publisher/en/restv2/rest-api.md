@@ -84,6 +84,7 @@ structure.
 | GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Fetch all profiles                           |
 | POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Create a profile                             |
 | PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Update one or multiple profiles              |
+| DELETE | [api.copernica.com/v2/database/$id/profiles](./rest-delete-database-profiles)                | Delete one or multiple profiles              |
 | PUT    | [api.copernica.com/v2/database/$id/intentions](./rest-put-database-intentions)               | Update the database intentions               |
 
 ### Collections
