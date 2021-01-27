@@ -8,6 +8,9 @@ Where the `$id` should be replaced with the ID of the emailing. This method
 also support the use of the [fields parameter](./rest-fields-parameter) 
 for the **timestampsent** field.
 
+## Optional parameters
+* **Unsubscribed**: Set to 'true' for retrieving the unsubscribed destinations.
+
 ## Returned fields
 
 The method returns a JSON object with several destinations under the 'data' property. 
