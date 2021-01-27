@@ -301,6 +301,7 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Fetch all mailings                                    |
 | GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Fetch a mailing                                       |
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Create a mailing                                      |
+| GET    | [api.copernica.com/v2/ms/destinations](./rest-get-ms-destinations)                           | Fetch all destinations for a specific period          |
 | GET    | [api.copernica.com/v2/ms/scheduledemailings](./rest-get-ms-scheduledemailings)               | Fetch all scheduled mailings                          |
 | GET    | [api.copernica.com/v2/ms/scheduledemailing/$id](./rest-get-ms-scheduledemailing)             | Fetch a scheduled mailing                             |
 | POST   | [api.copernica.com/v2/ms/scheduledemailing](./rest-post-ms-scheduledemailing)                | Create a scheduled mailing                            |
