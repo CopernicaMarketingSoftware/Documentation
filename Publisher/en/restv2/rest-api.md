@@ -49,6 +49,7 @@ In the table below you can find a call to retrieve account information.
 | Type   | Address                                                                                      | Description                                   |
 |--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
 | GET    | [api.copernica.com/v2/identity](./rest-get-identity)                                         | Fetch the account information                 |
+| GET    | [api.copernica.com/v2/consumption](./rest-get-consumption)                                   | Fetch the account consumption                 |
 
 ## Databases & Collections
 
