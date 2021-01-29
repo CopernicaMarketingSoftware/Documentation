@@ -84,7 +84,7 @@ collecties en hun eigenschappen.
 | GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Opvragen van alle profielen                    |
 | POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Aanmaken van een profiel                       |
 | PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Updaten van een of meerdere profielen          |
-| DE:ETE | [api.copernica.com/v2/database/$id/profiles](./rest-delete-database-profiles)                | Verwijderen van een of meerdere profielen      |
+| DELETE | [api.copernica.com/v2/database/$id/profiles](./rest-delete-database-profiles)                | Verwijderen van een of meerdere profielen      |
 | PUT    | [api.copernica.com/v2/database/$id/intentions](./rest-put-database-intentions)               | Updaten van de intenties van de database       |
 
 ### Collecties
@@ -318,6 +318,7 @@ templates en mailings.
 | GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Opvragen van alle mailings                                        |
 | GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Opvragen van een mailing                                          |
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Aanmaken van een mailing                                          |
+| GET    | [api.copernica.com/v2/ms/destinations](./rest-get-ms-destinations)                           | Opvragen van alle destinations over een bepaalde periode          |
 | GET    | [api.copernica.com/v2/ms/scheduledemailings](./rest-get-ms-scheduledemailings)               | Opvragen van alle ingeroosterde mailings                          |
 | GET    | [api.copernica.com/v2/ms/scheduledemailing/$id](./rest-get-ms-scheduledemailing)             | Opvragen van een ingeroosterde mailing                            |
 | POST   | [api.copernica.com/v2/ms/scheduledemailing/](./rest-post-ms-scheduledemailing)               | Aanmaken van een ingeroosterde mailing                            |
