@@ -26,20 +26,30 @@ be greater than zero, since zero is explicitly disallowed due to the performance
 
 ## Timeouts
 
-Since 5.12, the timeouts on DNS requests can be configured in MailerQ. There are three settings for altering the timings. Naturally,
+Since 5.12, the timeouts on DNS requests can be configured in MailerQ. There are two settings for altering the timings. Naturally,
 settings from /etc/resolv.conf will be picked up first, and then the settings in MailerQ are applied on top of them. If the setting
 inside MailerQ is empty, the setting from resolv.conf will be kept. 
 
 ```
-dns-expire:     60.0
-dns-spread:     15.0
+dns-timeout:     60.0
 dns-interval:    3.0
 ```
 
-The `dns-expire` setting specifies when a request will be marked as failed. The `dns-spread` option sets after how many
-seconds MailerQ should contact a secondary nameserver in /etc/resolv.conf. This repeats until all nameservers have been
-contacted, or the expire is reached (whichever one comes first). The `dns-interval` specifies after how many seconds of
-waiting for a reply on the initial query, the query should be retransmitted. 
+The `dns-timeout` setting limits the time the resolver waits for a response after the last attempt was made. 
+The `dns-interval` specifies after how many seconds of waiting for a reply on the initial query, the query should be retransmitted. 
+
+## Quality of Service
+
+Since 5.13 two settings were added to finetune the maximum workload of the DNS resolver:
+
+```
+dns-attempts:   5
+dns-capacity:   100
+```
+
+`dns-attempts` limits the number of attempts done for a single operation. Higher numbers may result in more messages being sent successfully, 
+but can lead to degraded performance due to spending more time per message on DNS operations. `dns-capacity` limits the number of operations
+that may run simultaneously. The optimal number will depend on the system MailerQ is running on.
 
 ## Buffer size
 
@@ -62,6 +72,11 @@ sysctl -w net.core.wmem_max=1000000
 
 ## Rotation
 
-If all nameservers in /etc/resolv.conf are local resolvers and have a similar resolving speed, we recommend adding the rotate option
-to /etc/resolv.conf. This will allow MailerQ to distribute the load across the nameservers randomly, performing a rudimentary load-balancing
-on it. See `man 5 resolv.conf` for more information on options.
+If all nameservers in /etc/resolv.conf are local resolvers and have a similar resolving speed, we recommend setting the rotate option to true:
+
+```
+dns-rotate:     true
+```
+
+This will allow MailerQ to distribute the load across the nameservers randomly, performing a rudimentary load-balancing
+on it. 
