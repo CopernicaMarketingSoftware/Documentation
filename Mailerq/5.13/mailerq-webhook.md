@@ -94,4 +94,20 @@ error-exchange:
 # You can use this to balance speed and memory usage
 # The default setting of 1000 should be fine in almost all cases
 qos:                        1000
+
+# Filter
+# Use this to filter the data sent to endpoint
+# This is interpreted as a blacklist, unless whitelist is set to true
+# Format is a space-separated list of JSON pointers, which are similar to a filepath into the JSON object
+# If whitelist is set to false, the fields in the list are filtered out from the data.
+# If whitelist is set to true, the fields not in the list are filtered out from the data.
+# Example to filter recipient email: 
+#   filter: results/*/recipient
+#   whitelist: false
+# Leave empty with whitelist set to false to send all available data
+filter: 
+
+# Whitelist
+# Set this to true to interpret filter as a whitelist, instead of a blacklist.
+whitelist:                  false
 ```
