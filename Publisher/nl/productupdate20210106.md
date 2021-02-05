@@ -1,4 +1,4 @@
-# Productupdate
+# Productupdate 06-01-2021
 
 ## Je stijl- en XSLT-bestanden beheren in Marketing Suite
 * De stylesheets en XSLT-bestanden die je voorheen alleen via Publisher kon beheren, zijn nu ook toegankelijk in Marketing Suite. Hierdoor is het iets makkelijker en sneller om dit soort bestanden te beheren. Je vindt de modules onder het kopje ‘Stijl’ en ‘XSLT’ in de Marketing Suite. 
