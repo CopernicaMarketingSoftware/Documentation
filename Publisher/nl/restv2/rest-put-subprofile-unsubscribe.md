@@ -1,13 +1,13 @@
-# REST API: PUT unsubscribe profiel
+# REST API: PUT unsubscribe subprofiel
 
-Je kunt het ingestelde uitschrijfgedrag van een profiel in een database
-uitvoeren door HTTP PUT request te sturen naar de volgende URL:
+Je kunt het ingestelde uitschrijfgedrag van een subprofiel in de collectie van
+een database uitvoeren door HTTP PUT request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v2/profile/$id/unsubscribe/?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id/unsubscribe/?access_token=xxxx`
 
 
 De variabele `$id` moet vervangen worden door de numerieke identifier van het
-profiel waarvan het uitschrijfgedrag moet worden uitgevoerd.
+subprofiel waarvan het uitschrijfgedrag moet worden uitgevoerd.
 
 ## Body data
 
@@ -30,7 +30,7 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 $data = array();
 
 // voer het verzoek uit
-$api->put("profile/{$profielID}/unsubscribe", $data));
+$api->put("subprofile/{$subprofielID}/unsubscribe", $data));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
@@ -38,4 +38,4 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [Unsubscribe subprofiel](rest-put-profile-unsubscribe)
+* [Unsubscribe profiel](rest-put-profile-unsubscribe)
