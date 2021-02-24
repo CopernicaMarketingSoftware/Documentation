@@ -5,7 +5,6 @@ uitvoeren door HTTP PUT request te sturen naar de volgende URL:
 
 `https://api.copernica.com/v2/profile/$id/unsubscribe/?access_token=xxxx`
 
-
 De variabele `$id` moet vervangen worden door de numerieke identifier van het
 profiel waarvan het uitschrijfgedrag moet worden uitgevoerd.
 
@@ -26,7 +25,7 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// velden die bewerkt moeten worden
+// body data
 $data = array();
 
 // voer het verzoek uit
