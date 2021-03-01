@@ -1,131 +1,99 @@
-# Databasemanagement
-Een goede verzendlijst voor je e-mail marketing draagt bij aan je
-deliverability en heeft een positief effect op de resultaten van je e-mail
-marketing. Zo heeft het blijven sturen van e-mails naar
-personen die deze niet meer openen of naar niet-bestaande e-mailadressen een
-negatieve invloed op je e-mailreputatie.
+# Databasebeheer en standaardselecties 
+Een goede verzendlijst verbetert de resultaten van e-mailmarketingcampagnes. Het versturen van e-mails naar niet-bestaande e-mailadressen of personen die de mails niet openen heeft een negatieve invloed op je verzendreputatie. Daardoor kunnen er meer e-mails in de spamfolder belanden.
 
-De klant is binnen Copernica vrij om zelf een selectiestructuur te bepalen,
-maar wij bieden ook een standaard selectiestructuur aan. Veel van onze
-gebruikers hanteren deze standaardselectiestructuur. Daarmee halen ze
-automatisch alle foutieve en dubbele e-mailadressen, bounces en
-uitschrijvingen uit hun verzendselectie.
+Je bent binnen Copernica vrij om zelf een [selectiestructuur](./database-selections-introduction) te bepalen. Om je daarbij te helpen bieden we echter ook een standaardstructuur aan. De standaardstructuur filtert de profielen die je mails niet kunnen of willen ontvangen uit de verzendselectie. Denk daarbij aan bounces, klachten, dubbele profielen, uitschrijvers, inactieven of profielen met een foutieve e-mailsyntax.
 
-In de Publisher is het onder 'Databasebeheer -> Maak standaard selecties aan...' mogelijk om deze structuur in te laden in je al bestaande database. Bij het aanmaken van een nieuwe database is een optie om dit direct in te regelen.
+Je kunt de standaardselectie aanmaken door binnen je gekozen database te navigeren naar '**Configureren -> Standaardselecties aanmaken**'. Ook kun je deze instellen bij het aanmaken van een nieuwe database.
 
-In de Marketing Suite vind je deze opties onder 'Configureren -> Maak standaardselecties aan' of bij het aanmaken van een nieuwe database.
+De standaardstructuur is onderverdeeld in twee hoofdselecties: **A_Databasebeheer** en **B_Verzendselectie**. 
 
-De standaard structuur is in twee hoofdselecties verdeeld,
-**A_DatabaseManagement** en **B_Verzendselectie**. Hieronder beschrijven wij
-deze twee hoofdselecties.
+## A_Databasebeheer
+In de eerste hoofdselectie (A_Databasebeheer) selecteren we alle beschikbare profielen. Hiermee kun je in de onderliggende selecties bepaalde profielen uitsluiten van de uiteindelijke verzendselectie.
 
-```
-- A_DatabaseManagement
-    - A_Bounces
-    - B_FoutiefEmailAdres
-    - C_Klachten
-    - D_DubbeleProfielen
-    - E_Uitschrijvingen
-    - F_Inactief
-- B_Verzendselectie
-    - Campagnes
-```
+We maken hierbij gebruik van een conditie op basis van een ‘**Check op veldwaarde**’ en geven aan dat het veld ‘ID’ groter moet zijn dan 0. Zo voldoen alle profielen binnen de database aan de gestelde conditie.
 
-## A_DatabaseMangement
-Deze selectie bevat ieder profiel uit de database. Deze selectie zit puur voor structuur in
-de standaard selecties. De selecties onder A_DatabaseManagement zullen de profielen
-bevatten die we niet willen mailen, deze worden in de volgende paragrafen
-toegelicht.
-
-Deze selectie bevat 1 regel met 1 conditie. De conditie is dat het veld ID groter moet zijn dan de waarde '0'. Hierdoor komen alle profielen in deze selectie terecht.
+![Voorbeeld van A_Databasebeheer](../images/Standaardselecties_A_Databasebeheer.png)
 
 ### A_Bounces
-Bevat alle profielen die in het verleden een hard bounce hebben gegeven of
-een bepaald aantal keer een soft bounces waren. Hard bounces zijn fouten die
-altijd zullen blijven terugkomen, deze adressen zal je nooit meer willen mailen.
-Een soft bounce hoeft niet terug te blijven komen, maar als een soft bounce
-blijft gebeuren, dan dient deze ook uitgesloten te worden. De hoeveelheid
-soft bounces is per klant anders: pas dit getal aan voor je eigen database.
-Voor een klant die dagelijks mailt moet het aantal soft bounces veel hoger dan
-voor iemand die één keer per maand mailt.
+Deze selectie bevat alle profielen waarbij er in het verleden foutmeldingen zijn ontstaan bij het afleveren van een bericht. Deze fouten noemen we bounces. 
 
-De selectie bevat 4 regels met elk 2 condities: 
-* De eerste regel heeft een conditie die stelt dat er sinds 2000-01-01 meer dan 2 hardbounces zijn
-voorgekomen en dat er in de afgelopen 7 dagen geen fout mag zijn opgetreden. Dit zorgt ervoor dat profielen niet per ongeluk in deze selectie kunnen voorkomen. 
-* De tweede regel doet eigenlijk hetzelfde voor softbounces. De andere
-2 regels zijn hetzelfde als de eerste 2 genoemde, maar deze zijn ingesteld voor
-Marketing Suite mailings.
+We maken onderscheid tussen hardbounces (permanente fouten, bijvoorbeeld wanneer het e-mailadres niet bestaat) en softbounces (tijdelijke fouten, bijvoorbeeld wanneer de mailbox van de ontvanger vol zit). **Let op:** deze selectie is reactief. Bounces moeten geregistreerd zijn op mails die vanuit Copernica verstuurd zijn.
 
-Wil je meer te weten komen over email bounces? Lees daar dan meer over in
-[dit artikel](https://www.copernica.com/nl/documentation/bounces).
+Een hardbounce wordt in Copernica aangemerkt als een fout die bij een volgende verzending mogelijk weer optreedt. Bij een softbounce bestaat de kans dat de e-mail bij een nieuwe verzending wel wordt afgeleverd.  
+
+De bounceselectie bevat zes regels met elk twee condities:  
+
+- Conditie 1 kijkt naar het soort- en het aantal fouten;
+- Conditie 2 zorgt dat profielen niet onterecht binnen de selectie vallen.
+
+**Regel 1**  
+Deze regel controleert of er sinds 2000-01-01 meer dan 2 hardbounces zijn voorgekomen op basis van Publisher-mailings. Profielen worden niet geselecteerd als ze in de afgelopen week gemaild zijn zonder dat daar een fout bij is opgetreden. Dat zorgt ervoor dat een profiel met een tijdelijke of onterechte foutmelding niet meteen in de selectie wordt opgenomen.
+
+**Regel 2**  
+Deze regel controleert of er sinds 2000-01-01 meer dan 2 hardbounces zijn voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen week gemaild zijn zonder dat daar een fout bij is opgetreden.
+
+**Regel 3**  
+Deze regel controleert of er sinds 2000-01-01 meer dan 3 softbounces zijn voorgekomen op basis van Publisher-mailings. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
+
+**Regel 4**  
+Deze regel controleert of er sinds 2000-01-01 meer dan 3 softbounces zijn voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
+
+**Regel 5**  
+Deze regel controleert of er sinds 2000-01-01 meer dan 9 willekeurige fouten zijn voorgekomen op basis van Publisher-mailings. Dat is nodig omdat sommige mailboxproviders foutmeldingen terugsturen zonder de juiste foutmelding te vermelden. Om die reden worden niet alle fouten als soft- of hardbounce geclassificeerd. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
+
+**Regel 6**  
+Deze regel controleert of er sinds 2000-01-01 meer dan 9 willekeurige fouten zijn voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
+
 
 ### B_FoutiefEmailAdres
-Bevat alle profielen waarbij er in het e-mail veld geen e-mailadres staat.
-Denk hierbij aan het geval dat het veld leeg is of dat er geen '@'
-in het e-mailadres zit.
+Deze selectie bevat alle profielen waarbij het e-mailveld geen geldig e-mailadres bevat, bijvoorbeeld wanneer het e-mailveld leeg is of geen ‘@’ bevat. Er wordt hierbij enkel gekeken naar de syntax van het e-mailadres. De vraag of het e-mailadres ook daadwerkelijk bestaat wordt niet meegenomen.
 
-De selectie bevat 1 regel en 1 conditie. De conditie checkt of het e-mail veld
-een correct e-mailadres bevat. Vervolgens wordt de regel omgedraaid door hem op
-**OF NIET** te zetten waardoor alle profielen met een foutieve waarde in het e-mail veld in deze selectie vallen.
+Foutieve e-mailadressen worden geïdentificeerd op basis van een ‘**Check op veldwaarde**’. Daarbij wordt bepaald of het e-mailveld een correct opgemaakt e-mailadres bevat. Vervolgens wordt de regel ‘omgedraaid’: enkel profielen met een foutieve waarde komen in de selectie terecht.
+
+![Voorbeeld van B_FoutiefEmailAdres](../images/Standaardselecties_B_Foutiefemailadres.png)
 
 ### C_Klachten
-Bevat alle profielen die op een mailing een spamklacht hebben gegeven.
+Deze selectie bevat alle profielen waarbij er een spamklacht geregistreerd is. Zo’n klacht wordt geregistreerd zodra een ontvanger in zijn e-mailclient op de spamknop klikt. **Let op:** niet alle ontvangende mailservers versturen deze terugkoppeling naar de verzender.
 
-Deze selectie bevat 2 regels met beide 1 conditie:
-* De eerste regel heeft een conditie die stelt dat er sinds 2000-01-01 meer dan 0 spamklachten zijn
-voorgekomen. 
-* De tweede regel heeft dezelfde conditie voor Marketing Suite mailings.
+De selectie bestaat uit twee regels met ieder één conditie:
+
+- De eerste conditie bepaalt of er meer dan 0 spamklachten zijn geregistreerd op basis van Publisher-mailings;
+- De tweede conditie bepaalt of er meer dan 0 spamklachten zijn geregistreerd op basis van Marketing Suite-mailings.
+
+![Voorbeeld van C_Klachten](../images/Standaardselecties_C_klachten.png)
 
 ### D_DubbeleProfielen
-Bevat alle profielen die dubbel in de database staan behalve het
-oudste/originele profiel.
+Wanneer er twee profielen met hetzelfde e-mailadres zijn toegevoegd kun je met deze selectie aangeven dat enkel het originele profiel in de verzendselectie moet worden opgenomen. Hierbij wordt er gebruik gemaakt van een ‘**Check op dubbele of unieke profielen**’. Dubbele profielen worden eerst op basis van het e-mailveld geselecteerd. Vervolgens worden profielen met het laagste ID uitgezonderd.
 
-Deze selectie bevat 1 regel met 1 conditie. De conditie checkt of een profiel
-dubbel is op basis van het e-mailadres. Als het e-mailadres niet uniek hoeft te zijn
-in jouw account, verander dit dan naar jouw unieke waarde.
+Wil je juist het meest recente profiel in de verzendselectie opnemen? Stel de conditie dan in op filtratie van het hoogste ID.
 
-Standaard staat de conditie op 'selecteer alle dubbele profielen, met uitzondering van het profiel met het laagste ID'. Hierdoor blijft het profiel dat als eerst in je database stond (met de meeste campagne geschiedenis) actief.
+![Voorbeeld van D_DubbeleProfielen](../images/Standaardselecties_D_DubbeleProfielen.png)
 
 ### E_Uitschrijvingen
-Bevat alle profielen die zich hebben uitgeschreven voor de nieuwsbrief.
+Deze selectie bevat alle profielen die zich hebben uitgeschreven voor de nieuwsbrief. Hierbij selecteer je een zelfgekozen opt-outveld of genereer je deze bij het aanmaken van standaardselecties.
 
-Deze selectie bevat 1 regel met 1 conditie. De conditie controleert of het
-opt-out veld de waarde 'ja' bevat. Pas dit eventueel aan naar het opt-in/opt-out veld
-en waarde die past bij jouw database. Het opt-in/opt-out veld kan automatisch worden
-toegevoegd aan de database bij het aanmaken van de standaardselecties.
+In het onderstaande voorbeeld bepalen we of het veld '**Afgemeld**' gelijk is aan '**Ja**'. Andere benamingen zijn ook mogelijk: denk bijvoorbeeld aan het veld ‘**Newsletter**’ met de waarde ‘**Unsubscribed**’.
+
+![Voorbeeld van E_Uitschrijvingen](../images/Standaardselecties_E_Uitschrijvingen.png)
 
 ### F_Inactief
-Bevat alle profielen die niet actief zijn. Dit houdt in dat deze profielen
-mailings niet openen en niet klikken op links in je mailings. Deze profielen
-zijn slecht voor je reputatie en kunnen ervoor zorgen dat je mailings niet
-aankomen bij klanten die wel regelmatig mailings openen.
+Deze selectie bevat alle profielen die inactief zijn. Dat houdt in dat deze profielen je e-mails niet openen of niet klikken op de bijbehorende links.
 
-Deze selectie bevat 1 regel met 3 condities:
-* De eerste conditie geeft aan dat het profiel niet in de afgelopen 30 dagen aangemaakt mag zijn. Dit wordt gedaan
-om nieuwe profielen niet gelijk inactief te maken. 
-* De tweede regel checkt of het profiel precies 0 publisher mails geopend heeft of geklikt heeft op links
-daarin in de afgelopen 180 dagen. 
-* De derde regel doet hetzelfde als de tweede, maar dan voor Marketing Suite mailings. 
+Zoals eerder genoemd heeft het verzenden van e-mails naar inactieve profielen een negatieve invloed op je verzendreputatie. Daarnaast kan het ertoe leiden dat e-mails niet in de inbox worden geplaatst bij ontvangers die je e-mails wel regelmatig openen.
 
-De 30 dagen in de eerste regel kan uiteraard aangepast worden naar meer of minder dagen als dit beter past bij jouw account. Stel je mailt iedere dag dan ontvangt de klant in de eerste 30 dagen ook 30 keer een e-mail. Op basis hiervan kun je goed zijn of hij inactief is. Als dit profiel na 30 dagen nog 0 opens heeft, is dit geen actief profiel. Wanneer je maar eens per maand verstuurd heeft de klant maar één mail ontvangen. In dit geval kun je deze waarde dus beter aanpassen naar een hoger aantal dagen.
+Deze selectie bestaat uit één regel met drie condities:
 
-Ditzelfde geldt voor de overige twee condities.
+- De eerste conditie controleert of het profiel niet in de afgelopen 30 dagen is aangemaakt. Zo vallen nieuwe profielen niet direct binnen de selectie;
+- De tweede conditie bepaalt of het profiel in de afgelopen 9 maanden een klik, impressie of fout geregistreerd heeft op basis van Marketing Suite-mailings. Het aantal berichten moet daarbij gelijk zijn aan 0. Zo geef je aan dat het profiel op 0 mailings een klik, impressie of foutmelding geregistreerd heeft. Je wilt namelijk alle profielen selecteren die gedurende deze periode geen activiteit hebben vertoond;
+- De derde conditie is identiek aan de tweede conditie, maar dan op basis van Publisher-mailings.
+
+Denk goed na of de bovenstaande condities aangepast moeten worden aan jouw omstandigheden. E-mailvolume en verzendreputatie verschillen namelijk per verzender. Deze bepalen op hun beurt ook wanneer profielen precies als inactief moet worden beschouwd.
+
+![Voorbeeld van F_Inactief](../images/Standaardselecties_F_Inactief.png)
 
 ## B_Verzendselectie
-De verzendselectie bevat alle profielen die niet in de subselecties van
-A_DatabaseManagement zitten. Dit zorgt ervoor dat er in de verzendselecties
-alleen profielen komen die geen bounce, foutief e-mailadres, klacht,
-dubbel e-mailadres, uitschrijver of inactief adres zijn. Elke subselectie
-onder B_Verzendselectie bevat hierdoor ook enkel de profielen die gemaild mogen
-worden.
+In deze selectie worden alle selecties uitgesloten die onder A_Databasebeheer vallen. Dit zorgt ervoor dat verzendselecties alleen profielen bevatten die vrij zijn van bounces, foutieve e-mailadressen, klachten, dubbele e-mailadressen, uitschrijvingen en inactiviteit.
 
-De selectie bevat maar 1 regel met 6 condities. Elke conditie sluit een van de
-bovengenoemde selecties uit, want deze mogen niet in B_Verzendselectie
-voorkomen.
+Deze selectie bevat één regel met zes condities. De optie ‘**Check inhoud andere selectie**’ vormt hiervan de basis. Wil je naar een specifieke doelgroep versturen? Maak dan onder B_Verzendselectie een subselectie aan.
 
-## Aanmaken standaard selecties
-Het automatisch aanmaken van deze structuur is momenteel alleen mogelijk in de
-Publisher. De Marketing Suite gebruikt dezelfde database als de Publisher,
-hierdoor hoeft dit geen probleem te zijn. Ga in **Profielen** naar
-**Databasebeheer > Maak standaard selecties aan**, kies een taal en eventueel
-een eigen afmeldveld.
+![Voorbeeld van B_Verzendselectie](../images/Standaardselecties_B_Verzendselectie.png)
