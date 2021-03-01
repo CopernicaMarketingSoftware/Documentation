@@ -18,7 +18,7 @@ Een database bestaat doorgaans uit meerdere velden. Je kunt deze velden aanmaken
 * **Verwijzing:** Geschikt voor het verwijzen naar een andere database door middel van een ID. Meer informatie over dit veldtype vind je hier.
 
 ## Extra veldopties
-![](../images/extraveldopties.png)
+![Extra veldopties](../images/extraveldopties.png)
 
 Wanneer je een veld bewerkt of toevoegt kun je per veld een aantal extra opties selecteren. De opties zijn als volgt:
 
@@ -39,6 +39,6 @@ Een databaseveld is eenvoudig te verwijderen door naar '**Velden & Interesses**'
 ## Interesses
 Naast databasevelden kun je ook gebruik maken van interessevelden. Een interesseveld kan enkel aan- of uitgezet worden. Denk hierbij aan een groep 'Huisdieren' met drie verschillende interesses: ‘Hond’ (uitgevinkt), ‘Kat’ (aangevinkt) en ‘Hamster’ (uitgevinkt). 
 
-![](../images/interests.png)
+![Interesses](../images/interests.png)
 
 *Voorbeeld van een profiel met interessevelden*
