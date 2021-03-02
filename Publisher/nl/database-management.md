@@ -12,7 +12,7 @@ In de eerste hoofdselectie (A_Databasebeheer) selecteren we alle beschikbare pro
 
 We maken hierbij gebruik van een conditie op basis van een ‘**Check op veldwaarde**’ en geven aan dat het veld ‘ID’ groter moet zijn dan 0. Zo voldoen alle profielen binnen de database aan de gestelde conditie.
 
-![Voorbeeld van A_Databasebeheer](../images/Standaardselecties_A_Databasebeheer.png)
+![Voorbeeld van A_Databasebeheer](../images/nl/Standaardselecties_A_Databasebeheer.png)
 
 ### A_Bounces
 Deze selectie bevat alle profielen waarbij er in het verleden foutmeldingen zijn ontstaan bij het afleveren van een bericht. Deze fouten noemen we bounces. 
@@ -50,7 +50,7 @@ Deze selectie bevat alle profielen waarbij het e-mailveld geen geldig e-mailadre
 
 Foutieve e-mailadressen worden geïdentificeerd op basis van een ‘**Check op veldwaarde**’. Daarbij wordt bepaald of het e-mailveld een correct opgemaakt e-mailadres bevat. Vervolgens wordt de regel ‘omgedraaid’: enkel profielen met een foutieve waarde komen in de selectie terecht.
 
-![Voorbeeld van B_FoutiefEmailAdres](../images/Standaardselecties_B_Foutiefemailadres.png)
+![Voorbeeld van B_FoutiefEmailAdres](../images/nl/Standaardselecties_B_Foutiefemailadres.png)
 
 ### C_Klachten
 Deze selectie bevat alle profielen waarbij er een spamklacht geregistreerd is. Zo’n klacht wordt geregistreerd zodra een ontvanger in zijn e-mailclient op de spamknop klikt. **Let op:** niet alle ontvangende mailservers versturen deze terugkoppeling naar de verzender.
@@ -60,21 +60,21 @@ De selectie bestaat uit twee regels met ieder één conditie:
 - De eerste conditie bepaalt of er meer dan 0 spamklachten zijn geregistreerd op basis van Publisher-mailings;
 - De tweede conditie bepaalt of er meer dan 0 spamklachten zijn geregistreerd op basis van Marketing Suite-mailings.
 
-![Voorbeeld van C_Klachten](../images/Standaardselecties_C_klachten.png)
+![Voorbeeld van C_Klachten](../images/nl/Standaardselecties_C_klachten.png)
 
 ### D_DubbeleProfielen
 Wanneer er twee profielen met hetzelfde e-mailadres zijn toegevoegd kun je met deze selectie aangeven dat enkel het originele profiel in de verzendselectie moet worden opgenomen. Hierbij wordt er gebruik gemaakt van een ‘**Check op dubbele of unieke profielen**’. Dubbele profielen worden eerst op basis van het e-mailveld geselecteerd. Vervolgens worden profielen met het laagste ID uitgezonderd.
 
 Wil je juist het meest recente profiel in de verzendselectie opnemen? Stel de conditie dan in op filtratie van het hoogste ID.
 
-![Voorbeeld van D_DubbeleProfielen](../images/Standaardselecties_D_DubbeleProfielen.png)
+![Voorbeeld van D_DubbeleProfielen](../images/nl/Standaardselecties_D_DubbeleProfielen.png)
 
 ### E_Uitschrijvingen
 Deze selectie bevat alle profielen die zich hebben uitgeschreven voor de nieuwsbrief. Hierbij selecteer je een zelfgekozen opt-outveld of genereer je deze bij het aanmaken van standaardselecties.
 
 In het onderstaande voorbeeld bepalen we of het veld '**Afgemeld**' gelijk is aan '**Ja**'. Andere benamingen zijn ook mogelijk: denk bijvoorbeeld aan het veld ‘**Newsletter**’ met de waarde ‘**Unsubscribed**’.
 
-![Voorbeeld van E_Uitschrijvingen](../images/Standaardselecties_E_Uitschrijvingen.png)
+![Voorbeeld van E_Uitschrijvingen](../images/nl/Standaardselecties_E_Uitschrijvingen.png)
 
 ### F_Inactief
 Deze selectie bevat alle profielen die inactief zijn. Dat houdt in dat deze profielen je e-mails niet openen of niet klikken op de bijbehorende links.
@@ -89,11 +89,11 @@ Deze selectie bestaat uit één regel met drie condities:
 
 Denk goed na of de bovenstaande condities aangepast moeten worden aan jouw omstandigheden. E-mailvolume en verzendreputatie verschillen namelijk per verzender. Deze bepalen op hun beurt ook wanneer profielen precies als inactief moet worden beschouwd.
 
-![Voorbeeld van F_Inactief](../images/Standaardselecties_F_Inactief.png)
+![Voorbeeld van F_Inactief](../images/nl/Standaardselecties_F_Inactief.png)
 
 ## B_Verzendselectie
 In deze selectie worden alle selecties uitgesloten die onder A_Databasebeheer vallen. Dit zorgt ervoor dat verzendselecties alleen profielen bevatten die vrij zijn van bounces, foutieve e-mailadressen, klachten, dubbele e-mailadressen, uitschrijvingen en inactiviteit.
 
 Deze selectie bevat één regel met zes condities. De optie ‘**Check inhoud andere selectie**’ vormt hiervan de basis. Wil je naar een specifieke doelgroep versturen? Maak dan onder B_Verzendselectie een subselectie aan.
 
-![Voorbeeld van B_Verzendselectie](../images/Standaardselecties_B_Verzendselectie.png)
+![Voorbeeld van B_Verzendselectie](../images/nl/Standaardselecties_B_Verzendselectie.png)
