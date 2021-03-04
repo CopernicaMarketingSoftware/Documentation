@@ -3,7 +3,7 @@
 Je kunt het ingestelde uitschrijfgedrag van een profiel in een database
 uitvoeren door HTTP PUT request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v2/profile/$id/unsubscribe/?access_token=xxxx`
+`https://api.copernica.com/v2/profile/$id/unsubscribe?access_token=xxxx`
 
 De variabele `$id` moet vervangen worden door de numerieke identifier van het
 profiel waarvan het uitschrijfgedrag moet worden uitgevoerd.

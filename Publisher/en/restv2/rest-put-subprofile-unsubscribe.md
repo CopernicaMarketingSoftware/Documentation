@@ -3,7 +3,7 @@
 You can execute the setup unsubscribe behavior of a subprofile in the collection
 of a database by sending an HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v2/profile/$id/subprofiles/$id?access_token=xxxx`
+`https://api.copernica.com/v2/subprofile/$id/unsubscribe?access_token=xxxx`
 
 The variable `$id` should be replaced with the ID of the subprofile you want to unsubscribe.
 
