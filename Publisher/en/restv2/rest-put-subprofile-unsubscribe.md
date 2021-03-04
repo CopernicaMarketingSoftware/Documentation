@@ -1,18 +1,15 @@
 # REST API: PUT unsubscribe subprofile
 
 You can execute the setup unsubscribe behavior of a subprofile in the collection
-of a database by sending a HTTP PUT request to the following URL:
+of a database by sending an HTTP PUT request to the following URL:
 
 `https://api.copernica.com/v2/profile/$id/subprofiles/$id?access_token=xxxx`
 
-The variabele `$id` should be replaced with the ID of the subprofile of which the
-unsubscribe behavior should be executed.
+The variable `$id` should be replaced with the ID of the subprofile you want to unsubscribe.
 
 ## Body data
 
-There is no extra data which needs to be send in the body. The [CopernicaRestApi class](rest-php) 
-requires that a body is send with the request, in this case an empty array.
-
+The request does not need any additional data to be sent in the body. The [CopernicaRestApi class](rest-php)  class does require a body to be sent, so in this case we use an empty array.
 
 ## PHP example
 
