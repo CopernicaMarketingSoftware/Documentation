@@ -202,6 +202,7 @@ like your customers or orders. The relevant API calls can be found below.
 | GET    | [api.copernica.com/v2/profile/$id/ms/destination](./rest-get-profile-ms-destinations)                | Fetch all Marketing Suite destinations for a profile  |
 | GET    | [api.copernica.com/v2/profile/$id/files](./rest-get-profile-files)                                   | Fetch all files for a profile                         |
 | POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)                      | Create a request for all data stored for a profile    |
+| PUT    | [api.copernica.com/v2/profile/$id/unsubscribe](./rest-put-profile-unsubscribe)                       | Execute unsubscribe behavior of a profile             |
 
 ### Subprofile
 
@@ -218,6 +219,7 @@ like your customers or orders. The relevant API calls can be found below.
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/destinations](rest-get-subprofile-publisher-destinations) | Fetch all Publisher destinations for a subprofile       |
 | GET    | [api.copernica.com/v2/subprofile/$id/ms/destination](rest-get-subprofile-ms-destinations)                | Fetch all Marketing Suite destinations for a subprofile |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)                    | Create a request for all data stored for a subprofile   |
+| PUT    | [api.copernica.com/v2/subprofile/$id/unsubscribe](./rest-put-subprofile-unsubscribe)                     | Execute unsubscribe behavior of a subprofile  |
 
 ## Publisher Mailings
 
