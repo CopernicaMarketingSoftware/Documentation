@@ -1,11 +1,11 @@
 # Prodcutupdate 05-11-2020
 
 ## Instellen van de duur van een login-sessie
-* Als je bedrijfsbeheerder bent, is het nu mogelijk om de sessieduur van een login voor alle gebruikers binnen je bedrijf in te stellen. Hiermee kun je aangeven hoelang het duurt voordat een gebruiker automatisch wordt uitgelogd bij inactiviteit. Je vindt deze nieuwe optie onder  'Beveiligingsinstellingen' in de configuratie-module.
+Als je bedrijfsbeheerder bent, is het nu mogelijk om de sessieduur van een login voor alle gebruikers binnen je bedrijf in te stellen. Hiermee kun je aangeven hoelang het duurt voordat een gebruiker automatisch wordt uitgelogd bij inactiviteit. Je vindt deze nieuwe optie onder  'Beveiligingsinstellingen' in de configuratie-module.
 
 ## Het beheer van API-instellingen zit nu Marketing Suite
-* We hebben alle API-instellingen verplaatst van het dashboard op onze website, copernica.com, naar het dashboard in Marketing Suite. Als je een access-token voor de API nodig hebt, of als je een applicatie wilt aanmelden voor een Oauth-koppeling, dan kun je de formulieren hiervoor in Marketing Suite vinden onder API-applicaties in de configuratie-module. 
-
+We hebben alle API-instellingen verplaatst van het dashboard op onze website, copernica.com, naar het dashboard in Marketing Suite. Als je een access-token voor de API nodig hebt, of als je een applicatie wilt aanmelden voor een Oauth-koppeling, dan kun je de formulieren hiervoor in Marketing Suite vinden onder API-applicaties in de configuratie-module. 
+ 
 ## Marketing Suite
 * Je kunt nu instellen dat je een notificatie wilt ontvangen wanneer je mailing wordt gestart, wanneer deze nog loopt na een opgegeven periode en wanneer deze afgerond is.
 * In het overzicht van bètamodules zijn Publisher-opvolgacties toegevoegd. Hierdoor kun je opvolgacties vanuit Publisher inzien en bewerken in Marketing Suite. 
