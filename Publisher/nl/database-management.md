@@ -5,7 +5,7 @@ Je bent binnen Copernica vrij om zelf een [selectiestructuur](./database-selecti
 
 Je kunt de standaardselectie aanmaken door binnen je gekozen database te navigeren naar '**Configureren -> Standaardselecties aanmaken**'. Ook kun je deze instellen bij het aanmaken van een nieuwe database.
 
-De standaardstructuur is onderverdeeld in twee hoofdselecties: **A_Databasebeheer** en **B_Verzendselectie**. 
+De standaardstructuur is onderverdeeld in twee hoofdselecties: **A_Databasebeheer** en **B_Verzendselectie**. Er wordt gebruik gemaakt van een letter voor de naam, in dit geval A_ en B_, zodat deze selecties onder elkaar komen te staan in de lijst met selecties. Deze lijst is alfabetisch gesorteerd.
 
 ## A_Databasebeheer
 In de eerste hoofdselectie (A_Databasebeheer) selecteren we alle beschikbare profielen. Hiermee kun je in de onderliggende selecties bepaalde profielen uitsluiten van de uiteindelijke verzendselectie.
@@ -13,6 +13,8 @@ In de eerste hoofdselectie (A_Databasebeheer) selecteren we alle beschikbare pro
 We maken hierbij gebruik van een conditie op basis van een ‘**Check op veldwaarde**’ en geven aan dat het veld ‘ID’ groter moet zijn dan 0. Zo voldoen alle profielen binnen de database aan de gestelde conditie.
 
 ![Voorbeeld van A_Databasebeheer](../images/nl/Standaardselecties_A_Databasebeheer.png)
+
+Na het aanmaken van A_Databasebeheer kunnen we de daadwerkelijke selecties aanmaken waarin we specifieke profielen uitsluiten. Ook hierbij maken we gebruik van een voorvoegsel voor de naam van de selectie, zodat deze op alfabetische waarde onder elkaar zichtbaar zijn.
 
 ### A_Bounces
 Deze selectie bevat alle profielen waarbij er in het verleden foutmeldingen zijn ontstaan bij het afleveren van een bericht. Deze fouten noemen we bounces. 
