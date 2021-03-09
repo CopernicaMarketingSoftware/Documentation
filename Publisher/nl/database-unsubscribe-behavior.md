@@ -1,29 +1,13 @@
 # Uitschrijfgedrag
-Het is wettelijk verplicht om een zichtbare en werkende uitschrijflink aan
-je (commerciële) mails toe te voegen. Copernica kan daarnaast ook op andere
-manieren feedback ontvangen dat jouw ontvangers zich uit willen schrijven.
+Het is wettelijk verplicht om een zichtbare en werkende uitschrijflink aan je (commerciële) mails toe te voegen. Daarnaast is het toevoegen hiervan belangrijk voor het beschermen van je verzendreputatie.
 
-Uitschrijvingen kunnen binnenkomen via de afmeldlink in de e-mail, de
-afmeldlink van de client, klachten op ons *abuseadres*, mensen die de e-mail
-als spam markeren en nog veel meer. Copernica vangt al deze uitschrijvingen op
-en verwerkt deze volgens je gewenste uitschrijfgedrag.
+Copernica ontvangt op verschillende manieren feedback met betrekking tot uitschrijvingen. Deze komen binnen via de uitschrijflink in de e-mail, de uitschrijflink van de e-mailclient, in de vorm van klachten op ons abuse-adres of wanneer ontvangers de e-mail als spam markeren. Copernica vangt deze uitschrijvingen op en verwerkt deze volgens het ingestelde uitschrijfgedrag.
 
-Je kunt op verschillende manieren met uitschrijvingen omgaan: de meldingen
-negeren (waar je ontvangers niet blij mee maakt), het profiel volledig
-verwijderen (en daarmee alle data) of een waarde in het profiel aanpassen. Als
-je kiest voor deze laatste optie, kun je bijvoorbeeld de waarde van het veld
-"nieuwsbrief" aanpassen. Op deze manier kun je uitschrijvers van je
-[nieuwsbriefselectie](create-a-mailing-list) uitsluiten.
+## Instellen van het uitschrijfgedrag 
+Je kunt het uitschrijfgedrag in een database of collectie instellen door in de menubalk te kiezen voor '**Configuratie**'. Vervolgens kun je bij '**Omgaan met afmeldingen**' aangeven welke actie ondernomen moet worden wanneer Copernica een uitschrijving registreert.
 
-### Instellen
-In je database kun je het uitschrijfgedrag instellen door naar **Configuratie > Omgaan met afmeldingen** te gaan. 
-Je kunt hier instellen wat je met afmeldtriggers doet, bijvoorbeeld het profiel aanpassen of volledig verwijderen.
+Er zijn verschillende manieren waarop je met uitschrijvingen om kunt gaan. Je kunt het profiel volledig verwijderen (dit wordt sterk afgeraden) of een waarde in het profiel aanpassen. Je kunt bijvoorbeeld instellen dat een uitschrijving de waarde van het veld ‘**Nieuwsbrief**’ of ‘**Opt-in**’ automatisch aanpast naar ‘**Nee**’. Op deze manier worden uitschrijvers uitgesloten van de verzendselectie.
 
-### Meer informatie
-De belangrijkste profielen zijn natuurlijk degene die je mailings willen
-ontvangen. Als je echter de data van uitgeschreven profielen bewaart,
-heb je een selectie nodig om deze profielen uit te sluiten van mailings.
-Lees hierover meer in de volgende artikelen:
-
-* [Databasemanagement](./database-management)
+Via de onderstaande links lees je meer over de omgang met uitschrijvingen:
+* [Voorbeeld selectiestructuur](./database-management)
 * [Selecties](./database-selection-introduction)
