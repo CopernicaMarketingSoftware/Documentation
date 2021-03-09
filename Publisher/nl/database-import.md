@@ -1,116 +1,69 @@
 # Importeren van profielgegevens
-Er zijn verschillende manieren om nieuwe gegevens in te voeren of te importeren.
-Zo kun je profielen niet alleen met de hand toevoegen, maar kun je ze ook
-aanmaken of bewerken met de API, of importeren vanuit een CSV- of TXT-bestand
-(dit zijn bestanden die je onder meer in spreadsheetprogramma's kunt maken).
+Er zijn verschillende manieren waarop je nieuwe profielen binnen je database kunt toevoegen of wijzigen. Zo kun je profielen met de hand, via de [API](./apis), via [webformulieren](./webforms) of door middel van een import toevoegen, wijzigen of verwijderen. 
 
-Het importeren van CSV- of TXT-bestanden is krachtig en kan ook worden gebruikt
-voor gelaagde databases met collecties en subprofielen. Ook kun je periodieke
-imports maken die automatisch worden herhaald.
+De importfunctie in Copernica ondersteunt CSV- en TXT-bestanden. Je kunt deze bestandsformaten exporteren vanuit tekstverwerkingsprogramma's als Microsoft Word of spreadsheetprogramma’s als Excel.
+
+Wil je alvast oefenen met het importeren van profielgegevens? Download dan het [trainingsbestand](https://training.copernica.com/download).
 
 ## Importbestand voorbereiden
-Het bestand dat je wilt importeren moet aan een specifiek formaat voldoen.
-Het moet een tab-, komma of puntkommagescheiden bestand zijn, waarvan de bovenste regel
-de kolommen (de veldnamen) bevat die je gaat importeren. Het bestand moet een
-UTF-8 encoding hebben en wij raden het aan om quotes om veldwaardes te plaatsen.
-Hieronder geven we een voorbeeld van hoe dit bestand eruit kan zien.
+Naast het feit dat een importbestand uit CSV- of TXT-bestanden moet bestaan dienen de bijbehorende kolommen ook door een tab, komma of puntkomma gescheiden te zijn. Ook dient de bovenste regel de veldnamen te bevatten die je wilt importeren en moet het bestand voorzien zijn van UTF-8 encoding.
+
+Wanneer je gebruik maakt van scheiding door middel van een komma of puntkomma raden we aan om veldwaardes van enkele (‘) of dubbele (“) aanhalingstekens te voorzien. Zo worden komma’s of puntkomma’s niet als scheidingsteken beschouwd. Onderstaand zie je hiervan een voorbeeld:
 
     Voornaam,Achternaam,Email,Stad,Telefoonnummer
     'Jan','de Jong','jan.dejong@voorbeeld.nl','Amersfoort','0612456631'
     'Roos','Schippers','roos.schippers@voorbeeld.nl','Groningen','0612222444'
 
-Deze bestanden kunnen in bijna alle spreadsheetprogramma's gegenereerd worden.
+## Import aanmaken
+Je kunt een import enkel instellen op de database. Hiervoor navigeer je in de gekozen database naar '**Profielen -> Imports**'. Daar vind je een lijst met lopende of recent afgeronde imports die je kunt bewerken of verwijderen. 
 
-## Instellen van de import
-Klik op de database of collectie waar de import gestart voor dient te worden. Klik op **Imports** in de toolbar om een nieuwe import aan te maken. Upload het bestand en kies het juiste scheidingsteken.
+Je kunt een nieuwe import aanmaken via de optie '**Nieuwe import aanmaken**'. Daarbij kun je het type import selecteren. Je hebt de keuze uit: 
 
-### Importkolommen toewijzen
-Nadat je een bestand hebt geüpload, moet je de kolommen koppelen. Als het
-systeem overeenkomstige namen vindt, zullen die kolommen en velden automatisch
-gekoppeld worden. De overige kolommen kun je handmatig koppelen. Meestal
-spreekt deze koppeling voor zich: het veld "Voornaam" in het importbestand
-koppel je aan het veld "Voornaam" in de database. Als het benodigde veld nog
-niet aanwezig is in de database, kun je die ter plekke laten aanmaken.
+Het uploaden van een bestand;
+Het ophalen van een bestand vanuit een externe locatie;
+Het ophalen van een bestand vanuit een externe locatie door middel van een privésleutel.
 
-### Configureer importinstellingen
-Standaard staan de importinstellingen op *geen matches zoeken, altijd nieuwe (sub)profielen aanmaken*. Bij deze optie worden (sub)profielen altijd aangemaakt, ondanks dat het (sub)profiel misschien al bestaat. Als je wilt dat bestaande profielen worden bijgewerkt en profielen die nog niet in je database staan worden toegevoegd kun je gebruik maken van de optie *Zoek naar matches op basis van sleutelvelden*. Sleutelvelden worden gebruikt om te zoeken binnen alle profielen in je database. Je kunt vervolgens bij 'Matches' aangeven of de gevonden (sub)profielen wel of niet bijgewerkt moet worden of dat deze verwijderd moeten worden. Het maximum wat je hier aan kunt geven is het aantal gevonden (sub)profielen die gewijzigd/verwijderd moeten worden. Het kan namelijk voorkomen dat het e-mailadres *jan.dejong@voorbeeld.nl* drie keer in de database voorkomt. Als je deze allen wilt aanpassen zal het maximum op 3 moeten worden gezet. 
+Je haalt bestanden op vanuit een externe locatie wanneer je een import periodiek wilt herhalen (bijvoorbeeld iedere ochtend). Daarbij kun je ook gebruik maken van een (S)FTP-locatie. Tot slot geef je aan welk scheidingsteken er in het importbestand gebruikt wordt.
 
-Onder 'Niet-Matches' kun je aangeven of de ontbrekende (sub)profielen, waarvan op basis van het sleutelveld geen profiel is gevonden in de database, moeten worden aangemaakt of dat deze niet moeten worden toegevoegd. Tot slot is het mogelijk om de huidige waardes in het profiel niet te overschrijven met lege velden in het import bestand. 
+## Importkolommen toewijzen
+Nadat je een bestand hebt geüpload of opgehaald vanuit een externe locatie kun je de velden uit het importbestand koppelen aan de velden in je database. De kolomnamen van het importbestand zijn aan de linkerzijde zichtbaar onder ‘**Kolomindeling**’.
 
-**Voorbeeld:**  
-In de meeste gevallen wordt het veld waar het e-mailadres in staat gekozen als sleutelveld. Met het voorbeeld van hierboven zal dit het veld 'Email' zijn. Bij het uitvoeren van de import wordt vervolgens gekeken of *jan.dejong@voorbeeld.nl* al in de database staat. Als dit het geval is, dan wordt dit profiel aangepast op basis van de opgegeven instellingen.
+Wanneer de naam van de kolom gelijk is aan de veldnaam in je database wordt deze automatisch gekoppeld. Wanneer een kolom een naam bevat die onbekend is heb je de mogelijkheid om het veld te koppelen aan een bestaand veld. Ook is het mogelijk om hiervoor een nieuw veld aan te maken.
 
-### Instellingen
-Onder het tabblad 'Instelling' is het mogelijk om een aantal instellingen op te geven voor de import. 
-Hieronder vind je per optie een korte uitleg:
+![Importkolommen wijzigen](../images/nl/import_kolommentoewijzen.png)
 
-### Subprofielen importeren
-Je kunt ook imports in gelaagde databases (databases met subprofielen) doen.
-In de header van het bestand geef je met een punt als scheidingsteken aan dat
-een kolom voor subprofielen wordt gebruikt. Als je een dierenwinkel hebt met
-een database met klanten en bij elke klant een collectie van huisdieren, dan
-zou je het volgende bestand kunnen uploaden:
+## Importinstellingen configureren
+De importinstellingen staan standaard op '**Geen matches zoeken, altijd nieuwe (sub)profielen aanmaken**'. Hierbij worden (sub)profielen altijd aangemaakt ongeacht of het (sub)profiel al in de database aanwezig is. Wanneer het bijwerken van bestaande profielen en het aanmaken van nieuwe profielen de voorkeur heeft maak je gebruik van de optie '**Zoek naar matches op basis van sleutelvelden**'. 
 
-    Voornaam,Achternaam,Stad,Dieren.Naam,Dieren.Type
-    'Jan','Bakker','Apeldoorn','Blacky','Hond'
-    'Jan','Bakker','Apeldoorn','Minoes','Kat'
+Sleutelvelden worden gebruikt om te zoeken binnen databaseprofielen. Daarbij wordt het gekozen veld uit het importbestand vergeleken met het veld in de database. Wanneer deze overeenkomt wordt het profiel bijgewerkt. 
 
-Zoals je ziet wordt "Jan Bakker" twee keer genoemd. Dit moet je doen, omdat
-Jan twee huisdieren heeft en elk huisdier (elke subprofiel dus) op een aparte
-regel moet staan. De profieldata ("Jan Bakker") wordt herhaald om aan te geven
-dat de twee dieren bij hetzelfde profiel horen. Let wel op dat je goed de
-sleutelvelden instelt (ook als je alleen maar nieuwe profielen wilt toevoegen),
-omdat Copernica anders niet herkent dat de twee "Jan Bakker"-regels bij elkaar
-horen.
+Wanneer er geen uniek kenmerk in het profiel aanwezig is kun je ook meerdere velden als sleutelveld instellen. Vervolgens kun je aangeven of de aangetroffen (sub)profielen bijgewerkt of verwijderd moeten worden. Ook kun je onder '**Wat moet er met niet-matchende (sub)profielen gebeuren?**' aangeven of de ontbrekende (sub)profielen wel of niet moeten worden aangemaakt.
 
-**Let op:** als je een import gebruikt om subprofielen te updaten, zal je ook
-een sleutelveld moeten toevoegen op de database. 
+In de meeste gevallen wordt het e-mailveld als sleutelveld gekozen. Dat geldt ook voor het bovenstaande voorbeeld. Wanneer 'jan.dejong@voorbeeld.nl' in de database wordt aangetroffen worden de bijbehorende profielwaardes bijgewerkt met de gegevens uit het importbestand. Wanneer het profiel niet in de database aanwezig is wordt het profiel in zijn geheel aangemaakt.
 
-## Periodieke imports
-Je kunt de importmodule ook gebruiken voor periodieke imports. Je moet dan
-geen bestand uploaden, maar het adres (de URL) van een bestand opgeven.
-Copernica zal dan periodiek jouw importbestand van het opgegeven adres
-downloaden en importeren. Dit kan over het FTP-protocol, maar de beveiligde
-varianten SFTP en FTPS worden beide ook ondersteund.
+![Importinstellingen configureren](../images/nl/import_configureer.png)
 
-Voor de rest zijn de importinstellingen voor periodieke imports gelijk aan
-de instellingen bij geüploade bestanden. Ook hier kun je kolommen koppelen
-en sleutelvelden opgeven. Het enige verschil is dat je een interval-optie te zien krijgt waarbij je kunt instellen hoeveel tijd er tussen twee
-imports moet zitten.
-<!---
-## Converteren van datumnotatie
-De datumnotatie in Copernica is de JJJJ-MM-DD uu:mm:ss. Dit is een handige
-notatie, omdat datums hierdoor makkelijk zijn te sorteren. Let wel op
-dat je dezelfde notatie gebruikt in je invoerbestand en dat je in je
-importbestand niet per ongeluk datums in DD-MM-JJ notaties hebt staan.
+## Periodieke import
+Je kunt ook gebruik maken van periodieke imports. Daarbij geef je de URL op van bestanden die op een externe locatie zijn opgeslagen. Het importbestand wordt vervolgens periodiek vanuit die locatie gedownload en geïmporteerd. Dat kan via het FTP-protocol of via beveiligde varianten als SFTP of FTPS.
 
-De importmodule heeft een optie om datums die in de verkeerde volgorde staan
-automatisch te converteren zodat ze toch goed in Copernica komen te staan.
-Dit is echter wel foutgevoelig: de datum 03-09-1980 kan immers zowel worden
-geïnterpreteerd als 9 maart 1980 en als 3 september 1980. Ongeldige datums
-worden genegeerd en als leeg bestand opgeslagen. Lege datumvelden mogen echter
-niet bestaan in datumvelden, dus worden ze automatisch omgezet naar
-0000-00-00 (00:00:00).
--->
+Het enige verschil tussen de instellingen van een eenmalige- en een periodieke import is dat je in het tweede geval een schema kunt configureren. Dat schema bepaalt de momenten waarop de import wordt uitgevoerd, bijvoorbeeld op dagelijkse- of wekelijkse basis.
 
-## Verkeerde import terugdraaien
-Als je iets verkeerd doet, kun je zomaar je hele database overschrijven met
-verkeerde gegevens. Goed opletten dus. Als het toch verkeerd is gegaan, kun
-je dit met het volgende stappenplan herstellen:
+![Periodieke import](../images/nl/import_periodiek.png)
 
-Na een verkeerde import kun je een selectie aanmaken waarin je alle nieuwe
-profielen opneemt. Je maakt hiervoor een selectie met een conditie van het
-type "check op wijzigingen". Als type verandering kies je voor "het profiel
-is aangemaakt" waarbij je de periode instelt waarin de import heeft
-plaatsgevonden. Als de selectie klaar is met opbouwen kun je alle profielen
-in deze selectie verwijderen via **Configuratie > Profielen verwijderen**.
+## Subprofielen importeren
+Naast het importeren van profielgegevens is het ook mogelijk om gegevens uit een collectie (subprofielen) te importeren. Daarbij voorzie je de kolomnaam in het importbestand van een punt om aan te geven dat deze voor collectievelden wordt gebruikt. De collectienaam komt voor de punt te staan. Het collectieveld wordt achter de punt geplaatst.
 
-Zijn er door de import bestaande profielen verkeerd gewijzigd? Het
-terughalen van profieldata kan alleen per individueel profiel met de rollback
-functie. Eventueel kun je Copernica vragen om een back-up van
-de database terug te zetten. Hier zijn wel kosten aan verbonden.
+**Voorbeeld**
+Stel dat je eigenaar bent van een dierenwinkel. Je klanten zijn in een database opgenomen in de vorm van profielen. Daarnaast houd je in een collectie bij welke huisdieren een klant bezit. In dit geval zou het importbestand er als volgt uit kunnen zien:
 
-* [Databasebeheer](./database-introduction)
-* [Data exporteren](./database-export)
-* [Databasevelden](./database-fields)
-* [Selecties](./database-selections-introduction)
+    Email,Huisdieren.Naam,Huisdieren.Type
+    'Jan.bakker@voorbeeld.nl',Max','Hond'
+    'Jan.bakker@voorbeeld.nl',Minoes','Kat'
+    'Theo.devries@voorbeeld.nl','Casper','Kat'
+
+In het bovenstaande voorbeeld is ‘Jan Bakker’ twee keer opgenomen. Hij heeft namelijk twee huisdieren waarvan je elk huisdier als eigen subprofiel wilt toevoegen aan de collectie ‘Huisdieren’. Op die manier wordt profieldata twee keer meegegeven en kunnen beide velden worden toegevoegd als sleutelveld.
+
+**Let op:** wanneer je een import gebruikt om subprofielen aan te maken of bij te werken dien je altijd een sleutelveld toe te voegen aan de database. Wanneer een sleutelveld ontbreekt is het voor het systeem onduidelijk welke subprofielen moeten worden toegevoegd. In het bovenstaande voorbeeld selecteer je het veld ‘E-mail’. In de collectie stel je ‘Naam’ en ‘Type’ in als sleutelvelden.
+
+## Import terugdraaien
+**Het is niet mogelijk om zelf een import terug te draaien.** Controleer dus altijd goed of alle instellingen juist staan voordat je de import start. Mocht de import toch verkeerd zijn gegaan dan kun je via [support@copernica.com](support@copernica.com) een back-up laten herstellen. Hiervoor worden extra kosten van € 125 in rekening gebracht.
