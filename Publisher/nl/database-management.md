@@ -1,4 +1,4 @@
-# Databasebeheer en standaardselecties 
+# Aanbevolen selectiestructuur
 Een goede verzendlijst verbetert de resultaten van e-mailmarketingcampagnes. Het versturen van e-mails naar niet-bestaande e-mailadressen of personen die de mails niet openen heeft een negatieve invloed op je [verzendreputatie](./sender-reputation). Daardoor kunnen er meer e-mails in de spamfolder belanden.
 
 Je bent binnen Copernica vrij om zelf een [selectiestructuur](./database-selections-introduction) te bepalen. Om je daarbij te helpen bieden we echter ook een standaardstructuur aan. De standaardstructuur filtert de profielen die je mails niet kunnen of willen ontvangen uit de verzendselectie. Denk daarbij aan bounces, klachten, dubbele profielen, uitschrijvers, inactieven of profielen met een foutieve e-mailsyntax.
@@ -14,7 +14,7 @@ We maken hierbij gebruik van een conditie op basis van een ‘**Check op veldwaa
 
 ![Voorbeeld van A_Databasebeheer](../images/nl/Standaardselecties_A_Databasebeheer.png)
 
-Na het aanmaken van A_Databasebeheer kunnen we de daadwerkelijke selecties aanmaken waarin we specifieke profielen uitsluiten. Ook hierbij maken we gebruik van een voorvoegsel voor de naam van de selectie, zodat deze op alfabetische waarde onder elkaar zichtbaar zijn.
+Na het aanmaken van A_Databasebeheer kunnen we de daadwerkelijke selecties aanmaken waarin we specifieke profielen gaan uitsluiten. Ook hierbij maken we gebruik van een voorvoegsel voor de naam van de selectie, zodat deze op alfabetische waarde onder A_Databasebeheer zichtbaar zijn.
 
 ### A_Bounces
 Deze selectie bevat alle profielen waarbij er in het verleden foutmeldingen zijn ontstaan bij het afleveren van een bericht. Deze fouten noemen we bounces. 
