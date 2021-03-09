@@ -1,66 +1,39 @@
 # Exporteren van profielgegevens
-Naast importeren is het ook mogelijk om profielen en subprofielen te exporteren.
-Je kunt een hele database in één keer exporteren, of in onderdelen
-(bijvoorbeeld per collectie). Bij een export wordt een bestand in een formaat
-naar keuze gegenereert, dat je kunt downloaden of laten e-mailen.
-
-Als je graag in real-time de clicks, opens e.d. van profielen wilt ontvangen,
-kun je ook een [webhook](./webhooks) instellen.
+Naast het importeren van gegevens is het ook mogelijk om (sub)profielgegevens te exporteren. Daarbij kun je de gehele database in één keer of in onderdelen exporteren (bijvoorbeeld per selectie, collectie of miniselectie). Wanneer een exportbestand is aangemaakt kun je deze downloaden of laten versturen naar een e-mailadres.
 
 ## Exportbestand voorbereiden
-Klik op de database of collectie waarvan je een export wilt maken en klik vervolgens op **Exports** in de toolbar.
-Geef je export een naam en kies de velden die je wilt exporteren. In de vervolgstappen kun je nog specifieke instellingen meegeven aan de export. Hierbij kun je denken aan het bestandsformaat, het scheidingsteken en de codering. Als er in je database profielen voorkomen die zelf een scheidingsteken in hun velden hebben staan (bijvoorbeeld een harde tab in een woonplaatsveld), kies dan bij *kolominstelling* voor de optie *"Kolommen met aanhalingstekens"*. De waardes worden dan
-tussen quotes geplaatst zodat er geen conflicten met het scheidingsteken optreden.
+Je kunt een export starten door in de menubalk van een database, selectie, collectie of miniselectie te kiezen voor '**Exports**'. De exportconfiguratie bevat een aantal stappen die je moet doorlopen voordat de export gestart kan worden. Dat zijn:
 
-## Naar (s)FTP exporteren
-Exports kunnen ook via FTP of SFTP worden overgedragen aan een server. Onder
-de optie '**Bestemming en interval**' kan worden gekozen voor FTP. Daarnaast bied het
-ook de keuze om de authenticatie met wachtwoord tot stand te brengen of met
-gebruik van public key authenticatie.
+**Info**
+Hier geef je de export een naam en een eventuele beschrijving. Dat helpt je om periodieke exports beter uit elkaar te houden.
 
-De URL naar de (S)FTP server moet er als volgt uitzien:
+**Velden**
+Hier selecteer je de velden die je vanuit de Copernica-omgeving wilt exporteren.
 
-In het geval van FTP:
-```text
-ftp://ftp.example.com/~/
-```
+**Filter**
+Hier geef je aan of je alle (sub)profielen wilt exporteren of enkel degene die zijn aangemaakt of bewerkt sinds de vorige export.
 
-In het geval van FTP met een gebruikersnaam en wachtwoord:
-```text
-ftp://username:password@ftp.example.com/~/
-```
+**Bestand**
+Hier geef je het bestandsformaat (XLS, TXT, CSV of XML) en de encoding (standaard UTF-8) van het bestand aan. Daarnaast bepaal je of het bestand ingepakt moet worden als ZIP-bestand. Dit raden wij aan bij het exporteren van een grote hoeveelheid gegevens om het bestand zo klein mogelijk te houden.
 
-In het geval van SFTP:
-```text
-sftp://ftp.example.com/~/
-```
+**Bestemming en interval**
+Hier geef je aan of je de export wilt downloaden in de interface of dat de export verzonden moet worden naar een (S)FTP-server of e-mailadres. Wanneer je als locatie een (S)FTP-server opgeeft kun je een schema instellen waarop periodieke exports worden uitgevoerd.
 
-Wij vervangen de tilde die gebruikt wordt in de URL automatisch naar
-`home/gebruikersnaam`. Als je gebruikt wilt maken van absolute paden dan kan
-dat als volgt:
-```text
-sftp://ftp.example.com/mnt/storage/
-```
+**Overzicht**
+Hier zijn de gekozen instellingen van de export zichtbaar en vind je de optie om de export aan te maken.
 
-Wij gebruiken de naam van de export als bestandsnaam van het bestand dat over
-(S)FTP wordt geschreven. Het type bestand en de extensie hiervan kunnen worden
-gespecificeerd in het tabje 'Bestand'. Een gebruikersnaam moet altijd worden
-opgegeven. In het geval van authenticatie met gebruik van een wachtwoord moet
-een wachtwoord worden opgegeven. Bij het gebruik van public key authenticatie
-moet een private key worden gegeven. Wegens veiligheidsredenen coderen wij de
-private key wanneer de export wordt aangemaakt, bij het uitvoeren van de export
-decoderen wij de private key weer.
+## Exporteren naar (S)FTP
+Zoals hierboven beschreven heb je de mogelijkheid om gegevens naar een FTP- of SFTP-locatie te exporteren. Dit kun je bij het configureren van de export instellen onder '**Bestemming en interval**'. 
 
-## Opmerkingen
-Er zijn een aantal onderdelen van de export functionaliteit die verwarrend
-kunnen zijn, daarvan noemen wij de belangrijkste in deze opsomming:
-* De velden *ID*, *Toegangscode* en *Profiel aangemaakt* zijn velden
-waarvan de waarde door het systeem is toegekend.
-* Je kunt maximaal 1 collectie in een CSV-bestand opnemen. Als je meerdere
-collecties tegelijk wilt exporteren, kies dan XML als bestandstype.
-* UTF-8 is in de meeste gevallen de beste encoding voor outputbestanden
-en wordt aangeraden
-* Datumvelden worden geëxporteerd in het formaat dat je zelf opgeeft,
-zodat je bestand kunt maken met bijvoorbeeld een alternatieve datumnotatie.
-* Om bestanden klein te houden kun je compressie inschakelen.
-Dit is zeker handig als je de exports per mail wilt versturen.
+Bij het instellen van de (S)FTP-locatie kun je de bijbehorende URL, privacy sleutel of combinatie tussen gebruikersnaam en wachtwoord opgeven. Ook hier heb je de mogelijkheid om een periodiek schema in te stellen.
+
+![Bestemming en interval](../images/nl/export_bestemminginterval.png)
+
+## Opmerkingen bij het instellen van exports
+Het instellen van een export kan op sommige vlakken verwarrend zijn. Onthoud hierbij de volgende zaken:
+
+* ‘ID’, ‘Toegangscode’ en ‘Profiel aangemaakt’ zijn velden waarvan de waarde door Copernica is toegekend;
+* Je kunt maximaal één collectie in een CSV-, XLS- of TXT-bestand opnemen. Wanneer je meerdere collecties tegelijk wilt exporteren kies je XML als bestandsformaat;
+* UTF-8 biedt in de meeste gevallen de beste encoding voor outputbestanden gezien deze het breedste ondersteund wordt;
+* Om bestanden klein te houden maak je gebruik van compressie. Dat is handig wanneer je exports via e-mail wilt versturen. In dat geval zal het bestand in ZIP-formaat worden aangemaakt.
+
