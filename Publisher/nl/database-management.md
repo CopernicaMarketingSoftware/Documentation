@@ -1,5 +1,5 @@
 # Databasebeheer en standaardselecties 
-Een goede verzendlijst verbetert de resultaten van e-mailmarketingcampagnes. Het versturen van e-mails naar niet-bestaande e-mailadressen of personen die de mails niet openen heeft een negatieve invloed op je verzendreputatie. Daardoor kunnen er meer e-mails in de spamfolder belanden.
+Een goede verzendlijst verbetert de resultaten van e-mailmarketingcampagnes. Het versturen van e-mails naar niet-bestaande e-mailadressen of personen die de mails niet openen heeft een negatieve invloed op je [verzendreputatie](./sender-reputation). Daardoor kunnen er meer e-mails in de spamfolder belanden.
 
 Je bent binnen Copernica vrij om zelf een [selectiestructuur](./database-selections-introduction) te bepalen. Om je daarbij te helpen bieden we echter ook een standaardstructuur aan. De standaardstructuur filtert de profielen die je mails niet kunnen of willen ontvangen uit de verzendselectie. Denk daarbij aan bounces, klachten, dubbele profielen, uitschrijvers, inactieven of profielen met een foutieve e-mailsyntax.
 
@@ -17,9 +17,9 @@ We maken hierbij gebruik van een conditie op basis van een ‘**Check op veldwaa
 ### A_Bounces
 Deze selectie bevat alle profielen waarbij er in het verleden foutmeldingen zijn ontstaan bij het afleveren van een bericht. Deze fouten noemen we bounces. 
 
-We maken onderscheid tussen hardbounces (permanente fouten, bijvoorbeeld wanneer het e-mailadres niet bestaat) en softbounces (tijdelijke fouten, bijvoorbeeld wanneer de mailbox van de ontvanger vol zit). **Let op:** deze selectie is reactief. Bounces moeten geregistreerd zijn op mails die vanuit Copernica verstuurd zijn.
+We maken onderscheid tussen hard bounces (permanente fouten, bijvoorbeeld wanneer het e-mailadres niet bestaat) en soft bounces (tijdelijke fouten, bijvoorbeeld wanneer de mailbox van de ontvanger vol zit). **Let op:** deze selectie is reactief. Bounces moeten geregistreerd zijn op mails die vanuit Copernica verstuurd zijn.
 
-Een hardbounce wordt in Copernica aangemerkt als een fout die bij een volgende verzending mogelijk weer optreedt. Bij een softbounce bestaat de kans dat de e-mail bij een nieuwe verzending wel wordt afgeleverd.  
+Een hard bounce wordt in Copernica aangemerkt als een fout die bij een volgende verzending mogelijk weer optreedt. Bij een soft bounce bestaat de kans dat de e-mail bij een nieuwe verzending wel wordt afgeleverd.  
 
 De bounceselectie bevat zes regels met elk twee condities:  
 
@@ -27,22 +27,22 @@ De bounceselectie bevat zes regels met elk twee condities:
 - Conditie 2 zorgt dat profielen niet onterecht binnen de selectie vallen.
 
 **Regel 1**  
-Deze regel controleert of er sinds 2000-01-01 meer dan 2 hardbounces zijn voorgekomen op basis van Publisher-mailings. Profielen worden niet geselecteerd als ze in de afgelopen week gemaild zijn zonder dat daar een fout bij is opgetreden. Dat zorgt ervoor dat een profiel met een tijdelijke of onterechte foutmelding niet meteen in de selectie wordt opgenomen.
+Deze regel controleert of er sinds 2000-01-01 meer dan 2 hard bounces zijn voorgekomen op basis van Publisher-mailings. Profielen worden niet geselecteerd als ze in de afgelopen week gemaild zijn zonder dat daar een fout bij is opgetreden. Dat zorgt ervoor dat een profiel met een tijdelijke of onterechte foutmelding niet meteen in de selectie wordt opgenomen.
 
 **Regel 2**  
-Deze regel controleert of er sinds 2000-01-01 meer dan 2 hardbounces zijn voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen week gemaild zijn zonder dat daar een fout bij is opgetreden.
+Deze regel controleert of er sinds 2000-01-01 meer dan 2 hard bounces zijn voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen week gemaild zijn zonder dat daar een fout bij is opgetreden.
 
 **Regel 3**  
-Deze regel controleert of er sinds 2000-01-01 meer dan 3 softbounces zijn voorgekomen op basis van Publisher-mailings. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
+Deze regel controleert of er sinds 2000-01-01 meer dan 3 soft bounces zijn voorgekomen op basis van Publisher-mailings. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
 
 **Regel 4**  
-Deze regel controleert of er sinds 2000-01-01 meer dan 3 softbounces zijn voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
+Deze regel controleert of er sinds 2000-01-01 meer dan 3 soft bounces zijn voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
 
 **Regel 5**  
-Deze regel controleert of er sinds 2000-01-01 meer dan 9 willekeurige fouten zijn voorgekomen op basis van Publisher-mailings. Dat is nodig omdat sommige mailboxproviders foutmeldingen terugsturen zonder de juiste foutmelding te vermelden. Om die reden worden niet alle fouten als soft- of hardbounce geclassificeerd. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
+Deze regel controleert of er sinds 2000-01-01 meer dan 9 willekeurige fouten zijn voorgekomen op basis van Publisher-mailings. Dat is nodig omdat sommige mailboxproviders foutmeldingen terugsturen zonder de juiste foutmelding te vermelden. Om die reden worden niet alle fouten als soft bounce of hard bounce geclassificeerd. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
 
 **Regel 6**  
-Deze regel controleert of er sinds 2000-01-01 meer dan 9 willekeurige fouten zijn voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
+Deze regel controleert of er sinds 2000-01-01 meer dan negen willekeurige fouten zijn voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
 
 
 ### B_FoutiefEmailAdres
@@ -72,7 +72,7 @@ Wil je juist het meest recente profiel in de verzendselectie opnemen? Stel de co
 ### E_Uitschrijvingen
 Deze selectie bevat alle profielen die zich hebben uitgeschreven voor de nieuwsbrief. Hierbij selecteer je een zelfgekozen opt-outveld of genereer je deze bij het aanmaken van standaardselecties.
 
-In het onderstaande voorbeeld bepalen we of het veld '**Afgemeld**' gelijk is aan '**Ja**'. Andere benamingen zijn ook mogelijk: denk bijvoorbeeld aan het veld ‘**Newsletter**’ met de waarde ‘**Unsubscribed**’.
+In het onderstaande voorbeeld bepalen we of het veld '**Afgemeld**' gelijk is aan '**Ja**'. Andere benamingen zijn ook mogelijk: denk bijvoorbeeld aan het veld ‘**Nieuwsbrief**’ met de waarde ‘**Uitgeschreven**’.
 
 ![Voorbeeld van E_Uitschrijvingen](../images/nl/Standaardselecties_E_Uitschrijvingen.png)
 
@@ -84,7 +84,7 @@ Zoals eerder genoemd heeft het verzenden van e-mails naar inactieve profielen ee
 Deze selectie bestaat uit één regel met drie condities:
 
 - De eerste conditie controleert of het profiel niet in de afgelopen 30 dagen is aangemaakt. Zo vallen nieuwe profielen niet direct binnen de selectie;
-- De tweede conditie bepaalt of het profiel in de afgelopen 9 maanden een klik, impressie of fout geregistreerd heeft op basis van Marketing Suite-mailings. Het aantal berichten moet daarbij gelijk zijn aan 0. Zo geef je aan dat het profiel op 0 mailings een klik, impressie of foutmelding geregistreerd heeft. Je wilt namelijk alle profielen selecteren die gedurende deze periode geen activiteit hebben vertoond;
+- De tweede conditie bepaalt of het profiel in de afgelopen negen maanden een klik, impressie of fout geregistreerd heeft op basis van Marketing Suite-mailings. Het aantal berichten moet daarbij gelijk zijn aan 0. Zo geef je aan dat het profiel op 0 mailings een klik, impressie of foutmelding geregistreerd heeft. Je wilt namelijk alle profielen selecteren die gedurende deze periode geen activiteit hebben vertoond;
 - De derde conditie is identiek aan de tweede conditie, maar dan op basis van Publisher-mailings.
 
 Denk goed na of de bovenstaande condities aangepast moeten worden aan jouw omstandigheden. E-mailvolume en verzendreputatie verschillen namelijk per verzender. Deze bepalen op hun beurt ook wanneer profielen precies als inactief moet worden beschouwd.
