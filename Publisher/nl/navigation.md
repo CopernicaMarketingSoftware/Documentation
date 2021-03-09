@@ -3,7 +3,7 @@
 * [Database en profielen](./database-profiles.md)
     * [Databasevelden](./database-fields.md)
     * [Selecties](./database-selections-introduction.md)
-    * [Databasebeheer](./database-management.md)
+    * [Aanbevolen selectiestructuur](./database-management.md)
     * [Collecties](./database-collections.md)
     * [Importeren van profielgegevens](./database-import.md)
     * [Exporteren van profielgegevens](./database-export.md)
