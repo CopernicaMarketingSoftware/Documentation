@@ -9,6 +9,7 @@
     * [Exporteren van profielgegevens](./database-export.md)
     * [Uitschrijfgedrag](./database-unsubscribe-behavior.md)
     * [Restricties](./database-restrictions.md)
+    * [Gebruikersmogelijkheden](./database-intentions.md)
     * [Opvolgacties](./database-follow-ups.md)
 * [E-mailings Marketing Suite](./emailings-ms-templates.md)
     * [Personalisatie](./emailings-ms-personalization.md)
