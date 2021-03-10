@@ -4,7 +4,7 @@ Er zijn verschillende manieren waarop je nieuwe profielen binnen je database kun
 De importfunctie in Copernica ondersteunt CSV- en TXT-bestanden. Je kunt deze bestandsformaten exporteren vanuit tekstverwerkingsprogramma's of spreadsheetprogramma’s als Excel.
 
 ## Importbestand voorbereiden
-Naast het feit dat een importbestand uit CSV- of TXT-bestanden moet bestaan dienen de bijbehorende kolommen ook door een tab, komma of puntkomma gescheiden te zijn. Ook dient de bovenste regel de veldnamen te bevatten die je wilt importeren en moet het bestand voorzien zijn van UTF-8 encoding.
+Naast het feit dat een importbestand uit CSV- of TXT-bestanden moet bestaan dienen de bijbehorende kolommen door een tab, komma of puntkomma gescheiden te zijn. Ook dient de bovenste regel de veldnamen te bevatten die je wilt importeren en moet het bestand voorzien zijn van UTF-8 encoding.
 
 Wanneer je gebruik maakt van scheiding door middel van een komma of puntkomma raden we aan om veldwaardes van enkele (') of dubbele (") aanhalingstekens te voorzien. Zo worden komma’s of puntkomma’s niet als scheidingsteken beschouwd. Als je gebruik maakt van een apostrof in een waarde, zal je deze moeten escapen met een backslash. Onderstaand zie je hiervan een voorbeeld:
 
@@ -50,7 +50,7 @@ Het enige verschil tussen de instellingen van een eenmalige- en een periodieke i
 ![Periodieke import](../images/nl/import_periodiek.png)
 
 ## Subprofielen importeren
-Naast het importeren van profielgegevens is het ook mogelijk om gegevens uit een collectie (subprofielen) te importeren. Daarbij voorzie je de kolomnaam in het importbestand van een punt om aan te geven dat deze voor collectievelden wordt gebruikt. De collectienaam komt voor de punt te staan. Het collectieveld wordt achter de punt geplaatst.
+Naast het importeren van profielgegevens is het mogelijk om gegevens uit een collectie (subprofielen) te importeren. Daarbij voorzie je de kolomnaam in het importbestand van een punt om aan te geven dat deze voor collectievelden wordt gebruikt. De collectienaam komt voor de punt te staan. Het collectieveld wordt achter de punt geplaatst.
 
 **Voorbeeld**
 Stel dat je eigenaar bent van een dierenwinkel. Je klanten zijn in een database opgenomen in de vorm van profielen. Daarnaast houd je in een collectie bij welke huisdieren een klant bezit. In dit geval zou het importbestand er als volgt uit kunnen zien:
