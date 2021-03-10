@@ -1,15 +1,16 @@
 # Importeren van profielgegevens
 Er zijn verschillende manieren waarop je nieuwe profielen binnen je database kunt toevoegen of wijzigen. Zo kun je profielen met de hand, via de [API](./apis), via [webformulieren](./webforms) of door middel van een import toevoegen, wijzigen of verwijderen. 
 
-De importfunctie in Copernica ondersteunt CSV- en TXT-bestanden. Je kunt deze bestandsformaten exporteren vanuit tekstverwerkingsprogramma's als Microsoft Word of spreadsheetprogramma’s als Excel.
+De importfunctie in Copernica ondersteunt CSV- en TXT-bestanden. Je kunt deze bestandsformaten exporteren vanuit tekstverwerkingsprogramma's of spreadsheetprogramma’s als Excel.
 
 ## Importbestand voorbereiden
 Naast het feit dat een importbestand uit CSV- of TXT-bestanden moet bestaan dienen de bijbehorende kolommen ook door een tab, komma of puntkomma gescheiden te zijn. Ook dient de bovenste regel de veldnamen te bevatten die je wilt importeren en moet het bestand voorzien zijn van UTF-8 encoding.
 
-Wanneer je gebruik maakt van scheiding door middel van een komma of puntkomma raden we aan om veldwaardes van enkele (‘) of dubbele (“) aanhalingstekens te voorzien. Zo worden komma’s of puntkomma’s niet als scheidingsteken beschouwd. Onderstaand zie je hiervan een voorbeeld:
+Wanneer je gebruik maakt van scheiding door middel van een komma of puntkomma raden we aan om veldwaardes van enkele (') of dubbele (") aanhalingstekens te voorzien. Zo worden komma’s of puntkomma’s niet als scheidingsteken beschouwd. Als je gebruik maakt van een apostrof in een waarde, zal je deze moeten escapen met een backslash. Onderstaand zie je hiervan een voorbeeld:
 
     Voornaam,Achternaam,Email,Stad,Telefoonnummer
     'Jan','de Jong','jan.dejong@voorbeeld.nl','Amersfoort','0612456631'
+    'Pier','de Visser','piet_de_visser@voorbeeld.nl','\'s Hertogenbosch','0612224444'
     'Roos','Schippers','roos.schippers@voorbeeld.nl','Groningen','0612222444'
 
 ## Import aanmaken
@@ -21,7 +22,7 @@ Het uploaden van een bestand;
 Het ophalen van een bestand vanuit een externe locatie;
 Het ophalen van een bestand vanuit een externe locatie door middel van een privésleutel.
 
-Je haalt bestanden op vanuit een externe locatie wanneer je een import periodiek wilt herhalen (bijvoorbeeld iedere ochtend). Daarbij kun je ook gebruik maken van een (S)FTP-locatie. Tot slot geef je aan welk scheidingsteken er in het importbestand gebruikt wordt.
+Je haalt bestanden op vanuit een externe locatie wanneer je een import periodiek wilt herhalen (bijvoorbeeld iedere ochtend). Daarbij kun je ook gebruik maken van een (S)FTP-locatie. Vervolgens geef je aan welk scheidingsteken er in het importbestand gebruikt wordt.
 
 ## Importkolommen toewijzen
 Nadat je een bestand hebt geüpload of opgehaald vanuit een externe locatie kun je de velden uit het importbestand koppelen aan de velden in je database. De kolomnamen van het importbestand zijn aan de linkerzijde zichtbaar onder ‘**Kolomindeling**’.
