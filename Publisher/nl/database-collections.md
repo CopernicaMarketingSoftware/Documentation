@@ -9,7 +9,7 @@ Je bent vrij in het aantal collecties dat je kunt toevoegen. Zo kun je bijvoorbe
 In bovenstaand voorbeeld is gebruik gemaakt van een database waarin de bedrijfsgegevens staan. Om de contactpersonen per bedrijf op te kunnen slaan, is de collectie 'Contactpersonen' aangemaakt. In deze collectie kunnen meerdere contactpersonen als subprofiel aan het bedrijf gekoppeld worden.  
 
 **Voorbeeld - Database met klanten, collectie met bestellingen en bestelde artikelen**  
-In bovenstaand voorbeeld zie je twee collecties binnen een profiel, namelijk *Bestellingen* en *Bestelling_Artikelen*.  
+In onderstaand voorbeeld zie je twee collecties binnen een profiel, namelijk *Bestellingen* en *Bestelling_Artikelen*.  
 ![Voorbeeld van collecties binnen een profiel](../images/nl/collectie_voorbeeld2.png)
 
 In *Bestellingen* worden de algemene gegevens van een bestelling bijgehouden zoals het ID, de datum, het bedrag en de status. 
