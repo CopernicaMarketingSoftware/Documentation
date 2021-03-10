@@ -3,8 +3,6 @@ Er zijn verschillende manieren waarop je nieuwe profielen binnen je database kun
 
 De importfunctie in Copernica ondersteunt CSV- en TXT-bestanden. Je kunt deze bestandsformaten exporteren vanuit tekstverwerkingsprogramma's als Microsoft Word of spreadsheetprogramma’s als Excel.
 
-Wil je alvast oefenen met het importeren van profielgegevens? Download dan het [trainingsbestand](https://training.copernica.com/download).
-
 ## Importbestand voorbereiden
 Naast het feit dat een importbestand uit CSV- of TXT-bestanden moet bestaan dienen de bijbehorende kolommen ook door een tab, komma of puntkomma gescheiden te zijn. Ook dient de bovenste regel de veldnamen te bevatten die je wilt importeren en moet het bestand voorzien zijn van UTF-8 encoding.
 
