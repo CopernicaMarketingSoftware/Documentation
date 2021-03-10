@@ -11,8 +11,11 @@ In bovenstaand voorbeeld is gebruik gemaakt van een database waarin de bedrijfsg
 **Voorbeeld - Database met klanten, collectie met bestellingen en bestelde artikelen**  
 ![Voorbeeld van collecties binnen een profiel](../images/nl/collectie_voorbeeld2.png)
 
-[TEXT MOET NOG]
+In bovenstaand voorbeeld zie je twee collecties binnen een profiel, namelijk **Bestellingen** en **BestellingenArtikelen**. In 'Bestellingen' worden de algemene gegevens van een bestelling bijgehouden zoals het ID, de datum, het bedrag en de status. 
 
+![Voorbeeld van collecties binnen een profiel](../images/nl/collectie_voorbeeld3.png)
+
+In 'BestellingenArtikelen' worden de artikelen gespecificeerd die bij een bestelling horen. Naast de naam van het artikel, het bestelde aantal en het bedrag wordt het ID van de bestelling bijgehouden. Hiermee is het mogelijk om de artikelen te koppelen aan de bestelling. Door middel van [loadsubprofile](./loadprofile-and-loadsubprofile) kun je deze gegevens in je e-mail tonen.
 
 ## Aanmaken van een collectie
 Je maakt een collectie aan door onder ‘**Profielen**’ te kiezen voor ‘**Aanmaken -> Een collectie aanmaken**’. Hierbij selecteer je eerst de database waaronder de collectie moet vallen en voorzie je de collectie van een naam. Vervolgens voeg je velden toe door in de menubalk te kiezen voor '**Velden**'.
