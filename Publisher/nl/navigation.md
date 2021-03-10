@@ -4,7 +4,7 @@
     * [Databasevelden](./database-fields.md)
     * [Selecties](./database-selections-introduction.md)
     * [Aanbevolen selectiestructuur](./database-management.md)
-    * [Collecties](./database-collections.md)
+    * [Collecties en miniselecties](./database-collections.md)
     * [Importeren van profielgegevens](./database-import.md)
     * [Exporteren van profielgegevens](./database-export.md)
     * [Uitschrijfgedrag](./database-unsubscribe-behavior.md)
