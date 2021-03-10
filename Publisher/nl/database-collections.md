@@ -3,7 +3,16 @@ Een **collectie** is een mini-database die onder een reguliere database valt. Ee
 
 Je bent vrij in het aantal collecties dat je kunt toevoegen. Zo kun je bijvoorbeeld een collectie aanmaken voor bestellingen, verlaten winkelwagens of contactpersonen binnen een profiel. Wanneer je een collectie voor bestellingen aanmaakt bevat deze de bijbehorende bestellingen per profiel.
 
-![Voorbeeld van collecties binnen een profiel](../images/nl/collectie_profiel.png)
+**Voorbeeld - Database met bedrijven, collectie met werknemers**  
+![Voorbeeld van collecties binnen een profiel](../images/nl/collectie_voorbeeld1.png)
+
+In bovenstaand voorbeeld is gebruik gemaakt van een database waarin de bedrijfsgegevens staan. Om de contactpersonen per bedrijf op te kunnen slaan, is de collectie 'Contactpersonen' aangemaakt. In deze collectie kunnen meerdere contactpersonen als subprofiel aan het bedrijf gekoppeld worden.  
+
+**Voorbeeld - Database met klanten, collectie met bestellingen en bestelde artikelen**  
+![Voorbeeld van collecties binnen een profiel](../images/nl/collectie_voorbeeld2.png)
+
+[TEXT MOET NOG]
+
 
 ## Aanmaken van een collectie
 Je maakt een collectie aan door onder ‘**Profielen**’ te kiezen voor ‘**Aanmaken -> Een collectie aanmaken**’. Hierbij selecteer je eerst de database waaronder de collectie moet vallen en voorzie je de collectie van een naam. Vervolgens voeg je velden toe door in de menubalk te kiezen voor '**Velden**'.
