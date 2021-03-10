@@ -1,53 +1,8 @@
-# Databaserestricties
+# Restricties
+Restricties zijn regels die je kunt toevoegen aan een database of collectie. Wanneer een restrictie wordt ingesteld zorgt deze ervoor dat wijzigingen en toevoegingen aan een database aan vooropgestelde regels moeten voldoen. Denk daarbij bijvoorbeeld aan een minimumleeftijd of een unieke gebruikersnaam.
 
-Copernica is uitgerust met een aantal veiligheidssystemen om te voorkomen
-dat ongeldige gegevens in je database belanden. Tegelijkertijd voorkomt het
-ook dat je een mailing verstuurt naar een verkeerd adressenbestand. Je kunt met
-behulp van *databaserestricties* regels maken om inputdata te filteren, zodat
-ongeldige data niet in de database belandt. Het overzicht van deze systemen
-is te vinden in de Marketing Suite.
+Restricties worden alleen toegepast op nieuwe (sub)profielen en wijzigingen aan bestaande (sub)profielen. Bestaande (sub)profielen behouden hun huidige waarden maar dienen wel aan restricties te voldoen zodra ze worden aangepast.
 
-## Gebruiksmogelijkheden instellen
+Je kunt restricties toevoegen door in de menubalk van een database of collectie te navigeren naar '**Configuratie**'. Vervolgens kies je voor **databaserestricties** of **collectierestricties**.
 
-Copernica voorkomt dat een nieuwe database of selectie direct gebruikt kan
-worden door de intenties uit te schakelen. Hiermee voorkom je dat er per 
-ongeluk mailings worden verstuurd naar een selectie of database, terwijl 
-dat niet de bedoeling was. Er zijn intenties voor email, sms, fax en pdf 
-die aangepast kunnen worden in het menu van de database, collectie, selectie 
-of miniselectie.
-
-## Databaserestricties
-
-Databaserestricties zijn regels die je kunt toevoegen aan een database
-of collectie. Wijzigingen en toevoegingen aan een database moeten dan
-aan de vooropgestelde regels voldoen om te worden doorgevoerd.
-Je kunt bijvoorbeeld de minimumleeftijd instellen of zorgen dat de
-gebruikersnaam altijd uniek is. Er bestaat daarnaast een optie
-"dubbele veldwaarden blokkeren" waarmee je vervuiling van de database
-tegengaat.
-
-**Let op:** deze restricties worden alleen toegepast op nieuwe profielen en
-wijzigingen aan bestaande profielen. Om bestaande foutieve profielen te
-verwijderen, zal je voor deze een selectie moeten aanmaken met dezelfde
-voorwaarden als de databaserestricties en deze profielen te verwijderen met de
-functionaliteit **meerdere (sub-)profielen wijzigen/verwijderen...**.
-
-## Reguliere expressies
-
-Reguliere expressie (vaak afgekort naar *regex*) is een krachtig methode
-om restricties in te stellen. Deze expressies kunnen patronen herleiden en
-de uitkomst goed- of afkeuren. De volgende regex laat alleen postcodes toe
-die bestaan uit 4 getallen, gevolgd door twee letters (1000AA).
-
-`/^[1-9][0-9]{3} ?(?!sa|sd|ss)[a-z]{2}$/`
-
-## Meer informatie
-
-Om restricties toe te voegen heb je een database en een aantal velden nodig.
-Als je deze nog niet hebt aangemaakt kunnen de volgende artikelen je op weg 
-helpen.
-
-* [Database management](./database-introduction)
-* [Database velden](./database-fields)
-* [Database collecties](./database-collections)
-* [Database uitschrijfgedrag](./database-unsubscribe-behavior)
+![Databaserestricties](../images/nl/Databaserestricties.png)
