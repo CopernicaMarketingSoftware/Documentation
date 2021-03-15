@@ -34,7 +34,7 @@
     * [Opvolgacties](./follow-up-manager-publisher.md)
     * [Data-script](./data-object.md)
     * [AMP](./amp.md)
-* [Verzendreputatie](./sender-reputation.md)
+* [Verzendreputatie](./send-reputation.md)
 * [Campagnes](./campagnes.md)
    * [Welkom](./campaign-welcome.md)
    * [Double optin](./campaign-tutorial-double-opt-in.md)
