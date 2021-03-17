@@ -142,11 +142,13 @@ te voegen:
 {
     "recipient":    "john@doe.com",
     "template":     12,
-    "attachments":  {
-        "data":         "base64-encoded data",
-        "name":         "attachment.pdf",
-        "type":         "application/pdf"
-    }
+    "attachments":  [
+        {
+            "data":         "base64-encoded data",
+            "name":         "attachment.pdf",
+            "type":         "application/pdf"
+        }
+    ]
 }
 ```
 
@@ -156,9 +158,11 @@ Of, als je wilt dat SMTPeter het attachment voor je downloadt:
 {
     "recipient":    "john@doe.com",
     "template":     12,
-    "attachments":  {
-        "url":          "http:://example.com/path/to/document.pdf"
-    }
+    "attachments":  [
+        {
+            "url":          "http:://example.com/path/to/document.pdf"
+        }
+    ]
 }
 ```
 
