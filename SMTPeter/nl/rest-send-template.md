@@ -160,6 +160,7 @@ Of, als je wilt dat SMTPeter het attachment voor je downloadt:
     "template":     12,
     "attachments":  [
         {
+            "name":         "document.pdf",
             "url":          "http:://example.com/path/to/document.pdf"
         }
     ]
