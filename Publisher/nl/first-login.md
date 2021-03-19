@@ -82,4 +82,4 @@ Je beheert hier de algemene instellingen van je bedrijf, account en gebruiker.
 De naam van het account waarop je momenteel actief bent is hier zichtbaar. Wanneer je toegang hebt tot meerdere accounts heb je de mogelijkheid om te schakelen tussen verschillende accounts.
 
 ## Notificaties
-Zodra er bij het bel-icoontje een getal zichtbaar is heb je een [notificatie](./notifications) ontvangen over je bedrijf, account of gebruiker. Je stelt zelf in welke notificaties je wilt ontvangen.
+Zodra er bij het bel-icoontje een getal zichtbaar is heb je een [notificatie](https://ms.copernica.com/nl/#/admin/user/notifications) ontvangen over je bedrijf, account of gebruiker. Je stelt zelf in welke notificaties je wilt ontvangen.
