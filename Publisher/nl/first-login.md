@@ -78,7 +78,7 @@ Wanneer je op zoek bent naar extra informatie raadpleeg je hier de documentatie 
 ### Configuratie
 Je beheert hier de algemene instellingen van je bedrijf, account en gebruiker.
 
-## Accounts
+## Account
 De naam van het account waarop je momenteel actief bent is hier zichtbaar. Wanneer je toegang hebt tot meerdere accounts heb je de mogelijkheid om te schakelen tussen verschillende accounts.
 
 ## Notificaties
