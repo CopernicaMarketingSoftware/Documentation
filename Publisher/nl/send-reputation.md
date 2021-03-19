@@ -61,3 +61,35 @@ De gevolgen van een lage open-ratio worden groter zodra het aantal ongeopende be
 Wanneer een ontvanger jou toevoegt aan het adresboek heeft dat een positief effect op je verzendreputatie. In tegenstelling tot de impliciete terugkoppeling van een non-open geeft een ontvanger hiermee actief aan jouw e-mails te willen ontvangen. Het kan dus voordelig zijn om ontvangers te verzoeken jou toe te voegen aan het adresboek. Een [welkomstcampagne](https://www.copernica.com/nl/blog/post/campagne-uitgelicht-editie-5-welkomstcampagnes) biedt hier de ideale gelegenheid voor.
 
 Het is als verzender niet mogelijk om te meten hoeveel ontvangers jou hebben toegevoegd aan het adresboek. Datzelfde geldt voor gevallen waarbij ontvangers op ‘dit is geen spam’ klikken.
+
+### Verwerken van spamklachten
+
+De meeste e-mailclients maken gebruik van een ‘dit is spam’-knop. Deze staat los van de ‘dit is spam’-link in de e-mail zelf. Door gebruik te maken van de knop geeft een ontvanger duidelijk aan dat de mail ongewenst is. 
+
+Wanneer een e-mail als spam gemarkeerd wordt heeft dat negatieve gevolgen voor je verzendreputatie. Het effect hiervan wordt groter wanneer je e-mails blijft versturen aan het adres in kwestie. Dit verhoogt de kans dat je als spammer wordt aangeduid. Het is dus belangrijk om e-mailadressen die een spamklacht hebben ingediend te filteren uit je verzendlijst. 
+
+Spamklachten komen bij Copernica binnen via feedback loops (FBLs). Deze worden automatisch verwerkt en triggeren het ingestelde uitschrijfgedrag. Maak je voor databasemanagement gebruik van de standaardfilter? Dan worden spamklachten ook automatisch uit de verzendlijst gefilterd.
+
+__Let op__: Niet alle providers bieden FBLs aan, dus niet elke melding van spam komt bij Copernica aan. Gmail doet dit bijvoorbeeld niet. Het filteren van inactieve adressen wordt daarmee extra belangrijk.
+
+Spamklachten zijn nooit volledig te voorkomen. Over het algemeen wordt een spampercentage tot 0.1% als acceptabel gezien. Een enkele spamklacht biedt dus geen reden tot zorg. Wel is het belangrijk om spamklachten goed te filteren en je klachtenratio in de gaten te houden.
+
+### Verwerken van uitschrijfverzoeken
+
+Als verzender ben je wettelijk verplicht om uitgeschreven ontvangers te filteren uit je verzendlijst. Naast de wettelijke verplichting leidt het mailen van uitschrijvers ook tot meer spamklachten en een verslechtering van je verzendreputatie.
+
+Ontvangers kunnen zich ook buiten de e-mail zelf uitschrijven van mailings. Dat gebeurt via een knop in de e-mailclient. Deze geeft een terugkoppeling aan het e-mailadres dat gespecificeerd staat in de uitschrijfheader.
+
+In Publisher-documenten kan de uitschrijfheader worden ingesteld door rechtsbovenin naar __‘Headers’__ te navigeren. Via __‘Geavanceerde headers’__ kun je hier de uitschrijfheader activeren. We bevelen je aan om voor de volledige header te kiezen. Daarbij triggeren alle terugkoppelingen automatisch het ingestelde uitschrijfgedrag.
+
+![Publisher-uitschrijfheader](../images/nl/list_unsubscribe_publisher1.png)
+
+In Marketing Suite-templates klik je op __‘Overige headers’__. Vervolgens activeer je de lijstafmelding.
+
+![Marketing Suite-uitschrijfheader](../images/nl/list_unsubscribe_ms1.png)
+
+### Verkeer naar niet-bestaande of onbekende adressen (hard bounces)
+
+Het aanbieden van een groot aantal e-mails aan e-mailadressen die niet bestaan is voor de ontvangende mailserver een indicatie dat er iets mis is met je verzendlijst. Dit probleem kan grotendeels worden vermeden door te werken met een dubbele opt-in. Daarmee wordt de kans op hard bounces kleiner. 
+
+De kans dat je een niet-bestaand e-mailadres mailt wordt groter naarmate je verzendlijst ouder wordt. Het is daarom belangrijk om aandacht aan databasemanagement te besteden.
