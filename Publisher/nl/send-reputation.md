@@ -61,3 +61,68 @@ De gevolgen van een lage open-ratio worden groter zodra het aantal ongeopende be
 Wanneer een ontvanger jou toevoegt aan het adresboek heeft dat een positief effect op je verzendreputatie. In tegenstelling tot de impliciete terugkoppeling van een non-open geeft een ontvanger hiermee actief aan jouw e-mails te willen ontvangen. Het kan dus voordelig zijn om ontvangers te verzoeken jou toe te voegen aan het adresboek. Een [welkomstcampagne](https://www.copernica.com/nl/blog/post/campagne-uitgelicht-editie-5-welkomstcampagnes) biedt hier de ideale gelegenheid voor.
 
 Het is als verzender niet mogelijk om te meten hoeveel ontvangers jou hebben toegevoegd aan het adresboek. Datzelfde geldt voor gevallen waarbij ontvangers op ‘dit is geen spam’ klikken.
+
+### Verwerken van spamklachten
+
+De meeste e-mailclients maken gebruik van een ‘dit is spam’-knop. Deze staat los van de ‘dit is spam’-link in de e-mail zelf. Door gebruik te maken van de knop geeft een ontvanger duidelijk aan dat de mail ongewenst is. 
+
+Wanneer een e-mail als spam gemarkeerd wordt heeft dat negatieve gevolgen voor je verzendreputatie. Het effect hiervan wordt groter wanneer je e-mails blijft versturen aan het adres in kwestie. Dit verhoogt de kans dat je als spammer wordt aangeduid. Het is dus belangrijk om e-mailadressen die een spamklacht hebben ingediend te filteren uit je verzendlijst. 
+
+Spamklachten komen bij Copernica binnen via feedback loops (FBLs). Deze worden automatisch verwerkt en triggeren het ingestelde uitschrijfgedrag. Maak je voor databasemanagement gebruik van de standaardfilter? Dan worden spamklachten ook automatisch uit de verzendlijst gefilterd.
+
+__Let op__: Niet alle providers bieden FBLs aan, dus niet elke melding van spam komt bij Copernica aan. Gmail doet dit bijvoorbeeld niet. Het filteren van inactieve adressen wordt daarmee extra belangrijk.
+
+Spamklachten zijn nooit volledig te voorkomen. Over het algemeen wordt een spampercentage tot 0.1% als acceptabel gezien. Een enkele spamklacht biedt dus geen reden tot zorg. Wel is het belangrijk om spamklachten goed te filteren en je klachtenratio in de gaten te houden.
+
+### Verwerken van uitschrijfverzoeken
+
+Als verzender ben je wettelijk verplicht om uitgeschreven ontvangers te filteren uit je verzendlijst. Naast de wettelijke verplichting leidt het mailen van uitschrijvers ook tot meer spamklachten en een verslechtering van je verzendreputatie.
+
+Ontvangers kunnen zich ook buiten de e-mail zelf uitschrijven van mailings. Dat gebeurt via een knop in de e-mailclient. Deze geeft een terugkoppeling aan het e-mailadres dat gespecificeerd staat in de uitschrijfheader.
+
+In Publisher-documenten kan de uitschrijfheader worden ingesteld door rechtsbovenin naar __‘Headers’__ te navigeren. Via __‘Geavanceerde headers’__ kun je hier de uitschrijfheader activeren. We bevelen je aan om voor de volledige header te kiezen. Daarbij triggeren alle terugkoppelingen automatisch het ingestelde uitschrijfgedrag.
+
+![Publisher-uitschrijfheader](../images/nl/list_unsubscribe_publisher1.png)
+
+In Marketing Suite-templates klik je op __‘Overige headers’__. Vervolgens activeer je de lijstafmelding.
+
+![Marketing Suite-uitschrijfheader](../images/nl/list_unsubscribe_ms1.png)
+
+### Verkeer naar niet-bestaande of onbekende adressen (hard bounces)
+
+Het aanbieden van een groot aantal e-mails aan e-mailadressen die niet bestaan is voor de ontvangende mailserver een indicatie dat er iets mis is met je verzendlijst. Dit probleem kan grotendeels worden vermeden door te werken met een dubbele opt-in. Daarmee wordt de kans op hard bounces kleiner. 
+
+De kans dat je een niet-bestaand e-mailadres mailt wordt groter naarmate je verzendlijst ouder wordt. Het is daarom belangrijk om aandacht aan databasemanagement te besteden.
+
+### Spamtraps
+
+Spamtraps zijn e-mailadressen die geen bounces veroorzaken maar ook geen interactie vertonen met binnenkomende e-mails. Deze adressen zijn dan ook niet (meer) aan personen gebonden. In plaats daarvan worden ze door mailboxproviders en blacklistdiensten ingezet om te meten in hoeverre een verzender goed databasemanagement hanteert.
+
+Spamtraps zijn bijvoorbeeld gerecyclede adressen van mensen die hun mailbox hebben opgezegd of verlaten. Hierdoor wordt het voor een blacklistdienst mogelijk om te bepalen of je inactieve adressen op de juiste manier filtert. 
+
+Daarnaast kunnen spamtraps ook adressen bevatten die nooit aan een persoon gekoppeld zijn geweest (honeypots). Dergelijke adressen kunnen dus ook niet uit eigen beweging op een verzendlijst terecht zijn gekomen.
+
+Net als in het geval van spamklachten is een enkele spamtrap-hit geen reden tot zorg. Wanneer het aandeel spamtrap-hits groeit en deze adressen stelselmatig gemaild blijven worden kan dat echter leiden tot opname in een blacklist of blokkade door een mailboxprovider.
+
+### Authenticatie
+
+Om je domeinreputatie te verbeteren is het belangrijk om het afzenderdomein goed in te stellen. Dat gebeurt door middel van [authenticatie](https://www.copernica.com/nl/blog/post/deliverability-101-deel-3-verzenden-en-authenticatie). Afzenderdomeinen worden in Copernica [sender domains](./sender-domains) genoemd. 
+
+Authenticatie omvat in ieder geval het gebruik van [SPF](./spf), [DKIM](./dkim) en [DMARC](./dmarc). Het correct instellen hiervan beschermt je domein tegen misbruik en de bijbehorende verslechtering van je verzendreputatie. Zo geef je kwaadwillenden geen kans. 
+
+Het instellen van een afzenderdomein is een technisch proces. De sender domains in Copernica helpen je daarbij.
+
+### Onzichtbare factoren
+
+Naast de resultaten die een ESP als Copernica meet (opens, spamklachten etc.) hebben mailboxproviders ook inzicht in andere statistieken. Voorbeelden daarvan zijn:
+
+* Het aantal berichten dat verwijderd wordt zonder ze te openen;
+* Het aantal ongeopende berichten dat verplaatst wordt naar andere mappen. Gezien de ontvanger deze mogelijk later wilt lezen kan dit ook als een positief signaal worden beschouwd;
+* Leesratio en opens die de ESP niet kan meten door het gebrek aan een trackingpixel;
+* Spamklachten bij providers die geen terugkoppeling geven via FBLs;
+* Het aantal berichten dat wordt doorgestuurd;
+* Berichten die gemarkeerd worden als niet-spam;
+* Afzenders die toegevoegd worden aan het adresboek;
+* De betrouwbaarheid van ontvangers die een e-mail als spam markeren. Daarbij wordt bijvoorbeeld gekeken naar hoelang de gebruiker het e-mailaccount beheert en of deze goed wordt bijgehouden.
+
+De bovenstaande punten benadrukken het belang van databasemanagement. Daarbij is het vooral belangrijk om op de juiste manier met inactieve profielen om te gaan. Het mailen van inactieve profielen weegt zwaarder dan andere factoren, waaronder het ongeopend laten van e-mails.
