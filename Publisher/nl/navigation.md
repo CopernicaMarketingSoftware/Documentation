@@ -1,5 +1,6 @@
 * [Introductie](./introduction.md)
     * [Begrippenlijst](./definitions.md)
+    * [Eerste mailing](./first-mailing.md)
 * [Database en profielen](./database-profiles.md)
     * [Databasevelden](./database-fields.md)
     * [Selecties](./database-selections-introduction.md)
