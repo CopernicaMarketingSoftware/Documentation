@@ -3,11 +3,11 @@
 ## Endpoints
 
 De REST-API is benaderbaar via de endpoints https://api.copernica.com/v2 en 
-https://rest.copernica.com/v2. Let op: er zit een subtiel verschil tussen
+https://rest.copernica.com/v2. Er zit een subtiel verschil tussen
 deze twee endpoints, met name bij het ophalen van [grote datasets](./rest-paging.md). Beide 
 endpoints ondersteunen de traditionale HTTP-acties ("GET", "POST", "PUT" en 
 "DELETE") op de gebruikelijke wijze, waarbij "POST" is bedoeld om data toe te 
-voegen, en PUT om data te overschrijven.
+voegen, en "PUT" om data te overschrijven.
 
 * [Overzicht van methodes](./rest-methods.md)
 * [Vorige versie van de REST API (v1)](../restv1/rest-api.md)
@@ -15,8 +15,7 @@ voegen, en PUT om data te overschrijven.
 ## API tokens
 
 Om toegang te krijgen tot de API heb je een API token nodig. Dit token moet
-je als parameter toevoegen aan elke call die je naar de API stuurt. Je roept
-de API aan via URL's waarbij het token toevoegt als variabele. Bijvoorbeeld
+je als parameter toevoegen aan elke call die je naar de API stuurt. Bijvoorbeeld
 als volgt (je MYTOKEN moet vervangen door je daadwerkelijke token):
 
 ```
@@ -51,22 +50,22 @@ ID 1234. De body van het request bevat een JSON object met de eigenschappen
 van het nieuwe profiel.
 
 ```
-    POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
-    Host: api.copernica.com
-    Content-Type: application/json
-    
-    {"email":"info@example.com"}
+POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
+Host: api.copernica.com
+Content-Type: application/json
+
+{"email":"info@example.com"}
 ```
 
 In plaats van het bovenstaande request dat gebruik maakt van JSON, had je 
 echter ook een "traditioneel" HTTP POST request kunnen sturen:
 
 ```
-    POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
-    Host: api.copernica.com
-    Content-Type: application/x-www-form-urlencoded
-    
-    email=info@example.com
+POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
+Host: api.copernica.com
+Content-Type: application/x-www-form-urlencoded
+
+email=info@example.com
 ```
 
 De content-type header is alleen van toepassing op POST en PUT
@@ -80,16 +79,15 @@ respons voor een succesvol verzoek en de "400 Bad Request" respons voor een
 verzoek dat niet voltooid kon worden. In het geval van een gefaald verzoek 
 bevat de response body een error bericht.
 
-Een succesvol GET verzoek zal een "200 OK" respons ontvangen. De verzochte 
-data zal als een string in JSON formaat geëncodeerd worden geretourneerd en 
-bevat zich in de response body. Het is ook mogelijk een "301 Moved Permanently" 
-respons te ontvangen wanneer een verzoek naar een nieuwe URL verplaatst is. 
+Een succesvol GET verzoek geeft een "200 OK" respons, met een string in JSON formaat 
+in de response body. Het is ook mogelijk dat een "301 Moved Permanently" 
+respons wordt teruggegeven wanneer een verzoek naar een nieuwe URL verplaatst is. 
 
 Andere status codes zijn bijvoorbeeld de "201 Created" respons voor een succesvol 
 POST verzoek. In het geval van een succesvolle aanpassing door middel van een 
 PUT call zal er een "200 OK" code teruggegeven worden. Bij PUT 
 calls is het ook mogelijk dat er een of meerdere nieuwe entiteiten 
-aangemaakt worden, in welk geval er een "303 See Other" code geretourneerd zal worden. 
+aangemaakt worden, in welk geval er een "303 See Other" code geretourneerd wordt. 
 POST en PUT verzoeken kunnen ook **X-location** headers bevatten met een URL 
 van de nieuw aangemaakte entiteit. Bijvoorbeeld "X-location: https://api.copernica.com/v2/profile/$profileID"
 voor een nieuw aangemaakt profiel of geüpdatete profielen. Succesvolle 
@@ -97,6 +95,16 @@ DELETE verzoeken bevatten een **X-deleted** header, bijvoorbeeld: "X-deleted: pr
 
 POST, PUT en DELETE calls hebben geen response body (of de body is leeg), _tenzij_
 er een fout is opgetreden.
+
+## Paging van grote data-sets
+
+De REST-API stuurt standaard alleen batches terug met een beperkte omvang. Je moet
+daarom (meestal) paging-parameters zoals *start* en *limit* meegeven om duidelijk
+te maken wel deel van de resultaten je opvraagt. Voor sommige methodes
+kan de API wel complete data-sets teruggeven.
+
+* [Paging en grote data sets](./rest-paging.php)
+
 
 ## Handige scripts
 

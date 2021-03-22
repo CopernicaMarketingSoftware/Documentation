@@ -40,7 +40,6 @@ objecten er zijn opgevraagd, teruggegeven en hoeveel objecten beschikbaar zijn.
 De property *count* bevat het totaal aantal geretourneerde objecten. De property 
 *start* laat zien waar de data begint, en *limit* hoeveel objecten er zijn opgevraagd.
 De *total* property bevat het totaal aantal beschikbare items.
-
 Veronderstel dat er 1700 profielen in de database zijn opgeslagen, dan kun je 
 deze profielen niet allemaal tegelijk ophalen (want dit is beperkt tot 1000 
 profielen). Wel kun je een aantal calls achter elkaar doen:
@@ -51,7 +50,7 @@ https://api.copernica.com/v2/database/X/profiles?start=1000&limit=1000
 ```
 
 De eerste aanroept geeft de eerste 1000 profielen terug, de tweede aanroep
-de daaropvolgende 700. In het eerste response staat start=0, limit=1000, 
+de daaropvolgende 700. In het eerste respons staat start=0, limit=1000, 
 count=1000 en total=1700. De daaropvolgende call heeft de waardes start=1000,
 limit=1000, count=700 en total=1700. Door naar de teruggegeven waardes te
 kijken, kun je zien of je alle data hebt teruggekregen, of dat je nog een
@@ -61,8 +60,8 @@ nog meer data beschikbaar).
 ### De 'total' property
 
 De 'total' property is relatief intensief om te berekenen. Als je in jouw
-API call de property toch niet uitleest, dan kun je een extra parameter aan
-je call toevoegen om de REST API om dit te laten weten. Dit maakt de call
+API call de property toch niet uitleest, dan kun je een extra parameter 
+toevoegen om de REST API dit te laten weten. Dit maakt de call
 wat efficienter:
 
 ```
@@ -72,8 +71,8 @@ https://api.copernica.com/v2/database/X/profiles?start=0&limit=1000&total=false
 ### De 'nextid' property
 
 Naast *start* en *limit* wordt een *nextid* property teruggegeven.
-Hiermee kun je wat efficienter pagen: bij de volgende call kun je hiermee
-alleen profielen opvragen met een ID vanaf die specifieke waarde. Hoewel 
+Hiermee kun je wat efficienter pagen: bij de volgende call kun je dit
+gebruiken om alleen profielen opvragen met een ID vanaf die specifieke waarde. Hoewel 
 dit ook met de *start* en *limit* parameters kan, is het
 voor onze API iets efficienter om met ID's te werken.
 
@@ -94,12 +93,12 @@ precies hetzelfde als het reguliere endpoint https://api.copernica.com/v2, maar
 voor sommige methodes zijn er wat subtiele verschillen:
 
 - Voor sommige methodes (met name die om profielen op te vragen) geldt de beperking tot 1000 profielen niet indien je dit via rest.copernica.com opvraagt.
-- Het response van dergelijke methodes wordt "gestreamd".
-- De HTTP response header bevat dan geen 'content-length' header (omdat de grootte van het resultaat van te voren nog niet bekend is).
+- Het respons van dergelijke methodes wordt "gestreamd".
+- De HTTP header bevat dan geen 'content-length' header (omdat de grootte van het resultaat van te voren nog niet bekend is).
 - Daarvoor in de plaats is er een 'content-transfer-encoding: chunked' header, en wordt het antwoord in delen teruggestuurd.
 
 Als je gebruik maakt van dit alternatieve https://rest.copernica.com/v2 endpoint
-dan moet je API script overweg kunnen met twee soorten output: traditionele antwoorden
+dan moet je API-script overweg kunnen met twee soorten output: traditionele antwoorden
 met een content-length header, en data-streams met een content-transfer-encoding
 header. Je script moet met beide responses overweg kunnen omdat methodes in de
 toekomst wellicht anders geimplementeerd gaan worden (en streaming gaan ondersteunen).

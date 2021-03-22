@@ -1,1 +1,0 @@
-../SMTPeter/personalization-data.md
