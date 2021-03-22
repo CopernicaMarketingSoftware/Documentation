@@ -2,9 +2,9 @@
 Om je op weg te helpen met je eerste mailing hebben we de onderstaande checklist opgesteld. Deze bevat alle benodigdheden voor het versturen van je eerste mailing.
 
 ## 1. Senderdomain instellen
-Voordat je mailings kunt versturen is het nodig om een senderdomain te configureren. Je vindt deze onder __'[Configuratie -> Senderdomains](https://ms.copernica.com/#/admin/account/senderdomains)'__. 
+Voordat je mailings kunt versturen is het nodig om een senderdomain te configureren. Je vindt dit onder __'[Configuratie -> Senderdomains](https://ms.copernica.com/#/admin/account/senderdomains)'__. 
 
-Het configuratieproces bestaat uit twee onderdelen: (1) het opzetten van een senderdomain in de interface en (2) het instellen van DNS-instellingen bij je hostingpartij. Dit proces maakt het voor Copernica mogelijk om namens jouw domein e-mails te versturen.
+Het configuratieproces bestaat uit twee onderdelen: (1) het opzetten van een senderdomain in de interface en (2) het instellen van DNS-instellingen bij je hostingpartij. Dit proces maakt het voor Copernica mogelijk om vanuit jouw domein e-mails te versturen.
 
 _[Meer informatie over het instellen van senderdomains](./sender-domains)._
 
