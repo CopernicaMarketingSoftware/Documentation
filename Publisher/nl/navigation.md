@@ -60,6 +60,7 @@
 * [FAQ](./faq.md)
 * [Tips, tricks en achtergrond](./tips-and-tricks.md)
     * [Licentie en facturering](./license-and-billing.md)
+    * [Toegangsbeperkingen](./access-restrictions.md)
     * [Privacy](./privacy.md)
     * [Logfiles](./logfiles-ms.md)
     * [Promotionele annotations](./promotional-annotations.md)
