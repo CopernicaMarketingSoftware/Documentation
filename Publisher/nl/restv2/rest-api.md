@@ -100,7 +100,7 @@ er een fout is opgetreden.
 
 De REST-API stuurt standaard alleen batches terug met een beperkte omvang. Je moet
 daarom (meestal) paging-parameters zoals *start* en *limit* meegeven om duidelijk
-te maken wel deel van de resultaten je opvraagt. Voor sommige methodes
+te maken welk deel van de resultaten je opvraagt. Voor sommige methodes
 kan de API wel complete data-sets teruggeven.
 
 * [Paging en grote data sets](./rest-paging.php)
