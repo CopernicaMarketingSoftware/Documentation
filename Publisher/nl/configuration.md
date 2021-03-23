@@ -4,6 +4,8 @@ Je beheert de algemene instellingen van je bedrijf, account of gebruiker door na
 De configuratie-pagina is opgedeeld in drie kolommen. Die indeling reflecteert de licentiestructuur van Copernica. 
 Een licentie is gekoppeld aan een bedrijf maar kan meerdere accounts bevatten. Binnen een account kunnen meerdere gebruikers toegangsrechten hebben.
 
+![Copernica-configuratie](../images/nl/copernicaconfiguratie.png)
+
 ## Jouw bedrijf
 Bevat praktische informatie over jouw bedrijf, bijvoorbeeld met betrekking tot facturatie, licenties of accounts.
 
@@ -12,8 +14,6 @@ Bevat informatie over het account waarop je momenteel actief bent, bijvoorbeeld 
 
 ## Gebruiker
 Bevat informatie over de gebruiker. Denk daarbij aan persoonsgegevens, het wachtwoord en notificatie-instellingen.
-
-![Copernica-configuratie](../images/nl/copernicaconfiguratie.png)
 
 # Jouw bedrijf 
 ## Bedrijfsgegevens
