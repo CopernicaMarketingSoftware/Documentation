@@ -13,7 +13,7 @@ Bevat informatie over het account waarop je momenteel actief bent, bijvoorbeeld 
 ## Gebruiker
 Bevat informatie over de gebruiker. Denk daarbij aan persoonsgegevens, het wachtwoord en notificatie-instellingen.
 
-![Copernica-configuratie](../images/nl/copernicaconfiguratie.png)
+![Copernica-configuratie](./images/nl/copernicaconfiguratie.png)
 
 # Jouw bedrijf 
 ## Bedrijfsgegevens
