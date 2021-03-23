@@ -10,7 +10,7 @@ Integraties zonder kwaliteitskeurmerk hebben het validatieproces nog niet doorlo
 Als je wilt weten welke integraties gevalideerd zijn kan je contact opnemen met onze supportafdeling via support@copernica.com. 
 
 ## Integratie laten valideren
-Als je een integratie hebt ontwikkeld en deze wilt laten valideren, dan kun je hiervoor contact opnemen met integraties@copernica.com. Copernica controleert en test de integratie. Indien aan alle criteria wordt voldaan, brengen we deze extra onder de aandacht bij onze klanten en ontvang de integratie het validatiekeurmerk. Hier kunnen kosten aan verbonden zijn.
+Als je een integratie hebt ontwikkeld en deze wilt laten valideren, dan kun je contact opnemen met integraties@copernica.com. Copernica controleert en test de integratie. Indien aan alle criteria wordt voldaan, brengen we deze extra onder de aandacht bij onze klanten en ontvangt de integratie het validatiekeurmerk. Hier kunnen kosten aan verbonden zijn.
 
 Copernica behoudt zich het recht voor om de kwaliteitseisen bij te stellen. Ook kan het kwaliteitskeurmerk worden ingetrokken als door wijziging van onze eisen, updates van de integratie of naar aanleiding van feedback of andere omstandigheden blijkt dat de integratie niet langer voldoet aan onze eisen.
 
