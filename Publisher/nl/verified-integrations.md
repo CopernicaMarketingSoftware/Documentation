@@ -1,4 +1,6 @@
 # Gevalideerde integraties
+Copernica heeft integraties met onder andere webshops, customer data platforms (CDP) en content management systemen (CMS). Met een integratie synchroniseer je data tussen een platform en Copernica Marketing Software. Iedereen mag integraties bouwen en de meeste worden aangeboden door Copernica-partners. 
+
 Als een integratie voldoet aan de eisen van Copernica op het gebied van onder andere gebruiksgemak, kosten, veiligheid, support, stabiliteit en performance, dan kan deze het keurmerk 'gevalideerde integratie' krijgen. Alleen integraties die tot de beste in hun klasse behoren ontvangen dit keurmerk en worden door Copernica extra onder de aandacht gebracht bij onze gebruikers.  
 
 Copernica controleert gevalideerde integraties regelmatig om te zien of ze nog voldoen aan onze kwaliteitseisen. 
