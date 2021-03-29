@@ -60,6 +60,7 @@
     * [WebHooks](./webhooks.md)
     * [SOAP API](./soap-api-documentation.md)
 * [Smarty](./publisher-personalization-functions.md)
+* [Gevalideerde integraties](./verified-integrations.md)
 * [FAQ](./faq.md)
 * [Tips, tricks en achtergrond](./tips-and-tricks.md)
     * [Licentie en facturering](./license-and-billing.md)
