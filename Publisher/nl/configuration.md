@@ -16,7 +16,7 @@ Op de configuratiepagina kun je allerlei zaken instellen en inzien. Instellingen
 * __Accounts:__ de accounts die door jouw bedrijf worden afgenomen. 
 * __Beveiligingsinstellingen:__ de beveiligingsinstellingen die van toepassing zijn op alle collega's.
 * __API-applicaties:__ de gekoppelde API-applicaties (lees [hier](./apis) meer over de API). 
-* __Jouw partner:__ inzage in wie jouw partner is (lees [hier](https://www.copernica.com/nl/support/partners) meer over het partnermodel)  
+* __Jouw partner:__ inzage in wie jouw partner is (lees [hier](https://www.copernica.com/nl/support/partners) meer over onze partners).
 
 ## Accountinstellingen
 * __Senderdomains:__ inzage in de senderdomains binnen jouw account (lees [hier](./sender-domains) meer over senderdomains).
