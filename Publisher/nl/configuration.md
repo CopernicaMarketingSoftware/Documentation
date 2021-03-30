@@ -1,5 +1,5 @@
 # Configuratie
-Op de configuratiepagina kun je allerlei zaken instellen en inzien. De instellingen zijn onderverdeeld in drie kolommen. Deze komen overeen met het toegangssysteem en de licentiestructuur van Copernica: bedrijven, accounts en gebruikers.
+Op de configuratiepagina kun je allerlei zaken instellen en inzien. Instellingen zijn onderverdeeld in drie kolommen. Deze komen overeen met het toegangssysteem en de licentiestructuur van Copernica. 
 
 * Onder het kopje __Jouw bedrijf__ staan alle bedrijfsinstellingen.
 * Onder het kopje __Account__ staan de instellingen van je huidige account.  
@@ -11,10 +11,10 @@ Op de configuratiepagina kun je allerlei zaken instellen en inzien. De instellin
 * __Bedrijfsgegevens:__ de basisgegevens van jouw bedrijf (bedrijfsnaam, adres enzovoort). 
 * __Verbruik:__ inzage in het totale verbruik (zoals het aantal verzonden berichten) van alle accounts samen. 
 * __Bedrijfsmedewerkers:__ inzage in de gebruikers (collega's) die gekoppeld zijn aan het bedrijfsprofiel. 
-* __Facturatie:__ inzage in facturen. 
+* __Facturatie:__ inzage in de facturen. 
 * __Licentie:__ inzage in de licentievoorwaarden. 
 * __Accounts:__ de accounts die door jouw bedrijf worden afgenomen. 
-* __Beveiligingsinstellingen:__ beveiligingsinstellingen die van toepassing zijn op alle collega's.
+* __Beveiligingsinstellingen:__ de beveiligingsinstellingen die van toepassing zijn op alle collega's.
 * __API-applicaties:__ de gekoppelde API-applicaties (lees [hier](./apis) meer over de API). 
 * __Jouw partner:__ inzage in wie jouw partner is (lees [hier](https://www.copernica.com/nl/support/partners) meer over het partnermodel)  
 
@@ -26,13 +26,13 @@ Op de configuratiepagina kun je allerlei zaken instellen en inzien. De instellin
 * __IPs en Blacklists:__ inzage in IP-adressen en blacklists.
 * __Accountgebruikers:__ de accountgebruikers die toegang hebben tot jouw account.
 * __API access-tokens:__ de gekoppelde API access-tokens (lees [hier](./apis) meer over de API).
-* __Bewaartermijn gegevens:__ de ingestelde bewaartermijn voor jouw accountgeschiedenis.
+* __Bewaartermijn gegevens:__ de ingestelde bewaartermijn van jouw accountgeschiedenis.
 
-## Gebruikerinstellingen  
+## Gebruikersinstellingen  
 * __Persoonsgegevens:__ de basisgegevens van jouw gebruiker (voor- en achternaam, e-mailadres enzovoort). 
 * __Wachtwoord:__ wachtwoordinstellingen voor jouw gebruiker.
-* __Authenticatie:__ Twee-factor-authenticatie instellen voor jouw gebruiker.
-* __Nieuwsbrieven:__ in- of uitschrijven voor Copernica gerelateerde updates. 
+* __Authenticatie:__ twee-factor-authenticatie instellen voor jouw gebruiker.
+* __Nieuwsbrieven:__ in- of uitschrijven voor Copernica-gerelateerde updates. 
 * __Interface-instellingen:__ het uiterlijk van de software aanpassen.  
 * __Bètamodules:__ inzage in modules die nog in ontwikkeling zijn. 
 * __Notificaties:__ inzage in notificaties voor jouw gebruiker.
