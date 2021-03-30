@@ -43,7 +43,7 @@ In the rest of this documentation, we only denote the name of the configuration
 key as specified in the configuration file.
 
 The documentation for the various options is split up in different sections.
-Please select the section that you're interested in or  find the desired
+Please select the section that you're interested in or find the desired
 setting in the [A-Z settings overview](settings-alphabetical).
 
 * [RabbitMQ settings](rabbitmq-config "RabbitmQ configuration")
