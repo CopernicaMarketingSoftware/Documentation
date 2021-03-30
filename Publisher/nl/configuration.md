@@ -25,7 +25,7 @@ Op de configuratiepagina kun je allerlei zaken instellen en inzien. Instellingen
 * __IP-restrictie:__ de ingestelde IP-restricties voor jouw account.
 * __IPs en Blacklists:__ inzage in IP-adressen en blacklists.
 * __Accountgebruikers:__ de accountgebruikers die toegang hebben tot jouw account.
-* __API access-tokens:__ de gekoppelde API access-tokens (lees [hier](./apis) meer over de API).
+* __API-access-tokens:__ de gekoppelde API-access-tokens (lees [hier](./apis) meer over de API).
 * __Bewaartermijn gegevens:__ de ingestelde bewaartermijn van jouw accountgeschiedenis.
 
 ## Gebruikersinstellingen  
