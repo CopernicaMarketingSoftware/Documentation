@@ -30,7 +30,7 @@ vervolgens niet aankomt kun je dit profiel zo terug zoeken in je eigen database
 en contacteren om het probleem op te lossen.
 
 ## List-Unsubscribe header
-Je kunt ook altijd de *List Unsubscribe*-header toevoegen. Hiermee plaatsen sommige 
+Je kunt ook altijd de List Unsubscribe-header toevoegen. Hiermee plaatsen sommige 
 e-mailclients meteen een uitschrijflink bovenaan de e-mail. Het [uitschrijfgedrag](./database-unsubscribe-behavior) 
 kan ook zelf worden ingesteld. 
 
