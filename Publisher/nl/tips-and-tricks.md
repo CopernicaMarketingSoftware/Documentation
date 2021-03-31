@@ -14,7 +14,7 @@ database, lage spamscore en nette HTML dragen allemaal bij aan een goede
 reputatie, maar in de onderstaande artikelen geven we je nog veel meer tips.
 * [Database schoonhouden](./database-maintenance)
 * [Selecties optimalizeren en sneller maken](./selections-optimization)
-* [Afzenderreputatie en deliverability](./sender-reputation)
+* [Afzenderreputatie en deliverability](./send-reputation)
 * [Spamscore verlagen](./some-tips-to-lower-your-email-spam-score)
 * [HTML errors reduceren](./reducing-html-errors)
 
