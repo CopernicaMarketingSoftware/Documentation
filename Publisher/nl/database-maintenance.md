@@ -44,5 +44,5 @@ benaderen, bijvoorbeeld door middel van personalisatie.
 ## Meer informatie
 
 * [Tips en tricks](./tips-and-tricks)
-* [Database management](./database-introduction)
+* [Databasemanagement](./database-introduction)
 * [Selecties optimalizeren](./selections-optimization)
