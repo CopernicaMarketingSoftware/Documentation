@@ -5,8 +5,8 @@ heeft veroorzaakt wordt opgeslagen in de "cdm-abuse" logfiles. Zogenaamde abuses
 worden getriggerd wanneer iemand jouw e-mail rapporteert als spam. Dit verlaagt 
 je [verzendreputatie](../send-reputation), wat weer kan leiden tot 
 slechte *deliverability*. Je kunt dan merken dat je e-mails minder vaak aankomen. 
-Je kunt de inhoud van deze logfile downloaden in CSV, JSON en XML formaat. 
-Zie het kopje "Meer informatie over logfiles" voor instructies van het opvragen hiervan. 
+Je kunt de inhoud van deze logfile downloaden in CSV-, JSON- en XML-formaat. 
+Zie het kopje "Meer informatie over logfiles" voor instructies over het opvragen hiervan. 
 De logfiles bevatten de volgende informatie:
 
 | Data         | Omschrijving                                                 |
@@ -16,7 +16,7 @@ De logfiles bevatten de volgende informatie:
 | mail         | Betreffende mail                                             |
 | email        | E-mailadres van de ontvanger                                 |
 | tags         | Tags van de mail, gescheiden met puntkomma's                 |
-| senderdomain | Domein naam van de verzender                                 |
+| senderdomain | Domeinnaam van de verzender                                 |
 | profile      | ID van het profiel van de ontvanger                          |
 | subprofile   | ID van het subprofiel van de ontvanger                       |
 | template     | ID van de gebruikte template                                 |
