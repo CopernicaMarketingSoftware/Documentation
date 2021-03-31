@@ -1,7 +1,7 @@
 # Eerste login
 Wanneer je een Copernica-account hebt aangemaakt log je in via [Marketing Suite](https://ms.copernica.com). 
 
-De eerste keer dat je inlogt word je gevraagd om de GDPR-overeenkomst te tekenen. De GDPR of [Algemene verordening gegevensbescherming (AVG)](https://autoriteitpersoonsgegevens.nl/nl/onderwerpen/avg-europese-privacywetgeving) vereist een verwerkersovereenkomst tussen jou en Copernica. Je kunt deze overeenkomst zelf ondertekenen of dit laten doen door je Data Protection Officer (DPO).
+De eerste keer dat je inlogt word je gevraagd om de GDPR-overeenkomst te tekenen. Je kunt deze overeenkomst zelf ondertekenen of dit laten doen door je Data Protection Officer (DPO).
 
 Zodra je de bovenstaande stappen hebt doorlopen kom je in het Marketing Suite-dashboard terecht.
 
@@ -38,14 +38,14 @@ De modules zijn als volgt ingericht:
 **E-mailings:** biedt mogelijkheden voor het beheren van templates en documenten.  
 **Websites:** hier maak je websites en webpagina's aan.  
 **Mobiel:** biedt mogelijkheden voor het opmaken en versturen van SMS-berichten.  
-**PDF:** hier maak je gepersonaliseerde PDF-bestanden door middel van de [PDFLib-plugin](./pdf-document).  
+**PDF:** hier maak je gepersonaliseerde PDF-bestanden aan.
 **Inhoud:** biedt mogelijkheden voor het beheren van feeds, webformulieren, mediabibliotheken en enquêtes.  
 
 ### Algemeen
 
 **Support:** wanneer je een vraag hebt maak je hier een ticket aan voor onze Support-afdeling.  
 **Documentatie:** wanneer je op zoek bent naar extra informatie raadpleeg je hier de documentatie per onderwerp.  
-**Configuratie:** je beheert hier de algemene instellingen van je bedrijf, account en gebruiker.
+**Configuratie:** hier beheer je de algemene instellingen van je bedrijf, account en gebruiker.
 
 ## Account
 De naam van het account waarop je momenteel actief bent is hier zichtbaar. Wanneer je toegang hebt tot meerdere accounts heb je de mogelijkheid om te schakelen tussen verschillende accounts.
