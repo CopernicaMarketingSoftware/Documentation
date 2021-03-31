@@ -3,7 +3,7 @@
 Elk bericht dat verstuurd is met Marketing suite en een misbruik notificatie 
 heeft veroorzaakt wordt opgeslagen in de "cdm-abuse" logfiles. Zogenaamde abuses 
 worden getriggerd wanneer iemand jouw email rapporteert als spam. Dit verlaagt 
-je [afzender reputatie](../sender-reputation), wat weer kan leiden tot 
+je [verzendreputatie](../send-reputation), wat weer kan leiden tot 
 slechte *deliverability*. Je kunt dan merken dat je emails minder vaak aankomen. 
 Je kunt de inhoud van deze logfile downloaden in CSV, JSON en XML formaat. 
 Zie het kopje "Meer informatie over logfiles" voor instructies van het opvragen hiervan. 
