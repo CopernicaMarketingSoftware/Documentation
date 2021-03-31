@@ -23,29 +23,29 @@ De modules zijn als volgt ingericht:
 
 ### Marketing Suite
 
-**Dashboard:** bevat algemene statistieken over verzonden mailings.  
-**Profielen:** hier beheer je databases en profielen ([meer informatie](./database-profiles)).  
-**E-mail designer:** bevat een [Drag-and-drop Editor](https://ms.copernica.com/#/templates) voor het opstellen van mailings.  
-**HTML-templates:** hier creëer je geavanceerde HTML-templates.  
-**Vormgeving - CSS:** biedt mogelijkheden voor het beheren van CSS-opmaakbestanden.  
-**Vormgeving - XSLT:** biedt mogelijkheden voor het beheren van XSLT-opmaakbestanden.  
-**Resultaten:** hier bekijk je de resultaten van verzonden mailings en beheer je toekomstige mailings.  
-**Logbestanden:** hier zoek je informatie op in de ruwe logbestanden van Copernica. 
+* __Dashboard:__ bevat algemene statistieken over verzonden mailings.  
+* __Profielen:__ hier beheer je databases en profielen ([meer informatie](./database-profiles)).  
+* __E-mail designer:__ bevat een [Drag-and-drop Editor](https://ms.copernica.com/#/templates) voor het opstellen van mailings.  
+* __HTML-templates:__ hier creëer je geavanceerde HTML-templates.  
+* __Vormgeving - CSS:__ biedt mogelijkheden voor het beheren van CSS-opmaakbestanden.  
+* __Vormgeving - XSLT:__ biedt mogelijkheden voor het beheren van XSLT-opmaakbestanden.  
+* __Resultaten:__ hier bekijk je de resultaten van verzonden mailings en beheer je toekomstige mailings.  
+* __Logbestanden:__ hier zoek je informatie op in de ruwe logbestanden van Copernica. 
 
 ### Publisher
 
-**Profielen:** hier beheer je databases en profielen ([meer informatie](./database-profiles)).  
-**E-mailings:** biedt mogelijkheden voor het beheren van templates en documenten.  
-**Websites:** hier maak je websites en webpagina's aan.  
-**Mobiel:** biedt mogelijkheden voor het opmaken en versturen van SMS-berichten.  
-**PDF:** hier maak je gepersonaliseerde PDF-bestanden aan.
-**Inhoud:** biedt mogelijkheden voor het beheren van feeds, webformulieren, mediabibliotheken en enquêtes.  
+* __Profielen:__ hier beheer je databases en profielen ([meer informatie](./database-profiles)).  
+* __E-mailings:__ biedt mogelijkheden voor het beheren van templates en documenten.  
+* __Websites:__ hier maak je websites en webpagina's aan.  
+* __Mobiel:__ biedt mogelijkheden voor het opmaken en versturen van SMS-berichten.  
+* __PDF:__ hier maak je gepersonaliseerde PDF-bestanden aan.
+* __Inhoud:__ biedt mogelijkheden voor het beheren van feeds, webformulieren, mediabibliotheken en enquêtes.  
 
 ### Algemeen
 
-**Support:** wanneer je een vraag hebt maak je hier een ticket aan voor onze Support-afdeling.  
-**Documentatie:** wanneer je op zoek bent naar extra informatie raadpleeg je hier de documentatie per onderwerp.  
-**Configuratie:** hier beheer je de algemene instellingen van je bedrijf, account en gebruiker.
+* __Support:__ wanneer je een vraag hebt maak je hier een ticket aan voor onze Support-afdeling.  
+* __Documentatie:__ wanneer je op zoek bent naar extra informatie raadpleeg je hier de documentatie per onderwerp.  
+* __Configuratie:__ hier beheer je de algemene instellingen van je bedrijf, account en gebruiker.
 
 ## Account
 De naam van het account waarop je momenteel actief bent is hier zichtbaar. Wanneer je toegang hebt tot meerdere accounts heb je de mogelijkheid om te schakelen tussen verschillende accounts.
