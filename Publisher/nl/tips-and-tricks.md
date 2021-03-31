@@ -29,7 +29,7 @@ Hieronder vind je tutorials over veelvoorkomende toepassingen.
 * [Formulieren: e-mail voorkeuren bijhouden](./email-preferences)
 
 ## Senderdomains
-Senderdomains zorgen ervoor dat Copernica in jouw naam mag mailen. Er bestaan vele technieken 
+Senderdomains zorgen ervoor dat Copernica namens jou mag mailen. Er bestaan vele technieken 
 om misbruik van jouw naam te voorkomen. Daarnaast zorgen senderdomains dat Copernica up-to-date blijft.
 
 * [Senderdomains globaal](./sender-domains)
