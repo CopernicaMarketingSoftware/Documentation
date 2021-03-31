@@ -30,12 +30,12 @@ vervolgens niet aankomt kun je dit profiel zo terug zoeken in je eigen database
 en contacteren om het probleem op te lossen.
 
 ## List-Unsubscribe header
-Je kunt ook altijd de *list unsubscribe* header toevoegen. Hiermee
-kunnen sommige e-mailclients meteen een unsubscribe link bovenaan de
-e-mail plaatsen. Wij raden je aan altijd minstens een uitschrijflink te
-plaatsen. Dit komt ten goede aan je
-[reputatie als verzender](./sender-reputation) en je kan het
-[uitschrijfgedrag](./database-unsubscribe-behavior) zelf instellen.
+Je kunt ook altijd de *List Unsubscribe*-header toevoegen. Hiermee plaatsen sommige 
+e-mailclients meteen een uitschrijflink bovenaan de e-mail. Het [uitschrijfgedrag](./database-unsubscribe-behavior) 
+kan ook zelf worden ingesteld. 
+
+Je plaatst altijd minimaal één uitschrijflink. Dit komt 
+je [verzendreputatie](./send-reputation) ten goede.
 
 ## Meer informatie
 * [Templates in Marketing Suite](./emailings-ms-templates)
