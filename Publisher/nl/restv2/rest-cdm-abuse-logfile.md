@@ -1,6 +1,6 @@
 # Geregistreerd misbruik in de Marketing Suite
 
-Elk bericht dat verstuurd is met Marketing Suite en een misbruik notificatie 
+Elk bericht dat verstuurd is met Marketing Suite en een misbruiknotificatie 
 heeft veroorzaakt wordt opgeslagen in de "cdm-abuse" logfiles. Zogenaamde abuses 
 worden getriggerd wanneer iemand jouw e-mail rapporteert als spam. Dit verlaagt 
 je [verzendreputatie](../send-reputation), wat weer kan leiden tot 
