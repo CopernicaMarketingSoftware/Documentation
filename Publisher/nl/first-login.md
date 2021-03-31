@@ -15,7 +15,9 @@ Je vindt het Marketing Suite-menu aan de linkerkant. Het hoofdmenu is onderverde
 * Algemeen.
 
 ### Verschil Publisher & Marketing Suite
-De Copernica-software bestaat uit twee interfaces: Publisher en Marketing Suite. De [Publisher-interface](https://publisher.copernica.com) is het langst bestaande Copernica-product. De [Marketing Suite-interface](https://ms.copernica.com) is gebruiksvriendelijker en maakt gebruik van verbeterde technologieën. Daardoor worden gegevens sneller ingeladen.
+De Copernica-software bestaat uit twee interfaces: Publisher en Marketing Suite. 
+
+De [Publisher-interface](https://publisher.copernica.com) is het langst bestaande Copernica-product. De [Marketing Suite-interface](https://ms.copernica.com) is gebruiksvriendelijker en maakt gebruik van verbeterde technologieën. Daardoor worden gegevens sneller ingeladen.
 
 Publisher-modules worden momenteel overgebracht naar Marketing Suite. Op dit moment zijn enkele modules uitsluitend via Publisher beschikbaar. Om die reden zijn beide interfaces zichtbaar in het menu.
 
