@@ -1,5 +1,6 @@
 * [Introductie](./introduction.md)
     * [Begrippenlijst](./definitions.md)
+    * [Eerste login](./first-login.md)
     * [Toegangsbeperkingen](./access-restrictions.md)
     * [Configuratie](./configuration.md)
     * [Eerste mailing](./first-mailing.md)
