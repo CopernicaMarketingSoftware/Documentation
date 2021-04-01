@@ -1,80 +1,105 @@
 # REST API: paging
 
-Heel veel REST methodes retourneren een lijst van objecten. De methode om
+Veel REST methodes retourneren een lijst van objecten. De methode om
 [databases op te vragen](rest-get-databases) retourneert bijvoorbeeld een lijst
 van databases, en de methode om [profielen op te vragen](rest-get-database-profiles)
-retourneert een lijst van profielen. Zo zijn er nog veel meer.
+retourneert een lijst van profielen.
 
-Om te voorkomen dat een REST API call te lang duurt, en om te voorkomen dat een 
-enkelvoudige call te veel resources van onze API servers vraagt, wordt de output 
-van al deze methodes echter beperkt. Er worden niet meer dan 1000 objecten 
-teruggegeven, zelfs als er wel meer databases of profielen bestaan. Als je meer 
-objecten wilt opvragen kun je daarvoor meerdere calls uitvoeren.
+Om te voorkomen dat een REST API call te lang duurt en dat enkelvoudige calls 
+te veel resources van onze API servers vragen, wordt de output van deze methodes
+standaard beperkt door het api.copernica.com endpoint: er worden niet meer dan 1000 
+objecten per keer teruggegeven. Bij het rest.copernica.com endpoint werkt het iets
+anders en kun je wel grotere datasets ophalen.
+
+Je kunt door middel van *start* en *limit* parameters instellen welk deel van
+de gegevens opvraagt.
+
 
 ## Teruggegeven data
 
-Als een methode een lijst teruggeeft is dat altijd verpakt in een JSON object.
-Dat JSON object heeft standaard een aantal *properties* waarmee je kunt
-achterhalen of de gehele lijst is teruggegeven, of dat de output is gelimiteerd
-en er meer entries beschikbaar zijn.
+Het antwoord van de meeste API calls is verpakt in een JSON object. Indien je
+een methode gebruikt die _meerdere gegevens_ teruggeeft, dan is er altijd een aantal 
+standaardvelden in de output aanwezig:
 
-    {
-        "start":    50,
-        "limit":    100,
-        "count":    100,
-        "total":    335,
-        "data":     [ .... ]
-    }
+```
+{
+    "start":    50,
+    "limit":    100,
+    "count":    100,
+    "total":    335,
+    "data":     [ .... ],
+    "nextid":   12345
+}
+```
 
 Het belangrijkst is de property *data*. Hierin zit een array met de opgevraagde 
 gegevens. Bijvoorbeeld een array van databases of een array van profielen. De
 andere properties bevatten numerieke waardes waar je aan kunt zien hoeveel
-objecten er zijn teruggegeven en hoeveel objecten beschikbaar zijn.
+objecten er zijn opgevraagd, teruggegeven en hoeveel objecten beschikbaar zijn.
 
-De property *count* bevat het totaal aantal geretourneerde objecten. *Start*
-en *limit* zijn interessant als niet alle objecten konden worden teruggegeven.
-De property *start* bevat het aantal overgeslagen objecten, en *limit* het
-aantal tot waar de output is beperkt. In bovenstaand voorbeeld wordt dus een
-lijst van 100 objecten geretourneerd, waarbij de eerste 50 zijn overgeslagen.
-Als je geen limiet mee geeft zal het aantal objecten automatisch tot 100 worden beperkt.
-Merk op dat het gebruik van start, hoewel erg eenvoudig, bij grote waardes het proces
-van data ophalen erg vertraagd. In dit soort gevallen is het beter om data voor
-bepaalde IDs op te halen. Hoe dit precies kan is te lezen op onze 
-[Fields parameter pagina](./rest-fields-parameter.md)
+De property *count* bevat het totaal aantal geretourneerde objecten. De property 
+*start* laat zien waar de data begint, en *limit* hoeveel objecten er zijn opgevraagd.
+De *total* property bevat het totaal aantal beschikbare items.
+Veronderstel dat er 1700 profielen in de database zijn opgeslagen, dan kun je 
+deze profielen niet allemaal tegelijk ophalen (want dit is beperkt tot 1000 
+profielen). Wel kun je een aantal calls achter elkaar doen:
 
-De property *total* bevat het totaal aantal beschikbare elementen. In bovenstaand
-voorbeeld staat het op 335. Aangezien er maar 100 elementen op zijn gevraagd zouden 
-er dus extra calls uitgevoerd moeten worden om de overige 235 element op te vragen. 
-Daarnaast is het belangrijk om te onthouden dat de *total* berekenen een zware operatie 
-kan zijn als je een uitgebreide collectie aan elementen hebt. Je kunt *total* op 
-'false' zetten om je API calls sneller te maken.
-
-## Voorbeeld in PHP
-
-Onderstaand voorbeeld demonstreert hoe je van de complete lijst van databases 
-alleen de tweede vijf items kunt opvragen.
-
-```php
-    // required code
-    require_once('copernica_rest_api.php');
-    
-    // change this into your access token
-    $api = new CopernicaRestAPI("your-access-token", 2);
-
-    // parameters to be passed to the api
-    $parameters = array(
-        'start'             =>  5,
-        'limit'             =>  5,
-        'total'             =>  false
-    );
-
-    // fetch and print the databases
-    print_r($api->get("databases", $parameters));
+```
+https://api.copernica.com/v2/database/X/profiles?start=0&limit=1000
+https://api.copernica.com/v2/database/X/profiles?start=1000&limit=1000
 ```
 
-Voor bovenstaand voorbeeld heb je de [CopernicaRestApi klasse](rest-php) nodig.
+De eerste aanroept geeft de eerste 1000 profielen terug, de tweede aanroep
+de daaropvolgende 700. In het eerste respons staat start=0, limit=1000, 
+count=1000 en total=1700. De daaropvolgende call heeft de waardes start=1000,
+limit=1000, count=700 en total=1700. Door naar de teruggegeven waardes te
+kijken, kun je zien of je alle data hebt teruggekregen, of dat je nog een
+volgende batch moet opvragen (als start+count kleiner is dan total, dan is er
+nog meer data beschikbaar).
 
-## Meer informatie
+### De 'total' property
 
-* [Introductie tot de REST API](rest-api)
-* [Overzicht van alle API calls](rest-api)
+De 'total' property is relatief intensief om te berekenen. Als je in jouw
+API call de property toch niet uitleest, dan kun je een extra parameter 
+toevoegen om de REST API dit te laten weten. Dit maakt de call
+wat efficienter:
+
+```
+https://api.copernica.com/v2/database/X/profiles?start=0&limit=1000&total=false
+```
+
+### De 'nextid' property
+
+Naast *start* en *limit* wordt een *nextid* property teruggegeven.
+Hiermee kun je wat efficienter pagen: bij de volgende call kun je dit
+gebruiken om alleen profielen opvragen met een ID vanaf die specifieke waarde. Hoewel 
+dit ook met de *start* en *limit* parameters kan, is het
+voor onze API iets efficienter om met ID's te werken.
+
+Let op: pagen me behulp van *nextid* is alleen zinvol indien de resultaten
+op ID zijn gesorteerd! Als je een ander veld gebruikt om te sorteren, dan
+moet je hoe dan ook gebruik maken van *start* en *limit*. Bovendien, het
+opvragen van gegevens op basis van een ID werkt niet voor 
+alle methodes. Alleen [methodes die de _fields_ parameter ondersteunen](./rest-fields-parameter.md)
+kunnen dit. In de praktijk zijn dit methodes om profielen op te halen.
+
+Inmiddels hebben we een elegantere manier om grote datasets op te vragen.
+
+## Data streams en grotere data sets
+
+Via het alternatieve endpoint https://rest.copernica.com/v2 kan de beperking tot 
+1000 objecten per keer worden omzeild. Voor de meeste methodes werkt dit endpoint
+precies hetzelfde als het reguliere endpoint https://api.copernica.com/v2, maar
+voor sommige methodes zijn er wat subtiele verschillen:
+
+- Voor sommige methodes (met name die om profielen op te vragen) geldt de beperking tot 1000 profielen niet indien je dit via rest.copernica.com opvraagt.
+- Het respons van dergelijke methodes wordt "gestreamd".
+- De HTTP header bevat dan geen 'content-length' header (omdat de grootte van het resultaat van te voren nog niet bekend is).
+- Daarvoor in de plaats is er een 'content-transfer-encoding: chunked' header, en wordt het antwoord in delen teruggestuurd.
+
+Als je gebruik maakt van dit alternatieve https://rest.copernica.com/v2 endpoint
+dan moet je API-script overweg kunnen met twee soorten output: traditionele antwoorden
+met een content-length header, en data-streams met een content-transfer-encoding
+header. Je script moet met beide responses overweg kunnen omdat methodes in de
+toekomst wellicht anders geimplementeerd gaan worden (en streaming gaan ondersteunen).
+
