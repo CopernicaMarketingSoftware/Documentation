@@ -35,7 +35,7 @@ MAILERQ_RABBITMQ_ADDRESS=amqp://rabbit.example.com mailerq
 ```
 
 The above will cause MailerQ to use `rabbit.example.com`. If you supply both,
-then the environment variable "wins".
+then the command-line override "wins".
 
 ## In-depth settings
 
