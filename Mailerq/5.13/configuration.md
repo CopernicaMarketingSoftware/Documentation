@@ -7,10 +7,9 @@ three different ways:
 2. Via a command-line option.
 3. Via an environment variable.
 
-When a configuration option is given on the command-line, it overrides the
-value specified in the configuration file. Similarly, when a configuration
-option is set in an environment variable, it overrides both the configuration
-file as well as the command-line option.
+When an environment variable is set, it overrides the value specified in the
+configuration file. Similarly, when a command-line option is provided, it
+overrides both the configuration file as well as the environment variable.
 
 ## Overridability
 
