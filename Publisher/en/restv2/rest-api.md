@@ -268,6 +268,7 @@ templates and mailings.
 | Type   | Address                                                                                                       | Description                                            |
 |--------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | GET    | [api.copernica.com/v2/publisher/destination/$id](./rest-get-publisher-destination)                            | Fetch an emailing destination                          |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/body](./rest-get-publisher-destination-body)                  | Fetch the message body sent to the destination          |
 | GET    | [api.copernica.com/v2/publisher/destinations/$id/fields](./rest-get-publisher-destination-fields)             | Fetch an emailing destination including profile fields |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/statistics](./rest-get-publisher-destination-statistics)      | Fetch the statistics for an emailing destination       |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/abuses](./rest-get-publisher-destination-abuses)              | Fetch the abuses for an emailing destination           |
