@@ -229,6 +229,7 @@ documenten, templates en mailings.
 | Type   | Adres                                                                                                        | Omschrijving                                            |
 |--------|--------------------------------------------------------------------------------------------------------------|---------------------------------------------------------|
 | GET    | [api.copernica.com/v2/publisher/destination/$id/](./rest-get-publisher-destination)                          | Opvragen van een bestemming                             |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/body](./rest-get-publisher-destination-body)                 | Opvragen van de message body verzonden naar een bestemming    |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/fields](./rest-get-publisher-destination-fields)             | Opvragen van een bestemming inclusief profielvelden     |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/statistics](./rest-get-publisher-destination-statistics)     | Opvragen van statistieken voor een bestemming           |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/abuses](./rest-get-publisher-destination-abuses)             | Opvragen van abuses voor een bestemming                 |
