@@ -78,7 +78,7 @@ Hoewel dit ook met de *start*- en *limit*-parameters kan is het
 voor onze API iets efficiënter om met ID's te werken.
 
 **Let op:** pagen met behulp van *nextid* is alleen zinvol indien de resultaten
-op ID gesorteerd zijn! Als je een ander veld gebruikt om te sorteren, dan
+op ID gesorteerd zijn. Als je een ander veld gebruikt om te sorteren, dan
 moet je hoe dan ook gebruik maken van *start* en *limit*. Het
 opvragen van gegevens op basis van een ID werkt bovendien niet voor 
 alle methodes. Alleen [methodes die de _fields_-parameter ondersteunen](./rest-fields-parameter.md)
