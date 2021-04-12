@@ -41,7 +41,7 @@ de content-type-header om het formaat van de aangeleverde gegevens te bepalen.
 JSON biedt de meest krachtige methode. Daarmee kun je complex geneste datastructuren uitwisselen met Copernica.
 We ondersteunen echter ook de traditionele methode waarbij variabelen door middel van HTTP POST-requests worden 
 verstuurd. In het onderstaande voorbeeld versturen we een request naar de REST API om een profiel met ID 1234 aan 
-te maken in de database. De body bevat een JSON-object met de eigenschappen van het nieuwe profiel.
+te maken in de database. De body bevat een JSON-object met de eigenschappen van het nieuwe profiel:
 
 ```
 POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
