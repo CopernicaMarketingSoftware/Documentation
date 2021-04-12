@@ -74,7 +74,7 @@ https://api.copernica.com/v2/database/X/profiles?start=0&limit=1000&total=false
 Naast *start* en *limit* wordt er een *nextid*-property teruggegeven.
 Hiermee kun je efficiënter pagen: bij de volgende call kun je dit
 gebruiken om alleen profielen op te vragen met een ID vanaf die specifieke waarde. 
-Hoewel dit ook met de *start*- en *limit*-parameters kan, is het
+Hoewel dit ook met de *start*- en *limit*-parameters kan is het
 voor onze API iets efficienter om met ID's te werken.
 
 **Let op:** pagen met behulp van *nextid* is alleen zinvol indien de resultaten
