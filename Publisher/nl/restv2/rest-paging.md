@@ -90,8 +90,8 @@ Inmiddels bieden we een elegantere manier om grote datasets op te vragen.
 
 Via het alternatieve endpoint https://rest.copernica.com/v2 kan de beperking tot 
 1000 objecten per keer worden omzeild. Voor de meeste methodes werkt dit endpoint
-precies hetzelfde als het reguliere endpoint https://api.copernica.com/v2. Toch 
-zijn er voor sommige methodes een aantal subtiele verschillen:
+precies hetzelfde als het reguliere endpoint https://api.copernica.com/v2. Afhankelijk 
+van de gebruikte methode zijn er toch een aantal subtiele verschillen:
 
 * Voor sommige methodes (met name methodes om profielen op te vragen) geldt de beperking tot 1000 profielen niet indien je deze via rest.copernica.com opvraagt.
 * Het respons van dergelijke methodes wordt "gestreamd".
