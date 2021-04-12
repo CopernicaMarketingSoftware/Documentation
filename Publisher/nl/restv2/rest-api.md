@@ -74,7 +74,7 @@ kon worden). In het geval van een gefaald verzoek bevat de response-body een err
 
 Een succesvol GET-verzoek geeft een "200 OK"-respons met een string in JSON-formaat 
 in de response-body. Wanneer een verzoek naar een nieuwe URL verplaatst is is het
-mogelijk dat een "301 Moved Permanently"-respons wordt gegeven. 
+mogelijk dat er een "301 Moved Permanently"-respons wordt gegeven. 
 
 Andere statuscodes zijn ook mogelijk. De "201 Created"-respons voor een succesvol 
 POST-verzoek is hiervan een voorbeeld. In het geval van een succesvolle aanpassing door middel van een 
@@ -109,7 +109,7 @@ kan de API wel complete datasets teruggeven.
 
 ## Handige scripts
 
-Hoewel het gebruik van de REST API niet moeilijk is, hebben we wat scripts
+Hoewel het gebruik van de REST API niet moeilijk is hebben we een aantal scripts
 geschreven die het _nog makkelijker_ maken om de API te gebruiken.
 
 * [PHP-script voor API-koppelingen](./rest-php.md)
