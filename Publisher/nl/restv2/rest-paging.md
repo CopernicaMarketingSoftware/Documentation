@@ -94,7 +94,7 @@ precies hetzelfde als het reguliere endpoint https://api.copernica.com/v2. Afhan
 van de gebruikte methode zijn er toch een aantal subtiele verschillen:
 
 * Voor sommige methodes (met name methodes om profielen op te vragen) geldt de beperking tot 1000 profielen niet indien je deze via rest.copernica.com opvraagt.
-* Het respons van dergelijke methodes wordt "gestreamd".
+* Het respons van dergelijke methodes wordt 'gestreamd'.
 * De HTTP-header bevat dan geen 'content-length'-header (omdat de grootte van het resultaat van tevoren nog niet bekend is).
 * Daarvoor in de plaats is er een 'content-transfer-encoding: chunked'-header en wordt het antwoord in delen teruggestuurd.
 
