@@ -36,9 +36,9 @@ gegevens (bijvoorbeeld databases of profielen). De andere properties bevatten
 numerieke waardes waaraan je kunt zien hoeveel objecten er zijn opgevraagd en 
 teruggegeven. Ook laten ze zien hoeveel objecten er beschikbaar zijn.
 
-De *count*-property bevat het totale aantal geretourneerde objecten. De *start*
--property laat zien waar de data begint. De *limit*-property toont hoeveel objecten 
-er zijn opgevraagd, en de *total*-property bevat het totale aantal beschikbare items.
+De *count*-property bevat het totale aantal geretourneerde objecten. De *start*-property 
+laat zien waar de data begint. De *limit*-property toont hoeveel objecten er zijn opgevraagd. 
+De *total*-property bevat het totale aantal beschikbare items.
 
 Veronderstel dat er 1700 profielen in de database zijn opgeslagen. Gezien de eerdergenoemde
 beperking tot 1000 profielen kun je deze profielen niet allemaal tegelijk ophalen.  Wel kun 
@@ -55,8 +55,8 @@ count=1000 en total=1700. De daaropvolgende call bevat de waardes start=1000,
 limit=1000, count=700 en total=1700. 
 
 Je kunt zien of je alle data hebt teruggekregen door naar de geretourneerde waardes te kijken.
-Zo bepaal je ook of je nog een volgende batch moet opvragen. Als start+count kleiner is dan total, 
-dan is er nog meer data beschikbaar.
+Zo bepaal je ook of je een volgende batch moet opvragen. Er is meer data beschikbaar als start+count 
+kleiner is dan total.
 
 
 ### De 'total'-property
