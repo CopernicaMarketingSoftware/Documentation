@@ -8,7 +8,7 @@ een lijst van profielen retourneert.
 Om te voorkomen dat een REST API-call te lang duurt en dat enkelvoudige calls 
 te veel van onze API-servers vragen wordt de output van deze methodes
 standaard beperkt door het api.copernica.com-endpoint. Hierdoor worden er niet meer dan 1000 
-objecten per keer teruggegeven. Het rest.copernica.com-endpoint maakt het wel mogelijk om
+objecten per keer teruggegeven. De rest.copernica.com-endpoint maakt het wel mogelijk om
 grotere datasets op te halen.
 
 Je kunt door middel van *start*- en *limit*-parameters instellen welk deel van
@@ -89,16 +89,16 @@ Inmiddels bieden we een elegantere manier om grote datasets op te vragen.
 ## Datastreams en grotere datasets
 
 Via het alternatieve endpoint https://rest.copernica.com/v2 kan de beperking tot 
-1000 objecten per keer worden omzeild. Voor de meeste methodes werkt dit endpoint
-precies hetzelfde als het reguliere endpoint https://api.copernica.com/v2. Afhankelijk 
+1000 objecten per keer worden omzeild. Voor de meeste methodes werkt deze endpoint
+precies hetzelfde als de reguliere endpoint https://api.copernica.com/v2. Afhankelijk 
 van de gebruikte methode zijn er toch een aantal subtiele verschillen:
 
 * Voor sommige methodes (met name methodes om profielen op te vragen) geldt de beperking tot 1000 profielen niet indien je deze via rest.copernica.com opvraagt.
-* Het respons van dergelijke methodes wordt 'gestreamd'.
+* De respons van dergelijke methodes wordt 'gestreamd'.
 * De HTTP-header bevat dan geen 'content-length'-header (omdat de grootte van het resultaat van tevoren nog niet bekend is).
 * Daarvoor in de plaats is er een 'content-transfer-encoding: chunked'-header en wordt het antwoord in delen teruggestuurd.
 
-Als je gebruik maakt van dit alternatieve https://rest.copernica.com/v2 endpoint,
+Als je gebruik maakt van de alternatieve https://rest.copernica.com/v2 endpoint,
 dan moet je API-script overweg kunnen met twee soorten output: (1) traditionele antwoorden
 met een content-length-header en (2) datastreams met een content-transfer-encoding-header. 
 Je script moet met beide responses overweg kunnen omdat methodes in de
