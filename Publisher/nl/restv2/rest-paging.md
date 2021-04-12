@@ -75,7 +75,7 @@ Naast *start* en *limit* wordt er een *nextid*-property teruggegeven.
 Hiermee kun je efficiënter pagen: bij de volgende call kun je dit
 gebruiken om alleen profielen op te vragen met een ID vanaf die specifieke waarde. 
 Hoewel dit ook met de *start*- en *limit*-parameters kan is het
-voor onze API iets efficienter om met ID's te werken.
+voor onze API iets efficiënter om met ID's te werken.
 
 **Let op:** pagen met behulp van *nextid* is alleen zinvol indien de resultaten
 op ID gesorteerd zijn! Als je een ander veld gebruikt om te sorteren, dan
