@@ -102,5 +102,5 @@ Als je gebruik maakt van dit alternatieve https://rest.copernica.com/v2 endpoint
 dan moet je API-script overweg kunnen met twee soorten output: (1) traditionele antwoorden
 met een content-length-header en (2) datastreams met een content-transfer-encoding-header. 
 Je script moet met beide responses overweg kunnen omdat methodes in de
-toekomst wellicht anders geïmplementeerd gaan worden (en streaming gaan ondersteunen).
+toekomst mogelijk anders geïmplementeerd gaan worden (en streaming gaan ondersteunen).
 
