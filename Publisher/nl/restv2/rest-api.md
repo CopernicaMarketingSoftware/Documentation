@@ -2,7 +2,7 @@
 
 ## Endpoints
 
-De REST-API is benaderbaar via de endpoints https://api.copernica.com/v2 en 
+De REST API is benaderbaar via de endpoints https://api.copernica.com/v2 en 
 https://rest.copernica.com/v2. Er is een subtiel verschil tussen
 deze twee endpoints, met name bij het ophalen van [grote datasets](./rest-paging.md). Beide 
 endpoints ondersteunen de traditionele HTTP-acties ("GET", "POST", "PUT" en 
@@ -70,24 +70,31 @@ GET- en DELETE-requests ondersteunen geen data in de body.
 De respons die je ontvangt van de API-servers hangt af van het type verzoek 
 en het resultaat hiervan. Veelvoorkomende responsen zijn bijvoorbeeld de "200 OK"-respons 
 (bij een succesvol verzoek) en de "400 Bad Request"-respons (bij een verzoek dat niet voltooid 
-kon worden). In het geval van een gefaald verzoek bevat de responsebody een error.
+kon worden). In het geval van een gefaald verzoek bevat de response-body een error.
 
-Een succesvol GET-verzoek geeft een "200 OK" respons met een string in JSON-formaat 
-in de responsebody. Wanneer een verzoek naar een nieuwe URL verplaatst is is het
+Een succesvol GET-verzoek geeft een "200 OK"-respons met een string in JSON-formaat 
+in de response-body. Wanneer een verzoek naar een nieuwe URL verplaatst is is het
 mogelijk dat een "301 Moved Permanently"-respons wordt gegeven. 
 
-Andere statuscodes zijn bijvoorbeeld de "201 Created"-respons voor een succesvol 
-POST-verzoek. In het geval van een succesvolle aanpassing door middel van een 
+Andere statuscodes zijn ook mogelijk. De "201 Created"-respons voor een succesvol 
+POST-verzoek is hiervan een voorbeeld. In het geval van een succesvolle aanpassing door middel van een 
 PUT-call zal er een "200 OK"-code worden teruggegeven. Bij PUT-calls is het ook 
 mogelijk dat er één of meerdere nieuwe entiteiten worden aangemaakt, in welk 
 geval er een "303 See Other"-code geretourneerd wordt. 
 
 POST- en PUT-verzoeken kunnen ook **X-location**-headers bevatten met een URL 
-van de nieuw aangemaakte entiteit. Bijvoorbeeld "X-location: https://api.copernica.com/v2/profile/$profileID"
-voor een nieuw aangemaakt profiel of geüpdatete profielen. Succesvolle 
-DELETE-verzoeken bevatten een **X-deleted**-header, bijvoorbeeld: "X-deleted: profile $profileID".
+van de nieuw aangemaakte entiteit. In het geval van een nieuw aangemaakt profiel 
+of geüpdatete profielen ziet dat er bijvoorbeeld als volgt uit: 
+```
+"X-location: https://api.copernica.com/v2/profile/$profileID"
+```
 
-POST-, PUT- en DELETE-calls hebben geen responsebody (of de body is leeg), _tenzij_
+Succesvolle DELETE-verzoeken bevatten een **X-deleted**-header, bijvoorbeeld: 
+```
+"X-deleted: profile $profileID".
+```
+
+POST-, PUT- en DELETE-calls hebben geen response-body (of de body is leeg), _tenzij_
 er een fout is opgetreden.
 
 ## Paging van grote datasets
