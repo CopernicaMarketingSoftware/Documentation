@@ -84,7 +84,7 @@ geval er een "303 See Other"-code geretourneerd wordt.
 
 POST- en PUT-verzoeken kunnen ook **X-location**-headers bevatten met een URL 
 van de nieuw aangemaakte entiteit. In het geval van een nieuw aangemaakt profiel 
-of geüpdatete profielen ziet dat er bijvoorbeeld als volgt uit: 
+of geüpdatete profielen ziet dat er als volgt uit: 
 ```
 "X-location: https://api.copernica.com/v2/profile/$profileID"
 ```
