@@ -99,7 +99,7 @@ er een fout is opgetreden.
 
 ## Paging van grote datasets
 
-De REST-API stuurt standaard alleen batches terug met een beperkte omvang. Je moet
+De REST API stuurt standaard alleen batches terug met een beperkte omvang. Je moet
 daarom (meestal) paging-parameters zoals *start* en *limit* meegeven om duidelijk
 te maken welk deel van de resultaten je opvraagt. Voor sommige methodes
 kan de API wel complete datasets teruggeven.
