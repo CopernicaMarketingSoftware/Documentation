@@ -109,7 +109,7 @@ kan de API wel complete datasets teruggeven.
 
 ## Handige scripts
 
-Hoewel het gebruik van de REST API niet moeilijk is hebben we een aantal scripts
+Hoewel het gebruik van de REST API eenvoudig is hebben we een aantal scripts
 geschreven die het _nog makkelijker_ maken om de API te gebruiken.
 
 * [PHP-script voor API-koppelingen](./rest-php.md)
