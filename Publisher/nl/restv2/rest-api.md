@@ -68,36 +68,36 @@ GET- en DELETE-requests ondersteunen geen data in de body.
 ## Respons van de API
 
 De respons die je ontvangt van de API-servers hangt af van het type verzoek 
-en het resultaat hiervan. Veelvoorkomende responsen zijn bijvoorbeeld de "200 OK" 
-respons voor een succesvol verzoek en de "400 Bad Request" respons voor een 
-verzoek dat niet voltooid kon worden. In het geval van een gefaald verzoek 
-bevat de response body een error bericht.
+en het resultaat hiervan. Veelvoorkomende responsen zijn bijvoorbeeld de "200 OK"-respons 
+(bij een succesvol verzoek) en de "400 Bad Request"-respons (bij een verzoek dat niet voltooid 
+kon worden). In het geval van een gefaald verzoek bevat de responsebody een error.
 
-Een succesvol GET verzoek geeft een "200 OK" respons, met een string in JSON formaat 
-in de response body. Het is ook mogelijk dat een "301 Moved Permanently" 
-respons wordt teruggegeven wanneer een verzoek naar een nieuwe URL verplaatst is. 
+Een succesvol GET-verzoek geeft een "200 OK" respons met een string in JSON-formaat 
+in de responsebody. Wanneer een verzoek naar een nieuwe URL verplaatst is is het
+mogelijk dat een "301 Moved Permanently"-respons wordt gegeven. 
 
-Andere status codes zijn bijvoorbeeld de "201 Created" respons voor een succesvol 
-POST verzoek. In het geval van een succesvolle aanpassing door middel van een 
-PUT call zal er een "200 OK" code teruggegeven worden. Bij PUT 
-calls is het ook mogelijk dat er een of meerdere nieuwe entiteiten 
-aangemaakt worden, in welk geval er een "303 See Other" code geretourneerd wordt. 
-POST en PUT verzoeken kunnen ook **X-location** headers bevatten met een URL 
+Andere statuscodes zijn bijvoorbeeld de "201 Created"-respons voor een succesvol 
+POST-verzoek. In het geval van een succesvolle aanpassing door middel van een 
+PUT-call zal er een "200 OK"-code worden teruggegeven. Bij PUT-calls is het ook 
+mogelijk dat er één of meerdere nieuwe entiteiten worden aangemaakt, in welk 
+geval er een "303 See Other"-code geretourneerd wordt. 
+
+POST- en PUT-verzoeken kunnen ook **X-location**-headers bevatten met een URL 
 van de nieuw aangemaakte entiteit. Bijvoorbeeld "X-location: https://api.copernica.com/v2/profile/$profileID"
 voor een nieuw aangemaakt profiel of geüpdatete profielen. Succesvolle 
-DELETE verzoeken bevatten een **X-deleted** header, bijvoorbeeld: "X-deleted: profile $profileID".
+DELETE-verzoeken bevatten een **X-deleted**-header, bijvoorbeeld: "X-deleted: profile $profileID".
 
-POST, PUT en DELETE calls hebben geen response body (of de body is leeg), _tenzij_
+POST-, PUT- en DELETE-calls hebben geen responsebody (of de body is leeg), _tenzij_
 er een fout is opgetreden.
 
-## Paging van grote data-sets
+## Paging van grote datasets
 
 De REST-API stuurt standaard alleen batches terug met een beperkte omvang. Je moet
 daarom (meestal) paging-parameters zoals *start* en *limit* meegeven om duidelijk
 te maken welk deel van de resultaten je opvraagt. Voor sommige methodes
-kan de API wel complete data-sets teruggeven.
+kan de API wel complete datasets teruggeven.
 
-* [Paging en grote data sets](./rest-paging.php)
+* [Paging en grote datasets](./rest-paging.php)
 
 
 ## Handige scripts
@@ -105,6 +105,6 @@ kan de API wel complete data-sets teruggeven.
 Hoewel het gebruik van de REST API niet moeilijk is, hebben we wat scripts
 geschreven die het _nog makkelijker_ maken om de API te gebruiken.
 
-* [PHP script voor API koppelingen](./rest-php.md)
+* [PHP-script voor API-koppelingen](./rest-php.md)
 
 
