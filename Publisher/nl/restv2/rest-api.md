@@ -51,8 +51,7 @@ Content-Type: application/json
 {"email":"info@example.com"}
 ```
 
-Het is ook mogelijk om de actie uit te voeren door middel van een
-HTTP POST-request:
+In plaats van het bovenstaande request (dat gebruik maakt van JSON) had je echter ook een 'traditioneel' HTTP POST-request kunnen versturen:
 
 ```
 POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
