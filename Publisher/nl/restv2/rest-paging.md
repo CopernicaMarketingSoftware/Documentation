@@ -112,8 +112,8 @@ kan worden aan het omzetten van de methode naar een streaming-implementatie.
 We zijn gaandeweg bezig met het omzetten van methodes van een traditionele 'content-length'-implementatie 
 naar de schaalbaardere 'content-transfer-encoding'-implementatie. Je dient er daarom rekening mee te houden 
 dat deze methodes (via rest.copernica.com/v2) data in de toekomst op een andere manier kunnen gaan terugsturen.
-Methodes die vandaag nog werken met een content-length-header kunnen in de toekomst het resultaat "chunked"
+Methodes die vandaag nog werken met een content-length-header kunnen in de toekomst het resultaat 'chunked'
 gaan terugsturen. Indien je een koppeling maakt met rest.copernica.com/v2 is het daarom aan te raden om hier 
-nu al rekening mee te houden en je code compatible met beide responses te houden. Het is echter veiliger om 
+nu al rekening mee te houden en je code compatible te houden met beide responses. Het is echter veiliger om 
 api.copernica.com/v2 te blijven gebruiken omdat daar sowieso geen streaming wordt toegepast.
 
