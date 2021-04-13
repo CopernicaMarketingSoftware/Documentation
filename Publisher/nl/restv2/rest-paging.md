@@ -7,9 +7,9 @@ een lijst van profielen retourneert.
 
 Om te voorkomen dat een REST API-call te lang duurt en dat enkelvoudige calls 
 te veel van onze API-servers vragen wordt de output van deze methodes
-standaard beperkt door het api.copernica.com-endpoint. Hierdoor worden er niet meer dan 1000 
-objecten per keer teruggegeven. De rest.copernica.com-endpoint maakt het wel mogelijk om
-grotere datasets op te halen.
+standaard beperkt door het api.copernica.com endpoint. Hierdoor worden er niet meer dan 1000 
+objecten per keer teruggegeven. Het rest.copernica.com-endpoint (dit is dus een andere
+domeinnaam!) maakt het wel mogelijk om grotere datasets op te halen.
 
 Je kunt door middel van *start*- en *limit*-parameters instellen welk deel van
 de gegevens je opvraagt.
@@ -88,19 +88,32 @@ Inmiddels bieden we een elegantere manier om grote datasets op te vragen.
 
 ## Datastreams en grotere datasets
 
-Via het alternatieve endpoint https://rest.copernica.com/v2 kan de beperking tot 
-1000 objecten per keer worden omzeild. Voor de meeste methodes werkt deze endpoint
-precies hetzelfde als de reguliere endpoint https://api.copernica.com/v2. Afhankelijk 
-van de gebruikte methode zijn er toch een aantal subtiele verschillen:
+Via het alternatieve endpoint https://rest.copernica.com/v2 (met een andere domeinnaam)
+kan _voor sommige methodes_ de beperking tot 1000 objecten per keer worden omzeild. In principe
+werken rest.copernica.com/v2 en api.copernica.com/v2 hetzelfde, maar voor een aantal methodes (met
+name methodes om profielen op te vragen) geldt dat rest.copernica.com/v2 limieten groter dan 1000 items ondersteunt:
 
-* Voor sommige methodes (met name methodes om profielen op te vragen) geldt de beperking tot 1000 profielen niet indien je deze via rest.copernica.com opvraagt.
 * De respons van dergelijke methodes wordt 'gestreamd'.
-* De HTTP-header bevat dan geen 'content-length'-header (omdat de grootte van het resultaat van tevoren nog niet bekend is).
+* De HTTP-respons-header heeft dan geen 'content-length'-header (omdat de grootte van het resultaat van tevoren nog niet bekend is).
 * Daarvoor in de plaats is er een 'content-transfer-encoding: chunked'-header en wordt het antwoord in delen teruggestuurd.
 
-Als je gebruik maakt van de alternatieve https://rest.copernica.com/v2 endpoint,
-dan moet je API-script overweg kunnen met twee soorten output: (1) traditionele antwoorden
-met een content-length-header en (2) datastreams met een content-transfer-encoding-header. 
-Je script moet met beide responses overweg kunnen omdat methodes in de
-toekomst mogelijk anders geïmplementeerd gaan worden (en streaming gaan ondersteunen).
+Als je gebruik maakt van het alternatieve rest.copernica.com/v2 endpoint,
+dan moet je API-koppeling overweg kunnen met twee soorten responses: (1) traditionele antwoorden
+met een content-length-header en (2) datastreams met een content-transfer-encoding-header.
+Meestal krijg je een traditioneel respons terug (met een content-length-header dus), maar ook 
+een streamed respons is mogelijk. 
+
+Indien je een call doet naar rest.copernica.com om meer dan 1000 items op te halen en toch maar 
+1000 items terugkrijgt, dan heeft de methode nog geen streaming-implementatie gekregen in de 
+Copernica-API. Je zult de data dan alsnog in meerdere batches moeten ophalen door middel van paging. 
+Je kunt contact met ons opnemen als dit te omslachtig is. We kijken dan of er extra prioriteit gegeven
+kan worden aan het omzetten van de methode naar een streaming-implementatie.
+
+We zijn gaandeweg bezig met het omzetten van methodes van een traditionele 'content-length'-implementatie 
+naar de schaalbaardere 'content-transfer-encoding'-implementatie. Je dient er daarom rekening mee te houden 
+dat deze methodes (via rest.copernica.com/v2) data in de toekomst op een andere manier kunnen gaan terugsturen.
+Methodes die vandaag nog werken met een content-length-header kunnen in de toekomst het resultaat 'chunked'
+gaan terugsturen. Indien je een koppeling maakt met rest.copernica.com/v2 is het daarom aan te raden om hier 
+nu al rekening mee te houden en je code compatible te houden met beide responses. Het is echter veiliger om 
+api.copernica.com/v2 te blijven gebruiken omdat daar sowieso geen streaming wordt toegepast.
 
