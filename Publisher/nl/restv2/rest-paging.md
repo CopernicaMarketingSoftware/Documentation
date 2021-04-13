@@ -95,14 +95,14 @@ ondersteunt het rest.copernica.com/v2 endpoint limieten groter dan 1000 items.
 
 * Voor sommige methodes (met name methodes om profielen op te vragen) geldt de beperking tot 1000 profielen niet via rest.copernica.com.
 * De respons van dergelijke methodes wordt 'gestreamd'.
-* De HTTP-header response header dan geen 'content-length'-header (omdat de grootte van het resultaat van tevoren nog niet bekend is).
+* De HTTP-header respons header dan geen 'content-length'-header (omdat de grootte van het resultaat van tevoren nog niet bekend is).
 * Daarvoor in de plaats is er een 'content-transfer-encoding: chunked'-header en wordt het antwoord in delen teruggestuurd.
 
 Als je gebruik maakt van het alternatieve rest.copernica.com/v2 endpoint,
 dan moet je API-koppeling overweg kunnen met twee soorten responses: (1) traditionele antwoorden
 met een content-length-header en (2) datastreams met een content-transfer-encoding-header.
-Meestal krijg je gewoon een traditioneel response terug (met een content-length dus), maar soms 
-zo'n streamed response. Je koppeling moet met beide soorten responses overweg kunnen.
+Meestal krijg je gewoon een traditioneel respons terug (met een content-length dus), maar soms 
+zo'n streamed respons. Je koppeling moet met beide soorten responses overweg kunnen.
 
 Indien je een call doet naar rest.copernica.com om meer dan 1000 items op te halen, en je krijgt toch 
 maar 1000 items terug, dan betekent dit dat de methode in de API van Copernica nog geen 
