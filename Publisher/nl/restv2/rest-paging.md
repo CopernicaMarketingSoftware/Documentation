@@ -90,7 +90,7 @@ Inmiddels bieden we een elegantere manier om grote datasets op te vragen.
 
 Via het alternatieve endpoint https://rest.copernica.com/v2 (met een andere domeinnaam dus)
 kan de beperking tot 1000 objecten per keer _voor sommige methodes_ worden omzeild. In principe
-werken rest.copernica.com en api.copernica.com hetzelfde, alleen voor een paar methodes
+werken https://rest.copernica.com/v2 en https://api.copernica.com/v2 hetzelfde, alleen voor een paar methodes
 ondersteunt het rest.copernica.com endpoint limieten groter dan 1000 items.
 
 * Voor sommige methodes (met name methodes om profielen op te vragen) geldt de beperking tot 1000 profielen niet via rest.copernica.com.
@@ -108,15 +108,15 @@ Indien je een call doet naar rest.copernica.com om meer dan 1000 items op te hal
 maar 1000 items terug, dan betekent dit dat de methode in de API van Copernica nog geen 
 streaming-implementatie heeft gekregen. Je zult dan alsnog door middel van paging de data
 in meerdere batches moeten ophalen. Indien dit te omslachtig is dan kun je contact met ons
-opnement zodat wij kunnen kijken of we extra prioriteit kunnen geven aan het omzetten van
+opnemen zodat wij kunnen kijken of we extra prioriteit kunnen geven aan het omzetten van
 de methode naar een streaming implementatie.
 
 Omdat we gaandeweg bezig zijn om methodes om te zetten van een traditionele 'content-length'
 implementatie naar de wat schaalbaarder 'content-transfer-encoding' implementatie, moet je
-er rekening mee houden dat methodes in de toekomst de data anders kunnen gaan terugsturen.
-Methodes die vandaag nog werken via het oude systeem, kunnen in de toekomst het resultaat "chunked"
+er rekening mee houden dat methodes via https://rest.copernica.com/v2 in de toekomst de data anders kunnen gaan terugsturen.
+Methodes die vandaag nog werken met een content-length header, kunnen in de toekomst het resultaat "chunked"
 gaan terugsturen. Het is daarom aan te raden om, indien je een koppeling maakt met 
-rest.copernica.com, hier nu al rekening mee te houden en je code compatible met beide systemen
-te houden. Veiliger is het om gewoon api.copernica.com/v2 te blijven gebruiken, omdat daar sowieso
+https://rest.copernica.com/v2, hier nu al rekening mee te houden en je code compatible met beide responses
+te houden. Veiliger is het om gewoon https://api.copernica.com/v2 te blijven gebruiken, omdat daar sowieso
 geen streaming wordt toegepast.
 
