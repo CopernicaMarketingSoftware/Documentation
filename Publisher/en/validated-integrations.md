@@ -1,10 +1,10 @@
 # Validated integrations
 
-Copernica offers integrations with web stores, customer data platforms (CDP) and content management systems (CMS). Integrations allow
+Copernica offers integrations with web stores, customer data platforms (CDP), content management systems (CMS) and more. Integrations allow
 for synchronization between these platforms and Copernica. Anyone may build an integration, although most integrations are offered by our partners.
 
 Best-in-class integrations that meet Copernica's quality standards with regard to ease of use, cost, security, support, stability and performance 
-are awarded the 'validated integration' certification. Certified integrations are more actively promoted among our users.
+(among other areas) are awarded the 'validated integration' certification. Certified integrations are more actively promoted among our users.
 
 Copernica monitors validated integrations to ensure they continue to meet our quality standards.
 
