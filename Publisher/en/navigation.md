@@ -1,6 +1,7 @@
 * [Introduction](./introduction.md)
     * [Glossary](./definitions)
 * [Quick start](./quick-start-guide.md)
+    * [Access restrictions](./access-restrictions-en.md)
     * [Setting up a sender domain](./quick-sender-domain-guide.md)
     * [Setting up a database](./quick-database-guide.md)
     * [Your first mailing](./quick-mailing-guide.md)
