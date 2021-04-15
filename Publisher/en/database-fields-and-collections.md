@@ -1,4 +1,5 @@
 # Database fields
+
 The structure of a database consists of fields, interests and collections.
 Fields are single data containers for things like text, a date or a number.
 Interests are binary fields that can only be positive or negative. By adding a
@@ -26,23 +27,31 @@ for good measure we'll describe the different aspects of databases below.
 You can easily set the values of your field with the "Edit multiple profiles"
 functionality.
 
+Note: If you are creating or changing a multiple choice field using the 
+[REST API](./rest-api) the options should be separated using the 
+new line delimiter (`\n`).
+
 ## Extra options for fields
+
 While editing fields it is possible to select various extra options,
 such as sorting a field by default or hiding it. Below you'll find
 all options.
 
 ### Editing hidden fields
+
 Hidden fields cannot be seen in the profile editing interface. Use this
 option for fields you don't want to see or edit in the interface. It is
 still possible to import and export the data in these fields.
 
 ### Showing a field on overview pages
+
 On pages where a list of profiles is shown, only the fields that have
 this option activated are visible. Often times, a database has many more
 fields than the ones shown in such a list of profiles. By using this
 option you can display the profiles more clearly.
 
 ### Sorted fields
+
 This option allows you to sort your list based on a field. It can only
 be activated for one field at a time.
 
@@ -53,6 +62,7 @@ using few fields will give you the fastest results. Large fields can not
 be indexed.
 
 ## Interests
+
 Interests are binary fields and can therefore only be turned on or off. You
 can also group multiple interests thereby allowing you to cluster them based
 on their subject. For example, if you send multiple newsletters, you could
@@ -64,6 +74,7 @@ by clicking on the gear in the top-right corner of the
 **Database & Profiles** section.
 
 ## Creating or editing database fields in the Marketing Suite
+
 To change the structure of your database, go to the section
 **Database & Profiles** and click on the gear in the top-right corner.
 Here you will find the option **Manage fields** where you will find the list
@@ -72,6 +83,7 @@ edit the ones that currently exist. Doing so will allow you to give the field
 a name, type, and change the extra options explained above.
 
 ## Creating or editing database fields in the Publisher
+
 To change the structure of your database, go to the **Profiles** section
 and go to the **Edit database field...** menu under **Database Management**.
 Here you will find the list of fields currently in the database and the
@@ -80,6 +92,7 @@ will allow you to give the field a name, type, and change the extra
 options explained above.
 
 ## More information
+
 Having a clean well-maintained database is the key to successful campaigns.
 The articles below give you some tips on building and maintaining your database.
 
