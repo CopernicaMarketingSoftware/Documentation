@@ -181,6 +181,20 @@ het berichtje nooit afgeleverd. Je kan dit soort berichten terugvinden in de
 failure.logs. Merk op dat SMTPeter als standaard een bericht maximaal maar een
 dag probeert af te leveren.
 
+## Een bericht opnieuw versturen
+
+Wanneer je een bericht hebt aangeboden via een van de API's en daar een message id als antwoord op hebt gekregen, dan is het mogelijk om op basis van dit message id het bericht opnieuw te versturen. Dit gebeurt met een HTTP POST naar www.smtpeter.com/v1/resend waarbij je enkel *message* als parameter meegeeft:
+
+```json
+{
+    "message": "aaabbbcccxxxzzz"
+}
+```
+
+Het bericht wordt dan opnieuw opgebouwd op basis van alle waarden uit het oorspronkelijk bericht. De content en headers blijven gelijk. Berichten op basis van een template wijzigen niet wanneer het template in de tussentijd is geüpdatet.
+
+Wanneer je een bericht opnieuw verstuurt, dan krijgt deze een nieuw message id. De events op het opnieuw verstuurde bericht worden gekoppeld aan dit nieuwe message id.
+
 ## Meer informatie
 
 * [REST API](./rest-api)

@@ -49,6 +49,7 @@ In the table below you can find a call to retrieve account information.
 | Type   | Address                                                                                      | Description                                   |
 |--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
 | GET    | [api.copernica.com/v2/identity](./rest-get-identity)                                         | Fetch the account information                 |
+| GET    | [api.copernica.com/v2/consumption](./rest-get-consumption)                                   | Fetch the account consumption                 |
 
 ## Databases & Collections
 
@@ -83,6 +84,7 @@ structure.
 | GET    | [api.copernica.com/v2/database/$id/profiles](./rest-get-database-profiles)                   | Fetch all profiles                           |
 | POST   | [api.copernica.com/v2/database/$id/profiles](./rest-post-database-profiles)                  | Create a profile                             |
 | PUT    | [api.copernica.com/v2/database/$id/profiles](./rest-put-database-profiles)                   | Update one or multiple profiles              |
+| DELETE | [api.copernica.com/v2/database/$id/profiles](./rest-delete-database-profiles)                | Delete one or multiple profiles              |
 | PUT    | [api.copernica.com/v2/database/$id/intentions](./rest-put-database-intentions)               | Update the database intentions               |
 
 ### Collections
@@ -200,6 +202,7 @@ like your customers or orders. The relevant API calls can be found below.
 | GET    | [api.copernica.com/v2/profile/$id/ms/destination](./rest-get-profile-ms-destinations)                | Fetch all Marketing Suite destinations for a profile  |
 | GET    | [api.copernica.com/v2/profile/$id/files](./rest-get-profile-files)                                   | Fetch all files for a profile                         |
 | POST   | [api.copernica.com/v2/profile/$id/datarequest](./rest-post-profile-datarequest)                      | Create a request for all data stored for a profile    |
+| PUT    | [api.copernica.com/v2/profile/$id/unsubscribe](./rest-put-profile-unsubscribe)                       | Execute unsubscribe behavior of a profile             |
 
 ### Subprofile
 
@@ -216,6 +219,7 @@ like your customers or orders. The relevant API calls can be found below.
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/destinations](rest-get-subprofile-publisher-destinations) | Fetch all Publisher destinations for a subprofile       |
 | GET    | [api.copernica.com/v2/subprofile/$id/ms/destination](rest-get-subprofile-ms-destinations)                | Fetch all Marketing Suite destinations for a subprofile |
 | POST   | [api.copernica.com/v2/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)                    | Create a request for all data stored for a subprofile   |
+| PUT    | [api.copernica.com/v2/subprofile/$id/unsubscribe](./rest-put-subprofile-unsubscribe)                     | Execute unsubscribe behavior of a subprofile            |
 
 ## Publisher Mailings
 
@@ -241,6 +245,7 @@ templates and mailings.
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/impressions](./rest-get-publisher-emailing-impressions)     | Fetch the impressions for a mailing           |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribes](./rest-get-publisher-emailing-unsubscribes)   | Fetch the unsubscribes for a mailing          |
 | GET    | [api.copernica.com/v2/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Fetch the testgroups for a mailing            |
+| GET    | [api.copernica.com/v2/publisher/emailing/$id/finalgroup](./rest-get-publisher-emailing-finalgroup)       | Fetch the finalgroup for a mailing            |
 | GET    | [api.copernica.com/v2/publisher/message/$id](./rest-get-publisher-message)                               | Fetch the message information                 |
 | GET    | [api.copernica.com/v2/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)           | Fetch all Publisher mailings for a profile    |
 | GET    | [api.copernica.com/v2/subprofile/$id/publisher/emailings](./rest-get-subprofile-publisher-emailings)     | Fetch all Publisher mailings for a subprofile |
@@ -263,6 +268,7 @@ templates and mailings.
 | Type   | Address                                                                                                       | Description                                            |
 |--------|---------------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | GET    | [api.copernica.com/v2/publisher/destination/$id](./rest-get-publisher-destination)                            | Fetch an emailing destination                          |
+| GET    | [api.copernica.com/v2/publisher/destination/$id/body](./rest-get-publisher-destination-body)                  | Fetch the message body sent to the destination          |
 | GET    | [api.copernica.com/v2/publisher/destinations/$id/fields](./rest-get-publisher-destination-fields)             | Fetch an emailing destination including profile fields |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/statistics](./rest-get-publisher-destination-statistics)      | Fetch the statistics for an emailing destination       |
 | GET    | [api.copernica.com/v2/publisher/destination/$id/abuses](./rest-get-publisher-destination-abuses)              | Fetch the abuses for an emailing destination           |
@@ -298,6 +304,7 @@ and emailings.
 | GET    | [api.copernica.com/v2/ms/emailings](./rest-get-ms-emailings)                                 | Fetch all mailings                                    |
 | GET    | [api.copernica.com/v2/ms/emailing/$id](./rest-get-ms-emailing)                               | Fetch a mailing                                       |
 | POST   | [api.copernica.com/v2/ms/emailing](./rest-post-ms-emailing)                                  | Create a mailing                                      |
+| GET    | [api.copernica.com/v2/ms/destinations](./rest-get-ms-destinations)                           | Fetch all destinations for a specific period          |
 | GET    | [api.copernica.com/v2/ms/scheduledemailings](./rest-get-ms-scheduledemailings)               | Fetch all scheduled mailings                          |
 | GET    | [api.copernica.com/v2/ms/scheduledemailing/$id](./rest-get-ms-scheduledemailing)             | Fetch a scheduled mailing                             |
 | POST   | [api.copernica.com/v2/ms/scheduledemailing](./rest-post-ms-scheduledemailing)                | Create a scheduled mailing                            |

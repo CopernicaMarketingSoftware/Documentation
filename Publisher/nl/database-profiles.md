@@ -1,70 +1,21 @@
 # Database en profielen
-Copernica kent geen adressenlijsten, maar werkt met databases die je zelf kunt
-configureren. Databases zijn het centrale punt van informatie binnen Copernica.
-In een database worden alle contacten opslagen die jij als gebruiker gaat
-mailen, deze contacten worden 'profielen' genoemd.
+Databases zijn het centrale punt van informatie binnen Copernica. In een database worden alle contacten opgeslagen die jij als gebruiker gaat mailen. Deze contacten worden 'profielen' genoemd. Bij Copernica zit je niet vast aan standaardverzendlijsten. In plaats daarvan kun je een database configureren naar je eigen voorkeuren. 
 
-## Multidimensionale databases
-Binnen Copernica is het mogelijk om een extra laag aan je database toe te
-voegen. Deze extra laag zit gekoppeld aan de profielen en bevat meer informatie
-over dat profiel. Hierbij kan je denken aan de aankoophistorie van een klant
-of de producten die deze bekeken heeft. Een database die onder een profiel
-hangt wordt een collectie genoemd.
+Je vindt het database-overzicht onder ‘**Profielen**’. Door op de naam van een database te klikken krijg je de profielen te zien die onder de desbetreffende database vallen.
 
-Er zijn bijna geen beperkingen opgelegd voor de structuur van een database.
-Zo kun je bijvoorbeeld een eenvoudige voornaam-achternaam-e-mailadres-structuur
-opzetten of een *geneste* database waarin per profiel de bestelgeschiedenis en
-*abandoned shopping carts* worden opgeslagen. Het is echter in het begin handig
-om je database eenvoudig te houden. Je kunt later altijd extra velden toevoegen.
+![database overzicht](../images/nl/database-profiles.png)
 
-## Database aanmaken in de Marketing Suite
-In de Marketing Suite kan een database aangemaakt worden in het
-**Database & Profielen** gedeelte. Klik op het plusteken in de linkerbovenhoek.
-Klik op Database en geef de database een naam.
+## Aanmaken van een database
+Je maakt een database aan door onder ‘**Profielen**’ te kiezen voor ‘**Aanmaken -> Een database aanmaken**’. Vervolgens kun je de database van een naam en omschrijving voorzien. 
 
-Het maakt niet uit of een database in de Publisher of Marketing suite gemaakt
-is, dit is dezelfde database. Als een aanpassing in de Publisher gedaan wordt,
-dan is deze ook zichtbaar in de Marketing Suite. Nadat de database aangemaakt
-is, is de volgende stap is structuur aan je database geven door databasevelden
-toe te voegen.
+We raden je aan om één centrale database te gebruiken. Het is niet mogelijk om data uit verschillende databases te combineren. Iedere database bevat zijn eigen data en structuur.
 
-## Database aanmaken in de Publisher
-Binnen de Publisher kan een database aangemaakt worden via
-**Databasebeheer > Nieuwe database aanmaken**. In het venster hierna kan een
-naam gegeven worden aan de database. De nieuw aangemaakte database verschijnt
-in het venster aan de linkerkant, boven dit venster staat
-**Databases en selecties**. Via dit venster kan de database geselecteerd worden
-en kunnen de profielen in de database bekeken worden.
+## Aanmaken van databasevelden
+Een database bestaat doorgaans uit meerdere velden. Hierin kun je informatie toevoegen aan een bijbehorend profiel. Denk hierbij aan een voornaam, achternaam of e-mailadres. Je voegt een databaseveld toe door in de menubalk van de database te navigeren naar '**Velden & interesses**'.
 
-Het maakt niet uit of een database in de Publisher of Marketing suite gemaakt
-is, dit is dezelfde database. Als een aanpassing in de Marketing Suite gedaan
-wordt, dan is deze ook zichtbaar in de Publisher. Nadat de database aangemaakt
-is, is de volgende stap is structuur aan je database geven door databasevelden
-toe te voegen.
+Meer informatie over veldopties vind je op de uitgebreide documentatiepagina over [databasevelden](./database-fields).
 
-## Profielen
-Een profiel kan een persoon (typisch in B2C) of bedrijf (bij B2B) zijn. Je kan
-als gebruiker zelf bepalen welke data een profiel kan bevatten, omdat je de
-database zelf vorm geeft aan de hand van de databasevelden die je definieert.
-Copernica voegt zelf ook informatie toe aan de aanwezige profielen, zoals
-informatie over clicks, opens en errors van ontvangen mailings.
+## Aanmaken van een profiel
+Zodra je databasevelden hebt toegevoegd krijg je de mogelijkheid om profielen aan te maken. Je kunt een profiel handmatig toevoegen door te kiezen voor '**Aanmaken -> Profiel aanmaken**'. Hier vul je de gegevens van het profiel in. Vervolgens klik je op ‘**Profiel aanmaken**’.
 
-## Profiel aanmaken in de Marketing Suite
-In de Marketing Suite kan een profiel aangemaakt worden door te klikken op het
-poppetje met het plusje. Dan vul je vervolgens de waardes in die in het
-profiel dienen te komen en druk je op verzenden. Het is natuurlijk eenvoudiger
-om een grotere hoeveelheid data te [importeren](./database-import).
-
-## Profiel aanmaken in de Publisher
-Binnen de Publisher maak je een nieuw profiel aan door te klikken op
-**profiel > Nieuw profiel aanmaken**. Dan vul je vervolgens de waardes in die
-in het profiel dienen te komen en druk je op opslaan. Het is natuurlijk
-eenvoudiger om een grotere hoeveelheid data te [importeren](./database-import).
-
-## Meer informatie
-Het is belangrijk om een schone en goed onderhouden database te hebben als
-je succesvolle emailcampagnes wilt versturen. De onderstaande artikelen
-helpen je daarbij:
-
-* [Databases](./database-introduction)
-* [Database schoonhouden](./database-maintenance)
+Wanneer je meerdere profielen tegelijk wilt aanmaken kun je een bestand [importeren](./database-import) of gebruik maken van de [API](./apis).

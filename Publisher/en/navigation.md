@@ -46,3 +46,4 @@
     * [Styling](./emailings-publisher-styling)
     * [RSS and ATOM feeds](./rss-and-atom-feeds)
     * [Advanced options](./advanced-options)
+* [Validated integrations](./validated-integrations)

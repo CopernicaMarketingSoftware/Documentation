@@ -181,6 +181,18 @@ If the maxdelivertime is exceeded your message will not be delivered. You can
 track theses cases by checking the failure.logs. Note that as a default SMTPeter
 only tries to deliver a message for one day.
 
+## Resend a message
+When you have submitted a message to one of SMTPeter's APIs and received a message id as response, you are able to resend this message based on its id. You do this by making a HTTP POST request to www.smtpeter.com/v1/resend in which you only provide *message* as parameter:
+
+```json
+{
+    "message": "aaabbbcccxxxzzz"
+}
+```
+
+The message is then rebuilt based on all parameters from the original message. The content and headers remain the same. Messages based on templates do not change when the template was changed in the meantime.
+
+When resending a message, a new message id is generated. Events on the resent message are linked to this new message id.
 
 ## More information
 

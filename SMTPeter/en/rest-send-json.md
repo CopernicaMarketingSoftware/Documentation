@@ -155,7 +155,9 @@ Moreover, you can optionally specify the type of data that you send.
 {
     "attachments": [
         {
-            "url": "https://www.example.com/attachment1.pdf"
+            "url": "https://www.example.com/attachment1.pdf",
+            "name": "attachment1.pdf",
+            "type": "application/pdf"
         },
         {
             "data": "VGhpcyBpcyBqdXN0IGFuIGV4YW1wbGUgdGV4dCBmaWxlLi4=",

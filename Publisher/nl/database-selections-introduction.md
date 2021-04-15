@@ -1,133 +1,120 @@
-# Database selecties
-Naast velden en collecties, kun je in Copernica ook gebruik maken van selecties.
-Met een selectie groepeer je een deel van de profielen in je database, zodat je
-ze als bestemming kunt behandelen in mailings en opvolgacties. Deze selecties
-maak je op basis van bepaalde eigenschappen die een profiel moet hebben. Neem
-bijvoorbeeld een selectie van iedereen die zich heeft aangemeld voor de
-nieuwsbrief; Deze nieuwsbriefselectie kun je dan als bestemming instellen voor
-je nieuwsbrief, zodat je niet handmatig hoeft te kijken naar wie je moet mailen.
+# Selecties
+Een selectie is een segment van profielen op basis van een of meerdere overlappende kenmerken. Je gebruikt selecties om je database te filteren. Op deze manier bouw je eenvoudig specifieke doelgroepen op waarnaar je e-mails kunt versturen.
 
-Met selecties kun je je database nauwkeurig segmenteren, waardoor je gerichte
-mailings kunt sturen. De inhoud van selecties wordt automatisch bijgewerkt,
-zodat je selecties altijd de profielen bevatten die aan de voorwaarden van de
-selectie voldoen.
+Selecties geven je de mogelijkheid om met meerdere lagen te werken. Selecties die onder een andere selectie vallen noemen we ‘subselecties’. Een subselectie segmenteert alleen profielen die ook in de bovenliggende selectie zijn opgenomen.
 
-Naast 'gewone' selecties bestaan er ook
-[miniselecties](./database-collections.md) en subselecties.
+## Voorbeeld van een selectiestructuur
+![Voorbeeld van een selectiestructuur](../images/nl/voorbeeld_database.png)
 
-## Subselecties
-Een subselectie is een selectie van profielen uit een bestaande selectie.
-Bijvoorbeeld een selectie van mensen onder de 30, in de selectie van vrouwen.
-De profielen in een subselectie moeten aan alle condities van de selectie
-voldoen, alsmede die van de subselectie. In ons voorbeeld betekent dit dus dat
-het profiel zowel vrouwelijk als onder de 30 moeten zijn.
+In het bovenstaande voorbeeld zie je een structuur waarbij er onder een hoofdselectie (B_VerzendSelectie) twee subselecties (EN en NL) zijn aangemaakt. Door middel van deze structuur kun je de Engelstalige nieuwsbrief versturen naar de ‘EN’-selectie en de Nederlandstalige nieuwsbrief naar de ‘NL’-selectie.
 
-Dit is niet alleen handig voor het overzicht in je database, het kan je
-database ook een stuk sneller maken. Als je namelijk een subselectie van mensen
-onder de 30 maakt onder de selectie van vrouwen, hoeft Copernica alleen de
-profielen die al in de selectie "Vrouwen" staan te doorzoeken in plaats van
-alle profielen in de database.
+Naast (sub)selecties bestaan er ook [miniselecties](./database-collections). Dat zijn segmenten binnen [collecties](./database-collections).
 
-Het maken van subselecties is alleen mogelijk op profielniveau:
-"subminiselecties" maken in een collectie is dus niet mogelijk. Subselecties
-maak je op dezelfde manier aan als selecties, maar je geeft daarbij
-aan waar de subselectie onder dient te vallen.
+## Aanmaken van een selectie
+Om een selectie aan te maken selecteer je een database en kies je voor '**Aanmaken -> Een selectie aanmaken**'. Vervolgens geef je de selectie een naam en bepaal je of deze direct onder de database (reguliere selectie) of onder een andere selectie (subselectie) moet vallen. 
+
+Om een selectie aan te passen navigeer je naar de selectie. Vervolgens klik je in de toolbar op ‘**Regels**’.
 
 ## Regels en condities
-Zoals hierboven vermeld, moeten profielen in een selectie bepaalde
-eigenschappen hebben om bij die selectie te horen. Deze voorwaarden stel je in
-Copernica in door middel van selectieregels en -condities. Je kunt op van alles
-filteren, van een geboortedatum tot clicks in mailings in een bepaalde periode.
+Zoals eerder genoemd moeten profielen bepaalde eigenschappen vertonen om in een selectie opgenomen te worden. In Copernica stel je die voorwaarden in door middel van selectieregels en condities. 
 
-Regels en condities verschillen wel degelijk van elkaar. Een conditie is een
-onderdeel van een regel; er kunnen namelijk meerdere condities in een regel
-zitten. Oftewel, binnen een **OF**- of **OF NIET**-regel worden
-**EN**-condities aan elkaar gelinkt. De profielen worden toegekend aan een
-selectie als aan een van de verschillende regels wordt voldaan.
+Je kunt filteren op basis van verschillende dimensies, bijvoorbeeld op basis van geboortedatum (iedereen die vandaag jarig is) of kliks (iedereen die op een specifieke URL in een e-mail heeft geklikt).
 
-Als profielen in een selectie moeten voldoen aan een of meerdere voorwaarden,
-gebruik je een **OF**-regel met **EN**-conditie(s). Als profielen juist niet
-moeten voldoen aan een of meerdere voorwaarden, gebruik je een
-**OF NIET**-regel met **EN**-conditie(s).
+Regels en condities verschillen van elkaar. Een conditie is onderdeel van een regel; een regel kan dus meerdere condities bevatten. Om aan een regel te voldoen moet een profiel aan alle condities binnen die regel voldoen (EN-conditie). Om in een selectie te komen moet een profiel aan minimaal één van de ingestelde regels voldoen (OF-conditie).
 
-Je kunt op een aantal manieren bepalen hoe profielen worden toegevoegd aan
-selecties. Deze filters worden binnen Copernica selectiecondities genoemd.
-Hieronder zijn de verschillende opties uiteengezet:
+![Voorbeeld van regels en condities](../images/nl/selectie_conditie1.png)
 
-### Check op Veldwaarde
-Dit is de meest voorkomende conditie. Als er een conditie op veldwaarde wordt
-gedaan, dan vergelijk je een waarde uit een databaseveld. Stel dat er gekeken
-dient te worden of een klant ingeschreven staat, dan wordt de veldwaarde van
-het databaseveld Nieuwsbrief gecontroleerd op waarde "Ja". Alle profielen met
-waarde "Ja" in het veld Nieuwsbrief zullen dan in de selectie terecht komen.
+In het bovenstaande voorbeeld dient het profiel zowel de waarde ‘Vrouw’ als de leeftijd ‘30’ te bevatten.
+
+Wanneer profielen in een selectie moeten voldoen aan één of meerdere voorwaarden gebruik je meerdere regels met verschillende condities.
+
+![Voorbeeld van regels en condities](../images/nl/selectie_conditie2.png)
+
+In het bovenstaande voorbeeld komen profielen met zowel de postcode '1101 AB' als de postcode '1101 AC' in de selectie terug.
+
+## Conditie-opties
+Er zijn een aantal manieren waarop je kunt bepalen hoe profielen worden toegevoegd aan selecties. De filters die je hiervoor gebruikt worden in Copernica selectiecondities genoemd. Hierbij zijn er verschillende opties mogelijk. Dat zijn:
+
+### Check op veldwaarde
+Dit is de meest gebruikte conditie. Hiermee vergelijk je een veld uit het profiel met een bepaalde waarde. Daarbij kun je gebruik maken van verschillende vergelijkingscondities, waaronder ‘is gelijk aan’, ‘is ongelijk aan’, ‘bevat de tekst’ en ‘is groter dan’. 
+
+![Voorbeeld van een selectie op basis van veldwaardes](../images/nl/selectie_veldwaarde.png)
+
+*Voorbeeld: Selecteer alle profielen waarbij het veld 'Woonplaats' gelijk is aan 'Amsterdam'.*
 
 ### Check op interessegebied
-Stelt een selectie samen aan de hand van een bepaalde interessevelden uit de
-database. Deze interesse kan bijvoorbeeld gaan over een bepaald product. Alle
-interesses die gelijk zijn aan dat product komen dan in de selectie.
+Met deze conditie kun je aangeven of een bepaalde interesse wel of niet in het profiel aanwezig moet zijn. 
+
+![Voorbeeld van een selectie op basis van interesse](../images/nl/selectie_interesse.png)
+
+*Voorbeeld: Selecteer alle profielen met de interesse 'Hond'.*
 
 ### Check op datum
-Stelt een selectie samen aan de hand van een specifieke tijdsperiode. De datum
-kan bijvoorbeeld worden toegekend aan een bepaalde gebeurtenis. Denk hierbij
-aan de datum waarop de garantie afloopt, de datum van de eerste aankoop, of de
-datum waarop iemand zich aangemeld heeft voor de nieuwsbrief. Alle datums die
-binnen een gespecificeerd aantal dagen van vandaag zijn, komen dan in de
-selectie.
+Met deze conditie bepaal je of een veld uit het profiel binnen een specifieke tijdsperiode valt. Je kunt hierbij kiezen voor een vaste- of variabele datum. Wil je alle profielen selecteren die de datum 1 januari bevatten? Dan kies je voor de vaste datum (in dit geval '2021-01-01'). Wil je alle profielen selecteren die later dan een week geleden zijn aangemaakt? Dan kies je voor de variabele datum. 
 
-### Check op resultaten e-mail/sms/faxcampagnes
-Stelt een selectie samen aan de hand van het opgegeven campagneresultaat. Dit
-campagneresultaat kan gaan over e-mailcampagnes, sms-campagnes, faxcampagnes en
-enquêtes. Denk bijvoorbeeld aan de ontvangers van een e-mail die op een
-hyperlink hebben geklikt. Alle profielen met hetzelfde campagneresultaat komen
-dan in een selectie. Hier wordt een onderscheid gemaakt tussen de Publisher en
-de Marketing Suite, daar zijn verschillende condities voor. Voor Marketing Suite
-campagnes dient er een gekozen te worden voor 'controleer op Marketing Suite
-resultaten'.
+![Voorbeeld van een selectie op basis van een datum](../images/nl/selectie_datum.png)
 
-### Check op dubbele of unieke profielen
-Stelt een selectie samen op basis van hoe vaak profielen voorkomen in de
-database. Er kan voor gekozen worden om unieke profielen of dubbele profielen in
-deze selectie voor te laten komen.
+*Voorbeeld: Selecteer alle profielen waarbij het veld ‘Geboortedatum’ tussen zeven en drie dagen geleden ligt.*
 
 ### Check op wijziging
-Het is mogelijk om velden te checken op veranderingen en vervolgens het
-bijbehorende profiel in een selectie te plaatsen. Zo kun je bijvoorbeeld
-iedereen die onlangs is verhuisd een mailing sturen. Er kan ook gekeken worden
-of profielen aangemaakt zijn in een opgegeven periode.
+Met deze conditie bepaal je of er gedurende een bepaalde periode wijzigingen aan een profiel zijn uitgevoerd. Denk hierbij aan het aanmaken van een profiel of een wijziging aan een specifiek veld. 
 
-### Check op inhoud van (mini)selectie
-Stelt een selectie samen aan de hand van een eerder aangemaakte (mini)selectie.
-Het combineren van (mini)selecties geeft je nog meer flexibiliteit in het doen
-van aanbiedingen aan je klanten. Profielen die voorkomen in de twee opgestelde
-selecties, ontvangen dan bijvoorbeeld een mailing. Het is ook mogelijk om
-klanten uit te sluiten die in een (mini)selectie voorkomen.
+![Voorbeeld van een selectie op basis van een wijziging](../images/nl/selectie_wijziging.png)
+
+*Voorbeeld: Selecteer alle profielen die tussen vandaag en één week geleden zijn aangemaakt.*
+
+### Check op resultaten e-mail/SMS/enquêtes
+Met deze conditie kun je profielen selecteren op basis van e-mailresultaten. Dat resultaat kan gerelateerd zijn aan een e-mailcampagne, SMS-campagne of enquête. Denk bijvoorbeeld aan het selecteren van ontvangers die in een specifieke e-mail op een hyperlink hebben geklikt. 
+
+Profielen die aan de bovenstaande conditie voldoen worden opgenomen in een selectie. We maken daarbij onderscheid tussen resultaten op basis van Publisher-mailings en resultaten op basis van Marketing Suite-mailings. 
+
+![Voorbeeld van een selectie op basis van een e-mailresultaat](../images/nl/selectie_email.png)
+
+*Voorbeeld: Selecteer alle profielen waarbij een impressie, klik of foutmelding is geregistreerd in een mailing die later dan 7 dagen geleden verstuurd is.*
+
+### Check op inhoud van andere selectie
+Met deze conditie kun je controleren of een profiel wel of niet aanwezig is in een andere selectie. Hiermee kun je bepaalde profielen in- of uitsluiten van je doelgroep. 
+
+![Voorbeeld van een selectie op basis van de inhoud van een andere selectie](../images/nl/selectie_andereselectie.png)
+
+*Voorbeeld: Selecteer alle profielen die niet aanwezig zijn in de selectie 'E_Uitschrijvingen'.*
+
+### Check op inhoud van miniselectie
+Met deze conditie kun je controleren of de profielen subprofielen bevatten die aan de condities van je miniselectie voldoen. Je kunt met de ‘minimum’ en ‘maximum’-opties aangeven hoeveel subprofielen moeten voldoen aan de miniselectie.
+
+![Voorbeeld van een selectie op basis van de inhoud van een miniselectie](../images/nl/selectie_miniselectie.png)
+
+*Voorbeeld: Je hebt een miniselectie 'RecentGekocht' aangemaakt in je collectie 'Orders'. Daarbij kijk je of een order later dan 7 dagen geleden geplaatst is. Door middel van de conditie 'Check op inhoud van miniselectie' kun je vervolgens alle profielen selecteren waarbij minimaal 1 subprofiel voldoet aan de miniselectie 'RecentGekocht'.* 
+
+### Check op dubbele of unieke profielen
+Met deze conditie bepaal je of profielen meerdere keren voorkomen in de database. Je kunt hierbij aangeven of je enkel de unieke of de dubbele adressen in je selectie wilt opnemen. 
+
+![Voorbeeld van een selectie op basis van een uniek profiel](../images/nl/selectie_uniek.png)
+
+*Voorbeeld: Je wilt een selectie aanmaken waarbij je alle dubbele profielen uitsluit van de verzendselectie. Hiervoor selecteer je alle dubbele profielen behalve het profiel met het laagste ID. Dat profiel is degene die het langst in je database zit en daardoor ook de meeste informatie bevat. Dat profiel wil je dus niet uitsluiten van je verzendselectie.*
+
+### Sorteren en/of selecteer profielen
+Met deze conditie kun je een bepaald aantal of een percentage profielen uit je database selecteren. Let op: de profielen in deze selectie worden willekeurig geselecteerd. Daardoor komen er steeds verschillende profielen in voor. In verband met de opbouwvolgorde werkt deze optie niet in combinatie met de conditie ‘Check op inhoud van andere selectie’.
+
+![Voorbeeld van een selectie met 20% van de bovenliggende database/selectie](../images/nl/selectie_sorteren.png)
+
+*Voorbeeld: Je wilt een e-mail versturen naar 20% van je totale doelgroep. Door gebruik te maken van deze conditie kun je aangeven dat je 20% van de profielen uit de overkoepelende database/selectie wilt selecteren.*
 
 ### Eerdere exports
-Het is mogelijk om profielen te selecteren die zijn geëxporteerd gedurende een
-bepaalde periode.
+Met deze conditie kun je profielen selecteren die Copernica gedurende een bepaalde periode geëxporteerd heeft.
 
-### Sorteren en selecteren
-Je kunt ook een aantal profielen selecteren uit een gesorteerde lijst.
+## Selectie-opbouw
+Selecties worden op vaste momenten opgebouwd (en dus niet in real-time). Wanneer je een profiel aan de database toevoegt valt deze dus niet automatisch in de onderliggende selecties. De momenten waarop selectie-opbouw plaatsvindt zijn:
 
-## Aanmaken of wijzigen (mini)selectie Marketing Suite
-Klik op het **tandwiel** in de rechterbovenhoek, hierna volgt een menu,
-klik in dit menu op **Selecties aanmaken**. Geef de selectie een naam en kies
-of de selectie direct onder de database valt (reguliere selectie) of dat deze
-onder een andere selectie valt (subselectie). Deze selectie kan vervolgens
-aangepast worden door regels en condities toe te voegen.
+- Iedere nacht;
+- Vóór een ingeroosterde mailing;
+- Vóór een ingeroosterde export.
 
-Om een selectie aan te passen dient er weer naar hetzelfde menu gegaan te
-worden en aan de linkerkant de aan te passen selectie te selecteren. Klik
-vervolgens op  **Selectieregels bewerken**. In dit overzicht kunnen nieuwe
-regels of condities toegevoegd worden aan de selecties.
+Je kunt een selectie ook handmatig opbouwen. Dat doe je door in de selectie naar de menubalk te navigeren. Vervolgens klik je op 'Opnieuw opbouwen'. 
 
-## Aanmaken of wijzigen (mini)selectie Publisher
-Klik op **Databasebeheer > Selecties beheren**. Om een nieuwe selectie te maken
-dient er geklikt te worden op **selectie aanmaken**. Kies de naam van de
-selectie en klik op **onder** om aan te geven onder welke selectie of database
-de nieuwe selectie zal vallen. Klik vervolgens op het tweede tabblad
-**Selectie condities**, hier kunnen extra regels en condities toegevoegd worden.
-Om een conditie aan dezelfde regel toe te voegen, klik op
-**Voeg een nieuwe 'EN' conditie toe aan deze 'OF' regel**. Wil je een nieuwe
-regel maken met een nieuwe conditie? Klik dan op
-**Voeg een nieuwe 'EN' conditie toe aan een nieuwe 'OF' regel**.
+## Selectietester
+Met de selectietester kun je eenvoudig inzien waarom een profiel wel of niet in een bepaalde selectie voorkomt. Je vindt de selectietester in het linkermenu van een profiel. 
+
+Zodra je een selectie kiest wordt er een overzicht getoond. Daarin zie je in één oogopslag aan welke condities het profiel wel en niet voldoet. Ook de bovenliggende selecties worden daarbij meegenomen.
+
+![Voorbeeld van de selectietester](../images/nl/selectietester.png)
