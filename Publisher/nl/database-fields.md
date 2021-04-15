@@ -1,4 +1,5 @@
 # Databasevelden
+
 De structuur van een databases bestaat uit velden, interesses en collecties.
 In velden en interessevelden kan bijvoorbeeld een tekst, datum of getal
 worden opgeslagen. In het geval van interesses wordt hier alleen "ja" of "nee"
@@ -23,29 +24,37 @@ Hieronder is een tabel weergegeven met alle beschikbare veldtypes.
 | Groot veld         | Tekstveld tot 16 mln. tekens. Wordt niet aangeraden, omdat je het niet kunt indexeren.               |
 | Referentieveld     | Veld dat kan refereren naar een andere database door middel van een ID.                              |
 
+Let op: Als je een meerkeuzeveld aanmaakt of aanpast via de [REST API](./restv2) moeten 
+de opties gescheiden worden door new line delimiters (`\n`).
+
 ## Extra opties
+
 Als je velden aan het bewerken bent, kun je per veld een aantal extra opties
 selecteren. Het is bijvoorbeeld mogelijk om aan te geven dat een veld standaard
 gesorteerd is, of dat het verborgen moet blijven. Hieronder een korte uitleg
 van al deze opties.
 
 ### Verborgen velden
+
 Verborgen velden zijn niet zichtbaar in het dialoogvenster om een profiel te
 bewerken. Gebruik deze optie voor velden die je niet meer wilt tonen of wilt
 kunnen bewerken via de interface. De gegevens uit een verborgen veld kunnen wel
 gewoon geïmporteerd en geëxporteerd worden, zoals alle andere velden.
 
 ### Veld tonen op overzichtspagina's
+
 In een database staan vaak veel meer velden dan dat je wilt laten zien in een
 profielenlijst. Deze optie stelt je in staat om zelf te bepalen wat de
 belangrijke velden zijn, de andere velden worden in deze lijsten verborgen.
 
 ### Gesorteerde velden
+
 Met deze optie kun je invoeren op welk veld een overzicht met profielen
 standaard wordt gesorteerd. Deze optie kan slechts bij één veld tegelijkertijd
 actief zijn.
 
 ### Geïndexeerde velden
+
 Het indexeren van velden kan het zoeken van profielen en het maken van
 selecties versnellen. Het is dus verstandig om velden die je vaak opzoekt in
 selecties te indexeren. Je kan maximaal 64 velden indexeren, maar het is ook
@@ -53,6 +62,7 @@ niet nodig er veel te indexeren. Velden van het type "Groot veld" kunnen niet
 worden geïndexeerd.
 
 ## Interesses
+
 Interesses zijn velden die aan- of uitgezet kunnen worden. Een profiel kan
 meerdere interesses hebben per groep. Denk hierbij bijvoorbeeld aan een groep
 'Inschrijvingen' met drie interesses: Nieuwsbrief (op 'ja'), Aanbiedingen
@@ -60,10 +70,12 @@ meerdere interesses hebben per groep. Denk hierbij bijvoorbeeld aan een groep
 databaseveldenmenu door op 'interesse toevoegen' te klikken.
 
 ## Databasevelden aanpassen of aanmaken Marketing Suite
+
 Om de structuur van je databasevelden aan te passen klik je rechtsboven op het
 **tandwiel**, hiermee kom je in het menu om de database aan te passen
 in de Marketing Suite. Ga vervolgens naar **structuur bewerken** om de velden
 aan te maken/passen.
+
 Er zal een lijst worden getoond met alle velden uit de database, klik op
 **bewerken** achter een veld om dit veld aan te passen. Klik op
 **veld toevoegen** om een nieuw veld aan te maken. Er zal aan de rechterkant
@@ -72,6 +84,7 @@ worden. Geef het veld een naam, een van de bovengenoemde types en zet eventueel
 extra opties aan.
 
 ## Databasevelden aanpassen of aanmaken Publisher
+
 Om de structuur van je databasevelden aan te passen klik je op
 **Databasebeheer > Databasevelden wijzigen**. Klik op een veld om deze aan te
 passen of klik op **veld toevoegen** om een nieuw veld aan te maken. Er zal een

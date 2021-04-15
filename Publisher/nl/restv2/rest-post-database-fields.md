@@ -35,27 +35,32 @@ Een veld kan de volgende types hebben:
 * email:            veld met een e-mailadres dat wordt gebruikt voor mailings (maximaal 1 per database);
 * phone:            telefoonveld;
 * phone_fax:        telefoonveld met faxnummer dat kan worden gebruikt voor faxmailings (maximaal 1 per database);
-* phone_gsm:        telefoonveld met mobiel nummer dat kan worden gebruikt voor sms berichten (maximaal 1 per database);
-* select:           meerkeuzeveld;
+* phone_gsm:        telefoonveld met mobiel nummer dat kan worden gebruikt voor smsberichten (maximaal 1 per database);
+* select:           meerkeuzeveld. Hier worden de keuzes gescheiden door new line delimiters (`\n`) en de standaardkeuze 
+                    aangegeven met een asterisk (*) achter de optie;
 * big: groot        tekstveld;
-* foreign_key:      numerieke waarde met verwijzing naar ander profile.
+* foreign_key:      numerieke waarde met verwijzing naar een ander profiel.
 
+[Hier](../database-fields) lees je meer over databasevelden.
 
 ## Voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
-// vereiste scripts
+// importeer de vereiste klasse
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// data voor het verzoek
+// data voor het verzoek:
+// selectieveld met naam "extra-veld", de opties A, B en C 
+// waarvan C de standaard is
 $data = array(
     'name'      =>  'extra-veld',
-    'type'      =>  'text'
+    'type'      =>  'select',
+    'value'     =>  'A\nB\nC*'
 );
 
 // voer het verzoek uit
@@ -69,6 +74,7 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
-* [GET database fields](rest-get-database-fields)
-* [PUT database fields](rest-put-database-field)
-* [DELETE database fields](rest-delete-database-field)
+* [Databasevelden](../database-fields)
+* [Opvragen van databasevelden](rest-get-database-fields)
+* [Aanpassen van een databaseveld](rest-put-database-field)
+* [Verwijderen van een databaseveld](rest-delete-database-field)
