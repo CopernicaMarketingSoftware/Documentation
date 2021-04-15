@@ -5,7 +5,7 @@ Met dit voorbeeld kun je gemakkelijk een HTTP request doen.
 Alle calls worden ondersteund. Je kunt dus gebruik maken
 van: GET, POST, PUT en DELETE calls.
 
-[Download de hulpklasse](../../documentation/downloads/copernica_rest_api.php "Download de CopernicaRestAPI klasse")
+[Download de hulpklasse](../../documentation/downloads/copernica_rest_api.zip "Download de CopernicaRestAPI klasse")
 
 ## Gebruik in eigen applicatie
 
@@ -20,7 +20,7 @@ vervangen door een '2' om de nieuwste versie van de API te gebruiken.
 require_once('copernica_rest_api.php');
 
 // create an api object (add your own access token!)
-$api = new CopernicaRestAPI("my-access-token", $versie);
+$api = new CopernicaRestAPI("my-access-token", $version);
 
 // do the call
 $result = $api->get("databases");
@@ -29,6 +29,3 @@ $result = $api->get("databases");
 print_r($result);
 ```
 
-## Meer informatie
-
-* [Overzicht van alle API calls](./rest-api)

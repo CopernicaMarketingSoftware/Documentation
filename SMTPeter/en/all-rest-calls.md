@@ -34,6 +34,7 @@ The following methods are accessible via HTTP GET, POST and DELETE:
 | POST           | www.smtpeter.com/v1/dkimkey                                      | Add new DKIM to sender domain                          |
 | POST           | www.smtpeter.com/v1/domain                                       | Make or assign a new domain                            |
 | POST           | www.smtpeter.com/v1/webhook                                      | Configure a webhook (feedbackloop is deprecated)       |
+| POST           | [www.smtpeter.com/v1/resend](./rest-send-advanced)               | Resend a message                                       |
 | POST           | [www.smtpeter.com/v1/send](./rest-api)                           | Send data to SMTPeter                                  |
 | POST           | www.smtpeter.com/v1/spf                                          | Create a SPF record                                    |
 | POST           | [www.smtpeter.com/v1/template](./rest-templates)                 | Create a templates                                     |

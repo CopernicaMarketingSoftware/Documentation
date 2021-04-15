@@ -35,4 +35,4 @@ van je e-mails? Zie onderstaande links!
 * [Begrippenlijst](./definitions)
 * [Database introductie](./database-introduction)
 * [Selecties en miniselecties](./selections-introduction)
-* [Sender reputation en deliverability](./sender-reputation)
+* [Sender reputation en deliverability](./send-reputation)

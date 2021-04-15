@@ -117,7 +117,9 @@ Met de "attachments" property kun je bestanden toevoegen aan een mailing. SMTPet
 {
     "attachments": [ 
         {
-            "url": "https://www.example.com/attachment1.pdf"
+            "url": "https://www.example.com/attachment1.pdf",
+            "name": "attachment1.pdf",
+            "type": "application/pdf"
         }, 
         {
             "data": "VGhpcyBpcyBqdXN0IGFuIGV4YW1wbGUgdGV4dCBmaWxlLi4=",

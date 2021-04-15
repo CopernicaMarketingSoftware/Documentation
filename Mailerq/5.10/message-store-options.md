@@ -116,7 +116,7 @@ Each individual part of a big message has the following properties:
 * **_id**: unique message identifier, this is unique for each part
 * **parent**: identifier of the master document
 * **value**: part of the message data
-* **offset**: the offset of the data into the full message
+* **start**: the offset of the data into the full message
 * **expire**: expiration timestamp
 * **modified**: last modified timestamp
 

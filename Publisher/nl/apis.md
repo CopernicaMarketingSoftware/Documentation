@@ -2,7 +2,7 @@
 
 Copernica kan aan andere applicaties gekoppeld worden met behulp van onze 
 API's. API's (Application Programming Interfaces) maken het mogelijk 
-om data uit te wisselen en vormen zo de brug tussen applicaties. 
+om softwarematig data uit te wisselen. 
 Copernica heeft een SOAP API en een REST API, waarmee je gegevens uit kunt 
 lezen of bewerken. Een andere optie om applicaties te koppelen is het gebruik 
 van [*WebHooks*](./webhooks), waarmee Copernica je *real time* notificaties 
@@ -10,12 +10,12 @@ kan sturen van acties als *kliks*, *opens* en *bounces*.
 
 ## REST vs. SOAP
 
-Voor je een API begint te gebruiken is het belangrijk om te weten welke API 
-het beste aansluit bij je doeleinden. SOAP is bijvoorbeeld taal- en platformonafhankelijk, 
-terwijl REST afhankelijk is van HTTP. SOAP is ook gestandaardizeerd en gebruikt 
-uitgebreide XML bestanden, terwijl onze REST API kleinere formats als JSON gebruikt, die 
-sneller verstuurd kunnen worden. De REST API is ook simpeler om te leren. 
-Als je nog nooit een API hebt gebruikt raden we je dan ook aan om te beginnen met REST.
+Er zijn twee API's beschikbaar: een REST-API en een SOAP-API. De REST-API
+is nieuwer, sneller en simpeler, en kun je dus het beste gebruiken. Echter, 
+om oude koppelingen te blijven ondersteunen bieden we ook nog de SOAP-API
+aan. De twee API's zijn qua functionaliteit niet volledig identiek, en soms
+heb je beide API's tegelijk nodig indien je functies van beide systemen
+wilt combineren.
 
 ## WebHooks
 

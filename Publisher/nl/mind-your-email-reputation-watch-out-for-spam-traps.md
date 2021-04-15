@@ -1,8 +1,8 @@
 # Spamtraps
 
 Spamtraps in je verzendlijst zijn een probleem. Ze schaden je
-[e-mailreputatie](./how-to-build-up-your-email-reputation.md)
-en zorgen er voor dat je e-mailings vaker in spamfilters blijven hangen.
+[verzendreputatie](./send-reputation.md)
+en zorgen ervoor dat je e-mailings vaker in spamfilters blijven hangen.
 Doe er daarom alles aan om te voorkomen dat spamtraps in je database
 terecht komen.
 

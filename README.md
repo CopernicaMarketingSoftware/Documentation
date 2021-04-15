@@ -2,8 +2,9 @@
 
 Here you can explore in detail our products, which include:
 
+- Publisher - all our Copernica documentation (not only Publisher!)
 - MailerQ - a high performance Mail Transfer Agent (MTA) designed for delivering large volume email messages at very high speeds
-- Marketing Suite - brand new Copernica Marketing Suite
+- MS - documentation that is used _inside_ our software (via the .documentationpage() jQuery plugin)
 - PHP-C++ - a C++ library for developing PHP extensions
 - PHP-JS - to execute JavaScript right from your PHP script and share variables between JavaScript and PHP
 - Responsive Email - an online service to create and send responsive HTML emails.
