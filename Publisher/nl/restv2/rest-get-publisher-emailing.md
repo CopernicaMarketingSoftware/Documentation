@@ -29,6 +29,7 @@ veld. De mailing bevat de volgende informatie:
 * **document**: ID van het document gebruikt voor de mailing.
 * **template**: ID van de template gebruikt voor de mailing.
 * **subject**: Onderwerp van de mailing.
+* **description**: Omschrijving van de mailing.
 * **from_address**: Afzenderadres van de mailing als een array (met 'name' en 'email' als waarden)
 * **destinations**: Het aantal destinations van de mailing.
 * **testgroups**: Het aantal testgroepen (alleen bij AB test of splitrun)
@@ -50,6 +51,7 @@ De JSON ziet er bijvoorbeeld zo uit:
    "document":"114",
    "template":"621",
    "subject":"Reminder",
+   "description":"This is a reminder",
    "from_address":{  
       "name":"test",
       "email":"test@copernica.nl"
