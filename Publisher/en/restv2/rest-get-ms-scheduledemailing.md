@@ -22,6 +22,7 @@ The method returns a JSON object containing the following information:
 * **from_address**  : An array containing the 'name' and 'email' address of the sender.
 * **type**          : Type of mailing (individual or mass).
 * **target**        : Contains the target type and the ID and type of other entities above it (for example the database a collection belongs to).
+* **tags**          : An array with tags used in the mailing.
 
 ### RRules
 
@@ -58,6 +59,10 @@ the 'data' property of the output:
             "type":"database"
          }
       ]
+   },
+   "tags":{
+      "test1", 
+      "Test2"
    }
 }
 ```
