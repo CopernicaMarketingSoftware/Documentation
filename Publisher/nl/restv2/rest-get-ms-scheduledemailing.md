@@ -28,6 +28,7 @@ Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 * **target**:       Bevat het type van het doelwit van de mailing en de ID 
                     en types van de entiteiten hierboven (bijvoorbeeld de database waar een 
                     collectie onder valt).
+* **tags**:         Een array met de gebruikte labels voor de mailing.      
 
 ### RRules
 
@@ -64,6 +65,10 @@ in de output ziet er bijvoorbeeld zo uit:
             "type":"database"
          }
       ]
+   }
+   "tags":{
+      "test1", 
+      "Test2"
    }
 }
 ```
