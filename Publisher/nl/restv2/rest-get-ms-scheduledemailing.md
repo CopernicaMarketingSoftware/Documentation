@@ -66,10 +66,10 @@ in de output ziet er bijvoorbeeld zo uit:
          }
       ]
    },
-   "tags":{
+   "tags":[
       "test1", 
       "Test2"
-   }
+   ]
 }
 ```
 
