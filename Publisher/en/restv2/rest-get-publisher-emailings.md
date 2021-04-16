@@ -31,6 +31,7 @@ Each emailing contains the following fields:
 * **document**: ID of the document used for the mailing
 * **template**: ID of the template used for the mailing
 * **subject**: Subject of the mailing
+* **description**: Description of the mailing
 * **from_address**: The from address of the mailing as an array. (With properties 'name' and 'email')
 * **destinations**: The number of destinations.
 * **testgroups**: Amount of testgroups
@@ -52,6 +53,7 @@ The JSON might look something like this:
    "document":"114",
    "template":"621",
    "subject":"Reminder",
+   "description":"This is a reminder",
    "from_address":{  
       "name":"test",
       "email":"test@copernica.nl"
