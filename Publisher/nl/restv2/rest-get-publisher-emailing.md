@@ -51,6 +51,7 @@ De JSON ziet er bijvoorbeeld zo uit:
    "document":"114",
    "template":"621",
    "subject":"Reminder",
+   "description":"This is a reminder",
    "from_address":{  
       "name":"test",
       "email":"test@copernica.nl"
