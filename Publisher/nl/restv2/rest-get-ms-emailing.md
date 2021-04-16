@@ -50,7 +50,7 @@ in de output ziet er bijvoorbeeld zo uit:
             "type":"database"
          }
       ]
-   }
+   },
    "tags":[
       "test1", 
       "Test2"
