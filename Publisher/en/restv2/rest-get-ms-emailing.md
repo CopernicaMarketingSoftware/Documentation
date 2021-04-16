@@ -48,7 +48,7 @@ the 'data' property of the output:
          }
       ]
    }
-   "target":{
+   "tags":{
       "test1", 
       "Test2"
    }
