@@ -48,10 +48,10 @@ the 'data' property of the output:
          }
       ]
    },
-   "tags":{
+   "tags":[
       "test1", 
       "Test2"
-   }
+   ]
 }
 ```
 
