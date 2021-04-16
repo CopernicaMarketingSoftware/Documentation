@@ -47,7 +47,7 @@ the 'data' property of the output:
             "type":"database"
          }
       ]
-   }
+   },
    "tags":{
       "test1", 
       "Test2"
