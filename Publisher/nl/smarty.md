@@ -1,4 +1,4 @@
-# Smarty
+# Smarty personalisatie
 Personalisatie in Copernica werkt middels de scripttaal [Smarty](http://www.smarty.net/docs/en/). Met Smarty is het mogelijk om je mailings, webpagina's, sms-berichten en PDF-bestanden te personaliseren op basis van de gegevens uit het profiel of subprofiel van de geadresseerden. Smarty code wordt gekenmerkt door het gebruik van accolades, { en }, en het dollarteken, $. 
 
 Voor het personaliseren van (sub)profiel gegevens dien je binnen deze Smarty code het woord _profile_ of _subprofile_ te gebruiken in combinatie met de naam van het veld uit de database of collectie.
