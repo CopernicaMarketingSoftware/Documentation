@@ -38,7 +38,7 @@
     * [Opvolgacties](./follow-up-manager-publisher.md)
     * [Data-script](./data-object.md)
     * [AMP](./amp.md)
-* [Personalisatie](./smarty.md)
+* [Smarty personalisatie](./smarty.md)
 * [Verzendreputatie](./send-reputation.md)
 * [Campagnes](./campagnes.md)
    * [Welkom](./campaign-welcome.md)
