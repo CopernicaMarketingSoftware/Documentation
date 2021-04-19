@@ -1,49 +1,49 @@
 # Smarty personalisatie
-Personalisatie in Copernica werkt middels de scripttaal [Smarty](http://www.smarty.net/docs/en/). Met Smarty is het mogelijk om je mailings, webpagina's, sms-berichten en PDF-bestanden te personaliseren op basis van de gegevens uit het profiel of subprofiel van de geadresseerden. Smarty code wordt gekenmerkt door het gebruik van accolades, { en }, en het dollarteken, $. 
+In Copernica werkt personalisatie door middel van de scripttaal [Smarty](http://www.smarty.net/docs/en/). Smarty maakt het mogelijk om mailings, webpagina's, SMS-berichten en PDF-bestanden te personaliseren op basis van (sub)profielgegevens. Smarty-code wordt gekenmerkt door het gebruik van accolades en het dollarteken.
 
-Voor het personaliseren van (sub)profiel gegevens dien je binnen deze Smarty code het woord _profile_ of _subprofile_ te gebruiken in combinatie met de naam van het veld uit de database of collectie.
+Voor het personaliseren van (sub)profielgegevens gebruik je de Smarty-code _profile_ of _subprofile_. Die code combineer je met de naam van het veld in de desbetreffende database of collectie. Bijvoorbeeld:
 
-Voorbeeld:
 * {$profile.voornaam}
 * {$profile.email}
 * {$subprofile.email}
 
-Smarty is **hoofdlettergevoelig**. De naam van het veld, in bovenstaand voorbeeld _voornaam_ en _email_, zal alleen werken als deze overeenkomt met de veldnaam vanuit de database of collectie. Als je veldnaam _Voornaam_ is, geeft de variabele {$profile.voornaam} geen waarde terug. Je zal {$profile.Voornaam} moeten gebruiken.
+Smarty is **hoofdlettergevoelig**. Personalisatie werkt alleen wanneer de gebruikte veldnaam volledig overeenkomt met de veldnaam waaraan je refereert. De variabele {$profile.voornaam} geeft bijvoorbeeld geen resultaat wanneer de veldnaam in de database _Voornaam_ is. In plaats daarvan gebruik je {$profile.Voornaam}.
 
-Het gebruik van **subprofile** personalisatievariabelen werkt enkel als de geadresseerden daadwerkelijk het subprofiel is (de e-mail wordt verzonden naar een e-mailadres binnen het subprofiel). Als je gegevens wilt tonen vanuit het subprofiel, maar de geadresseerden is het profiel zelf, zal je gebruik moeten maken van de [loadsubprofile](./loadprofile-and-loadsubprofile)-tag.
+Voor het gebruik van **subprofile** geldt dat personalisatievariabelen enkel werken wanneer het subprofiel de geadresseerde is. De e-mail wordt dan verzonden naar een e-mailadres binnen het subprofiel. Als je gegevens wilt tonen vanuit het subprofiel, maar de geadresseerde is het profiel zelf, zal je gebruik moeten maken van de [loadsubprofile](./loadprofile-and-loadsubprofile)-tag.
 
 ## Eenvoudige personalisatie
-We beginnen met een eenvoudig voorbeeld. 
-Je hebt een database met de velden:
+
+Stel dat je database de volgende velden bevat:
+
 * aanhef
 * naam
 * email
 
-In je database staat een profiel met de volgende gegevens in bovenstaande velden:
+Daarnaast bevat de database een profiel. Deze bevat voor de bovenstaande velden de volgende waardes:
+
 * heer
 * Bakker
 * frank.bakker@voorbeeld.nl
 
-In je mailing kun je nu gebruik maken van de volgende variabelen: {$profile.aanhef}, {$profile.naam} en {$profile.email}. 
+Hiermee kun je mailings voorzien van de variabelen {$profile.aanhef}, {$profile.naam} en {$profile.email}. 
 
 Bijvoorbeeld:
 ```
 Beste {$profile.aanhef} {$profile.naam},
 
-Je ontvangt deze e-mail omdat bent aangemeld
-met het volgende e-mailadres: {$profile.email}.
+Je ontvangt deze e-mail omdat je bent aangemeld met het volgende e-mailadres: {$profile.email}.
 ```
 
 Resultaat:
 ```
 Beste heer Bakker,
 
-Je ontvangt deze e-mail omdat bent aangemeld
-met het volgende e-mailadres: frank.bakker@voorbeeld.nl.
+Je ontvangt deze e-mail omdat je bent aangemeld met het volgende e-mailadres: frank.bakker@voorbeeld.nl.
 ```
 
 ## Geavanceerde personalisatie
-Met Smarty kun je met [if-statements](https://www.smarty.net/docs/en/language.function.if.tpl) conditioneel gegevens tonen:
+
+Je kunt Smarty-code ook gebruiken om conditionele gegevens te tonen. Dat doe je door middel van [if-statements](https://www.smarty.net/docs/en/language.function.if.tpl)
 
 ```
 {if $profile.Voornaam == "Peter"}
@@ -53,28 +53,31 @@ Met Smarty kun je met [if-statements](https://www.smarty.net/docs/en/language.fu
 {/if}
 ```
 
-Als voorbeeld gebruiken we een database met de velden _geslacht_ en _achternaam_. In dit geval bevat de database geen veld voor de aanhef. Om toch een aanhef te kunnen gebruiken, gaan we op basis van het veld geslacht bepalen wat de aanhef moet worden:
+Stel dat een database de velden _geslacht_ en _achternaam_ bevat. Een aanhefveld ontbreekt daarbij. Om toch een aanhef te kunnen gebruiken bepalen we deze op basis van het geslachtveld:
 
 ```
 Geachte {if $profile.geslacht=="Man"}heer{elseif $profile.geslacht=="Vrouw"}mevrouw{else}relatie{/if},
 ```
 
-In dit voorbeeld wordt eerst gekeken of de waarde van het veld _geslacht_ gelijk is aan _Man_. Als dit het geval is, wordt '_Geachte heer_' weergegeven.  
+In het bovenstaande voorbeeld bepalen we eerst of de waarde van het veld _geslacht_ gelijk is aan _Man_. Zo ja, dan wordt de aanhef als '_Geachte heer_' weergegeven. 
 
-Als dit niet het geval is, wordt er gekeken of de waarde gelijk is aan _Vrouw_. Indien dit het geval is, wordt '_Geachte mevrouw_' weergegeven.  
+Wanneer dit niet het geval is wordt er gekeken of de waarde gelijk is aan _Vrouw_. Bij het aantreffen van die waarde wordt de aanhef als '_Geachte mevrouw_' weergegeven.  
 
-Mocht het veld niet de waarde _Man_ of _Vrouw_ bevatten, wordt '_Geachte relatie_' weergegeven.
+Bevat het veld geen van beide waardes? Dan wordt de aanhef '_Geachte relatie_' weergegeven.
 
-## Opmaak van personalisatie
-Het kan voorkomen dat gegevens in je database onderling qua hoofdlettergebruik van elkaar afwijken. In Smarty zijn speciale functies beschikbaar om deze afwijkingen af te vangen. Hieronder zullen we van de meest voorkomende een voorbeeld geven. De overige functies vind je [hier](./publisher-personalization-functions).
+## Personalisatie-opmaak
+
+Het kan voorkomen dat databasegegevens onderling verschillen qua hoofdlettergebruik. Smarty biedt daarom specifieke functies om dergelijke afwijkingen op te kunnen vangen. De meest voorkomende functies bespreken we hieronder.
 
 ### lower
-Deze functie wordt gebruikt om alle hoofdletters te verwijderen. Als de variabele {$profile.Naam} de waarde 'Frank BAKKER' bevat, dan zorgt de code {$profile.Naam|lower} ervoor dat dit wordt weergegeven als: 'frank bakker'.
+Deze functie verwijdert alle hoofdletters. Door gebruik te maken van de code {$profile.Naam|lower} wordt de waarde 'Frank BAKKER' bijvoorbeeld als 'frank bakker' weergegeven.
 
 ### ucfirst
 Dit filter zorgt ervoor dat het eerste karakter uit een string (tekenreeks) een hoofdletter wordt. Als de variabele {$profile.Naam} de waarde 'frank bakker' bevat, dan zorgt de code {$profile.Naam|ucfirst} ervoor dat dit wordt weergegeven als: 'Frank bakker'.
 
-Je kunt deze functies ook combineren met elkaar. Als de variabele {$profile.Naam} de waarde 'FRANK' bevat, kun je met {$profile.Naam|lower|ucfirst} zorgen dat de waarde eerst zonder hoofdletters wordt gemaakt en vervolgens het eerste teken alsnog van hoofdletter voorzien: 'Frank.
+Je kunt deze functies ook combineren. Als de variabele {$profile.Naam} de waarde 'FRANK' bevat, kun je met {$profile.Naam|lower|ucfirst} zorgen dat de waarde eerst zonder hoofdletters wordt gemaakt en vervolgens het eerste teken alsnog van hoofdletter voorzien: 'Frank.
+
+* Bekijk [hier](./publisher-personalization-functions) de overige personalisatiefuncties.
 
 ## Personalisatie testen
 Je kan in Copernica de uitvoer van je personalisatie testen. Dit kan in de _voorvertoningsmodus_ binnen je template of document. Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde database waaraan je je mailing wilt richten.
