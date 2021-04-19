@@ -43,7 +43,17 @@ met het volgende e-mailadres: frank.bakker@voorbeeld.nl.
 ```
 
 ## Geavanceerde personalisatie
-Met Smarty kun je met [if-statements](https://www.smarty.net/docs/en/language.function.if.tpl) conditioneel gegevens tonen. Als voorbeeld gebruiken we een database met de velden _geslacht_ en _achternaam_. In dit geval bevat de database geen veld voor de aanhef. Om toch een aanhef te kunnen gebruiken, gaan we op basis van het veld geslacht bepalen wat de aanhef moet worden:
+Met Smarty kun je met [if-statements](https://www.smarty.net/docs/en/language.function.if.tpl) conditioneel gegevens tonen:
+
+```
+{if $profile.Voornaam == "Peter"}
+    Als het veld 'Voornaam' de waarde 'Peter' bevat, toon deze tekst.
+{else}
+    Zo niet, toon deze tekst.
+{/if}
+```
+
+Als voorbeeld gebruiken we een database met de velden _geslacht_ en _achternaam_. In dit geval bevat de database geen veld voor de aanhef. Om toch een aanhef te kunnen gebruiken, gaan we op basis van het veld geslacht bepalen wat de aanhef moet worden:
 
 ```
 Geachte {if $profile.geslacht=="Man"}heer{elseif $profile.geslacht=="Vrouw"}mevrouw{else}relatie{/if},
