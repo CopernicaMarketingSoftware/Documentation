@@ -3,9 +3,9 @@ In Copernica werkt personalisatie door middel van de scripttaal [Smarty](http://
 
 Voor het personaliseren van (sub)profielgegevens gebruik je de Smarty-code _profile_ of _subprofile_. Die code combineer je met de naam van het veld in de desbetreffende database of collectie. Bijvoorbeeld:
 
-* _{$profile.voornaam}_
-* _{$profile.email}_
-* _{$subprofile.email}_
+* _{$profile.Voornaam}_
+* _{$profile.Email}_
+* _{$subprofile.Email}_
 
 Smarty is **hoofdlettergevoelig**. Personalisatie werkt alleen wanneer de gebruikte veldnaam volledig overeenkomt met de veldnaam waaraan je refereert. De variabele _{$profile.voornaam}_ geeft bijvoorbeeld geen resultaat wanneer de veldnaam in de database _Voornaam_ is. In plaats daarvan gebruik je _{$profile.Voornaam}_.
 
