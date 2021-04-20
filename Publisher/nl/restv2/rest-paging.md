@@ -7,8 +7,8 @@ een lijst van profielen retourneert.
 
 Om te voorkomen dat een REST API-call te lang duurt en dat enkelvoudige calls 
 te veel van onze API-servers vragen wordt de output van deze methodes
-standaard beperkt door het api.copernica.com endpoint. Hierdoor worden er niet meer dan 1000 
-objecten per keer teruggegeven. Het rest.copernica.com-endpoint (dit is dus een andere
+standaard beperkt door de api.copernica.com endpoint. Hierdoor worden er niet meer dan 1000 
+objecten per keer teruggegeven. De rest.copernica.com endpoint (dit is dus een andere
 domeinnaam!) maakt het wel mogelijk om grotere datasets op te halen.
 
 Je kunt door middel van *start*- en *limit*-parameters instellen welk deel van
@@ -88,7 +88,7 @@ Inmiddels bieden we een elegantere manier om grote datasets op te vragen.
 
 ## Datastreams en grotere datasets
 
-Via het alternatieve endpoint https://rest.copernica.com/v2 (met een andere domeinnaam)
+Via de alternatieve endpoint https://rest.copernica.com/v2 (met een andere domeinnaam)
 kan _voor sommige methodes_ de beperking tot 1000 objecten per keer worden omzeild. In principe
 werken rest.copernica.com/v2 en api.copernica.com/v2 hetzelfde, maar voor een aantal methodes (met
 name methodes om profielen op te vragen) geldt dat rest.copernica.com/v2 limieten groter dan 1000 items ondersteunt:
@@ -97,7 +97,7 @@ name methodes om profielen op te vragen) geldt dat rest.copernica.com/v2 limiete
 * De HTTP-respons-header heeft dan geen 'content-length'-header (omdat de grootte van het resultaat van tevoren nog niet bekend is).
 * Daarvoor in de plaats is er een 'content-transfer-encoding: chunked'-header en wordt het antwoord in delen teruggestuurd.
 
-Als je gebruik maakt van het alternatieve rest.copernica.com/v2 endpoint,
+Als je gebruik maakt van de alternatieve rest.copernica.com/v2 endpoint,
 dan moet je API-koppeling overweg kunnen met twee soorten responses: (1) traditionele antwoorden
 met een content-length-header en (2) datastreams met een content-transfer-encoding-header.
 Meestal krijg je een traditioneel respons terug (met een content-length-header dus), maar ook 
