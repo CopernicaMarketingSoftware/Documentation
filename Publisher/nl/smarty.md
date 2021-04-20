@@ -69,7 +69,7 @@ Stel dat een database de velden '_Geslacht_' en '_Achternaam_' bevat. Een aanhef
 Geachte {if $profile.Geslacht=="Man"}heer{elseif $profile.Geslacht=="Vrouw"}mevrouw{else}relatie{/if},
 ```
 
-In het bovenstaande voorbeeld bepalen we eerst of de waarde van het veld '_Geslacht_' gelijk is aan '_Man_'. Zo ja, dan wordt de aanhef als '_Geachte heer_' weergegeven. 
+In het bovenstaande voorbeeld controleren we eerst of de waarde van het veld '_Geslacht_' gelijk is aan '_Man_'. Zo ja, dan wordt de aanhef als '_Geachte heer_' weergegeven. 
 
 Wanneer dit niet het geval is wordt er gekeken of de waarde gelijk is aan '_Vrouw_'. Bij het aantreffen van die waarde wordt de aanhef als '_Geachte mevrouw_' weergegeven.  
 
@@ -77,7 +77,7 @@ Bevat het veld geen van beide waardes? Dan wordt de aanhef '_Geachte relatie_' w
 
 ## Personalisatie-opmaak
 
-Het kan voorkomen dat databasegegevens onderling verschillen qua hoofdlettergebruik. Smarty biedt daarom specifieke functies om die verschillen op te kunnen vangen. De meest voorkomende functies bespreken we hieronder.
+Het kan voorkomen dat databasegegevens onderling verschillen qua hoofdlettergebruik. Smarty biedt daarom specifieke functies om die verschillen op te vangen. De meest voorkomende functies bespreken we hieronder.
 
 ### lower
 Deze functie verwijdert alle hoofdletters. Door gebruik te maken van de code _{$profile.Naam|lower}_ wordt de waarde 'Frank BAKKER' bijvoorbeeld als 'frank bakker' weergegeven.
@@ -90,4 +90,4 @@ Je kunt de bovenstaande functies ook combineren. Als de variabele _{$profile.Naa
 * Bekijk [hier](./publisher-personalization-functions) nog meer personalisatiefuncties.
 
 ## Personalisatie testen
-Je kunt de weergave van personalisatie testen in Copernica. Dat doe je door middel van de _voorvertoningsmodus_ in je template of document. De voorvertoning is gebaseerd op de standaardbestemming. De standaardbestemming dient zich in dezelfde database te bevinden als de ontvanger waaraan je de mailing wilt versturen.
+Je kunt de weergave van personalisatie testen in Copernica. Dat doe je door middel van de **'Voorvertoningsmodus'** in je template of document. De voorvertoning is gebaseerd op de standaardbestemming. De standaardbestemming dient zich in dezelfde database te bevinden als de ontvanger waaraan je de mailing wilt versturen.
