@@ -19,7 +19,7 @@ Stel dat je database de volgende velden bevat:
 * Naam
 * Email
 
-Daarnaast bevat de database een profiel. Deze bevat voor de bovenstaande velden de volgende waardes:
+Daarnaast bevat de database een profiel met de onderstaande waardes:
 
 * heer
 * Bakker
