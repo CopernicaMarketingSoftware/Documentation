@@ -1,91 +1,93 @@
-# Smarty
+# Smarty-personalisatie
+In Copernica werkt personalisatie door middel van de scripttaal [Smarty](http://www.smarty.net/docs/en/). Hiermee is het mogelijk om mailings, webpagina's, SMS-berichten en PDF-bestanden te personaliseren op basis van (sub)profielgegevens. Je herkent Smarty-code aan het gebruik van accolades en het dollarteken.
 
-Smarty is a template engine for PHP. It is a special code used for the
-personalization of your marketing campaigns. Emailings, websites, text
-messages and PDF documents can be personalized using Smarty tags.
+Voor het personaliseren van (sub)profielgegevens gebruik je de Smarty-code _profile_ of _subprofile_. Die code combineer je met de naam van het veld in de desbetreffende database of collectie. Bijvoorbeeld:
 
-Using Smarty
-------------
+* _{$profile.Voornaam}_
+* _{$profile.Email}_
+* _{$subprofile.Email}_
 
-Personalization within Copernica Marketing Software works with the help
-of Smarty. Using this code you can include every database or collection
-field within your campaigns. The Smarty tags will be replaced by the
-correct contact data of the addressee or recipient. Smarty tags are
-characterized by the use of braces, **{** and **}**, and the dollar sign
-**$**. Next to filling in contact data, Smarty tags can also be used to
-include dynamic content in your marketing campaigns.
+Smarty is **hoofdlettergevoelig**. Personalisatie werkt alleen wanneer de gebruikte veldnaam volledig overeenkomt met de veldnaam waaraan je refereert. De variabele _{$profile.voornaam}_ geeft bijvoorbeeld geen resultaat wanneer de veldnaam in de database '_Voornaam_' is. In plaats daarvan gebruik je _{$profile.Voornaam}_.
 
-Using these Smarty tags within Copernica allows you to:
+Voor het gebruik van {$subprofile.VELDNAAM} geldt dat personalisatievariabelen enkel werken wanneer het subprofiel de geadresseerde is. De e-mail wordt dan verzonden naar een e-mailadres binnen het subprofiel. Wil je gegevens vanuit het subprofiel tonen in mailings die geadresseerd zijn aan het profiel zelf? Dan kun je gebruik maken van de [loadsubprofile](./loadprofile-and-loadsubprofile)-tag. 
 
--   Include the recipient's data in emailings
--   Automatically include the webversion of an emailing
--   Set conditional content blocks (dynamic content)
+## Eenvoudige personalisatie
 
-Include contactdata in emailings
---------------------------------
+Stel dat je database de volgende velden bevat:
 
-When personalizing an emailing, you use Smarty tags. The correct data
-will be retrieved from your existing contact database. All data within
-the database (from profiles and subprofiles) can be used for
-personalizing emailings. You only have to fill in the names of the
-specific fields and the software will replace these with the correct
-data when sending an emailing.
+* Aanhef
+* Naam
+* Email
 
-        +--------------------------------------+--------------------------------------+
-        | ### For example:                     | ### Will be converted to:            |
-        +======================================+======================================+
-        | Dear                                 | Dear Mr. John Doe,                   |
-        | {$Salutation}{$Name}{$Surname},      |  Thank you for registering.          |
-        |  Thank you for registering.          |  Kind regards,                       |
-        |  Kind regards,                       |  Pete Kramer                         |
-        |  {$Accountmanager}                   |                                      |
-        |                                      |                                      |
-        +--------------------------------------+--------------------------------------+
+Daarnaast bevat de database een profiel met de onderstaande waardes:
 
-Automatically including a webversion
-------------------------------------
+* heer
+* Bakker
+* frank.bakker@voorbeeld.nl
 
-By including the variable {webversion} in the template of your emailing,
-a webversion of your email is sent along automatically when sending an
-emailing. Don't forget to add this variable to the text version of the
-email document as well.
+Hiermee kun je mailings voorzien van de variabelen _{$profile.Aanhef}_, _{$profile.Naam}_ en _{$profile.Email}_. 
 
-Next to the {webversion}, Copernica also allows you to add an
-{unsubscribe} variable to the emailing. We strongly recommend you add
-this variable to each emailing as this helps increase your email
-reputation. For example, by adding a list-unsubscribe header or by
-adding the unsubscribe-link to your template or email document.
-
-These Smarty tags do not contain a \$-sign because these are system
-variables (variables that are not filled in with data from your
-database).
-
-Set conditional content blocks
-------------------------------
-
-Thanks to the use of Smarty tags you can also use contact data as
-conditions when displaying certain content. This can be done with the
-help of the 'if-then'-statements: {if} and {else}. You always use { }
-and $, completed with some extra code.
-
-*For example:*
+Bijvoorbeeld:
 ```
-{if $fieldname == "thisvalue"}
-    show this text
+Beste {$profile.Aanhef} {$profile.Naam},
+
+Je ontvangt deze e-mail omdat je bent aangemeld met het volgende e-mailadres: {$profile.Email}.
+```
+
+Resultaat:
+```
+Beste heer Bakker,
+
+Je ontvangt deze e-mail omdat je bent aangemeld met het volgende e-mailadres: frank.bakker@voorbeeld.nl.
+```
+
+## Geavanceerde personalisatie
+
+Je kunt Smarty-code ook gebruiken om conditionele gegevens te tonen. Dat doe je door middel van [if-statements](https://www.smarty.net/docs/en/language.function.if.tpl).
+
+Met de onderstaande code toon je content op voorwaarde dat het veld '_Voornaam_' de waarde '_Peter_' bevat:
+
+```
+{if $profile.Voornaam == "Peter"}
+```
+
+Vervolgens geef je aan welke content er getoond moet worden wanneer dit niet het geval is:
+
+```
 {else}
-    if not, show this text
+```
+
+Tot slot geef je het slot van de conditie aan:
+
+```
 {/if}
 ```
 
-This states: IF field X contains the value Y, THEN, show this text,
-ELSE, show this text, END of the command.
+Stel dat een database de velden '_Geslacht_' en '_Achternaam_' bevat. Een aanhefveld ontbreekt daarbij. Om toch een aanhef te kunnen gebruiken bepalen we deze op basis van het geslachtveld:
 
-To use dynamic content, you can also use the variable {in_selection
-selection=x}. By using this code, your content will only be shown to
-relations from a specific (mini)selection. You can select the specific
-selection by:
+```
+Geachte {if $profile.Geslacht=="Man"}heer{elseif $profile.Geslacht=="Vrouw"}mevrouw{else}relatie{/if},
+```
 
--   Describing the entire path to the selection: 
-    `{in_selection selection=Database:mySelection:mySubSelection}`
--   Formulating the ID of the selection: `{in_selection selection=20}`
+In het bovenstaande voorbeeld controleren we eerst of de waarde van het veld '_Geslacht_' gelijk is aan '_Man_'. Zo ja, dan wordt de aanhef als '_Geachte heer_' weergegeven. 
 
+Wanneer dit niet het geval is wordt er gekeken of de waarde gelijk is aan '_Vrouw_'. Bij het aantreffen van die waarde wordt de aanhef als '_Geachte mevrouw_' weergegeven.  
+
+Bevat het veld geen van beide waardes? Dan wordt de aanhef '_Geachte relatie_' weergegeven.
+
+## Personalisatie-opmaak
+
+Het kan voorkomen dat databasegegevens onderling verschillen qua hoofdlettergebruik. Smarty biedt daarom specifieke functies om die verschillen op te vangen. De meest voorkomende functies bespreken we hieronder.
+
+### lower
+Deze functie verwijdert alle hoofdletters. Door gebruik te maken van de code _{$profile.Naam|lower}_ wordt de waarde 'Frank BAKKER' bijvoorbeeld als 'frank bakker' weergegeven.
+
+### ucfirst
+Dit filter verandert het eerste karakter uit een string (tekenreeks) naar een hoofdletter. Stel bijvoorbeeld dat de variabele _{$profile.Naam}_ de waarde 'frank bakker' bevat. Met de code _{$profile.Naam|ucfirst}_ geef je de waarde als 'Frank bakker' weer.
+
+Je kunt de bovenstaande functies ook combineren. Als de variabele _{$profile.Naam}_ de waarde 'FRANK' bevat, dan kun je de code _{$profile.Naam|lower|ucfirst}_ gebruiken om hoofdletters te verwijderen en het eerste teken alsnog van een hoofdletter te voorzien. De waarde wordt dan als 'Frank' weergegeven.
+
+* Bekijk [hier](./publisher-personalization-functions) nog meer personalisatiefuncties.
+
+## Personalisatie testen
+Je kunt de weergave van personalisatie testen in Copernica. Dat doe je door middel van de **'Voorvertoningsmodus'** in je template of document. De voorvertoning is gebaseerd op de standaardbestemming. De standaardbestemming dient zich in dezelfde database te bevinden als de ontvanger waaraan je de mailing wilt versturen.
