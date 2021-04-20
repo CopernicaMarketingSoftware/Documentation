@@ -9,7 +9,7 @@ Voor het personaliseren van (sub)profielgegevens gebruik je de Smarty-code _prof
 
 Smarty is **hoofdlettergevoelig**. Personalisatie werkt alleen wanneer de gebruikte veldnaam volledig overeenkomt met de veldnaam waaraan je refereert. De variabele _{$profile.voornaam}_ geeft bijvoorbeeld geen resultaat wanneer de veldnaam in de database '_Voornaam_' is. In plaats daarvan gebruik je _{$profile.Voornaam}_.
 
-Voor het gebruik van **subprofile** geldt dat personalisatievariabelen enkel werken wanneer het subprofiel de geadresseerde is. De e-mail wordt dan verzonden naar een e-mailadres binnen het subprofiel. Je gebruikt de [loadsubprofile](./loadprofile-and-loadsubprofile)-tag wanneer je gegevens vanuit het subprofiel wilt tonen in mailings die geadresseerd zijn aan het profiel zelf.
+Voor het gebruik van {$subprofile.VELDNAAM} geldt dat personalisatievariabelen enkel werken wanneer het subprofiel de geadresseerde is. De e-mail wordt dan verzonden naar een e-mailadres binnen het subprofiel. Wil je gegevens vanuit het subprofiel tonen in mailings die geadresseerd zijn aan het profiel zelf? Dan kun je gebruik maken van de [loadsubprofile](./loadprofile-and-loadsubprofile)-tag. 
 
 ## Eenvoudige personalisatie
 
