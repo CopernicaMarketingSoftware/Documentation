@@ -18,9 +18,6 @@ Een database bestaat doorgaans uit meerdere velden. Je kunt deze velden aanmaken
 
 * **Verwijzing:** Geschikt voor het verwijzen naar een andere database door middel van een ID. Meer informatie over dit veldtype vind je hier.
 
-Let op: Als je een meerkeuzeveld aanmaakt of aanpast via de [REST API](./restv2) moeten 
-de opties gescheiden worden door new line delimiters (`\n`).
-
 ## Extra veldopties
 ![Extra veldopties](../images/nl/extraveldopties.png)
 

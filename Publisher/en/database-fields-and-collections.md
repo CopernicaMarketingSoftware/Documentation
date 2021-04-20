@@ -27,10 +27,6 @@ for good measure we'll describe the different aspects of databases below.
 You can easily set the values of your field with the "Edit multiple profiles"
 functionality.
 
-Note: If you are creating or changing a multiple choice field using the 
-[REST API](./rest-api) the options should be separated using the 
-new line delimiter (`\n`).
-
 ## Extra options for fields
 
 While editing fields it is possible to select various extra options,
