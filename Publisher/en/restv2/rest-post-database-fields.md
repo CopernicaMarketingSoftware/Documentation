@@ -53,7 +53,8 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 // data to pass to the call
 $data = array(
     'name'      =>  'extra-field',
-    'type'      =>  'text'
+    'type'      =>  'select',
+    'value'     =>  'A\nB\nC*'
 );
 
 // do the call
@@ -67,6 +68,7 @@ The example above requires the [CopernicaRestApi class](rest-php).
 ## More information
 
 - [Overview of all API calls](rest-api)
+- [Database fields](../database-fields-and-collections)
 - [GET database fields](rest-get-database-fields)
 - [PUT database field](rest-put-database-field)
 - [DELETE database field](rest-delete-database-field)

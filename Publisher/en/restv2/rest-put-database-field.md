@@ -12,21 +12,31 @@ has to be the ID of the field itself.
 
 ## Available data
 
-- **name**: the name of the new field. (mandatory)
+- **name**: the name of the new field (mandatory)
 - **type**: type of the new field
 - **value**: default value of the new field
-- **textlines**: number of lines in forms to edit the field
+- **displayed**: boolean value to determine whether or not the field should be placed into lists and grids in the user interface
+- **ordered**: boolean value to determine whether or not profiles should be ordered by the value in this field.
 - **length**: maximum text length
-- **index**: boolean value, shows whether or not the field should be 
-indexed
-- **displayed**: boolean value to determine whether or not the field 
-should be placed into lists and grids in the user interface
+- **textlines**: number of lines in webforms to edit the field
 - **hidden**: boolean value to make sure a field is never shown in the interface
-- **ordered**: boolean value to determine whether or not profiles should 
-be ordered by this field.
+- **index**: boolean value, sets whether or not the field should be indexed
 
-These are the exact fields the 
-[method to create new fields](rest-post-database-fields) supports.
+The following types are available for fields:
+
+- **integer**: numerical value
+- **float**: numerical floating point value
+- **date**: mandatory date field
+- **empty_date**: non-mandatory date field
+- **datetime**: mandatory field with date and time
+- **empty_datetime**: non-mandatory field with date and time
+- **text**: regular text field
+- **email**: field with email address used for mailings (1 per database allowed)
+- **phone_fax**: phone field with phone number that can be used for fax (1 per database allowed)
+- **phone_gsm**: phone field with phone number that can be used for text messages (1 per database allowed)
+- **select**: multiple choice field
+- **big**: large text field
+- **foreign_key**: numerical value that directs to another profile
 
 ## PHP example
 
@@ -39,9 +49,11 @@ require_once('copernica-rest-api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 2);
 
-// data to be sent to the api
+// data to pass to the call
 $data = array(
-    'name'          =>  'new-field-name'
+    'name'      =>  'extra-field',
+    'type'      =>  'select',
+    'value'     =>  'A\nB\nC*'
 );
 
 // do the call
@@ -52,6 +64,8 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 ## More information
 
-- [Overview of all API methods](rest-api)
+- [Overview of all API methods](./rest-api)
+- [Database fields](../database-fields-and-collections)
 - [GET database fields](rest-get-database-fields)
-- [DELETE database field](rest-delete-database-field)
+- [POST database fields](./rest-post-database-fields)
+- [DELETE database field](./rest-delete-database-field)

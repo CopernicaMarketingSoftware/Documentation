@@ -1,4 +1,5 @@
 # Databasevelden
+
 Een database bestaat doorgaans uit meerdere velden. Je kunt deze velden aanmaken of bewerken door binnen een database te kiezen voor de menuoptie ‘**Velden & interesses**’. De volgende veldtypen zijn beschikbaar:
 
 * **Tekst:** Geschikt voor elk karaktertype met een limiet van 255 karakters. Wanneer je meer karakters wilt invullen gebruik je de optie 'Grote tekst'. We raden het gebruik van deze optie echter af omdat deze velden niet kunnen worden geïndexeerd.
