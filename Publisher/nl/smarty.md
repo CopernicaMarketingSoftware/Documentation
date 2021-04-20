@@ -15,9 +15,9 @@ Voor het gebruik van **subprofile** geldt dat personalisatievariabelen enkel wer
 
 Stel dat je database de volgende velden bevat:
 
-* aanhef
-* naam
-* email
+* Aanhef
+* Naam
+* Email
 
 Daarnaast bevat de database een profiel. Deze bevat voor de bovenstaande velden de volgende waardes:
 
@@ -25,13 +25,13 @@ Daarnaast bevat de database een profiel. Deze bevat voor de bovenstaande velden 
 * Bakker
 * frank.bakker@voorbeeld.nl
 
-Hiermee kun je mailings voorzien van de variabelen {$profile.aanhef}, {$profile.naam} en {$profile.email}. 
+Hiermee kun je mailings voorzien van de variabelen {$profile.Aanhef}, {$profile.Naam} en {$profile.Email}. 
 
 Bijvoorbeeld:
 ```
-Beste {$profile.aanhef} {$profile.naam},
+Beste {$profile.Aanhef} {$profile.Naam},
 
-Je ontvangt deze e-mail omdat je bent aangemeld met het volgende e-mailadres: {$profile.email}.
+Je ontvangt deze e-mail omdat je bent aangemeld met het volgende e-mailadres: {$profile.Email}.
 ```
 
 Resultaat:
@@ -43,23 +43,33 @@ Je ontvangt deze e-mail omdat je bent aangemeld met het volgende e-mailadres: fr
 
 ## Geavanceerde personalisatie
 
-Je kunt Smarty-code ook gebruiken om conditionele gegevens te tonen. Dat doe je door middel van [if-statements](https://www.smarty.net/docs/en/language.function.if.tpl)
+Je kunt Smarty-code ook gebruiken om conditionele gegevens te tonen. Dat doe je door middel van [if-statements](https://www.smarty.net/docs/en/language.function.if.tpl):
+
+Met de onderstaande code toon je content op voorwaarde dat het veld 'Voornaam' de waarde 'Peter' bevat:
 
 ```
 {if $profile.Voornaam == "Peter"}
-    Als het veld 'Voornaam' de waarde 'Peter' bevat, toon deze tekst.
+```
+
+Vervolgens geef je aan welke content er getoond moet worden wanneer dit niet het geval is:
+
+```
 {else}
-    Zo niet, toon deze tekst.
+```
+
+Tot slot geef je het slot van de conditie aan:
+
+```
 {/if}
 ```
 
-Stel dat een database de velden _geslacht_ en _achternaam_ bevat. Een aanhefveld ontbreekt daarbij. Om toch een aanhef te kunnen gebruiken bepalen we deze op basis van het geslachtveld:
+Stel dat een database de velden _Geslacht_ en _Achternaam_ bevat. Een aanhefveld ontbreekt daarbij. Om toch een aanhef te kunnen gebruiken bepalen we deze op basis van het geslachtveld:
 
 ```
-Geachte {if $profile.geslacht=="Man"}heer{elseif $profile.geslacht=="Vrouw"}mevrouw{else}relatie{/if},
+Geachte {if $profile.Geslacht=="Man"}heer{elseif $profile.Geslacht=="Vrouw"}mevrouw{else}relatie{/if},
 ```
 
-In het bovenstaande voorbeeld bepalen we eerst of de waarde van het veld _geslacht_ gelijk is aan _Man_. Zo ja, dan wordt de aanhef als '_Geachte heer_' weergegeven. 
+In het bovenstaande voorbeeld bepalen we eerst of de waarde van het veld _Geslacht_ gelijk is aan _Man_. Zo ja, dan wordt de aanhef als '_Geachte heer_' weergegeven. 
 
 Wanneer dit niet het geval is wordt er gekeken of de waarde gelijk is aan _Vrouw_. Bij het aantreffen van die waarde wordt de aanhef als '_Geachte mevrouw_' weergegeven.  
 
@@ -67,17 +77,17 @@ Bevat het veld geen van beide waardes? Dan wordt de aanhef '_Geachte relatie_' w
 
 ## Personalisatie-opmaak
 
-Het kan voorkomen dat databasegegevens onderling verschillen qua hoofdlettergebruik. Smarty biedt daarom specifieke functies om dergelijke afwijkingen op te kunnen vangen. De meest voorkomende functies bespreken we hieronder.
+Het kan voorkomen dat databasegegevens onderling verschillen qua hoofdlettergebruik. Smarty biedt daarom specifieke functies om afwijkingen op te vangen. De meest voorkomende functies bespreken we hieronder.
 
 ### lower
 Deze functie verwijdert alle hoofdletters. Door gebruik te maken van de code {$profile.Naam|lower} wordt de waarde 'Frank BAKKER' bijvoorbeeld als 'frank bakker' weergegeven.
 
 ### ucfirst
-Dit filter zorgt ervoor dat het eerste karakter uit een string (tekenreeks) een hoofdletter wordt. Als de variabele {$profile.Naam} de waarde 'frank bakker' bevat, dan zorgt de code {$profile.Naam|ucfirst} ervoor dat dit wordt weergegeven als: 'Frank bakker'.
+Dit filter verandert het eerste karakter uit een string (tekenreeks) naar een hoofdletter. Stel bijvoorbeeld dat de variabele {$profile.Naam} de waarde 'frank bakker' bevat. Met de code {$profile.Naam|ucfirst} geef je de waarde weer als: 'Frank bakker'.
 
-Je kunt deze functies ook combineren. Als de variabele {$profile.Naam} de waarde 'FRANK' bevat, kun je met {$profile.Naam|lower|ucfirst} zorgen dat de waarde eerst zonder hoofdletters wordt gemaakt en vervolgens het eerste teken alsnog van hoofdletter voorzien: 'Frank.
+Je kunt de bovenstaande functies ook combineren. Als de variabele {$profile.Naam} de waarde 'FRANK' bevat, dan kun je de code {$profile.Naam|lower|ucfirst} gebruiken om hoofdletters te verwijderen en het eerste teken vervolgens alsnog van een hoofdletter te voorzien. De waarde wordt dan als 'Frank' weergegeven.
 
-* Bekijk [hier](./publisher-personalization-functions) de overige personalisatiefuncties.
+* Bekijk [hier](./publisher-personalization-functions) de verdere personalisatiefuncties.
 
 ## Personalisatie testen
-Je kan in Copernica de uitvoer van je personalisatie testen. Dit kan in de _voorvertoningsmodus_ binnen je template of document. Hiervoor worden de gegevens uit de standaardbestemming gebruikt. Zorg er altijd voor dat de standaardbestemming zich bevindt in dezelfde database waaraan je je mailing wilt richten.
+Je kunt de weergave van personalisatie testen in Copernica. Dat doe je door middel van de _voorvertoningsmodus_ in je template of document. De voorvertoning is gebaseerd op de standaardbestemming. De standaardbestemming dient zich in dezelfde database te bevinden als de ontvanger waaraan je de mailing wilt versturen.
