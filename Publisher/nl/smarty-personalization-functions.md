@@ -21,7 +21,7 @@ De tekst zal nu alleen worden getoond wanneer de gebruiker de nieuwsbrief bekijk
 | [{fetch}](./personalization-functions-fetch)                          | inladen van een externe gehoste content                                      |
 | [{in_miniselection}](./personalization-functions-in_miniselection)    | blok dat alleen wordt getoond indien subprofiel tot een miniselectie behoort |
 | [{in_selection}](./personalization-functions-in_selection)            | blok dat alleen wordt getoond indien profiel tot een selectie behoort        |
-| [{linkfile}](./personalization-functions-linkfile)                    | linken naar een file                                                         |
+| [{linkfile}](./personalization-functions-linkfile)                    | linken naar een bestand                                                      |
 | [{linkpdf}](./personalization-functions-linkpdf)                      | linken naar een PDF-bestand                                                  |
 | [{loadfeed}](./personalization-functions-loadfeed)                    | inladen van een externe RSS-feed                                             |
 | [{loadfile}](./personalization-functions-loadfile)                    | inladen van een bestand                                                      |
