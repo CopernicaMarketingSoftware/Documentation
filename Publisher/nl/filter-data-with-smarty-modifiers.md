@@ -1,150 +1,79 @@
 # Filter data met smarty modifiers
 
-In een database kunnen typefouten of stijlfouten voorkomen in tekst.
-Zeker wanneer een deel van de informatie binnenkomt via
-aanmeldformulieren door relaties zelf ingevuld. Om in publicaties hun gegevens toch netjes weer te geven, kan je de personalisatie opmaakregels meegeven. Dit kan eenvoudig het verwijderen van hoofdletters zijn, maar ook bepalen hoe een datum wordt weergegeven of het inkorten of afbreken van teksten.
+Het kan zijn dat er in de profieldata binnen je typefouten of stijlfouten voorkomen.
+Zeker als een deel van de informatie binnenkomt via formulieren die door de relatie zelf is ingevuld. Om de profieldata in je templates en documenten toch netjes weer te geven, kan je de personalisatie opmaakregels meegeven. Dit kan eenvoudig het verwijderen van hoofdletters zijn, maar ook bepalen hoe een datum wordt weergegeven of het inkorten of afbreken van teksten.
 
-We zetten enkele mogelijkheden op een rij. Een volledig overzicht vind je op de website van Smarty](http://www.smarty.net/docsv2/en/language.modifiers.tpl).
+We zetten enkele mogelijkheden op een rij. Een volledig overzicht vind je op de website van Smarty](https://www.smarty.net/docs/en/language.modifiers.tpl).
 
 Filters worden altijd vooraf gegaan door een pipe (|). Deze vind je direct boven de entertoets op je toetsenbord.
 
 ## Data en tijden dynamisch weergeven
 
-Voor meer informatie over het dynamisch weergeven van data en tijden kun je dit artikel bekijken: [Data en tijden dynamisch weergeven](using-the-smarty-date-function).
+Voor meer informatie over het dynamisch weergeven van data en tijden kun je dit artikel bekijken: [Data en tijden dynamisch weergeven](publisher-personalization-variables#data-en-tijden-dynamisch-weergeven).
 
 ### Filter: |date\_format
 
 Dit filter biedt opmaak aan datumvelden in het document.
 
-Let op dat je de taal van het document
-instelt bij het gebruik van datum\_format, voor een juiste weergave van
-bijvoorbeeld de maand (deziembre vs. december).
+Let op dat je de taal van het document instelt bij het gebruik van datum\_format, voor een juiste weergave van bijvoorbeeld de maand (deziembre vs. december). 
+Je kunt dit doen bij de _personalisatie-instellingen_ binnen je template of document.
 
-Dit voorbeeld gebruikt $smarty.now om de huidige datum in te vullen,
-maar kan op alle datumvelden worden toepepast.
-
-In het volgende overzicht een aantal voorbeelden van de mogelijkheden.
+In het volgende overzicht geven we enkele voorbeelden van de mogelijkheden in combinatie met de [$smarty.now](https://www.smarty.net/docs/en/language.variables.smarty.tpl#language.variables.smarty.now) variabale.
 
 ```txt
-{$smarty.now|date_format}                   Dec 4, 2007
-{$smarty.now|date_format:"%D"}              12/04/07
-{$smarty.now|date_format:“%d-%m-%Y”}        04-12-2007
-{$smarty.now|date_format:"%A, %e %B %Y"}    Tuesday, 4 decembre 2007
-{$smarty.now|date_format:“%A"}              Tuesday
-{$smarty.now|date_format:"%c"}              Tu 04 dec 2007 15:20:28 CET
+{$smarty.now|date_format}                   Apr 1, 2021
+{$smarty.now|date_format:"%d-%m-%Y"}        01-04-2021
+{$smarty.now|date_format:"%Y-%m-%d"}        2021-04-01
+{$smarty.now|date_format:"%A, %e %B %Y"}    donderdag, 1 april 2021
+{$smarty.now|date_format:“%A"}              donderdag
+{$smarty.now|date_format:"%D"}              04/01/21
+{$smarty.now|date_format:"%c"}              wo 21 apr 2021 10:07:17 CEST 
 ```
 
-Als je een datum ophaalt uit het profiel kan je op dezelfde wijze het
-filter toepassen:
+Als je een datum ophaalt uit het profiel kan je op dezelfde wijze het filter toepassen:
 
-Bijvoorbeeld: `{$Geboortedatum|date_format:"%D"}`
+Bijvoorbeeld: `{$profile.Geboortedatum|date_format:"%d-%m-%Y"}`
 
 Voor meer datumcoderingen, zie de website van smarty
 ([smarty.net](http://www.smarty.net/docs/en/language.modifier.date.format.tpl)).
 
 ### Filter: |capitalize
 
-Met het filter ‘capitalize’ wordt de eerste letter van elk woord in een
-tekst vervangen door een hoofdletter. Als een profiel in het veld
-`{$Naam}` de waarde `richard van de zande` heeft, dan zorgt de code
-`{$Naam|capitalize}` er voor dat dit in het document wordt getoond als
-`Richard Van De Zande`.
+Met het filter ‘capitalize’ wordt de eerste letter van elk woord in een tekst vervangen door een hoofdletter. 
+Als een profiel in het veld `{$Naam}` de waarde `richard van de zande` heeft, dan zorgt de code `{$Naam|capitalize}` er voor dat dit in het document wordt getoond als `Richard Van De Zande`.
 
-Woorden waar getallen in voorkomen worden NIET voorzien van een
-hoofdletter, tenzij de optionele parameter ‘true’ wordt meegegeven:
-`{$Naam|capitalize}` wordt na het personaliseren getoond als `k3`,
-`{$Model|capitalize:true}` wordt getoond als `K3`.
+Woorden waar getallen in voorkomen worden NIET voorzien van een hoofdletter, tenzij de optionele parameter ‘true’ wordt meegegeven: `{$Naam|capitalize}` wordt na het personaliseren getoond als `k3`, `{$Naam|capitalize:true}` wordt getoond als `K3`.
 
 ### Filter: |lower
 
-Dit filter wordt gebruikt om alle hoofdletters te verwijderen. Dit is
-gelijk aan de *PHP strtolower()* functie.
+Dit filter wordt gebruikt om alle hoofdletters te verwijderen. 
 
-Als de variabele `{$Naam}` de waarde heeft: `Karel APPEL`
+Als je variabele `{$Naam}` de waarde `Karel APPEL` bevat, zorgt de code `{$Naam|lower}` ervoor dat dit wordt weergegeven als: `karel appel`.
 
-Dan zorgt de code `{$Naam|lower}` ervoor dat wordt weergegeven: `karel appel`
-
-De volgorde van de filters wordt aangehouden bij de toepassing. Wanneer
-je als code {$Naam|lower|capitalize} plaatst, dan zal in de
-gepersonaliseerde publicatie: 'Karel Appel' worden weergegeven.
+De volgorde van je opgegeven filters wordt aangehouden bij het toepassen van de filters. Wanneer je {$Naam|lower|capitalize} gebruikt, zal dit worden weergegeven als: 'Karel Appel'.
 
 ### Filter: |upper
 
-Dit filter wordt gebruikt om alle tekens hoofdletters te maken. Dit
-filter is gelijk aan de PHP *strtoupper()* functie.
+Dit filter wordt gebruikt om alle tekens hoofdletters te maken. 
 
-Als het veld `{$Title}` als volgt luidt: `Computers zijn ingewikkeld om
-mee te werken`, dan zal door de code `{$Title|upper}` het volgende in het
-document komen te staan: `COMPUTERS ZIJN INGEWIKKELD OM MEE TE WERKEN`
+Als je variabele `{$Naam}` de waarde `Karel Appel` bevat, zorgt de code `{$Naam|upper}` ervoor dat dit wordt weergegevens als: `KAREL APPEL`.
 
 ### Filter: |cat
 
-Met dit filter voeg je tekst toe aan de variabele. Bijvoorbeeld als de
-variabele `{$Naam}` de waarde `Karel Appel` heeft, dan zorgt de code
-`{$voornaam|cat:“junior”}` er voor dat de tekst `Karel Appel junior` in
-het document wordt geplaatst.
-
-### Filter: |indent
-
-Dit filter laat elke regel inspringen. Standaard springt de regel 4 spaties in. Optioneel kan je het aantal van karakters specificeren waarmee je wilt inspringen.
-
-Voorbeeld:
-
-```
-{$article}
-{$article|indent}
-{$article|indent:8}
-```
-
-Wordt dit:
-
-```
-De installatie bestanden moet je eerst downloaden van de website. Hierna dien je het ZIP bestand gewoon te unzippen.
-
-    De installatie bestanden moet je eerst downloaden van de website. Hierna dien je het ZIP bestand gewoon te unzippen.
-
-        De installatie bestanden moet je eerst downloaden van de website. Hierna dien je het ZIP bestand gewoon te unzippen.
-```
+Met dit filter voeg je tekst toe aan de variabele. Als je variabele `{$Naam}` de waarde `Karel Appel` bevat, zorgt de code
+`{$Naam|cat:"junior"}` ervoor dat de tekst `Karel Appel junior` in je template of document wordt geplaatst.
 
 ### Filter: |replace
 
-Met dit filter kan je tekst in een variabele vervangen door andere
-tekst. Deze is gelijk aan de PHP’s *str\_replace()* functie.
+Met dit filter kan je tekst in een variabele vervangen door andere tekst.
 
-Bijvoorbeeld bij een veld `{$article}` staat de zin: `Kinderen spelen met
-hun moeder in de tuin.` Om het woord ‘moeder’ te vervangen in ‘oma’ gebruikt u de code
+Stel je hebt een variabale `{$artikel}` met de tekst `Klik hier om de nieuwsbrief in te zien`, maar je wilt het woord nieuwsbrief vervangen met `e-mail`, dan kun je gebruik maken van de volgende code:
 
 ```
-{$Title|replace:'moeder':'oma'}
+{$artikel|replace:'nieuwsbrief':'e-mail'}
 ```
 
-Hierdoor zal de zin veranderen in: `Kinderen spelen met hun oma in de
-tuin.`
-
-### Filter: |spacify
-
-Het filter ‘spacify’ is een manier om een spatie tussen elk karakter van
-een variabele te plaatsen. U kunt eventueel ook een ander karakter of
-zin invoegen.
-
-Als `Title` de volgende zin bevat: `Het sneeuwt buiten`.
-
-Dan kan je met de code `{$Title|spacify}` spaties tussen de karakters van
-de zin plaatsen.
-
-Als je de codes ingeeft
-
-```
-{$Title|spacify}
-{$Title|spacify:"*"}
-```
-
-dan wordt de weergave:
-
-```
-H e ts n e e u w tb u i t e n
-H\*e\*t \*s\*n\*e\*e\*u\*w\*t \*b\*u\*i\*t\*e\*n
-```
+De tekst wordt nu: `Klik hier om de e-mail in te zien`.
 
 ### Filter: |truncate
 
