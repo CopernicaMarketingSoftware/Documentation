@@ -7,7 +7,7 @@ een lijst van profielen retourneert.
 
 Om te voorkomen dat een REST API-call te lang duurt en dat enkelvoudige calls 
 te veel van onze API-servers vragen wordt de output van deze methodes
-standaard beperkt door de api.copernica.com endpoint. Hierdoor worden er niet meer dan 1000 
+standaard beperkt door het api.copernica.com endpoint. Hierdoor worden er niet meer dan 1000 
 objecten per keer teruggegeven. Het rest.copernica.com endpoint (dit is dus een andere
 domeinnaam!) maakt het wel mogelijk om grotere datasets op te halen.
 
