@@ -75,7 +75,7 @@ Stel nu dat we maximaal 5 subprofielen willen ophalen. Daarnaast willen we de re
 
 Geachte {$Bedrijfsleider},
 
-Van uw bedrijf, {$Bedrijf} zijn de volgende medewerkers bekend:
+Van uw bedrijf, {$Bedrijf}, zijn de volgende medewerkers bekend:
 {foreach $geladensubprofielen as $geladensubprofiel}
     - {$geladensubprofiel.Voornaam} {$geladensubprofiel.Achternaam}, email: {$geladensubprofiel.Emailadres};
 {/foreach}
