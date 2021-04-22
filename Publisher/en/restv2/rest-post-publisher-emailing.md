@@ -67,7 +67,7 @@ $settings = array(
 $parameters = array(
     'target'        => $targetID,
     'targettype'    => $targetType,
-    'template'      => $templateID,
+    'document'      => $documentID,
     'settings'      => $settings
 );
 

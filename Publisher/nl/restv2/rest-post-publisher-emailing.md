@@ -12,7 +12,7 @@ De volgende parameters zijn beschikbaar, waarvan alleen 'settings' optioneel is:
 
 * **target**: De ID van de target van de mailing.
 * **targettype**: Het type van de target (database, collectie, selectie, miniselectie, profiel of subprofiel)
-* **document**: De ID van de template om te gebruiken.
+* **document**: De ID van het document om te gebruiken.
 * **settings**: Array die de instellingen van de mailing bevat. Deze kun je 
 bijvoorbeeld gebruiken om een mailing op een ander moment te versturen in plaats 
 van deze onmiddelijk te verzenden.
@@ -73,7 +73,7 @@ $settings = array(
 $parameters = array(
     'target'        => $targetID,
     'targettype'    => $targetType,
-    'template'      => $templateID,
+    'document'      => $documentID,
     'settings'      => $settings
 );
 

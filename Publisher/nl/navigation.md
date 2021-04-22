@@ -39,6 +39,7 @@
     * [Data-script](./data-object.md)
     * [AMP](./amp.md)
 * [Smarty personalisatie](./smarty.md)
+    * [Functies](./smarty-personalization-functions.md)
     * [Loadprofile en loadsubprofile](./loadprofile-and-loadsubprofile.md)
 * [Verzendreputatie](./send-reputation.md)
 * [Campagnes](./campagnes.md)
