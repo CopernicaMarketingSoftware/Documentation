@@ -31,7 +31,7 @@ De bovenstaande code zorgt ervoor dat tekst alleen getoond wordt wanneer een geb
 | [{mailonly}](./personalization-functions-mailonly)                    | blok markeren dat alleen in de mailversie getoond wordt                    |
 | [{$smarty.now}](./smarty-date)                                        | datumvariabele                                                              |
 | [{survey}](./personalization-functions-survey)                        | inladen van een enquête                                                      |
-| [{unsubscribe}](./personalization-functions-unsubscribe)              | link voor het registreren van uitschrijvingen                                         |
+| [{unsubscribe}](./personalization-functions-unsubscribe)              | uitschrijflink                                       |
 | [{webform}](./personalization-functions-webform)                      | inladen van een webformulier                                                 |
 | [{webonly}](./personalization-functions-webonly)                      | blok markeren dat alleen in de webversie getoond wordt                       |
 | [{webversion}](./emailings-publisher-webversion)                      | link naar de webversie                                                       |
