@@ -36,7 +36,9 @@ _{$geladensubprofiel.Voornaam}_
 
 Een database bevat meerdere profielen en subprofielen. Het kan dus voorkomen dat je meerdere (sub)profielen wilt inladen. 
 
-Stel dat je bedrijfsprofielen opneemt in de database _Relaties_. Hierin bevind zich ook de collectie _Medewerkers_. De collectie bevat gegevens van één of meer bedrijfsmedewerkers. In dit geval willen we een e-mail versturen naar alle bedrijven in de _Relaties_-database. De e-mail dient voor elk afzonderlijk bedrijf informatie te bevatten over de bij ons bekende medewerkers. We halen daarom alle subprofielen uit de collectie _Medewerkers_ op. We gebruiken hiervoor de _multiple_-optie:
+Stel dat je bedrijfsprofielen opneemt in de database _Relaties_. Hierin bevind zich ook de collectie _Medewerkers_. De collectie bevat gegevens van één of meer bedrijfsmedewerkers. 
+
+In dit geval willen we een e-mail versturen naar alle bedrijven in de _Relaties_-database. De e-mail dient voor elk afzonderlijk bedrijf informatie te bevatten over de bij ons bekende medewerkers. We halen daarom alle subprofielen uit de collectie _Medewerkers_ op. We gebruiken hiervoor de _multiple_-optie:
 
 `{loadsubprofile source="Relaties:Medewerkers" profile=$profile.id assign=geladensubprofielen multiple=true}`
 
