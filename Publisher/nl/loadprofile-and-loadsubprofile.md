@@ -1,139 +1,98 @@
 # Loadprofile en loadsubprofile
 
-Normaal gesproken gebeurt Smarty-personalisatie met data uit de
-geadresseerde database. Maar indien je meerdere databases hebt met
-gerelateerde data, laat je hier dan niet door beperken! Met de functie
-Loadprofile kun je profielen uit (andere!) databases inladen.
-Loadsubprofile doet datzelfde, maar dan met subprofielen uit een
-(andere) databases. Het kan echter ook gebruikt worden om meerdere
-subprofielen onder het geadresseerde profiel in te laden.
+Je past Smarty-personalisatie meestal toe op gegevens uit de geadresseerde database. Het kan echter ook voorkomen dat je meerdere databases met relevante data tot je beschikking hebt. De _loadprofile_-functie maakt het mogelijk om profielen uit andere databases in te laden. 
 
-Eerst een eenvoudig voorbeeld: loadprofile wordt gebruikt om een profiel
-uit een andere database op te halen.
+## Loadprofile
 
-`{loadprofile source="naamvananderedatabase" assign=geladenprofiel}`
+In het onderstaande voorbeeld worden profielgegevens vanuit een andere database (_DatabaseB_) ingeladen door middel van de _loadprofile_-functie:
 
-*Source* moet de naam van een database in hetzelfde account bevatten.
-Alleen het eerste profiel uit die database wordt opgehaald en is
-vervolgens aan te roepen met de variabele $geladenprofiel. Als je een
-specifiek profiel uit een database wilt halen, dan kan dat op basis van
-het ID. Dit gaat als volgt:
+`{loadprofile source="DatabaseB" assign=geladenprofiel}`
 
-`{loadprofile source="naamvananderedatabase" id=1337 assign=geladenprofiel}`
+Bij _source_ vul je de naam in van de database waaraan je refereert. Die database dient zich binnen hetzelfde account te bevinden. Daarbij wordt alleen het eerste profiel opgehaald. Je roept deze aan door middel van de variabele _{$geladenprofiel.VELDNAAM}_.
 
-Het is ook mogelijk om profielen uit een selectie op te halen, waarbij
-*source* naast de databasenaam ook de selectienaam moet bevatten,
-gescheiden met een punt(.).
+Je haalt een specifiek profiel uit een database op door middel van een veldnaam. Stel bijvoorbeeld dat je beschikt over twee databases. In _DatabaseA_ staan profielen met de veldnaam _Accountmanager_. Je bestemming heeft de waarde _Jan_ in dit veld. Vervolgens wil je uit _DatabaseB_ de gegevens ophalen van profielen waarbij de veldnaam _Voornaam_ overeenkomt met _Jan_. In dat geval gebruik je de volgende code:
 
-`{loadprofile source="naamvananderedatabase.selectieindiedatabase" assign=geladenprofiel}`
+`{loadprofile source="DatabaseB" Voornaam=$profile.Accountmanager assign=geladenprofiel}`
 
-Om subprofielen uit een (andere) database op te halen, gebruik je
-*loadsubprofile*. Hierbij moet *source* niet alleen een databasenaam
-bevatten, maar ook de naam van de collectie waaruit je de subprofielen
-wilt halen. (Een database kan immers meerdere collecties bevatten.) Een
-voorbeeld waarbij we alle het eerste subprofiel van profiel met id 1337
-uit database *naamvananderedatabase*, collectie *collectieuitdatabase*
-halen.
+Je kunt profielen ook uit een selectie ophalen. _Source_ moet dan naast de databasenaam ook de selectienaam (bijvoorbeeld _SelectieB_) bevatten, gescheiden door een punt:
 
-`{loadsubprofile source="naamvananderedatabase:collectieuitdatabase" profile=1337 assign=geladensubprofiel}`
+`{loadprofile source="DatabaseB.SelectieB" assign=geladenprofiel}`
 
-Nu kunnen we het geladen subprofiel oproepen met variabele
-*$geladensubprofiel*. Als de collectie persoonsgegevens bevat van
-medewerkers van het bedrijf uit profiel met id 1337, dan kunnen we die
-gegevens als volgt opvragen (een voorbeeld):
-*{$geladensubprofiel.Voornaam}*.
+## Loadsubprofile
 
-## Meerdere (sub)profielen
+Je gebruikt de _loadsubprofile_-functie wanneer je subprofielgegevens wilt ophalen vanuit de geadresseerde database of een collectie in een andere database. Bij _source_ vul je dan zowel de databasenaam als de collectienaam in. Het gaat daarbij om de collectie waaruit je de subprofielen wilt ophalen. Een database kan immers meerdere collecties bevatten.
 
-Een database bevat meerdere profielen en subprofielen en het kan
-voorkomen dat je meerdere wilt inladen. Een praktisch voorbeeld: in je
-database 'Relaties' staan bedrijven (per bedrijf een profiel) en in
-'Relaties' staat de collectie 'Medewerkers'. In die collectie staan de
-gegevens van één of meerdere medewerkers van het bedrijf. Stel dat we
-naar alle bedrijven in database 'Relaties' een mailtje willen sturen met
-informatie over de bij ons bekende medewerkers, dan willen we dus alle
-subprofielen uit collectie 'Medewerkers' ophalen:
+Omdat je alleen de subprofielen van je bestemming op wilt halen, maken we gebruik van profile=$profile.id. Je kunt ook een vast profiel ID gebruiken, bijvoorbeeld profile=1234, om de subprofielen van een specifiek profiel in te laden.
 
-Om *meerdere subprofielen op te halen* is het mogelijk om optie
-**multiple** te gebruiken. Een voorbeeld aan de hand van de hierboven
-beschreven situatie:
+We halen het eerste subprofiel uit _CollectieB_ in _DatabaseB_ als volgt op:
+
+`{loadsubprofile source="DatabaseB:CollectieB" profile=$profile.id assign=geladensubprofiel}`
+
+Vervolgens kunnen we het geladen subprofiel oproepen door middel van de variabele _$geladensubprofiel_. Persoonsgegevens van bedrijfsmedewerkers binnen een collectie vragen we op door middel van de onderstaande code: 
+
+```
+{$geladensubprofiel.Voornaam}
+```
+
+### Meerdere (sub)profielen
+
+Een database bevat meerdere profielen en subprofielen. Het kan dus voorkomen dat je meerdere (sub)profielen wilt inladen. 
+
+Stel dat je bedrijfsprofielen opneemt in de database _Relaties_. Hierin bevindt zich ook de collectie _Medewerkers_. De collectie bevat gegevens van één of meer bedrijfsmedewerkers. 
+
+In dit geval willen we een e-mail versturen naar alle bedrijven in de _Relaties_-database. De e-mail dient voor elk afzonderlijk bedrijf informatie te bevatten over de bij ons bekende medewerkers. We halen daarom alle subprofielen uit de collectie _Medewerkers_ op. We gebruiken hiervoor de _multiple_-optie:
 
 `{loadsubprofile source="Relaties:Medewerkers" profile=$profile.id assign=geladensubprofielen multiple=true}`
 
-Met bovenstaande code worden alle subprofielen geladen uit database
-'Relaties'; Collectie 'Mederwerkers' welke horen bij het profiel met id
-$profile.id. Smarty-personalisatie zal ervoor zorgen dat de waarde van
-$profile.id gelijk is aan de geadresseerde van het mailtje. Alle
-bijbehorende subprofielen worden in $geladensubprofielen gezet.
+Door middel van de bovenstaande code worden alle subprofielen ingeladen die bij je 
+horen. Deze worden opgehaald uit de collectie _Medewerkers_ (binnen de _Relaties_-database). Alle bijbehorende subprofielen worden in _$geladensubprofielen_ opgenomen.
 
-Nu willen we alle opgehaalde subprofielen nog netjes in ons mailtje
-plaatsen. $geladensubprofielen is een zogenaamde *array*, een lijst van
-gegevens. Die moeten we systematisch doorlopen, waarbij we gebruik maken
-van de functie *foreach*. Doorgaand op ons praktische voorbeeld:
+De variabele _$geladensubprofielen_ vormt een lijst van gegevens. Zo'n variabele wordt een **array** genoemd. Om deze systematisch te doorlopen maken we gebruik van de _foreach_-functie. Vervolgens willen we de opgehaalde subprofielen in de mail plaatsen. Uitgaande van het bovenstaande voorbeeld gebeurt dat als volgt:
 
-    {foreach $geladensubprofielen as $geladensubprofiel} //of in Smarty 2: {foreach from=$geladensubprofielen item="geladensubprofiel"}
+```
+{foreach $geladensubprofielen as $geladensubprofiel} 
+    Voornaam: {$geladensubprofiel.Voornaam}<br />
+    Achternaam: {$geladensubprofiel.Achternaam}<br /> 
+    Email: {$geladensubprofiel.Emailadres}<br />
+{/foreach}
+```
 
-    {$geladensubprofiel.Voornaam} {$geladensubprofiel.Achternaam}. Email: {$geladensubprofiel.Emailadres}
-    {/foreach}
-
-Hierboven wordt de *array* (lijst gegevens) $geladensubprofielen met
-subprofiel doorlopen. Tijdens dit doorlopen wordt het huidige subprofiel
-telkens in $geladensubprofiel gezet. Vervolgens printen we de inhoud
-van velden 'Voornaam', 'Achternaam' en 'Emailadres' op een
-overzichtelijk manier.
+Bij het doorlopen van de array _$geladensubprofielen_ wordt het huidige subprofiel telkens in _$geladensubprofiel_ opgenomen. Vervolgens printen we de inhoud van de velden _Voornaam_, _Achternaam_ en _Emailadres_ op overzichtelijke wijze.
 
 ## Overige opties
 
-Hierboven hebben we de werking van opties **multiple** gezien. Enkele
-andere opties zijn de volgende:
+Naast de _multiple_-optie zijn er ook andere opties beschikbaar, waaronder:
 
--   **limit** - Als *multiple* wordt gebruikt, maar je niet alle
-    subprofielen hebt, kun je een beperking opleggen met limit, dus
-    bijvoorbeeld *limit=5* beperkt het aantal geladen (sub)profielen tot
-    5
--   **profile** - Hierboven gebruikten we *profile* om alle subprofielen
-    behorende tot het geadresseerde profiel op te halen. Het is ook
-    mogelijk deze optie weg te laten, waardoor alle (sub)profielen
-    worden geladen.
--   **orderby='veldnaam asc/desc'** - Als je de resultaten bij het laden
-    van meerdere (sub)profielen wilt sorteren (dan gebruik je dus
-    *multiple=true*), dan kun je *orderby* gebruiken. Tussen de
-    accolades zet je de naam van het veld waarop je wilt sorteren en
-    daarachter kun je *asc* of *desc* zetten om op respectievelijk
-    oplopende of aflopende volgorde te sorteren. Zonder het gebruik van
-    de optie *orderby* wordt er op ID en aflopend gesorteerd.
+* **limit**: Wanneer je bij het gebruik van _multiple_ niet alle subprofielen nodig hebt kun je een beperking opleggen door middel van de _limit_-optie. De code _limit=5_ beperkt het aantal geladen subprofielen bijvoorbeeld tot 5.
+* **profile**: Je gebruikt _profile_ om alle subprofielen op te halen die behoren tot het geadresseerde profiel. Wanneer je deze optie weglaat worden alle (sub)profielen geladen.
+* **orderby='veldnaam asc/desc'**: Je gebruikt _orderby_ om de resultaten van meerdere geladen (sub)profielen (_multiple=true_) te sorteren. Tussen de accolades zet je de naam van het veld waarop je wilt sorteren. Daarachter zet je _asc_ of _desc_ om op oplopende- (_asc_) of aflopende (_desc_) volgorde te sorteren. Maak je geen gebruik van de _orderby_-optie? Dan wordt er aflopend gesorteerd op basis van ID.
 
 ## In de praktijk
 
-In de uitleg hierboven werd een praktisch voorbeeld geschetst: we willen
-alle bij ons bekende bedrijven uit database 'Relaties' een mailtje
-sturen met de bij ons bekende werknemers die bij dat bedrijf horen. Deze
-medewerkers staan in collectie 'Medewerkers'. Ter demonstratie willen we
-die in omgekeerd alfabetisch volgorde van voornaam sturen. Ook sturen we
-maximaal 5. De code:
+In een eerder voorbeeld verstuurden we een mail naar alle bedrijven in onze _Relaties_-database. De benodige informatie over bedrijfsmedewerkers haalden we op uit de collectie _Medewerkers_. 
 
-    {loadsubprofile source="Relaties:Medewerkers" profile=$profile.id assign=geladensubprofielen multiple=true limit=5 orderby='Voornaam desc'}
+Stel nu dat we maximaal 5 subprofielen willen ophalen. Daarnaast willen we de resultaten in aflopende volgorde sorteren op basis van voornaam. De gebruikte code ziet er dan als volgt uit:
 
-    Geachte {$Bedrijfsleider},
+```
+{loadsubprofile source="Relaties:Medewerkers" profile=$profile.id assign=geladensubprofielen multiple=true limit=5 orderby='Voornaam desc'}
 
-    Van uw bedrijf, {$Bedrijf} zijn de volgende medewerkers bekend:
-    {foreach $geladensubprofielen as $geladensubprofiel}
-    - {$geladensubprofiel.Voornaam} {$geladensubprofiel.Achternaam}. Email: {$geladensubprofiel.Emailadres};
-    {/foreach}
+Geachte {$Bedrijfsleider},
+
+Van uw bedrijf, {$Bedrijf}, zijn de volgende medewerkers bekend:
+{foreach $geladensubprofielen as $geladensubprofiel}
+    - {$geladensubprofiel.Voornaam} {$geladensubprofiel.Achternaam}, email: {$geladensubprofiel.Emailadres};
+{/foreach}
+```
 
 Het resultaat:
 
-    Beste Jan Janssen,
+```
+Geachte Jan Janssen,
 
-     Van uw bedrijf, Boodschappen B.V., zijn de volgende medewerkers
-    bekend:
-     - Freek Frekens, f.frekens@boodschappenbv.nl;
-     - Egbert Douwes, e.douwes@boodschappenbv.nl;
-     - Douwe Egberts, d.egberts@boodschappenbv.nl;
-     - Charles Fransman, c.fransman@boodschappenbv.nl;
-     - Bert Bakker, b.bakker@boodschappenbv.nl;
-
-Ook Albert Albertsma is een medewerker van Boodschappen B.V., maar
-gezien we maximaal 5 subprofielen hebben opgevraagd en we dat op
-omgekeerd alfabetisch volgorde deden, viel Albert net buiten de boot.
-Arme Albert Albertsma...
+Van uw bedrijf, Voorbeeld B.V., zijn de volgende medewerkers bekend:
+     - Freek Frekens, email:  f.frekens@voorbeeldbv.nl;
+     - Egbert Douwe, email:  e.douwe@voorbeeldbv.nl;
+     - Douwe Egberts, email:  d.egberts@voorbeeldbv.nl;
+     - Charles Fransman, email:  c.fransman@voorbeeldbv.nl;
+     - Bert Bakker, email: b.bakker@voorbeeldbv.nl;
+```
