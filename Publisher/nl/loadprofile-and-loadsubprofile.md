@@ -42,7 +42,7 @@ In dit geval willen we een e-mail versturen naar alle bedrijven in de _Relaties_
 
 `{loadsubprofile source="Relaties:Medewerkers" profile=$profile.id assign=geladensubprofielen multiple=true}`
 
-Door middel van de bovenstaande code worden alle subprofielen ingeladen die horen bij je bestemming. Deze worden opgehaald uit de collectie _Medewerkers_ (binnen de _Relaties_-database). Alle bijbehorende subprofielen worden in _$geladensubprofielen_ opgenomen.
+Door middel van de bovenstaande code worden alle subprofielen ingeladen die bij je bestemming horen. Deze worden opgehaald uit de collectie _Medewerkers_ (binnen de _Relaties_-database). Alle bijbehorende subprofielen worden in _$geladensubprofielen_ opgenomen.
 
 Vervolgens willen we de opgehaalde subprofielen in de mail plaatsen. De variabele _$geladensubprofielen_ vormt een lijst van gegevens. Zo'n variabele wordt een **array** genoemd. Om deze systematisch te doorlopen maken we gebruik van de _foreach_-functie. Uitgaande van het bovenstaande voorbeeld gebeurt dat als volgt:
 
