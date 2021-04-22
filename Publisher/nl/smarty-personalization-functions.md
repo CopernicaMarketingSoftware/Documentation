@@ -18,34 +18,34 @@ De bovenstaande code zorgt ervoor dat tekst alleen getoond wordt wanneer een geb
 
 | Naam                                                                  | Omschrijving                                                                 |
 |-----------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [{condition}](./personalization-functions-condition)                  | conditioneel blok op basis van JavaScript                                    |
-| [{fetch}](./personalization-functions-fetch)                          | inladen van extern gehoste content                                      |
-| [{in_miniselection}](./personalization-functions-in_miniselection)    | blok dat alleen getoond wordt indien het subprofiel tot een miniselectie behoort |
-| [{in_selection}](./personalization-functions-in_selection)            | blok dat alleen getoond wordt indien het profiel tot een selectie behoort        |
-| [{linkfile}](./personalization-functions-linkfile)                    | linken naar een bestand                                                      |
-| [{linkpdf}](./personalization-functions-linkpdf)                      | linken naar een PDF-bestand                                                  |
-| [{loadfeed}](./personalization-functions-loadfeed)                    | inladen van een externe RSS-feed                                             |
-| [{loadfile}](./personalization-functions-loadfile)                    | inladen van een bestand                                                      |
-| [{loadprofile}](./personalization-functions-loadprofile)              | inladen van een profiel                                                      |
-| [{loadsubprofile}](./personalization-functions-loadsubprofile)        | inladen van een subprofiel                                                   |
-| [{mailonly}](./personalization-functions-mailonly)                    | blok markeren dat alleen in de mailversie getoond wordt                    |
-| [{$smarty.now}](./smarty-date)                                        | datumvariabele                                                              |
-| [{survey}](./personalization-functions-survey)                        | inladen van een enquête                                                      |
-| [{unsubscribe}](./personalization-functions-unsubscribe)              | uitschrijflink                                       |
-| [{webform}](./personalization-functions-webform)                      | inladen van een webformulier                                                 |
-| [{webonly}](./personalization-functions-webonly)                      | blok markeren dat alleen in de webversie getoond wordt                       |
-| [{webversion}](./emailings-publisher-webversion)                      | link naar de webversie                                                       |
+| [{condition}](./personalization-functions-condition)                  | Conditioneel blok op basis van JavaScript                                    |
+| [{fetch}](./personalization-functions-fetch)                          | Inladen van extern gehoste content                                      |
+| [{in_miniselection}](./personalization-functions-in_miniselection)    | Blok dat alleen getoond wordt indien het subprofiel tot een miniselectie behoort |
+| [{in_selection}](./personalization-functions-in_selection)            | Blok dat alleen getoond wordt indien het profiel tot een selectie behoort        |
+| [{linkfile}](./personalization-functions-linkfile)                    | Linken naar een bestand                                                      |
+| [{linkpdf}](./personalization-functions-linkpdf)                      | Linken naar een PDF-bestand                                                  |
+| [{loadfeed}](./personalization-functions-loadfeed)                    | Inladen van een externe RSS-feed                                             |
+| [{loadfile}](./personalization-functions-loadfile)                    | Inladen van een bestand                                                      |
+| [{loadprofile}](./personalization-functions-loadprofile)              | Inladen van een profiel                                                      |
+| [{loadsubprofile}](./personalization-functions-loadsubprofile)        | Inladen van een subprofiel                                                   |
+| [{mailonly}](./personalization-functions-mailonly)                    | Blok markeren dat alleen in de mailversie getoond wordt                    |
+| [{$smarty.now}](./smarty-date)                                        | Datumvariabele                                                              |
+| [{survey}](./personalization-functions-survey)                        | Inladen van een enquête                                                      |
+| [{unsubscribe}](./personalization-functions-unsubscribe)              | Uitschrijflink                                       |
+| [{webform}](./personalization-functions-webform)                      | Inladen van een webformulier                                                 |
+| [{webonly}](./personalization-functions-webonly)                      | Blok markeren dat alleen in de webversie getoond wordt                       |
+| [{webversion}](./emailings-publisher-webversion)                      | Link naar de webversie                                                       |
 
 ## Standaardfuncties
 
 | Naam                                                                  | Omschrijving                                                                 |
 |-----------------------------------------------------------------------|------------------------------------------------------------------------------|
-| [{assign}](./personalization-functions-assign)                        | waarde toekennen aan een variabele                                           |
-| [{capture}](./personalization-functions-capture)                      | tekst in een variabele opslaan                                               |
-| [{counter}](./personalization-functions-counter)                      | teller                                                                       |
-| [{foreach}](./personalization-functions-foreach)                      | itereren van een array                                                      |
-| [{if}](./personalization-functions-if)                                | conditionele blokken                                                         |
-| [{literal}](./personalization-functions-literal)                      | blok markeren voor letterlijke interpretatie                                 |
-| [{math}](./personalization-functions-math)                            | berekening uitvoeren                                                         |
-| [{$smarty.now}](./smarty-date)                                        | datumvariabele                                                              |
-| [{textformat}](./personalization-functions-textformat)                | tekst formatteren                                                            |
+| [{assign}](./personalization-functions-assign)                        | Waarde toekennen aan een variabele                                           |
+| [{capture}](./personalization-functions-capture)                      | Tekst in een variabele opslaan                                               |
+| [{counter}](./personalization-functions-counter)                      | Teller                                                                       |
+| [{foreach}](./personalization-functions-foreach)                      | Itereren van een array                                                      |
+| [{if}](./personalization-functions-if)                                | Conditionele blokken                                                         |
+| [{literal}](./personalization-functions-literal)                      | Blok markeren voor letterlijke interpretatie                                 |
+| [{math}](./personalization-functions-math)                            | Berekening uitvoeren                                                         |
+| [{$smarty.now}](./smarty-date)                                        | Datumvariabele                                                              |
+| [{textformat}](./personalization-functions-textformat)                | Tekst formatteren                                                            |
