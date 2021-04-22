@@ -6,7 +6,7 @@ Een aantal van die functies zijn specifiek aan Copernica.
 De meeste functies bestaan uit een open- en sluittag. De gebruikte code beïnvloed de tekst binnen die twee tags.
 De mailonly-tag is hiervan een voorbeeld:
 
-```text
+```
 {mailonly}
     Klik <a href="{webversion}">hier</a> voor de webversie
 {/mailonly}
