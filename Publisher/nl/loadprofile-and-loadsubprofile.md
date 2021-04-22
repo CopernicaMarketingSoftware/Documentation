@@ -1,11 +1,13 @@
 # Loadprofile en loadsubprofile
 
-Normaal gesproken gebeurt Smarty-personalisatie met gegevens uit de geadresseerde database. Echter kan het ook voorkomen dat je meerdere databases hebt met gerelateerde data. Met de functie Loadprofile kun je profielen uit andere databases inladen. 
+Smarty-personalisatie heeft doorgaans betrekking tot gegevens uit de geadresseerde database. Het kan echter voorkomen dat je meerdere databases met relevante data tot je beschikking hebt. De loadprofile-functie maakt het mogelijk om profielen uit andere databases in te laden. 
 
-Met de loadsubprofile functie kun je subprofielgegevens ophalen van de bestemming of vanuit een collectie in een andere database.
+Wil je subprofielgegevens ophalen vanuit de geaddresseerde database of een collectie in een andere database? Dan maak je gebruik van de loadsubprofile-functie.
 
 ## Loadprofile
-Een simpel voorbeeld om profielgegevens vanuit een andere database te tonen is:
+
+In het onderstaande voorbeeld worden profielgegevens vanuit een andere database ingeladen door middel van de loadprofile-functie:
+
 `{loadprofile source="naamvananderedatabase" assign=geladenprofiel}`
 
 **Source**: hier vul je de naam in van een database in hetzelfde account. Alleen het eerste profiel uit die database wordt opgehaald en is aan te roepen met de variabele {$geladenprofiel.VELDNAAM}. 
