@@ -26,7 +26,11 @@ We halen het eerste subprofiel uit _CollectieB_ in _DatabaseB_ bijvoorbeeld als 
 
 `{loadsubprofile source="DatabaseB:CollectieB" profile=$profile.id assign=geladensubprofiel}`
 
-Vervolgens kunnen we het geladen subprofiel oproepen door middel van de variabele _$geladensubprofiel_. Persoonsgegevens van bedrijfsmedewerkers binnen een collectie vraag je als volgt op: _{$geladensubprofiel.Voornaam}_.
+Vervolgens kunnen we het geladen subprofiel oproepen door middel van de variabele _$geladensubprofiel_. Persoonsgegevens van bedrijfsmedewerkers binnen een collectie vraag je op door middel van de onderstaande code: 
+
+```
+_{$geladensubprofiel.Voornaam}_
+```
 
 ### Meerdere (sub)profielen
 
