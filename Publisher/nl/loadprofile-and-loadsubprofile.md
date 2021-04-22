@@ -22,7 +22,7 @@ Je kunt profielen ook uit een selectie ophalen. _Source_ moet dan naast de datab
 
 Je gebruikt de _loadsubprofile_-functie wanneer je subprofielgegevens wilt ophalen vanuit de geadresseerde database of een collectie in een andere database. Bij _source_ vul je dan zowel de databasenaam als de collectienaam in. Het gaat daarbij om de collectie waaruit je de subprofielen wilt ophalen. Een database kan immers meerdere collecties bevatten.
 
-Omdat je alleen de subprofielen van je bestemming op wilt halen, maken we gebruik van profile=$profile.id. Je kunt ook een vast profiel ID gebruiken, bijvoorbeeld profile=1234, om de subprofielen van het profiel met ID 1234 in te laden.
+Omdat je alleen de subprofielen van je bestemming op wilt halen, maken we gebruik van profile=$profile.id. Je kunt ook een vast profiel ID gebruiken, bijvoorbeeld profile=1234, om de subprofielen van een specifiek profiel in te laden.
 
 We halen het eerste subprofiel uit _CollectieB_ in _DatabaseB_ als volgt op:
 
