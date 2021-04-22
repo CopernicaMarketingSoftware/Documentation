@@ -20,13 +20,13 @@ Je kunt profielen ook uit een selectie ophalen. _Source_ moet dan naast de datab
 
 ## Loadsubprofile
 
-Je gebruikt de _loadsubprofile_-functie wanneer je subprofielgegevens wilt ophalen vanuit de geadresseerde database of een collectie in een andere database. Bij **source** vul je dan zowel de databasenaam als de collectienaam in. Het gaat daarbij om de collectie waaruit je de subprofielen wilt ophalen. Een database kan immers meerdere collecties bevatten.
+Je gebruikt de _loadsubprofile_-functie wanneer je subprofielgegevens wilt ophalen vanuit de geadresseerde database of een collectie in een andere database. Bij _source_ vul je dan zowel de databasenaam als de collectienaam in. Het gaat daarbij om de collectie waaruit je de subprofielen wilt ophalen. Een database kan immers meerdere collecties bevatten.
 
-We halen het eerste subprofiel uit _CollectieB_ in _DatabaseB_ bijvoorbeeld als volgt op:
+We halen het eerste subprofiel uit _CollectieB_ in _DatabaseB_ als volgt op:
 
 `{loadsubprofile source="DatabaseB:CollectieB" profile=$profile.id assign=geladensubprofiel}`
 
-Vervolgens kunnen we het geladen subprofiel oproepen door middel van de variabele _$geladensubprofiel_. Persoonsgegevens van bedrijfsmedewerkers binnen een collectie vraag je op door middel van de onderstaande code: 
+Vervolgens kunnen we het geladen subprofiel oproepen door middel van de variabele _$geladensubprofiel_. Persoonsgegevens van bedrijfsmedewerkers binnen een collectie vragen we op door middel van de onderstaande code: 
 
 ```
 _{$geladensubprofiel.Voornaam}_
@@ -36,7 +36,7 @@ _{$geladensubprofiel.Voornaam}_
 
 Een database bevat meerdere profielen en subprofielen. Het kan dus voorkomen dat je meerdere (sub)profielen wilt inladen. 
 
-Stel dat je bedrijfsprofielen opneemt in de database _Relaties_. Hierin bevind zich ook de collectie _Medewerkers_. De collectie bevat gegevens van één of meer bedrijfsmedewerkers. 
+Stel dat je bedrijfsprofielen opneemt in de database _Relaties_. Hierin bevindt zich ook de collectie _Medewerkers_. De collectie bevat gegevens van één of meer bedrijfsmedewerkers. 
 
 In dit geval willen we een e-mail versturen naar alle bedrijven in de _Relaties_-database. De e-mail dient voor elk afzonderlijk bedrijf informatie te bevatten over de bij ons bekende medewerkers. We halen daarom alle subprofielen uit de collectie _Medewerkers_ op. We gebruiken hiervoor de _multiple_-optie:
 
