@@ -29,7 +29,7 @@ We halen het eerste subprofiel uit _CollectieB_ in _DatabaseB_ als volgt op:
 Vervolgens kunnen we het geladen subprofiel oproepen door middel van de variabele _$geladensubprofiel_. Persoonsgegevens van bedrijfsmedewerkers binnen een collectie vragen we op door middel van de onderstaande code: 
 
 ```
-_{$geladensubprofiel.Voornaam}_
+{$geladensubprofiel.Voornaam}
 ```
 
 ### Meerdere (sub)profielen
