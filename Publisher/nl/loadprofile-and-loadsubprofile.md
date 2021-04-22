@@ -61,14 +61,14 @@ Bij het doorlopen van de array _$geladensubprofielen_ wordt het huidige subprofi
 Naast de _multiple_-optie zijn er ook andere opties beschikbaar, waaronder:
 
 * **limit**: Wanneer je bij het gebruik van _multiple_ niet alle subprofielen nodig hebt kun je een beperking opleggen door middel van de _limit_-optie. De code _limit=5_ beperkt het aantal geladen subprofielen bijvoorbeeld tot 5.
-* **profile**: Je gebruikt _profile_ om alle subprofielen op te halen die behoren tot het geadresseerde profiel (zoals in het voorbeeld hierboven). Wanneer je deze optie weglaat worden alle (sub)profielen geladen.
+* **profile**: Je gebruikt _profile_ om alle subprofielen op te halen die behoren tot het geadresseerde profiel. Wanneer je deze optie weglaat worden alle (sub)profielen geladen.
 * **orderby='veldnaam asc/desc'**: Je gebruikt _orderby_ om de resultaten van meerdere geladen (sub)profielen (_multiple=true_) te sorteren. Tussen de accolades zet je de naam van het veld waarop je wilt sorteren. Daarachter zet je _asc_ of _desc_ om op oplopende- (_asc_) of aflopende (_desc_) volgorde te sorteren. Maak je geen gebruik van de _orderby_-optie? Dan wordt er aflopend gesorteerd op basis van ID.
 
 ## In de praktijk
 
 In een eerder voorbeeld verstuurden we een mail naar alle bedrijven in onze _Relaties_-database. De benodige informatie over bedrijfsmedewerkers haalden we op uit de collectie _Medewerkers_. 
 
-Stel nu dat we maximaal 5 subprofielen willen ophalen. Daarnaast willen we de resultaten in omgekeerd alfabetische volgorde sorteren op basis van voornaam. De gebruikte code ziet er dan als volgt uit:
+Stel nu dat we maximaal 5 subprofielen willen ophalen. Daarnaast willen we de resultaten in aflopende volgorde sorteren op basis van voornaam. De gebruikte code ziet er dan als volgt uit:
 
 ```
 {loadsubprofile source="Relaties:Medewerkers" profile=$profile.id assign=geladensubprofielen multiple=true limit=5 orderby='Voornaam desc'}
