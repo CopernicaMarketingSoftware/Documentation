@@ -4,17 +4,17 @@ Je past Smarty-personalisatie meestal toe op gegevens uit de geadresseerde datab
 
 ## Loadprofile
 
-In het onderstaande voorbeeld worden profielgegevens vanuit een andere database (DatabaseB) ingeladen door middel van de _loadprofile_-functie:
+In het onderstaande voorbeeld worden profielgegevens vanuit een andere database (_DatabaseB_) ingeladen door middel van de _loadprofile_-functie:
 
 `{loadprofile source="DatabaseB" assign=geladenprofiel}`
 
-Bij **'source'** vul je de naam in van de database waaraan je refereert. Die database dient zich binnen hetzelfde account te bevinden. Daarbij wordt alleen het eerste profiel opgehaald. Je roept deze aan door middel van de variabele _{$geladenprofiel.VELDNAAM}_.
+Bij _source_ vul je de naam in van de database waaraan je refereert. Die database dient zich binnen hetzelfde account te bevinden. Daarbij wordt alleen het eerste profiel opgehaald. Je roept deze aan door middel van de variabele _{$geladenprofiel.VELDNAAM}_.
 
 Je haalt een specifiek profiel uit een database op door middel van een veldnaam. Stel bijvoorbeeld dat je beschikt over twee databases. _DatabaseA_ bevat profielen onder de veldnaam _Accountmanagers_. De bestemming die je uit _DatabaseB_ wilt ophalen heeft de waarde _'Jan'_. Je vindt die waarde in _DatabaseB_ onder de veldnaam _Voornaam_. In dat geval gebruik je de volgende code:
 
 `{loadprofile source="DatabaseB" Voornaam=$profile.Accountmanager assign=geladenprofiel}`
 
-Je kunt profielen ook uit een selectie ophalen. **Source** moet dan naast de databasenaam ook de selectienaam (bijvoorbeeld _SelectieB_) bevatten, gescheiden door een punt:
+Je kunt profielen ook uit een selectie ophalen. _Source_ moet dan naast de databasenaam ook de selectienaam (bijvoorbeeld _SelectieB_) bevatten, gescheiden door een punt:
 
 `{loadprofile source="DatabaseB.SelectieB" assign=geladenprofiel}`
 
