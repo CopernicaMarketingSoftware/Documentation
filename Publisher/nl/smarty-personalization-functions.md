@@ -12,7 +12,7 @@ De mailonly-tag is hiervan een voorbeeld:
 {/mailonly}
 ```
 
-De bovenstaande code zorgt ervoor dat tekst alleen getoond wordt wanneer een gebruiker de nieuwsbrief vanuit zijn e-mailclient bekijkt.
+De bovenstaande code zorgt ervoor dat tekst alleen getoond wordt wanneer een gebruiker de nieuwsbrief vanuit een e-mailclient bekijkt.
 
 ## Copernica-specifieke functies
 
