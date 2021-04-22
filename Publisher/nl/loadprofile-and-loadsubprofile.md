@@ -10,11 +10,11 @@ In het onderstaande voorbeeld worden profielgegevens vanuit een andere database 
 
 Bij **'source'** vul je de naam in van de database waaraan je refereert. Die database dient zich binnen hetzelfde account te bevinden. Daarbij wordt alleen het eerste profiel opgehaald. Je roept deze aan door middel van de variabele _{$geladenprofiel.VELDNAAM}_.
 
-Je haalt een specifiek profiel uit een database op door middel van een veldnaam. Stel bijvoorbeeld dat je beschikt over twee databases. _DatabaseA_ bevat profielen onder de veldnaam _'Accountmanagers'_. De bestemming die je uit _DatabaseB_ wilt ophalen heeft de waarde _'Jan'_. Je vindt die waarde in _DatabaseB_ onder de veldnaam _'Voornaam'_. In dat geval gebruik je de volgende code:
+Je haalt een specifiek profiel uit een database op door middel van een veldnaam. Stel bijvoorbeeld dat je beschikt over twee databases. _DatabaseA_ bevat profielen onder de veldnaam _Accountmanagers_. De bestemming die je uit _DatabaseB_ wilt ophalen heeft de waarde _'Jan'_. Je vindt die waarde in _DatabaseB_ onder de veldnaam _Voornaam_. In dat geval gebruik je de volgende code:
 
 `{loadprofile source="DatabaseB" Voornaam=$profile.Accountmanager assign=geladenprofiel}`
 
-Je kunt profielen ook uit een selectie ophalen. **'Source'** moet dan naast de databasenaam ook de selectienaam (bijvoorbeeld _SelectieB_) bevatten, gescheiden door een punt:
+Je kunt profielen ook uit een selectie ophalen. **Source** moet dan naast de databasenaam ook de selectienaam (bijvoorbeeld _SelectieB_) bevatten, gescheiden door een punt:
 
 `{loadprofile source="DatabaseB.SelectieB" assign=geladenprofiel}`
 
