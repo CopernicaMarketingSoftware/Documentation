@@ -15,7 +15,9 @@ overzicht hiervan vind je hieronder.
 De gelaagde databasestructuur van Copernica maakt het mogelijk om mailings te versturen aan zowel profielen als subprofielen. Die gelaagdheid
 bepaalt de beschikbare personalisatievariabelen. 
 
-Je maakt altijd gebruik van een **{$profile}**-object ongeacht of je de mailing verstuurt aan een profiel of subprofiel. In het eerste geval bevat het object de gegevens van het profiel waaraan je de mailing verstuurt. Wanneer de mailing gericht is aan een subprofiel bevat het object de gegevens van het profiel die bij het subprofiel hoort. Het profiel-object heeft de volgende eigenschappen:
+Je maakt altijd gebruik van een **{$profile}**-object ongeacht of je de mailing verstuurt aan een profiel of subprofiel. In het eerste geval bevat het object de gegevens van het profiel waaraan je de mailing verstuurt. Wanneer de mailing gericht is aan een subprofiel bevat het object de gegevens van het profiel die bij het subprofiel hoort. 
+
+Het profiel-object heeft de volgende eigenschappen:
 
 * **{$profile.id}**: numerieke identifier van het profiel
 * **{$profile.extra}**: de extra data van het profiel (deze kan uitsluitend door middel van de API worden ingesteld)
