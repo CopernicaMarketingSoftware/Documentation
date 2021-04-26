@@ -103,7 +103,7 @@ daarom (meestal) paging-parameters zoals *start* en *limit* meegeven om duidelij
 te maken welk deel van de resultaten je opvraagt. Voor sommige methodes
 kan de API wel complete datasets teruggeven.
 
-* [Paging en grote datasets](./rest-paging.php)
+* [Paging en grote datasets](./rest-paging.md)
 
 ## Handige scripts
 
