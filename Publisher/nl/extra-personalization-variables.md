@@ -1,6 +1,6 @@
 # Extra personalisatievariabelen
 
-Je personaliseert mailings doorgaans met gegevens van de geadresseerde. Alle velden die betrekking hebben tot de geadresseerde kunnen als personalisatievariabele worden gebruikt. De velden *voornaam*, *achternaam*, *woonplaats* en *emailadres* komen bijvoorbeeld overeen met de volgende personalisatievariabelen:
+Je personaliseert mailings doorgaans met gegevens van de geadresseerde. Alle velden die betrekking hebben tot de geadresseerde kunnen als personalisatievariabele worden gebruikt. De velden *'voornaam'*, *'achternaam'*, *'woonplaats'* en *'emailadres'* komen bijvoorbeeld overeen met de volgende personalisatievariabelen:
 
 * **{$profile.voornaam}**
 * **{$profile.achternaam}**
