@@ -10,7 +10,7 @@ Je kunt Smarty-modifiers gebruiken om data en tijden dynamisch weer te geven. [K
 
 ### Filter: |date\_format
 
-Met dit filter bepaal je de opmaak van datumvelden binnen het document. 
+Met dit filter bepaal je de opmaak van datumvelden binnen het template of document. 
 
 In de onderstaande voorbeelden combineren we het filter met de [$smarty.now](https://www.smarty.net/docs/en/language.variables.smarty.tpl#language.variables.smarty.now)-variabele.
 
