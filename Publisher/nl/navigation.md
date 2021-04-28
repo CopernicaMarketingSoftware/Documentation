@@ -40,6 +40,7 @@
     * [AMP](./amp.md)
 * [Smarty personalisatie](./smarty.md)
     * [Functies](./smarty-personalization-functions.md)
+    * [Extra personalisatievariabelen](./extra-personalization-variables.md)
     * [Loadprofile en loadsubprofile](./loadprofile-and-loadsubprofile.md)
 * [Verzendreputatie](./send-reputation.md)
 * [Campagnes](./campagnes.md)
