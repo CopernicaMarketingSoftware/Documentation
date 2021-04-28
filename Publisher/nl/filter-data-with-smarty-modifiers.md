@@ -42,7 +42,9 @@ Woorden die getallen bevatten worden **niet** voorzien van een hoofdletter tenzi
 
 Met dit filter verwijder je alle hoofdletters.
 
-Bevat je variabele `{$Naam}` de waarde `Karel APPEL`? Dan toont de code `{$Naam|lower}` de waarde als `karel appel`. De volgorde van de gebruikte filters beïnvloed de manier waarop waardes worden weergegeven. De code `{$Naam|lower|capitalize}` toont de waarde bijvoorbeeld als `Karel Appel`. 
+Bevat je variabele `{$Naam}` de waarde `Karel APPEL`? Dan toont de code `{$Naam|lower}` de waarde als `karel appel`. 
+
+De volgorde van de gebruikte filters beïnvloed de manier waarop waardes worden weergegeven. De code `{$Naam|lower|capitalize}` toont de waarde bijvoorbeeld als `Karel Appel`. 
 
 ### Filter: |upper
 
