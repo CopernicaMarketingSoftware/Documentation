@@ -1,20 +1,16 @@
-# Filter data met smarty modifiers
+# Filter data met Smarty-modifiers
 
-Het kan zijn dat er binnen je profieldata typefouten of stijlfouten voorkomen. Zeker wanneer een deel van de informatie binnenkomt via formulieren die door de relatie zelf wordt ingevuld. Om de profieldata toch netjes weer te geven, kan je de Smarty variabele in je templates of documenten filters meegeven. Dit kan eenvoudig het verwijderen van hoofdletters zijn, maar ook bepalen hoe een datum wordt weergegeven of het inkorten of afbreken van teksten.
+Profieldata kan in sommige gevallen typ- of stijlfouten bevatten, bijvoorbeeld wanneer data binnenkomt via een formulier. Je kunt die data filteren door documenten en templates te voorzien van Smarty-modifiers. Die filters worden voorafgegaan door een pipe (|).  
 
-We zetten de meest gebruikte mogelijkheden op een rij. Een volledig overzicht vind je op de website van [Smarty](https://www.smarty.net/docs/en/language.modifiers.tpl).
-
-Filters worden altijd vooraf gegaan door een pipe (|). Deze vind je direct boven de entertoets op je toetsenbord.
+Smarty-modifiers bieden verschillende mogelijkheden, van het toevoegen en verwijderen van hoofdletters tot het weergeven van datums en het afbreken van teksten. De meest gebruikte functies vind je in het overzicht hieronder. Voor een volledig overzicht kijk je op de [Smarty-website](https://www.smarty.net/docs/en/language.modifiers.tpl).
 
 ## Data en tijden dynamisch weergeven
 
-Voor meer informatie over het dynamisch weergeven van data en tijden kun je dit artikel bekijken: [Data en tijden dynamisch weergeven](publisher-personalization-variables#data-en-tijden-dynamisch-weergeven).
+Je kunt Smarty-modifiers gebruiken om data en tijden dynamisch weer te geven. In [dit artikel](publisher-personalization-variables#data-en-tijden-dynamisch-weergeven) vind je hierover meer informatie.
 
 ### Filter: |date\_format
 
-Dit filter biedt opmaak aan datumvelden in het document.
-
-In het volgende overzicht geven we enkele voorbeelden van de mogelijkheden in combinatie met de [$smarty.now](https://www.smarty.net/docs/en/language.variables.smarty.tpl#language.variables.smarty.now) variabele.
+Met dit filter bepaal je de opmaak van datumvelden binnen het document. In de onderstaande voorbeelden combineren we het filter met de [$smarty.now](https://www.smarty.net/docs/en/language.variables.smarty.tpl#language.variables.smarty.now)-variabele.
 
 ```txt
 {$smarty.now|date_format}                   Apr 1, 2021
@@ -24,32 +20,31 @@ In het volgende overzicht geven we enkele voorbeelden van de mogelijkheden in co
 {$smarty.now|date_format:“%A"}              donderdag
 ```
 
-Je kunt ook een datumveld uit het profiel gebruiken in combinatie met dit filter, bijvoorbeeld: 
+Je kunt het filter ook combineren met een datumveld binnen het profiel, bijvoorbeeld als volgt:
+
 `{$profile.Geboortedatum|date_format:"%d-%m-%Y"}`
 
-**Let op**: voor een juiste weergave van bijvoorbeeld de naam van de maand (deziembre vs. december) is het belangrijk dat je de taal van je template of document juist instelt. Je kunt dit doen bij de _personalisatie-instellingen_ binnen je template of document.
+**Let op**: Om bijvoorbeeld de naam van de maand (deziembre vs. december) correct weer te geven is het belangrijk dat je de taal van het template of document juist instelt. De benodigde optie vind je binnen je template of document onder **'Personalisatie-instellingen'**.
 
-Voor meer datumcoderingen, zie de website van smarty
-([smarty.net](http://www.smarty.net/docs/en/language.modifier.date.format.tpl)).
+Op de [website van Smarty](http://www.smarty.net/docs/en/language.modifier.date.format.tpl) vind je meer datumcoderingen.
 
 ### Filter: |capitalize
 
-Met het filter ‘capitalize’ wordt de eerste letter van elk woord in een tekst vervangen door een hoofdletter. 
-Als je variabele `{$Naam}` de waarde `richard van de zande` bevat, dan zorgt de code `{$Naam|capitalize}` ervoor dat dit in het document wordt getoond als `Richard Van De Zande`.
+Het 'capitalize'-filter vervangt de eerste letter van elk woord door een hoofdletter. 
 
-Woorden waar getallen in voorkomen worden **niet** voorzien van een hoofdletter, tenzij de optionele parameter ‘true’ wordt meegegeven: `{$Naam|capitalize}` wordt na het personaliseren getoond als `k3`, `{$Naam|capitalize:true}` wordt getoond als `K3`.
+Stel bijvoorbeeld dat de variabele `{$Naam}` de waarde `richard van de zande` bevat. Door gebruik te maken van `{$Naam|capitalize}` wordt de waarde in het document weergegeven als `Richard Van De Zande`.
+
+Woorden die getallen bevatten worden **niet** voorzien van een hoofdletter tenzij je de optionele parameter 'true' gebruikt. `{$Naam|capitalize}` wordt weergeven als `k3`, terwijl `{$Naam|capitalize:true}` als `K3` getoond wordt.
 
 ### Filter: |lower
 
-Dit filter wordt gebruikt om alle hoofdletters te verwijderen. 
+Met dit filter verwijder je alle hoofdletters.
 
-Als je variabele `{$Naam}` de waarde `Karel APPEL` bevat, zorgt de code `{$Naam|lower}` ervoor dat dit wordt weergegeven als: `karel appel`.
-
-De volgorde van je opgegeven filters wordt aangehouden bij het toepassen van de filters. Wanneer je `{$Naam|lower|capitalize}` gebruikt, zal dit worden weergegeven als: `Karel Appel`.
+Bevat je variabele `{$Naam}` de waarde `Karel APPEL`? Dan toont de code `{$Naam|lower}` de waarde als `karel appel`. De volgorde van de gebruikte filters beïnvloed de manier waarop waardes worden weergegeven. De code `{$Naam|lower|capitalize}` toont de waarde bijvoorbeeld als `Karel Appel`. 
 
 ### Filter: |upper
 
-Dit filter wordt gebruikt om alle tekens hoofdletters te maken. 
+Je gebruikt dit filter om alle letters om te zetten naar hoofdletters.
 
 Als je variabele `{$Naam}` de waarde `Karel Appel` bevat, zorgt de code `{$Naam|upper}` ervoor dat dit wordt weergegevens als: `KAREL APPEL`.
 
