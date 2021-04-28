@@ -44,7 +44,7 @@ Met dit filter verwijder je alle hoofdletters.
 
 Bevat je variabele `{$Naam}` de waarde `Karel APPEL`? Dan toont de code `{$Naam|lower}` de waarde als `karel appel`. 
 
-De volgorde van de gebruikte filters beïnvloed de manier waarop waardes worden weergegeven. De code `{$Naam|lower|capitalize}` toont de waarde bijvoorbeeld als `Karel Appel`. 
+De volgorde van de gebruikte filters beïnvloedt de manier waarop waardes worden weergegeven. De code `{$Naam|lower|capitalize}` toont de waarde bijvoorbeeld als `Karel Appel`. 
 
 ### Filter: |upper
 
@@ -74,7 +74,7 @@ Vervolgens wordt de tekst weergegeven als `Klik hier om de e-mail in te zien`.
 
 Met dit filter kap je een variabele af na een bepaald aantal tekens. Daarvoor gebruik je de code `{$Tekst|truncate}`. De tekenlimiet staat standaard ingesteld op 80 tekens.
 
-Stel dat je variabele `{$Tekst}` de volgende tekst bevat: `Lees hier meer over het product en zijn mogelijkheden`. Je kunt de tekst bijvoorbeeld afkappen door middel van de onderstaande codes:
+Stel dat je variabele `{$Tekst}` de volgende tekst bevat: `Lees hier meer over het product en zijn mogelijkheden`. Je kunt de tekst afkappen door middel van de onderstaande codes:
 
 ```
 {$Tekst}
@@ -126,7 +126,7 @@ Smarty is een open-source template-engine voor PHP.
 Smarty zorgt ervoor dat je HTML-pagina's en PHP-code gescheiden kan houden.
 ```
 
-De code `{$Artikel|count_paragraphs}` zorgt ervoor dat het volgende in het template of document te zien is:
+De code `{$Artikel|count_paragraphs}` zorgt ervoor dat het volgende in het template of document wordt weergegeven:
 
 ```
 2
@@ -143,7 +143,7 @@ Bij grote projecten kan een programmeur aan PHP-scripts werken. Een graficus
 werkt tegelijkertijd aan het aanmaken van HTML-pagina's.
 ```
 
-De code `{$Artikel|count_sentences}` zorgt ervoor dat het volgende in het template of document te zien is:
+De code `{$Artikel|count_sentences}` zorgt ervoor dat het volgende in het template of document wordt weergegeven:
 
 ```
 2
