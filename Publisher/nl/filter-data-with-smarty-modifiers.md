@@ -6,7 +6,7 @@ Smarty-modifiers bieden verschillende mogelijkheden, van het toevoegen en verwij
 
 ## Data en tijden dynamisch weergeven
 
-Je kunt Smarty-modifiers gebruiken om data en tijden dynamisch weer te geven. In [dit artikel](publisher-personalization-variables#data-en-tijden-dynamisch-weergeven) vind je hierover meer informatie.
+Je kunt Smarty-modifiers gebruiken om data en tijden dynamisch weer te geven. [Klik hier](publisher-personalization-variables#data-en-tijden-dynamisch-weergeven) voor meer informatie.
 
 ### Filter: |date\_format
 
