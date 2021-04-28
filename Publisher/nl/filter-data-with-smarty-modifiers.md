@@ -46,34 +46,32 @@ Bevat je variabele `{$Naam}` de waarde `Karel APPEL`? Dan toont de code `{$Naam|
 
 Je gebruikt dit filter om alle letters om te zetten naar hoofdletters.
 
-Als je variabele `{$Naam}` de waarde `Karel Appel` bevat, zorgt de code `{$Naam|upper}` ervoor dat dit wordt weergegevens als: `KAREL APPEL`.
+Stel bijvoorbeeld dat de variabele `{$Naam}` de waarde `Karel Appel` bevat. Door gebruik te maken van de code `{$Naam|upper}` wordt de waarde omgezet naar `KAREL APPEL`.
 
 ### Filter: |cat
 
-Met dit filter voeg je tekst toe aan de variabele. Als je variabele `{$Naam}` de waarde `Karel Appel` bevat, zorgt de code
-`{$Naam|cat:"junior"}` ervoor dat de tekst `Karel Appel junior` in je template of document wordt geplaatst.
+Dit filter geeft je de mogelijkheid om tekst toe te voegen aan een variabele. 
+
+Door gebruik te maken van de code `{$Naam|cat:"junior"}` geef je de naam `Karel Appel` in je document of template weer als `Karel Appel junior`.
 
 ### Filter: |replace
 
-Met dit filter kan je tekst in een variabele vervangen door andere tekst.
+Het replace-filter maakt het mogelijk om tekst in een variabele te vervangen.
 
-Stel je hebt een variabale `{$artikel}` met de tekst `Klik hier om de nieuwsbrief in te zien`, maar je wilt het woord nieuwsbrief vervangen met `e-mail`, dan kun je gebruik maken van de volgende code:
+Stel dat je een variabele `{$artikel}` hebt. De bijbehorende tekst is `Klik hier om de nieuwsbrief in te zien`. Het woord `nieuwsbrief` wil je vervangen door `e-mail`. Hiervoor gebruik je de volgende code:
 
 ```
 {$artikel|replace:'nieuwsbrief':'e-mail'}
 ```
 
-De tekst wordt nu: `Klik hier om de e-mail in te zien`.
+Vervolgens wordt de tekst weergegeven als `Klik hier om de e-mail in te zien`.
 
 ### Filter: |truncate
 
-Dit filter kapt een variabele af na een bepaald aantal tekens, standaard is dit na 80 tekens.
+Met dit filter kap je een variabele af na een bepaald aantal tekens. Daarvoor gebruik je de code `{$Tekst|truncate}`. De tekenlimiet staat standaard ingesteld op 80 tekens.
 
-De code die hierbij gebruikt wordt is: `{$Tekst|truncate}`.
+Stel dat je variabele `{$Tekst}` de volgende tekst bevat: `Lees hier meer over het product en zijn mogelijkheden`. Je kunt de tekst bijvoorbeeld afkappen door middel van de onderstaande codes:
 
-**Voorbeeld:**
-Je variabele `{$Tekst}` bevat de volgende tekst: `Lees hier meer over het product en zijn mogelijkheden`.
-Als voorbeeld gebruiken we de volgende opties:
 ```
 {$Tekst}
 {$Tekst|truncate}
@@ -82,7 +80,7 @@ Als voorbeeld gebruiken we de volgende opties:
 {$Tekst|truncate:30:"---"}
 ```
 
-In je template of document zie je nu:
+Deze worden in het template of document weergegeven als:
 
 ```
 Lees hier meer over het product en zijn mogelijkheden
@@ -94,8 +92,9 @@ Lees hier meer over het---
 
 ### Filter: |count\_characters
 
-Met dit filter wordt het aantal karakters in een variabele geteld, met of zonder spaties. 
-Stel je variabele `{$Tekst}` bevat de waarde `Dit is een testmail`, dan kun je met onderstaande codes het aantal karakters ophalen:
+Met dit filter tel je het aantal karakters in een variabele (met of zonder spaties). 
+
+Stel dat de variabele `{$Tekst}` de waarde `Dit is een testmail` bevat. Je kunt het bijbehorende karakteraantal ophalen door middel van de onderstaande codes:
 
 ```
 {$Tekst}
@@ -103,7 +102,7 @@ Stel je variabele `{$Tekst}` bevat de waarde `Dit is een testmail`, dan kun je m
 {$Tekst|count_characters:true}
 ```
 
-Uitkomst:
+Het resultaat:
 
 ```txt
 Dit is een testmail
@@ -113,15 +112,17 @@ Dit is een testmail
 
 ### Filter: |count\_paragraphs
 
-Met dit filter wordt het aantal paragrafen in een variabele geteld. Als je variabele `{$Artikel}` twee paragrafen heeft, bijvoorbeeld:
+Met dit filter tel je het aantal paragrafen in een variabele. 
+
+We gaan bijvoorbeeld uit van een variabele `{$Artikel}` met twee paragrafen:
 
 ```txt
-Smarty is een open-source template engine voor PHP.
+Smarty is een open-source template-engine voor PHP.
 
-Het zorgt ervoor dat je HTML pagina's en PHP code gescheiden kan houden.
+Smarty zorgt ervoor dat je HTML-pagina's en PHP-code gescheiden kan houden.
 ```
 
-Dan zorgt de code `{$Artikel|count_paragraphs}` ervoor dat in het template of document het volgende te zien is:
+De code `{$Artikel|count_paragraphs}` zorgt ervoor dat het volgende in het template of document te zien is:
 
 ```
 2
@@ -129,15 +130,16 @@ Dan zorgt de code `{$Artikel|count_paragraphs}` ervoor dat in het template of do
 
 ### Filter: count sentences
 
-Dit filter wordt gebruikt om het aantal zinnen in een variabele te tellen. Als je variabele `{$Artikel}` twee zinnen bevat, bijvoorbeeld;
+Je gebruikt dit filter om het aantal zinnen in een variabele te tellen. 
+
+Stel bijvoorbeeld dat de variabele`{$Artikel}` de volgende twee zinnen bevat:
 
 ```txt
-Bij grote projecten heb je ook het voordeel dat een programmeur aan
-de PHP scripts kan werken. Terwijl een graficus de HTML pagina's kan
-maken.
+Bij grote projecten kan een programmeur aan PHP-scripts werken. Een graficus
+werkt tegelijkertijd aan het aanmaken van HTML-pagina's.
 ```
 
-Dan zorgt de code `{$Artikel|count_sentences}` ervoor dat in het template of document het volgende wordt geplaatst:
+De code `{$Artikel|count_sentences}` zorgt ervoor dat het volgende in het template of document te zien is:
 
 ```
 2
@@ -145,14 +147,16 @@ Dan zorgt de code `{$Artikel|count_sentences}` ervoor dat in het template of doc
 
 ### Filter: count words
 
-Met dit filter wordt het aantal woorden in een variabele geteld. Als je variabele `{$Artikel}` 14 woorden bevat, bijvoorbeeld;
+Je gebruikt het count words-filter om het aantal woorden in een variabele te tellen. 
+
+Stel bijvoorbeeld dat de variabele `{$Artikel}` de volgende 13 woorden bevat: 
 
 ```
-Bovendien heeft Smarty heel wat interessante mogelijkheden om snel HTML tabellen op te bouwen.
+Bovendien biedt Smarty heel wat interessante mogelijkheden om snel HTML-tabellen op te bouwen.
 ```
 
-Dan zorgt de code `{$Artikel|count_words}` ervoor dat in het document het volgende wordt geplaatst:
+Door gebruik te maken van de code `{$Artikel|count_words}` geef je de onderstaande waarde in het template of document weer:
 
 ```
-14
+13
 ```
