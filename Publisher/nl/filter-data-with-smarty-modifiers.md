@@ -50,7 +50,7 @@ De volgorde van de gebruikte filters beïnvloedt de manier waarop waardes worden
 
 Je gebruikt dit filter om alle letters om te zetten naar hoofdletters.
 
-Stel bijvoorbeeld dat de variabele `{$Naam}` de waarde `Karel Appel` bevat. Door gebruik te maken van de code `{$Naam|upper}` wordt de waarde omgezet naar `KAREL APPEL`.
+Als de variabele `{$Naam}` de waarde `Karel Appel` bevat kun je gebruik maken van de code `{$Naam|upper}`. De waarde wordt dan omgezet naar `KAREL APPEL`.
 
 ### Filter: |cat
 
@@ -74,7 +74,7 @@ Vervolgens wordt de tekst weergegeven als `Klik hier om de e-mail in te zien`.
 
 Met dit filter kap je een variabele af na een bepaald aantal tekens. Daarvoor gebruik je de code `{$Tekst|truncate}`. De tekenlimiet staat standaard ingesteld op 80 tekens.
 
-Stel dat je variabele `{$Tekst}` de volgende tekst bevat: `Lees hier meer over het product en zijn mogelijkheden`. Je kunt de tekst afkappen door middel van de onderstaande codes:
+Als de variabele `{$Tekst}` de waarde `Lees hier meer over het product en zijn mogelijkheden` bevat kun je de tekst afkappen door middel van de onderstaande codes:
 
 ```
 {$Tekst}
@@ -136,7 +136,7 @@ De code `{$Artikel|count_paragraphs}` zorgt ervoor dat het volgende in het templ
 
 Je gebruikt dit filter om het aantal zinnen in een variabele te tellen. 
 
-Stel bijvoorbeeld dat de variabele`{$Artikel}` de volgende twee zinnen bevat:
+Stel dat de variabele`{$Artikel}` de volgende twee zinnen bevat:
 
 ```txt
 Bij grote projecten kan een programmeur aan PHP-scripts werken. Een graficus
