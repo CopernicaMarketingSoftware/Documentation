@@ -22,11 +22,11 @@ In de onderstaande voorbeelden combineren we het filter met de [$smarty.now](htt
 {$smarty.now|date_format:“%A"}              donderdag
 ```
 
-Je kunt het filter ook combineren met een datumveld binnen het profiel, bijvoorbeeld als volgt:
+Je kunt het filter ook combineren met een datumveld binnen het profiel:
 
 `{$profile.Geboortedatum|date_format:"%d-%m-%Y"}`
 
-**Let op**: Om bijvoorbeeld de naam van de maand (deziembre vs. december) correct weer te geven is het belangrijk dat je de taal van het template of document juist instelt. De benodigde optie vind je binnen je template of document onder **'Personalisatie-instellingen'**.
+**Let op**: Om bijvoorbeeld maandnamen (deziembre vs. december) correct weer te geven is het belangrijk dat je de taal van het template of document juist instelt. De benodigde optie vind je binnen je template of document onder **'Personalisatie-instellingen'**.
 
 Op de [website van Smarty](http://www.smarty.net/docs/en/language.modifier.date.format.tpl) vind je meer datumcoderingen.
 
