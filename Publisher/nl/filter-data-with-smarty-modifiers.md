@@ -74,7 +74,7 @@ Vervolgens wordt de tekst weergegeven als `Klik hier om de e-mail in te zien`.
 
 Met dit filter kap je een variabele af na een bepaald aantal tekens. Daarvoor gebruik je de code `{$Tekst|truncate}`. De tekenlimiet staat standaard ingesteld op 80 tekens.
 
-Als de variabele `{$Tekst}` de waarde `Lees hier meer over het product en zijn mogelijkheden` bevat kun je de tekst afkappen door middel van de onderstaande codes:
+Als de variabele `{$Tekst}` de waarde `Lees hier meer over onze producten en diensten` bevat kun je de tekst afkappen door middel van de onderstaande codes:
 
 ```
 {$Tekst}
@@ -87,11 +87,11 @@ Als de variabele `{$Tekst}` de waarde `Lees hier meer over het product en zijn m
 Deze worden in het template of document weergegeven als:
 
 ```
-Lees hier meer over het product en zijn mogelijkheden
-Lees hier meer over het product en zijn mogelijkheden
-Lees hier meer over het...
-Lees hier meer over het
-Lees hier meer over het---
+Lees hier meer over onze producten en diensten
+Lees hier meer over onze producten en diensten
+Lees hier meer over onze...
+Lees hier meer over onze
+Lees hier meer over onze---
 ```
 
 ### Filter: |count\_characters
