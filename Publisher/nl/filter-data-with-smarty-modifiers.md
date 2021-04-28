@@ -6,11 +6,15 @@ Smarty-modifiers bieden verschillende mogelijkheden, van het toevoegen en verwij
 
 ## Data en tijden dynamisch weergeven
 
-Je kunt Smarty-modifiers gebruiken om data en tijden dynamisch weer te geven. [Klik hier](publisher-personalization-variables#data-en-tijden-dynamisch-weergeven) voor meer informatie.
+Je kunt Smarty-modifiers gebruiken om data en tijden dynamisch weer te geven. 
+
+[Klik hier](publisher-personalization-variables#data-en-tijden-dynamisch-weergeven) voor meer informatie.
 
 ### Filter: |date\_format
 
-Met dit filter bepaal je de opmaak van datumvelden binnen het document. In de onderstaande voorbeelden combineren we het filter met de [$smarty.now](https://www.smarty.net/docs/en/language.variables.smarty.tpl#language.variables.smarty.now)-variabele.
+Met dit filter bepaal je de opmaak van datumvelden binnen het document. 
+
+In de onderstaande voorbeelden combineren we het filter met de [$smarty.now](https://www.smarty.net/docs/en/language.variables.smarty.tpl#language.variables.smarty.now)-variabele.
 
 ```txt
 {$smarty.now|date_format}                   Apr 1, 2021
