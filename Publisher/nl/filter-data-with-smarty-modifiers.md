@@ -2,7 +2,7 @@
 
 Profieldata kan in sommige gevallen typ- of stijlfouten bevatten, bijvoorbeeld wanneer data binnenkomt via een formulier. Je kunt die data filteren door documenten en templates te voorzien van Smarty-modifiers. Die filters worden voorafgegaan door een pipe (|).  
 
-Smarty-modifiers bieden verschillende mogelijkheden, van het toevoegen en verwijderen van hoofdletters tot het weergeven van datums en het afbreken van teksten. De meestvoorkomende toepassingen vind je in het overzicht hieronder. Voor een volledig overzicht kijk je op de [Smarty-website](https://www.smarty.net/docs/en/language.modifiers.tpl).
+Smarty-modifiers bieden verschillende mogelijkheden, van het toevoegen en verwijderen van hoofdletters tot het weergeven van datums en het afkappen van teksten. De meestvoorkomende toepassingen vind je in het overzicht hieronder. Voor een volledig overzicht kijk je op de [Smarty-website](https://www.smarty.net/docs/en/language.modifiers.tpl).
 
 ## Data en tijden dynamisch weergeven
 
