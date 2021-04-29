@@ -75,27 +75,30 @@ Wanneer dit niet het geval is wordt er gekeken of de waarde gelijk is aan '_Vrou
 
 Bevat het veld geen van beide waardes? Dan wordt de aanhef '_Geachte relatie_' weergegeven.
 
-## Smarty beveiliging
-Als beheerder van het account heb je niet altijd inzicht welke gegevens er in je database of collectie worden geplaatst. Hierbij kun je denken aan aanmeld- of wijzigingsformulieren, waarbij klanten zelf wijzigingen door kunnen voeren aan profielgegevens.
+## Smarty-beveiliging
+Als accountbeheerder heb je geen volledige controle over de gegevens die in je database of collectie worden opgeslagen. In sommige gevallen geven gebruikers zelf wijzigingen door aan profielgegevens, bijvoorbeeld bij het invullen van aanmeld- of wijzigingsformulieren. Dergelijke methodes maken het voor kwaadwillenden mogelijk om ongewenste input (zoals JavaScript of CSS) in databasevelden op te slaan.
 
-Hierdoor is het voor kwaadwillende mogelijk om verkeerde input op te slaan in databasevelden, zoals JavaScript of CSS. Bij de personalisatie-instellingen van je template of document staat standaard ingesteld dat de HTML hierop wordt gefilterd. Hierdoor wordt deze input als platte tekst weergegeven en worden deze scripts niet uitgevoerd. 
+De personalisatie-instellingen van je template of document staan standaard ingesteld om HTML hierop te filtreren. Input wordt als platte tekst weergegeven zodat dergelijke scripts niet worden uitgevoerd.
 
-Mocht je deze optie handmatig hebben uitgeschakeld raden wij ten zeerste aan om gebruik te maken van de Smarty modifier [|esacpe](https://www.smarty.net/docs/en/language.modifier.escape.tpl). Hiermee zorg je ervoor dat je variabelen niet uitgevoerd worden.
+Als je deze optie handmatig hebt uitgeschakeld raden we je dringend aan om gebruik te maken van de Smarty-modifier [_|escape_](https://www.smarty.net/docs/en/language.modifier.escape.tpl). Daarmee maak je ongewenste input onschadelijk.
 
 ### Voorbeeld
 Je profiel bevat een veld 'Tekst' met de waarde `<script type="text/javascript">alert('Laat een melding zien');</script>`.
-Op je webpagina heb je bij de personalisatie-instellingen HTML filteren uitgezet.
+Bij de personalisatie-instellingen van je webpagina heb je **'HTML filteren'** uitgezet. Vervolgens maak je gebruik van de volgende Smarty-code:
 
 ```
 {$profile.Tekst}
 ```
-Bij het gebruik van `{$profile.Tekst}` zal er bij het bezoeken van de webpagina een JavaScript melding getoond worden.
+
+Doordat het veld 'Tekst' een ongefiltreerd script bevat wordt er bij het bezoeken van de webpagina een JavaScript-melding getoond.
+Om dat te vermijden maak je gebruik van de _|escape_-modifier:
+
 
 ```
 {$profile.Tekst|escape}
 ```
-Bij het gebruik van {$profile.Tekst|escape} wordt de waarde uit het databaseveld als platte tekst weergegeven. 
-In dit geval zal de tekst `<script type="text/javascript">alert('Laat een melding zien');</script>` op je pagina zichtbaar zijn en is deze code niet uitgevoerd.
+De {$profile.Tekst|escape}-code zorgt ervoor dat  de waarde uit het databaseveld als platte tekst wordt weergegeven.
+Het script wordt dan ook niet uitgevoerd. In plaats daarvan toont de webpagina `<script type="text/javascript">alert('Laat een melding zien');</script>` in tekstvorm.
 
 ## Personalisatie-opmaak
 
