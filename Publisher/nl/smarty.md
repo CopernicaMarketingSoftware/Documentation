@@ -83,14 +83,14 @@ De personalisatie-instellingen van je template of document staan standaard inges
 Als je deze optie handmatig hebt uitgeschakeld raden we je dringend aan om gebruik te maken van de Smarty-modifier [_|escape_](https://www.smarty.net/docs/en/language.modifier.escape.tpl). Daarmee maak je ongewenste input onschadelijk.
 
 ### Voorbeeld
-Je profiel bevat een veld 'Tekst' met de waarde `<script type="text/javascript">alert('Laat een melding zien');</script>`.
+Je profiel bevat een veld _'Tekst'_ met de waarde `<script type="text/javascript">alert('Laat een melding zien');</script>`.
 Bij de personalisatie-instellingen van je webpagina heb je **'HTML filteren'** uitgezet. Vervolgens maak je gebruik van de volgende Smarty-code:
 
 ```
 {$profile.Tekst}
 ```
 
-Doordat het veld 'Tekst' een ongefiltreerd script bevat wordt er bij het bezoeken van de webpagina een JavaScript-melding getoond.
+Doordat het veld _'Tekst'_ een ongefiltreerd script bevat wordt er bij het bezoeken van de webpagina een JavaScript-melding getoond.
 Om dat te vermijden maak je gebruik van de _|escape_-modifier:
 
 
