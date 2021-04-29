@@ -75,6 +75,28 @@ Wanneer dit niet het geval is wordt er gekeken of de waarde gelijk is aan '_Vrou
 
 Bevat het veld geen van beide waardes? Dan wordt de aanhef '_Geachte relatie_' weergegeven.
 
+## Smarty beveiliging
+Als beheerder van het account heb je niet altijd inzicht welke gegevens er in je database of collectie worden geplaatst. Hierbij kun je denken aan aanmeld- of wijzigingsformulieren, waarbij klanten zelf wijzigingen door kunnen voeren aan profielgegevens.
+
+Hierdoor is het voor kwaadwillende mogelijk om verkeerde input op te slaan in databasevelden, zoals JavaScript of CSS. Bij de personalisatie-instellingen van je template of document staat standaard ingesteld dat de HTML hierop wordt gefilterd. Hierdoor wordt deze input als platte tekst weergegeven en worden deze scripts niet uitgevoerd. 
+
+Mocht je deze optie handmatig hebben uitgeschakeld raden wij ten zeerste aan om gebruik te maken van de Smarty modifier [|esacpe](https://www.smarty.net/docs/en/language.modifier.escape.tpl). Hiermee zorg je ervoor dat je variabelen niet uitgevoerd worden.
+
+### Voorbeeld
+Je profiel bevat een veld 'Tekst' met de waarde `<script type="text/javascript">alert('Laat een melding zien');</script>`.
+Op je webpagina heb je bij de personalisatie-instellingen HTML filteren uitgezet.
+
+```
+{$profile.Tekst}
+```
+Bij het gebruik van `{$profile.Tekst}` zal er bij het bezoeken van de webpagina een JavaScript melding getoond worden.
+
+```
+{$profile.Tekst|escape}
+```
+Bij het gebruik van {$profile.Tekst|escape} wordt de waarde uit het databaseveld als platte tekst weergegeven. 
+In dit geval zal de tekst `<script type="text/javascript">alert('Laat een melding zien');</script>` op je pagina zichtbaar zijn en is deze code niet uitgevoerd.
+
 ## Personalisatie-opmaak
 
 Het kan voorkomen dat databasegegevens onderling verschillen qua hoofdlettergebruik. Smarty biedt daarom specifieke functies om die verschillen op te vangen. De meest voorkomende functies bespreken we hieronder.
