@@ -75,6 +75,30 @@ Wanneer dit niet het geval is wordt er gekeken of de waarde gelijk is aan '_Vrou
 
 Bevat het veld geen van beide waardes? Dan wordt de aanhef '_Geachte relatie_' weergegeven.
 
+## Smarty-beveiliging
+Als accountbeheerder heb je geen volledige controle over de gegevens die in je database of collectie worden opgeslagen. In sommige gevallen geven gebruikers zelf wijzigingen door aan profielgegevens, bijvoorbeeld bij het invullen van aanmeld- of wijzigingsformulieren. Dergelijke methodes maken het voor kwaadwillenden mogelijk om ongewenste input (zoals JavaScript of CSS) in databasevelden op te slaan.
+
+De personalisatie-instellingen van je template of document staan standaard ingesteld om HTML hierop te filteren. Input wordt omgezet naar platte tekst zodat dergelijke scripts niet worden uitgevoerd.
+
+Als je deze optie handmatig hebt uitgeschakeld raden we je dringend aan om gebruik te maken van de Smarty-modifier [|escape](https://www.smarty.net/docs/en/language.modifier.escape.tpl). Daarmee maak je ongewenste input onschadelijk.
+
+### Voorbeeld
+Je profiel bevat een veld _'Tekst'_ met de waarde `<style type="text/css">body{ background: red; }</style>`.
+Bij de personalisatie-instellingen van je webpagina heb je **'HTML filteren'** uitgezet. Vervolgens maak je gebruik van de onderstaande Smarty-code:
+
+```
+{$profile.Tekst}
+```
+
+Doordat het veld _'Tekst'_ een ongefilterd script bevat wordt er bij het bezoeken van de webpagina een rode achtergrond getoond.
+Om dat te vermijden maak je gebruik van de |escape-modifier:
+
+
+```
+{$profile.Tekst|escape}
+```
+De _{$profile.Tekst|escape}_-code zorgt ervoor dat de waarde uit het databaseveld als platte tekst wordt weergegeven: `<style type="text/css">body{ background: red; }</style>`. Het script wordt dan ook niet uitgevoerd.
+
 ## Personalisatie-opmaak
 
 Het kan voorkomen dat databasegegevens onderling verschillen qua hoofdlettergebruik. Smarty biedt daarom specifieke functies om die verschillen op te vangen. De meest voorkomende functies bespreken we hieronder.
