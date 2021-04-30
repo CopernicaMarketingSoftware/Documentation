@@ -78,7 +78,7 @@ Bevat het veld geen van beide waardes? Dan wordt de aanhef '_Geachte relatie_' w
 ## Smarty-beveiliging
 Als accountbeheerder heb je geen volledige controle over de gegevens die in je database of collectie worden opgeslagen. In sommige gevallen geven gebruikers zelf wijzigingen door aan profielgegevens, bijvoorbeeld bij het invullen van aanmeld- of wijzigingsformulieren. Dergelijke methodes maken het voor kwaadwillenden mogelijk om ongewenste input (zoals JavaScript of CSS) in databasevelden op te slaan.
 
-De personalisatie-instellingen van je template of document staan standaard ingesteld om HTML hierop te filtreren. Input wordt als platte tekst weergegeven zodat dergelijke scripts niet worden uitgevoerd.
+De personalisatie-instellingen van je template of document staan standaard ingesteld om HTML hierop te filteren. Input wordt als platte tekst weergegeven zodat dergelijke scripts niet worden uitgevoerd.
 
 Als je deze optie handmatig hebt uitgeschakeld raden we je dringend aan om gebruik te maken van de Smarty-modifier [|escape](https://www.smarty.net/docs/en/language.modifier.escape.tpl). Daarmee maak je ongewenste input onschadelijk.
 
@@ -90,15 +90,15 @@ Bij de personalisatie-instellingen van je webpagina heb je **'HTML filteren'** u
 {$profile.Tekst}
 ```
 
-Doordat het veld _'Tekst'_ een ongefiltreerd script bevat wordt er bij het bezoeken van de webpagina een JavaScript-melding getoond.
-Om dat te vermijden maak je gebruik van de _|escape_-modifier:
+Doordat het veld _'Tekst'_ een ongefilterd script bevat wordt er bij het bezoeken van de webpagina een JavaScript-melding getoond.
+Om dat te vermijden maak je gebruik van de |escape-modifier:
 
 
 ```
 {$profile.Tekst|escape}
 ```
-De {$profile.Tekst|escape}-code zorgt ervoor dat  de waarde uit het databaseveld als platte tekst wordt weergegeven.
-Het script wordt dan ook niet uitgevoerd. In plaats daarvan toont de webpagina `<script type="text/javascript">alert('Laat een melding zien');</script>` in tekstvorm.
+De {$profile.Tekst|escape}-code zorgt ervoor dat de waarde uit het databaseveld als platte tekst wordt weergegeven.
+Het script wordt dan ook niet uitgevoerd. In plaats daarvan toont de webpagina het script in tekstvorm: `<script type="text/javascript">alert('Laat een melding zien');</script>`.
 
 ## Personalisatie-opmaak
 
