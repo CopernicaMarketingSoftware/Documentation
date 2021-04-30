@@ -84,7 +84,7 @@ Als je deze optie handmatig hebt uitgeschakeld raden we je dringend aan om gebru
 
 ### Voorbeeld
 Je profiel bevat een veld _'Tekst'_ met de waarde `<script type="text/javascript">alert('Laat een melding zien');</script>`.
-Bij de personalisatie-instellingen van je webpagina heb je **'HTML filteren'** uitgezet. Vervolgens maak je gebruik van de volgende Smarty-code:
+Bij de personalisatie-instellingen van je webpagina heb je **'HTML filteren'** uitgezet. Vervolgens maak je gebruik van de onderstaande Smarty-code:
 
 ```
 {$profile.Tekst}
