@@ -38,7 +38,7 @@
     * [Opvolgacties](./follow-up-manager-publisher.md)
     * [Data-script](./data-object.md)
     * [AMP](./amp.md)
-* [Smarty personalisatie](./smarty.md)
+* [Smarty-personalisatie](./smarty.md)
     * [Functies](./smarty-personalization-functions.md)
     * [Extra personalisatievariabelen](./extra-personalization-variables.md)
     * [Loadprofile en loadsubprofile](./loadprofile-and-loadsubprofile.md)
