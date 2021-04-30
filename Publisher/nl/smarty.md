@@ -97,7 +97,7 @@ Om dat te vermijden maak je gebruik van de |escape-modifier:
 ```
 {$profile.Tekst|escape}
 ```
-De {$profile.Tekst|escape}-code zorgt ervoor dat de waarde uit het databaseveld als platte tekst wordt weergegeven: `<script type="text/javascript">alert('Laat een melding zien');</script>`. Het script wordt dan ook niet uitgevoerd.
+De _{$profile.Tekst|escape}_-code zorgt ervoor dat de waarde uit het databaseveld als platte tekst wordt weergegeven: `<script type="text/javascript">alert('Laat een melding zien');</script>`. Het script wordt dan ook niet uitgevoerd.
 
 ## Personalisatie-opmaak
 
