@@ -80,7 +80,7 @@ Als accountbeheerder heb je geen volledige controle over de gegevens die in je d
 
 De personalisatie-instellingen van je template of document staan standaard ingesteld om HTML hierop te filtreren. Input wordt als platte tekst weergegeven zodat dergelijke scripts niet worden uitgevoerd.
 
-Als je deze optie handmatig hebt uitgeschakeld raden we je dringend aan om gebruik te maken van de Smarty-modifier [_|escape_](https://www.smarty.net/docs/en/language.modifier.escape.tpl). Daarmee maak je ongewenste input onschadelijk.
+Als je deze optie handmatig hebt uitgeschakeld raden we je dringend aan om gebruik te maken van de Smarty-modifier [|escape](https://www.smarty.net/docs/en/language.modifier.escape.tpl). Daarmee maak je ongewenste input onschadelijk.
 
 ### Voorbeeld
 Je profiel bevat een veld _'Tekst'_ met de waarde `<script type="text/javascript">alert('Laat een melding zien');</script>`.
