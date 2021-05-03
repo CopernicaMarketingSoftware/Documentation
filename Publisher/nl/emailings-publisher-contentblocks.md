@@ -114,7 +114,7 @@ rond de afbeelding wordt gezet. De *begin* en *end* attributen zijn optioneel.
 Het is ook mogelijk om een class mee te geven aan een [image] tag. Hiermee kun
 je door middel van CSS de afbeelding responsive maken.
 
-`[image name='nameofblock' class='className']`
+`[image name="nameofblock" class="className"]`
 
 ## Loop tags
 Waarschijnlijk de ingewikkeldste tag die je in templates kunt gebruiken, is de
