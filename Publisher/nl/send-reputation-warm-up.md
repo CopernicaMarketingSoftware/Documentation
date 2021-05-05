@@ -178,7 +178,7 @@ selecteer profielen’**. Onder **‘Sorteren op velden’** vullen we onder
 geselecteerd moet worden’** komt overeen met de omvang van batches in het
 voorbeeldschema. Voor batch 1 is dat dus ‘1000’.
 
-![](../images/sort-select-profile-batch-1-1000)
+![](../images/sort-select-profile-batch-1-1000.png)
 
 Omdat de **‘Mail_nog_niet_ontvangen’**-selectie nachtelijks ververst kan
 je **‘Selecteer vanaf positie’** ook bij de tweede batch op ‘0’ laten staan.
