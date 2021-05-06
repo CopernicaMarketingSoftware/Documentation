@@ -75,8 +75,8 @@ er dan als volgt uit kunnen zien:
 | 5          | 9000   | 20000                    |
 
 
-*Let op: bovenstaand schema betreft een voorbeeld. Stel je eigen opwarmschema
-altijd op in overleg met jouw accountmanager.*
+**Let op:** het bovenstaande schema betreft een voorbeeld. Stel je eigen opwarmschema
+altijd op in overleg met je accountmanager.
 
 ## Opbouw van batches
 
