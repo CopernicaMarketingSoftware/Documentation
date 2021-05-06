@@ -134,4 +134,4 @@ richtlijnen van mailboxproviders.
 ## Aanmaken van opwarmselecties
 
 Wanneer het opwarmschema is vastgesteld zet je de desbetreffende batches om naar 
-selecties. Lees hiervoor het [bijbehorende artikel](./warmup-selections.md).
+selecties. Lees het [bijbehorende artikel](./warmup-selections.md) voor meer informatie.
