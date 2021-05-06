@@ -7,7 +7,7 @@ zo'n schommeling.
 
 De ontvangende mailservers moeten wennen aan het nieuwe e-mailverkeer
 en het volume dat vanuit jouw afzenderdomein wordt verstuurd. We bouwen
-het volume daarom geleidelijk op. Dit noemen we het 'opwarmen van de
+het volume daarom geleidelijk op. Dit noemen we het 'opwarmen van
 verzendreputatie'.
 
 ## Relevante factoren
