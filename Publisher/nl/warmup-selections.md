@@ -1,6 +1,6 @@
 # Aanmaken van opwarmselecties
 
-Wanneer het opwarmschema is vastgesteld zet je de desbetreffende batches om naar 
+Wanneer het [opwarmschema is vastgesteld](./send-reputation-warm-up.md) zet je de desbetreffende batches om naar 
 selecties. In het onderstaande voorbeeld gaan we uit van het volgende voorbeeldschema:
 
 | Verzenddag | Volume | Aantal gemailde adressen |
