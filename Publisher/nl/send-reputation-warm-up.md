@@ -1,4 +1,4 @@
-# Opwarmen van de verzendreputatie
+# Opwarmen van verzendreputatie
 
 Grote schommelingen in e-mailvolume hebben een negatieve impact op je
 [verzendreputatie](./send-reputation.md).
