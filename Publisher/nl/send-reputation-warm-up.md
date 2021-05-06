@@ -44,7 +44,7 @@ van de voorgaande mailing.
 
 Door de verscheidenheid aan factoren is het opstellen van een generiek
 opwarmschema niet eenvoudig. Om die reden vragen we je gedurende het
-onboardingproces om hierover zoveel mogelijk informatie aan te leveren.
+onboardingproces om zoveel mogelijk informatie aan te leveren.
 Het is daarbij belangrijk om alle verzendingen goed te evalueren en onze
 hulp in te schakelen bij calamiteiten. Ons deliverability-team ontwikkelt
 zo een verantwoord opwarmtraject.
