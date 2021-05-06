@@ -62,7 +62,7 @@ beïnvloeden het opwarmproces wel voor alle providers.
 De opwarming vindt plaats in batches. Deze spreiden we uit over
 verschillende verzenddagen.
 
-Stel dat je een verzendlijst van 20.000 e-mailadressen hebt. Je mailt de
+Stel dat je verzendlijst 20.000 e-mailadressen bevat. Je mailt de
 verzendlijst vanaf een pool met gedeelde IP-adressen. Het opwarmschema zou
 er dan als volgt uit kunnen zien:
 
