@@ -139,7 +139,7 @@ selecties.
 In het onderstaande voorbeeld gaan we uit van het eerdergenoemde voorbeeldschema.
 Het gaat daarbij om een opwarmtraject op basis van één verzending per dag.
 Wanneer je opwarmschema hiervan afwijkt (bijvoorbeeld als je meerdere
-batches per dag verstuurt) raden we aan om advies te vragen bij jouw
+batches per dag verstuurt) raden we aan om advies te vragen bij je
 accountmanager.
 
 Om te beginnen hanteren we het standaard databasemanagement. In Copernica
