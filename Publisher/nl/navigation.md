@@ -44,6 +44,8 @@
     * [Extra personalisatievariabelen](./extra-personalization-variables.md)
     * [Loadprofile en loadsubprofile](./loadprofile-and-loadsubprofile.md)
 * [Verzendreputatie](./send-reputation.md)
+    * [Opwarmen van verzendreputatie](./send-reputation-warm-up.md)
+    * [Aanmaken van opwarmselecties](./warmup-selections.md)
 * [Campagnes](./campagnes.md)
    * [Welkom](./campaign-welcome.md)
    * [Double optin](./campaign-tutorial-double-opt-in.md)
