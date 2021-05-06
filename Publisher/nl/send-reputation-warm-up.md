@@ -169,7 +169,7 @@ alle profielen aan deze check. Het proces is daarmee foutgevoelig.
 
 
 Binnen de **'Mail_nog_niet_ontvangen'**-selectie kunnen we nu aantallen
-selecteren zonder het risico te lopen dat een profiel dubbel gemaild wordt.
+selecteren zonder het risico te lopen dat een profiel meerdere keren gemaild wordt.
 
 Het selecteren van aantallen doen we met de conditie **'Sorteer en/of
 selecteer profielen'**. Onder **'Sorteren op velden'** vullen we onder
