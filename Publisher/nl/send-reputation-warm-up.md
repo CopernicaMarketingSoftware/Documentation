@@ -173,15 +173,15 @@ selecteren zonder het risico te lopen dat een profiel meerdere keren gemaild wor
 
 Het selecteren van aantallen doen we met de conditie **'Sorteer en/of
 selecteer profielen'**. Onder **'Sorteren op velden'** vullen we onder
-**'Selecteer vanaf positie'** altijd '0' in. Het **'Aantal profielen dat
+**'Selecteer vanaf positie'** altijd **'0'** in. Het **'Aantal profielen dat
 geselecteerd moet worden'** komt overeen met de omvang van batches in het
-voorbeeldschema. Voor batch 1 is dat dus '1000'.
+voorbeeldschema. Voor batch 1 is dat dus **'1000'**.
 
 ![](../images/sort-select-profile-batch-1-1000.png)
 
 Omdat de **'Mail_nog_niet_ontvangen'**-selectie nachtelijks ververst kan
-je **'Selecteer vanaf positie'** ook bij de tweede batch op '0' laten staan.
-Het **'Aantal profielen dat geselecteerd moet worden'** zet je dan op '2000'.
+je **'Selecteer vanaf positie'** ook bij de tweede batch op **'0'** laten staan.
+Het **'Aantal profielen dat geselecteerd moet worden'** zet je dan op **'2000'**.
 
 Gebruik je een leadscoringveld waarbij een hoge score een actief profiel
 representeert? Sorteer de profielen dan oplopend op basis van dat veld.
