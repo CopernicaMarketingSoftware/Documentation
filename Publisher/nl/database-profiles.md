@@ -3,7 +3,7 @@ Databases zijn het centrale punt van informatie binnen Copernica. In een databas
 
 Je vindt het database-overzicht onder ‘**Profielen**’. Door op de naam van een database te klikken krijg je de profielen te zien die onder de desbetreffende database vallen.
 
-![database overzicht](../images/nl/database-profiles.png)
+![database overzicht](../images/nl/profilesinselection.png)
 
 ## Aanmaken van een database
 Je maakt een database aan door onder ‘**Profielen**’ te kiezen voor ‘**Aanmaken -> Een database aanmaken**’. Vervolgens kun je de database van een naam en omschrijving voorzien. 
