@@ -29,10 +29,10 @@ De bounceselectie bevat zes regels met elk twee condities:
 - Conditie 2 zorgt dat profielen niet onterecht binnen de selectie vallen.
 
 **Regel 1**  
-Deze regel controleert of er sinds 2000-01-01 meer dan twee hard bounces zijn voorgekomen op basis van Publisher-mailings. Profielen worden niet geselecteerd als ze in de afgelopen week gemaild zijn zonder dat daar een fout bij is opgetreden. Dat zorgt ervoor dat een profiel met een tijdelijke of onterechte foutmelding niet meteen in de selectie wordt opgenomen.
+Deze regel controleert of er sinds 2000-01-01 een hard bounces is voorgekomen op basis van Publisher-mailings. Profielen worden niet geselecteerd als ze in de afgelopen week gemaild zijn zonder dat daar een fout bij is opgetreden. Dat zorgt ervoor dat een profiel met een tijdelijke of onterechte foutmelding niet meteen in de selectie wordt opgenomen.
 
 **Regel 2**  
-Deze regel controleert of er sinds 2000-01-01 meer dan twee hard bounces zijn voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen week gemaild zijn zonder dat daar een fout bij is opgetreden.
+Deze regel controleert of er sinds 2000-01-01 een hard bounces is voorgekomen op basis van Marketing Suite-mailings. Profielen worden niet geselecteerd als ze in de afgelopen week gemaild zijn zonder dat daar een fout bij is opgetreden.
 
 **Regel 3**  
 Deze regel controleert of er sinds 2000-01-01 meer dan drie soft bounces zijn voorgekomen op basis van Publisher-mailings. Profielen worden niet geselecteerd als ze in de afgelopen 30 dagen gemaild zijn zonder dat daar een fout bij is opgetreden.
