@@ -16,7 +16,7 @@ je profielen in de database importeren. Dat kan op de volgende manieren:
 * Realtime via de REST-API of SOAP-API;
 * Via webformulieren.
 
-## Opdracht
+### Opdracht
 
 We beginnen met het aanmaken van een database binnen Copernica. Hiervoor download je alvast
 de [trainingsbestanden](https://vicinity.picsrv.net/g/127/0/9966/946570547c4af9079f398f3af00edcd4/export-2021-05-19.zip)
@@ -54,7 +54,7 @@ aan- of uitgezet worden en kunnen enkel de waardes 'Ja' of 'Nee' bevatten. Binne
 groep zijn er meerdere interesses mogelijk. Denk bijvoorbeeld aan een ​ '**Inschrijvingen**'-groep waarbij een specifiek profiel drie interesses toont: '**Nieuwsbrief**'​ (op Ja),
 '**Aanbiedingen**'​ (op Nee) en ​'**Facturen**'​ (op Ja).
 
-## Opdracht
+### Opdracht
 
 Klik op de database en navigeer naar '**Velden & Interesses**'​, '**Veld aanmaken**'​.
 Vervolgens maken we zeven velden aan. Bij het aanmaken van een veld is het belangrijk
