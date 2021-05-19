@@ -1,3 +1,4 @@
+* [Copernica-training](./Copernica-training-part-1.md)
 * [Introductie](./introduction.md)
     * [Begrippenlijst](./definitions.md)
     * [Eerste login](./first-login.md)
