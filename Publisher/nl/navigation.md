@@ -1,5 +1,6 @@
 * [Copernica-training](./copernica-training-part-1.md)
    * [Copernica-training: databases en velden](./copernica-training-part-2.md)
+   * [Copernica-training: selecties](./copernica-training-part-4.md)
 * [Introductie](./introduction.md)
     * [Begrippenlijst](./definitions.md)
     * [Eerste login](./first-login.md)
