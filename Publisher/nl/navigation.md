@@ -1,4 +1,5 @@
-* [Copernica-training](./Copernica-training-part-1.md)
+* [Copernica-training](./copernica-training-part-1.md)
+   * [Copernica-training: databases en velden](./copernica-training-part-2.md)
    * [Copernica-training: uitschrijfgedrag en profielen](./copernica-training-part-3.md) 
 * [Introductie](./introduction.md)
     * [Begrippenlijst](./definitions.md)
