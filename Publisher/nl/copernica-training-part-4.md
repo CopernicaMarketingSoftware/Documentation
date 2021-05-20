@@ -1,4 +1,4 @@
-# Selecties
+# Copernica-training: selecties
 
 Een selectie is een segment van profielen uit de database gebaseerd op één of meerdere
 condities. Je gebruikt selecties om bepaalde profielen te filteren uit een database,
