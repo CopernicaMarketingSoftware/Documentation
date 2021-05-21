@@ -66,7 +66,7 @@ relatie' wordt.
 
 Klik het venster weg en bekijk het document in de '**Voorbeeldweergave**'. Check hierbij of
 de personalisatie goed werkt. Mocht dit niet het geval zijn, ga dan een paar stappen terug
-naar [standaardbestemmingen​](./copernica-training-part-5).
+naar [standaardbestemmingen](./copernica-training-part-5).
 
 ![Voorbeeld van personalisatie](../images/nl/personalisatievoorbeeld.png)
 
