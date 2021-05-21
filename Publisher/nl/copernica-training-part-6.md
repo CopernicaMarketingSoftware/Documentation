@@ -18,7 +18,7 @@ desbetreffende profiel.
 
 ### Opdracht
 
-Bewerk de content van het aangemaakte document door middel van contentblokken. Om de
+Bewerk de content van het eerder aangemaakte document door middel van contentblokken. Om de
 blokken te tonen klik je onderin op '**Bewerkmodus**'.
 
 ![Bewerkmodus](../images/nl/bewerkmodus.png)
