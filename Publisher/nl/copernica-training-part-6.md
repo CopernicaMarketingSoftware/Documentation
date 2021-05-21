@@ -2,7 +2,7 @@
 
 ## Personalisatie
 
-Copernica geeft je de mogelijkheid om e-mails te personaliseren. Je doet dit door middel van
+Copernica geeft je de mogelijkheid om e-mails te personaliseren. Dat doe je door middel van
 Smarty-code. Die code wordt vervangen door gepersonaliseerde data zodra de e-mail
 verzonden wordt.
 
