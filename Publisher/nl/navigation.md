@@ -3,6 +3,7 @@
    * [Copernica-training: uitschrijfgedrag en profielen](./copernica-training-part-3.md)
    * [Copernica-training: selecties](./copernica-training-part-4.md)
    * [Copernica-training: mailings, HTML-templates & contentcreatie](./copernica-training-part-5.md)
+   * [Copernica-training: personalisatie](./copernica-training-part-6.md)
 * [Introductie](./introduction.md)
     * [Begrippenlijst](./definitions.md)
     * [Eerste login](./first-login.md)
