@@ -12,10 +12,10 @@ waarvoor je de mailings op wilt vragen.
 ## Beschikbare parameters
 
 * **include_subprofiles**: Boolean die aangeeft of mailings naar subprofiles 
-meegeteld moeten worden ('yes', 'no'). De standaardwaarde is 'yes'. 
-* **type**: Het type mailing. Dit kan een massa ('mass') mailing zijn of 
-een individuele ('individual') mailing. De methode zal standaard beide 
-opvragen.
+meegeteld moeten worden ("yes", "no"). De standaardwaarde is "yes".
+* **type**: Het type mailing. Dit kan een massa ("mass") mailing zijn of 
+een individuele ("individual") mailing. De methode zal standaard beide 
+opvragen ("both").
 * **followups**: Geeft aan of we alleen opvolgactie mailings ("yes") gebruiken, alleen mailings 
 die *niet* het resultaat waren van een opvolgactie ("no") of alle mailings ("both"). Standaardwaarde "both".
 * **test**: Geeft aan of we alleen test mailings ("yes") gebruiken, alleen mailings 
@@ -26,18 +26,6 @@ die *geen* test waren ("no") of alle mailings ("both"). Standaardwaarde "both".
 * **todate**: Vraag alleen mailings voor deze datum op (YYYY-MM-DD HH:MM:SS formaat). 
 
 Deze methode ondersteunt ook [paging parameters](./rest-paging).
-
-## Beschikbare parameters
-
-* **type**: Het type mailings om op te vragen: Massa ('mass') mailings, individuele ('individual') mailings 
-of alle mailings ('both').
-* **followups**: Geeft aan of we alleen emailings van opvolgacties ('yes') opvragen, 
-alleen emailings die geen gevolg zijn van een opvolgactie ('no') of alle emailings ('both').
-* **test**: Geeft aan of we alleen test emailings ('yes') opvragen, alleen 
-mailings die geen test waren ('no') of alle mailings ('both').
-
-De standaardwaarde van al deze parameters is 'both'. Als je geen parameters 
-meegeeft krijg je dus alle emailings zonder dat er een filter wordt toegepast.
 
 ## Teruggegeven velden
 
