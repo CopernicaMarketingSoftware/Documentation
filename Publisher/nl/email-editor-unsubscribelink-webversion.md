@@ -16,7 +16,7 @@ Gebruik de volgende code om een uitschrijflink toe te voegen aan je template of 
 Het uitschrijfgedrag stel je in via *Profielen > Configuratie > Omgang met uitschrijvingen*.
 
 ### Uitschrijflink doorverwijzen naar eigen pagina  
-Nadat een ontvanger op de uitschrijflink heeft gedrukt, wordt hij of zij doorverwezen naar een standaardpagina.  
+Ontvangers die op de uitschrijflink klikken worden doorverwezen naar een standaardpagina.  
 Om een eigen pagina te tonen, kun je gebruik maken van de 'redirect' functie:
 
 `{unsubscribe redirect='http://www.eendomein.nl/eigenlandingspagina'}`
