@@ -40,16 +40,17 @@ The `dns-interval` specifies after how many seconds of waiting for a reply on th
 
 ## Quality of Service
 
-Since 5.13 two settings were added to finetune the maximum workload of the DNS resolver:
+Since 5.13 three settings were added to finetune the maximum workload of the DNS resolver:
 
 ```
 dns-attempts:   5
 dns-capacity:   100
+dns-sockets:    4
 ```
 
 `dns-attempts` limits the number of attempts done for a single operation. Higher numbers may result in more messages being sent successfully, 
 but can lead to degraded performance due to spending more time per message on DNS operations. `dns-capacity` limits the number of operations
-that may run simultaneously. The optimal number will depend on the system MailerQ is running on.
+that may run simultaneously. `dns-sockets` defines the number of UDP/TCP sockets used for lookups. The optimal values will depend on the system MailerQ is running on.
 
 ## Buffer size
 
