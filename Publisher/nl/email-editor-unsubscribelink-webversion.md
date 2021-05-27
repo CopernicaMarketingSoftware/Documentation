@@ -1,7 +1,7 @@
 # Uitschrijflink en webversie
 
 ## Uitschrijflink
-Het is wettelijk verplicht om iedere (commerciële) e-mail die je verstuurt, te voorzien van een goed zichtbare en werkende uitschrijfmogelijkheid. Copernica biedt verschillende mogelijkheden voor het toevoegen van een dergelijke uitschrijflink. De meest gemakkelijke en laagdrempelige manier om een uitschrijflink toe te voegen is de tag {unsubscribe}.
+Het is wettelijk verplicht om iedere (commerciële) e-mail die je verstuurt, te voorzien van een goed zichtbare uitschrijfmogelijkheid. De meest gemakkelijke en laagdrempelige manier om een uitschrijflink toe te voegen is de tag {unsubscribe}.
 
 **Belangrijke noot:** wanneer je gebruik maakt van de {unsubscribe}, dien je tevens het uitschrijfgedrag in te stellen op de database of collectie waaraan je de e-mailing richt!
 
