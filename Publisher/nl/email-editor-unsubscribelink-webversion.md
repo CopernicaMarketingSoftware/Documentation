@@ -17,7 +17,7 @@ Het uitschrijfgedrag stel je in via *Profielen > Configuratie > Omgang met uitsc
 
 ### Uitschrijflink doorverwijzen naar eigen pagina  
 Ontvangers die op de uitschrijflink klikken worden doorverwezen naar een standaardpagina.  
-Om een eigen pagina te tonen, kun je gebruik maken van de 'redirect' functie:
+Om een eigen pagina te tonen, kun je gebruik maken van de functie 'redirect':
 
 `{unsubscribe redirect='http://www.eendomein.nl/eigenlandingspagina'}`
 
