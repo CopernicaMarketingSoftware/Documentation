@@ -24,8 +24,6 @@ Om een eigen pagina te tonen, kun je gebruik maken van de functie 'redirect':
 ## Webversie
 Het kan voorkomen dat een e-mail niet goed wordt weergegeven in het e-mailprogramma van de ontvanger. Door een webversie mee te sturen met je e-mails, kan de ontvanger deze openen in een internetbrowser. Deze webversie wordt automatisch op de juiste manier getoond en gepersonaliseerd. Gebruik voor de webversie onderstaande tag:
 
-Om de webversie mee te sturen in je e-mails, gebruik je onderstaande tag:
-
 `{webversion}`
 
 *Voorbeeld binnen je HTML*:
