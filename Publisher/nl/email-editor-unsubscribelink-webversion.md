@@ -11,7 +11,7 @@ Gebruik de volgende code om een uitschrijflink toe te voegen aan je template of 
 `<a href="{unsubscribe}">Uitschrijven</a>`
 
 ### Uitschrijflink activeren
-Als je gebruik maakt van de {unsubscribe} tag, dien je tevens het uitschrijfgedrag in te stellen op de database of collectie waaraan je de e-mailing richt. Het uitschrijfgedrag wordt uitgevoerd in de database wanneer de ontvanger van de e-mail klikt op de uitschrijflink. Doe je dit niet, dan zal er niets gebeuren en ontvangt de uitschrijver je e-mail de volgende keer opnieuw.
+**Belangrijke noot:** Als je de tag {unsubscribe} gebruikt, dien je ook het uitschrijfgedrag in te stellen op de database of collectie waaraan je de e-mailing richt. Het uitschrijfgedrag wordt uitgevoerd in de database wanneer een ontvanger van de e-mail klikt op de uitschrijflink. Als je het uitschrijfgedrag niet instelt dan blijft de uitschrijver je e-mails ontvangen.
 
 Het uitschrijfgedrag stel je in via *Profielen > Configuratie > Omgang met uitschrijvingen*.
 
