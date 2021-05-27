@@ -22,7 +22,7 @@ Om een eigen pagina te tonen, kun je gebruik maken van de functie 'redirect':
 `{unsubscribe redirect='http://www.eendomein.nl/eigenlandingspagina'}`
 
 ## Webversie
-Het kan voorkomen dat een e-mail niet goed wordt weergegeven in het e-mailprogramma van de ontvanger. Door gebruik te maken van een webversie kan de gebruiker alsnog de e-mail inzien. De webversie wordt geopend in de internetbrowser van de ontvanger. Deze versie wordt automatisch gepersonaliseerd aangemaakt door de software bij het gebruik van de webversie-tag.
+Het kan voorkomen dat een e-mail niet goed wordt weergegeven in het e-mailprogramma van de ontvanger. Door een webversie mee te sturen met je e-mails, kan de ontvanger deze openen in een internetbrowser. Deze webversie wordt automatisch op de juiste manier getoond en gepersonaliseerd. Gebruik voor de webversie onderstaande tag:
 
 Om de webversie mee te sturen in je e-mails, gebruik je onderstaande tag:
 
