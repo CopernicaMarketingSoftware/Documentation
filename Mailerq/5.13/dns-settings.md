@@ -42,15 +42,9 @@ The `dns-interval` specifies after how many seconds of waiting for a reply on th
 
 Since 5.13 three settings were added to finetune the maximum workload of the DNS resolver:
 
-```
-dns-attempts:   5
-dns-capacity:   100
-dns-sockets:    4
-```
-
-`dns-attempts` limits the number of attempts done for a single operation. Higher numbers may result in more messages being sent successfully, 
-but can lead to degraded performance due to spending more time per message on DNS operations. `dns-capacity` limits the number of operations
-that may run simultaneously. `dns-sockets` defines the number of UDP/TCP sockets used for lookups. The optimal values will depend on the system MailerQ is running on.
+- `dns-attempts`: If you run into errors for domains that are reported to not exist, while you know that they do exist, consider making this value higher. MailerQ will then try longer doing DNS lookups before giving up. Default: `5`.
+- `dns-capacity`: The number of DNS lookups that can run in parallel. Make this value higher if you notice that DNS lookups are a bottleneck in your delivery, and make it lower if your DNS server cannot keep up with the lookups (or add more DNS servers). Default: `100`.
+- `dns-sockets`: To improve security MailerQ rotates the lookups over different sockets. By doing this, MailerQ avoids that the same port is constantly used for handling DNS responses. If this is set to 1, MailerQ can only rotate / start using a different port when there are no more lookups in progress. A higher value brings more rotating options and thus more security. Default: `4`.
 
 ## Buffer size
 
