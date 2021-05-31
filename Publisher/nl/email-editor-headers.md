@@ -1,20 +1,20 @@
 # Headers
 
-In de toolbar van je template of document is het mogelijk om _headers_ in te stellen voor je mailing. Headers worden gebruikt om informatie mee te geven aan een e-mail. Er zijn drie verschillende soorten:
+In de toolbar van je template of document is het mogelijk om _headers_ in te stellen. Headers worden gebruikt om informatie mee te geven aan een e-mail. Er zijn drie verschillende soorten:
 - Essentiële headers
 - Geavanceerde headers
 - Aangepaste headers
 
 ## Essentiële headers
-Hier vind je de headers die nodig zijn om een mailing te versturen:
+Deze headers moeten zijn ingesteld voordat je een mailing kan versturen:
 - Een onderwerp
 - Een afzendernaam
 - Een afzenderadres
 
-Het is mogelijk om deze waardes te personaliseren met [Smarty](./smarty). 
+Je kan deze waardes personaliseren met [Smarty](./smarty). 
 
 **Voorbeeld**  
-Je wilt een mailing versturen vanuit het e-mailadres van de accountmanager van een profiel. In de database staat een veld _accountmanager_ waarin wordt bijgehouden per profiel wie de accountmanager is. Het kan ook voorkomen dat dit veld niet gevuld is bij het profiel. In de optie _afzenderadres_ gebruik je de volgende code:
+Je wilt een mailing versturen vanuit het e-mailadres van de accountmanager van een profiel. In de database staat een veld _accountmanager_ waar per profiel wordt bijgehouden wie de accountmanager is. Het kan ook voorkomen dat dit veld niet ingevuld is. In de optie _afzenderadres_ gebruik je de volgende code:
 
 ```
 {if $profile.accountmanager == "Frank Bakker"}frank.bakker{else}info{/if}
@@ -26,10 +26,10 @@ In bovenstaand voorbeeld wordt de e-mail verzonden vanuit _frank.bakker@domeinna
 Naast de essentiële headers kun je geavanceerde headers toevoegen aan je mailing.  
 
 ### Antwoordadres
-Dit is een e-mailadres dat gebruikt wordt wanneer een ontvanger wil antwoorden op je e-mail. Standaard wordt het afzenderadres gebruikt, als je een ander adres wilt gebruiken kun je dat hier instellen.
+Dit is het e-mailadres dat gebruikt wordt wanneer een ontvanger je e-mail wilt beantwoorden. Standaard wordt het afzenderadres gebruikt, als je een ander adres wilt gebruiken kun je dat hier instellen.
 
 ### BCC-adres
-Deze header maakt het mogelijk de e-mail naar een extra ontvanger te sturen. Dit e-mailadres is niet zichtbaar bij de hoofdontvanger.
+Met deze header stuur je de e-mail naar een extra ontvanger, zonder dat dit zichbaar is voor de hoofdontvanger.
 
 ### Uitschrijfheader
 Een aantal e-mailclients plaatsen automatisch een afmeldknop bovenin de e-mail zodra er ergens in de e-mail een afmeldlink voorkomt. Voor de ontvanger is het een gemakkelijke manier om af te melden en voor verzenders is er minder kans dat de ontvanger het bericht als spam markeert.  
