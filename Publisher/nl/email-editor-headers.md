@@ -1,6 +1,6 @@
 # Headers
 
-Headers worden gebruikt om informatie mee te geven aan een e-mail. Binnen templates en documenten zijn er drie soorten headers, namelijk:
+In de toolbar van je template of document is het mogelijk om _headers_ in te stellen voor je mailing. Headers worden gebruikt om informatie mee te geven aan een e-mail. Er zijn drie verschillende soorten:
 - Essentiële headers
 - Geavanceerde headers
 - Aangepaste headers
