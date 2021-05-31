@@ -11,7 +11,9 @@ Bij elke controle hoort een score die beschrijft in hoeverre de uitkomst van die
 Om te controleren hoe je mailing op desktop, tablet en mobile eruit ziet, ga je naar _Voorvertoning_ in de toolbar. De voorvertoning wordt standaard gepersonaliseerd op de ingestelde standaardbestemming. Rechtsbovenin kun je aangeven welk soort device je als voorbeeld wilt gebruiken. Daarnaast is het mogelijk om zelf de afmetingen van de preview aan te passen.
 
 ## Testmail versturen
+Met een testmail kan gecontroleerd worden of de mail eruit ziet zoals jij wilt. Tegelijkertijd kan je hiermee de personalisatie testen. De testmail wordt verstuurd naar de standaardbestemming en gepersonaliseerd voor dit profiel. Om een testmail te versturen, ga je naar **Testmailing verzenden** in de toolbar van je template of document. 
 
+## Inboxplaatsing-test
+Naast de reguliere e-mailstatistieken kun je inzicht krijgen in de prestaties van je mailing door een inboxplaatsing-test uit te voeren. Hier wordt getest bij welke providers een mailing in de inbox terecht komt en bij welke providers de deliverability extra aandacht verdient. Copernica biedt deze functionaliteit aan in samenwerking met [Validity](https://www.validity.com/validity-for-email/). Je kunt een test aanvragen onder **Inboxplaatsing** in de toolbar van je template of document. De resultaten van de tests zijn zichtbaar onder **[Resultaten -> Inboxplaatsing-tests](https://ms.copernica.com/nl/#/results/250ok)**.
 
-## Inbox placement
-
+_Let wel op: er worden voor een inbox placement test kosten in rekening gebracht._
