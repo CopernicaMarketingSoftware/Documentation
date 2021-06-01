@@ -3,7 +3,7 @@
 In de toolbar van je template of document is het mogelijk om _headers_ in te stellen. Headers worden gebruikt om informatie mee te geven aan een e-mail. Er zijn drie verschillende soorten:
 - Essentiële headers
 - Geavanceerde headers
-- Aangepaste headers
+- X-headers
 
 ## Essentiële headers
 Deze headers moeten zijn ingesteld voordat je een mailing kan versturen:
