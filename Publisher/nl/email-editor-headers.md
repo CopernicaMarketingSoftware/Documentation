@@ -38,7 +38,7 @@ Er zijn twee opties die e-mailclients gebruiken om een afmelding te registreren.
 
 Wij raden bij het instellen aan om gebruik te maken van de **Volledige uitschrijfheader**. Hierbij worden beide opties meegenomen.
 
-## Aangepaste headers
+## X-headers
 Hier kun je x-headers toevoegen aan je mailing. De "X" in X-header staat voor eXperimenteel of eXtensie. Je kunt hier je eigen waarden voor gebruiken om extra informatie mee te geven aan je e-mail. Je kunt dus helemaal zelf bepalen welke X-headers je gebruikt of wat je meegeeft. Je kan bijvoorbeeld de naam van je selectie of campagne meegeven voor je eigen statistieken.
 
 Het is mogelijk om in deze waardes personalisatie te gebruiken. 
