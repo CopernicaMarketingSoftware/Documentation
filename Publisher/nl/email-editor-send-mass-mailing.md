@@ -43,6 +43,6 @@ Hier vind je de geavanceerde opties voor je verzending.
 
 
 ## Mailing versturen
-Na het instellen van bovenstaande stappen vind je aan de linkerkant de button **Mailing versturen**. Deze optie is aanklikbaar zodra alle vereiste opties zijn opgegeven.  
+Na het instellen van bovenstaande stappen vind je aan de linkerkant de button **_Mailing versturen_**. Deze optie is aanklikbaar zodra alle vereiste opties zijn opgegeven.  
 
 _Let op:_ Als het een mailing betreft die direct wordt verzonden is er geen optie meer om de mailing te annuleren nadat je op de verzendknop hebt gedrukt.
