@@ -29,7 +29,20 @@ Er zijn drie verschillende types om een tijdstip in te stellen:
 ![Bulkmailing schema](../images/nl/bulkmailing_schema.png)
 
 ## Labels instellen
+Voor drag-and-drop templates is het mogelijk om (meerdere) labels mee te geven aan je verzending. Op basis van deze labels (tags) kun je filteren in de statistieken van je verzonden mailings. 
+
+_Voorbeeld:_ Stel je verstuurd meerdere mails rondom Black Friday, maar ook je normale mailings lopen door. Door een tag 'BlackFriday' mee te geven aan de specifieke mailings over Black Friday kun je achteraf enkel deze mailings ophalen in de statistieken om de resultaten te analyseren.
 
 ## Opties instellen
+Hier vind je de geavanceerde opties voor je verzending. 
+
+**Aantal berichten per minuut limiteren**: met deze optie kun je de verzending verspreiden. De laagst mogelijke afleversnelheid is 100 berichten per minuut.  
+**Content type**: templates en documenten kunnen een HTML- een AMP- en een tekstversie bevatten. Mailings kunnen ingesteld worden om alleen de opgemaakte versie (HTML en optioneel AMP) te gebruiken, alleen de tekstversie of beide versies.  
+**Maximale duur**: de maximale duur beperkt de looptijd van de mailing. Er worden geen berichten meer verzonden of opnieuw geprobeerd na de maximale duur sinds de starttijd is verstreken. Dit kan bijvoorbeeld worden gebruikt bij een actie met een korte looptijd.  
+**Statistieken**: hier kun je aangeven dat er geen impressies, kliks, fouten of klachten mogen worden geregistreerd op je mailings. In dit geval tracken wij deze gegevens niet en is dit niet inzichtelijk in de statistieken van de verzonden mailing.
+
 
 ## Mailing versturen
+Na het instellen van bovenstaande stappen vind je aan de linkerkant de button **Mailing versturen**.  
+
+_Let op:_ Als je eenmaal op de verzendknop hebt gedrukt en deze e-mail direct wordt verzonden kan deze niet meer geannuleerd worden.
