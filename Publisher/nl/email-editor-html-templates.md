@@ -1,6 +1,6 @@
 # HTML-templates
 
-Als je meer vrijheid of geavanceerdere mailings wilt versturen dan mogelijk met drag-and-drop templates kun je gebruik maken van HTML-templates. Kennis van HTML en CSS is noodzakelijk voor het opzetten van een HTML-template.
+Als je meer vrijheid of geavanceerdere mailings wilt versturen dan mogelijk met drag-and-drop templates kun je gebruik maken van HTML-templates. Voor het opzetten van een HTML-template is kennis van HTML en CSS nodig.
 
 ## Structuur HTML-templates en HTML-documenten
 Een HTML-template bestaat uit HTML en CSS en bevat de globale opmaak van de e-mail en de elementen die voor elke mailing vaststaan (zoals logo's en een afmeldlink). Verder bevat een template [contentblokken](./emailings-publisher-contentblocks) die later kunnen worden ingevuld. Als je een mailing wilt samenstellen maak je op basis van een template een document aan, en kun je de contentblokken vullen met teksten en afbeeldingen.
@@ -27,7 +27,7 @@ Om een nieuwe HTML-template aan te maken ga je naar [HTML-templates](https://ms.
 
 Vervolgens kun je een document aanmaken onder bovenstaand template. Dit doe je via **Aanmaken -> Document aanmaken**.  
 
-Zoals je hierboven kunt zien staat er in dit template een tekstblok genaamd "_voorbeeld_". In je document kun je dit blok nu voorzien van tekst door erop te klikken in de _hybride modus_ of _bewerkmodus_ (deze vind je onderin het document onder _weergave_) of via _blokken bewerken_ in de toolbar van het document.  
+Zoals in bovenstaand voorbeeld te zien is bevat dit template een tekstblok genaamd "_voorbeeld_". In je document kun je dit blok nu voorzien van tekst door erop te klikken in de _hybride modus_ of _bewerkmodus_ (deze vind je onderin het document onder _weergave_) of via _blokken bewerken_ in de toolbar van het document.  
 
 ## Contentblokken
 Er zijn drie tags waarmee je contentblokken maakt: [text], [image] en [loop]. Deze tags kun je in de broncode van de template opnemen om aan te geven dat daar op documentniveau content kan worden geplaatst. De werking van de [text] en [image] tags spreekt voor zich: op elke plek in de template waar je deze tags plaatst, kunnen later op documentniveau teksten en afbeeldingen worden geplaatst. De loop-tags behoeven wat meer uitleg, en stellen je in staat om op documentniveau herhalingen in te voeren. Als je bijvoorbeeld gebruikers in staat wilt stellen om mailings te maken met een variabel aantal paragrafen of een variabel aantal artikelen, dan kun en dit doen door loopblokken in de template op te nemen.
