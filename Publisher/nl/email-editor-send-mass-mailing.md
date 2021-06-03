@@ -1,5 +1,5 @@
 # Een bulkmailing versturen
-Het tegelijkertijd mailen van meerdere relaties wordt een bulkmailing genoemd. Je kunt een bulkmailing inplannen of direct versturen via de optie **_Mailing versturen_**. Je vindt deze in de toolbar bij [profielen](https://ms.copernica.com/#/profiles) en [HTML-templates](https://ms.copernica.com/#/design).
+Het tegelijkertijd mailen van meerdere relaties wordt een bulkmailing genoemd. Je kunt een bulkmailing inplannen of direct versturen via de optie **_Mailing versturen_**. Je vindt deze in de toolbar bij **'[Profielen](https://ms.copernica.com/#/profiles)'** en **'[HTML-templates](https://ms.copernica.com/#/design)'**.
 
 Het versturen van een bulkmailing verloopt in drie stappen: 
 
@@ -24,7 +24,7 @@ De volgende stap is het instellen van het tijdstip waarop de bulkmailing wordt v
 Bij het instellen van een verzendmoment heb je de keuze uit drie opties:
 
 1. **Eenmalig**: Een tijdstip waarop de mailing eenmalig wordt verzonden. Je kunt hierbij kiezen om de mailing direct te versturen of deze in te plannen voor verzending op een later moment.
-2. **Terugkerend schema**: Een terugkerend schema waarop de mailing wordt verstuurd. Hiermee kun je de mailing bijvoorbeeld dagelijks versturen, wekelijks inroosteren op woensdagen of om de week versturen op dinsdag en vrijdag. Bij **_planning voorvertoning_** aan de linkerzijde worden de dagen omcirkeld waarop de mailing wordt verzonden.
+2. **Terugkerend schema**: Een terugkerend schema waarop de mailing wordt verstuurd. Hiermee kun je de mailing bijvoorbeeld dagelijks versturen, wekelijks inroosteren op woensdagen of om de week versturen op dinsdag en vrijdag. Bij **Planning voorvertoning** aan de linkerzijde worden de dagen omcirkeld waarop de mailing wordt verzonden.
 3. **Geavanceerde RRule**: [RRULE-strings](https://www.copernica.com/nl/blog/post/slim-mailings-herhalen-met-rrules) maken het mogelijk om mailings in te roosteren op basis van krachtige herhaalpatronen. Denk bijvoorbeeld aan het verzenden van bulkmailings op elke tweede dinsdag van de maand.  
 
 ![Bulkmailing schema](../images/nl/bulkmailing_schema.png)
@@ -44,6 +44,6 @@ Bij het verzenden van een bulkmailing heb je ook de mogelijkheid om de onderstaa
 
 ## Mailing versturen
 
-Wanneer je de bovenstaande stappen succesvol hebt doorlopen vind je aan de linkerzijde de button **_Mailing versturen_**. Je verstuurt de mailing door op de knop te klikken. 
+Wanneer je de bovenstaande stappen succesvol hebt doorlopen vind je aan de linkerzijde de button **Mailing versturen**. Je verstuurt de mailing door op de knop te klikken. 
 
 **_Let op:_** Wanneer je een mailing direct verstuurt is het niet mogelijk om de mailing te annuleren zodra je op de verzendknop hebt geklikt. In plaats daarvan raden we je aan om de mailing in te roosteren voor verzending op een later tijdstip.
