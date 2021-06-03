@@ -37,10 +37,10 @@ _Voorbeeld:_ Je verstuurt meerdere campagnes rondom Black Friday. Tegelijkertijd
 ## Opties instellen
 Bij het verzenden van een bulkmailing heb je ook de mogelijkheid om de onderstaande opties in te stellen:
 
-**Aantal berichten per minuut limiteren**: Biedt de mogelijkheid om verzending uit te spreiden over een specifiek tijdsbestek. De laagst mogelijke afleversnelheid is 100 berichten per minuut.  
-**Content type**: Templates en documenten kunnen een HTML-, AMP- of tekstversie bevatten. Deze optie maakt het mogelijk om alleen de opgemaakte versie (HTML en eventueel AMP) of tekstversie te gebruiken. Ook kun je gebruik maken van beide versies.
-**Maximale duur**: De maximale duur beperkt de looptijd van de mailing. Mailings worden niet langer verzonden zodra de maximale duur verstreken is, bijvoorbeeld in het geval van tijdelijke acties.
-**Statistieken**: Je hebt hier de mogelijkheid om impressies, kliks, fouten of klachten met betrekking tot mailings niet te registreren. Dergelijke gegevens zijn dan ook niet inzichtelijk in de statistieken van de verzonden mailing.
+* **Aantal berichten per minuut limiteren**: Biedt de mogelijkheid om verzending uit te spreiden over een specifiek tijdsbestek. De laagst mogelijke afleversnelheid is 100 berichten per minuut.  
+* **Content type**: Templates en documenten kunnen een HTML-, AMP- of tekstversie bevatten. Deze optie maakt het mogelijk om alleen de opgemaakte versie (HTML en eventueel AMP) of tekstversie te gebruiken. Ook kun je gebruik maken van beide versies.
+* **Maximale duur**: De maximale duur beperkt de looptijd van de mailing. Mailings worden niet langer verzonden zodra de maximale duur verstreken is, bijvoorbeeld in het geval van tijdelijke acties.
+* **Statistieken**: Je hebt hier de mogelijkheid om impressies, kliks, fouten of klachten met betrekking tot mailings niet te registreren. Dergelijke gegevens zijn dan ook niet inzichtelijk in de statistieken van de verzonden mailing.
 
 ## Mailing versturen
 
