@@ -4,15 +4,15 @@ Het tegelijkertijd mailen van meerdere relaties wordt een bulkmailing genoemd. J
 Het versturen van een bulkmailing verloopt in drie stappen: 
 
 1. Selecteer het template of document dat je wilt versturen;
-2. Selecteer de bestemming van je e-mail; 
-3. Geef aan wanneer de e-mail verzonden moet worden.
+2. Selecteer de bestemming van je mailing; 
+3. Geef aan wanneer de mailing verzonden moet worden.
 
 ## Template of document instellen
 
 Bij het verzenden van een bulkmailing selecteer je eerst het template of document dat je wilt versturen. Wanneer je deze correct hebt ingesteld ga je verder naar de volgende stap.
 
 ## Bestemming instellen
-Vervolgens selecteer je de bestemming waarnaar je de mailing wilt versturen. Dat kan een database, collectie of (mini)selectie zijn. 
+Voordat je een bulkmailing kunt versturen dien je eerst een bestemming in te stellen. Dat kan een database, collectie of (mini)selectie zijn. 
 
 Bij het selecteren van een bestemming kun je inzien hoeveel profielen de bestemming bevat en hoeveel daarvan uniek zijn. Wanneer de doelgroep dubbele profielen bevat wordt de e-mail verzonden naar het profiel met het laagste ID. Dat profiel kent namelijk de langste geschiedenis.
 
