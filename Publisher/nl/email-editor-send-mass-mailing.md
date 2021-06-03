@@ -1,48 +1,49 @@
 # Een bulkmailing versturen
-Het mailen van meerdere relaties in een keer noemen wij een bulkmailing. Bij [profielen](https://ms.copernica.com/#/profiles) en [HTML-templates](https://ms.copernica.com/#/design) vind je in de toolbar de optie **_Mailing versturen_** om een bulkmailing in te plannen of direct te versturen.
+Het tegelijkertijd mailen van meerdere relaties wordt een bulkmailing genoemd. Je kunt een bulkmailing inplannen of direct versturen via de optie **_Mailing versturen_**. Je vindt deze in de toolbar bij [profielen](https://ms.copernica.com/#/profiles) en [HTML-templates](https://ms.copernica.com/#/design).
 
-Het versturen van een bulkmailing verloopt in 3 stappen:  
-1. Kies het template of document die je wilt gaan versturen.
-2. Kies de bestemming van je e-mail. 
-3. Kies wanneer de e-mail verzonden moet worden.
+Het versturen van een bulkmailing verloopt in drie stappen: 
 
-Naast deze verplichte stappen heb je de mogelijkheid om labels toe te voegen of instellingen te wijzigen.
-In onderstaand artikel komen we hier uitgebreid op terug.
+1. Selecteer het template of document dat je wilt versturen;
+2. Selecteer de bestemming van je e-mail; 
+3. Geef aan wanneer de e-mail verzonden moet worden.
 
 ## Template of document instellen
-De eerste optie in het verzendscherm is het instellen van je template of document.
+
+Bij het verzenden van een bulkmailing selecteer je eerst het template of document dat je wilt versturen. Wanneer je deze correct hebt ingesteld ga je verder naar de volgende stap.
 
 ## Bestemming instellen
-Na het instellen van je template of document dien je een doelgroep voor je mailing te selecteren. Dit kan een database, collectie of (mini)selectie zijn. Nadat je de bestemming hebt gekozen zie je hoeveel profielen deze doelgroep bevat en hoeveel unieke profielen dit zijn. Het kan voorkomen dat er dubbele profielen in je doelgroep aanwezig zijn. In dit geval wordt de e-mail verzonden naar het profiel met het laagste ID (het profiel met de meeste geschiedenis) van dit e-mailadres.
+Vervolgens selecteer je de bestemming waarnaar je de mailing wilt versturen. Dat kan een database, collectie of (mini)selectie zijn. 
 
-Tevens dient er een [intentie](./database-intentions) aanwezig te zijn voor de doelgroep. Hiermee geef je aan dat deze doelgroep gebruikt mag worden als bestemming voor je mailing. Daarmee wordt voorkomen dat mailings verstuurd worden aan de verkeerde doelgroep (bijvoorbeeld inactieve profielen of bounces). Mocht je bestemming deze intentie nog niet hebben, wordt er een melding getoond waarbij je deze alsnog toe kunt kennen.
+Bij het selecteren van een bestemming kun je inzien hoeveel profielen de bestemming bevat en hoeveel daarvan uniek zijn. Wanneer de doelgroep dubbele profielen bevat wordt de e-mail verzonden naar het profiel met het laagste ID. Dat profiel kent namelijk de langste geschiedenis.
+
+Om een bestemming te kunnen mailen dient er een [intentie](./database-intentions) aanwezig te zijn. Hiermee bevestig je dat de doelgroep gebruikt mag worden als bestemming voor bulkmailings. Zo voorkom je dat mailings verstuurd worden aan de verkeerde doelgroep (bijvoorbeeld inactieve profielen of bounces). Wanneer er voor de geselecteerde bestemming geen intentie staat ingesteld wordt er een melding getoond. De intentie kan dan alsnog worden toegekend.
 
 ## Tijdstip instellen
-Naast een template of document en de bestemming is het instellen van een tijdstip van de mailing een vereiste waaraan een mailing moet voldoen. Standaard staat ingesteld dat de mailing direct wordt verzonden. 
+De volgende stap is het instellen van het tijdstip waarop de bulkmailing wordt verzonden. Het verzendmoment staat standaard ingesteld op directe verzending.
 
-Er zijn drie verschillende opties om een tijdstip in te stellen:
+Bij het instellen van een verzendmoment heb je de keuze uit drie opties:
 
-1. **Eenmalig**: hier geef je een tijdstip op wanneer de mailing verzonden moet worden. Dit kan het huidige tijdstip zijn als je wilt dat de mail direct verzonden wordt of een tijdstip in de toekomst.  
-2. **Terugkerend schema**: hier kun je een mailing inroosteren voor meerdere dagen. Zo is het bijvoorbeeld mogelijk om de mailing iedere dag te versturen, enkel op woensdag of om de week op dinsdag en vrijdag. Aan de linkerkant, in de _planning voorvertoning_, worden de dagen omcirkeld waarop de mailing verzonden zal worden.  
-3. **Geavanceerde RRule**: hier kun je gebruik maken van [RRULE-strings](https://www.copernica.com/nl/blog/post/slim-mailings-herhalen-met-rrules). Dit is een specificatie die allerlei krachtige herhaalpatronen mogelijk maken (bijvoorbeeld elke tweede dinsdag van de maand).  
+1. **Eenmalig**: Een tijdstip waarop de mailing eenmalig wordt verzonden. Je kunt hierbij kiezen om de mailing direct te versturen of deze in te plannen voor verzending op een later moment.
+2. **Terugkerend schema**: Een terugkerend schema waarop de mailing wordt verstuurd. Hiermee kun je de mailing bijvoorbeeld dagelijks versturen, wekelijks inroosteren op woensdagen of om de week versturen op dinsdag en vrijdag. Bij **_planning voorvertoning_** aan de linkerzijde worden de dagen omcirkeld waarop de mailing wordt verzonden.
+3. **Geavanceerde RRule**: [RRULE-strings](https://www.copernica.com/nl/blog/post/slim-mailings-herhalen-met-rrules) maken het mogelijk om mailings in te roosteren op basis van krachtige herhaalpatronen. Denk bijvoorbeeld aan het verzenden van bulkmailings op elke tweede dinsdag van de maand.  
 
 ![Bulkmailing schema](../images/nl/bulkmailing_schema.png)
 
 ## Labels instellen
-Voor drag-and-drop templates is het mogelijk om (meerdere) labels mee te geven aan je verzending. Op basis van deze labels (tags) kun je filteren in de statistieken van je verzonden mailings. 
+Drag-and-drop-templates bieden de mogelijkheid om mailings van labels (tags) te voorzien. Deze maken het mogelijk om statistieken van verzonden mailings te filteren. 
 
-_Voorbeeld:_ Je verstuurt meerdere campagnes rondom Black Friday, maar ook je normale mailings lopen door. Door een tag 'BlackFriday' mee te geven aan de specifieke mailings over Black Friday kun je achteraf enkel de statistieken van deze mailings ophalen om de resultaten te analyseren.
+_Voorbeeld:_ Je verstuurt meerdere campagnes rondom Black Friday. Tegelijkertijd lopen ook je reguliere mailings door. Door een 'BlackFriday'-tag mee te geven aan Black Friday-mailings analyseer je eenvoudig de resultaten van seizoensgebonden e-mailcampagnes.
 
 ## Opties instellen
-Hier vind je de geavanceerde opties voor je verzending. 
+Bij het verzenden van een bulkmailing heb je ook de mogelijkheid om de onderstaande opties in te stellen:
 
-**Aantal berichten per minuut limiteren**: met deze optie kun je de verzending verspreiden. De laagst mogelijke afleversnelheid is 100 berichten per minuut.  
-**Content type**: templates en documenten kunnen een HTML- een AMP- en een tekstversie bevatten. Mailings kunnen ingesteld worden om alleen de opgemaakte versie (HTML en optioneel AMP) te gebruiken, alleen de tekstversie of beide versies.  
-**Maximale duur**: de maximale duur beperkt de looptijd van de mailing. Er worden geen berichten meer verzonden of opnieuw geprobeerd na de maximale duur sinds de starttijd is verstreken. Dit kan bijvoorbeeld worden gebruikt bij een actie met een korte looptijd.  
-**Statistieken**: hier kun je aangeven dat er geen impressies, kliks, fouten of klachten mogen worden geregistreerd op je mailings. In dit geval tracken wij deze gegevens niet en is dit niet inzichtelijk in de statistieken van de verzonden mailing.
-
+**Aantal berichten per minuut limiteren**: Biedt de mogelijkheid om verzending uit te spreiden over een specifiek tijdsbestek. De laagst mogelijke afleversnelheid is 100 berichten per minuut.  
+**Content type**: Templates en documenten kunnen een HTML-, AMP- of tekstversie bevatten. Deze optie maakt het mogelijk om alleen de opgemaakte versie (HTML en eventueel AMP) of tekstversie te gebruiken. Ook kun je gebruik maken van beide versies.
+**Maximale duur**: De maximale duur beperkt de looptijd van de mailing. Mailings worden niet langer verzonden zodra de maximale duur verstreken is, bijvoorbeeld in het geval van tijdelijke acties.
+**Statistieken**: Je hebt hier de mogelijkheid om impressies, kliks, fouten of klachten met betrekking tot mailings niet te registreren. Dergelijke gegevens zijn dan ook niet inzichtelijk in de statistieken van de verzonden mailing.
 
 ## Mailing versturen
-Na het instellen van bovenstaande stappen vind je aan de linkerkant de button **_Mailing versturen_**. Deze optie is aanklikbaar zodra alle vereiste opties zijn opgegeven.  
 
-_Let op:_ Als het een mailing betreft die direct wordt verzonden is er geen optie meer om de mailing te annuleren nadat je op de verzendknop hebt gedrukt.
+Wanneer je de bovenstaande stappen succesvol hebt doorlopen vind je aan de linkerzijde de button **_Mailing versturen_**. Je verstuurt de mailing door op de knop te klikken. 
+
+**_Let op:_** Wanneer je een mailing direct verstuurt is het niet mogelijk om de mailing te annuleren zodra je op de verzendknop hebt geklikt. In plaats daarvan raden we je aan om de mailing in te roosteren voor verzending op een later tijdstip.
