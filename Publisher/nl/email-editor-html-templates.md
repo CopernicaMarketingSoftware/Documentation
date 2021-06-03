@@ -26,6 +26,7 @@ Om een nieuwe HTML-template aan te maken ga je naar [HTML-templates](https://ms.
 ```
 
 Vervolgens kun je een document aanmaken onder bovenstaand template. Dit doe je via **Aanmaken -> Document aanmaken**.  
+
 Zoals je hierboven kunt zien staat er in dit template een tekstblok genaamd "_voorbeeld_". In je document kun je dit blok nu voorzien van tekst door erop te klikken in de _hybride modus_ of _bewerkmodus_ (deze vind je onderin het document onder _weergave_) of via _blokken bewerken_ in de toolbar van het document.  
 
 ## Contentblokken
