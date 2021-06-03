@@ -1,14 +1,18 @@
 # HTML-templates
 
-Als je meer vrijheid of geavanceerdere mailings wilt versturen dan mogelijk met drag-and-drop templates kun je gebruik maken van HTML-templates. Voor het opzetten van een HTML-template is kennis van HTML en CSS nodig.
+HTML-templates bieden meer vrijheid dan drag-and-drop-templates. Daardoor is er ook meer mogelijk. Om een HTML-template te ontwikkelen is kennis van HTML en CSS nodig.
 
-## Structuur HTML-templates en HTML-documenten
-Een HTML-template bestaat uit HTML en CSS en bevat de globale opmaak van de e-mail en de elementen die voor elke mailing vaststaan (zoals logo's en een afmeldlink). Verder bevat een template [contentblokken](./emailings-publisher-contentblocks) die later kunnen worden ingevuld. Als je een mailing wilt samenstellen maak je op basis van een template een document aan, en kun je de contentblokken vullen met teksten en afbeeldingen.
+## De structuur van HTML-templates/documenten
 
-Vaak worden templates gemaakt door webdesigners of programmeurs. Zij bepalen de opmaak van de mailing en wijzen de plaatsen aan waar teksten en afbeeldingen kunnen worden geplaatst (de layout). Als een template eenmaal is gebouwd, kan deze door bijvoorbeeld een marketeer worden voorzien van teksten en afbeeldingen. Zo kunnen er complete mailings mee worden verstuurd. Voor die tweede stap is geen kennis van HTML vereist.
+Een HTML-template is opgebouwd uit HTML- en CSS-code. Die code bevat de globale opmaak van e-mails en de elementen die daarbij vaststaan. Denk bijvoorbeeld aan logo's of een afmeldlink. 
 
-## Voorbeeld
-Om een nieuwe HTML-template aan te maken ga je naar [HTML-templates](https://ms.copernica.com/#/design) en kies je voor **Aanmaken -> Template aanmaken**. Na het aanmaken van de template kun je de HTML-code toevoegen.
+Daarnaast bevat een template [contentblokken](./emailings-publisher-contentblocks) die op een later moment kunnen worden ingevuld. Wanneer je een mailing wilt samenstellen maak je op basis van een template een document aan. Vervolgens vul je de contentblokken met tekst of afbeeldingen. 
+
+HTML-templates worden doorgaans gemaakt door webdesigners of programmeurs. Zij bepalen de e-mailopmaak en daarmee de plaatsing van de e-mailcontent (de layout). Vervolgens kan een marketeer de e-mail voorzien van de benodigde content. Voor die tweede stap is geen HTML-kennis vereist.
+
+## Het aanmaken van een HTML-template
+
+Om een nieuwe HTML-template aan te maken navigeer je naar [HTML-templates](https://ms.copernica.com/#/design) en kies je voor **'Aanmaken'**, **'Template aanmaken'**. Zodra de template is aangemaakt voeg je de bijbehorende HTML-code toe, bijvoorbeeld:
 
 ``` 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -25,14 +29,16 @@ Om een nieuwe HTML-template aan te maken ga je naar [HTML-templates](https://ms.
 </html>
 ```
 
-Vervolgens kun je een document aanmaken onder bovenstaand template. Dit doe je via **Aanmaken -> Document aanmaken**.  
+Vervolgens maak je een document aan die onder het aangemaakte template valt. Dat doe je via **'Aanmaken'**, **'Document aanmaken'**.  
 
-Zoals in bovenstaand voorbeeld te zien is bevat dit template een tekstblok genaamd "_voorbeeld_". In je document kun je dit blok nu voorzien van tekst door erop te klikken in de _hybride modus_ of _bewerkmodus_ (deze vind je onderin het document onder _weergave_) of via _blokken bewerken_ in de toolbar van het document.  
+Het bovenstaande voorbeeldtemplate bevat een tekstblok met de tekst "_voorbeeld_". Je kunt deze tekst binnen je document aanpassen door erop te klikken in de **'Hybride modus'** of **'Bewerkmodus'**. Je vindt deze onderaan het document onder **'Weergave'** of in de toolbar van het document onder **'Blokken bewerken'**.
 
 ## Contentblokken
-Er zijn drie tags waarmee je contentblokken maakt: [text], [image] en [loop]. Deze tags kun je in de broncode van de template opnemen om aan te geven dat daar op documentniveau content kan worden geplaatst. De werking van de [text] en [image] tags spreekt voor zich: op elke plek in de template waar je deze tags plaatst, kunnen later op documentniveau teksten en afbeeldingen worden geplaatst. De loop-tags behoeven wat meer uitleg, en stellen je in staat om op documentniveau herhalingen in te voeren. Als je bijvoorbeeld gebruikers in staat wilt stellen om mailings te maken met een variabel aantal paragrafen of een variabel aantal artikelen, dan kun en dit doen door loopblokken in de template op te nemen.
+Er zijn drie tags waarmee je contentblokken maakt: _[text]_-, _[image]_- en _[loop]_-tags. Je neemt deze tags op in de broncode van je HTML-template om aan te geven dat daar op documentniveau content kan worden geplaatst. 
 
-Lees voor meer informatie het artikel over [contentblokken](./emailings-publisher-contentblocks).
+_Text_- en _image_-tags geven binnen de template de plekken aan waar teksten en afbeeldingen geplaatst kunnen worden. _Loop_-tags stellen je in staat om herhaling toe te passen. Door _loop_-tags op te nemen in de template kunnen mailings bijvoorbeeld worden voorzien van een variabel aantal paragrafen of artikelen.
+
+[Lees hier meer](./emailings-publisher-contentblocks) over het gebruik van contentblokken.
 
 ## Let op met blokhaken!
 Binnen een template hebben de blokhaken _[ en ]_ een speciale betekenis. Deze tekens worden gebruikt om de hierboven beschreven contentblokken mee te markeren, en je kunt ze gebruiken voor [if] statements en templatevariabelen (een voorbeeld kun je zien in het artikel over [[loop] tags](./loop-tag)). Doordat blokhaken een speciale betekenis hebben, moet je opletten als je ergens "gewone" blokhaken plaatst, zoals in de stylesheet bovenaan een template. Deze blokhaken worden namelijk door Copernica herkend als het begin van een speciaal onderdeel van de template en vaak resulteert dit in een fout. Er zijn twee trucs om dit te voorkomen: door gebruik te maken van [ldelim] en [rdelim] of door [literal] en [/literal].
