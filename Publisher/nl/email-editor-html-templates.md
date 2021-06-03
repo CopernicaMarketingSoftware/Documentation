@@ -59,6 +59,6 @@ Als je een groot stuk CSS-code hebt dat vol staat met blokhaken, en waar geen ge
 ```
 
 ## Vaste afbeeldingen
-Afbeeldingen worden meestal pas op documentniveau toegevoegd. Maar ook in de template kun je al afbeeldingen plaatsen, zoals het bedrijfslogo dat voor elke mailing hetzelfde is. Dit doe je met HTML [<img>-tags](https://www.w3schools.com/tags/tag_img.asp). Deze afbeeldingen kunnen van een externe locatie zijn (buiten Copernica om), zijn gekoppeld aan het template (onder _bestanden en afbeeldingen_ in het template) of in een _mediabibliotheek staan.
+Afbeeldingen worden meestal pas op documentniveau toegevoegd. Maar ook in de template kun je al afbeeldingen plaatsen, zoals het bedrijfslogo dat voor elke mailing hetzelfde is. Dit doe je met HTML [`<img>-tags`](https://www.w3schools.com/tags/tag_img.asp). Deze afbeeldingen kunnen van een externe locatie zijn (buiten Copernica om), zijn gekoppeld aan het template (onder _bestanden en afbeeldingen_ in het template) of in een _mediabibliotheek staan.
 
 Bij je template of document kun je onder _bestanden en afbeeldingen_ afbeeldingen uploaden die specifiek aan die template of document gekoppeld worden. Wil je een afbeelding in meerdere templates gebruiken, kun je het beste gebruik maken van je _mediabibliotheek_. Deze optie vind je in de toolbar van je template. Afbeeldingen die hierin zijn opgenomen zijn beschikbaar in je modules.  
