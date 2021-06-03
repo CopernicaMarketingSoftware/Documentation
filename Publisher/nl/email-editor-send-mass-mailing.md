@@ -1,5 +1,5 @@
 # Een bulkmailing versturen
-Het tegelijkertijd mailen van meerdere relaties wordt een bulkmailing genoemd. Je kunt een bulkmailing inplannen of direct versturen via de optie **_Mailing versturen_**. Je vindt deze in de toolbar bij **'[Profielen](https://ms.copernica.com/#/profiles)'** en **'[HTML-templates](https://ms.copernica.com/#/design)'**.
+Het tegelijkertijd mailen van meerdere relaties wordt een bulkmailing genoemd. Je kunt een bulkmailing inplannen of direct versturen via de optie **Mailing versturen**. Je vindt deze in de toolbar bij **'[Profielen](https://ms.copernica.com/#/profiles)'** en **'[HTML-templates](https://ms.copernica.com/#/design)'**.
 
 Het versturen van een bulkmailing verloopt in drie stappen: 
 
