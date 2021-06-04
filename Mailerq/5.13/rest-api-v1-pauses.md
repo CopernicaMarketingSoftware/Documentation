@@ -55,6 +55,7 @@ the table below. All fields are optional.
 | ip | no | string | Remote IP that the pause applies to.
 | tag  | no  | string | The tag that the pause applies to.
 | cluster | no | bool | Whether or not this pause is for the entire cluster or only this instance.
+| expire | no | timestamp | At what time point in the future should this pause be removed
 
 Do note that not all fields may be passed at the same time. `pool` and `mta` are mutually exclusive, and so are `domain` and `ip`. That means that they may not be supplied together, or they will result in a `400` response. 
 
