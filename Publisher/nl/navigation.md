@@ -83,3 +83,4 @@
    * [Copernica-training: personalisatie](./copernica-training-part-6.md)
    * [Copernica-training: verzending en statistieken](./copernica-training-part-7.md)
    * [Copernica-training: opvolgacties](./copernica-training-part-8.md)
+   * [Copernica-training: collecties en miniselecties](./copernica-training-part-9.md)
