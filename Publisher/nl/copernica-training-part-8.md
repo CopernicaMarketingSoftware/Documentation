@@ -1,4 +1,4 @@
-# Opvolgacties
+# Copernica-training: opvolgacties
 
 Opvolgacties geven je de mogelijkheid om automatische e-mailcampagnes op te zetten. Een opvolgactie 
 bestaat uit een aanleiding, een eventuele wachttijd en/of conditie en een actie die wordt uitgevoerd.
