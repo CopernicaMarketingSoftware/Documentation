@@ -1,4 +1,4 @@
-# Collecties en miniselecties
+# Copernica-training: collecties en miniselecties
 
 ## Collecties
 
