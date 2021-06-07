@@ -29,14 +29,11 @@ Maak een collectie aan en noem deze '**Orders**'. Voeg vervolgens de volgende ve
     * ordered;
 * Artikelnummer.
 
-Importeer vervolgens het bestand [AdvancedOrders.txt](https://vicinity.picsrv.net/g/127/0/9966/946570547c4af9079f398f3af00edcd4/export-2021-05-19.zip). Merk op dat het bestand dezelfde
-velden bevat als zojuist toegevoegd. Verbind de kolommen met de juiste velden en
-importeer de data in de database. 
-
-**Let op**: gebruik sleutelvelden ('**E-mail**' en '**Aanschafdatum**') 
+Importeer vervolgens het bestand [AdvancedOrders.txt](https://vicinity.picsrv.net/g/127/0/9966/946570547c4af9079f398f3af00edcd4/export-2021-05-19.zip). Merk op dat het bestand dezelfde velden bevat als zojuist toegevoegd. Verbind de kolommen met de juiste velden en
+importeer de data in de database. **Let op**: gebruik sleutelvelden ('**E-mail**' en '**Aanschafdatum**') 
 om de data te importeren.
 
-Je kunt collecties inzien door linksonderin de pagina te
+Je kunt collecties inzien door onderin de pagina te
 klikken op '**Collecties**'. Subprofielen zijn zichtbaar in het profiel.
 
 ![Collecties](../images/nl/collecties.png)
@@ -50,10 +47,10 @@ bijvoorbeeld mogelijk om een miniselectie aan te maken die alle orders bevat die
 
 Om alle subprofielen in een miniselectie te bekijken navigeer je onderin de Marketing Suite
 naar '**Collecties**'​. Vervolgens klik je op de collectie waar de miniselectie op gebaseerd is. In
-het onderstaande voorbeeld zien we de profielen die onder de miniselectie '**Alle_orders**'
+het onderstaande voorbeeld zien we de profielen die onder de miniselectie '**Alle_Orders**'
 vallen.
 
-![Alle_orders](../images/nl/alleorders.png)
+![Alle_Orders](../images/nl/alleorders.png)
 
 Het is ook mogelijk om profielen te selecteren waarvan de subprofielen voldoen
 aan de condities van een miniselectie. In dat geval maak je een selectie aan die controleert
@@ -74,7 +71,7 @@ door te navigeren naar '**Profielen**', '**Aanmaken**', '**Maak een miniselectie
 ![Miniselectie aanmaken](../images/nl/miniselectieaanmaken.png)
 
 
-Selecteer de collectie '**Orders**'​ en noem de miniselectie '**Alle_orders**' . Klik vervolgens op
+Selecteer de collectie '**Orders**'​ en noem de miniselectie '**Alle_Orders**' . Klik vervolgens op
 '**Miniselectie aanmaken**'​.
 
 Voeg vervolgens regels en condities toe. Dat doe je op dezelfde manier als bij reguliere
