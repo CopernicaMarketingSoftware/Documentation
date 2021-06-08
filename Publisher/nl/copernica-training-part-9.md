@@ -6,8 +6,8 @@ Copernica geeft je de mogelijkheid om een extra laag aan je database toe te voeg
 laag is gekoppeld aan een profiel en bevat daarover meer informatie. Denk bijvoorbeeld aan de
 aankoophistorie of bekeken producten. 
 
-Databases die onder een profiel vallen worden '**Collecties**' genoemd. De data binnen een collectie noemen we
-'**Subprofielen**'.
+Databases die onder een profiel vallen worden '**collecties**' genoemd. De data binnen een collectie noemen we
+'**subprofielen**'.
 
 Net als bij een database worden collecties opgebouwd uit velden naar keuze. Een collectie
 wordt vervolgens gevuld met subprofielen die (net als bij reguliere profielen) informatie over
