@@ -3,15 +3,15 @@
 ## Collecties
 
 Copernica geeft je de mogelijkheid om een extra laag aan je database toe te voegen. Die
-laag is gekoppeld aan een profiel en bevat daarover meer informatie. Denk bijvoorbeeld aan de
-aankoophistorie of bekeken producten. 
+laag is gekoppeld aan een profiel en bevat daarover meer informatie. Denk bijvoorbeeld aan het productaantal, de
+aankoophistorie, bekeken producten, naam, prijs of categorie.
 
 Databases die onder een profiel vallen worden '**collecties**' genoemd. De data binnen een collectie noemen we
 '**subprofielen**'.
 
 Net als bij een database worden collecties opgebouwd uit velden naar keuze. Een collectie
 wordt vervolgens gevuld met subprofielen die (net als bij reguliere profielen) informatie over
-kenmerken bevatten. Denk hierbij aan een naam, prijs, aantal of categorie.
+kenmerken bevatten.
 
 ![Collectie aanmaken](../images/nl/collectieaanmaken.png)
 
