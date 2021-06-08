@@ -74,11 +74,11 @@ door te navigeren naar '**Profielen**', '**Aanmaken**', '**Maak een miniselectie
 Selecteer de collectie '**Orders**'​ en noem de miniselectie '**Alle_Orders**' . Klik vervolgens op
 '**Miniselectie aanmaken**'​.
 
-Voeg vervolgens regels en condities toe. Dat doe je op dezelfde manier als bij reguliere
+De volgende stap is het toevoegen van regels en condities. Dat doe je op dezelfde manier als bij reguliere
 selecties. In dit geval gebruik je een ​'**Check op veldwaarde**'​ waarbij de status van de
 orders 'complete' moet zijn. Daarmee hebben we alle afgeronde orders geselecteerd.
 
-Maak een selectie aan met de naam '**Alle_klanten**'. Stel daarbij in dat er gecheckt moet
+Maak vervolgens een selectie aan met de naam '**Alle_klanten**'. Stel daarbij in dat er gecheckt moet
 worden op de inhoud van een miniselectie. Zet het minimum aantal subprofielen op
 '1' en het maximale aantal subprofielen op '99999'. Zo selecteer je alleen profielen die 
 ooit een order hebben geplaatst.
