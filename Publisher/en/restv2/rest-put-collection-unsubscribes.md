@@ -9,9 +9,9 @@ The variable `$id` should be replaced with the ID of the collection in which you
 
 ## Supported parameters
 
-To select subprofiles we pass data throught the URL, the following parameter has to be used:
+To select subprofiles we pass data through the URL, the following parameter has to be used:
 
-* **fields**: required parameter to select the subprofiles that are going to be modified
+* **fields**: required parameter to select the subprofiles of which the unsubscribe behavior has to be executed
 
 The **fields** parameter is required, to prevent overwriting all subprofiles in a
 collection with a single API call. Only the subprofiles that match with the supplied
