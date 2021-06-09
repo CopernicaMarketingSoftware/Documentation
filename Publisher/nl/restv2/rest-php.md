@@ -20,7 +20,7 @@ vervangen door een '2' om de nieuwste versie van de API te gebruiken.
 require_once('copernica_rest_api.php');
 
 // create an api object (add your own access token!)
-$api = new CopernicaRestAPI("my-access-token", $versie);
+$api = new CopernicaRestAPI("my-access-token", $version);
 
 // do the call
 $result = $api->get("databases");
@@ -29,6 +29,3 @@ $result = $api->get("databases");
 print_r($result);
 ```
 
-## Meer informatie
-
-* [Overzicht van alle API calls](./rest-api)

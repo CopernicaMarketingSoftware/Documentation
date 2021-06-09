@@ -1,4 +1,5 @@
 # Databasevelden
+
 Een database bestaat doorgaans uit meerdere velden. Je kunt deze velden aanmaken of bewerken door binnen een database te kiezen voor de menuoptie ‘**Velden & interesses**’. De volgende veldtypen zijn beschikbaar:
 
 * **Tekst:** Geschikt voor elk karaktertype met een limiet van 255 karakters. Wanneer je meer karakters wilt invullen gebruik je de optie 'Grote tekst'. We raden het gebruik van deze optie echter af omdat deze velden niet kunnen worden geïndexeerd.
@@ -22,9 +23,9 @@ Een database bestaat doorgaans uit meerdere velden. Je kunt deze velden aanmaken
 
 Wanneer je een veld bewerkt of toevoegt kun je per veld een aantal extra opties selecteren. De opties zijn als volgt:
 
-* **Verborgen veld:** Verborgen velden zijn niet zichtbaar wanneer je een profiel bewerkt vanuit de interface. Gebruik deze optie als je niet wilt dat het profiel handmatig aanpasbaar is. Via een import of API-call is dat nog wel mogelijk.
+* **Verborgen veld:** Verborgen velden zijn niet zichtbaar wanneer je een profiel bewerkt vanuit de interface. Gebruik deze optie als je niet wilt dat het veld handmatig aanpasbaar is. Via een import of API-call kan een verborgen veld wel aangepast worden.
 
-* **Dit veld is standaard gesorteerd:** Met deze optie kun je aangeven op basis van welk veld het overzicht gesorteerd moet zijn. Standaard gebeurt dit op basis van het profiel-ID. Je kunt deze optie eenmalig per database aanvinken.
+* **Dit veld is standaard gesorteerd:** Met deze optie kun je aangeven op basis van welk veld het overzicht gesorteerd moet zijn. Standaard gebeurt dit op basis van het profiel-ID. Je kunt deze optie bij één veld per database aanvinken.
 
 * **Toon dit veld op de overzichtspagina:** De overzichtspagina is het raster dat je ziet bij het aanklikken van een database. Door gebruik te maken van deze optie kun je kiezen welke velden direct in het overzicht zichtbaar moeten zijn. De overige velden worden zichtbaar wanneer je op het profiel klikt.
 

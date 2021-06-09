@@ -19,6 +19,7 @@ The method returns a JSON object containing the following information:
 * **destinations**: Amount of destinations the mailing was sent to.
 * **type**: Type of mailing (individual or mass).
 * **target**: Contains the target type and the ID and type of other
+* **tags**: An array with tags used in the mailing.
 entities above it (for example the database a collection belongs to).
 
 ### JSON example
@@ -46,7 +47,11 @@ the 'data' property of the output:
             "type":"database"
          }
       ]
-   }
+   },
+   "tags":[
+      "test1", 
+      "Test2"
+   ]
 }
 ```
 

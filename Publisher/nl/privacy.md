@@ -44,4 +44,4 @@ Heb je meer informatie nodig over hoe je data op kunt slaan bij Copernica
 of wil je weten hoe onze API werkt? De artikelen hieronder helpen je op weg.
 
 * [Database management](./database-introduction.md)
-* [REST API introductie](./restv2/rest-introduction.md)
+* [REST API introductie](./restv2/rest-api.md)

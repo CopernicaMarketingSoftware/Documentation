@@ -36,7 +36,7 @@ Wil je alle profielen met '@copernica' ophalen, gebruik je "emailaddress=~%@cope
 ## ID parameter
 
 Sommige Publisher calls voor statistieken en resultaten ondersteunen ook een *ID*
-paramter. Deze kan gebruikt worden net als alle andere *fields* parameters om
+parameter. Deze kan gebruikt worden net als alle andere *fields* parameters om
 bijvoorbeeld de statistieken die onder een bepaald ID zijn gelogd op te halen.
 Dit is met name handig als je alle statistieken die wij bijhouden ook zelf wilt
 opslaan. Bewaar het laatste ID dat je hebt verkregen via je laatste call en bij

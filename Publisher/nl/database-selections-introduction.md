@@ -1,5 +1,5 @@
 # Selecties
-Een selectie is een segment van profielen op basis van een overlappend kenmerk. Je gebruikt selecties om je database te filteren. Zo kun je een deel van je profielen groeperen op basis van eigenschappen. Op die manier bouw je eenvoudig specifieke doelgroepen op waarnaar je e-mails kunt versturen.
+Een selectie is een segment van profielen op basis van een of meerdere overlappende kenmerken. Je gebruikt selecties om je database te filteren. Op deze manier bouw je eenvoudig specifieke doelgroepen op waarnaar je e-mails kunt versturen.
 
 Selecties geven je de mogelijkheid om met meerdere lagen te werken. Selecties die onder een andere selectie vallen noemen we ‘subselecties’. Een subselectie segmenteert alleen profielen die ook in de bovenliggende selectie zijn opgenomen.
 
@@ -13,7 +13,7 @@ Naast (sub)selecties bestaan er ook [miniselecties](./database-collections). Dat
 ## Aanmaken van een selectie
 Om een selectie aan te maken selecteer je een database en kies je voor '**Aanmaken -> Een selectie aanmaken**'. Vervolgens geef je de selectie een naam en bepaal je of deze direct onder de database (reguliere selectie) of onder een andere selectie (subselectie) moet vallen. 
 
-Om een selectie aan te passen navigeer je naar de desbetreffende selectie. Vervolgens klik je in de toolbar op ‘**Regels**’.
+Om een selectie aan te passen navigeer je naar de selectie. Vervolgens klik je in de toolbar op ‘**Regels**’.
 
 ## Regels en condities
 Zoals eerder genoemd moeten profielen bepaalde eigenschappen vertonen om in een selectie opgenomen te worden. In Copernica stel je die voorwaarden in door middel van selectieregels en condities. 
@@ -94,7 +94,7 @@ Met deze conditie bepaal je of profielen meerdere keren voorkomen in de database
 *Voorbeeld: Je wilt een selectie aanmaken waarbij je alle dubbele profielen uitsluit van de verzendselectie. Hiervoor selecteer je alle dubbele profielen behalve het profiel met het laagste ID. Dat profiel is degene die het langst in je database zit en daardoor ook de meeste informatie bevat. Dat profiel wil je dus niet uitsluiten van je verzendselectie.*
 
 ### Sorteren en/of selecteer profielen
-Met deze conditie kun je een bepaald aantal- of percentage profielen uit je database selecteren. Let op: de profielen in deze selectie worden willekeurig geselecteerd. Daardoor komen er steeds verschillende profielen in voor. In verband met de opbouwvolgorde werkt deze optie niet in combinatie met de conditie ‘Check op inhoud van andere selectie’.
+Met deze conditie kun je een bepaald aantal of een percentage profielen uit je database selecteren. Let op: de profielen in deze selectie worden willekeurig geselecteerd. Daardoor komen er steeds verschillende profielen in voor. In verband met de opbouwvolgorde werkt deze optie niet in combinatie met de conditie ‘Check op inhoud van andere selectie’.
 
 ![Voorbeeld van een selectie met 20% van de bovenliggende database/selectie](../images/nl/selectie_sorteren.png)
 
