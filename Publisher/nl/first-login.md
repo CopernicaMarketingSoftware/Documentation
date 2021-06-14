@@ -26,9 +26,8 @@ De modules zijn als volgt ingericht:
 ### Marketing Suite
 
 * __Dashboard:__ bevat algemene statistieken over verzonden mailings.  
-* __Profielen:__ hier beheer je databases en profielen ([meer informatie](./database-profiles)).  
-* __E-mail designer:__ bevat een [Drag-and-drop Editor](https://ms.copernica.com/#/templates) voor het opstellen van mailings.  
-* __HTML-templates:__ hier creëer je geavanceerde HTML-templates.  
+* __Profielen:__ hier beheer je databases en profielen ([meer informatie](./database-profiles)).    
+* __E-mail-editor:__ hier creëer je uitgebreide e-mailtemplates door middel van drag and drop of HTML. 
 * __Vormgeving - CSS:__ biedt mogelijkheden voor het beheren van CSS-opmaakbestanden.  
 * __Vormgeving - XSLT:__ biedt mogelijkheden voor het beheren van XSLT-opmaakbestanden.  
 * __Resultaten:__ hier bekijk je de resultaten van verzonden mailings en beheer je toekomstige mailings.  
