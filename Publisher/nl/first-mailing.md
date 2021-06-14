@@ -32,13 +32,9 @@ Je kunt de standaardselectie aanmaken door binnen je gekozen database te naviger
 _[Meer informatie over het aanbrengen van een selectiestructuur](./database-management)_.
 
 ## 5. E-mailopmaak
-Voordat je een e-mail kunt versturen is het nodig om eerst een template of document aan te maken. De [Drag-and-drop Editor](./templates) stelt je in staat om eenvoudig gepersonaliseerde templates met conditionele content te ontwikkelen en versturen. 
+Voordat je een e-mail kunt versturen is het nodig om eerst een template of document aan te maken. Met de [E-mail-editor](./design) ontwikkel je uitgebreide e-mailtemplates door middel van drag and drop of HTML. Je kunt daarbij gebruik maken van feeds, conditionele content en meer. 
 
-Het kan zijn dat je behoefte hebt aan meer flexibiliteit in het ontwikkelen van e-mailtemplates, bijvoorbeeld wanneer je templates dynamisch wilt opbouwen door middel van feeds. In zo’n geval maak je gebruik van [HTML-templates](./design). 
-
-_[Meer informatie over de Drag-and-drop Editor](./emailings-ms-templates)_.
-
-_[Meer informatie over HTML-templates](./emailings-publisher-templates)_.
+_[Meer informatie over HTML-templates](./email-editor-html-templates)_.
 
 ## 6. Verzending
 Het versturen van je eerste mailing vereist een verzendselectie (inclusief profielen), template en document. De voorgaande stappen helpen je bij het aanmaken daarvan. Heb je de checklist succesvol doorlopen? Je bent dan klaar om de mailing te versturen. 
