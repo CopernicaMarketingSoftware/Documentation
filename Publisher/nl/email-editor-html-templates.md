@@ -10,7 +10,7 @@ HTML-templates worden doorgaans gemaakt door webdesigners of programmeurs. Zij b
 
 ## Het aanmaken van een HTML-template
 
-Om een nieuwe HTML-template aan te maken navigeer je naar [**'HTML-templates'**](https://ms.copernica.com/#/design) en kies je voor **'Aanmaken'**, **'Template aanmaken'**. Zodra de template is aangemaakt voeg je de bijbehorende HTML-code toe, bijvoorbeeld:
+Om een nieuwe HTML-template aan te maken navigeer je naar [**'E-mail-editor'**](https://ms.copernica.com/#/design) en kies je voor **'Aanmaken'**, **'HTML-template aanmaken'**. Zodra de template is aangemaakt voeg je de bijbehorende HTML-code toe, bijvoorbeeld:
 
 ``` 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
@@ -27,7 +27,7 @@ Om een nieuwe HTML-template aan te maken navigeer je naar [**'HTML-templates'**]
 </html>
 ```
 
-Vervolgens maak je een document aan die onder het aangemaakte template valt. Dat doe je via **'Aanmaken'**, **'Document aanmaken'**.  
+Vervolgens maak je een document aan die onder het aangemaakte template valt. Dat doe je via **'Aanmaken'**, **'HTML-document aanmaken'**.  
 
 Het bovenstaande voorbeeldtemplate bevat een tekstblok met de tekst "_voorbeeld_". Je kunt deze tekst binnen je document aanpassen door erop te klikken in de **'Hybridemodus'** of **'Bewerkmodus'**. Je vindt deze onderaan het document onder **'Weergave'** of in de toolbar van het document onder **'Blokken bewerken'**.
 
