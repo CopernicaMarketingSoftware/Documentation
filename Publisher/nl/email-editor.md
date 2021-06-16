@@ -5,12 +5,12 @@ In Marketing Suite kun je in de **[E-mail-editor](https://ms.copernica.com/nl#/t
 - Drag-and-drop-templates
 - Drag-and-drop-templates (oud)
 
-Met de Drag-and-drop-editor maak je snel en eenvoudig responsive e-mails door het slepen van elementen binnen je template. Wil je meer vrijheid in de vormegeving van je template kun je HTML-templates gebruiken.
+Met de Drag-and-drop-editor maak je snel en eenvoudig responsive e-mails door het slepen van elementen binnen je template. Met HTML-templates heb je meer vrijheid in de vormgeving omdat je hier niet vast zit aan standaard elementen.
 
 **Let op**: Er zijn twee verschillende soorten Drag-and-drop-templates. Deze zijn gebaseerd op een ander framework waardoor de functionaliteiten verschillen en niet overdraagbaar zijn. We raden je aan om geen nieuwe templates aan te maken op basis van _Drag-and-drop-templates (oud)_. Dit framework wordt niet meer onderhouden waardoor wij niet kunnen garanderen dat je e-mail juist zichtbaar is in de verschillende clients.
 
-## Drag-and-drop templates
-* [Uitleg Drag-and-drop templates](./email-editor-drag-and-drop-templates)
+## Drag-and-drop-templates
+* [Uitleg Drag-and-drop-templates](./email-editor-drag-and-drop-templates)
 * [Personalisatie](./email-editor-personalization)
 * [Uitschrijflink & webversie](./email-editor-unsubscribelink-webversion)
 * [Headers](./email-editor-headers)
@@ -32,8 +32,8 @@ Met de Drag-and-drop-editor maak je snel en eenvoudig responsive e-mails door he
 * [Data-script](./data-object)
 * [AMP](./amp)  
 
-## Drag-and-drop templates (oud)
-Voor de oude drag-and-drop templates werkt de personalisatie anders dan bij de eerder genoemde soorten templates:
+## Drag-and-drop-templates (oud)
+Voor de oude drag-and-drop-templates werkt de personalisatie anders dan bij de eerder genoemde soorten templates:
 * [Personalisatie](./emailings-ms-personalization)
 * [Uitschrijflink](./emailings-ms-unsubscribe)
 * [Webversie](./emailings-ms-webversion)
