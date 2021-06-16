@@ -1,11 +1,13 @@
 # E-mail editor
 
-In Marketing Suite kun je in de **[E-mail editor](https://ms.copernica.com/nl#/templates)** drie soorten templates aanmaken:
+In Marketing Suite kun je in de **[E-mail-editor](https://ms.copernica.com/nl#/templates)** drie soorten templates aanmaken:
 - HTML-templates
-- Drag-and-drop templates
-- Drag-and-drop templates (oud)
+- Drag-and-drop-templates
+- Drag-and-drop-templates (oud)
 
-Met de Drag-and-drop editor maak je snel en eenvoudig responsive e-mails door het slepen van elementen binnen je template. Met de HTML-templates heb je meer vrijheid in de vormgeving van je template.
+Met de Drag-and-drop-editor maak je snel en eenvoudig responsive e-mails door het slepen van elementen binnen je template. Wil je meer vrijheid in de vormegeving van je template kun je HTML-templates gebruiken.
+
+**Let op**: Er zijn twee verschillende soorten Drag-and-drop-templates. Deze zijn gebaseerd op een ander framework waardoor de functionaliteiten verschillen en niet overdraagbaar zijn. We raden je aan om geen nieuwe templates aan te maken op basis van _Drag-and-drop-templates (oud)_. Dit framework wordt niet meer onderhouden waardoor wij niet kunnen garanderen dat je e-mail juist zichtbaar is in de verschillende clients.
 
 ## Drag-and-drop templates
 * [Uitleg Drag-and-drop templates](./email-editor-drag-and-drop-templates)
