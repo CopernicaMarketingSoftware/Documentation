@@ -2,33 +2,26 @@
 
 Met drag-and-drop templates ontwerp je snel en eenvoudig e-mails. Door te slepen met blokken geef je aan waar teksten, afbeeldingen en buttons moeten staan. Je maakt een drag-and-drop template aan door in de **[E-mail-editor](https://ms.copernica.com/#/design)** te kiezen voor _Aanmaken -> Drag-and-drop-template aanmaken_. 
 
+Een Drag-and-drop-template kent drie verschillende elementen:  
+  
+
+**Structuur**: Ieder template heeft minimaal één structuur-element. 
+**Container**:
+**Lijn**:  
+**Blok**: Hiermee plaats je content in je template. Verderop in de documentatie vind je meer informatie over de verschillende blokken.  
+
 De editor is onderverdeeld in twee delen, namelijk de instellingen en een voorbeeldweergave van je template. De instellingen zijn ook weer onderverdeeld in twee delen (uiterlijk en inhoud). 
 
 ## Uiterlijk
-Hier kun je globaal de instellingen opgeven hoe je e-mail eruit komt te zien. Deze optie is onderverdeeld in 5 subkoppen:  
-
-**Algemene instellingen**:  
-Hier kun je gegevens als de breedte, het lettertype, de achtergrondkleur en de regelafstand van je template instellen.  
-
-**Lijnen**:  
-Hier kun je specifieke instellingen voor elke 'Lijn' binnen je template. Een lijn kan bestaan uit meerdere elementen. In de meeste gevallen zal je e-mail bestaan uit één lijn. Het kan echter voorkomen dat je bijvoorbeeld verschillende achtergrondkleuren wilt gebruiken. In dit geval kun je een extra lijn toevoegen aan je template en hier je instellingen wijzigen.  
-
-**Hoofdingen**:  
-Hier kun je de stijling aanpassen van kopteksten (hoofdingen).  
-
-**Knop**:  
-Hier kun je de stijling aanpassen van knoppen (buttons).
-
-**Mobiel formatteren**:  
-Hier kun je specifieke instellingen opgeven voor als je e-mail op een mobiel wordt geopend.  
+Hier kun je globaal de instellingen opgeven hoe je e-mail eruit komt te zien. Hierbij kun je denken aan de breedte, het lettertype, de achtergrondkleur of de regelafstand van je template. Ook kun je hier specifieke instellingen meegeven aan de mobiele weergave van je e-mail.
 
 ## Inhoud
 Hier kun je de daadwerkelijke content toevoegen aan je e-mailtemplate.  
 
 ### Structuren
-Onder _Structuren_ bepaal je de structuur van je e-mail. Je bouwt een e-mail op door meerdere regels onder elkaar te plaatsen. Deze regels bestaan weer uit één of meerdere blokken (container genoemd) die je kan vullen met content. 
+Onder _Structuren_ bepaal je de structuur van je e-mail. Je bouwt een e-mail op door meerdere regels onder elkaar te plaatsen. Deze regels bestaan weer uit één of meerdere containers. In iedere container kun je meerdere blokken toevoegen. 
 
-Als je bijvoorbeeld kiest voor een regel met twee containers, kan je links een tekstveld maken en rechts een afbeelding plaatsen. Als je kiest voor een regel met één blok dan vult deze de hele breedte van je e-mail.
+Als je bijvoorbeeld kiest voor een regel met twee containers, kan je links een of meerdere tekstveld(en) aanmaken en rechts een afbeelding plaatsen. Als je kiest voor een regel met één container dan vult deze de hele breedte van je e-mail.
 
 Door op het structuur-element te klikken in je template, kun je specifieke instellingen opgeven. Hierbij kun je denken aan de breedte van iedere container binnen dit element of hoeveel padding er tussen beide containers is.
 
