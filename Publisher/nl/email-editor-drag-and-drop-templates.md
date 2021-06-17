@@ -25,11 +25,11 @@ Hier kun je globaal de instellingen opgeven hoe je e-mail eruit komt te zien. Hi
 Hier kun je de daadwerkelijke content toevoegen aan je e-mailtemplate.  
 
 ### Structuren
-Onder _Structuren_ bepaal je de structuur van je e-mail. Je bouwt een e-mail op door meerdere regels onder elkaar te plaatsen. Deze regels bestaan weer uit één of meerdere containers. In iedere container kun je meerdere blokken toevoegen. 
+Zoals hierboven beschreven bepaal je onder _Structuren_ de structuur van je e-mail. Je bouwt een e-mail op door meerdere structuur-elementen onder elkaar te plaatsen. Deze elementen bestaan weer uit één of meerdere containers. Binnen deze containers kun je meerdere blokken toevoegen.
 
-Als je bijvoorbeeld kiest voor een regel met twee containers, kan je links een of meerdere tekstveld(en) aanmaken en rechts een afbeelding plaatsen. Als je kiest voor een regel met één container dan vult deze de hele breedte van je e-mail.
+Als je bijvoorbeeld kiest voor een regel met twee containers, kan je links een of meerdere tekstveld(en) aanmaken en rechts een afbeelding plaatsen. Als je kiest voor een element met één container dan vult deze de gehele breedte van je e-mail.
 
-Door op het structuur-element te klikken in je template, kun je specifieke instellingen opgeven. Hierbij kun je denken aan de breedte van iedere container binnen dit element of hoeveel padding er tussen beide containers is.
+Door op het structuur-element te klikken in je template, kun je specifieke instellingen opgeven. Hierbij kun je denken aan de breedte van iedere container binnen dit element of hoeveel padding er tussen beide containers zit.
 
 ### Blokken
 Er zijn verschillende blok-opties voor je nieuwsbrief:
@@ -49,6 +49,6 @@ Er zijn verschillende blok-opties voor je nieuwsbrief:
 Elk blok heeft eigen opties om de weergave van het specifieke blok aan te passen.
 
 ### Modules
-Hiermee kun je een vast element opslaan en deze gebruiken voor andere templates. Je maakt een module aan door met je muis over het element te gaan en te klikken op de drie puntjes. Hier vind je de optie '_opslaan als module_'.
+Modules maken het mogelijk om elementen te hergebruiken in meerdere templates, waardoor je niet telkens dezelfde hoeft handelingen te verrichten. Modules kun je maken van zowel lijn-, stuctuur- als container-elementen. Zo kun je bijvoorbeeld je _header_ of _footer_ opslaan als module, waardoor je deze met één simpele handeling in al je templates kunt toevoegen.
 
-De opgeslagen modules vind je vervolgens onder **Modules**. Als je over de opgeslagen module gaat met je muis, kun je door op de drie puntjes die verschijnen te klikken, een naam, beschrijving en eventuele tags meegeven aan de module. Op basis hiervan kun je zoeken binnen je modules.
+Je maakt een module aan door met je muis over het element te gaan en te klikken op de drie puntjes. Hier vind je de optie '_opslaan als module_'. De opgeslagen modules vind je vervolgens onder **Modules**. Door over de opgeslagen module heen te gaan met je muis, kun je door op de drie puntjes te klikken, een naam, beschrijving en eventuele tags meegeven. Hierdoor wordt het mogelijk om te zoeken binnen je modules op deze specifieke waardes.
