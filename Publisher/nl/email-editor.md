@@ -5,7 +5,7 @@ In Marketing Suite kun je in de **[E-mail-editor](https://ms.copernica.com/nl#/t
 - Drag-and-drop-templates
 - Drag-and-drop-templates (oud)
 
-Met de Drag-and-drop-editor maak je snel en eenvoudig responsive e-mails door het slepen van elementen binnen je template. Met HTML-templates heb je meer vrijheid in de vormgeving omdat je hier niet vast zit aan standaard elementen.
+Met Drag-and-drop-templates maak je snel en eenvoudig responsive e-mails door het slepen van elementen. Met HTML-templates heb je meer vrijheid in de vormgeving omdat je hier niet vast zit aan standaard elementen.
 
 **Let op**: Er zijn twee verschillende soorten Drag-and-drop-templates. Deze zijn gebaseerd op een ander framework waardoor de functionaliteiten verschillen en niet overdraagbaar zijn. We raden je aan om geen nieuwe templates aan te maken op basis van _Drag-and-drop-templates (oud)_. Dit framework wordt niet meer onderhouden waardoor wij niet kunnen garanderen dat je e-mail juist zichtbaar is in de verschillende clients.
 
