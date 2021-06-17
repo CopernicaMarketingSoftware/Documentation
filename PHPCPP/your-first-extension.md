@@ -14,7 +14,6 @@ implemented. This gives you a kickstart in developing an extension.
 * [EmptyExtension.zip](http://www.php-cpp.com/EmptyExtension.zip)
 * [EmptyExtension.tar.gz](http://www.php-cpp.com/EmptyExtension.tar.gz)
 
-
 ## Makefile
 
 The EmptyExtension file contains a Makefile with instructions for the compiler.
@@ -173,6 +172,35 @@ clean:
                         ${RM} ${EXTENSION} ${OBJECTS}
 
 ```
+
+## CMakeLists.txt
+If you prefer cmake, here is sample configuration for extension builds. 
+File is not included into sample extension archive.
+Dont forget to adjust you extension name.
+
+```
+cmake_minimum_required(VERSION 3.17)
+project(yourextension)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_library(yourextension SHARED main.cpp)
+
+# Adjust path if needed.
+link_directories(/usr/local/lib)
+
+find_library(PHP_CPP_LIB NAMES libphpcpp.so)
+target_link_libraries(yourextension ${PHP_CPP_LIB})
+
+if (APPLE)
+    link_directories(/usr/local/lib)
+    include_directories(/usr/local/include)
+    set_property(TARGET yourextension PROPERTY PREFIX "")
+    set_property(TARGET yourextension PROPERTY OUTPUT_NAME "yourextension.so")
+    set_property(TARGET yourextension PROPERTY SUFFIX "")
+endif()
+```
+
 
 ## Yourextension.ini
 
