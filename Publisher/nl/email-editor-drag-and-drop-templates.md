@@ -26,7 +26,9 @@ Hier kun je specifieke instellingen opgeven voor als je e-mail op een mobiel wor
 Hier kun je de daadwerkelijke content toevoegen aan je e-mailtemplate.  
 
 ### Structuren
-Onder _Structuren_ bepaal je hoe de vormgeving van een rij met blokken (container) eruit komt te zien. Zo kun je kiezen voor een container over de gehele breedte van je e-mail of voor meerdere containers op één regel. Binnen een container kun je vervolgens een blok plaatsen om content te plaatsen. Door het gebruik van meerdere containers naast elkaar is het bijvoorbeeld mogelijk om een afbeelding en een tekst op dezelfde hoogte te plaatsen in je e-mail. 
+Onder _Structuren_ bepaal je de structuur van je e-mail. Je bouwt een e-mail op door meerdere regels onder elkaar te plaatsen. Deze regels bestaan weer uit één of meerdere blokken (container genoemd) die je kan vullen met content. 
+
+Als je bijvoorbeeld kiest voor een regel met twee containers, kan je links een tekstveld maken en rechts een afbeelding plaatsen. Als je kiest voor een regel met één blok dan vult deze de hele breedte van je e-mail.
 
 Door op het structuur-element te klikken in je template, kun je specifieke instellingen opgeven. Hierbij kun je denken aan de breedte van iedere container binnen dit element of hoeveel padding er tussen beide containers is.
 
@@ -48,6 +50,6 @@ Er zijn verschillende blok-opties voor je nieuwsbrief:
 Elk blok heeft eigen opties om de weergave van het specifieke blok aan te passen.
 
 ### Modules
-Elk **lijn-** of **structuurelement** kun je binnen je template opslaan als _module_. Hiermee kun je een vast element opslaan zodat je deze niet in ieder template opnieuw hoeft op te zetten. Je kunt een module maken door met je muis over het element te gaan en te klikken op de drie puntjes. Hier vind je de optie '_opslaan als module_'.
+Hiermee kun je een vast element opslaan en deze gebruiken voor andere templates. Je maakt een module aan door met je muis over het element te gaan en te klikken op de drie puntjes. Hier vind je de optie '_opslaan als module_'.
 
 De opgeslagen modules vind je vervolgens onder **Modules**. Als je over de opgeslagen module gaat met je muis, kun je door op de drie puntjes die verschijnen te klikken, een naam, beschrijving en eventuele tags meegeven aan de module. Op basis hiervan kun je zoeken binnen je modules.
