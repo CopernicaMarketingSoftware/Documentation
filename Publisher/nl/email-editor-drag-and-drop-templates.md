@@ -4,7 +4,7 @@ Met drag-and-drop-templates ontwerp je snel en eenvoudig e-mails. Door te slepen
 
 Een Drag-and-drop-template kent vier verschillende elementen:  
 
-![elementen](../images/nl/Elementen.png)
+![elementen](../images/nl/Email_editor_elementen.png)
   
 **Lijn** 
 
