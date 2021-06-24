@@ -26,7 +26,7 @@ Of je kunt deze in een variabele zetten en deze met je eigen HTML gebruiken.
       <div id="weather">{$weather}</div>
     {/if}
 
-Dit voorbeeld gebruikt ook de [if functie](./personalize-functions-if).    
+Dit voorbeeld gebruikt ook de [if functie](./personalization-functions-if).    
 Je kunt ook downloaden van een FTP server. Het volgende voorbeeld laat 
 daarnaast zien hoe je variabelen in een link kunt gebruiken.
 
@@ -34,4 +34,4 @@ daarnaast zien hoe je variabelen in een link kunt gebruiken.
 
 ## Meer informatie 
 
-* [if functie](./personalize-functions-if)
+* [if functie](./personalization-functions-if)
