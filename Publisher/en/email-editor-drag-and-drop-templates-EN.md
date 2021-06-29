@@ -5,7 +5,7 @@ a drag-and-drop template in the **['Email editor'](https://ms.copernica.com/en#/
 
 Drag-and-drop templates utilize four key elements:
 
-[Email editor elements](../images/Email-editor-elements.png)
+[Email editor elements](./images/Email-editor-elements.png)
 
 **Line**
 
