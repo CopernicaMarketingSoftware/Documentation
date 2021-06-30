@@ -3,10 +3,37 @@
 In Copernica is het mogelijk om opvolgacties toe te voegen aan je templates of documenten. Hiermee kun je automatische acties uitvoeren op basis van condities. Zo kun je bijvoorbeeld iemand een mail sturen als er op een link is geklikt, lead scoring toe passen bij het openen van een e-mail of een herbestelcampagne opzetten. Dit zijn slechts enkele voorbeelden omdat er haast geen limieten zijn.
 
 ## Twee verschillende systemen
-In je [template of document](https://ms.copernica.com/#/design/) kun je een opvolgactie aanmaken door in de toolbar te klikken op **Opvolgacties**. Hier heb je de keuze tussen **Opvolgactie aanmaken** of **Actie aanmaken**. Het verschil tussen beide is het achterliggende systeem. De optie _opvolgactie aanmaken_ is recent ontwikkeld en zeer krachtig. Het kan echter voorkomen dat je hier nog enkele functies, die je gewend bent uit Publisher, mist. Hierdoor kun je ook gebruik maken van dit systeem via _actie aanmaken_.
+In je [template of document](https://ms.copernica.com/#/design/) kun je een opvolgactie aanmaken door in de toolbar te klikken op **Opvolgacties**. Hier heb je de keuze tussen **Opvolgactie aanmaken** of **Actie aanmaken**. Het verschil tussen beide is het achterliggende systeem. De optie _opvolgactie aanmaken_ maakt gebruik van onze follow-up manager en is zeer krachtig. Het kan echter voorkomen dat je hier nog enkele functies, die je gewend bent uit Publisher, mist. Hierdoor kun je ook gebruik maken van dit systeem via _actie aanmaken_.
 
 ## Opvolgactie aanmaken
+De follow-up manager is een gebruiksvriendelijke tool om geavanceerde marketingcampagnes te ontwikkelen. 
+Iedere opvolgactie heeft een naam waardoor je de opvolgacties gemakkelijk van elkaar kunt onderscheiden.
 
+### Trigger
+Een opvolgactie begint altijd met een bepaalde gebeurtenis (trigger) waardoor deze wordt opgeroepen.  
+In de e-mail-editor zijn de volgende triggers beschikbaar:
+- Uitschrijving
+- Link-klik
+- E-mailaflevering
+- Elke e-mailimpressie
+- Eerste e-mailimpressie
+- E-mailfout
+
+### Tussenblokken
+
+
+### Actieblokken
+
+
+### Voorbeeld
+Als je een profielveld wilt aanpassen na het versturen van een e-mailing, maar alleen als het veld 'Mailing' op 'Aangemeld' staat, dan kies je voor de trigger _e-mailaflevering_. In de follow-up manager sleep je vervolgens een (tussen)blok van het type _Bestemming checken_ op de punt van de lijn onder _Opvolgactie start_. Hierdoor wordt het blok gekoppeld aan de opvolgactie. In dit blok kun je via _aanpassen_ aangeven dat het veld _Mailing_ gelijk moet zijn aan _Aangemeld_. 
+
+Om vervolgens de daadwerkelijke actie, het wijziging van het profiel, toe te voegen dien je eerst op het blok '_Bestemming checken_' te kiezen voor _een "match"-link aanmaken_. Hierdoor krijg je een nieuwe lijn onder het blok waar je een nieuw blok aan kunt koppelen. Je kunt nu het (actie)blok _Bestemming aanpassen_ toevoegen. In dit blok kun je aangeven welke gegevens er gewijzigd moeten worden.
+
+### Geavanceerde Javascript 
+Wanneer je onderin de follow-up manager klikt op **Geavanceerde modus** krijg je de mogelijkheid om JavaScript blokken toe te voegen. Hiermee kun je controlles inbouwen op het moment dat je opvolgacties worden _geëvalueerd_ of _uitgevoerd_. Als je gebruik maakt van een wachttijd binnen je opvolgactie kan het zo zijn dat het profiel op het moment van evalueren (opvolgactie wordt aangeroepen) wel aan deze condities voldoet, maar op het moment van uitvoeren niet meer.
+
+De objecten beschikbaar in JavaScript kun je [hier](./data-object) vinden.
 
 ## Actie aanmaken
 _**Let op**: De optie 'Actie aanmaken' is enkel te gebruiken voor HTML-templates en -documenten._
