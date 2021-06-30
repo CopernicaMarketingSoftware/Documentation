@@ -19,11 +19,24 @@ In de e-mail-editor zijn de volgende triggers beschikbaar:
 - Eerste e-mailimpressie
 - E-mailfout
 
-### Tussenblokken
+### Blokken
+Nadat je de trigger hebt bepaald, kun je in de follow-up manager blokken toevoegen aan je opvolgactie. Er zijn twee verschillende soorten blokken, namelijk tussenblokken en actieblokken. Met een tussenblok kun je condities opgeven voordat het actieblok wordt uitgevoerd.
 
-
-### Actieblokken
-
+| Blokken                 | Type                                                                                                    |
+|-------------------------|---------------------------------------------------------------------------------------------------------|
+| Is ingeschreven         | Tussenblok                                                                                              |
+| Bestemming checken      | Tussenblok                                                                                              |
+| Check subprofielen      | Tussenblok                                                                                              |
+| Zoek profiel            | Tussenblok                                                                                              |
+| Zoek subprofiel         | Tussenblok                                                                                              |
+| Check geklikte link     | Tussenblok                                                                                              |
+| Wachttijd               | Tussenblok                                                                                              |
+| Bestemming aanpassen    | Actieblok                                                                                               |
+| Profiel aanmaken        | Actieblok                                                                                               |
+| Subprofiel aanmaken     | Actieblok                                                                                               |
+| Bestemming uitschrijven | Actieblok                                                                                               |
+| Bestemming verwijderen  | Actieblok                                                                                               |
+| Verzend e-mail          | Actieblok                                                                                               |
 
 ### Voorbeeld
 Als je een profielveld wilt aanpassen na het versturen van een e-mailing, maar alleen als het veld 'Mailing' op 'Aangemeld' staat, dan kies je voor de trigger _e-mailaflevering_. In de follow-up manager sleep je vervolgens een (tussen)blok van het type _Bestemming checken_ op de punt van de lijn onder _Opvolgactie start_. Hierdoor wordt het blok gekoppeld aan de opvolgactie. In dit blok kun je via _aanpassen_ aangeven dat het veld _Mailing_ gelijk moet zijn aan _Aangemeld_. 
