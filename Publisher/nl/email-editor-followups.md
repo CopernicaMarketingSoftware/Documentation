@@ -1,26 +1,33 @@
 # Opvolgacties
 
-In Copernica is het mogelijk om opvolgacties toe te voegen aan je templates of documenten. Hiermee kun je automatische acties uitvoeren op basis van condities. Zo kun je bijvoorbeeld iemand een mail sturen als er op een link is geklikt, lead scoring toe passen bij het openen van een e-mail of een herbestelcampagne opzetten. Dit zijn slechts enkele voorbeelden omdat er haast geen limieten zijn.
+Copernica geeft je de mogelijkheid om opvolgacties toe te voegen aan templates of documenten. Daarmee voer je automatisch acties uit op basis van condities. Zo kun je bijvoorbeeld automatisch een e-mail versturen zodra een gebruiker op een link klikt of leadscoring toepassen bij het registreren van een open. Er zijn vrijwel geen limieten.
 
 ## Twee verschillende systemen
-In je [template of document](https://ms.copernica.com/#/design/) kun je een opvolgactie aanmaken door in de toolbar te klikken op **Opvolgacties**. Hier heb je de keuze tussen **Opvolgactie aanmaken** of **Actie aanmaken**. Het verschil tussen beide is het achterliggende systeem. De optie _opvolgactie aanmaken_ maakt gebruik van onze follow-up manager en is zeer krachtig. Het kan echter voorkomen dat je hier nog enkele functies, die je gewend bent uit Publisher, mist. Hierdoor kun je ook gebruik maken van dit systeem via _actie aanmaken_.
+
+Je kunt een opvolgactie instellen in je [template of document](https://ms.copernica.com/#/design/) door in de toolbar te klikken op **Opvolgacties**. Vervolgens heb je de keuze tussen **'Opvolgactie aanmaken'** of **'Actie aanmaken'**. De opties verschillen in het achterliggende systeem. 
+
+De optie **Opvolgactie aanmaken** maakt gebruik van onze krachtige Follow-up Manager. Het is echter mogelijk dat je hierbij enkele functies (die je gewend bent uit Publisher) mist. Om die reden kun je ook gebruik maken van **'Actie aanmaken'**.
 
 ## Opvolgactie aanmaken
-De follow-up manager is een gebruiksvriendelijke tool om geavanceerde marketingcampagnes te ontwikkelen. 
-Iedere opvolgactie heeft een naam waardoor je de opvolgacties gemakkelijk van elkaar kunt onderscheiden.
+
+De Follow-up Manager is een gebruiksvriendelijke tool waarmee je geavanceerde marketingcampagnes kunt ontwikkelen.
+Opvolgacties worden voorzien van een naam zodat acties eenvoudig van elkaar te onderscheiden zijn.
 
 ### Trigger
-Een opvolgactie begint altijd met een bepaalde gebeurtenis (trigger) waardoor deze wordt opgeroepen.  
-In de e-mail-editor zijn de volgende triggers beschikbaar:
-- Uitschrijving
-- Link-klik
-- E-mailaflevering
-- Elke e-mailimpressie
-- Eerste e-mailimpressie
-- E-mailfout
+
+Een opvolgactie wordt altijd uitgevoerd als gevolg van een bepaalde gebeurtenis (trigger).
+In de **'E-mail-editor'** zijn de volgende triggers beschikbaar:
+
+* Uitschrijving
+* Link-klik
+* E-mailaflevering
+* Elke e-mailimpressie
+* Eerste e-mailimpressie
+* E-mailfout
 
 ### Blokken
-Nadat je de trigger hebt bepaald, kun je in de follow-up manager blokken toevoegen aan je opvolgactie. Er zijn twee verschillende soorten blokken, namelijk tussenblokken en actieblokken. Met een tussenblok kun je condities opgeven voordat het actieblok wordt uitgevoerd.
+
+Zodra je de trigger hebt ingesteld kun je in de Follow-up Manager blokken toevoegen aan je opvolgactie. We maken onderscheid tussen twee blokken: (1) tussenblokken en (2) actieblokken. Een tussenblok geeft de condities aan op basis waarvan het actieblok wordt uitgevoerd. De beschikbare blokken zijn:
 
 | Blokken                 | Type                                                                                                    |
 |-------------------------|---------------------------------------------------------------------------------------------------------|
@@ -39,9 +46,13 @@ Nadat je de trigger hebt bepaald, kun je in de follow-up manager blokken toevoeg
 | Verzend e-mail          | Actieblok                                                                                               |
 
 ### Voorbeeld
-Als je een profielveld wilt aanpassen na het versturen van een e-mailing, maar alleen als het veld 'Mailing' op 'Aangemeld' staat, dan kies je voor de trigger _e-mailaflevering_. In de follow-up manager sleep je vervolgens een (tussen)blok van het type _Bestemming checken_ op de punt van de lijn onder _Opvolgactie start_. Hierdoor wordt het blok gekoppeld aan de opvolgactie. In dit blok kun je via _aanpassen_ aangeven dat het veld _Mailing_ gelijk moet zijn aan _Aangemeld_. 
 
-Om vervolgens de daadwerkelijke actie, het wijziging van het profiel, toe te voegen dien je eerst op het blok '_Bestemming checken_' te kiezen voor _een "match"-link aanmaken_. Hierdoor krijg je een nieuwe lijn onder het blok waar je een nieuw blok aan kunt koppelen. Je kunt nu het (actie)blok _Bestemming aanpassen_ toevoegen. In dit blok kun je aangeven welke gegevens er gewijzigd moeten worden.
+Stel dat je een profielveld wilt aanpassen na het versturen van een mailing. Je wilt de aanpassing echter alleen doorvoeren voor profielen
+waarvan het veld *'Mailing'* op *'Aangemeld'* staat. 
+
+Je selecteert hiervoor de *e-mailaflevering*-trigger. Vervolgens sleep je in de Follow-up Manager een tussenblok van het type *Bestemming checken* op de punt van de lijn onder **Opvolgactie start**. Het blok is nu gekoppeld aan de opvolgactie. Vervolgens geef je via **'Aanpassen'** aan dat het veld *'Mailing'* gelijk moet zijn aan *'Aangemeld'*.
+
+Je maakt de daadwerkelijke actie (het wijzigen van een profiel) aan door te klikken op het blok *'Bestemming checken'*. Vervolgens kies je voor *'Match link aanmaken'*. Hierdoor krijg je een nieuwe lijn onder het blok waar je een nieuw blok aan kunt koppelen. Je kunt nu het (actie)blok _Bestemming aanpassen_ toevoegen. In dit blok kun je aangeven welke gegevens er gewijzigd moeten worden.
 
 ### Geavanceerde Javascript 
 Wanneer je onderin de follow-up manager klikt op **Geavanceerde modus** krijg je de mogelijkheid om JavaScript blokken toe te voegen. Hiermee kun je controlles inbouwen op het moment dat je opvolgacties worden _geëvalueerd_ of _uitgevoerd_. Als je gebruik maakt van een wachttijd binnen je opvolgactie kan het zo zijn dat het profiel op het moment van evalueren (opvolgactie wordt aangeroepen) wel aan deze condities voldoet, maar op het moment van uitvoeren niet meer.
