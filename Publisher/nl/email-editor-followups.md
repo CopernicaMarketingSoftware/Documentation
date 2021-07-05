@@ -50,49 +50,66 @@ Zodra je de trigger hebt ingesteld kun je in de Follow-up Manager blokken toevoe
 Stel dat je een profielveld wilt aanpassen na het versturen van een mailing. Je wilt de aanpassing echter alleen doorvoeren voor profielen
 waarvan het veld *'Mailing'* op *'Aangemeld'* staat. 
 
-Je selecteert hiervoor de *e-mailaflevering*-trigger. Vervolgens sleep je in de Follow-up Manager een tussenblok van het type *Bestemming checken* op de punt van de lijn onder **Opvolgactie start**. Het blok is nu gekoppeld aan de opvolgactie. Vervolgens geef je via **'Aanpassen'** aan dat het veld *'Mailing'* gelijk moet zijn aan *'Aangemeld'*.
+Je selecteert hiervoor de *e-mailaflevering*-trigger. Vervolgens sleep je in de Follow-up Manager een tussenblok van het type *'Bestemming checken'* op de punt van de lijn onder **'Opvolgactie start'**. Het blok is nu gekoppeld aan de opvolgactie. Vervolgens geef je via **'Aanpassen'** aan dat het veld *'Mailing'* gelijk moet zijn aan *'Aangemeld'*.
 
-Je maakt de daadwerkelijke actie (het wijzigen van een profiel) aan door te klikken op het blok *'Bestemming checken'*. Vervolgens kies je voor *'Match link aanmaken'*. Hierdoor krijg je een nieuwe lijn onder het blok waar je een nieuw blok aan kunt koppelen. Je kunt nu het (actie)blok _Bestemming aanpassen_ toevoegen. In dit blok kun je aangeven welke gegevens er gewijzigd moeten worden.
+Je maakt de daadwerkelijke actie (de profielwijziging) aan door te klikken op het blok *'Bestemming checken'* en te kiezen voor *'Match link aanmaken'*. Er verschijnt nu een nieuwe lijn onder het blok waaraan je een nieuw blok kunt koppelen. Vervolgens voeg je het actieblok *Bestemming aanpassen* toe. Daarin geef je aan welke gegevens je wilt laten wijzigen.
 
-### Geavanceerde Javascript 
-Wanneer je onderin de follow-up manager klikt op **Geavanceerde modus** krijg je de mogelijkheid om JavaScript blokken toe te voegen. Hiermee kun je controlles inbouwen op het moment dat je opvolgacties worden _geëvalueerd_ of _uitgevoerd_. Als je gebruik maakt van een wachttijd binnen je opvolgactie kan het zo zijn dat het profiel op het moment van evalueren (opvolgactie wordt aangeroepen) wel aan deze condities voldoet, maar op het moment van uitvoeren niet meer.
+### JavaScript in de Geavanceerde modus
 
-De objecten beschikbaar in JavaScript kun je [hier](./data-object) vinden.
+Je kunt JavaScript-blokken toevoegen door onderin de Follow-up Manager te klikken op **'Geavanceerde modus'**. Hiermee kun je controles inbouwen op het moment dat je opvolgacties worden geëvalueerd of uitgevoerd.
+
+Bekijk [hier](./data-object) alle beschikbare JavaScript-objecten.
+
+_**Let op**: Wanneer je je opvolgactie voorziet van een wachttijd kan het zo zijn dat het profiel bij de evaluatie (het moment waarop de opvolgactie wordt aangeroepen) wel aan de gestelde condities voldoet, maar op het moment van uitvoering niet meer._
 
 ## Actie aanmaken
+
 _**Let op**: De optie 'Actie aanmaken' is enkel te gebruiken voor HTML-templates en -documenten._
 
-Het aanmaken van een opvolgactie op basis van het systeem uit Publisher gaat in 4 stappen:
+Het aanmaken van opvolgacties op basis van het Publisher-systeem vindt plaats in vier stappen:
 
 1) **Naam**  
-Hier kun je een naam opgeven voor je opvolgactie. Deze wordt zichtbaar in het overzicht van opvolgacties op je template of document.
+
+Je voorziet je opvolgactie van een naam. Deze is zichtbaar in het overzicht van opvolgacties binnen je template of document.
+
 2) **Wachttijd**  
-Hier kun je aangeven wanneer een opvolgactie uitgevoerd moet worden nadat de trigger is geweest om de opvolgactie aan te roepen. Je kunt de opvolgactie direct laten uitvoeren of met een wachttijd. Deze wachttijd kan op basis van een vaste wachttijd, bijvoorbeeld 2 uur, of op basis van een [variabele wachttijd met JavaScipt](./advanced-javascript-conditions).
-3) **Aanleiding**  
-De aanleiding (of trigger) is een gebeurtenis die ertoe leidt dat de actie wordt uitgevoerd. Je kunt bij elke trigger ook nog extra condities instellen op velden en interesses. Deze conditie wordt geevalueerd op het moment dat de opvolgactie wordt getriggered. Er zijn vier aanleidingen:
-    - Het verzenden van het document
-    - Het registreren van een impressie
-    - Het registreren van een klik
-    - Het registreren van een foutmelding
+
+Je geeft de wachttijd aan tussen de activatie van de trigger en de uitvoering van je opvolgactie. Je kunt bijvoorbeeld een wachttijd instellen op basis van een vast tijdsbestek (bijvoorbeeld na 2 uur) of een [variabele wachttijd instellen](./advanced-javascript-conditions) door middel van JavaScript. De opvolgactie kan ook direct worden uitgevoerd.
+
+3) **Aanleiding**
+
+Je stelt de aanleiding (trigger) in op basis waarvan de opvolgactie wordt uitgevoerd. Daarbij kun je extra condities instellen die betrekking hebben op velden en interesses. Condities worden geëvalueerd zodra de opvolgactie getriggerd wordt. 
+
+Er zijn vier aanleidingen beschikbaar:
+
+* De verzending van een document
+* De registratie van een impressie
+* De registratie van een klik
+* De registratie van een foutmelding
+    
 4) **Actie**  
-Met een opvolgactie kunnen de volgende acties worden uitgevoerd:
-    - Een opgemaakt document per e-mail versturen
-    - Een drag-and-drop-template per e-mail versturen
-    - Een opgemaakt sms-document versturen
-    - Een tekstueel e-mailbericht versturen
-    - Een sms-bericht versturen
-    - Contact opnemen met de geadresseerde
-    - Een nieuw subprofiel aanmaken
-    - Gegevens van het (sub)profiel wijzigen
-    - Gegevens van geadresseerde verwijderen  
-    
-    Naast een conditie op de aanleiding (moment van triggeren) kun je ook een conditie op de actie (moment van uitvoeren) toevoegen. Dit gebruik je voornamelijk wanneer je een wachttijd hebt ingesteld. In dit geval kun je bijvoorbeeld kijken of de klant nog ingeschreven staat voor je nieuwsbrief op het moment dat de opvolgactie wordt uitgevoerd. 
-    
-### Geavanceerde JavaScript condities voor HTML-template of -documenten
-Condities op de aanleiding of actie zijn eenvoudig in te stellen door in de interface een veld te selecteren en deze te vergelijken met een specifieke waarde. Naast deze eenvoudige condities, is het ook mogelijk om naar de '_geavanceerde modus_' over te schakelen. Hier kun je gebruik maken van [geavanceerde JavaScript](./advanced-javascript-conditions). Hierbij dient er true (opvolgactie moet worden uitgevoerd) of false (opvolgactie moet niet worden uitgevoerd) uit je script te komen.
+
+Je stelt de opvolgactie in die je uit wilt voeren. De onderstaande acties zijn beschikbaar:
+
+* Een opgemaakt document per e-mail versturen;
+* Een drag-and-drop-template per e-mail versturen;
+* Een opgemaakt SMS-document versturen;
+* Een tekstueel e-mailbericht versturen;
+* Een SMS-bericht versturen;
+* Contact opnemen met de geadresseerde;
+* Een nieuw subprofiel aanmaken;
+* Gegevens van het (sub)profiel wijzigen;
+* Gegevens van de geadresseerde verwijderen.
+
+Ook acties kunnen van condities worden voorzien. Dat doe je bijvoorbeeld wanneer je gebruikmaakt van een wachttijd. Je kunt bijvoorbeeld een conditie instellen die controleert of een klant nog ingeschreven staat voor de nieuwsbrief op het moment dat de opvolgactie wordt uitgevoerd.
+
+### Geavanceerde JavaScript-condities voor HTML-templates of -documenten
+
+Eenvoudige condities die relateren aan een aanleiding of actie zijn in te stellen door in de interface een veld te selecteren en deze te vergelijken met een specifieke waarde. Je kunt echter ook [geavanceerde JavaScript-condities](./advanced-javascript-conditions) instellen door gebruik te maken van de **'Geavanceerde modus'**. Daarbij dient er true (de opvolgactie moet worden uitgevoerd) of false (de opvolgactie moet niet worden uitgevoerd) uit je script te komen.
 
 ### Extra variabelen in je HTML-templates of -documenten
-In je HTML-template of -document kun je extra variabelen ophalen die betrekking hebben op de opvolgactie:
+
+Binnen je HTML-template of -document kun je extra variabelen ophalen die betrekking hebben op de opvolgactie: 
 ```
 // Tijdstip waarop de mailing is verzonden
 $mailing.sendtime
