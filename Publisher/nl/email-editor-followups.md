@@ -120,11 +120,9 @@ $mailing.trigger.triggertime
 // Tijdstip waarop de opvolgactie is uitgevoerd
 $mailing.trigger.executetime
 
-// Ophalen van velden van het profiel waarop de opvolgactie is uitgevoerd
-// Dit werkt enkel als de bestemming het profiel is
+// Ophalen van velden van het profiel waarop de opvolgactie is uitgevoerd (werkt enkel wanneer het profiel de bestemming is)
 $mailing.trigger.profile.VELDNAAM
 
-// Ophalen van velden van het subprofiel waarop de opvolgactie is uitgevoerd
-// Dit werkt enkel als de bestemming het subprofiel is
+// Ophalen van velden van het subprofiel waarop de opvolgactie is uitgevoerd (werkt enkel wanneer het subprofiel de bestemming is)
 $mailing.trigger.subprofile.VELDNAAM
 ```
