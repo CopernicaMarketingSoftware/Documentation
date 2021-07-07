@@ -26,6 +26,4 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle REST API calls](rest-api)
-* [GET profile](rest-get-profile)
-* [PUT profile](rest-put-profile)
 
