@@ -256,10 +256,12 @@ templates and mailings.
 |--------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | GET    | [api.copernica.com/v2/publisher/documents](./rest-get-publisher-documents)                           | Fetch all documents                                    |
 | GET    | [api.copernica.com/v2/publisher/document/$id](./rest-get-publisher-document)                         | Fetch the document information                         |
+| DELETE | [api.copernica.com/v2/publisher/document/$id](./rest-delete-publisher-document)                      | Delete the document                                   |
 | GET    | [api.copernica.com/v2/publisher/document/$id/emailings](./rest-get-publisher-document-emailings)     | Fetch all emailings for a document                     |
 | GET    | [api.copernica.com/v2/publisher/document/$id/statistics](./rest-get-publisher-document-statistics)   | Fetch the statistics for a document                    |
 | GET    | [api.copernica.com/v2/publisher/templates](./rest-get-publisher-templates)                           | Fetch all templates                                    |
 | GET    | [api.copernica.com/v2/publisher/template/$id](./rest-get-publisher-template)                         | Fetch the template information                         |
+| DELETE | [api.copernica.com/v2/publisher/template/$id](./rest-delete-publisher-template)                      | Delete the template                                   |
 | GET    | [api.copernica.com/v2/publisher/template/$id/emailings](./rest-get-publisher-template-emailings)     | Fetch all emailings for a template                     |
 | GET    | [api.copernica.com/v2/publisher/template/$id/documents](./rest-get-publisher-template-documents)     | Fetch all documents for a template                     |
 
@@ -324,6 +326,7 @@ and emailings.
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
 | GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Fetch all templates                          |
 | GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Fetch a template                             |
+| DELETE | [api.copernica.com/v2/ms/template/$id](./rest-delete-ms-template)                            | Delete a template                            |
 | GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Fetch the statistics for a template          |
 
 ### Messages & Destinations
