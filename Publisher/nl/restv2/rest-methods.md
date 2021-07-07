@@ -300,8 +300,8 @@ templates en mailings.
 | Type   | Adres                                                                                        | Omschrijving                                      |
 |--------|----------------------------------------------------------------------------------------------|---------------------------------------------------|
 | GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Opvragen van alle templates                       |
-| GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Verwijderen van een template                      |
-| DELETE | [api.copernica.com/v2/ms/template/$id](./rest-delete-ms-template)                            | Opvragen van een template                         |
+| GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Opvragen van een template                         |
+| DELETE | [api.copernica.com/v2/ms/template/$id](./rest-delete-ms-template)                            | Verwijderen van een template                      |
 | GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Opvragen van statistieken voor een template       |
 
 ### Destinations (bestemmingen)
