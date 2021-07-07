@@ -217,10 +217,12 @@ documenten, templates en mailings.
 |--------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | GET    | [api.copernica.com/v2/publisher/documents](./rest-get-publisher-documents)                                       | Opvragen van alle documenten                       |
 | GET    | [api.copernica.com/v2/publisher/document/$id](./rest-get-publisher-document)                                     | Opvragen van document informatie                   |
+| DELETE | [api.copernica.com/v2/publisher/document/$id](./rest-delete-publisher-document)                                  | Verwijderen van een document                       |
 | GET    | [api.copernica.com/v2/publisher/document/$id/emailings](./rest-get-publisher-document-emailings)                 | Opvragen van mailings voor een document            |
 | GET    | [api.copernica.com/v2/publisher/document/$id/statistics](./rest-get-publisher-document-statistics)               | Opvragen van statistieken voor een document        |
 | GET    | [api.copernica.com/v2/publisher/templates](./rest-get-publisher-templates)                                       | Opvragen van alle templates                        |
 | GET    | [api.copernica.com/v2/publisher/template/$id](./rest-get-publisher-template)                                     | Opvragen van template informatie                   |
+| DELETE | [api.copernica.com/v2/publisher/template/$id](./rest-delete-publisher-template)                                  | Verwijderen van een template                       |
 | GET    | [api.copernica.com/v2/publisher/template/$id/emailings](./rest-get-publisher-template-emailings)                 | Opvragen van mailings voor een template            |
 | GET    | [api.copernica.com/v2/publisher/template/$id/emailingdocuments](./rest-get-publisher-template-documents)         | Opvragen van alle documenten voor een template     |
 
@@ -298,7 +300,8 @@ templates en mailings.
 | Type   | Adres                                                                                        | Omschrijving                                      |
 |--------|----------------------------------------------------------------------------------------------|---------------------------------------------------|
 | GET    | [api.copernica.com/v2/ms/templates](./rest-get-ms-templates)                                 | Opvragen van alle templates                       |
-| GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Opvragen van een template                         |
+| GET    | [api.copernica.com/v2/ms/template/$id](./rest-get-ms-template)                               | Verwijderen van een template                      |
+| DELETE | [api.copernica.com/v2/ms/template/$id](./rest-delete-ms-template)                            | Opvragen van een template                         |
 | GET    | [api.copernica.com/v2/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Opvragen van statistieken voor een template       |
 
 ### Destinations (bestemmingen)
