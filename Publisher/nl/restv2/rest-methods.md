@@ -87,6 +87,7 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 | GET    | [api.copernica.com/v2/view/$id/rule/$id](./rest-get-view-rule)                               | Opvragen van een selectie regel              |
 | POST   | [api.copernica.com/v2/view/$id/rules](./rest-post-view-rules)                                | Aanmaken van een selectie regel              |
 | PUT    | [api.copernica.com/v2/view/$id/intentions](./rest-put-view-intentions)                       | Updaten van de intenties van de selectie     |
+| PUT    | [api.copernica.com/v2/view/$id/rebuild](./rest-put-view-rebuild)                             | Opnieuw opbouwen van een selectie            |
 
 ### Miniselecties
 
@@ -103,6 +104,7 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 | GET    | [api.copernica.com/v2/miniview/$id/minirule/$id](./rest-get-miniview-rule)                   | Opvragen van een miniselectie miniregel        |
 | POST   | [api.copernica.com/v2/miniview/$id/minirules](./rest-post-miniview-rules)                    | Aanmaken van een nieuwe miniselectie miniregel |
 | PUT    | [api.copernica.com/v2/miniview/$id/intentions](./rest-put-miniview-intentions)               | Updaten van de intenties van de miniselectie   |
+| PUT    | [api.copernica.com/v2/miniview/$id/rebuild](./rest-put-miniview-rebuild)                     | Opnieuw opbouwen van een miniselectie          |
 
 ## Regels & Miniregels
 
