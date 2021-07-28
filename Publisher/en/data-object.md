@@ -1,64 +1,55 @@
-# Data scripting/Data object
+# Data scripts and -objects
 
-In Copernica software you can write your own Javascript code to embed in
-hyperlinks. If your Javascript is attached to a link the code is executed when the link is
-clicked. It's similar to the "onlick" attribute, but your script will run
-on Copernica servers. You can also write your own triggers and actions in the
-[Marketing Suite follow up editor](./follow-up-manager-ms).
+Data scripts allow you to link follow-up actions to various triggers. These scripts are executed by 
+Copernica whenever a trigger is activated. This works in a similar way to scripts that are placed in a
+hyperlink as an 'onclick' attribute, with one key difference: scripts are executed on Copernica
+servers instead of in the browser.
 
-You can use your script by using:
+You can add data scripts in the Marketing Suite by:
 
-* the *data-script* attribute on &lt;a&gt; tags
-* the flowchart editor in the follow-up form
+* Placing the data script attribute within an &lt;a&gt; tag
+* Adding them in the [Email editor](https://ms.copernica.com/#/design)
 
-Warning: You need the new link tracking system to use data-scripts. If you're using
-Marketing Suite this is already enabled, but Publisher users have to enable the system
-manually in their account settings.
+You can also create your own triggers and actions in the [Follow-up editor](./follow-up-manager-ms).
+
+__Note__: The use of data scripts requires the latest link tracking system, which is automatically
+enabled within Marketing Suite. If you're using Publisher, you'll need to enable it manually in 
+your account settings.
 
 ## Available objects
 
-Inside the script you can make use of a couple of global variables that identify
-the (sub)profile that clicked on the link and other relevant data.
-Each of these objects have read-only properties to get data, others have
-write properties as well. The following variables are accessible:
+There are various objects available for use in data scripts. These objects allow you to retrieve
+and edit data from your account. The following objects are available:
 
 | Object name                                   | Description
 |-----------------------------------------------|--------------------------------------|
 | [**copernica**](./data-object-copernica)      | Copernica account                    |
 | [**mailing**](./data-object-mailing)          | Previous mailing                     |
 | [**message**](./data-object-message)          | Personalized template                |
-| [**template**](./data-object-template)        | Standard template (only MS)          |
-| [**document**](./data-object-document)        | Emailing document (only Publisher)   |
+| [**template**](./data-object-template)        | Standard template (MS only)          |
+| [**document**](./data-object-document)        | Mailing document (Publisher only)    |
 | [**database**](./data-object-database)        | Database                             |
 | [**collection**](./data-object-collection)    | Collection                           |
 | [**profile**](./data-object-profile)          | Profile                              |
 | [**subprofile**](./data-object-subprofile)    | Subprofile                           |
-| [**destination**](./data-object-destination)  | Alias to profile/subprofile          |
+| [**destination**](./data-object-destination)  | Profile/subprofile alias             |
 
-A few of these objects also have [the data object](./data-object-data),
-which you can use to store your own information regarding the object.
+Each of the above objects utilizes a [data object](./data-object-data), which can be used to store information
+about the object.
 
-## A very simple example
+## Example
 
-A possibility of the data-script object is to change profile data when a link
-is clicked. This can be used to place an unsubscribe link that when clicked
-sets a profile setting to indicate this person doesn't want to receive newsletters
-anymore. Note that this functionality is also available in the
-[unsubscribe settings](./database-unsubscribe-behavior),
-but this is a simple example to get you started.
-
+You can use the data script object to modify profile data whenever a link is clicked:
+  
 ```html
 <a href="http://www.example.com/unsubscribe" data-script="profile.fields.newsletter = 'no';">Click here to unsubscribe</a>
 ```
 
-When the script is executed (on click) the profile will be updated. Now
-you can make your own [newsletter selection](./create-a-mailing-list)
-to make sure you only send mail to people who are subscribed to your newsletter.
-
-Before an email is delivered, the data-script is removed from the original code. Your
-receivers therefore do not get to see the script when they open the source code of
-the message. However, the script stays active because Copernica has stored the
-script and runs it when a click is registered.
+In the above example, a click would result in the 'newsletter' field being set to 'no'. This is just a simple example: the
+functionality also allows you to execute highly complex scripts.
+  
+Data scripts are never visible for inspection in the email's source code. Instead, the data script is removed from the source code
+shortly prior to sending. It is therefore invisible to the recipient.
 
 ## More information
 
