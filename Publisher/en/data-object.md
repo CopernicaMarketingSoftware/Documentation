@@ -7,10 +7,10 @@ servers instead of in the browser.
 
 You can add data scripts in the Marketing Suite by:
 
-* Placing the data script attribute within an &lt;a&gt; tag
-* Adding them in the [Email editor](https://ms.copernica.com/#/design)
+* Placing the data script attribute within an &lt;a&gt; tag;
+* Adding them in the [Email editor](https://ms.copernica.com/#/design).
 
-You can also create your own triggers and actions in the [Follow-up editor](./follow-up-manager-ms).
+You can also create your own triggers and actions in the [Follow-up Manager](./follow-up-manager-ms).
 
 __Note__: The use of data scripts requires the latest link tracking system, which is automatically
 enabled within Marketing Suite. If you're using Publisher, you'll need to enable it manually in 
@@ -26,7 +26,7 @@ and edit data from your account. The following objects are available:
 | [**copernica**](./data-object-copernica)      | Copernica account                    |
 | [**mailing**](./data-object-mailing)          | Previous mailing                     |
 | [**message**](./data-object-message)          | Personalized template                |
-| [**template**](./data-object-template)        | Standard template (MS only)          |
+| [**template**](./data-object-template)        | Standard template                    |
 | [**document**](./data-object-document)        | Mailing document (Publisher only)    |
 | [**database**](./data-object-database)        | Database                             |
 | [**collection**](./data-object-collection)    | Collection                           |
