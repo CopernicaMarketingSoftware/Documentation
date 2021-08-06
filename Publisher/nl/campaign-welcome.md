@@ -1,20 +1,20 @@
 # Welkomstcampagnes
 
-Een welkomstcampagne biedt klanten een eerste indruk van jouw e-mailmarketingactiviteiten. Ook kunnen
+Een welkomstcampagne biedt klanten een eerste indruk van jouw e-mailmarketingactiviteiten. Daarnaast kunnen
 welkomstcampagnes bijdragen aan het verhogen van je openratio's en het verlengen van de inschrijfduur.
 
 Hieronder leggen we uit hoe je een eenvoudige welkomstcampagne kunt opzetten. We maken
 daarbij gebruik van een single-opt-in. Wil je gebruikmaken van een dubbele opt-in? Kijk 
 dan [hier](./campaign-tutorial-double-opt-in.md).
 
-## Welkomstcampagnes in Marketing Suite
+## Welkomstcampagnes inrichten in Marketing Suite
 
-Ga naar **Database & Profielen**, selecteer de juiste database, klik op
-het tandwiel en klik vervolgens op **Opvolgacties**. Kies voor een
-nieuwe opvolgactie door op **Create followup** te klikken.
+Navigeer naar **'Profielen'** en selecteer de gewenste database. Klik vervolgens in
+de toolbar op **Opvolgacties**. Maak een nieuwe opvolgactie door te klikken op 
+**'Opvolgactie aanmaken'**. De bijbehorende trigger stel je in op 
+_'Subprofiel aangemaakt'_.
 
-De reden waarom deze opvolgactie start is **Profile created**, selecteer deze
-optie en klik op proceed. Klik aan de linkerkant op **Send email** en verbindt
+Klik aan de linkerkant op **Send email** en verbindt
 dit blok aan **FollowUp start**. Klik op edit in het send email blok om de
 welkomstmail te selecteren. Als dit gedaan is sluit je de opvolgactie en sla
 je deze op.
@@ -22,7 +22,7 @@ je deze op.
 **Let op**: zet deze actie _alleen_ in de Marketing Suite. Zet hem niet ook nog
 in de Publisher, dan krijgen klanten 2 welkomstmail.
 
-## Welkomstcampagnes in Publisher
+## Welkomstcampagnes inrichten in Publisher
 
 Ga naar **Profielen** en klik op **Databasebeheer > Database opvolgacties**
 en ga naar **Nieuwe opvolgactie aanmaken**. De aanleiding is
