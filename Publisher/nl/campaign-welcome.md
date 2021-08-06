@@ -1,11 +1,14 @@
-# Welkomstcampagne
-Om te zorgen dat jij je nieuwe klanten goed verwelkomt, is een
-welkomstcampagne essentieel. In deze tutorial wordt uitgelegd hoe een simpele
-welkomstcampagne kan worden opgezet. Bij deze campagne wordt er een
-single optin gebruikt. Wil je een dubbele optin campagne? Klik dan
-[hier](./campaign-tutorial-double-opt-in.md).
+# Welkomstcampagnes
 
-## Aanmaken in Marketing Suite
+Een welkomstcampagne geeft klanten een eerste indruk van jouw e-mailmarketingactiviteiten. Ook kunnen
+welkomstcampagnes bijdragen aan het verhogen van je openratio's en het verlengen van de inschrijfduur.
+
+Hieronder leggen we uit hoe je een eenvoudige welkomstcampagne kunt opzetten. We maken
+daarbij gebruik van een single-opt-in. Wil je gebruikmaken van een dubbele opt-in? Kijk 
+dan [hier](./campaign-tutorial-double-opt-in.md).
+
+## Welkomstcampagnes in Marketing Suite
+
 Ga naar **Database & Profielen**, selecteer de juiste database, klik op
 het tandwiel en klik vervolgens op **Opvolgacties**. Kies voor een
 nieuwe opvolgactie door op **Create followup** te klikken.
@@ -19,7 +22,8 @@ je deze op.
 **Let op**: zet deze actie _alleen_ in de Marketing Suite. Zet hem niet ook nog
 in de Publisher, dan krijgen klanten 2 welkomstmail.
 
-## Aanmaken in Publisher
+## Welkomstcampagnes in Publisher
+
 Ga naar **Profielen** en klik op **Databasebeheer > Database opvolgacties**
 en ga naar **Nieuwe opvolgactie aanmaken**. De aanleiding is
 **er is een profiel aangemaakt**, de actie is
