@@ -1,6 +1,6 @@
 # Welkomstcampagnes
 
-Een welkomstcampagne geeft klanten een eerste indruk van jouw e-mailmarketingactiviteiten. Ook kunnen
+Een welkomstcampagne biedt klanten een eerste indruk van jouw e-mailmarketingactiviteiten. Ook kunnen
 welkomstcampagnes bijdragen aan het verhogen van je openratio's en het verlengen van de inschrijfduur.
 
 Hieronder leggen we uit hoe je een eenvoudige welkomstcampagne kunt opzetten. We maken
