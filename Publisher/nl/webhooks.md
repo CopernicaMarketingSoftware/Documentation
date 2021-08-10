@@ -19,6 +19,7 @@ gaan dieper in op deze types:
 
 * [Webhooks for bounces](webhook-bounces)
 * [Webhooks for failures](webhook-failures)
+* [Webhooks for deliveries](webhook-deliveries)
 * [Webhooks for clicks](webhook-clicks)
 * [Webhooks for opens](webhook-opens)
 * [Webhooks for (sub)profile creations](webhook-creates)
@@ -31,7 +32,7 @@ Webhooks kunnen bijvoorbeeld gebruikt worden om data van Copernica
 te synchronizeren met je eigen applicatie. Webhooks vereisen echter wel een 
 script op je eigen server om de juiste handelingen uit te voeren wanneer er 
 informatie wordt aangeleverd door de Webhook. Je kunt hiervoor verschillende 
-trigger instellen, waaronder kliks, opens, profielen die worden aangepast, etc.
+triggers instellen, waaronder afgeleverde e-mails, kliks, opens, profielen die worden aangepast, etc.
 
 De data die terug wordt gestuurd is uitgebreid en is ontworpen om makkelijk 
 te kunnen linken met data in je eigen systeem. Copernica ontvangt het IP adres 
@@ -91,6 +92,7 @@ jouw systeem binnenkomt.
 * [SOAP API](./soap-api-documentation)
 * [Webhooks voor bounces](webhook-bounces)
 * [Webhooks voor failures](webhook-failures)
+* [Webhooks voor deliveries](webhook-deliveries)
 * [Webhooks voor kliks](webhook-clicks)
 * [Webhooks voor opens](webhook-opens)
 * [Webhooks voor aangemaakte (sub)profielen](webhook-creates)
