@@ -19,6 +19,7 @@ gaan dieper in op deze types:
 
 * [Webhooks for bounces](webhook-bounces)
 * [Webhooks for failures](webhook-failures)
+* [Webhooks for deliveries](webhook-deliveries)
 * [Webhooks for clicks](webhook-clicks)
 * [Webhooks for opens](webhook-opens)
 * [Webhooks for (sub)profile creations](webhook-creates)
