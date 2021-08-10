@@ -32,7 +32,7 @@ Webhooks kunnen bijvoorbeeld gebruikt worden om data van Copernica
 te synchronizeren met je eigen applicatie. Webhooks vereisen echter wel een 
 script op je eigen server om de juiste handelingen uit te voeren wanneer er 
 informatie wordt aangeleverd door de Webhook. Je kunt hiervoor verschillende 
-trigger instellen, waaronder afgeleverde e-mails, kliks, opens, profielen die worden aangepast, etc.
+triggers instellen, waaronder afgeleverde e-mails, kliks, opens, profielen die worden aangepast, etc.
 
 De data die terug wordt gestuurd is uitgebreid en is ontworpen om makkelijk 
 te kunnen linken met data in je eigen systeem. Copernica ontvangt het IP adres 
