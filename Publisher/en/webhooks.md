@@ -18,7 +18,7 @@ these types in more detail:
 
 * [Webhooks for bounces](webhook-bounces)
 * [Webhooks for failures](webhook-failures)
-* [Webhooks for clicks](webhook-deliveries)
+* [Webhooks for deliveries](webhook-deliveries)
 * [Webhooks for clicks](webhook-clicks)
 * [Webhooks for opens](webhook-opens)
 * [Webhooks for (sub)profile creations](webhook-creates)
