@@ -14,7 +14,7 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
 | id         | Unieke identifier van het afgeleverde bericht            |
 | type       | Type van de actie die de Webhook triggerde ('delivery')  |
 | timestamp  | Tijdstempel van de aflevering (YYYY-MM-DD HH:MM:SS formaat)  |
-| time       | Unix tijd van de aflevering                              |
+| time       | Unix timestamp van de aflevering                         |
 | recipient  | E-mailadres van de aflevering                            |
 | tags       | Tags geassocieerd met het bericht                        |
 
