@@ -18,6 +18,7 @@ these types in more detail:
 
 * [Webhooks for bounces](webhook-bounces)
 * [Webhooks for failures](webhook-failures)
+* [Webhooks for deliveries](webhook-deliveries)
 * [Webhooks for clicks](webhook-clicks)
 * [Webhooks for opens](webhook-opens)
 * [Webhooks for (sub)profile creations](webhook-creates)
@@ -30,7 +31,7 @@ Webhooks can be used to sync data that passes through Copernica
 directly into your own application. Webhooks require a script on 
 your own server to execute whenever information is provided through the 
 Webhook. You can set several triggers in the Webhooks menu such 
-as opens, clicks, profile edits and bounces.
+as deliveries, opens, clicks, profile edits and bounces.
 
 The data you receive is very rich and allows you to easily link it to the 
 data already present in your system. Copernica receives the IP address and 
@@ -86,6 +87,7 @@ it's actually Copernica sending you the data.
 * [SOAP API](./soap-api-documentation)
 * [Webhooks for bounces](webhook-bounces)
 * [Webhooks for failures](webhook-failures)
+* [Webhooks for deliveries](webhook-deliveries)
 * [Webhooks for clicks](webhook-clicks)
 * [Webhooks for opens](webhook-opens)
 * [Webhooks for (sub)profile creations](webhook-creates)
