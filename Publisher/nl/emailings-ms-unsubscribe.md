@@ -54,10 +54,10 @@ Het uitschrijfgedrag wordt geregistreerd in de statistieken van de e-mail en het
 Om het ingestelde gedrag toe te passen dien je in de e-mail een referentie te plaatsen waardoor het formulier weet bij welke mailing de uitschrijving hoort. Je kunt dit doen door drie parameters mee te geven in de URL:
 - profile={$profile.id}
 - code={$profile.code}
-- publisherRefererEmailing={$mailing.id}
+- msRefererEmailing={$mailing.id}
 
 **Voorbeeld:** 
  
 ```
-https://www.copernica.nl/afmelden?profile={$profile.id}&code={$profile.code}&publisherRefererEmailing={$mailing.id}
+https://www.copernica.nl/afmelden?profile={$profile.id}&code={$profile.code}&msRefererEmailing={$mailing.id}
 ```
