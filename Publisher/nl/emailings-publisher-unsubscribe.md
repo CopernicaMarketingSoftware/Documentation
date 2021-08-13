@@ -53,3 +53,31 @@ eigen domein te tonen, is de optie *domain* beschikbaar.
 
 Let op: het uitschrijfdomein moet een CNAME verwijzing hebben naar onze
 server (http://vicinity.picsrv.net/) om de link te laten werken.
+
+## Registreren van een uitschrijving op een verzonden e-mail
+Als je geen gebruik maakt van de standaard Copernica uitschrijflink, maar de uitschrijving wilt registreren via een webformulier, kun je dit aangeven bij de instellingen van je formulier.
+
+Hiervoor ga je binnen je formulier naar '*Webformulier [naam]*' in het submenu en kies je voor *Instellingen*. Onder het tabblad '*Algemeen*' vind je de optie 'Uitschrijfactie'.
+ 
+Hier heb je de keuze uit 3 opties:
+ 
+1. **Voer geen uitschrijfactie uit.**  
+Het uitschrijfgedrag wordt niet geregistreerd in de statistieken van de e-mail en het uitschrijfgedrag wordt niet toegepast.
+ 
+2. **Registreer een uitschrijving voor de e-mailing die als referer is opgegeven en voer het uitschrijfgedrag uit.**  
+Het uitschrijfgedrag wordt geregistreerd in de statistieken van de e-mail en het uitschrijfgedrag wordt toegepast.
+ 
+3. **Registreer een uitschrijving voor de e-mailing die als referer is opgegeven en voer het uitschrijfgedrag niet uit.**  
+Het uitschrijfgedrag wordt geregistreerd in de statistieken van de e-mail en het uitschrijfgedrag wordt niet toegepast.
+ 
+### Refereren in de uitschrijflink
+Om het ingestelde gedrag toe te passen dien je in de e-mail een referentie te plaatsen waardoor het formulier weet bij welke mailing de uitschrijving hoort. Je kunt dit doen door drie parameters mee te geven in de URL:
+- profile={$profile.id}
+- code={$profile.code}
+- publisherRefererEmailing={$mailing.id}
+
+**Voorbeeld:** 
+ 
+```
+https://www.copernica.nl/afmelden?profile={$profile.id}&code={$profile.code}&publisherRefererEmailing={$mailing.id}
+```
