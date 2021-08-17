@@ -400,3 +400,15 @@ emails after sending. You can find all calls related to logfiles in the table be
 | GET    | [api.copernica.com/v2/logfile/$filename/csv](./rest-get-logfiles-csv)                        | Fetch logfiles in CSV format                     |
 | GET    | [api.copernica.com/v2/logfile/$filename/json](./rest-get-logfiles-json)                      | Fetch logfiles in JSON format                    |
 | GET    | [api.copernica.com/v2/logfile/$filename/xml](./rest-get-logfiles-xml)                        | Fetch logfiles in XML format                     |
+
+## Webhooks
+
+Webhooks are processes that notify their user of events that happen in real time through HTTP POST. 
+You can find all calls related to webhooks in the table below.
+
+| Type   | Address                                                                                      | Description                                      |
+|--------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
+| GET    | [api.copernica.com/v2/webhook/$id](./rest-get-webhook)                                       | Fetch a webhook                                  |
+| POST   | [api.copernica.com/v2/webhooks](./rest-post-webhooks)                                        | Create a webhook                                 |
+| PUT    | [api.copernica.com/v2/webhook/$id](./rest-put-webhook)                                       | Update a webhook                                 |
+| DELETE | [api.copernica.com/v2/webhook/$id](./rest-delete-webhook)                                    | Remove a webhook                                 |
