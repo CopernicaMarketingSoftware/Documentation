@@ -3,7 +3,7 @@
 This method is used to update an existing webhook with the REST API. It uses 
 an HTTP PUT request to the following address:
 
-`https://api.copernica.com/v2/webhooks/$id?access_token=xxxx`
+`https://api.copernica.com/v2/webhook/$id?access_token=xxxx`
 
 Replace the `$id` with the identifier of the webhook you want to edit.
 
@@ -34,7 +34,7 @@ $data = array(
 );
 
 // do the call
-$api->put("webhooks/{$id}", $data);
+$api->put("webhook/{$id}", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
@@ -43,5 +43,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 - [Overview of all API calls](rest-api)
 - [GET webhook](rest-get-webhook)
-- [POST webhook](rest-post-webhook)
+- [POST webhooks](rest-post-webhooks)
 - [DELETE webhook](rest-delete-webhook)
