@@ -14,6 +14,8 @@ After a successful call the ID of the created webhook is returned.
 | **handler**       | The URL of the webhook's endpoint that wil handle the call.                                                                              |
 | **trigger**       | The event that will trigger this webhook.                                                                                                |
 | **callers**       | Specify what callers may trigger the webhook. This parameter is optional. If no callers are specified, all possible callers are applied. |
+| **database**      | Optional: The ID of the database that this webhook is limited to.                     |
+| **collection**    | Optional: The ID of the collection that this webhook is limited to.                   |
 
 ## PHP example
 
@@ -30,7 +32,8 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 $data = array(
     'handler'   =>  'https://my-webhook-url.com',
     'trigger'   =>  'create',
-    'callers'   =>  array('publisher','ms')
+    'callers'   =>  array('publisher','ms'),
+    'database'  =>  1017
 );
 
 // do the call
@@ -43,4 +46,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 - [Overview of all REST API methods](rest-api)
 - [GET webhook](rest-get-webhook)
+- [PUT webhook](rest-put-webhook)
 - [DELETE webhook](rest-delete-webhook)
