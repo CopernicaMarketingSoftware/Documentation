@@ -3,7 +3,7 @@
 This method is used to delete an existing webhook with the REST API. It uses 
 an HTTP DELETE request to the following address:
 
-`https://api.copernica.com/v2/webhooks/$id?access_token=xxxx`
+`https://api.copernica.com/v2/webhook/$id?access_token=xxxx`
 
 The `$id` needs to be replaced by the numerical identifier, the ID, of the 
 webhook.
@@ -20,7 +20,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // do the call
-$api->delete("webhooks/{$id}");
+$api->delete("webhook/{$id}");
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
@@ -29,5 +29,5 @@ The example above requires the [CopernicaRestApi class](rest-php).
 
 * [Overview of all API calls](./rest-api)
 * [GET webhook](./rest-get-webhook)
-* [POST webhook](./rest-post-webhook)
+* [POST webhooks](./rest-post-webhooks)
 * [PUT webhook](./rest-put-webhook)
