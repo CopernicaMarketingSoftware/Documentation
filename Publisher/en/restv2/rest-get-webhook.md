@@ -24,8 +24,8 @@ The JSON for the database might look something like this:
 {  
    "ID":"1894",
    "handler":"https://my-webhook-url.com",
-   "trigger":"ms",
-   "callers":["create", "update"]
+   "trigger":"create",
+   "callers":["ms", "publisher"]
 }
 ```
 
@@ -41,7 +41,7 @@ require_once("copernica_rest_api.php");
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // do the call, and print result
-$api->get("webhooks/{$id}");
+$api->get("webhook/{$id}");
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
