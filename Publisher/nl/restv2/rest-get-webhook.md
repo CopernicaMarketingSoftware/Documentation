@@ -10,7 +10,7 @@ Hier moet `$id` vervangen worden door het ID van de webhook.
 
 Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 
-| Variable          | Description                                                                           |
+| Paramters         | Beschrijving                                                                          |
 |-------------------|---------------------------------------------------------------------------------------|
 | **ID**            | Uniek ID van de webhook.                                                              |
 | **handler**       | De URL waarop de webhook wordt uitgevoerd                                             |
@@ -25,8 +25,8 @@ De JSON ziet er bijvoorbeeld zo uit:
 {  
    "ID":"1894",
    "handler":"https://my-webhook-url.com",
-   "trigger":"ms",
-   "callers":["create", "update"]
+   "trigger":"create",
+   "callers":["ms", "publisher"]
 }
 ```
 
@@ -42,7 +42,7 @@ require_once("copernica_rest_api.php");
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // voer het verzoek uit
-$api->get("webhooks/{$id}");
+$api->get("webhook/{$id}");
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
