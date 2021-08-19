@@ -376,3 +376,15 @@ mailing. Je kunt alle calls gerelateerd aan logfiles in de onderstaande tabel vi
 | GET    | [api.copernica.com/v2/logfile/$filename/csv](./rest-get-logfiles-csv)                        | Opvragen logfiles in CSV                      |
 | GET    | [api.copernica.com/v2/logfile/$filename/json](./rest-get-logfiles-json)                      | Opvragen logfiles in JSON                     |
 | GET    | [api.copernica.com/v2/logfile/$filename/xml](./rest-get-logfiles-xml)                        | Opvragen logfiles in XML                      |
+
+## Webhooks
+
+Copernica houdt uitgebreide data bij over alles gerelateerd aan een
+mailing. Je kunt alle calls gerelateerd aan logfiles in de onderstaande tabel vinden.
+
+| Type   | Adres                                                                                        | Omschrijving                                  |
+|--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
+| GET    | [api.copernica.com/v2/webhook/$id](./rest-get-webhook)                                       | Opvragen van een webhook                      |
+| POST   | [api.copernica.com/v2/webhooks](./rest-post-webhooks)                                        | Aanmaken van een webhook                      |
+| PUT    | [api.copernica.com/v2/webhook/$id](./rest-put-webhook)                                       | Updaten van een webhook                       |
+| DELETE | [api.copernica.com/v2/webhook/$id](./rest-delete-webhook)                                    | Verwijderen van een webhook                   |
