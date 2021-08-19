@@ -379,8 +379,7 @@ mailing. Je kunt alle calls gerelateerd aan logfiles in de onderstaande tabel vi
 
 ## Webhooks
 
-Copernica houdt uitgebreide data bij over alles gerelateerd aan een
-mailing. Je kunt alle calls gerelateerd aan logfiles in de onderstaande tabel vinden.
+Webhooks zijn processen die hun gebruiker op de hoogte stellen van gebeurtenissen die realtime plaatsvinden via HTTP POST. Je kunt alle calls gerelateerd aan webhooks in de onderstaande tabel vinden.
 
 | Type   | Adres                                                                                        | Omschrijving                                  |
 |--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
