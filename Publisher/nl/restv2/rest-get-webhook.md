@@ -15,7 +15,7 @@ Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 | **ID**            | Uniek ID van de webhook.                                                              |
 | **handler**       | De URL waarop de webhook wordt uitgevoerd                                             |
 | **trigger**       | De aanleiding waardoor de webhook wordt uitgevoerd                                    |
-| **callers**       | Een array van aanleidingen die de webhook mogen triggeren                             |
+| **callers**       | Array met types (ms / publisher) waardoor de webhook wordt aangeroepen. Deze parameter is optioneel. Als deze niet is gespecificeerd wordt de call door beide types uitgevoerd                            |
 
 ### JSON voorbeeld
 
