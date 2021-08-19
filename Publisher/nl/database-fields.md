@@ -29,7 +29,7 @@ Wanneer je een veld bewerkt of toevoegt kun je per veld een aantal extra opties 
 
 * **Toon dit veld op de overzichtspagina:** De overzichtspagina is het raster dat je ziet bij het aanklikken van een database. Door gebruik te maken van deze optie kun je kiezen welke velden direct in het overzicht zichtbaar moeten zijn. De overige velden worden zichtbaar wanneer je op het profiel klikt.
 
-* **Dit veld wordt geïndexeerd:** Binnen je database is het mogelijk om 64 velden te indexeren [link naar indexeren]. Wanneer een veld geïndexeerd is werkt het zoeken naar profielen en het opbouwen van selecties op basis van dit veld sneller. Je kunt deze optie aanzetten bij de meest gebruikte velden binnen je database. Let op: tekstvelden die gebruik maken van de optie 'Groot veld' kunnen niet worden geïndexeerd.
+* **Dit veld wordt geïndexeerd:** Binnen je database is het mogelijk om 64 velden te [indexeren](./database-field-index). Wanneer een veld geïndexeerd is werkt het zoeken naar profielen en het opbouwen van selecties op basis van dit veld sneller. Je kunt deze optie aanzetten bij de meest gebruikte velden binnen je database. Let op: tekstvelden die gebruik maken van de optie 'Groot veld' kunnen niet worden geïndexeerd.
 
 ## Volgorde van databasevelden wijzigen
 Databasevelden worden weergegeven op volgorde van creatie. Nieuwe velden worden dus altijd onder oudere velden getoond. Wanneer je deze volgorde wilt aanpassen navigeer je naar '**Velden & Interesses**'.
