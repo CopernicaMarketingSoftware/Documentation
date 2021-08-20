@@ -1,6 +1,6 @@
 # REST API: GET webhook
 
-Deze methode wordt gebruikt om een bestaande webhook op te halen met de REST API. Door een HTTP GET verzoek te sturen naar de volgende URL kun je informatie over de webhook ophalen.
+Deze methode wordt gebruikt om een bestaande webhook op te halen met de REST API. Je doet dit door een HTTP GET verzoek te sturen naar de volgende URL. 
 
 `https://api.copernica.com/v2/webhook/$id?access_token=xxxx`
 
@@ -8,11 +8,11 @@ Hier moet `$id` vervangen worden door het ID van de webhook.
 
 ## Teruggegeven velden
 
-Deze methode geeft een JSON object terug dat de volgende informatie bevat:
+Deze methode geeft een JSON object terug dat de volgende data bevat:
 
 | Paramters         | Beschrijving                                                                          |
 |-------------------|---------------------------------------------------------------------------------------|
-| **ID**            | Uniek ID van de webhook.                                                              |
+| **ID**            | Uniek ID van de webhook                                                               |
 | **handler**       | De URL waarop de webhook wordt uitgevoerd                                             |
 | **trigger**       | De aanleiding waardoor de webhook wordt uitgevoerd                                    |
 | **callers**       | Array met types (ms / publisher) waardoor de webhook wordt aangeroepen. Deze parameter is optioneel. Als deze niet is gespecificeerd wordt de call door beide types uitgevoerd                            |
