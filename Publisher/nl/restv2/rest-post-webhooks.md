@@ -1,6 +1,6 @@
 # REST API: POST webhooks
 
-Deze methode wordt gebruikt om een nieuwe webhook in te stellen met de REST API. Door een POST GET verzoek te sturen naar de volgende URL de webhook aanmaken.
+Deze methode wordt gebruikt om een webhook aan te maken met de REST API. Je doet dit door een HTTP POST verzoek te sturen naar de volgende URL.
 
 `https://api.copernica.com/v2/webhooks?access_token=xxxx`
 
