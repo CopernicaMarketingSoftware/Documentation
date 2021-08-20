@@ -1,6 +1,6 @@
 # REST API: DELETE webhook
 
-Deze methode wordt gebruikt om een bestaande webhook te verwijderen met de REST API. Door een HTTP GET verzoek te sturen naar de volgende URL kun je de webhook verwijderen.
+Deze methode wordt gebruikt om een bestaande webhook te verwijderen met de REST API. Door een HTTP DELETE verzoek te sturen naar de volgende URL kun je de webhook verwijderen.
 
 `https://api.copernica.com/v2/webhook/$id?access_token=xxxx`
 
