@@ -1,4 +1,4 @@
-# Productupdate 02-06-2021
+# Productupdate 26-08-2021
 
 ## Bètaversie nieuwe drag-and-drop-editor
 Afgelopen donderdag hebben wij de bètaversie van de nieuwe drag-and-drop-editor live gezet. De nieuwe editor biedt veel voordelen ten opzichte van de oude drag-and-drop-editor. Zo is er verbeterde ondersteuning voor responsive-opmaak, meer Smarty-mogelijkheden (o.a. loadsubprofile en math equation) en eigen geschreven HTML- en CSS-blokken. 
