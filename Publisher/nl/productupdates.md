@@ -1,5 +1,6 @@
 # Productupdates
 
+* [Productupdate 26-08-2021 - Nieuwe drag-and-drop-editor en uitschrijvingen registreren vanuit een mailing](./productupdate20210826)
 * [Productupdate 02-06-2021 - Opvolgacties en resultaten beheren in Marketing Suite](./productupdate20210602)
 * [Productupdate 03-05-2021 - Inloggen via Marketing Suite en documentatiemodule live](./productupdate20210305)
 * [Productupdate 12-01-2021 - Selectie logfiles | XSLT & Stijl in Marketing Suite](./productupdate20210112)
