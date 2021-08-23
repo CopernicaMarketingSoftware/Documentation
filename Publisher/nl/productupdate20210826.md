@@ -30,9 +30,9 @@ In onze documentatie vind je meer informatie hoe je dit kunt instellen voor [HTM
 * Bugfix: bij het exporteren van hardbounces wordt nu ook het e-mailadres meegegeven.
 * Bugfix: spamklachten vanuit drag-and-drop-templates zijn nu zichtbaar in de logfiles binnen een profiel.
 
-REST API
-* We hebben de mogelijkheid toegevoegd om je webhooks te beheren. Je kunt webhooks [aanmaken](./restv2/rest-post-webhooks), [opvragen](./restv2/rest-get-webhook), [bijwerken](./restv2/rest-put-webhook) of [verwijderen](./restv2/rest-delete-webhook).
+## REST API
+* Je kunt nu webhooks [aanmaken](./restv2/rest-post-webhooks), [opvragen](./restv2/rest-get-webhook), [bijwerken](./restv2/rest-put-webhook) of [verwijderen](./restv2/rest-delete-webhook).
 * Het is nu mogelijk om [drag-and-drop-templates](./restv2/rest-delete-ms-template), [HTML-templates](./restv2/rest-delete-publisher-template) en [-documenten](./restv2/rest-delete-publisher-document) te verwijderen.
 * Je kunt nu de rechten per API-token aanpassen via de interface.
 * Bugfix: bij het bijwerken van meerdere profielen wordt nu een foutmelding teruggegeven als een veld niet meer bestaat in de database of collectie.
-* Bugfix: in de methode voor het ophalen van verzonden mailings bij een profiel kun je nu het minimum en maximum aantal ontvangers opgeven. 
+* Bugfix: bij het ophalen van verzonden mailings per profiel kun je nu weer filteren op het minumum en maximum aantal ontvangers.
