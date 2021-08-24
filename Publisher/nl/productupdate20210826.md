@@ -1,11 +1,11 @@
 # Productupdate 26-08-2021
 
 ## Bètaversie nieuwe drag-and-drop-editor
-Afgelopen donderdag hebben wij de bètaversie van de nieuwe drag-and-drop-editor live gezet. De nieuwe editor biedt veel voordelen ten opzichte van de oude drag-and-drop-editor. Zo is er verbeterde ondersteuning voor responsive-opmaak, zijn er meer Smarty-mogelijkheden (o.a. loadsubprofile en math equation) en zijn eigen geschreven HTML- en CSS-blokken mogelijk.
+Afgelopen donderdag hebben wij de bètaversie van de nieuwe drag-and-drop-editor live gezet. Deze editor biedt veel voordelen ten opzichte van de oude drag-and-drop-editor. Zo is er verbeterde ondersteuning voor responsive-opmaak, zijn er meer Smarty-mogelijkheden (o.a. loadsubprofile en math equation) en zijn eigen geschreven HTML- en CSS-blokken mogelijk.
 
-Je activeert de nieuwe module via het menu-item [Configuratie](https://ms.copernica.com/#/admin), onder het kopje [Bètamodules](https://ms.copernica.com/#/admin/user/betamodules). De nieuwe editor is daarna te gebruiken via het menu-item 'E-mail-editor → Aanmaken → Drag-and-drop-template aanmaken'.
+Je activeert de module via het menu-item [Configuratie](https://ms.copernica.com/#/admin), onder het kopje [Bètamodules](https://ms.copernica.com/#/admin/user/betamodules). De nieuwe editor is daarna te gebruiken via het menu-item 'E-mail-editor → Aanmaken → Drag-and-drop-template aanmaken'.
 
-Ben je geïnteresseerd in de nieuwe functionaliteiten of wil je zien hoe de nieuwe editor werkt, dan nodigen wij je graag uit om deel te nemen aan de demo op vrijdag 27 augustus 2021 om 14:00 via [deze link](https://meet.google.com/vkz-wfxy-ytv).
+Ben je geïnteresseerd in de functionaliteiten of wil je zien hoe de nieuwe editor werkt, dan nodigen wij je graag uit om deel te nemen aan de demo op vrijdag 27 augustus 2021 om 14:00 via [deze link](https://meet.google.com/vkz-wfxy-ytv).
 
 ## Uitschrijvingen vanuit een webformulier registreren bij je mailing
 Het is nu mogelijk om een uitschrijving vanuit een Copernica-webformulier te koppelen aan een verzonden mailing. Hierdoor kun je, ook zonder de {unsubscribe}-tag, een uitschrijving registreren in de statistieken. 
