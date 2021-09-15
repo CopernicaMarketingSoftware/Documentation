@@ -39,6 +39,9 @@ Each emailing contains the following fields:
 * **type**: The type of mailing: mass or individual.
 * **clicks**: Amount of clicks for this mailing
 * **impressions**: Amount of opens for this mailing
+* **errors**: Amount of errors for this mailing
+* **unsubscribes**: Amount of unsubscribes for this mailing
+* **abuses**: Amount of abuses for this mailing
 * **contenttype**: The type of content in the mailing: html, text or both.
 * **target**: Array containing the target type and the ID and type of its sources (for example the database a collection belongs to).
 
