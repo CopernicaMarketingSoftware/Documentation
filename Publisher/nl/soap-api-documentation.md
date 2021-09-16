@@ -1,6 +1,6 @@
 # SOAP API
 Ben je een nieuwe gebruiker op zoek naar informatie over de API mogelijkheden 
-van Copernica? Wij raden aan om de [REST API v2](./restv2/rest-api.md "REST-API") 
+van Copernica? Wij raden aan om de [REST API v3](./restv3/rest-api.md "REST-API") 
 te gebruiken die sneller is en makkelijker te implementeren.
 
 ## Over de API

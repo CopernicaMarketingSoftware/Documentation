@@ -1,0 +1,96 @@
+# REST API: GET emailings (Marketing Suite)
+
+A method to request a list of all mailings sent from Marketing Suite.
+This is an HTTP GET call to the following address:
+
+`https://api.copernica.com/v3/ms/emailings?access_token=xxxx`
+
+You can find the call to retrieve all Publisher emailings [here](./rest-get-emailings).
+
+## Available parameters
+
+* **type**: The type of mailing between "mass" or "individual", defaults to "both".
+* **followups**: Indicates if we only use follow-up mailings ("yes"), only mailings
+that were *not* the result of a follow-up ("no") or all mailings ("both"). Defaults to "both".
+* **mindestinations**: Only retrieve mailings at least this many destinations.
+* **maxdestinations**: Only retrieve mailings with at most this many destinations.
+* **fromdate**: Only retrieve mailings sent after this date (YYYY-MM-DD HH:MM:SS format).
+* **todate**: Only retrieve mailings sent before this date (YYYY-MM-DD HH:MM:SS format).
+
+This method also supports [paging parameters](./rest-paging).
+
+## Returned fields
+
+The method returns a JSON object containing the following information for each mailing:
+
+* **id**: The ID of the mailing.
+* **timestamp**: Timestamp of the mailing.
+* **template**: The ID of the template that was used to send the mailing.
+* **subject**: The subject of the mailing.
+* **from_address**: An array containing the 'name' and 'email' address of the sender.
+* **destinations**: Amount of destinations the mailing was sent to.
+* **type**: Type of mailing (individual or mass).
+* **target**: Contains the target type and the ID and type of other
+entities above it (for example the database a collection belongs to).
+
+### JSON example
+
+The JSON object will contain a property 'data' with an array containing all
+the emailings. The JSON for a single emailing looks something like this:
+
+```json
+{
+   "id":"169",
+   "timestamp":"2015-01-13 15:09:49",
+   "template":"579",
+   "subject":"Test",
+   "from_address":{
+      "name":"Test",
+      "email":"test@copernica.com"
+   },
+   "destinations":25,
+   "type":"mass",
+   "target":{
+      "type":"database",
+      "sources":[
+         {
+            "id":"7578",
+            "type":"database"
+         }
+      ]
+   }
+}
+```
+
+## PHP Example
+
+The following script demonstrates how to use this method. Because we use the
+CopernicaRestApi class, you don't have to worry about escaping special characters
+in the URL; it is done automatically.
+
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+
+// change this into your access token
+$api = new CopernicaRestAPI("your-access-token", 2);
+
+// parameters to pass to the call
+$parameters = array(
+    'limit'             => 10,
+    'type'              => 'mass',
+    'followups'         => 'no',
+    'registerclicks'    => 'yes',
+);
+
+// do the call, and print result
+print_r($api->get("ms/emailings", $parameters));
+```
+
+The example above requires the [CopernicaRestApi class](./rest-php).
+
+## More information
+
+* [Overview of all API calls](./rest-api)
+* [Get scheduled mailings](./rest-get-ms-scheduledemailings)
+* [Get Publisher mailings](./rest-get-emailings)
