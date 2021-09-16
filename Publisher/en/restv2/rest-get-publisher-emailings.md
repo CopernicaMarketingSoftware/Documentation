@@ -34,14 +34,14 @@ Each emailing contains the following fields:
 * **description**: Description of the mailing
 * **from_address**: The from address of the mailing as an array. (With properties 'name' and 'email')
 * **destinations**: The number of destinations.
-* **testgroups**: Amount of testgroups
+* **testgroups**: Number of testgroups
 * **finalgroup**: ID of the final group (only relevant in case of a splitrun)
 * **type**: The type of mailing: mass or individual.
-* **clicks**: Amount of clicks for this mailing
-* **impressions**: Amount of opens for this mailing
-* **errors**: Amount of errors for this mailing
-* **unsubscribes**: Amount of unsubscribes for this mailing
-* **abuses**: Amount of abuses for this mailing
+* **clicks**: Number of clicks for this mailing
+* **impressions**: Number of opens for this mailing
+* **errors**: Number of errors for this mailing
+* **unsubscribes**: Number of unsubscribes for this mailing
+* **abuses**: Number of abuses for this mailing
 * **contenttype**: The type of content in the mailing: html, text or both.
 * **target**: Array containing the target type and the ID and type of its sources (for example the database a collection belongs to).
 
