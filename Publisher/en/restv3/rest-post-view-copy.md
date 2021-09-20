@@ -30,7 +30,7 @@ The following PHP script demonstrates how to use the API method:
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // set the options for copying
 $options = array(

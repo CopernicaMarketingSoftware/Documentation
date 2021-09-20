@@ -33,7 +33,7 @@ Als de data nog niet beschikbaar zijn wordt een 404 geretourneerd.
 require_once('copernica_rest_api.php');
 
 // insert your access token here
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // get the status of the data request
 $api->get("datarequest/{$verzoekID}/data")

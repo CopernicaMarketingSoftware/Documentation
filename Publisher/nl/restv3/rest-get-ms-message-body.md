@@ -47,7 +47,7 @@ de body van een bericht op te vragen:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // retrieve the message body in the default format (HTML in this case)
 print_r($api->get("ms/message/1044554/body"));

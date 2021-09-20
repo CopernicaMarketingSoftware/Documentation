@@ -15,7 +15,7 @@ Het volgende voorbeeld demonstreert hoe je gebruik maakt van deze methode met de
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // voer het verzoek uit
 $api->delete("profile/{$profielID}");

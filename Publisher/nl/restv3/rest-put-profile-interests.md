@@ -40,7 +40,7 @@ uitgeschakeld (tweede methode). Daarna wordt voor het tweede profiel de interess
     require_once('copernica_rest_api.php');
 
     // verander dit naar je access token
-    $api = new CopernicaRestAPI("your-access-token", 2);
+    $api = new CopernicaRestAPI("your-access-token", 3);
 
     // data voor de methode
     $data = array(

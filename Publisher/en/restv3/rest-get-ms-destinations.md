@@ -26,7 +26,7 @@ The following PHP script calls this API method:
 // dependencies
 require_once('copernica_rest_api.php');
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 // set the required parameters
 $parameters = array(
     'from'  => "2021-02-01",

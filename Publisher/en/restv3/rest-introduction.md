@@ -17,7 +17,7 @@ offers some new calls to help you manage all data surrounding your mailings.
 
 If you are using our CopernicaRestAPI class, your instantiation currently should look somewhat like this:
 
-`$api = new CopernicaRestAPI("your-access-token", 2);`
+`$api = new CopernicaRestAPI("your-access-token", 3);`
 
 This should be simply changed to:
 

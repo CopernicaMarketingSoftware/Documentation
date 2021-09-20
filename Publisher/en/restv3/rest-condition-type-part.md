@@ -25,7 +25,7 @@ a certain field value. Here we look at 20 dog owners from our selection.
 require_once("copernica_rest_api.php");
 
 // make a new api object with your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 $data = array(
     // select part condition

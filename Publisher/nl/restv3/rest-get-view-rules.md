@@ -54,7 +54,7 @@ selectie.
     require_once('copernica_rest_api.php');
     
     // change this into your access token
-    $api = new CopernicaRestAPI("your-access-token", 2);
+    $api = new CopernicaRestAPI("your-access-token", 3);
 
     // parameters to pass to the call
     $parameters = array(

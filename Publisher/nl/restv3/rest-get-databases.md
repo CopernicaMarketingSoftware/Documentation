@@ -127,7 +127,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once("copernica_rest_api.php");
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters voor de methode
 $parameters = array(

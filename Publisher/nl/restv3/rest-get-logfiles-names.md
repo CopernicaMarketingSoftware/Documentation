@@ -53,7 +53,7 @@ Vergeet niet de datum in te voegen in de URL (YYYY-MM-DD formaat).
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // de array voor de gewenste datum en/of het gewenste type van de logfiles
 $parameters = array(

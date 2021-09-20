@@ -43,7 +43,7 @@ $data = array(
 );
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // execute the call
 print_r($api->get("ms/unsubscribes", $data));

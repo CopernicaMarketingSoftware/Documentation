@@ -387,3 +387,15 @@ Webhooks zijn processen die hun gebruiker op de hoogte stellen van gebeurtenisse
 | POST   | [api.copernica.com/v3/webhooks](./rest-post-webhooks)                                        | Aanmaken van een webhook                      |
 | PUT    | [api.copernica.com/v3/webhook/$id](./rest-put-webhook)                                       | Updaten van een webhook                       |
 | DELETE | [api.copernica.com/v3/webhook/$id](./rest-delete-webhook)                                    | Verwijderen van een webhook                   |
+
+
+## Sender domains
+
+Een senderdomain wordt gebruikt om e-mails te versturen via Copernica. Wanneer je een domein instelt als senderdomain zorgen wij er voor dat je DNS records automatisch bijgewerkt worden. Je Click, Bounce en Open domains en DKIM-sleutels zullen automatisch worden ingesteld.
+
+| Type   | Adres                                                                                        | Omschrijving                                  |
+|--------|----------------------------------------------------------------------------------------------|-----------------------------------------------|
+| GET    | [api.copernica.com/v3/senderdomain/$id](./rest-get-senderdomain)                                       | Opvragen van een senderdomain                      |
+| POST   | [api.copernica.com/v3/senderdomains](./rest-post-senderdomains)                                        | Aanmaken van een senderdomain                      |
+| PUT    | [api.copernica.com/v3/senderdomain/$id](./rest-put-senderdomain)                                       | Updaten van een senderdomain                       |
+| DELETE | [api.copernica.com/v3/senderdomain/$id](./rest-delete-senderdomain)                                    | Verwijderen van een senderdomain                   |

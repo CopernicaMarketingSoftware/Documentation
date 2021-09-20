@@ -71,7 +71,7 @@ Het volgende script demonstreert hoe je deze API methode kunt gebruiken:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // stel de periode voor de statistieken in
 $data = array(

@@ -43,7 +43,7 @@ vanuit een PHP script:
 require_once("copernica_rest_api.php");
 
 // verander dit in je access code access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // voer de opdracht uit en print het resultaat
 print_r($api->get("identity"));

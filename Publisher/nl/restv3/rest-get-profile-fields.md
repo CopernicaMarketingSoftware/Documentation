@@ -21,7 +21,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
     require_once('copernica_rest_api.php');
     
     // verander dit naar je access token
-    $api = new CopernicaRestAPI("your-access-token", 2);
+    $api = new CopernicaRestAPI("your-access-token", 3);
 
     // voer het verzoek uit en print het resultaat
     print_r($api->get("profile/{$profielID}/fields"));

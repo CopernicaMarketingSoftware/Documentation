@@ -58,7 +58,7 @@ conditie.
 require_once("copernica_rest_api.php");
 
 // maak een API object met je eigen token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 $data = array(
     // selecteer lastcontact conditie

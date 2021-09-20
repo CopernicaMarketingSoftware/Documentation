@@ -47,7 +47,7 @@ email as spam. The following condition is validated if this is the case.
 require_once("copernica_rest_api.php");
 
 // make a new api object with your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 $data = array(
     // select fax condition

@@ -30,7 +30,7 @@ shown below, to make a selection of tennis players and enthusiasts.
 require_once("copernica_rest_api.php");
 
 // make a new api object with your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 $data = array(
     // select interest condition

@@ -51,7 +51,7 @@ text "Data not available (yet)".
 require_once('copernica_rest_api.php');
 
 // insert your access token here
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to pass to the method
 $data = array(

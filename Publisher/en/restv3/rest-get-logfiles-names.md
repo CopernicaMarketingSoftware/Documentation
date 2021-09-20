@@ -50,7 +50,7 @@ to substitute the date in the URL (YYYY-MM-DD format).
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // the array used to specify the date and/or type
 $parameters = array(

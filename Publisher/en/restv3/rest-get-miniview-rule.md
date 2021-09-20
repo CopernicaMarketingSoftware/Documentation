@@ -63,7 +63,7 @@ selection 1234:
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // do the call, and print result
 print_r($api->get("miniview/{$miniviewID}/minirule/{$ruleID}"));

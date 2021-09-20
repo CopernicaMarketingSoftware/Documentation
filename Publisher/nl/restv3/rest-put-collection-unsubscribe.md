@@ -38,7 +38,7 @@ te zorgen dat deze uitschrijvers geen e-mails meer ontvangen.
 require_once('copernica-rest-api.php');
 
 // verander dit naar je acces token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // data voor de methode
 $data = array(

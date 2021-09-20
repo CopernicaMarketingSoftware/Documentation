@@ -100,7 +100,7 @@ van speciale karakters; dit wordt automatisch afgehandeld.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters om aan de call mee te geven
 // in dit geval vragen we alleen emailings op die verstuurd zijn naar 

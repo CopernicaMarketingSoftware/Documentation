@@ -44,7 +44,7 @@ The following script demonstrates how to use this API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // execute the call
 print_r($api->get("publisher/emailing/{$emailingID}/testgroups/"));

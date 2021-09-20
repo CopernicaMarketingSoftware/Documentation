@@ -42,7 +42,7 @@ match-mode. The following values describe this set of people:
 require_once("copernica_rest_api.php");
 
 // make a new api object with your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 $data = array(
     // select doublefield condition

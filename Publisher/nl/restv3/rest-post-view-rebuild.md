@@ -23,7 +23,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica-rest-api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // voer de methode uit
 print_r($copyID = $api->post("view/{$viewID}/rebuild", $data));

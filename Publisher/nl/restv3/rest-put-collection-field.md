@@ -32,7 +32,7 @@ Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden.
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 2);
+$api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to be sent to the api
 $data = array(
