@@ -10,7 +10,7 @@ endpoints ondersteunen de traditionele HTTP-acties ("GET", "POST", "PUT" en
 voegen, terwijl "PUT" bedoeld is om data te overschrijven.
 
 * [Overzicht van methodes](./rest-methods.md)
-* [Vorige versie van de REST API (v3)](../restv3/rest-api.md)
+* [Vorige versie van de REST API (v2)](../restv2/rest-api.md)
 * [Vorige versie van de REST API (v1)](../restv1/rest-api.md)
 
 ## API-tokens
