@@ -42,6 +42,7 @@ veld. Elke mailing bevat de volgende informatie:
 * **clicks**: Aantal kliks voor deze mailing.
 * **impressions**: Aantal opens voor deze mailing.
 * **errors**: Aantal fouten voor deze mailing.
+* **unsubscribes**: Aantal uitschrijvingen voor deze mailing.
 * **abuses**: Aantal spamklachten voor deze mailing.
 * **contenttype**: Het type content in de mailing: 'html', 'text' of 'both' (beide).
 * **target**: Array die het target type en de ID en het type van zijn sources bevat (een source is bijvoorbeeld de database waartoe een collectie behoort).
