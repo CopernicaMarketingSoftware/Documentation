@@ -42,6 +42,7 @@ Use the links below to jump to the type of API call you are looking for.
 * [Marketing Suite Mailings](rest-api#marketing-suite-mailings)
 * [Datarequests](rest-api#datarequests)
 * [Logfiles](rest-api#logfiles)
+* [Sender domains](rest-api#senderdomains)
 
 ## Account
 
@@ -413,3 +414,15 @@ You can find all calls related to webhooks in the table below.
 | POST   | [api.copernica.com/v3/webhooks](./rest-post-webhooks)                                        | Create a webhook                                 |
 | PUT    | [api.copernica.com/v3/webhook/$id](./rest-put-webhook)                                       | Update a webhook                                 |
 | DELETE | [api.copernica.com/v3/webhook/$id](./rest-delete-webhook)                                    | Remove a webhook                                 |
+
+
+## Sender domains
+
+Within our software you can configure from which domain or subdomain do you to send your emails. If you want the 'FROM' address of your emails to be info@example.com, you need to provide 'example.com' as your sender domain.
+
+| Type   | Address                                                                                      | Description                                      |
+|--------|----------------------------------------------------------------------------------------------|--------------------------------------------------|
+| GET    | [api.copernica.com/v3/senderdomain/$id](./rest-get-senderdomain)                                       | Fetch a senderdomain                                  |
+| POST   | [api.copernica.com/v3/senderdomains](./rest-post-senderdomains)                                        | Create a senderdomain                                 |
+| PUT    | [api.copernica.com/v3/senderdomain/$id](./rest-put-senderdomain)                                       | Update a senderdomain                                 |
+| DELETE | [api.copernica.com/v3/senderdomain/$id](./rest-delete-senderdomain)                                    | Remove a senderdomain    
