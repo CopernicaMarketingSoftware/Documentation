@@ -9,12 +9,12 @@ available files that can be manually installed.
 
 ## Installing MailerQ on Debian/Ubuntu based systems
 
-We have a single repository, for Ubuntu (14.04 and higher) and Debian 
-(8 and higher) versions.
+We have a single repository, for Ubuntu (18.04 and higher) and Debian 
+(9 and higher) versions.
 
 <table>
     <tr>
-        <td>Debian 8+ and Ubuntu 14.04+</td>
+        <td>Debian 9+ and Ubuntu 18.04+</td>
         <td>deb https://packages.mailerq.com/debian stable main</td>
     </tr>
 </table>
