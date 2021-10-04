@@ -18,6 +18,7 @@
     * [Domeinnaam en poorten](./smtp-ports)
     * [Extra MIME headers](./smtp-headers)
 * [Webhooks](webhooks)
+    * [Webhooks voor deliveries](webhook-deliveries)
     * [Webhooks voor bounces](webhook-bounces)
     * [Webhooks voor clicks](webhook-clicks)
     * [Webhooks voor failures](webhook-failures)
