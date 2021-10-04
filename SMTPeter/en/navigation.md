@@ -20,6 +20,7 @@
     * [Extra MIME headers](./smtp-headers)
 * [Webhooks](webhooks)
     * [Securing a Webhook](./webhook-security)
+    * [Webhooks for deliveries](./webhook-deliveries)
     * [Webhooks for bounces](./webhook-bounces)
     * [Webhooks for clicks](./webhook-clicks)
     * [Webhooks for failures](./webhook-failures)
