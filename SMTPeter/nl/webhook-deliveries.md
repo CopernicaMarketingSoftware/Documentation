@@ -11,7 +11,7 @@ Met elke POST call worden de volgende variabelen toegestuurd:
 | Variabele  | Omschrijving                                             |
 |------------|----------------------------------------------------------|
 | id         | Unieke identifier van het afgeleverde bericht            |
-| recipient  | E-mailadres van de ontvan                                |
+| recipient  | E-mailadres van de ontvanger                             |
 | time       | Unix tijd van de delivery                                |
 | timestamp  | Tijdstempel van de bounce (YYYY-MM-DD HH:MM:SS formaat)  |
 | code       | Statuscode vanuit de ontvangende mailserver              |
@@ -24,7 +24,7 @@ De 'id', 'recipient' en 'tags' variabelen stellen je in staat om de aflevering t
 originele verstuurde e-mail.
 
 ## Waarschuwing
-Zoals hierboven beschreven wordt deze Webhook uitgevoerd na ieder afgeleverd bericht. Hierdoor kan dit zorgen voor een enorme load richting je server. 
+Zoals hierboven beschreven wordt deze Webhook uitgevoerd na ieder afgeleverd bericht. Hierdoor kan dit zorgen voor een grote hoeveelheid berichten richting je server. 
 
 ## Meer informatie
 
