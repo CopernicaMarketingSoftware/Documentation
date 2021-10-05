@@ -1,10 +1,12 @@
 # Webhooks for deliveries
+
 If you set up a Webhook for deliveries, SMTPeter notifies you in real-time
 about each delivery. For each delivery that we monitor we send 
 a HTTP POST call (HTTPS is possible too) to your server with the relevant 
 information about the delivery.
 
 ## Variables
+
 With each POST call the following variables are passed to your script:
 
 | Variable   | Description                                                     |
@@ -23,7 +25,9 @@ The 'id' and 'recipient' and 'tags' variables allow you to link the incoming bou
 to the original outgoing message that was sent.
 
 ## Warning
+
 As described above, this Webhook is executed after each delivered message. This can cause a huge load to your server.
 
 ## More information
+
 * [Webhooks](./webhooks)
