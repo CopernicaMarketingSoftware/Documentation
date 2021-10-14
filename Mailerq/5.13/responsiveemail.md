@@ -13,7 +13,7 @@ JSON (instead of MIME), it will be converted into valid email messages.
     "mime": {
         "from": {
             "name": "John Doe",
-            "email": "sender@example.com",
+            "address": "sender@example.com",
         },
         "subject": "Example email",
         "text": "Text version",
@@ -68,15 +68,15 @@ this into a valid MIME message:
     "mime": {
         "from": {
             "name": "John Doe",
-            "email": "sender@example.com",
+            "address": "sender@example.com",
         },
         "to": {
             "name": "Mister Receiver",
-            "email": "receiver@example.com",
+            "address": "receiver@example.com",
         },
         "cc": {
             "name": "Someone Else",
-            "email": "randomguy@example.com",
+            "address": "randomguy@example.com",
         },
         "subject": "Example email",
         "headers": {
