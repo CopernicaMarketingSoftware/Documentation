@@ -32,8 +32,9 @@ Je kunt de standaardselectie aanmaken door binnen je gekozen database te naviger
 _[Meer informatie over het aanbrengen van een selectiestructuur](./database-management)_.
 
 ## 5. E-mailopmaak
-Voordat je een e-mail kunt versturen is het nodig om eerst een template of document aan te maken. Met de [**'E-mail-editor'**](https://ms.copernica.com/#/design) ontwikkel je uitgebreide e-mailtemplates door middel van drag and drop of HTML. Je kunt daarbij gebruik maken van feeds, conditionele content en meer. 
+Voordat je een e-mail kunt versturen is het nodig om eerst een template of document aan te maken. Met de [**'E-mail-editor'**](https://ms.copernica.com/#/design) ontwikkel je uitgebreide e-mailtemplates door middel van drag-and-drop of HTML. Je kunt daarbij gebruik maken van feeds, conditionele content en meer. 
 
+_[Meer informatie over drag-and-drop-templates](./email-editor-drag-and-drop-templates)_.  
 _[Meer informatie over HTML-templates](./email-editor-html-templates)_.
 
 ## 6. Verzending

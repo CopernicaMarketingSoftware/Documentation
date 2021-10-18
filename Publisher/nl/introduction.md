@@ -15,8 +15,8 @@ creëren van webpagina's en het inrichten van e-mail- en SMS-campagnes. De onder
 * [Database en profielen](./database-profiles)
 * [Databasevelden](./database-fields)
 * [Profielen importeren](./database-import)
-* [Templates in Marketing Suite](./emailings-ms-templates)
-* [Templates in Publisher](./emailings-publisher-templates)
+* [Drag-and-drop-templates](./email-editor-drag-and-drop-templates)
+* [HTML-templates](./email-editor-html-templates)
 * [Eerste mailing](./first-mailing)
 
 ## Algemeen
@@ -34,8 +34,7 @@ De onderstaande links geven meer informatie over het gebruik van Copernica:
 * [Begrippenlijst](./definitions)
 * [Toegangsbeperkingen](./access-restrictions)
 * [Profielen exporteren](./database-export)
-* [Personalisatie in Marketing Suite](./emailings-ms-personalization)
-* [Personalisatie in Publisher](./emailings-publisher-personalization)
+* [Personalisatie](./email-editor-personalization)
 * [Selecties](./database-selections-introduction)
 * [Selectiestructuur](./database-management)
 * [Collecties en miniselecties](./database-collections)
