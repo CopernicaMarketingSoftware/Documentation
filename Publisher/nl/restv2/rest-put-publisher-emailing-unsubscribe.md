@@ -1,6 +1,6 @@
 # REST API: PUT unsubscribe (HTML-templates)
 
-Door een HTTP PUT verzoek te sturen naar het volgende adres kun je een (sub)profiel uitschrijven op basis van een verzonden mailing:
+Door een HTTP PUT-verzoek te sturen naar het volgende adres kun je een (sub)profiel uitschrijven op basis van een verzonden mailing:
 
 `https://api.copernica.com/v2/publisher/emailing/$id/unsubscribe?access_token=xxxx`
 
@@ -14,7 +14,7 @@ De volgende parameters zijn beschikbaar, waarvan alleen 'target' verplicht is:
 
 ## PHP voorbeeld
 
-Het onderstaande script laat zien hoe je deze API methode kunt gebruiken. 
+Het onderstaande script laat zien hoe je deze API-methode kunt gebruiken. 
 
 ```php
 <?php
@@ -36,7 +36,7 @@ $parameters = array(
 print_r($api->put("publisher/emailing/$id/unsubscribe", $parameters));
 ```
 
-Het bovenstaande voorbeeld vereist onze [REST API klasse](rest-php).
+Het bovenstaande voorbeeld vereist onze [REST API-klasse](rest-php).
 
 ## Meer informatie
 
