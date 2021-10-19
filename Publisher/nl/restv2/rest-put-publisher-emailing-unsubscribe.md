@@ -6,7 +6,7 @@ Door een HTTP PUT verzoek te sturen naar het volgende adres kun je een (sub)prof
 
 ## Beschikbare parameters
 
-De volgende parameters zijn beschikbaar, waarvan alleen 'settings' optioneel is:
+De volgende parameters zijn beschikbaar, waarvan alleen 'target' verplicht is:
 
 * **target**: De ID van de target (profiel/subprofiel) van de mailing.
 * **behavior**: Moet het ingestelde uitschrijfgedrag op de database/collectie worden uitgevoerd? (true/false)
@@ -15,7 +15,6 @@ De volgende parameters zijn beschikbaar, waarvan alleen 'settings' optioneel is:
 ## PHP voorbeeld
 
 Het onderstaande script laat zien hoe je deze API methode kunt gebruiken. 
-Vergeet niet de parameters te vervangen door je eigen target en template.
 
 ```php
 <?php
