@@ -1,4 +1,4 @@
-# REST API: PUT unsubscribe (HTML-templates)
+# REST API: PUT unsubscribe (HTML templates)
 
 By sending an HTTP PUT request to the following URL it is possible to unsubscribe a (sub)profile based on a mailing:
 
