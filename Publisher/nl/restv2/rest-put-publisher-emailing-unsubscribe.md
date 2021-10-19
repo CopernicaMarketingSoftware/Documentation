@@ -1,4 +1,4 @@
-# REST API: PUT unsubscribe (Publisher)
+# REST API: PUT unsubscribe (HTML-templates)
 
 Door een HTTP PUT verzoek te sturen naar het volgende adres kun je een (sub)profiel uitschrijven op basis van een verzonden mailing:
 
