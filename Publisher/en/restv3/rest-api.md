@@ -108,7 +108,12 @@ structure.
 | GET    | [api.copernica.com/v3/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Fetch all collection subprofile IDs          |
 | GET    | [api.copernica.com/v3/collection/$id/subprofiles](./rest-get-collection-subprofiles)         | Fetch all collection subprofiles             |
 | PUT    | [api.copernica.com/v3/collection/$id/intentions](./rest-put-collection-intentions)           | Update the collection intentions             |
-                                                                                                                                                       
+               
+## Import
+
+| Type   | Address                                                                                      | Description                                    |
+|--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
+| POST   | [api.copernica.com/v3/imports](./rest-post-imports)                                          | Import data in the account                     |               
 ## Views & Miniviews
 
 Views are selection under a database, while miniviews are selections under a collection.
