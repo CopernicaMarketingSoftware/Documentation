@@ -8,7 +8,7 @@ By sending an HTTP PUT request to the following URL it is possible to import dat
 
 The following parameters are available for the method. 
 
-* **database**: the ID of the database.
+* **database**: The ID of the database.
 * **name**: Name of the import.
 * **followups**: Do we need to execute followups on (sub)profiles in the import? (true/**false**)
 * **autostart**: Do we need to execute the import immediately? (**true**/false)
