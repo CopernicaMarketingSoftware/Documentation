@@ -116,7 +116,7 @@ structure.
 | POST   | [api.copernica.com/v3/imports](./rest-post-imports)                                          | Import data in the account                     |               
 ## Views & Miniviews
 
-Views are selection under a database, while miniviews are selections under a collection.
+Views are selections under a database, while miniviews are selections under a collection.
 You can find methods that relate to a specific (mini)view below.
 
 ### View
