@@ -16,14 +16,14 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 * **action**: Welk doel heeft de import? Opties: add, update, update or add, ignore or add, delete.
 * **keyFields**: Array van sleutelvelden die gebruikt worden bij de import. 
 * **ignoreEmptyFields**: Moeten lege velden in het importbestand genegeerd worden en de originele waarde blijven bestaan? (true/**false**)
-* **removeMissing**: Verwijder (sub)profielen uit de database die niet in het importbestand voorkomen. (true/**false**)
+* **removeMissing**: Moeten de (sub)profielen die niet in het importbestand voorkomen verwijdert worden uit de database? (true/**false**)
 * **deleteTarget**: Bij de action *delete* kun je hier aangeven wat je wilt verwijderen. (**profile**/subprofile)
 * **location**: URL naar een externe locatie waar het importbestand te vinden is. 
 * **source**: De data als je de import niet vanuit een externe locatie ophaalt (string of array).
 * **format**: Optionele parameter waarin het formaat van de source aangegeven kan worden zodra er gebruik gemaakt wordt van een string als *source*. (csv/json)
 * **delimiter**: Scheidingsteken van de data. Verplicht bij een CSV-bestand en geen array-input. ("\t", ",", ";")
 
-**Opmerking**: bij true/false opties is de standaardwaarde dikgedrukt. 
+**Opmerking**: de standaardwaarde is dikgedrukt. 
 
 ## Voorbeeld in PHP
 
