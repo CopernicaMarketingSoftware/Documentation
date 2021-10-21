@@ -65,6 +65,12 @@ collecties en hun eigenschappen.
 | GET    | [api.copernica.com/v3/collection/$id/subprofiles](./rest-get-collection-subprofiles)         | Opvragen van alle subprofielen                 |
 | PUT    | [api.copernica.com/v3/collection/$id/intentions](./rest-put-collection-intentions)           | Updaten van de intenties van de collectie      |
 
+## Importeren
+
+| Type   | Adres                                                                                        | Omschrijving                                   |
+|--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
+| POST   | [api.copernica.com/v3/imports](./rest-post-imports)                                          | Importeren van gegevens in je account          |
+
 ## Selecties & Miniselecties
 
 Selecties vallen onder de database, terwijl miniselecties onder een collectie vallen.
