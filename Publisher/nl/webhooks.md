@@ -46,19 +46,18 @@ wat voor data hier vandaan kan komen.
 
 ## Webhooks configureren
 
-De eerste stap voor het opzetten van een Webhook is om naar het `CONFIGURATIE` 
-menu te navigeren, waar je het Webhook menu kan vinden onder het kopje 'Jouw account'. 
+De eerste stap voor het opzetten van een Webhook is om naar het `configuratie` 
+menu te navigeren, waar je het Webhook menu kan vinden onder het kopje `Jouw account`. 
 Bij het aanmaken van een Webhook kies je hier eerst een type voor 
 en een URL, de callback URL genoemd. Naar deze callback URL wordt straks de 
 data verzonden.
 
 De volgende stap is om het webadres te verifiëren. Door deze extra 
 stap wordt voorkomen dat de mogelijke persoonsgegevens in de verkeerde 
-handen valt. In het configuratiescherm kun je bij '[Gevalideerde domeinen](https://ms.copernica.com//#/admin/company/domains)' je hoofddomein toevoegen. Als je klikt in dit domein op het tabblad 'validatie', vind je een TXT-record die je op een subdomein moet plaatsen binnen je DNS-configuratie. Zodra je dit hebt ingesteld in je DNS, kun je door op de valideer-button te klikken ervoor zorgen dat dit domein en de bijbehorende subdomeinen gebruikt mogen worden voor Webhooks.
+handen valt. In het configuratiescherm kun je bij [gevalideerde domeinen](https://ms.copernica.com//#/admin/company/domains) je hoofddomein toevoegen. Als je klikt in dit domein op het tabblad `validatie`, vind je een TXT-record die je op een subdomein moet plaatsen binnen je DNS-configuratie. Zodra je dit hebt ingesteld in je DNS, kun je door op de valideer-button te klikken ervoor zorgen dat dit domein en de bijbehorende subdomeinen gebruikt mogen worden voor Webhooks.
 
-Je kunt je Webhook testen door het menu voor de Webhook te openen en de tool onder 
-de callback URL te gebruiken om te testen. Het is ook mogelijk al je Webhooks 
-te testen in het Webhook-menu.
+Je kunt je Webhook testen door op de Webhook te klikken en te kiezen voor `test webhook`. Het is ook mogelijk al je Webhooks 
+te testen door in het Webhook-overzicht te klikken op `controleer nu`.
 
 ## Veiligheid
 
