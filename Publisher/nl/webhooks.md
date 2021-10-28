@@ -53,17 +53,17 @@ en een URL, de callback URL genoemd. Naar deze callback URL wordt straks de
 data verzonden.
 
 De volgende stap is om het webadres te verifiëren. Door deze extra 
-stap wordt voorkomen dat de mogelijke vertrouwelijke data in de verkeerde 
-handen valt. In Marketing Suite kun je bij 'Gevalideerde domeinen', onder het kopje 'Jouw bedrijf, je hoofddomein toevoegen. Binnen dit domein, bij het tabblad 'validatie', vind je een TXT-record die je op een subdomein moet plaatsen binnen je DNS-configuratie. Zodra je dit hebt ingesteld in je DNS, kun je door op de valideer-button te klikken ervoor zorgen dat dit domein en subdomeinen van dit domein gebruikt mogen worden voor Webhooks.
+stap wordt voorkomen dat de mogelijke persoonsgegevens in de verkeerde 
+handen valt. In het configuratiescherm kun je bij '[Gevalideerde domeinen](https://ms.copernica.com//#/admin/company/domains)' je hoofddomein toevoegen. Binnen dit domein, bij het tabblad 'validatie', vind je een TXT-record die je op een subdomein moet plaatsen binnen je DNS-configuratie. Zodra je dit hebt ingesteld in je DNS, kun je door op de valideer-button te klikken ervoor zorgen dat dit domein en subdomeinen van dit domein gebruikt mogen worden voor Webhooks.
 
 Je kunt je Webhook testen door het menu voor de Webhook te openen en de tool onder 
 de callback URL te gebruiken om te testen. Het is ook mogelijk al je Webhooks 
-te testen in het Webhook menu.
+te testen in het Webhook-menu.
 
 ## Veiligheid
 
-Om jouw script te behoeden voor misbruik en incorrecte informatie voegt Copernica 
-[signatures](./webhook-security) toe aan het verzoek. Door de juiste checks 
+Om jouw script te behoeden voor misbruik en incorrecte informatie voegt Copernica een
+[handtekening](./webhook-security) toe aan het verzoek. Door de juiste checks 
 te implementeren kun je zo verzekeren dat alleen data van Copernica 
 jouw systeem binnenkomt.
 
