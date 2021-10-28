@@ -77,10 +77,7 @@ in de response-body. Wanneer een verzoek naar een nieuwe URL verplaatst is is he
 mogelijk dat er een "301 Moved Permanently"-respons wordt gegeven. 
 
 Andere statuscodes zijn ook mogelijk. De "201 Created"-respons voor een succesvol 
-POST-verzoek is hiervan een voorbeeld. In het geval van een succesvolle aanpassing door middel van een 
-PUT-call zal er een "200 OK"-code worden teruggegeven. Bij PUT-calls is het ook 
-mogelijk dat er één of meerdere nieuwe entiteiten worden aangemaakt, in welk 
-geval er een "303 See Other"-code geretourneerd wordt. 
+POST-verzoek is hiervan een voorbeeld. Bij PUT- en DELETE-verzoeken wordt er standaard een "204 No Content" teruggegeven, tenzij door het PUT-verzoek één of meerdere nieuwe entiteiten worden aangemaakt. In dit geval geven wij een "201 Created"-respons.
 
 POST- en PUT-verzoeken kunnen ook **X-location**-headers bevatten met een URL 
 van de nieuw aangemaakte entiteit. In het geval van een nieuw aangemaakt profiel 
