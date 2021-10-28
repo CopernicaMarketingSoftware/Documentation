@@ -46,17 +46,17 @@ which Webhooks apply to this specific set of data.
 ## Setting up Webhooks
 
 The first step for setting up a Webhook is to navigate to the `CONFIGURATION` 
-menu, where you can find the Webhooks menu under the 'Account' section. 
+menu, where you can find the Webhooks menu under the `Account` section. 
 To create a Webhook you pick a type and then add the callback URL, where 
 the data will be sent to after configuration.
 
 
 The next step is to verify your web address. This extra step ensures that 
 your potentially confidential data will be sent to the correct server. 
-You can add your main domain at '[Validated domains](https://ms.copernica.com/#/admin/company/domains)' under the 'Your company' section in the configuration menu. If you click this domain in the validation tab, you will find a TXT record that needs to be added to your DNS configuration. Once you have set this up in your DNS, you can ensure that this domain and its subdomains can be used for Webhooks by clicking the validate button.
+You can add your main domain at [validated domains](https://ms.copernica.com/#/admin/company/domains) under `Your company` in the [configuration](https://ms.copernica.com/#/admin) section. If you click this domain in the validation tab, you will find a TXT record that needs to be added to your DNS configuration. Once you have set this up in your DNS, you can ensure that this domain and its subdomains can be used for Webhooks by clicking the validate button.
 
-You can test your new Webhook by clicking 'Manage' next to it and using the testing tool or 
-the 'Check now' button in the Webhook menu to test all your Webhooks.
+You can test your new Webhook by clicking on `Test webhook` in the Webhook itself or  
+the `Check now` button in the Webhook menu to test all your Webhooks.
 
 ## Security
 
