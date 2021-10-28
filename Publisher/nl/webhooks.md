@@ -47,7 +47,7 @@ wat voor data hier vandaan kan komen.
 ## Webhooks configureren
 
 De eerste stap voor het opzetten van een Webhook is om naar het `configuratie` 
-menu te navigeren, waar je het Webhook menu kan vinden onder het kopje `Jouw account`. 
+menu te navigeren, waar je het [Webhook](https://ms.copernica.com/#/admin/account/webhooks) menu kan vinden onder het kopje `Jouw account`. 
 Bij het aanmaken van een Webhook kies je hier eerst een type voor 
 en een URL, de callback URL genoemd. Naar deze callback URL wordt straks de 
 data verzonden.
