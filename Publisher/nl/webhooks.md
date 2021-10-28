@@ -54,7 +54,7 @@ data verzonden.
 
 De volgende stap is om het webadres te verifiëren. Door deze extra 
 stap wordt voorkomen dat de mogelijke persoonsgegevens in de verkeerde 
-handen valt. In het configuratiescherm kun je bij '[Gevalideerde domeinen](https://ms.copernica.com//#/admin/company/domains)' je hoofddomein toevoegen. Binnen dit domein, bij het tabblad 'validatie', vind je een TXT-record die je op een subdomein moet plaatsen binnen je DNS-configuratie. Zodra je dit hebt ingesteld in je DNS, kun je door op de valideer-button te klikken ervoor zorgen dat dit domein en subdomeinen van dit domein gebruikt mogen worden voor Webhooks.
+handen valt. In het configuratiescherm kun je bij '[Gevalideerde domeinen](https://ms.copernica.com//#/admin/company/domains)' je hoofddomein toevoegen. Als je klikt in dit domein op het tabblad 'validatie', vind je een TXT-record die je op een subdomein moet plaatsen binnen je DNS-configuratie. Zodra je dit hebt ingesteld in je DNS, kun je door op de valideer-button te klikken ervoor zorgen dat dit domein en de bijbehorende subdomeinen gebruikt mogen worden voor Webhooks.
 
 Je kunt je Webhook testen door het menu voor de Webhook te openen en de tool onder 
 de callback URL te gebruiken om te testen. Het is ook mogelijk al je Webhooks 
