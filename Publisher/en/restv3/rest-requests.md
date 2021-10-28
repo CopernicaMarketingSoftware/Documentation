@@ -61,11 +61,9 @@ A successful GET request will be met with a "200 OK" reply and
 the response body will contain the requested data encoded in a JSON string. 
 Another possible code is "301 Moved Permanently" for calls that have been moved.
 
-Other status codes include the "201 Created" code for a successful POST request. PUT methods 
-that have successfully altered data will return a "200 OK". However, it is possible that 
-a PUT method will create a new entity, in which case a "303 See Other" code will 
-refer you to the new entity. POST and PUT 
-requests can also contain **X-location** headers with the URL of the entities 
+Other status codes are also possible. The "201 Created" response for a successful POST request is an example of this. For PUT and DELETE requests, a "204 No Content" is returned by default, unless the PUT request creates one or more new entities. In this case, we give a "201 Created" response.
+
+POST and PUT requests can also contain **X-location** headers with the URL of the entities 
 that were created. For example `X-location: https://api.copernica.com/v1/profile/$profileID`
 for calls that create or update profiles. Successful DELETE 
 requests hold an **X-deleted** header, like `X-deleted: profile $profileID`.
