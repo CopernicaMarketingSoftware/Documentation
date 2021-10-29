@@ -46,41 +46,23 @@ wat voor data hier vandaan kan komen.
 
 ## Webhooks configureren
 
-De eerste stap voor het opzetten van een Webhook is om naar het `CONFIGURATIE` 
-menu te navigeren, waar je het Webhook menu kan vinden onder het account 
-'kopje'. Bij het aanmaken van een Webhook kies je hier eerst een type voor 
+De eerste stap voor het opzetten van een Webhook is om naar het `configuratie` 
+menu te navigeren, waar je het [Webhook](https://ms.copernica.com/#/admin/account/webhooks) menu kan vinden onder het kopje `jouw account`. 
+Bij het aanmaken van een Webhook kies je hier eerst een type voor 
 en een URL, de callback URL genoemd. Naar deze callback URL wordt straks de 
 data verzonden.
 
 De volgende stap is om het webadres te verifiëren. Door deze extra 
-stap wordt voorkomen dat de mogelijke vertrouwelijke data in de verkeerde 
-handen valt. In de Marketing Suite vind je hierna een link waarmee je het 
-verificatie bestand kunt downloaden. Deze zal verschillend zijn voor elke 
-nieuwe Webhook. Dit bestand kun je vervolgens in de root van je webserver plaatsen 
-of op de plek waar het script staat dat de HTTP POST verzoeken zal afhandelen. 
-Als dit dus de locatie van je script is:
+stap wordt voorkomen dat de mogelijke persoonsgegevens in de verkeerde 
+handen valt. In het configuratiescherm kun je bij [gevalideerde domeinen](https://ms.copernica.com//#/admin/company/domains) je hoofddomein toevoegen. Als je klikt in dit domein op het tabblad `validatie`, vind je een TXT-record die je op een subdomein moet plaatsen binnen je DNS-configuratie. Zodra je dit hebt ingesteld in je DNS, kun je door op de valideer-button te klikken ervoor zorgen dat dit domein en de bijbehorende subdomeinen gebruikt mogen worden voor Webhooks.
 
-```text
-"https://example.com/dir/script.php"
-```
-
-Zou het tekst bestand, dat een naam zal hebben als "smtpeter-xxxxx.txt", 
-in dezelfde folder geplaatst moeten worden:
-
-```text
-"https://example.com/dir/smtpeter-xxxxx.txt"
-```
-
-Je kunt nu de callback URL verifiëren door op de link in de Marketing Suite 
-te klikken. Hierna mag het tekstbestand verwijderd worden. Je kunt je 
-Webhook testen door het menu voor de Webhook te openen en de tool onder 
-de callback URL te gebruiken om te testen. Het is ook mogelijk al je Webhooks 
-te testen in het Webhook menu.
+Je kunt je Webhook testen door op de Webhook te klikken en te kiezen voor `test webhook`. Het is ook mogelijk al je Webhooks 
+te testen door in het Webhook-overzicht te klikken op `controleer nu`.
 
 ## Veiligheid
 
-Om jouw script te behoeden voor misbruik en incorrecte informatie voegt Copernica 
-[signatures](./webhook-security) toe aan het verzoek. Door de juiste checks 
+Om jouw script te behoeden voor misbruik en incorrecte informatie voegt Copernica een
+[handtekening](./webhook-security) toe aan het verzoek. Door de juiste checks 
 te implementeren kun je zo verzekeren dat alleen data van Copernica 
 jouw systeem binnenkomt.
 

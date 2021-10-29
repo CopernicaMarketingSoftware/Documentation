@@ -45,33 +45,18 @@ which Webhooks apply to this specific set of data.
 
 ## Setting up Webhooks
 
-The first step for setting up a Webhook is to navigate to the `CONFIGURATION` 
-menu, where you can find the Webhooks menu under the 'Account' section. 
+The first step for setting up a Webhook is to navigate to the `configuration` 
+menu, where you can find the [Webhooks](https://ms.copernica.com/#/admin/account/webhooks) menu under the `account` section. 
 To create a Webhook you pick a type and then add the callback URL, where 
 the data will be sent to after configuration.
 
+
 The next step is to verify your web address. This extra step ensures that 
 your potentially confidential data will be sent to the correct server. 
-In the Marketing Suite you will find a link to download the verification file, 
-which will be different for every new Webhook. The file should be placed 
-in the root of your webserver or in the directory of the script that will 
-handle the incoming HTTP POST requests. So if your script is in the following location:
+You can add your main domain at [validated domains](https://ms.copernica.com/#/admin/company/domains) under `your company` in the [configuration](https://ms.copernica.com/#/admin) section. If you click this domain in the validation tab, you will find a TXT record that needs to be added to your DNS configuration. Once you have set this up in your DNS, you can ensure that this domain and its subdomains can be used for Webhooks by clicking the validate button.
 
-```text
-"https://example.com/dir/script.php"
-```
-
-You should have the text file, which will be named something like "smtpeter-xxxxx.txt" 
-in the same location:
-
-```text
-"https://example.com/dir/smtpeter-xxxxx.txt"
-```
-
-You can now verify the callback URL by clicking the link in the Marketing Suite. 
-You may delete the text file after verification. You can test your new 
-Webhook by clicking 'Manage' next to it and using the testing tool or 
-the 'Check now' button in the Webhook menu to test all your Webhooks.
+You can test your new Webhook by clicking on `test webhook` in the Webhook itself or  
+the `check now` button in the Webhook menu to test all your Webhooks.
 
 ## Security
 
