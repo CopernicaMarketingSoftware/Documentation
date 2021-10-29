@@ -63,6 +63,7 @@
     * [Enquêtes](./surveys.md)
 * [Logfiles](./logfiles-ms.md)
 * [Automatische koppelingen](./apis.md)
+    * [REST API v3](./restv3/rest-api.md)
     * [REST API v2](./restv2/rest-api.md)
     * [REST API v1](./restv1/rest-api.md)
     * [WebHooks](./webhooks.md)
