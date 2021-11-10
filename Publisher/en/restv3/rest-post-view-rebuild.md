@@ -1,6 +1,6 @@
-# REST API: PUT view rebuild
+# REST API: POST view rebuild
 
-The HTTP PUT call to rebuild a selection can be found at 
+The HTTP POST call to rebuild a selection can be found at 
 the following address:
 
 `https://api.copernica.com/v3/view/$id/rebuild?access_token=xxxx`
