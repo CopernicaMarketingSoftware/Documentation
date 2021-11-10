@@ -89,11 +89,11 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 | POST   | [api.copernica.com/v3/view/$id/views](./rest-post-view-views)                                | Aanmaken van een genestelde selectie         |
 | GET    | [api.copernica.com/v3/view/$id/profileids](./rest-get-view-profileids)                       | Opvragen van alle selectie profiel IDs       |
 | GET    | [api.copernica.com/v3/view/$id/profiles](./rest-get-view-profiles)                           | Opvragen van alle selectie profielen         |
-| GET    | [api.copernica.com/v3/view/$id/rules](./rest-get-view-rules)                                 | Opvragen van alle selectie regels            |
+| GET    | [api.copernica.com/v3/eules](./rest-get-view-rules)                                 | Opvragen van alle selectie regels            |
 | GET    | [api.copernica.com/v3/view/$id/rule/$id](./rest-get-view-rule)                               | Opvragen van een selectie regel              |
 | POST   | [api.copernica.com/v3/view/$id/rules](./rest-post-view-rules)                                | Aanmaken van een selectie regel              |
 | PUT    | [api.copernica.com/v3/view/$id/intentions](./rest-put-view-intentions)                       | Updaten van de intenties van de selectie     |
-| PUT    | [api.copernica.com/v3/view/$id/rebuild](./rest-put-view-rebuild)                             | Opnieuw opbouwen van een selectie            |
+| POST   | [api.copernica.com/v3/view/$id/rebuild](./rest-post-view-rebuild)                            | Opnieuw opbouwen van een selectie            |
 
 ### Miniselecties
 
@@ -110,7 +110,7 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 | GET    | [api.copernica.com/v3/miniview/$id/minirule/$id](./rest-get-miniview-rule)                   | Opvragen van een miniselectie miniregel        |
 | POST   | [api.copernica.com/v3/miniview/$id/minirules](./rest-post-miniview-rules)                    | Aanmaken van een nieuwe miniselectie miniregel |
 | PUT    | [api.copernica.com/v3/miniview/$id/intentions](./rest-put-miniview-intentions)               | Updaten van de intenties van de miniselectie   |
-| PUT    | [api.copernica.com/v3/miniview/$id/rebuild](./rest-put-miniview-rebuild)                     | Opnieuw opbouwen van een miniselectie          |
+| POST   | [api.copernica.com/v3/miniview/$id/rebuild](./rest-post-miniview-rebuild)                    | Opnieuw opbouwen van een miniselectie          |
 
 ## Regels & Miniregels
 
