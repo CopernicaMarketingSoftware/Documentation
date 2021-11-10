@@ -1,12 +1,12 @@
-# REST API: PUT view rebuild
+# REST API: POST miniview rebuild
 
-The HTTP PUT call to rebuild a selection can be found at 
+The HTTP POST call to rebuild a mini selection can be found at 
 the following address:
 
-`https://api.copernica.com/v3/view/$id/rebuild?access_token=xxxx`
+`https://api.copernica.com/v3/miniview/$id/rebuild?access_token=xxxx`
 
 The `$id` in the URL should be replaced by the unique identifier of the 
-view.
+mini selection.
 
 ## PHP example
 
@@ -20,7 +20,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 3);
 
 // voer het verzoek uit
-$api->post("view/{$viewID}/rebuild", $data);
+$api->post("miniview/{$miniviewID}/rebuild", $data);
 ```
 
 This method requires the [CopernicaRestAPI class](./rest-php).

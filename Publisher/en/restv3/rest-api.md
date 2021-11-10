@@ -136,7 +136,7 @@ You can find methods that relate to a specific (mini)view below.
 | GET    | [api.copernica.com/v3/view/$id/rule/$id](./rest-get-view-rule)                               | Fetch a view rule             |
 | POST   | [api.copernica.com/v3/view/$id/rules](./rest-post-view-rules)                                | Create a new view rule        |
 | PUT    | [api.copernica.com/v3/view/$id/intentions](./rest-put-view-intentions)                       | Update the view intentions    |
-| PUT    | [api.copernica.com/v3/view/$id/rebuild](./rest-put-view-rebuild)                             | Rebuild the view              |
+| POST   | [api.copernica.com/v3/view/$id/rebuild](./rest-post-view-rebuild)                            | Rebuild the view              |
 
 ### Miniview
 
@@ -153,7 +153,7 @@ You can find methods that relate to a specific (mini)view below.
 | GET    | [api.copernica.com/v3/miniview/$id/minirule/$id](./rest-get-miniview-rule)                   | Fetch a miniview minirule         |
 | POST   | [api.copernica.com/v3/miniview/$id/minirules](./rest-post-miniview-rules)                    | Create a new miniview minirule    |
 | PUT    | [api.copernica.com/v3/miniview/$id/intentions](./rest-put-miniview-intentions)               | Update the miniview intentions    |
-| PUT    | [api.copernica.com/v3/miniview/$id/rebuild](./rest-put-miniview-rebuild)                     | Rebuild the miniview              |
+| POST   | [api.copernica.com/v3/miniview/$id/rebuild](./rest-post-miniview-rebuild)                    | Rebuild the miniview              |
 
 ## Rules & Minirules
 
