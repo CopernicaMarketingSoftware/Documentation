@@ -10,7 +10,7 @@ In de database houden we de voorkeuren van de nieuwsbrief bij in een [interessev
 Deze interesses maak je aan via **Databasebeheer -> Databasevelden wijzigen** waarna je op *Interesse toevoegen* drukt. Groepeer alledrie de interesses onder de groep *Nieuwsbrieven* zodat we bij een eventuele uitbreiding van interesses het overzicht kunnen behouden.
 
 ## Formulier
-Onder Content kunnen we een [webformulier](https://www.copernica.com/nl/documentation/webforms) aanmaken. Dit doe je door op **Webformulier -> Nieuw webformulier** te drukken. Hier kan je vervolgens het formulier een naam geven en de database uit de vorige stap te selecteren.
+Onder **Inhoud** kunnen we een [webformulier](https://www.copernica.com/nl/documentation/webforms) aanmaken. Dit doe je door op **Webformulier -> Nieuw webformulier** te drukken. Hier kan je vervolgens het formulier een naam geven en de database uit de vorige stap te selecteren.
 
 Via **Webformulier "Naam" -> Instellingen** kunnen we het gedrag van het webformulier instellen. Hier kiezen we bij instelling voor; Inloggen als profiel uit de database "naam". Voor de tekst op de verzendknop en de vervolgpagina kunnen eigen waarden worden gekozen. 
 
