@@ -1,15 +1,15 @@
 # Mediabibliotheek 
-Binnen drag-and-drop-templates worden afbeeldingen opgeslagen in [mediabibliotheken](https://ms.copernica.com/#/medialibraries/).  
-Hierdoor zijn je afbeeldingen te gebruiken over verschillende templates.
+Binnen drag-and-drop-templates worden afbeeldingen en bestanden opgeslagen in [mediabibliotheken](https://ms.copernica.com/#/medialibraries/).  
+Hierdoor zijn je afbeeldingen en bestanden te gebruiken over verschillende templates.
 
-## Aanmaken
+## Aanmaken mediabibliotheek
 Een nieuwe mediabibliotheek is aan te maken door in **'Mediabibliotheken'** te kiezen voor **'Aanmaken'**.  
 Hier kun je een naam en eventuele omschrijving toevoegen aan je mediabibliotheek.
 
-## Afbeeldingen toevoegen/verwijderen
+## Toevoegen van afbeeldingen / bestanden
+Om een afbeelding of bestand aan je mediabibliotheek toe te voegen kies je in de toolbar voor **Toevoegen**. Hier heb je de mogelijkheid om één of meerdere afbeeldingen / bestanden tegelijk te uploaden.
 
-
-## Gebruik binnen je template
+## Afbeeldingen inladen in je template
 Een afbeelding binnen een mediabibliotheek kan op twee manieren worden ingeladen in een template:
 
 **In een afbeeldingsblok**:  
@@ -21,7 +21,20 @@ In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een afbeeldi
 *Voorbeeld:*  
 ```<img src="medialibrary://naam_van_mediabibliotheek/afbeelding.jpg" />```
 
-## Archiveren / verwijderen
+## Bestanden inladen in je template
+Het is mogelijk om naar een bestand te linken vanuit je mediabibliotheek:
+
+
+**In de HTML-code**:  
+In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een afbeelding uit een mediabibliotheek op te halen met de medialibrary://-tag.  
+
+*Voorbeeld:*  
+```<img src="medialibrary://naam_van_mediabibliotheek/afbeelding.jpg" />```
+
+## Afbeeldingen verwijderen
+Een afbeelding verwijderen is mogelijk door bij de specifieke afbeelding voor **Bewerken** te kiezen en naar **Verwijderen** te gaan.
+
+## Archiveren / verwijderen mediabibliotheek
 Binnen een mediabibliotheek is het mogelijk om onder **Configuratie** deze te archiveren of te verwijderen. 
 
 Bij het archiveren is de mediabibliotheek nog wel aanwezig in het account, maar niet meer zichtbaar.
