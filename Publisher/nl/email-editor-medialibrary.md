@@ -22,7 +22,7 @@ In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een afbeeldi
 ```<img src="medialibrary://naam_van_mediabibliotheek/afbeelding.jpg" />```
 
 ## Archiveren / verwijderen
-Binnen een mediabibliotheek is het mogelijk om onder **Configuratie** deze te archiveren of verwijderen. 
+Binnen een mediabibliotheek is het mogelijk om onder **Configuratie** deze te archiveren of te verwijderen. 
 
 Bij het archiveren is de mediabibliotheek nog wel aanwezig in het account, maar niet meer zichtbaar.
 Onderin de toolbar kun je, door de checkbox 'Archief' aan te vinken, de gearchiveerde mediabiblioteken terugvinden.
