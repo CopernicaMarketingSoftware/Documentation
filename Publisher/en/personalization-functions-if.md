@@ -14,9 +14,9 @@ The following table show the qualifiers that are supported by this function.
 | ==         | $a eq $b         | equals               |
 | !=         | $a ne/neq $b     | not equals           |
 | >          | $a gt $b         | greater              |
-| \<         | $a lt $b         | smaller              |
+| <          | $a lt $b         | smaller              |
 | >=         | $a gte/ge $b     | greater than         |
-| \=         | $a lte/le $b     | smaller than         |
+| <=         | $a lte/le $b     | smaller than         |
 | ===        | $a === 0         | check for identity   |
 | !          | not $a           | negation             |
 | %          | $a mod $b        | modulus             |
