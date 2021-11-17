@@ -14,9 +14,9 @@ De volgende qualifiers zijn beschikbaar om expressies te maken voor de if functi
 | ==         | $a eq $b         | gelijk                |
 | !=         | $a ne/neq $b     | ongelijk              |
 | >          | $a gt $b         | groter dan            |
-| \<         | $a lt $b         | kleiner dan           |
+| <          | $a lt $b         | kleiner dan           |
 | >=         | $a gte/ge $b     | groter dan            |
-| \=         | $a lte/le $b     | kleiner dan           |
+| <=         | $a lte/le $b     | kleiner dan           |
 | ===        | $a === 0         | identiek              |
 | !          | not $a           | negatie               |
 | %          | $a mod $b        | modulair              |
