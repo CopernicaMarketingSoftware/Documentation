@@ -12,8 +12,8 @@ De reden (trigger) waarom deze opvolgactie start is **profiel aangemaakt**. Sele
 
 **Let op**: zet deze actie alleen in de Marketing Suite. Zet hem niet ook nog in de Publisher, dan krijgen klanten 2 welkomstmails.
 
-De opvolgactie ziet er als volgt uit:
-![opvolgactie](../images/nl/Opvolgactie - welkom.png)
+De opvolgactie ziet er als volgt uit:  
+![opvolgactie](../images/nl/Opvolgactie-welkom.png)
 
 
 ## Aanmaken in Publisher
