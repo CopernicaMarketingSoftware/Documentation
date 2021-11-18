@@ -6,18 +6,14 @@ single optin gebruikt. Wil je een dubbele optin campagne? Klik dan
 [hier](./campaign-tutorial-double-opt-in.md).
 
 ## Aanmaken in Marketing Suite
-Ga naar **Database & Profielen**, selecteer de juiste database, klik op
-het tandwiel en klik vervolgens op **Opvolgacties**. Kies voor een
-nieuwe opvolgactie door op **Create followup** te klikken.
+Ga naar **Profielen**, selecteer de juiste database en klik vervolgens op **Opvolgacties**. Kies voor een nieuwe opvolgactie door te klikken op **Opvolgactie aanmaken**. Vervolgens klik je nogmaals op **Opvolgactie aanmaken**.
 
-De reden waarom deze opvolgactie start is **Profile created**, selecteer deze
-optie en klik op proceed. Klik aan de linkerkant op **Send email** en verbindt
-dit blok aan **FollowUp start**. Klik op edit in het send email blok om de
-welkomstmail te selecteren. Als dit gedaan is sluit je de opvolgactie en sla
-je deze op.
+De reden (trigger) waarom deze opvolgactie start is **profiel aangemaakt**. Selecteer deze optie en geef de opvolgactie een naam. Vervolgens klik je op **Opvolgactie aanmaken**. Bepaal of er gecheckt moet worden of iemand ingeschreven is voor de nieuwsbrief. Als dit het geval is kies je voor het tussenblok **Bestemming checken** en check je op het Opt-in veld. Als dit niet het geval is kun je het bestemming checken overslaan. Maak een match-link aan en klik op de actie **Verzend e-mail** en verbindt dit blok aan de match-link. Klik op **Aanpassen** in het e-mail verzenden-blok om de welkomstmail te selecteren. Als dit gedaan is sla je de opvolgactie op door links in het scherm te klikken op **Opvolgactie aanpassen**.
 
-**Let op**: zet deze actie _alleen_ in de Marketing Suite. Zet hem niet ook nog
-in de Publisher, dan krijgen klanten 2 welkomstmail.
+**Let op**: zet deze actie alleen in de Marketing Suite. Zet hem niet ook nog in de Publisher, dan krijgen klanten 2 welkomstmails.
+
+De opvolgactie ziet er als volgt uit:
+
 
 ## Aanmaken in Publisher
 Ga naar **Profielen** en klik op **Databasebeheer > Database opvolgacties**
