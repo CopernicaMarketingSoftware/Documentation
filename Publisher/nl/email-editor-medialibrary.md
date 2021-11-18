@@ -22,17 +22,13 @@ In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een afbeeldi
 ```<img src="medialibrary://naam_van_mediabibliotheek/afbeelding.jpg" />```
 
 ## Bestanden inladen in je template
-Het is mogelijk om naar een bestand te linken vanuit je mediabibliotheek:
-
-
-**In de HTML-code**:  
 In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een afbeelding uit een mediabibliotheek op te halen met de medialibrary://-tag.  
 
 *Voorbeeld:*  
-```<img src="medialibrary://naam_van_mediabibliotheek/afbeelding.jpg" />```
+```<a href="medialibrary://naam_van_mediabibliotheek/bestandsnaam.pdf" />Klik hier</a>```
 
-## Afbeeldingen verwijderen
-Een afbeelding verwijderen is mogelijk door bij de specifieke afbeelding voor **Bewerken** te kiezen en naar **Verwijderen** te gaan.
+## Verwijderen van afbeeldingen / bestanden
+Een afbeelding of bestand verwijderen is mogelijk door voor **Bewerken** te kiezen en naar **Verwijderen** te gaan bij de betreffende afbeelding of bestand.
 
 ## Archiveren / verwijderen mediabibliotheek
 Binnen een mediabibliotheek is het mogelijk om onder **Configuratie** deze te archiveren of te verwijderen. 
@@ -40,5 +36,5 @@ Binnen een mediabibliotheek is het mogelijk om onder **Configuratie** deze te ar
 Bij het archiveren is de mediabibliotheek nog wel aanwezig in het account, maar niet meer zichtbaar.
 Onderin de toolbar kun je, door de checkbox 'Archief' aan te vinken, de gearchiveerde mediabiblioteken terugvinden.
 
-**Let op:** bij het verwijderen worden ook alle afbeeldingen binnen deze mediabiblioteek verwijdert. 
-Dit kan ervoor zorgen dat afbeeldingen in templates niet meer zichtbaar zijn.
+**Let op:** bij het verwijderen worden ook alle afbeeldingen en bestanden binnen deze mediabiblioteek verwijdert. 
+Dit kan ervoor zorgen dat afbeeldingen en bestanden in templates niet meer worden ingeladen.
