@@ -36,5 +36,5 @@ Binnen een mediabibliotheek is het mogelijk om onder **Configuratie** deze te ar
 Bij het archiveren is de mediabibliotheek nog wel aanwezig in het account, maar niet meer zichtbaar.
 Onderin de toolbar kun je, door de checkbox 'Archief' aan te vinken, de gearchiveerde mediabiblioteken terugvinden.
 
-**Let op:** bij het verwijderen worden ook alle afbeeldingen en bestanden binnen deze mediabiblioteek verwijdert. 
+**Let op:** bij het verwijderen worden ook alle afbeeldingen en bestanden binnen deze mediabiblioteek verwijderd. 
 Dit kan ervoor zorgen dat afbeeldingen en bestanden in templates niet meer worden ingeladen.
