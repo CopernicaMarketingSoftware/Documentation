@@ -1,6 +1,6 @@
 # Mediabibliotheek 
 Binnen drag-and-drop-templates worden afbeeldingen en bestanden opgeslagen in [mediabibliotheken](https://ms.copernica.com/#/medialibraries/).  
-Hierdoor zijn je afbeeldingen en bestanden te gebruiken over verschillende templates.
+Hierdoor zijn je afbeeldingen en bestanden te gebruiken in verschillende templates.
 
 ## Aanmaken mediabibliotheek
 Een nieuwe mediabibliotheek is aan te maken door in **'Mediabibliotheken'** te kiezen voor **'Aanmaken'**.  
@@ -22,7 +22,7 @@ In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een afbeeldi
 ```<img src="medialibrary://naam_van_mediabibliotheek/afbeelding.jpg" />```
 
 ## Bestanden inladen in je template
-In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een afbeelding uit een mediabibliotheek op te halen met de medialibrary://-tag.  
+In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een bestand uit een mediabibliotheek op te halen met de medialibrary://-tag.  
 
 *Voorbeeld:*  
 ```<a href="medialibrary://naam_van_mediabibliotheek/bestandsnaam.pdf" />Klik hier</a>```
