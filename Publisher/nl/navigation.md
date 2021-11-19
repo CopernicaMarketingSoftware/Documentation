@@ -32,6 +32,8 @@
     * [Styling](./emailings-publisher-styling.md)
     * [Externe content](./emailings-publisher-external-content.md)
     * [AMP](./amp.md)
+* [Drag-and-drop-templates specifiek](./email-editor-drag-and-drop-templates.md)
+    * [Gebruik van mediabibliotheek](./email-editor-medialibrary.md)
 * [Drag-and-drop-templates (oud) specifiek](./emailings-ms-templates.md)
     * [Personalisatie](./emailings-ms-personalization.md)
     * [Uitschrijflink](./emailings-ms-unsubscribe.md)
