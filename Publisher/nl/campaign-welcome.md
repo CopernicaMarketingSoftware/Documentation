@@ -8,9 +8,9 @@ single optin gebruikt. Wil je een dubbele optin campagne? Klik dan
 ## Aanmaken in Marketing Suite
 Ga naar **Profielen**, selecteer de juiste database en klik vervolgens op **Opvolgacties**. Kies voor een nieuwe opvolgactie door te klikken op **Opvolgactie aanmaken**. Vervolgens klik je nogmaals op **Opvolgactie aanmaken**.
 
-De reden (trigger) waarom deze opvolgactie start is **profiel aangemaakt**. Selecteer deze optie en geef de opvolgactie een naam. Vervolgens klik je op **Opvolgactie aanmaken**. Bepaal of er gecheckt moet worden of iemand ingeschreven is voor de nieuwsbrief. Als dit het geval is kies je voor het tussenblok **Bestemming checken** en check je op het Opt-in veld. Als dit niet het geval is kun je het bestemming checken overslaan. Maak een match-link aan en klik op de actie **Verzend e-mail** en verbindt dit blok aan de match-link. Klik op **Aanpassen** in het e-mail verzenden-blok om de welkomstmail te selecteren. Als dit gedaan is sla je de opvolgactie op door links in het scherm te klikken op **Opvolgactie aanpassen**.
+De reden (trigger) waarom deze opvolgactie start is **profiel aangemaakt**. Selecteer deze optie en geef de opvolgactie een naam. In de volgende stap gaan we de daadwerkelijke actie opstellen. Bepaal of er gekeken moet worden of het profiel is ingeschreven voor de nieuwsbrief. Als dit het geval is kies je voor het tussenblok **Bestemming checken** en selecteer je het Opt-in veld. Als het profiel niet ingeschreven hoeft te zijn, kun je het blok 'Bestemming checken' overslaan. Maak een match-link aan en klik op de actie **Verzend e-mail** en verbindt dit blok aan de match-link. Klik op **Aanpassen** in het e-mail verzenden-blok om de welkomstmail te selecteren. Als dit gedaan is sla je de opvolgactie op door links in het scherm te klikken op **Opvolgactie aanpassen**.
 
-**Let op**: zet deze actie alleen in de Marketing Suite. Zet hem niet ook nog in de Publisher, dan krijgen klanten 2 welkomstmails.
+**Let op**: Het is niet nodig om deze opvolgactie ook aan te maken in Publisher. Als je dit wel doet ontvangen nieuwe profielen dubbele e-mails. 
 
 De opvolgactie ziet er als volgt uit:  
 ![opvolgactie](../images/nl/Opvolgactie-welkom.png)
