@@ -24,7 +24,7 @@ en ga naar **Nieuwe opvolgactie aanmaken**. De aanleiding is
 op volgende en selecteer de welkomstmail.
 
 **Let op**: zet deze actie _alleen_ in de Publisher. Zet hem niet ook nog
-in de Marketing Suite, dan krijgen klanten 2 welkomstmail.
+in Marketing Suite, dan krijgen klanten 2 welkomstmail.
 
 ## Kortingscode genereren
 Het is mogelijk om een kortings code te maken met Copernica, dit doen we doormiddel van het e-mail adres en een stuk tekst te versleutelen tot een code. We doen dit met de [SHA1](./personalization-modifiers#sha1) encryptie methode, deze is standaard beschikbaar in smarty en gebruik je als volgt.
