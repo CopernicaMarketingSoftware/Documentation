@@ -6,18 +6,15 @@ single optin gebruikt. Wil je een dubbele optin campagne? Klik dan
 [hier](./campaign-tutorial-double-opt-in.md).
 
 ## Aanmaken in Marketing Suite
-Ga naar **Database & Profielen**, selecteer de juiste database, klik op
-het tandwiel en klik vervolgens op **Opvolgacties**. Kies voor een
-nieuwe opvolgactie door op **Create followup** te klikken.
+Ga naar **Profielen**, selecteer de juiste database en klik vervolgens op **Opvolgacties**. Kies voor een nieuwe opvolgactie door te klikken op **Opvolgactie aanmaken**. Vervolgens klik je nogmaals op **Opvolgactie aanmaken**.
 
-De reden waarom deze opvolgactie start is **Profile created**, selecteer deze
-optie en klik op proceed. Klik aan de linkerkant op **Send email** en verbindt
-dit blok aan **FollowUp start**. Klik op edit in het send email blok om de
-welkomstmail te selecteren. Als dit gedaan is sluit je de opvolgactie en sla
-je deze op.
+De reden (trigger) waarom deze opvolgactie start is **profiel aangemaakt**. Selecteer deze optie en geef de opvolgactie een naam. In de volgende stap gaan we de daadwerkelijke actie opstellen. Bepaal of er gekeken moet worden of het profiel is ingeschreven voor de nieuwsbrief. Als dit het geval is kies je voor het tussenblok **Bestemming checken** en selecteer je het Opt-in veld. Als het profiel niet ingeschreven hoeft te zijn, kun je het blok 'Bestemming checken' overslaan. Maak een match-link aan en klik op de actie **Verzend e-mail** en verbind dit blok aan de match-link. Klik op **Aanpassen** in het e-mail verzenden-blok om de welkomstmail te selecteren. Als dit gedaan is sla je de opvolgactie op door links in het scherm te klikken op **Opvolgactie aanpassen**.
 
-**Let op**: zet deze actie _alleen_ in de Marketing Suite. Zet hem niet ook nog
-in de Publisher, dan krijgen klanten 2 welkomstmail.
+**Let op**: Het is niet nodig om deze opvolgactie ook aan te maken in Publisher. Als je dit wel doet ontvangen nieuwe profielen dubbele e-mails. 
+
+De opvolgactie ziet er als volgt uit:  
+![opvolgactie](../images/nl/Opvolgactie-welkom.png)
+
 
 ## Aanmaken in Publisher
 Ga naar **Profielen** en klik op **Databasebeheer > Database opvolgacties**
@@ -27,7 +24,7 @@ en ga naar **Nieuwe opvolgactie aanmaken**. De aanleiding is
 op volgende en selecteer de welkomstmail.
 
 **Let op**: zet deze actie _alleen_ in de Publisher. Zet hem niet ook nog
-in de Marketing Suite, dan krijgen klanten 2 welkomstmail.
+in Marketing Suite, dan krijgen klanten 2 welkomstmail.
 
 ## Kortingscode genereren
 Het is mogelijk om een kortings code te maken met Copernica, dit doen we doormiddel van het e-mail adres en een stuk tekst te versleutelen tot een code. We doen dit met de [SHA1](./personalization-modifiers#sha1) encryptie methode, deze is standaard beschikbaar in smarty en gebruik je als volgt.
