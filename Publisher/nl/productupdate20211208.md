@@ -36,6 +36,7 @@ Meer informatie over importeren via onze REST API vind je [hier](https://www.cop
 * Het is mogelijk gemaakt om een gevalideerd sender domain te verwijderen.
 * Bij de bewaartermijn van je gegevens zijn de opties voor 1 week, 2 weken en 1 maand toegevoegd.
 * Bugfix: het downloaden van exports in het profielen-gedeelte is weer mogelijk gemaakt. 
+* Marketing Suite opvolgacties worden nu gelogd in de [logbestanden](https://ms.copernica.com/#/logs/). Hierdoor heb je meer inzichten wanneer een opvolgactie getriggered is.
 * Bugfix: je kunt nu weer de conditie op de actie verwijderen.
 * Bugfix: in de condities van opvolgacties worden nu de juiste velden getoond.
 * Bugfix: het profielen-gedeelte is nu zichtbaar wanneer er gebruik wordt gemaakt van individuele toegangsrechten.
@@ -50,4 +51,5 @@ Meer informatie over importeren via onze REST API vind je [hier](https://www.cop
 ## REST API / Webhooks
 * Bij een webhook waarbij interesses teruggegeven worden, wordt nu ook de naam van de interessegroep meegegeven.
 * In de webhooks voor impressies, kliks, fouten en klachten wordt nu het ID van het profiel en de mailing meegegeven.
+* Webhook-fouten worden nu geregistreerd in de [logbestanden](https://ms.copernica.com/#/logs/) binnen Marketing Suite.
 * Bugfix: het ophalen van 'deliveries' via de REST API is geoptimaliseerd waardoor dit minder tijd inneemt.
