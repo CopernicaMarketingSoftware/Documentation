@@ -47,7 +47,7 @@ Signature: keyId="one._domainkey.copernica.com",algorithm="rsa-sha256",
 
 The signature is created using a private key that only we have access to, and
 can be verified with a public key. We've published our public key in DNS in the
-same way as we publish [DKIM keys](./dkim-signing "DKIM signatures in SMTPeter), 
+same way as we publish [DKIM keys](./dkim-signing), 
 see [RFC 6367](https://tools.ietf.org/html/rfc6376#section-3.6.1 "DomainKeys Identified Mail Signatures")
 for the DKIM specification. Note that the keys rotate once a month, so you
 should not use a hardcoded copy of our public key, but dynamically retrieve 
