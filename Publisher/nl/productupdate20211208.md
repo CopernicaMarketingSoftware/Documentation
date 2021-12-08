@@ -21,7 +21,7 @@ Deze aanpassing is gedaan zodat je niet automatisch een GET-verzoek krijgt na ie
 Meer informatie over onze REST API V3 vind je [hier](https://www.copernica.com/nl/documentation/restv3/rest-api).
 
 ## Importeren via REST API
-In de REST API V3 is het mogelijk gemaakt om een import op te starten door middel van een PUT-verzoek. 
+In de REST API V3 is het mogelijk gemaakt om een import op te starten door middel van een POST-verzoek. 
 Je hebt hierbij de keuze uit een CSV- of JSON-bestand.
 
 Hierdoor is het mogelijk om wijzigingen te groeperen en binnen één verzoek naar Copernica te versturen in plaats van meerdere losse verzoeken.
