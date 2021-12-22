@@ -59,7 +59,7 @@ on the handling of your message.
     </tr>
     <tr>
         <td>x-mq-success-queue</td>
-        <td>alternative queue for the failures</td>
+        <td>alternative queue for the successes</td>
     </tr>
     <tr>
         <td>x-mq-retry-queue</td>
