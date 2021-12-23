@@ -15,7 +15,7 @@ De volgende optionele parameters zijn beschikbaar:
 * **endtime**: De tijdstempel waarvoor de uitschrijving gemaakt moet zijn (YYYY-MM-DD HH:MM:SS format).
 * **unique**: Toon enkel unieke uitschrijvingen per profiel (true / **false**)
 
-Dikgedrukte is de standaard waarde.
+Dikgedrukte is de standaardwaarde.
 
 ## Teruggegeven velden
 
