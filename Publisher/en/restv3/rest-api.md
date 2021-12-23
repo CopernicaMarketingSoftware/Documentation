@@ -322,11 +322,12 @@ and emailings.
 | POST   | [api.copernica.com/v3/ms/scheduledemailing](./rest-post-ms-scheduledemailing)                | Create a scheduled mailing                            |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing                  |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Fetch the statistics for a mailing                    |
-| GET    | [api.copernica.com/v3/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Fetch all abuses for a mailing                        |
-| GET    | [api.copernica.com/v3/ms/emailing/$id/clicks](./rest-get-ms-emailing-clicks)                 | Fetch all clicks for a mailing                        |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/deliveries](./rest-get-ms-emailing-deliveries)         | Fetch all deliveries for a mailing                    |
-| GET    | [api.copernica.com/v3/ms/emailing/$id/errors](./rest-get-ms-emailing-errors)                 | Fetch all errors for a mailing                        |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/impressions](./rest-get-ms-emailing-impressions)       | Fetch all impressions for a mailing                   |
+| GET    | [api.copernica.com/v3/ms/emailing/$id/clicks](./rest-get-ms-emailing-clicks)                 | Fetch all clicks for a mailing                        |
+| GET    | [api.copernica.com/v3/ms/emailing/$id/errors](./rest-get-ms-emailing-errors)                 | Fetch all errors for a mailing                        |
+| GET    | [api.copernica.com/v3/ms/emailing/$id/unsubscribes](./rest-get-ms-emailing-unsubscribes)     | Fetch all unsubscribes for a mailing                  |
+| GET    | [api.copernica.com/v3/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Fetch all abuses for a mailing                        |
 | PUT    | [api.copernica.com/v2/ms/emailing/$id/unsubscribe](./rest-put-ms-emailing-unsubscribe)       | Unsubscribe (sub)profile based on a mailing           |
 | GET    | [api.copernica.com/v3/profile/$id/ms/emailings](./rest-get-profile-ms-emailings)             | Fetch all Marketing Suite mailings for a profile      |
 | GET    | [api.copernica.com/v3/subprofile/$id/ms/emailings](./rest-get-subprofile-ms-emailings)       | Fetch all Marketing Suite mailings for a subprofile   |
@@ -353,11 +354,12 @@ or vice versa in all of the articles below, including the code examples.
 | GET    | [api.copernica.com/v3/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing                    |
 | GET    | [api.copernica.com/v3/ms/destination/$id/body](./rest-get-ms-destination-body)               | Fetch the message body sent to the destination          |
 | GET    | [api.copernica.com/v3/ms/destination/$id/statistics](./rest-get-ms-destination-statistics)   | Fetch the statistics for a destination                  |
-| GET    | [api.copernica.com/v3/ms/destination/$id/abuses](./rest-get-ms-destination-abuses)           | Fetch all abuses for a destination                      |
-| GET    | [api.copernica.com/v3/ms/destination/$id/clicks](./rest-get-ms-destination-clicks)           | Fetch all clicks for a destination                      |
 | GET    | [api.copernica.com/v3/ms/destination/$id/deliveries](./rest-get-ms-destination-deliveries)   | Fetch all deliveries for a destination                  |
-| GET    | [api.copernica.com/v3/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Fetch all errors for a destination                      |
 | GET    | [api.copernica.com/v3/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Fetch all impressions for a destination                 |
+| GET    | [api.copernica.com/v3/ms/destination/$id/clicks](./rest-get-ms-destination-clicks)           | Fetch all clicks for a destination                      |
+| GET    | [api.copernica.com/v3/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Fetch all errors for a destination                      |
+| GET    | [api.copernica.com/v3/ms/destination/$id/unsubscribes](./rest-get-ms-destination-unsubscribes) | Fetch all unsubscribes for a destination                |
+| GET    | [api.copernica.com/v3/ms/destination/$id/abuses](./rest-get-ms-destination-abuses)           | Fetch all abuses for a destination                      |
 | GET    | [api.copernica.com/v3/profile/$id/ms/destinations](./rest-get-profile-ms-destinations)       | Fetch all Marketing Suite destinations for a profile    |
 | GET    | [api.copernica.com/v3/subprofile/$id/ms/destinations](./rest-get-subprofile-ms-destinations) | Fetch all Marketing Suite destinations for a subprofile |
 
@@ -365,11 +367,12 @@ or vice versa in all of the articles below, including the code examples.
 
 | Type   | Address                                                                                      | Description                                  |
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| GET    | [api.copernica.com/v3/ms/abuses](./rest-get-ms-abuses)                                       | Fetch all abuses                             |
-| GET    | [api.copernica.com/v3/ms/clicks](./rest-get-ms-clicks)                                       | Fetch all clicks                             |
 | GET    | [api.copernica.com/v3/ms/deliveries](./rest-get-ms-deliveries)                               | Fetch all deliveries                         |
-| GET    | [api.copernica.com/v3/ms/errors](./rest-get-ms-errors)                                       | Fetch all errors                             |
 | GET    | [api.copernica.com/v3/ms/impressions](./rest-get-ms-impressions)                             | Fetch all impressions                        |
+| GET    | [api.copernica.com/v3/ms/clicks](./rest-get-ms-clicks)                                       | Fetch all clicks                             |
+| GET    | [api.copernica.com/v3/ms/errors](./rest-get-ms-errors)                                       | Fetch all errors                             |
+| GET    | [api.copernica.com/v3/ms/unsubscribes](./rest-get-ms-unsubscribes)                           | Fetch all unsubscribes                       |
+| GET    | [api.copernica.com/v3/ms/abuses](./rest-get-ms-abuses)                                       | Fetch all abuses                             |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Fetch the statistics for a mailing           |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Fetch all abuses for a mailing               |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/clicks](./rest-get-ms-emailing-clicks)                 | Fetch all clicks for a mailing               |
