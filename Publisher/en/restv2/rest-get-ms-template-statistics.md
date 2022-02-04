@@ -28,6 +28,7 @@ number of errors.
 total number impressions and number of unique impressions respectively.
 * **retries**: An array with field 'total' for the total 
 number of retries.
+* **unsubscribes**: An array with field 'total' and 'unique' for the total number of unsubscribes.
 
 ### Example
 
@@ -43,6 +44,9 @@ The JSON output will look something like this:
       "total":0,
       "unique":0
    },
+   "deliveries":{  
+      "total":39
+   },
    "errors":{  
       "total":5
    },
@@ -52,6 +56,10 @@ The JSON output will look something like this:
    },
    "retries":{  
       "total":30
+   },
+   "unsubscribes":{  
+      "total":3,
+      "unique":2
    }
 }
 ```
