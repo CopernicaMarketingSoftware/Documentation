@@ -22,6 +22,8 @@ The following fields are available in the JSON object:
 number of abuses.
 * **clicks**: An array with fields 'total' and 'unique' for the total 
 number of clicks and number of unique clicks respectively.
+* **deliveries**: An array with field 'total' for the total 
+number of deliveries.
 * **errors**: An array with field 'total' for the total 
 number of errors.
 * **impressions**: An array with fields 'total' and 'unique' for the 
