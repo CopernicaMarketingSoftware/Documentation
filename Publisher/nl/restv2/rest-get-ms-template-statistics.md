@@ -43,6 +43,9 @@ Hieronder vind je een voorbeeld van zo'n JSON object:
       "total":0,
       "unique":0
    },
+   "deliveries":{  
+      "total":39
+   },
    "errors":{  
       "total":5
    },
