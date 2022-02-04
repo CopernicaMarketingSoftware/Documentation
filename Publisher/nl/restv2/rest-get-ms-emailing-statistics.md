@@ -27,7 +27,7 @@ en het aantal unieke kliks respectievelijk.
 * **impressions**: Array met de velden 'total' en 'unique' voor het aantal impressies 
 en het aantal unieke impressies respectievelijk.
 * **retries**: Array met het veld 'total' voor het aantal retries.
-* **unsubscribes**: Array met het veld 'total' voor het aantal unsubscribes.
+* **unsubscribes**: Array met het veld 'total' en 'unique' voor het aantal unsubscribes.
 
 ### Voorbeeld
 
@@ -57,7 +57,8 @@ Hieronder vind je een voorbeeld van zo'n JSON object:
       "total":0
    },
    "unsubscribes":{  
-      "total":0
+      "total":3,
+      "unique":2
    }
 }
 ```
