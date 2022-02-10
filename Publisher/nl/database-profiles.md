@@ -6,6 +6,7 @@ Je vindt het database-overzicht onder ‘**Profielen**’. Door op de naam van e
 ![database overzicht](../images/nl/profieleninselectie.png)
 
 ## Aanmaken van een database
+
 [](https://youtu.be/dNc91dTmOOk)
 
 Je maakt een database aan door onder ‘**Profielen**’ te kiezen voor ‘**Aanmaken -> Een database aanmaken**’. Vervolgens kun je de database van een naam en omschrijving voorzien. 
