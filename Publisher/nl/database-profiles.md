@@ -7,7 +7,7 @@ Je vindt het database-overzicht onder ‘**Profielen**’. Door op de naam van e
 
 ## Aanmaken van een database
 
-[](https://www.youtube.com/watch?v=L_LUpnjgPso)
+[Database aanmaken](https://www.youtube.com/watch?v=L_LUpnjgPso)
 
 Je maakt een database aan door onder ‘**Profielen**’ te kiezen voor ‘**Aanmaken -> Een database aanmaken**’. Vervolgens kun je de database van een naam en omschrijving voorzien. 
 
