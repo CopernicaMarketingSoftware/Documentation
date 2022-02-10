@@ -11,6 +11,8 @@ Je maakt een database aan door onder ‘**Profielen**’ te kiezen voor ‘**Aan
 We raden je aan om één centrale database te gebruiken. Het is niet mogelijk om data uit verschillende databases te combineren. Iedere database bevat zijn eigen data en structuur.
 
 ## Aanmaken van databasevelden
+[Database aanmaken](https://www.youtube.com/watch?v=L_LUpnjgPso)
+
 Een database bestaat doorgaans uit meerdere velden. Hierin kun je informatie toevoegen aan een bijbehorend profiel. Denk hierbij aan een voornaam, achternaam of e-mailadres. Je voegt een databaseveld toe door in de menubalk van de database te navigeren naar '**Velden & interesses**'.
 
 Meer informatie over veldopties vind je op de uitgebreide documentatiepagina over [databasevelden](./database-fields).
