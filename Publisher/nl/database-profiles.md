@@ -7,6 +7,7 @@ Je vindt het database-overzicht onder ‘**Profielen**’. Door op de naam van e
 
 ## Aanmaken van een database
 [Database aanmaken](https://youtu.be/dNc91dTmOOk)
+
 Je maakt een database aan door onder ‘**Profielen**’ te kiezen voor ‘**Aanmaken -> Een database aanmaken**’. Vervolgens kun je de database van een naam en omschrijving voorzien. 
 
 We raden je aan om één centrale database te gebruiken. Het is niet mogelijk om data uit verschillende databases te combineren. Iedere database bevat zijn eigen data en structuur.
