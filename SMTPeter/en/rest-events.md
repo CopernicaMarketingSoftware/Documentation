@@ -59,7 +59,7 @@ The layout of this JSON is:
 ```json
 [
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "data" : {
             "fieldname1" : "data1",
             "fieldname2" : "data2",
@@ -67,7 +67,7 @@ The layout of this JSON is:
         }
     },
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "data" : {
             "fieldname1" : "data1",
             "fieldname2" : "data2",
@@ -78,11 +78,11 @@ The layout of this JSON is:
 ]
 ```
 
-The `type` in the JSON describes which type of record it is. The types that
-are available are listed in the table below. The data that these types
+The `event` in the JSON describes which type of record it is. The events that
+are available are listed in the table below. The data that these events
 contain are described on the page of the particular log file.
 
-| Type                                              | Description                                           |
+| Event                                             | Description                                           |
 |---------------------------------------------------|-------------------------------------------------------|
 | [attempt](log-attempts "attempts log file")       | General information about the message                 |
 | [bounce](log-bounces "bounces log file")          | Information about a bounce                            |

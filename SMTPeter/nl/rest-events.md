@@ -40,7 +40,7 @@ een maand weergegeven.
 Bij het opgeven van een einddatum (zonder startdatum), wordt tot de einddatum
 de voorgaande maand weergegeven. 
 
-Bij het opgeven van een start- en einddatum (die verder dan een maand uit elkaar 
+Bij het opgeven van een start- en einddatum (die verder dan een maand typeuit elkaar 
 liggen), wordt vanaf de startdatum een maand weergegeven. De einddatum wordt 
 dus genegeerd.
 
@@ -65,7 +65,7 @@ Na het verzoek ontvang je de volgende JSON:
 ```json
 [
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "data" : {
             "veldnaam1" : "data1",
             "veldnaam2" : "data2",
@@ -73,7 +73,7 @@ Na het verzoek ontvang je de volgende JSON:
         }
     },
     {
-        "type" : "open|click|failure|...",
+        "event" : "open|click|failure|...",
         "data" : {
             "veldnaam1" : "data1",
             "veldnaam2" : "data2",
@@ -84,11 +84,11 @@ Na het verzoek ontvang je de volgende JSON:
 ]
 ```
 
-Het `type` in de JSON geeft het type record. De beschikbare types
+Het `event` in de JSON geeft het type record. De beschikbare events
 staan in de onderstaande tabel. De beschikbare data wordt 
-beschreven op de betreffende pagina van het type.
+beschreven op de betreffende pagina van het event.
 
-| Type                                          | Beschrijving                                     |
+| Events                                        | Beschrijving                                     |
 |-----------------------------------------------|--------------------------------------------------|
 | [attempt](log-attempts "attempts log file")   | Algemene informatie over het bericht             |
 | [bounce](log-bounces "bounces log file")      | Informatie over een bounce                       |
