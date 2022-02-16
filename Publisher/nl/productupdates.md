@@ -1,5 +1,5 @@
 # Productupdates
-* [Productupdate 16-02-2022 - 2048 bit DKIM-sleutels en mediabibliotheken in Marketing Suite](./productupdate20220216)
+* [Productupdate 16-02-2022 - 2048 bit DKIM-sleutels en mediabibliotheken in Marketing Suite](./productupdate20220217)
 * [Productupdate 08-12-2021 - Update nieuwe drag-and-drop-editor en introductie REST API V3](./productupdate20211208)
 * [Productupdate 26-08-2021 - Nieuwe drag-and-drop-editor en uitschrijvingen registreren vanuit een mailing](./productupdate20210826)
 * [Productupdate 02-06-2021 - Opvolgacties en resultaten beheren in Marketing Suite](./productupdate20210602)
