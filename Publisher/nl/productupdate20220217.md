@@ -8,13 +8,13 @@ Je kunt de lengte van je DKIM-sleutel aanpassen door op je domein te klikken en 
 ### Mediabibliotheken beheren in Marketing Suite
 De mediabibliotheken die je eerder alleen in Publisher kon beheren, zijn nu ook toegankelijk in Marketing Suite. Hierdoor is het iets makkelijker en sneller om bestanden en afbeeldingen te beheren. Je vindt deze module onder het kopje [Mediabibliotheken](https://ms.copernica.com/#/medialibraries) in de Marketing Suite.
 
-### Probleem verholpen met itereren van webversies
-Door een bug in onze code bleek het mogelijk om webversies te itereren. Hierdoor was het eenvoudig om webversies van verzonden e-mailings op te halen door derden. Dit probleem is inmiddels aan onze kant verholpen. We hebben onderzocht of er door derden gebruik is gemaakt van deze bug en dit is, met uitzondering van de melder van de bug, niet het geval geweest. 
+### Niet langer mogelijk om door webversies te itereren
+Door een bug in onze code bleek het mogelijk om webversies te itereren. Hierdoor was het eenvoudig om webversies van verzonden mailings op te halen door derden. Dit probleem is inmiddels aan onze kant verholpen. We hebben onderzocht of er door derden gebruik is gemaakt van deze bug en dit is, met uitzondering van de melder van de bug, niet het geval geweest. 
 
-Mocht je toch vragen hierover hebben, kun je contact opnemen met onze [supportafdeling](mailto:support@copernica.com)
+Mocht je hier verdere vragen over hebben, kun je contact opnemen met onze [supportafdeling](mailto:support@copernica.com)
 
 ## Marketing Suite
-- We hebben een gezondheidscheck toegevoegd tijdens het inplannen van je drag-and-drop-template. Hierdoor zie je in één overzicht of er aandachtspunten zijn voordat je de mailing gaat versturen.
+- We hebben een gezondheidscheck toegevoegd tijdens het inplannen van je drag-and-drop-template. Hierdoor zie je in één overzicht of er aandachtspunten zijn voordat je de mailing verstuurt.
 - Bij het toevoegen van een afbeelding in de drag-and-drop-editor hebben we de keuze toegevoegd om een afbeelding van een externe locatie te gebruiken of om een afbeelding direct te uploaden.
 - De mogelijkheid om een antwoordadres (reply-to) in te stellen is toegevoegd.
 - In de drag-and-drop-editor hebben we een undo/redo optie toegevoegd. Hierdoor kun je gemakkelijk gemaakte wijzigingen ongedaan maken. 
@@ -25,7 +25,7 @@ Mocht je toch vragen hierover hebben, kun je contact opnemen met onze [supportaf
 - Bij het gebruik van foutieve personalisatie in de tekstversie geven wij nu een melding in de toolbar.
 - We hebben de spamscore van je template direct in de toolbar zichtbaar gemaakt.
 - We hebben een optie toegevoegd in de voorbeeldweergave van je HTML-document om deze te bekijken in een nieuw tabblad. 
-- Bij het exporteren van mailing resultaten worden nu alle velden die op de overzichtspagina van je database getoond worden meegenomen.
+- Bij het exporteren van mailingresultaten worden nu alle velden die op de overzichtspagina van je database worden getoond meegenomen.
 - In de [XSLT-module](https://ms.copernica.com/#/xslt) slaan wij de gegevens niet meer automatisch op. Dit om problemen in lopende campagnes te voorkomen.
 - Bugfix: in de statistieken zijn de previews nu ook zichtbaar van de templates voor de nieuwe drag-and-drop-editor.
 - Bugfix: bij een export binnen het profielen-gedeelte wordt de naam van de import nu gebruikt als bestandsnaam.
@@ -38,8 +38,8 @@ Mocht je toch vragen hierover hebben, kun je contact opnemen met onze [supportaf
 - Bugfix: links binnen een if mso-tag, voor Microsoft Outlook, met de optie <v:roundrect> worden nu omgezet naar een tracking link.
 - Bugfix: bij het bewerken van een periodieke export van je resultaten worden de juiste instellingen weer ingeladen.
 - Bugfix: het bekijken van ingeroosterde mailings uit het verleden is weer mogelijk.
-- Bugfix: als je callbacks hebt ingesteld op je database worden deze nu ook uitgevoerd zodra een formulier verzonden wordt.
+- Bugfix: als je callbacks hebt ingesteld op je database worden deze nu ook uitgevoerd zodra een formulier wordt verzonden.
 
 ## REST API / Webhooks
 - De access-tokens van de API zijn enkel nog volledig zichtbaar direct na het aanmaken van het token. Om beveiligingsredenen zijn in het vervolg enkel de eerste 16 tekens inzichtelijk. 
-- We hebben een optie toegevoegd om de [uitschrijvingen](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-unsubscribes) van drag-and-drop-templates op te halen per mailing.
+- We hebben een optie toegevoegd om de [uitschrijvingen](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-unsubscribes) van drag-and-drop-templates per mailing op te halen.
