@@ -37,7 +37,7 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // parameters voor de methode
 $parameters = array(
-    'start'     =>  '2020-01-01',
+    'begin'     =>  '2020-01-01',
     'end'       =>  '2021-01-01',
 );
 
