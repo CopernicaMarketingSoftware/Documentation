@@ -11,8 +11,6 @@ De mediabibliotheken die je eerder alleen in Publisher kon beheren, zijn nu ook 
 ### Niet langer mogelijk om door webversies te itereren
 Door een bug in onze code bleek het mogelijk om webversies te itereren. Hierdoor was het eenvoudig om webversies van verzonden mailings op te halen door derden. Dit probleem is inmiddels aan onze kant verholpen. We hebben onderzocht of er door derden gebruik is gemaakt van deze bug en dit is, met uitzondering van de melder van de bug, niet het geval geweest. 
 
-Mocht je hier verdere vragen over hebben, kun je contact opnemen met onze [supportafdeling](mailto:support@copernica.com)
-
 ## Marketing Suite
 - We hebben een gezondheidscheck toegevoegd tijdens het inplannen van je drag-and-drop-template. Hierdoor zie je in één overzicht of er aandachtspunten zijn voordat je de mailing verstuurt.
 - Bij het toevoegen van een afbeelding in de drag-and-drop-editor hebben we de keuze toegevoegd om een afbeelding van een externe locatie te gebruiken of om een afbeelding direct te uploaden.
