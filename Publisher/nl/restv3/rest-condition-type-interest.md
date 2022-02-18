@@ -48,7 +48,10 @@ $data = array(
     'type' => 'Interest',
 
     // gebruik matchmode
-    'match-mode' => 'match_profiles_with_interest'
+    'match-mode' => 'match_profiles_with_interest',
+
+    // selecteer interesse
+    'interest' => 'tennis'
 );
 
 // voer het verzoek uit

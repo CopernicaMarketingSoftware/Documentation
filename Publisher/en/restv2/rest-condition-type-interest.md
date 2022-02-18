@@ -37,7 +37,10 @@ $data = array(
     'type' => 'Interest',
 
     // use matchmode
-    'match-mode' => 'match_profiles_with_interest'
+    'match-mode' => 'match_profiles_with_interest',
+
+    // select interest
+    'interest' => 'tennis'
 );
 
 // do the call
