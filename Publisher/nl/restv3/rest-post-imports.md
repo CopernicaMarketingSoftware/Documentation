@@ -44,7 +44,57 @@ $data = array(
 	"action"			      => "update or add",
 	"keyFields"			    => array("Email"),
 	"format"			      => "json",
-	"source"			      => '[{ "Email": "support@copernica.com", "Contactpersoon": "Jeroen" }, { "Email": "info@copernica.com", "Contactpersoon": "Danny" }]'
+	"source"			      => '[
+		{ 
+			"Email": "support@copernica.com", 
+			"Contactpersoon": "Jeroen" 
+		}, 
+		{ 
+			"Email": "info@copernica.com", 
+			"Contactpersoon": "Danny" 
+		}
+	]'
+);
+
+// voer de methode uit en print het resultaat
+$api->post("imports/", $data);
+```
+
+Dit voorbeeld vereist de [REST API-klasse](rest-php).
+
+## Voorbeeld met subprofielen in PHP
+
+Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen in combinatie met subprofielen:
+
+```php
+// vereiste scripts
+require_once('copernica_rest_api.php');
+
+// verander dit naar je access token
+$api = new CopernicaRestAPI("your-access-token", 3);
+
+// data voor de methode
+$data = array(
+	"database" 	    		=> 1,
+	"name"				      => "TestImport",
+	"rebuild"			      => true,
+	"action"			      => "update or add",
+	"keyFields"			    => array("Email", "Order.OrderID"),
+	"format"			      => "json",
+	"source"			      => '[
+		{ 
+			"Email": "support@copernica.com", 
+			"Contactpersoon": "Jeroen",
+			"Order.OrderID": "00001", 
+			"Order.Status": "Completed" 
+		}, 
+		{ 
+			"Email": "info@copernica.com", 
+			"Contactpersoon": "Danny", 
+			"Order.OrderID": "00002", 
+			"Order.Status": "Shipped" 
+		}
+	]'
 );
 
 // voer de methode uit en print het resultaat
