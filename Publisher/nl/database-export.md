@@ -36,4 +36,4 @@ Het instellen van een export kan op sommige vlakken verwarrend zijn. Onthoud hie
 * Je kunt maximaal één collectie in een CSV-, XLS- of TXT-bestand opnemen. Wanneer je meerdere collecties tegelijk wilt exporteren kies je XML als bestandsformaat;
 * UTF-8 biedt in de meeste gevallen de beste encoding voor outputbestanden gezien deze het breedste ondersteund wordt;
 * Om bestanden klein te houden maak je gebruik van compressie. Dat is handig wanneer je exports via e-mail wilt versturen. In dat geval zal het bestand in ZIP-formaat worden aangemaakt.
-
+* Voor een export via SFTP moet een RSA key worden gebruikt
