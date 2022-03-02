@@ -38,13 +38,13 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data voor de methode
 $data = array(
-	"database" 	    		=> 1,
-	"name"				      => "TestImport",
-	"rebuild"			      => true,
-	"action"			      => "update or add",
-	"keyFields"			    => array("Email"),
-	"format"			      => "json",
-	"source"			      => '[
+	"database" 	=> 1,
+	"name"		=> "TestImport",
+	"rebuild"	=> true,
+	"action"	=> "update or add",
+	"keyFields"	=> array("Email"),
+	"format"	=> "json",
+	"source"	=> '[
 		{ 
 			"Email": "support@copernica.com", 
 			"Contactpersoon": "Jeroen" 
@@ -75,13 +75,13 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data voor de methode
 $data = array(
-	"database" 	    		=> 1,
-	"name"				      => "TestImport",
-	"rebuild"			      => true,
-	"action"			      => "update or add",
-	"keyFields"			    => array("Email", "Order.OrderID"),
-	"format"			      => "json",
-	"source"			      => '[
+	"database" 	=> 1,
+	"name"		=> "TestImport",
+	"rebuild"	=> true,
+	"action"	=> "update or add",
+	"keyFields"	=> array("Email", "Order.OrderID"),
+	"format"	=> "json",
+	"source"	=> '[
 		{ 
 			"Email": "support@copernica.com", 
 			"Contactpersoon": "Jeroen",
