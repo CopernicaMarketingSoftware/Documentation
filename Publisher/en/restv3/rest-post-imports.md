@@ -38,13 +38,63 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to be sent to the api
 $data = array(
-	"database" 	    		=> 1,
-	"name"				      => "TestImport",
-	"rebuild"			      => true,
-	"action"			      => "update or add",
-	"keyFields"			    => array("Email"),
-	"format"			      => "json",
-	"source"			      => '[{ "Email": "support@copernica.com", "Contactpersoon": "Jeroen" }, { "Email": "info@copernica.com", "Contactpersoon": "Danny" }]'
+	"database"	=> 1,
+	"name"		=> "TestImport",
+	"rebuild"	=> true,
+	"action"	=> "update or add",
+	"keyFields"	=> array("Email"),
+	"format"	=> "json",
+	"source"	=> '[
+		{ 
+			"Email": "support@copernica.com", 
+			"Contactpersoon": "Jeroen" 
+		}, 
+		{ 
+			"Email": "info@copernica.com", 
+			"Contactpersoon": "Danny" 
+		}
+	]'
+);
+
+// do the call
+$api->post("imports/", $data);
+```
+
+The example above requires the [CopernicaRestApi class](rest-php).
+
+## PHP example with subprofiles
+
+The following example demonstrates how to use this method in combination with subprofiles:
+
+```php
+// dependencies
+require_once('copernica_rest_api.php');
+
+// change this to your access token
+$api = new CopernicaRestAPI("your-access-token", 3);
+
+// data to be sent to the api
+$data = array(
+	"database"	=> 1,
+	"name"		=> "TestImport",
+	"rebuild"	=> true,
+	"action"	=> "update or add",
+	"keyFields"	=> array("Email", "Order.OrderID"),
+	"format"	=> "json",
+	"source"	=> '[
+		{ 
+			"Email": "support@copernica.com", 
+			"Contactpersoon": "Jeroen",
+			"Order.OrderID": "00001", 
+			"Order.Status": "Completed" 
+		}, 
+		{ 
+			"Email": "info@copernica.com", 
+			"Contactpersoon": "Danny",
+			"Order.OrderID": "00001", 
+			"Order.Status": "Completed" 
+		}
+	]'
 );
 
 // do the call
