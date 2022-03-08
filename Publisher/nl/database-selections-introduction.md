@@ -1,6 +1,4 @@
 # Selecties
-[Selecties](https://www.youtube.com/watch?v=StAXMnHgSFI)
-
 Een selectie is een segment van profielen op basis van een of meerdere overlappende kenmerken. Je gebruikt selecties om je database te filteren. Op deze manier bouw je eenvoudig specifieke doelgroepen op waarnaar je e-mails kunt versturen.
 
 Selecties geven je de mogelijkheid om met meerdere lagen te werken. Selecties die onder een andere selectie vallen noemen we ‘subselecties’. Een subselectie segmenteert alleen profielen die ook in de bovenliggende selectie zijn opgenomen.
@@ -15,6 +13,8 @@ In het bovenstaande voorbeeld zie je een structuur waarbij er onder een hoofdsel
 Naast (sub)selecties bestaan er ook [miniselecties](./database-collections). Dat zijn segmenten binnen [collecties](./database-collections).
 
 ## Aanmaken van een selectie
+[Selecties](https://www.youtube.com/watch?v=StAXMnHgSFI)
+
 Om een selectie aan te maken selecteer je een database en kies je voor '**Aanmaken -> Een selectie aanmaken**'. Vervolgens geef je de selectie een naam en bepaal je of deze direct onder de database (reguliere selectie) of onder een andere selectie (subselectie) moet vallen. 
 
 Om een selectie aan te passen navigeer je naar de selectie. Vervolgens klik je in de toolbar op ‘**Regels**’.
