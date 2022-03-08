@@ -1,4 +1,6 @@
 # Importeren van profielgegevens
+[Importeren](https://www.youtube.com/watch?v=uCH9L8Z_hEY)
+
 Er zijn verschillende manieren waarop je nieuwe profielen binnen je database kunt toevoegen of wijzigen. Zo kun je profielen met de hand, via de [API](./apis), via [webformulieren](./webforms) of door middel van een import toevoegen, wijzigen of verwijderen. 
 
 De importfunctie in Copernica ondersteunt CSV- en TXT-bestanden. Je kunt deze bestandsformaten exporteren vanuit tekstverwerkingsprogramma's of spreadsheetprogramma’s als Excel.
