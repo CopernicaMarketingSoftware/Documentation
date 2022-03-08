@@ -21,6 +21,7 @@ Om een selectie aan te passen navigeer je naar de selectie. Vervolgens klik je i
 
 ## Regels en condities
 [Condities](https://www.youtube.com/watch?v=fJUf1SafdNw)
+
 Zoals eerder genoemd moeten profielen bepaalde eigenschappen vertonen om in een selectie opgenomen te worden. In Copernica stel je die voorwaarden in door middel van selectieregels en condities. 
 
 Je kunt filteren op basis van verschillende dimensies, bijvoorbeeld op basis van geboortedatum (iedereen die vandaag jarig is) of kliks (iedereen die op een specifieke URL in een e-mail heeft geklikt).
