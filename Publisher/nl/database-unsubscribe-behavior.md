@@ -1,4 +1,6 @@
 # Uitschrijfgedrag
+[Uitschrijfgedrag](https://www.youtube.com/watch?v=oYaDRANznPg)
+
 Het is wettelijk verplicht om een zichtbare en werkende uitschrijflink aan je (commerciële) mails toe te voegen. Daarnaast is het toevoegen hiervan belangrijk voor het beschermen van je verzendreputatie.
 
 Copernica ontvangt op verschillende manieren feedback met betrekking tot uitschrijvingen. Deze komen binnen via de uitschrijflink in de e-mail, de uitschrijflink van de e-mailclient, in de vorm van klachten op ons abuse-adres of wanneer ontvangers de e-mail als spam markeren. Copernica vangt deze uitschrijvingen op en verwerkt deze volgens het ingestelde uitschrijfgedrag.
