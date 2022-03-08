@@ -1,6 +1,6 @@
 # Databasevelden
 
-(https://youtu.be/5q7TA-mRcr4)
+[](https://youtu.be/5q7TA-mRcr4)
 
 Een database bestaat doorgaans uit meerdere velden. Je kunt deze velden aanmaken of bewerken door binnen een database te kiezen voor de menuoptie ‘**Velden & interesses**’. De volgende veldtypen zijn beschikbaar:
 
@@ -45,3 +45,5 @@ Naast databasevelden kun je ook gebruik maken van interessevelden. Een interesse
 ![Interesses](../images/nl/interesses.png)
 
 *Voorbeeld van een profiel met interessevelden*
+
+[](https://youtu.be/rGYSdsvWlDE)
