@@ -1,9 +1,13 @@
 # Selecties
+[Selecties](https://www.youtube.com/watch?v=StAXMnHgSFI)
+
 Een selectie is een segment van profielen op basis van een of meerdere overlappende kenmerken. Je gebruikt selecties om je database te filteren. Op deze manier bouw je eenvoudig specifieke doelgroepen op waarnaar je e-mails kunt versturen.
 
 Selecties geven je de mogelijkheid om met meerdere lagen te werken. Selecties die onder een andere selectie vallen noemen we ‘subselecties’. Een subselectie segmenteert alleen profielen die ook in de bovenliggende selectie zijn opgenomen.
 
 ## Voorbeeld van een selectiestructuur
+[Aanbevolen selectiestructuur](https://www.youtube.com/watch?v=P_qrNZTJTW0)
+
 ![Voorbeeld van een selectiestructuur](../images/nl/voorbeeld_database.png)
 
 In het bovenstaande voorbeeld zie je een structuur waarbij er onder een hoofdselectie (B_VerzendSelectie) twee subselecties (EN en NL) zijn aangemaakt. Door middel van deze structuur kun je de Engelstalige nieuwsbrief versturen naar de ‘EN’-selectie en de Nederlandstalige nieuwsbrief naar de ‘NL’-selectie.
@@ -16,6 +20,7 @@ Om een selectie aan te maken selecteer je een database en kies je voor '**Aanmak
 Om een selectie aan te passen navigeer je naar de selectie. Vervolgens klik je in de toolbar op ‘**Regels**’.
 
 ## Regels en condities
+[Condities](https://www.youtube.com/watch?v=fJUf1SafdNw)
 Zoals eerder genoemd moeten profielen bepaalde eigenschappen vertonen om in een selectie opgenomen te worden. In Copernica stel je die voorwaarden in door middel van selectieregels en condities. 
 
 Je kunt filteren op basis van verschillende dimensies, bijvoorbeeld op basis van geboortedatum (iedereen die vandaag jarig is) of kliks (iedereen die op een specifieke URL in een e-mail heeft geklikt).
@@ -113,6 +118,8 @@ Selecties worden op vaste momenten opgebouwd (en dus niet in real-time). Wanneer
 Je kunt een selectie ook handmatig opbouwen. Dat doe je door in de selectie naar de menubalk te navigeren. Vervolgens klik je op 'Opnieuw opbouwen'. 
 
 ## Selectietester
+[Selectietester](https://www.youtube.com/watch?v=dkEp5wppuDU)
+
 Met de selectietester kun je eenvoudig inzien waarom een profiel wel of niet in een bepaalde selectie voorkomt. Je vindt de selectietester in het linkermenu van een profiel. 
 
 Zodra je een selectie kiest wordt er een overzicht getoond. Daarin zie je in één oogopslag aan welke condities het profiel wel en niet voldoet. Ook de bovenliggende selecties worden daarbij meegenomen.
