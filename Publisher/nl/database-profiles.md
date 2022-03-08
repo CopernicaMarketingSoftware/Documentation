@@ -6,7 +6,7 @@ Je vindt het database-overzicht onder ‘**Profielen**’. Door op de naam van e
 ![database overzicht](../images/nl/profieleninselectie.png)
 
 ## Aanmaken van een database
-[Database aanmaken](https://www.youtube.com/watch?v=Zy__MLqVzxA&ab)
+[Database aanmaken](https://www.youtube.com/watch?v=Zy__MLqVzxA)
 
 Je maakt een database aan door onder ‘**Profielen**’ te kiezen voor ‘**Aanmaken -> Een database aanmaken**’. Vervolgens kun je de database van een naam en omschrijving voorzien. 
 
@@ -18,6 +18,8 @@ Een database bestaat doorgaans uit meerdere velden. Hierin kun je informatie toe
 Meer informatie over veldopties vind je op de uitgebreide documentatiepagina over [databasevelden](./database-fields).
 
 ## Aanmaken van een profiel
+[Profiel aanmaken](https://www.youtube.com/watch?v=PqyWJaUuP68)
+
 Zodra je databasevelden hebt toegevoegd krijg je de mogelijkheid om profielen aan te maken. Je kunt een profiel handmatig toevoegen door te kiezen voor '**Aanmaken -> Profiel aanmaken**'. Hier vul je de gegevens van het profiel in. Vervolgens klik je op ‘**Profiel aanmaken**’.
 
 Wanneer je meerdere profielen tegelijk wilt aanmaken kun je een bestand [importeren](./database-import) of gebruik maken van de [API](./apis).
