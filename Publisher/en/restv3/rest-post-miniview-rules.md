@@ -1,10 +1,10 @@
 # REST API: POST miniview rules
 
-Method to add a rule to an existing selection from a collection (miniview, 
+Method to add a rule to an existing mini selection from a collection (miniview, 
 see [view documentation](rest-post-view-rules) for selections from a 
 database). This is an HTTP POST call to the following URL:
 
-`https://api.copernica.com/v3/miniview/$id/minirules?access_token=xxxx`
+`https://api.copernica.com/v3/miniview/$id/rules?access_token=xxxx`
 
 The `$id` should be replaced by the ID of the miniview you want to add a rule to. 
 The name of the rule and other values should be added to the message body. 
@@ -17,12 +17,6 @@ least the name of the rule is required.
 
 - **name**: Name of the rule. This should be unique within the set of view rule 
 names and is mandatory
-- **view**: ID of the selection that the rule belongs to
-- **conditions**: Array of conditions profiles within the selection should conform to, 
-such as certain values within certain fields
-- **inverted**: Boolean value that when set to "True" will return only profiles
-that do *not* adhere to the rule.
-- **disabled**: Boolean value that when set to "True" will disable the rule.
 
 ## PHP Example
 

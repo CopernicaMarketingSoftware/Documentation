@@ -1,10 +1,10 @@
-# REST API: POST database intentions
+# REST API: PUT database intentions
 
 Intentions geven aan welke communicatie methoden toegestaan zijn voor deze 
 database. De intentions voor email, sms, fax en pdf kunnen allemaal aan of 
 uitgezet worden, om te voorkomen dat er per ongeluk mailings worden verstuurd.
 
-De HTTP POST methode om de intentions van een database aan te passen 
+De HTTP PUT-methode om de intentions van een database aan te passen 
 is beschikbaar op het volgende adres:
 
 `https://api.copernica.com/v2/database/$id/intentions?access_token=xxxx`
@@ -31,7 +31,7 @@ aanwezig zijn in de database.
 
 ## PHP voorbeeld
 
-Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
+Het volgende PHP-script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
 // vereiste scripts
@@ -42,21 +42,15 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // data voor de methode
 $data = array(
-    'email' =>  true,
-    'sms'   =>  true,
-    'fax'   =>  true,
-    'pdf'   =>  true
+    'email' =>  true
 );
 
 // voer het verzoek uit
-$api->post("database/{$databaseID}/intentions", $data);
+$api->put("database/{$databaseID}/intentions", $data);
 ```
 
-Dit voorbeeld vereist de [REST API klasse](rest-php).
+Dit voorbeeld vereist de [REST API-klasse](rest-php).
 
 ## Meer informatie
 
-* [Overzicht van alle REST API calls](./rest-api)
-* [POST view intentions](./rest-post-view-intentions)
-* [POST collection intentions](./rest-post-collection-intentions)
-* [POST miniview intentions](./rest-post-miniview-intentions)
+* [Overzicht van alle REST API-calls](./rest-api)

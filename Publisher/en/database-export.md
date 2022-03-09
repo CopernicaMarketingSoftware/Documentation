@@ -77,6 +77,7 @@ To export multiple collections, choose for export to XML;
 * Date fields can be formatted in a the format that best suits your needs;
 * If you want to keep the export files small, you can compress them.
 This is especially useful if you want to send export files by mail.
+* For an export via SFTP, an RSA key must be used.
 
 ## More information
 We always recommend checking if your database is up-to-date before exporting
