@@ -1,4 +1,6 @@
 # Aanbevolen selectiestructuur
+[Aanbevolen selectiestructuur](https://www.youtube.com/watch?v=P_qrNZTJTW0)
+
 Een goede verzendlijst verbetert de resultaten van e-mailmarketingcampagnes. Het versturen van e-mails naar niet-bestaande e-mailadressen of personen die de mails niet openen heeft een negatieve invloed op je [verzendreputatie](./sender-reputation). Daardoor kunnen er meer e-mails in de spamfolder belanden.
 
 Je bent binnen Copernica vrij om zelf een [selectiestructuur](./database-selections-introduction) te bepalen. Om je daarbij te helpen bieden we echter ook een standaardstructuur aan. De standaardstructuur filtert de profielen die je mails niet kunnen of willen ontvangen uit de verzendselectie. Denk daarbij aan bounces, klachten, dubbele profielen, uitschrijvers, inactieven of profielen met een foutieve e-mailsyntax.

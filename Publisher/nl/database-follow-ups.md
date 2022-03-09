@@ -1,4 +1,6 @@
 # Database opvolgacties
+[Opvolgacties](https://www.youtube.com/watch?v=_W-fg5JMJfE)
+
 Automatisering is het favoriete buzzword van veel marketeers. Dat is ook
 niet zo gek, want e-mailcampagnes automatiseren kan tijd besparen en tot
 een uitstekende ROI op het e-mailkanaal leiden. Opvolgacties in

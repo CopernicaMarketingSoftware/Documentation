@@ -1,4 +1,6 @@
 # Exporteren van profielgegevens
+[Exporteren](https://www.youtube.com/watch?v=gCUCi4kWG04)
+
 Naast het importeren van gegevens is het mogelijk om (sub)profielgegevens te exporteren. Daarbij kun je de gehele database in één keer of in onderdelen exporteren (bijvoorbeeld per selectie, collectie of miniselectie). Wanneer een exportbestand is aangemaakt kun je deze downloaden of laten versturen naar een e-mailadres.
 
 ## Exportbestand voorbereiden

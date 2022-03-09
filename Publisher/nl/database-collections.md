@@ -1,4 +1,6 @@
 # Collecties & miniselecties
+[Collecties](https://www.youtube.com/watch?v=gNq1z2Xv0oU)
+
 Een **collectie** is een mini-database die onder een reguliere database valt. Een collectie wordt gevuld met **subprofielen** die gekoppeld zijn aan een profiel. Net als in het geval van profielen bevatten subprofielen velden als naam, aantal, prijs en categorie. Collectievelden kun je zelf beheren.
 
 Je bent vrij in het aantal collecties dat je kunt toevoegen. Zo kun je bijvoorbeeld een collectie aanmaken voor bestellingen, verlaten winkelwagens of contactpersonen binnen een profiel. Wanneer je een collectie voor bestellingen aanmaakt bevat deze de bijbehorende bestellingen per profiel.
@@ -27,6 +29,8 @@ Collecties worden niet standaard weergegeven in de boomstructuur onder '**Profie
 ![Voorbeeld van collecties binnen de boomstructuur](../images/nl/collectie_boomstructuur.png)
 
 ## Wat zijn miniselecties?
+[Miniselecties](https://www.youtube.com/watch?v=leOwouYGKGw)
+
 Een selectie selecteert profielen binnen een database op basis van veldwaarden. Een miniselectie doet hetzelfde, maar dan op basis van de gegevens van subprofielen uit een collectie. Je kunt hiermee bijvoorbeeld alle orders (subprofielen) selecteren die na een bepaalde datum zijn aangemaakt.
 
 Vervolgens kun je een reguliere selectie aanmaken van profielen waarbij de subprofielen voldoen aan de condities van een miniselectie. Je kunt hierbij gebruik maken van de conditie '**Check op inhoud miniselectie**'. Hiermee geef je aan hoeveel subprofielen binnen het profiel aan je gestelde (miniselectie)condities moeten voldoen.
