@@ -1,6 +1,6 @@
 # Productupdate 16-03-2022
 
-### Gebruik van RSS- en ATOM-feeds binnen je drag-and-drop-templates
+### Gebruik van feeds binnen je drag-and-drop-templates
 We hebben het mogelijk gemaakt om RSS- en ATOM-feeds toe te voegen in je drag-and-drop-templates door middel van het feed blok. Hierdoor heb je de mogelijkheid om content dynamisch in te laden binnen je nieuwsbrief. Hierbij kun je bijvoorbeeld denken aan aanbiedingen, gerelateerde producten of nieuwsberichten.
 
 Het blok werkt op basis van een URL waar de RSS- of ATOM-feed beschikbaar is. Voor de styling kun je gebruik maken van een XSLT-bestand binnen de [XSLT-module](https://ms.copernica.com/en#/xslt). Deze gegevens zal je eenmalig moeten instellen voor je nieuwsbrief. Hierna wordt de content ingeladen op basis van de gegevens uit de feed.
