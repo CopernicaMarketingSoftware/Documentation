@@ -1,5 +1,5 @@
 # Productupdates
-* [Productupdate 16-03-2022 - Gebruik van feeds en conditionele blokken binnen je drag-and-drop-templates](./productupdate20220316)
+* [Productupdate 16-03-2022 - Gebruik van feeds en conditionele blokken binnen drag-and-drop-templates](./productupdate20220316)
 * [Productupdate 16-02-2022 - 2048 bit DKIM-sleutels en mediabibliotheken in Marketing Suite](./productupdate20220217)
 * [Productupdate 08-12-2021 - Update nieuwe drag-and-drop-editor en introductie REST API V3](./productupdate20211208)
 * [Productupdate 26-08-2021 - Nieuwe drag-and-drop-editor en uitschrijvingen registreren vanuit een mailing](./productupdate20210826)
