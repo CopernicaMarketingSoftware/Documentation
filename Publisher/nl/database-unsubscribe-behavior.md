@@ -1,5 +1,5 @@
 # Uitschrijfgedrag
-[Uitschrijfgedrag](https://www.youtube.com/watch?v=oYaDRANznPg)
+![Uitschrijfgedrag](https://www.youtube.com/watch?v=oYaDRANznPg)
 
 Het is wettelijk verplicht om een zichtbare en werkende uitschrijflink aan je (commerciële) mails toe te voegen. Daarnaast is het toevoegen hiervan belangrijk voor het beschermen van je verzendreputatie.
 
