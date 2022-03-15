@@ -1,5 +1,5 @@
 # Aanbevolen selectiestructuur
-[Aanbevolen selectiestructuur](https://www.youtube.com/watch?v=P_qrNZTJTW0)
+![Aanbevolen selectiestructuur](https://www.youtube.com/watch?v=P_qrNZTJTW0)
 
 Een goede verzendlijst verbetert de resultaten van e-mailmarketingcampagnes. Het versturen van e-mails naar niet-bestaande e-mailadressen of personen die de mails niet openen heeft een negatieve invloed op je [verzendreputatie](./sender-reputation). Daardoor kunnen er meer e-mails in de spamfolder belanden.
 
