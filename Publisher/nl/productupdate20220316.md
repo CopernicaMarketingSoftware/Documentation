@@ -15,7 +15,7 @@ Je vindt de mogelijkheid om een conditie in te stellen onder de optie 'Voorwaard
 - De tags voor [{webonly}](https://www.copernica.com/nl/documentation/the-webonly-and-mailonly-functions) en [{mailony}](https://www.copernica.com/nl/documentation/the-webonly-and-mailonly-functions) zijn toegevoegd aan de drag-and-drop-templates.
 - We hebben de opties 'font-family' en 'font-size' toegevoegd aan de teksteditor van onze HTML-templates. Hierdoor heb je meer stylingmogelijkheden binnen je tekstblokken.  
 - Binnen een [mediabibliotheek](https://ms.copernica.com/#/medialibraries) is het mogelijk gemaakt om alle afbeeldingen en bestanden in bulk te downloaden. 
-- Bugfix: wanneer in plaats van een slash in de URL gebruik wordt gemaakt van 2% wordt deze nu ook omgezet naar een valide URL en krijgt de ontvanger geen foutmelding meer te zien.
+- Bugfix: wanneer in plaats van een slash in de URL gebruik wordt gemaakt van %2F wordt deze nu ook omgezet naar een valide URL en krijgt de ontvanger geen foutmelding meer te zien.
 - Bugfix: in de notificatie die je ontvangt na een hoog foutpercentage binnen een campagne wordt nu het juiste foutpercentage weergegeven.
 
 ## Publisher
