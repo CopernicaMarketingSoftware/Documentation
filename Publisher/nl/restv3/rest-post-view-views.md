@@ -27,7 +27,8 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters voor de methode
 $data = array(
-    'description'     =>  'new description'
+    'name'              =>  'new_selection',
+    'description'       =>  'new description'
 );
 
 // voer het verzoek uit
