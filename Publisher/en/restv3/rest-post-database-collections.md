@@ -15,8 +15,9 @@ HTTP request. After a successful call the ID of the created request is returned.
 
 The following variables can be set in the message body:
 
-- **name**: The title of the new collection field (mandatory). The name 
+- **name**: The title of the new collection (mandatory). The name 
 for the collection should contain only letters and underscores.
+- **description**: Description of the new collection
 
 ## PHP example
 
@@ -31,7 +32,8 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to pass to the call
 $data = array(
-    'name'      =>  'some_collection',
+    'name'          =>  'some_collection',
+    'description'   =>  'This is a new collection',
 );
 
 // do the call
