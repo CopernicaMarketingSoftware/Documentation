@@ -13,8 +13,8 @@ moet als message body aan het HTTP-request worden toegevoegd.
 
 De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 
-* name:             naam van de nieuw aan te maken collectie
-* description:      beschrijving van de nieuw aan te maken colelctie
+* **name**:             naam van de nieuw aan te maken collectie
+* **description**:      beschrijving van de nieuw aan te maken colelctie
 
 ## Voorbeeld in PHP
 
