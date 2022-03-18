@@ -16,6 +16,7 @@ HTTP request. After a successful call the ID of the created request is returned.
 The following variables can be added to the body of the HTTP POST call:
 
 - **name**: The name of the selection that is to be created. (mandatory)
+- **description**: Description of the newly created selection 
 
 ## PHP example
 
@@ -30,7 +31,8 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to pass to the call
 $data = array(
-    'name'      =>  'my-selection',
+    'name'          =>  'my-selection',
+    'description'   =>  'description of the selection',
 );
 
 // do the call

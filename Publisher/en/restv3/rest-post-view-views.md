@@ -14,11 +14,6 @@ The following parameters can be added to the message body. Note that because thi
 
 - **name**: Name of the selection
 - **description**: Description of the selection
-- **parent-type**: Type of the parent; does the selection belong to another selection or a database?
-- **parent-id**: ID of the parent
-- **has-children**: Boolean value that indicates whether or not there are selections below this
-- **has-referred**: Boolean value to indicate whether any other selections refer to this selection
-- **has-rules**: Indicates whether the selection has rules or not
 
 ## PHP example
 
@@ -33,6 +28,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters to pass to the call
 $data = array(
+    'name'            =>  'name_of_the_selection',
     'description'     =>  'new description'
 );
 

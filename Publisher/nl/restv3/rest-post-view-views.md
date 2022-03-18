@@ -13,13 +13,8 @@ De volgende parameters kunnen toegevoegd worden aan de body van het bericht.
 De eigenschappen van deze genestelde selectie zien er hetzelfde uit als 
 die van een reguliere selectie.
 
-- name: 				naam van de selectie;
-- description: 			omschrijving van de selectie;
-- parent-type: 			type van de bovenliggende structuur; selectie of database;
-- parent-id: 			id van de selectie of database waar de selectie onder valt;
-- has-children: 		boolean waarde om aan te geven of er nog selecties onder deze selectie liggen;
-- has-referred: 		boolean waarde om aan te geven of er andere selecties naar deze selectie verwijzen;
-- has-rules: 			boolean waarde om te geven of de selectie regels heeft.
+- **name**: 				naam van de selectie
+- **description**: 			omschrijving van de selectie
 
 ## Voorbeeld in PHP
 
@@ -32,7 +27,8 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters voor de methode
 $data = array(
-    'description'     =>  'new description'
+    'name'              =>  'new_selection',
+    'description'       =>  'new description'
 );
 
 // voer het verzoek uit
@@ -41,9 +37,9 @@ $api->post("view/{$viewID}/views", array(), $data);
 // bij een succesvolle call wordt het id van het aangemaakte verzoek teruggegeven
 ```
 
-Dit voorbeeld vereist de [REST API klasse](rest-php).
+Dit voorbeeld vereist de [REST API-klasse](rest-php).
 
 ## Meer informatie
 
-- [Overzicht van alle API methodes](rest-api)
+- [Overzicht van alle API-methodes](rest-api)
 - [GET view views](./rest-get-view-views)
