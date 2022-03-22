@@ -48,8 +48,12 @@ Er zijn verschillende blok-opties beschikbaar voor gebruik in je e-mails:
 | Video                 | Optie om een video toe te voegen                                                                        |
 | Sociaal               | Optie om social media toe te voegen                                                                     |
 | Banner                | Optie om een banner toe te voegen                                                                       |
+| Timer                 | Optie om een timer toe te voegen                                                                       |
 | Menu                  | Optie om een menu toe te voegen                                                                         |
 | HTML                  | Optie om zelfgeschreven HTML en CSS toe te voegen                                                     |
+| Carrousel             | Optie om een carrousel toe te voegen (werkt enkel in clients met AMP-ondersteuning)                     |
+| Accordeon             | Optie om een accordeon toe te voegen (werkt enkel in clients met AMP-ondersteuning)                     |
+| [Feed](./email-editor-feedblock)  | Optie om een feed toe te voegen                                                                         |
 
 Elk blok biedt zijn eigen opties om de weergave van het blok aan te passen.
 
