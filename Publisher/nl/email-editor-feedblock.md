@@ -29,18 +29,16 @@ Als voorbeeld gebruiken we onderstaande XML-code voor het tonen van een tweetal 
 <channel>
 	<title>My feed</title>
 	<item>
-		<title>Lacoste</title>
-		<price>95.00</price>
-		<size>44</size>
-		<url>https://www.lacoste.com/nl/lacoste/heren/schoenen/sneakers/t-clip-sneakers-heren-van-leer-en-synthetisch-materiaal/42SMA0052.html?color=2Q9</url>
-		<image>https://image1.lacoste.com/dw/image/v2/AAQM_PRD/on/demandware.static/Sites-NL-Site/Sites-master/nl/dw68405603/42SMA0052_2Q9_01.jpg?imwidth=915</image>
+		<title>Pen</title>
+		<price>1.99</price>
+		<url>https://www.copernica.com/product/pen</url>
+		<image>https://www.copernica.com/images/pen.jpg</image>
 	</item>
 	<item>
-		<title>Converse</title>
-		<price>94.99</price>
-		<size>44</size>
-		<url>https://www.converse.com/nl/nl/shop/p/chuck-70-classic-high-top-unisex-high-top-schoen/162050C.html</url>
-		<image>https://www.converse.com/dw/image/v2/AALW_PRD/on/demandware.static/-/Sites-ConverseMaster/default/dw034dd192/images/a_107/162050C_A_107X1.jpg?sw=2000</image>
+		<title>Potlood</title>
+		<price>0.99</price>
+		<url>https://www.copernica.com/product/potlood</url>
+		<image>https://www.copernica.com/images/potlood.jpg</image>
 	</item>
 </channel>
 </rss>
