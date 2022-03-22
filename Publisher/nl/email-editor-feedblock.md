@@ -1,9 +1,9 @@
 # Feedblok
 
-Met het feedblok is het mogelijk om content dynamisch in je nieuwsbrief te laden. In het feedblok kun je gebruik maken van RSS of Atom feeds die je gemaakt hebt in Marketing Suite of van een feed die extern is samengesteld en gehost.
+Met het feedblok is het mogelijk om content dynamisch in je nieuwsbrief te laden. In het feedblok kun je gebruik maken van RSS- of Atom-feeds die je gemaakt hebt in Marketing Suite of van een feed die extern is samengesteld en gehost.
 
 Het feedblok kent vier configuratie-opties:
-- Link naar of naam van RSS/Atom feed
+- Link naar of naam van RSS-/Atom-feed
 - Link naar of naam van XSLT-bestand
 - Links personaliseren
 - Hele feed personaliseren
@@ -11,7 +11,7 @@ Het feedblok kent vier configuratie-opties:
 ![Feedblok](../images/nl/feedblok.png)
 
 ## Feed inladen
-De eerste optie in het feedblok is 'Link naar of naam van RSS/Atom feed'. Hier geef je de URL op waar de feed beschikbaar is, bijvoorbeeld: 
+De eerste optie in het feedblok is 'Link naar of naam van RSS-/Atom-feed'. Hier geef je de URL op waar de feed beschikbaar is, bijvoorbeeld: 
 ```
 https://www.eendomein.nl/feed/feed.xml
 ```
