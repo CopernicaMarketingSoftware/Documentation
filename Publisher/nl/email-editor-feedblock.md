@@ -73,7 +73,7 @@ Een voorbeeld hiervan is:
       </tr>
       <tr>
          <td align="center"> 
-            <strong>&euro; <xsl:value-of select="price" disable-output-escaping="yes" /></strong>
+            <strong>&#8364; <xsl:value-of select="price" disable-output-escaping="yes" /></strong>
          </td>
       </tr>
    </table>            
