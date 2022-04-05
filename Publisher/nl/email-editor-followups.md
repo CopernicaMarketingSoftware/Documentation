@@ -59,7 +59,7 @@ Je maakt de daadwerkelijke actie (de profielwijziging) aan door te klikken op he
 
 Je kunt JavaScript-blokken toevoegen door onderin de Follow-up-Manager te klikken op **'Geavanceerde modus'**. Hier stel je controles in die plaatsvinden zodra opvolgacties worden geëvalueerd of uitgevoerd.
 
-Bekijk [hier](./data-object) alle beschikbare JavaScript-objecten.
+Bekijk [hier](./email-editor-followups-advanced-javascript) het artikel over geavanceerde JavaScript.
 
 _**Let op**: Wanneer je een opvolgactie voorziet van een wachttijd kan het zo zijn dat het profiel bij de evaluatie (het moment waarop de opvolgactie wordt aangeroepen) wel aan de gestelde condities voldoet, maar op het moment van uitvoering niet meer._
 
