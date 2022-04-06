@@ -14,7 +14,7 @@ Als je wilt dat je opvolgactie wordt uitgevoerd moet je ervoor zorgen dat je Jav
 | profile.created                     | Het tijdstip van aanmaken van het profiel                                                                           |
 | profile.modified                    | Het tijdstip van de laatste wijziging aan het profiel                                                               |
 | profile.fields.[veldnaam]           | Een specifiek veld van het profiel                                                                                  |
-| profile.interests.[interessenaam]   | Een specifiek interesse van het  profiel                                                                                  |
+| profile.interests.[interessenaam]   | Een specifieke interesse van het  profiel                                                                                  |
 | profile.subProfiles(collectienaam]  | Alle subprofielen die in de collectie zitten binnen het profiel  
 | profile.collections.[collectienaam] | Alle subprofielen die in de collectie zitten binnen de database waar het profiel in zit                             |                                                |
 | subprofile.id                       | Het ID van het subprofiel                                                                                           |
