@@ -42,8 +42,7 @@ their descriptions.
 ## Date properties
 
 The date properties can be used to limit the selection to a specified 
-time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
-format.
+time period. You can use the date property as follows:
 
 * **before-time**: The timestamp before which the change must have occured. 
 * **after-time**: The timestamp after which the change must have occured. 
