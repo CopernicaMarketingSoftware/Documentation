@@ -57,7 +57,7 @@ Je kunt in het volgende formaat de waarde voor de 'time' properties meegeven:
 
 ```text
 'YYYY-MM-DD HH:MM:SS'
-'2017-01-01 00:00:00'
+'2022-01-01 00:00:00'
 ```
 
 De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
