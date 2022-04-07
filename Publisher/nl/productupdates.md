@@ -1,5 +1,5 @@
 # Productupdates
-* [Productupdate 08-04-2022 - Verbeterde resultaten-module en versiegeschiedenis binnen drag-and-drop-templates](./productupdate20220408)
+* [Productupdate 08-04-2022 - Verbeterde resultatenmodule en versiegeschiedenis binnen drag-and-drop-templates](./productupdate20220408)
 * [Productupdate 16-03-2022 - Gebruik van feeds en conditionele blokken binnen drag-and-drop-templates](./productupdate20220316)
 * [Productupdate 16-02-2022 - 2048 bit DKIM-sleutels en mediabibliotheken in Marketing Suite](./productupdate20220217)
 * [Productupdate 08-12-2021 - Update nieuwe drag-and-drop-editor en introductie REST API V3](./productupdate20211208)
