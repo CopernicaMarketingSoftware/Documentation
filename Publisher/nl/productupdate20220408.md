@@ -13,7 +13,7 @@ Door deze optie heb je de mogelijkheid om terug te gaan naar een eerdere versie 
 # Fetch-tag in drag-and-drop-templates
 Het is mogelijk gemaakt om in een drag-and-drop-template gebruik te maken van de [fetch](https://www.copernica.com/nl/documentation/personalization-functions-fetch)-tag. Hiermee kun je externe content inladen in een blok of de broncode van je template.
 
-Deze optie wordt voornamelijk gebruik om kortingscodes vanuit een extern systeem in te laden in je nieuwsbrief.
+Deze optie wordt voornamelijk gebruikt om kortingscodes vanuit een extern systeem in te laden in je nieuwsbrief.
 
 ## Marketing Suite
 - We hebben het mogelijk gemaakt om direct een e-mail naar een profiel te versturen. Je kunt deze optie gebruiken door in het profiel te kiezen voor 'E-mail versturen'.
@@ -31,10 +31,10 @@ Deze optie wordt voornamelijk gebruik om kortingscodes vanuit een extern systeem
 - Bugfix: bij een meerkeuzeveld in de database wordt de waarde '0' nu als '0' getoond in plaats van een lege waarde.
 - Bugfix: als je gebruik hebt gemaakt van geavanceerde JavaScript binnen een blok van een HTML-document is dit nu direct zichtbaar bij het openen van het blok.
 - Bugfix: afbeeldingen ingeladen vanuit een mediabibliotheek zijn nu zichtbaar in je HTML-template.
-- Bugfix: In de JavaScript tester wordt nu 'false' teruggegeven in plaats van 'unidentified' bij het gebruik van `return false;`.
+- Bugfix: In de JavaScript-tester wordt nu 'false' teruggegeven in plaats van 'unidentified' bij het gebruik van `return false;`.
 
 ## Publisher
-- In de [fetch](https://www.copernica.com/nl/documentation/personalization-functions-fetch)-tag hebben we de optie om application/json als conent-type te gebruiken toegevoegd.
+- In de [fetch](https://www.copernica.com/nl/documentation/personalization-functions-fetch)-tag hebben we de optie om application/json als content-type te gebruiken toegevoegd.
 Bugfix: bij het gebruik van Publisher in de Marketing Suite-interface is het nu mogelijk om de taal van de interface te wijzigen.
 
 ## REST API
@@ -42,5 +42,5 @@ Bugfix: bij het gebruik van Publisher in de Marketing Suite-interface is het nu 
 
 ## Documentatie
 - In [dit artikel](https://www.copernica.com/nl/documentation/email-editor-feedblock) geven we je meer informatie over het gebruik van het feedblok in de drag-and-drop-editor.
-- We hebben een [artikel](https://www.copernica.com/nl/documentation/email-editor-followups-advanced-javascript) toegevoegd met meer informatie over het gebruik van geavanceerde JavaScript condities binnen Marketing Suite opvolgacties.
+- We hebben een [artikel](https://www.copernica.com/nl/documentation/email-editor-followups-advanced-javascript) toegevoegd met meer informatie over het gebruik van geavanceerde JavaScript-condities binnen Marketing Suite opvolgacties.
 
