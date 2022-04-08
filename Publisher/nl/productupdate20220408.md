@@ -1,7 +1,7 @@
 # Productupdate 08-04-2022
 
 # Verbeterde resultatenmodule
-We hebben de verzonden en ingeroosterde mailings van Marketing Suite en Publisher in samengevoegd in één [overzicht](https://ms.copernica.com/#/results/). Hierdoor heb je direct inzicht in al je campagnes.  
+We hebben de verzonden en ingeroosterde mailings van Marketing Suite en Publisher samengevoegd in één [overzicht](https://ms.copernica.com/#/results/). Hierdoor heb je direct inzicht in al je campagnes.  
 
 Naast het samenvoegen van de resultaten hebben we ook de statistieken van Marketing Suite mailings geoptimaliseerd. Hierdoor zie je nu meer informatie over de verzonden mailing, zoals bijvoorbeeld de dominante resultaten en de impressies per uur. Ook is het exporteren van bestemmingen, impressies of fouten eenvoudiger geworden.
 
@@ -42,5 +42,5 @@ Bugfix: bij het gebruik van Publisher in de Marketing Suite-interface is het nu 
 
 ## Documentatie
 - In [dit artikel](https://www.copernica.com/nl/documentation/email-editor-feedblock) geven we je meer informatie over het gebruik van het feedblok in de drag-and-drop-editor.
-- We hebben een [artikel](https://www.copernica.com/nl/documentation/email-editor-followups-advanced-javascript) toegevoegd met meer informatie over het gebruik van geavanceerde JavaScript condities binnen Marketing Suite opvolgacties 
+- We hebben een [artikel](https://www.copernica.com/nl/documentation/email-editor-followups-advanced-javascript) toegevoegd met meer informatie over het gebruik van geavanceerde JavaScript condities binnen Marketing Suite opvolgacties.
 
