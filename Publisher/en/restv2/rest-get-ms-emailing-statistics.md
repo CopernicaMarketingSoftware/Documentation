@@ -18,7 +18,7 @@ Where the `$id` should be replaced with the ID of the mailing.
 The following fields are available in the JSON object:
 
 * **destinations**: The number of destinations for this mailing.
-* **abuses**: An array with field 'total' for the total 
+* **abuses**: An array with field 'total' and 'unique' for the total 
 number of abuses.
 * **clicks**: An array with fields 'total' and 'unique' for the total 
 number of clicks and number of unique clicks respectively.
@@ -28,7 +28,7 @@ number of deliveries.
 number of errors.
 * **impressions**: An array with fields 'total' and 'unique' for the 
 total number impressions and number of unique impressions respectively.
-* **retries**: An array with field 'total' for the total 
+* **retries**: An array with field 'total' and 'unique' for the total 
 number of retries.
 * **unsubscribes**: An array with field 'total' and 'unique' for the total number of unsubscribes.
 
@@ -41,6 +41,7 @@ The JSON output will look something like this:
    "destinations":"13801",
    "abuses":{  
       "total":0
+      "unique":0
    },
    "clicks":{  
       "total":15,
@@ -58,6 +59,7 @@ The JSON output will look something like this:
    },
    "retries":{  
       "total":0
+      "unique":0
    },
    "unsubscribes":{  
       "total":3,
