@@ -42,11 +42,11 @@ Om een eigen pagina te tonen, gebruik je de 'redirect' functie
 De uitschrijver zal direct na het aanklikken van de uitschrijflink
 worden doorverwezen naar de pagina die je als redirect hebt opgegeven.
 
-Als je gebruik wilt maken van variabele uit het (sub)profiel die gebruikt wordt als bestemming van de e-mail, is dit zo mogelijk:  
+Je kunt op de volgende manier gebruik maken van een variabele uit het (sub)profiel dat wordt gebruikt als bestemming van de e-mail:  
 
 `{unsubscribe redirect="http://www.eendomein.nl/eigenlandingspagina?profile=$id&code=$code"}`
 
-Voor het gebruik van eigen personalisatie variabelen, buiten het (sub)profiel van de bestemming om, zal je de URL eerst vast moeten stellen voordat je deze in de redirect-parameter kunt gebruiken:  
+Wanneer je zelfgedefinieerde variabelen wilt gebruiken dien je eerst de URL te definiëren voordat je deze in de redirect-parameter kunt gebruiken.
 ```
 {capture assign="url"}http://www.eendomein.nl/eigenlandingspagina?variabele1={$variabale1}&variabele2={$variabele2}{/capture}
 {unsubscribe redirect=$url}
