@@ -11,7 +11,7 @@ contains an overview of all API calls.
 * [Sending and receiving HTTP requests](./rest-requests)
 * [External OAuth2 links](./rest-oauth)
 * [Paging](./rest-paging)
-f
+
 We are currently on version 3 of the REST API. [This article](./rest-introduction#REST-version)
 explains the new version (and how to switch) in full detail. Not ready to switch?
 If you want to use previous versions of the API, here is a link to the [v1](../restv1/rest-api.md)
