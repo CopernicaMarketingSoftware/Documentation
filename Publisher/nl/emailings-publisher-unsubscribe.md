@@ -42,6 +42,16 @@ Om een eigen pagina te tonen, gebruik je de 'redirect' functie
 De uitschrijver zal direct na het aanklikken van de uitschrijflink
 worden doorverwezen naar de pagina die je als redirect hebt opgegeven.
 
+Je kunt op de volgende manier gebruik maken van een variabele uit het (sub)profiel dat wordt gebruikt als bestemming van de e-mail:  
+
+`{unsubscribe redirect="http://www.eendomein.nl/eigenlandingspagina?profile=$id&code=$code"}`
+
+Wanneer je zelfgedefinieerde variabelen wilt gebruiken dien je eerst de URL te definiëren voordat je deze in de redirect-parameter kunt gebruiken.
+```
+{capture assign="url"}http://www.eendomein.nl/eigenlandingspagina?variabele1={$variabale1}&variabele2={$variabele2}{/capture}
+{unsubscribe redirect=$url}
+```
+
 **Naar eigen domein verwijzen**
 
 Om in plaats van het standaarddomein (pic.vicinity.nl) van Copernica een

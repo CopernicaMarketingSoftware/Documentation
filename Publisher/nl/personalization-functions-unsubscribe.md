@@ -27,6 +27,8 @@ broncode van het template of in een tekstblok in het document.
 
 ## Extra opties
 
+**Doorverwijzen naar eigen landingspagina**  
+
 Nadat een ontvanger op de uitschrijflink heeft gedrukt, wordt hij of zij
 doorverwezen naar een (nogal lege) standaardpagina.
 
@@ -36,6 +38,18 @@ Om een eigen pagina te tonen, gebruik je de 'redirect' functie
 
 De uitschrijver wordt, bij het klikken op de link, direct doorverwezen naar 
 de pagina die je als redirect hebt opgegeven.
+
+Je kunt op de volgende manier gebruik maken van een variabele uit het (sub)profiel dat wordt gebruikt als bestemming van de e-mail:  
+
+`{unsubscribe redirect="http://www.eendomein.nl/eigenlandingspagina?profile=$id&code=$code"}`
+
+Wanneer je zelfgedefinieerde variabelen wilt gebruiken dien je eerst de URL te definiëren voordat je deze in de redirect-parameter kunt gebruiken.
+```
+{capture assign="url"}http://www.eendomein.nl/eigenlandingspagina?variabele1={$variabale1}&variabele2={$variabele2}{/capture}
+{unsubscribe redirect=$url}
+```
+
+**Naar eigen domein verwijzen** 
 
 Om in plaats van het standaarddomein (pic.vicinity.nl) van Copernica een
 eigen domein te tonen, is de optie *domain* beschikbaar.
