@@ -140,6 +140,7 @@ condities in de tabel hieronder vinden.
 | PUT    | [api.copernica.com/v3/minirule/$id](./rest-put-minirule)                                     | Updaten van miniregel informatie               |
 | DELETE | [api.copernica.com/v3/minirule/$id](./rest-delete-minirule)                                  | Verwijderen van een miniregel                  |
 | POST   | [api.copernica.com/v3/minirule/$id/conditions](./rest-post-minirule-conditions)              | Aanmaken van een miniregel conditie            |
+| PUT    | [api.copernica.com/v3/minicondition/$type/$id](./rest-put-minicondition)                     | Updaten van een miniregel conditie         |
 | DELETE | [api.copernica.com/v3/minicondition/$type/$id](./rest-delete-minicondition)                  | Verwijderen van een miniregel conditie         |
 
 ## Profielen & Subprofielen
