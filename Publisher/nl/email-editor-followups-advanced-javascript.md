@@ -31,7 +31,21 @@ Als je wilt dat je opvolgactie wordt uitgevoerd moet je in de JavaScript uitvoer
 | subprofile.collection.id     | Het ID van de collectie waar het subprofiel in zit 
 | subprofile.collection.name          | De naam van de collectie waar het subprofiel in zit 
 
-## Voorbeeld
+## Voorbeelden
+
+### Voorbeeld 1
+Bij een aangemaakt subprofiel wil je dat de opvolgactie enkel wordt uitgevoerd als het veld 'Versturen' gelijk is aan 'Ja' en het veld 'Taal' uit het  profiel gelijk is aan 'NL':
+
+```
+if (subprofile.fields.Versturen == "Ja" && profile.fields.Taal == "NL")
+{
+    return true;
+}else{
+    return false;
+}
+```
+
+### Voorbeeld 2
 Bij een gewijzigd subprofiel wil je dat de opvolgactie enkel wordt uitgevoerd als het veld 'createdDate' van dit subprofiel na de 'createdDate' van de overige subprofielen van dit profiel is.
 ```
 function shouldSend() {
