@@ -1,7 +1,7 @@
 # REST API: PUT minicondition
 
 Een methode om een miniconditie aan te passen.
-Je kunt de method aanroepen met een HTTP PUT-request naar de volgende URL:
+Je kunt de methode aanroepen met een HTTP PUT-request naar de volgende URL:
 
 `https://api.copernica.com/v3/minicondition/$type/$id?access_token=xxxx`
 
@@ -26,7 +26,7 @@ de onderstaande links aan te klikken:
 
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe de API-method te gebruiken is.
+Het volgende PHP script demonstreert hoe de API-methode te gebruiken is.
 
 ```php
 // vereiste scripts
