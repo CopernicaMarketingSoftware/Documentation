@@ -182,6 +182,7 @@ to rules and their conditions in the table below.
 | PUT    | [api.copernica.com/v3/minirule/$id](./rest-put-minirule)                                     | Update the minirule information              |
 | DELETE | [api.copernica.com/v3/minirule/$id](./rest-delete-minirule)                                  | Delete a minirule                            |
 | POST   | [api.copernica.com/v3/minirule/$id/conditions](./rest-post-minirule-conditions)              | Create a minirule condition                  |
+| PUT    | [api.copernica.com/v3/minicondition/$type/$id](./rest-put-minicondition)                     | Update a minirule condition                  |
 | DELETE | [api.copernica.com/v3/minicondition/$type/$id](./rest-delete-minicondition)                  | Delete a minirule condition                  |
 
 ## Profiles & Subprofiles
