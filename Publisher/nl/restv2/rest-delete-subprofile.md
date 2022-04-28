@@ -6,6 +6,13 @@ Het verwijderen van een subprofiel kan gedaan worden door een HTTP DELETE verzoe
 
 De **$id** hier moet vervangen worden door de ID van het subprofiel dat je wilt verwijderen.
 
+## Beschikbare parameters
+
+De volgende parameters kunnen in de message body worden geplaatst:
+
+- **completely**: Profiel volledig uit de backend verwijderen (Yes/**No**)
+
+\* Dikgedrukte waarde is de standaardwaarde.
 
 ## Voorbeeld in PHP
 
