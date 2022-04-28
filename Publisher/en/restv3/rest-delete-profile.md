@@ -8,6 +8,14 @@ a profile:
 The `$id` needs to be replaced by the numerical identifier of the profile
 that you want to remove.
 
+## Available parameters
+
+The following parameters can be placed in the message body:
+
+- **completely**: Completely remove profile from the backend (Yes/**No**)
+
+\* Value in bold is the default value.
+
 ## PHP example
 
 The following example demonstrates how to make a call using this method.
