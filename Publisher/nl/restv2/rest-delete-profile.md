@@ -6,6 +6,14 @@ Het verwijderen van een profile kan gedaan worden door een HTTP DELETE verzoek t
 
 De `$id` hier moet vervangen worden door de id van het profile dat je wilt verwijderen.
 
+## Beschikbare parameters
+
+De volgende parameters kunnen in de message body worden geplaatst:
+
+- **completely**: Profiel volledig uit de backend verwijderen (Yes/**No**)
+
+\* Dikgedrukte waarde is de standaardwaarde.
+
 ## Voorbeeld in PHP
 
 Het volgende voorbeeld demonstreert hoe je gebruik maakt van deze methode met de API:
