@@ -44,6 +44,7 @@ Je kunt dit kopiëren en plakken in je template, let er alleen op dat je het pla
 zonder opmaak -> CTRL+SHIFT+V (of op iOS CMD+SHIFT+V).
 
 **Opdracht**
+
 Voeg personalisatie toe in de mail en klik op voorvertoning om te zien of de personalisatie werkt. 
 
 ![voorvertoning](https://user-images.githubusercontent.com/94605656/166655981-d5eb8660-4489-43a3-bd15-a1766596c3b8.png)
