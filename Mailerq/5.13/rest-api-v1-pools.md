@@ -43,11 +43,11 @@ Content-Type: application/json
 
 [
     {
-        "ip": "127.0.0.1",
+        "localip": "127.0.0.1",
         "name": "sharedpool1"
     },
     {
-        "ip": "192.168.1.1",
+        "localip": "192.168.1.1",
         "name": "sharedpool1"
     }
 ]
@@ -95,7 +95,7 @@ Content-Type: application/json
 Authorization: Bearer ...
 
 {
-    "ip": "127.0.0.1",
+    "localip": "127.0.0.1",
     "name": "sharedpool1"
 },
 ```
