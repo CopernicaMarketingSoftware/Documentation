@@ -22,7 +22,7 @@ Om de inhoud van de tekstblokken in het document te bewerken, klik je op
 **Bewerkmodus** in de werkbalk onderaan het document. Alle aanwezige
 blokken worden dan aanklikbaar.
 
-### De HTML editor standaard inladen
+## De HTML editor standaard inladen
 
 Als de eindgebruiker een tekstblok aanklikt, dan wordt standaard de
 uitgebreide editor getoond. Als je wilt dat standaard de HTML editor
@@ -34,7 +34,7 @@ broncode:
 Let wel, hiermee wordt de uitgebreide editor niet volledig
 uitgeschakeld. De eindgebruiker kan deze blijven gebruiken.
 
-#### **Inleidende en afsluitende HTML** {#**inleidende-en-afsluitende-html**}
+## Inleidende en afsluitende HTML
 
 Voeg HTML toe aan het tekstblok. Deze code alleen wordt ingeladen als op
 documentniveau ook daadwerkelijk tekst is ingevoerd. Op deze wijze kan
