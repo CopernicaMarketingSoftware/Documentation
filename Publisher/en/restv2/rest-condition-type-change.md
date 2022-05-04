@@ -42,13 +42,26 @@ their descriptions.
 ## Date properties
 
 The date properties can be used to limit the selection to a specified 
-time period. All of the variables below are required to be YYYY-MM-DD HH:MM:SS 
-format.
+time period. You can use the date property as follows:
 
 * **before-time**: The timestamp before which the change must have occured. 
 * **after-time**: The timestamp after which the change must have occured. 
 * **before-mutation**: The beforemutation (time difference) of the changecondition.
 * **after-mutation**: The aftermutation (time difference) of the changecondition.
+
+You can specify the value for the 'time' properties in the following format:
+
+```text
+'YYYY-MM-DD HH:MM:SS'
+'2022-01-01 00:00:00'
+```
+
+The 'mutation' properties accept the following string for the value:
+
+```text
+'["plus/minus", "count", "unit(second,minute,hour,day,week,month or year)", "floorto(second,minute,hour,day,month or year)"]'
+'["plus", "0", "day", "day"]'
+```
 
 ## Example
 

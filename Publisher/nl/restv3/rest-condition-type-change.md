@@ -57,14 +57,14 @@ Je kunt in het volgende formaat de waarde voor de 'time' properties meegeven:
 
 ```text
 'YYYY-MM-DD HH:MM:SS'
-'2017-01-01 00:00:00'
+'2022-01-01 00:00:00'
 ```
 
 De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 
 ```text
-'["plus/minus", "YYYY-MM-DD", "HH:MM:SS"]'
-'["plus", "2017-01-01", "05:43:21"]'
+'["plus/minus", "count", "unit(second,minute,hour,day,week,month or year)", "floorto(second,minute,hour,day,month or year)"]'
+'["plus", "0", "day", "day"]'
 ```
 
 ## Voorbeeld in PHP
