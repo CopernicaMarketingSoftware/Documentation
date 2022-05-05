@@ -1,88 +1,80 @@
 # Copernica-training: opvolgacties
 
-Opvolgacties geven je de mogelijkheid om automatische e-mailcampagnes op te zetten. Een opvolgactie 
-bestaat uit een aanleiding, een eventuele wachttijd en/of conditie en een actie die wordt uitgevoerd.
+Met opvolgacties kan je automatische e-mailcampagnes op zetten in Copernica. 
+Een opvolgactie bestaat uit een aanleiding, eventueel een wachttijd en/of conditie 
+en een actie die vervolgens uitgevoerd wordt. Een aanleiding kan bijvoorbeeld 
+een klik op een link zijn in een verzonden e-mail, de wachttijd geeft vervolgens 
+aan hoeveel tijd er tussen de aanleiding en het uitvoeren van de actie moet zitten. 
+De actie bestaat bijvoorbeeld uit het verzenden van een e-mail of een waarde aanpassen in de database. 
 
-Een aanleiding kan bijvoorbeeld een klik op een link in een verzonden e-mail zijn.
-Vervolgens geeft de wachttijd aan hoeveel tijd er tussen de aanleiding en het uitvoeren van
-de actie moet zitten. Een actie kan bestaan uit het verzenden van een e-mail of het
-aanpassen van een waarde in de database.
+Met andere woorden:
+- Aanleiding - Start de opvolgactie;
+- (Optioneel) conditie die moet worden voldaan voordat aanleiding start;
+- (Optioneel) Wachttijd - Tijd die tussen de start van de opvolgactie en de uitvoer van de actie zit;
+- (Optioneel) conditie die moet worden voldaan voordat actie start;
+- Actie - De actie die wordt uitgevoerd.
 
-Het is ook mogelijk om condities toe te voegen aan een opvolgactie. Daarmee kun je
-controleren of een veld voldoet aan een bepaalde waarde. Wanneer dit het geval is wordt de
-actie uitgevoerd.
+Naast de wachttijd heb je de mogelijkheid om blokken of condities toe te voegen 
+die waar of niet waar moeten zijn voordat de actie wordt uitgevoerd. 
+Je kunt bijvoorbeeld een bestemming checken of een veldwaarde voldoet aan een bepaalde waarde, 
+als dit waar is wordt de actie uitgevoerd. 
 
-De volgorde van opvolgacties ziet er als volgt uit:
+## Opvolgacties op een e-mail
 
-* Een **aanleiding**​ die de opvolgactie start;
-* Een ​**conditie**​ waaraan moet worden voldaan voordat de aanleiding plaatsvindt (optioneel);
-* Een **​wachttijd**​ die het tijdsbestek tussen de start van de opvolgactie en de uitvoering
-van de actie bepaalt;
-* Een **​conditie**​ waaraan moet worden voldaan voordat de actie plaatsvindt (optioneel);
-* Een ​**actie**​ die wordt uitgevoerd.
+In Marketing Suite worden opvolgacties ingesteld in de​ ​'**Follow-up Manager**'​. 
+In deze editor heb je de mogelijkheid om een trigger, een check en een actie toe te voegen aan een flow. 
 
-## Opvolgacties op een e-mail (Marketing Suite)
+In de drag-and-drop-editor kun je opvolgacties aanpassen via: **‘Opvolgacties’** in de toolbar. 
+Je kunt bijvoorbeeld een actie laten uitvoeren als een ontvanger op een bepaalde link in de mail heeft geklikt. 
 
-In de Marketing Suite worden opvolgacties ingesteld in de​ ​'**Follow-up Manager**'​. Hierin heb
-je de mogelijkheid om een trigger, check en actie toe te voegen.
-
-Je kunt opvolgacties in de Drag-and-drop Editor aanpassen door te navigeren naar
-'**Gereedschap**', '**Opvolgacties**'​.
-
-## Opvolgacties op een e-mail (Publisher)
-
-In de Publisher worden opvolgacties op het document ingesteld. Selecteer hiervoor het
-document waarvoor je de opvolgactie wilt instellen en klik in het menu boven de e-mail op
-'**Opvolgacties**'​.
-
-Vervolgens vul je drie elementen in:
-
-* Aanleiding;
-* Wachttijd;
-* Actie.
-
-![Opvolgacties](../images/nl/opvolgacties.png)
+![opvolgactiemail](https://user-images.githubusercontent.com/94605656/166893449-e1a76e3a-744d-475c-b634-4761ce8ebc4b.png)
 
 ## Opvolgacties op een database
 
 Naast opvolgacties op een e-mail kun je binnen Copernica ook opvolgacties instellen op een
-database. Daarbij is de aanleiding bijvoorbeeld het aanmaken of wijzigen van een
-(sub)profiel. Een potentiële actie is het verzenden van een opgemaakte e-mail.
+database. De aanleiding is dan bijvoorbeeld het aanmaken of wijzigen van een (sub)profiel. 
+De actie is bijvoorbeeld het verzenden van een opgemaakte e-mail. 
 
-![Opvolgacties instellen](../images/nl/opvolgactiesinstellen.png)
+Klik op een database en vervolgens op _Opvolgacties_
+
+![opvolgactiedatabase](https://user-images.githubusercontent.com/94605656/166893711-62e41e77-1d62-4e35-8db0-db14cb639267.png)
+
 
 ## Opdracht: Welkomstcampagne met dubbele opt-in
 
-We raden je aan om te werken met een dubbele opt-in. Daarbij geeft een
-ontvanger twee keer toestemming voor het ontvangen van e-mails (bijvoorbeeld de
-nieuwsbrief). Het toevoegen van een dubbele opt-in zorgt structureel voor betere
-e-mailresultaten.
+We raden je aan om te werken met een dubbele opt-in. Dit houdt in dat een profiel zijn inschrijving bevestigd. 
+geeft voor het ontvangen van bijvoorbeeld de nieuwsbrief. 
+Het toevoegen van een dubbele opt-in zorgt structureel voor betere e-mailresultaten. 
 
-Voeg een databaseveld toe en noem deze ​'**Dubbel_Optin**'​. Voeg het veld toe aan de
-nieuwsbriefselectie zodat alleen contactpersonen die zich hebben aangemeld de mailings
-zullen ontvangen. Maak daarbij gebruik van een meerkeuzeveld met de volgende opties:
+Voeg een databaseveld toe voor de dubbele opt-in, noem dit **Dubbel_Optin**, 
+dit is een meerkeuze veld met de opties: 
 
 * 'Nee'
 * 'Ja'
 
-Voeg vervolgens een opvolgactie toe aan de database. Deze bestaat uit:
+Voeg vervolgens een opvolgactie toe op de database. Deze bestaat uit:
 
-* Aanleiding: profiel aangemaakt;
-* Wachttijd​: 0 minuten;
-* Conditie​: het veld ​ '**Nieuwsbrief**'​ is gelijk aan 'Ja';
-* Actie: verzend een e-mail (voor nu selecteer je de trainingsmail).
+- De aanleiding / trigger - Profiel aangemaakt
+- Conditie bestemming checken- Het veld _Nieuwsbrief_ is gelijk aan Ja
+- De actie - Verzend een e-mail (voor nu kun je de trainingsmail selecteren).
 
-Er wordt nu een e-mail verzonden zodra er in de database een nieuw profiel wordt
-aangemaakt waarbij de waarde van het nieuwsbriefveld op 'Ja' staat. In de onderstaande
-afbeelding zie je een voorbeeld.
+Klik vervolgens op Opvolgactie aanpassen om de flow live te zetten. 
+Als er nu in de database een nieuw profiel wordt aangemaakt waarbij de waarde van het veld Nieuwsbrief gelijk is aan Ja,
+dan wordt de e-mail verzonden. Een voorbeeld van zo’n e-mail is bijvoorbeeld:
 
 ![Voorbeeldmail](../images/nl/opvolgactiesvoorbeeldmail.png)
 
-Vervolgens willen we dat de waarde van het veld '**Dubbel_Optin**'​ verandert naar 'Ja' zodra
-de ontvanger zich aanmeldt. Daarvoor maken we in het document de volgende opvolgactie
-aan:
+Maak hiervoor een **“event handler”** aan op het blok **‘Verzend e-mail’** met als event-type Link klik. 
+Voeg een blok **‘check geklikte link’** toe. Waarbij je instelt dat de actie alleen af moet gaan 
+als een ontvanger klikt op een link die ‘bevestiging’ bevat. 
+Voeg een ‘match’ link toe en selecteer het bestemming aanpassen blok. 
+Kies bij aanpassen het veld ‘Dubbel_optin’ en vul als waarde ‘Ja’ in. 
 
-* Aanleiding​: klik op een link die de tekst 'dubbel opt-in' bevat
-* Wachttijd: 0 minuten
-* Conditie: ​'**Nieuwsbrief**'​ is gelijk aan 'Ja'
-* Actie​: wijzig het veld ​'**Dubbel_Optin**'​ naar 'Ja'.
+De opvolgactie ziet er dan als volgt uit:
+
+![opvolgactiewelkom](https://user-images.githubusercontent.com/94605656/166895283-28b61ef1-e1cd-4940-9e28-7336f486cf50.png)
+
+Het veld Dubbele-optin moet worden toegevoegd als conditie aan de Nieuwsbriefselectie, 
+zodat alleen contactpersonen die de aanmelding bevestigd hebben mailings ontvangen.
+
+
