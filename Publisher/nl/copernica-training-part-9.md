@@ -85,11 +85,10 @@ ooit een order hebben geplaatst.
 
 ### Eindopdracht
 
-Selecties en miniselecties geven je de mogelijkheid om je database te segmenteren op
-basis van websitegedrag, ordergegevens of andere data. Dit ga je nu zelf toepassen.
+Miniselecties en selecties geven je de mogelijkheid om je database te segmenteren op websitegedrag, 
+ordergegevens of andere data die je inlaadt in collecties. Dit ga je nu zelf toepassen. 
 
-Maak een selectie aan waar alleen profielen onder vallen die ooit een order hebben geplaatst. 
-Profielen die in de afgelopen 6 maanden een order hebben geplaatst sluit je daarbij uit. 
+_Winbackcampagne_
+Maak een selectie aan met alleen profielen die ooit een order hebben gedaan, maar niet in de afgelopen 6 maanden.
+Maak vervolgens een e-mail op om te verzenden naar deze groep. Het doel van deze e-mail is om klanten te motiveren om opnieuw een aankoop te doen.
 
-Stel vervolgens een e-mail op waarin je de uitgesloten groep motiveert om opnieuw een
-aankoop te doen.

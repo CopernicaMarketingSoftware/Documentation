@@ -4,67 +4,69 @@
 
 Klaar om een e-mail te verzenden? Onthoud daarbij de volgende punten:
 
-* Wanneer je een mailing inplant worden selecties net voor het versturen opnieuw
-opgebouwd. Bij een directe verzending is dit niet het geval;
-* De meest recente versie van het document wordt altijd verzonden;
-* Verstuur altijd een testmail om er zeker van te zijn dat de opmaak en personalisatie
-goed werken. Gebruik hiervoor je standaardbestemming of testselectie.
+Als je klaar bent om een mail te verzenden onthoud dan de volgende punten:
+- Als de mailing ingepland is dan worden selecties net voor het versturen opnieuw opgebouwd, 
+bij een directe verzending is dit niet het geval;
+- De meest recente versie van het template wordt altijd verzonden;
+- Stuur altijd een testmail om er zeker van te zijn dat de mail goed is opgemaakt 
+en dat de personalisatie goed werkt. Je kunt hier bijvoorbeeld je standaardbestemming of test-selectie voor gebruiken. 
+
 
 ### Opdracht
 
-Voordat je een bulkmailing verstuurt is het belangrijk om eerst te testen of de e-mail in orde
-is en succesvol wordt afgeleverd. Het is vervelend als je een mailing naar een groot aantal
-mensen verstuurt en er later achter komt dat er iets niet klopt.
+Voordat je een bulkmailing verstuurt, is het belangrijk om eerst te testen of de e-mail klopt en goed aankomt. 
+Het is vervelend als je een mailing naar veel mensen hebt verstuurd en er later achter komt dat er iets niet goed is.
 
-Wanneer je een document wilt testen selecteer je deze en klik je onder '**Mailings**'​ op
-'**Testmail verzenden**'. De testmail wordt verzonden naar de standaardbestemming. Deze
-heb je een paar stappen terug ingesteld om de gepersonaliseerde weergave van het
-document te kunnen bekijken.
+Wanneer je een bepaalde template wilt testen, selecteer je deze en klik je op **‘Verzendopties’ -> ‘Testmail’**.
+De testmail wordt verzonden naar de standaardbestemming. Deze heb je een paar stappen terug ingesteld
+om de gepersonaliseerde weergave van het document te zien.
 
-Je kunt een bulkmailing verzenden door bij '**E-mailings**'​ het gewenste document te
-selecteren. Vervolgens klik je onder '**Mailings**'​ op '**Bulkmailing verzenden**'​. Hier kun je de
-bestemming, naam en beschrijving van de mailing instellen. Vervolgens controleert de
-wizard of de mailing klopt, waarna je deze kunt versturen.
+Het verzenden van een bulkmailing doe je door het document te selecteren waarmee je een mailing wil versturen 
+en dan te klikken op **‘Verzendopties’ -> Bulkmailing**. Stel hier een bestemming en planning in en klik op verzenden.
 
-De mailing is nu ingeroosterd en is zichtbaar onder '**Mailings**'​, '**Ingeroosterde mailings**'.
+De mail is nu zichtbaar bij ingeroosterde e-mailings: **‘Resultaten’ - ‘Ingeroosterde mailings’**. 
 
-### Opdracht
+_Ga naar ingeroosterde mailings_
+
+### Toepassingsopdracht
 
 Zet een verjaardagscampagne op waarbij er één week voor de verjaardag van een profiel
 een e-mail wordt verzonden. Denk hierbij aan het volgende:
 
-1. Maak een profiel aan dat over één week jarig is (je kunt ook een bestaand profiel
-aanpassen);
-2. Creëer een verjaardagsselectie met profielen die over precies één week
-jarig zijn;
-3. Stel een eenvoudige verjaardagsmail op in de [Publisher-template](https://vicinity.picsrv.net/g/127/0/9558/2e97da82d4b6433bba6a35dbc0b6d2a5/new_template.zip);
-4. Verzend de e-mail dagelijks naar de verjaardagsselectie.
+Zet een verjaardagscampagne op waarbij een mail wordt verzonden een week voordat iemand jarig is. 
+Maak hiervoor de volgende zaken aan: 
+1. Profiel dat over een week jarig is (je kunt ook een bestaand profiel aanpassen); 
+2. Verjaardagselectie waarin profielen vallen die over precies 1 week jarig zijn; 
+3. Maak een simpele verjaardagsmail op in de template; 
+4. Verzend de e-mail dagelijks naar de verjaardag-selectie. 
 
-Heb je de mail verzonden naar een profiel? Bekijk dan de statistieken door te navigeren naar
-'**E-mailings**'​, '**Mailings**',​ '**Statistieken**'.
+
+Heb je de mail verzonden naar een profiel? Bekijk de statistieken door te gaan naar:
+**‘Resultaten’ - ‘Verzonden mailings’**. Hier kun je per mailing de statistieken inzien. 
 
 ## Statistieken
 
-Copernica houdt statistieken bij van verzonden mailings. Daarmee kun je zowel het aantal
-impressies (geopende mails), kliks, unieke kliks en fouten als de doorklikratio van
-verzonden e-mails inzien. 
+Copernica houdt standaard meerdere statistieken bij van verzonden mailings. 
+Je kunt bijvoorbeeld aantal impressies (geopende mails), aantal kliks, 
+aantal unieke kliks, aantal fouten, en de click-through rate van jouw verzonden mail inzien. 
 
-In het geval van een foutmelding is de oorzaak hiervan ook inzichtelijk. Om fouten te 
-voorkomen zul je mogelijk aanpassingen moeten doen op het gebied van databasemanagement.
+In het geval van een fout (bounce) kun je ook inzien wat voor fouten er zijn geregistreerd, 
+het kan zijn dat je iets aan moet passen aan je databasemanagement om de fouten te voorkomen.
 
-## Statistieken in Publisher
+## Marketing Suite
 
-Om in de Publisher statistieken van verzonden mailings te bekijken navigeer je naar
-'**E-mailings**', '**Mailings**', '**Statistieken**'​.
+Om statistieken van verzonden e-mails in te in Marketing Suite ga je naar **‘Resultaten - Verzonden mailings’ **
 
-![Statistieken van verzonden mailings](../images/nl/statistieken.png)
+![resultaten](https://user-images.githubusercontent.com/94605656/166891166-3ac5c51a-b653-4f28-86b7-1ddf90eac66d.png)
 
-Vervolgens heb je de mogelijkheid om filters toe te voegen. Je kunt bijvoorbeeld alle
-mailings bekijken vanaf of tot een bepaalde datum. Het filteren op basis van e-mailresultaten 
-of bulkmailings is ook mogelijk. Navigeer hiervoor naar '**Meer filteropties toevoegen**'.
 
-![Filteropties](../images/nl/filteropties.png)
+Hier heb je de mogelijkheid om een filter in te stellen, zodat je enkel mails uit een specifieke periode, 
+naar een specifieke bestemming of mailings met een minimum of maximum aantal bestellingen in het overzicht ziet. 
 
-Statistieken kunnen op e-mail- of accountniveau worden geëxporteerd. Daarbij is het
-mogelijk om een periodieke export in te plannen, bijvoorbeeld voor het maken van een
-dashboard. Ook kun je resultaten realtime exporteren via de REST of SOAP API.
+Door te klikken op een specifieke mailing kun je een rapportage bekijken met informatie over de impressies, 
+kliks, uitschrijvingen, spamklachten en fouten.
+
+De statistieken kunnen op e-mail- of accountniveau geëxporteerd worden, 
+ook heb je de mogelijkheid om een periodieke export in te plannen, 
+zodat je daar een dashboard van kan maken. Naast een periodieke export 
+kunnen resultaten ook via de REST of SOAP API realtime geëxporteerd worden. 
