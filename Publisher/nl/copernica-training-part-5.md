@@ -17,7 +17,7 @@ Maak een nieuwe drag-and-drop-template aan door te klikken op _Aanmaken - drag-a
 
 ![templateaanmaken](https://user-images.githubusercontent.com/94605656/166653182-ff1a1bcf-e9ce-45c7-abce-4c9771ed8509.png)
 
-Voeg eerst headers toe (onderwerp, afzendernaam en -adres) anders kun je het template niet opslaan. Je kunt hier ook een verborgen preheader toevoegen. Dit is een introtekst die op mobiele apparaten naast of onder het onderwerp worden getoond.
+Voeg eerst headers toe (onderwerp, afzendernaam en -adres) anders kun je de template niet opslaan. Je kunt hier ook een verborgen preheader toevoegen. Dit is een introtekst die op mobiele apparaten naast of onder het onderwerp worden getoond.
 
 ![headers](https://user-images.githubusercontent.com/94605656/166653361-71b4e62d-d8b1-4679-8757-48dfea21f4c1.png)
 
@@ -29,4 +29,4 @@ Kies een profiel in de database en maak hiervan de **‘Standaardbestemming’**
 
 ![Standaardbestemming instellen](../images/nl/standaardbestemming-instellen.png)
 
-Navigeer vervolgens terug naar het template. 
+Navigeer vervolgens terug naar de template. 
