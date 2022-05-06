@@ -2,9 +2,8 @@
 
 ## Personalisatie
 
-In Copernica kun je e-mails personaliseren. Je doet dit door middel van een speciaal stukje code. 
-Deze code wordt, voordat de e-mail is verstuurd, vervangen door de correcte gepersonaliseerde data. 
-De personalisatie is geschreven in Smarty.
+In Marketing Suite kun je e-mails personaliseren. Je doet dit door middel van een speciaal stukje code. 
+Deze code wordt vervangen door de correcte gepersonaliseerde data voordat de e-mail wordt verstuurd.
 
 Personaliseren kan op verschillende manieren: een persoonlijke aanhef met de voor- 
 en achternaam van de relatie, bepaalde content tonen op basis van een interesse, 
@@ -13,8 +12,8 @@ Deze code kan ook gebruikt worden om externe content in te laden,
 denk hierbij aan een productfeed of producten uit een verlaten winkelwagen.
 
 
-Je kunt personalisatie in Copernica herkennen aan de accolades { }. 
-Bijvoorbeeld **{$profile.Voornaam}** toont bij het verzenden van het document
+Je kunt personalisatie in Marketing Suite herkennen aan de accolades { }. 
+Bijvoorbeeld **{$profile.Voornaam}** toont bij het verzenden van de template
 de voornaam van het profiel als de naam van het veld in de database gelijk is aan Voornaam. 
 In dit [artikel](https://www.copernica.com/nl/documentation/smarty) kun je meer lezen over de mogelijkheden van personalisatie. 
 
