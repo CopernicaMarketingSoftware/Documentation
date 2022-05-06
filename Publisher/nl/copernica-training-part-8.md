@@ -42,7 +42,7 @@ Klik op een database en vervolgens op _Opvolgacties_
 
 ## Opdracht: Welkomstcampagne met dubbele opt-in
 
-We raden je aan om te werken met een dubbele opt-in. Dit houdt in dat een profiel zijn inschrijving bevestigd. 
+We raden je aan om te werken met een dubbele opt-in. Dit houdt in dat een profiel zijn inschrijving bevestigt. 
 geeft voor het ontvangen van bijvoorbeeld de nieuwsbrief. 
 Het toevoegen van een dubbele opt-in zorgt structureel voor betere e-mailresultaten. 
 
