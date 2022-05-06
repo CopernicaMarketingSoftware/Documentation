@@ -90,5 +90,5 @@ ordergegevens of andere data die je inlaadt in collecties. Dit ga je nu zelf toe
 
 _Winbackcampagne_
 Maak een selectie aan met alleen profielen die ooit een order hebben gedaan, maar niet in de afgelopen 6 maanden.
-Maak vervolgens een e-mail op waarbij je probeert om de klanten die in deze groep vallen opnieuw motiveert om een aankoop te doen. 
+Maak vervolgens een e-mail op om te verzenden naar deze groep. Het doel van e-mail is om klanten te motiveren om opnieuw een aankoop te doen.
 
