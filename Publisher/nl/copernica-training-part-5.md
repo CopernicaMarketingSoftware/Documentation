@@ -2,7 +2,7 @@
 
 ## Mailings
 
-In Copernica kun je kiezen tussen het gebruiken van de drag-and-drop-editor of werken met een HTML-template. In een HTML-template kan alleen de content aangepast worden, de stijl van de mail staat vast in de HTML-broncode. In deze training behandelen we het werken met een drag-and-drop-template. Zie hier een [video](https://www.youtube.com/watch?v=n2AHLxqrRe0&feature=youtu.be) voor het opmaken van een HTML-template. 
+In Copernica kun je kiezen tussen het gebruiken van de drag-and-drop-editor of werken met een HTML-template. In een HTML-template kan in de interface alleen de content aangepast worden, de stijl van de mail kan alleen aangepast worden in de broncode. In deze training behandelen we het werken met een drag-and-drop-template. Zie hier een [video](https://www.youtube.com/watch?v=n2AHLxqrRe0&feature=youtu.be) voor het opmaken van een HTML-template. 
 
 ## Basics
 
