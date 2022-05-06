@@ -17,7 +17,7 @@ en dat de personalisatie goed werkt. Je kunt hier bijvoorbeeld je standaardbeste
 Voordat je een bulkmailing verstuurt, is het belangrijk om eerst te testen of de e-mail klopt en goed aankomt. 
 Het is vervelend als je een mailing naar veel mensen hebt verstuurd en er later achter komt dat er iets niet goed is.
 
-Wanneer je een bepaald template wilt testen selecteer je deze en klik op **‘Verzendopties’ -> ‘Testmail’**. 
+Wanneer je een bepaalde template wilt testen selecteer je deze en klik op **‘Verzendopties’ -> ‘Testmail’**. 
 De testmail wordt verzonden naar de standaardbestemming. Deze heb je een paar stappen terug ingesteld
 om de gepersonaliseerde weergave van het document te zien.
 
