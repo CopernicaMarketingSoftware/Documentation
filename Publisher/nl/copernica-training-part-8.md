@@ -16,12 +16,12 @@ Met andere woorden:
 
 Naast de wachttijd heb je de mogelijkheid om blokken of condities toe te voegen 
 die waar of niet waar moeten zijn voordat de actie wordt uitgevoerd. 
-Je kunt bijvoorbeeld een bestemming checken of een veldwaarde voldoet aan een bepaalde waarde, 
-als dit waar is wordt de actie uitgevoerd. 
+Je kunt bijvoorbeeld controleren of een veldwaarde van een bestemming overeenkomt met een bepaalde waarde. 
+De actie wordt dan alleen uitgevoerd als dat klopt.
 
 ## Opvolgacties op een e-mail
 
-In Marketing Suite worden opvolgacties ingesteld in de​ ​'**Follow-up Manager**'​. 
+In Marketing Suite worden opvolgacties ingesteld in de​ ​'**Opvolgactie Manager**'​. 
 In deze editor heb je de mogelijkheid om een trigger, een check en een actie toe te voegen aan een flow. 
 
 In de drag-and-drop-editor kun je opvolgacties aanpassen via: **‘Opvolgacties’** in de toolbar. 
@@ -65,7 +65,7 @@ dan wordt de e-mail verzonden. Een voorbeeld van zo’n e-mail is bijvoorbeeld:
 ![Voorbeeldmail](../images/nl/opvolgactiesvoorbeeldmail.png)
 
 Maak hiervoor een **“event handler”** aan op het blok **‘Verzend e-mail’** met als event-type Link klik. 
-Voeg een blok **‘check geklikte link’** toe. Waarbij je instelt dat de actie alleen af moet gaan 
+Voeg een blok **‘check geklikte link’** toe waarbij je instelt dat de actie alleen af moet gaan 
 als een ontvanger klikt op een link die ‘bevestiging’ bevat. 
 Voeg een ‘match’ link toe en selecteer het bestemming aanpassen blok. 
 Kies bij aanpassen het veld ‘Dubbel_optin’ en vul als waarde ‘Ja’ in. 
