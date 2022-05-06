@@ -17,7 +17,7 @@ Met andere woorden:
 Naast de wachttijd heb je de mogelijkheid om blokken of condities toe te voegen 
 die waar of niet waar moeten zijn voordat de actie wordt uitgevoerd. 
 Je kunt bijvoorbeeld controleren of een veldwaarde van een bestemming overeenkomt met een bepaalde waarde. 
-De actie wordt dan alleen uitgevoerd als dat klopt.
+De actie wordt alleen uitgevoerd als dat klopt.
 
 ## Opvolgacties op een e-mail
 
