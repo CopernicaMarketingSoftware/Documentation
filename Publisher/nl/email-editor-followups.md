@@ -63,6 +63,19 @@ Bekijk [hier](./email-editor-followups-advanced-javascript) het artikel over gea
 
 _**Let op**: Wanneer je een opvolgactie voorziet van een wachttijd kan het zo zijn dat het profiel bij de evaluatie (het moment waarop de opvolgactie wordt aangeroepen) wel aan de gestelde condities voldoet, maar op het moment van uitvoering niet meer._
 
+### Rekenen met waardes binnen nummerieke velden
+
+In het blok **Bestemming aanpassen** is het mogelijk om te rekenen met waardes binnen nummerieke velden.  
+Je kunt bij deze optie kiezen voor de volgende opties:
+- Tel waarde op
+- Trek waarde af
+- Vermenigvuldig met waarde
+- Deel door waarde
+
+![Followup](../images/nl/Followup_rekenen.png)
+
+_**Let op**: Dit werkt enkel als je bij de opvolgactie zelf onder __'Doel instellen'__ een vaste database voor de opvolgactie hebt gekozen._
+
 ## Actie aanmaken
 
 _**Let op**: De optie __'Actie aanmaken'__ is alleen toepasbaar op HTML-templates en -documenten._
