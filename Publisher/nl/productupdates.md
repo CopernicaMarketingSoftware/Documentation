@@ -1,4 +1,5 @@
 # Productupdates
+* [Productupdate 01-06-2022 - A/B-tests voor drag-and-drop-templates (bèta) en het vergelijken van statistieken](./productupdate20220601)
 * [Productupdate 08-04-2022 - Verbeterde resultatenmodule en versiegeschiedenis binnen drag-and-drop-templates](./productupdate20220408)
 * [Productupdate 16-03-2022 - Gebruik van feeds en conditionele blokken binnen drag-and-drop-templates](./productupdate20220316)
 * [Productupdate 16-02-2022 - 2048 bit DKIM-sleutels en mediabibliotheken in Marketing Suite](./productupdate20220217)
