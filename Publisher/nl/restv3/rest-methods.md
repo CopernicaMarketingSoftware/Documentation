@@ -89,7 +89,7 @@ Je kunt de methodes gerelateerd aan specifieke (mini)selecties hieronder vinden.
 | POST   | [api.copernica.com/v3/view/$id/views](./rest-post-view-views)                                | Aanmaken van een genestelde selectie         |
 | GET    | [api.copernica.com/v3/view/$id/profileids](./rest-get-view-profileids)                       | Opvragen van alle selectie profiel IDs       |
 | GET    | [api.copernica.com/v3/view/$id/profiles](./rest-get-view-profiles)                           | Opvragen van alle selectie profielen         |
-| GET    | [api.copernica.com/v3/eules](./rest-get-view-rules)                                 | Opvragen van alle selectie regels            |
+| GET    | [api.copernica.com/v3/view/$id/rules](./rest-get-view-rules)                                 | Opvragen van alle selectie regels            |
 | GET    | [api.copernica.com/v3/view/$id/rule/$id](./rest-get-view-rule)                               | Opvragen van een selectie regel              |
 | POST   | [api.copernica.com/v3/view/$id/rules](./rest-post-view-rules)                                | Aanmaken van een selectie regel              |
 | PUT    | [api.copernica.com/v3/view/$id/intentions](./rest-put-view-intentions)                       | Updaten van de intenties van de selectie     |
