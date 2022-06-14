@@ -1,10 +1,10 @@
-# REST API: POST miniview intentions
+# REST API: PUT miniview intentions
 
 Intentions geven aan welke communicatie methoden toegestaan zijn voor deze 
 miniselectie. De intentions voor email, sms, fax en pdf kunnen allemaal aan of 
 uitgezet worden, om te voorkomen dat er per ongeluk mailings worden verstuurd.
 
-De HTTP POST methode om de intentions van een miniselectie aan te passen 
+De HTTP PUT methode om de intentions van een miniselectie aan te passen 
 is beschikbaar op het volgende adres:
 
 `https://api.copernica.com/v3/miniview/$id/intentions?access_token=xxxx`
@@ -49,7 +49,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->post("miniview/{$miniviewID}/intentions", $data);
+$api->put("miniview/{$miniviewID}/intentions", $data);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
@@ -57,6 +57,3 @@ Dit voorbeeld vereist de [REST API klasse](rest-php).
 ## Meer informatie
 
 * [Overzicht van alle REST API calls](./rest-api)
-* [POST database intentions](./rest-post-database-intentions)
-* [POST view intentions](./rest-post-view-intentions)
-* [POST collection intentions](./rest-post-collection-intentions)
