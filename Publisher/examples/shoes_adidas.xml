@@ -1,0 +1,29 @@
+<CATALOG>
+	<SHOE>
+		<TITLE>CONTINENTAL 80 SCHOENEN</TITLE>
+		<BRAND>Adidas </BRAND>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newadidas1.jpg</IMG>
+		<OLDPRICE>99,95</OLDPRICE>
+		<NEWPRICE>89,95</NEWPRICE>
+		<COLOR>Wit </COLOR>
+		<url>https://www.adidas.nl/continental-80-schoenen/G27706.html</url>
+	</SHOE>
+	<SHOE>
+		<TITLE>SUPERSTAR SCHOENEN</TITLE>
+		<BRAND>Adidas</BRAND>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newadidas2.jpg</IMG>
+		<OLDPRICE>90,00</OLDPRICE>
+		<NEWPRICE>84,99</NEWPRICE>
+		<COLOR>Wit Zwart </COLOR>
+		<url>https://www.adidas.nl/superstar-schoenen/C77124.html</url>
+	</SHOE>
+	<SHOE>
+		<TITLE>FOREST GROVE SCHOENEN</TITLE>
+		<BRAND>Adidas</BRAND>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newadidas3.jpg</IMG>
+		<OLDPRICE>79,95</OLDPRICE>
+		<NEWPRICE>55,90</NEWPRICE>
+		<url>https://www.adidas.nl/forest-grove-schoenen/CG5675.html</url>
+		<COLOR>Blauw</COLOR>
+	</SHOE>
+</CATALOG>

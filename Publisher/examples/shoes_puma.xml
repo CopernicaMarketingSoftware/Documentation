@@ -1,0 +1,29 @@
+<CATALOG>
+	<SHOE>
+		<TITLE>Suede Classic sneakers</TITLE>
+		<BRAND>Puma </BRAND>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newpuma1.jpg</IMG>
+		<OLDPRICE>80,00</OLDPRICE>
+		<NEWPRICE>70,00</NEWPRICE>
+		<COLOR> Blauw Geel </COLOR>
+		<url>https://nl-eu.puma.com/nl/en/pd/suede-classic-sneakers/365347.html?dwvar_365347_color=Ponderosa%20Pine-Peacoat</url>
+	</SHOE>
+	<SHOE>
+		<TITLE>Classics California sneakers</TITLE>
+		<BRAND>Puma</BRAND>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newpuma2.jpg</IMG>
+		<OLDPRICE>90,00</OLDPRICE>
+		<NEWPRICE>84,99</NEWPRICE>
+		<COLOR> Zwart </COLOR>
+		<url>https://nl-eu.puma.com/nl/en/pd/classics-california-sneakers/369288.html?dwvar_369288_color=P%20Black-P%20White-P%20Black</url>
+	</SHOE>
+	<SHOE>
+		<TITLE>Sneakers met suède rand</TITLE>
+		<BRAND>Puma</BRAND>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newpuma3.jpg</IMG>
+		<OLDPRICE>90,00</OLDPRICE>
+		<NEWPRICE>79,90</NEWPRICE>
+		<url>https://nl-eu.puma.com/nl/en/pd/suede-trim-sneakers/369639.html?dwvar_369639_color=Whisper%20White-White-%20Gold</url>
+		<COLOR> Wit goud</COLOR>
+	</SHOE>
+</CATALOG>

@@ -1,0 +1,29 @@
+<CATALOG>
+	<SHOE>
+		<TITLE>Nike Air Zoom Pegasus 35</TITLE>
+		<BRAND>Nike </BRAND>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newnike1.jpg</IMG>
+		<OLDPRICE>80,00</OLDPRICE>
+		<NEWPRICE>70,00</NEWPRICE>
+		<COLOR> Blauw </COLOR>
+		<url>https://www.nike.com/nl/t/air-zoom-pegasus-35-nathan-bell-hardloopschoen-heren-kX9NZL/942851-404</url>
+	</SHOE>
+	<SHOE>
+		<TITLE>Nike SB Zoom Bruin Low</TITLE>
+		<BRAND>Nike</BRAND>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newnike2.jpg</IMG>
+		<OLDPRICE>90,00</OLDPRICE>
+		<NEWPRICE>84,99</NEWPRICE>
+		<COLOR>Bruin </COLOR>
+		<url>https://www.nike.com/nl/t/sb-zoom-bruin-low-skateschoen-dames-b9MDz9</url>
+	</SHOE>
+	<SHOE>
+		<TITLE>Nike Court Royale</TITLE>
+		<BRAND>Nike</BRAND>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newnike3.jpg</IMG>
+		<OLDPRICE>55,00</OLDPRICE>
+		<NEWPRICE>45,90</NEWPRICE>
+		<url>https://www.nike.com/nl/t/court-royale-herenschoen-KyTwJwgV</url>
+		<COLOR>Wit</COLOR>
+	</SHOE>
+</CATALOG>
