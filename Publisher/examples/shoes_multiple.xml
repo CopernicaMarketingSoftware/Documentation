@@ -1,0 +1,29 @@
+<CATALOG>
+	<SHOE>
+		<TITLE>WOMEN'S CARNABY EVO BL LEATHER TRAINERS</TITLE>
+		<BRAND>Lacoste </BRAND>
+		<IMG>http://ddijkzeul.nl/lacoste.jpg</IMG>
+		<OLDPRICE>99,95</OLDPRICE>
+		<NEWPRICE>88,00</NEWPRICE>
+		<COLOR> Wit </COLOR>
+		<url>http://www.lacoste.nl</url>
+	</SHOE>
+	<SHOE>
+		<TITLE>All Star Chuck Taylor High-Top</TITLE>
+		<BRAND>Converse</BRAND>
+		<IMG>http://ddijkzeul.nl/newConverse.jpg</IMG>
+		<OLDPRICE>60,00</OLDPRICE>
+		<NEWPRICE>54,99</NEWPRICE>
+		<COLOR> Rood </COLOR>
+		<url>http://www.converse.nl</url>
+	</SHOE>
+	<SHOE>
+		<TITLE>SNEAKER MET SIGNATURE-TAPE</TITLE>
+		<BRAND>Hilfiger</BRAND>
+		<IMG>http://ddijkzeul.nl/newHilfiger.jpg</IMG>
+		<OLDPRICE>85,00</OLDPRICE>
+		<NEWPRICE>79,90</NEWPRICE>
+		<url>http://www.hilfiger.nl</url>
+		<COLOR> Wit </COLOR>
+	</SHOE>
+</CATALOG>
