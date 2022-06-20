@@ -2,7 +2,7 @@
 	<SHOE>
 		<TITLE>Nike Air Zoom Pegasus 35</TITLE>
 		<BRAND>Nike </BRAND>
-		<IMG>https://ddijkzeul.nl/newnike1.jpg</IMG>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newnike1.jpg</IMG>
 		<OLDPRICE>80,00</OLDPRICE>
 		<NEWPRICE>70,00</NEWPRICE>
 		<COLOR> Blauw </COLOR>
@@ -11,7 +11,7 @@
 	<SHOE>
 		<TITLE>Nike SB Zoom Bruin Low</TITLE>
 		<BRAND>Nike</BRAND>
-		<IMG>https://ddijkzeul.nl/newnike2.jpg</IMG>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newnike2.jpg</IMG>
 		<OLDPRICE>90,00</OLDPRICE>
 		<NEWPRICE>84,99</NEWPRICE>
 		<COLOR>Bruin </COLOR>
@@ -20,7 +20,7 @@
 	<SHOE>
 		<TITLE>Nike Court Royale</TITLE>
 		<BRAND>Nike</BRAND>
-		<IMG>https://ddijkzeul.nl/newnike3.jpg</IMG>
+		<IMG>https://raw.githubusercontent.com/CopernicaMarketingSoftware/Documentation/master/Publisher/examples/images/newnike3.jpg</IMG>
 		<OLDPRICE>55,00</OLDPRICE>
 		<NEWPRICE>45,90</NEWPRICE>
 		<url>https://www.nike.com/nl/t/court-royale-herenschoen-KyTwJwgV</url>
