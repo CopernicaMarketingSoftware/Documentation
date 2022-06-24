@@ -1,4 +1,4 @@
-# REST API: POST Publisher templates
+# REST API: POST templates (Publisher)
 
 Methode om een nieuw template aan te maken. Dit is een HTTP POST-methode
 naar het volgende adres:
