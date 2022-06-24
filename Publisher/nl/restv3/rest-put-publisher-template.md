@@ -12,7 +12,7 @@ of de naam van de template die je wilt bewerken.
 De volgende variabelen kunnen in de body van het HTTP PUT-commando worden
 geplaatst:
 
-* **name**: naam van de nieuw aan te maken template
+* **name**: naam van de bij te werken template
 * **description**: omschrijving van de template
 * **from_address**: array met 'name' en 'email' voor het afzenderadres
 * **subject**: onderwerp van de template
