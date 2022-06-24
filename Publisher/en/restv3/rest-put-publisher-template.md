@@ -11,7 +11,7 @@ Replace the `$id` by the identifier of the template you want to edit.
 
 The following variables can be used in the body of the HTTP PUT request:
 
-* **name**: name of the new template 
+* **name**: name of the template 
 * **description**: description of the template
 * **from_address**: array with a 'name' and 'email' for the from address
 * **subject**: subject of the template
