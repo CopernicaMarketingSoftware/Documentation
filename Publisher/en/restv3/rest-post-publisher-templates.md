@@ -12,7 +12,7 @@ After a successful call the ID of the created request is returned.
 * **name**: name of the new template (**required**)
 * **description**: description of the template
 * **from_address**: array with a 'name' and 'email' for the from address
-* * **subject**: subject of the template
+* **subject**: subject of the template
 * **source**: the HTML source of the template (**required**)
 * **amp**: the AMP source of the template
 * **text**: the text version of the template
