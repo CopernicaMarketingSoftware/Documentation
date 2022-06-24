@@ -13,7 +13,13 @@ The method returns a JSON object containing the following information:
 
 * **id**: The ID of the template.    
 * **name**: The name of the template.
+* **description**: The description of the template.
+* **from_address**: The from address of the template.
+* **subject**: The subject of the template.
 * **archived**: The archive status of the template.
+
+To get the HTML source of the template you can add `source=true` to the URL:
+`https://api.copernica.com/v3/publisher/template/$id?source=true&access_token=xxxx`
 
 ### JSON Example
 
@@ -23,7 +29,11 @@ The JSON for a template will look something like this:
 {  
    "id":"551",
    "name":"TestTemplate",
-   "archived":false
+   "description":"",
+   "from_address": "\"Test\" <test@copernica.com>",
+   "subject": "This is a test template",
+   "archived": false,
+   "source": "<html><body>Test</body></html>"
 }
 ```
 
@@ -48,5 +58,3 @@ This example requires the [REST API class](./rest-php)
 ## More information
 
 * [Overview of all REST API calls](./rest-api)
-* [Retrieve a Publisher document](./rest-get-publisher-document)
-* [Retrieve all Publisher templates](./rest-get-publisher-templates)
