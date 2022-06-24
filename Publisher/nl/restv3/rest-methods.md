@@ -226,7 +226,9 @@ documenten, templates en mailings.
 | Type   | Adres                                                                                                            | Omschrijving                                       |
 |--------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
 | GET    | [api.copernica.com/v3/publisher/documents](./rest-get-publisher-documents)                                       | Opvragen van alle documenten                       |
+| POST   | [api.copernica.com/v3/publisher/documents](./rest-post-publisher-documents)                                      | Aanmaken van een document                       |
 | GET    | [api.copernica.com/v3/publisher/document/$id](./rest-get-publisher-document)                                     | Opvragen van document informatie                   |
+| PUT    | [api.copernica.com/v3/publisher/document/$id](./rest-put-publisher-document)                                     | Bijwerken van een document                         |
 | DELETE | [api.copernica.com/v3/publisher/document/$id](./rest-delete-publisher-document)                                  | Verwijderen van een document                       |
 | GET    | [api.copernica.com/v3/publisher/document/$id/emailings](./rest-get-publisher-document-emailings)                 | Opvragen van mailings voor een document            |
 | GET    | [api.copernica.com/v3/publisher/document/$id/statistics](./rest-get-publisher-document-statistics)               | Opvragen van statistieken voor een document        |
