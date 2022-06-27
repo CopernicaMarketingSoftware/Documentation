@@ -266,7 +266,9 @@ templates and mailings.
 | Type   | Address                                                                                              | Description                                            |
 |--------|------------------------------------------------------------------------------------------------------|--------------------------------------------------------|
 | GET    | [api.copernica.com/v3/publisher/documents](./rest-get-publisher-documents)                           | Fetch all documents                                    |
+| POST   | [api.copernica.com/v3/publisher/documents](./rest-post-publisher-documents)                          | Create a new document                                    |
 | GET    | [api.copernica.com/v3/publisher/document/$id](./rest-get-publisher-document)                         | Fetch the document information                         |
+| PUT    | [api.copernica.com/v3/publisher/document/$id](./rest-put-publisher-document)                         | Update the document information                         |
 | DELETE | [api.copernica.com/v3/publisher/document/$id](./rest-delete-publisher-document)                      | Delete a document                                   |
 | GET    | [api.copernica.com/v3/publisher/document/$id/emailings](./rest-get-publisher-document-emailings)     | Fetch all emailings for a document                     |
 | GET    | [api.copernica.com/v3/publisher/document/$id/statistics](./rest-get-publisher-document-statistics)   | Fetch the statistics for a document                    |
