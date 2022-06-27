@@ -37,7 +37,7 @@ Hieronder vind je een voorbeeld van zo'n JSON-object:
 {  
    "destinations":"13801",
    "abuses":{  
-      "total":0
+      "total":0,
       "unique":0
    },
    "clicks":{  
@@ -55,7 +55,7 @@ Hieronder vind je een voorbeeld van zo'n JSON-object:
       "unique":18
    },
    "retries":{  
-      "total":0
+      "total":0,
       "unique":0
    },
    "unsubscribes":{  
