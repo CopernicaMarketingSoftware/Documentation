@@ -231,7 +231,9 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v3/publisher/document/$id/emailings](./rest-get-publisher-document-emailings)                 | Opvragen van mailings voor een document            |
 | GET    | [api.copernica.com/v3/publisher/document/$id/statistics](./rest-get-publisher-document-statistics)               | Opvragen van statistieken voor een document        |
 | GET    | [api.copernica.com/v3/publisher/templates](./rest-get-publisher-templates)                                       | Opvragen van alle templates                        |
+| POST   | [api.copernica.com/v3/publisher/templates](./rest-post-publisher-templates)                                      | Aanmaken van een nieuw template                       |
 | GET    | [api.copernica.com/v3/publisher/template/$id](./rest-get-publisher-template)                                     | Opvragen van template informatie                   |
+| PUT    | [api.copernica.com/v3/publisher/template/$id](./rest-put-publisher-template)                                     | updaten van template informatie                   |
 | DELETE | [api.copernica.com/v3/publisher/template/$id](./rest-delete-publisher-template)                                  | Verwijderen van een template                       |
 | GET    | [api.copernica.com/v3/publisher/template/$id/emailings](./rest-get-publisher-template-emailings)                 | Opvragen van mailings voor een template            |
 | GET    | [api.copernica.com/v3/publisher/template/$id/emailingdocuments](./rest-get-publisher-template-documents)         | Opvragen van alle documenten voor een template     |

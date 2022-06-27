@@ -1,52 +1,60 @@
 # REST API: GET template (Publisher)
 
-Je kunt de REST API gebruiken om een overzicht van een emailing template op te vragen 
-door een HTTP GET verzoek te versturen naar de volgende URL:
+Dit is een methode om gegevens van een template op te vragen. 
+De methode is aan te roepen met een HTTP GET-request naar de volgende URL:
 
 `https://api.copernica.com/v3/publisher/template/$id?access_token=xxxx`
 
-Hier moet `$id` vervangen worden door de ID van het emailing template.
+Als `$id` kun je de numerieke identifier van een template opgeven.
 
-## Teruggegeven velden
+## Geretourneerde velden
 
-Deze methode geeft een JSON object terug dat de volgende informatie bevat:
+| Variabele         | Omschrijving                                                                  |
+|-------------------|-------------------------------------------------------------------------------|
+| **id**            | Unieke identifier van de template.                                            |
+| **name**          | Naam van de template.                                                         |
+| **description**   | Omschrijving van de template.                                                 |
+| **from_address**  | Afzenderadres van de template.                                                |
+| **subject**       | Onderwerp van de template.                                                    |
+| **archived**      | Geeft aan of de template wel (1) of niet (null) gearchiveerd is.              |
+                                                                              
+Om de HTML-broncode op te halen kun je `source=true` toevoegen aan de URL:
 
-* **id**: De ID van de template.    
-* **name**: De naam van het template. 
-* **archived**: De archiefstatus van de template ('true' voor gearchiveerd en 'false' voor niet gearchiveerd).
+``https://api.copernica.com/v3/publisher/template/$id?source=true&access_token=xxxx``
 
 ### JSON voorbeeld
 
 De JSON voor een template ziet er bijvoorbeeld zo uit:
 
 ```json
-{  
-   "id":"551",
-   "name":"TestTemplate",
-   "archived":false
+{
+    "id": "145",
+    "name": "Dit is een test template",
+    "description": "",
+    "from_address": "\"Test\" <Test@copernica.com>",
+    "subject": "Dit is een test",
+    "archived": false,
+    "source": "<html><body>Test</body></html>"
 }
 ```
 
-## PHP voorbeeld
+## Voorbeeld in PHP
 
-Het onderstaande script demonstreert hoe je deze API methode gebruikt. 
-Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
+Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
 
 ```php
 // vereiste scripts
-require_once('copernica_rest_api.php');
+require_once("copernica_rest_api.php");
 
-// verander dit naar je access token
+// verander dit in je access token
 $api = new CopernicaRestAPI("your-access-token", 3);
 
-// voer het verzoek uit
-print_r($api->get("publisher/template/{$templateID}"));
+// voer de opdracht uit en print het resultaat
+print_r($api->get("template/{$templateID}"));
 ```
 
-Dit voorbeeld vereist de [REST API klasse](./rest-php)
+Dit voorbeeld vereist de [REST API-klasse](rest-php).
 
 ## Meer informatie
 
-* [Overzicht van alle REST API calls](./rest-api)
-* [Opvragen van een document](./rest-get-publisher-document)
-* [Opvragen van alle templates](./rest-get-publisher-templates)
+* [Overzicht van alle API-calls](rest-api)
