@@ -40,7 +40,7 @@ The JSON output will look something like this:
 {  
    "destinations":"13801",
    "abuses":{  
-      "total":0
+      "total":0,
       "unique":0
    },
    "clicks":{  
@@ -58,7 +58,7 @@ The JSON output will look something like this:
       "unique":18
    },
    "retries":{  
-      "total":0
+      "total":0,
       "unique":0
    },
    "unsubscribes":{  
