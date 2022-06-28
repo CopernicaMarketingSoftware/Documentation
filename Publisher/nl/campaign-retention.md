@@ -1,5 +1,5 @@
-# Retentie campagnes
-Naast nieuwe klanten werven is het ook belangrijk om je huidige klantenbestand te onderhouden. Dit doen we door middel van retentie campagnes, hieronder staat beschreven hoe je een aantal retentie campagnes kan aanmaken in Copernica. Voor meer achtergrondinformatie over de retentie campagnes lees dan onze [Campagne Uitgelicht blog](https://www.copernica.com/nl/blog/post/campagne-uitgelicht-editie-4-retentiecampagnes) over retentie campagnes. 
+# Retentiecampagnes
+Naast nieuwe klanten werven is het ook belangrijk om je huidige klantenbestand te onderhouden. Dit doen we door middel van retentiecampagnes, hieronder staat beschreven hoe je een aantal retentiecampagnes kan aanmaken in Copernica. Voor meer achtergrondinformatie over de retentiecampagnes lees dan onze [Campagne Uitgelicht blog](https://www.copernica.com/nl/blog/post/campagne-uitgelicht-editie-4-retentiecampagnes) over retentiecampagnes. 
 
 ## Loyaliteit
 Eén effectieve manier waarmee je klanten kan stimuleren om herhaalaankopen te doen, is door een loyaliteitsprogramma uit te rollen, bijvoorbeeld door klanten punten toe te kennen bij elke aankoop. Hiervoor hebben we wel een  [collectie](./database-collections)  nodig waarin alle gekochte orders van een klant staan, daar gaan we in dit geval ook vanuit.  We gaan een veld maken in Copernica die geupdate wordt nadat een order voltooid is. 
