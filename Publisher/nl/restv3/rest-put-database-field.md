@@ -60,7 +60,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 // selectieveld met naam "extra-veld", de opties A, B en C 
 // waarvan C de standaard is
 $data = array(
-    'name'      =>  'extra-veld',
+    'name'      =>  'extra_veld',
     'type'      =>  'select',
     'value'     =>  'A\nB\nC*'
 );
