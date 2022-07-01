@@ -55,10 +55,10 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 2);
 
 // data voor het verzoek:
-// selectieveld met naam "extra-veld", de opties A, B en C 
+// selectieveld met naam "extra_veld", de opties A, B en C 
 // waarvan C de standaard is
 $data = array(
-    'name'      =>  'extra-veld',
+    'name'      =>  'extra_veld',
     'type'      =>  'select',
     'value'     =>  'A\nB\nC*'
 );
