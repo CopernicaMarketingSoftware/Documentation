@@ -24,7 +24,7 @@ number of abuses.
 number of clicks and number of unique clicks respectively.
 * **deliveries**: An array with field 'total' for the total 
 number of deliveries.
-* **errors**: An array with field 'total' for the total 
+* **errors**: An array with fields 'total' and 'unique' for the total 
 number of errors.
 * **impressions**: An array with fields 'total' and 'unique' for the 
 total number impressions and number of unique impressions respectively.
@@ -51,7 +51,8 @@ The JSON output will look something like this:
       "total":39
    },
    "errors":{  
-      "total":0
+      "total":0,
+      "unique":0
    },
    "impressions":{  
       "total":24,

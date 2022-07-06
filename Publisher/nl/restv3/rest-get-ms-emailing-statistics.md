@@ -23,7 +23,7 @@ Het JSON-object bevat de volgende velden:
 * **clicks**: Array met de velden 'total' en 'unique' voor het aantal kliks 
 en het aantal unieke kliks respectievelijk.
 * **deliveries**: Array met het veld 'total' voor het aantal deliveries.
-* **errors**: Array met het veld 'total' voor het aantal errors.
+* **errors**: Array met de velden 'total' en 'unique' voor het aantal errors.
 * **impressions**: Array met de velden 'total' en 'unique' voor het aantal impressies 
 en het aantal unieke impressies respectievelijk.
 * **retries**: Array met het veld 'total' en 'unique' voor het aantal retries.
@@ -48,7 +48,8 @@ Hieronder vind je een voorbeeld van zo'n JSON-object:
       "total":39
    },
    "errors":{  
-      "total":0
+      "total":0,
+      "unique":0
    },
    "impressions":{  
       "total":24,
