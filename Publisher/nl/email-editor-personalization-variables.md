@@ -63,6 +63,27 @@ de volgende members:
 * **{$subprofile.profile}**: het profiel object (zie hierboven) waar dit subprofiel toe behoort
 * **{$subprofile.*veldnaam*}**: elk veld van het subprofiel is toegankelijk via {$subprofile.*veldnaam*}
 
+### Template gegevens
+Het {$template} object bevat alle informatie over je template:
+
+* **{$template.id}** ID van het template
+* **{$template.name}** Naam van het template
+* **{$template.created}** Tijdstip van het aanmaken van het template
+* **{$template.lastmodified}** Tijdstip van de laatste wijziging aan het template
+
+### Mailing gegevens
+Het {$mailing} object is wat uitgebreider, en bevat allerlei instellingen
+van de mailing waartoe het bericht behoort:
+
+* **{$mailing.sendtime}**: tijdstip waarop de mailing wordt verstuurd, in YYYY-MM-DD hh:mm:ss format
+* **{$mailing.sendtimestamp}**: zelfde als de *sendtime* property, maar dan als unix timestamp (aantal seconden sinds 1 jan 1970)
+* **{$mailing.snapshot.name}**: de naam van het document dat voor de mailing wordt gebruikt
+* **{$mailing.snapshot.created}**: tijdstip waarop een snapshot van het document is gemaakt (YYYY-MM-DD hh:mm::ss notatie)
+* **{$mailing.snapshot.subject}**: onderwerp van de mailing
+* **{$mailing.type}**: geeft het type mailign aan ('mailing', 'followup', 'abtest' of 'splitrun')
+* **{$mailing.mass}**: geeft aan of de mailing als bulkmailing is verzonden (true of false)
+* **{$mailing.test}**: geeft aan of de mailing als testmailing is verzonden (true of false)
+
 ## Personalisatie modifiers
 Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.

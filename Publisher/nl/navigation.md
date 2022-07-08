@@ -19,7 +19,7 @@
     * [Drag-and-drop-templates](./email-editor-drag-and-drop-templates.md)
     * [Drag-and-drop-templates (oud)](./emailings-ms-templates.md)
     * [HTML-templates](./email-editor-html-templates.md)
-    * [Personalisatie](./email-editor-personalization.md)
+    * [Personalisatie](./email-editor-personalization-variables.md)
     * [Uitschrijflink en webversie](./email-editor-unsubscribelink-webversion.md)
     * [Headers](./email-editor-headers.md)
     * [Testen](./email-editor-tests.md)
