@@ -25,7 +25,7 @@ De JSON voor het ophalen van textblokken ziet er bijvoorbeeld zo uit:
 ```json
 {
     "id": "1",
-    "parent": ""
+    "parent": "",
     "name": "textlock",
     "iteration": "0",
     "condition": "",
