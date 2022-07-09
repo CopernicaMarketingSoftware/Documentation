@@ -8,8 +8,12 @@ Voor het personaliseren van (sub)profielgegevens gebruik je de Smarty-code *prof
 - {$profile.Email}
 - {$subprofile.Email}
 
-Meer informatie hierover vind je in het aparte [Smarty-personalisatie](./smarty) gedeelte van onze documentatie.  
-Overige artikelen:
+### Meer informatie:
+- [Personalisatie binnen drag-and-drop-templates](./email-editor-personalization-variables.md)
+- [Personalisatie binnen HTML-templates/-documenten](./publisher-personalization-variables)
+- [Smarty-personalisatie](./smarty)
+
+### Overige artikelen:
 - [Functies](./smarty-personalization-functions)
 - [Modifiers](./filter-data-with-smarty-modifiers)
 - [Extra personalisatievariabelen](./extra-personalization-variables)
