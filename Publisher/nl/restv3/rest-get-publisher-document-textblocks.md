@@ -45,7 +45,7 @@ require_once("copernica_rest_api.php");
 $api = new CopernicaRestAPI("your-access-token", 3);
 
 // voer de opdracht uit en print het resultaat
-print_r($api->get("document/{$documentID}/textblocks"));
+print_r($api->get("publisher/document/{$documentID}/textblocks"));
 ```
 
 Dit voorbeeld vereist de [REST API-klasse](rest-php).
