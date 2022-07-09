@@ -27,7 +27,7 @@ De JSON voor het ophalen van loopblokken ziet er bijvoorbeeld zo uit:
   "data": [
      {
         "id": "1",
-        "parent": ""
+        "parent": "",
         "name": "loopblock1",
         "iteration": "0",
         "condition": "",
