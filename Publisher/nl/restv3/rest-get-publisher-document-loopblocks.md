@@ -14,7 +14,7 @@ Als `$id` kun je de numerieke identifier van een document opgeven.
 | **id**            | Unieke identifier van het loopblok.                                           |
 | **parent**        | Unieke identifier van het bovenliggende loopblok.                             |
 | **name**          | Naam van het loopblok.                                                        |
-| **iteration**     | Aantal iteraties van het loopblok.                                            |
+| **iteration**     | Iteraties van het loopblok.                                            |
 | **condition**     | Eventuele condities van het loopblok.                                         |
 | **iterations**    | Aantal iteraties van het loopblok.                                            | 
 
@@ -57,7 +57,7 @@ require_once("copernica_rest_api.php");
 $api = new CopernicaRestAPI("your-access-token", 3);
 
 // voer de opdracht uit en print het resultaat
-print_r($api->get("document/{$documentID}/loopblocks"));
+print_r($api->get("publisher/document/{$documentID}/loopblocks"));
 ```
 
 Dit voorbeeld vereist de [REST API-klasse](rest-php).
