@@ -80,7 +80,7 @@ van de mailing waartoe het bericht behoort:
 * **{$mailing.snapshot.name}**: de naam van het document dat voor de mailing wordt gebruikt
 * **{$mailing.snapshot.created}**: tijdstip waarop een snapshot van het document is gemaakt (YYYY-MM-DD hh:mm::ss notatie)
 * **{$mailing.snapshot.subject}**: onderwerp van de mailing
-* **{$mailing.type}**: geeft het type mailign aan ('mailing', 'followup', 'abtest' of 'splitrun')
+* **{$mailing.type}**: geeft het type mailing aan ('mailing', 'followup', 'abtest' of 'splitrun')
 * **{$mailing.mass}**: geeft aan of de mailing als bulkmailing is verzonden (true of false)
 * **{$mailing.test}**: geeft aan of de mailing als testmailing is verzonden (true of false)
 
