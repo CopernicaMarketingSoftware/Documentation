@@ -272,6 +272,9 @@ templates and mailings.
 | DELETE | [api.copernica.com/v3/publisher/document/$id](./rest-delete-publisher-document)                      | Delete a document                                   |
 | GET    | [api.copernica.com/v3/publisher/document/$id/emailings](./rest-get-publisher-document-emailings)     | Fetch all emailings for a document                     |
 | GET    | [api.copernica.com/v3/publisher/document/$id/statistics](./rest-get-publisher-document-statistics)   | Fetch the statistics for a document                    |
+| GET    | [api.copernica.com/v3/publisher/document/$id/loopblocks](./rest-get-publisher-document-loopblocks)   | Fetch the loop blocks for a document                    |
+| GET    | [api.copernica.com/v3/publisher/document/$id/textblocks](./rest-get-publisher-document-textblocks)   | Fetch the text blocks for a document                    |
+| GET    | [api.copernica.com/v3/publisher/document/$id/imageblocks](./rest-get-publisher-document-imageblocks) | Fetch the image blocks for a document                    |
 | GET    | [api.copernica.com/v3/publisher/templates](./rest-get-publisher-templates)                           | Fetch all templates                                    |
 | POST   | [api.copernica.com/v3/publisher/templates](./rest-post-publisher-templates)                          | Create a new template                                    |
 | GET    | [api.copernica.com/v3/publisher/template/$id](./rest-get-publisher-template)                         | Fetch the template information                         |
