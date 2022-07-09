@@ -24,7 +24,7 @@ De JSON voor het ophalen van afbeeldingsblokken ziet er bijvoorbeeld zo uit:
 ```json
 {
     "id": "1",
-    "parent": ""
+    "parent": "",
     "name": "imageblock",
     "iteration": "0",
     "condition": "",
