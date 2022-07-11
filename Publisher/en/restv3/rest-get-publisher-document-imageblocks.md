@@ -11,8 +11,8 @@ Where `$id` should be replaced with the ID of the emailing document.
 
 The method returns a JSON object containing the following information:
 
-* **id**: The ID of the image block.    
-* **parent**: The ID of the parent image block
+* **ID**: The ID of the image block.    
+* **parentID**: The ID of the parent image block
 * **name**: The name of the image block.
 * **iteration**: Iteration where the image block is in.
 * **condition**: Conditions of the image block.
@@ -21,8 +21,8 @@ The method returns a JSON object containing the following information:
 
 ```json
 {
-    "id": "1",
-    "parent": "",
+    "ID": "1",
+    "parentID": "",
     "name": "imageblock",
     "iteration": "0",
     "condition": "",
