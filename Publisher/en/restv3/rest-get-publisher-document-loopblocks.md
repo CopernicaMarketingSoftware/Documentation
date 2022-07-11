@@ -11,8 +11,8 @@ Where `$id` should be replaced with the ID of the emailing document.
 
 The method returns a JSON object containing the following information:
 
-* **id**: The ID of the loop block.    
-* **parent**: The ID of the parent loop block
+* **ID**: The ID of the loop block.    
+* **parentID**: The ID of the parent loop block
 * **name**: The name of the loop block.
 * **iteration**: Iteration where the loop block is in.
 * **condition**: Conditions of the loop block.
@@ -24,16 +24,16 @@ The method returns a JSON object containing the following information:
 {
   "data": [
      {
-        "id": "1",
-        "parent": "",
+        "ID": "1",
+        "parentID": "",
         "name": "loopblock1",
         "iteration": "0",
         "condition": "",
         "iterations": "1"
     },
     {
-        "id": "2",
-        "parent": "1",
+        "ID": "2",
+        "parentID": "1",
         "name": "loopblock2",
         "iteration": "1",
         "condition": "",
