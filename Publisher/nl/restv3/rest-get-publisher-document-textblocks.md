@@ -11,8 +11,8 @@ Als `$id` kun je de numerieke identifier van een document opgeven.
 
 | Variabele         | Omschrijving                                                                  |
 |-------------------|-------------------------------------------------------------------------------|
-| **id**            | Unieke identifier van het textblok.                                           |
-| **parent**        | Unieke identifier van het bovenliggende textblok.                             |
+| **ID**            | Unieke identifier van het textblok.                                           |
+| **parentID**        | Unieke identifier van het bovenliggende textblok.                             |
 | **name**          | Naam van het textblok.                                                        |
 | **iteration**     | Iteratie waar het textblok in zit.                                            |
 | **condition**     | Eventuele condities van het textblok.                                         |
@@ -24,8 +24,8 @@ De JSON voor het ophalen van textblokken ziet er bijvoorbeeld zo uit:
 
 ```json
 {
-    "id": "1",
-    "parent": "",
+    "ID": "1",
+    "parentID": "",
     "name": "textlock",
     "iteration": "0",
     "condition": "",
