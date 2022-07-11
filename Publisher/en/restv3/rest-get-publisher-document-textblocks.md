@@ -11,8 +11,8 @@ Where `$id` should be replaced with the ID of the emailing document.
 
 The method returns a JSON object containing the following information:
 
-* **id**: The ID of the text block.    
-* **parent**: The ID of the parent text block
+* **ID**: The ID of the text block.    
+* **parentID**: The ID of the parent text block
 * **name**: The name of the text block.
 * **iteration**: Iteration where the text block is in.
 * **condition**: Conditions of the text block.
@@ -22,8 +22,8 @@ The method returns a JSON object containing the following information:
 
 ```json
 {
-    "id": "1",
-    "parent": "",
+    "ID": "1",
+    "parentID": "",
     "name": "textlock",
     "iteration": "0",
     "condition": "",
