@@ -11,8 +11,8 @@ Als `$id` kun je de numerieke identifier van een document opgeven.
 
 | Variabele         | Omschrijving                                                                  |
 |-------------------|-------------------------------------------------------------------------------|
-| **id**            | Unieke identifier van het afbeeldingsblok.                                    |
-| **parent**        | Unieke identifier van het bovenliggende afbeeldingsblok.                      |
+| **ID**            | Unieke identifier van het afbeeldingsblok.                                    |
+| **parentID**        | Unieke identifier van het bovenliggende afbeeldingsblok.                      |
 | **name**          | Naam van het afbeeldingsblok.                                                 |
 | **iteration**     | Iteratie waar het afbeeldingsblok in zit.                                     |
 | **condition**     | Eventuele condities van het afbeeldingsblok.                                  |
@@ -23,8 +23,8 @@ De JSON voor het ophalen van afbeeldingsblokken ziet er bijvoorbeeld zo uit:
 
 ```json
 {
-    "id": "1",
-    "parent": "",
+    "ID": "1",
+    "parentID": "",
     "name": "imageblock",
     "iteration": "0",
     "condition": "",
