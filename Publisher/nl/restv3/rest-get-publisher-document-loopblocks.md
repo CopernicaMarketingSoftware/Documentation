@@ -11,8 +11,8 @@ Als `$id` kun je de numerieke identifier van een document opgeven.
 
 | Variabele         | Omschrijving                                                                  |
 |-------------------|-------------------------------------------------------------------------------|
-| **id**            | Unieke identifier van het loopblok.                                           |
-| **parent**        | Unieke identifier van het bovenliggende loopblok.                             |
+| **ID**            | Unieke identifier van het loopblok.                                           |
+| **parentID**        | Unieke identifier van het bovenliggende loopblok.                             |
 | **name**          | Naam van het loopblok.                                                        |
 | **iteration**     | Iteratie waar het loopblok in zit.                                            |
 | **condition**     | Eventuele condities van het loopblok.                                         |
@@ -26,16 +26,16 @@ De JSON voor het ophalen van loopblokken ziet er bijvoorbeeld zo uit:
 {
   "data": [
      {
-        "id": "1",
-        "parent": "",
+        "ID": "1",
+        "parentID": "",
         "name": "loopblock1",
         "iteration": "0",
         "condition": "",
         "iterations": "1"
     },
     {
-        "id": "2",
-        "parent": "1",
+        "ID": "2",
+        "parentID": "1",
         "name": "loopblock2",
         "iteration": "1",
         "condition": "",
