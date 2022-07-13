@@ -12,7 +12,7 @@ Als `$id` kun je de numerieke identifier van een document opgeven.
 | Variabele         | Omschrijving                                                                  |
 |-------------------|-------------------------------------------------------------------------------|
 | **ID**            | Unieke identifier van het loopblok.                                           |
-| **parentID**        | Unieke identifier van het bovenliggende loopblok.                             |
+| **parentID**      | Unieke identifier van het bovenliggende loopblok.                             |
 | **name**          | Naam van het loopblok.                                                        |
 | **iteration**     | Iteratie waar het loopblok in zit.                                            |
 | **condition**     | Eventuele condities van het loopblok.                                         |
