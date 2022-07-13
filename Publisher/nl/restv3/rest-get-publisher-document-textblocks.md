@@ -12,7 +12,7 @@ Als `$id` kun je de numerieke identifier van een document opgeven.
 | Variabele         | Omschrijving                                                                  |
 |-------------------|-------------------------------------------------------------------------------|
 | **ID**            | Unieke identifier van het textblok.                                           |
-| **parentID**        | Unieke identifier van het bovenliggende textblok.                             |
+| **parentID**      | Unieke identifier van het bovenliggende textblok.                             |
 | **name**          | Naam van het textblok.                                                        |
 | **iteration**     | Iteratie waar het textblok in zit.                                            |
 | **condition**     | Eventuele condities van het textblok.                                         |
