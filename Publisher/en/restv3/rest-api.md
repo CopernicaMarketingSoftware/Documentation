@@ -275,6 +275,9 @@ templates and mailings.
 | GET    | [api.copernica.com/v3/publisher/document/$id/loopblocks](./rest-get-publisher-document-loopblocks)   | Fetch the loop blocks for a document                    |
 | GET    | [api.copernica.com/v3/publisher/document/$id/textblocks](./rest-get-publisher-document-textblocks)   | Fetch the text blocks for a document                    |
 | GET    | [api.copernica.com/v3/publisher/document/$id/imageblocks](./rest-get-publisher-document-imageblocks) | Fetch the image blocks for a document                    |
+| PUT    | [api.copernica.com/v3/publisher/document/$id/lookblock/$id](./rest-put-publisher-document-looplock) | Update a loop block for a document                    |
+| PUT    | [api.copernica.com/v3/publisher/document/$id/textblock/$id](./rest-put-publisher-document-textblock) | Update a text block for a document                    |
+| PUT    | [api.copernica.com/v3/publisher/document/$id/imageblock/$id](./rest-put-publisher-document-imageblock) | Update a image block for a document                    |
 | GET    | [api.copernica.com/v3/publisher/templates](./rest-get-publisher-templates)                           | Fetch all templates                                    |
 | POST   | [api.copernica.com/v3/publisher/templates](./rest-post-publisher-templates)                          | Create a new template                                    |
 | GET    | [api.copernica.com/v3/publisher/template/$id](./rest-get-publisher-template)                         | Fetch the template information                         |
