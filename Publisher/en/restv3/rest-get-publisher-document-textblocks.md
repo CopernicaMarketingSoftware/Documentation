@@ -12,9 +12,9 @@ Where `$id` should be replaced with the ID of the emailing document.
 The method returns a JSON object containing the following information:
 
 * **ID**: The ID of the text block.    
-* **parentID**: The ID of the parent text block
+* **parentID**: The ID of the parent of the text block
 * **name**: The name of the text block.
-* **iteration**: Iteration where the text block is in.
+* **iteration**: Iteration that the image block is in.
 * **condition**: Conditions of the text block.
 * **content**: Content of the text block.
 
