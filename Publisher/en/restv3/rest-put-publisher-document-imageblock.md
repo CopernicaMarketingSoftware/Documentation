@@ -1,6 +1,6 @@
 # REST API: PUT document imageblock (Publisher)
 
-A method to update a image block. This is an HTTP PUT 
+A method to update an image block. This is an HTTP PUT 
 method, accessible at the following address:
 
 `https://api.copernica.com/v3/publisher/document/$id/imageblock/$id?access_token=xxxx`
