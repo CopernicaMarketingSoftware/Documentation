@@ -5,7 +5,7 @@ Methode om een tekstblok bij te werken. Dit is een HTTP PUT-methode die toeganke
 `https://api.copernica.com/v3/publisher/document/$id/textblock/$id?access_token=xxxx`
 
 De eerste variabele `$id` in de URL moet worden vervangen door de numerieke identifier
-van het document die je wilt bewerken. De tweede variabele `$id` moet vervangen worden door de numerieke identifier van het tekstblok die je wilt bewerken.
+van het document dat je wilt bewerken. De tweede variabele `$id` moet vervangen worden door de numerieke identifier van het tekstblok die je wilt bewerken.
 
 ## Beschikbare parameters
 
