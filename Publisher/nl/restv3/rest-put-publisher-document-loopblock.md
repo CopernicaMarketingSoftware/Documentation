@@ -5,7 +5,7 @@ Methode om een loopblok bij te werken. Dit is een HTTP PUT-methode die toegankel
 `https://api.copernica.com/v3/publisher/document/$id/loopblock/$id?access_token=xxxx`
 
 De eerste variabele `$id` in de URL moet worden vervangen door de numerieke identifier
-van het document dat je wilt bewerken. De tweede variabele `$id` moet vervangen worden door de numerieke identifier van het loopblok die je wilt bewerken.
+van het document dat je wilt bewerken. De tweede variabele `$id` moet vervangen worden door de numerieke identifier van het loopblok dat je wilt bewerken.
 
 ## Beschikbare parameters
 
