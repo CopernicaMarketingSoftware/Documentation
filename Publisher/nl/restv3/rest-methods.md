@@ -235,6 +235,9 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v3/publisher/document/$id/loopblocks](./rest-get-publisher-document-loopblocks)               | Opvragen van loopblokken voor een document        |
 | GET    | [api.copernica.com/v3/publisher/document/$id/textblocks](./rest-get-publisher-document-textblocks)               | Opvragen van tekstblokken voor een document        |
 | GET    | [api.copernica.com/v3/publisher/document/$id/imageblocks](./rest-get-publisher-document-imageblocks)             | Opvragen van afbeeldingsblokken voor een document        |
+| PUT    | [api.copernica.com/v3/publisher/document/$id/loopblock](./rest-put-publisher-document-loopblocks)                | Bijwerken van loopblok in een document        |
+| PUT    | [api.copernica.com/v3/publisher/document/$id/textblock](./rest-put-publisher-document-textblocks)                | Bijwerken van textblok in een document        |
+| PUT    | [api.copernica.com/v3/publisher/document/$id/imageblock](./rest-put-publisher-document-imageblocks)              | Bijwerken van afbeeldingsblok in een document        |
 | GET    | [api.copernica.com/v3/publisher/templates](./rest-get-publisher-templates)                                       | Opvragen van alle templates                        |
 | POST   | [api.copernica.com/v3/publisher/templates](./rest-post-publisher-templates)                                      | Aanmaken van een nieuw template                       |
 | GET    | [api.copernica.com/v3/publisher/template/$id](./rest-get-publisher-template)                                     | Opvragen van template informatie                   |
