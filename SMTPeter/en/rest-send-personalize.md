@@ -53,7 +53,7 @@ particular recipient. The JSON that you send may look as follows:
 {   
     "recipients" : [
         "jane@doe.com": {
-            "firsname": "Jane",
+            "firstname": "Jane",
             "familyname": "Doe",
             "children" : ["Jacky", "Joe"]
         },
