@@ -3,7 +3,7 @@ Binnen Marketing Suite is het nu mogelijk om A/B-tests en split-runs te versture
 
 Met een A/B-test stuur je twee verschillende templates naar dezelfde selectie om te bekijken welke content de beste resultaten behaalt. In het verzendscherm is de verdeling van de twee groepen standaard 50/50. Met een slider kan je deze verdeling aanpassen.
 
-Met een split-run stuur je verschillende templates eerst naar een beperkt aantal contacten om te zien welke versie het meeste resultaat (aantal impressies of kliks) oplevert. De meest succesvolle versie wordt vervolgens verstuurd naar het grootste gedeelte van je verzendselectie.
+Met een split-run stuur je verschillende templates eerst naar een beperkt aantal contacten om te zien welke versie het meeste resultaat (bijvoorbeeld het aantal impressies of kliks) oplevert. De meest succesvolle versie wordt vervolgens verstuurd naar het resterende gedeelte van je verzendselectie.
 
 # Filter op datum binnen drag-and-drop-templates
 In de statistieken van een drag-and-drop-template is de optie toegevoegd om een periode te selecteren waarover de statistieken moeten worden berekend. Dit is handig bij het gebruik van een template met een periodieke interval.
