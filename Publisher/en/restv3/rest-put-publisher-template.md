@@ -3,7 +3,7 @@
 A method to update a template. This is an HTTP PUT 
 method, accessible at the following address:
 
-`https://api.copernica.com/v3/template/$id?access_token=xxxx`
+`https://api.copernica.com/v3/publisher/template/$id?access_token=xxxx`
 
 Replace the `$id` by the identifier of the template you want to edit.
 
@@ -42,7 +42,7 @@ $data = array(
 );
 
 // do the call
-$api->put("template/{$templateID}", $data);
+$api->put("publisher/template/{$templateID}", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
