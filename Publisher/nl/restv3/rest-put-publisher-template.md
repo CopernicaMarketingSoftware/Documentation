@@ -2,7 +2,7 @@
 
 Methode om een template bij te werken. Dit is een HTTP PUT-methode die toegankelijk is via het volgende adres:
 
-`https://api.copernica.com/v3/template/$id?access_token=xxxx`
+`https://api.copernica.com/v3/publisher/template/$id?access_token=xxxx`
 
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 of de naam van de template die je wilt bewerken.
@@ -43,7 +43,7 @@ $data = array(
 );
 
 // voer verzoek uit
-api->put("template/{$templateID}", $data);
+api->put("publisher/template/{$templateID}", $data);
 ```
 
 Dit voorbeeld vereist de [REST API-klasse](rest-php).
