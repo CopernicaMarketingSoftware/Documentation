@@ -11,11 +11,11 @@ In de statistieken van een drag-and-drop-template is de optie toegevoegd om een 
 ## Marketing Suite
 - Bij het aanpassen en verwijderen van profielen in bulk wordt nu een extra waarschuwing weergegeven. Dit helpt om te voorkomen dat er per ongeluk gegevens worden aangepast of verwijderd. 
 - Er zijn [extra personalisatievelden](https://www.copernica.com/nl/documentation/email-editor-personalization-variables) beschikbaar gemaakt voor drag-and-drop-templates.
-- Hyperlinks in een feedblok binnen drag-and-drop-templates worden nu ook omgezet naar een tracking URL. Hiermee is het mogelijk om kliks te meten.
+- Hyperlinks in een feedblok binnen drag-and-drop-templates worden nu ook omgezet naar een tracking-URL. Hiermee is het mogelijk om kliks te meten.
 Bij het uitbreiden van hyperlinks is de optie 'niet gelijk aan' toegevoegd aan de conditie voor jouw domeinnaam. 
-- In bestaande drag-and-drop-templates is het nu mogelijk om jouw standaard hyperlink-configuratie in te laden. Hiervoor ga je binnen je template naar 'Configuratie -> Hyperlinks uitbreiden -> Een standaardconfiguratie kiezen'.
+- In bestaande drag-and-drop-templates is het nu mogelijk om jouw standaard hyperlinkconfiguratie in te laden. Hiervoor ga je binnen je template naar 'Configuratie -> Hyperlinks uitbreiden -> Een standaardconfiguratie kiezen'.
 - Bij het gebruik van filters in de [resultaten-module](https://ms.copernica.com/#/results) is het laden van het overzicht geoptimaliseerd.
-- Als je uitbreiden van hyperlinks gebruikt wordt er nu gecontroleerd of je juiste Smarty-code gebruikt.
+- Bij de optie om hyperlinks uit te breiden wordt er nu gecontroleerd of je juiste Smarty-code gebruikt.
 - Je kan nu toegangsrechten instellen voor [mediabibliotheken](https://ms.copernica.com/#/medialibraries).
 - Bugfix: het is weer mogelijk om een subprofiel te openen vanuit een miniselectie.
 - Bugfix: in een subprofiel worden niet meer de gegevens van het hoofdprofiel geladen als het ID van beide velden gelijk is.
@@ -28,7 +28,7 @@ Bij het uitbreiden van hyperlinks is de optie 'niet gelijk aan' toegevoegd aan d
 - Bugfix: het uitschakelen van de optie 'Reguliere inhoud verbergen in de voorvertoning in de inbox' is weer mogelijk.
 - Bugfix: na het inroosteren van een drag-and-drop-template is het onderwerp nu ook zichtbaar in het overzicht van de ingeroosterde mailings.
 - Bugfix: je krijgt geen foutmelding meer bij het schakelen tussen de verschillende weergaven in een HTML-document.
-- Bugfix: bij de [senderdomains](https://ms.copernica.com/#/admin/account/senderdomains) is een probleem verholpen waarbij ten onrechte een rood kruis werd weergegeven bij 'Tracking SSL'.
+- Bugfix: bij de [senderdomains](https://ms.copernica.com/#/admin/account/senderdomains) is een probleem verholpen waarbij ten onrechte een foutmelding werd weergegeven bij 'Tracking SSL'.
 
 ## Rest API
 - Het is nu mogelijk om een HTML-template [aan te maken](https://www.copernica.com/nl/documentation/restv3/rest-post-publisher-templates) en [te bewerken](https://www.copernica.com/nl/documentation/restv3/rest-put-publisher-template).
