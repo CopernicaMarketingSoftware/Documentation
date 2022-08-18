@@ -11,7 +11,7 @@ POST verzoek te sturen naar het volgende adres kun je een mailing versturen:
 De volgende parameters zijn beschikbaar, waarvan alleen 'settings' optioneel is:
 
 * **target**: De ID van de target van de mailing.
-* **targettype**: Het type van de target (database, collectie, selectie, miniselectie, profiel of subprofiel)
+* **targettype**: Het type van de target (database, collection, view, miniview, profile of subprofile)
 * **document**: De ID van het document om te gebruiken.
 * **settings**: Array die de instellingen van de mailing bevat. Deze kun je 
 bijvoorbeeld gebruiken om een mailing op een ander moment te versturen in plaats 
