@@ -19,8 +19,8 @@ gegevens van de account bevat. De volgende velden zijn beschikbaar:
 * name:         naam van het account;
 * description:  omschrijving van het account;
 * company:      naam van het bedrijf dat betaalt voor het account;
-* customer:     array met informatie over het bedrijf die betaalt voor het account;
-* usedBy:       array met informatie over het bedrijf die het account gebruikt (enkel als het bedrijf afwijkend is als degene bij 'customer');
+* customer:     array met informatie over het bedrijf dat betaalt voor het account;
+* usedBy:       array met informatie over het bedrijf die het account gebruikt (bij accounts onder een partnerlicentie);
 * license:      array met informatie over de licentie.
 
 ### JSON voorbeeld
