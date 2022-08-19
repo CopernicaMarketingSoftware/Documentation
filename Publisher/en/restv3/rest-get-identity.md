@@ -22,7 +22,7 @@ This method returns a JSON object containing the following fields:
 * **description**: Description of the account
 * **company**: The name of the company that pays for the account
 * **customer**: array with information about the paying company for the account
-* **usedBy**: array with information about the company that is using this account (only if the company is different from the one at 'customer')
+* **usedBy**: array with information about the company that is using this account (used by accounts under a partner license)
 * **license**: array with information about the license
 
 ### JSON example
