@@ -11,9 +11,9 @@ Naast het feit dat een importbestand uit CSV- of TXT-bestanden moet bestaan dien
 Wanneer je gebruik maakt van scheiding door middel van een komma of puntkomma raden we aan om veldwaardes van enkele (') of dubbele (") aanhalingstekens te voorzien. Zo worden komma’s of puntkomma’s niet als scheidingsteken beschouwd. Als je gebruik maakt van een apostrof in een waarde, zal je deze moeten escapen met een backslash. Onderstaand zie je hiervan een voorbeeld:
 
     Voornaam,Achternaam,Email,Stad,Telefoonnummer
-    'Jan','de Jong','jan.dejong@voorbeeld.nl','Amersfoort','0612456631'
-    'Pier','de Visser','piet_de_visser@voorbeeld.nl','\'s Hertogenbosch','0612224444'
-    'Roos','Schippers','roos.schippers@voorbeeld.nl','Groningen','0612222444'
+    Jan,de Jong,jan.dejong@voorbeeld.nl,Amersfoort,0612456631
+    Pier,de Visser,piet_de_visser@voorbeeld.nl,\'s Hertogenbosch,0612224444
+    Roos,Schippers,roos.schippers@voorbeeld.nl,Groningen,0612222444
 
 ## Import aanmaken
 Je kunt een import enkel instellen op de database. Hiervoor navigeer je in de gekozen database naar '**Profielen -> Imports**'. Daar vind je een lijst met lopende of recent afgeronde imports die je kunt bewerken of verwijderen. 
@@ -51,6 +51,14 @@ Het enige verschil tussen de instellingen van een eenmalige- en een periodieke i
 
 ![Periodieke import](../images/nl/import_periodiek.png)
 
+## Interesses importeren
+Het is ook mogelijk om interesses te importeren bij je profielgegevens. Interesses zijn iets anders dan je standaard velden. Hierbij heb je alleen de optie om een vinkje aan of uit te zetten, dus of een persoon wel of niet geinteresseerd is voor een bepaald onderwerp. Hier kun je dus ook geen andere data in kwijt dan Yes/No of true/false. Een importbestand met interessevelden zal er als volgt uit komen te zien: 
+
+    Voornaam,Achternaam,Email,interest.huisdiervoeding,interest.huisdierspeeltjes
+    Jan,de Jong,jan.dejong@voorbeeld.nl,Yes,No
+    Pier,de Visser,piet_de_visser@voorbeeld.nl,false,true
+    Roos,Schippers,roos.schippers@voorbeeld.nl,Yes,Yes
+
 ## Subprofielen importeren
 Naast het importeren van profielgegevens is het mogelijk om gegevens uit een collectie (subprofielen) te importeren. Daarbij voorzie je de kolomnaam in het importbestand van een punt om aan te geven dat deze voor collectievelden wordt gebruikt. De collectienaam komt voor de punt te staan. Het collectieveld wordt achter de punt geplaatst.
 
@@ -58,9 +66,9 @@ Naast het importeren van profielgegevens is het mogelijk om gegevens uit een col
 Stel dat je eigenaar bent van een dierenwinkel. Je klanten zijn in een database opgenomen in de vorm van profielen. Daarnaast houd je in een collectie bij welke huisdieren een klant bezit. In dit geval zou het importbestand er als volgt uit kunnen zien:
 
     Email,Huisdieren.Naam,Huisdieren.Type
-    'Jan.bakker@voorbeeld.nl',Max','Hond'
-    'Jan.bakker@voorbeeld.nl',Minoes','Kat'
-    'Theo.devries@voorbeeld.nl','Casper','Kat'
+    Jan.bakker@voorbeeld.nl,Max,Hond
+    Jan.bakker@voorbeeld.nl,Minoes,Kat
+    Theo.devries@voorbeeld.nl,Casper,Kat
 
 In het bovenstaande voorbeeld is ‘Jan Bakker’ twee keer opgenomen. Hij heeft namelijk twee huisdieren waarvan je elk huisdier als eigen subprofiel wilt toevoegen aan de collectie ‘Huisdieren’. Op die manier wordt profieldata twee keer meegegeven en kunnen beide velden worden toegevoegd als sleutelveld.
 
