@@ -1,6 +1,6 @@
 # REST API: GET Publisher personalized document (subprofiel)
 
-Je kan een gepersonaliseerd Publisher document van een subprofiel opvragen met 
+Je kan een gepersonaliseerd Publisher-document van een subprofiel opvragen met 
 een HTTP GET-call naar de volgende URL:
 
 `https://api.copernica.com/v3/subprofile/$subprofileID/publisher/document/$documentID?access_token=xxxx`
@@ -11,14 +11,14 @@ Hier moet `$subprofileID` vervangen worden door het ID van het subprofiel en `$d
 
 Deze methode geeft een JSON-object terug met de volgende informatie:
 
-* **ID**: ID van het document
+* **id**: ID van het document
 * **template**: ID van de template
 * **name**: naam van het document
 * **description**: omschrijving van het document
 * **from_address**: afzenderadres van het document
 * **subject**: onderwerp van het document
 * **archived**: geeft aan of dit document gearchiveerd is (true) of niet (false)
-* **source**: gepersonaliseerde broncode van het document op basis van het opgegeven subprofiel ID
+* **source**: gepersonaliseerde broncode van het document op basis van het opgegeven subprofiel-ID
 
 ## JSON voorbeeld
 
