@@ -18,7 +18,10 @@ gegevens van de account bevat. De volgende velden zijn beschikbaar:
 * id:           unieke numerieke identifier van het account;
 * name:         naam van het account;
 * description:  omschrijving van het account;
-* company:      naam van het bedrijf dat betaalt voor het account.
+* company:      naam van het bedrijf dat betaalt voor het account;
+* customer:     array met informatie over het bedrijf die betaalt voor het account;
+* usedBy:       array met informatie over het bedrijf die het account gebruikt (enkel als het bedrijf afwijkend is als degene bij 'customer');
+* license:      array met informatie over de licentie.
 
 ### JSON voorbeeld
 
@@ -29,7 +32,17 @@ De output van een call ziet er bijvoorbeeld zo uit:
    "id":"34",
    "name":"Development",
    "description":"This is an account to test with",
-   "company":"Copernica BV"
+   "company":"Copernica BV",
+   "customer": {
+      "id": "3871",
+      "name": "Copernica BV",
+      "isPartner": false
+  },
+  "usedBy": [],
+  "license": {
+      "id": "5679",
+      "isTrial": false
+  }
 }
 ```
 
