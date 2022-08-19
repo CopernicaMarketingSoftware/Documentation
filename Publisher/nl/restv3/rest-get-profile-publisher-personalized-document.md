@@ -1,6 +1,6 @@
 # REST API: GET Publisher personalized document (profiel)
 
-Je kan een gepersonaliseerd Publisher document van een profiel opvragen met 
+Je kan een gepersonaliseerd Publisher-document van een profiel opvragen met 
 een HTTP GET-call naar de volgende URL:
 
 `https://api.copernica.com/v3/profile/$profileID/publisher/document/$documentID?access_token=xxxx`
@@ -11,7 +11,7 @@ Hier moet `$profileID` vervangen worden door het ID van het profiel en `$documen
 
 Deze methode geeft een JSON-object terug met de volgende informatie:
 
-* **ID**: ID van het document
+* **id**: ID van het document
 * **template**: ID van de template
 * **name**: naam van het document
 * **description**: omschrijving van het document
