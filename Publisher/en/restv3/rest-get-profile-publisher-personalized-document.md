@@ -10,13 +10,6 @@ Where the `$profileID` should be replaced with the ID of the profile and the `$d
 
 The method returns a JSON object with the following information:
 
-* **ID**: The ID of the destination.
-* **timestampsent**: The timestamp on which the mailing was sent to this recipient.
-* **internal**: The internal ID of the destination.
-* **profile**: The ID of the profile of the destination.
-* **subprofile**: The ID of the subprofile of the destination (if applicable).
-* **mailing**: The ID of the mailing.
-
 * **ID**: ID of the document
 * **template**: ID of the template
 * **name**: name of the document
