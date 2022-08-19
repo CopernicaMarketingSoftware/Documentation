@@ -18,7 +18,7 @@ Deze methode geeft een JSON-object terug met de volgende informatie:
 * **from_address**: afzenderadres van het document
 * **subject**: onderwerp van het document
 * **archived**: geeft aan of dit document gearchiveerd is (true) of niet (false)
-* **source**: gepersonaliseerde broncode van het document op basis van het opgegeven profiel ID
+* **source**: gepersonaliseerde broncode van het document op basis van het opgegeven profiel-ID
 
 ## JSON voorbeeld
 
