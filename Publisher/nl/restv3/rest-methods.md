@@ -172,6 +172,7 @@ in de onderstaande tabel.
 | GET    | [api.copernica.com/v3/profile/$id/files](./rest-put-profile-files)                                   | Oppvragen van alle files voor een profiel                         |
 | POST   | [api.copernica.com/v3/profile/$id/datarequest](./rest-post-profile-datarequest)                      | Aanmaken van een dataverzoek voor een profiel                     |
 | PUT    | [api.copernica.com/v3/profile/$id/unsubscribe](./rest-put-profile-unsubscribe)                       | Uitvoeren van het uitschrijfgedrag van een profiel                |
+| GET    | [api.copernica.com/v3/profile/$id/publisher/document/$id](./rest-get-profile-publisher-personalized-document) | Opvragen van een gepersonaliseerd Publisher document voor een profiel         |
 
 ### Subprofielen
 
@@ -189,6 +190,7 @@ in de onderstaande tabel.
 | GET    | [api.copernica.com/v3/subprofile/$id/ms/destinations](./rest-get-subprofile-ms-destinations)                 | Opvragen van alle Marketing Suite destinations voor een subprofiel    |
 | POST   | [api.copernica.com/v3/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)                        | Aanmaken van een dataverzoek voor een subprofiel                      |
 | PUT    | [api.copernica.com/v3/subprofile/$id/unsubscribe](./rest-put-subprofile-unsubscribe)                         | Uitvoeren van het uitschrijfgedrag van een subprofiel                 |
+| GET    | [api.copernica.com/v3/subprofile/$id/publisher/document/$id](./rest-get-subprofile-publisher-personalized-document) | Opvragen van een gepersonaliseerd Publisher document voor een subprofiel         |
 
 ## Publisher Mailings
 
