@@ -21,6 +21,9 @@ This method returns a JSON object containing the following fields:
 * **name**: Account name
 * **description**: Description of the account
 * **company**: The name of the company that pays for the account
+* **customer**: array with information about the paying company for the account
+* **usedBy**: array with information about the company that is using this account (only if the company is different from the one at 'customer')
+* **license**: array with information about the license
 
 ### JSON example
 
@@ -31,7 +34,17 @@ The output might look something like this:
    "id":"34",
    "name":"Development",
    "description":"This is an account to test with",
-   "company":"Copernica BV"
+   "company":"Copernica BV",
+   "customer": {
+      "id": "3871",
+      "name": "Copernica BV",
+      "isPartner": false
+  },
+  "usedBy": [],
+  "license": {
+      "id": "5679",
+      "isTrial": false
+  }
 }
 ```
 
