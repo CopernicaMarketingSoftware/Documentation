@@ -52,7 +52,7 @@ Het enige verschil tussen de instellingen van een eenmalige- en een periodieke i
 ![Periodieke import](../images/nl/import_periodiek.png)
 
 ## Interesses importeren
-Het is ook mogelijk om interesses te importeren bij je profielgegevens. Interesses zijn iets anders dan je standaard velden. Hierbij heb je alleen de optie om een vinkje aan of uit te zetten, dus of een persoon wel of niet geinteresseerd is voor een bepaald onderwerp. Hier kun je dus ook geen andere data in kwijt dan Yes/No of true/false. Een importbestand met interessevelden zal er als volgt uit komen te zien: 
+Het is ook mogelijk om interesses te importeren bij je profielgegevens. Interesses zijn anders dan je standaard velden. Je kunt interesses enkel aan- of uitzetten. Interesses kunnen de waarde Yes/No of true/false bevatten. Een importbestand met interessevelden zal er als volgt uit komen te zien: 
 
     Voornaam,Achternaam,Email,interest.huisdiervoeding,interest.huisdierspeeltjes
     Jan,de Jong,jan.dejong@voorbeeld.nl,Yes,No
