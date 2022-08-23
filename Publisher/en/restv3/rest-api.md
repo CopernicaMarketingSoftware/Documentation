@@ -113,7 +113,9 @@ structure.
 
 | Type   | Address                                                                                      | Description                                    |
 |--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
-| POST   | [api.copernica.com/v3/imports](./rest-post-imports)                                          | Import data in the account                     |               
+| POST   | [api.copernica.com/v3/imports](./rest-post-imports)                                          | Import data in the account                     |    
+| GET    | [api.copernica.com/v3/import/$id](./rest-get-import)                                         | Fetch information about an import               |  
+
 ## Views & Miniviews
 
 Views are selections under a database, while miniviews are selections under a collection.
