@@ -10,7 +10,7 @@ Where the `$subprofileID` should be replaced with the ID of the subprofile and t
 
 The method returns a JSON object with the following information:
 
-* **ID**: ID of the document
+* **id**: ID of the document
 * **template**: ID of the template
 * **name**: name of the document
 * **description**: description of the document
