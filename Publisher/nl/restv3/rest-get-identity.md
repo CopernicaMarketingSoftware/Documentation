@@ -20,7 +20,7 @@ gegevens van de account bevat. De volgende velden zijn beschikbaar:
 * description:  omschrijving van het account;
 * company:      naam van het bedrijf dat betaalt voor het account;
 * customer:     object met informatie over het bedrijf dat betaalt voor het account;
-* usedBy:       array met informatie over het bedrijf die het account gebruikt (wanneer het account valt onder een partnerlicentie);
+* usedBy:       object met informatie over het bedrijf die het account gebruikt (wanneer het account valt onder een partnerlicentie);
 * license:      object met informatie over de licentie.
 
 ### JSON voorbeeld
