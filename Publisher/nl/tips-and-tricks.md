@@ -39,8 +39,9 @@ om misbruik van jouw naam te voorkomen. Daarnaast zorgen senderdomains dat Coper
 * [MX](./mx)
 * [SPF](./spf)
 
-### Verdere uitleg
+### Overige
 Hieronder vind je verdere uitleg en tips over verschillende onderwerpen.
 
 * [HTTP en HTTPS](./http-https)
 * [Begrippenlijst](./definitions)
+* [Beleid uitgaande IP-adressen](./policy-outgoing-ip-addresses)
