@@ -62,7 +62,7 @@ $data = array(
 );
 
 // do the call
-$api->put("profile/{$profileID}/subprofiles/{$collectionID}", $data);
+$api->put("profile/{$profileID}/subprofiles/{$collectionID}", $data, $parameters);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
