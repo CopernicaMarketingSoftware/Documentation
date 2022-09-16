@@ -66,7 +66,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->put("profile/{$profielID}/subprofiles/{$collectieID}", $data);
+$api->put("profile/{$profielID}/subprofiles/{$collectieID}", $data, $parameters);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
