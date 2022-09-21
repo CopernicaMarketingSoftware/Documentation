@@ -27,6 +27,7 @@ Hieronder vind je tutorials over veelvoorkomende toepassingen.
 * [Selecties: nieuwsbriefselectie](./create-a-mailing-list)
 * [Selecties: verjaardagsselectie](./how-to-create-a-birthday-selection)
 * [Formulieren: e-mail voorkeuren bijhouden](./email-preferences)
+* [HTML-templates: modules maken](./html-template-modules)
 
 ## Senderdomains
 Senderdomains zorgen ervoor dat Copernica namens jou mag mailen. Er bestaan vele technieken 
