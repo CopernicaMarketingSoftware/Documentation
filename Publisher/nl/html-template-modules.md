@@ -1,18 +1,16 @@
 # Modules maken voor je HTML-templates
 
-Binnen je [HTML-templates](https://www.copernica.com/nl/documentation/email-editor-html-templates) maak je vaak gebruik van vaste elementen die in alle templates dezelfde content bevatten. Bekende voorbeelden hiervan zijn de header en de footer. Zodra er een wijziging doorgevoerd moet worden, zal je dit vaak in tientallen templates moeten doorvoeren.
+Binnen [HTML-templates](https://www.copernica.com/nl/documentation/email-editor-html-templates) worden vaak vaste elementen gebruikt die in alle templates dezelfde content bevatten. Denk hierbij aan de header en footer. Toch moet je ieder template aanpassen als je deze content wilt veranderen.
 
-Hier liep ook [Ronald Vesterink](https://www.linkedin.com/in/ronaldvesterink/) van Pricewise tegenaan. Hij bedacht een workaround om 'modules' te maken binnen zijn template op basis van feeds en een XSLT-bestand. 
-
-In dit artikel nemen we je mee hoe je dit ook kunt opzetten.
+[Ronald Vesterink](https://www.linkedin.com/in/ronaldvesterink/) van Pricewise bedacht hiervoor een oplossing. Op basis van feeds en een XSLT-bestand maakt hij 'modules' zodat je content eenvoudig kan hergebruiken. In dit artikel nemen we je mee hoe je dit opzet.
 
 ## Stap 1: Blanco feed aanmaken
-Als eerst beginnen we met het aanmaken van een blanco feed. Dit is nodig omdat een XSLT-bestand enkel ingeladen kan worden als er ook een feed aanwezig is. Het aanmaken van een feed is mogelijk in de Publisher-omgeving onder '[Inhoud](https://ms.copernica.com/#/menu/publisher/content)'. In het submenu vind je de optie 'Feed -> Nieuwe feed'.  
+e maakt eerst een blanco feed. Dit is nodig omdat een XSLT-bestand enkel ingeladen wordt als er een feed aanwezig is. Het aanmaken van een feed is mogelijk in de Publisher-omgeving onder '[Inhoud](https://ms.copernica.com/#/menu/publisher/content)'. In het submenu vind je de optie 'Feed -> Nieuwe feed'.
 
 Als voorbeeld maken we een feed aan met de naam '**Footer**'.
 
-## Stap 2: HTML toevoegen aan je XSLT-bestand
-In de [XSLT-module](https://ms.copernica.com/#/xslt) maken we vervolgens een nieuw XSLT-bestand aan. Hierbij gebruiken we als voorbeeld de naam '**XSLT_footer**'. In dit XSLT-bestand plaats je de HTML-code die je gebruikt voor je footer.
+## Stap 2: HTML toevoegen aan het XSLT-bestand
+In de [XSLT-module](https://ms.copernica.com/#/xslt) maak je een nieuw XSLT-bestand aan. Hierbij gebruiken we als voorbeeld de naam '**XSLT_footer**'. In dit XSLT-bestand plaats je de HTML-code die je gebruikt voor de footer.
 
 Voorbeeld:
 ```
@@ -27,20 +25,20 @@ Voorbeeld:
 </xsl:stylesheet>
 ```
 
-## Stap 3: Inladen van de module in je template
-Nu we alle losse onderdelen hebben klaargezet, is het mogelijk om deze gegevens in te laden in je template. Dit doen we met de [loadfeed-tag](https://www.copernica.com/nl/documentation/personalization-functions-loadfeed).
+## Stap 3: Inladen van de module in een template
+Nu alle onderdelen zijn klaargezet, kan je deze gegevens inladen in een template. Dit doe je met de [loadfeed-tag](https://www.copernica.com/nl/documentation/personalization-functions-loadfeed).
+
+In het template zie je nu de tekst die je in het XSLT-bestand hebt geplaatst.
 
 Voorbeeld:  
 ```
 {capture assign="content_footer"}{loadfeed feed="Footer" xslt="XSLT_footer" personalizable="true"}{/capture}{eval var=$content_footer}
 ```
 
-In je template zie je nu de tekst die je in je XSLT-bestand hebt geplaatst.
-
 ## Tips & trics
 
 ### Smarty personalisatie
-In je XSLT-bestand kun je waardes uit (sub)profielen inladen op dezelfde manier als je dit gewend bent in HTML-templates. Daarnaast zijn ook de overige Smarty variabelen beschikbaar.
+In het XSLT-bestand kun je waardes uit (sub)profielen inladen op dezelfde manier als in HTML-templates. Daarnaast zijn ook de overige Smarty-variabelen beschikbaar.
 
 Voorbeeld:
 ```
@@ -97,9 +95,9 @@ Of
 ```
 
 ### CSS-code zichtbaar in je template
-Als je nog geen CSS-bestand aan je document hebt gekoppeld kan het zijn dat de standaard CSS-code zichtbaar wordt in je template. In dit geval dien je een blanco CSS-bestand aan te maken. Dit kun je doen onder '[Vormgeving-CSS](https://ms.copernica.com/#/styles)'.
+Als je nog geen CSS-bestand aan het document hebt gekoppeld wordt mogelijk de standaard CSS-code zichtbaar in je template. In dit geval dien je een blanco CSS-bestand aan te maken. Dit doe je onder '[Vormgeving-CSS](https://ms.copernica.com/#/styles)'.
 
 Als voorbeeld maken we een CSS-bestand aan met de naam '**Leeg**'.  
-*Let op: vul je bestand niet vooraf in met de standaard stijl.* 
+*Let op: vul je bestand niet vooraf in met de standaardstijl.* 
 
-Na het aanmaken kun je deze stijl koppelen aan je template of document onder 'Configuratie -> Stijl' in de [e-mail-editor](https://ms.copernica.com/#/design/).
+Na het aanmaken kun je deze stijl koppelen aan een template of document onder 'Configuratie -> Stijl' in de [e-mail-editor](https://ms.copernica.com/#/design/).
