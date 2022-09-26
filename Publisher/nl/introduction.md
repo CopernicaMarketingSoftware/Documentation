@@ -2,7 +2,7 @@
 
 Copernica biedt een uitgebreide toolkit voor e-mailmarketing en marketingautomation. 
 
-De software is bereikbaar via [ms.copernica.com](ms.copernica.com) en is onderverdeeld in drie submenu's: 
+De software is bereikbaar via [ms.copernica.com](https://ms.copernica.com) en is onderverdeeld in drie submenu's: 
 Marketing Suite (nieuwe modules), Publisher (oude modules) en Algemeen. 
 
 ## Marketing Suite en Publisher
