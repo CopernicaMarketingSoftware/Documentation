@@ -1,4 +1,4 @@
-# Modules maken voor je HTML-templates
+# Modules maken voor HTML-templates
 
 Binnen [HTML-templates](https://www.copernica.com/nl/documentation/email-editor-html-templates) worden vaak vaste elementen gebruikt die in alle templates dezelfde content bevatten. Denk hierbij aan de header en footer. Toch moet je ieder template aanpassen als je deze content wilt veranderen.
 
