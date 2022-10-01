@@ -77,7 +77,13 @@ te verifiëren.
 ## Voorbeeld
 
 Je kunt een voorbeeld van zo'n implementatie vinden op onze 
-[GitHub](https://github.com/CopernicaMarketingSoftware/webhook-security "Message verification on Copernica's GitHub).
+[GitHub](https://github.com/CopernicaMarketingSoftware/http-signatures-php).
+
+## Onze IP-adressen
+
+Copernica gebruikt diverse IP-adressen voor uitgaande HTTP-requests die nodig zijn voor (onder meer) webhooks en het downloaden van content en feeds voor mailings. Deze IP-adressen staan niet vast, en kunnen veranderen. Dit gebeurt bijvoorbeeld wanneer we onze verzend- of webhookcapaciteit op- of afschalen. We raden daarom af om onze IP-adressen te blacklisten of te whitelisten, of anderszins om checks te doen enkel op basis van onze IP-adressen.
+
+Voor gebruikers die toch het risico willen nemen om IP-adressen te whitelisten vind je in [dit artikel](./policy-outgoing-ip-addresses) onze IP-adressen.
 
 ## Meer informatie
 
