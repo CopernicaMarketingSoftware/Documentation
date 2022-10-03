@@ -51,7 +51,7 @@ $fields = array(
     'email'     =>  'johndoe@voorbeeld.com'
 );
 
-// de velden en interesses vormen samen de data voor het verzoek
+// de data voor het verzoek
 $data = array(
     'fields'    =>  $fields
 );
