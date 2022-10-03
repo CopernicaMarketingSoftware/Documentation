@@ -107,6 +107,7 @@ structure.
 | DELETE | [api.copernica.com/v3/collection/$id/field/$id](./rest-delete-collection-field)              | Delete a collection field                    |
 | GET    | [api.copernica.com/v3/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Fetch all collection subprofile IDs          |
 | GET    | [api.copernica.com/v3/collection/$id/subprofiles](./rest-get-collection-subprofiles)         | Fetch all collection subprofiles             |
+| PUT    | [api.copernica.com/v3/collection/$id/subprofiles](./rest-put-collection-subprofiles)         | Update one or multiple subprofiles           |
 | PUT    | [api.copernica.com/v3/collection/$id/intentions](./rest-put-collection-intentions)           | Update the collection intentions             |
                
 ## Import
