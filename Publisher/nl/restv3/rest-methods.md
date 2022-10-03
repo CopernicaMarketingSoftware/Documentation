@@ -63,6 +63,7 @@ collecties en hun eigenschappen.
 | DELETE | [api.copernica.com/v3/collection/$id/field/$id](./rest-delete-collection-field)              | Verwijderen van een veld                       |
 | GET    | [api.copernica.com/v3/collection/$id/subprofileids](./rest-get-collection-subprofileids)     | Opvragen van alle subprofiel IDs               |
 | GET    | [api.copernica.com/v3/collection/$id/subprofiles](./rest-get-collection-subprofiles)         | Opvragen van alle subprofielen                 |
+| PUT    | [api.copernica.com/v3/collection/$id/subprofiles](./rest-put-collection-subprofiles)         | Updaten van een of meerdere subprofielen       |
 | PUT    | [api.copernica.com/v3/collection/$id/intentions](./rest-put-collection-intentions)           | Updaten van de intenties van de collectie      |
 
 ## Importeren
