@@ -20,15 +20,14 @@ You must use two different ways to pass data to this method; through the URL and
 the request body. You can pass the following parameters to the URL:
 
 The **fields** parameter is required, to prevent overwriting all profiles in a
-database with a single API call. Only the profiles that match with the supplied
+database with a single API call. Only the subprofiles that match with the supplied
 fields are modified. You can find more information about this parameter in
 [the article about this parameter](./rest-fields-parameter.md).
 
 ## PHP example
 
 This PHP script demonstrates how you can use this API call. In this specific 
-case we use the profile selection parameters to select the subprofile where the CustomerID 
-field is set to 4567 and insert new profile data.
+case we use the CustomerID field to find all subprofiles with value 4567 and update those subprofiles with the values in the body data.
 
 ```php
 // dependencies
@@ -37,7 +36,7 @@ require_once('copernica_rest_api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 3);
 
-// fields for the new profile
+// new values for the subprofile
 $fields = array(
     'firstname' =>  'John',
     'lastname'  =>  'Doe',
@@ -49,7 +48,7 @@ $data = array(
     'fields'    =>  $fields,
 );
 
-// parameters for profile selection
+// parameters
 $parameters = array(
     'fields'    =>  array("customerid==4567"),
 );
