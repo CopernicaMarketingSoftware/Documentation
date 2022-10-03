@@ -24,11 +24,6 @@ database with a single API call. Only the profiles that match with the supplied
 fields are modified. You can find more information about this parameter in
 [the article about this parameter](./rest-fields-parameter.md).
 
-## Body data
-
-Besides the parameters that you append to the URL, you must also include a
-request body in the PUT request. The fields must be an associative array.
-
 ## PHP example
 
 This PHP script demonstrates how you can use this API call. In this specific 
