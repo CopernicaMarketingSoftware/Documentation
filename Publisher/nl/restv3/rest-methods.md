@@ -1,4 +1,4 @@
-# Overzicht van methodes
+m# Overzicht van methodes
 
 ## Account
 
@@ -71,7 +71,7 @@ collecties en hun eigenschappen.
 | Type   | Adres                                                                                        | Omschrijving                                   |
 |--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
 | POST   | [api.copernica.com/v3/imports](./rest-post-imports)                                          | Importeren van gegevens in je account          |
-| GET    | [api.copernica.com/v3/import/$id](./rest-get-imports)                                        | Opvragen van informatie over een import          |
+| GET    | [api.copernica.com/v3/import/$id](./rest-get-import)                                        | Opvragen van informatie over een import          |
 
 ## Selecties & Miniselecties
 
