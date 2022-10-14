@@ -402,6 +402,12 @@ or vice versa in all of the articles below, including the code examples.
 | GET    | [api.copernica.com/v3/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Fetch all errors for a destination           |
 | GET    | [api.copernica.com/v3/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Fetch all impressions for a destination      |
 
+## Media libraries
+
+| Type   | Address                                                                                      | Description                                    |
+|--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
+| POST   | [api.copernica.com/v3/medialibrary/$id/files](./rest-post-medialibrary-files)                | Upload a file/image in a media library                    |    
+
 ## Datarequests
 
 The result of data requests is stored for a while after completion. With the
