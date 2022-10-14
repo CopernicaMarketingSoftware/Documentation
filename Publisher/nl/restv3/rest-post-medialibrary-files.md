@@ -12,7 +12,7 @@ Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
 
 ```php
 // the file to upload (with absolute path)
-$file = "/home/path/naar/afbeelding.jpg";
+$file = "/home/path/naar/bestand.jpg";
  
 // ID of the media library we want to upload the file to
 $ID = 4;
