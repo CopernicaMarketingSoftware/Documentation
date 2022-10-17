@@ -379,7 +379,7 @@ Dit geldt ook voor de voorbeeldcode.
 ## Mediabibliotheken
 
 | Type   | Adres                                                                                        | Omschrijving                                   |
-|--------|----------------------------------------------------------------------------------------------|------------------------------------------------|
+|--------|----------------------------------------------------------------------------------------------|--------------------------------------------------------------------------|
 | POST   | [api.copernica.com/v3/medialibrary/$id/files](./rest-post-medialibrary-files)                | Toevoegen van een bestand/afbeelding aan je mediabibliotheek          |
 
 ## Dataverzoeken
