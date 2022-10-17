@@ -1,7 +1,7 @@
 # Hoe zet je een A/B-tests of split-run op?
 
 ## Verschil A/B-test of split-run 
-Met een A/B-test kun je twee documenten of templates met elkaar vergelijken. De bestemming zal in twee groepen gesplitst worden om zo te kijken welk document of template het beste presteert. In het verzendscherm is de verdeling van de twee groepen standaard 50/50. Met een slider kan je deze verdeling aanpassen.
+Met een A/B-test kun je twee templates of documenten met elkaar vergelijken. De bestemming zal in twee groepen gesplitst worden om zo te kijken welk document of template het beste presteert. In het verzendscherm is de verdeling van de twee groepen standaard 50/50. Met een slider kan je deze verdeling aanpassen.
 
 Met een split-run kun je twee of meerdere mailings met elkaar vergelijken die naar een beperkt deel van de verzendselectie worden verzonden. De beste mailing wordt vervolgens automatisch naar het resterende deel van de verzendselectie verzonden.Je kunt tot 5 verschillende groepen gebruiken.
 
