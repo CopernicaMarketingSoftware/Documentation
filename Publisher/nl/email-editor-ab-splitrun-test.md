@@ -39,7 +39,7 @@ Je kunt tot 5 verschillende groepen toevoegen aan je split-run.
 Bij een A/B-test of split-run krijg je de optie om per groep een template of document te kiezen. Deze groepen worden verzonden op het ingestelde tijdstip van de mailing.
 
 ## Definitieve groep instellen (split-run)
-Split-runs bestaan naast minimaal twee groepen ook uit een definitieve groep. Dit is de groep waar, op basis van de ingestelde vergelijking, het resterende deel van de mailing naartoe wordt verzonden.  
+Split-runs bestaan naast minimaal twee groepen ook uit een definitieve groep. Op basis van de ingestelde vergelijking wordt naar deze groep het winnende template of document verzonden.  
 
 De volgende vergelijksmogelijkheden zijn beschikbaar:
 - De meeste impressies
