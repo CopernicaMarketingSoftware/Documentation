@@ -404,7 +404,7 @@ or vice versa in all of the articles below, including the code examples.
 
 ## Media libraries
 
-| Type   | Address                                                                                      | Description                                                |
+| Type   | Address                                                                                      | Description                                               |
 |--------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------|
 | POST   | [api.copernica.com/v3/medialibrary/$id/files](./rest-post-medialibrary-files)                | Upload a file/image in a media library                    |    
 
