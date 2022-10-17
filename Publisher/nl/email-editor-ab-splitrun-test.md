@@ -48,4 +48,6 @@ De volgende vergelijksmogelijkheden zijn beschikbaar:
 - De meeste unieke kliks
 - Eigen javascript
 
+### Voorbeeld
+In onderstaand voorbeeld ontvangt het resterende deel van de verzendselectie (50%) het template of document die in de afgelopen drie uur de meeste unieke impressies heeft geregistreerd.
 ![Voorbeeld van definitieve groep](../images/nl/definitievegroep.png)
