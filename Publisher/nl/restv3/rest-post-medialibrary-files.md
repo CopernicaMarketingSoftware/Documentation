@@ -7,7 +7,7 @@ Je kunt een bestand/afbeelding toevoegen aan een mediabibliotheek door een HTTP 
 De code $id moet je vervangen door de numerieke identifier of de naam van de mediabibliotheek waar je het bestand of afbeelding in wilt opslaan. 
 
 ## Bestand uploaden
-Om een bestand te uploaden moet je gebruik maken van [cURL](https://www.php.net/manual/en/curl.examples-basic.php) in PHP. 
+Om een bestand te uploaden moet je gebruik maken van [cURL](https://www.php.net/manual/en/curl.examples-basic.php) in PHP.  
 Aan je PHP-script moet je een aantal instellingen meegeven:
 
 **$file**: hier vul je het absolute path in waar het bestand op je lokale computer te vinden is.  
