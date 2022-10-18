@@ -21,7 +21,7 @@ The following example demonstrates how to use this method.
 
 ```php
 // the file to upload (with absolute path)
-$file = "/home/path/to/file.jpg";
+$file = "/home/path/to/file.ext";
  
 // ID of the media library we want to upload the file to
 $ID = 4;
@@ -31,9 +31,6 @@ $token = 'xxx';
  
 // the API endpoint for file uploads
 $url = "https://api.copernica.com/v3/medialibrary/{$ID}/files?access_token={$token}";
- 
-// create the cURL file instance and set the name of the file
-$cFile = curl_file_create($file, mime_content_type($file), 'name_of_the_file.png');
  
 // open cURL session
 $ch = curl_init($url);
@@ -45,7 +42,7 @@ curl_setopt($ch, CURLOPT_POST, 1);
 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: multipart/form-data'));
  
 // append the file
-curl_setopt($ch, CURLOPT_POSTFIELDS, ['file' => $cFile]);
+curl_setopt($ch, CURLOPT_POSTFIELDS, ['file' => new CURLFile($file, mime_content_type($file)]);
  
 // execute the request
 curl_exec($ch);
