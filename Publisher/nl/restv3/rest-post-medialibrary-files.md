@@ -11,7 +11,7 @@ Om een bestand te uploaden moet je gebruik maken van [cURL](https://www.php.net/
 Aan je PHP-script moet je een aantal instellingen meegeven:
 
 **$file**: hier vul je het absolute path in waar het bestand op je lokale computer te vinden is.  
-**Content-Type**: in het script geef je het juiste content-type op. Voor bestanden, niet-ASCII en binaire gegevens is het voorkeurstype _multipart/form-data_.  
+**content-Type**: in het script geef je het juiste content-type op. Voor bestanden, niet-ASCII en binaire gegevens is het voorkeurstype `multipart/form-data`.  
 **mime_content_type**: om het bestand in het juiste formaat in de mediabibliotheek te plaatsen, moet de mime_content_type meegegeven worden. Hiervoor gebruik je de PHP-functie `mime_content_type($file)`.
 
 ## Voorbeeld in PHP
