@@ -8,11 +8,11 @@ In this, `$id` should be replaced by the numerical identifier, the ID,
 or the name of the media library you want to add the file/image to. 
 
 ## File upload
-To upload a file you have to use [cURL](https://www.php.net/manual/en/curl.examples-basic.php) in PHP.  
+To upload a file, you have to use [cURL](https://www.php.net/manual/en/curl.examples-basic.php) in PHP.  
 In the PHP script, you have to specify some settings:
 
 **$file**: enter the absolute path where the file can be found on your local computer.  
-**content-Type**: in the script you specify the correct content-type. For files, non-ASCII and binary data, the preferred type is `multipart/form-data`.  
+**content-Type**: specify the correct content-type. For files, non-ASCII and binary data, the preferred type is `multipart/form-data`.  
 **mime_content_type**: to place the file in the correct format in the media library, the mime_content_type must be passed. You can use the PHP function `mime_content_type($file)`.
 
 ## PHP example
