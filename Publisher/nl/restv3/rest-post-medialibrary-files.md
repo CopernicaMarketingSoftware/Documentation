@@ -23,7 +23,7 @@ $token = 'xxx';
 // the API endpoint for file uploads
 $url = "https://api.copernica.com/v3/medialibrary/{$ID}/files?access_token={$token}";
  
-// create the cURL file instance
+// create the cURL file instance and set the name of the file
 $cFile = curl_file_create($file, mime_content_type($file), 'naam_van_je_bestand.png');
  
 // open cURL session
@@ -31,6 +31,9 @@ $ch = curl_init($url);
  
 // set POST type
 curl_setopt($ch, CURLOPT_POST, 1);
+
+// set content-type to multipart/form-data
+curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: multipart/form-data'));
  
 // append the file
 curl_setopt($ch, CURLOPT_POSTFIELDS, ['file' => $cFile]);
