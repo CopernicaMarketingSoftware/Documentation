@@ -18,8 +18,8 @@ Als je wilt dat je opvolgactie wordt uitgevoerd moet je in de JavaScript uitvoer
 | profile.fields.[veldnaam]           | Een specifiek veld van het profiel                                                                                  |
 | profile.interests.[interessenaam]   | Een specifieke interesse van het  profiel                                                                                  |
 | profile.subProfiles([collectienaam])| Alle subprofielen die in de collectie zitten binnen het profiel  
-| profile.datbase.id                  | Het ID van de database waar het profiel in zit 
-| profile.datbase.name                | De naam van de database waar het profiel in zit 
+| profile.database.id                  | Het ID van de database waar het profiel in zit 
+| profile.database.name                | De naam van de database waar het profiel in zit 
 | profile.collections.[collectienaam] | Alle subprofielen die in de collectie zitten binnen de database waar het profiel in zit                             |                                                |
 | subprofile.id                       | Het ID van het subprofiel                                                                                           |
 | subprofile.code                     | De verborgen hashcode van het subprofiel                                                                           |
