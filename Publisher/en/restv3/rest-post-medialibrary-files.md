@@ -8,12 +8,11 @@ In this, `$id` should be replaced by the numerical identifier, the ID,
 or the name of the media library you want to add the file/image to. 
 
 ## File upload
-To upload a file, you have to use [cURL](https://www.php.net/manual/en/curl.examples-basic.php) in PHP.  
-In the PHP script, you have to specify some settings:
+To upload files to the REST API you can use HTTP POST requests. But beware, the content-type of the calls, unlike the other POST calls, must be set to "multipart/form-data". The body data of the request must also be sent in this multipart format (and not in JSON or application/x-www-form-urlencoded format as with the other POST calls).
 
-**$file**: enter the absolute path where the file can be found on your local computer.  
-**content-Type**: specify the correct content-type. For files, non-ASCII and binary data, the type is `multipart/form-data`.  
-**mime_content_type**: to place the file in the correct format in the media library, the mime_content_type must be passed. You can use the PHP function `mime_content_type($file)`.
+The name you give to the variables is irrelevant. In our examples we use "file", but this can be anything. The content-type that you give to the file may be relevant, because images can be processed differently than regular files. This is especially relevant when uploading to a media library.
+
+If you use PHP and CURL, CURL takes care of this for you. By making a CURL call with CURLFile objects, PHP/CURL will automatically switch to multipart encoding.
 
 ## PHP example
 
