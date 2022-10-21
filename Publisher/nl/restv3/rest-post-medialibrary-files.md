@@ -7,12 +7,13 @@ Je kunt een bestand/afbeelding toevoegen aan een mediabibliotheek door een HTTP 
 De code $id moet je vervangen door de numerieke identifier of de naam van de mediabibliotheek waar je het bestand of afbeelding in wilt opslaan. 
 
 ## Bestand uploaden
-Om een bestand te uploaden moet je gebruik maken van [cURL](https://www.php.net/manual/en/curl.examples-basic.php) in PHP.  
-Aan je PHP-script moet je een aantal instellingen meegeven:
+Om bestanden te uploaded naar de REST API kunt je HTTP POST-requests gebruiken. Maar let op, het content-type van de calls moet, in tegenstellng tot de andere POST-calls, staan ingesteld op "multipart/form-data". De body data van het request moet ook in dit multipart formaat worden verstuurd (en dus niet in JSON of application/x-www-form-urlencoded formaat zoals bij de andere POST-calls).
 
-**$file**: hier vul je het absolute path in waar het bestand op je lokale computer te vinden is.  
-**content-Type**: in het script geef je het juiste content-type op. Voor bestanden, niet-ASCII en binaire gegevens is dit `multipart/form-data`.  
-**mime_content_type**: om het bestand in het juiste formaat in de mediabibliotheek te plaatsen, moet de mime_content_type meegegeven worden. Hiervoor gebruik je de PHP-functie `mime_content_type($file)`.
+De naam die je aan de variabelen geeft is niet relevant. In onze voorbeelden gebruiken we "file", maar dit kan dus van alles zijn. Het
+content-type dat je meegeeft aan het bestand kan wel relevant zijn, omdat afbeeldingen anders kunnen worden verwerkt dan reguliere bestanden. Dit is met name relevant bij uploads naar een media library.
+
+Indien je gebruik maakt van PHP en CURL dan regelt CURL dit allemaal voor je. Door een CURL-call te doen waar CURLFile objecten in worden
+gebruikt, schakelt PHP/CURL vanzelf over op de multipart-encoding.
 
 ## Voorbeeld in PHP
 
