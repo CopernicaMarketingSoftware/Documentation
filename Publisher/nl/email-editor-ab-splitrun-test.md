@@ -3,7 +3,7 @@
 ## Verschil A/B-test of split-run 
 Met een A/B-test kan je twee templates of documenten met elkaar vergelijken. De bestemming zal in twee groepen gesplitst worden om zo te kijken welk template of document het beste presteert. In het verzendscherm is de verdeling van de twee groepen standaard 50/50. Met een slider kan je deze verdeling aanpassen.
 
-Met een split-run kan je twee of meerdere mailings met elkaar vergelijken die naar een beperkt deel van de verzendselectie worden verzonden. De beste mailing wordt vervolgens automatisch naar het resterende deel van de verzendselectie verzonden.Je kunt tot 5 verschillende groepen gebruiken.
+Met een split-run kan je twee of meer mailings met elkaar vergelijken die naar een beperkt deel van de verzendselectie worden verzonden. De beste mailing wordt vervolgens automatisch naar het resterende deel van de verzendselectie verzonden.Je kunt tot 5 verschillende groepen gebruiken.
 
 De statistieken van de losse groepen zijn terug te vinden in de [resultaten-module](https://ms.copernica.com/#/results/sentmailings).
 
@@ -25,8 +25,10 @@ Met een A/B-test kun je twee templates of documenten met elkaar vergelijken. De 
 
 Standaard staat er een verdeling van 50% (groep A) en 50% (groep B) ingesteld. Om dit percentage te wijzigen sleep je de slider tussen de twee groepen.
 
+![Slider](../images/nl/abtestslider.png)
+
 **Split-run**   
-Met een split-run kun je twee of meer mailings met elkaar vergelijken die naar een beperkt deel van de verzendselectie worden verzonden. De beste mailing wordt vervolgens automatisch naar het resterende deel van de verzendselectie verzonden.
+Met een split-run kun je twee of meer mailings met elkaar vergelijken die naar een beperkt deel van de verzendselectie worden verzonden. De best presterende mailing wordt vervolgens automatisch naar het resterende deel van de verzendselectie verzonden.
 
 Bij een split-run staat de verdeling van de groepen standaard op 25% (groep A), 25% (groep B) en 50% (definitieve groep) ingesteld. Ook hier is het mogelijk om met de slider de grootte van de groepen aan te passen. 
 
