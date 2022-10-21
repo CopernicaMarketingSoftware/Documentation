@@ -25,7 +25,7 @@ Met een A/B-test kun je twee templates of documenten met elkaar vergelijken. De 
 
 Standaard staat er een verdeling van 50% (groep A) en 50% (groep B) ingesteld. Om dit percentage te wijzigen sleep je de slider tussen de twee groepen.
 
-![Slider](../images/nl/abtestslider.png)
+![Slider](../images/nl/slider.png)
 
 **Split-run**   
 Met een split-run kun je twee of meer mailings met elkaar vergelijken die naar een beperkt deel van de verzendselectie worden verzonden. De best presterende mailing wordt vervolgens automatisch naar het resterende deel van de verzendselectie verzonden.
