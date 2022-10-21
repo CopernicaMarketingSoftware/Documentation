@@ -1,4 +1,4 @@
-m# Overzicht van methodes
+Overzicht van methodes
 
 ## Account
 
@@ -375,6 +375,12 @@ Dit geldt ook voor de voorbeeldcode.
 | GET    | [api.copernica.com/v3/ms/destination/$id/deliveries](./rest-get-ms-destination-deliveries)   | Opvragen van alle deliveries voor een bestemming  |
 | GET    | [api.copernica.com/v3/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Opvragen van alle errors voor een bestemming      |
 | GET    | [api.copernica.com/v3/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Opvragen van alle impressions voor een bestemming |
+
+## Mediabibliotheken
+
+| Type   | Adres                                                                                        | Omschrijving                                                          |
+|--------|----------------------------------------------------------------------------------------------|-----------------------------------------------------------------------|
+| POST   | [api.copernica.com/v3/medialibrary/$id/files](./rest-post-medialibrary-files)                | Toevoegen van een bestand/afbeelding aan je mediabibliotheek          |
 
 ## Dataverzoeken
 
