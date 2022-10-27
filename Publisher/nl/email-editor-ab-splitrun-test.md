@@ -1,11 +1,9 @@
 # Versturen van een A/B-tests of split-run
 
 ## Verschil A/B-test of split-run 
-Met een A/B-test kan je twee templates of documenten met elkaar vergelijken. De bestemming zal in twee groepen gesplitst worden om zo te kijken welk template of document het beste presteert. In het verzendscherm is de verdeling van de twee groepen standaard 50/50. Met een slider kan je deze verdeling aanpassen.
+Met een A/B-test kan je twee templates of documenten met elkaar vergelijken. De doelgroep van je mailing zal in twee gelijkmatige groepen gesplitst worden om zo te kijken welk template of document het beste presteert.
 
 Met een split-run kan je twee of meer mailings met elkaar vergelijken die naar een beperkt deel van de verzendselectie worden verzonden. De beste mailing wordt vervolgens automatisch naar het resterende deel van de verzendselectie verzonden.Je kunt tot 5 verschillende groepen gebruiken.
-
-De statistieken van de losse groepen zijn terug te vinden in de [resultaten-module](https://ms.copernica.com/#/results/sentmailings).
 
 ## Versturen van een A/B test of split-run
 Om een A/B test of split-run te versturen kies je binnen je [(mini)selectie](https://ms.copernica.com/#/profiles/) voor **Mailing versturen**. 
@@ -52,3 +50,6 @@ De volgende vergelijksmogelijkheden zijn beschikbaar:
 #### Voorbeeld
 In onderstaand voorbeeld ontvangt het resterende deel van de verzendselectie (50%) het template of document waarop in de afgelopen drie uur de meeste unieke impressies zijn geregistreerd.
 ![Voorbeeld van definitieve groep](../images/nl/definitievegroep.png)
+
+## Statistieken
+De statistieken van de losse groepen zijn terug te vinden in de [resultaten-module](https://ms.copernica.com/#/results/sentmailings).
