@@ -2,8 +2,8 @@
 
 The variables used for personalization can be altered with modifiers. A modifier
 is called on the variable by appending it with a `|` before the closing curly
-brace. E.g. if you want to apply the `tolower` modifier on
-variable `{$name}` you use: `{$name|tolower}`.
+brace. E.g. if you want to apply the `lower` modifier on
+variable `{$name}` you use: `{$name|lower}`.
 
 An example of how the modifiers can be used for a personalized mail is:
 ````text
@@ -15,8 +15,8 @@ Besides calling one modifier on a variable it is possible to chain modifiers.
 E.g. you have name data. However, the strings containing names, are sometimes
 capitalized and sometimes not. You want to use these names and you want to
 be sure that a name starts with a capital and the rest of the name is in
-lower case. Doing this is easy. You use `{$name|tolower|ucfirst}`. The first
-modifier `tolower`, will make sure that the name is all in lower case. Then
+lower case. Doing this is easy. You use `{$name|lower|ucfirst}`. The first
+modifier `lower`, will make sure that the name is all in lower case. Then
 modifier `ucfirst` is applied, which will capitalize the first character.
 Note that if you call a modifier that does not exist, no effect takes place.
 
@@ -41,14 +41,14 @@ The following table lists all supported modifiers:
 | [regex_replace](personalization-modifiers#regex_replace):regex:replace_text                | replace substrings using regular expression                                                                                                  |
 | [replace](personalization-modifiers#replace):"string1":"string2"                           | replace occurrences of string1 with string2                                                                                                  |
 | [sha1](personalization-modifiers#sha1)                                                     | perform sha1 hashing                                                                                                                         |
-| [sha256](personalization-modifiers#sha256)                                                 | not available; hash with {hash($text, 'sha256')}                                                                                             |
-| [sha512](personalization-modifiers#sha512)                                                 | not available; hash with {hash($text, 'sha512')}                                                                                             |
+| [sha256](personalization-modifiers#sha256)                                                 | not available; hash with {hash('sha256', $text)}                                                                                             |
+| [sha512](personalization-modifiers#sha512)                                                 | not available; hash with {hash('sha512', $text)}                                                                                             |
 | [spacify](personalization-modifiers#spacify):separator = " "                               | place a separator between every input character                                                                                              |
 | [strlen](personalization-modifiers#strlen)                                                 | count the characters in a string                                                                                                             |
 | [strstr](personalization-modifiers#strstr):"substring":before = false                      | return the string starting from the first occurrence of substring if before = false. otherwise return the string until the first occurrence. |
 | [substr](personalization-modifiers#substr):start position:length                           | return the substring from start position onward, optionally truncated after length characters                                                |
-| [tolower](personalization-modifiers#tolower)                                               | convert all characters to lower case                                                                                                         |
-| [toupper](personalization-modifiers#toupper)                                               | convert all characters to upper case                                                                                                         |
+| [lower](personalization-modifiers#lower)                                                   | convert all characters to lower case                                                                                                         |
+| [upper](personalization-modifiers#upper)                                                   | convert all characters to upper case                                                                                                         |
 | [trim](personalization-modifiers#trim)                                                     | trim the white space and endline characters off both sides of the input                                                                      |
 | [truncate](personalization-modifiers#truncate):length = 80:etc = "...":break_words = false | truncate inputs that are longer than length and append etc at the end. break_words = true allows truncating parts of words                   |
 | [ucfirst](personalization-modifiers#ucfirst)                                               | replace first character with an upper case character                                                                                         |
