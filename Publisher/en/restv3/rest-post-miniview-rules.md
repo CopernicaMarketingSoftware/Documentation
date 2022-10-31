@@ -31,9 +31,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to pass to the call
 $data = array(
-    'name'      =>  'rule-name',
-    'view'      =>  1234,
-      =>  False
+    'name'      =>  'rule-name'
 );
     
 // do the call
