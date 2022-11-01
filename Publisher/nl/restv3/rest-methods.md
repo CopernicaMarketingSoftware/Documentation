@@ -155,7 +155,7 @@ in de onderstaande tabel.
 
 | Type   | Adres                                                                                                | Omschrijving                                                      |
 |--------|------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| POST   | [api.copernica.com/v3///profiles](./rest-post-database-profiles)                          | Aanmaken van een database profiel                                 |
+| POST   | [api.copernica.com/v3/database/$id/profiles](./rest-post-database-profiles)                          | Aanmaken van een database profiel                                 |
 | GET    | [api.copernica.com/v3/profile/$id](./rest-get-profile)                                               | Opvragen van profiel informatie                                   |
 | PUT    | [api.copernica.com/v3/profile/$id](./rest-put-profile)                                               | Updaten van profiel informatie                                    |
 | DELETE | [api.copernica.com/v3/profile/$id](./rest-delete-profile)                                            | Verwijderen van een profiel                                       |
