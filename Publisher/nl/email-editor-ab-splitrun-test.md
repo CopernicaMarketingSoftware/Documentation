@@ -1,9 +1,9 @@
 # Versturen van een A/B-tests of split-run
 
 ## Verschil A/B-test of split-run 
-Met een A/B-test kan je twee templates of documenten met elkaar vergelijken. De doelgroep van je mailing zal in twee gelijkmatige groepen gesplitst worden om zo te kijken welk template of document het beste presteert.
+Met een A/B-test kan je twee templates of documenten met elkaar vergelijken. De doelgroep van je mailing wordt in twee gelijkmatige groepen gesplitst om zo te kijken welk template of document het beste presteert.
 
-Met een split-run kan je twee of meer mailings met elkaar vergelijken die naar een beperkt deel van de verzendselectie worden verzonden. De beste mailing wordt vervolgens automatisch naar het resterende deel van de verzendselectie verzonden.Je kunt tot 5 verschillende groepen gebruiken.
+Het verschil tussen een A/B-test en een split-run is dat je met een split-run twee of meer mailings met elkaar kunt vergelijken die naar een beperkt deel van de verzendselectie worden verzonden. De beste mailing wordt vervolgens automatisch naar het resterende deel van de verzendselectie verzonden. Je kunt tot 5 verschillende groepen gebruiken.
 
 ## Versturen van een A/B test of split-run
 Om een A/B test of split-run te versturen kies je binnen je [(mini)selectie](https://ms.copernica.com/#/profiles/) voor **Mailing versturen**. 
@@ -19,7 +19,7 @@ Er zijn drie verschillende type mailings:
 Met een reguliere mailing kun je een template of document naar de gehele bestemming sturen.
 
 **A/B-test**  
-Met een A/B-test kun je twee templates of documenten met elkaar vergelijken. De bestemming zal in twee groepen gesplitst worden om zo te kijken welk document of template het beste presteert.
+Met een A/B-test kun je twee templates of documenten met elkaar vergelijken. De bestemming wordt in twee groepen gesplitst om zo te kijken welk document of template het beste presteert.
 
 Standaard staat er een verdeling van 50% (groep A) en 50% (groep B) ingesteld. Om dit percentage te wijzigen sleep je de slider tussen de twee groepen.
 
