@@ -1,9 +1,23 @@
 # Versturen van een A/B-tests of split-run
 
 ## Verschil A/B-test of split-run 
-Met een A/B-test kan je twee templates of documenten met elkaar vergelijken. De doelgroep van je mailing wordt in twee gelijkmatige groepen gesplitst om zo te kijken welk template of document het beste presteert.
+Een A/B-test gebruik je om te testen welke variant het beste werkt voor een volgende verzending. De doelgroep van je mailing wordt in twee gelijkmatige groepen gesplitst. De eerste groep ontvangt template A en de tweede groep template B. 
 
-Het verschil tussen een A/B-test en een split-run is dat je met een split-run twee of meer mailings met elkaar kunt vergelijken die naar een beperkt deel van de verzendselectie worden verzonden. De beste mailing wordt vervolgens automatisch naar het resterende deel van de verzendselectie verzonden. Je kunt tot 5 verschillende groepen gebruiken.
+In je template of document zitten een aantal variabelen waarop je kunt testen:
+- onderwerpsregel
+- naam van de afzender
+- call-to-actions (buttons)
+- tone of voice
+- vormgeving
+
+In de [statistieken](https://ms.copernica.com/#/results) zie je per variant de geregistreerde opens en kliks. Als je ziet dat een bepaalde variabele betere resultaten oplevert kan je deze verbetering permanent doorvoeren in je templates.  
+
+Het verschil tussen een A/B-test en een split-run is dat je met een split-run eerst naar een beperkt deel van je verzendselectie de mailing verstuurt om te zien welke versie het beste presteert. Op basis van de resultaten van deze testgroepen wordt automatisch de beste presterende versie naar de overige contacten verzonden. 
+
+Hierdoor moet je bij het instellen van de split-run meer instellen:
+- hoe groot moeten de testgroepen zijn?
+- hoeveel tijd zit er tussen de testgroepen?
+- op basis van welke gegevens bepaal je de definitieve groep?
 
 ## Versturen van een A/B test of split-run
 Om een A/B test of split-run te versturen kies je binnen je [(mini)selectie](https://ms.copernica.com/#/profiles/) voor **Mailing versturen**. 
