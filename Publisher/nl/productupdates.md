@@ -1,4 +1,5 @@
 # Productupdates
+* [Productupdate 03-11-2022 - Onderhoud aan onze infrastructuur en modules maken voor HTML-templates](./productupdate20221103)
 * [Productupdate 10-08-2022 - A/B-tests en split-runs in Marketing Suite](./productupdate20220725)
 * [Productupdate 01-06-2022 - A/B-tests voor drag-and-drop-templates (bèta) en het vergelijken van statistieken](./productupdate20220601)
 * [Productupdate 08-04-2022 - Verbeterde resultatenmodule en versiegeschiedenis binnen drag-and-drop-templates](./productupdate20220408)
