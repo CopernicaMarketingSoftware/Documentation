@@ -4,7 +4,7 @@ Om onze infrastructuur en software beter schaalbaar en beheersbaar te maken, en 
 In ons [blogartikel](https://www.copernica.com/nl/blog/post/onderhoud-aan-onze-infrastructuur-overgang-naar-kubernetes) lees je meer.
 
 # Modules maken voor HTML-templates
-Binnen HTML-templates worden vaak vaste elementen gebruikt die in alle templates dezelfde content bevatten. Zoals de header en footer. Toch moet je ieder template aanpassen als je deze content wilt veranderen.
+Binnen HTML-templates worden vaak vaste elementen gebruikt die in alle templates dezelfde content bevatten. Zoals de header en footer. Toch moet je iedere template aanpassen als je deze content wilt veranderen.
 
 Ronald Vesterink van Pricewise bedacht hiervoor een oplossing. Op basis van feeds en een XSLT-bestand maakt hij 'modules' zodat je content eenvoudig kan hergebruiken. In [dit artikel](https://www.copernica.com/nl/blog/post/onderhoud-aan-onze-infrastructuur-overgang-naar-kubernetes) nemen we je mee hoe je dit opzet.
 
