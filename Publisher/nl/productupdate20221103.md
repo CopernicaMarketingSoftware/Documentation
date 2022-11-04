@@ -6,7 +6,7 @@ In ons [blogartikel](https://www.copernica.com/nl/blog/post/onderhoud-aan-onze-i
 # Modules maken voor HTML-templates
 Binnen HTML-templates worden vaak vaste elementen gebruikt die in alle templates dezelfde content bevatten. Zoals de header en footer. Toch moet je iedere template aanpassen als je deze content wilt veranderen.
 
-Ronald Vesterink van Pricewise bedacht hiervoor een oplossing. Op basis van feeds en een XSLT-bestand maakt hij 'modules' zodat je content eenvoudig kan hergebruiken. In [dit artikel](https://www.copernica.com/nl/blog/post/onderhoud-aan-onze-infrastructuur-overgang-naar-kubernetes) nemen we je mee hoe je dit opzet.
+Ronald Vesterink van Pricewise bedacht hiervoor een oplossing. Op basis van feeds en een XSLT-bestand maakt hij 'modules' zodat je content eenvoudig kan hergebruiken. In [dit artikel](https://www.copernica.com/nl/blog/post/modules-maken-voor-html-templates) nemen we je mee hoe je dit opzet.
 
 # Uitfaseren oude drag-and-drop-editor op 1 maart 2023
 Op 1 maart 2023 is het niet meer mogelijk om gebruik te maken van de [oude drag-and-drop-editor](https://ms.copernica.com/#/templates/editor/). Wij raden aan om voor deze datum alle templates van lopende mailings over te zetten naar de nieuwe drag-and-drop-editor.
