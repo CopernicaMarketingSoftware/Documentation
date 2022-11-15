@@ -16,7 +16,7 @@ Via **Webformulier "Naam" -> Instellingen** kunnen we het gedrag van het webform
 
 Vervolgens maken we de drie velden aan via **Webformulier "Naam" -> Veld toevoegen**. Kies vervolgens voor de optie 'interesse'. Als label kiezen we in dit geval de naam van de interesse waar we het veld aan koppelen, bij gekoppeld aan wordt de juiste interesse gekozen en het veld is vooraf ingevuld met (sub)profieldata. Herhaal dit voor de overige twee interesses.
 
-Onder preview zouden we nu het volgende moeten zien.
+Onder preview zouden we nu het volgende moeten zien.  
 ![Voorbeeld van de preview van het formulier](https://pix.copernica.com/image/37629028/ebf590883fadb92a54b735cc5738a5d8/Screenshot%20from%202020-02-17%2014-25-34.png)
 
 ## XSLT
