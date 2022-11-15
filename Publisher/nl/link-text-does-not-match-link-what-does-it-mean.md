@@ -13,12 +13,12 @@ een hyperlink is gevonden die de link URL als link tekst heeft.
 #### Waarom levert dit punten op?
 
 Wanneer de e-mail wordt verzonden, veranderen wij de URL van de link
-onderhuids naar http://pic.vicinity.nl/... Dit is nodig om kliks en
+onderhuids naar https://track.copernica.net/... Dit is nodig om kliks en
 impressies te kunnen registreren.
 
-    <a href="http://pic.vicinity.nl/...">http://www.google.com</a>
+    <a href="https://track.copernica.net/...">http://www.google.com</a>
 
-Voila, de links komen niet meer met elkaar overeen. E-mailprogramma's en
+De links komen niet meer met elkaar overeen. E-mailprogramma's en
 spamfilters kunnen dit interpreteren als een phishing poging. In Outlook
 worden dergelijke links zelfs in het geheel onklikbaar gemaakt.
 
