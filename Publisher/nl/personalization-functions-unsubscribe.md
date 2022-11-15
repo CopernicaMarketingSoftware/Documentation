@@ -51,13 +51,13 @@ Wanneer je zelfgedefinieerde variabelen wilt gebruiken dien je eerst de URL te d
 
 **Naar eigen domein verwijzen** 
 
-Om in plaats van het standaarddomein (pic.vicinity.nl) van Copernica een
+Om in plaats van het standaarddomein (je sender domain) een
 eigen domein te tonen, is de optie *domain* beschikbaar.
 
 `{unsubscribe domain='nieuwsbrief.yourdomain.com'}`
 
 Let op: het uitschrijfdomein moet een CNAME verwijzing hebben naar onze
-server (http://vicinity.picsrv.net/) om de link te laten werken.
+server (https://track.copernica.net/) om de link te laten werken.
 
 ## Meer informatie
 
