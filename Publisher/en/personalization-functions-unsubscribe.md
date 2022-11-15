@@ -28,7 +28,7 @@ However, it is also possible to redirect the user to one of your own pages.
 
 `{unsubscribe redirect='http://www.eendomein.nl/eigenlandingspagina.html'}`
 
-The standard domain of Copernica is (pic.vicinity.nl), but when the user 
+The standard domain of Copernica is pix.copernica.com, but when the user 
 hovers over the link they see this. Therefore it looks more professional 
 to refer to your own domain with the *domain* option.
 
