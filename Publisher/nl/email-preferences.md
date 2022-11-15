@@ -2,7 +2,7 @@
 Wanneer je verschillende soorten nieuwsbrieven verstuurt is het belangrijk om een webpagina te hebben waarop klanten hun voorkeuren kunnen updaten. Deze webpagina kan geheel binnen Copernica worden ingericht met behulp van een webformulier en XSLT. 
 
 In deze tutorial leggen we uit hoe de onderstaande voorkeurenpagina gemaakt wordt.
-![Screenshot van voorkeurenpagina](https://pic.vicinity.nl/image/37852263/3b3bdf20523c02e42a3f96c3525404c0/Screenshot%20from%202020-02-20%2015-19-18.png)
+![Screenshot van voorkeurenpagina](https://pix.copernica.com/image/37852263/3b3bdf20523c02e42a3f96c3525404c0/Screenshot%20from%202020-02-20%2015-19-18.png)
 
 ## Database
 In de database houden we de voorkeuren van de nieuwsbrief bij in een [interesseveld](https://www.copernica.com/nl/documentation/database-fields#interesses). In ons geval betekent dit dat wij drie verschillende interesses willen aanmaken; dagdeals, weekdeals en maanddeals.
@@ -17,7 +17,7 @@ Via **Webformulier "Naam" -> Instellingen** kunnen we het gedrag van het webform
 Vervolgens maken we de drie velden aan via **Webformulier "Naam" -> Veld toevoegen**. Kies vervolgens voor de optie 'interesse'. Als label kiezen we in dit geval de naam van de interesse waar we het veld aan koppelen, bij gekoppeld aan wordt de juiste interesse gekozen en het veld is vooraf ingevuld met (sub)profieldata. Herhaal dit voor de overige twee interesses.
 
 Onder preview zouden we nu het volgende moeten zien.
-![Voorbeeld van de preview van het formulier](https://pic.vicinity.nl/image/37629028/ebf590883fadb92a54b735cc5738a5d8/Screenshot%20from%202020-02-17%2014-25-34.png)
+![Voorbeeld van de preview van het formulier](https://pix.copernica.com/image/37629028/ebf590883fadb92a54b735cc5738a5d8/Screenshot%20from%202020-02-17%2014-25-34.png)
 
 ## XSLT
 De XSLT zal ons formulier omzetten in bruikbare HTML. Onder Stijl kunnen we via **XSLT -> Nieuwe XSLT** een nieuw bestand aanmaken. Het doel is een webformulier en we willen hem niet vullen met voorbeeldcode. De code die we er in willen plaatsen is de volgende:
@@ -117,7 +117,7 @@ De CSS kan net als de XSLT toegevoegd worden via Stijl waarna we op **Stylesheet
       display: none;
       width: 12px;
       height: 12px;
-      background-image: url("https://pic.vicinity.nl/image/37847718/06097c32095bf7f3871cc2fabed2219d/check-white.svg");
+      background-image: url("https://pix.copernica.com/image/37847718/06097c32095bf7f3871cc2fabed2219d/check-white.svg");
       background-repeat: no-repeat;
       vertical-align: middle;
       background-size: cover;
