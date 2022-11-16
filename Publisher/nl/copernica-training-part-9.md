@@ -29,7 +29,7 @@ Maak een collectie aan en noem deze '**Orders**'. Voeg vervolgens de volgende ve
     * ordered;
 * Artikelnummer.
 
-Importeer vervolgens het bestand [AdvancedOrders.txt](https://vicinity.picsrv.net/g/127/0/9966/946570547c4af9079f398f3af00edcd4/export-2021-05-19.zip). Merk op dat het bestand dezelfde velden bevat als zojuist toegevoegd. Verbind de kolommen met de juiste velden en
+Importeer vervolgens het bestand [AdvancedOrders.txt](https://pix.copernica.com/g/127/0/9966/946570547c4af9079f398f3af00edcd4/export-2021-05-19.zip). Merk op dat het bestand dezelfde velden bevat als zojuist toegevoegd. Verbind de kolommen met de juiste velden en
 importeer de data in de database. **Let op**: gebruik sleutelvelden ('**E-mail**' en '**Aanschafdatum**') 
 om de data te importeren.
 
