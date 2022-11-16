@@ -44,8 +44,7 @@ Example:
     <a  href="http://www.google.com">http://www.google.com</a>
     <a  href="http://www.google.com">www.google.com</a>
 
-Because the original link is replaced by our pic server domain
-(http://pic.vicinity...) the link will be blocked because email clients
+Because the original link is replaced by your tracking domain the link will be blocked because email clients
 will find this discrepancy misleading to subscribers.
  Better do something like this:
 
