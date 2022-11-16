@@ -30,7 +30,7 @@ en het aantal unieke impressies respectievelijk.
 en het aantal unieke unsubscribes respectievelijk.
 * **unknown**: Array met het velden 'total' voor de statistieken die niet binnen 
 de bovenstaande categorieën vallen.
-* **dominant_results**: Array met het [dominante resultaat](./../../statistics-dominant-result.md) per onderdeel.
+* **dominant_results**: Array met het [dominante resultaat](./../statistics-dominant-result.md) per onderdeel.
 
 ### Voorbeeld
 
