@@ -30,51 +30,51 @@ en het aantal unieke impressies respectievelijk.
 en het aantal unieke unsubscribes respectievelijk.
 * **unknown**: Array met het velden 'total' voor de statistieken die niet binnen 
 de bovenstaande categorieën vallen.
+* **dominant_results**: Array met het [dominante resultaat](./../../statistics-dominant-result.md) per onderdeel.
 
 ### Voorbeeld
 
 Hieronder vind je een voorbeeld van zo'n JSON object:
 
 ```json
-Array
-(
-    [abuses] => Array
-        (
-            [total] => 0
-            [unique] => 0
-        )
-
-    [clicks] => Array
-        (
-            [total] => 2
-            [unique] => 1
-        )
-
-    [errors] => Array
-        (
-            [total] => 0
-            [unique] => 0
-        )
-
-    [impressions] => Array
-        (
-            [total] => 4
-            [unique] => 4
-        )
-
-    [unsubscribes] => Array
-        (
-            [total] => 1
-            [unique] => 1
-        )
-
-    [unknown] => Array
-        (
-            [total] => 0
-        )
-
-
-)
+{
+    "destinations": 10,
+    "deliveries": {
+        "total": 10
+    },
+    "errors": {
+        "total": 1,
+        "unique": 1
+    },
+    "impressions": {
+        "total": 4,
+        "unique": 3
+    },
+    "clicks": {
+        "total": 2,
+        "unique": 2
+    },
+    "unsubscribes": {
+        "total": 0,
+        "unique": 0
+    },
+    "abuses": {
+        "total": 0,
+        "unique": 0
+    },
+    "unknown": {
+        "total": 0
+    },
+    "dominant_results": {
+        "destinations": 10,
+        "errors": 1,
+        "abuses": 0,
+        "unsubscribes": 0,
+        "clicks": 2,
+        "impressions": 2,
+        "deliveries": 0
+    }
+}
 ```
 
 ## PHP voorbeeld
