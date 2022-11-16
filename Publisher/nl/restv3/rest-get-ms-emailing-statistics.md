@@ -28,7 +28,7 @@ en het aantal unieke kliks respectievelijk.
 en het aantal unieke impressies respectievelijk.
 * **retries**: Array met het veld 'total' en 'unique' voor het aantal retries.
 * **unsubscribes**: Array met het veld 'total' en 'unique' voor het aantal unsubscribes.
-* **dominant_results**: Array met het [dominante resultaat](./../../statistics-dominant-result.md) per onderdeel.
+* **dominant_results**: Array met het [dominante resultaat](./../statistics-dominant-result.md) per onderdeel.
 
 ### Voorbeeld
 
