@@ -56,7 +56,7 @@ in. Zet de velden '**Nieuwsbrief**' en ​'**Test**' op 'Ja'. **Let op**: de dat
 Je wilt natuurlijk niet alle profielen met de hand hoeven aanmaken. Daarom doen we dit door
 middel van een import. Klik hiervoor op de database en vervolgens op '**Imports**'​, '**Nieuwe
 import aanmaken**'. Upload **Fundamentaldatabase.txt** uit het 
-[trainingsbestand](https://vicinity.picsrv.net/g/127/0/9966/946570547c4af9079f398f3af00edcd4/export-2021-05-19.zip) 
+[trainingsbestand](https://pix.copernica.com/g/127/0/9966/946570547c4af9079f398f3af00edcd4/export-2021-05-19.zip) 
 zoals aangegeven in de onderstaande afbeelding. Klik vervolgens op '**Import aanmaken**​'.
 
 ![Import aanmaken](../images/nl/import-aanmaken.png)
