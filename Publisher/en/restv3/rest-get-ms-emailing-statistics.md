@@ -31,41 +31,50 @@ total number impressions and number of unique impressions respectively.
 * **retries**: An array with field 'total' and 'unique' for the total 
 number of retries.
 * **unsubscribes**: An array with field 'total' and 'unique' for the total number of unsubscribes.
+* **dominant_results**: Array with the [dominant result](./../statistics-dominant-result.md).
 
 ### Example
 
 The JSON output will look something like this:
 
 ```json
-{  
-   "destinations":"13801",
-   "abuses":{  
-      "total":0,
-      "unique":0
-   },
-   "clicks":{  
-      "total":15,
-      "unique":11
-   },
-   "deliveries":{  
-      "total":39
-   },
-   "errors":{  
-      "total":0,
-      "unique":0
-   },
-   "impressions":{  
-      "total":24,
-      "unique":18
-   },
-   "retries":{  
-      "total":0,
-      "unique":0
-   },
-   "unsubscribes":{  
-      "total":3,
-      "unique":2
-   }
+{
+    "destinations": 10,
+    "deliveries": {
+        "total": 10
+    },
+    "errors": {
+        "total": 1,
+        "unique": 1
+    },
+    "impressions": {
+        "total": 4,
+        "unique": 3
+    },
+    "clicks": {
+        "total": 2,
+        "unique": 2
+    },
+    "unsubscribes": {
+        "total": 0,
+        "unique": 0
+    },
+    "abuses": {
+        "total": 0,
+        "unique": 0
+    },
+    "unknown": {
+        "total": 0
+    },
+    "dominant_results": {
+        "destinations": 10,
+        "errors": 1,
+        "abuses": 0,
+        "unsubscribes": 0,
+        "clicks": 2,
+        "impressions": 2,
+        "deliveries": 0
+    }
 }
 ```
 
