@@ -28,16 +28,6 @@ However, it is also possible to redirect the user to one of your own pages.
 
 `{unsubscribe redirect='http://www.eendomein.nl/eigenlandingspagina.html'}`
 
-The standard domain of Copernica is (pic.vicinity.nl), but when the user 
-hovers over the link they see this. Therefore it looks more professional 
-to refer to your own domain with the *domain* option.
-
-`{unsubscribe domain='nieuwsbrief.yourdomain.com'}`
-
-Please note that the unsubscribe domain should have a CNAME reference to 
-our server (http://vicinity.picsrv.net/) in order to make the link work, 
-because otherwise the unsubscribe action does not reach us.
-
 ## More information
 
 * [Personalization functions](./personalization-functions)

@@ -33,7 +33,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
         "@type": "Organization",
 
       // EDIT 1 Logo image
-        "logo": "https://pic.vicinity.nl/image/14579894/0ee297827761284dd8f78601d3a1c9f5/image.png"
+        "logo": "https://pix.copernica.com/image/14579894/0ee297827761284dd8f78601d3a1c9f5/image.png"
       },{
         "@context": "http://schema.org/",
         "@type": "EmailMessage",
@@ -60,7 +60,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
         "@type": "PromotionCard",
 
       // EDIT 7 image, 538x138 pixels is best, 3.9 aspect ratio is recommended, use png or jpeg file format
-        "image": "https://pic.vicinity.nl/image/14579892/946b36fc985fa49220b501af8fc6aa4c/image.jpeg"
+        "image": "https://pix.copernica.com/image/14579892/946b36fc985fa49220b501af8fc6aa4c/image.jpeg"
       }]
     [/literal]
   </script>

@@ -46,7 +46,7 @@ also Copernica users sending spammy mails that harm their reputation.
 Luckily, you can set up your own pic-register domain easily. Most people 
 create a subdomain under their company domain 
 (e.g., *newsletter.companydomain.com*). Point the (sub)domain to 
-pic.vicinity.com using a CNAME. Then go to the delivery settings of 
+track.copenrica.net using a CNAME. Then go to the delivery settings of 
 your account and enter your own domain at the pic-register settings, 
 replacing the old one.
 

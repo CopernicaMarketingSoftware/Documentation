@@ -44,7 +44,7 @@ We hebben het over het volgende soort links:
 `<a  href="http://www.google.com">http://www.google.com</a>`
 `<a  href="http://www.google.com">www.google.com</a>`
 
-De originele link wordt vervangen door ons pic server domein (http://pic.vicinity...) 
+De originele link wordt vervangen door je tracking domein (bijvoorbeeld: https://pix.copernica.com) 
 om bijvoorbeeld klik te kunnen registreren. Sommige email clients zien 
 dat de link niet hetzelfde is als de URL waar de gebruiker heen denkt te 
 gaan en verhogen daardoor je spam score. Je kunt beter de URL vervangen 

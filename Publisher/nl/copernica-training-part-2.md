@@ -19,8 +19,8 @@ je profielen in de database importeren. Dat kan op de volgende manieren:
 ### Opdracht
 
 We beginnen met het aanmaken van een database binnen Copernica. Hiervoor download je alvast
-de [trainingsbestanden](https://vicinity.picsrv.net/g/127/0/9966/946570547c4af9079f398f3af00edcd4/export-2021-05-19.zip)
-en het [Publisher-template](https://vicinity.picsrv.net/g/127/0/9558/2e97da82d4b6433bba6a35dbc0b6d2a5/new_template.zip).
+de [trainingsbestanden](https://pix.copernica.com/g/127/0/9966/946570547c4af9079f398f3af00edcd4/export-2021-05-19.zip)
+en het [Publisher-template](https://pix.copernica.com/g/127/0/9558/2e97da82d4b6433bba6a35dbc0b6d2a5/new_template.zip).
 
 Unzip de bestanden op een plek waar je ze makkelijk kunt vinden en neem een kijkje in het
 bestand ​ '__FundamentalDatabase.txt__'. Dit bestand bevat de data die we later gaan importeren.

@@ -49,16 +49,6 @@ Wanneer je zelfgedefinieerde variabelen wilt gebruiken dien je eerst de URL te d
 {unsubscribe redirect=$url}
 ```
 
-**Naar eigen domein verwijzen** 
-
-Om in plaats van het standaarddomein (pic.vicinity.nl) van Copernica een
-eigen domein te tonen, is de optie *domain* beschikbaar.
-
-`{unsubscribe domain='nieuwsbrief.yourdomain.com'}`
-
-Let op: het uitschrijfdomein moet een CNAME verwijzing hebben naar onze
-server (http://vicinity.picsrv.net/) om de link te laten werken.
-
 ## Meer informatie
 
 * [Personalisatie functies](./personalization-functions)
