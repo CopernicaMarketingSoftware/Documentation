@@ -3,7 +3,7 @@
 ## Verschil A/B-test of split-run 
 Een A/B-test gebruik je om te testen welke variant het beste werkt voor een volgende verzending. De doelgroep van je mailing wordt in twee gelijkmatige groepen gesplitst. De eerste groep ontvangt template A en de tweede groep template B. 
 
-In je template of document zitten een aantal variabelen waarop je kunt testen:
+In je template of document zitten elementen waarop je kunt testen:
 - onderwerpsregel
 - naam van de afzender
 - call-to-actions (buttons)
