@@ -18,11 +18,6 @@ de resultaten voor een specifieke mailing kunt bekijken in een volledig
 rapport. [Dit artikel](./statistics-mailing) kun je een 
 overzicht vinden over de betekenis van deze statistieken.
 
-## Inbox placement tests
-
-Om te testen hoe je deliverability ervoor staat in verschillende clients, kun je een
-inbox placement test gebruiken. [Dit artikel](./inbox-placement-test) legt uit hoe je dit doet. 
-
 
 ## Mobiele mailings
 
