@@ -1,7 +1,5 @@
 # RSS en Atom feeds
 
-Let op: Deze functionaliteit bestaat (nog) niet in Marketing Suite.
-
 Weet je even niet welke content te plaatsen op je webpagina of in je e-mailing?
 Had je al eens gedacht aan een contentfeed? Daarbij heb je zelf in de
 hand welke content op je webpagina of in je e-mailing verschijnt. Met
