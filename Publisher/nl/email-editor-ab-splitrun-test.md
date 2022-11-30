@@ -1,13 +1,21 @@
 # Versturen van een A/B-tests of split-run
 
 ## Verschil A/B-test of split-run 
-Een A/B-test gebruik je om te testen welke variant het beste werkt voor een volgende verzending. De doelgroep van je mailing wordt in twee gelijkmatige groepen gesplitst. De eerste groep ontvangt template A en de tweede groep template B.  
+Een A/B-test gebruik je om te testen welke (variant van een) template het beste werkt. De doelgroep
+van je mailing wordt in twee gelijke groepen gesplitst. De eerste groep ontvangt template A en de 
+tweede groep template B. Er zijn bij een A/B test dus twee gelijke groepen, waarbij elke groep een
+ander bericht ontvangt. Je kunt daarna in de statistieken terugzien welke mailing het beste presteerde, 
+en deze kennis kun je gebruiken voor je latere mailings (bijvoorbeeld door de minder presterende 
+template niet meer te gebruiken).
 
-Het verschil tussen een A/B-test en een split-run is dat je met een split-run eerst naar een beperkt deel van je verzendselectie de mailing verstuurt om te zien welke versie het beste presteert. Op basis van de resultaten van deze testgroepen wordt automatisch de beste presterende versie naar de overige contacten verzonden. 
+Een split-run is net zo iets, maar dan wat geavanceerder. Bij een split-run wordt eerst naar een 
+_beperkt deel_ van je verzendselectie een aantal verschillende mailings verstuurd om daarna _automatisch_
+te bepalen welke versie het beste presteert. Op basis van de resultaten wordt vervolgens de beste presterende
+versie naar de overige contacten verzonden. 
 
-Hierdoor moet je bij het instellen van de split-run meer instellen:
+Omdat een split-run wat krachtiger is dan een A/B-test moet je bij het instellen van de split-run meer instellen:
 - hoe groot moeten de testgroepen zijn?
-- hoeveel tijd zit er tussen de testgroepen?
+- hoeveel tijd zit er tussen de testgroepen en de resterende mailing?
 - op basis van welke gegevens bepaal je de definitieve groep?
 
 ## Welke onderdelen kan ik testen?
@@ -18,7 +26,8 @@ In je template of document zitten verschillende onderdelen waarmee je kunt teste
 - tone of voice
 - vormgeving
 
-In de [statistieken](https://ms.copernica.com/#/results) zie je per variant de geregistreerde opens en kliks. Als je ziet dat een onderdeel betere resultaten oplevert kan je deze verbetering permanent doorvoeren in je templates.  
+In de [statistieken](https://ms.copernica.com/#/results) zie je per variant de geregistreerde opens en kliks. 
+Als je ziet dat een onderdeel betere resultaten oplevert kan je deze verbetering permanent doorvoeren in je templates.  
 
 ## Versturen van een A/B test of split-run
 Om een A/B test of split-run te versturen kies je binnen je [(mini)selectie](https://ms.copernica.com/#/profiles/) voor **Mailing versturen**. 
