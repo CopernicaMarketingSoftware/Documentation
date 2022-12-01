@@ -24,6 +24,7 @@
     * [Headers](./email-editor-headers.md)
     * [Testen](./email-editor-tests.md)
     * [Versturen](./email-editor-send-mass-mailing.md)
+    * [A/B-tests of split-run versturen](./email-editor-ab-splitrun-test.md)
     * [Opvolgacties](./email-editor-followups.md)
     * [Data-script](./data-object.md)
 * [HTML-templates specifiek](./emailings-publisher-templates.md)
