@@ -70,9 +70,9 @@ The order of the fields used in the 'source' parameter must be in the same order
 	"Email": "support@copernica.com", 
 	"Contactpersoon": "Jeroen" 
 },
-{ 
-	"Email": "info@copernica.com",
-	"Contactpersoon": "Danny"
+{ 	
+	"Contactpersoon": "Danny",
+	"Email": "info@copernica.com"
 }
 ```
 
