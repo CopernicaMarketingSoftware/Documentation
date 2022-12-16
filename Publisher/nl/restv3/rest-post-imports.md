@@ -116,6 +116,23 @@ $api->post("imports/", $data);
 
 Dit voorbeeld vereist de [REST API-klasse](rest-php).
 
+### Belangrijk
+De volgorde van de velden die gebruikt worden in de 'source' parameter moeten voor alle (sub)profielen in dezelfde volgorde staan. Op basis van bovenstaand voorbeeld zal dit **niet** werken: 
+```
+{ 
+	"Email": "support@copernica.com", 
+	"Contactpersoon": "Jeroen",
+	"Order.OrderID": "00001", 
+	"Order.Status": "Completed" 
+}, 
+{ 
+	"Email": "info@copernica.com", 
+	"Contactpersoon": "Danny",
+	"Order.Status": "Shipped",
+	"Order.OrderID": "00002"
+}
+```
+
 ## Meer informatie
 
 * [Overzicht van alle API calls](rest-api)
