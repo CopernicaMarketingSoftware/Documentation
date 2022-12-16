@@ -66,12 +66,14 @@ Dit voorbeeld vereist de [REST API-klasse](rest-php).
 De volgorde van de velden die gebruikt worden in de 'source' parameter moeten voor alle profielen in dezelfde volgorde staan. Op basis van bovenstaand voorbeeld zal dit **niet** werken: 
 ```
 { 
+	"Email": "support@copernica.com", 
+	"Contactpersoon": "Jeroen" 
+},
+{ 
 	"Contactpersoon": "Danny",
 	"Email": "info@copernica.com"
 }
 ```
-
-De gehele import zal niet worden uitgevoerd.
 
 ## Voorbeeld met subprofielen in PHP
 
