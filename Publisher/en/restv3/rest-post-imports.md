@@ -62,6 +62,20 @@ $api->post("imports/", $data);
 
 The example above requires the [CopernicaRestApi class](rest-php).
 
+## Important
+The order of the fields used in the 'source' parameter must be in the same order for all profiles. Based on the example above, this **will not** work:
+ 
+```
+{ 
+	"Email": "support@copernica.com", 
+	"Contactpersoon": "Jeroen" 
+},
+{ 
+	"Email": "info@copernica.com",
+	"Contactpersoon": "Danny"
+}
+```
+
 ## PHP example with subprofiles
 
 The following example demonstrates how to use this method in combination with subprofiles:
@@ -102,6 +116,24 @@ $api->post("imports/", $data);
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
+
+## Important
+The order of the fields used in the 'source' parameter must be in the same order for all profiles. Based on the example above, this **will not** work:
+ 
+```
+{ 
+	"Email": "support@copernica.com", 
+	"Contactpersoon": "Jeroen",
+	"Order.OrderID": "00001", 
+	"Order.Status": "Completed" 
+}, 
+{ 
+	"Email": "info@copernica.com", 
+	"Contactpersoon": "Danny",
+	"Order.Status": "Completed",
+	"Order.OrderID": "00001" 
+}
+```
 
 ## More information
 
