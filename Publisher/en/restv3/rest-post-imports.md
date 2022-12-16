@@ -68,10 +68,10 @@ The order of the fields used in the 'source' parameter must be in the same order
 ```
 { 
 	"Email": "support@copernica.com", 
-	"Contactpersoon": "Jeroen" 
+	"Contact": "Jeroen" 
 },
 { 	
-	"Contactpersoon": "Danny",
+	"Contact": "Danny",
 	"Email": "info@copernica.com"
 }
 ```
@@ -123,13 +123,13 @@ The order of the fields used in the 'source' parameter must be in the same order
 ```
 { 
 	"Email": "support@copernica.com", 
-	"Contactpersoon": "Jeroen",
+	"Contact": "Jeroen",
 	"Order.OrderID": "00001", 
 	"Order.Status": "Completed" 
 }, 
 { 
 	"Email": "info@copernica.com", 
-	"Contactpersoon": "Danny",
+	"Contact": "Danny",
 	"Order.Status": "Completed",
 	"Order.OrderID": "00001" 
 }
