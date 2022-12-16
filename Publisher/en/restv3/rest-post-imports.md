@@ -118,7 +118,7 @@ $api->post("imports/", $data);
 The example above requires the [CopernicaRestApi class](rest-php).
 
 ## Important
-The order of the fields used in the 'source' parameter must be in the same order for all profiles. Based on the example above, this **will not** work:
+The order of the fields used in the 'source' parameter must be in the same order for all (sub)profiles. Based on the example above, this **will not** work:
  
 ```
 { 
