@@ -2,7 +2,7 @@
 
 Het kan voorkomen dat je op een bepaald moment je gegevens wilt wijzigen.
 Denk bijvoorbeeld aan je bedrijfsnaam of je inloggegevens. Je kunt dit 
-gemakkelijk doen op deze website in het Copernica dashboard.
+gemakkelijk doen via [configuratie](https://ms.copernica.com/#/admin) in Marketing Suite.
 Tegelijkertijd kun je ook nieuwe inloggegevens aanmaken en bepalen wie 
 toegang heeft tot een bepaald account.
 
