@@ -54,20 +54,6 @@ de eerste handtekening te checken kan worden gecontroleerd of de mail daadwerkel
 afkomstig is van de afzender (de gewone DKIM check), en met de tweede signature 
 kunnen ze zien of wij inderdaad de echte professionele verzender waren.
 
-## DKIM keys beheren binnen de Publisher
-
-Voor de introductie van Sender Domains moest je als Copernicagebruiker zelf je 
-DKIM keys beheren. Je moest zelf DNS records aanmaken waarin je de public
-key plaatste, en je moest bovendien, om te voorkomen dat de sleutels zouden
-worden gekraakt, periodiek deze keys verversen (hoewel bijna niemand dit 
-daadwerkelijk deed). Met de komst van Sender Domains is dit niet meer nodig.
-Copernica doet dit nu automatisch.
-
-Toch zijn er in de Publisher omgeving nog formulieren en dialoogvensters om 
-DKIM keys te beheren. Dit is een overblijfsel van vroeger en zit alleen nog 
-maar in de software om gebruikers die geen toegang hebben tot hun DNS te kunnen 
-ondersteunen.
-
 ## Meer informatie
 
 * [Sender domains](./sender-domains)
