@@ -24,7 +24,7 @@ bijvoorbeeld **webformulieren** en **opvolgacties**.
 -   [Opmaak van smarty personalisatie (Smarty filters)](./filter-data-with-smarty-modifiers.md)
 -   [Personaliseren van hyperlinks](./personalizing-hyperlinks.md)
 -   [Gebruik van smarty personalisatie in webformulieren](./smarty-personalization-in-web-forms.md)
--   [Loadprofile en loadsubprofile toegepast in een praktisch voorbeeld](./example-of-the-loadprofile-and-loadsubprofile-functions.md)
+-   [Loadprofile en loadsubprofile toegepast in een praktisch voorbeeld](./loadprofile-and-loadsubprofile.md)
 -   [Linken naar een (gepersonaliseerd) PDF-bestand](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
 -   [Extra velden voor document personalisatie](./extra-fields-for-personalizing.md)
 -   [(Mini)selecties gebruiken binnen Smarty personalisatie](./can-i-use-selections-to-personalize-documents-and-templates.md)
