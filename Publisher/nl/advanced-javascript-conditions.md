@@ -14,12 +14,12 @@ software.
 
 Ga direct naar de beschikbare variabelen voor:
 
-- [Profielgegevens](#profielgegevens)
-- [Subprofielgegevens](#subprofielgegevens)
-- [Collecties](#collecties)
-- [Enquetes](#enquetes)
-- [Formulieren](#formulieren)
-- [Split run mailings](#splitrun)
+- [Profielgegevens](advanced-javascript-conditions#profielgegevens)
+- [Subprofielgegevens](advanced-javascript-conditions#subprofielgegevens)
+- [Collecties](advanced-javascript-conditions#collecties)
+- [Enquetes](advanced-javascript-conditions#enquetes)
+- [Formulieren](advanced-javascript-conditions#formulieren)
+- [Split run mailings](advanced-javascript-conditions#splitrun)
 
 ## JavaScript condities
 Onder andere bij opvolgacties, webformulieren en blokken in een HTML-document
