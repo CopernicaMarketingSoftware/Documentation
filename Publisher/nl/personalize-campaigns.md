@@ -54,7 +54,7 @@ kan deze variabelen bijvoorbeeld gebruiken als je een notificatie e-mail
 wilt versturen, waarin je de gegeven antwoorden van een ingevuld
 formulier wilt tonen.
 
--   [Beschikbare variabelen in opvolgacties](./extra-variables-for-follow-ups.md)
+-   [Beschikbare variabelen in opvolgacties](./follow-up-manager-publisher#beschikbare-variabelen-in-opvolgacties)
 
 ## Javascript condities
 
