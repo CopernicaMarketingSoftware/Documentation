@@ -84,7 +84,7 @@ hebben we een aantal tutorials voor je klaar staan:
 * [Dubbele opt-in](./campaign-tutorial-double-opt-in)
 * [Lead scoring/nurturing](./campaign-tutorial-lead-nurturing)
 * [Re-activatie](./campaign-tutorial-reactivation)
-* [Herhalingsaankopen](./campaign-tutorial-repeat-purchase)
+* [Herhalingsaankopen](./campaign-repeat-purchase.md)
 
 ## Meer informatie
 - [Opvolgacties](./followups)
