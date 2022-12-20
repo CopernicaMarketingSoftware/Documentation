@@ -62,6 +62,19 @@ $api->post("imports/", $data);
 
 Dit voorbeeld vereist de [REST API-klasse](rest-php).
 
+### Belangrijk
+De volgorde van de velden die gebruikt worden in de 'source' parameter moeten voor alle profielen in dezelfde volgorde staan. Op basis van bovenstaand voorbeeld zal dit **niet** werken: 
+```
+{ 
+	"Email": "support@copernica.com", 
+	"Contactpersoon": "Jeroen" 
+},
+{ 
+	"Contactpersoon": "Danny",
+	"Email": "info@copernica.com"
+}
+```
+
 ## Voorbeeld met subprofielen in PHP
 
 Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen in combinatie met subprofielen:
@@ -102,6 +115,23 @@ $api->post("imports/", $data);
 ```
 
 Dit voorbeeld vereist de [REST API-klasse](rest-php).
+
+### Belangrijk
+De volgorde van de velden die gebruikt worden in de 'source' parameter moeten voor alle (sub)profielen in dezelfde volgorde staan. Op basis van bovenstaand voorbeeld zal dit **niet** werken: 
+```
+{ 
+	"Email": "support@copernica.com", 
+	"Contactpersoon": "Jeroen",
+	"Order.OrderID": "00001", 
+	"Order.Status": "Completed" 
+}, 
+{ 
+	"Email": "info@copernica.com", 
+	"Contactpersoon": "Danny",
+	"Order.Status": "Shipped",
+	"Order.OrderID": "00002"
+}
+```
 
 ## Meer informatie
 
