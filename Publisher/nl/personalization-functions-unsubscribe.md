@@ -51,4 +51,4 @@ Wanneer je zelfgedefinieerde variabelen wilt gebruiken dien je eerst de URL te d
 
 ## Meer informatie
 
-* [Personalisatie functies](./personalization-functions)
+* [Personalisatie functies](./publisher-personalization-functions)
