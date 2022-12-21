@@ -28,7 +28,7 @@ bijvoorbeeld **webformulieren** en **opvolgacties**.
 -   [Linken naar een (gepersonaliseerd) PDF-bestand](./linking-to-a-personalized-pdf-file-or-send-as-an-attachment.md)
 -   [Extra velden voor document personalisatie](./extra-fields-for-personalizing.md)
 -   [(Mini)selecties gebruiken binnen Smarty personalisatie](./can-i-use-selections-to-personalize-documents-and-templates.md)
--   [Data en tijden dynamisch weergeven](./using-the-smarty-date-function.md)
+-   [Data en tijden dynamisch weergeven](./publisher-personalization-variables#data-en-tijden-dynamisch-weergeven)
 
 Bekijk ook [ons overzicht van beschikbare extra functies en speciale invoegcodes](./special-functions-and-tags.md)
 
