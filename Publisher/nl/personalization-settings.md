@@ -18,7 +18,7 @@ vier settings veranderen:
 
 ## Taal en tijdzone
 
-In het artikel over het [weergeven van datums en tijden](./using-the-smarty-date-function.md)
+In het artikel over het [weergeven van datums en tijden](./publisher-personalization-variables#data-en-tijden-dynamisch-weergeven)
 hebben we dit ook al behandeld: als je de huidige datum wilt weergeven is daar
 een speciale |date_format modifier voor. Deze modifier kun je gebruiken om een 
 tijdstip in computernotatie om te zetten naar een tijdstip in mensennotatie. De
