@@ -125,4 +125,4 @@ Op een paar plekken kun je geen gebruik maken van personaliseren:
 
 * [Overzicht van personalisatievariabelen](./personalization-variables.md)
 * [Overzicht van personalisatiemodifiers](./personalization-modifiers.md)
-* [Overzicht van personalisatiefuncties](./personalization-functions.md)
+* [Overzicht van personalisatiefuncties](./publisher-personalization-functions.md)
