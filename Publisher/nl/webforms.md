@@ -194,3 +194,7 @@ Gebruik sleutelvelden bijvoorbeeld wanneer:
 *Emailadres* en *Wachtwoord* als sleutelvelden in te stellen)
 - Je een formulier zowel als inschrijf- en als wijzigingsformulier wilt
 gebruiken.
+
+## More information
+
+* [Beperk aantal inzendingen](./limit-the-number-of-times-a-web-form-can-be-submitted)
