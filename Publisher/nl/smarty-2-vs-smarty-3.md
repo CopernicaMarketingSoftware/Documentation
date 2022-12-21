@@ -61,7 +61,7 @@ keren aanroepen in plaats van je code te moeten kopiëren. Zo hoef je
 de functie ook maar een keer aan te passen als je hem wil veranderen. 
 
 Meer over functies kun je leren in de [Smarty documentatie](http://www.smarty.net/docs/en/) 
-of in ons artikel over [personalisatie functies](./personalization-functions.md)
+of in ons artikel over [personalisatie functies](./publisher-personalization-functions.md)
 
 ### Syntax
 
