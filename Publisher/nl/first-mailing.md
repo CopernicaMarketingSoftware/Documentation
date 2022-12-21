@@ -40,4 +40,5 @@ _[Meer informatie over HTML-templates](./email-editor-html-templates)_.
 ## 6. Verzending
 Het versturen van je eerste mailing vereist een verzendselectie (inclusief profielen), template en document. De voorgaande stappen helpen je bij het aanmaken daarvan. Heb je de checklist succesvol doorlopen? Je bent dan klaar om de mailing te versturen. 
 
-_[Meer informatie over het versturen van mailings](./sending-mailings)_.
+_[Meer informatie over het versturen van testmailings](./email-editor-tests)_.
+_[Meer informatie over het versturen van bulkmailings](./email-editor-send-mass-mailing)_

@@ -13,7 +13,7 @@ Speciale functies voor e-mailings
 -   [Mailonly en webonly](./the-webonly-and-mailonly-functions.md)
     - Specificeer welke content wel/niet getoond wordt in de e-mail of
     de webversie hiervan.
--   [Unsubscribe tag](./the-unsubscribe-function.md)
+-   Unsubscribe tag [Marketing Suite](./emailings-ms-unsubscribe) - [Publisher](./publisher-personalization-functions#unsubscribe)
     - Voegt een uitschrijflink toe aan een e-mail template of document.
 
 Invoegen speciale content
