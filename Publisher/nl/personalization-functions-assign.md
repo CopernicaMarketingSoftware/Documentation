@@ -19,7 +19,7 @@ gebruiken om een email te personaliseren:
     
 Als je grotere blokken tekst of andere elementen wil gebruiken is het handiger 
 om de [capture](./personalization-functions-capture) of de
-[rawcapture](./personalization-functions) functie te gebruiken, omdat 
+[rawcapture](./publisher-personalization-functions) functie te gebruiken, omdat 
 deze hier beter voor geschikt zijn.
      
 ## Meer informatie
