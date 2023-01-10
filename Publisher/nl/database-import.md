@@ -12,7 +12,7 @@ Wanneer je gebruik maakt van scheiding door middel van een komma of puntkomma ra
 
     Voornaam,Achternaam,Email,Stad,Telefoonnummer
     Jan,de Jong,jan.dejong@voorbeeld.nl,Amersfoort,0612456631
-    Pier,de Visser,piet_de_visser@voorbeeld.nl,\'s Hertogenbosch,0612224444
+    Piet,de Visser,piet_de_visser@voorbeeld.nl,\'s Hertogenbosch,0612224444
     Roos,Schippers,roos.schippers@voorbeeld.nl,Groningen,0612222444
 
 ## Import aanmaken
