@@ -1,1 +1,1 @@
-In this box you can check if the target that started the followup is in a specific selection you select below.
+In this box you can check if the profile that started the followup is in a specific selection. You can select this selection below.
