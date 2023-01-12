@@ -20,14 +20,14 @@ We maken een standaard structuur zoals we deze willen gebruiken in de nieuwsbrie
 Deze blokken plaatsen we samen in één container. De titel maken we hierbij vetgedrukt.   
 De opmaak voeren we door voor één van de twee blokken in de container:
 
-[AFBEELDING 1]  
+![Voorbeeld_structuur](../images/nl/slimmelementen1.png)
 *Voorbeeld structuur*
 
 ### Variabelen aanmaken
 Selecteer de container waar alle blokken in staan en ga naar het tabblad 'Data' bij de container-opties. Hier kun je de optie aanzetten om gebruik te maken van slimme elementen. Vervolgens zie je onder 'Configuratie' al één variabele staan, namelijk 'url'. Wij gebruiken het plus-icoon om een nieuwe variabele toe te voegen. Als opties krijg je enkele voorgedefinieerde variabelen. Wij kiezen onderaan voor de optie 'Variabele *var*'. De 'Variabele' en 'Naam' geven we beide de tekst 'afbeelding'. Ditzelfde doen we door een variabele aan te maken voor de *titel*, *omschrijving* en *link*. 
 
 De configuratie ziet er nu zo uit:  
-[AFBEELDING 2]
+![configuratie](../images/nl/slimmelementen2.png)
 
 ### CSS-selectors instellen
 Bij iedere variabelen die je zojuist hebt aangemaakt heb je twee *Overeenstemmingsprincipes*:
