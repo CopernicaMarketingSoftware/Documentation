@@ -68,6 +68,8 @@ Bij de configuratie van het slimme element geef je nu per variabelen de interne 
 
 Voor de variabele _afbeelding_ voeg je bij **Intern** de CSS-selector `.slim_afbeelding` en het kenmerk `src` toe. Je wilt namelijk de `src` aanpassen van het attribuut met de class `slim_afbeelding`.
 
+[!Intern](../images/nl/slimme_elementen6.png)
+
 Bij **Extern** moet je kijken naar de pagina waar je de content van wilt gaan inladen. In dit geval [deze pagina](https://www.dekbed-discounter.nl/satijnstreep-lichtblauw-dekbedovertrek.html). Om in te zien welke CSS-class de afbeelding heeft, kun je met je rechtermuis-knop de pagina inspecteren. In dit geval heeft het IMG-attribuut zelf geen class, maar het bovenliggende DIV-attribuut wel:
 ```
 <div class="swiper-slide clickable swiper-slide-active" style="width: 575px; margin-right: 10px;">		
@@ -76,8 +78,10 @@ Bij **Extern** moet je kijken naar de pagina waar je de content van wilt gaan in
 
 In de *externe* CSS-selector voeg je `swiper-slide-active img` toe en als kenmerk `src`. Je wilt namelijk van het IMG-attribuut binnen de `swiper-slide-active`-class de `src` ophalen.
 
+[!Extern](../images/nl/slimme_elementen7.png)
+
 ### Stap 6 - Overige CSS-selectors instellen
-Voor de overige elementen doen we hetzelfde als stap 5.  
+Voor de overige variabelen doen we hetzelfde als stap 5.  
 Hieronder een tabel met de gebruikte waardes:
 
 | Variabel     | Overeenstemmingsprincipe | CSS-selector                | Kenmerk          |
@@ -93,18 +97,22 @@ Hieronder een tabel met de gebruikte waardes:
 | link         | intern                   | .slim_link                  | href             |
 | link         | extern                   | .review-form-wrapper form   | data-product-url |
 
-### Link toevoegen
-Nu we dit hebben ingesteld, kun je onder zowel **Configuratie** als **Uiterlijk** in de slimme-container een link opgeven. In dit geval gebruik je onderstaande URL: 
+### Content inladen
+Nu je dit hebt ingesteld, kun je onder zowel **Configuratie** als **Uiterlijk** in de slimme-container een link opgeven. In dit geval gebruik je onderstaande URL: 
 [https://www.dekbed-discounter.nl/satijnstreep-lichtblauw-dekbedovertrek.html](https://www.dekbed-discounter.nl/satijnstreep-lichtblauw-dekbedovertrek.html)
 
 Door op het download-icoon te klikken worden de gegevens in je blokken ingeladen vanuit de externe URL.
 
-## Afkorten van waardes
-Op dit moment is de tekst bij de omschrijving vrij lang. Om dit aan te passen kunnen we gebruik maken van *modifiers*. Hiervoor ga je naar je slimme-container, kies je voor 'Data' en open je het configuratie-tabblad. Bij de variabele *omschrijving* voeg je onder *extern* een *modifier* toe. 
+[!Extern](../images/nl/slimme_elementen8.png)
 
-Bij *Modifier 1* plaats je `(.{0,150})(.{0,})` en bij *Vervanging* de waarde $1.
-De waarde `150` kun je aanpassen naar ieder gewenst aantal karakters die je wilt tonen.
+## Afkorten van waardes
+Wanneer je de tekst bij bijvoorbeeld de omschrijving te lang vindt, kun je gebruik maken van *modifiers* om de opgehaalde waarde in te korten. Hiervoor ga je naar je slimme-container, kies je voor 'Data' en open je het configuratie-tabblad. Bij de variabele *omschrijving* voeg je onder *extern* een *modifier* toe. 
+
+Bij *Modifier 1* plaats je `(.{0,40})(.{0,})` en bij *Vervanging* de waarde $1.
+De waarde `40` kun je aanpassen naar ieder gewenst aantal karakters die je wilt tonen.
 
 Om vervolgens nog wat achter deze tekst te plaatsen, bijvoorbeeld drie punten, voeg je nog een *modifier* toe. Hier voeg je `(^(.*)$)` toe. Bij 'vervanging' voeg je `$1...` toe. 
 
-De tekst wordt nu afgekapt na 150 karakters en aan het einde worden drie punten toegevoegd. Meer informatie hierover vind je in [dit artikel](https://support.stripo.email/en/articles/6179720-how-to-use-fields-modifier-format-and-separator-helpers-for-smart-elements).
+Bij het opnieuw inladen van de content wordt de tekst nu afgekapt na 40 karakters en aan het einde worden drie punten toegevoegd. Meer informatie hierover vind je in [dit artikel](https://support.stripo.email/en/articles/6179720-how-to-use-fields-modifier-format-and-separator-helpers-for-smart-elements).
+
+[!Afkorten van waardes](../images/nl/slimme_elementen9.png)
