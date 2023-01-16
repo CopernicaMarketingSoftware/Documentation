@@ -13,7 +13,7 @@ Je stelt hierbij eenmalig de volgorde en de eigenschappen van eerder genoemde bl
 In onderstaand voorbeeld gaan we producten ophalen vanuit de website van [Dekbed Discounter](https://www.dekbed-discounter.nl/), maar je kan hier ook iedere andere URL voor gebruiken.
 
 ### Stap 1 - Maak een standaardstructuur voor je slimme element
-We maken een standaardstructuur zoals we deze willen gebruiken in de nieuwsbrief. In dit geval gaan we voor een structuur waarbij we twee producten naast elkaar willen gaan tonen. Voor ieder product willen we het volgende tonen:
+Je maakt een standaardstructuur zoals je deze wilt gebruiken in de nieuwsbrief. In dit geval gebruik je een structuur waarbij je twee producten naast elkaar wilt gaan tonen. Voor ieder product willen je het volgende tonen:
 - afbeelding
 - titel
 - omschrijving
@@ -23,105 +23,75 @@ We maken een standaardstructuur zoals we deze willen gebruiken in de nieuwsbrief
 
 Deze blokken plaats je binnen in één container en voorzie je van de gewenste opmaak.
 Je template ziet er nu bijvoorbeeld als volgt uit:  
-![Voorbeeld_structuur](../images/nl/slimmeelementen1.png)  
+![Voorbeeld_structuur](../images/nl/slimme_elementen1.png)  
 
-### Variabelen aanmaken
-Selecteer de container waar alle blokken in staan en ga naar het tabblad 'Data' bij de container-opties. Hier kun je de optie aanzetten om gebruik te maken van slimme elementen. Vervolgens zie je onder 'Configuratie' al één variabele staan, namelijk 'url'. Wij gebruiken het plus-icoon om een nieuwe variabele toe te voegen. Als opties krijg je enkele voorgedefinieerde variabelen. Wij kiezen onderaan voor de optie 'Variabele *var*'. De 'Variabele' en 'Naam' geven we beide de tekst 'afbeelding'. Ditzelfde doen we door een variabele aan te maken voor de *titel*, *omschrijving* en *link*. 
+### Stap 2 - CSS-classes toevoegen
+De content binnen het slimme elementen wordt op de juiste plek geplaatst op basis van CSS-classes. Het is van belang dat op de plek waar je de content wilt tonen een duidelijke class-naam wordt meegegeven in de broncode van je e-mailtemplate. Hiervoor selecteer je de gehele container en klik je op *Code bekijken* in de e-mail-editor (links bovenin, onder 'configuratie').
+
+In deze broncode geef je aan ieder blok een extra class mee zodat het systeem weet waar de content geplaatst moet worden.  
+Gebruik hiervoor de volgende class-namen:
+- **slim_afbeelding** voeg deze CSS-class toe op het IMG-attribuut die je wilt aanpassen.
+- **slim_titel** aangezien de titel vetgedrukt moet worden, plaats je de class op het `<strong>`-attribuut. Hierdoor blijft de opmaak behouden bij het inladen van de nieuwe content.
+- **slim_omschrijving** voeg een `<span>`-attribuut toe met deze CSS-class binnen het paragraaf-attribuut. Hierdoor blijft de opmaak behouden bij het inladen van de nieuwe content.
+- **slim_van_prijs** voeg een `<span>`-attribuut toe met deze CSS-class binnen het paragraaf-attribuut. Hierdoor blijft de opmaak behouden bij het inladen van de nieuwe content.
+- **slim_voor_prijs** voeg een `<span>`-attribuut toe met deze CSS-class binnen het paragraaf-attribuut. Hierdoor blijft de opmaak behouden bij het inladen van de nieuwe content.
+- **slim_link** voeg deze CSS-class toe op het A-attribuut die je wilt aanpassen.
+
+Dit zal er ongeveer zo uit zien:  
+[!CSS-classes toevoegen](../images/nl/slimme_elementen2.png)
+
+### Stap 3 - Activeren van slimme elementen
+Selecteer de container waar alle blokken in staan en ga naar het tabblad 'Data' bij de container-opties. Hier kun je de optie aanzetten om gebruik te maken van slimme elementen.  
+![Activeren slimme elementen](../images/nl/slimme_elementen3.png)
+
+### Stap 4 - Variabelen aanmaken
+Na het activeren van het slimme element zie je onder 'Configuratie' al één variabele staan, namelijk 'url'. Gebruik het plus-icoon om een nieuwe variabele toe te voegen. Als opties krijg je enkele voorgedefinieerde variabelen. Kies onderaan voor de optie 'Variabele *var*'. De 'Variabele' en 'Naam' geven we beide de waarde 'afbeelding'. De overige instellingen komen later in dit artikel aan bod.
+
+Ditzelfde doe je voor de overige variabelen:
+- titel
+- omschrijving
+- van-prijs
+- voor-prijs
+- link 
 
 De configuratie ziet er nu zo uit:  
-![configuratie](../images/nl/slimmeelementen2.png)
+![configuratie](../images/nl/slimme_elementen4.png)
 
-### CSS-selectors instellen
-Bij iedere variabelen die je zojuist hebt aangemaakt heb je twee *Overeenstemmingsprincipes*:
-- Intern
-- Extern
+### Stap 5 - CSS-selector instellen
+Bij de aangemaakte variabelen heb je twee *Overeenstemmingsprincipes*:
+- **Intern** Hier geef je aan waar de opgevraagde data van de externe locatie geplaatst moet worden binnen je template door middel van CSS-selectoren en kenmerken.   
+- **Extern** Hier geef je aan vanuit welke CSS-selector en kenmerk de waardes moeten worden opgehaald vanaf de externe locatie. Daarnaast kun je hier de verkregen waardes aanpassen door middel van reguliere expressies.  
 
-Bij intern kun je aangeven welke classes je gebruikt in je template waar je de gegevens in wilt gaan laden. Bij extern geef je aan welke classes vanaf de externe locatie je wilt inladen.
+![Overeenstemmingsprincipes](../images/nl/slimme_elementen5.png)  
 
-Voordat we dit kunnen invullen moeten we eerst CSS-classes toevoegen aan de blokken die wij hebben toegevoegd. Hiervoor selecteren we de gehele, inmiddels 'slimme', container en klikken op *Code bekijken* (links bovenin).
+Bij de configuratie van het slimme element geef je nu per variabelen de interne en externe CSS-selectors aan. 
 
-In deze broncode gaan we aan ieder blok een extra class meegeven zodat het systeem weet wat aangepast moet worden. We gebruiken de volgende namen:
-- slim_afbeelding
-- slim_titel
-- slim_omschrijving
-- slim_link
+Voor de variabele _afbeelding_ voeg je bij **Intern** de CSS-selector `.slim_afbeelding` en het kenmerk `src` toe. Je wilt namelijk de `src` aanpassen van het attribuut met de class `slim_afbeelding`.
 
-Voor de afbeelding voegen we deze toe aan de bestaande 'href' class en voor de link voegen wij deze toe aan de bestaande class binnen het img-attribuut.
-
-Omdat de titel dikgedrukt moet worden, zullen we hier de class moeten plaatsen op het `<strong>`-attribuut. Als we het hier aan de class in de bovenliggende `<td>` zouden toevoegen zou het dikgedrukte komen te vervallen bij het inladen van de nieuwe content.
-
-Voor de tekst voegen we een `<span>` met de class toe binnen het `<p>`-attribuut. Dit doen we zodat de opmaak behouden blijft.
-
-Dit zal er ongeveer zo uit zien:
+Bij **Extern** moet je kijken naar de pagina waar je de content van wilt gaan inladen. In dit geval [deze pagina](https://www.dekbed-discounter.nl/satijnstreep-lichtblauw-dekbedovertrek.html). Om in te zien welke CSS-class de afbeelding heeft, kun je met je rechtermuis-knop de pagina inspecteren. In dit geval heeft het IMG-attribuut zelf geen class, maar het bovenliggende DIV-attribuut wel:
 ```
-<td class="es-m-p20b esd-container-frame" width="270" align="left" esdev-config="h3">
-    <table width="100%" cellspacing="0" cellpadding="0">
-        <tbody>
-            <tr>
-                <td align="center" class="esd-block-image" style="font-size:0"><a target="_blank"><img class="adapt-img esdev-empty-img slim_afbeelding" src="https://ms.copernica.com/stable/design/resources/stripo/assets/img/default-img.png" alt width="100%" height="100" style="display: none;"></a></td>
-            </tr>
-            <tr>
-                <td align="left" class="esd-block-text">
-                    <p><strong class="slim_titel">Tekst</strong></p>
-                </td>
-            </tr>
-            <tr>
-                <td align="left" class="esd-block-text">
-                    <p><span class="slim_omschrijving">Tekst</span></p>
-                </td>
-            </tr>
-            <tr>
-                <td align="center" class="esd-block-button">
-                    <span class="es-button-border">
-                        <a href class="es-button slim_link" target="_blank"> Knop </a>
-                    </span>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-</td>
+<div class="swiper-slide clickable swiper-slide-active" style="width: 575px; margin-right: 10px;">		
+<img src="https://cdn.webshopapp.com/shops/29934/files/400738381/455x800x3.jpg" width="455" height="455" alt="">
 ```
 
-Bij de configuratie van het slimme element kunnen we nu per variabelen de interne en externe CSS-selectors aangeven. 
+In de *externe* CSS-selector voeg je `swiper-slide-active img` toe en als kenmerk `src`. Je wilt namelijk van het IMG-attribuut binnen de `swiper-slide-active`-class de `src` ophalen.
 
-Voor de afbeelding gebruiken wij bij **Intern** de CSS-selector `.slim_afbeelding` en het kenmerk `src`. We willen namelijk de URL aanpassen van het element met de class `slim_afbeelding`.
+### Stap 6 - Overige CSS-selectors instellen
+Voor de overige elementen doen we hetzelfde als stap 5.  
+Hieronder een tabel met de gebruikte waardes:
 
-Bij **Extern** kijken we naar de pagina waar wij de content vanuit willen gaan inladen. In dit geval [deze pagina](https://www.coolblue.nl/product/856352/samsung-lu28r550uqrxen.html). Via de rechtermuis-knop kunnen wij de pagina inspecteren en kijken welke class de afbeelding heeft. In dit geval is dit `product-media-gallery__item-image`:
-```
-<img class="product-media-gallery__item-image js-product-media-gallery__item-image product-media-gallery__item-image--zoom-cursor--hidden" src="https://image.coolblue.nl/max/500x500/products/1438217" alt="Samsung LU28R550UQRXEN Main Image">
-```
-
-We vullen de CSS-selector `product-media-gallery__item-image` in bij *Extern*. Als kenmerk voeren we nogmaals `src` in. We willen namelijk de waarde vanuit 'src' ophalen van het element waarbij de class gelijk is aan 'product-media-gallery__item-image'.
-
-Voor de overige elementen doen we hetzelfde.  
-Hieronder een lijst met de gebruikte waardes:
-
-**titel**:   
-Intern: 
-- CSS-selector: .slim_titel
-- Kenmerk: (leeg)  
-
-Extern:  
-- CSS-selector: .js-product-name  
-- Kenmerk: (leeg)
-
-**Omschrijving**:  
-Intern: 
-- CSS-selector: .slim_omschrijving
-- Kenmerk: (leeg)  
-
-Extern:  
-- CSS-selector: .cms-content  
-- Kenmerk: (leeg)
-
-**Link**:  
-Intern: 
-- CSS-selector: .slim_link
-- Kenmerk: href  
-
-Extern:  
-- CSS-selector: .selectable-card input
-- Kenmerk: value
+| Variabel     | Overeenstemmingsprincipe | CSS-selector                | Kenmerk          |
+|--------------|--------------------------|-----------------------------|------------------|
+| titel        | intern                   | .slim_titel                 |                  |
+| titel        | extern                   | .desktop-title              |                  |
+| omschrijving | intern                   | .slim_omschrijving          |                  |
+| omschrijving | extern                   | .product-summary            |                  |
+| van-prijs    | intern                   | .slim_van_prijs             |                  |
+| van-prijs    | extern                   | .desktop-product-price--old |                  |
+| voor-prijs   | intern                   | .slim_voor_prijs            |                  |
+| voor-prijs   | extern                   | .desktop-product-price--new |                  |
+| link         | intern                   | .slim_link                  | href             |
+| link         | extern                   | .review-form-wrapper form   | data-product-url |
 
 ### Link toevoegen
 Nu we dit hebben ingesteld, kun je onder zowel **Configuratie** als **Uiterlijk** in de slimme-container een link opgeven. In dit geval gebruik je onderstaande URL: 
