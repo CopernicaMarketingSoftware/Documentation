@@ -97,7 +97,7 @@ Hieronder een tabel met de gebruikte waardes:
 | link         | intern                   | .slim_link                  | href             |
 | link         | extern                   | .review-form-wrapper form   | data-product-url |
 
-### Content inladen
+### Stap 7 - Content inladen
 Nu je dit hebt ingesteld, kun je onder zowel **Configuratie** als **Uiterlijk** in de slimme-container een link opgeven. In dit geval gebruik je onderstaande URL: 
 [https://www.dekbed-discounter.nl/satijnstreep-lichtblauw-dekbedovertrek.html](https://www.dekbed-discounter.nl/satijnstreep-lichtblauw-dekbedovertrek.html)
 
