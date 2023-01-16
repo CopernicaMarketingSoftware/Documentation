@@ -1,27 +1,29 @@
 # Slimme elementen
 
+*Let op: dit artikel is voor de geavanceerde gebruiker. Je hebt HTML/CSS-kennis nodig.*  
+
 Bij het opmaken van een nieuwsbrief maak je vaak gebruik van dezelfde handelingen. Stel je hebt een webshop en je wilt een e-mail sturen ter promotie van 5 artikelen, dan moet je voor ieder product de afbeelding, productnaam, prijs en link toevoegen. Een aantal van deze elementen, zoals de link, worden vaak meerdere keren gebruikt. Deze vind je bijvoorbeeld terug achter de titel, de afbeelding en de bestelknop. Als je de volgende dag 5 nieuwe artikelen wilt sturen, moet je deze handelingen opnieuw doen. Om dit te vereenvoudigen heeft de drag-and-drop-editor de functie 'Slimme elementen'. 
 
 ## Wat is een slim element
-Een slim element is een lijn, structuur of container waarin alle basis blokken zijn toegevoegd, zoals een afbeeldingsblok, tekstblok en een knop, maar met de optie om de data als variabele op te halen vanaf een externe locatie.
+Een slim element is een lijn, structuur of container waarin alle basisblokken zijn toegevoegd, zoals een afbeeldingsblok, tekstblok en een knop, maar met de optie om de data als variabele op te halen vanaf een externe locatie.
 
-Je stelt hierbij eenmalig de volgorde en de eigenschappen van de blokken in en kunt vervolgens met één druk op de knop de content op de juiste plek inladen.
+Je stelt hierbij eenmalig de volgorde en de eigenschappen van eerder genoemde blokken in en kunt vervolgens met één druk op de knop de content vanaf de externe locatie op de juiste plek inladen.
 
 ## Hoe werken slimme elementen?
-In onderstaand voorbeeld gaan we producten ophalen vanuit de Coolblue-website, maar je kan hier ook iedere andere URL voor gebruiken.
+In onderstaand voorbeeld gaan we producten ophalen vanuit de website van [Dekbed Discounter](https://www.dekbed-discounter.nl/), maar je kan hier ook iedere andere URL voor gebruiken.
 
-### Maak een standaard structuur voor je slimme element
-We maken een standaard structuur zoals we deze willen gebruiken in de nieuwsbrief. In dit geval gaan we voor een structuur waarbij we twee producten naast elkaar willen gaan tonen. Voor ieder product willen we het volgende tonen:
+### Stap 1 - Maak een standaardstructuur voor je slimme element
+We maken een standaardstructuur zoals we deze willen gebruiken in de nieuwsbrief. In dit geval gaan we voor een structuur waarbij we twee producten naast elkaar willen gaan tonen. Voor ieder product willen we het volgende tonen:
 - afbeelding
 - titel
 - omschrijving
+- van-prijs
+- voor-prijs
 - knop met link om te bestellen
 
-Deze blokken plaatsen we samen in één container. De titel maken we hierbij vetgedrukt.   
-De opmaak voeren we door voor één van de twee blokken in de container:
-
+Deze blokken plaats je binnen in één container en voorzie je van de gewenste opmaak.
+Je template ziet er nu bijvoorbeeld als volgt uit:  
 ![Voorbeeld_structuur](../images/nl/slimmeelementen1.png)  
-*Voorbeeld structuur*
 
 ### Variabelen aanmaken
 Selecteer de container waar alle blokken in staan en ga naar het tabblad 'Data' bij de container-opties. Hier kun je de optie aanzetten om gebruik te maken van slimme elementen. Vervolgens zie je onder 'Configuratie' al één variabele staan, namelijk 'url'. Wij gebruiken het plus-icoon om een nieuwe variabele toe te voegen. Als opties krijg je enkele voorgedefinieerde variabelen. Wij kiezen onderaan voor de optie 'Variabele *var*'. De 'Variabele' en 'Naam' geven we beide de tekst 'afbeelding'. Ditzelfde doen we door een variabele aan te maken voor de *titel*, *omschrijving* en *link*. 
