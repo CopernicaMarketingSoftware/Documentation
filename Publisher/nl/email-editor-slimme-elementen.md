@@ -95,7 +95,7 @@ Hieronder een tabel met de gebruikte waardes:
 
 ### Link toevoegen
 Nu we dit hebben ingesteld, kun je onder zowel **Configuratie** als **Uiterlijk** in de slimme-container een link opgeven. In dit geval gebruik je onderstaande URL: 
-[https://www.coolblue.nl/product/856352/samsung-lu28r550uqrxen.html](https://www.coolblue.nl/product/856352/samsung-lu28r550uqrxen.html)
+[https://www.dekbed-discounter.nl/satijnstreep-lichtblauw-dekbedovertrek.html](https://www.dekbed-discounter.nl/satijnstreep-lichtblauw-dekbedovertrek.html)
 
 Door op het download-icoon te klikken worden de gegevens in je blokken ingeladen vanuit de externe URL.
 
