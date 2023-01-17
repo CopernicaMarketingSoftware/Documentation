@@ -1,6 +1,6 @@
 # Slimme elementen
 
-*Let op: dit artikel is voor de geavanceerde gebruiker. Je hebt HTML/CSS-kennis nodig.*  
+*Let op: dit artikel is voor de geavanceerde gebruiker. Je hebt HTML-/CSS-kennis nodig.*  
 
 Bij het opmaken van een nieuwsbrief maak je vaak gebruik van dezelfde handelingen. Stel je hebt een webshop en je wilt een e-mail sturen ter promotie van 5 artikelen, dan moet je voor ieder product de afbeelding, productnaam, prijs en link toevoegen. Een aantal van deze elementen, zoals de link, worden vaak meerdere keren gebruikt. Deze vind je bijvoorbeeld terug achter de titel, de afbeelding en de bestelknop. Als je de volgende dag 5 nieuwe artikelen wilt sturen, moet je deze handelingen opnieuw doen. Om dit te vereenvoudigen heeft de drag-and-drop-editor de functie 'Slimme elementen'. 
 
@@ -64,7 +64,7 @@ Bij de aangemaakte variabelen heb je twee *Overeenstemmingsprincipes*:
 
 ![Overeenstemmingsprincipes](../images/nl/slimme_elementen5.png)  
 
-Bij de configuratie van het slimme element geef je nu per variabelen de interne en externe CSS-selectors aan. 
+Bij de configuratie van het slimme element geef je nu per variabelen de interne en externe CSS-selectoren aan. 
 
 Voor de variabele _afbeelding_ voeg je bij **Intern** de CSS-selector `.slim_afbeelding` en het kenmerk `src` toe. Je wilt namelijk de `src` aanpassen van het attribuut met de class `slim_afbeelding`.
 
@@ -80,7 +80,7 @@ In de *externe* CSS-selector voeg je `swiper-slide-active img` toe en als kenmer
 
 ![Extern](../images/nl/slimme_elementen7.png)
 
-### Stap 6 - Overige CSS-selectors instellen
+### Stap 6 - Overige CSS-selectoren instellen
 Voor de overige variabelen doen we hetzelfde als stap 5.  
 Hieronder een tabel met de gebruikte waardes:
 
@@ -105,6 +105,9 @@ Door op het download-icoon te klikken worden de gegevens in je blokken ingeladen
 
 ![Extern](../images/nl/slimme_elementen8.png)
 
+## Andere producten inladen
+Omdat je de structuur eenmalig hebt ingesteld, is het eenvoudig om nieuwe of meerdere producten te tonen. Door de gehele slimme-container te selecteren krijg je de optie om deze te kopiëren (klik op de drie puntjes). De gekopieerde container plaats je vervolgens naast het eerste product. In de slimme-container zelf kun je vervolgens een andere (product)link opgeven.
+  
 ## Afkorten van waardes
 Wanneer je de tekst bij bijvoorbeeld de omschrijving te lang vindt, kun je gebruik maken van *modifiers* om de opgehaalde waarde in te korten. Hiervoor ga je naar je slimme-container, kies je voor 'Data' en open je het configuratie-tabblad. Bij de variabele *omschrijving* voeg je onder *extern* een *modifier* toe. 
 
