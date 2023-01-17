@@ -10,7 +10,7 @@ Een slim element is een lijn, structuur of container waarin alle basisblokken zi
 Je stelt hierbij eenmalig de volgorde en de eigenschappen van eerder genoemde blokken in en kunt vervolgens met één druk op de knop de content vanaf de externe locatie op de juiste plek inladen.
 
 ## Hoe werken slimme elementen?
-In onderstaand voorbeeld gaan we producten ophalen vanuit de website van [Dekbed Discounter](https://www.dekbed-discounter.nl/), maar je kan hier ook iedere andere URL voor gebruiken.
+In onderstaand voorbeeld ga je producten ophalen vanuit de website van [Dekbed Discounter](https://www.dekbed-discounter.nl/), maar je kan hier ook iedere andere URL voor gebruiken.
 
 ### Stap 1 - Maak een standaardstructuur voor je slimme element
 Je maakt een standaardstructuur zoals je deze wilt gebruiken in de nieuwsbrief. In dit geval gebruik je een structuur waarbij je twee producten naast elkaar wilt gaan tonen. Voor ieder product willen je het volgende tonen:
@@ -45,7 +45,7 @@ Selecteer de container waar alle blokken in staan en ga naar het tabblad 'Data' 
 ![Activeren slimme elementen](../images/nl/slimme_elementen3.png)
 
 ### Stap 4 - Variabelen aanmaken
-Na het activeren van het slimme element zie je onder 'Configuratie' al één variabele staan, namelijk 'url'. Gebruik het plus-icoon om een nieuwe variabele toe te voegen. Als opties krijg je enkele voorgedefinieerde variabelen. Kies onderaan voor de optie 'Variabele *var*'. De 'Variabele' en 'Naam' geven we beide de waarde 'afbeelding'. De overige instellingen komen later in dit artikel aan bod.
+Na het activeren van het slimme element zie je onder 'Configuratie' al één variabele staan, namelijk 'url'. Gebruik het plus-icoon om een nieuwe variabele toe te voegen. Als opties krijg je enkele voorgedefinieerde variabelen. Kies onderaan voor de optie 'Variabele *var*'. De 'Variabele' en 'Naam' geef je beide de waarde 'afbeelding'. De overige instellingen komen later in dit artikel aan bod.
 
 Ditzelfde doe je voor de overige variabelen:
 - titel
@@ -81,7 +81,7 @@ In de *externe* CSS-selector voeg je `swiper-slide-active img` toe en als kenmer
 ![Extern](../images/nl/slimme_elementen7.png)
 
 ### Stap 6 - Overige CSS-selectoren instellen
-Voor de overige variabelen doen we hetzelfde als stap 5.  
+Voor de overige variabelen doe je hetzelfde als bij stap 5.  
 Hieronder een tabel met de gebruikte waardes:
 
 | Variabel     | Overeenstemmingsprincipe | CSS-selector                | Kenmerk          |
