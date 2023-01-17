@@ -38,7 +38,7 @@ Gebruik hiervoor de volgende class-namen:
 - **slim_link** voeg deze CSS-class toe op het A-attribuut die je wilt aanpassen.
 
 Dit zal er ongeveer zo uit zien:  
-[!CSS-classes toevoegen](../images/nl/slimme_elementen2.png)
+![CSS-classes toevoegen](../images/nl/slimme_elementen2.png)
 
 ### Stap 3 - Activeren van slimme elementen
 Selecteer de container waar alle blokken in staan en ga naar het tabblad 'Data' bij de container-opties. Hier kun je de optie aanzetten om gebruik te maken van slimme elementen.  
@@ -68,7 +68,7 @@ Bij de configuratie van het slimme element geef je nu per variabelen de interne 
 
 Voor de variabele _afbeelding_ voeg je bij **Intern** de CSS-selector `.slim_afbeelding` en het kenmerk `src` toe. Je wilt namelijk de `src` aanpassen van het attribuut met de class `slim_afbeelding`.
 
-[!Intern](../images/nl/slimme_elementen6.png)
+![Intern](../images/nl/slimme_elementen6.png)
 
 Bij **Extern** moet je kijken naar de pagina waar je de content van wilt gaan inladen. In dit geval [deze pagina](https://www.dekbed-discounter.nl/satijnstreep-lichtblauw-dekbedovertrek.html). Om in te zien welke CSS-class de afbeelding heeft, kun je met je rechtermuis-knop de pagina inspecteren. In dit geval heeft het IMG-attribuut zelf geen class, maar het bovenliggende DIV-attribuut wel:
 ```
@@ -78,7 +78,7 @@ Bij **Extern** moet je kijken naar de pagina waar je de content van wilt gaan in
 
 In de *externe* CSS-selector voeg je `swiper-slide-active img` toe en als kenmerk `src`. Je wilt namelijk van het IMG-attribuut binnen de `swiper-slide-active`-class de `src` ophalen.
 
-[!Extern](../images/nl/slimme_elementen7.png)
+![Extern](../images/nl/slimme_elementen7.png)
 
 ### Stap 6 - Overige CSS-selectors instellen
 Voor de overige variabelen doen we hetzelfde als stap 5.  
@@ -103,7 +103,7 @@ Nu je dit hebt ingesteld, kun je onder zowel **Configuratie** als **Uiterlijk** 
 
 Door op het download-icoon te klikken worden de gegevens in je blokken ingeladen vanuit de externe URL.
 
-[!Extern](../images/nl/slimme_elementen8.png)
+![Extern](../images/nl/slimme_elementen8.png)
 
 ## Afkorten van waardes
 Wanneer je de tekst bij bijvoorbeeld de omschrijving te lang vindt, kun je gebruik maken van *modifiers* om de opgehaalde waarde in te korten. Hiervoor ga je naar je slimme-container, kies je voor 'Data' en open je het configuratie-tabblad. Bij de variabele *omschrijving* voeg je onder *extern* een *modifier* toe. 
@@ -115,4 +115,4 @@ Om vervolgens nog wat achter deze tekst te plaatsen, bijvoorbeeld drie punten, v
 
 Bij het opnieuw inladen van de content wordt de tekst nu afgekapt na 40 karakters en aan het einde worden drie punten toegevoegd. Meer informatie hierover vind je in [dit artikel](https://support.stripo.email/en/articles/6179720-how-to-use-fields-modifier-format-and-separator-helpers-for-smart-elements).
 
-[!Afkorten van waardes](../images/nl/slimme_elementen9.png)
+![Afkorten van waardes](../images/nl/slimme_elementen9.png)
