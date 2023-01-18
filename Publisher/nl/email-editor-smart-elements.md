@@ -13,7 +13,7 @@ Je stelt hierbij eenmalig de volgorde en de eigenschappen van eerder genoemde bl
 In onderstaand voorbeeld ga je producten ophalen vanuit de website van [Dekbed Discounter](https://www.dekbed-discounter.nl/), maar je kan hier ook iedere andere URL voor gebruiken.
 
 ### Stap 1 - Maak een standaardstructuur voor je slimme element
-Je maakt een standaardstructuur zoals je deze wilt gebruiken in de nieuwsbrief. In dit geval gebruik je een structuur waarbij je twee producten naast elkaar wilt gaan tonen. Voor ieder product willen je het volgende tonen:
+Je maakt een standaardstructuur zoals je deze wilt gebruiken in de nieuwsbrief. In dit voorbeeld gebruik je een structuur waarbij je twee producten naast elkaar wilt gaan tonen. Voor ieder product wil je het volgende tonen:
 - afbeelding
 - titel
 - omschrijving
@@ -23,10 +23,13 @@ Je maakt een standaardstructuur zoals je deze wilt gebruiken in de nieuwsbrief. 
 
 Deze blokken plaats je binnen in één container en voorzie je van de gewenste opmaak.
 Je template ziet er nu bijvoorbeeld als volgt uit:  
+
 ![Voorbeeld_structuur](../images/nl/slimme_elementen1.png)  
 
 ### Stap 2 - CSS-classes toevoegen
-De content binnen het slimme elementen wordt op de juiste plek geplaatst op basis van CSS-classes. Het is van belang dat op de plek waar je de content wilt tonen een duidelijke class-naam wordt meegegeven in de broncode van je e-mailtemplate. Hiervoor selecteer je de gehele container en klik je op *Code bekijken* in de e-mail-editor (links bovenin, onder 'configuratie').
+De content binnen het slimme element wordt op de juiste plek geplaatst op basis van CSS-classes. Het is van belang dat op de plek waar je de content wilt tonen een duidelijke class-naam wordt meegegeven in de broncode van je e-mailtemplate. Hiervoor selecteer je de gehele container en klik je op *Code bekijken* in de e-mail-editor.  
+
+![code bekijken](../images/nl/slimme_elementen10.png)  
 
 In deze broncode geef je aan ieder blok een extra class mee zodat het systeem weet waar de content geplaatst moet worden.  
 Gebruik hiervoor de volgende class-namen:
@@ -38,10 +41,12 @@ Gebruik hiervoor de volgende class-namen:
 - **slim_link** voeg deze CSS-class toe op het A-attribuut die je wilt aanpassen.
 
 Dit zal er ongeveer zo uit zien:  
+
 ![CSS-classes toevoegen](../images/nl/slimme_elementen2.png)
 
 ### Stap 3 - Activeren van slimme elementen
-Selecteer de container waar alle blokken in staan en ga naar het tabblad 'Data' bij de container-opties. Hier kun je de optie aanzetten om gebruik te maken van slimme elementen.  
+Selecteer de container waar alle blokken in staan en ga naar het tabblad 'Data' bij de container-opties. Door op de knop _aanvangen_ te klikken kun je het slimme-element aanzetten.  
+
 ![Activeren slimme elementen](../images/nl/slimme_elementen3.png)
 
 ### Stap 4 - Variabelen aanmaken
@@ -55,16 +60,17 @@ Ditzelfde doe je voor de overige variabelen:
 - link 
 
 De configuratie ziet er nu zo uit:  
+
 ![configuratie](../images/nl/slimme_elementen4.png)
 
 ### Stap 5 - CSS-selector instellen
 Bij de aangemaakte variabelen heb je twee *Overeenstemmingsprincipes*:
 - **Intern** Hier geef je aan waar de opgevraagde data van de externe locatie geplaatst moet worden binnen je template door middel van CSS-selectoren en kenmerken.   
-- **Extern** Hier geef je aan vanuit welke CSS-selector en kenmerk de waardes moeten worden opgehaald vanaf de externe locatie. Daarnaast kun je hier de verkregen waardes aanpassen door middel van reguliere expressies.  
+- **Extern** Hier geef je aan vanuit welke CSS-selector en kenmerk de waardes moeten worden opgehaald vanaf de externe locatie. Daarnaast kun je hier de verkregen waardes aanpassen door middel van [reguliere expressies](https://en.wikipedia.org/wiki/Regular_expression).  
 
 ![Overeenstemmingsprincipes](../images/nl/slimme_elementen5.png)  
 
-Bij de configuratie van het slimme element geef je nu per variabelen de interne en externe CSS-selectoren aan. 
+Bij de configuratie van het slimme element geef je nu per variabele de interne en externe CSS-selectoren aan. 
 
 Voor de variabele _afbeelding_ voeg je bij **Intern** de CSS-selector `.slim_afbeelding` en het kenmerk `src` toe. Je wilt namelijk de `src` aanpassen van het attribuut met de class `slim_afbeelding`.
 
