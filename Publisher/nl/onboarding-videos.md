@@ -2,7 +2,7 @@
 Op deze pagina vind je een overzicht van alle onboarding videos
 
 ## Database aanmaken
-![VIMEO VIDEO](https://player.vimeo.com/video/670122922 "Database aanmaken")
+![VIMEO VIDEO](https://vimeo.com/670122922 "Database aanmaken")
 
 Meer informatie over dit onderwerp kan je [hier](./database-profiles) vinden
 
