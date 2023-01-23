@@ -40,6 +40,7 @@
     * [Feedblok](./email-editor-feedblock.md)
     * [Gebruik van mediabibliotheek](./email-editor-medialibrary.md)
     * [Variabele timer](./email-editor-relative-timers.md)
+    * [Slimme elementen](./email-editor-smart-elements.md)
 * [Drag-and-drop-templates (oud) specifiek](./emailings-ms-templates.md)
     * [Personalisatie](./emailings-ms-personalization.md)
     * [Uitschrijflink](./emailings-ms-unsubscribe.md)
