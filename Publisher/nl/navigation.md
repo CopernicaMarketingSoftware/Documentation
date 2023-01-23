@@ -4,7 +4,7 @@
     * [Toegangsbeperkingen](./access-restrictions.md)
     * [Configuratie](./configuration.md)
     * [Eerste mailing](./first-mailing.md)
-    * [Onboarding-videos](./onboarding-videos.md)
+    * [Onboardingvideos](./onboarding-videos.md)
     * [Instructievideos](.explanation-videos.md)
 * [Database en profielen](./database-profiles.md)
     * [Databasevelden](./database-fields.md)
