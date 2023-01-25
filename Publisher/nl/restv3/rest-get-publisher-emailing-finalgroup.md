@@ -13,6 +13,7 @@ Het **data** veld van het teruggegeven JSON object bevat de snapshot informatie.
 De volgende velden zijn beschikbaar:
 
 * **document**: De ID van het document van de mailing.
+* **template**: De ID van het template van de mailing.
 * **name**: De naam van de mailing snapshot verstuurd naar de definitieve groep.
 * **from_address**: Het 'from address' van de mailing.
 * **subject**: Het onderwerp van de mailing.
@@ -27,6 +28,7 @@ De JSON voor een testgroep ziet er bijvoorbeeld zo uit:
 {  
    "ID":"2481",
    "document":"12",
+   "template":"3",
    "name":"Finalgroup",
    "from_address":"\"Mr. Test\" <test@copernica.com>",
    "subject":"Emailing!",
