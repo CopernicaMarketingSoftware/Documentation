@@ -9,6 +9,17 @@ De methode maakt een HTTP call naar het volgende adres:
 Vergeet niet hier `{$profileID}` te vervangen door de ID van het profiel 
 waarvoor je de mailings op wilt vragen.
 
+## Beschikbare parameters
+
+* **type**: Het type mailing. Dit kan een massa ("mass") mailing zijn, 
+een individuele ("individual") mailing, een AB-test ("abtest") of split-run ("splitrun"). 
+* **followups**: Geeft aan of we alleen opvolgactie mailings ("yes") gebruiken, alleen mailings 
+die *niet* het resultaat waren van een opvolgactie ("no") of alle mailings ("both"). De standaardwaarde is "both".
+* **mindestinations**: Vraag alleen mailings met dit minimum aantal ontvangers op.
+* **maxdestinations**: Vraag alleen mailings met dit maximum aantal ontvangers op.
+* **fromdate**: Vraag alleen mailings na deze datum op (YYYY-MM-DD HH:MM:SS formaat).
+* **todate**: Vraag alleen mailings voor deze datum op (YYYY-MM-DD HH:MM:SS formaat). 
+
 ## Teruggegeven velden
 
 Deze methode geeft een JSON object met emailings. 
