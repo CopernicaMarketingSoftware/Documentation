@@ -11,6 +11,13 @@ Where the `$id` should be replaced with the ID of the emailing document.
 
 * **begintime**: Start date (and time) for the statistics (YYYY-MM-DD HH:MM:SS format).
 * **endtime**: End date (and time) for the statistics (YYYY-MM-DD HH:MM:SS format).
+* **type**: Includes the type of mailings to include ('mass', 'individual' or 'both').
+* **followups**: Indicates whether we should retrieve only mailings from follow-ups ('yes'), only 
+mailings *not* from follow-ups ('no') or all mailings ('both').
+* **test**: Indicates whether we should retrieve only test mailings ('yes'), only mailings that were 
+not tests ('no') or all mailings ('both').
+* **mindestinations**: Only retrieve mailings at least this many destinations.
+* **maxdestinations**: Only retrieve mailings with at most this many destinations.
 
 ## Return value
 
