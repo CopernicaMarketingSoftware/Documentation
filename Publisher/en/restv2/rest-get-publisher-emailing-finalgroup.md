@@ -13,6 +13,7 @@ The following fields are available for each final group:
 
 * **ID**: The ID of the final group
 * **document**: The ID of the document of the mailing.
+* **template**: The ID of the template of the mailing.
 * **name**: The name of the mailing snapshot sent to this group.
 * **from_address**: The 'from address' of the mailing.
 * **subject**: The subject of the mailing.
@@ -27,6 +28,7 @@ The JSON for a final group might look something like this:
 {  
    "ID":"2481",
    "document":"12",
+   "template":"3",
    "name":"Finalgroup",
    "from_address":"\"Mr. Test\" <test@copernica.com>",
    "subject":"Emailing!",
