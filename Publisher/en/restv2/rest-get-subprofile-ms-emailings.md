@@ -8,6 +8,16 @@ specific subprofile. This is an HTTP GET call to the following address:
 Don't forget to replace `{$subprofileID}` by the ID of the subprofile you 
 want to retrieve the emailings for.
 
+## Available parameters
+
+* **type**: The type of mailing between mass, individual abtest or splitrun.
+* **followups**: Indicates if we only use follow-up mailings ("yes"), only mailings 
+that were *not* the result of a follow-up ("no") or all mailings ("both"). Defaults to "both".
+* **mindestinations**: Only retrieve mailings at least this many destinations.
+* **maxdestinations**: Only retrieve mailings with at most this many destinations.
+* **fromdate**: Only retrieve mailings sent after this date (YYYY-MM-DD HH:MM:SS format). 
+* **todate**: Only retrieve mailings sent before this date (YYYY-MM-DD HH:MM:SS format). 
+
 ## Returned fields
 
 The method returns a JSON object containing the following information for each mailing:
