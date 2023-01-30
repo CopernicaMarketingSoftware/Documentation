@@ -11,6 +11,14 @@ Hier moet `$id` vervangen worden door de ID van het emailing document.
  
 * **begintime**: Start datum (en tijd) voor de statistieken (YYYY-MM-DD HH:MM:SS formaat).
 * **endtime**: Eind datum (en tijd) voor de statistieken (YYYY-MM-DD HH:MM:SS formaat).
+* **type**: Het type mailings om op te vragen: Massa ('mass') mailings, individuele ('individual') mailings 
+of alle mailings ('both').
+* **followups**: Geeft aan of we alleen emailings van opvolgacties ('yes') opvragen, 
+alleen emailings die geen gevolg zijn van een opvolgactie ('no') of alle emailings ('both').
+* **test**: Geeft aan of we alleen test emailings ('yes') opvragen, alleen 
+mailings die geen test waren ('no') of alle mailings ('both').
+* **mindestinations**: Vraag alleen mailings met dit minimum aantal ontvangers op.
+* **maxdestinations**: Vraag alleen mailings met dit maximum aantal ontvangers op.
 
 ## Teruggegeven waarde
 
