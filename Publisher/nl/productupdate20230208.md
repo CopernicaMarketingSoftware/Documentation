@@ -1,18 +1,4 @@
-# Opvolgactie verbeteringen, delen van statistieken en interactie inzien met een klikmap
-
-## Verbeteringen aan opvolgacties
-We hebben enkele verbeteringen doorgevoerd aan de opvolgacties binnen Marketing Suite:
-
-- Je kunt nu gebruik maken van de 'Check in selectie' optie. Hiermee kun je kijken of een profiel wel of niet voorkomt in een bepaalde selectie. Hierdoor kun je bijvoorbeeld, gedurende een flow, kijken of een profiel zich inmiddels heeft uitgeschreven of dat het profiel in de tussentijd  iets heeft gekocht.
-- In de 'Check alle subprofielen' optie is het mogelijk gemaakt om enkel te kijken naar subprofielen die zijn aangemaakt voor of na het subprofiel waardoor de opvolgactie is uitgevoerd. Hierdoor is het mogelijk om in een verlaten winkelwagen campagne met een wachttijd van enkele dagen te kijken of er in de tussentijd een subprofiel is aangemaakt in de collectie met bestellingen.
-- Bij een opvolgactie op een subprofiel is de optie 'Profiel bewerken' toegevoegd. Hiermee kun je een veld in het hoofdprofiel aanpassen van het subprofiel waarop de opvolgactie getriggerd is.
-- De interface van de 'Verzend e-mail' optie is aangepast zodat de invoervelden op een logischere volgorde staan.
-- Bij het toevoegen van de optie 'Bestemming aanpassen' wordt vanaf nu de wijziging in de box weergegeven. Hierdoor hoef je niet de box te bewerken om te bekijken welke wijziging doorgevoerd wordt.
-
-## Interactie van je links inzien met een klikmap
-In de statistieken van je verzonden mailing is de optie toegevoegd om een klikmap in te zien. Hiermee kun je eenvoudig zien op welke links in je template de meeste interactie is geweest. Je vindt de klikmap onder 'Verzonden template -> Klikmap'.
-
-Wanneer je gebruik maakt van dezelfde URL's op verschillende plekken in je template, is ons advies om deze uniek te maken door een hash en een waarde aan de URL toe te voegen. Bijvoorbeeld: https://www.copernica.com/pagina#link1 en https://www.copernica.com/pagina#link2. Hierdoor worden de beide links uniek in de klikmap en is het mogelijk om het verschil tussen beide te meten.
+# Delen van statistieken en werken met slimme elementen
 
 ## Delen van statistieken
 In Marketing Suite is het mogelijk gemaakt om een statistieken rapport te delen van een verzonden mailing. Hiermee kun je derden inzicht geven in de resultaten van een verzonden campagne. 
@@ -20,14 +6,14 @@ In Marketing Suite is het mogelijk gemaakt om een statistieken rapport te delen 
 Je vindt deze optie in de statistieken van je verzonden mailing onder de knop 'Statistieken delen'.
 
 ## Werken met slimme elementen in drag-and-drop-templates
-Bij het opmaken van een nieuwsbrief maak je vaak gebruik van dezelfde handelingen. Stel je hebt een webshop en je wilt een e-mail sturen ter promotie van 5 artikelen, dan moet je voor ieder product de afbeelding, productnaam, prijs en link toevoegen. Een aantal van deze elementen, zoals de link, wordt vaak meerdere keren gebruikt. Deze vind je bijvoorbeeld terug achter de titel, de afbeelding en de bestelknop. Als je de volgende dag 5 nieuwe artikelen wilt sturen, moet je deze handelingen opnieuw doen. Om dit te vereenvoudigen heeft de drag-and-drop-editor de functie 'Slimme elementen'.
+Bij het opmaken van een nieuwsbrief maak je vaak gebruik van dezelfde handelingen. Stel je hebt een webshop en je wilt een e-mail sturen ter promotie van 5 artikelen, dan moet je voor ieder product de afbeelding, productnaam, prijs en link toevoegen. Een aantal van deze elementen, zoals de link, wordt vaak meerdere keren gebruikt. Deze vind je bijvoorbeeld terug achter de titel, de afbeelding en de bestelknop. Als je de volgende dag 5 nieuwe artikelen wilt sturen, moet je deze handelingen opnieuw uitvoeren. Om dit te vereenvoudigen heeft de drag-and-drop-editor de functie 'Slimme elementen'.
 
-In [dit artikel](https://www.copernica.com/nl/documentation/email-editor-smart-elements) lees je hier meer over.
+Wil je weten hoe je slimme elementen kunt inzetten om je werk te vergemakkelijken? Lees dan meer in [dit artikel](https://www.copernica.com/nl/documentation/email-editor-smart-elements).
 
 ## Help ons Copernica te verbeteren
-Bij Copernica zijn we continu op zoek naar verbeteringen aan onze software om het gebruiksgemak te vergroten. Veel van deze verzoeken komen binnen bij onze support-afdeling. Dit heeft het afgelopen jaar gezorgd voor onder andere een vernieuwde [drag-and-drop-editor](https://ms.copernica.com/#/design/#helpons), een verbeterde [resultatenmodule](https://ms.copernica.com/#/results/sentmailings#helpons), [AB-tests en split-runs](https://www.copernica.com/nl/documentation/email-editor-ab-splitrun-test#helpons) en verbeteringen aan de [statbiliteit](https://www.copernica.com/nl/blog/post/onderhoud-aan-onze-infrastructuur-overgang-naar-kubernetes).
+Bij Copernica zijn we continu op zoek naar verbeteringen aan onze software om het gebruiksgemak te vergroten. Veel van deze verzoeken komen binnen bij onze support-afdeling. Dit heeft het afgelopen jaar gezorgd voor onder andere een vernieuwde [drag-and-drop-editor](https://ms.copernica.com/#/design/#helpons), een verbeterde [resultatenmodule](https://ms.copernica.com/#/results/sentmailings#helpons), [AB-tests en split-runs](https://www.copernica.com/nl/documentation/email-editor-ab-splitrun-test#helpons) en verbeteringen aan de [stabiliteit](https://www.copernica.com/nl/blog/post/onderhoud-aan-onze-infrastructuur-overgang-naar-kubernetes).
 
-We zijn benieuwd welke functionaliteiten je graag zou willen toevoegen of welke onderdelen van de software je zou willen verbeteren. Stuur een e-mail met je verbeteringen naar [productowner@copernica.com](mailto:productowner@copernica.com?subject=Verbeteringen%20Copernica).
+We zijn benieuwd welke functionaliteiten je graag zou willen toevoegen of welke onderdelen van de software je wilt verbeteren. Stuur een e-mail met je ideeën naar [productowner@copernica.com](mailto:productowner@copernica.com?subject=Ideeën%20Copernica).
 
 Op basis van de aangeleverde verbeteringen kunnen wij bepalen waar het meeste vraag naar is en waar wij als eerste aan gaan werken.
 
