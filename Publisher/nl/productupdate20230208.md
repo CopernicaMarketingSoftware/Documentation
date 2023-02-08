@@ -10,13 +10,6 @@ Bij het opmaken van een nieuwsbrief maak je vaak gebruik van dezelfde handelinge
 
 Wil je weten hoe je slimme elementen kunt inzetten om je werk te vergemakkelijken? Lees dan meer in [dit artikel](https://www.copernica.com/nl/documentation/email-editor-smart-elements).
 
-## Help ons Copernica te verbeteren
-Bij Copernica zijn we continu op zoek naar verbeteringen aan onze software om het gebruiksgemak te vergroten. Veel van deze verzoeken komen binnen bij onze support-afdeling. Dit heeft het afgelopen jaar gezorgd voor onder andere een vernieuwde [drag-and-drop-editor](https://ms.copernica.com/#/design/#helpons), een verbeterde [resultatenmodule](https://ms.copernica.com/#/results/sentmailings#helpons), [AB-tests en split-runs](https://www.copernica.com/nl/documentation/email-editor-ab-splitrun-test#helpons) en verbeteringen aan de [stabiliteit](https://www.copernica.com/nl/blog/post/onderhoud-aan-onze-infrastructuur-overgang-naar-kubernetes).
-
-We zijn benieuwd welke functionaliteiten je graag zou willen toevoegen of welke onderdelen van de software je wilt verbeteren. Stuur een e-mail met je ideeën naar [productowner@copernica.com](mailto:productowner@copernica.com?subject=Ideeën%20Copernica).
-
-Op basis van de aangeleverde verbeteringen kunnen wij bepalen waar het meeste vraag naar is en waar wij als eerste aan gaan werken.
-
 ## Marketing Suite
 - Bij het bewerken van een voorwaarde op een blok in je drag-and-drop-template kun je nu direct je wijziging opslaan zonder in je template te moeten klikken.
 - In de toolbar aan de onderkant van een drag-and-drop-template is een knop toegevoegd naar de gezondheidscheck. Hiermee kun je zien of er fouten in je template zitten.
