@@ -1,14 +1,9 @@
-# Delen van statistieken en werken met slimme elementen
+# Productupdate - Delen van statistieken
 
 ## Delen van statistieken
 In Marketing Suite is het mogelijk gemaakt om een statistieken rapport te delen van een verzonden mailing. Hiermee kun je derden inzicht geven in de resultaten van een verzonden campagne. 
 
 Je vindt deze optie in de statistieken van je verzonden mailing onder de knop 'Statistieken delen'.
-
-## Werken met slimme elementen in drag-and-drop-templates
-Bij het opmaken van een nieuwsbrief maak je vaak gebruik van dezelfde handelingen. Stel je hebt een webshop en je wilt een e-mail sturen ter promotie van 5 artikelen, dan moet je voor ieder product de afbeelding, productnaam, prijs en link toevoegen. Een aantal van deze elementen, zoals de link, wordt vaak meerdere keren gebruikt. Deze vind je bijvoorbeeld terug achter de titel, de afbeelding en de bestelknop. Als je de volgende dag 5 nieuwe artikelen wilt sturen, moet je deze handelingen opnieuw uitvoeren. Om dit te vereenvoudigen heeft de drag-and-drop-editor de functie 'Slimme elementen'.
-
-Wil je weten hoe je slimme elementen kunt inzetten om je werk te vergemakkelijken? Lees dan meer in [dit artikel](https://www.copernica.com/nl/documentation/email-editor-smart-elements).
 
 ## Marketing Suite
 - Bij het bewerken van een voorwaarde op een blok in je drag-and-drop-template kun je nu direct je wijziging opslaan zonder in je template te moeten klikken.
@@ -35,6 +30,3 @@ Wil je weten hoe je slimme elementen kunt inzetten om je werk te vergemakkelijke
 - Het dominante resultaat is toegevoegd aan de REST API-call voor het ophalen van statistieken van [Publisher](https://www.copernica.com/nl/documentation/restv3/rest-get-publisher-emailing-statistics)- en [Marketing Suite](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-statistics)-mailings.
 - Bij het ophalen van de [testgroepen](https://www.copernica.com/nl/documentation/restv3/rest-get-publisher-emailing-testgroups) van een mailing wordt nu ook het template ID teruggegeven.
 - Bugfix: in de SOAP API is het weer mogelijk om het Account_sendSMS-endpoint aan te roepen.
-
-## Documentatie
-- In [dit artikel](https://www.copernica.com/nl/documentation/email-editor-ab-splitrun-test) geven we je meer informatie over het gebruik van AB-tests en split-runs in de e-mail-editor.
