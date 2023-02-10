@@ -22,11 +22,14 @@ Dikgedrukte is de standaardwaarde.
 Deze methode geeft een JSON object terug met uitschrijvingen onder het 'data' veld. 
 Voor elke uitschrijving is de volgende informatie beschikbaar:
 
-* **ID**: De ID van de uitschrijving.         
-* **mailing**: De ID van de mailing.
-* **timestamp**: Tijdstempel van de uitschrijving. 
-* **destination**: De ID van de destination die de uitschrijving veroorzaakte.
-* **source**: De bron van de uitschrijving.
+* **ID**: De ID van de uitschrijving
+* **mailing**: De ID van de mailing
+* **timestamp**: Tijdstempel van de uitschrijving
+* **destination**: De ID van de destination die de uitschrijving veroorzaakte
+* **source**: De bron van de uitschrijving
+* **success**: Is het uitschrijfgedrag uitgevoerd? (true/false)
+* **profile**: De ID van het profiel die de uitschrijving veroorzaakte
+* **subprofile**: De ID van het subprofiel die de uitschrijving veroorzaakte
 
 ### JSON voorbeeld
 
@@ -38,7 +41,10 @@ Een enkele uitschrijving ziet er bijvoorbeeld zo uit.
    "mailing":"412",
    "timestamp":"2021-10-09 13:41:46",   
    "destination":"112",
-   "source":"click"
+   "source":"click",
+   "success":true,
+   "profile":1234,
+   "subprofile":NULL
 }
 ```
 

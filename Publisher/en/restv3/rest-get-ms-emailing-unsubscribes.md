@@ -26,6 +26,9 @@ the following information is available:
 * **timestamp**: Timestamp of the unsubscribe.
 * **destination**: The ID of the destinations that unsubscribed.
 * **source**: Source of the unsubscribe.
+* **success**: Is the unsubscribe behavior triggered? (true/false)
+* **profile**: The ID of the profile that triggered the unsubscribe
+* **subprofile**: The ID of the subprofile that triggered the unsubscribe
 
 ## PHP example
 
