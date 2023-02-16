@@ -7,7 +7,8 @@ Op de configuratiepagina kun je allerlei zaken instellen en inzien. Instellingen
 
 ![Copernica-configuratie](../images/nl/copernicaconfiguratie.png)
 
-## Bedrijfsinstellingen  
+**Bedrijfsinstellingen**
+
 * __Bedrijfsgegevens:__ de basisgegevens van jouw bedrijf (bedrijfsnaam, adres enzovoort). 
 * __Verbruik:__ inzage in het totale verbruik (zoals het aantal verzonden berichten) van alle accounts samen. 
 * __Bedrijfsmedewerkers:__ inzage in de gebruikers (collega's) die gekoppeld zijn aan het bedrijfsprofiel. 
@@ -18,7 +19,8 @@ Op de configuratiepagina kun je allerlei zaken instellen en inzien. Instellingen
 * __API-applicaties:__ de gekoppelde API-applicaties (lees [hier](./apis) meer over de API). 
 * __Jouw partner:__ inzage in wie jouw partner is (lees [hier](https://www.copernica.com/nl/support/partners) meer over onze partners).
 
-## Accountinstellingen
+**Accountinstellingen**
+
 * __Senderdomains:__ inzage in de senderdomains binnen jouw account (lees [hier](./sender-domains) meer over senderdomains).
 * __Webhooks:__ inzage in de webhooks binnen jouw account (lees [hier](./webhooks) meer over webhooks).
 * __Verbruik:__ inzage in het verbruik (zoals het aantal verzonden berichten) van jouw account.  
@@ -28,7 +30,8 @@ Op de configuratiepagina kun je allerlei zaken instellen en inzien. Instellingen
 * __API-accesstokens:__ de gekoppelde API-accesstokens (lees [hier](./apis) meer over de API).
 * __Bewaartermijn gegevens:__ de ingestelde bewaartermijn van jouw accountgeschiedenis.
 
-## Gebruikersinstellingen  
+**Gebruikersinstellingen**
+
 * __Persoonsgegevens:__ de basisgegevens van jouw gebruiker (voor- en achternaam, e-mailadres enzovoort). 
 * __Wachtwoord:__ wachtwoordinstellingen voor jouw gebruiker.
 * __Authenticatie:__ twee-factor-authenticatie instellen voor jouw gebruiker.
