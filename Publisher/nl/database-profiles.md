@@ -5,19 +5,19 @@ Je vindt het database-overzicht onder ‘**Profielen**’. Door op de naam van e
 
 ![database overzicht](../images/nl/profieleninselectie.png)
 
-## Aanmaken van een database
+**Aanmaken van een database**
 ![Database aanmaken](https://www.youtube.com/watch?v=Zy__MLqVzxA)
 
 Je maakt een database aan door onder ‘**Profielen**’ te kiezen voor ‘**Aanmaken -> Een database aanmaken**’. Vervolgens kun je de database van een naam en omschrijving voorzien. 
 
 We raden je aan om één centrale database te gebruiken. Het is niet mogelijk om data uit verschillende databases te combineren. Iedere database bevat zijn eigen data en structuur.
 
-## Aanmaken van databasevelden
+**Aanmaken van databasevelden**
 Een database bestaat doorgaans uit meerdere velden. Hierin kun je informatie toevoegen aan een bijbehorend profiel. Denk hierbij aan een voornaam, achternaam of e-mailadres. Je voegt een databaseveld toe door in de menubalk van de database te navigeren naar '**Velden & interesses**'.
 
 Meer informatie over veldopties vind je op de uitgebreide documentatiepagina over [databasevelden](./database-fields).
 
-## Aanmaken van een profiel
+**Aanmaken van een profiel**
 ![Profiel aanmaken](https://www.youtube.com/watch?v=PqyWJaUuP68)
 
 Zodra je databasevelden hebt toegevoegd krijg je de mogelijkheid om profielen aan te maken. Je kunt een profiel handmatig toevoegen door te kiezen voor '**Aanmaken -> Profiel aanmaken**'. Hier vul je de gegevens van het profiel in. Vervolgens klik je op ‘**Profiel aanmaken**’.
