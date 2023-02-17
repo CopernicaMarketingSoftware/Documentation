@@ -20,7 +20,7 @@ Een database bestaat doorgaans uit meerdere velden. Je kunt deze velden aanmaken
 
 * **Verwijzing:** Geschikt voor het verwijzen naar een andere database door middel van een ID. Meer informatie over dit veldtype vind je hier.
 
-## Extra veldopties
+**Extra veldopties**
 ![Extra veldopties](../images/nl/extraveldopties.png)
 
 Wanneer je een veld bewerkt of toevoegt kun je per veld een aantal extra opties selecteren. De opties zijn als volgt:
@@ -33,13 +33,13 @@ Wanneer je een veld bewerkt of toevoegt kun je per veld een aantal extra opties 
 
 * **Dit veld wordt geïndexeerd:** Binnen je database is het mogelijk om 64 velden te [indexeren](./database-field-index). Wanneer een veld geïndexeerd is werkt het zoeken naar profielen en het opbouwen van selecties op basis van dit veld sneller. Je kunt deze optie aanzetten bij de meest gebruikte velden binnen je database. Let op: tekstvelden die gebruik maken van de optie 'Groot veld' kunnen niet worden geïndexeerd.
 
-## Volgorde van databasevelden wijzigen
+**Volgorde van databasevelden wijzigen**
 Databasevelden worden weergegeven op volgorde van creatie. Nieuwe velden worden dus altijd onder oudere velden getoond. Wanneer je deze volgorde wilt aanpassen navigeer je naar '**Velden & Interesses**'.
 
-## Databaseveld verwijderen
+**Databaseveld verwijderen**
 Een databaseveld is eenvoudig te verwijderen door naar '**Velden & Interesses**' te navigeren. Vervolgens kies je achter het gekozen veld voor '**Verwijderen**'.
 
-## Interesses
+**Interesses**
 Naast databasevelden kun je ook gebruik maken van interessevelden. Een interesseveld kan enkel aan- of uitgezet worden. Denk hierbij aan een groep 'Huisdieren' met drie verschillende interesses: ‘Hond’ (uitgevinkt), ‘Kat’ (aangevinkt) en ‘Hamster’ (uitgevinkt). 
 
 ![Interesses](../images/nl/interesses.png)
