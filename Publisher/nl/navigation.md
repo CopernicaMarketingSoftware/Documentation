@@ -1,4 +1,4 @@
-[Introductie](./introduction.md)
+[Introductie](./Introductie.md)
 
 [Marketing Suite](./MarketingSuite.md)
 
