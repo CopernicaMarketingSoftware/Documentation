@@ -18,7 +18,6 @@ kunnen niet dezelfde naam bevatten en moet dus in elk geval veranderd worden.
 Het kopiëren of verplaatsen van (mini)selecties heeft geen effect op de 
 daadwerkelijke inhoud van de database; er gaan geen (sub)profielen verloren.
 
-
 #### Een selectie kopiëren of verplaatsten
 Om een selectie te kunnen **verplaatsen of kopiëren** voer je de volgende stappen uit: 
 - Ga naar profielen.
@@ -28,7 +27,6 @@ Om een selectie te kunnen **verplaatsen of kopiëren** voer je de volgende stapp
 - In configuratie vind je de opties selectie kopiëren en verplaatsen.
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieconfiguratie.png)
-
 
 #### Een selectie kopiëren 
 Om een selectie te **kopiëren** voer je de volgende stappen uit: 
@@ -40,7 +38,6 @@ Om een selectie te **kopiëren** voer je de volgende stappen uit:
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiekopie.png)
 
-
 #### Een selectie verplaatsen
 Om een selectie te **verplaatsen** voer je de volgende stappen uit: 
 - Kies voor “Selectie verplaatsen”.
@@ -48,7 +45,6 @@ Om een selectie te **verplaatsen** voer je de volgende stappen uit:
 - Opslaan.
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverplaatsen.png)
-
 
 ### Profielen uit een (mini)selectie weergeven
 
@@ -69,7 +65,6 @@ Om een **profiel** via een **miniselectie** te benaderen, voer je de volgende st
 *Aan de linkerzijde van de pagina bevind zich een blauwe balk met hierin de instellingsopties weergegeven.*    
 *De (witte kant) rechterzijde van de pagina bevat de velden binnen de collectie voorzien van de data van het subprofiel.*  
 
-
 - Ga naar het profiel behorende bij het subprofiel door op de grijze button “Ga naar profiel” te klikken.
 - Je bent nu in het profiel van het subprofiel. 
 
@@ -83,7 +78,6 @@ In de Marketing Suite kun je, na het aanmaken van selecties, meteen autoriseren.
 Echter, het kan voorkomen dat deze optie niet beschikbaar is. Dat komt dan 
 waarschijnlijk doordat je geen geschikt veld hebt aangemaakt in je database.
 
-
 #### Een selectie autoriseren voor mailings
 Om de **intenties van een selectie** te wijzigen, voer je de volgende stappen uit: 
 - Ga naar de selectie.
@@ -93,7 +87,6 @@ Om de **intenties van een selectie** te wijzigen, voer je de volgende stappen ui
 - Sla de juiste intentie voor je selectie op.
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieautoriseren.png)
-
 
 ### Verwijderen, deactiveren of archiveren?
 
@@ -118,7 +111,6 @@ actief en worden dus regelmatig bijgewerkt. Het archiveren van selecties
 heeft dus geen invloed op de performance van je overige selecties. Je kunt
 ze dus beter verwijderen als performance je doel is.
 
-
 #### Een selectie verwijderen
 Om een selectie te **verwijderen**, voer je de volgende stappen uit: 
 - Ga naar de configuratie van de selectie.
@@ -126,9 +118,7 @@ Om een selectie te **verwijderen**, voer je de volgende stappen uit:
 - Bevestig verwijderen door op de rode knop “verwijderen” te klikken.
 - De selectie is verwijderd.
 
-
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverwijderen.png)
-
 
 ##### Ophalen en inzien van een gearchiveerde selectie
 
@@ -136,9 +126,7 @@ Om een **gearchiveerde selectie** te  kunnen **ophalen of inzien**, voer je de v
 - Vink de knop “Gearchiveerd”, onderaan de pagina, aan.    
 *Nu zijn alle gearchiveerde selecties zichtbaar.*
 
-
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiearchiveren.png)
-
 
 ##### Ophalen van een gearchiveerde selectie
 
@@ -152,17 +140,13 @@ Om een **gearchiveerde selectie op te halen**, voer je de volgende stappen uit:
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/ophalengearchiveerdeselectie.png)
 
-
 ### Een selectie toevoegen aan een testmail
-
 
 ##### Een selectie toevoegen aan een testmail
 Om een selectie aan een **testmail** toe te voegen, voer je de volgende stappen uit: 
 - Ga naar de selectie.
 - Ga naar configuratie
 - Ga naar selectie-intensties.
-- Stel de selectie in als testbestemming door het vakje “testbestemming” aan te vinken.
-
-
+- Stel de selectie in als testbestemming door het vakje “testbestemming” aan te vinken.  
+- 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectietestmail1.png)
-
