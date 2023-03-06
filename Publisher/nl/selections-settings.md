@@ -153,6 +153,16 @@ Om een **gearchiveerde selectie op te halen**, voer je de volgende stappen uit:
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/ophalengearchiveerdeselectie.png)
 
 
+### Een selectie toevoegen aan een testmail
 
 
+##### Een selectie toevoegen aan een testmail
+Om een selectie aan een **testmail** toe te voegen, voer je de volgende stappen uit: 
+- Ga naar de selectie.
+- Ga naar configuratie
+- Ga naar selectie-intensties.
+- Stel de selectie in als testbestemming door het vakje “testbestemming” aan te vinken.
+
+
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectietestmail1.png)
 
