@@ -19,7 +19,7 @@ Het kopiëren of verplaatsen van (mini)selecties heeft geen effect op de
 daadwerkelijke inhoud van de database; er gaan geen (sub)profielen verloren.
 
 #### Een selectie kopiëren of verplaatsten
-Om een selectie te kunnen **verplaatsen of kopiëren** voer je de volgende stappen uit: 
+Om een selectie te kunnen **kopiëren of verplaatsten**, voer je de volgende stappen uit: 
 - Ga naar profielen.
 - Ga naar de desbetreffende database.
 - Ga naar de juiste selectie.
@@ -148,5 +148,5 @@ Om een selectie aan een **testmail** toe te voegen, voer je de volgende stappen 
 - Ga naar configuratie
 - Ga naar selectie-intensties.
 - Stel de selectie in als testbestemming door het vakje “testbestemming” aan te vinken.  
-- 
+
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectietestmail1.png)
