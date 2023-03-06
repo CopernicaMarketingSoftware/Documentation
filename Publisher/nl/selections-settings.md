@@ -19,6 +19,37 @@ Het kopiëren of verplaatsen van (mini)selecties heeft geen effect op de
 daadwerkelijke inhoud van de database; er gaan geen (sub)profielen verloren.
 
 
+#### Een selectie kopiëren of verplaatsten
+Om een selectie te kunnen **verplaatsen of kopiëren** voer je de volgende stappen uit: 
+- Ga naar profielen;
+- ga naar de desbetreffende database;
+- ga naar de juiste selectie;
+- ga naar configuratie;
+- in configuratie vind je de opties selectie kopiëren en verplaatsen.
+
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieconfiguratie.png)
+
+
+#### Een selectie kopiëren 
+Om een selectie te **kopiëren** voer je de volgende stappen uit: 
+- Kies voor “Selectie kopiëren”;
+- geef de nieuwe selectie een naam;
+- geef aan of je ook subselecties wilt kopiëren door het vakje “Kopieer ook de subselecties” aan te vinken;
+- selecteer de locatie van de selectie;
+- opslaan.
+
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiekopie.png)
+
+
+#### Een selectie verplaatsen
+Om een selectie te **verplaatsen** voer je de volgende stappen uit: 
+- Kies voor “Selectie verplaatsen”;
+- selecteer de locatie binnen de database waar je de selectie naartoe wilt verplaatsen;
+- opslaan.
+
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverplaatsen.png)
+
+
 ### Profielen uit een (mini)selectie weergeven
 
 De profielen van een selectie kun je inzien door simpelweg op de naam 
@@ -26,6 +57,23 @@ van de selectie te klikken. Voor miniselecties ligt het net iets anders:
 de subprofielen verkrijg je door in het menu *huidige weergave* op 
 *subprofielen weergeven* te klikken.
 
+Om een **profiel** via een **miniselectie** te benaderen, voer je de volgende stappen uit: 
+- Maak de collectie zichtbaar door de box “Collecties” onderaan de pagina aan te vinken;
+- ga naar de collectie;
+- ga naar de miniselectie.
+*Mocht je twijfelen of je in een miniselectie of selectie zit; in de blauwe balk bovenaan de pagina wordt aangegeven waar je je in bevindt*
+
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/miniselectieweergeven.png)
+
+- Zoek het subprofiel in de miniselectie op, en klik deze open;
+*Aan de linkerzijde van de pagina bevind zich een blauwe balk met hierin de instellingsopties weergegeven.*
+*De (witte kant) rechterzijde van de pagina bevat de velden binnen de collectie voorzien van de data van het subprofiel.*
+
+
+- Ga naar het profiel behorende bij het subprofiel door op de grijze button “Ga naar profiel” te klikken.
+- Je bent nu in het profiel van het subprofiel. 
+
+![Marketing Suite-dashboard](
 
 ### Selecties authorizeren voor mailings
 
