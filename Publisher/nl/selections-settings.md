@@ -140,5 +140,19 @@ Om een **gearchiveerde selectie** te  kunnen **ophalen of inzien**, voer je de v
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiearchiveren.png)
 
 
+##### Ophalen van een gearchiveerde selectie
+
+Om een **gearchiveerde selectie op te halen**, voer je de volgende stappen uit: 
+– Haal de gearchiveerde selectie eerst op door het vakje “Gearchiveerd” aan te vinken.
+– Selecteer de gearchiveerde selectie door op de selectie te gaan staan.
+– Ga naar configuratie.
+– Ga naar “Selectie archiveren”.
+– Klik op de blauwe knop “Haal uit archief".
+– De selectie is weer zichtbaar in de database.
+
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/ophalengearchiveerdeselectie.png)
+
+
+
 
 
