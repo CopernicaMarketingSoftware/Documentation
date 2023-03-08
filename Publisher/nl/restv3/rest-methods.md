@@ -207,6 +207,7 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v3/publisher/scheduledemailings](./rest-get-publisher-scheduledemailings)             | Opvragen van alle ingeroosterde mailings                  |
 | GET    | [api.copernica.com/v3/publisher/emailing/$id](./rest-get-publisher-emailing)                             | Opvragen van een mailing                                  |
 | GET    | [api.copernica.com/v3/publisher/scheduledemailing/$id](./rest-get-publisher-scheduledemailing)           | Opvragen van een ingeroosterde mailing                    |
+| GET    | [api.copernica.com/v3/publisher/destinations](./rest-get-publisher-destinations)                         | Opvragen van alle destinations over een bepaalde periode          |
 | POST   | [api.copernica.com/v3/publisher/emailing](./rest-post-publisher-emailing)                                | Aanmaken van een mailing                                  |
 | GET    | [api.copernica.com/v3/publisher/emailing/$id/destinations](./rest-get-publisher-emailing-destinations)   | Opvragen van destinations voor een mailing                |
 | GET    | [api.copernica.com/v3/publisher/emailing/$id/snapshot](./rest-get-publisher-emailing-snapshot)           | Opvragen van een snapshot voor een mailing                |
