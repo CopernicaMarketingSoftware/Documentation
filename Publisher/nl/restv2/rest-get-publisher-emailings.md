@@ -68,6 +68,9 @@ De JSON ziet er bijvoorbeeld zo uit:
    "type":"individual",
    "clicks":"5",
    "impressions":"2",
+   "errors":"0",
+   "unsubscribes":"1",
+   "abuses":"0",
    "contenttype":"html",
    "target":{  
       "type":"database",

@@ -39,6 +39,9 @@ Each emailing contains the following fields:
 * **type**: The type of mailing: mass or individual.
 * **clicks**: Amount of clicks for this mailing
 * **impressions**: Amount of opens for this mailing
+* **errors**: Number of errors for this mailing
+* **unsubscribes**: Number of unsubscribes for this mailing
+* **abuses**: Number of abuses for this mailing
 * **contenttype**: The type of content in the mailing: html, text or both.
 * **target**: Array containing the target type and the ID and type of its sources (for example the database a collection belongs to).
 
@@ -63,6 +66,9 @@ The JSON might look something like this:
    "type":"individual",
    "clicks":"5",
    "impressions":"2",
+   "errors":"0",
+   "unsubscribes":"1",
+   "abuses":"0",
    "contenttype":"html",
    "target":{  
       "type":"database",
