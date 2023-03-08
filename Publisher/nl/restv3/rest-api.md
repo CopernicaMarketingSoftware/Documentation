@@ -49,7 +49,12 @@ POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
 Host: api.copernica.com
 Content-Type: application/json
 
-{"email":"info@example.com"}
+{
+    "fields":
+    {
+        "email":"info@example.com"
+    }
+}
 ```
 
 In plaats van het bovenstaande request (dat gebruik maakt van JSON) had je echter ook een 'traditioneel' HTTP POST-request kunnen versturen:
@@ -59,7 +64,7 @@ POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
 Host: api.copernica.com
 Content-Type: application/x-www-form-urlencoded
 
-email=info@example.com
+fields[email]=info@example.com
 ```
 
 De content-type-header is alleen van toepassing op POST- en PUT-requests. 
