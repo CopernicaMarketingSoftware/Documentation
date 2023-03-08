@@ -12,67 +12,53 @@ kopiëren. Dit is handig wanneer je meerdere selecties wilt
 aanmaken die onderling weinig van elkaar verschillen.
 
 Bij het kopiëren van selecties kun je subselecties desgewenst meekopiëren. 
-De subselecties worden namelijk automatisch mee verplaatst. Echter, selecties
-kunnen niet dezelfde naam bevatten en moet dus in elk geval veranderd worden.
+Selecties op hetzelfde niveau moeten een unieke naam bevatten. Bij het kopiëren heb je de mogelijkheid om de naam aan te passen.
 
 Het kopiëren of verplaatsen van (mini)selecties heeft geen effect op de 
 daadwerkelijke inhoud van de database; er gaan geen (sub)profielen verloren.
 
 #### Een selectie kopiëren of verplaatsten
 Om een selectie te kunnen **kopiëren of verplaatsten**, voer je de volgende stappen uit: 
-- Ga naar profielen.
-- Ga naar de desbetreffende database.
-- Ga naar de juiste selectie.
-- Ga naar configuratie.
-- In configuratie vind je de opties selectie kopiëren en verplaatsen.
+- Kies voor de juiste selectie.
+- Kies voor configuratie.
+- Hier vind je de opties 'selectie kopiëren' en 'selectie verplaatsen.
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieconfiguratie.png)
 
 #### Een selectie kopiëren 
 Om een selectie te **kopiëren** voer je de volgende stappen uit: 
-- Kies voor “Selectie kopiëren”.
+- Kies voor 'Selectie kopiëren'.
 - Geef de nieuwe selectie een naam.
-- Geef aan of je ook subselecties wilt kopiëren door het vakje “Kopieer ook de subselecties” aan te vinken.
+- Geef aan of je ook subselecties wilt kopiëren door de checkbox 'Kopieer ook de subselecties' aan te vinken.
 - Selecteer de locatie van de selectie.
-- Opslaan.
+- Kies voor 'Opslaan'.
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiekopie.png)
 
 #### Een selectie verplaatsen
 Om een selectie te **verplaatsen** voer je de volgende stappen uit: 
-- Kies voor “Selectie verplaatsen”.
-- Selecteer de locatie binnen de database waar je de selectie naartoe wilt verplaatsen.
-- Opslaan.
+- Kies voor'Selectie verplaatsen'.
+- Selecteerde locatie binnen de database waar je de selectie naartoe wilt verplaatsen.
+- Kies voor'Opslaan'.
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverplaatsen.png)
 
-### Profielen uit een (mini)selectie weergeven
+### Subprofielen uit een (mini)selectie weergeven
 
 De profielen van een selectie kun je inzien door simpelweg op de naam 
-van de selectie te klikken. Voor miniselecties ligt het net iets anders: 
-de subprofielen verkrijg je door in het menu *huidige weergave* op 
-*subprofielen weergeven* te klikken.
+van de selectie te klikken. Voor miniselecties ligt het net iets anders. 
 
-Om een **profiel** via een **miniselectie** te benaderen, voer je de volgende stappen uit: 
-- Maak de collectie zichtbaar door de box “Collecties” onderaan de pagina aan te vinken;
-- Ga naar de collectie.
-- Ga naar de miniselectie.  
+Om een **subprofiel** via een **miniselectie** te benaderen, voer je de volgende stappen uit: 
+- Toon de collecties door de checkbox 'Collecties' aan te vinken.
+- Kies voor de collectie.
+- Kies voor de miniselectie.  
 *Mocht je twijfelen of je in een miniselectie of selectie zit; in de blauwe balk bovenaan de pagina wordt aangegeven waar je je in bevindt*
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/miniselectieweergeven.png)
 
-- Zoek het subprofiel in de miniselectie op, en klik deze open.  
-*Aan de linkerzijde van de pagina bevind zich een blauwe balk met hierin de instellingsopties weergegeven.*    
-*De (witte kant) rechterzijde van de pagina bevat de velden binnen de collectie voorzien van de data van het subprofiel.*  
-
-- Ga naar het profiel behorende bij het subprofiel door op de grijze button “Ga naar profiel” te klikken.
-- Je bent nu in het profiel van het subprofiel. 
-
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/miniselectieweergeven2.png)
-
 ### Selecties autoriseren voor mailings
 
-Met het authorizeren van mailings zorgt Copernica dat je niet per ongeluk
+Met het authoriseren van mailings zorgt Copernica dat je niet per ongeluk
 een mailing verstuurt naar klanten die daar niet op zitten te wachten. 
 In de Marketing Suite kun je, na het aanmaken van selecties, meteen autoriseren.
 Echter, het kan voorkomen dat deze optie niet beschikbaar is. Dat komt dan 
@@ -80,9 +66,9 @@ waarschijnlijk doordat je geen geschikt veld hebt aangemaakt in je database.
 
 #### Een selectie autoriseren voor mailings
 Om de **intenties van een selectie** te wijzigen, voer je de volgende stappen uit: 
-- Ga naar de selectie.
-- Ga naar configuratie.
-- Klik op “Selectie-intenties” in de blauwe zijde van de pagina.
+- Kies voor de selectie.
+- Kies voor 'Configuratie'.
+- Kies voor 'Selectie-intenties' in de blauwe zijde van de pagina.
 - Vink aan voor welke specifieke doeleinden je de selectie gaat gebruiken.
 - Sla de juiste intentie voor je selectie op.
 
@@ -113,10 +99,9 @@ ze dus beter verwijderen als performance je doel is.
 
 #### Een selectie verwijderen
 Om een selectie te **verwijderen**, voer je de volgende stappen uit: 
-- Ga naar de configuratie van de selectie.
-- Ga naar de knop selectie verwijderen.
-- Bevestig verwijderen door op de rode knop “verwijderen” te klikken.
-- De selectie is verwijderd.
+- Kies voor 'Configuratie'. 
+- Kies voor 'Selectie verwijderen'
+- Klik op 'verwijderen' om de selectie definitief te verwijderen.
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverwijderen.png)
 
