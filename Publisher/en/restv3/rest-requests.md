@@ -33,7 +33,12 @@ request that you should send to the API to add a profile to database with ID 123
     Host: api.copernica.com
     Content-Type: application/json
     
-    {"email":"info@example.com"}
+    {
+        "fields":
+        {
+            "email":"info@example.com"
+        }
+    }
 ```
 
 Instead of JSON encoding, you can also use the old-fashioned form encoding:
@@ -43,7 +48,7 @@ Instead of JSON encoding, you can also use the old-fashioned form encoding:
     Host: api.copernica.com
     Content-Type: application/x-www-form-urlencoded
     
-    email=info@example.com
+    fields[email]=info@example.com
 ```
 
 The content-type header is only used for POST and PUT requests. For GET and 
