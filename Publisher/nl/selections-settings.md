@@ -20,13 +20,13 @@ daadwerkelijke inhoud van de database; er gaan geen (sub)profielen verloren.
 #### Een selectie kopiëren of verplaatsten
 Om een selectie te kunnen **kopiëren of verplaatsten**, voer je de volgende stappen uit: 
 - Kies voor de juiste selectie.
-- Kies voor configuratie.
-- Hier vind je de opties 'selectie kopiëren' en 'selectie verplaatsen.
+- Kies voor 'Configuratie'.
+- Hier vind je de opties 'Selectie kopiëren' en 'Selectie verplaatsen.
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieconfiguratie.png)
 
 #### Een selectie kopiëren 
-Om een selectie te **kopiëren** voer je de volgende stappen uit: 
+Om een selectie te **kopiëren**, voer je de volgende stappen uit: 
 - Kies voor 'Selectie kopiëren'.
 - Geef de nieuwe selectie een naam.
 - Geef aan of je ook subselecties wilt kopiëren door de checkbox 'Kopieer ook de subselecties' aan te vinken.
@@ -36,7 +36,7 @@ Om een selectie te **kopiëren** voer je de volgende stappen uit:
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiekopie.png)
 
 #### Een selectie verplaatsen
-Om een selectie te **verplaatsen** voer je de volgende stappen uit: 
+Om een selectie te **verplaatsen**, voer je de volgende stappen uit: 
 - Kies voor'Selectie verplaatsen'.
 - Selecteerde locatie binnen de database waar je de selectie naartoe wilt verplaatsen.
 - Kies voor'Opslaan'.
@@ -105,31 +105,23 @@ Om een selectie te **verwijderen**, voer je de volgende stappen uit:
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverwijderen5.png)
 
-#### Ophalen en inzien van een gearchiveerde selectie
-Om een **gearchiveerde selectie** te  kunnen **ophalen of inzien**, voer je de volgende stappen uit: 
-- Vink de knop “Gearchiveerd”, onderaan de pagina, aan.    
-*Nu zijn alle gearchiveerde selecties zichtbaar.*
+#### Een selectie archiveren
+Om een selectie te  **archiveren**, voer je de volgende stappen uit: 
+- Kies voor 'Configuratie'. 
+- Kies voor 'Selectie archiveren'.
+- Kies voor 'Archiveer'.     
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiearchiveren.png){ width=40%,height:30px }
 
 #### Ophalen van een gearchiveerde selectie
 Om een **gearchiveerde selectie op te halen**, voer je de volgende stappen uit: 
-- Haal de gearchiveerde selectie eerst op door het vakje “Gearchiveerd” aan te vinken.
+- Haal de gearchiveerde selectie eerst op, door de checkbox 'Gearchiveerd' aan te vinken.
 - Selecteer de gearchiveerde selectie door op de selectie te gaan staan.
-- Ga naar configuratie.
-- Ga naar “Selectie archiveren”.
-- Klik op de blauwe knop “Haal uit archief".
+- Kies voor 'Configuratie'.
+- Kies voor 'Selectie archiveren'.
+- Haal de selectie uit het archief door op de blauwe button 'Haal uit archief, te klikken.
 - De selectie is weer zichtbaar in de database.
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/ophalengearchiveerdeselectie.png)
 
-### Een selectie toevoegen aan een testmail
 
-#### Een selectie toevoegen aan een testmail
-Om een selectie aan een **testmail** toe te voegen, voer je de volgende stappen uit: 
-- Ga naar de selectie.
-- Ga naar configuratie
-- Ga naar selectie-intensties.
-- Stel de selectie in als testbestemming door het vakje “testbestemming” aan te vinken.  
-
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectietestmail1.png)
