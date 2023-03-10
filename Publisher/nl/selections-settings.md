@@ -110,7 +110,7 @@ Om een **gearchiveerde selectie** te  kunnen **ophalen of inzien**, voer je de v
 - Vink de knop “Gearchiveerd”, onderaan de pagina, aan.    
 *Nu zijn alle gearchiveerde selecties zichtbaar.*
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiearchiveren.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiearchiveren.png){ width=40%,height:30px }
 
 #### Ophalen van een gearchiveerde selectie
 Om een **gearchiveerde selectie op te halen**, voer je de volgende stappen uit: 
