@@ -54,7 +54,7 @@ Om een **subprofiel** via een **miniselectie** te benaderen, voer je de volgende
 - Kies voor de miniselectie.  
 *Mocht je twijfelen of je in een miniselectie of selectie zit; in de blauwe balk bovenaan de pagina wordt aangegeven waar je je in bevindt*
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/miniselectieweergeven.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/miniselectieweergeven3.png)
 
 ### Selecties autoriseren voor mailings
 
