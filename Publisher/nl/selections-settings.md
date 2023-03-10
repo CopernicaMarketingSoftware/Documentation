@@ -54,7 +54,7 @@ Om een **subprofiel** via een **miniselectie** te benaderen, voer je de volgende
 - Kies voor de miniselectie.  
 *Mocht je twijfelen of je in een miniselectie of selectie zit; in de blauwe balk bovenaan de pagina wordt aangegeven waar je je in bevindt*
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/miniselectieweergeven3.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/miniselectieweergeven3.png { width=40%,height:30px })
 
 ### Selecties autoriseren voor mailings
 
@@ -111,7 +111,7 @@ Om een selectie te  **archiveren**, voer je de volgende stappen uit:
 - Kies voor 'Selectie archiveren'.
 - Kies voor 'Archiveer'.     
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiearchiveren.png){ width=40%,height:30px }
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiearchiveren.png)
 
 #### Ophalen van een gearchiveerde selectie
 Om een **gearchiveerde selectie op te halen**, voer je de volgende stappen uit: 
