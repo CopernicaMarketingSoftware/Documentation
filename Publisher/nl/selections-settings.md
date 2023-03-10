@@ -103,7 +103,7 @@ Om een selectie te **verwijderen**, voer je de volgende stappen uit:
 - Kies voor 'Selectie verwijderen'
 - Klik op 'verwijderen' om de selectie definitief te verwijderen.
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverwijderen3.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverwijderen5.png)
 
 #### Ophalen en inzien van een gearchiveerde selectie
 Om een **gearchiveerde selectie** te  kunnen **ophalen of inzien**, voer je de volgende stappen uit: 
