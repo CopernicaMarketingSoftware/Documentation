@@ -105,16 +105,14 @@ Om een selectie te **verwijderen**, voer je de volgende stappen uit:
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverwijderen.png)
 
-##### Ophalen en inzien van een gearchiveerde selectie
-
+#### Ophalen en inzien van een gearchiveerde selectie
 Om een **gearchiveerde selectie** te  kunnen **ophalen of inzien**, voer je de volgende stappen uit: 
 - Vink de knop “Gearchiveerd”, onderaan de pagina, aan.    
 *Nu zijn alle gearchiveerde selecties zichtbaar.*
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiearchiveren.png)
 
-##### Ophalen van een gearchiveerde selectie
-
+#### Ophalen van een gearchiveerde selectie
 Om een **gearchiveerde selectie op te halen**, voer je de volgende stappen uit: 
 - Haal de gearchiveerde selectie eerst op door het vakje “Gearchiveerd” aan te vinken.
 - Selecteer de gearchiveerde selectie door op de selectie te gaan staan.
@@ -127,7 +125,7 @@ Om een **gearchiveerde selectie op te halen**, voer je de volgende stappen uit:
 
 ### Een selectie toevoegen aan een testmail
 
-##### Een selectie toevoegen aan een testmail
+#### Een selectie toevoegen aan een testmail
 Om een selectie aan een **testmail** toe te voegen, voer je de volgende stappen uit: 
 - Ga naar de selectie.
 - Ga naar configuratie
