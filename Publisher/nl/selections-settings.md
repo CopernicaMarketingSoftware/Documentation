@@ -23,7 +23,7 @@ Om een selectie te kunnen **kopiëren of verplaatsten**, voer je de volgende sta
 - Kies voor 'Configuratie'.
 - Hier vind je de opties 'Selectie kopiëren' en 'Selectie verplaatsen.
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieconfiguratie.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2353234%5D-Documentation-Add-selection-intentions-to-the-selection-page/Publisher/images/nieuwselectiekopenverpl.png)  
 
 #### Een selectie kopiëren 
 Om een selectie te **kopiëren**, voer je de volgende stappen uit: 
@@ -33,7 +33,7 @@ Om een selectie te **kopiëren**, voer je de volgende stappen uit:
 - Selecteer de locatie van de selectie.
 - Kies voor 'Opslaan'.
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiekopie.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2353234%5D-Documentation-Add-selection-intentions-to-the-selection-page/Publisher/images/nieuwselectiekopieren.png)
 
 #### Een selectie verplaatsen
 Om een selectie te **verplaatsen**, voer je de volgende stappen uit: 
@@ -41,7 +41,7 @@ Om een selectie te **verplaatsen**, voer je de volgende stappen uit:
 - Selecteerde locatie binnen de database waar je de selectie naartoe wilt verplaatsen.
 - Kies voor'Opslaan'.
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverplaatsen.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2353234%5D-Documentation-Add-selection-intentions-to-the-selection-page/Publisher/images/nieuwselectieverplaatsen.png)
 
 ### Subprofielen uit een (mini)selectie weergeven
 
@@ -54,9 +54,9 @@ Om een **subprofiel** via een **miniselectie** te benaderen, voer je de volgende
 - Kies voor de miniselectie.  
 *Mocht je twijfelen of je in een miniselectie of selectie zit; in de blauwe balk bovenaan de pagina wordt aangegeven waar je je in bevindt*
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/miniselectieweergeven3.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2353234%5D-Documentation-Add-selection-intentions-to-the-selection-page/Publisher/images/nieuwminiselectieweergeven.png)
 
-### Selecties autoriseren voor mailings
+### Selecties autoriseren voor mailings 
 
 Met het authoriseren van mailings zorgt Copernica dat je niet per ongeluk
 een mailing verstuurt naar klanten die daar niet op zitten te wachten. 
@@ -72,7 +72,7 @@ Om de **intenties van een selectie** te wijzigen, voer je de volgende stappen ui
 - Vink aan voor welke specifieke doeleinden je de selectie gaat gebruiken.
 - Sla de juiste intentie voor je selectie op.
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieautoriseren.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2353234%5D-Documentation-Add-selection-intentions-to-the-selection-page/Publisher/images/nieuwselectieautoriseren.png)
 
 ### Verwijderen, deactiveren of archiveren?
 
@@ -103,7 +103,7 @@ Om een selectie te **verwijderen**, voer je de volgende stappen uit:
 - Kies voor 'Selectie verwijderen'
 - Klik op 'verwijderen' om de selectie definitief te verwijderen.
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectieverwijderen5.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2353234%5D-Documentation-Add-selection-intentions-to-the-selection-page/Publisher/images/nieuw%20selectieverwijderen.png)
 
 #### Een selectie archiveren
 Om een selectie te  **archiveren**, voer je de volgende stappen uit: 
@@ -111,7 +111,7 @@ Om een selectie te  **archiveren**, voer je de volgende stappen uit:
 - Kies voor 'Selectie archiveren'.
 - Kies voor 'Archiveer'.     
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/selectiearchiveren.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2353234%5D-Documentation-Add-selection-intentions-to-the-selection-page/Publisher/images/nieuwselectiearchiveren.png)
 
 #### Ophalen van een gearchiveerde selectie
 Om een **gearchiveerde selectie op te halen**, voer je de volgende stappen uit: 
@@ -122,6 +122,6 @@ Om een **gearchiveerde selectie op te halen**, voer je de volgende stappen uit:
 - Haal de selectie uit het archief door op de blauwe button 'Haal uit archief, te klikken.
 - De selectie is weer zichtbaar in de database.
 
-![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/ophalengearchiveerdeselectie.png)
+![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2353234%5D-Documentation-Add-selection-intentions-to-the-selection-page/Publisher/images/nieuwhaalselectieuitarchief.png)
 
 
