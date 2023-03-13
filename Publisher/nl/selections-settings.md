@@ -52,7 +52,7 @@ Om een **subprofiel** via een **miniselectie** te benaderen, voer je de volgende
 - Toon de collecties door de checkbox 'Collecties' aan te vinken.
 - Kies voor de collectie.
 - Kies voor de miniselectie.  
-*Mocht je twijfelen of je in een miniselectie of selectie zit; in de blauwe balk bovenaan de pagina wordt aangegeven waar je je in bevindt*.
+*Mocht je twijfelen of je in een miniselectie of selectie zit; in de blauwe balk bovenaan de pagina wordt aangegeven waar je je in bevindt.*
 
 ![Marketing Suite-dashboard](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2353234%5D-Documentation-Add-selection-intentions-to-the-selection-page/Publisher/images/nieuwminiselectieweergeven.png)
 
