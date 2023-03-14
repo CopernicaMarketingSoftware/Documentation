@@ -7,6 +7,7 @@
 * [Videos](./videos.md)
     * [Onboardingvideos](./onboarding-videos.md)
     * [Instructievideos](./explanation-videos.md)
+    * [Campagnevideos](./campaign-videos.md)
     * [Webinars](./webinar-videos.md)
 * [Database en profielen](./database-profiles.md)
     * [Databasevelden](./database-fields.md)
