@@ -31,9 +31,7 @@ Available filters:
 * **status**: status of the coupons (available, sent, redeemed)
 * **valid**: Boolean. This allows you to indicate whether you want to receive all coupons or only available coupons
 
-More information on this parameter can be found in the 
-[article on the “fields” parameter](rest-fields-parameter).
-
+More information on this parameter can be found in the [article on the “fields” parameter](rest-fields-parameter).
 
 ## Returned fields
 
