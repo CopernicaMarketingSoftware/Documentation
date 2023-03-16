@@ -23,8 +23,13 @@ Meer over de **start**, **limit** en **total** parameters vind je in het [artike
 ### Fields 
 
 De **fields** parameter kun je gebruiken om coupons te selecteren. Als je bijvoorbeeld
-alleen beschikbare coupons wil opvragen. Meer informatie over het
-gebruik van de **fields** parameter kun je vinden in een 
+alleen beschikbare coupons wil opvragen. 
+
+Beschikbare filters:
+* **status**: status van de coupons (available, sent, redeemed)
+* **valid**: Boolean. Hiermee kun je aangeven of je alle codes of enkel beschikbare terug wilt krijgen
+
+Meer informatie over het gebruik van de **fields** parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
 
 ## Geretourneerde velden
