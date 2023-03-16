@@ -14,7 +14,7 @@ De methode retourneert een JSON-object dat de volgende velden bevat:
 | Variabele         | Omschrijving                                                                      |
 |-------------------|-----------------------------------------------------------------------------------|
 | **ID**            | ID van de couponcampagne                                                          |
-| **code**          | Naam van de couponcampagne                                                        |
+| **name**          | Naam van de couponcampagne                                                        |
 | **description**   | Beschrijving van de couponcampagne                                                |
 | **archived**      | Geeft aan of de database wel of niet gearchiveerd is                              |
 | **available**     | Aantal beschikbare coupons                                                        |
@@ -28,7 +28,7 @@ De methode retourneert een JSON-object dat de volgende velden bevat:
 ```json
 {
   "ID": "1",
-  "code": "Winter VIP Sale",
+  "name": "Winter VIP Sale",
   "description": "Campaign for VIP clients during winter",
   "archived": false,
   "available": 514,
@@ -53,7 +53,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 3);
 
 // voer de opdracht uit en print het resultaat
-print_r($api->get("couponcampagne/{$id}"));
+print_r($api->get("couponcampaign/{$id}"));
 ```
 
 Dit voorbeeld vereist de [REST API-klasse](rest-php).
