@@ -27,7 +27,7 @@ alleen beschikbare coupons wil opvragen.
 
 Beschikbare filters:
 * **status**: status van de coupons (available, sent, redeemed)
-* **valid**: Boolean. Hiermee kun je aangeven of je alle codes of enkel beschikbare terug wilt krijgen
+* **valid**: Boolean. Hiermee kun je aangeven of je alle coupons of enkel beschikbare terug wilt krijgen
 
 Meer informatie over het gebruik van de **fields** parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
