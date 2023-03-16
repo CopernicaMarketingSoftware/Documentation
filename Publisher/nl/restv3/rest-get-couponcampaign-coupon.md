@@ -43,8 +43,10 @@ Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
 ```php
 // vereiste scripts
 require_once('copernica_rest_api.php');
+
 // verander dit in je access code access token
 $api = new CopernicaRestAPI("your-access-token", 3);
+
 // voer de opdracht uit en print het resultaat
 print_r($api->get("couponcampaign/{$couponcampaignID}/coupon/{$couponID}"));
 ```
