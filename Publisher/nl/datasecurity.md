@@ -109,15 +109,20 @@ Bij imports en export kunnen wij geen digitale handtekening meegeven. Om de data
 
 Bij het opzetten van een SFTP-import of export heb je de mogelijkheid om gebruik te maken van zogeheten *private keys*. Deze kun je instellen onder [geheime sleutels](https://ms.copernica.com/#/admin/account/private-keys) binnen je account. Hiermee zorg je ervoor dat enkel calls met deze sleutel uitgevoerd mogen worden van en naar je server.
 
-### SFTP import
-@todo -> Is er nog niet
+### Importeren via SFTP
+Voor het instellen van een SFTP-import voer je de volgende stappen uit:
+1. Kies voor 'Imports' in de juiste [database](https://ms.copernica.com/#/profiles).
+2. Nadat je voor 'Een import aanmaken' hebt gekozen, kun je de instellingen van de import opgeven.
+3. Bij 'Type import' kies je voor 'Haal bestand van een externe locatie met gebruik van een geheime sleutel'.
+4. Geef een locatie van het bronbestand en een gebruikersnaam op.
+5. Bij 'Geheime sleutel' kies je voor de eerder [ingestelde sleutel](https://ms.copernica.com/#/admin/account/private-keys).
 
-### SFTP export
+### Exporteren via SFTP
 Voor het instellen van een SFTP-export voer je de volgende stappen uit:
 1. Kies voor 'Exports -> Exports naar externe locatie' in de juiste [database](https://ms.copernica.com/#/profiles).
 2. Nadat je voor 'Aanmaken' hebt gekozen, kun je de instellingen van de export opgeven.
-3. Bij 'Protocol' kies je voor 'SFTP' en bij 'Authenticatietype' voor 'Geheime sleutel'.
-4. Bij 'Geheime sleutel' kies je voor de eerder [ingestelde sleutel](https://ms.copernica.com/#/admin/account/private-keys).
+4. Bij 'Protocol' kies je voor 'SFTP' en bij 'Authenticatietype' voor 'Geheime sleutel'.
+5. Bij 'Geheime sleutel' kies je voor de eerder [ingestelde sleutel](https://ms.copernica.com/#/admin/account/private-keys).
 
 ### REST API import
 Voor het uitvoeren van een import met de REST API gebruik je een POST-call naar het volgende endpoint: `https://api.copernica.com/v3/imports?access_token=xxxx`
