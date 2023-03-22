@@ -1,6 +1,6 @@
 # REST API: POST couponcampaigns
 
-This method is used to create a new database with the REST API. It uses 
+This method is used to create a new coupon campaign with the REST API. It uses 
 an HTTP POST request to the following address:
 
 `https://api.copernica.com/v3/couponcampaigns?access_token=xxxx`
@@ -9,9 +9,9 @@ After a successful call the ID of the created request is returned.
 
 ## Available parameters
 
-* **name**: name of the new database
-* **description**: optional description of the database
-* **archived**: optional boolean value to archive the database upon creation
+* **name**: name of the new coupon campaign
+* **description**: optional description of the coupon campaign
+* **archived**: optional boolean value to archive the coupon campaign upon creation
 * **tags**: optional array with tags for the coupon campaign
 
 ## JSON example
