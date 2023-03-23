@@ -1,6 +1,6 @@
 # REST API: PUT couponcampaign coupon
 
-Methode om de status van een coupon te wijzigen. Dit is een HTTP POST-methode naar het volgende adres:
+Methode om de status van een coupon te wijzigen. Dit is een HTTP PUT-methode naar het volgende adres:
 
 `https://api.copernica.com/v3/couponcampaign/$couponcampaign/coupon/$coupon?access_token=xxxx`
 
@@ -33,7 +33,7 @@ $data = array(
 );
 
 // voer het verzoek uit
-$api->post("couponcampaign/$couponcampaignID/coupon/$coupon", $data);
+$api->put("couponcampaign/$couponcampaignID/coupon/$coupon", $data);
 ```
 
 Dit voorbeeld vereist de [REST API-klasse](rest-php).
