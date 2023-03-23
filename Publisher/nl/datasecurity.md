@@ -1,12 +1,12 @@
 # Dataveiligheid
-Er zijn een aantal manieren om je data veilig van en naar Copernica te krijgen. In dit artikel geven we per onderdeel uitleg hoe je dit het beste kunt doen.
+Er ~~zijn~~ __is__ een aantal manieren om je data veilig van en naar Copernica te krijgen. In dit artikel geven we per onderdeel uitleg hoe je dit het beste kunt doen.
 
 ## Whitelisten van IP-adressen is niet de juiste oplossing
-Een aantal van onze klanten hebben onze IP-adressen gewhitelist om ervoor te zorgen dat enkel calls vanuit onze IP-adressen worden geaccepteerd. Dit lijkt veilig te zijn, maar is dat allerminst. 
+Een aantal van onze klanten ~~hebben~~ __heeft__ onze IP-adressen gewhitelist om ervoor te zorgen dat enkel calls vanuit onze IP-adressen worden geaccepteerd. Dit lijkt veilig te zijn, maar is dat allerminst. 
 
 Wij voeren regelmatig aanpassingen door aan onze infrastructuur, bijvoorbeeld wanneer een nieuwe server in gebruik wordt genomen. Hierdoor worden de calls mogelijk vanuit een ander IP-adres uitgevoerd. Als dit IP-adres niet bekend is in je firewall, zorgt dit ervoor dat je data niet opgehaald of verzonden kan worden. 
 
-Naast dat wij regelmatig van IP-adressen kunnen wisselen, is het voor iedereen mogelijk om een trial account aan te maken. Omdat je vanaf dat moment de data ophaalt vanaf een Copernica IP-adres, is de data beschikbaar voor iedereen met de juiste locatie van je data.
+Naast dat wij regelmatig van IP-adressen kunnen wisselen, is het voor iedereen mogelijk om een trial account aan te maken. Omdat je vanaf dat moment de data ophaalt vanaf een Copernica IP-adres, is de data beschikbaar voor iedereen met __wetenschap van__ de juiste locatie van je data.
 
 ## Digitale handtekening voor webhooks, fetch- en loadfeed-tags
 Alle uitgaande HTTP verzoeken bevatten een "Digest", "X-Copernica-ID" en een "Signature" header. Deze headers bevatten een gehashte waarde van je bericht, de identifier van je Copernica account en een digitale handtekening. Hiermee kun je verifiëren dat de verzoeken vanaf de servers van Copernica worden gedaan en of deze uit je eigen account afkomstig zijn.
@@ -37,7 +37,7 @@ Signature: keyId="one._domainkey.copernica.com",algorithm="rsa-sha256",
 ```
 ### Handtekening & Private key
 De handtekening wordt aangemaakt met een *private key* waar alleen Copernica 
-toegang toe heeft. De *public* key kan gebruikt worden om deze te decoderen. 
+toegang ~~toe~~ __tot__ heeft. De *public* key kan gebruikt worden om deze te decoderen. 
 Onze *public key* wordt in DNS gepubliceerd op dezelfde manier als we onze 
 DKIM keys publiceren, zie ook [RFC 6367](https://tools.ietf.org/html/rfc6376#section-3.6.1 "DomainKeys Identified Mail Signatures") 
 voor de [DKIM-specificatie](./dkim "DKIM in Copernica"). De keys worden 
@@ -149,6 +149,6 @@ Voor het uitvoeren van een import met de REST API gebruik je een POST-call naar 
 Voor meer informatie over deze call, kun je [hier](https://www.copernica.com/nl/documentation/restv3/rest-post-imports) terecht.
 
 ### REST API exporteren
-Voor het ophalen van klantgegevens kun je gebruik maken van verschillende API calls. Het is mogelijk om alle profieldata uit een [database opvragen](https://www.copernica.com/nl/documentation/restv3/rest-get-database-profiles), uit een [selectie](https://www.copernica.com/nl/documentation/restv3/rest-get-view-profiles), uit een [collectie](https://www.copernica.com/nl/documentation/restv3/rest-get-collection-subprofiles) of uit een [miniselectie](https://www.copernica.com/nl/documentation/restv3/rest-get-miniview-subprofiles). 
+Voor het ophalen van klantgegevens kun je gebruik maken van verschillende API calls. Het is mogelijk om alle profieldata uit een [database op __te__ vragen](https://www.copernica.com/nl/documentation/restv3/rest-get-database-profiles), uit een [selectie](https://www.copernica.com/nl/documentation/restv3/rest-get-view-profiles), uit een [collectie](https://www.copernica.com/nl/documentation/restv3/rest-get-collection-subprofiles) of uit een [miniselectie](https://www.copernica.com/nl/documentation/restv3/rest-get-miniview-subprofiles). 
 
 In onze [REST API-documentatie](https://www.copernica.com/nl/documentation/restv3/rest-methods) vind je een overzicht van alle API-methodes.
