@@ -1,7 +1,7 @@
 # REST API: PUT couponcampaign coupon
 
 This method is used to create a new database with the REST API. It uses 
-an HTTP POST request to the following address:
+an HTTP PUT request to the following address:
 
 `https://api.copernica.com/v3/couponcampaign/$couponcampaign/coupon/$coupon?access_token=xxxx`
 
@@ -36,7 +36,7 @@ $data = array(
 );
 
 // do the call
-$api->post("couponcampaign/$couponcampaign/coupon/$coupon", $data);
+$api->put("couponcampaign/$couponcampaign/coupon/$coupon", $data);
 
 // return id of created request if successful
 ```
