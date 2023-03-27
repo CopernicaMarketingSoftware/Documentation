@@ -1,8 +1,8 @@
 # Dataveiligheid
-Bij onze support-afdeling krijgen wij geregeld de vraag hoe je het beste data veilig van en naar Copernica kunt krijgen. Hier zijn verschillende manieren voor: 
-- een digitale handtekening voor webhooks, fetch- en loadfeed-tags
-- importeren of exporteren via SFTP
-- gebruik maken van onze REST API
+In je Copernica-account staat veel persoonlijke data van je klanten. Het is van belang dat je zo veilig mogelijk om gaat met deze data, vooral wanneer je deze data wilt synchroniseren van of naar een extern systeem. Hier zijn verschillende manieren voor:
+- een digitale handtekening voor webhooks, fetch- en loadfeed-tags;
+- importeren of exporteren via SFTP;
+- gebruik maken van onze REST API.
 
 In dit artikel geven we per onderdeel uitleg hoe je dit het beste kunt doen en waarom wij het gebruik van IP-whitelisting afraden.
 
