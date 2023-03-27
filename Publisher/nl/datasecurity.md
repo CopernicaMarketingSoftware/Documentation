@@ -1,12 +1,7 @@
 # Dataveiligheid
-Er is een aantal manieren om je data veilig van en naar Copernica te krijgen. In dit artikel geven we per onderdeel uitleg hoe je dit het beste kunt doen.
+Er zijn verschillende manieren om je data veilig van en naar Copernica te krijgen.
 
-## Whitelisten van IP-adressen is niet de juiste oplossing
-Een aantal van onze klanten heeft onze IP-adressen gewhitelist om ervoor te zorgen dat enkel calls vanuit onze IP-adressen worden geaccepteerd. Dit lijkt veilig te zijn, maar is dat allerminst. 
-
-Wij voeren regelmatig aanpassingen door aan onze infrastructuur, bijvoorbeeld wanneer een nieuwe server in gebruik wordt genomen. Hierdoor worden de calls mogelijk vanuit een ander IP-adres uitgevoerd. Als dit IP-adres niet bekend is in je firewall, zorgt dit ervoor dat je data niet opgehaald of verzonden kan worden. 
-
-Naast dat wij regelmatig van IP-adressen kunnen wisselen, is het voor iedereen mogelijk om een trial account aan te maken. Omdat je vanaf dat moment de data ophaalt vanaf een Copernica IP-adres, is de data beschikbaar voor iedereen met wetenschap van de juiste locatie van je data.
+In dit artikel geven we per onderdeel uitleg hoe je dit het beste kunt doen.
 
 ## Digitale handtekening voor webhooks, fetch- en loadfeed-tags
 Alle uitgaande HTTP verzoeken bevatten een "Digest", "X-Copernica-ID" en een "Signature" header. Deze headers bevatten een gehashte waarde van je bericht, de identifier van je Copernica account en een digitale handtekening. Hiermee kun je verifiëren dat de verzoeken vanaf de servers van Copernica worden gedaan en of deze uit je eigen account afkomstig zijn.
@@ -152,3 +147,10 @@ Voor meer informatie over deze call, kun je [hier](https://www.copernica.com/nl/
 Voor het ophalen van klantgegevens kun je gebruik maken van verschillende API calls. Het is mogelijk om alle profieldata uit een [database](https://www.copernica.com/nl/documentation/restv3/rest-get-database-profiles), [selectie](https://www.copernica.com/nl/documentation/restv3/rest-get-view-profiles), [collectie](https://www.copernica.com/nl/documentation/restv3/rest-get-collection-subprofiles) of [miniselectie](https://www.copernica.com/nl/documentation/restv3/rest-get-miniview-subprofiles) op te vragen. 
 
 In onze [REST API-documentatie](https://www.copernica.com/nl/documentation/restv3/rest-methods) vind je een overzicht van alle API-methodes.
+
+## Whitelisten van IP-adressen is niet de juiste oplossing
+Een aantal van onze klanten heeft onze IP-adressen gewhitelist om ervoor te zorgen dat enkel calls vanuit onze IP-adressen worden geaccepteerd. Dit lijkt veilig te zijn, maar is dat allerminst. 
+
+Wij voeren regelmatig aanpassingen door aan onze infrastructuur, bijvoorbeeld wanneer een nieuwe server in gebruik wordt genomen. Hierdoor worden de calls mogelijk vanuit een ander IP-adres uitgevoerd. Als dit IP-adres niet bekend is in je firewall, zorgt dit ervoor dat je data niet opgehaald of verzonden kan worden. 
+
+Naast dat wij regelmatig van IP-adressen kunnen wisselen, is het voor iedereen mogelijk om een trial account aan te maken. Omdat je vanaf dat moment de data ophaalt vanaf een Copernica IP-adres, is de data beschikbaar voor iedereen met wetenschap van de juiste locatie van je data.
