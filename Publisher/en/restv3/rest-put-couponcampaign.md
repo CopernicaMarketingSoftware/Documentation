@@ -1,9 +1,9 @@
-# REST API: POST couponcampaigns
+# REST API: PUT couponcampaigns
 
 This method is used to create a new coupon campaign with the REST API. It uses 
-an HTTP POST request to the following address:
+an HTTP PUT request to the following address:
 
-`https://api.copernica.com/v3/couponcampaigns?access_token=xxxx`
+`https://api.copernica.com/v3/couponcampaign/$id?access_token=xxxx`
 
 After a successful call the ID of the created request is returned.
 
@@ -19,11 +19,7 @@ After a successful call the ID of the created request is returned.
 ```json
 {
     "name" : "Test campaign",
-    "description" : "This is a test campaign",
-    "tags" : [
-        "Test",
-        "Campaign"
-    ]
+    "description" : "This is a test campaign"
 }
 ```
 
@@ -41,12 +37,11 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 // data to be sent to the api
 $data = array(
     'name'          =>  'Test campaign',
-    'description'   =>  'This is a test campaign',
-    'tags'          =>  array("Test", "Campaign")
+    'description'   =>  'This is a test campaign'
 );
 
 // do the call
-$api->post("couponcampaigns", $data);
+$api->put("couponcampaign/$id", $data);
 
 // return id of created request if successful
 ```
