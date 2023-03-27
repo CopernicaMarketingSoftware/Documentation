@@ -1,7 +1,10 @@
 # Dataveiligheid
-Er zijn verschillende manieren om je data veilig van en naar Copernica te krijgen.
+Bij onze support-afdeling krijgen wij geregeld de vraag hoe je het beste data veilig van en naar Copernica kunt krijgen. Hier zijn verschillende manieren voor: 
+- een digitale handtekening voor webhooks, fetch- en loadfeed-tags
+- importeren of exporteren via SFTP
+- gebruik maken van onze REST API
 
-In dit artikel geven we per onderdeel uitleg hoe je dit het beste kunt doen.
+In dit artikel geven we per onderdeel uitleg hoe je dit het beste kunt doen en waarom wij het gebruik van IP-whitelisting afraden.
 
 ## Digitale handtekening voor webhooks, fetch- en loadfeed-tags
 Alle uitgaande HTTP verzoeken bevatten een "Digest", "X-Copernica-ID" en een "Signature" header. Deze headers bevatten een gehashte waarde van je bericht, de identifier van je Copernica account en een digitale handtekening. Hiermee kun je verifiëren dat de verzoeken vanaf de servers van Copernica worden gedaan en of deze uit je eigen account afkomstig zijn.
