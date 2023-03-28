@@ -1,13 +1,65 @@
 # Dataveiligheid
-In je Copernica-account staat veel persoonlijke data van je klanten. Het is van belang dat je veilig omgaat met deze data, vooral wanneer je deze data wilt synchroniseren van of naar een extern systeem. Hier zijn verschillende manieren voor:
-- een digitale handtekening voor webhooks, fetch- en loadfeed-tags;
-- importeren of exporteren via SFTP;
-- gebruik maken van onze REST API.
+In je Copernica-account staat veel data. Er zijn verschillende manieren om de veiligheid van je data te waarborgen. In dit artikel leggen we per onderdeel uit wat je kunt doen om je data zo veilig mogelijk te houden.
 
-In dit artikel geven we per onderdeel uitleg hoe je dit het beste kunt doen en waarom wij het gebruik van IP-whitelisting afraden.
+## Accounttoegang
+De Copernica-software bestaat uit twee interfaces: Marketing Suite en Publisher. De Publisher-interface is het langst bestaande Copernica-product. De Marketing Suite-interface is gebruiksvriendelijker en maakt gebruik van verbeterde technologieën. Nieuwe modules worden enkel nog aan Marketing Suite toegevoegd.
 
-## Digitale handtekening voor webhooks, fetch- en loadfeed-tags
-Alle uitgaande HTTP verzoeken bevatten een "Digest", "X-Copernica-ID" en een "Signature" header. Deze headers bevatten een gehashte waarde van je bericht, de identifier van je Copernica account en een digitale handtekening. Hiermee kun je verifiëren dat de verzoeken vanaf de servers van Copernica worden gedaan en of deze uit je eigen account afkomstig zijn.
+### Bereikbaarheid interfaces
+De interfaces zijn bereikbaar via:
+- Marketing Suite: [ms.copernica.com](https://ms.copernica.com) en [ms.copernica.nl](ms.copernica.nl)
+- Publisher: [publisher.copernica.com](https://publisher.copernica.com) en [publisher.copernica.nl](publisher.copernica.nl)
+
+Beide interfaces zijn enkel te bereiken via een beveiligde HTTPS-verbinding.
+
+### Twee-factor-authenticatie
+Om te voorkomen dat anderen toegang tot je account krijgen als ze achter je wachtwoord komen is het verstandig om twee-factor-authenticatie in te stellen. Hiermee voeg je een extra beveiligingslaag toe aan je account. Een spaciale app op je smartphone, zoals Google Authenticator of Authy, genereert iedere 30 seconden een nieuwe code die vervolgens ook maar 30 seconden geldig is. Enkel de combinatie van een juist wachtwoord en de juiste code vanaf de smartphone waarop twee-factor-authenticatie is ingesteld geeft toegang tot het account.
+
+Om twee-factor-authenticatie in te stellen ga je naar [deze pagina](https://ms.copernica.com/#/admin/user/authentication) binnen je gebruikersaccount. 
+
+Als bedrijfsbeheerder is het ook mogelijk om het gebruik van twee-factor-authenticatie te forceren voor alle bedrijfsgebruikers. Dit kun je instellen bij de [beveiligingsinstellingen](https://ms.copernica.com/#/admin/company/security) van je bedrijf.
+
+### Sessieduur
+Om ervoor te zorgen dat gebruikers automatisch uitgelogd worden na een bepaalde tijd, kun je als bedrijfsbeheerder een [sessieduur](https://ms.copernica.com/#/admin/company/security) opgeven voor alle bedrijfsgebruikers. Hiermee voorkom je dat anderen toegang tot je data krijgen als per ongeluk een computer aan blijft staan.
+
+### Toegangsbeperking op basis van IP-adres
+Je kunt je account beveiligen door het alleen toegankelijk te maken vanaf bepaalde IP-adressen. Het is dan niet langer mogelijk om vanaf andere IP-adressen in te loggen. Je kunt hiermee bijvoorbeeld instellen dat je alleen vanaf je kantoorlocatie toegang hebt.
+
+Je kunt dit toevoegen onder [IP-restrictie](https://ms.copernica.com/#/admin/account/restrict-access) in de configuratie van je account.
+
+## Sender domain voor het versturen van mailings
+Voordat je mailings kunt versturen dien je een [sender domain](https://www.copernica.com/nl/documentation/sender-domains) in te stellen in je account. Dit zijn een aantal [DNS-records](https://www.copernica.com/nl/documentation/dns) die je moet aanmaken.
+
+Onderdeel van je sender domain zijn je [SPF](https://www.copernica.com/nl/documentation/spf)-, [DKIM](https://www.copernica.com/nl/documentation/dkim)- en [DMARC](https://www.copernica.com/nl/documentation/dmarc)-record. Dit stelt ontvangers in staat om te zien dat Copernica toestemming heeft om vanuit jouw domein te versturen.
+
+Naast het valideren of wij gemachtigd zijn om te versturen vanaf jouw domein wordt er binnen je sender domain ook een tracking URL aangemaakt. Alle hyperlinks en afbeeldingen in e-mailings worden vervangen door zogenaamde 'tracking URLs'. Hierdoor kan Copernica bijhouden welke berichten worden geopend en op welke links wordt geklikt. Elke klik of download van een afbeelding wordt gelogd voordat de ontvanger doorgestuurd wordt naar de oorspronkelijke URL.
+
+Nadat je een sender domain hebt ingesteld, maakt Copernica automatisch binnen 24 uur een certificaat aan zodat je tracking URLs beveiligd zijn via een HTTPS-verbinding.
+
+Een sender domain kun je instellen via de optie [sender domains](https://ms.copernica.com/#/admin/account/senderdomains) in de configuratie van je account.
+
+## Gevalideerde domeinen voor webhooks en websites
+Voordat je een domein kunt gebruiken als [webhook](https://www.copernica.com/nl/documentation/webhooks) of voor je [Copernica-website](https://www.copernica.com/nl/documentation/websites) moet je eerst bewijzen dat je de rechtmatige eigenaar bent van het domein. Dit is nodig om te voorkomen dat andere bedrijven Copernica's diensten gebruiken om je domein te misbruiken.
+
+Je kunt een domein valideren door deze toe te voegen aan de [gevalideerde domeinen](https://ms.copernica.com/#/admin/company/domains) binnen je bedrijf. Nadat je het domein hebt toegevoegd, krijg je een TXT-record die je toe moet voegen aan je DNS-configuratie. Zodra het record is toegevoegd kun je binnen je gevalideerde domein onder 'Validatie' het domein laten valideren.
+
+## API-services
+Er zijn twee API's beschikbaar: een [REST-API](https://www.copernica.com/nl/documentation/restv3/rest-api) en een [SOAP-API](https://www.copernica.com/nl/documentation/soap-api-documentation) waarmee je Copernica kunt koppelen aan andere applicaties. Omdat de REST-API nieuwer, sneller en simpeler is, raden wij aan om hiervan gebruik te maken.
+
+Beide API's zijn te bereiken via een eigen beveiligde HTTPS-verbinding:
+- SOAP-API: https://soap.copernica.com 
+- REST-API: https://api.copernica.com
+
+Als je gebruik maakt van [grote datasets](https://www.copernica.com/nl/documentation/restv3/rest-paging) is de REST-API ook bereikbaar via: https://rest.copernica.com. In principe werken beide URL's hetzelfde, maar voor *een aantal methodes* (met name methodes om profielen op te vragen) geldt dat https://rest.copernica.com limieten groter dan 1000 items ondersteunt.
+
+### IP-restrictie instellen per API-applicatie
+Voor het gebruik van de API heb je enkel een [access-token](https://ms.copernica.com/#/admin/account/access-tokens) nodig. Vanaf dat moment kan iedereen met deze access-token gegevens van en naar je account synchroniseren. 
+
+Om ervoor te zorgen dat enkel calls vanaf je eigen IP-adressen worden geaccepteerd, kun je een IP-restrictie instellen op je [API-applicatie](https://ms.copernica.com/#/admin/company/applications). Dit doe je door de betreffende API-applicatie te openen en te kiezen voor 'IP-restricties'.
+
+## Digitale handtekening voor uitgaande HTTP-verzoeken naar eigen server
+Wanneer er in Copernica gebruik wordt gemaakt van webhooks of downloads van externe content in mailing (fetch- en loadfeed-tags) wordt er een uitgaande HTTP verzoek gedaan naar je eigen server. Aan deze verzoeken wordt een digitale handtekening meegegeven zodat je kunt verifiëren of deze verzoeken vanaf de servers van Copernica worden gedaan en of deze uit je eigen account afkomstig zijn.
+
+De digitale handtekening bestaat uit een "Digest", "X-Copernica-ID" en een "Signature" header. Deze headers bevatten een gehashte waarde van je bericht, de identifier van je Copernica account en een digitale handtekening. 
 
 Het formaat van de headers is gespecificeerd (links in het Engels):
 
@@ -102,8 +154,8 @@ catch (Exception $exception)
 
 In bovenstaand script zal je het `Copernica customer ID` moeten vervangen met je eigen unieke account ID. Mocht deze nog niet bekend zijn, kun je deze opvragen met [deze](restv3/rest-get-identity) REST API-call.
 
-## SFTP of REST API voor imports / exports
-Bij imports en export kunnen wij geen digitale handtekening meegeven. Om de data veilig van en naar Copernica te krijgen, raden wij aan om gebruik te maken van een SFTP-connectie of onze [REST API](https://www.copernica.com/nl/documentation/restv3/rest-api). 
+## Importeren en exporteren van data
+Bij imports en exports kunnen wij geen digitale handtekening meegeven. Om de data veilig van en naar Copernica te krijgen, raden wij aan om gebruik te maken van een SFTP-connectie of onze [REST API](https://www.copernica.com/nl/documentation/restv3/rest-api). 
 
 Bij het opzetten van een SFTP-import of export heb je de mogelijkheid om gebruik te maken van zogeheten *private keys*. Deze kun je instellen onder [geheime sleutels](https://ms.copernica.com/#/admin/account/private-keys) binnen je account. Hiermee zorg je ervoor dat enkel calls met deze sleutel uitgevoerd mogen worden van en naar je server.
 
@@ -154,6 +206,7 @@ In onze [REST API-documentatie](https://www.copernica.com/nl/documentation/restv
 ## Whitelisten van IP-adressen is niet de juiste oplossing
 Een aantal van onze klanten heeft onze IP-adressen gewhitelist om ervoor te zorgen dat enkel calls vanuit onze IP-adressen worden geaccepteerd. Dit lijkt veilig te zijn, maar is dat allerminst. 
 
-Wij voeren regelmatig aanpassingen door aan onze infrastructuur, bijvoorbeeld wanneer een nieuwe server in gebruik wordt genomen. Hierdoor worden de calls mogelijk vanuit een ander IP-adres uitgevoerd. Als dit IP-adres niet bekend is in je firewall, zorgt dit ervoor dat je data niet opgehaald of verzonden kan worden. 
-
-Naast dat wij regelmatig van IP-adressen kunnen wisselen, is het voor iedereen mogelijk om een trial account aan te maken. Omdat je vanaf dat moment de data ophaalt vanaf een Copernica IP-adres, is de data beschikbaar voor iedereen met wetenschap van de juiste locatie van je data.
+Wij raden het gebruik van IP-whitelisting af om de volgende redenen:
+- Wanneer wij aanpassingen aan onze infrastructuur doen, bijvoorbeeld wanneer een server uitvalt of wij opschalen, worden de calls mogelijk vanuit een niet bekend IP-adres uitgevoerd. Dit zorgt ervoor dat je data niet opgehaald of verzonden kan worden.
+- Onze IP-adressen worden door meerdere klanten gebruikt. Door een IP-adres te whitelisten kun je niet uitsluiten dat andere Copernica-gebruikers via de servers van Copernica toegang krijgen tot jouw gegevens.
+- Indien we diensten afschalen of herstructureren kunnen IP-adressen vrijkomen en worden toegewezen aan heel andere bedrijven.
