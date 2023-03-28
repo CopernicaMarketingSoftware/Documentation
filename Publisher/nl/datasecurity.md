@@ -6,8 +6,8 @@ De Copernica-software bestaat uit twee interfaces: Marketing Suite en Publisher.
 
 ### Bereikbaarheid interfaces
 De interfaces zijn bereikbaar via:
-- Marketing Suite: [ms.copernica.com](https://ms.copernica.com) en [ms.copernica.nl](ms.copernica.nl)
-- Publisher: [publisher.copernica.com](https://publisher.copernica.com) en [publisher.copernica.nl](publisher.copernica.nl)
+- Marketing Suite: [ms.copernica.com](https://ms.copernica.com) en [ms.copernica.nl](https://ms.copernica.nl)
+- Publisher: [publisher.copernica.com](https://publisher.copernica.com) en [publisher.copernica.nl](https://publisher.copernica.nl)
 
 Beide interfaces zijn enkel te bereiken via een beveiligde HTTPS-verbinding.
 
