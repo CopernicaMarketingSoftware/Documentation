@@ -16,7 +16,7 @@ Om te voorkomen dat anderen toegang tot je account krijgen als ze achter je wach
 
 Om twee-factor-authenticatie in te stellen ga je naar [deze pagina](https://ms.copernica.com/#/admin/user/authentication) binnen je gebruikersaccount. 
 
-Als bedrijfsbeheerder is het ook mogelijk om het gebruik van twee-factor-authenticatie te forceren voor alle bedrijfsgebruikers. Dit kun je instellen bij de [beveiligingsinstellingen](https://ms.copernica.com/#/admin/company/security) van je bedrijf.
+Als bedrijfsbeheerder is het ook mogelijk om het gebruik van twee-factor-authenticatie te verplichten voor alle bedrijfsgebruikers. Dit kun je instellen bij de [beveiligingsinstellingen](https://ms.copernica.com/#/admin/company/security) van je bedrijf.
 
 ### Sessieduur
 Om ervoor te zorgen dat gebruikers automatisch uitgelogd worden na een bepaalde tijd, kun je als bedrijfsbeheerder een [sessieduur](https://ms.copernica.com/#/admin/company/security) opgeven voor alle bedrijfsgebruikers. Hiermee voorkom je dat anderen toegang tot je data krijgen als per ongeluk een computer aan blijft staan.
