@@ -12,7 +12,7 @@ Methode om coupons toe te voegen aan een campagne. Dit is een HTTP PUT-methode n
 
 ```json
 {
-    "status" :[
+    "source" :[
         {
             "code":"1234AA",
             "validfrom":"2023-02-25",
