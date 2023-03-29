@@ -6,13 +6,13 @@ Methode om de status van een coupon te wijzigen. Dit is een HTTP PUT-methode naa
 
 ## Beschikbare parameters
 
-* **status**: status van de coupon (available, sent, redeemed)
+* **redeemed**: boolean to indicate that a coupon has been redeemed (true/false)
 
 ## Voorbeeld in JSON
 
 ```json
 {
-    "status" : "redeemed"
+    "redeemed" : true
 }
 ```
 
@@ -29,7 +29,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data voor de methode
 $data = array(
-    'status'          =>  'redeemed'
+    'redeemed'          =>  true
 );
 
 // voer het verzoek uit
