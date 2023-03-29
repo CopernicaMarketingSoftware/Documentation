@@ -18,7 +18,7 @@ Downloads van content, zoals nodig is voor het inladen van feeds in mailings, wo
 op dit moment nog niet beveiligd. Het is daarom aan te raden om
 deze calls van elk IP-adres te accepteren.
 
-Meer informatie over de veiligheid van je data van je vind je in [dit artikel](./datasecurity)
+Meer informatie over de veiligheid van je data van je vind je in [dit artikel](./datasecurity).
 
 ## Onze IP-adressen
 
