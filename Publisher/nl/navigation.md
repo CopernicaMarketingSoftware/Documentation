@@ -4,6 +4,7 @@
     * [Toegangsbeperkingen](./access-restrictions.md)
     * [Configuratie](./configuration.md)
     * [Eerste mailing](./first-mailing.md)
+    * [Dataveiligheid](./datasecurity.md)
 * [Videos](./videos.md)
     * [Onboardingvideos](./onboarding-videos.md)
     * [Instructievideos](./explanation-videos.md)
