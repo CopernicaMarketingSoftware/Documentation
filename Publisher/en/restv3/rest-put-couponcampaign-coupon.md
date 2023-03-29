@@ -9,13 +9,13 @@ After a successful call the ID of the created request is returned.
 
 ## Available parameters
 
-* **status**: status van de coupon (available, sent, redeemed)
+* **redeemed**: boolean om aan te geven dat een coupon ingewisseld is (true/false)
 
 ## JSON example
 
 ```json
 {
-    "status" : "redeemed"
+    "redeemed" : true
 }
 ```
 
@@ -32,7 +32,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to be sent to the api
 $data = array(
-    'status'          =>  'redeemed'
+    'redeemed'          =>  true
 );
 
 // do the call
