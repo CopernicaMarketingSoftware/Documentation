@@ -13,7 +13,7 @@ an HTTP PUT request to the following address:
 
 ```json
 {
-    "status" :[
+    "source" :[
         {
             "code":"1234AA",
             "validfrom":"2023-02-25",
