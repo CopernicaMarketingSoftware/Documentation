@@ -13,12 +13,13 @@ je controleren of een call daadwerkelijk van Copernica afkomstig is. Dit is een
 betrouwbaarder systeem dan controle op basis van IP-adres, en het stelt Copernica 
 in staat om dynamisch met IP-adressen om te gaan. 
 
-Imports en exports kun je beveiligen via SFTP in combinatie met een private key. 
+Imports en exports kun je beveiligen via SFTP in combinatie met een geheime sleutel (private key). 
 Downloads van content, zoals nodig is voor het inladen van feeds in mailings, worden
 op dit moment nog niet beveiligd. Het is daarom aan te raden om
 deze calls van elk IP-adres te accepteren.
 
-Meer informatie over de veiligheid van je data van je vind je in [dit artikel](./datasecurity).
+Meer informatie over het opzetten van webhooks met een digitale handtekening of 
+import en exports met een geheime sleutel vind je in [dit artikel](./datasecurity).
 
 ## Onze IP-adressen
 
