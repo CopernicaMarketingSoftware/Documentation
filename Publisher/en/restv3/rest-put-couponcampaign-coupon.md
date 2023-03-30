@@ -1,7 +1,7 @@
 # REST API: PUT couponcampaign coupon
 
 This method is used to create a new database with the REST API. It uses 
-an HTTP POST request to the following address:
+an HTTP PUT request to the following address:
 
 `https://api.copernica.com/v3/couponcampaign/$couponcampaign/coupon/$coupon?access_token=xxxx`
 
@@ -9,13 +9,13 @@ After a successful call the ID of the created request is returned.
 
 ## Available parameters
 
-* **status**: status van de coupon (available, sent, redeemed)
+* **redeemed**: boolean om aan te geven dat een coupon ingewisseld is (true/false)
 
 ## JSON example
 
 ```json
 {
-    "status" : "redeemed"
+    "redeemed" : true
 }
 ```
 
@@ -32,11 +32,11 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to be sent to the api
 $data = array(
-    'status'          =>  'redeemed'
+    'redeemed'          =>  true
 );
 
 // do the call
-$api->post("couponcampaign/$couponcampaign/coupon/$coupon", $data);
+$api->put("couponcampaign/$couponcampaign/coupon/$coupon", $data);
 
 // return id of created request if successful
 ```
