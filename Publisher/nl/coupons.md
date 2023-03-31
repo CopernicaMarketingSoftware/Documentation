@@ -7,7 +7,7 @@ In externe webshops, zoals bijvoorbeeld Magento, heb je de mogelijkheid om coupo
 In dit artikel geven we uitleg over de werking van deze module.
 
 ## Campagne aanmaken
-Voordat je de coupons kunt inladen moet je een campagne aanmaken. Dit is mogelijk onder de knop 'Aanmaken' in de zijbalk of via 'Nieuwe couponcampagne aanmaken' knop binnen de [coupons-module](https://ms.copernica.com/#/coupons).
+Voordat je de coupons kunt inladen moet je een campagne aanmaken. Dit is mogelijk binnen de [coupons-module](https://ms.copernica.com/#/coupons) onder de knop 'Aanmaken' in de zijbalk of via 'Nieuwe couponcampagne aanmaken' knop.
 
 Naast het opgeven van een naam, bijvoorbeeld 'Zomerkorting', en (eventuele) beschrijving, kun je ook tags of fallback-code toevoegen aan je campagne:
 - **Tags**: Steekwoorden (tags) waarmee je aan kunt geven wat de campagne inhoudt. 
@@ -77,7 +77,7 @@ Voorbeeld:
 ### Wanneer moet een coupon geregistreerd worden als 'verzonden'? 
 Bij het testen van een e-mail waarin je gebruik maakt van coupons, wil je in de meeste gevallen niet dat de ontvangen coupon als 'verzonden' wordt geregistreerd.
 
-Onder 'Configuratie -> Instellingen' heb je de mogelijkheid om aan te geven wanneer je wilt dat een coupon als 'verzonden' wordt geregistreerd. 
+In de module, onder 'Configuratie -> Instellingen', heb je de mogelijkheid om aan te geven wanneer je wilt dat een coupon als 'verzonden' wordt geregistreerd. 
 
 De beschikbare opties zijn:
 - Coupon nooit registreren als verzonden
