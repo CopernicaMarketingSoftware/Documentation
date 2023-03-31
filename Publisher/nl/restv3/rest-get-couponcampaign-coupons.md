@@ -26,8 +26,12 @@ De **fields** parameter kun je gebruiken om coupons te selecteren. Als je bijvoo
 alleen beschikbare coupons wil opvragen. 
 
 Beschikbare filters:
+* **code**: informatie over een specifieke code ophalen
 * **status**: status van de coupons (available, sent, redeemed)
 * **valid**: Boolean. Hiermee kun je aangeven of je alle coupons of enkel beschikbare terug wilt krijgen
+
+**Voorbeeld**:  
+`https://api.copernica.com/v3/couponcampaign/$id/coupons?fields[]=code==$code&access_token=xxxx`
 
 Meer informatie over het gebruik van de **fields** parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).

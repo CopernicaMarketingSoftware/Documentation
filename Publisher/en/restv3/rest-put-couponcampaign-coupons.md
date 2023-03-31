@@ -1,13 +1,13 @@
 # REST API: PUT couponcampaign coupons
 
-This method is used to create a new database with the REST API. It uses 
+This method is used to add or update coupons to a campaign with the REST API. It uses 
 an HTTP PUT request to the following address:
 
 `https://api.copernica.com/v3/couponcampaign/$couponcampaign/coupons?access_token=xxxx`
 
 ## Available parameters
 
-* **source**: array with data
+* **source**: array with data: code (required), validfrom (optional), validuntil (optional), redeemed (optional)
 
 ## JSON example
 

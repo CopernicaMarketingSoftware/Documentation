@@ -1,12 +1,12 @@
 # REST API: PUT couponcampaign coupons
 
-Methode om coupons toe te voegen aan een campagne. Dit is een HTTP PUT-methode naar het volgende adres:
+Methode om coupons bij te werken of toe te voegen aan een campagne. Dit is een HTTP PUT-methode naar het volgende adres:
 
 `https://api.copernica.com/v3/couponcampaign/$couponcampaign/coupons?access_token=xxxx`
 
 ## Beschikbare parameters
 
-* **source**: array van data
+* **source**: array van data: code (verplicht), validfrom (optioneel), validuntil (optioneel), redeemed (optioneel)
 
 ## Voorbeeld in JSON
 
