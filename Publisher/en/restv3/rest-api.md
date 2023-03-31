@@ -403,6 +403,16 @@ or vice versa in all of the articles below, including the code examples.
 | GET    | [api.copernica.com/v3/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Fetch all errors for a destination           |
 | GET    | [api.copernica.com/v3/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Fetch all impressions for a destination      |
 
+## Coupons
+| Type | Address                                                                                                 | Omschrijving                                      |
+|------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------|
+| GET  | [https://api.copernica.com/v3/couponcampaigns](./restv3/rest-get-couponcampaigns)                     | Fetch all coupon campaigns                 |
+| POST | [https://api.copernica.com/v3/couponcampaigns](./restv3/rest-post-couponcampaigns)                    | Create a coupon campaign                   |
+| PUT  | [https://api.copernica.com/v3/couponcampaign/$id](./restv3/rest-put-couponcampaign)                   | Update coupon campaign information                   |
+| GET  | [https://api.copernica.com/v3/couponcampaign/$id](./restv3/rest-get-couponcampaign)                   | Fetch coupon campaign information            |
+| PUT  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./restv3/rest-put-couponcampaign-coupons)   | Create or update one or multiple coupons inside a campaign    |
+| GET  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./restv3/rest-get-couponcampaign-coupons)   | Fetch one or multiple coupons inside a campaign    |
+
 ## Media libraries
 
 | Type   | Address                                                                                      | Description                                               |
