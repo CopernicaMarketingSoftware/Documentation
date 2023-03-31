@@ -84,14 +84,14 @@ De beschikbare opties zijn:
 - Coupon altijd registreren als verzonden
 - Coupons niet als verzonden registreren in testmailings (**default**)
 
-## Coupon registreren als gebruikt
-Zodra een coupon gebruikt is in je webshop, kun je deze met de REST API registreren als gebruikt. 
+## Coupon registreren als ingewisseld
+Zodra een coupon gebruikt is in je webshop, kun je deze met de REST API registreren als ingewisseld (redeemed). 
 
 Hiervoor gebruik je een PUT-request naar het volgende adres:
 
 `https://api-dev.copernica.com/v3/couponcampaign/24/coupons?access_token=xxx`
 
-In de body van je call geef je op welke coupon je als ingewisseld (redeemed) wilt registreren:
+In de body van je call geef je op welke coupon je als ingewisseld wilt registreren:
 ```
 {
     "source" :[
