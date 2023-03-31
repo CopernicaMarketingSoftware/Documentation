@@ -9,8 +9,6 @@ In dit artikel geven we uitleg over de werking van deze module.
 ## Campagne aanmaken
 Voordat je de coupons kunt inladen moet je een campagne aanmaken. Dit is mogelijk onder de knop 'Aanmaken' in de zijbalk of via 'Nieuwe couponcampagne aanmaken' knop binnen de [coupons-module](https://ms.copernica.com/#/coupons).
 
-[Screenshot met pijltjes naar beide opties]
-
 Naast het opgeven van een naam, bijvoorbeeld 'Zomerkorting', en (eventuele) beschrijving, kun je ook tags of fallback-code toevoegen aan je campagne:
 - **Tags**: Steekwoorden (tags) waarmee je aan kunt geven wat de campagne inhoudt. 
 - **Fallback-code**: De fallback-code wordt zichtbaar in de e-mail wanneer alle coupons binnen je campagne gebruikt zijn. Dit is een vaste waarde, bijvoorbeeld 'Zomer20procent'.
