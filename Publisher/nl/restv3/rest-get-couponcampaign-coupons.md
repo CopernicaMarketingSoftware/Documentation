@@ -31,7 +31,7 @@ Beschikbare filters:
 * **valid**: Boolean. Hiermee kun je aangeven of je alle coupons of enkel beschikbare terug wilt krijgen
 
 **Voorbeeld**:  
-https://api.copernica.com/v3/couponcampaign/$id/coupons?fields[]=code==$code&access_token=xxxx
+`https://api.copernica.com/v3/couponcampaign/$id/coupons?fields[]=code==$code&access_token=xxxx`
 
 Meer informatie over het gebruik van de **fields** parameter kun je vinden in een 
 [artikel over de fields parameter](rest-fields-parameter).
