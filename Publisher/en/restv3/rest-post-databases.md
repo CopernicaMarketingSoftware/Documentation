@@ -26,7 +26,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to be sent to the api
 $data = array(
-    'name'          =>  'my-test-database',
+    'name'          =>  'my_test_database',
     'description'   =>  'a description of the database'
 );
 

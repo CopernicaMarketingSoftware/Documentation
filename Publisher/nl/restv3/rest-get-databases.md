@@ -42,7 +42,7 @@ De JSON voor een enkele database ziet er bijvoorbeeld zo uit:
 ```json
 {  
    "ID":"3144",
-   "name":"Test database",
+   "name":"Test_database",
    "description":"This is a test database.",
    "archived":false,
    "created":"2018-03-08 10:47:01",
