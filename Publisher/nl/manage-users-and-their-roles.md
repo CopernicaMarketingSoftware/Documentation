@@ -45,6 +45,8 @@ een gebruiker toe te voegen, ga je naar *configuratie*.
 - Vul het e-mailadres in van de gebruiker die je wilt toevoegen.
 - Voeg de gebruiker toe.
 
+![Afbeelding](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2354019%5D-documentation%5D-update-documentation-adding-account-users/Publisher/images/nl/Users3.png)
+
 Geef aan of deze gebruiker direct beheerdersrechten moet krijgen (dit kan uiteraard
 ook later nog worden ingesteld). Dit doe je door op de gebruiker te klikken.
 Nu kan je aan de gebruiker beheerders rechten of de rechten van een huisstijlbewaker toe kennen.
@@ -67,6 +69,8 @@ Om toegang te krijgen tot de SOAP- en REST API-koppeling van Copernica, heb je e
 - Kies voor 'API access-tokens' in het tweede kolom 'Account'.
 - Kies voor 'Access-token aanmaken'. 
 - Kies bij het aanmaken van de token voor de optie 'REST-API', 'SOAP API' of 'SOAP- en REST-API'.
+
+![Afbeelding](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2354019%5D-documentation%5D-update-documentation-adding-account-users/Publisher/images/nl/users4.png)
 
 ### Partnergebruiker
 
@@ -137,6 +141,8 @@ Dit is een normale eindgebruiker van de software. Per publicatie moet
 deze mag bewerken via *Toegangsrechten* in configuratie van het
 template. 
 
+![elementen](../images/nl/Email_editor_elementen.png) 3.
+
 ### Individuele toegangsrechten per account
 
 Een gebruiker die toegang heeft tot meerdere accounts kan in deze
@@ -156,6 +162,8 @@ Voer de volgende stappen uit, als je de optie 'Individuele toegangsrechten' voll
 - Vink de optie 'Individuele toegangsrechten (toegangsrechten zijn per gebruiker in te stellen)' uit. 
 - Sla dit op.
 
+![elementen](../images/nl/Email_editor_elementen.png) 4.
+
 **2. Individuele rechten behouden**
 
 Dit moet op database niveau worden ingericht:
@@ -166,13 +174,12 @@ Dit moet op database niveau worden ingericht:
 - Kies voor 'Toegangsrechten' in de blauwe deel van het scherm.
 - Vink aan welke toegangsrechten je wilt toewijzen.
 
+![elementen](../images/nl/Email_editor_elementen.png) 5.
+
 ## Gebruiker verwijderen
 
 Beheerders kunnen gebruikers toevoegen en verwijderen. Het verwijderen
 van een gebruiker heeft geen invloed op gegevens binnen het account.
-Publicaties gemaakt door de gebruiker blijven behouden.
-
-Om een gebruiker te verwijderen 
 
 ### Gebruiker tijdelijk deactiveren
 
@@ -186,7 +193,6 @@ verschillende wijzen:
     Een gebruiker wordt alleen gefactureerd voor de periode dat deze
     actief is in het account. Je kan de gebruiker op een later tijdstip
     altijd weer rehabiliteren door de gebruiker opnieuw toe te voegen.
-3.  De toegangsrechten van een gebruiker weer intrekken.
 
 ## Individuele gebruikersstatistieken
 
@@ -197,5 +203,5 @@ tabblad **Statistieken *gebruikersnaam***. Om dit in te zien ga je naar:
 - Kies voor 'Configuratie'. 
 - Kies voor 'Verbruik', in het tweede kolom. 
 
-
+![elementen](../images/nl/Email_editor_elementen.png) 6.
 
