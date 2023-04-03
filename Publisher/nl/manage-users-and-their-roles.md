@@ -43,7 +43,7 @@ een gebruiker toe te voegen, ga je naar *configuratie*.
 - Kies rechts boven voor 'Gebruiker toevoegen'.
 - Kies voor de knop 'Gebruiker zoeken aan de hand van het e-mailadres'.
 - Vul het e-mailadres in van de gebruiker die je wilt toevoegen.
-- Voeg de gebruiker toe.
+- Voeg de gebruiker, met de groene button, toe.
 
 ![Afbeelding](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2354019%5D-documentation%5D-update-documentation-adding-account-users/Publisher/images/nl/Users3.png)
 
