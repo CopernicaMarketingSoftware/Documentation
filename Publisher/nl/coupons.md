@@ -2,7 +2,7 @@
 
 *Let op: het gebruik van coupons is enkel mogelijk in drag-and-drop-templates.*
 
-Met de [couponsmodule](https://ms.copernica.com/#/coupons) kun je één of meerdere campagnes aanmaken waarin coupons (actiecodes) worden opgeslagen. Deze coupons kun je inladen in je e-mailtemplates via Smarty-personalisatie. Copernica zorgt ervoor dat elke ontvanger een unieke code ontvangt. Indien je e-commerceplatform de mogelijkheid ondersteunt om coupons aan te maken, kunnen de coupons gekoppeld worden aan een couponcampagne. 
+Met de [couponsmodule](https://ms.copernica.com/#/coupons) kun je één of meerdere campagnes aanmaken waarin je coupons (actiecodes) kunt toevoegen. Deze coupons kun je inladen in je e-mailtemplates via Smarty-personalisatie. Copernica zorgt ervoor dat elke ontvanger een unieke coupon ontvangt. Indien je e-commerceplatform de mogelijkheid ondersteunt om coupons aan te maken, kunnen de coupons gekoppeld worden aan een couponcampagne. 
 
 In dit artikel geven we uitleg over de werking van deze module.
 
