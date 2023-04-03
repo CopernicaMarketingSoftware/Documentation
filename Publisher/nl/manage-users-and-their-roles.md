@@ -141,8 +141,6 @@ Dit is een normale eindgebruiker van de software. Per publicatie moet
 deze mag bewerken via *Toegangsrechten* in configuratie van het
 template. 
 
-![elementen](../images/nl/Email_editor_elementen.png) 3.
-
 ### Individuele toegangsrechten per account
 
 Een gebruiker die toegang heeft tot meerdere accounts kan in deze
@@ -162,19 +160,19 @@ Voer de volgende stappen uit, als je de optie 'Individuele toegangsrechten' voll
 - Vink de optie 'Individuele toegangsrechten (toegangsrechten zijn per gebruiker in te stellen)' uit. 
 - Sla dit op.
 
-![elementen](../images/nl/Email_editor_elementen.png) 4.
+![Afbeelding](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2354019%5D-documentation%5D-update-documentation-adding-account-users/Publisher/images/nl/users5.png)
 
 **2. Individuele rechten behouden**
 
 Dit moet op database niveau worden ingericht:
 
-- Ga naar Profielen.
+- Ga naar'Profielen'.
 - Klik op de betreffende database waar je toegang tot wilt geven.
 - Klik op de blauwe knop 'Configuratie'.
 - Kies voor 'Toegangsrechten' in de blauwe deel van het scherm.
 - Vink aan welke toegangsrechten je wilt toewijzen.
 
-![elementen](../images/nl/Email_editor_elementen.png) 5.
+![Afbeelding](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2354019%5D-documentation%5D-update-documentation-adding-account-users/Publisher/images/nl/users6.png)
 
 ## Gebruiker verwijderen
 
@@ -199,9 +197,10 @@ verschillende wijzen:
 Van iedere gebruiker wordt bijgehouden hoeveel e-mailberichten,
 sms-berichten, API-calls et cetera hij of zij heeft verstuurd /
 gebruikt. Deze gegevens blijven bewaard en zijn inzichtelijk vanuit het
-tabblad **Statistieken *gebruikersnaam***. Om dit in te zien ga je naar: 
-- Kies voor 'Configuratie'. 
-- Kies voor 'Verbruik', in het tweede kolom. 
+tabblad **Statistieken *gebruikersnaam***. 
+Om dit in te zien:
+- Ga je naar 'Configuratie'. 
+- Kies voor 'Verbruik', in het tweede kolom 'Account'. 
 
-![elementen](../images/nl/Email_editor_elementen.png) 6.
+![Afbeelding](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2354019%5D-documentation%5D-update-documentation-adding-account-users/Publisher/images/nl/users8.png) 
 
