@@ -66,7 +66,7 @@ Om toegang te krijgen tot de SOAP- en REST API-koppeling van Copernica, heb je e
 - Ga naar 'Configuratie'.
 - Kies voor 'API access-tokens' in het tweede kolom 'Account'.
 - Kies voor 'Access-token aanmaken'. 
-- Kies bij het aanmaken van de token voor de optie  'REST-API','Soap API' of 'SOAP- en REST-API'.
+- Kies bij het aanmaken van de token voor de optie 'REST-API', 'SOAP API' of 'SOAP- en REST-API'.
 
 ### Partnergebruiker
 
@@ -145,9 +145,9 @@ beheerder zijn, en in account B een normale gebruiker zijn.  
 
 ### Individuele toegangsrechten
 
-Een beheerder kan individuele rechten toekennen: 
+Een beheerder kan individuele rechten toekennen:
 
-1.  Geen individuele toegangsrechten.
+**1.  Geen individuele toegangsrechten**
 
 Voer de volgende stappen uit, als je de optie 'Individuele toegangsrechten' volledig uit wil schakelen:
 
@@ -156,7 +156,7 @@ Voer de volgende stappen uit, als je de optie 'Individuele toegangsrechten' voll
 - Vink de optie 'Individuele toegangsrechten (toegangsrechten zijn per gebruiker in te stellen)' uit. 
 - Sla dit op.
 
-2. Wel individuele rechten behouden.
+**2. Individuele rechten behouden**
 
 Dit moet op database niveau worden ingericht:
 
