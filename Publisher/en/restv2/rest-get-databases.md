@@ -40,7 +40,7 @@ The JSON for a single database might look something like this:
 ```json
 {  
    "ID":"3144",
-   "name":"Test database",
+   "name":"Test_database",
    "description":"This is a test database.",
    "archived":false,
    "created":"2018-03-08 10:47:01",
