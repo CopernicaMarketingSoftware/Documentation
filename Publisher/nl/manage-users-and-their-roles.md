@@ -31,25 +31,26 @@ account beheerder zijn, en in een ander account slechts beperkte toegang
 hebben.
 
 Indien een gebruiker toegang heeft tot meerdere accounts, kiest hij bij
-het inloggen het account waarin hij wilt werken. Eenmaal ingelogd, kan
+het inloggen het account waarin hij wil werken. Eenmaal ingelogd, kan
 hij desgewenst van account wisselen via het persoonlijk menu rechtsboven
 in de applicatie.
 
 ## Gebruiker toevoegen
 
 De beheerder van een account kan gebruikers toevoegen en verwijderen. Om
-een gebruiker toe te voegen, ga je naar het onderdeel *Beheer*. Kies in
-het menu *Gebruiker* voor *Gebruiker toevoegen.*
+een gebruiker toe te voegen, ga je naar *configuratie*. 
+- Kies voor 'Accountgebruikers' in het tweede kolom 'Account'.
+- Kies rechts boven voor 'Gebruiker toevoegen'.
+- Kies voor de knop 'Gebruiker zoeken aan de hand van het e-mailadres'.
+- Vul het e-mailadres in van de gebruiker die je wilt toevoegen.
+- Voeg de gebruiker toe.
 
-Geef het e-mailadres op van de nieuwe gebruiker. Ook kan je een
-gebruiker uit de lijst met suggesties \* selecteren en toevoegen.
-
-Voer bij een nieuwe gebruiker de voor- en achternaam in, en geef aan of
-deze gebruiker direct beheerdersrechten moet krijgen (dit kan uiteraard
-ook later nog worden ingesteld). 
+Geef aan of deze gebruiker direct beheerdersrechten moet krijgen (dit kan uiteraard
+ook later nog worden ingesteld). Dit doe je door op de gebruiker te klikken.
+Nu kan je aan de gebruiker beheerders rechten of de rechten van een huisstijlbewaker toe kennen.
 
 Als de gebruiker ook al actief is binnen andere accounts, vraag dan aan
-deze persoon met welk e-mailadres hij of zij geregistreerd heeft bij
+deze persoon met welk e-mailadres hij of zij geregistreerd is bij
 Copernica. Gebruikers die met hetzelfde e-mailadres toegang hebben tot
 meerdere accounts, kunnen na het inloggen gemakkelijk overschakelen naar
 de andere accounts waartoe zij ook toegang hebben.  
@@ -58,16 +59,14 @@ de andere accounts waartoe zij ook toegang hebben.  
 medegebruiker is van een van de accounts waar jij ook toegang tot hebt.
 Je ziet hier dus alleen gebruikers die je (waarschijnlijk) al kent.*
 
-### SOAP API gebruiker
+### SOAP- en REST API-gebruiker
 
-Wanneer je gebruik maakt van de SOAP API koppeling van Copernica, dan
-dien je een aparte gebruiker aan te maken (met een uniek e-mailadres)
-voor het tot stand brengen van de connectie. Als je de gebruiker toegang
-geeft tot de API, en de toegang tot de gebruikersinterface uitschakelt,
-dan wordt deze gebruiker niet gefactureerd (de API-gebruiker is gratis).
+Om toegang te krijgen tot de SOAP- en REST API-koppeling van Copernica, heb je een API-token nodig. 
 
-Selecteer de gebruiker, en kies vervolgens *Toegangsrechten instellen* in
-de onderste werkbalk.
+- Ga naar 'Configuratie'.
+- Kies voor 'API access-tokens' in het tweede kolom 'Account'.
+- Kies voor 'Access-token aanmaken'. 
+- Kies bij het aanmaken van de token voor de optie  'REST-API','Soap API' of 'SOAP- en REST-API'.
 
 ### Partnergebruiker
 
@@ -78,11 +77,7 @@ Hiervoor doorloop je dezelfde stappen als voor het toevoegen van normale
 gebruikers.
 
 De partnergebruiker krijgt de rechten die een nieuwe gebruiker
-automatisch krijgt. Via ***Beheer*** kan je als beheerder de rechten van
-de partnergebruiker aanpassen.
-
-Om de toegangsrechten aan te passen, selecteer je eerst de gebruiker.
-Kies vervolgens *Toegangsrechten instellen* onderin de applicatie.
+automatisch krijgt. 
 
 ### **Zelfde gebruiker in meerdere accounts**
 
@@ -133,19 +128,14 @@ zoals het verwijderen en toevoegen van gebruikers.
 
 ### Gebruiker heeft toegang tot de API
 
-Wanneer je gebruik maakt van de SOAP API koppeling van Copernica, dan
-dien je een aparte gebruiker aan te maken (met een uniek e-mailadres)
-voor het tot stand brengen van de connectie. Als je de gebruiker toegang
-geeft tot de API, en de toegang tot de gebruikersinterface uitschakelt,
-dan wordt deze gebruiker niet gefactureerd (de API-gebruiker is gratis).
+Elke gebruiker kan gebruik maken van de SOAP- en REST API-koppeling van Copernica.
 
 ### Gebruiker heeft toegang tot de gebruikersinterface
 
 Dit is een normale eindgebruiker van de software. Per publicatie moet
 (door de beheerder of huisstijlbewaker) worden aangegeven of hij of zij
-deze mag bewerken (via *Toegangsrechten* in het menu van het
-template/document/.../webformulier). De gebruiker kan wel vanuit
-bewerkmodus de inhoud van een document wijzigen.
+deze mag bewerken via *Toegangsrechten* in configuratie van het
+template. 
 
 ### Individuele toegangsrechten per account
 
@@ -153,14 +143,36 @@ Een gebruiker die toegang heeft tot meerdere accounts kan in deze
 accounts een verschillende rol hebben. De gebruiker kan dus in account A
 beheerder zijn, en in account B een normale gebruiker zijn.  
 
+### Individuele toegangsrechten
+
+Een beheerder kan individuele rechten toekennen: 
+
+1.  Geen individuele toegangsrechten.
+
+Voer de volgende stappen uit, als je de optie 'Individuele toegangsrechten' volledig uit wil schakelen:
+
+- Ga naar 'configuratie'.
+- Kies voor 'Accountgebruikers' in het tweede kolom 'Account'.
+- Vink de optie 'Individuele toegangsrechten (toegangsrechten zijn per gebruiker in te stellen)' uit. 
+- Sla dit op.
+
+2. Wel individuele rechten behouden.
+
+Dit moet op database niveau worden ingericht:
+
+- Ga naar Profielen.
+- Klik op de betreffende database waar je toegang tot wilt geven.
+- Klik op de blauwe knop 'Configuratie'.
+- Kies voor 'Toegangsrechten' in de blauwe deel van het scherm.
+- Vink aan welke toegangsrechten je wilt toewijzen.
+
 ## Gebruiker verwijderen
 
 Beheerders kunnen gebruikers toevoegen en verwijderen. Het verwijderen
 van een gebruiker heeft geen invloed op gegevens binnen het account.
 Publicaties gemaakt door de gebruiker blijven behouden.
 
-Om een gebruiker te verwijderen selecteer je onder **Beheer** de
-gebruiker. Kies vervolgens *verwijderen* in het menu **Gebruiker.**
+Om een gebruiker te verwijderen 
 
 ### Gebruiker tijdelijk deactiveren
 
@@ -174,11 +186,16 @@ verschillende wijzen:
     Een gebruiker wordt alleen gefactureerd voor de periode dat deze
     actief is in het account. Je kan de gebruiker op een later tijdstip
     altijd weer rehabiliteren door de gebruiker opnieuw toe te voegen.
+3.  De toegangsrechten van een gebruiker weer intrekken.
 
 ## Individuele gebruikersstatistieken
 
 Van iedere gebruiker wordt bijgehouden hoeveel e-mailberichten,
 sms-berichten, API-calls et cetera hij of zij heeft verstuurd /
 gebruikt. Deze gegevens blijven bewaard en zijn inzichtelijk vanuit het
-tabblad **Statistieken *gebruikersnaam***. Ook nadat een gebruiker is
-verwijderd.
+tabblad **Statistieken *gebruikersnaam***. Om dit in te zien ga je naar: 
+- Kies voor 'Configuratie'. 
+- Kies voor 'Verbruik', in het tweede kolom. 
+
+
+
