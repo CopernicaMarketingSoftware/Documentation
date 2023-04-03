@@ -24,7 +24,7 @@ $api = new CopernicaRestAPI("your-access-token", 2);
 
 // data voor de methode
 $data = array(
-    'name'          =>  'mijn-test-database',
+    'name'          =>  'mijn_test_database',
     'description'   =>  'omschrijving van de database'
 );
 
