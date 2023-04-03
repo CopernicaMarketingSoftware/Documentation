@@ -2,7 +2,7 @@
 
 *Let op: het gebruik van coupons is enkel mogelijk in drag-and-drop-templates.*
 
-In externe webshops, zoals bijvoorbeeld Magento, heb je de mogelijkheid om coupons (kortingscodes) aan te maken. Wij hebben het mogelijk gemaakt om deze coupons eenvoudig te beheren in de [coupons-module](https://ms.copernica.com/#/coupons) en te gebruiken in je e-mailtemplates. Je kunt hiervoor meerdere couponcampagnes aanmaken binnen je account.
+Met de [couponsmodule](https://ms.copernica.com/#/coupons) kun je één of meerdere campagnes aanmaken waarin coupons (actiecodes) worden opgeslagen. Deze coupons kun je inladen in je e-mailtemplates via Smarty-personalisatie. Copernica zorgt ervoor dat elke ontvanger een unieke code ontvangt. Indien je e-commerceplatform de mogelijkheid ondersteunt om coupons aan te maken, kunnen de coupons gekoppeld worden aan een couponcampagne. 
 
 In dit artikel geven we uitleg over de werking van deze module.
 
@@ -89,7 +89,7 @@ Zodra een coupon gebruikt is in je webshop, kun je deze met de REST API registre
 
 Hiervoor gebruik je een PUT-request naar het volgende adres:
 
-`https://api-dev.copernica.com/v3/couponcampaign/24/coupons?access_token=xxx`
+`https://api.copernica.com/v3/couponcampaign/{$id}/coupons?access_token=xxx`
 
 In de body van je call geef je op welke coupon je als ingewisseld wilt registreren:
 ```
@@ -103,16 +103,4 @@ In de body van je call geef je op welke coupon je als ingewisseld wilt registrer
 }
 ```
 
-## Overige REST API-calls:
-De volgende REST API-calls zijn beschikbaar gemaakt:
-
-| Type | Adres                                                                                                 | Omschrijving                                      |
-|------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| GET  | [https://api.copernica.com/v3/couponcampaigns](./restv3/rest-get-couponcampaigns)                     | Opvragen van alle couponcampagnes                 |
-| POST | [https://api.copernica.com/v3/couponcampaigns](./restv3/rest-post-couponcampaigns)                    | Aanmaken van een couponcampagne                   |
-| PUT  | [https://api.copernica.com/v3/couponcampaign/$id](./restv3/rest-put-couponcampaign)                   | Bijwerken van een couponcampagne                   |
-| GET  | [https://api.copernica.com/v3/couponcampaign/$id](./restv3/rest-get-couponcampaign)                   | Opvragen van couponcampagne informatie            |
-| PUT  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./restv3/rest-put-couponcampaign-coupons)   | Aanmaken of bijwerken van een of meerdere coupons binnen een couponcampagne    |
-| GET  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./restv3/rest-get-couponcampaign-coupons)   | Opvragen van een of meerdere coupons binnen een couponcampagne    |
-
-Meer informatie vind je in onze [REST API](./restv3/rest-methods)-documentatie.
+De overige API-calls vind je in onze [REST API-documentatie](./restv3/rest-methods).
