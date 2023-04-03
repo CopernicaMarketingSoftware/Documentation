@@ -1,4 +1,3 @@
 Use this form to edit the name of a collection.
 
-A name can contain alphanumeric characters and underscores. It can contain
-spaces as well, but it can't start or begin with a space.
+A name can contain alphanumeric characters and underscores.
