@@ -166,7 +166,7 @@ Voer de volgende stappen uit, als je de optie 'Individuele toegangsrechten' voll
 
 Dit moet op database niveau worden ingericht:
 
-- Ga naar'Profielen'.
+- Ga naar 'Profielen'.
 - Klik op de betreffende database waar je toegang tot wilt geven.
 - Klik op de blauwe knop 'Configuratie'.
 - Kies voor 'Toegangsrechten' in de blauwe deel van het scherm.
