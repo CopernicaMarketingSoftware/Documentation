@@ -7,7 +7,7 @@ Met de [couponsmodule](https://ms.copernica.com/#/coupons) is het makkelijker ge
 Om gebruik te maken van de couponsmodule, zal je e-commerceplatform de mogelijkheid voor het uitgeven en inwisselen van coupons moeten ondersteunen. In dit artikel geven we uitleg over de werking van deze module.
 
 ## Couponcampagne aanmaken
-Als je gebruik maakt van meerdere acties tegelijk, bijvoorbeeld een verjaardagscampagne en een welkomstcampagne, wil je niet dat de coupons door elkaar staan. Hiervoor hebben wij gezorgd dat je meerdere couponcampagnes kunt aanmaken binnen je account. In een couponcampagne staan alle coupons die je voor die specifieke campagne wilt gebruiken. 
+Als je gebruik maakt van meerdere acties tegelijk, bijvoorbeeld een verjaardagscampagne en een welkomstcampagne, wil je niet dat de coupons door elkaar staan. We hebben ervoor gezorgd dat je meerdere couponcampagnes kunt aanmaken binnen je account. In een couponcampagne staan alle coupons die je voor die specifieke campagne wilt gebruiken. 
 
 Om een couponcampagne aan te maken kies je binnen de [coupons-module](https://ms.copernica.com/#/coupons) voor 'Aanmaken' in de zijbalk of de optie 'Nieuwe couponcampagne aanmaken'.
 
