@@ -1,7 +1,7 @@
 # Productupdate - Coupons versturen, interactie inzien met een klikmap en verbeterde beveiligingsmogelijkheden
 
 ## Nieuwe module: Unieke coupons versturen
-In Marketing Suite hebben we de [couponsmodule](https://ms.copernica.com/#/coupons) geïntroduceerd. Hiermee is het makkelijker gemaakt om mailings te versturen voorzien van unieke actiecodes (coupons). Zo kun je, bijvoorbeeld bij een verjaardagscampagne, alle jarigen een bepaalde korting of extra's aanbieden. De couponmodule zorgt ervoor dat elke ontvanger een unieke code krijgt. Hierdoor kun je achteraf precies zien welke ontvanger van je aanbieding gebruik heeft gemaakt. Om gebruik te maken van de couponsmodule, zal je e-commerceplatform de mogelijkheid voor het uitgeven en inwisselen van coupons moeten ondersteunen. 
+In Marketing Suite hebben we de [couponsmodule](https://ms.copernica.com/#/coupons) geïntroduceerd. Hiermee is het makkelijker gemaakt om mailings te versturen voorzien van unieke actiecodes (coupons). Zo kun je, bijvoorbeeld bij een verjaardagscampagne, alle jarigen een bepaalde korting of extra's aanbieden. De couponsmodule zorgt ervoor dat elke ontvanger een unieke code krijgt waardoor je achteraf precies kunt zien welke ontvanger van je aanbieding gebruik heeft gemaakt. Om gebruik te maken van de couponsmodule, zal je e-commerceplatform de mogelijkheid voor het uitgeven en inwisselen van coupons moeten ondersteunen. 
 
 Meer informatie over de werking vind je in ons [documentatie-artikel](https://www.copernica.com/nl/documentation/coupons) over deze module.
 
