@@ -1,13 +1,13 @@
 # Couponsmodule
 
-*Let op: het gebruik van coupons is enkel mogelijk in drag-and-drop-templates.*
+*Let op: het gebruik van de couponsmodule is enkel mogelijk in drag-and-drop-templates.*
 
-Met de [couponsmodule](https://ms.copernica.com/#/coupons) kun je één of meerdere campagnes aanmaken waarin je coupons (actiecodes) kunt toevoegen. Deze coupons kun je inladen in je e-mailtemplates via Smarty-personalisatie. Copernica zorgt ervoor dat elke ontvanger een unieke coupon ontvangt. Indien je e-commerceplatform de mogelijkheid ondersteunt om coupons aan te maken, kunnen de coupons gekoppeld worden aan een couponcampagne. 
+Met de [couponsmodule](https://ms.copernica.com/#/coupons) is het makkelijker gemaakt om coupons te gebruiken binnen je mailings. Coupons zijn actiecodes die bij het versturen van een e-mailing gekoppeld worden aan een ontvanger. Hierdoor krijgt iedere ontvanger een unieke actiecode te zien in de ontvangen mailing. Hiermee is het mogelijk om, bijvoorbeeld bij een verjaardagscampagne, alle jarigen een bepaalde korting te geven op je product. Om gebruik te maken van de couponsmodule, zal je e-commerceplatform de mogelijkheid voor het uitgeven en inwisselen van coupons moeten ondersteunen. 
 
 In dit artikel geven we uitleg over de werking van deze module.
 
-## Campagne aanmaken
-Voordat je de coupons kunt inladen moet je een campagne aanmaken. Dit is mogelijk binnen de [coupons-module](https://ms.copernica.com/#/coupons) onder de knop 'Aanmaken' in de zijbalk of via 'Nieuwe couponcampagne aanmaken' knop.
+## Couponcampagne
+Voordat je coupons kunt inladen moet je een campagne aanmaken.  Dit is mogelijk binnen de [coupons-module](https://ms.copernica.com/#/coupons) onder de knop 'Aanmaken' in de zijbalk of via 'Nieuwe couponcampagne aanmaken' knop.
 
 Naast het opgeven van een naam, bijvoorbeeld 'Zomerkorting', en (eventuele) beschrijving, kun je ook tags of fallback-code toevoegen aan je campagne:
 - **Tags**: Steekwoorden (tags) waarmee je aan kunt geven wat de campagne inhoudt. 
