@@ -1,9 +1,7 @@
 # Productupdate - Coupons versturen, interactie inzien met een klikmap en verbeterde beveiligingsmogelijkheden
 
 ## Nieuwe module: Unieke coupons versturen
-In Marketing Suite hebben we een nieuwe module toegevoegd: [Coupons](https://ms.copernica.com/#/coupons). 
-
-Met deze module is het mogelijk om unieke coupons (kortingscodes) te gebruiken in drag-and-drop-templates. Je kunt meerdere couponcampagnes aanmaken en per campagne een lijst met coupons importeren. Deze coupons kun je inladen in je e-mailtemplates via Smarty-personalisatie. Copernica zorgt ervoor dat elke ontvanger een unieke coupon ontvangt.
+In Marketing Suite hebben we de [couponsmodule](https://ms.copernica.com/#/coupons) geïntroduceerd. Hiermee is het makkelijker gemaakt om mailings te versturen voorzien van unieke actiecodes (coupons). Zo kun je, bijvoorbeeld bij een verjaardagscampagne, alle jarigen een bepaalde korting of extra's aanbieden. De couponmodule zorgt ervoor dat elke ontvanger een unieke code krijgt. Hierdoor kun je achteraf precies zien welke ontvanger van je aanbieding gebruik heeft gemaakt. Om gebruik te maken van de couponsmodule, zal je e-commerceplatform de mogelijkheid voor het uitgeven en inwisselen van coupons moeten ondersteunen. 
 
 Meer informatie over de werking vind je in ons [documentatie-artikel](https://www.copernica.com/nl/documentation/coupons) over deze module.
 
