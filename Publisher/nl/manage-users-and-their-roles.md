@@ -38,8 +38,8 @@ in de applicatie.
 ## Gebruiker toevoegen
 
 De beheerder van een account kan gebruikers toevoegen en verwijderen. Om
-een gebruiker toe te voegen, ga je naar *configuratie*. 
-- Kies voor 'Accountgebruikers' in het tweede kolom 'Account'.
+een gebruiker toe te voegen, ga je naar *Configuratie*. 
+- Kies voor de optie 'Accountgebruikers' in de kolom waar 'Account' boven staat.
 - Kies rechts boven voor 'Gebruiker toevoegen'.
 - Kies voor de knop 'Gebruiker zoeken aan de hand van het e-mailadres'.
 - Vul het e-mailadres in van de gebruiker die je wilt toevoegen.
@@ -49,7 +49,7 @@ een gebruiker toe te voegen, ga je naar *configuratie*.
 
 Geef aan of deze gebruiker direct beheerdersrechten moet krijgen (dit kan uiteraard
 ook later nog worden ingesteld). Dit doe je door op de gebruiker te klikken.
-Nu kan je aan de gebruiker beheerders rechten of de rechten van een huisstijlbewaker toe kennen.
+Hier kun je de juiste rechten aan de gebruiker toekennen.
 
 Als de gebruiker ook al actief is binnen andere accounts, vraag dan aan
 deze persoon met welk e-mailadres hij of zij geregistreerd is bij
@@ -66,9 +66,12 @@ Je ziet hier dus alleen gebruikers die je (waarschijnlijk) al kent.*
 Om toegang te krijgen tot de SOAP- en REST API-koppeling van Copernica, heb je een API-token nodig. 
 
 - Ga naar 'Configuratie'.
-- Kies voor 'API access-tokens' in het tweede kolom 'Account'.
+- Kies voor 'API access-tokens' in de 'Account' kolom.
 - Kies voor 'Access-token aanmaken'. 
-- Kies bij het aanmaken van de token voor de optie 'REST-API', 'SOAP API' of 'SOAP- en REST-API'.
+- Bij het aanmaken kun je aangeven voor welke API-versie je de token wilt gebruiken:
+    - REST API
+    - SOAP API
+    - SOAP- en REST-API
 
 ![Afbeelding](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2354019%5D-documentation%5D-update-documentation-adding-account-users/Publisher/images/nl/users4.png)
 
@@ -130,15 +133,11 @@ wijzigen, verwijderen, aanmaken, et cetera. 
 Een huisstijlbewaker kan dus geen ‘echte’ beheerderstaken uitvoeren,
 zoals het verwijderen en toevoegen van gebruikers.
 
-### Gebruiker heeft toegang tot de API
-
-Elke gebruiker kan gebruik maken van de SOAP- en REST API-koppeling van Copernica.
-
 ### Gebruiker heeft toegang tot de gebruikersinterface
 
-Dit is een normale eindgebruiker van de software. Per publicatie moet
+Dit is een normale eindgebruiker van de software. Per onderdeel in de software moet 
 (door de beheerder of huisstijlbewaker) worden aangegeven of hij of zij
-deze mag bewerken via *Toegangsrechten* in configuratie van het
+deze mag bewerken. Dit kan via *Toegangsrechten* in configuratie van de database of het
 template. 
 
 ### Individuele toegangsrechten per account
@@ -155,7 +154,7 @@ Een beheerder kan individuele rechten toekennen:
 
 Voer de volgende stappen uit, als je de optie 'Individuele toegangsrechten' volledig uit wil schakelen:
 
-- Ga naar 'configuratie'.
+- Ga naar 'Configuratie'.
 - Kies voor 'Accountgebruikers' in het tweede kolom 'Account'.
 - Vink de optie 'Individuele toegangsrechten (toegangsrechten zijn per gebruiker in te stellen)' uit. 
 - Sla dit op.
@@ -164,12 +163,12 @@ Voer de volgende stappen uit, als je de optie 'Individuele toegangsrechten' voll
 
 **2. Individuele rechten behouden**
 
-Dit moet op database niveau worden ingericht:
+Dit moet op databaseniveau worden ingericht:
 
 - Ga naar 'Profielen'.
-- Klik op de betreffende database waar je toegang tot wilt geven.
+- Klik op de betreffende database waar je toegang toe wilt geven.
 - Klik op de blauwe knop 'Configuratie'.
-- Kies voor 'Toegangsrechten' in de blauwe deel van het scherm.
+- Kies voor 'Toegangsrechten' in het blauwe deel van het scherm.
 - Vink aan welke toegangsrechten je wilt toewijzen.
 
 ![Afbeelding](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2354019%5D-documentation%5D-update-documentation-adding-account-users/Publisher/images/nl/users6.png)
@@ -196,11 +195,11 @@ verschillende wijzen:
 
 Van iedere gebruiker wordt bijgehouden hoeveel e-mailberichten,
 sms-berichten, API-calls et cetera hij of zij heeft verstuurd /
-gebruikt. Deze gegevens blijven bewaard en zijn inzichtelijk vanuit het
-tabblad **Statistieken *gebruikersnaam***. 
+gebruikt. 
+
 Om dit in te zien:
 - Ga je naar 'Configuratie'. 
-- Kies voor 'Verbruik', in het tweede kolom 'Account'. 
+- Kies voor 'Verbruik', in de 'Account' kolom.
 
 ![Afbeelding](https://github.com/CopernicaMarketingSoftware/Documentation/blob/%2354019%5D-documentation%5D-update-documentation-adding-account-users/Publisher/images/nl/users8.png) 
 
