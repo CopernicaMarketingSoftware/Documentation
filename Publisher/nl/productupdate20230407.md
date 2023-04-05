@@ -13,7 +13,7 @@ Wanneer je gebruik maakt van dezelfde URL's op verschillende plekken in je templ
 ## Verbeterde beveiligingsmogelijkheden voor je data
 In je Copernica-account staat veel data. In de afgelopen periode hebben wij functionaliteiten toegevoegd om je data optimaal te beveiligen. 
 
-Als je gebruik maakt van webhooks of het inladen van externe content (loadfeed- en fetch-tag) kun je nu gebruik maken van onze digitale handtekening om te verifiëren dat de aanvraag van onze servers en specifiek vanuit je eigen account komt. Daarnaast is het mogelijk gemaakt om SFTP-imports en -exports op te starten met een eigen geheime sleutel (private key). 
+Als je gebruik maakt van webhooks of het inladen van externe content (loadfeed- en fetch-tag) kun je nu controleren of de HTTP-calls die wij naar jouw server sturen wel echt van ons afkomstig zijn. Al onze calls zijn namelijk voorzien van een digitale handtekening in de HTTP-headers. Daarnaast is het mogelijk gemaakt om SFTP-imports en -exports op te starten met een eigen geheime sleutel (private key). 
 
 In ons artikel over [dataveiligheid](https://www.copernica.com/nl/documentation/datasecurity) leggen we per onderdeel uit wat je kunt doen om je data zo veilig mogelijk te houden.
 
