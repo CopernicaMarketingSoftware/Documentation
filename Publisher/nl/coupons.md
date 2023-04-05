@@ -79,7 +79,7 @@ Voorbeeld:
 ### Wanneer moet een coupon geregistreerd worden als 'verzonden'? 
 Bij het testen van een e-mail waarin je gebruik maakt van coupons, wil je in de meeste gevallen niet dat de ontvangen coupon als 'verzonden' wordt geregistreerd.
 
-In de module, onder 'Configuratie -> Instellingen', heb je de mogelijkheid om aan te geven wanneer je wilt dat een coupon als 'verzonden' wordt geregistreerd. 
+Via 'Configuratie -> Instellingen', heb je de mogelijkheid om aan te geven wanneer je wilt dat een coupon als 'verzonden' wordt geregistreerd. 
 
 De beschikbare opties zijn:
 - Coupon nooit registreren als verzonden
