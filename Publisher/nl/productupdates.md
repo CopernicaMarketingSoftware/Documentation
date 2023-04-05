@@ -1,4 +1,5 @@
 # Productupdates
+* [Productupdate 07-04-2023 - Coupons versturen, interactie inzien met een klikmap en verbeterde beveiligingsmogelijkheden](./productupdate20230407)
 * [Productupdate 08-02-2023 - Delen van statistieken](./productupdate20230208)
 * [Productupdate 03-11-2022 - Onderhoud aan onze infrastructuur en modules maken voor HTML-templates](./productupdate20221103)
 * [Productupdate 10-08-2022 - A/B-tests en split-runs in Marketing Suite](./productupdate20220725)
