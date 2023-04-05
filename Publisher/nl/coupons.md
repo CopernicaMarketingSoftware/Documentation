@@ -2,7 +2,7 @@
 
 *Let op: het gebruik van de couponsmodule is enkel mogelijk in drag-and-drop-templates.*
 
-Met de [couponsmodule](https://ms.copernica.com/#/coupons) is het makkelijker gemaakt om mailings te versturen voorzien van unieke actiecodes (coupons). Hierdoor is het mogelijk om, bijvoorbeeld bij een verjaardagscampagne, alle jarigen een bepaalde korting of extra's aan te bieden. De couponsmodule zorgt ervoor dat elke ontvanger een unieke code krijgt waardoor je achteraf precies kunt zien welke ontvanger van je aanbieding gebruik heeft gemaakt. 
+Met de [couponsmodule](https://ms.copernica.com/#/coupons) kun je mailings versturen voorzien van unieke actiecodes (coupons). Hierdoor is het mogelijk om, bijvoorbeeld bij een verjaardagscampagne, alle jarigen een bepaalde korting of extra's aan te bieden. De couponsmodule zorgt ervoor dat elke ontvanger een unieke code krijgt waardoor je achteraf precies kunt zien welke ontvanger van je aanbieding gebruik heeft gemaakt. 
 
 Om gebruik te maken van de couponsmodule, zal je e-commerceplatform de mogelijkheid voor het uitgeven en inwisselen van coupons moeten ondersteunen. In dit artikel geven we uitleg over de werking van deze module.
 
