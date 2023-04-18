@@ -41,9 +41,7 @@ A single error might look something like this:
    "errorcode":"0",
    "description":"No valid from address is set",
    "errortype":"",
-   "destination":"764416",
-   "profile":null,
-   "subprofile":null
+   "destination":"764416"
 }
 ```
 
