@@ -35,9 +35,7 @@ A single delivery might look something like this:
    "mailing":"33",
    "timestamp":"2014-11-06 13:43:17",
    "attempts":1,
-   "destination":"312",
-   "profile":null,
-   "subprofile":null
+   "destination":"312"
 }
 ```
 
