@@ -40,8 +40,6 @@ Een enkele abuse ziet er bijvoorbeeld zo uit:
 
    },
    "destination":"1264524",
-   "profile":null,
-   "subprofile":null
 }
 ```
 
