@@ -37,9 +37,7 @@ A single abuse might look something like this:
    "report":{  
 
    },
-   "destination":"1264524",
-   "profile":null,
-   "subprofile":null
+   "destination":"1264524"
 }
 ```
 
