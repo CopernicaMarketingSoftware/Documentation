@@ -39,9 +39,7 @@ A single impression might look something like this:
    "ip":"2a03:e280:0:1::1",
    "useragent":"Mozilla\/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko\/20100101 Firefox\/8.0",
    "device":"desktop",
-   "destination":"112",
-   "profile":13453,
-   "subprofile":null
+   "destination":"112"
 }
 ```
 
