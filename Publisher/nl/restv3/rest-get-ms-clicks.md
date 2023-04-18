@@ -33,8 +33,6 @@ is de volgende informatie beschikbaar:
 * **ip**: De IP waar de click vandaan kwam.
 * **user-agent**: User agent string van de machine waar de click vandaan kwam.
 * **destination**: De ID van de destination die de link klikte.
-* **profile**: De ID van het profiel die de link klikte.
-* **subprofile**: De ID van het subprofiel die de link klikte.
 
 ### JSON voorbeeld
 
