@@ -26,8 +26,6 @@ veld. Voor elke delivery is de volgende informatie beschikbaar:
 * **timestamp**: Tijdstempel van de delivery.
 * **attempts**: Aantal pogingen voor de delivery.
 * **destination**: De ID van de destination voor de delivery.
-* **profile**: De ID van het profiel voor de delivery.
-* **subprofile**: De ID van het subprofiel voor de delivery.
 
 ### JSON voorbeeld
 
@@ -39,9 +37,7 @@ Een enkele delivery ziet er bijvoorbeeld zo uit:
    "mailing":"33",
    "timestamp":"2014-11-06 13:43:17",
    "attempts":1,
-   "destination":"312",
-   "profile":null,
-   "subprofile":null
+   "destination":"312"
 }
 ```
 

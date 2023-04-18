@@ -26,8 +26,6 @@ is de volgende informatie beschikbaar:
 * **timestamp**: Tijdstempel van de abuse.
 * **report**: Rapportage over de abuse.
 * **destination**: De ID van de destination die de abuse rapporteerde.
-* **profile**: De ID van het profiel die de abuse rapporteerde.
-* **subprofile**: De ID van het subprofiel die de abuse rapporteerde.
 
 ### JSON voorbeeld
 
@@ -42,8 +40,6 @@ Een enkele abuse ziet er bijvoorbeeld zo uit:
 
    },
    "destination":"1264524",
-   "profile":null,
-   "subprofile":null
 }
 ```
 

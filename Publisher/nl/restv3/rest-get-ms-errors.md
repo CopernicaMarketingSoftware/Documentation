@@ -29,8 +29,6 @@ Voor elke error is de volgende informatie beschikbaar:
 * **description**: Beschrijving van de error.
 * **errortype**: Het type error dat herkend is.
 * **destination**: De ID van de destination die de error veroorzaakte.
-* **profile**: De ID van het profiel die de error veroorzaakte.
-* **subprofile**: De ID van het subprofiel die de error veroorzaakte.
 
 ### JSON voorbeeld
 
@@ -45,9 +43,7 @@ Een enkele error ziet er bijvoorbeeld zo uit:
    "errorcode":"0",
    "description":"No valid from address is set",
    "errortype":"",
-   "destination":"764416",
-   "profile":null,
-   "subprofile":null
+   "destination":"764416"
 }
 ```
 

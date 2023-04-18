@@ -27,8 +27,6 @@ property. For each error the following information is available:
 * **description**: A description of the error.
 * **errortype**: The type of error this was recognized as.
 * **destination**: The ID of the destination that caused an error.
-* **profile**: The ID of the profile that caused an error.
-* **subprofile**: The ID of the subprofile that caused an error.
 
 ### JSON example
 
@@ -43,9 +41,7 @@ A single error might look something like this:
    "errorcode":"0",
    "description":"No valid from address is set",
    "errortype":"",
-   "destination":"764416",
-   "profile":null,
-   "subprofile":null
+   "destination":"764416"
 }
 ```
 

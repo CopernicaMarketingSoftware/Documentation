@@ -24,8 +24,6 @@ For each abuse the following information is available:
 * **timestamp**: Timestamp of the abuse.
 * **report**: The abuse report.
 * **destination**: The ID of the destination that reported the abuse.
-* **profile**: The ID of the profile that reported the abuse.
-* **subprofile**: The ID of the subprofile that reported the abuse.
 
 ### JSON example
 
@@ -39,9 +37,7 @@ A single abuse might look something like this:
    "report":{  
 
    },
-   "destination":"1264524",
-   "profile":null,
-   "subprofile":null
+   "destination":"1264524"
 }
 ```
 

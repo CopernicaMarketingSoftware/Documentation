@@ -30,8 +30,6 @@ For each click the following fields is available:
 * **ip**: The IP where the click occurred from.
 * **useragent**: User agent string of the machine used to click.
 * **destination**: The ID of the destination that clicked the link.
-* **profile**: The ID of the profile that clicked the link.
-* **subprofile**: The ID of the subprofile that clicked the link.
 
 ### JSON example
 
@@ -45,9 +43,7 @@ A single click might look something like this:
    "timestamp":"2014-10-14 11:33:22",
    "ip":"2a03:e280:0:1::1",
    "useragent":"Mozilla\/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko\/20100101 Firefox\/8.0",
-   "destination":"1",
-   "profile":null,
-   "subprofile":null
+   "destination":"1"
 }
 ```
 
