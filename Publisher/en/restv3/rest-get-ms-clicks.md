@@ -30,8 +30,6 @@ For each click the following fields is available:
 * **ip**: The IP where the click occurred from.
 * **useragent**: User agent string of the machine used to click.
 * **destination**: The ID of the destination that clicked the link.
-* **profile**: The ID of the profile that clicked the link.
-* **subprofile**: The ID of the subprofile that clicked the link.
 
 ### JSON example
 
