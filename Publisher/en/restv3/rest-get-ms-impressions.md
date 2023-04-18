@@ -26,8 +26,6 @@ the following information is available:
 * **useragent**: User agent string of the machine the impression occurred from.
 * **device**: The type of device the impression came from ('desktop','tablet','mobile','unknown').
 * **destination**: The ID of the destination that caused an impression.
-* **profile**: The ID of the profile that caused an impression.
-* **subprofile**: The ID of the subprofile that caused an impression.
 
 ### JSON example
 
