@@ -29,8 +29,6 @@ Voor elke error is de volgende informatie beschikbaar:
 * **description**: Beschrijving van de error.
 * **errortype**: Het type error dat herkend is.
 * **destination**: De ID van de destination die de error veroorzaakte.
-* **profile**: De ID van het profiel die de error veroorzaakte.
-* **subprofile**: De ID van het subprofiel die de error veroorzaakte.
 
 ### JSON voorbeeld
 
