@@ -43,9 +43,7 @@ Een enkele error ziet er bijvoorbeeld zo uit:
    "errorcode":"0",
    "description":"No valid from address is set",
    "errortype":"",
-   "destination":"764416",
-   "profile":null,
-   "subprofile":null
+   "destination":"764416"
 }
 ```
 
