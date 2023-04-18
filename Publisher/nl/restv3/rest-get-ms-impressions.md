@@ -31,8 +31,6 @@ Voor elke impression is de volgende informatie beschikbaar:
 * **useragent**: User agent string van de machine waar de impression vandaan kwam.
 * **device**: Type apparaat waar de klik vandaan kwam ('desktop','tablet','mobile','unknown').
 * **destination**: De ID van de destination die de impression veroorzaakte.
-* **profile**: De ID van het profiel die de impression veroorzaakte.
-* **subprofile**: De ID van het subprofiel die de impression veroorzaakte.
 
 ### JSON voorbeeld
 
@@ -47,8 +45,6 @@ Een enkele impression ziet er bijvoorbeeld zo uit.
    "useragent":"Mozilla\/5.0 (Ubuntu; X11; Linux x86_64; rv:8.0) Gecko\/20100101 Firefox\/8.0",
    "device":"desktop",
    "destination":"112",
-   "profile":13453,
-   "subprofile":null
 }
 ```
 
