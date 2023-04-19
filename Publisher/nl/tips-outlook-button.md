@@ -1,4 +1,4 @@
-# Tips om buttons in Outlook goed weer te geven (Tips & Tricks)
+# Tips om buttons in Outlook goed weer te geven
 
 Outlook is vergeleken met andere e-mailclients een zeer specifieke service:
 - Het ondersteunt geen mediaquery's; 
@@ -28,7 +28,7 @@ Hoe schakel ik de knop 'Ondersteuning voor Outlook' in?
 - Kies voor de optie 'Knoppen'.
 - Zet de knop 'Ondersteuning voor Outlook' aan.
 
-![Afbeelding 1](https://github.com/Quancode/Documentation/blob/master/Publisher/images/gitbuttonnieuw2.png)
+![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/gitbuttonnieuw2.png)
 
 ## Tip 2: Problemen met de hoogte en breedte van de knoppen
 
@@ -39,9 +39,7 @@ Hoe zorg je ervoor dat de tekst weer zichtbaar is in de button?
 - Stel een kleinere tekstgrootte in op de knop in de **VML-opmerkingen** om deze weer te geven in Outlook.
 - Wanneer de breedte van de knop is verminderd in vergelijking met de weergave van de knop in de editor. Voeg dan opvulling via het menu toe.
 
-![Afbeelding]
-
-![Afbeelding]
+![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/button2nieuw.png)
 
 ## Tip 2: De gemarkeerde knopkleur en hover functies werken niet
 
@@ -50,10 +48,9 @@ Bij het instellen van "Kleur knop" en "Gemarkeerde knopkleur" binnen het knoppen
 De hover-effect is mogelijk op die e-mailclients die de @media-query's herkennen. Outlook ondersteunt de @media-query's niet. Dit effect werkt daarom niet in Outlook. 
 
 
-## Tip 2: De lettergrootte van een knop wordt aangepast op het moment dat de lettergrootte groter dan 28 pixels wordt ingesteld
+## Tip 2: De lettergrootte van een knop wordt aangepast
 
-Het de letterhoogte van de knop kan worden gewijzigd wanneer deze bijvoorbeeld groter
-Als de letterhoogte van een knop wordt ingesteld op bijvoorbeeld 28 pixels, dan wordt de lettergrootte in de MSO-tag aangepast naar 17 pixels.
+De letterhoogte van een knop kan worden gewijzigd wanneer deze groter is dan 28 pixels. Als de letterhoogte van een knop wordt ingesteld op bijvoorbeeld 28 pixels, dan wordt de lettergrootte in de MSO-tag aangepast naar 17 pixels. Dit heeft als gevolg dat de tekst in de button buiten de button uit komt. 
 
-Dit is met opzet gedaan volgens de specifieke formule die we hebben bedacht tijdens het werken aan deze functie. Zie je, de aangepaste lettertypen (ook wel weblettertypen genoemd), evenals niet-standaard lettertypen, worden niet ondersteund door Outlook, dus de fallback-lettertypen worden in plaats daarvan toegepast. Als dezelfde lettergrootte wordt toegepast voor het fallback-lettertype, kan de hoogte van de knop veel hoger zijn dan voor het webversie van de e-mailsjabloon. Veel klanten beweren dat de hoogte van de knop in Outlook hetzelfde blijft als in de webversie, dus om het resultaat te bereiken verkleinen we de lettergrootte van de knop voor de VML-code (die alleen wordt toegepast voor Outlook).
+Stripo heeft deze functie intesteld omdat de aangepaste lettertypen (ook wel weblettertypen genoemd), evenals niet-standaard lettertypen,  niet ondersteund door Outlook worden ondersteund. Hierdoor wordt een fallback-lettertype toegepast. Als dezelfde lettergrootte wordt toegepast voor het fallback-lettertype, kan de hoogte van de knop veel hoger zijn dan voor het webversie van de e-mailsjabloon. Veel klanten beweren dat de hoogte van de knop in Outlook hetzelfde blijft als in de webversie, dus om het resultaat te bereiken verkleinen we de lettergrootte van de knop voor de VML-code (die alleen wordt toegepast voor Outlook).
 
