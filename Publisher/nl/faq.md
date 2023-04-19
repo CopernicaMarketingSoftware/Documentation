@@ -13,4 +13,4 @@ Hieronder vind je enkele veel voorkomende vragen:
 * [Foutmeldingen bij het instellen van een content webformulier](./webform-errors)
 * [Webformulier aanmaken en op een website plaatsen](./create-and-publish-a-webform)
 * [Hoe kan ik e-mail voorkeuren bijhouden?](./email-preferences)
-* 
+
