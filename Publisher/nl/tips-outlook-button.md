@@ -1,4 +1,4 @@
-# Buttons in Outlook zonder errors weergeven (Tips & Tricks)
+# Tips om buttons in Outlook goed weer te geven (Tips & Tricks)
 
 Outlook is vergeleken met andere e-mailclients een zeer specifieke service:
 - Het ondersteunt geen mediaquery's; 
@@ -28,7 +28,7 @@ Hoe schakel ik de knop 'Ondersteuning voor Outlook' in?
 - Kies voor de optie 'Knoppen'.
 - Zet de knop 'Ondersteuning voor Outlook' aan.
 
-![Afbeelding] 1
+![Afbeelding 1](https://github.com/Quancode/Documentation/blob/master/Publisher/images/gitbuttonnieuw2.png)
 
 ## Tip 2: Problemen met de hoogte en breedte van de knoppen
 
@@ -39,9 +39,9 @@ Hoe zorg je ervoor dat de tekst weer zichtbaar is in de button?
 - Stel een kleinere tekstgrootte in op de knop in de **VML-opmerkingen** om deze weer te geven in Outlook.
 - Wanneer de breedte van de knop is verminderd in vergelijking met de weergave van de knop in de editor. Voeg dan opvulling via het menu toe.
 
-![Afbeelding] 2
+![Afbeelding]
 
-![Afbeelding] 3
+![Afbeelding]
 
 ## Tip 2: De gemarkeerde knopkleur en hover functies werken niet
 
