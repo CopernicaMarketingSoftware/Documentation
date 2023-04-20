@@ -47,12 +47,12 @@ you can fetch the hyperlink extensions:
          "last": false,
          "unique": false,
          "checks": [
-        {
+         {
              "type": "domain",
              "value": "copernica.com",
              "comparison": "contains"
-        }
-    ]
+         }]
+    }
 }
 ```
 
