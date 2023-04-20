@@ -56,8 +56,8 @@ De JSON ziet er bijvoorbeeld zo uit:
              "type": "domain",
              "value": "copernica.com",
              "comparison": "contains"
-        }
-    ]
+        }]
+    }]
 }
 ```
 
