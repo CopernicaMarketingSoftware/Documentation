@@ -14,12 +14,13 @@ Om ervoor te zorgen dat je mails ook in Outlook de juiste styling weergeven, heb
 
 De configuratie van je Outlook-versie kan ervoor zorgen dat de styling niet correct wordt weergegeven. De versie van je Outlook, en of dit een desktop versie is, speelt dus ook een grote rol. 
 
-Mocht je tegen een error aanlopen, of mocht de styling in je ontvangen mail afwijken, bekijk dan of de styling, door de Outlook-versie die je gebruikt, wordt ondersteund. 
+Mocht je tegen een error aanlopen, of mocht de styling in je ontvangen mail afwijken, bekijk dan of de styling door de Outlook-versie die je gebruikt, wordt ondersteund. 
 
 ## Tip 1: Altijd de button, 'Ondersteuning voor Outlook' in de editor, aan
 
-De knop zorgt voor de meest nauwkeurige weergave van je knoppen in Outlook-e-mailclients, en wordt by default ingeschakeld. Wanneer de optie is geactiveerd in de 'Uiterlijk' van de editor, voegt de editor de bepaalde stijl aan de CSS code toe. Dit zorgt ervoor de 
-```.msohide { mso-hide: all;} ``` toe aan het CSS-bestand. De MSO opmerkingen zorgen ervoor dat jouw mail tussen versies correct wordt weergegeven. Deze knop is in de uiterlijk van het template in de E-mail-Editor terug te vinden, onder 'Knoppen'. 
+De knop zorgt voor de meest nauwkeurige weergave van je knoppen in Outlook-e-mailclients, en wordt by default ingeschakeld. Wanneer de optie is geactiveerd in de 'Uiterlijk' van de editor, voegt de editor de bepaalde stijl aan de CSS code toe. 
+Dit zorgt ervoor de  ```.msohide { mso-hide: all;} ``` in het CSS-bestand. 
+De MSO opmerkingen zorgen ervoor dat jouw mail tussen versies correct wordt weergegeven.
 
 Hoe schakel ik de knop 'Ondersteuning voor Outlook' in?
 - Ga naar de E-mail-editor.
@@ -43,14 +44,13 @@ Hoe zorg je ervoor dat de tekst weer zichtbaar is in de button?
 
 ## Tip 2: De gemarkeerde knopkleur en hover functies werken niet
 
-Bij het instellen van "Kleur knop" en "Gemarkeerde knopkleur" binnen het knoppenblok, werkt het in de sjabloon en in het voorbeeld. Bij het verzenden naar een Outlook e-mailadres lijkt de gemarkeerde kleur echter niet te werken, ook de hover-functie werkt niet. Wanneer je deze instelt, zal deze in Outlook niet werken. 
+Bij het instellen van "Kleur knop" en "Gemarkeerde knopkleur" binnen het knoppenblok, is de functie wel in het template en in de voorvertoning zichtbaar. Bij het verzenden van het template naar een Outlook e-mailadres werken deze functies echter niet, ook de hover-functie werkt niet. 
 
-De hover-effect is mogelijk op die e-mailclients die de @media-query's herkennen. Outlook ondersteunt de @media-query's niet. Dit effect werkt daarom niet in Outlook. 
-
+De hover-effect is mogelijk op die e-mailclients die de @media-query's herkennen. Outlook ondersteunt de @media-query's niet. 
 
 ## Tip 2: De lettergrootte van een knop wordt aangepast
 
 De letterhoogte van een knop kan worden gewijzigd wanneer deze groter is dan 28 pixels. Als de letterhoogte van een knop wordt ingesteld op bijvoorbeeld 28 pixels, dan wordt de lettergrootte in de MSO-tag aangepast naar 17 pixels. Dit heeft als gevolg dat de tekst in de button buiten de button uit komt. 
 
-Stripo heeft deze functie intesteld omdat de aangepaste lettertypen (ook wel weblettertypen genoemd), evenals niet-standaard lettertypen,  niet ondersteund door Outlook worden ondersteund. Hierdoor wordt een fallback-lettertype toegepast. Als dezelfde lettergrootte wordt toegepast voor het fallback-lettertype, kan de hoogte van de knop veel hoger zijn dan voor het webversie van de e-mailsjabloon. Veel klanten beweren dat de hoogte van de knop in Outlook hetzelfde blijft als in de webversie, dus om het resultaat te bereiken verkleinen we de lettergrootte van de knop voor de VML-code (die alleen wordt toegepast voor Outlook).
+Stripo heeft deze functie intesteld omdat de aangepaste lettertypen (ook wel weblettertypen genoemd), evenals niet-standaard lettertypen,  niet door Outlook worden ondersteund. Hierdoor wordt een fallback-lettertype toegepast. Als dezelfde lettergrootte wordt toegepast voor het fallback-lettertype, kan de hoogte van de knop veel hoger zijn dan voor het webversie van het template. Stripo geeft aan dat klanten aangeven dat de hoogte van de knop in Outlook hetzelfde blijft als in de webversie. Om deze reden verkleint Stripo weer de lettergrootte van de knop voor de VML-code (dit wordt dus alleen toegepast voor Outlook).
 
