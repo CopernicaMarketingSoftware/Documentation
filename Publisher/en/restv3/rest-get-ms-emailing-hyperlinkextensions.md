@@ -52,7 +52,7 @@ you can fetch the hyperlink extensions:
              "value": "copernica.com",
              "comparison": "contains"
          }]
-    }
+    }]
 }
 ```
 
