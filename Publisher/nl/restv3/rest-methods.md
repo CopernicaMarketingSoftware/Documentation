@@ -223,6 +223,7 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v3/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Opvragen van de testgroepen voor een mailing        
 | GET    | [api.copernica.com/v3/publisher/emailing/$id/finalgroup](./rest-get-publisher-emailing-finalgroup)       | Opvragen van de definitieve groep voor een mailing     
 | PUT    | [api.copernica.com/v3/publisher/emailing/$id/unsubscribe](./rest-put-publisher-emailing-unsubscribe)     | (Sub)profiel uitschrijven op basis van een mailing   
+| GET    | [api.copernica.com/v3/publisher/emailing/$id/hyperlinkextensions](./rest-get-publisher-emailing-hyperlinkextensions)       | Opvragen van alle hyperlink extensions voor een mailing   
 | GET    | [api.copernica.com/v3/publisher/testgroup/$id/statistics](./rest-get-publisher-testgroup-statistics)     | Opvragen van de statistieken van een testgroep     |
 | GET    | [api.copernica.com/v3/publisher/message/$id](./rest-get-publisher-message)                               | Opvragen van bericht informatie                           |
 | GET    | [api.copernica.com/v3/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)           | Opvragen van alle Publisher mailings voor een profiel     |
@@ -321,6 +322,7 @@ templates en mailings.
 | GET    | [api.copernica.com/v3/ms/emailing/$id/unsubscribes](./rest-get-ms-emailing-unsubscribes)     | Opvragen van alle uitschrijvingen voor een emailing              |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Opvragen van alle abuses voor een emailing                        |
 | PUT    | [api.copernica.com/v3/ms/emailing/$id/unsubscribe](./rest-put-ms-emailing-unsubscribe)       | (Sub)profiel uitschrijven op basis van een mailing       
+| GET    | [api.copernica.com/v3/ms/emailing/$id/hyperlinkextensions](./rest-get-ms-emailing-hyperlinkextensions)                 | Opvragen van alle hyperlink extensions voor een emailing                        |
 | GET    | [api.copernica.com/v3/profile/$id/ms/emailings](./rest-get-profile-ms-emailings)             | Opvragen van alle Marketing Suite mailings voor een profiel       |
 | GET    | [api.copernica.com/v3/subprofile/$id/ms/emailings](./rest-get-subprofile-ms-emailings)       | Opvragen van alle Marketing Suite mailings voor een subprofiel    |
 

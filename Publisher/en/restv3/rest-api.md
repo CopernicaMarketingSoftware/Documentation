@@ -263,6 +263,7 @@ templates and mailings.
 | GET    | [api.copernica.com/v3/publisher/emailing/$id/testgroups](./rest-get-publisher-emailing-testgroups)       | Fetch the testgroups for a mailing            |
 | GET    | [api.copernica.com/v3/publisher/emailing/$id/finalgroup](./rest-get-publisher-emailing-finalgroup)       | Fetch the finalgroup for a mailing            |
 | PUT    | [api.copernica.com/v2/publisher/emailing/$id/unsubscribe](./rest-put-publisher-emailing-unsubscribe)     | Unsubscribe (sub)profile based on a mailing            |
+| GET    | [api.copernica.com/v3/publisher/emailing/$id/hyperlinkextensions](./rest-get-publisher-emailing-hyperlinkextensions)       | Fetch the hyperlinkextensions for a mailing            |
 | GET    | [api.copernica.com/v3/publisher/message/$id](./rest-get-publisher-message)                               | Fetch the message information                 |
 | GET    | [api.copernica.com/v3/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)           | Fetch all Publisher mailings for a profile    |
 | GET    | [api.copernica.com/v3/subprofile/$id/publisher/emailings](./rest-get-subprofile-publisher-emailings)     | Fetch all Publisher mailings for a subprofile |
@@ -346,6 +347,7 @@ and emailings.
 | GET    | [api.copernica.com/v3/ms/emailing/$id/unsubscribes](./rest-get-ms-emailing-unsubscribes)     | Fetch all unsubscribes for a mailing                  |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/abuses](./rest-get-ms-emailing-abuses)                 | Fetch all abuses for a mailing                        |
 | PUT    | [api.copernica.com/v2/ms/emailing/$id/unsubscribe](./rest-put-ms-emailing-unsubscribe)       | Unsubscribe (sub)profile based on a mailing           |
+| GET    | [api.copernica.com/v3/ms/emailing/$id/hyperlinkextensions](./rest-get-ms-emailing-hyperlinkextensions)       | Fetch the hyperlinkextensions for a mailing            |
 | GET    | [api.copernica.com/v3/profile/$id/ms/emailings](./rest-get-profile-ms-emailings)             | Fetch all Marketing Suite mailings for a profile      |
 | GET    | [api.copernica.com/v3/subprofile/$id/ms/emailings](./rest-get-subprofile-ms-emailings)       | Fetch all Marketing Suite mailings for a subprofile   |
 
