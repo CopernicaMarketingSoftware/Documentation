@@ -7,19 +7,19 @@ Outlook is vergeleken met andere e-mailclients een zeer specifieke service:
 
 Dit alles maakt het zeer lastig om op de gebruikelijke stylingswijze een mooie button in je mail te krijgen. 
 
-Om ervoor te zorgen dat je mails ook in Outlook de juiste styling weergeven, hebben we een aantal stylingtips voor jullie op een rij gezet.
+Om ervoor te zorgen dat je mails ook in Outlook de juiste styling weergeven, hebben we een aantal stylingtips voor je op een rij gezet.
 
 
 ## Outlook-versie
 
 De configuratie van je Outlook-versie kan ervoor zorgen dat de styling niet correct wordt weergegeven. De versie van je Outlook, en of dit een desktop versie is, speelt dus ook een grote rol. 
 
-Mocht je tegen een error aanlopen, of mocht de styling in je ontvangen mail afwijken, zoek dan op of de styling door de Outlook-versie die je gebruikt wordt ondersteund. Op het internet kan je informatie hierover terug vinden.
+Mocht je tegen een error aanlopen, of mocht de styling in je ontvangen mail afwijken, bekijk dan of de styling, door de Outlook-versie die je gebruikt, wordt ondersteund. 
 
 ## Tip 1: Altijd de button, 'Ondersteuning voor Outlook' in de editor, aan
 
-Deze knop is in de uiterlijk van het template in de E-mail-Editor terug te vinden, onder 'Knoppen'. De knop zorgt voor de meest nauwkeurige weergave van je knoppen in Outlook-e-mailclients, en wordt by default ingeschakeld. Wanneer de optie is geactiveerd in de 'Uiterlijk' van de editor, voegt de editor de bepaalde stijl aan de CSS code toe. Dit zorgt ervoor de 
-```.msohide { mso-hide: all;} ``` toe aan het CSS-bestand.
+De knop zorgt voor de meest nauwkeurige weergave van je knoppen in Outlook-e-mailclients, en wordt by default ingeschakeld. Wanneer de optie is geactiveerd in de 'Uiterlijk' van de editor, voegt de editor de bepaalde stijl aan de CSS code toe. Dit zorgt ervoor de 
+```.msohide { mso-hide: all;} ``` toe aan het CSS-bestand. De MSO opmerkingen zorgen ervoor dat jouw mail tussen versies correct wordt weergegeven. Deze knop is in de uiterlijk van het template in de E-mail-Editor terug te vinden, onder 'Knoppen'. 
 
 Hoe schakel ik de knop 'Ondersteuning voor Outlook' in?
 - Ga naar de E-mail-editor.
@@ -36,7 +36,7 @@ Problemen met de hoogte en breedte van de knoppen kan veroorzaken dat de tekst i
 
 Hoe zorg je ervoor dat de tekst weer zichtbaar is in de button? 
 - Voeg meer interne opvullingen (padding) toe aan de boven- en onderkant om meer ruimte in de knop toe te voegen.
-- Stel een kleinere tekstgrootte in op de knop in de **VML-opmerkingen** om deze weer te geven in Outlook.
+- Stel een kleinere tekstgrootte in op de knop. Dit doe je in de *VML-opmerkingen (Vector Markup Language)*.VML wordt gebruikt om sommige elementen er hetzelfde uit te laten zien in oudere versies van Outlook.
 - Wanneer de breedte van de knop is verminderd in vergelijking met de weergave van de knop in de editor. Voeg dan opvulling via het menu toe.
 
 ![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/button2nieuw.png)
