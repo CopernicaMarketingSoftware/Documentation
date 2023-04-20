@@ -22,7 +22,7 @@ Met Copernica stel je in enkele stappen het adres van je feed samen. Dit is
 de link die verwijst naar je [contentfeed](./publisher-personalization-
 functions#loadfeed)
 wanneer je deze gebruikt in een mailing of op je webpagina. Gebruik je eigen
-[stijldocumenten (CSS of XSLT)](./css-and-xslt.md) voor de verdere vormgeving
+[stijldocumenten (CSS of XSLT)](./emailings-publisher-styling) voor de verdere vormgeving
 van je RSS of Atom feed. Deze maak je gemakkelijk aan binnen Copernica.
 
 Wil je liever hulp inschakelen bij het inladen van een RSS of Atom feed? Of
