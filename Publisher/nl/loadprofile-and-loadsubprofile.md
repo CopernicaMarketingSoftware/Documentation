@@ -14,6 +14,9 @@ Je haalt een specifiek profiel uit een database op door middel van een veldnaam.
 
 `{loadprofile source="DatabaseB" Voornaam=$profile.Accountmanager assign=geladenprofiel}`
 
+**Let op:** Bij het gebruik van een veldnaam als parameter, in dit geval _Voornaam_, raden wij aan om dit veld te [indexeren](./database-field-index). Geïndexeerde velden zijn sneller doorzoekbaar, waardoor de snelheid van je e-mailing optimaal blijft.
+
+### Zoeken binnen een specifieke selectie
 Je kunt profielen ook uit een selectie ophalen. _Source_ moet dan naast de databasenaam ook de selectienaam (bijvoorbeeld _SelectieB_) bevatten, gescheiden door een punt:
 
 `{loadprofile source="DatabaseB.SelectieB" assign=geladenprofiel}`
