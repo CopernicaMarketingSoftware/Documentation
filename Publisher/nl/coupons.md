@@ -106,3 +106,7 @@ In de body van je call geef je op welke coupon je als ingewisseld wilt registrer
 ```
 
 De overige API-calls vind je in onze [REST API-documentatie](./restv3/rest-methods).
+
+
+<!-- This is a test if those words will be searchable in the DocsApp -->
+<!-- Kortingcode kortingscodes -->
