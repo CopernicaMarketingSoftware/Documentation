@@ -1,4 +1,8 @@
-# Personaliseren binnen de Marketing Suite
+# Personaliseren van drag-and-drop-templates (oud)
+
+**Let op:** dit artikel geldt voor templates van het type 'drag-and-drop-templates (oud)'. In [dit artikel](./email-editor-personalization) leggen we uit hoe je dit kunt instellen voor nieuwe drag-and-drop-templates en HTML-templates en -documenten.
+
+## Personaliseren binnen de Marketing Suite
 De Marketing Suite en Publisher stellen je in staat om e-mails te
 personaliseren. Je doet dit door middel van een speciaal stukje script. Dit
 script wordt, voordat de e-mail is verstuurd, vervangen door de correcte data.
@@ -29,13 +33,13 @@ subprofiel aangeroepen wordt. Door in plaats van **{$Voornaam}** ,
 mogelijk om vanuit de gegevens van zowel het profiel als het subprofiel
 van de klant te personaliseren.
 
-## Waar kun je personaliseren?
+### Waar kun je personaliseren?
 In de Marketing Suite kun je op vele plaatsen personalisatie toevoegen. Deze
 velden zijn te herkennen aan het Dollar **$** teken in het input-veld. Zo kun
 je bijvoorbeeld de 'from name', het onderwerp, maar ook het 'from adres'
 aanpassen door in deze velden de code toe te passen.
 
-## Beschikbare personalisatievariabelen
+### Beschikbare personalisatievariabelen
 In dit object staan de gegevens van het profiel
 waarnaar het bericht is gestuurd of, in het geval van een mailing naar
 subprofielen, van het bij het subprofiel behorende profiel. Dit profiel object
@@ -51,7 +55,7 @@ heeft een aantal eigenschappen:
 * **{$profile.*interesse*}**: elke interesse van het profiel is toegankelijk via {$profile.*interesse*}, en heeft de waarde "yes" of "no"
 * **{$profile.*collectie*}**: indien er subprofielen zijn, is elke collectie van subprofielen benaderbaar via {$profie.*collectienaam*}
 
-### Subprofielen
+#### Subprofielen
 Als je een mailing naar subprofielen stuurt, dan is er naast het hierboven
 genoemde {$profile} object ook een {$subprofile} beschikbaar. Dit object heeft
 de volgende members:
@@ -63,7 +67,7 @@ de volgende members:
 * **{$subprofile.profile}**: het profiel object (zie hierboven) waar dit subprofiel toe behoort
 * **{$subprofile.*veldnaam*}**: elk veld van het subprofiel is toegankelijk via {$subprofile.*veldnaam*}
 
-## Personalisatie modifiers
+### Personalisatie modifiers
 Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
 Je gebruikt bijvoorbeeld **tolower** om de variabele **{$profile.name}** te
@@ -75,7 +79,7 @@ kleine letters zijn.
 
 Bekijk het [overzicht van alle modifiers](./personalization-modifiers)
 
-## Data uit een collectie weergeven
+### Data uit een collectie weergeven
 Je kunt ook eenvoudig data uit een collectie weergeven. Dit kun je op
 verschillende manieren doen. Om data uit de eerste rij van de collectie weer te
 geven kun je deze syntax gebruiken.
@@ -98,7 +102,7 @@ van het totaal 1 moet aftrekken omdat wij beginnen met nul.
 {$profile.collectie[$profile.collectie|count -1].veldnaam}
 ```
 
-### De foreach functie
+#### De foreach functie
 Om alle subprofielen weer te geven kun je een foreach functie gebruiken.
 
 ```text
@@ -126,7 +130,7 @@ Als er geen subprofielen zijn
 {/foreach}
 ```
 
-## Variabelen
+### Variabelen
 Je kunt ook variabelen gebruiken. Dit kan bijvoorbeeld handig zijn als je een
 template hebt gemaakt die opeens gebruik moet maken van andere databasevelden.
 
@@ -149,7 +153,7 @@ En je kunt ook rekenen:
 {$totaal}
 ```
 
-## Personaliseren van hyperlinks
+### Personaliseren van hyperlinks
 Hyperlinks in e-mailings kunnen worden aangevuld met gegevens uit een profiel
 of subprofiel. Een voorbeeld hiervan zijn de unieke inloggegevens
 ($profile.id en $profile.code) die je in de hyperlink meestuurt,
