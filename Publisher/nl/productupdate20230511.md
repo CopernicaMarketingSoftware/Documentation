@@ -1,3 +1,5 @@
+# Productupdate - Opvolgactie verbeteringen, uitschrijfbevestiging en verzendmomenten uitsluiten met RRule
+
 ## Opvolgactie op basis van veldwijziging
 Het is nu mogelijk om in het _bestemming checken_ blok te kijken of een veld is aangepast. Hierbij kan je aangeven dat de opvolgactie uitgevoerd moet worden als het veld naar een specifieke waarde is aangepast of bij iedere wijziging waarbij de waarde niet gespecificeerd is. 
 
