@@ -1,4 +1,5 @@
 # Productupdates
+* [Productupdate 11-05-2023 - Opvolgactie verbeteringen, uitschrijfbevestiging en verzendmomenten uitsluiten met RRule](./productupdate20230511)
 * [Productupdate 07-04-2023 - Coupons versturen, interactie inzien met een klikmap en verbeterde beveiligingsmogelijkheden](./productupdate20230407)
 * [Productupdate 08-02-2023 - Delen van statistieken](./productupdate20230208)
 * [Productupdate 03-11-2022 - Onderhoud aan onze infrastructuur en modules maken voor HTML-templates](./productupdate20221103)
