@@ -1,7 +1,7 @@
 # Productupdate - Opvolgactie verbeteringen, uitschrijfbevestiging en verzendmomenten uitsluiten met RRule
 
 ## Opvolgactie op basis van veldwijziging
-We hebben een nieuwe functie toegevoegd waarmee je een opvolgactie kunt uitvoeren op basis van wijzigingen in een veld. Met het _bestemming checken_ blok kun je nu controleren of een veld is aangepast. Je kunt specificeren dat de opvolgactie moet worden uitgevoerd als het veld naar een specifieke waarde is aangepast of bij elke wijziging waarbij de waarde niet is gespecificeerd.
+We hebben een nieuwe functie toegevoegd aan het _bestemming checken_ blok in onze follow-up-editor. Hierin kun je nu aangeven dat de opvolgactie enkel moet worden uitgevoerd als een bepaald veld is gewijzigd. Ook kun je instellen naar welke waarde dit veld moet zijn veranderd.
 
 Nadat je het blok hebt toegevoegd, kun je bij _vergelijking_ kiezen voor de optie _is bijgewerkt_ als je wilt dat de opvolgactie wordt uitgevoerd bij elke wijziging in het veld. Als je wilt dat de opvolgactie alleen wordt uitgevoerd wanneer het veld is bijgewerkt naar een specifieke waarde, kies dan de optie _is bijgewerkt naar_ en voer de waarde in het invoerveld in.
 
@@ -21,7 +21,7 @@ Binnen Copernica heb je de mogelijkheid om je mailing in te roosteren via een [R
 Met deze optie kun je bijvoorbeeld een e-mail inplannen voor alle werkdagen, behalve op maandag 29 mei (tweede pinksterdag). Op deze manier hoef je niet handmatig de mailing te pauzeren op de dag zelf.
 
 ## Externe downloads inzichtelijk in de logbestanden
-Wanneer je externe content inlaad je e-mailtemplates, bijvoorbeeld via een feed, is het nu inzichtelijk gemaakt in de logbestanden hoe vaak wij deze feed ophalen, welke response wij hebben teruggekregen van de server en hoeveel millisecondenhet ophalen heeft geduurd. Zo kun je bij overbelasting of een trage verzending precies zien waardoor dit veroorzaakt wordt.
+Als je gebruik maakt van het inladen van externe content in je e-mailtemplates, bijvoorbeeld via een feed, kun je nu in de logbestanden meer informatie hierover inzien. Er wordt per URL bijgehouden hoe vaak wij de content ophalen, hoeveel millisconden dit duurt en welke response wij terug hebben gekregen van de server. Hierdoor kun je bij overbelasting van je server of een trage verzending inzien waardoor dit veroorzaakt wordt.
 
 Je vindt deze informatie in de [Logbestanden-module](https://ms.copernica.com/#/logs/) onder 'Externe downloads'. Dit logbestand is enkel zichtbaar als je ook daadwerkelijk gebruik maakt van externe content in je mails.
 
