@@ -21,7 +21,7 @@ Binnen Copernica heb je de mogelijkheid om je mailing in te roosteren via een [R
 Met deze optie kun je bijvoorbeeld een e-mail inplannen voor alle werkdagen, behalve op maandag 29 mei (tweede pinksterdag). Op deze manier hoef je niet handmatig de mailing te pauzeren op de dag zelf.
 
 ## Externe downloads inzichtelijk in de logbestanden
-Als je gebruik maakt van het inladen van externe content in je e-mailtemplates, bijvoorbeeld via een feed, kun je nu in de logbestanden meer informatie hierover inzien. Er wordt per URL bijgehouden hoe vaak wij de content ophalen, hoeveel millisconden dit duurt en welke response wij terug hebben gekregen van de server. Hierdoor kun je bij overbelasting van je server of een trage verzending inzien waardoor dit veroorzaakt wordt.
+Als je gebruik maakt van het inladen van externe content in je e-mailtemplates, bijvoorbeeld via een feed, kun je nu in de logbestanden meer informatie hierover inzien. Er wordt per URL bijgehouden hoe vaak wij de content ophalen, hoeveel millisconden dit duurt en welke response wij terug hebben gekregen van de server. Hierdoor heb je bij overbelasting van je server of een trage verzending direct inzicht waardoor dit wordt veroorzaakt.
 
 Je vindt deze informatie in de [Logbestanden-module](https://ms.copernica.com/#/logs/) onder 'Externe downloads'. Dit logbestand is enkel zichtbaar als je ook daadwerkelijk gebruik maakt van externe content in je mails.
 
