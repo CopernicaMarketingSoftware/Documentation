@@ -1,30 +1,76 @@
-# Tips om buttons in Outlook goed weer te geven
+# Tips om buttons in Outlook correct weer te geven met de drag-and-drop-editor
 
-Met de drag-and-drop-template kan je met het blok 'Knop' een knop aan je template toevoegen. Outlook ondersteund echter niet alle elementen binnen dit blok. Hierdoor kan de styling van de knop er anders uit komen te zien dan in de voorvertoning van het template getoond wordt. De volgende tips voorkomen afwijkingen in de knop van je verzonden mail.
+Microsoft Outlook ondersteund niet alle HTML-stijlen van e-mailcliënts. Dit zorgt ervoor dat je verzonden mail vanuit de drag-and-drop-editor in een Outlook mailadres er anders uitziet, dan dat je hem gestyled had. Met name de buttons kunnen qua styling afwijken. 
+
+We hebben daarom een aantal tips op een rij gezet, die ervoor zorgen dat je buttons correct worden weergegeven in Outlook. 
+
 
 ## Tip 1
-Schakel de knop 'Ondersteuning voor Outlook' in de editor aan. De knop zorgt voor de meest nauwkeurige weergave van je knoppen in Outlook e-mailclients.
+Schakel de knop 'Ondersteuning voor Outlook' in de editor aan. De knop zorgt voor de meest nauwkeurige weergave van je knoppen in Outlook-e-mailcliënts.
 
 Hoe schakel ik de knop 'Ondersteuning voor Outlook' in?
-- Ga naar de 'E-mail-editor'.
+- Ga naar de E-mail-editor.
 - Ga naar de desbetreffende drag-and-drop template.
-- Kies voor de optie 'Uiterlijk' in het template.
+- Kies voor de optie 'Uiterlijk' in de template.
 - Kies voor de optie 'Knoppen'.
 - Zet de knop 'Ondersteuning voor Outlook' aan.
 
 ![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/gitbuttonnieuw2.png)
 
-## Tip 2
-Houd de grootte van de knop binnen de standaard afmetingen. Het wordt aanbevolen om de knopgrootte beperkt te houden tot 600px bij 200px of minder, aangezien grotere knoppen weergaveproblemen kunnen veroorzaken. Mocht bijvoorbeeld de tekst toch buiten de button vallen, gebruik dan de padding functies om de tekst weer centraal in de button te krijgen.
+
+## TIP 2
+Houd de grootte van de knop binnen de standaard afmetingen. Het wordt aanbevolen om de knopgrootte beperkt te houden tot 600px bij 200px of minder, aangezien grotere knoppen weergave problemen kunnen veroorzaken. Mocht bijvoorbeeld de tekst toch buiten de button vallen, gebruik dan de paddingfuncties om de tekst weer centraal in de button te krijgen:
+
+- Voeg extra interne padding toe, zodat er meer ruimte ontstaat voor de tekst in de button.
+
+![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/Screenshot%202023-03-29%20at%2016.57.28.png)
+
+- Maak de tekst kleiner in de IF MSO-broncode zodat deze op Outlook kleiner wordt weergeven.
+We kunnen MSO-tags (Microsoft Office) gebruiken om overal in een e-mailsjabloon HTML / CSS toe te voegen. Een IF MSO code ziet er als volgt uit:
+
+```
+ <!--[if mso]><a href="https://copernica.com" target="_blank" hidden>
+	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="https://copernica.com" 
+                style="height:41px; v-text-anchor:middle; width:163px" arcsize="50%" stroke="f"  fillcolor="#eb6c10">
+		            <w:anchorlock></w:anchorlock>
+		            <center style='color:#ffffff; font-family:Exo, Helvetica, Arial, sans-serif; font-size:15px; font-weight:400; line-height:15px;  mso-text-raise:1px'>Knop</center>
+	</v:roundrect></a>
+<![endif]-->
+```
+In de afbeelding zie je waar je de tekst kan verkleinen.
+
+![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/Screenshot%202023-03-29%20at%2017.00.40.png)
+
 
 ## Tip 3
-Vermijd het gebruik van JavaScript of Flash. Deze elementen worden mogelijk niet ondersteund door Outlook.
+Vermijd het gebruik van Flash-elementen. Deze elementen worden mogelijk niet ondersteund door Outlook. Een goed voorbeeld hiervan is het hover-effect. Dit element kun je gebruiken door de knop 'Knoppen markeren wanneer de cursor erover beweegt' in de editor aan te zetten. 
 
-## Tip 4
-Houd het lettertype eenvoudig en gemakkelijk leesbaar en gebruik generieke lettertypen zoals Arial, Verdana of Times New Roman. Dit vergroot de kans dat de e-mail correct wordt weergegeven in Outlook.
+![Afbeelding] 
+
+## Tip 4 
+Gebruik een webveilig lettertype of maak gebruik van een fallback lettertype wanneer de eigen lettertype niet functioneert.
+Houd de lettertype eenvoudig en gemakkelijk leesbaar en gebruik webveilige lettertypen zoals Arial, Verdana of Times New Roman. Dit vergroot de kans dat de e-mail correct wordt weergegeven in Outlook. 
+
+Wanneer de eigen lettertype niet functioneert, past de fallback Service het lettertype aan naar een door jou ingestelde 'backup' lettertype. Voorbeelden van Fallback lettfrtypen family's zijn: Serif en Sans-serif.
+
+Door onderstaand IF MSO-code in de head-gedeelte van code te plaatsen, zou de fallback lettertype in elke versie van Outlook zichtbaar moeten zijn. Voeg je eigen font-family fallback font toe.
+
+```
+<!--[if mso]>
+ 
+<style>
+    span, td, table, div {
+      font-family: Arial, serif !important;
+    }
+</style>
+ 
+<![endif]-->
+```
+
+Let op: in sommige versies van Outlook wordt het lettertype standaard ingesteld op Times New Roman, zelfs als de fallback van de lettertypefamilie in de code is gedefinieerd.
+
 
 ## Tip 5
-Gebruik een achtergrondkleur voor je knoppen. Aangezien Outlook afbeeldingen vaak standaard blokkeert, kan het ontwerpen van knoppen met alleen afbeeldingen ervoor zorgen dat ze niet correct worden weergegeven. Als u een achtergrondkleur voor uw knoppen instelt, zorgt u ervoor dat ze zichtbaar zijn, zelfs als de afbeeldingen zijn geblokkeerd.
+Test je e-mail in verschillende e-mailcliënts. Zorg er bij het ontwerpen van uw e-mail voor dat u deze op verschillende platforms test om er zeker van te zijn dat uw knop correct wordt weergegeven op alle apparaten en e-mailcliënts.
 
-## Tip 6
-Test uw e-mail in verschillende e-mailclients. Zorg er bij het ontwerpen van uw e-mail voor dat u deze op verschillende platforms test om er zeker van te zijn dat uw knop correct wordt weergegeven op alle apparaten en e-mailclients.. 
+Staat de juiste oplossing er niet  bij? Neem dan gerust contact op met de afdeling Support. 
