@@ -24,10 +24,3 @@ Met deze optie kun je bijvoorbeeld een e-mail inplannen voor alle werkdagen, beh
 Als je gebruik maakt van het inladen van externe content in je e-mailtemplates, bijvoorbeeld via een feed, kun je nu in de logbestanden meer informatie hierover inzien. Er wordt per URL bijgehouden hoe vaak wij de content ophalen, hoeveel millisconden dit duurt en welke response wij terug hebben gekregen van de server. Hierdoor heb je bij overbelasting van je server of een trage verzending direct inzicht waardoor dit wordt veroorzaakt.
 
 Je vindt deze informatie in de [Logbestanden-module](https://ms.copernica.com/#/logs/) onder 'Externe downloads'. Dit logbestand is enkel zichtbaar als je ook daadwerkelijk gebruik maakt van externe content in je mails.
-
-## Google voegt blauwe verificatievinkjes voor bedrijven toe aan Gmail
-In 2021 introduceerde Google een nieuw verdienmodel: 'Brand Indicators for Message Identification' (BIMI). Hiermee is het mogelijk om je bedrijfslogo weer te geven in de inbox. Hiervoor moet je enkele DNS-records instellen en een certificaat kopen. In ons [blogartikel](https://www.copernica.com/nl/blog/post/hogere-openratios-en-verbeterde-e-mailveiligheid-met-bimi) uit 2021 lees je hoe je dit kunt instellen.
-
-Sinds kort heeft Google BIMI wat interessanter voor zichzelf gemaakt. Er worden nu ook blauwe verificatievinkjes getoond bij de berichten in de inbox. Hiermee laat Google zien dat de verzender heeft aangetoond dat hij de eigenaar is van het verzenddomein en dat hij hiervoor een certificaat heeft gekocht. Dit zou de ontvanger meer vertrouwen moeten geven om je e-mailbericht te openen.
-
-Wat kost het om BIMI te gebruiken? Je hebt een Verified Mark Certificate (VMC) nodig. De kosten hiervoor liggen rond de € 1500,- per jaar. VMC's zijn beschikbaar via een Certification Authority (CA) als [DigiCert](https://www.digicert.com/nl/tls-ssl/verified-mark-certificates/) of [Entrust](https://www.entrust.com/digital-security/certificate-solutions/products/digital-certificates/verified-mark-certificates).
