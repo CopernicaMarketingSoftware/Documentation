@@ -45,7 +45,7 @@ In de afbeelding zie je waar je de tekst kan verkleinen.
 ## Tip 3
 Vermijd het gebruik van Flash-elementen. Deze elementen worden mogelijk niet ondersteund door Outlook. Een goed voorbeeld hiervan is het hover-effect. Dit element kun je gebruiken door de knop 'Knoppen markeren wanneer de cursor erover beweegt' in de editor aan te zetten. 
 
-![Afbeelding] 
+![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/knop.png)
 
 ## Tip 4 
 Gebruik een webveilig lettertype of maak gebruik van een fallback lettertype wanneer de eigen lettertype niet functioneert.
