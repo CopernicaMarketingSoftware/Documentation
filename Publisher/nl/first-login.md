@@ -1,10 +1,6 @@
 # Eerste login
 Wanneer je een Copernica-account hebt aangemaakt log je in via [Marketing Suite](https://ms.copernica.com). 
 
-De eerste keer dat je inlogt word je gevraagd om de GDPR-overeenkomst te tekenen. Je kunt deze overeenkomst zelf ondertekenen of dit laten doen door je Data Protection Officer (DPO).
-
-Zodra je de bovenstaande stappen hebt doorlopen kom je in het Marketing Suite-dashboard terecht.
-
 ![Marketing Suite-dashboard](../images/nl/copernicadashboard.png)
 
 ## Menu
@@ -28,9 +24,11 @@ De modules zijn als volgt ingericht:
 * __Dashboard:__ bevat algemene statistieken over verzonden mailings.  
 * __Profielen:__ hier beheer je databases en profielen ([meer informatie](./database-profiles)).    
 * __E-mail-editor:__ hier creëer je uitgebreide e-mailtemplates door middel van drag and drop of HTML. 
+* __Mediabibliotheken:__ hier beheer je afbeeldingen of bestanden voor in je templates of webpagina's.
 * __Vormgeving - CSS:__ biedt mogelijkheden voor het beheren van CSS-opmaakbestanden.  
 * __Vormgeving - XSLT:__ biedt mogelijkheden voor het beheren van XSLT-opmaakbestanden.  
 * __Resultaten:__ hier bekijk je de resultaten van verzonden mailings en beheer je toekomstige mailings.  
+* __Coupons:__ biedt mogelijkheden voor het beheren van unieke actiecodes (coupons).
 * __Logbestanden:__ hier zoek je informatie op in de ruwe logbestanden van Copernica. 
 
 ### Publisher
@@ -41,6 +39,7 @@ De modules zijn als volgt ingericht:
 * __Mobiel:__ biedt mogelijkheden voor het opmaken en versturen van SMS-berichten.  
 * __PDF:__ hier maak je gepersonaliseerde PDF-bestanden aan.
 * __Inhoud:__ biedt mogelijkheden voor het beheren van feeds, webformulieren, mediabibliotheken en enquêtes.  
+* __Vormgeving:__ biedt mogelijkheden voor het beheren van CSS- en XSLT-opmaakbestanden.
 
 ### Algemeen
 
