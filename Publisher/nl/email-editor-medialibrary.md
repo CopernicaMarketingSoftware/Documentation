@@ -15,16 +15,21 @@ Een afbeelding binnen een mediabibliotheek kan op twee manieren worden ingeladen
 **In een afbeeldingsblok**:  
 Bij een afbeeldingsblok krijg je direct de mogelijkheid om een afbeelding uit een mediabibliotheek te selecteren.
 
-**In de HTML-code**:  
-In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een afbeelding uit een mediabibliotheek op te halen met de medialibrary://-tag.  
+**In een HTML-template**:  
+In een HTML-template is het mogelijk om een afbeelding uit een mediabibliotheek op te halen met:  
+```<img src="naam_van_mediabibliotheek/afbeelding.jpg" />```
 
-*Voorbeeld:*  
+**In een drag-and-drop-template**:   
+In een drag-and-drop-template is het mogelijk om een afbeelding uit een mediabibliotheek op te halen met de medialibrary://-tag:  
 ```<img src="medialibrary://naam_van_mediabibliotheek/afbeelding.jpg" />```
 
 ## Bestanden inladen in je template
-In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een bestand uit een mediabibliotheek op te halen met de medialibrary://-tag.  
+In de HTML-code, van bijvoorbeeld een tekstblok, is het mogelijk om een bestand uit een mediabibliotheek op te halen.  
 
-*Voorbeeld:*  
+*Voorbeeld HTML-template:*  
+```<a href="naam_van_mediabibliotheek/bestandsnaam.pdf" />Klik hier</a>```
+
+*Voorbeeld drag-and-drop-template:*  
 ```<a href="medialibrary://naam_van_mediabibliotheek/bestandsnaam.pdf" />Klik hier</a>```
 
 ## Verwijderen van afbeeldingen / bestanden
