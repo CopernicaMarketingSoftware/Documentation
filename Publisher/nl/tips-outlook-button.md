@@ -1,6 +1,6 @@
 # Tips om buttons in Outlook correct weer te geven met de drag-and-drop-editor
 
-Microsoft Outlook ondersteund niet alle HTML-stijlen van e-mailcliënts. Dit zorgt ervoor dat je verzonden mail vanuit de drag-and-drop-editor in een Outlook mailadres er anders uitziet, dan dat je hem gestyled had. Met name de buttons kunnen qua styling afwijken. 
+Microsoft Outlook ondersteund niet alle HTML-stijlen. Dit zorgt ervoor dat de verzonden mail vanuit de drag-and-drop-editor in een Outlook mailadres er anders uitziet. Met name de buttons kunnen qua styling afwijken.  
 
 We hebben daarom een aantal tips op een rij gezet, die ervoor zorgen dat je buttons correct worden weergegeven in Outlook. 
 
@@ -19,15 +19,15 @@ Hoe schakel ik de knop 'Ondersteuning voor Outlook' in?
 
 
 ## TIP 2
-Houd de grootte van de knop binnen de standaard afmetingen. Het wordt aanbevolen om de knopgrootte beperkt te houden tot 600px bij 200px of minder, aangezien grotere knoppen weergave problemen kunnen veroorzaken. Mocht bijvoorbeeld de tekst toch buiten de button vallen, gebruik dan de paddingfuncties om de tekst weer centraal in de button te krijgen:
+Houd de grootte van de knop binnen de standaard afmetingen. Het wordt aanbevolen om de knopgrootte beperkt te houden tot 600px bij 200px of minder, aangezien grotere knoppen weergaveproblemen kunnen veroorzaken. Mocht bijvoorbeeld de tekst toch buiten de button vallen, gebruik dan de paddingfuncties om de tekst weer centraal in de button te krijgen:
 
 - Voeg extra interne padding toe, zodat er meer ruimte ontstaat voor de tekst in de button.
 
 ![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/Screenshot%202023-03-29%20at%2016.57.28.png)
 
-- Maak de tekst kleiner in de IF MSO-broncode zodat deze op Outlook kleiner wordt weergeven.
-We kunnen MSO-tags (Microsoft Office) gebruiken om overal in een e-mailsjabloon HTML / CSS toe te voegen. Een IF MSO code ziet er als volgt uit:
+- Maak de tekst kleiner in de IF MSO-broncode, zodat deze op Outlook kleiner wordt weergeven.
 
+Met MSO-tags (Microsoft Office) kan je overal in een e-mailsjabloon HTML en CSS  toe voegen. Hierdoor kan je de styling alleen voor de Outlook client in het template aanpassen. De IF MSO-code wordt door andere e-mailclients genegeerd. Een simpele IF MSO-code ziet er als volgt uit:
 ```
  <!--[if mso]><a href="https://copernica.com" target="_blank" hidden>
 	<v:roundrect xmlns:v="urn:schemas-microsoft-com:vml" xmlns:w="urn:schemas-microsoft-com:office:word" esdevVmlButton href="https://copernica.com" 
@@ -37,6 +37,7 @@ We kunnen MSO-tags (Microsoft Office) gebruiken om overal in een e-mailsjabloon 
 	</v:roundrect></a>
 <![endif]-->
 ```
+
 In de afbeelding zie je waar je de tekst kan verkleinen.
 
 ![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/Screenshot%202023-03-29%20at%2017.00.40.png)
@@ -71,6 +72,6 @@ Let op: in sommige versies van Outlook wordt het lettertype standaard ingesteld 
 
 
 ## Tip 5
-Test je e-mail in verschillende e-mailcliënts. Zorg er bij het ontwerpen van uw e-mail voor dat u deze op verschillende platforms test om er zeker van te zijn dat uw knop correct wordt weergegeven op alle apparaten en e-mailcliënts.
+Test je e-mail in verschillende e-mailcliënts. Zorg bij het ontwerpen van de e-mail dat deze op verschillende platforms getest wordt, om er zeker van te zijn dat uw knop correct wordt weergegeven op alle apparaten en e-mailcliënts.
 
-Staat de juiste oplossing er niet  bij? Neem dan gerust contact op met de afdeling Support. 
+Staat de juiste oplossing er niet bij? Neem dan gerust contact op met de afdeling Support. 
