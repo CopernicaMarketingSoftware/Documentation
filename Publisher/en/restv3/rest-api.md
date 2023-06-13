@@ -408,12 +408,12 @@ or vice versa in all of the articles below, including the code examples.
 ## Coupons
 | Type | Address                                                                                                 | Omschrijving                                      |
 |------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| GET  | [https://api.copernica.com/v3/couponcampaigns](./restv3/rest-get-couponcampaigns)                     | Fetch all coupon campaigns                 |
-| POST | [https://api.copernica.com/v3/couponcampaigns](./restv3/rest-post-couponcampaigns)                    | Create a coupon campaign                   |
-| PUT  | [https://api.copernica.com/v3/couponcampaign/$id](./restv3/rest-put-couponcampaign)                   | Update coupon campaign information                   |
-| GET  | [https://api.copernica.com/v3/couponcampaign/$id](./restv3/rest-get-couponcampaign)                   | Fetch coupon campaign information            |
-| PUT  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./restv3/rest-put-couponcampaign-coupons)   | Create or update one or multiple coupons inside a campaign    |
-| GET  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./restv3/rest-get-couponcampaign-coupons)   | Fetch one or multiple coupons inside a campaign    |
+| GET  | [https://api.copernica.com/v3/couponcampaigns](./rest-get-couponcampaigns)                     | Fetch all coupon campaigns                 |
+| POST | [https://api.copernica.com/v3/couponcampaigns](./rest-post-couponcampaigns)                    | Create a coupon campaign                   |
+| PUT  | [https://api.copernica.com/v3/couponcampaign/$id](./rest-put-couponcampaign)                   | Update coupon campaign information                   |
+| GET  | [https://api.copernica.com/v3/couponcampaign/$id](./rest-get-couponcampaign)                   | Fetch coupon campaign information            |
+| PUT  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./rest-put-couponcampaign-coupons)   | Create or update one or multiple coupons inside a campaign    |
+| GET  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./rest-get-couponcampaign-coupons)   | Fetch one or multiple coupons inside a campaign    |
 
 ## Media libraries
 
