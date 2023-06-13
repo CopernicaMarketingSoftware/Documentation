@@ -385,12 +385,12 @@ Dit geldt ook voor de voorbeeldcode.
 
 | Type | Adres                                                                                                 | Omschrijving                                      |
 |------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------|
-| GET  | [https://api.copernica.com/v3/couponcampaigns](./restv3/rest-get-couponcampaigns)                     | Opvragen van alle couponcampagnes                 |
-| POST | [https://api.copernica.com/v3/couponcampaigns](./restv3/rest-post-couponcampaigns)                    | Aanmaken van een couponcampagne                   |
-| PUT  | [https://api.copernica.com/v3/couponcampaign/$id](./restv3/rest-put-couponcampaign)                   | Bijwerken van een couponcampagne                   |
-| GET  | [https://api.copernica.com/v3/couponcampaign/$id](./restv3/rest-get-couponcampaign)                   | Opvragen van couponcampagne informatie            |
-| PUT  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./restv3/rest-put-couponcampaign-coupons)   | Aanmaken of bijwerken van een of meerdere coupons binnen een couponcampagne    |
-| GET  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./restv3/rest-get-couponcampaign-coupons)   | Opvragen van een of meerdere coupons binnen een couponcampagne    |
+| GET  | [https://api.copernica.com/v3/couponcampaigns](./rest-get-couponcampaigns)                     | Opvragen van alle couponcampagnes                 |
+| POST | [https://api.copernica.com/v3/couponcampaigns](./rest-post-couponcampaigns)                    | Aanmaken van een couponcampagne                   |
+| PUT  | [https://api.copernica.com/v3/couponcampaign/$id](./rest-put-couponcampaign)                   | Bijwerken van een couponcampagne                   |
+| GET  | [https://api.copernica.com/v3/couponcampaign/$id](./rest-get-couponcampaign)                   | Opvragen van couponcampagne informatie            |
+| PUT  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./rest-put-couponcampaign-coupons)   | Aanmaken of bijwerken van een of meerdere coupons binnen een couponcampagne    |
+| GET  | [https://api.copernica.com/v3/couponcampaign/$id/coupons](./rest-get-couponcampaign-coupons)   | Opvragen van een of meerdere coupons binnen een couponcampagne    |
 
 ## Mediabibliotheken
 
