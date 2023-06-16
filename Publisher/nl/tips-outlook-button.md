@@ -52,7 +52,7 @@ Vermijd het gebruik van Flash-elementen. Deze elementen worden mogelijk niet ond
 Gebruik een webveilig lettertype of maak gebruik van een fallback lettertype wanneer de eigen lettertype niet functioneert.
 Houd de lettertype eenvoudig en gemakkelijk leesbaar en gebruik webveilige lettertypen zoals Arial, Verdana of Times New Roman. Dit vergroot de kans dat de e-mail correct wordt weergegeven in Outlook. 
 
-Wanneer de eigen lettertype niet functioneert, past de fallback Service het lettertype aan naar een door jou ingestelde 'backup' lettertype. Voorbeelden van Fallback lettfrtypen family's zijn: Serif en Sans-serif.
+Wanneer de eigen lettertype niet functioneert, past de fallback Service het lettertype aan naar een door jou ingestelde 'backup' lettertype. Voorbeelden van fallback lettertypen family's zijn: Serif en Sans-serif.
 
 Door onderstaand IF MSO-code in de head-gedeelte van code te plaatsen, zou de fallback lettertype in elke versie van Outlook zichtbaar moeten zijn. Voeg je eigen font-family fallback font toe.
 
