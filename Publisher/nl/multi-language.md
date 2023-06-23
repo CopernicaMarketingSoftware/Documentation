@@ -7,7 +7,7 @@ Met de vertaalmodule is het mogelijk om een template beschikbaar te maken in mee
 Op dit moment kun je gebruik maken van de bètaversie van de vertaalmodule. Je activeert de module via het menu-item [Configuratie](https://ms.copernica.com/#/admin), onder het kopje [Bètamodules](https://ms.copernica.com/#/admin/user/betamodules). De vertaalmodule is vervolgens te gebruiken via de optie 'Vertalen' in je templates.
 
 ## Vertalen van je template
-In Copernica heeft ieder template een *standaardtaal*. Deze standaardtaal geef je op bij het aanmaken van een template en kun je terugvinden in de toolbar onderaan je template of via 'Configuratie -> Personalisatie-instellingen -> Taal'.
+In Copernica heeft iedere template een *standaardtaal*. Deze standaardtaal geef je op bij het aanmaken van een template en kun je terugvinden in de toolbar onderaan je template of via 'Configuratie -> Personalisatie-instellingen -> Taal'.
 
 Als je een opgemaakte template wilt vertalen, kies je onderin de toolbar voor 'Voeg vertaalde versie toe'. Hier geef je de taal op waarin je de template wilt vertalen. Er wordt nu een kopie van de template gemaakt, alleen met een aangepaste taal-instelling.
 
