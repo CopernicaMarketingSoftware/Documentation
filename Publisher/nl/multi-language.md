@@ -11,15 +11,13 @@ In Copernica heeft iedere template een *standaardtaal*. Deze standaardtaal geef 
 
 Als je een opgemaakte template wilt vertalen, kies je onderin de toolbar voor 'Voeg vertaalde versie toe'. Hier geef je de taal op waarin je de template wilt vertalen. Er wordt nu een kopie van de template gemaakt, alleen met een aangepaste taal-instelling.
 
-In de toolbar bovenin de template kun je vervolgens kiezen voor de knop 'Vertalen'. In deze slide zie je bovenin welke taal van je template je aan het aanpassen bent. Je hebt de mogelijkheid om de volgende elementen te vertalen:
+In de toolbar bovenin de template kun je vervolgens kiezen voor de knop 'Vertalen'.  
+Je hebt de mogelijkheid om de volgende elementen te vertalen:
 - Headers
 - Teksten
 - Links
 - Afbeeldingen
 - Tekstversie
-
-Binnen deze elementen vind je een kolom met de waarde uit je hoofdtemplate en een kolom met de waarde voor de vertaalde versie. 
-Nadat je de waardes van de vertaalde versie, in de rechterkolom, hebt aangepast klik je rechtsboven op 'Opslaan'.
 
 ## Taalinstellingen van je profielen
 Om ervoor te zorgen dat het juiste profiel de juiste versie van je mailing ontvangt, moet je éénmalig een veld van het type 'Taal' toevoegen aan je [database](https://ms.copernica.com/#/profiles)
