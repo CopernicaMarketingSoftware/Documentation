@@ -2,7 +2,7 @@
 
 *Let op: het gebruik van de vertaalmodule is enkel mogelijk in drag-and-drop-templates.*
 
-Met de vertaalmodule is het mogelijk om één template beschikbaar te maken in meerdere talen. Op basis van het taalveld in het profiel wordt de juiste versie van de template naar het juiste profiel verzonden.
+Met de vertaalmodule is het mogelijk om een template beschikbaar te maken in meerdere talen. Op basis van het taalveld in het profiel wordt de juiste versie van de template naar het juiste profiel verzonden.
 
 Op dit moment kun je gebruik maken van de bètaversie van de vertaalmodule. Je activeert de module via het menu-item [Configuratie](https://ms.copernica.com/#/admin), onder het kopje [Bètamodules](https://ms.copernica.com/#/admin/user/betamodules). De vertaalmodule is vervolgens te gebruiken via de optie 'Vertalen' in je templates.
 
@@ -11,14 +11,15 @@ In Copernica heeft ieder template een *standaardtaal*. Deze standaardtaal geef j
 
 Als je een opgemaakte template wilt vertalen, kies je onderin de toolbar voor 'Voeg vertaalde versie toe'. Hier geef je de taal op waarin je de template wilt vertalen. Er wordt nu een kopie van de template gemaakt, alleen met een aangepaste taal-instelling.
 
-In de toolbar bovenin de template kun je nu kiezen voor de knop 'Vertalen'. Bovenin de slide zie je welke taal van je template je aan het aanpassen bent. Je hebt de mogelijkheid om de volgende elementen te vertalen:
+In de toolbar bovenin de template kun je vervolgens kiezen voor de knop 'Vertalen'. In deze slide zie je bovenin welke taal van je template je aan het aanpassen bent. Je hebt de mogelijkheid om de volgende elementen te vertalen:
 - Headers
 - Teksten
 - Links
 - Afbeeldingen
 - Tekstversie
 
-Binnen deze elementen vind je een kolom met de waarde uit je hoofdtemplate en een kolom met de waarde voor de vertaalde versie.
+Binnen deze elementen vind je een kolom met de waarde uit je hoofdtemplate en een kolom met de waarde voor de vertaalde versie. 
+Nadat je de waardes van de vertaalde versie, in de rechterkolom, hebt aangepast klik je rechtsboven op 'Opslaan'.
 
 ## Taalinstellingen van je profielen
 Om ervoor te zorgen dat het juiste profiel de juiste versie van je mailing ontvangt, moet je éénmalig een veld van het type 'Taal' toevoegen aan je [database](https://ms.copernica.com/#/profiles)
@@ -53,14 +54,14 @@ De volgende veldwaardes zijn beschikbaar:
 ## Importeren en exporteren van vertalingen
 Naast het vertalen via de interface, is het mogelijk om een export te maken van alle elementen in je template en deze te importeren na de wijzigingen.
 
-Om een export te maken ga je naar 'Vertalen -> Exporteren'. Het export-bestand bestaat uit een kolom waarin het ID staat van het element dat wordt vertaald. Dit ID is nodig om bij het importeren te weten welke tekst aangepast moet worden. Naast de kolom met het ID, vind je ook per taal een kolom waarin de template beschikbaar is. 
+Om een export te maken ga je naar 'Vertalen -> Exporteren' binnen je hoofdtemplate of een vertaalde versie. Het export-bestand bestaat uit een kolom waarin het ID staat van het element dat wordt vertaald. Dit ID is nodig om bij het importeren te weten welke tekst aangepast moet worden. Naast de kolom met het ID, vind je ook een kolom per taal waarin de template beschikbaar is. 
 
 Nadat je de aanpassingen hebt doorgevoerd, kun je het bestand importeren via 'Vertalen -> Importeren'. De wijzigingen worden direct doorgevoerd in alle versies van je templates.
 
 ## Versturen van je templates
 Om templates met meerdere talen te versturen kies je in het hoofdtemplate voor 'Verzendopties -> Bulkmailing'. Onder '*Opties*' zie je dat de template automatisch wordt verzonden in de beschikbare talen. 
 
-Bij het inroosteren geef je één bestemming op. Op basis van het taalveld in het profiel zorgt Copernica er automatisch voor dat de juiste template naar het juiste profiel wordt verzonden. Mocht het profiel geen waarde in het taalveld hebben, ontvangt deze het hoofdtemplate.
+Bij het inroosteren geef je één bestemming op. Op basis van het taalveld in het profiel zorgt Copernica er automatisch voor dat de juiste template naar het juiste profiel wordt verzonden. Een profiel ontvangt het hoofdtemplate wanneer een waarde in het taalveld ontbreekt.
 
 ## Statistieken inzien
 Bij het verzenden wordt voor iedere taal een losse mailing aangemaakt. Hierdoor is het mogelijk om in de [resultaten-module](https://ms.copernica.com/#/results/sentmailings) de statistieken per taal in te zien. 
