@@ -3,7 +3,7 @@
 Met de vertaalmodule kun je templates in meerdere talen maken, en kun je meertalige mailings versturen. Elke geadresseerde ontvangt een mailing die overeenkomt met de taalinstelling per profiel. De vertaalmodule werkt alleen voor drag-and-drop-templates en is beschikbaar als bètaversie. Je activeert de module via het menu-item [Configuratie](https://ms.copernica.com/#/admin), onder [Bètamodules](https://ms.copernica.com/#/admin/user/betamodules).
 
 ## Vertalen van een template
-Template hebben een *taalinstelling*. Dit geef je op bij het aanmaken van een template en kun je terugvinden in de toolbar onderaan je template of via 'Configuratie -> Personalisatie-instellingen -> Taal'. Als je een template wilt vertalen, kies je onderin de toolbar voor 'Voeg vertaalde versie toe'. Er wordt nu een kopie van de brontemplate gemaakt, maar dan met een andere taal-instelling. Hierna kun je alle teksten vertalen door bovenin te klikken op de knop 'Vertalen'.  
+Template hebben een *taalinstelling*. Dit geef je op bij het aanmaken van een template en kun je terugvinden in de toolbar onderaan de template of via 'Configuratie -> Personalisatie-instellingen -> Taal'. Als je een template wilt vertalen, kies je onderin de toolbar voor 'Voeg vertaalde versie toe'. Er wordt nu een kopie van de brontemplate gemaakt, maar dan met een andere taal-instelling. Hierna kun je alle teksten vertalen door bovenin te klikken op de knop 'Vertalen'.  
 
 ## Taalinstellingen van je profielen
 Om te zorgen dat geadresseerden de juiste versie van je mailing ontvangen, moet je een veld van het type 'Taal' toevoegen aan de [database](https://ms.copernica.com/#/profiles). En bij elk profiel moet je een voorkeurstaal instellen. Profielen zonder taalinstelling ontvangen de standaardtemplate. 
