@@ -1,16 +1,16 @@
 # Tips om buttons in Outlook correct weer te geven met de drag-and-drop-editor
 
-Microsoft Outlook ondersteunt niet alle HTML-stijlen. Dit zorgt ervoor dat de verzonden mail vanuit de drag-and-drop-editor in een Outlook mailadres er anders uitziet. Met name de knoppen kunnen qua styling afwijken.  
+Microsoft Outlook ondersteunt niet alle HTML-stijlen. Dit zorgt ervoor dat de verzonden e-mail vanuit de drag-and-drop-editor in Outlook er anders uit kan zien. Met name de knoppen kunnen qua styling afwijken.  
 
 We hebben daarom een aantal tips op een rij gezet, die ervoor zorgen dat je buttons correct worden weergegeven in Outlook.
 
 ## Tip 1
-Schakel de knop 'Ondersteuning voor Outlook' in de editor aan. De knop zorgt voor de meest nauwkeurige weergave van je knoppen in Outlook-e-mailclients.
+Schakel de knop 'Ondersteuning voor Outlook' in de editor aan. De knop zorgt voor de meest nauwkeurige weergave van je knoppen in Outlook.
 
 Hoe schakel ik de knop 'Ondersteuning voor Outlook' in?
 - Ga naar de E-mail-editor.
 - Ga naar de desbetreffende drag-and-drop template.
-- Kies voor de optie 'Uiterlijk' in het template.
+- Kies voor de optie 'Uiterlijk' in de template.
 - Kies voor de optie 'Knoppen'.
 - Zet de knop 'Ondersteuning voor Outlook' aan.
 
@@ -24,9 +24,9 @@ Houd de grootte van de knop binnen de standaardafmetingen. Het wordt aanbevolen 
 
 ![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/Screenshot%202023-03-29%20at%2016.57.28.png)
 
-- Maak de tekst kleiner in de IF MSO-broncode, zodat deze op Outlook kleiner wordt weergeven.
+- Maak in de broncode template de tekst kleiner binnen de IF-MSO-tags, zodat deze op Outlook kleiner wordt weergeven.
 
-Met MSO-tags (Microsoft Office) kan je overal in een e-mailsjabloon HTML en CSS  toevoegen. Hierdoor kan je de styling alleen voor de Outlook client in het template aanpassen. De IF MSO-code wordt door andere e-mailclients genegeerd. Een simpele IF MSO-code ziet er als volgt uit:
+Om styling specifiek voor Outlook mee te geven, kun je gebruik maken van MSO-tags (Microsoft Office). Deze code wordt genegeerd door andere e-mailclients. Een IF MSO-code ziet er als volgt uit:
 
 ```
  <!--[if mso]><a href="https://copernica.com" target="_blank" hidden>
@@ -44,9 +44,7 @@ In de afbeelding zie je waar je de tekst kan verkleinen.
 
 
 ## Tip 3
-Vermijd het gebruik van Flash-elementen. Deze elementen worden mogelijk niet ondersteund door Outlook. Een goed voorbeeld hiervan is het hover-effect. Dit element kun je gebruiken door de knop 'Knoppen markeren wanneer de cursor erover beweegt' in de editor aan te zetten.
-
-![Afbeelding](https://github.com/CopernicaMarketingSoftware/Documentation/blob/master/Publisher/images/buttongemarkeerd.png)
+Vermijd het gebruik van Flash-elementen. Deze elementen worden mogelijk niet ondersteund door Outlook. Een goed voorbeeld hiervan is het hover-effect. 
 
 ## Tip 4 
 Gebruik een webveilig lettertype of maak gebruik van een fallback lettertype wanneer de eigen lettertype niet functioneert.
@@ -54,8 +52,7 @@ Houd het lettertype eenvoudig en gemakkelijk leesbaar en gebruik webveilige lett
 
 Wanneer de eigen lettertype niet functioneert, past de Fallback Service het lettertype aan naar een door jou ingestelde 'backup' lettertype. Voorbeelden van fallback lettertypen families zijn: Serif en Sans-serif.
 
-Door onderstaand IF MSO-code in het hoofdgedeelte van de code te plaatsen, zou de fallback lettertype in elke versie van Outlook zichtbaar moeten zijn. Voeg je eigen font-family fallback font toe.
-
+Door onderstaand IF MSO-code in het hoofdgedeelte van de code te plaatsen, zou de fallback lettertype in elke versie van Outlook zichtbaar moeten zijn. Voeg je eigen lettertype-family fallback letterype toe.
 
 ```
 <!--[if mso]>
@@ -69,11 +66,11 @@ Door onderstaand IF MSO-code in het hoofdgedeelte van de code te plaatsen, zou d
 <![endif]-->
 ```
 
-Let op: in sommige versies van Outlook wordt het lettertype standaard ingesteld op Times New Roman, zelfs als de fallback van de lettertypefamilie in de code is gedefinieerd.
+Let op: in een aantal versies van Outlook wordt het lettertype standaard ingesteld op Times New Roman, zelfs als de fallback van de lettertypefamilie in de code is gedefinieerd.
 
 
 ## Tip 5
 Test je e-mail in verschillende e-mailclients. Zorg bij het ontwerpen van de e-mail dat deze op verschillende platforms getest wordt, om er zeker van te zijn dat uw knop correct wordt weergegeven op alle apparaten en e-mailclients.
 
-Staat de juiste oplossing er niet bij? Neem dan gerust contact op met de afdeling Support.
+Staat de juiste oplossing er niet bij? Neem dan gerust contact op met onze support-afdeling (https://ms.copernica.com/#/support)
 
