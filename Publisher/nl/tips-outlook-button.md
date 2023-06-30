@@ -14,7 +14,7 @@ Hoe schakel ik de knop 'Ondersteuning voor Outlook' in?
 - Kies voor de optie 'Knoppen'.
 - Zet de knop 'Ondersteuning voor Outlook' aan.
 
-![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/gitbuttonnieuw2.png)
+![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/ondersteuninginoutlook.png)
 
 
 ## TIP 2
@@ -22,7 +22,7 @@ Houd de grootte van de knop binnen de standaardafmetingen. Het wordt aanbevolen 
 
 - Voeg extra interne padding toe, zodat er meer ruimte ontstaat voor de tekst in de button.
 
-![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/Screenshot%202023-03-29%20at%2016.57.28.png)
+![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/paddingbutton.png)
 
 - Maak in de broncode template de tekst kleiner binnen de IF-MSO-tags, zodat deze op Outlook kleiner wordt weergeven.
 
@@ -40,7 +40,7 @@ Om styling specifiek voor Outlook mee te geven, kun je gebruik maken van MSO-tag
 
 In de afbeelding zie je waar je de tekst kan verkleinen.
 
-![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/Screenshot%202023-03-29%20at%2017.00.40.png)
+![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/paddingbutton2.png)
 
 
 ## Tip 3
