@@ -1,4 +1,4 @@
-## Digitale handtekening voor uitgaande HTTP-verzoeken naar eigen server
+# Digitale handtekening voor uitgaande HTTP-verzoeken naar eigen server
 Wanneer er in Copernica gebruik wordt gemaakt van webhooks of downloads van externe content in mailings (fetch- en loadfeed-tags) wordt er door Copernica een uitgaand HTTP verzoek gedaan naar je eigen server. Aan deze verzoeken wordt een digitale handtekening meegegeven zodat je kunt verifiëren of deze verzoeken vanaf de servers van Copernica worden gedaan en of deze uit je eigen account afkomstig zijn.
 
 De digitale handtekening bestaat uit een "Digest", "X-Copernica-ID" en een "Signature" header. Deze headers bevatten een gehashte waarde van je bericht, de identifier van je Copernica account en een digitale handtekening. 
