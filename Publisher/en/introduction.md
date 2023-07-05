@@ -4,6 +4,8 @@ Copernica has a very extensive email toolkit for marketers and developers. Our M
 
 Using the Copernica dashboard, accessible through [copernica.com](https://www.copernica.com), you can control all users and account cases. You can also use the dashboard to simply navigate to the Marketing Suite or Publisher.
 
+There are [videos and instructions](https://www.copernica.com/en/getting-started) available to help you get started with the software.
+
 # Set up
 
 Before you are able to send emails using Copernica, you need to configure your sender domain. This configuration consists of two steps: setting up your sender domain and entering the correct DNS-settings. This will allow Copernica's servers to send emails on your behalf. Aside from this, you will need to fill your database and set up rules and selections.
