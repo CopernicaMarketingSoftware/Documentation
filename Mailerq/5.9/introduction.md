@@ -13,3 +13,5 @@ To make this very simple, we have made
 MailerQ comes with a web based [management console](management-console)
 that you can use to monitor exactly what is happening, and to adjust all
 your delivery settings.
+
+Instructions to [upgrade MailerQ from version < 5.8 to 5.8+](upgrade-and-downgrade-instructions.md)
