@@ -37,3 +37,5 @@ yum install mailerq-5.7
 mailerq --repair-database
 systemctl restart mailerq
 ```
+
+To download the latest MailerQ Packages and old MailerQ versions, visit the [downloads page](/product/downloads "downloads page")
