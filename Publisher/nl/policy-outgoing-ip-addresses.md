@@ -31,3 +31,6 @@ Voor gebruikers die toch het risico willen nemen om IP-adressen te whitelisten, 
 - 89.149.202.161/32
 - 212.7.203.83/32
 - 212.7.207.84/32
+- 212.7.207.184/32
+- 212.7.210.172/32
+- 212.7.207.207/32
