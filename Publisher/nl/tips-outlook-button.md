@@ -1,6 +1,6 @@
 # Tips voor een juiste weergave van knoppen in Outlook
 
-Wanneer je een opgemaakte e-mail ontvangt in Microsoft Outlook, kan het voorkomen dat de styling van je knoppen (buttons) niet juist wordt weergegeven. Dit komt omdat Microsoft Outlook geen ondersteuning heeft voor [CSS media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp).
+Wanneer je een opgemaakte e-mail ontvangt in Microsoft Outlook, kan het voorkomen dat de styling van je knoppen (buttons) niet juist wordt weergegeven. Dit komt doordat Microsoft Outlook geen ondersteuning heeft voor [CSS media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp).
 
 In dit artikel geven we een aantal tips om je knoppen juist weer te geven in Microsoft Outlook.
 
@@ -41,7 +41,7 @@ In onderstaande afbeelding wordt aangegeven waar je de tekst (font-size) en rege
 ## Tip 4 - Gebruik een webveilig lettertype
 Om de tekst in een knop goed zichtbaar te krijgen is het aan te raden om gebruik te maken van een [webveilig lettertype](https://www.w3schools.com/cssref/css_websafe_fonts.php)
 
-Gebruik altijd een webveilig fallback lettetype toe als je gebruik maakt van een eigen lettertype. Mocht je eigen lettertype niet beschikbaar zijn in de ontvangende e-mailclient, maakt deze automatisch gebruik van het door jou ingestelde backup lettertype.
+Gebruik altijd een webveilig fallback lettertype toe als je gebruik maakt van een eigen lettertype. Mocht je eigen lettertype niet beschikbaar zijn in de ontvangende e-mailclient, maakt deze automatisch gebruik van het door jou ingestelde back-up lettertype.
 
 Dit ziet er zo uit in je CSS:
 
