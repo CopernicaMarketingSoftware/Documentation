@@ -20,13 +20,6 @@ Copernica gebruikt diverse IP-adressen voor uitgaande HTTP-requests die nodig zi
 
 Wij hebben extra IP-ranges toegevoegd. Meer informatie over onze huidige ranges en waarom wij het gebruik van whitelisting afraden lees je [hier](./policy-outgoing-ip-addresses).
 
-## Simpel maar effectief: Verjaardagscampagnes
-Een verjaardagscampagne wordt gebruikt om iemand te feliciteren met zijn of haar verjaardag. Bij een verjaardagscampagne liggen de open- en klikratio's een stuk hoger dan bij standaard nieuwsbrieven. Op ons blog hebben wij een nieuwe trainingsvideo waarin stap voor stap wordt uitgelegd hoe je dit kunt doen. 
-
-De verjaardagscampagne is eenvoudig op te zetten met alleen een geboortedatum. Het is een goede eerste campagne voor iedereen die nog niet bekend is met het opzetten van automations in Copernica.
-
-In de video in ons [blog-artikel](https://www.copernica.com/nl/blog/post/simpel-maar-effectief-verjaardagscampagnes) wordt uitgelegd hoe je dit kunt instellen.
-
 ## REST API
 Aan de methodes om [impressies](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-impressions), [kliks](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-clicks), [fouten](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-errors), [uitschrijvingen](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-unsubscribes) en [klachten](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-abuses) van Marketing Suite mailings op te halen is het (sub)profiel ID van de bestemming toegevoegd. Hierdoor hoef je geen extra call meer uit te voeren om dit op te halen.
 
