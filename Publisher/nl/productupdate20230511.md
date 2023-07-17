@@ -1,35 +1,26 @@
-# Productupdate - Vertaalmodule in bèta en twee-factor-authenticatie wordt verplicht
+# Productupdate - Opvolgactie verbeteringen, uitschrijfbevestiging en verzendmomenten uitsluiten met RRule
 
-## Nieuwe bètamodule: Templates vertalen
-Sinds deze week staat de bètaversie van de vertaalmodule live. Met deze module verstuur je meertalige mailings, zodat elke geadresseerde een mailing ontvangt die overeenkomt met de taalinstelling van het profiel. De vertaalmodule werkt alleen voor drag-and-drop-templates.
+## Opvolgactie op basis van veldwijziging
+We hebben een nieuwe functie toegevoegd aan het _bestemming checken_ blok in onze follow-up-editor. Hierin kun je nu aangeven dat de opvolgactie enkel moet worden uitgevoerd als een bepaald veld is gewijzigd. Ook kun je instellen naar welke waarde dit veld moet zijn veranderd.
 
-Je activeert de module via het menu-item [Configuratie](https://ms.copernica.com/#/admin), onder [Bètamodules](https://ms.copernica.com/#/admin/user/betamodules). De vertaalmodule gebruik je via de optie 'Vertalen' in jouw templates.
+Nadat je het blok hebt toegevoegd, kun je bij _vergelijking_ kiezen voor de optie _is bijgewerkt_ als je wilt dat de opvolgactie wordt uitgevoerd bij elke wijziging in het veld. Als je wilt dat de opvolgactie alleen wordt uitgevoerd wanneer het veld is bijgewerkt naar een specifieke waarde, kies dan de optie _is bijgewerkt naar_ en voer de waarde in het invoerveld in.
 
-In [dit artikel](./multi-language) vind je meer uitleg over de werking van de module.
+## Opvolgactie op basis van een specifieke foutmelding
+Als je gebruik maakt van een opvolgactie waarbij de trigger een _e-mailfout_ is, heb je nu de mogelijkheid om een _check fout_ blok toe te voegen. In dit blok kun je aangeven bij welke foutmelding de opvolgactie moet worden uitgevoerd. 
 
-## Twee-factor-authenticatie wordt verplicht
-Tussen 1 augustus en 1 september beginnen wij met het verplichten van twee-factor-authenticatie (2FA). Alle gebruikers moeten vanaf 1 september inloggen met een wachtwoord, en een wisselende code die met een smartphone wordt gegenereerd.
+Naast een specifieke foutcode zijn ook de opties 'foutmelding die bij opnieuw versturen misschien niet meer optreedt' en 'foutmelding die bij een volgende verzending mogelijk weer optreedt' beschikbaar. 
 
-Meer informatie over het instellen van 2FA lees je in [dit artikel](https://www.copernica.com/nl/blog/post/twee-factor-authenticatie-verplicht-vanaf-1-september).
+## Uitschrijfbevestiging bij gebruik {unsubscribe}-tag
+Bij het gebruik van de [{unsubscribe}](https://www.copernica.com/nl/documentation/email-editor-unsubscribelink-webversion)-tag kun je nu aangeven of de uitschrijving bevestigd moet worden. Wanneer je deze optie activeert, krijgt de ontvanger bij het openen van de uitschrijfpagina de vraag "Weet je zeker dat je je wilt afmelden?" met een button om de uitschrijving te bevestigen. Dit is gedaan om te voorkomen dat ontvangers onbedoeld worden uitgeschreven als gevolg van spamfilters die links uit je e-mail volgen.
 
-## Instellen tijdzone bij inroosteren mailing
-Bij het inroosteren van een mailing kan je nu een tijdzone opgeven. Hiermee voorkom je dat een mailing op een verkeerd tijdstip wordt verzonden als jij of je collega vanuit het buitenland werkt. Standaard wordt de tijdzone van de browser gebruikt.
+Je kunt deze optie activeren in de [e-mail-editor](https://ms.copernica.com/#/design) onder 'Gereedschap -> Uitschrijfprocedure' voor de instelling 'Bevestig de uitschrijving met een link' te kiezen.
 
-## Aanpassing IP-ranges
-Copernica gebruikt diverse IP-adressen voor uitgaande HTTP-requests die nodig zijn voor (onder meer) webhooks en het downloaden van content en feeds voor mailings. Een aantal van onze klanten heeft onze IP-adressen gewhitelist om ervoor te zorgen dat enkel calls vanuit onze IP-adressen worden geaccepteerd. 
+## Verzendmomenten uitsluiten bij inroosteren van mailings via een RRule
+Binnen Copernica heb je de mogelijkheid om je mailing in te roosteren via een [RRule](https://www.copernica.com/nl/blog/post/slim-mailings-herhalen-met-rrules). Dit is een krachtige manier om een patroon voor herhaalde e-mails in te stellen. Bij het instellen van een RRule is de optie toegevoegd om bepaalde verzendmomenten uit te sluiten.
 
-Wij hebben extra IP-ranges toegevoegd. Meer informatie over onze huidige ranges en waarom wij het gebruik van whitelisting afraden lees je [hier](./policy-outgoing-ip-addresses).
+Met deze optie kun je bijvoorbeeld een e-mail inplannen voor alle werkdagen, behalve op maandag 29 mei (tweede pinksterdag). Op deze manier hoef je niet handmatig de mailing te pauzeren op de dag zelf.
 
-## Simpel maar effectief: Verjaardagscampagnes
-Een verjaardagscampagne wordt gebruikt om iemand te feliciteren met zijn of haar verjaardag. Bij een verjaardagscampagne liggen de open- en klikratio's een stuk hoger dan bij standaard nieuwsbrieven. Op ons blog hebben wij een nieuwe trainingsvideo waarin stap voor stap wordt uitgelegd hoe je dit kunt doen. 
+## Externe downloads inzichtelijk in de logbestanden
+Als je gebruik maakt van het inladen van externe content in je e-mailtemplates, bijvoorbeeld via een feed, kun je nu in de logbestanden meer informatie hierover inzien. Er wordt per URL bijgehouden hoe vaak wij de content ophalen, hoeveel millisconden dit duurt en welke response wij terug hebben gekregen van de server. Hierdoor heb je bij overbelasting van je server of een trage verzending direct inzicht waardoor dit wordt veroorzaakt.
 
-De verjaardagscampagne is eenvoudig op te zetten met alleen een geboortedatum. Het is een goede eerste campagne voor iedereen die nog niet bekend is met het opzetten van automations in Copernica.
-
-In de video in ons [blog-artikel](https://www.copernica.com/nl/blog/post/simpel-maar-effectief-verjaardagscampagnes) wordt uitgelegd hoe je dit kunt instellen.
-
-## REST API
-Aan de methodes om [impressies](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-impressions), [kliks](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-clicks), [fouten](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-errors), [uitschrijvingen](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-unsubscribes) en [klachten](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-emailing-abuses) van Marketing Suite mailings op te halen is het (sub)profiel ID van de bestemming toegevoegd. Hierdoor hoef je geen extra call meer uit te voeren om dit op te halen.
-
-Aan de methode om [meerdere profielen](https://www.copernica.com/nl/documentation/restv3/rest-put-database-profiles) aan te passen is het mogelijk gemaakt om te zoeken op basis van het ID en de verborgen code van het profiel.
-
-Aan de methode om [Marketing Suite templates](https://www.copernica.com/nl/documentation/restv3/rest-get-ms-templates) op te halen wordt nu meegegeven of de template gearchiveerd is.
+Je vindt deze informatie in de [Logbestanden-module](https://ms.copernica.com/#/logs/) onder 'Externe downloads'. Dit logbestand is enkel zichtbaar als je ook daadwerkelijk gebruik maakt van externe content in je mails.
