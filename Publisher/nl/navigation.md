@@ -41,6 +41,7 @@
     * [AMP](./amp.md)
 * [Drag-and-drop-templates specifiek](./email-editor-drag-and-drop-templates.md)
     * [Personalisatie](./email-editor-personalization-variables.md)
+    * [Vertalen](./multi-language.md)
     * [Feedblok](./email-editor-feedblock.md)
     * [Gebruik van mediabibliotheek](./email-editor-medialibrary.md)
     * [Variabele timer](./email-editor-relative-timers.md)
