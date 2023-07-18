@@ -14,12 +14,12 @@ Hoe zet ik 'Ondersteuning voor Outlook' aan?
 - Kies voor de optie 'Uiterlijk -> Knoppen'
 - Zet de optie 'Ondersteuning voor Outlook' aan
 
-![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/ondersteuninginoutlook.png)
+![Afbeelding](../images/ondersteuninginoutlook.png)
 
 ## TIP 2 - Houd de grootte van de knop binnen de standaardafmetingen
 Het wordt aanbevolen om de knopgrootte beperkt te houden tot 600px bij 200px. Mocht de tekst toch buiten de knop vallen, kan je met de optie 'interne padding' de tekst centraal in de knop te krijgen.
 
-![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/paddingbutton.png)
+![Afbeelding](../images/paddingbutton.png)
 
 ## Tip 3 - Tekstgrootte aanpassen binnen de MSO-tags
 Om styling specifiek voor Outlook mee te geven, gebruik je MSO-tags (Microsoft Office). Deze code wordt genegeerd door andere e-mailclients. Een MSO-code ziet er als volgt uit:
@@ -36,7 +36,7 @@ Om styling specifiek voor Outlook mee te geven, gebruik je MSO-tags (Microsoft O
 
 In onderstaande afbeelding wordt aangegeven waar je de tekst (font-size) en regelgrootte (line-heights) kunt verkleinen.
 
-![Afbeelding](https://github.com/Quancode/Documentation/blob/master/Publisher/images/paddingbutton2.png)
+![Afbeelding](../images/paddingbutton2.png)
 
 ## Tip 4 - Gebruik een webveilig lettertype
 Om de tekst in een knop goed zichtbaar te krijgen is het aan te raden om gebruik te maken van een [webveilig lettertype](https://www.w3schools.com/cssref/css_websafe_fonts.php)
