@@ -1,6 +1,6 @@
 # Tips voor een juiste weergave van knoppen in Outlook
 
-Wanneer je een opgemaakte e-mail ontvangt in Microsoft Outlook, kan het voorkomen dat de styling van de knoppen (buttons) niet juist wordt weergegeven. Dit komt doordat Microsoft Outlook geen ondersteuning heeft voor [CSS media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp).
+Wanneer je een opgemaakte e-mail ontvangt in Microsoft Outlook, wordt de styling van de knoppen (buttons) soms juist weergegeven. Dit komt doordat Microsoft Outlook geen ondersteuning heeft voor [CSS media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp).
 
 In dit artikel geven we een aantal tips om de knoppen juist weer te geven in Microsoft Outlook.
 
