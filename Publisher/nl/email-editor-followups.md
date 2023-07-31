@@ -112,7 +112,7 @@ Je kunt echter ook [geavanceerde JavaScript-condities](./advanced-javascript-con
 
 ### Extra variabelen
 
-Binnen je HTML-template of -document kun je extra variabelen ophalen die betrekking hebben op de opvolgactie:
+Binnen je templates of documenten kun je extra variabelen ophalen die betrekking hebben op de opvolgactie:
 ```
 // Tijdstip waarop de mailing is verzonden
 $mailing.sendtime
