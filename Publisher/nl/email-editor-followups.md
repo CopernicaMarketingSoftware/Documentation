@@ -110,7 +110,7 @@ Eenvoudige condities die relateren aan een aanleiding of actie zijn in te stelle
 
 Je kunt echter ook [geavanceerde JavaScript-condities](./advanced-javascript-conditions) instellen door gebruik te maken van de **'Geavanceerde modus'**. Daarbij dient er true (de opvolgactie moet worden uitgevoerd) of false (de opvolgactie moet niet worden uitgevoerd) uit je script te komen.
 
-### Extra variabelen
+## Extra variabelen
 
 Binnen je templates of documenten kun je extra variabelen ophalen die betrekking hebben op de opvolgactie:
 ```
