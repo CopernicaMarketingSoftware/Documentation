@@ -112,11 +112,11 @@ Je kunt echter ook [geavanceerde JavaScript-condities](./advanced-javascript-con
 
 ## Extra variabelen
 
-Binnen je templates of documenten kun je extra variabelen ophalen die informatie bevatten over de aanleiding van de mailing: wat was de trigger? 
+Binnen templates of documenten kun je extra variabelen ophalen die informatie bevatten over de aanleiding van de mailing: wat was de trigger? 
 
-Het profiel dat de mailing heeft veroorzaakt kan namelijk afwijken van de bestemming waar de mail naar wordt verzonden. Als je als bestemming van je opvolgactie kiest voor een eigen opgegeven e-mailadres of een selectie kun je met {$mailing.trigger.profile.VELDNAAM} de veldwaardes uit het profiel ophalen waardoor de opvolgactie oorspronkelijk gestart is.
+Het profiel dat de mailing heeft veroorzaakt kan namelijk afwijken van de bestemming waar de mail naar wordt verzonden. Als je als bestemming van de opvolgactie kiest voor een eigen opgegeven e-mailadres of een selectie kun je met {$mailing.trigger.profile.VELDNAAM} de veldwaardes uit het profiel ophalen waardoor de opvolgactie oorspronkelijk gestart is.
 
-De {$mailing.trigger.subprofile} variabele worden voornamelijk gebruikt in templates van opvolgacties met een wachttijd.Als je een collectie hebt met bestellingen en je wilt een review mail versturen na twee dagen, kan het voorkomen dat er in de tussentijd extra bestellingen zijn binnengekomen voor die klant. In je template wil je niet de veldwaardes ophalen van het laatst aangemaakte subprofiel, maar van het subprofiel waarop de opvolgactie oorspronkelijk is opgestart. Dit is mogelijk met {$mailing.trigger.subprofile.VELDNAAM}.
+De {$mailing.trigger.subprofile} variabele worden voornamelijk gebruikt in templates van opvolgacties met een wachttijd. Als je een collectie hebt met bestellingen en je wilt een review mail versturen na twee dagen, kan het voorkomen dat er in de tussentijd extra bestellingen zijn binnengekomen voor die klant. In de template wil je niet de veldwaardes ophalen van het laatst aangemaakte subprofiel, maar van het subprofiel waarop de opvolgactie oorspronkelijk is opgestart. Dit is mogelijk met {$mailing.trigger.subprofile.VELDNAAM}.
 
 ```
 // Tijdstip waarop de opvolgactie is gestart
