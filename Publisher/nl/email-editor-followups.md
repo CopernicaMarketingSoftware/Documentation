@@ -112,19 +112,24 @@ Je kunt echter ook [geavanceerde JavaScript-condities](./advanced-javascript-con
 
 ## Extra variabelen
 
-Binnen je templates of documenten kun je extra variabelen ophalen die betrekking hebben op de opvolgactie:
+Binnen je templates of documenten kun je extra variabelen ophalen die informatie bevatten over de aanleiding van de mailing: wat was de trigger? 
+
+Het profiel dat de mailing heeft veroorzaakt kan namelijk afwijken van de bestemming waar de mail naar wordt verzonden. Als je als bestemming van je opvolgactie kiest voor een eigen opgegeven e-mailadres of een selectie kun je met {$mailing.trigger.profile.VELDNAAM} de veldwaardes uit het profiel ophalen waardoor de opvolgactie oorspronkelijk gestart is.
+
+De {$mailing.trigger.subprofile} variabele worden voornamelijk gebruikt in templates van opvolgacties met een wachttijd.Als je een collectie hebt met bestellingen en je wilt een review mail versturen na twee dagen, kan het voorkomen dat er in de tussentijd extra bestellingen zijn binnengekomen voor die klant. In je template wil je niet de veldwaardes ophalen van het laatst aangemaakte subprofiel, maar van het subprofiel waarop de opvolgactie oorspronkelijk is opgestart. Dit is mogelijk met {$mailing.trigger.subprofile.VELDNAAM}.
+
 ```
 // Tijdstip waarop de opvolgactie is gestart
-$mailing.trigger.triggertime
+{$mailing.trigger.triggertime}
 
 // Tijdstempel waarop de opvolgactie is gestart
-$mailing.trigger.triggertimestamp
+{$mailing.trigger.triggertimestamp}
 
 // Ophalen van profielvelden waarop de opvolgactie is uitgevoerd
-$mailing.trigger.profile.VELDNAAM (werkt enkel wanneer het profiel de bestemming van de opvolgactie is)
+{$mailing.trigger.profile.VELDNAAM} (werkt enkel wanneer het profiel de bestemming van de opvolgactie is)
 
 // Ophalen van subprofielvelden waarop de opvolgactie is uitgevoerd
-$mailing.trigger.subprofile.VELDNAAM (werkt enkel wanneer het subprofiel de bestemming van de opvolgactie is)
+{$mailing.trigger.subprofile.VELDNAAM} (werkt enkel wanneer het subprofiel de bestemming van de opvolgactie is)
 ```
 
 ### Publisher specifieke variabelen
@@ -132,11 +137,11 @@ $mailing.trigger.subprofile.VELDNAAM (werkt enkel wanneer het subprofiel de best
 Naast bovenstaande extra variabelen, zijn in Publisher-opvolgacties ook de volgende Publisher specifieke variabelen mogelijk:
 ```
 // Tijdstip waarop de mailing is verzonden
-$mailing.sendtime
+{$mailing.sendtime}
 
 // Tijdstip waarop de opvolgactie is uitgevoerd
-$mailing.trigger.executetime
+{$mailing.trigger.executetime}
 
 // Tijdstempel waarop de opvolgactie is uitgevoerd
-$mailing.trigger.executetimestamp
+{$mailing.trigger.executetimestamp}
 ```
