@@ -126,20 +126,32 @@ It's also possible to add advanced JavaScript conditions in the **'Advanced mode
 
 ## Extra variables
 
-You can add extra variables relating to the follow-up action in your HTML template or -document:
+You can add extra variables relating to the follow-up action in your template or -document:
+```
+// Time at which the follow-up action was triggered
+$mailing.trigger.triggertime
+
+// Timestamp at which the follow-up action was triggered
+$mailing.trigger.triggertimestamp
+
+// Retrieve profile fields for which the follow-up action was executed
+$mailing.trigger.profile.FIELD NAME (only functions when the profile is the destination of the followu-up)
+
+// Retrieve subprofile fields for which the follow-up action was executed
+$mailing.trigger.subprofile.FIELD NAME (only functions when the subprofile is the destination of the followu-up)
+```
+
+### Publisher specific variables
+
+In addition to the variables above, Publisher follow-ups also allow the following Publisher specific variables:
 ```
 // Time at which the mailing was sent
 $mailing.sendtime
 
-// Time at which the follow-up action was triggered
-$mailing.trigger.triggertime
-
 // Time at which the follow-up action was executed
 $mailing.trigger.executetime
 
-// Retrieve profile fields for which the follow-up action was executed
-$mailing.trigger.profile.FIELD NAME (only functions when the profile is the destination)
-
-// Retrieve subprofile fields for which the follow-up action was executed
-$mailing.trigger.subprofile.FIELD NAME (only functions when the subprofile is the destination)
+// Timestamp at which the follow-up action was executed
+$mailing.trigger.executetimestamp
 ```
+
