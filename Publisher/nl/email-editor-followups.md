@@ -114,18 +114,29 @@ Je kunt echter ook [geavanceerde JavaScript-condities](./advanced-javascript-con
 
 Binnen je templates of documenten kun je extra variabelen ophalen die betrekking hebben op de opvolgactie:
 ```
+// Tijdstip waarop de opvolgactie is gestart
+$mailing.trigger.triggertime
+
+// Timestamp waarop de opvolgactie is gestart
+$mailing.trigger.triggertimestamp
+
+// Ophalen van profielvelden waarop de opvolgactie is uitgevoerd
+$mailing.trigger.profile.VELDNAAM (werkt enkel wanneer het profiel de bestemming van de opvolgactie is)
+
+// Ophalen van subprofielvelden waarop de opvolgactie is uitgevoerd
+$mailing.trigger.subprofile.VELDNAAM (werkt enkel wanneer het subprofiel de bestemming van de opvolgactie is)
+```
+
+### Publisher specifieke variabelen
+
+Naast bovenstaande extra variabelen, zijn in Publisher-opvolgacties ook de volgende Publisher specifieke variabelen mogelijk:
+```
 // Tijdstip waarop de mailing is verzonden
 $mailing.sendtime
-
-// Tijdstip waarop de opvolgactie is getriggered
-$mailing.trigger.triggertime
 
 // Tijdstip waarop de opvolgactie is uitgevoerd
 $mailing.trigger.executetime
 
-// Ophalen van profielvelden waarop de opvolgactie is uitgevoerd
-$mailing.trigger.profile.VELDNAAM (werkt enkel wanneer het profiel de bestemming is)
-
-// Ophalen van subprofielvelden waarop de opvolgactie is uitgevoerd
-$mailing.trigger.subprofile.VELDNAAM (werkt enkel wanneer het subprofiel de bestemming is)
+// Timestamp waarop de opvolgactie is uitgevoerd
+$mailing.trigger.executetimestamp
 ```
