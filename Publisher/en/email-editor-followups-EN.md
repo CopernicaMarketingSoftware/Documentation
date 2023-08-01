@@ -126,19 +126,24 @@ It's also possible to add advanced JavaScript conditions in the **'Advanced mode
 
 ## Extra variables
 
-You can add extra variables relating to the follow-up action in your template or -document:
+Within the templates or documents you can add extra variables that contain information about the cause of the mailing: what was the trigger?
+
+The profile that caused the mailing may differ from the destination to which the mail is sent. If you select a fixed email address or selection as the destination of the follow-up, you can use {$mailing.trigger.profile.FIELDNAME} to retrieve the values from the profile that originally started the follow-up.
+
+The {$mailing.trigger.subprofile} variable are mainly used in templates of follow-ups with a waiting time. If you have a collection with orders and you want to send a review mail after two days, it may happen that there are additional orders added in the meantime for that customer. In the template you do not want to retrieve the values of the last created subprofile, but from the subprofile on which the follow-up was originally started. This is possible with {$mailing.trigger.subprofile.FIELDNAME}.
+
 ```
 // Time at which the follow-up action was triggered
-$mailing.trigger.triggertime
+{$mailing.trigger.triggertime}
 
 // Timestamp at which the follow-up action was triggered
-$mailing.trigger.triggertimestamp
+{$mailing.trigger.triggertimestamp}
 
 // Retrieve profile fields for which the follow-up action was executed
-$mailing.trigger.profile.FIELD NAME (only functions when the profile is the destination of the followu-up)
+{$mailing.trigger.profile.FIELDNAME} (only functions when the profile is the destination of the followu-up)
 
 // Retrieve subprofile fields for which the follow-up action was executed
-$mailing.trigger.subprofile.FIELD NAME (only functions when the subprofile is the destination of the followu-up)
+{$mailing.trigger.subprofile.FIELDNAME} (only functions when the subprofile is the destination of the followu-up)
 ```
 
 ### Publisher specific variables
@@ -146,12 +151,12 @@ $mailing.trigger.subprofile.FIELD NAME (only functions when the subprofile is th
 In addition to the variables above, Publisher follow-ups also allow the following Publisher specific variables:
 ```
 // Time at which the mailing was sent
-$mailing.sendtime
+{$mailing.sendtime}
 
 // Time at which the follow-up action was executed
-$mailing.trigger.executetime
+{$mailing.trigger.executetime}
 
 // Timestamp at which the follow-up action was executed
-$mailing.trigger.executetimestamp
+{$mailing.trigger.executetimestamp}
 ```
 
