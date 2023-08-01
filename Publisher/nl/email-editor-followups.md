@@ -117,7 +117,7 @@ Binnen je templates of documenten kun je extra variabelen ophalen die betrekking
 // Tijdstip waarop de opvolgactie is gestart
 $mailing.trigger.triggertime
 
-// Timestamp waarop de opvolgactie is gestart
+// Tijdstempel waarop de opvolgactie is gestart
 $mailing.trigger.triggertimestamp
 
 // Ophalen van profielvelden waarop de opvolgactie is uitgevoerd
@@ -137,6 +137,6 @@ $mailing.sendtime
 // Tijdstip waarop de opvolgactie is uitgevoerd
 $mailing.trigger.executetime
 
-// Timestamp waarop de opvolgactie is uitgevoerd
+// Tijdstempel waarop de opvolgactie is uitgevoerd
 $mailing.trigger.executetimestamp
 ```
