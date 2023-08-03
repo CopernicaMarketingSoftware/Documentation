@@ -120,16 +120,13 @@ zijn beschibaar:
 
 - {$mailing.trigger.triggertime}
 - {$mailing.trigger.triggertimestamp}
-- {$mailing.trigger.executetime}
-- {$mailing.trigger.executetimestamp}
 - {$mailing.trigger.profile}
 - {$mailing.trigger.subprofile}
 
 Sommige opvolgacties hebben een vertraging, zoals acties als "verstuur een dag na de klik een opvolgmail".
-Daarom is er ook een verschil tussen de trigger-tijd en de uitvoer-tijd. Beide tijdstippen zijn als
-personalisatievariabele beschikbaar. De "time" variabelen bevatten de tijd in "YYYY-MM-DD hh:mm:ss"
-notatie (dus bijvoorbeeld "1969-07-20 21:17:00") en de "timestamp" variabelen bevatten het tijdstip
-als UNIX timestamp in seconden.
+Daarom is er ook een verschil tussen de trigger-tijd en de uitvoer-tijd. De "time" variabelen bevatten 
+de tijd in "YYYY-MM-DD hh:mm:ss" notatie (dus bijvoorbeeld "1969-07-20 21:17:00") en de "timestamp" 
+variabelen bevatten het tijdstip als UNIX timestamp in seconden.
 
 De variabele {$mailing.trigger.profile} bevat informatie over het profiel dat de opvolgactie heeft veroorzaakt.
 Dit is meestal hetzelfde profiel als waar je de opvolgmailing naar toe verstuurt: de waarde van
@@ -150,6 +147,8 @@ De informatie over de bestelling staat dan in velden als {$mailing.trigger.subpr
 
 Naast bovenstaande extra variabelen, zijn in Publisher-opvolgacties ook de volgende Publisher specifieke variabelen mogelijk:
 
-- {$mailing.sendtime}
-
-Dit is het tijdstip waarop de mailing is verzonden.
+| Variabele                   | Uitleg                                                                                                  |
+|-----------------------------|---------------------------------------------------------------------------------------------------------|
+| {$mailing.sendtime}         | Tijdstip waarop de mailing is verzonden.                                                                |
+| {$mailing.executetime}      | Tijdstip waarop de opvolgactie is uitgevoerd                                                            |
+| {$mailing.executetimestamp} | Tijdstempel waarop de opvolgactie is uitgevoerd                                                         |
