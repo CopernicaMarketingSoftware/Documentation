@@ -112,26 +112,39 @@ Je kunt echter ook [geavanceerde JavaScript-condities](./advanced-javascript-con
 
 ## Extra variabelen
 
-Binnen templates of documenten kun je extra variabelen ophalen die informatie bevatten over de aanleiding van de mailing: wat was de trigger? 
-Deze informatie wordt opgeslagen binnen de {$mailing.trigger} variabele. Dit omvat onder andere het tijdstip waarop de opvolgactie is opgestart en door welk (sub)profiel. Om het tijdstip op te halen waarop de opvolgactie gestart is gebruik je {$mailing.trigger.triggertime}. Je kunt dus nu mailings maken met teksten als "Je hebt op {$mailing.trigger.triggertime} op een link geklikt".
+Als je een opvolgactie maakt waarmee je een nieuwe mailing verstuurt, dan kun je in de template of in het document
+variabelen gebruiken met informatie over de opvolgactie. Deze informatie is opgeslagen in {$mailing.trigger}. 
+Dit omvat onder andere het tijdstip waarop de opvolgactie is geactiveerd en wanneer deze is uitgevoerd. 
+Ook kun je uitlezen welk profiel of subprofiel de opvolgactie heeft veroorzaakt. De volgende variabelen
+zijn beschibaar:
 
-De variabele {$mailing.trigger.profile} bevat informatie over het profiel dat de opvolgactie heeft veroorzaakt (getriggerd). Dit is meestal gewoon hetzelfde profiel als waar je de opvolgmailing naar toe verstuurt. Je kunt daarom vaak net zo makkelijk {$profile.voornaam} als {$mailing.trigger.profile.voornaam} gebruiken. Dit kan echter van elkaar afwijken als je kiest voor een eigen opgegeven e-mailadres of selectie als bestemming van de opvolgactie. Bij een eigen opgegeven e-mailadres is de {$profile} variabele leeg (er is namelijk geen profiel waar de mail naar toe wordt verzonden) en bij een selectie bevat de {$profile} variabele de informatie van het profiel uit de selectie. Met {$mailing.trigger.profile.VELDNAAM} kun je alsnog de informatie van het profiel ophalen waardoor de opvolgactie oorspronkelijk gestart is.
+- {$mailing.trigger.triggertime}
+- {$mailing.trigger.triggertimestamp}
+- {$mailing.trigger.executetime}
+- {$mailing.trigger.executetimestamp}
+- {$mailing.trigger.profile}
+- {$mailing.trigger.subprofile}
 
-De {$mailing.trigger.subprofile} variabele zou je bijvoorbeeld kunnen gebruiken voor opvolgacties op basis van een nieuw of aangepast subprofiel, zoals: "verstuur twee dagen nadat er een nieuw subprofiel, bijvoorbeeld een bestelling, is aangemaakt een review mail naar het profiel". In dit geval is het profiel de bestemming van de e-mail en het subprofiel de trigger. De opvolgactie is namelijk gestart door een nieuw of aangepast subprofiel. Om de gegevens van het subprofiel in een template te tonen, gebruik je normaal gesproken de [loadsubprofile](./loadprofile-and-loadsubprofile)-tag. Hiermee haal je de gegevens van het laatste subprofiel op. Het kan echter voorkomen dat er tijdens de wachttijd extra subprofielen zijn aangemaakt binnen hetzelfde profiel. In dit geval wil je niet de veldwaardes ophalen van het laatste subprofiel, maar van het subprofiel waarop de opvolgactie oorspronkelijk is gestart. Dit is mogelijk met {$mailing.trigger.subprofile.VELDNAAM}.
+Sommige opvolgacties hebben een vertraging, zoals acties als "verstuur een dag na de klik een opvolgmail".
+Daarom is er ook een verschil tussen de trigger-tijd en de uitvoer-tijd. Beide tijdstippen zijn als 
+personalisatievariabele beschikbaar. De "time" variabelen bevatten de tijd in "YYYY-MM-DD hh:mm:ss" 
+notatie (dus bijvoorbeeld "1969-07-20 21:17:00") en de "timestamp" variabelen bevatten het tijdstip
+als UNIX timestamp in seconden.
 
-```
-// Tijdstip waarop de opvolgactie is gestart
-{$mailing.trigger.triggertime}
+De variabele {$mailing.trigger.profile} bevat informatie over het profiel dat de opvolgactie heeft veroorzaakt.
+Dit is meestal hetzelfde profiel als waar je de opvolgmailing naar toe verstuurt: de waarde van 
+{$profile.voornaam} is dan dus gelijk aan die van {$mailing.trigger.profile.voornaam}. Maar als je een opvolgmail
+stuurt naar een zelf opgegeven e-mailadres of naar een selectie, dan wijkt dit af. Bij een zelf opgegeven 
+e-mailadres is de {$profile} variabele leeg (er is namelijk geen profiel waar de mail naar toe wordt verzonden) 
+en bij een selectie bevat de {$profile} variabele de informatie van het profiel uit de selectie. 
+Met {$mailing.trigger.profile.VELDNAAM} kun je dan alsnog de informatie van het oorspronkelijke profiel gebruiken.
 
-// Tijdstempel waarop de opvolgactie is gestart
-{$mailing.trigger.triggertimestamp}
-
-// Ophalen van profielvelden waarop de opvolgactie is uitgevoerd
-{$mailing.trigger.profile.VELDNAAM} (werkt enkel wanneer het profiel de bestemming van de opvolgactie is)
-
-// Ophalen van subprofielvelden waarop de opvolgactie is uitgevoerd
-{$mailing.trigger.subprofile.VELDNAAM} (werkt enkel wanneer het subprofiel de bestemming van de opvolgactie is)
-```
+Dit geldt ook voor {$mailing.trigger.subprofile}. Maar de {$mailing.trigger.subprofile} variabele wordt ook wel
+gebruikt voor opvolgacties op basis van een nieuw of aangepast subprofiel, bijvoorbeeld als subprofielen worden
+gebruikt om bestellingen in op te slaan. Bijvoorbeeld de actie "verstuur twee dagen nadat er een nieuw subprofiel
+(dus de bestelling) is aangemaakt een review mail naar het profiel". In dit geval is het profiel de bestemming van
+de e-mail en het subprofiel de trigger. De opvolgactie is namelijk gestart door een nieuw of aangepast subprofiel. 
+De informatie over de bestelling staat dan in velden als {$mailing.trigger.subprofile.VELDNAAM}.
 
 ### Publisher specifieke variabelen
 
