@@ -126,36 +126,30 @@ zijn beschibaar:
 - {$mailing.trigger.subprofile}
 
 Sommige opvolgacties hebben een vertraging, zoals acties als "verstuur een dag na de klik een opvolgmail".
-Daarom is er ook een verschil tussen de trigger-tijd en de uitvoer-tijd. Beide tijdstippen zijn als 
-personalisatievariabele beschikbaar. De "time" variabelen bevatten de tijd in "YYYY-MM-DD hh:mm:ss" 
+Daarom is er ook een verschil tussen de trigger-tijd en de uitvoer-tijd. Beide tijdstippen zijn als
+personalisatievariabele beschikbaar. De "time" variabelen bevatten de tijd in "YYYY-MM-DD hh:mm:ss"
 notatie (dus bijvoorbeeld "1969-07-20 21:17:00") en de "timestamp" variabelen bevatten het tijdstip
 als UNIX timestamp in seconden.
 
 De variabele {$mailing.trigger.profile} bevat informatie over het profiel dat de opvolgactie heeft veroorzaakt.
-Dit is meestal hetzelfde profiel als waar je de opvolgmailing naar toe verstuurt: de waarde van 
+Dit is meestal hetzelfde profiel als waar je de opvolgmailing naar toe verstuurt: de waarde van
 {$profile.voornaam} is dan dus gelijk aan die van {$mailing.trigger.profile.voornaam}. Maar als je een opvolgmail
-stuurt naar een zelf opgegeven e-mailadres of naar een selectie, dan wijkt dit af. Bij een zelf opgegeven 
-e-mailadres is de {$profile} variabele leeg (er is namelijk geen profiel waar de mail naar toe wordt verzonden) 
-en bij een selectie bevat de {$profile} variabele de informatie van het profiel uit de selectie. 
+stuurt naar een zelf opgegeven e-mailadres of naar een selectie, dan wijkt dit af. Bij een zelf opgegeven
+e-mailadres is de {$profile} variabele leeg (er is namelijk geen profiel waar de mail naar toe wordt verzonden)
+en bij een selectie bevat de {$profile} variabele de informatie van het profiel uit de selectie.
 Met {$mailing.trigger.profile.VELDNAAM} kun je dan alsnog de informatie van het oorspronkelijke profiel gebruiken.
 
 Dit geldt ook voor {$mailing.trigger.subprofile}. Maar de {$mailing.trigger.subprofile} variabele wordt ook wel
 gebruikt voor opvolgacties op basis van een nieuw of aangepast subprofiel, bijvoorbeeld als subprofielen worden
 gebruikt om bestellingen in op te slaan. Bijvoorbeeld de actie "verstuur twee dagen nadat er een nieuw subprofiel
 (dus de bestelling) is aangemaakt een review mail naar het profiel". In dit geval is het profiel de bestemming van
-de e-mail en het subprofiel de trigger. De opvolgactie is namelijk gestart door een nieuw of aangepast subprofiel. 
+de e-mail en het subprofiel de trigger. De opvolgactie is namelijk gestart door een nieuw of aangepast subprofiel.
 De informatie over de bestelling staat dan in velden als {$mailing.trigger.subprofile.VELDNAAM}.
 
 ### Publisher specifieke variabelen
 
 Naast bovenstaande extra variabelen, zijn in Publisher-opvolgacties ook de volgende Publisher specifieke variabelen mogelijk:
-```
-// Tijdstip waarop de mailing is verzonden
-{$mailing.sendtime}
 
-// Tijdstip waarop de opvolgactie is uitgevoerd
-{$mailing.trigger.executetime}
+- {$mailing.sendtime}
 
-// Tijdstempel waarop de opvolgactie is uitgevoerd
-{$mailing.trigger.executetimestamp}
-```
+Dit is het tijdstip waarop de mailing is verzonden.
