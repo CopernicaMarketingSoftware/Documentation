@@ -126,20 +126,42 @@ It's also possible to add advanced JavaScript conditions in the **'Advanced mode
 
 ## Extra variables
 
-You can add extra variables relating to the follow-up action in your HTML template or -document:
-```
-// Time at which the mailing was sent
-$mailing.sendtime
+If you create a follow-up with which you send a new mailing, you can use variables with information about the follow-up action. 
+This information is stored in {$mailing.trigger}. This includes the time when the follow-up action was triggered.
+You can also read which profile or sub-profile caused the follow-up action. The following variables
+are available:
 
-// Time at which the follow-up action was triggered
-$mailing.trigger.triggertime
+- {$mailing.trigger.triggertime}
+- {$mailing.trigger.triggertimestamp}
+- {$mailing.trigger.profile}
+- {$mailing.trigger.subprofile}
 
-// Time at which the follow-up action was executed
-$mailing.trigger.executetime
+Some follow-up have a delay, such as actions like "send a follow-up email a day after the click".
+Therefore, there is also a difference between the trigger time and the actual send time. In the "time" variables
+contains the time in "YYYY-MM-DD hh:mm:ss" format (so for example "1969-07-20 21:17:00") and the "timestamp"
+variables contain the time as UNIX timestamp in seconds.
 
-// Retrieve profile fields for which the follow-up action was executed
-$mailing.trigger.profile.FIELD NAME (only functions when the profile is the destination)
+The {$mailing.trigger.profile} variable contains information about the profile that triggered the follow-up.
+This is usually the same profile to which you send the follow-up mailing: the value of
+{$profile.firstname} is then equal to that of {$mailing.trigger.profile.firstname}. But if you have a follow up email
+sends to a fixed email address or to a selection, then this differs. With a fixed email address, 
+the {$profile} variable is empty (there is no profile to which the mail is sent)
+and with a selection, the {$profile} variable contains the information of the selected profile.
+With {$mailing.trigger.profile.FIELDNAME} you can still use the information from the original profile.
 
-// Retrieve subprofile fields for which the follow-up action was executed
-$mailing.trigger.subprofile.FIELD NAME (only functions when the subprofile is the destination)
-```
+This also applies to {$mailing.trigger.subprofile}. But the {$mailing.trigger.subprofile} variable is also 
+used for follow-up based on a new or modified subprofile, for example when subprofiles are used to store orders. 
+For example, the action "send two days after a new subprofile (so the order) has been created a review email to the profile". 
+In this case, the profile is the destination of the email and the subprofile the trigger. 
+This is because the follow-up action was started by a new or modified subprofile.
+The information about the order will then be in fields such as {$mailing.trigger.subprofile.FIELDNAME}.
+
+### Publisher specific variables
+
+In addition to the extra variables above, Publisher follow-ups also allow the following Publisher specific variables:
+
+| Variable                     | Explanation                                                          |
+|------------------------------|----------------------------------------------------------------------|
+| {$mailing.sendtime}          | Time when the mailing was sent.                                      |
+| {$mailing.executetime}       | Time when the follow-up action was performed                         |
+| {$mailing.executetimestamp}  | Timestamp when the follow-up was performed                           |
