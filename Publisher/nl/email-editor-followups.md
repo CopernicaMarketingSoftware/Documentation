@@ -113,7 +113,7 @@ Je kunt echter ook [geavanceerde JavaScript-condities](./advanced-javascript-con
 ## Extra variabelen
 
 Als je een opvolgactie maakt waarmee je een nieuwe mailing verstuurt, dan kun je in de template of in het document
-variabelen gebruiken met informatie over de opvolgactie. Deze informatie is opgeslagen in {$mailing.trigger}. 
+van de opvolgmail variabelen gebruiken met informatie over de opvolgactie. Deze informatie is opgeslagen in {$mailing.trigger}. 
 Dit omvat onder andere het tijdstip waarop de opvolgactie is geactiveerd en wanneer deze is uitgevoerd. 
 Ook kun je uitlezen welk profiel of subprofiel de opvolgactie heeft veroorzaakt. De volgende variabelen
 zijn beschibaar:
