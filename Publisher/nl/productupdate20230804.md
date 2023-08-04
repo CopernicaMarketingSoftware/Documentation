@@ -16,6 +16,3 @@ Meer informatie over het instellen van {$mailing.trigger} variabelen lees je in 
 Tussen 1 augustus en 1 september zijn we begonnen met het verplichten van twee-factor-authenticatie (2FA). Alle gebruikers moeten vanaf 1 september inloggen met een wachtwoord, en een wisselende code die met een smartphone wordt gegenereerd.
 
 Meer informatie over het instellen van 2FA lees je in [dit artikel](https://www.copernica.com/nl/blog/post/twee-factor-authenticatie-verplicht-vanaf-1-september).
-
-## Snel aan de slag met Marketing Suite
-We hebben [een pagina](https://www.copernica.com/nl/aan-de-slag) toegevoegd aan de website waarin we uitleggen hoe je snel aan de slag kunt met Marketing Suite. Je kunt deze pagina gebruiken als je zelf nog eens wilt terugzien hoe het ook alweer werkt, of als je een collega moet inwerken.
