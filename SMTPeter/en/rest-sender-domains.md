@@ -11,8 +11,8 @@ you can use the REST API for this too. The following methods
 are available:
 
 ````text
-(1) https://www.smtpeter.com/v1/domains
-(2) https://www.smtpeter.com/v1/domain/NAME
+(1) https://www.smtpeter.com/v2/domains
+(2) https://www.smtpeter.com/v2/domain/NAME
 ````
 
 ## Creating and updating sender domains
@@ -20,7 +20,7 @@ are available:
 You can create a sender domain by posting a call of the form:
 
 ```text
-POST /v1/domain/yourdomain.com?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/domain/yourdomain.com?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 ```
 Where "yourdomain.com" is the name of your sender domain. After posting the
@@ -47,7 +47,7 @@ up the sender domain to your wishes. The POST call you can make has should
 have the following form:
 
 ```text
-POST /v1/domain/yourdomain.com?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/domain/yourdomain.com?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length:
@@ -136,7 +136,7 @@ All the properties that you can set for a sender domain can also be requested
 with a "GET" call:
 
 ```txt
-https://www.smtpeter.com/v1/domain/example.com
+https://www.smtpeter.com/v2/domain/example.com
 ```
 
 You will then receive a single JSON object:
@@ -169,7 +169,7 @@ If you want to get a list of all domains for which SMTPeter has configuration
 settings, use the following API GET call:
 
 ```txt
-https://www.smtpeter.com/v1/domains
+https://www.smtpeter.com/v2/domains
 ```
 
 You will receive an array with JSON objects holding the following information:
@@ -210,7 +210,7 @@ You will receive an array with JSON objects holding the following information:
 To delete a sender domain you can make a DELETE call to
 
 ```txt
-https://www.smtpeter.com/v1/domain/yourdomain.com
+https://www.smtpeter.com/v2/domain/yourdomain.com
 ```
 
 ## Deleting an reporting address
@@ -219,5 +219,5 @@ If you want to delete an added email address where dmarc reports are sent
 to, you can make a deleta call to:
 
 ```txt
-https://www.smtpeter.com/v1/domain/yourdomain.com/addded@email.com
+https://www.smtpeter.com/v2/domain/yourdomain.com/addded@email.com
 ```

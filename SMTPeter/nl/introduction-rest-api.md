@@ -5,7 +5,7 @@ eenvoudig genereren in het SMTPeter dashboard onder het kopje REST API.
 Vervolgens kun je gebruik maken van alle toepassingen door middel van de onderstaande URL:
 
 ```text
-https://www.smtpeter.com/v1/METHOD?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v2/METHOD?access_token=YOUR_API_TOKEN
 ```
 
 Let wel op dat je METHOD moet vervangen door de methode die je gaat gebruiken. En dat

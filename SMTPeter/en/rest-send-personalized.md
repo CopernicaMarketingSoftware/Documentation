@@ -4,7 +4,7 @@ If you use personalization placeholders in your messages, you can
 pass extra data to the API to have your messages personalized.
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 147
@@ -25,7 +25,7 @@ used in template 12 are replaced with "John" and "Doe". If you have
 data per recipient:
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 343

@@ -2,10 +2,10 @@
 
 Normally, SMTPeter takes care of processing bounces and out-of-office
 replies. However, if you do want to receive bounce messages too, you should
-pass an extra "envelope" property with each call to the API "/v1/send" method:
+pass an extra "envelope" property with each call to the API "/v2/send" method:
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 7391
@@ -38,7 +38,7 @@ If you pass your own envelope address, you may also use the optional "dsn"
 property to further finetune what type of bounces you're most interested in.
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 7391

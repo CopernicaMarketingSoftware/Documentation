@@ -6,9 +6,9 @@ email providers periodically send reports with SPF and DKIM statistics.
 These reports are accessible through the REST GET API with the following methods:
 
 ```text
-(1) https://www.smtpeter.com/v1/dmarc
-(2) https://www.smtpeter.com/v1/dmarc/DATE/FROM/FOR
-(3) https://www.smtpeter.com/v1/dmarc/DATE/FROM/FOR/ID
+(1) https://www.smtpeter.com/v2/dmarc
+(2) https://www.smtpeter.com/v2/dmarc/DATE/FROM/FOR
+(3) https://www.smtpeter.com/v2/dmarc/DATE/FROM/FOR/ID
 ```
 
 DATE is the date of the report in the form YYYY-MM-DD. FROM is the
