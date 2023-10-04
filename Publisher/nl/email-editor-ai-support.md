@@ -19,7 +19,7 @@ Nadat je de juiste token hebt ingesteld, zie je in de tekstblokken van de drag-a
 1. Klik op `Gebruik AI` om een invoerveld te openen waarin je instructies kunt geven voor het genereren of verbeteren van tekst.
 2. Nadat je op `Verstuur naar AI` hebt geklikt, wordt de gegenereerde tekst weergegeven in het tekstblok van de template.
 
-## OpenAI kosten
+## Kosten OpenAI
 De kosten voor het gebruik van deze functionaliteit worden behoord door OpenAI. Bij het aanmaken van een token ontvang je een startkrediet van $5,-. De kosten voor het gebruik vind je [hier](https://openai.com/pricing). Wij maken gebruik van GPT-3.5 Turbo.
 
 Om onverwachte kosten te voorkomen, kun je in de [facturatie-omgeving](https://platform.openai.com/account/billing/overview) van OpenAI een [gebruikslimiet](https://platform.openai.com/account/billing/limits) instellen.
