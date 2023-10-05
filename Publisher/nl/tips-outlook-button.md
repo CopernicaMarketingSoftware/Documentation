@@ -41,9 +41,9 @@ In onderstaande afbeelding wordt aangegeven waar de tekst (font-size) en regelgr
 ![Afbeelding](../images/nl/paddingbutton2.png)
 
 ## Tip 4 - Gebruik een webveilig lettertype
-Gebruik een [webveilig lettertype](https://www.w3schools.com/cssref/css_websafe_fonts.php) voor goede leesbaarheid van de tekst in de knop.
+Gebruik een [webveilig lettertype](https://www.w3schools.com/cssref/css_websafe_fonts.php) voor goede leesbaarheid van de tekst.
 
-Als je toch een eigen lettertype wilt gebruiken, raden wij aan altijd een fallback lettertype in te stellen dat wel webveilig is. Dit lettertype wordt automatisch weergegeven als de ontvangende e-mailclient het eigen lettertype niet ondersteunt.
+Als je toch een eigen lettertype wilt gebruiken, raden wij aan om een fallback lettertype in te stellen dat wel webveilig is. Dit lettertype wordt automatisch weergegeven als de ontvangende e-mailclient het eigen lettertype niet ondersteunt.
 
 Een fallback lettertype kun je instellen met behulp van de CSS-optie [font-family](https://www.w3schools.com/cssref/pr_font_font-family.php):
 
