@@ -29,7 +29,20 @@ voor het versturen van PDF bestanden.
 De intentions kunnen alleen ingeschakeld worden als de juiste velden hiervoor 
 aanwezig zijn in de database.
 
-## PHP voorbeeld
+## Voorbeeld in JSON
+
+Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "email": true,
+  "sms": false,
+  "fax": false,
+  "pdf": true
+}
+```
+
+## Voorbeeld in PHP
 
 Het volgende PHP-script demonstreert hoe je de API methode kunt aanroepen:
 
