@@ -11,7 +11,7 @@ Om gebruik te kunnen maken van deze functionaliteit, dien je een API-token aan t
 *Belangrijk: De API-token wordt slechts eenmaal weergegeven, dus zorg ervoor dat je deze goed bewaart.*
 
 ## Toevoegen van de OpenAI-token
-Voeg de OpenAI-token toe aan de configuratie-module van je Copernica-account. Ga naar het tabblad 'Externe tokens' onder [API access-tokens](https://ms.copernica.com/#/admin/account/access-tokens)'.
+Voeg de OpenAI-token toe aan de configuratie-module van je Copernica-account. Ga hiervoor naar de optie [OpenAI API-sleutel](https://ms-dev.copernica.com/#/admin/account/openai).
 
 ## AI-ondersteuning gebruiken
 Nadat je de juiste token hebt ingesteld, zie je in de tekstblokken van de drag-and-drop-templates de extra optie `AI-ondersteuning voor tekst`. Volg deze stappen om AI te gebruiken:
