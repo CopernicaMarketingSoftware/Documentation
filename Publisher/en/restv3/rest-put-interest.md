@@ -15,6 +15,17 @@ The following parameters can be added to the call:
 * **group**:    New group name for the interest. This does not affect 
 interests currently in this group.
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "name": "Football",
+  "group": "Sport"
+}
+```
+
 ## PHP Example
 
 The following PHP script demonstrates how to use this API method:
