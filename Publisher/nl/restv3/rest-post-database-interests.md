@@ -16,6 +16,17 @@ De volgende variabelen kunnen in de body van de HTTP POST call worden geplaats.
 * **name**: Naam van de nieuw aan te maken interesse (verplicht)
 * **group**: Optionele groepnaam. Interesses met dezelfde groepnaam worden bij elkaar gezet in de user interface
 
+## Voorbeeld in JSON
+
+Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "name": "Voetbal",
+  "group": "Sport"
+}
+```
+
 ## PHP voorbeeld
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
