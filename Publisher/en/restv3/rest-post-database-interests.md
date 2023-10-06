@@ -15,9 +15,20 @@ The following variables can be set in the message body:
 - **name**: the title of the new interest field (mandatory)
 - **group**: the group the field belongs to. Interests that belong to the same group are put together in the user interface
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "name": "Football",
+  "group": "Sport"
+}
+```
+
 ## PHP example
 
-The following script demonstrates how to use the API method:
+The following PHP script demonstrates how to use the API method:
 
 ```php
 // dependencies
