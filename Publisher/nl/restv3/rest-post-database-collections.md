@@ -16,6 +16,17 @@ De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 * **name**:             naam van de nieuw aan te maken collectie
 * **description**:      beschrijving van de nieuw aan te maken colelctie
 
+## Voorbeeld in JSON
+
+Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "name": "mijn_collectie",
+  "description": "voorbeeld collectie"
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
