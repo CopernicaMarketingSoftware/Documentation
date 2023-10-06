@@ -31,6 +31,19 @@ staan. De "fields" instelling geeft nieuwe veldwaardes in het geval
 dat het profiel geüpdate wordt. In de andere gevallen heeft deze
 parameter dus geen nut.
 
+## Voorbeeld in JSON
+
+Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "behavior": "update",
+  "fields": {
+      "newsletter": "no"
+    }
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen. In
