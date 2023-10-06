@@ -31,7 +31,7 @@ aanwezig zijn in de database.
 
 ## Voorbeeld in JSON
 
-Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ```json
 {
