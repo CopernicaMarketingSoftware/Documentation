@@ -12,9 +12,9 @@ has to be the ID of the field itself.
 
 ## Available data
 
-- **name**: the name of the new field (mandatory)
-- **type**: type of the new field
-- **value**: default value of the new field
+- **name**: the new name of the field (mandatory)
+- **type**: type of the field
+- **value**: default value of the field
 - **displayed**: boolean value to determine whether or not the field should be placed into lists and grids in the user interface
 - **ordered**: boolean value to determine whether or not profiles should be ordered by the value in this field.
 - **length**: maximum text length
@@ -37,6 +37,24 @@ The following types are available for fields:
 - **select**: multiple choice field
 - **big**: large text field
 - **foreign_key**: numerical value that directs to another profile
+
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "name": "text_field",
+  "type": "text",
+  "value": "this is a text field",
+  "displayed": true,
+  "ordered": false,
+  "length": 50,
+  "textlines": 1,
+  "hidden": false,
+  "index": false
+}
+```
 
 ## PHP example
 
