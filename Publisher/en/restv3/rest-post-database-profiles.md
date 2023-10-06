@@ -27,9 +27,27 @@ can be added from a list ("football") or with an associative array
 Please note that this is a different input format than [version 1](../restv1/rest-post-database-profiles) of this 
 API call. 
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "fields": {
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "johndoe@example.com"
+  },
+  "interests": {
+    "Football": 1,
+    "Baseball": 0
+  }
+}
+```
+
 ## PHP example
 
-The following script demonstrates how to use the API method:
+The following PHP script demonstrates how to use the API method:
 
 ```php
 // dependencies
