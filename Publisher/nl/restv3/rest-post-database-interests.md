@@ -18,7 +18,7 @@ De volgende variabelen kunnen in de body van de HTTP POST call worden geplaats.
 
 ## Voorbeeld in JSON
 
-Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ```json
 {
