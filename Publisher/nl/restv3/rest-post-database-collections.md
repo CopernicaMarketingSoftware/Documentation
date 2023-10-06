@@ -29,7 +29,7 @@ Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ## Voorbeeld in PHP
 
-Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
+De volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
 // vereiste scripts
