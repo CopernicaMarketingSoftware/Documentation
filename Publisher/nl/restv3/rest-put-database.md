@@ -23,8 +23,8 @@ Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ```json
 {
-    "name": "new_database_name",
-    "description": "a new description",
+    "name": "nieuwe_database_naam",
+    "description": "nieuwe beschrijving",
     "archived": false
 }
 ```
