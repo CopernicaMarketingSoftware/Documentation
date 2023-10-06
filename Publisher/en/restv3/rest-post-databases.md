@@ -13,6 +13,18 @@ After a successful call the ID of the created request is returned.
 * **description**: optional description of the database
 * **archived**: optional boolean value to archive the database upon creation
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "name": "my_test_database",
+    "description": "database description",
+    "archived": false
+}
+```
+
 ## PHP example
 
 The following PHP script demonstrates how to use the API method:

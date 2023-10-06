@@ -15,9 +15,9 @@ tweede `$id` variabele bevat de naam of het ID van het veld.
 De volgende variabelen kunnen in de body van het HTTP PUT commando worden
 geplaatst:
 
-* name:             naam van het nieuw aan te maken veld (verplicht);
-* type:             type van het nieuwe veld;
-* value:            standaardwaarde van het nieuwe veld;
+* name:             nieuwe naam van het veld (verplicht);
+* type:             type van het veld;
+* value:            standaardwaarde van het veld;
 * displayed:        boolean waarde om aan te geven dat het veld in de user interface in lijsten en grids moet worden geplaatst;
 * ordered:          boolean waarde of profielen standaard op basis van dit veld zijn gesorteerd;
 * length:           maximum lengte voor teksten;
@@ -44,6 +44,24 @@ Een veld kan de volgende types hebben:
 * foreign_key:      numerieke waarde met verwijzing naar een ander profiel.
 
 [Hier](../database-fields) lees je meer over databasevelden.
+
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "name": "text_veld",
+  "type": "text",
+  "value": "dit is een tekstveld",
+  "displayed": true,
+  "ordered": false,
+  "length": 50,
+  "textlines": 1,
+  "hidden": false,
+  "index": false
+}
+```
 
 ## Voorbeeld in PHP
 

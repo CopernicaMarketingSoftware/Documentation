@@ -39,9 +39,27 @@ The following types are available for fields:
 - **big**: large text field
 - **foreign_key**: numerical value that directs to another profile
 
-## Example in PHP
+## JSON example
 
-The following example demonstrates how to use the API method:
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "name": "text_field",
+  "type": "text",
+  "value": "this is a text field",
+  "displayed": true,
+  "ordered": false,
+  "length": 50,
+  "textlines": 1,
+  "hidden": false,
+  "index": false
+}
+```
+
+## PHP example
+
+The following PHP example demonstrates how to use the API method:
 
 ```php
 // dependencies

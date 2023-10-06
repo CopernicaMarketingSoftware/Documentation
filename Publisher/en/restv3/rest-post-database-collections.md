@@ -19,9 +19,20 @@ The following variables can be set in the message body:
 for the collection should contain only letters and underscores.
 - **description**: Description of the new collection
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "name": "my_collection",
+  "description": "example collection"
+}
+```
+
 ## PHP example
 
-The following script demonstrates how to use the API method:
+The following PHP script demonstrates how to use the API method:
 
 ```php
 // dependencies

@@ -17,10 +17,21 @@ The following variables can be added to the body of the HTTP POST call:
 
 - **name**: The name of the selection that is to be created. (mandatory)
 - **description**: an optional description of the new selection.
+  
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "name": "my-selection",
+  "description": "example selection"
+}
+```
 
 ## PHP example
 
-The following example demonstrates how to use the API method:
+The following PHP example demonstrates how to use the API method:
 
 ```php
 // dependencies

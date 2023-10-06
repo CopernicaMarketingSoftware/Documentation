@@ -29,6 +29,23 @@ De miniselecties kunnen alleen gekopieërd worden als de collecties ook gekopie�
 * **subprofiles**: Een boolean die aangeeft of de subprofielen mee gekopieërd moeten worden. 
 Dit is alleen mogelijk als zowel de collecties als de profielen gekopieërd worden.
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "name": "Database_copy",
+    "options": {
+        "collections": true,
+        "miniviews": true,
+        "views": true,
+        "profiles": true,
+        "subprofiles": true
+    }
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
@@ -51,7 +68,7 @@ $options = array(
 
 // data voor de methode
 $data = array(
-    'name'      =>  'Database (copy)',
+    'name'      =>  'Database_copy',
     'options'   =>  $options
 );
 

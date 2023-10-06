@@ -55,6 +55,24 @@ If a profile is created succesfully with our PHP helper class it will output
 the new profile ID. In all other cases of success it will return a 1. 
 A new profile ID can also be found in the 'X-Created' header.
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "fields": {
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "johndoe@example.com"
+  },
+  "interests": {
+    "Football": 1,
+    "Baseball": 0
+  }
+}
+```
+
 ## PHP example
 
 This PHP script demonstrates how you can use this API call. In this specific 

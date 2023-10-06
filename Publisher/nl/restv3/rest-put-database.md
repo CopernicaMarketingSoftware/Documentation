@@ -16,10 +16,18 @@ geplaatst:
 - name:             de optionele nieuwe naam van de database;
 - description:      de optionele nieuwe omschrijving van de database;
 - archived:         optionele boolean waarde om de database te archiveren;
-- created:          tijdstip waarop de database werd aangemaakt in YYYY-MM-DD hh:mm:ss formaat;
-- fields:           array met velden in de database;
-- interests:        array met interesses in de database;
-- collections:      array met de collecties in de database.
+
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "name": "nieuwe_database_naam",
+    "description": "nieuwe beschrijving",
+    "archived": false
+}
+```
 
 ## Voorbeeld in PHP
 

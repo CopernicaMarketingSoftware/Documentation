@@ -26,6 +26,19 @@ unsubscribers and 'update' can be used to change a property of the
 profile such that you can keep the information while respecting their 
 wish not to receive more email.
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "behavior": "update",
+  "fields": {
+      "newsletter": "no"
+    }
+}
+```
+
 ## PHP example
 
 The following PHP script demonstrates how to use the method. In this 

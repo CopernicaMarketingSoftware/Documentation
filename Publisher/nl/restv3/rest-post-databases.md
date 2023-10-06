@@ -11,6 +11,18 @@ naar het volgende adres:
 * **description**: optionele omschrijving van de database
 * **archived**: optionele boolean waarde om de database direct te archiveren
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "name": "mijn_test_database",
+    "description": "omschrijving van de database",
+    "archived": false
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:

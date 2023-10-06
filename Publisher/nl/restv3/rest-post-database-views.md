@@ -19,6 +19,17 @@ POST-call worden geplaatst.
 - **name**:             naam van de nieuw aan te maken selectie (verplicht)
 - **description**:      beschrijving van de nieuwe selectie
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "name": "mijn-selectie",
+  "description": "voorbeeld selectie"
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:

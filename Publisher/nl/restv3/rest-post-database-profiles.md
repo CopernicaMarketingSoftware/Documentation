@@ -26,6 +26,24 @@ meegegeven worden als associatieve array.
 Let op! Hier wordt de body data op een andere manier meegegeven dan in 
 [versie 1](../restv1/rest-post-database-profiles) van de API.
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "fields": {
+    "voornaam": "John",
+    "achternaam": "Doe",
+    "email": "johndoe@example.com"
+  },
+  "interests": {
+    "Voetbal": 1,
+    "Honkbal": 0
+  }
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:

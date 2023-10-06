@@ -43,7 +43,25 @@ Een veld kan de volgende types hebben:
 
 [Hier](../database-fields) lees je meer over databasevelden.
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "name": "text_veld",
+  "type": "text",
+  "value": "dit is een tekstveld",
+  "displayed": true,
+  "ordered": false,
+  "length": 50,
+  "textlines": 1,
+  "hidden": false,
+  "index": false
+}
+```
+
+## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 

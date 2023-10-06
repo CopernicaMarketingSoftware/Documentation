@@ -15,6 +15,17 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 * **name**:     Nieuwe naam voor de interesse
 * **group**:    Nieuwe groepsnaam voor de interesse
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "name": "Voetbal",
+  "group": "Sport"
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
