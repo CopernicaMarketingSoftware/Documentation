@@ -1,7 +1,7 @@
-# Productupdate - AI-ondersteuning voor teksten en account-logins inzichtelijk
+# Productupdate - Nieuwe feature: genereer tekst met AI​ en account-logins inzichtelijk
 
-## AI-ondersteuning voor teksten in je nieuwsbrief
-Het schrijven van nieuwsbrieven kan soms een uitdaging kan zijn. Daarom introduceren we onze nieuwste functie: 'AI-ondersteuning' in tekstblokken. Hiermee kun je teksten eenvoudig laten genereren of verbeteren. 
+## Nieuwe feature: genereer tekst met AI​
+Vandaag introduceren we onze nieuwste functie: 'AI-ondersteuning' in tekstblokken. Hiermee kun je teksten eenvoudig laten genereren of verbeteren.
 
 De AI-ondersteuning is gebaseerd op ChatGPT, ontwikkeld door OpenAI. In [dit artikel](https://www.copernica.com/nl/documentation/email-editor-ai-support) vind je meer uitleg over de werking van AI-ondersteuning.
 
