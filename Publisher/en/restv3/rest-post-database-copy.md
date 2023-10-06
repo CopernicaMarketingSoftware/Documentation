@@ -28,6 +28,23 @@ You can only copy miniviews if the collections are copied as well.
 * **subprofiles**: Boolean that indicates whether the subprofiles should be included in the copy. 
 You can only copy subprofiles if both the collections and profiles are copied as well.
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "name": "Database_copy",
+    "options": {
+        "collections": true,
+        "miniviews": true,
+        "views": true,
+        "profiles": true,
+        "subprofiles": true
+    }
+}
+```
+
 ## PHP example
 
 The following PHP script demonstrates how to use the API method:
@@ -50,7 +67,7 @@ $options = array(
 
 // copy data
 $data = array(
-    'name'      =>  'Database (copy)',
+    'name'      =>  'Database_copy',
     'options'   =>  $options
 );
 
