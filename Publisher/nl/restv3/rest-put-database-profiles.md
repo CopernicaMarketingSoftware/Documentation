@@ -58,7 +58,25 @@ heeft aangemaakt wordt de ID van dit profiel teruggegeven. In alle andere
 succesvolle gevallen wordt een 1 teruggegeven. Ook is de nieuwe profiel ID 
 altijd terug te vinden in de 'X-Created' header.
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "fields": {
+    "voornaam": "John",
+    "achternaam": "Doe",
+    "email": "johndoe@example.com"
+  },
+  "interests": {
+    "Voetbal": 1,
+    "Honkbal": 0
+  }
+}
+```
+
+## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 In dit geval gebruiken we de profiel selectie parameters om het profiel met ID
