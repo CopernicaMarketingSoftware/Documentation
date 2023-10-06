@@ -18,7 +18,7 @@ De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 
 ## Voorbeeld in JSON
 
-Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ```json
 {
@@ -29,7 +29,7 @@ Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ## Voorbeeld in PHP
 
-De volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
+Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 
 ```php
 // vereiste scripts
