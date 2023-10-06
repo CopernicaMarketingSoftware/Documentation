@@ -17,7 +17,7 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 ## Voorbeeld in JSON
 
-Het volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ```json
 {
