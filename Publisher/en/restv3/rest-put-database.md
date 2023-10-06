@@ -14,10 +14,18 @@ The following variables can be used in the body of the HTTP PUT request:
 - **name**: the optional new name of the database
 - **description**: the optional new database description
 - **archived**: optional boolean to determine whether or not a database should be archived.
-- **created**: when the database was created
-- **fields**: array of fields in the database
-- **interests**: array with interests in the database
-- **collections**: array with the collections in the database
+
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "name": "new_database_name",
+    "description": "a new description",
+    "archived": false
+}
+```
 
 ## PHP example
 
