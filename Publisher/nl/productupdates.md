@@ -1,4 +1,5 @@
 # Productupdates
+* [09-11-2023 - Nieuwe feature: genereer tekst met AI​ en account-logins inzichtelijk](./productupdate20231009)
 * [04-08-2023 - Vertaalmodule voor iedereen beschikbaar en meer personalisatiemogelijkheden](./productupdate20230804)
 * [17-07-2023 - Vertaalmodule in bèta en twee-factor-authenticatie wordt verplicht](./productupdate20230717)
 * [11-05-2023 - Opvolgactie verbeteringen, uitschrijfbevestiging en verzendmomenten uitsluiten met RRule](./productupdate20230511)
