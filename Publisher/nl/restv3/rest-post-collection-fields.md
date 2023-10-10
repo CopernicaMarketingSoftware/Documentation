@@ -40,6 +40,24 @@ Een veld kan de volgende types hebben:
 * **big**: groot tekstveld
 * **foreign_key**: numerieke waarde met verwijzing naar ander profiel
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "name": "text_veld",
+  "type": "text",
+  "value": "dit is een tekstveld",
+  "displayed": true,
+  "ordered": false,
+  "length": 50,
+  "textlines": 1,
+  "hidden": false,
+  "index": false
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:

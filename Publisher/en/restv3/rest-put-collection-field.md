@@ -23,7 +23,25 @@ grids and lists in the user interface
 - **textlines**: Amount of text lines for text fields
 - **hidden**: Boolean value to indicate whether or not to always hide a field from a user
 - **index**: Boolean value to indicate whether or not to create an index on the field
-            
+
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "name": "text_field",
+  "type": "text",
+  "value": "this is a text field",
+  "displayed": true,
+  "ordered": false,
+  "length": 50,
+  "textlines": 1,
+  "hidden": false,
+  "index": false
+}
+```        
+
 ## PHP example
 
 The following PHP script demonstrates how to use the method.

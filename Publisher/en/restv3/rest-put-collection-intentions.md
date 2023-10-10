@@ -26,6 +26,19 @@ will not be changed.
 Intentions can not be enabled if the corresponding field in the database 
 does not exist.
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "email": true,
+  "sms": false,
+  "fax": false,
+  "pdf": true
+}
+```
+
 ## PHP example
 
 The following example demonstrates how to use this method.

@@ -40,6 +40,24 @@ A field can have any of the following types:
 * **big**: large textfield
 * **foreign_key**: numerical value with reference to other profile
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "name": "text_field",
+  "type": "text",
+  "value": "this is a text field",
+  "displayed": true,
+  "ordered": false,
+  "length": 50,
+  "textlines": 1,
+  "hidden": false,
+  "index": false
+}
+```
+
 ## PHP Example
 
 The following PHP script demonstrates how to call the API method:

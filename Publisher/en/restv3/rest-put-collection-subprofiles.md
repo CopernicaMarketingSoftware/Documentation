@@ -29,6 +29,18 @@ fields are modified. You can find more information about this parameter in
 This PHP script demonstrates how you can use this API call. In this specific 
 case we use the CustomerID field to find all subprofiles with value 4567 and update those subprofiles with the values in the body data.
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "order_id": "12345",
+    "order_date": "2023-01-01",
+    "order_status": "completed"
+}
+```
+
 ```php
 // dependencies
 require_once('copernica_rest_api.php');

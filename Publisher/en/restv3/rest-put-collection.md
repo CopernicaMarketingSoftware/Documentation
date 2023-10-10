@@ -15,9 +15,19 @@ in the message body of the HTTP PUT command:
 
 * **name**: the new name of the collection
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "name": "my_collection",
+}
+```
+
 ## PHP example
 
-The following PHP scripts demonstrates how to call the API method:
+The following PHP script demonstrates how to call the API method:
 
 ```php
 // dependencies

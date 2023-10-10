@@ -26,7 +26,19 @@ worden bijgewerkt. Meer informatie over het gebruik van deze **fields**
 parameter kun je vinden in een
 [artikel over de fields parameter](rest-fields-parameter).
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "order_id": "12345",
+    "order_date": "2023-01-01",
+    "order_status": "completed"
+}
+```
+
+## Voorbeeld in PHP
 
 Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen.
 In dit geval gebruiken we het in de fields parameter het veld 'KlantID' om alle subprofielen met de waarde 
