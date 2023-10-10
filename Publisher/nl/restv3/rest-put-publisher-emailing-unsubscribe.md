@@ -12,9 +12,21 @@ De volgende parameters zijn beschikbaar, waarvan alleen 'target' verplicht is:
 * **behavior**: Moet het ingestelde uitschrijfgedrag op de database/collectie worden uitgevoerd? (true/false)
 * **statistics**: Moet de uitschrijving meegenomen worden als uitschrijving in de statistieken van de verzonden mailing? (true/false)
 
-## PHP voorbeeld
+## Voorbeeld in JSON
 
-Het onderstaande script laat zien hoe je deze API-methode kunt gebruiken. 
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "target": 5555,
+    "behavior": true,
+    "statistics": false
+}
+```
+
+## Voorbeeld in PHP
+
+Het onderstaande PHP script laat zien hoe je deze API-methode kunt gebruiken. 
 
 ```php
 <?php
