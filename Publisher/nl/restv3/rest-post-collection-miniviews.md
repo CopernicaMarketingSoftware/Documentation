@@ -17,7 +17,18 @@ De volgende variabele moet in de body van de HTTP POST call worden geplaatst.
 - **name**:         Naam van de nieuw aan te maken selectie (verplicht)
 - **description**:  Beschrijving van de nieuw aan te maken collectie
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "name": "mijn_miniselectie",
+  "description": "Dit is een miniselectie"
+}
+```
+
+## Voorbeeld in PHP
 
 Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
 

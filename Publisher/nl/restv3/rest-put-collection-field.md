@@ -23,6 +23,24 @@ De volgende variabelen kunnen meegegeven worden aan de body van het verzoek:
 - **hidden**: Boolean waarde om aan te geven of een veld altijd verborgen moet worden voor een gebruiker
 - **index**: Boolean waarde om aan te geven of er een index aangemaakt moet worden op het veld
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "name": "text_veld",
+  "type": "text",
+  "value": "dit is een tekstveld",
+  "displayed": true,
+  "ordered": false,
+  "length": 50,
+  "textlines": 1,
+  "hidden": false,
+  "index": false
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden.

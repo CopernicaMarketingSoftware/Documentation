@@ -26,6 +26,19 @@ de profielen van unsubscribers en 'update' kan gebruikt worden om de
 velden van een profiel aan te passen zodat het zichtbaar wordt dat
 deze gebruiker geen email meer wil ontvangen.
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "behavior": "update",
+  "fields": {
+    "newsletter": "no"
+  }
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de methode gebruikt kan worden.

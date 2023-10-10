@@ -15,6 +15,16 @@ geplaatst:
 
 * **name**: de optionele nieuwe naam van de collectie
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "name": "mijn_collectie",
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
