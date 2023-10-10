@@ -45,7 +45,29 @@ De mailing kan namelijk niet verstuurd worden zonder een onderwerp of
 afstuurder. Zorg er ook voor dat je [sender domain](../sender-domains) 
 correct geconfigureerd is.
 
-## PHP voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "target": 1,
+    "targettype": "view",
+    "document": 1,
+    "settings": {
+        "start": false,
+        "description": "mailing description",
+        "nodoubles": true,
+        "personalised": true,
+        "test": false,
+        "contenttype": "html",
+        "embeddedimages": true,
+        "cacheimages": true
+    }
+}
+```
+
+## Voorbeeld in PHP
 
 Het onderstaande script laat zien hoe je deze API-methode kunt gebruiken. 
 Vergeet niet de parameters te vervangen door je eigen target en template.

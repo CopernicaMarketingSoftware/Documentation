@@ -11,9 +11,21 @@ The following parameters are available for the method. The 'target' is required.
 * **behavior**: Do we need to execute the unsubscribe behavior of the database/collection? (true/false)
 * **statistics**: Do we want to register an unsubscribe in the statistics of the mailing? (true/false)
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "target": 5555,
+    "behavior": true,
+    "statistics": false
+}
+```
+
 ## PHP example
 
-The following example demonstrates how to use this method.
+The following PHP example demonstrates how to use this method.
 
 ```php
 <?php

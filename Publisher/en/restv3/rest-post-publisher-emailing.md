@@ -39,9 +39,31 @@ can not be sent without a valid subject and from address. You should also
 make sure your [sender domain](../sender-domains) is configured correctly 
 before attempting to send a mailing.
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "target": 1,
+    "targettype": "view",
+    "document": 1,
+    "settings": {
+        "start": false,
+        "description": "mailing description",
+        "nodoubles": true,
+        "personalised": true,
+        "test": false,
+        "contenttype": "html",
+        "embeddedimages": true,
+        "cacheimages": true
+    }
+}
+```
+
 ## PHP example
 
-The following script demonstrates how to call the API method. Don't 
+The following PHP script demonstrates how to call the API method. Don't 
 forget to substitute the parameters for your own target and template.
 
 ```php
