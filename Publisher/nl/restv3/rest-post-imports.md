@@ -25,9 +25,38 @@ De volgende parameters kunnen aan de URL als variabelen worden toegevoegd:
 
 **Opmerking**: de standaardwaarde is vetgedrukt. 
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "database": 1,
+  "name": "import_name",
+  "followups": true,
+  "autostart": true,
+  "rebuild": "false",
+  "action": "update or add",
+  "keyFields": ["email"],
+  "ignoreEmptyFields": false,
+  "removeMissing": false,
+  "format": "json",
+  "source": [
+      {
+          "email": "email@example.com",
+          "name": "John"
+      },
+      {
+          "email": "email2@example.com",
+          "name": "Jane"
+      }
+  ]
+}
+```
+
 ## Voorbeeld in PHP
 
-Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
+Het volgende PHP script demonstreert hoe je de API-methode kunt aanroepen:
 
 ```php
 // vereiste scripts

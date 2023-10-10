@@ -25,9 +25,38 @@ The following parameters are available for the method.
 
 **Note**: default value is bold. 
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+  "database": 1,
+  "name": "import_name",
+  "followups": true,
+  "autostart": true,
+  "rebuild": "false",
+  "action": "update or add",
+  "keyFields": ["email"],
+  "ignoreEmptyFields": false,
+  "removeMissing": false,
+  "format": "json",
+  "source": [
+      {
+          "email": "email@example.com",
+          "name": "John"
+      },
+      {
+          "email": "email2@example.com",
+          "name": "Jane"
+      }
+  ]
+}
+```
+
 ## PHP example
 
-The following example demonstrates how to use this method.
+The following PHP script demonstrates how to use this method.
 
 ```php
 // dependencies
