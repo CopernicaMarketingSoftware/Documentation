@@ -10,11 +10,23 @@ Deze methode wordt gebruikt om een senderdomain aan te maken met de REST API. Je
 |-------------------|---------------------------------------------------------------------------------------------------|
 | **name**          | Het domein waarmee je e-mails wilt versturen.                                                     |
 | **tracking**      | (optioneel) Het domein waarop de impressies van de mailings geregistreerd kunnen worden.          |
-| **bounce**        | (optioneel) Het domein waarop de bounces van de mailings geregistreerd kunnen worden.             |
+| **bounces**        | (optioneel) Het domein waarop de bounces van de mailings geregistreerd kunnen worden.             |
 
-## PHP voorbeeld
+## Voorbeeld in JSON
 
-Het onderstaande script demonstreert hoe je deze API methode gebruikt. Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "name": "mysenderdomain.com",
+    "tracking": "tracking.mysenderdomain.com",
+    "bounces": "bounces.damian.nl"
+}
+```
+
+## Voorbeeld in PHP
+
+Het onderstaande PHP script demonstreert hoe je deze API methode gebruikt. Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 
 ```php
 // vereiste script
@@ -27,7 +39,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 $data = array(
     'name'   =>  'mysenderdomain.com',
     'tracking'   =>  'tracking.mysenderdomain.com',
-    'bounce'   =>  'bounces.mysenderdomain.com',
+    'bounces'   =>  'bounces.mysenderdomain.com',
 );
 
 // voer het verzoek uit
