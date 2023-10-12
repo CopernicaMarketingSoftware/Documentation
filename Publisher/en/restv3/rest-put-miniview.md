@@ -37,7 +37,8 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to be sent to the api
 $data = array(
-   	'description'   =>  'a new description',
+   'name'          => 'new_miniselection',
+   'description'   => 'a new description'
 );
 
 // do the call, and print result
