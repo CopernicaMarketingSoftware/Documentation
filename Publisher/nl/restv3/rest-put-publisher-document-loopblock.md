@@ -15,6 +15,15 @@ geplaatst:
 * **condition**: conditie van het loopblok
 * **iterations**: aantal iteraties van het loopblok
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "iterations": 5
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API-methode kunt aanroepen:
