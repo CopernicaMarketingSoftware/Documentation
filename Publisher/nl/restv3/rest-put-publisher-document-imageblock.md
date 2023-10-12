@@ -14,6 +14,15 @@ geplaatst:
 
 * **condition**: conditie van het afbeeldingsblok
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "condition": "if (profile.gender == 'men'){ return true; }else{ return false; }"
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API-methode kunt aanroepen:
