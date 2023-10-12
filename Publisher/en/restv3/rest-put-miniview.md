@@ -13,10 +13,16 @@ The following properties can be added to the message body of the HTTP request:
 
 - **name**: Name of the selection
 - **description**: Description of the selection
-- **parent-type**: Indicates whether the current selection belongs to 
-another selection or a collection.
-- **parent-id**: ID of the selection or the collection the selection 
-belongs to
+
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+   "name": "new_miniselection",
+   "description": "This is a new miniselection"
+}
+```
 
 ## PHP example
 
