@@ -29,6 +29,15 @@ the specific articles:
 - [Part conditions](./rest-condition-type-part.md)
 - [ReferView conditions](./rest-condition-type-referview.md)
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "after-time": "01-01-2000"
+}
+```
+
 ## PHP example
 
 The following example demonstrates how to use this method:

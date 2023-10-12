@@ -20,8 +20,18 @@ De volgende eigenschappen kunnen meegegeven worden in de message body. Er moet t
 
 Condities kunnen toegevoegd worden met de [POST regel condities methode](./rest-post-rule-conditions).
 
-## Voorbeeld in PHP
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
+```json
+{
+    "name": "rule-name",
+    "inversed":false,
+    "disabled":false
+}
+```
+
+## Voorbeeld in PHP
 Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden:
 
 ```php
@@ -35,7 +45,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 $data = array(
     'name'      =>  'rule-name',
     'inversed'  =>  false,
-    'disabled'  =>  false, 
+    'disabled'  =>  false
 );
 
 // voer het verzoek uit en sla het result op

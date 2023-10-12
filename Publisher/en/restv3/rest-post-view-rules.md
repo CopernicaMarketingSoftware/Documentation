@@ -21,8 +21,18 @@ that do *not* adhere to the rule.
 
 Conditions can be added with the method [POST rule conditions](./rest-post-rule-conditions).
 
-## PHP Example
+## JSON example
+The following JSON demonstrates how to use the API method:
 
+```json
+{
+    "name": "rule-name",
+    "inversed":false,
+    "disabled":false
+}
+```
+
+## PHP Example
 The following PHP script demonstrates how to call the API method:
 
 ```php
@@ -35,8 +45,8 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 // data to pass to the call
 $data = array(
    'name'       =>  'rule-name',
-   'inverted'   =>  false
-   'disabled'   =>  false,
+   'inverted'   =>  false,
+   'disabled'   =>  false
 );
     
 // execute the call and store the result
