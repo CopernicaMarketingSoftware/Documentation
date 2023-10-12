@@ -19,7 +19,18 @@ De mailing kan namelijk niet verstuurd worden zonder een onderwerp of
 afstuurder. Zorg er ook voor dat je [sender domain](./sender-domains)
 correct geconfigureerd is.
 
-## PHP voorbeeld
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "target": 1234,
+    "targettype":"view",
+    "template":12
+}
+```
+
+## Voorbeeld in PHP
 
 Het onderstaande script laat zien hoe je deze API-methode kunt gebruiken.
 Vergeet niet de parameters te vervangen door je eigen target en template.
@@ -35,9 +46,9 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters om mee te geven aan de call
 $parameters = array(
-    'target'                  => 1,
-    'targettype'              => 'database',
-    'template'                => 23,
+    'target'                  => 1234,
+    'targettype'              => 'view',
+    'template'                => 12,
 );
 
 // voer het verzoek uit
