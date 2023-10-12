@@ -33,9 +33,18 @@ die zij bezitten kunt u de volgende specifiekere artikels bekijken:
 - [Part voorwaarden](./rest-condition-type-part.md)
 - [ReferView voorwaarden](./rest-condition-type-referview.md)
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "field",
+    "field": "has children",
+    "value": "yes"
+}
+```
 
 ## Voorbeeld in PHP
-
 Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 
 ```php
@@ -47,7 +56,9 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters to pass to the call
 $data = array(
-	'type' = 'date'
+	'type' 	=> 'field',
+	'field'	=> 'has children',
+	'value'	=> 'yes'
 )
 
 // do the call, and print result

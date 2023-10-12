@@ -24,8 +24,16 @@ de onderstaande links aan te klikken:
 - [Survey miniconditie](./rest-condition-type-survey.md)
 - [Part miniconditie](./rest-condition-type-part.md)
 
-## Voorbeeld in PHP
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
+```json
+{
+    "after-time": "01-01-2000"
+}
+```
+
+## Voorbeeld in PHP
 Het volgende PHP script demonstreert hoe de API-methode te gebruiken is.
 
 ```php

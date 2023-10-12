@@ -13,13 +13,20 @@ De `$id` moet aangepast worden naar de ID van de minirule die je aan wilt passen
 De volgende parameters kunnen in de message body geplaatst worden:
 
 - name: 		naam van de regel;
-- view: 		id van de selectie waar de regel bij hoort;
-- conditions: 	array van condities voor de regel;
 - inversed: 	boolean waarde die aangeeft of de regel geïnverteerd moet worden of niet. Als deze op "True" staat worden alleen profielen die *niet* aan de condities voldoen teruggegeven;
 - disabled: 	boolean waarde om aan te geven of de regel uitgeschakeld moet worden of niet.
 
-## Voorbeeld in PHP
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
+```json
+{
+    "name": "nieuwe regel naam"
+}
+```
+
+
+## Voorbeeld in PHP
 Het volgende voorbeeld demonstreert hoe deze methode gebruikt kan worden:
 
 ```php
