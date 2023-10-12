@@ -21,6 +21,17 @@ Het subprofile kan de volgende eigenschappen hebben:
 - created:          tijdstip van aanmaken in YYYY-MM-DD hh:mm:ss formaat;
 - modified:         tijdstip van laatste aanpassing YYYY-MM-DD hh:mm:ss formaat.
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "firstname": "John",
+    "Lastname": "Doe",
+    "email": "johndoe@example.com"
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
