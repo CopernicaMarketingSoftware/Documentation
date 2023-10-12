@@ -17,6 +17,15 @@ geplaatst:
 * **from_address**: array met 'name' en 'email' voor het afzenderadres
 * **subject**: onderwerp van het document
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "name": "Nieuwe_naam"
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
