@@ -48,7 +48,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 $parameters = array(
     'target'                  => 1234,
     'targettype'              => 'view',
-    'template'                => 12,
+    'template'                => 12
 );
 
 // voer het verzoek uit
