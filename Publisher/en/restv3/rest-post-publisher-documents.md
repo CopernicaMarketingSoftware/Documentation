@@ -21,7 +21,7 @@ The following JSON demonstrates how to use the API method:
 ```json
 {
     "template": "1234",
-    "name": "my-test-document"
+    "name": "my_test_document"
 }
 ```
 
@@ -39,7 +39,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 // data to be sent to the api
 $data = array(
     'template'      =>  '1234',
-    'name'          =>  'my-test-document'
+    'name'          =>  'my_test_document'
 );
 
 // do the call
