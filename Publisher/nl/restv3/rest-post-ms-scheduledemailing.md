@@ -28,33 +28,15 @@ Als je geen RRule meegeeft zal de mailing maar een keer verzonden worden.
 
 ### JSON voorbeeld
 
-De JSON voor de mailing, die je kunt vinden onder de 'data' eigenschap
-in de output ziet er bijvoorbeeld zo uit:
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ```json
 {
-   "id":"1742",
-   "start":"2019-06-27 17:30:00",
-   "rrule":"FREQ=DAILY;COUNT=2",
-   "template":"2112",
-   "next":"2019-06-28 17:30:00",
-   "previous":"2019-06-27 17:30:00",
-   "subject":"Test emailing",
-   "from_address":{
-      "name":"Test",
-      "email":"test@copernica.com"
-   },
-   "destinations":200,
-   "type":"mass",
-   "target":{
-      "type":"database",
-      "sources":[
-         {
-            "id":"7141",
-            "type":"database"
-         }
-      ]
-   }
+    "targettype": "database",
+    "target": 1234,
+    "template": 123,
+    "start": "2023-07-01 12:00:00",
+    "rrule": "FREQ=DAILY;COUNT=2"
 }
 ```
 
@@ -75,7 +57,7 @@ $data = array(
     'targettype'    =>  "database",
     'target'        =>  1234,
     'template'      =>  123,
-    'start'         =>  "2019-07-01 12:00:00",
+    'start'         =>  "2023-07-01 12:00:00",
     'rrule'         =>  "FREQ=DAILY;COUNT=2"
 );
 
