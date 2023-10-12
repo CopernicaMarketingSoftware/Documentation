@@ -14,19 +14,19 @@ Deze methode wordt gebruikt om een webhook aan te maken met de REST API. Je doet
 | **database**      | Optioneel: het ID van de database waarop de webhook wordt gelimiteerd                 |
 | **collection**    | Optioneel: het ID van de collectie waarop de webhook wordt gelimiteerd                |
 
-### JSON voorbeeld
-
-De JSON ziet er bijvoorbeeld zo uit:
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ```json
 {  
    "handler":"https://my-webhook-url.com",
    "trigger":"create",
-   "callers":["ms", "publisher"]
+   "callers":["ms", "publisher"],
+   "database":1017
 }
 ```
 
-## PHP voorbeeld
+## Voorbeeld in PHP
 
 Het onderstaande script demonstreert hoe je deze API methode gebruikt. Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 
