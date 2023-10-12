@@ -21,7 +21,7 @@ De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 ```json
 {
     "name": "test_template",
-    "source": "<html><body>New template</body></html>
+    "source": "<html><body>New template</body></html>"
 }
 ```
 
