@@ -26,7 +26,18 @@ opneemt, worden automatisch uitgeschakeld.
 Als je de huidige interesses niet wilt uitschakelen, maar slechts nieuwe toe
 wilt voegen kun je dat doen met [deze methode](./rest-post-profile-interests).
 
-## Voorbeeld
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "voetbal": 1,
+    "tennis": 1,
+    "hockey": 0
+}
+```
+
+## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 In de API call worden de interesses van een profiel met ID 4567 aangepast.

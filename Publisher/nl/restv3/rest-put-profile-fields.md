@@ -20,7 +20,17 @@ Als je gebruik maakt van een traditioneel x-www-form-urlencoded formaat, dan
 moeten de variabelen de namen van de te wijzigen velden bevatten, en de
 waardes van die variabelen zijn de nieuwe waardes van de profielvelden.
 
-## Voorbeeld
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "firname": "John",
+    "lastname": "Doe"
+}
+```
+
+## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 

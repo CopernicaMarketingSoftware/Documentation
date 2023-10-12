@@ -37,6 +37,19 @@ the fields passed in the HTTP request body.
 The field names and new values of the subprofiles' fields that should be updated
 must be passed in the data body.
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+URL example:  
+`https://api.copernica.com/v3/profile/$profileID/subprofiles/$collectionID?fields[]=customerid==4567@example.com&create=1&access_token=xxx`
+
+```json
+{
+    "firstname": "John",
+    "lastname": "Doe"
+}
+```
+
 ## PHP example
 
 The following PHP script demonstrates how the API method can be called.

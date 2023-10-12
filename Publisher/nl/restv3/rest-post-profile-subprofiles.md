@@ -12,14 +12,18 @@ De inhoud van het subprofiel kun je in de message body plaatsen.
 
 ## Body data
 
-Het subprofile kan de volgende eigenschappen hebben:
+Je kan velden maken door de eigenschappen op te geven en deze aan de body mee te geven.
 
-- secret:           geheime code geassocieerd met dit subprofile;
-- profile:          id van het subprofile waar het subprofile bij hoort;
-- fields:           velden van het subprofile;
-- collection:       id van de collectie waar het subprofile bij hoort;
-- created:          tijdstip van aanmaken in YYYY-MM-DD hh:mm:ss formaat;
-- modified:         tijdstip van laatste aanpassing YYYY-MM-DD hh:mm:ss formaat.
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "firstname": "John",
+    "Lastname": "Doe",
+    "email": "johndoe@example.com"
+}
+```
 
 ## Voorbeeld in PHP
 

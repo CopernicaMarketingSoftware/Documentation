@@ -39,6 +39,18 @@ body data.
 De veldnamen en nieuwe waarden van de te bewerken subprofielvelden moeten
 worden meegegeven in de body. 
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+URL voorbeeld:  
+`https://api.copernica.com/v3/profile/$profileID/subprofiles/$collectionID?fields[]=customerid==4567@example.com&create=1&access_token=xxx`
+
+```json
+{
+    "firstname": "John",
+    "lastname": "Doe"
+}
+```
 
 ## Voorbeeld in PHP
 

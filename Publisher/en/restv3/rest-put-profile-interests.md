@@ -23,6 +23,17 @@ profile interests.
 If you wish to keep the existing interests, please see the 
 documentation on [adding interests to a profile](rest-post-profile-interests).
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "football": 1,
+    "tennis": 1,
+    "hockey": 0
+}
+```
+
 ## PHP example
 
 The following PHP script demonstrates how to call the API method.

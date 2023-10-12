@@ -14,7 +14,24 @@ De volgende parameters kunnen in de message body van het HTTP PUT command worden
 - **interests**: Interesses van het profiel
 - **secret**: De geheime code die gelinkt is aan het profiel
 
-## Voorbeeld
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+  "fields": {
+    "firstname": "John",
+    "lastname": "Doe",
+    "email": "johndoe@example.com"
+  },
+  "interests": {
+    "football": 1,
+    "Honkbal": 0
+  }
+}
+```
+
+## Voorbeeld in PHP
 
 Het volgende PHP voorbeeld laat zien hoe je deze API methode gebruikt:
 
