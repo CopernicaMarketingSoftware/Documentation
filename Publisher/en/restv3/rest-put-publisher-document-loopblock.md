@@ -14,6 +14,15 @@ The following variables can be used in the body of the HTTP PUT request:
 * **condition**: condition of the loop block
 * **iterations**: number of iterations of the loop block
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "iterations": 5
+}
+```
+
 ## PHP example
 
 The following example demonstrates how to use the API method:
