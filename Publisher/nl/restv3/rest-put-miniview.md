@@ -14,8 +14,6 @@ De volgende eigenschappen kunnen toegevoegd worden aan de body van het HTTP verz
 
 - **name**: Naam van de miniview/selectie
 - **description**: Omschrijving van de selectie
-- **parent-type**: Geeft aan of de huidige selectie onder een andere selectie of een collectie valt
-- **parent-id**: ID van de selectie of de collectie waar de selectie onder valt
 
 ## Voorbeeld
 
