@@ -14,16 +14,19 @@ je de eigenschappen aan wilt passen.
 De volgende eigenschappen voor de regel kunnen toegevoegd worden aan de HTTP PUT command:
 
 - **name**: 			naam van de regel
-- **description**: 		omschrijving van de regel
-- **view**: 			ID van de selectie waar de regel bij hoort
-- **conditions**: 		array van condities van de regel
 - **inversed**: 		boolean waarde om aan te geven of de regel wel of niet geïnverteerd moet worden.
                         Als deze op "True" staat worden er alleen profielen teruggegeven die niet aan de condities voldoen.
 - **disabled**: 		boolean waarde om aan te geven of een regel uitgeschakeld moet worden of niet.
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+```json
+{
+    "name": "new_name"
+}
+```
 
-## Voorbeeld
-
+## Voorbeeld in PHP
 Het volgende voorbeeld laat zien hoe je deze methode gebruikt met de API:
 
 ```php
