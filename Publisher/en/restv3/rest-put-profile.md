@@ -20,10 +20,11 @@ PUT command:
 ## JSON example
 The following JSON demonstrates how to use the API method:
 
+```json
 {
   "fields": {
-    "voornaam": "John",
-    "achternaam": "Doe",
+    "firstname": "John",
+    "lastname": "Doe",
     "email": "johndoe@example.com"
   },
   "interests": {
@@ -31,6 +32,7 @@ The following JSON demonstrates how to use the API method:
     "Honkbal": 0
   }
 }
+```
 
 ## PHP example
 
