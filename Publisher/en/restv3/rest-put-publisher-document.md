@@ -16,6 +16,14 @@ The following variables can be used in the body of the HTTP PUT request:
 * **from_address**: array with a 'name' and 'email' for the from address
 * **subject**: subject of the document
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+```json
+{
+    "name": "New_name"
+}
+```
+
 ## PHP example
 
 The following example demonstrates how to use the API method:
