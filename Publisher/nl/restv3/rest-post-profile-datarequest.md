@@ -44,7 +44,16 @@ hebt gekregen. Let erop dat dit bestand uiteindelijk verloopt.
 Als de data nog niet beschikbaar is zal de data member in de JSON de tekst 
 "Data not available (yet)" bevatten.
 
-## PHP voorbeeld
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "report": "example@example.com"
+}
+```
+
+## Voorbeeld in PHP
 
 ```php
 // vereiste scripts

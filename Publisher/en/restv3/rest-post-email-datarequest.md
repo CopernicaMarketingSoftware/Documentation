@@ -45,6 +45,15 @@ HTTP POST request. Note that this file will expire eventually.
 If the data is not available yet the data member of the JSON will contain the 
 text "Data not available (yet)".
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "report": "example@example.com"
+}
+```
+
 ## PHP example
 
 ```php
