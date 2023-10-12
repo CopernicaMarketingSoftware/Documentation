@@ -14,9 +14,8 @@ Hier moet `$id` vervangen worden door het ID van de webhook.
 | **trigger**       | De aanleiding waardoor de webhook wordt uitgevoerd                                    |
 | **callers**       | Array met types (ms / publisher) waardoor de webhook wordt aangeroepen. Deze parameter is optioneel. Als deze niet is gespecificeerd wordt de call door beide types uitgevoerd                             |
 
-### JSON voorbeeld
-
-De JSON ziet er bijvoorbeeld zo uit:
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ```json
 {  
