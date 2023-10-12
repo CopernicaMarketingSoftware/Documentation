@@ -32,6 +32,17 @@ de onderstaande links aan te klikken:
 - [Part conditie](./rest-condition-type-part.md)
 - [ReferView conditie](./rest-condition-type-referview.md)
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "field",
+    "comparison": "equals",
+    "field": 12,
+    "value": "test"
+}
+```
 
 ## Voorbeeld in PHP
 
@@ -46,7 +57,10 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters voor de methode
 $data = array(
-    'type' => 'date'
+    'type'         => 'field',
+    'comparison'   => 'equals',
+    'field'        => 12,
+    'value'        => 'test'
 );
 
 // voer het verzoek uit en print het resultaat
