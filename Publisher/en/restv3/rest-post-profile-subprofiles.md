@@ -13,6 +13,16 @@ After a successful call the ID of the created request is returned.
 
 You can create fields by specifying the properties and assigning it to the data body.
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+```json
+{
+    "firstname": "John",
+    "Lastname": "Doe",
+    "email": "johndoe@example.com"
+}
+```
+
 ## PHP example
 
 The following PHP script demonstrates how the API method can be called.
