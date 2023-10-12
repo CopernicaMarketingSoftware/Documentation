@@ -25,6 +25,19 @@ follow the [iCalendar format](https://icalendar.org/RFC-Specifications/iCalendar
 create and understand RRules, such as the [tool on the iCalendar website](https://icalendar.org/rrule-tool.html). 
 If you don't pass an RRule to this method it will only be sent once.
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "targettype": "database",
+    "target": 1234,
+    "template": 123,
+    "start": "2023-07-01 12:00:00",
+    "rrule": "FREQ=DAILY;COUNT=2"
+}
+```
+
 ## PHP example
 
 The script below demonstrates how to use this API method. Don't forget 
@@ -42,7 +55,7 @@ $data = array(
     'targettype'    =>  "database",
     'target'        =>  1234,
     'template'      =>  123,
-    'start'         =>  "2019-07-01 12:00:00",
+    'start'         =>  "2023-07-01 12:00:00",
     'rrule'         =>  "FREQ=DAILY;COUNT=2"
 );
 
