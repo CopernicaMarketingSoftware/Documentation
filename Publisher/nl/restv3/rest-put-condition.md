@@ -30,6 +30,14 @@ de onderstaande links aan te klikken:
 - [Part conditie](./rest-condition-type-part.md)
 - [ReferView conditie](./rest-condition-type-referview.md)
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "after-time": "01-01-2000"
+}
+```
 
 ## Voorbeeld in PHP
 
