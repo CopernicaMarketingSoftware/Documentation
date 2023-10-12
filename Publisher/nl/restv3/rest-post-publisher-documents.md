@@ -13,6 +13,16 @@ naar het volgende adres:
 * **from_address**: array met 'name' en 'email' voor het afzenderadres
 * **subject**: onderwerp van het document
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "template": "1234",
+    "name": "my_test_document"
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
@@ -27,7 +37,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 // data voor de methode
 $data = array(
     'template'    =>  '123',
-    'name'        =>  'mijn-test-document'
+    'name'        =>  'mijn_test_document'
 );
 
 // voer het verzoek uit
