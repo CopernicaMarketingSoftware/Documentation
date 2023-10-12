@@ -12,7 +12,18 @@ Replace the `$id` with the identifier of the senderdomain you want to edit.
 | Parameter         | Description                                                                           |
 |-------------------|---------------------------------------------------------------------------------------|
 | **tracking**      | (optional) The domain that you want to register impressions on.                       |
-| **bounce**        | (optional) The dommain that you want to register bounces on.                          |
+| **bounces**        | (optional) The domain that you want to register bounces on.                          |
+
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "tracking": "tracking.mysenderdomain.com",
+    "bounces": "bounces.damian.nl"
+}
+```
 
 ## PHP example
 
@@ -28,7 +39,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 // data to be sent to the api
 $data = array(
     'tracking' => 'tracking.mysenderdomain.com',
-    'bounce' => 'bounces.mysenderdomain.com'
+    'bounces' => 'bounces.mysenderdomain.com'
 );
 
 // do the call

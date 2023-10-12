@@ -13,7 +13,19 @@ After a successful call the ID of the created senderdomain is returned.
 |-------------------|---------------------------------------------------------------------------------------|
 | **name**          | The domain that you want to send emails with.                                         |
 | **tracking**      | (optional) The domain that you want to register impressions on.                       |
-| **bounce**        | (optional) The dommain that you want to register bounces on.                          |
+| **bounces**        | (optional) The domain that you want to register bounces on.                          |
+
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "name": "mysenderdomain.com",
+    "tracking": "tracking.mysenderdomain.com",
+    "bounces": "bounces.damian.nl"
+}
+```
 
 ## PHP example
 
@@ -30,7 +42,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 $data = array(
     'name'   =>  'mysenderdomain.com',
     'tracking'   =>  'tracking.mysenderdomain.com',
-    'bounce'   =>  'bounces.mysenderdomain.com',
+    'bounces'   =>  'bounces.mysenderdomain.com',
 );
 
 // do the call
