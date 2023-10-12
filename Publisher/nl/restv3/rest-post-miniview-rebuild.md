@@ -7,8 +7,7 @@ is beschikbaar op het volgende adres:
 
 De `$id` moet hier vervangen worden door de unieke identifier van de miniselectie. 
 
-## PHP voorbeeld
-
+## Voorbeeld in PHP
 Het volgende PHP script demonstreert hoe je de API-methode kunt aanroepen:
 
 ```php

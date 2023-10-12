@@ -15,8 +15,16 @@ De volgende eigenschappen kunnen meegegeven worden in de message body. Er moet t
 
 - **name**: Naam van de regel. Deze moet uniek zijn binnen de regelnamen in de selectie en is verplicht.
 
-## Voorbeeld in PHP
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
+```json
+{
+    "name": "rulename"
+}
+```
+
+## Voorbeeld in PHP
 Het volgende PHP-script demonstreert hoe deze methode gebruikt kan worden:
 
 ```php

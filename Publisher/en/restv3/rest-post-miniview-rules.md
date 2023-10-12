@@ -18,8 +18,16 @@ least the name of the rule is required.
 - **name**: Name of the rule. This should be unique within the set of view rule 
 names and is mandatory
 
-## PHP Example
+## JSON example
+The following JSON demonstrates how to use the API method:
 
+```json
+{
+    "name": "rule-name"
+}
+```
+
+## PHP Example
 The following PHP script demonstrates how to call the API method:
 
 ```php
