@@ -406,7 +406,6 @@ calls kun je dataverzoeken aanmaken en de data en status van deze verzoeken opvr
 
 | Type   | Adres                                                                                        | Omschrijving                                 |
 |--------|----------------------------------------------------------------------------------------------|----------------------------------------------|
-| POST   | [api.copernica.com/v3/email/$email/datarequest](./rest-post-email-datarequest)               | Aanmaken dataverzoek voor een e-mailadres    |
 | POST   | [api.copernica.com/v3/profile/$id/datarequest](./rest-post-profile-datarequest)              | Aanmaken dataverzoek voor een profiel        |
 | POST   | [api.copernica.com/v3/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Aanmaken dataverzoek voor een subprofiel     |
 | GET    | [api.copernica.com/v3/datarequest/$id/data](./rest-get-datarequest-data)                     | Opvragen data van een dataverzoek            |
