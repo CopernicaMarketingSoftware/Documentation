@@ -13,12 +13,18 @@ the properties of.
 The following data can be placed in the message body of the HTTP PUT command:
 
 - **name**: name of the rule
-- **description**: description of the rule
-- **view**: ID of the selection that the rule belongs to
-- **conditions**: array of conditions for the rule
 - **inversed**: boolean value to indicate whether the rule should be inversed.
 If set to "True" only profiles *not* conforming to the conditions are selected
 - **disabled**: boolean value to indicate whether the rule should be disabled or not
+
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "name": "new_name"
+}
+```
 
 ## PHP example
 
@@ -33,7 +39,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to be sent to the api
 $data = array(
-   	'description'   =>  'a new description'
+   	'name'   =>  'new_name'
 );
 
 // do the call, and print result
