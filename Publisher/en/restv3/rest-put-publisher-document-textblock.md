@@ -14,6 +14,15 @@ The following variables can be used in the body of the HTTP PUT request:
 * **condition**: condition of the text block
 * **content**: content of the text block
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "content": "This is a new text"
+}
+```
+
 ## PHP example
 
 The following example demonstrates how to use the API method:
