@@ -15,8 +15,17 @@ De volgende eigenschappen kunnen toegevoegd worden aan de body van het HTTP verz
 - **name**: Naam van de miniview/selectie
 - **description**: Omschrijving van de selectie
 
-## Voorbeeld
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
+```json
+{
+   "name": "new_miniselection",
+   "description": "This is a new miniselection"
+}
+```
+
+## Voorbeeld in PHP
 Het volgende voorbeeld demonstreert hoe de methode gebruikt kan worden:
 
 ```php
@@ -28,7 +37,8 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data voor de methode
 $data = array(
-	'description'   =>  'a new description',
+	'name'		=>  'new_miniselection',
+	'description'   =>  'a new description'
 );
 
 // voer het verzoek uit en print het resultaat
