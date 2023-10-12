@@ -20,6 +20,16 @@ geplaatst:
 * **amp**: de AMP-broncode van de template
 * **text**: de tekstversie van de template
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+     "name": "nieuw_template_naam",
+     "subject": "nieuw onderwerp"
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API-methode kunt aanroepen:
