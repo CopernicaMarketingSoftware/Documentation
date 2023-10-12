@@ -22,6 +22,16 @@ De tweede manier is om een object te sturen als body data dat als keys interesse
 als waardes booleans om aan te geven of een interesse geactiveerd moet worden. Zo kunnen bestaande 
 interesses ook uitgeschakeld worden. Elke interesse die hierin niet genoemd wordt blijft hetzelfde.
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "voetbal": 1,
+    "tennis": 0
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen. 
