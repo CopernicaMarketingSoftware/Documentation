@@ -24,6 +24,16 @@ be the interests and the values booleans that determine whether or not the inter
 be activated. Any existing interests can be disabled this way. Any existing interest not in 
 the object will remain the same.
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "football": 1,
+    "tennis": 0
+}
+```
+
 ## PHP example
 
 The following PHP script demonstrateshow the API method can be called.
