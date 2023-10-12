@@ -19,6 +19,17 @@ can not be sent without a valid subject and from address. You should also
 make sure your [sender domain](./sender-domains) is configured correctly
 before attempting to send a mailing.
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "target": 1234,
+    "targettype":"view",
+    "template":12
+}
+```
+
 ## PHP example
 
 The following script demonstrates how to call the API method. Don't
@@ -35,9 +46,9 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters to pass to the call
 $parameters = array(
-    'target'                  => $targetID,
-    'targettype'              => $targetType,
-    'template'                => $templateID,
+    'target'                  => 1234,
+    'targettype'              => "view",
+    'template'                => 12,
 );
 
 // execute the call
