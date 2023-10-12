@@ -17,6 +17,7 @@ De volgende parameters kunnen in de message body van het HTTP PUT command worden
 ## Voorbeeld in JSON
 De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
+```json
 {
   "fields": {
     "firstname": "John",
@@ -28,6 +29,7 @@ De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
     "Honkbal": 0
   }
 }
+```
 
 ## Voorbeeld in PHP
 
