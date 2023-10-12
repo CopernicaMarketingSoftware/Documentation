@@ -17,6 +17,21 @@ PUT command:
 - **interests**: Interests that the profile contains
 - **secret**: The secret code that is associated with the profile
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+{
+  "fields": {
+    "voornaam": "John",
+    "achternaam": "Doe",
+    "email": "johndoe@example.com"
+  },
+  "interests": {
+    "football": 1,
+    "Honkbal": 0
+  }
+}
+
 ## PHP example
 
 The following example demonstrates how to use this method:
@@ -39,8 +54,7 @@ $data = array(
         'football'  =>  0,
         'tennis'    =>  1,
         'hockey'    =>  1
-    ),
-    'secret' => "geheimecode"
+    )
 );
 
 // do the call, and print result
