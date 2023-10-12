@@ -429,7 +429,6 @@ calls.
 
 | Type   | Address                                                                                      | Description                                                 |
 |--------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------|
-| POST   | [api.copernica.com/v3/email/$email/datarequest](./rest-post-email-datarequest)               | Create a request for all data stored for an emailaddress    |
 | POST   | [api.copernica.com/v3/profile/$id/datarequest](./rest-post-profile-datarequest)              | Create a request for all data stored for a profile          |
 | POST   | [api.copernica.com/v3/subprofile/$id/datarequest](./rest-post-subprofile-datarequest)        | Create a request for all data stored for a subprofile       |
 | GET    | [api.copernica.com/v3/datarequest/$id/data](./rest-get-datarequest-data)                     | Fetch the data of a previous data request                   |
