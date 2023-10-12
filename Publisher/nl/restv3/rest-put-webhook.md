@@ -25,7 +25,7 @@ De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 }
 ```
 
-## PHP voorbeeld
+## Voorbeeld in PHP
 
 Het onderstaande script demonstreert hoe je deze API methode gebruikt. Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 
