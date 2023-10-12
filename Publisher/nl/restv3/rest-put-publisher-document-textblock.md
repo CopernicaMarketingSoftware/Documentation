@@ -15,6 +15,15 @@ geplaatst:
 * **condition**: conditie van het tekstblok
 * **content**: content van het tekstblok
 
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "content": "Dit is een nieuwe tekst"
+}
+```
+
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API-methode kunt aanroepen:
