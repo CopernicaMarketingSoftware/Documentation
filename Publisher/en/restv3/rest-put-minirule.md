@@ -15,14 +15,20 @@ The following keys can be placed in the message body of the HTTP
 PUT command:
 
 - **name**: name of the rule
-- **view**: ID of the selection that the rule belongs to
-- **conditions**: array of conditions for the rule
 - **inverted**: boolean value to indicate whether the rule should be inverted. 
 If set to "True" only profiles *not* conforming to the conditions are selected
 - **disabled**: boolean value to indicate whether the rule should be disabled or not
 
-## PHP example
+## JSON example
+The following JSON demonstrates how to use the API method:
 
+```json
+{
+    "name": "rule-name"
+}
+```
+
+## PHP example
 The following example demonstrates how to use this method:
 
 ```php
