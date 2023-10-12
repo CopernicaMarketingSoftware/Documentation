@@ -27,7 +27,7 @@ De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 {
     "name": "rule-name",
     "inversed":false,
-    "disabled":false,
+    "disabled":false
 }
 ```
 
@@ -45,7 +45,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 $data = array(
     'name'      =>  'rule-name',
     'inversed'  =>  false,
-    'disabled'  =>  false, 
+    'disabled'  =>  false
 );
 
 // voer het verzoek uit en sla het result op
