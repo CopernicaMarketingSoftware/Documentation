@@ -23,7 +23,7 @@ The following JSON demonstrates how to use the API method:
 ```json
 {
     "name": "test_template",
-    "source": "<html><body>New template</body></html>
+    "source": "<html><body>New template</body></html>"
 }
 ```
 
