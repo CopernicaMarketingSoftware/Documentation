@@ -17,6 +17,16 @@ After a successful call the ID of the created request is returned.
 * **amp**: the AMP source of the template
 * **text**: the text version of the template
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "name": "test_template",
+    "source": "<html><body>New template</body></html>
+}
+```
+
 ## PHP example
 
 The following PHP script demonstrates how to use the API method:
@@ -30,7 +40,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to be sent to the api
 $data = array(
-    'name'          =>  'my-test-template',
+    'name'          =>  'my_test_template',
     'source'        =>  '
     <html>
       <body>
