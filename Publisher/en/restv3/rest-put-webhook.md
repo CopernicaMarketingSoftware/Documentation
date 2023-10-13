@@ -15,8 +15,18 @@ Replace the `$id` with the identifier of the webhook you want to edit.
 | **trigger**       | The event that will trigger this webhook.                                                                                                |
 | **callers**       | Specify what callers may trigger the webhook. This parameter is optional. If no callers are specified, all possible callers are applied. |
 
+Trigger can be one of the following
+* **create**: profile creations
+* **update**: profile updates
+* **delete**: profile deletions
+* **click**: clicks
+* **delivery**: deliveries
+* **open**: impressions
+* **bounce**: bounces
+* **failure**: errors
 
 ## JSON example
+
 The following JSON demonstrates how to use the API method:
 
 ```json

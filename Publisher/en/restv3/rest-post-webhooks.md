@@ -17,7 +17,18 @@ After a successful call the ID of the created webhook is returned.
 | **database**      | Optional: The ID of the database that this webhook is limited to.                     |
 | **collection**    | Optional: The ID of the collection that this webhook is limited to.                   |
 
+Trigger can be one of the following
+* **create**: profile creations
+* **update**: profile updates
+* **delete**: profile deletions
+* **click**: clicks
+* **delivery**: deliveries
+* **open**: impressions
+* **bounce**: bounces
+* **failure**: errors
+
 ## JSON example
+
 The following JSON demonstrates how to use the API method:
 
 ```json
@@ -25,7 +36,7 @@ The following JSON demonstrates how to use the API method:
    "handler":"https://my-webhook-url.com",
    "trigger":"create",
    "callers":["ms", "publisher"],
-   "database":1017
+   "database": 1
 }
 ```
 

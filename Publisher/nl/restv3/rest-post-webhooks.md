@@ -14,7 +14,18 @@ Deze methode wordt gebruikt om een webhook aan te maken met de REST API. Je doet
 | **database**      | Optioneel: het ID van de database waarop de webhook wordt gelimiteerd                 |
 | **collection**    | Optioneel: het ID van de collectie waarop de webhook wordt gelimiteerd                |
 
+Trigger kan de volgende waardes hebben
+* **create**: profiel aangemaakt
+* **update**: profiel aangepast
+* **delete**: profiel verwijderd
+* **click**: kliks
+* **delivery**: afgeleverde berichten
+* **open**: impressies
+* **bounce**: bounces
+* **failure**: fouten
+
 ## Voorbeeld in JSON
+
 De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ```json
@@ -22,7 +33,7 @@ De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
    "handler":"https://my-webhook-url.com",
    "trigger":"create",
    "callers":["ms", "publisher"],
-   "database":1017
+   "database": 1
 }
 ```
 
