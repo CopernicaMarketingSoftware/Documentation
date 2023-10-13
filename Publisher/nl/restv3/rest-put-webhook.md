@@ -14,21 +14,31 @@ Hier moet `$id` vervangen worden door het ID van de webhook.
 | **trigger**       | De aanleiding waardoor de webhook wordt uitgevoerd                                    |
 | **callers**       | Array met types (ms / publisher) waardoor de webhook wordt aangeroepen. Deze parameter is optioneel. Als deze niet is gespecificeerd wordt de call door beide types uitgevoerd                             |
 
-### JSON voorbeeld
+Trigger kan de volgende waardes hebben
+* **create**: profiel aangemaakt
+* **update**: profiel aangepast
+* **delete**: profiel verwijderd
+* **click**: kliks
+* **delivery**: afgeleverde berichten
+* **open**: impressies
+* **bounce**: bounces
+* **failure**: fouten
 
-De JSON ziet er bijvoorbeeld zo uit:
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 ```json
 {  
    "handler":"https://my-webhook-url.com",
    "trigger":"create",
-   "callers":["ms", "publisher"]
+   "callers":["ms", "publisher"],
 }
 ```
 
-## PHP voorbeeld
+## Voorbeeld in PHP
 
-Het onderstaande script demonstreert hoe je deze API methode gebruikt. Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
+Het onderstaande PHP script demonstreert hoe je deze API methode gebruikt. Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 
 ```php
 // vereiste scripts
