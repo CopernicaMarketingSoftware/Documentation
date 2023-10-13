@@ -15,6 +15,17 @@ The following parameters can be added to the message body. Note that because thi
 - **name**: Name of the selection
 - **description**: Description of the selection
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "name": "new_view_name",
+    "description": "new view description"
+}
+```
+
 ## PHP example
 
 The following PHP example demonstrates how to use the method:

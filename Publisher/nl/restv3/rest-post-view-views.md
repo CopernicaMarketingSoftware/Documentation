@@ -16,6 +16,17 @@ die van een reguliere selectie.
 - **name**: 				naam van de selectie
 - **description**: 			omschrijving van de selectie
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "name": "new_view_name",
+    "description": "new view description"
+}
+```
+
 ## Voorbeeld in PHP
 
 ```php

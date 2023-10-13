@@ -15,18 +15,21 @@ PUT command:
 
 - **name**: name of the selection
 - **description**: description of the selection
-- **parent-type**: type of the parent: selection or database
-- **parent-id**: id of the database or selection
-- **has-children**: boolean value: whether or not the database has 
-selections nested underneath it
-- **has-referred**: boolean value: whether or not there are other 
-selections that refer to this selection.
-- **has-rules**: boolean value: whether or not the selection has 
-selection rules
+
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "name": "new_view_name",
+    "description": "new view description"
+}
+```
 
 ## PHP example
 
-The following example demonstrates how to use this method:
+The following PHP example demonstrates how to use this method:
 
 ```php
 // dependencies
@@ -37,8 +40,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // data to be sent to the api
 $data = array(
-   	'description'   =>  'a new description',
-   	'has_rules'      =>  true
+   	'description'   =>  'a new description'
 );
 
 // do the call, and print result
