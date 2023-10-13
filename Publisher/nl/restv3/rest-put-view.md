@@ -15,13 +15,19 @@ geplaatst:
 
 - **name**: de optionele nieuwe naam van de selectie
 - **description**: de optionele nieuwe omschrijving van de selectie
-- **parent-type**: geeft aan of de selectie onder een selectie of database valt
-- **parent-id**: id van de database of selectie waar de selectie onder valt
-- **has-children**: boolean waarde om aan te geven of er selecties onder deze selectie vallen
-- **has-referred**: boolean waarde om aan te geven of er andere selecties naar deze selectie refereren
-- **has-rules**: boolean waarde om aan te geven of de selectie regels heeft of niet
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "name": "new_view_name",
+    "description": "new view description"
+}
+```
+
+## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 

@@ -18,9 +18,22 @@ verplicht.
 * **name**: Naam voor de kopie van de selectie. (verplicht)
 * **options**: Array met opties voor het kopiëren. (optioneel)
 
-De 'options' array bevat de optie om selecties mee te kopiëren of niet:
+De 'options' array bevat de optie om onderliggende selecties wel of niet mee te kopiëren:
 
-* **views**: Een boolean die aangeeft of de selecties mee gekopieërd moeten worden.
+* **views**: Een boolean die aangeeft of de onderliggende selecties mee gekopieërd moeten worden.
+
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "name": "View_copy",
+    "options": {
+        "views": true
+    }
+}
+```
 
 ## Voorbeeld in PHP
 
@@ -40,7 +53,7 @@ $options = array(
 
 // data voor de methode
 $data = array(
-    'name'      =>  'View (copy)',
+    'name'      =>  'View_copy',
     'options'   =>  $options
 );
 

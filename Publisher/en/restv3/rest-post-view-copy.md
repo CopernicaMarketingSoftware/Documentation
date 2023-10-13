@@ -19,7 +19,20 @@ parameters:
 
 The options array can contain the following option:
 
-* **views**: Boolean that indicates whether the views should be included in the copy.
+* **views**: Boolean that indicates whether the underlying views should be included in the copy.
+
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "name": "View_copy",
+    "options": {
+        "views": true
+    }
+}
+```
 
 ## PHP example
 
