@@ -18,9 +18,9 @@ After a successful call the ID of the created webhook is returned.
 | **collection**    | Optional: The ID of the collection that this webhook is limited to.                   |
 
 Trigger can be one of the following
-* **create**: profiel creations
-* **update**: profiel updates
-* **delete**: profiel deletions
+* **create**: profile creations
+* **update**: profile updates
+* **delete**: profile deletions
 * **click**: clicks
 * **delivery**: deliveries
 * **open**: impressions

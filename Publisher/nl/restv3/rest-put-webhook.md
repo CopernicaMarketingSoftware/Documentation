@@ -32,7 +32,7 @@ De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 {  
    "handler":"https://my-webhook-url.com",
    "trigger":"create",
-   "callers":["ms", "publisher"],
+   "callers":["ms", "publisher"]
 }
 ```
 

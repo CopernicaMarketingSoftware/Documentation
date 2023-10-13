@@ -16,9 +16,9 @@ Replace the `$id` with the identifier of the webhook you want to edit.
 | **callers**       | Specify what callers may trigger the webhook. This parameter is optional. If no callers are specified, all possible callers are applied. |
 
 Trigger can be one of the following
-* **create**: profiel creations
-* **update**: profiel updates
-* **delete**: profiel deletions
+* **create**: profile creations
+* **update**: profile updates
+* **delete**: profile deletions
 * **click**: clicks
 * **delivery**: deliveries
 * **open**: impressions
@@ -33,7 +33,7 @@ The following JSON demonstrates how to use the API method:
 {  
    "handler":"https://my-webhook-url.com",
    "trigger":"create",
-   "callers":["ms", "publisher"],
+   "callers":["ms", "publisher"]
 }
 ```
 
