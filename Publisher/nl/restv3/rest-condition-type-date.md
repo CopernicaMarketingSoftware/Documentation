@@ -42,6 +42,18 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "Date",
+    "before-time": "2018-01-01 00:00:00",
+    "after-mutation": "[\"plus\",\"2016-01-01\", \"7:34:23\"]"
+}
+```
+
 ## Voorbeeld in PHP
 
 We kijken hier naar een datum in de database in combinatie met een 

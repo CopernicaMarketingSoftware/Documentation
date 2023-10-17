@@ -40,7 +40,18 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "Export",
+    "include-never-exported-profiles": true
+}
+```
+
+## Voorbeeld in PHP
 
 Je kunt ook selecteren op profielen die je voor een bepaalde dag al eens  
 hebt geëxporteerd. Hieronder is weergegeven hoe je zo'n scenario vertaald

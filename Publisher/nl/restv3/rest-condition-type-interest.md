@@ -28,7 +28,19 @@ In de onderstaande tabel vind je alle mogelijke match modes.
 |match_profiles_with_interest_group    | Match alleen profielen met interesse groep    |
 |match_profiles_without_interestgroup  | Match alleen profielen zonder interesse groep |
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "Interest",
+    "match-mode": "match_profiles_with_interest",
+    "interest": "tennis"
+}
+```
+
+## Voorbeeld in PHP
 
 Stel dat een sportwinkel een e-mail wilt versturen naar alle klanten die tennis spelen. 
 Hiervoor moet tennis wel als interesse in de database zijn aangemaakt. In dit geval kun 

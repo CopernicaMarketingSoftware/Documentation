@@ -14,7 +14,18 @@ The miniview condition has the following parameters:
 * **min-subprofiles**: Minimum number of subprofiles in the miniview
 * **max-subprofiles**: Maximum number of subprofiles in the miniview
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "MiniView",
+    "max-subprofiles": "14"
+}
+```
+
+## PHP example
 
 It's possible to combine multiple miniviews if there are too many. Too check 
 if the miniview is small enough to combine you can use the max-subprofiles 

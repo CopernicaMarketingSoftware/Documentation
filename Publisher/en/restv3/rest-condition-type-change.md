@@ -63,7 +63,18 @@ The 'mutation' properties accept the following string for the value:
 '["plus", "0", "day", "day"]'
 ```
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "Change",
+    "change-type": "any"
+}
+```
+
+## PHP example
 
 We use a condition here when there has ever been a change in any of the 
 data.

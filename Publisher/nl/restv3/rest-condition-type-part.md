@@ -15,7 +15,20 @@ Voor deze conditie zijn de volgende parameters beschikbaar:
 * length: 			het aantal geselecteerde profielen als getal of percentage. 
 * fields: 			alle velden gebruikt in deze conditie.
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type":"Part",
+    "begin":"54",
+    "length":"20",
+    "fields":"dog_owner"
+}
+```
+
+## Voorbeeld in PHP
 
 Met de part conditie kun je gemakkelijk een gedeelte van een selectie bekijken 
 die een bepaalde veldwaarde hebben. We kijken hier naar 20 honden eigenaren 

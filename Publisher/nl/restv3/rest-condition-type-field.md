@@ -32,7 +32,19 @@ omschrijvingen.
 |regexp            | Regex          |
 |is-numeric        | Is numeriek    |
 
-## Voorbeelden
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "Field",
+    "field": "has_children",
+    "value": "yes"
+}
+```
+
+## Voorbeeld in PHP
 
 Stel dat je door middel van een "has_children" veld, weet welke profielen 
 kinderen hebben. In dit geval kun je een specifieke doelgroep e-mailen door

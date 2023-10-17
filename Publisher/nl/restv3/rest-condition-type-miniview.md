@@ -15,7 +15,18 @@ Voor deze conditie zijn de volgende parameters beschikbaar:
 * min-subprofiles:              minimum hoeveelheid subprofielen in de miniview
 * max-subprofiles:              maximum hoeveelheid subprofielen in de miniview
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "MiniView",
+    "max-subprofiles": "14"
+}
+```
+
+## Voorbeeld in PHP
 
 Het is mogelijk om meerdere miniviews te combineren als we er te veel hebben. 
 Om te checken of een miniview klein genoeg is kunnen we max-subprofiles naar

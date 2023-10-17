@@ -46,7 +46,20 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "LastContact",
+    "after-time": "2016-12-11 00:34:56",
+    "min-closed": "3",
+    "contains": "Bob"
+}
+```
+
+## Voorbeeld in PHP
 
 Het is ook mogelijk om een selectie te maken naar aanleiding van een contactmoment.
 Je kunt zo bijvoorbeeld testen of een werknemer zijn werk goed doet omtrent het

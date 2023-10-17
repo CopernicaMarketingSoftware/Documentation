@@ -66,7 +66,21 @@ format.
 * **before-mutation**: The beforemutation (time difference) for mails sent too early.
 * **after-mutation**: The aftermutation (time difference) for mails sent too late.
 
-## Example
+
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "Email",
+    "required-result": "clickonurl",
+    "required-url": "wwww.example.com",
+    "match-mode": "match_profiles_that_received_something"
+}
+```
+
+## PHP example
 
 With the properties above you can make selections in very advanced manners. Let's 
 say you want to make a separate selection for people who want to receive 

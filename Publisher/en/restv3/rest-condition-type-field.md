@@ -19,7 +19,19 @@ The field condition has the following parameters:
 "value" will not be used.
 * **numeric-comparison**: Boolean value to indicate whether value comparison is done numerically or not.
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "Field",
+    "field": "has_children",
+    "value": "yes"
+}
+```
+
+## PHP example
 
 Imagine that you would have a "has_children" field, allowing you 
 to group those that have children. In this case you can email a specific 

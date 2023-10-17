@@ -54,7 +54,19 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "Sms",
+    "document": "document x",
+    "match-mode": "match_profiles_that_received_document"
+}
+```
+
+## Voorbeeld in PHP
 
 Stel dat bij een mailing per ongeluk een verkeerd document is verstuurd.
 Het is daarom de bedoeling dat er snel een e-mail achteraan wordt gestuurd. 

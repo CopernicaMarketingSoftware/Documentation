@@ -82,7 +82,20 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "Email",
+    "required-result": "clickonurl",
+    "required-url": "wwww.example.com",
+    "match-mode": "match_profiles_that_received_something"
+}
+```
+
+## Voorbeeld in PHP
 
 Je kunt met bovenstaande eigenschappen op een hele geavanceerde manier selecties maken.
 Stel dat je een aparte selectie wilt aanmaken voor klanten die je e-mails ontvangen. 

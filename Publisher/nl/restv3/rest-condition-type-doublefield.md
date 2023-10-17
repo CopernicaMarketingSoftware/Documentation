@@ -25,7 +25,19 @@ In de onderstaande tabel vind je alle mogelijke match modes.
 | match_last_profiles          | Matcht alle profielen die later niet voorkomen       |
 | match_toberepeated_profiles  | Matcht alle profielen die ook voorkomen een hoger ID |
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "DoubleField",
+    "match-mode": "match_unique_profiles",
+    "fields": "[voornaam, achternaam]"
+}
+```
+
+## Voorbeeld in PHP
 
 Stel dat je uit een database alleen de mensen wilt selecteren met een unieke naam. 
 Je kunt dit doen door een selectie te maken van de voor- en achternaam velden. Vervolgens

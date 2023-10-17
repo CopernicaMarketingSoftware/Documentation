@@ -15,7 +15,20 @@ using a negative value the begin count begins at the end.
 * **length**: Set number of selected profiles as a number or percentage. 
 * **fields**: All fields used in the condition.
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type":"Part",
+    "begin":"54",
+    "length":"20",
+    "fields":"dog_owner"
+}
+```
+
+## PHP example
 
 With the part condition you can easily view part of a selection with 
 a certain field value. Here we look at 20 dog owners from our selection.
