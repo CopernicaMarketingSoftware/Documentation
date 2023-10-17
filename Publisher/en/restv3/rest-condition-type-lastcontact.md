@@ -34,7 +34,20 @@ format.
 * **before-mutation**: beforemutation (time difference) for lastcontact condition.
 * **after-mutation**: aftermutation (time difference) for lastcontact condition.
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "LastContact",
+    "after-time": "2016-12-11 00:34:56",
+    "min-closed": "3",
+    "contains": "Bob"
+}
+```
+
+## PHP example
 
 It's also possible to make selections based on the last contactmoment with 
 your profiles. If you haven't contacted a customer in a while it might 

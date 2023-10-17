@@ -25,6 +25,18 @@ format.
 * **before-mutation**: The variable time after which the chosen date field must be.
 * **after-mutation**: The variable time before which the chosen date field must be.
 
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "Date",
+    "before-time": "2018-01-01 00:00:00",
+    "after-mutation": "[\"plus\",\"2016-01-01\", \"7:34:23\"]"
+}
+```
+
 ## PHP example
 
 Here we look at a date in a database in combination with an after-mutation. 

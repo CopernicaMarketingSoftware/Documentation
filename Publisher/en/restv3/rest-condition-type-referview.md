@@ -14,7 +14,18 @@ The referview condition has the following parameters:
 * **check-type**: Boolean value to indicate whether a profile should be 
 present in the other view. Possible values: "yes", "no".
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "ReferView",
+    "check-type": "no"
+}
+```
+
+## PHP example
 
 You can use this condition to check whether subprofiles have any overlap 
 at all, inside or outside of the current view.

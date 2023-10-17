@@ -15,7 +15,18 @@ Voor deze conditie zijn de volgende parameters beschikbaar:
 * check-type: 			boolean value om aan te geven of een profiel zichtbaar moet zijn in de andere view. Mogelijke waarden: 
 "yes", "no".
 
-## Voorbeeld
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "ReferView",
+    "check-type": "no"
+}
+```
+
+## Voorbeeld in PHP
 
 Je kunt deze conditie gebruiken als je wil weten of twee profielen geen
 enkele overlap hebben, binnen of buiten een view.

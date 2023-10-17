@@ -27,7 +27,19 @@ their descriptions.
 | match_last_profiles          | Match all profiles that do not occur later          |
 | match_toberepeated_profiles  | Match all profiles that also occur with a higher ID |
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "DoubleField",
+    "match-mode": "match_unique_profiles",
+    "fields": "[firstname, lastname]"
+}
+```
+
+## PHP example
 
 Let's say we want to make a selection of only people with unique names. This 
 includes both the first name and the last name. In this case we could describe this 

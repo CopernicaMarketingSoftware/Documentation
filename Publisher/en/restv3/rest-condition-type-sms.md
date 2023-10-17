@@ -35,7 +35,19 @@ format.
 * **before-mutation**: The beforemutation (time difference) for the sms condition.
 * **after-mutation**: The aftermutation (time difference) for the sms condition.
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "Sms",
+    "document": "document x",
+    "match-mode": "match_profiles_that_received_document"
+}
+```
+
+## PHP example
 
 Imagine that a mailing has been sent with the wrong document by accident. 
 It's crucial to correct this mistake quickly, but the original selection 

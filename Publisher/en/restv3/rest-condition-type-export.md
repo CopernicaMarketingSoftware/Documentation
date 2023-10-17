@@ -24,7 +24,18 @@ format.
 * **before-mutation**: The beforemutation (time difference) of the exportcondition.
 * **after-mutation**: The aftermutation (time difference) of the exportcondition.
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "Export",
+    "include-never-exported-profiles": true
+}
+```
+
+## PHP example
 
 If you wanted to only export profiles you have exported before after a 
 certain date, you could make that selection using this condition. The 

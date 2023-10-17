@@ -52,7 +52,21 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 '["plus", "2017-01-01", "05:43:21"]'
 ```
 
-## Voorbeelden
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "Fax",
+    "after-time": "2017-01-01 00:00:00",
+    "number": "10",
+    "operator": ">",
+    "match-mode": "match_profiles_that_received_nothing"
+}
+```
+
+## Voorbeeld in PHP
 
 Met de fax conditie kun je een selectie maken van mensen die meer dan 
 10 berichten hebben ontvangen in de laatste twee maanden, zodat je niet 

@@ -35,7 +35,22 @@ format.
 * **before-mutation**: The beforemutation (time difference) of the faxcondition.
 * **after-mutation**: The aftermutation (time difference) of the faxcondition.
 
-## Example
+
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "Fax",
+    "after-time": "2017-01-01 00:00:00",
+    "number": "10",
+    "operator": ">",
+    "match-mode": "match_profiles_that_received_nothing"
+}
+```
+
+## PHP example
 
 With the fax condition you can make a selection of people who have received 
 more than 10 messages in the last two months, so they don't get too many 

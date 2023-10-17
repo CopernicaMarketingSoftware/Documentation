@@ -34,7 +34,19 @@ format.
 * **before-mutation**: The beforemutation (time difference) for the todo condition.
 * **after-mutation**: The beforemutation (time difference) for the todo condition.
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "ToDo",
+    "match_type": "match_intelligent",
+    "contains": "document name"
+}
+```
+
+## PHP example
 
 Imagine that you just updated your software and some customers need to be 
 informed about this. The document for the email was not ready however, 

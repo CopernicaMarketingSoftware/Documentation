@@ -67,6 +67,17 @@ De 'mutation' properties accepteren voor de value de volgende stringvolgorde:
 '["plus", "0", "day", "day"]'
 ```
 
+## Voorbeeld in JSON
+
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "type": "Change",
+    "change-type": "any"
+}
+```
+
 ## Voorbeeld in PHP
 
 We gebruiken hier een conditie die geldt als er ooit veranderingen zijn 

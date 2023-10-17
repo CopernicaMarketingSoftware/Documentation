@@ -18,7 +18,19 @@ if the matchmode is "match_profiles_with_interest" or "match_profiles_without_in
 * **interest-group**: Interestgroup of the condition. This only returns a valid value 
 if the matchmode is "match_profiles_with_interestgroup" or "match_profiles_without_interestgroup".
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "Interest",
+    "match-mode": "match_profiles_with_interest",
+    "interest": "tennis"
+}
+```
+
+## PHP example
 
 Imagine that you have a sports store and want to send an email showcasing 
 your new tennis collection. This requires "tennis" to exist as an interest 

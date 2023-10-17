@@ -38,7 +38,19 @@ format.
 * **before-mutation**: The beforemutation (time difference) for the survey condition.
 * **after-mutation**: The aftermutation (time difference) for the survey condition.
 
-## Example
+## JSON example
+
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "type": "Survey",
+    "survey-name": "survey x",
+    "submitter": "none"
+}
+```
+
+## PHP example
 
 Sometimes people forget that you sent them an import survey, while you need 
 the data! You can easily send an email to a selection of the people that 
