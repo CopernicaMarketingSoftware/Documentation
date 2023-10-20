@@ -120,3 +120,7 @@ naar '**Configuratie**', dan is het mogelijk om de selectie te verplaatsen, arch
 of verwijderen.
 
 ![Selecties configureren](../images/nl/selecties-configureren.png)
+
+## Meer informatie
+- [Training deel 3 - Uitschrijfgedrag en profielen](./copernica-training-part-3)
+- [Training deel 5 - Mailings, HTML-templates & contentcreatie](./copernica-training-part-5)
