@@ -56,3 +56,4 @@ For the time being, the full documentation on the REST API can be found
 ## More information
 
 * [REST API methods](./restv3/rest-api)
+* [SOAP API methodes (not recommended)](./soap-api-documentation)
