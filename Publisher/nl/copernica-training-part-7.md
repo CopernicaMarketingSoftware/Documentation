@@ -70,3 +70,7 @@ De statistieken kunnen op e-mail- of accountniveau geëxporteerd worden,
 ook heb je de mogelijkheid om een periodieke export in te plannen, 
 zodat je daar een dashboard van kan maken. Naast een periodieke export 
 kunnen resultaten ook via de REST of SOAP API realtime geëxporteerd worden. 
+
+## Meer informatie
+- [Training deel 6 - Personalisatie](./copernica-training-part-6)
+- [Training deel 8 - Opvolgacties](./copernica-training-part-8)
