@@ -78,3 +78,7 @@ sleutelveld is. De onderstaande afbeelding laat de correcte instellingen zien.
 
 Klik op volgende en start de import. Je kunt het venster sluiten zodra de import gestart is.
 Deze gaat op de achtergrond verder.
+
+## Meer informatie
+- [Training deel 2 - Databases en velden](./copernica-training-part-2)
+- [Training deel 4 - Selecties](./copernica-training-part-4)
