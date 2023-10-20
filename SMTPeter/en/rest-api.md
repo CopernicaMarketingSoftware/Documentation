@@ -4,14 +4,14 @@ SMTPeter has a powerful and secure REST API on top of the HTTPS protocol.
 Sending an email is as simple as sending a HTTP POST request to the 
 following URL:
 
-`https://www.smtpeter.com/v1/send?access_token={YOUR_API_TOKEN}`
+`https://www.smtpeter.com/v2/send?access_token={YOUR_API_TOKEN}`
 
 Where `{YOUR_API_TOKEN}` is the API access token that can be obtained from the dashboard.
 The body data of the POST call should hold the information about the email and 
 optionally extra settings. A simple but complete call can look like this:
 
 ```text
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 247

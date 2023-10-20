@@ -6,7 +6,7 @@ the API send call. The following request tells SMTPeter to lookup template 12,
 and use it for a mailing to john@doe.com.
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 67
@@ -31,7 +31,7 @@ you can also create your templates "by hand" and pass the full JSON source
 to the API call:
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 1297
@@ -63,7 +63,7 @@ by sending extra data with your API call to fill in placeholders like {$name} an
 call.
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 653

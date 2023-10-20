@@ -20,7 +20,7 @@ application and SMTPeter. For this example, we have truncated the
 data that is actually sent.
 
 ```text
-POST /v1/send?access_token=YOUR_API_TOKEN HTTP/1.0
+POST /v2/send?access_token=YOUR_API_TOKEN HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 1484
@@ -35,7 +35,7 @@ This works essentially the same as sending traditional form data, but
 you must of course set the 'Content-Type' to 'application/json':
 
 ```text
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 246

@@ -7,11 +7,11 @@ other people can send out emails out of your name. With your access token,
 you can reach the SMTPeter API via the following URL:
 
 ```
-https://www.smtpeter.com/v1/METHOD?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v2/METHOD?access_token=YOUR_API_TOKEN
 ```
 
 You can only use HTTPS connections. Unsecure HTTP requests are not
-accepted and will result in a '400 Bad Request' response. The "v1" element 
+accepted and will result in a '400 Bad Request' response. The "v2" element 
 in the URL allows us to break compatibility in future versions of the API. 
 
 

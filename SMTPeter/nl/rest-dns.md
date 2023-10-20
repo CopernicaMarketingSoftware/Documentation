@@ -10,9 +10,9 @@ een API call voor: `/dns`. Deze geeft een lijst terug van alle aanbevolen
 DNS records die op je DNS server moeten staan.
 
 ```txt
-(1) https://www.smtpeter.com/v1/dns/yourdomain.com/recommended
-(2) https://www.smtpeter.com/v1/dns/yourdomain.com/selfhosted
-(3) https://www.smtpeter.com/v1/dns/yourdomain.com/status
+(1) https://www.smtpeter.com/v2/dns/yourdomain.com/recommended
+(2) https://www.smtpeter.com/v2/dns/yourdomain.com/selfhosted
+(3) https://www.smtpeter.com/v2/dns/yourdomain.com/status
 ```
 
 SMTPeter ondersteunt drie API calls: een om de aanbevolen DNS configuratie 
@@ -82,7 +82,7 @@ Je kunt checken of alles correct is ingesteld als je de aanbevolen DNS Records h
 geïnstalleerd. Je doet dit met de volgende API methode:
 
 ```txt
-https://www.smtpeter.com/v1/dns/yourdomain.com/status
+https://www.smtpeter.com/v2/dns/yourdomain.com/status
 ```
 
 SMTPeter vraagt je DNS Records op als je deze methode aanroept. Daarna worden deze 

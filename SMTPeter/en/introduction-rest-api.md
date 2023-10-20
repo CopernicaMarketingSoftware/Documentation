@@ -12,7 +12,7 @@ Once you’ve got your access token, the API is accessible via the
 following URL, in which METHOD needs to be replaced by the method you 
 want to use and YOUR_ACCESS_TOKEN needs to be your actual access token.
 
-`https://www.smtpeter.com/v1/METHOD?access_token=YOUR_API_TOKEN`
+`https://www.smtpeter.com/v2/METHOD?access_token=YOUR_API_TOKEN`
 
 We've made a few examples in different programming languages. With these 
 classes, you can set up a connection with the REST API. This way, no 
