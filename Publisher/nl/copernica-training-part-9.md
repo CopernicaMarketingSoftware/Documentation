@@ -92,3 +92,5 @@ _Winbackcampagne_
 Maak een selectie aan met alleen profielen die ooit een order hebben gedaan, maar niet in de afgelopen 6 maanden.
 Maak vervolgens een e-mail op om te verzenden naar deze groep. Het doel van deze e-mail is om klanten te motiveren om opnieuw een aankoop te doen.
 
+## Meer informatie
+- [Training deel 8 - Opvolgacties](./copernica-training-part-8)
