@@ -84,4 +84,4 @@ een testmail te verzenden. Dat gebeurt via een bulkmailing.
 
 ## Meer informatie
 - [Training deel 1 - Introductie](./copernica-training-part-1)
-- [Training deel 3 - Uitschrjfgedrag en velden](./copernica-training-part-3)
+- [Training deel 3 - Uitschrjfgedrag en profielen](./copernica-training-part-3)
