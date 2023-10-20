@@ -30,3 +30,7 @@ Kies een profiel in de database en maak hiervan de **‘Standaardbestemming’**
 ![Standaardbestemming instellen](../images/nl/standaardbestemming-instellen.png)
 
 Navigeer vervolgens terug naar de template. 
+
+## Meer informatie
+- [Training deel 4 - Selecties](./copernica-training-part-4)
+- [Training deel 6 - Personalisatie](./copernica-training-part-6)
