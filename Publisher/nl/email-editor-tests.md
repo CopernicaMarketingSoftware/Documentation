@@ -7,6 +7,13 @@ In je template of document vind je onderin de button _spamcontrole_ of _spamscor
 
 Bij elke controle hoort een score die beschrijft in hoeverre de uitkomst van die controle de algemene score heeft beïnvloed. Daarnaast kun je onder de beschrijving de SpamAssassin code vinden. SpamAssassin is een open source computerprogramma voor servers dat wordt gebruikt voor het herkennen en onderscheppen van spam e-mail.
 
+## De standaardbestemming
+In je database kun je één profiel aanwijzen als standaardbestemming. Dit is het profiel dat wordt gebruikt om de e-mail te personaliseren. Als je variabelen in een document opneemt, zoals {$voornaam} en {$achternaam}, en je schakelt de gepersonaliseerde modus in, dan zullen de voor- en achternaam van dit profiel worden getoond in plaats van de Smarty-variabelen.
+
+Om een profiel als standaardbestemming in te stellen open je het profiel in de [profielen-module](https://ms.copernica.com/#/profiles). Hier kies je voor de optie 'Standaardbestemming'.
+
+De standaardbestemming is gekoppeld aan je persoonlijke login. Een collega die toegang heeft tot hetzelfde account zou een heel andere standaardbestemming kunnen gebruiken.
+
 ## Voorvertoning
 Om te controleren hoe je mailing op desktop, tablet en mobile eruit ziet, ga je naar _Voorvertoning_ in de toolbar. De voorvertoning wordt standaard gepersonaliseerd op de ingestelde standaardbestemming. Je kunt hier aangeven welk soort apparaat je als voorbeeld wilt gebruiken. Daarnaast is het mogelijk om zelf de afmetingen van de voorvertoning aan te passen.
 
