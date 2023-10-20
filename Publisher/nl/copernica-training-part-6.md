@@ -65,3 +65,7 @@ Let op: de webversie en uitschrijflink werken niet in testmailings.
 Verwijzen naar een eigen URL kan ook: 
 {unsubscribe redirect="http://www.eendomein.nl/eigenlandingspagina.html”}
 ```
+
+## Meer informatie
+- [Training deel 5 - Mailings, HTML-templates & contentcreatie](./copernica-training-part-5)
+- [Training deel 7 - Verzending en statistieken](./copernica-training-part-7)
