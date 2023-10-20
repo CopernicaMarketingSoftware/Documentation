@@ -77,4 +77,6 @@ De opvolgactie ziet er dan als volgt uit:
 Het veld Dubbele-optin moet worden toegevoegd als conditie aan de Nieuwsbriefselectie, 
 zodat alleen contactpersonen die de aanmelding bevestigd hebben mailings ontvangen.
 
-
+## Meer informatie
+- [Training deel 7 - Verzending en statistieken](./copernica-training-part-7)
+- [Training deel 9 - Collecties en miniselecties](./copernica-training-part-9)
