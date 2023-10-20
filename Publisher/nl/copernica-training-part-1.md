@@ -36,4 +36,4 @@ opmaken van e-mails kun je kiezen tussen beide omgevingen. In de Marketing Suite
 je gebruik van een Drag-and-drop Editor. In de Publisher gebruik je een HTML-editor.
 
 ## Meer informatie
-- [Training deel 2 - Databases en velden](./copernica-training-part2)
+- [Training deel 2 - Databases en velden](./copernica-training-part-2)
