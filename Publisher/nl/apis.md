@@ -59,4 +59,4 @@ kun je met de REST API deze bestanden downloaden.
 ## Meer informatie
 
 * [REST API methodes](./restv3/rest-api)
-* [SOAP API methodes (not recommended)](./soap-api-documentation)
+* [SOAP API methodes (niet aanbevolen)](./soap-api-documentation)
