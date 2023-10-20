@@ -1,5 +1,5 @@
 # Configuratie
-Op de configuratiepagina kun je allerlei zaken instellen en inzien. Instellingen zijn onderverdeeld in drie kolommen. Deze komen overeen met het toegangssysteem en de licentiestructuur van Copernica. 
+Op de [configuratiepagina](https://ms.copernica.com/#/admin) kun je allerlei zaken instellen en inzien. Instellingen zijn onderverdeeld in drie kolommen. Deze komen overeen met het toegangssysteem en de licentiestructuur van Copernica. 
 
 * Onder het kopje __Jouw bedrijf__ staan alle bedrijfsinstellingen.
 * Onder het kopje __Account__ staan de instellingen van je huidige account.  
