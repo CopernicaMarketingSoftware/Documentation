@@ -11,4 +11,4 @@ Bij elke controle hoort een score die beschrijft in hoeverre de uitkomst van die
 Om te controleren hoe je mailing op desktop, tablet en mobile eruit ziet, ga je naar _Voorvertoning_ in de toolbar. De voorvertoning wordt standaard gepersonaliseerd op de ingestelde standaardbestemming. Je kunt hier aangeven welk soort apparaat je als voorbeeld wilt gebruiken. Daarnaast is het mogelijk om zelf de afmetingen van de voorvertoning aan te passen.
 
 ## Testmail versturen
-Met een testmail test je de personalisatie en controleer je of de e-mail eruit ziet zoals je wilt. De testmail wordt verstuurd naar de inbox van de standaardbestemming en gepersonaliseerd voor dit profiel. Om een testmail te versturen, ga je naar **Testmailing verzenden** in de toolbar van je template of document. 
+Met een testmail test je de personalisatie en controleer je of de e-mail eruit ziet zoals je wilt. De testmail wordt verstuurd naar de inbox van de standaardbestemming en gepersonaliseerd voor dit profiel. Om een testmail te versturen, ga je naar **Verzendopties -> Testmail** in de toolbar van je template of document. 
