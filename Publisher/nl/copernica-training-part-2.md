@@ -81,3 +81,7 @@ tweede regel 'Nee'. We gebruiken dit veld om in één keer naar meerdere collega
 een testmail te verzenden. Dat gebeurt via een bulkmailing.
 
 ![Veld bewerken](../images/nl/veld-bewerken.png)
+
+## Meer informatie
+- [Training deel 1 - Introductie](./copernica-training-part-1)
+- [Training deel 3 - Uitschrjfgedrag en velden](./copernica-training-part-3)
