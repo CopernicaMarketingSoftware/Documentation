@@ -13,7 +13,7 @@ naar het volgende adres:
 
 De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
-URL: `https://api.copernica.com/v3/ms/template/113/translations?languages[]=de_DE&languages[]=nl_NL&access_token=xxx`
+URL: `https://api.copernica.com/v3/ms/template/{$tempalteID}/translations?languages[]=de_DE&languages[]=nl_NL&access_token=xxx`
 
 ```json
 {
