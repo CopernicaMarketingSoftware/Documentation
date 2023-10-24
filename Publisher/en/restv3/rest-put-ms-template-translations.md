@@ -18,6 +18,8 @@ should be sent in the request body.
 Besides the parameters you pass to the URL, you must also add body data to the PUT request. 
 In the body of the request, you specify a "texts" array of the elements to be modified. These elements then contain an array with the language of the template and the new input.
 
+To receive the unique IDs of the elements, you can use the [GET translations method](./rest-get-ms-template-translations)
+
 ## JSON example
 
 The following JSON demonstrates how to use the API method:
