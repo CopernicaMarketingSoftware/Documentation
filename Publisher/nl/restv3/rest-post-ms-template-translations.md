@@ -1,4 +1,4 @@
-# REST API: POST template translations (srag-and-drop-templates)
+# REST API: POST template translations (drag-and-drop-templates)
 
 Methode om een nieuwe vertaling toe te voegen aan een template. Dit is een HTTP POST-methode
 naar het volgende adres:
