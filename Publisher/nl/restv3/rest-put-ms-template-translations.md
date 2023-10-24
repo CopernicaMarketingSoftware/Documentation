@@ -40,23 +40,22 @@ require_once('copernica_rest_api.php');
 // verander dit naar je access token
 $api = new CopernicaRestAPI("your-access-token", 3);
 
-// parameters voor het selecteren van profielen
+// parameters voor het selecteren van talen
 $parameters = array(
     'language'  =>  array("language=="nl_NL")
 );
 
-// velden die bewerkt moeten worden
+// elementen die bewerkt moeten worden
 $texts = array(
     '73a5a4794893bbce6832ca706284ed31-attr-alt' =>  array(
         'nl_NL' => 'new_text'
     )
 );
 
-// de velden en interesses vormen samen de data voor het verzoek
+// de teksten voor het verzoek
 $data = array(
     'texts'    =>  $texts
 );
-
 
 // voer het verzoek uit
 $api->put("ms/template/$id/translations", $data, $parameters);
