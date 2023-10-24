@@ -12,6 +12,8 @@ naar het volgende adres:
 ## Body data
 Naast de parameters die je aan de URL meegeeft, moet je ook body data aan het PUT request toevoegen. In de body van het verzoek geeft je aan een "texts" array van de elementen die aangepast moeten worden. Deze elementen bevatten vervolgens een array met de taal van het template en de nieuwe input.
 
+Om de unieke ID's van de elementen te ontvangen kun je gebruik maken van de [GET translations methode](./rest-get-ms-template-translations)
+
 ## Voorbeeld in JSON
 
 De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
