@@ -229,7 +229,7 @@ documenten, templates en mailings.
 | GET    | [api.copernica.com/v3/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)           | Opvragen van alle Publisher mailings voor een profiel     |
 | GET    | [api.copernica.com/v3/subprofile/$id/publisher/emailings](./rest-get-subprofile-publisher-emailings)     | Opvragen van alle Publisher mailings voor een subprofiel  |
 
-### Documenten & templates
+### Documenten & Templates
 
 | Type   | Adres                                                                                                            | Omschrijving                                       |
 |--------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
