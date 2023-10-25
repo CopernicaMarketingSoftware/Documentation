@@ -359,6 +359,9 @@ and emailings.
 | GET    | [api.copernica.com/v3/ms/template/$id](./rest-get-ms-template)                               | Fetch a template                             |
 | DELETE | [api.copernica.com/v3/ms/template/$id](./rest-delete-ms-template)                            | Delete a template                            |
 | GET    | [api.copernica.com/v3/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Fetch the statistics for a template          |
+| POST   | [api.copernica.com/v3/ms/template/$id/translations](./rest-post-ms-template-translations)    | Create new language for a template           |
+| GET    | [api.copernica.com/v3/ms/template/$id/translations](./rest-get-ms-template-translations)     | Fetch all language from a template           |
+| PUT    | [api.copernica.com/v3/ms/template/$id/translations](./rest-put-ms-template-translations)     | Modify languages from a template             |
 
 ### Messages & Destinations
 

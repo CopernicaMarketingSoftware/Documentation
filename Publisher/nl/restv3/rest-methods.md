@@ -334,6 +334,9 @@ templates en mailings.
 | GET    | [api.copernica.com/v3/ms/template/$id](./rest-get-ms-template)                               | Opvragen van een template                         |
 | DELETE | [api.copernica.com/v3/ms/template/$id](./rest-delete-ms-template)                            | Verwijderen van een template                      |
 | GET    | [api.copernica.com/v3/ms/template/$id/statistics](./rest-get-ms-template-statistics)         | Opvragen van statistieken voor een template       |
+| POST   | [api.copernica.com/v3/ms/template/$id/translations](./rest-post-ms-template-translations)    | Aanmaken van een taal voor een template           |
+| GET    | [api.copernica.com/v3/ms/template/$id/translations](./rest-get-ms-template-translations)     | Opvragen van vertalingen van een template         |
+| PUT    | [api.copernica.com/v3/ms/template/$id/translations](./rest-put-ms-template-translations)     | Aanpassen van vertalingen van een template        |
 
 ### Destinations (bestemmingen)
 
