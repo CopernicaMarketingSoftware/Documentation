@@ -44,7 +44,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters voor het selecteren van talen
 $parameters = array(
-    'language'  =>  array("language=="nl_NL")
+    'languages'  =>  array("nl_NL")
 );
 
 // elementen die bewerkt moeten worden
