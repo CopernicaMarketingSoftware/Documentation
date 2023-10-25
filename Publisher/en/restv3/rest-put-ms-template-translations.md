@@ -50,7 +50,7 @@ $api = new CopernicaRestAPI("your-access-token", 3);
 
 // parameters to select the languages
 $parameters = array(
-    'language'  =>  array("language=="nl_NL")
+    'languages'  =>  array("nl_NL")
 );
 
 // elements to update
@@ -66,7 +66,7 @@ $data = array(
 );
     
 // do the call and print the result
-print_r($api->put("ms/templates/{$templateID}/translations", $data, $parameters));
+print_r($api->put("ms/template/{$templateID}/translations", $data, $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
