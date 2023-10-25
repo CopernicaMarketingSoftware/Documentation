@@ -23,13 +23,13 @@ require_once('copernica-rest-api.php');
 // change this into your access token
 $api = new CopernicaRestAPI("your-access-token", 3);
 
-// data to be sent to the api
+// parameters to be sent to the api
 $parameters = array(
     'simpleshorttext' =>  true
 );
 
 // do the call
-$api->get("ms/template/$id/translations", $data);
+print_r($api->get("ms/templates/{$templateID}/translations", $parameters));
 ```
 
 The example above requires the [CopernicaRestApi class](rest-php).
