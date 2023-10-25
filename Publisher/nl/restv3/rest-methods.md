@@ -199,7 +199,7 @@ in de onderstaande tabel.
 ## Publisher Mailings
 
 In de onderstaande tabel vind je alle API calls gerelateerd aan Publisher
-documenten, s en mailings.
+documenten, templates en mailings.
 
 ### Mailings
 
@@ -229,7 +229,7 @@ documenten, s en mailings.
 | GET    | [api.copernica.com/v3/profile/$id/publisher/emailings](./rest-get-profile-publisher-emailings)           | Opvragen van alle Publisher mailings voor een profiel     |
 | GET    | [api.copernica.com/v3/subprofile/$id/publisher/emailings](./rest-get-subprofile-publisher-emailings)     | Opvragen van alle Publisher mailings voor een subprofiel  |
 
-### Documenten & s
+### Documenten & templates
 
 | Type   | Adres                                                                                                            | Omschrijving                                       |
 |--------|------------------------------------------------------------------------------------------------------------------|----------------------------------------------------|
