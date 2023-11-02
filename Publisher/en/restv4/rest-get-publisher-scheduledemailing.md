@@ -6,7 +6,7 @@ can be sent multiple times. This method retrieves a scheduled emailing
 sent with Publisher. The method sends an HTTP GET request to 
 the following address:
 
-`https://api.copernica.com/v3/ms/scheduledemailing/$id?access=token=xxxx`
+`https://api.copernica.com/v4/ms/scheduledemailing/$id?access=token=xxxx`
 
 The **$id** should be replaced with the ID of the scheduled emailing you want 
 to retrieve. You can find the method to retrieve all of the scheduled 
@@ -86,7 +86,7 @@ The following script demonstrates how to use this method.
 require_once('copernica_rest_api.php');
 
 // change this to your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the request and print the result
 print_r($api->get("publisher/scheduledemailing/{$emailingID}"));

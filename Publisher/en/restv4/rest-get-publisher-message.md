@@ -3,7 +3,7 @@
 If you want to get some general information from a mail sent with Publisher
 you can make a simple a GET request to the following URL:
 
-`https://api.copernica.com/v3/publisher/message/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/message/$id?access_token=xxxx`
 
 where `$id` is the unique string that identifies a message. 
 
@@ -22,7 +22,7 @@ The following PHP script demonstrates how to use the API method.
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
     // do the call, and print result
 print_r($api->get("publisher/message/{$messageID}"));

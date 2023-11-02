@@ -3,7 +3,7 @@
 You can request all profiles from a view (selection) with an HTTP GET call 
 to the following URL:
 
-`https://api.copernica.com/v3/view/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/profiles?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the view you
 want to fetch the profiles of. Since this can be 
@@ -87,7 +87,7 @@ the URL, you must take care of escaping the parameters yourself.
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to pass to the call
 $parameters = array(

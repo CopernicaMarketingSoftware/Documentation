@@ -1,7 +1,7 @@
 # REST API: GET destinations (Marketing Suite)
 This method can be used if you want to retrieve the destinations of Marketing Suite mailings for a specific period. By sending a GET request to the following URL,
 you can fetch the destinations:
-`https://api.copernica.com/v3/ms/destinations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/destinations?access_token=xxxx`
 
 ## Parameters
 * **from**: The timestamp indicating the begin of the period for which the destinations should be retrieved (YYYY-MM-DD format).
@@ -26,7 +26,7 @@ The following PHP script calls this API method:
 // dependencies
 require_once('copernica_rest_api.php');
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 // set the required parameters
 $parameters = array(
     'from'  => "2021-02-01",

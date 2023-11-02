@@ -3,7 +3,7 @@ This method can be used if you want to remove multiple profiles from a
 database. Be extra careful though, the number of profiles you can remove
 is not limited. By sending a DELETE request to the following URL, you can
 remove multiple profiles at once:
-`https://api.copernica.com/v3/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles?access_token=xxxx`
 In this, **$id** should be replaced by the numerical identifier, the ID, of 
 the database you want to remove the profiles from.
 ## Body data

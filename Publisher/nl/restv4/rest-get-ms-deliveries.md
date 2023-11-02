@@ -5,7 +5,7 @@ Copernica om je meer inzicht te geven in de prestatie hiervan. Deliveries zijn
 een van de statistieken die worden bijgehouden. 
 Je kan alle deliveries voor een account opvragen met een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v3/ms/deliveries?access_token=xxxx`
+`https://api.copernica.com/v4/ms/deliveries?access_token=xxxx`
 
 ## Parameters
 
@@ -50,7 +50,7 @@ Dit script demonstreert hoe je de API methode kunt gebruiken:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token 
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 print_r($api->get("ms/deliveries"));

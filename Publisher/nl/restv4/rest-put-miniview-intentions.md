@@ -7,7 +7,7 @@ uitgezet worden, om te voorkomen dat er per ongeluk mailings worden verstuurd.
 De HTTP PUT methode om de intentions van een miniselectie aan te passen 
 is beschikbaar op het volgende adres:
 
-`https://api.copernica.com/v3/miniview/$id/intentions?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/intentions?access_token=xxxx`
 
 De `$id` moet hier vervangen worden door de unieke identifier van de miniselectie. 
 
@@ -49,7 +49,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

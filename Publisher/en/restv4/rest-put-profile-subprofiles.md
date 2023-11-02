@@ -3,7 +3,7 @@
 If you want to modify multiple subprofiles with a single call to the API, you
 can send a HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v3/profile/$id/subprofiles/$id?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/subprofiles/$id?access_token=xxxx`
 
 The first `$id` should be replaced with the ID of the profile which the
 subprofiles are linked to. The second `$id` should be replaced with the ID or
@@ -41,7 +41,7 @@ must be passed in the data body.
 The following JSON demonstrates how to use the API method:
 
 URL example:  
-`https://api.copernica.com/v3/profile/$profileID/subprofiles/$collectionID?fields[]=customerid==4567@example.com&create=1&access_token=xxx`
+`https://api.copernica.com/v4/profile/$profileID/subprofiles/$collectionID?fields[]=customerid==4567@example.com&create=1&access_token=xxx`
 
 ```json
 {
@@ -59,7 +59,7 @@ The following PHP script demonstrates how the API method can be called.
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters for subprofile selection
 $parameters = array(

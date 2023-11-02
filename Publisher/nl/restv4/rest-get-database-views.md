@@ -3,7 +3,7 @@
 Je kunt bekijken welke selecties beschikbaar zijn door een HTTP GET request te 
 sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/database/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/views?access_token=xxxx`
 
 De `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de selecties van wilt opvragen.
@@ -68,7 +68,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de methode
 $parameters = array(

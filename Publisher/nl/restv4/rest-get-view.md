@@ -3,7 +3,7 @@
 Een methode om de metadata van een database op te vragen. De methode kan 
 aangeroepen worden met een HTTP GET verzoek aan de volgende URL:
 
-`https://api.copernica.com/v3/view/$id?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id?access_token=xxxx`
 
 Hier moet de `$id` vervangen worden met de numerieke identifier van de 
 database waarvan de selecties moeten worden opgevraagd.
@@ -59,7 +59,7 @@ Het volgende voorbeeld demonstreert hoe deze methode gebruikt kan worden met de 
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer de methode uit en print het resultaat
 print_r($api->get("view/{$viewID}"));

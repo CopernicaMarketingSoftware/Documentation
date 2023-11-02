@@ -2,7 +2,7 @@
 
 To retrieve all rules in a selection, send a HTTP GET request to this address:
 
-`https://api.copernica.com/v3/view/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/rules?access_token=xxxx`
 
 The `$id` code should be replaced with the numeric identifier of the selection
 from which you want to retrieve the rules.
@@ -100,7 +100,7 @@ the URL, you must take care of escaping the parameters yourself.
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to pass to the call
 $parameters = array(

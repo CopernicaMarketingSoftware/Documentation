@@ -3,7 +3,7 @@
 Een overzicht van alle beschikbare interesses in een database kun je opvragen
 met de volgende URL:
 
-`https://api.copernica.com/v3/database/$id/interests?access_token=xxx`
+`https://api.copernica.com/v4/database/$id/interests?access_token=xxx`
 
 De variabele `$id` moet je vervangen door de numerieke identifier of de naam
 van de database waar je de interesses van wilt opvragen.
@@ -37,7 +37,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander naar je acces token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de methode
 $parameters = array(

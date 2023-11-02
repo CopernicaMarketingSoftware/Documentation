@@ -4,7 +4,7 @@ Each emailing is tracked, which allows Copernica to provide you with
 emailing statistics. Clicks are one of these statistics. You can 
 retrieve all clicks for an account by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v3/ms/clicks?access_token=xxxx`
+`https://api.copernica.com/v4/ms/clicks?access_token=xxxx`
 
 # Parameters
 
@@ -61,7 +61,7 @@ $data = array(
 );
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call
 print_r($api->get("ms/clicks", $data));

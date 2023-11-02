@@ -3,7 +3,7 @@
 Een methode om een conditie voor een regel aan te maken. 
 Je kunt de method aanroepen met een HTTP POST request naar de volgende URL:
 
-`https://api.copernica.com/v3/rule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v4/rule/$id/conditions?access_token=xxxx`
 
 De `$id` moet hier vervangen worden door de ID van de regel waaraan je de condition wilt toevoegen.
 
@@ -53,7 +53,7 @@ Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de methode
 $data = array(

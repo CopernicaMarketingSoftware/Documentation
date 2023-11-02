@@ -8,7 +8,7 @@ or removed?
 To set this algorithm using an API call, make an HTTP PUT request to the 
 following URL:
 
-`https://api.copernica.com/v3/collection/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/unsubscribe?access_token=xxxx`
 
 In this, the variable `$id` has to be replaced by the numerical identifier 
 of the collection you wish to set the unsubscribe behaviour for. The 
@@ -53,7 +53,7 @@ sure your unsubscribers don't receive any more email.
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(

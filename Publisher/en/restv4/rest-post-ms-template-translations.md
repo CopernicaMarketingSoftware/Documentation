@@ -3,7 +3,7 @@
 This method is used to create a new translation to a template with the REST API. It uses 
 an HTTP POST request to the following address:
 
-`https://api.copernica.com/v3/ms/template/$id/translations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id/translations?access_token=xxxx`
 
 ## Available parameters
 
@@ -28,7 +28,7 @@ The following PHP script demonstrates how to use the API method:
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(

@@ -4,7 +4,7 @@ Je kunt de REST API gebruiken om een overzicht van alle emailing documenten
 die bij een template horen op te vragen 
 door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v3/publisher/template/$id/documents?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/template/$id/documents?access_token=xxxx`
 
 Hier moet `$id` vervangen worden door de ID van het emailing template 
 waarvan je de documenten op wil vragen. 
@@ -48,7 +48,7 @@ Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 print_r($api->get("publisher/template/{$templateID}/emailingdocuments"));

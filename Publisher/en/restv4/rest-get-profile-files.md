@@ -4,7 +4,7 @@ Profiles can contain folders and subfolders containing files, pertaining
 to that specific profile. Information about these files can be retrieved 
 by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v3/profile/$id/files?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/files?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the profile 
 you're requesting the file information about.
@@ -47,7 +47,7 @@ The following PHP script demonstrates how to use the API method.
 require_once('copernica_rest_api.php');
   
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("profile/{$profileID}/files"));

@@ -8,7 +8,7 @@ worden verwijderd, of moet het subprofiel worden aangepast?
 Het opvragen van het afmeldalgoritme gaat met een HTTP GET request naar het
 volgende adres:
 
-`https://api.copernica.com/v3/collection/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/unsubscribe?access_token=xxxx`
 
 Als `$id` moet je de numerieke identifier van een collectie opgeven.
 
@@ -50,7 +50,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer de methode uit en print het resultaat
 print_r($api->get("collection/{$collectieID}/unsubscribe"));

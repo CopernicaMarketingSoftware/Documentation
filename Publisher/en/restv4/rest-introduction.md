@@ -13,15 +13,15 @@ were moved to make it clearer which calls were unique to the Marketing Suite
 or the Publisher. The new version of the API is easier to understand and 
 offers some new calls to help you manage all data surrounding your mailings.
 
-### Upgrading to v3
+### Upgrading to v4
 
 If you are using our CopernicaRestAPI class, your instantiation currently should look somewhat like this:
 
-`$api = new CopernicaRestAPI("your-access-token", 3);`
+`$api = new CopernicaRestAPI("your-access-token", 4);`
 
 This should be simply changed to:
 
-`$api = new CopernicaRestAPI("your-access-token", 3);`
+`$api = new CopernicaRestAPI("your-access-token", 4);`
 
 ## Registering your app
 
@@ -43,7 +43,7 @@ characters that you should pass to each API call. Once you have this access
 token, you can test whether you have access to the API by entering the following
 URL in your browser:
 
-`https://api.copernica.com/v3/identity?access_token=youraccesstoken`
+`https://api.copernica.com/v4/identity?access_token=youraccesstoken`
 
 In the URL you will have to replace the text "youraccesstoken" with you own 
 access token. If you have successfully completed the registration process, 

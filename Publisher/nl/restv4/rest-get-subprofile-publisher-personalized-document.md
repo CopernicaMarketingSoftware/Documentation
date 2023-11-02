@@ -3,7 +3,7 @@
 Je kan een gepersonaliseerd Publisher-document van een subprofiel opvragen met 
 een HTTP GET-call naar de volgende URL:
 
-`https://api.copernica.com/v3/subprofile/$subprofileID/publisher/document/$documentID?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$subprofileID/publisher/document/$documentID?access_token=xxxx`
 
 Hier moet `$subprofileID` vervangen worden door het ID van het subprofiel en `$documentID` door het ID van het document. 
 
@@ -46,7 +46,7 @@ Dit script demonstreert hoe je de API-methode kunt gebruiken:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token 
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 print_r($api->get("subprofile/{$subprofileID}/publisher/document/{$documentID}"));

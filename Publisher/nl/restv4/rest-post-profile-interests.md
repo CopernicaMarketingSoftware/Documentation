@@ -3,7 +3,7 @@
 Om interesses aan een profiel toe te voegen, kun je een HTTP POST
 request sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/profile/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/subprofiles?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van het profiel 
 waaraan je interesses wil toevoegen. De inhoud van de interesses kun je in de message body plaatsen.
@@ -44,7 +44,7 @@ terwijl 'voetbal' wordt uitgeschakeld. In de tweede API call wordt de interessse
     require_once('copernica_rest_api.php');
     
     // verander dit naar je access token
-    $api = new CopernicaRestAPI("your-access-token", 3);
+    $api = new CopernicaRestAPI("your-access-token", 4);
 
     // data voor de methode
     $data = array(

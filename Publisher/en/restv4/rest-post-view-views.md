@@ -3,7 +3,7 @@
 Copernica supports nested selections. To add a nested selection you can 
 send a HTTP POST request to the following URL:
 
-`https://api.copernica.com/v3/view/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/views?access_token=xxxx`
 
 The `$id` needs to be replaced by the numerical identifier of the 
 selection. After a successful call the ID of the created request is returned.
@@ -35,7 +35,7 @@ The following PHP example demonstrates how to use the method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to pass to the call
 $data = array(

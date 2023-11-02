@@ -3,7 +3,7 @@
 Als je de gegevens van een collectie wilt bijwerken,
 kun je dit doen door een HTTP PUT verzoek naar de volgende URL te sturen:
 
-`https://api.copernica.com/v3/collection/$id?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id?access_token=xxxx`
 
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van de collectie die je wilt bewerken.
@@ -34,7 +34,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica-rest-api.php');
 
 // verander dit naar access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

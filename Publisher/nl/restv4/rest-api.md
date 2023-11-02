@@ -2,8 +2,8 @@
 
 ## Endpoints
 
-De REST API is benaderbaar via de endpoints https://api.copernica.com/v3 en 
-https://rest.copernica.com/v3. Er is een subtiel verschil tussen
+De REST API is benaderbaar via de endpoints https://api.copernica.com/v4 en 
+https://rest.copernica.com/v4. Er is een subtiel verschil tussen
 deze twee endpoints, met name bij het ophalen van [grote datasets](./rest-paging.md). Beide 
 endpoints ondersteunen de traditionele HTTP-acties ("GET", "POST", "PUT" en 
 "DELETE") op de gebruikelijke wijze. Daarbij is "POST" bedoeld om data toe te 
@@ -18,7 +18,7 @@ voegen, terwijl "PUT" bedoeld is om data te overschrijven.
 Om toegang te krijgen tot de API heb je een API-token nodig. Je voegt dit token als parameter toe aan elke call die je naar de API stuurt. Dat kan bijvoorbeeld als volgt ("MYTOKEN" wordt vervangen door je daadwerkelijke token):
 
 ```
-https://api.copernica.com/v3/path/to/resource?access_token=MYTOKEN
+https://api.copernica.com/v4/path/to/resource?access_token=MYTOKEN
 ```
 
 Je maakt tokens voor je eigen accounts aan in het
@@ -88,7 +88,7 @@ POST-verzoeken kunnen ook **X-location**-headers bevatten met een URL
 van de nieuw aangemaakte entiteit. In het geval van een nieuw aangemaakt profiel 
 of geüpdatete profielen ziet dat er als volgt uit: 
 ```
-"X-location: https://api.copernica.com/v3/profile/$profileID"
+"X-location: https://api.copernica.com/v4/profile/$profileID"
 ```
 
 Succesvolle DELETE-verzoeken bevatten een **X-deleted**-header, bijvoorbeeld: 

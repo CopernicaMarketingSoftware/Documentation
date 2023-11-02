@@ -3,7 +3,7 @@
 If you want to retrieve the body of a template created with Marketing Suite 
 you can send a GET request to the following URL:
 
-`https://api.copernica.com/v3/ms/template/$id/body/$type?access_token=xxx`
+`https://api.copernica.com/v4/ms/template/$id/body/$type?access_token=xxx`
 
 where `$id` is the ID of the template and `$type` is 
 the format for the message.
@@ -30,7 +30,7 @@ to replace the ID in the URL before executing the call.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call
 print_r($api->get("ms/template/{$templateID}/body/mime"));

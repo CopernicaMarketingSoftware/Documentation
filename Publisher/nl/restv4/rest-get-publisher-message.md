@@ -3,7 +3,7 @@
 Als je algemene informatie van een met Publisher verstuurde mail wilt
 hebben, dan kun je een eenvoudige HTTP GET call naar de volgende URL sturen.
 
-`https://api.copernica.com/v3/publisher/message/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/message/$id?access_token=xxxx`
 
 De `$id` moet hier vervangen worden door de unieke identifier van het bericht.
 
@@ -22,7 +22,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer de methode uit en print het resultaat
 print_r($api->get("publisher/message/{$berichtID}"));

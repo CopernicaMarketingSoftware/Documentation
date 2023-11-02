@@ -12,7 +12,7 @@ meerdere keren in de URL mag worden gebruikt. In onderstaande URL zie je
 bijvoorbeeld hoe de variabele *fields[]* inderdaad meerdere keren (namelijk 
 twee keer) in een URL voorkomt:
 
-`https://api.copernica.com/v3/database/$id/profiles?fields[]=land%3D%3Dnederland&fields[]=leeftijd%3E16&access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles?fields[]=land%3D%3Dnederland&fields[]=leeftijd%3E16&access_token=xxxx`
 
 ## Ondersteunde waardes
 

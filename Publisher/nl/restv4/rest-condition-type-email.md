@@ -112,7 +112,7 @@ je de kans dat je klanten uiteindelijk een aankoop doen.
 require_once("copernica_rest_api.php");
 
 // maak een API object met je eigen token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 $data = array(
     // selecteer email conditie

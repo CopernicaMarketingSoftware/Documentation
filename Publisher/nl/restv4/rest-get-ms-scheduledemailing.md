@@ -6,7 +6,7 @@ een of meerdere keren verstuurd worden. Je kunt de REST API gebruiken om
 een overzicht van een mailing op te vragen 
 door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v3/ms/scheduledemailing/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/scheduledemailing/$id?access_token=xxxx`
 
 Hier moet `$id` vervangen worden door de ID van de mailing.
 
@@ -83,7 +83,7 @@ Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 print_r($api->get("ms/emailing/{$emailingID}", $parameters));

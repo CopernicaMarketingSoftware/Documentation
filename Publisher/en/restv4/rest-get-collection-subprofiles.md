@@ -3,7 +3,7 @@
 You can request all subprofiles from a collection with an HTTP GET call 
 to the following URL:
 
-`https://api.copernica.com/v3/collection/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/subprofiles?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the collection you
 want to fetch the subprofiles of. Since this can be 
@@ -96,7 +96,7 @@ The following PHP script demonstrates how to call the API method.
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to pass to the call
 $parameters = array(

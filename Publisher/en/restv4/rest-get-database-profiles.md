@@ -3,7 +3,7 @@
 You can request all profiles from a database with an HTTP GET call 
 to the following URL:
 
-`https://api.copernica.com/v3/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, 
 of the database you want to request profiles from. Since this can be 
@@ -98,7 +98,7 @@ The following script demonstrates how to use this method.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to pass to the call
 $parameters = array(

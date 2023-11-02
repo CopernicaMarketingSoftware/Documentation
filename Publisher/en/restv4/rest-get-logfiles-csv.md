@@ -6,7 +6,7 @@ know the filename please see "More information" for instructions. To
 execute the method you can send an HTTP GET request to the following URL 
 for a CSV file without header:
 
-`https://api.copernica.com/v3/logfile/$filename/csv?access_token=xxxx`
+`https://api.copernica.com/v4/logfile/$filename/csv?access_token=xxxx`
 
 In both URLs `$filename` is the name of the file you want to request.
 
@@ -34,7 +34,7 @@ of November 2016.
 require_once('copernica_rest_api.php');
    
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("logfile/{$filename}/csv"));

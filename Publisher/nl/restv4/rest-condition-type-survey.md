@@ -72,7 +72,7 @@ maken met de survey conditie van de mensen die je een reminder wilt sturen.
 require_once("copernica_rest_api.php");
 
 // maak een API object met je eigen token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 $data = array(
     // selecteer survey conditie

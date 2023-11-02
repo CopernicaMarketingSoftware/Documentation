@@ -4,7 +4,7 @@ Dit is een methode om alle metadata van een regel op te vragen.
 Deze methode ondersteunt geen parameters. De methode is aan te roepen 
 met een HTTP GET request naar de volgende URL:
 
-`https://api.copernica.com/v3/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v4/rule/$id?access_token=xxxx`
 
 De `$id` hier moet vervangen worden door de ID van de regel waarvan je 
 de data op wil vragen.
@@ -85,7 +85,7 @@ Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit en print het resultaat
 print_r($api->get("rule/{$regelID}"));

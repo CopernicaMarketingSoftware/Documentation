@@ -2,7 +2,7 @@
 
 Deze methode wordt gebruikt om een bestaande webhook te verwijderen met de REST API. Je doet dit door een HTTP DELETE verzoek te sturen naar de volgende URL. 
 
-`https://api.copernica.com/v3/webhook/$id?access_token=xxxx`
+`https://api.copernica.com/v4/webhook/$id?access_token=xxxx`
 
 Hier moet `$id` vervangen worden door het ID van de webhook.
 
@@ -15,7 +15,7 @@ Het onderstaande script demonstreert hoe je deze API methode gebruikt. Vergeet n
 require_once("copernica_rest_api.php");
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 $api->delete("webhook/{$id}");

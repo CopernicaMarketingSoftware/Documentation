@@ -3,7 +3,7 @@
 Er is een API methode om meerdere profielen tegelijk te bewerken. Dit kun je
 doen met behulp van een HTTP PUT request naar de volgende URL:
 
-`https://api.copernica.com/v3/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de
 database waar binnen je profielen wilt veranderen. De veldwaardes van het profiel
@@ -87,7 +87,7 @@ In dit geval gebruiken we de profiel selectie parameters om het profiel met ID
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor het selecteren van profielen
 $parameters = array(

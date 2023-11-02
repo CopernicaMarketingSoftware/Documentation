@@ -3,7 +3,7 @@
 Methode om een veld toe te voegen aan een bestaande database. Dit is een HTTP 
 POST call naar het volgende adres:
 
-`https://api.copernica.com/v3/database/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/fields?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je een veld aan wilt toevoegen. De naam van het veld en eventuele
@@ -70,7 +70,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor het verzoek:
 // selectieveld met naam "extra_veld", de opties A, B en C 

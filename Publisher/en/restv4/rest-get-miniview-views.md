@@ -3,7 +3,7 @@
 You can request all views (selections that depend on a miniview (miniselection) 
 with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v3/miniview/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/views?access_token=xxxx`
 
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the miniview you wish to request the views for.
@@ -66,7 +66,7 @@ The following PHP script demonstrates how to use the API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to pass to the call
 $parameters = array(

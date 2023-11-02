@@ -3,7 +3,7 @@
 De methode om de selecties die afhankelijk zijn van een miniselectie 
 op te vragen is een HTTP GET methode beschikbaar op het volgende adres:
 
-`https://api.copernica.com/v3/miniview/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/views?access_token=xxxx`
 
 De `$id` moet je vervangen door de numerieke identifier of de naam van de 
 miniselectie waar je de selecties van wilt opvragen.
@@ -65,7 +65,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de methode
 $parameters = array(

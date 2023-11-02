@@ -3,7 +3,7 @@
 Je kunt het ingestelde uitschrijfgedrag van een profiel dat voldoet aan bepaalde criteria in een database
 uitvoeren door HTTP PUT request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/database/$id/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/unsubscribes?access_token=xxxx`
 
 De variabele `$id` moet vervangen worden door de numerieke identifier van de database waar je naar het profiel wilt zoeken waarvan het uitschrijfgedrag moet worden uitgevoerd.
 
@@ -31,7 +31,7 @@ Het volgende PHP script demonstreert hoe de API methode aan kan worden geroepen.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // body data
 $data = array();

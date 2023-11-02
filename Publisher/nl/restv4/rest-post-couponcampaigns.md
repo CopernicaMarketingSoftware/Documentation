@@ -2,7 +2,7 @@
 
 Methode om een nieuwe couponcampagne aan te maken. Dit is een HTTP POST-methode naar het volgende adres:
 
-`https://api.copernica.com/v3/couponcampaigns?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaigns?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -33,7 +33,7 @@ Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
 require_once('copernica-rest-api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

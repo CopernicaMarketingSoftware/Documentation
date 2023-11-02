@@ -3,7 +3,7 @@
 A method to request a list of all available databases. This is an HTTP 
 GET call to the following address:
 
-`https://api.copernica.com/v3/databases?access_token=xxxx`
+`https://api.copernica.com/v4/databases?access_token=xxxx`
 
 ## Available parameters
 
@@ -163,7 +163,7 @@ The following PHP script demonstrates how to use the method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to pass to the call
 $parameters = array(

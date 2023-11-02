@@ -2,7 +2,7 @@
 
 Method to add a new field to an existing database. This is an HTTP POST call to the following address:
 
-`https://api.copernica.com/v3/database/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/fields?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, of the database you want to add a selection to. 
 The name of the field and other variables need to be added to the message 
@@ -66,7 +66,7 @@ The following PHP example demonstrates how to use the API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to pass to the call
 $data = array(

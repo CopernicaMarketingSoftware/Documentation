@@ -13,7 +13,7 @@ identifier van het profiel waar je de interesses van opvraagt.
 Een lijst van namen van interesses kan opgevraagd worden door een HTTP 
 GET request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/profile/$id/interests?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx`
 
 Deze call geeft simpelweg een lijst van namen van interesses terug. Je kunt 
 in je code deze gebruiken om te checken of een profiel een bepaalde interesse 
@@ -24,7 +24,7 @@ heeft, bijvoorbeeld.
 Een lijst van ID's van interesses kan opgevraagd worden door een HTTP 
 GET request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/profile/$id/interests?access_token=xxxx&return=ids`
+`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx&return=ids`
 
 Deze call geeft simpelweg een lijst van ID's van interesses terug. Deze 
 kun je ook gebruiken voor vergelijkingen of het opvragen van de interesses zelf.
@@ -34,7 +34,7 @@ kun je ook gebruiken voor vergelijkingen of het opvragen van de interesses zelf.
 Een lijst van JSON interesse objecten kan opgevraagd worden door een HTTP 
 GET request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/profile/$id/interests?access_token=xxxx&return=objects`
+`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx&return=objects`
 
 Elk object in de array heeft de volgende eigenschappen:
 
@@ -51,7 +51,7 @@ Het volgende PHP script demonstreert hoe je de API methode gebruikt:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit en print het resultaat
 print_r($api->get("profile/{$profielID}/interests"));

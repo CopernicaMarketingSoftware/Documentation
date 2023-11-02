@@ -4,7 +4,7 @@ Each emailing is tracked, which allows Copernica to provide you with
 emailing statistics. Unsubscribes are one of these statistics. You can 
 retrieve all unsubscribes for a specific destination by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v3/ms/destination/{$destinationID}/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v4/ms/destination/{$destinationID}/unsubscribes?access_token=xxxx`
 
 ## Parameters
 
@@ -37,7 +37,7 @@ This script demonstrates how to use this API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call
 print_r($api->get("ms/destination/{$destinationID}/unsubscribes"));

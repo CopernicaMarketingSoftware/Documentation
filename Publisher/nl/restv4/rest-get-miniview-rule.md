@@ -5,7 +5,7 @@ Profielen die tenminste een selectie regel matchen worden geselecteerd.
 Om de eigenschappen en condities van een enkele regel op te vragen kun 
 je een HTTP GET verzoek sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/miniview/$id/minirule/$id?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/minirule/$id?access_token=xxxx`
 
 De eerste `$id` moet vervangen worden met de numerieke identifier van 
 de miniview waarvan je een regel wil opvragen. De tweede `$id` moet 
@@ -54,7 +54,7 @@ Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit en print het resultaat
 print_r($api->get("miniview/{$miniviewID}/minirule/{$regelID}"));

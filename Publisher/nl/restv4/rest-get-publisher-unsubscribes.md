@@ -5,7 +5,7 @@ Copernica om je meer inzicht te geven in de prestatie hiervan. Unsubscribes zijn
 een van de statistieken die voor een mailing worden bijgehouden. 
 Je kan deze opvragen met een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v3/publisher/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/unsubscribes?access_token=xxxx`
 
 Hier moet `$id` vervangen worden door de ID van de mailing destination. Deze methode 
 ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
@@ -51,7 +51,7 @@ Dit script demonstreert hoe je de API methode kunt gebruiken:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token 
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // stel de periode in
 $parameters = array(

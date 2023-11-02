@@ -3,7 +3,7 @@
 A method to update the properties of a database. This is an HTTP PUT 
 method, accessible at the following address:
 
-`https://api.copernica.com/v3/database/$id?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id?access_token=xxxx`
 
 Replace the `$id` by the identifier of the database you want to edit.
 
@@ -36,7 +36,7 @@ The following example demonstrates how to use the API method:
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(

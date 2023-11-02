@@ -3,7 +3,7 @@
 A method to request a list of all coupons inside a coupon campaign. 
 This is an HTTP GET call to the following address:
 
-`https://api.copernica.com/v3/couponcampaign/$id/coupons?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaign/$id/coupons?access_token=xxxx`
 
 The `$id` here should be replaced with the numerical identifier of the coupon campaign.
 
@@ -33,7 +33,7 @@ Available filters:
 * **valid**: Boolean. This allows you to indicate whether you want to receive all coupons or only available coupons
 
 **Example**:  
-`https://api.copernica.com/v3/couponcampaign/$id/coupons?fields[]=code==$code&access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaign/$id/coupons?fields[]=code==$code&access_token=xxxx`
 
 More information on this parameter can be found in the [article on the “fields” parameter](rest-fields-parameter).
 
@@ -94,7 +94,7 @@ The following PHP scripts is an example of how to call this API method:
 require_once('copernica_rest_api.php');
     
 // change this to your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call and print the result.
 print_r($api->get("couponcampaign/{$ID}/coupons"));

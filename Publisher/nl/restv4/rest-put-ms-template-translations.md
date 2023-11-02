@@ -3,7 +3,7 @@
 Methode om een bestaande vertaling bij te werken van een template. Dit is een HTTP PUT-methode
 naar het volgende adres:
 
-`https://api.copernica.com/v3/ms/templates/$id/translations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/templates/$id/translations?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -18,7 +18,7 @@ Om de unieke ID's van de elementen te ontvangen kun je gebruik maken van de [GET
 
 De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
-URL: `https://api.copernica.com/v3/ms/template/{$tempalteID}/translations?languages[]=de_DE&languages[]=nl_NL&access_token=xxx`
+URL: `https://api.copernica.com/v4/ms/template/{$tempalteID}/translations?languages[]=de_DE&languages[]=nl_NL&access_token=xxx`
 
 ```json
 {
@@ -40,7 +40,7 @@ Het volgende PHP-script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor het selecteren van talen
 $parameters = array(

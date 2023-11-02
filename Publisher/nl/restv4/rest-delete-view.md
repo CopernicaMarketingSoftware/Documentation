@@ -2,7 +2,7 @@
 
 Om een selectie van profielen te verwijderen kan er een HTTP DELETE verzoek gestuurd worden naar de volgende URL:
 
-`https://api.copernica.com/v3/view/$id?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id?access_token=xxxx`
 
 De `$id` moet vervangen worden door de ID van de selectie die je wilt verwijderen. 
 Met deze methode verwijder je alleen de selectie, niet de profielen die erin zitten. 
@@ -19,7 +19,7 @@ Het volgende voorbeeld demonstreert het gebruik van deze methode met de API:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 $api->delete("view/{$selectieID}");

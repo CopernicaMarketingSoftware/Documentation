@@ -4,7 +4,7 @@ Je kunt ook een mailing voor de Publisher versturen met onze
 REST API als je al een template en database voorbereid hebt. Door een HTTP 
 POST-verzoek te sturen naar het volgende adres kun je een mailing versturen:
 
-`https://api.copernica.com/v3/publisher/emailing?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -79,7 +79,7 @@ Vergeet niet de parameters te vervangen door je eigen target en template.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // emailing instellingen
 $settings = array(

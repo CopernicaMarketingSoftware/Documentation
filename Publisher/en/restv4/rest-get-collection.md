@@ -4,7 +4,7 @@ A collection is somewhat like a second layer within a database. These collection
 have a numerical ID which can be used to fetch information with an HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v3/collection/$id?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id?access_token=xxxx`
 
 The `$id` here should be replaced with the numerical identifier of the collection.
 
@@ -73,7 +73,7 @@ The following PHP scripts is an example of how to call this API method:
 require_once('copernica_rest_api.php');
     
 // change this to your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call and print the result.
 print_r($api->get("collection/{$collectionID}"));

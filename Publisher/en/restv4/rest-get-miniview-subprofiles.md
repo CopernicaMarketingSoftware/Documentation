@@ -4,7 +4,7 @@ Subprofiles are to a collection what regular profiles are to a database.
 You can request all subprofiles from a miniview with an HTTP GET call 
 to the following URL:
 
-`https://api.copernica.com/v3/miniview/$id/subprofile?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/subprofile?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the miniview you
 want to fetch the subprofiles of. Since this can be 
@@ -80,7 +80,7 @@ The following PHP script demonstrates how to use the API method.
 require_once('copernica_rest_api.php');
   
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("miniview/{$miniviewID}/subprofiles"));

@@ -2,7 +2,7 @@
 
 Voor een destination kan je de volledige gepersonaliseerde inhoud van de mailing die naar de bestemming is verstuurd opvragen. Je kan deze opvragen met een HTTP GET-call naar de volgende URL:
 
-`https://api.copernica.com/v3/publisher/destination/$id/content/$type?access_token=xxx`
+`https://api.copernica.com/v4/publisher/destination/$id/content/$type?access_token=xxx`
 
 Hier moet `$id` vervangen worden door de ID van de mailing destination. Als optionele 
 parameter ondersteunt deze URL ook het type-veld dat de waarde `html, amp, text of subject` kan bevatten. Als je meerdere types tegelijk op wilt vragen, kan je deze combineren met een plus-teken (bijvoorbeeld `html+text`). Als je geen type meegeeft, worden alle types teruggegeven.
@@ -37,7 +37,7 @@ Dit script demonstreert hoe je de API methode kunt gebruiken:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token 
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // stel de type in
 $parameters = array(

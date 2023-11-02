@@ -4,7 +4,7 @@ Deze methode voegt een regel toe aan een bestaande selectie.
 Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd 
 worden naar de volgende URL:
 
-`https://api.copernica.com/v3/view/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/rules?access_token=xxxx`
 
 De `$id` moet hier vervangen worden door de ID van de selectie waar 
 een regel aan toegevoegd moet worden. De naam van de regel en de andere 
@@ -39,7 +39,7 @@ Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

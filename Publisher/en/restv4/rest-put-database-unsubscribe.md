@@ -6,7 +6,7 @@ determines what happens with the profile: should it be edited or removed?
 To set this algorithm using an API call, make an HTTP PUT request to the 
 following URL:
 
-`https://api.copernica.com/v3/database/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/unsubscribe?access_token=xxxx`
 
 In this, the variable `$id` has to be replaced by the numerical identifier 
 of the database you wish to set the unsubscribe behaviour for. The 
@@ -50,7 +50,7 @@ You could use this field in a [newsletter selection](./create-a-mailing-list).
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(

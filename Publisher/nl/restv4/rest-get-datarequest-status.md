@@ -3,7 +3,7 @@
 Om de status van je dataverzoek op te vragen kun je een HTTP GET request 
 sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/datarequest/$id/status?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id/status?access_token=xxxx`
 
 De code `$id` moet hier vervangen worden door de ID van het relevante dataverzoek.
 
@@ -35,7 +35,7 @@ Voorbeeld:
 require_once('copernica_rest_api.php');
 
 // insert your access token here
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // get the status of the data request (don't forget the id)
 $api->get("datarequest/{$verzoekID}/status")

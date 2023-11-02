@@ -3,7 +3,7 @@
 If you want to modify multiple profiles with a single call to the API, you
 can send a HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v3/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles?access_token=xxxx`
 
 The `$id` code should be replaced with the numeric identifier or the name
 of the database in which you want to modify profiles. The new field values
@@ -84,7 +84,7 @@ field is set to 4567 and insert new profile data.
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // fields for the new profile
 $fields = array(

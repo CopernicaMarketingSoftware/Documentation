@@ -79,7 +79,7 @@ als dit het geval is:
 require_once("copernica_rest_api.php");
 
 // maak een API object met je eigen token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 $data = array(
     // selecteer fax conditie

@@ -3,7 +3,7 @@
 Een overzicht van het verbruik in je account kun je opvragen
 met de volgende URL:
 
-`https://api.copernica.com/v3/consumption?access_token=xxx`
+`https://api.copernica.com/v4/consumption?access_token=xxx`
 
 ## Beschikbare parameters
 
@@ -33,7 +33,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander naar je acces token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de methode
 $parameters = array(

@@ -2,7 +2,7 @@
 
 Deze methode wordt gebruikt om een bestaande senderdomain bij te werken met de REST API. Door een HTTP PUT verzoek te sturen naar de volgende URL kun je de senderdomain bijwerken.
 
-`https://api.copernica.com/v3/senderdomain/$id?access_token=xxxx`
+`https://api.copernica.com/v4/senderdomain/$id?access_token=xxxx`
 
 Hier moet `$id` vervangen worden door het ID van de senderdomain.
 
@@ -33,7 +33,7 @@ Het onderstaande PHP script demonstreert hoe je deze API methode gebruikt. Verge
 require_once("copernica_rest_api.php");
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data
 $data = array(

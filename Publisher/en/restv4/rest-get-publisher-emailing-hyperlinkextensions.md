@@ -3,7 +3,7 @@
 This method can be used if you want to retrieve the hyperlink extensions of Publisher (HTML) mailings. By sending a GET request to the following URL,
 you can fetch the hyperlink extensions:
 
-`https://api.copernica.com/v3/publisher/emailing/$id/hyperlinkextensions?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing/$id/hyperlinkextensions?access_token=xxxx`
 
 ```json
 {
@@ -31,7 +31,7 @@ The following PHP script calls this API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("publisher/emailing/$id/hyperlinkextensions", $parameters));

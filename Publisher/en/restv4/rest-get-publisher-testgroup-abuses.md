@@ -5,7 +5,7 @@ emailing statistics. These are particularly useful in the case of testgroups
 to compare their results. Abuses are one of these statistics. You can 
 retrieve the abuses for a testgroup by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v3/publisher/testgroup/$id/abuses?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/testgroup/$id/abuses?access_token=xxxx`
 
 Where the `$id` should be replaced with the ID of the testgroup.
 
@@ -53,7 +53,7 @@ This script demonstrates how to use this API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call
 print_r($api->get("publisher/testgroup/{$testgroupID}/abuses/", $parameters));

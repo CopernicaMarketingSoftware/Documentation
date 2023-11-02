@@ -4,7 +4,7 @@ Een methode om alle metadata van een selectie binnen een collectie op
 te vragen. Deze methode ondersteunt geen parameters en wordt aangeroepen 
 met een HTTP GET verzoek aan de volgende URL:
 
-`https://api.copernica.com/v3/miniview/$id?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id?access_token=xxxx`
 
 De `$id` hier moet vervangen worden door de ID of de naam van de collectie 
 waarvoor je de selecties op wil vragen.
@@ -49,7 +49,7 @@ Het volgende voorbeeld demonstreert hoe je deze methode kunt gebruiken:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit en print het resultaat
 print_r($api->get("view/{$viewID}"));

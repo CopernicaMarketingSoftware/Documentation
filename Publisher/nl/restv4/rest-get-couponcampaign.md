@@ -3,7 +3,7 @@
 Je kunt alle informatie omtrent een couponcampagne opvragen met de onderstaande methode. 
 Dit is een HTTP GET-call naar het volgende adres:
 
-`https://api.copernica.com/v3/couponcampaign/$id?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaign/$id?access_token=xxxx`
 
 Als `$id` moet je de numerieke identifier van de couponcampagne opgeven.
 
@@ -50,7 +50,7 @@ Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit in je access code access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer de opdracht uit en print het resultaat
 print_r($api->get("couponcampaign/{$id}"));
