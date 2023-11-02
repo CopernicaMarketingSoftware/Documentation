@@ -2,7 +2,7 @@
 
 You can retrieve the statistics of a Marketing Suite mailing by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/ms/emailing/$id/statistics?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/$id/statistics`
 
 Where the `$id` should be replaced with the ID of the mailing.
 

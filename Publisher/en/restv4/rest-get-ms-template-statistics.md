@@ -2,7 +2,7 @@
 
 You can retrieve the statistics of a Marketing Suite template by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/ms/template/$id/statistics?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id/statistics`
 
 Where the `$id` should be replaced with the ID of the template.
 

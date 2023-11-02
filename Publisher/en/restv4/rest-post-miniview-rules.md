@@ -4,7 +4,7 @@ Method to add a rule to an existing mini selection from a collection (miniview,
 see [view documentation](rest-post-view-rules) for selections from a 
 database). This is an HTTP POST call to the following URL:
 
-`https://api.copernica.com/v4/miniview/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/rules`
 
 The `$id` should be replaced by the ID of the miniview you want to add a rule to. 
 The name of the rule and other values should be added to the message body. 

@@ -7,7 +7,7 @@ uitgezet worden, om te voorkomen dat er per ongeluk mailings worden verstuurd.
 De HTTP POST methode om de intentions van een selectie aan te passen 
 is beschikbaar op het volgende adres:
 
-`https://api.copernica.com/v4/view/$id/intentions?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/intentions`
 
 De `$id` moet hier vervangen worden door de unieke identifier van de selectie. 
 

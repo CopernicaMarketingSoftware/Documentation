@@ -2,7 +2,7 @@
 
 You can retrieve the statistics for a Publisher destination by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/publisher/destination/$id/statistics?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/destination/$id/statistics`
 
 Where the `$id` should be replaced with the ID of the destination.
 

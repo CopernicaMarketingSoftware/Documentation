@@ -3,7 +3,7 @@
 A method to request all metadata from a view. This method does not 
 support parameters. It is called by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/view/$id?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id`
 
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the view you wish to request the selections for.

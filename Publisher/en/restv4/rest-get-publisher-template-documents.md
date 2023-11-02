@@ -3,7 +3,7 @@
 You can use the REST API to retrieve a all emailing documents 
 belonging to a template with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/template/$id/documents?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/template/$id/documents`
 
 Where `$id` should be replaced with the ID of the emailing template you want 
 to retrieve the emailing documents for.

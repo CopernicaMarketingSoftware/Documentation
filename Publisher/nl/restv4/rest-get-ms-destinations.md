@@ -1,6 +1,6 @@
 # REST API: GET destinations (Marketing Suite)
 Deze methode kan gebruikt worden als je alle destinations van Marketing Suite mailings van een bepaalde periode wilt opvragen. Door een GET request te sturen naar de volgende URL kun je deze gegevens opvragen:
-`https://api.copernica.com/v4/ms/destinations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/destinations`
 
 ## Parameters
 * **from**: Begintijd voor het opvragen van de destinations (YYYY-MM-DD).

@@ -6,7 +6,7 @@ bestand met de bestandsnaam. Instructies voor het opvragen van een bestandsnaam
 kun je vinden onder het kopje "Meer informatie". Om deze methode uit te voeren kun je een HTTP GET 
 verzoek sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/logfile/$bestandsnaam/json?access_token=xxxx`
+`https://api.copernica.com/v4/logfile/$bestandsnaam/json`
 
 Hier moet je `$bestandsnaam` vervangen door de bestandsnaam.
 

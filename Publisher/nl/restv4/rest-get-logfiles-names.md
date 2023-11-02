@@ -5,7 +5,7 @@ ontvangen berichten, etc. Deze logfiles kunnen gedownload worden met de API
 of via het dashboard. Door een HTTP GET verzoek te sturen naar de volgende 
 URL krijg je een lijst van alle bestaande logfiles voor een datum.
 
-`https://api.copernica.com/v4/logfiles?access_token=xxxx&date=$date&type=$type`
+`https://api.copernica.com/v4/logfiles&date=$date&type=$type`
 
 In deze URL kun je twee parameters meegeven: `$date` kan gebruikt worden 
 om een specifieke datum mee te geven waarvoor je de namen van de logfiles wilt zien. 

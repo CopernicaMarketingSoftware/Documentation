@@ -3,7 +3,7 @@
 Je kunt de REST API gebruiken om een overzicht van een mailing op te vragen
 door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/emailing/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/$id`
 
 Hier moet `$id` vervangen worden door de ID van de mailing.
 

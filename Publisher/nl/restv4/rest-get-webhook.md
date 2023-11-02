@@ -2,7 +2,7 @@
 
 Deze methode wordt gebruikt om een bestaande webhook op te halen met de REST API. Je doet dit door een HTTP GET verzoek te sturen naar de volgende URL. 
 
-`https://api.copernica.com/v4/webhook/$id?access_token=xxxx`
+`https://api.copernica.com/v4/webhook/$id`
 
 Hier moet `$id` vervangen worden door het ID van de webhook.
 

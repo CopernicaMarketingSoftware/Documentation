@@ -5,7 +5,7 @@ Copernica om je meer inzicht te geven in de prestatie hiervan. Deliveries zijn
 een van de statistieken die worden bijgehouden. 
 Je kan de deliveries voor een specifieke destination opvragen met een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/destination/{$destinationID}/deliveries?access_token=xxxx`
+`https://api.copernica.com/v4/ms/destination/{$destinationID}/deliveries`
 
 Let op: De termen 'destination' en 'message' kunnen uitwisselbaar gebruikt worden, 
 ook in de voorbeeldcode.

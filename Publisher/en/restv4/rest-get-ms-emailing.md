@@ -3,7 +3,7 @@
 You can use the REST API to retrieve a summary of a mailing with an HTTP
 GET call to the following URL:
 
-`https://api.copernica.com/v4/ms/emailing/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/$id`
 
 Where `$id` should be replaced with the ID of the mailing you want summarized.
 

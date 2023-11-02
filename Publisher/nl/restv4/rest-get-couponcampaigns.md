@@ -3,7 +3,7 @@
 Je kunt alle informatie over alle couponcampagnes opvragen met de onderstaande methode. 
 Dit is een HTTP GET-call naar het volgende adres:
 
-`https://api.copernica.com/v4/couponcampaigns?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaigns`
 
 ## Geretourneerde velden
 

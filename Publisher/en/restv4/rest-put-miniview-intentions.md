@@ -7,7 +7,7 @@ separately, to prevent accidental mailings.
 The HTTP POST call to edit the intentions of a miniview can be found at 
 the following address:
 
-`https://api.copernica.com/v4/miniview/$id/intentions?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/intentions`
 
 The `$id` in the URL should be replaced by the unique identifier of the 
 miniview.

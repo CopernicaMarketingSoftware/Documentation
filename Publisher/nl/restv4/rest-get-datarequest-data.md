@@ -3,7 +3,7 @@
 De data van een data verzoek kun je opvragen door een HTTP GET request 
 sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/datarequest/$id/data?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id/data`
 
 Waar **$id** de ID van van het betreffende dataverzoek is. Je kan eerst 
 controleren of de data wel beschikbaar zijn via de 

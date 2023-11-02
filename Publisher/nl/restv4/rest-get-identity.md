@@ -4,7 +4,7 @@ Je kunt makkelijk nagaan welke accountgegevens bij een bepaalde
 access token hoort. De onderstaande methode retourneert de 
 gegevens van een specifieke access token. 
 
-`https://api.copernica.com/v4/identity?access_token=xxxx`
+`https://api.copernica.com/v4/identity`
 
 Deze methode is vooral handig als je een applicatie hebt gemaakt 
 die is gekoppeld aan veel verschillende accounts (bijvoorbeeld 

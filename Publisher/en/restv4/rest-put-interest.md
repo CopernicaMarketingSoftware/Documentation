@@ -3,7 +3,7 @@
 You can update an interest by sending an HTTP PUT request 
 to the following URL:
 
-`https://api.copernica.com/v4/interest/$id/?access_token=xxxx`
+`https://api.copernica.com/v4/interest/$id/`
 
 Replace the `$id` by the ID of the interest that you want to update.
 

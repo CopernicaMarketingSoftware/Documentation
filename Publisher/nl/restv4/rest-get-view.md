@@ -3,7 +3,7 @@
 Een methode om de metadata van een database op te vragen. De methode kan 
 aangeroepen worden met een HTTP GET verzoek aan de volgende URL:
 
-`https://api.copernica.com/v4/view/$id?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id`
 
 Hier moet de `$id` vervangen worden met de numerieke identifier van de 
 database waarvan de selecties moeten worden opgevraagd.

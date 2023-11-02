@@ -3,7 +3,7 @@
 It’s very easy to request just the IDs of all profiles in a selection. 
 Just send an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/view/$id/profileids?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/profileids`
 
 The `$id` should be replaced by the unique numerical identifier of the selection.
 

@@ -3,7 +3,7 @@
 You can send an HTTP DELETE request to the following address to delete a
 condition:
 
-`https://api.copernica.com/v4/condition/$type/$id?access_token=xxxx`
+`https://api.copernica.com/v4/condition/$type/$id`
 
 The `$type` and `$id` need to be replaced by the condition type and 
 the numerical identifier of the condition respectively.

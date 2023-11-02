@@ -5,7 +5,7 @@ Copernica om je meer inzicht te geven in de prestatie hiervan. Impressions zijn
 een van de statistieken die worden bijgehouden. 
 Je kan de impressions voor een specifieke emailing opvragen met een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/emailing/{$emailingID}/impressions?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/{$emailingID}/impressions`
 
 ## Parameters
 

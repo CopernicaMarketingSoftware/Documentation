@@ -2,7 +2,7 @@
 
 A method to add a condition for a rule. It is called by sending an HTTP POST request to the following URL:
 
-`https://api.copernica.com/v4/rule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v4/rule/$id/conditions`
 
 In this, `$id` needs to be replaced by the numerical identifier or the name 
 of the rule you wish to edit the conditions of. After a successful call 

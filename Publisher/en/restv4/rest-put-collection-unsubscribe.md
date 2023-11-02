@@ -8,7 +8,7 @@ or removed?
 To set this algorithm using an API call, make an HTTP PUT request to the 
 following URL:
 
-`https://api.copernica.com/v4/collection/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/unsubscribe`
 
 In this, the variable `$id` has to be replaced by the numerical identifier 
 of the collection you wish to set the unsubscribe behaviour for. The 

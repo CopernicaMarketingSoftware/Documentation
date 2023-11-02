@@ -4,7 +4,7 @@ Een minirule is voor een miniview wat een regel is voor een selectie.
 Om de eigenschappen van een minirule aan te passen kan er een HTTP PUT
 verzoek verstuurd worden naar de volgende URL:
 
-`https://api.copernica.com/v4/minirule/$id?access_token=xxxx`
+`https://api.copernica.com/v4/minirule/$id`
 
 De `$id` moet aangepast worden naar de ID van de minirule die je aan wilt passen.
 

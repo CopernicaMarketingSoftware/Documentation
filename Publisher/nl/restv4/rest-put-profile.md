@@ -2,7 +2,7 @@
 
 Dit is een methode om de eigenschappen van een bestaand profiel aan te passen. Het kan aangeroepen worden met een HTTP PUT verzoek naar de volgende URL:
 
-`https://api.copernica.com/v4/profile/$id?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id`
 
 De `$id` moet hier vervangen worden door de ID van het profiel waarvan je de eigenschappen aan wilt passen.
 

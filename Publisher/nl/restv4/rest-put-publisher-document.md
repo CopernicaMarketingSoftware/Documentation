@@ -2,7 +2,7 @@
 
 Methode om een document bij te werken. Dit is een HTTP PUT-methode die toegankelijk is via het volgende adres:
 
-`https://api.copernica.com/v4/document/$id?access_token=xxxx`
+`https://api.copernica.com/v4/document/$id`
 
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van het document die je wilt bewerken.

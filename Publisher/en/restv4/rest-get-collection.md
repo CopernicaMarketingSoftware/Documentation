@@ -4,7 +4,7 @@ A collection is somewhat like a second layer within a database. These collection
 have a numerical ID which can be used to fetch information with an HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v4/collection/$id?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id`
 
 The `$id` here should be replaced with the numerical identifier of the collection.
 

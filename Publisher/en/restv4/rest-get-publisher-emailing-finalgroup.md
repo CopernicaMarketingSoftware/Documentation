@@ -2,7 +2,7 @@
 
 You can retrieve the final group of a Publisher mailing by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/publisher/emailing/$id/finalgroup?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing/$id/finalgroup`
 
 Where the `$id` should be replaced with the ID of the mailing.
 

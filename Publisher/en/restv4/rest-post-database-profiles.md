@@ -3,7 +3,7 @@
 The HTTP POST method to add a profile to an existing database is 
 available at the following address:
 
-`https://api.copernica.com/v4/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, 
 of the database you want to add a profile to. 

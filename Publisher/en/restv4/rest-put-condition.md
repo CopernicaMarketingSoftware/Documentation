@@ -2,7 +2,7 @@
 
 A method to update a condition. It is called by sending an HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v4/condition/$type/$id?access_token=xxxx`
+`https://api.copernica.com/v4/condition/$type/$id`
 
 The `$type` and `$id` need to be replaced by the type and the numerical 
 identifier of the condition respectively.

@@ -4,7 +4,7 @@ Each emailing is tracked, which allows Copernica to provide you with
 emailing statistics. Clicks are one of these statistics. You can 
 retrieve all clicks by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/clicks?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/clicks`
 
 This method also support the use of the [fields parameter](./rest-fields-parameter) 
 for the **timestamp** field.

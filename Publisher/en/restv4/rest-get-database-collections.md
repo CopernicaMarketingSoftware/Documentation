@@ -3,7 +3,7 @@
 This method is used to request all collections in a database. It is an 
 HTTP GET call to the following address:
 
-`https://api.copernica.com/v4/database/$id/collections?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/collections`
 
 In this, `$id` should be replaced by the numerical identifier or the 
 name of the database you want to request the collections from.

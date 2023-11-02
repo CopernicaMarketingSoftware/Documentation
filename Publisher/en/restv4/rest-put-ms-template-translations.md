@@ -3,7 +3,7 @@
 If you want to modify multiple translations with a single call to the API, you
 can send a HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v4/ms/template/$id/translations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id/translations`
 
 The `$id` code should be replaced with the numeric identifier or the name
 of the master template in which you want to modify translations. The new values

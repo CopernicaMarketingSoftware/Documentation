@@ -3,7 +3,7 @@
 A method to edit the properties of an existing subprofile. It is called 
 using the following URL:
 
-`https://api.copernica.com/v4/subprofile/$id?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$id`
 
 The `$id` needs to be replaced with the ID of the subprofile you want to 
 edit the properties of.

@@ -3,7 +3,7 @@
 This method is used to copy a database with the REST API. It uses 
 an HTTP POST request to the following address:
 
-`https://api.copernica.com/v4/database/$id/copy?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/copy`
 
 The `$id` in the URL should be replaced by the database you want to copy. 
 After a successful call the ID of copy is returned. Please note that it 

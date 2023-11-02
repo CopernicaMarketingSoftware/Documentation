@@ -5,7 +5,7 @@ een HTTP POST-request sturen naar de volgende
 URL. De selectie wordt dan direct onder de 
 database aangemaakt.
 
-`https://api.copernica.com/v4/database/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/views`
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam 
 van de database waar je een selectie aan wilt toevoegen. De naam van de selectie 

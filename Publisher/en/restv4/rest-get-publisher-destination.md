@@ -3,7 +3,7 @@
 You can use the REST API to retrieve a summary of a mailing destination with an HTTP 
 GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/destination/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/destination/$id`
 
 Where `$id` should be replaced with the ID of the destination you want summarized. 
 This method also support the use of the [fields parameter](./rest-fields-parameter) 
@@ -28,7 +28,7 @@ along with the regular returned fields. In this case the (sub)profile returned
 field will contain an array with keys 'ID' and 'fields'. You can send an 
 HTTP GET request to the following URL to execute the method:
 
-`https://api.copernica.com/v4/publisher/destination/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/destination/$id/fields`
 
 ### JSON example
 

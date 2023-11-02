@@ -4,7 +4,7 @@ Subprofielen zijn voor collecties wat reguliere profielen zijn in een
 database. De methode om subprofielen uit een miniselectie op te vragen is een HTTP GET methode
 beschikbaar op het volgende adres:
 
-`https://api.copernica.com/v4/miniview/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/subprofiles`
 
 De `$id` moet vervangen worden met de ID van de miniselectie.
 

@@ -3,7 +3,7 @@
 A method to request a list of all coupon campaigns. 
 This is an HTTP GET call to the following address:
 
-`https://api.copernica.com/v4/couponcampaigns?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaigns`
 
 ## Returned fields
 

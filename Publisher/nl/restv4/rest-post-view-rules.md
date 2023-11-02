@@ -4,7 +4,7 @@ Deze methode voegt een regel toe aan een bestaande selectie.
 Om deze methode uit te voeren kan er een HTTP POST verzoek verstuurd 
 worden naar de volgende URL:
 
-`https://api.copernica.com/v4/view/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/rules`
 
 De `$id` moet hier vervangen worden door de ID van de selectie waar 
 een regel aan toegevoegd moet worden. De naam van de regel en de andere 

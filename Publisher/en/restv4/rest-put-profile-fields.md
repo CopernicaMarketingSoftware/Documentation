@@ -3,7 +3,7 @@
 To update existing fields of a profile, you need to do an HTTP PUT 
 request to the following URL:
 
-`https://api.copernica.com/v4/profile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/fields`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, of 
 the profile you want to update the fields of. The name of the field and 

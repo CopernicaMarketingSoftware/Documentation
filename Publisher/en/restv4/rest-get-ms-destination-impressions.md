@@ -4,7 +4,7 @@ Each emailing is tracked, which allows Copernica to provide you with
 emailing statistics. Impressions are one of these statistics. You can 
 retrieve all impressions for a specific destination by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/ms/destination/{$destinationID}/impressions?access_token=xxxx`
+`https://api.copernica.com/v4/ms/destination/{$destinationID}/impressions`
 
 Note: The terms 'destination' and 'message' can be used interchangeably 
 in this article, including the code examples.

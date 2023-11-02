@@ -3,7 +3,7 @@
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a subprofile:
 
-`https://api.copernica.com/v4/subprofile/$id?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$id`
 
 The `$id` needs to be replaced by the numerical identifier of the profile
 that you want to remove.

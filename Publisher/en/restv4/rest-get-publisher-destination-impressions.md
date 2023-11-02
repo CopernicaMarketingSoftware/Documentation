@@ -4,7 +4,7 @@ You can retrieve the statistics per emailing destination just like you
 would retrieve the statistics of a mailing. You can 
 retrieve the impressions for an emailing destination by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/destination/$id/impressions?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/destination/$id/impressions`
 
 Where the `$id` should be replaced with the ID of the emailing destination. This method 
 also support the use of the [fields parameter](./rest-fields-parameter) 

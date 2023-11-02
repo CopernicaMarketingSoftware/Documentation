@@ -4,7 +4,7 @@ Subprofiles are to a collection what regular profiles are to a database.
 You can request all subprofiles from a miniview with an HTTP GET call 
 to the following URL:
 
-`https://api.copernica.com/v4/miniview/$id/subprofile?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/subprofile`
 
 The `$id` should be replaced with the numerical identifier of the miniview you
 want to fetch the subprofiles of. Since this can be 

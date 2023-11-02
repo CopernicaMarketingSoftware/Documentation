@@ -3,7 +3,7 @@
 Je kunt de statistieken van een Marketing Suite destination opvragen door een HTTP GET request 
 te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/destination/$id/statistics?access_token=xxxx`
+`https://api.copernica.com/v4/ms/destination/$id/statistics`
 
 Hier moet `$id` vervangen worden door de ID van de destination.
 

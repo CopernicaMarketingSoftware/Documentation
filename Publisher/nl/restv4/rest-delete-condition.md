@@ -2,7 +2,7 @@
 
 Een conditie kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/condition/$type/$id?access_token=xxxx`
+`https://api.copernica.com/v4/condition/$type/$id`
 
 De `$type` en `$id` moeten vervangen worden door het type en de ID van de 
 conditie respectievelijk.

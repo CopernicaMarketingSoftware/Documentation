@@ -3,7 +3,7 @@
 The HTTP POST call to rebuild a mini selection can be found at 
 the following address:
 
-`https://api.copernica.com/v4/miniview/$id/rebuild?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/rebuild`
 
 The `$id` in the URL should be replaced by the unique identifier of the 
 mini selection.

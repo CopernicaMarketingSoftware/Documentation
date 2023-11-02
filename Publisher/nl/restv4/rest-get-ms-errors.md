@@ -5,7 +5,7 @@ Copernica om je meer inzicht te geven in de prestatie hiervan. Errors zijn
 een van de statistieken die worden bijgehouden. 
 Je kan alle errors voor een account opvragen met een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/errors?access_token=xxxx`
+`https://api.copernica.com/v4/ms/errors`
 
 ## Parameters
 

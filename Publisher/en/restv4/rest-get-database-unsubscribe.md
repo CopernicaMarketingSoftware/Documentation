@@ -6,7 +6,7 @@ determines what happens with the profile: should it be edited or removed?
 
 You can request your settings using the following URL:
 
-`https://api.copernica.com/v4/database/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/unsubscribe`
 
 The `$id` should be replaced by the numerical identifier or the name of 
 the database.

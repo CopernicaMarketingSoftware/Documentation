@@ -5,7 +5,7 @@ emailing statistics. These are particularly useful in the case of testgroups
 to compare their results. Unsubscribes are one of these statistics. You can 
 retrieve the unsubscribes for a testgroup by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/testgroup/$id/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/testgroup/$id/unsubscribes`
 
 Where the `$id` should be replaced with the ID of the testgroup.
 

@@ -2,7 +2,7 @@
 
 Methode om een nieuwe couponcampagne aan te maken. Dit is een HTTP POST-methode naar het volgende adres:
 
-`https://api.copernica.com/v4/couponcampaigns?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaigns`
 
 ## Beschikbare parameters
 

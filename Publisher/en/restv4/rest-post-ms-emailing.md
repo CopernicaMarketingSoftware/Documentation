@@ -4,7 +4,7 @@ You can post a Marketing Suite mailing with our REST API if you have
 already completed a template and prepared your database. To send a new
 mailing you send an HTTP POST request to the following URL:
 
-`https://api.copernica.com/v4/ms/emailing?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing`
 
 ## Available parameters
 

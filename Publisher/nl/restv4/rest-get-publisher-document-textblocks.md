@@ -3,7 +3,7 @@
 Dit is een methode om de tekstblokken van een document op te vragen. 
 De methode is aan te roepen met een HTTP GET-request naar de volgende URL:
 
-`https://api.copernica.com/v4/publisher/document/$id/textblocks?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/document/$id/textblocks`
 
 Als `$id` kun je de numerieke identifier van een document opgeven.
 

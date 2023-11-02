@@ -3,7 +3,7 @@
 Er is een API-methode om meerdere subprofielen tegelijk te bewerken. Dit kun je
 doen met behulp van een HTTP PUT-request naar de volgende URL:
 
-`https://api.copernica.com/v4/collection/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/subprofiles`
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de
 collectie waar binnen je subprofielen wilt veranderen. De veldwaardes van het subprofiel

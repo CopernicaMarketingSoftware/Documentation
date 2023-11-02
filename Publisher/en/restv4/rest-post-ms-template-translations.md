@@ -3,7 +3,7 @@
 This method is used to create a new translation to a template with the REST API. It uses 
 an HTTP POST request to the following address:
 
-`https://api.copernica.com/v4/ms/template/$id/translations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id/translations`
 
 ## Available parameters
 

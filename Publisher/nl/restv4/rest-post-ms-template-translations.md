@@ -3,7 +3,7 @@
 Methode om een nieuwe vertaling toe te voegen aan een template. Dit is een HTTP POST-methode
 naar het volgende adres:
 
-`https://api.copernica.com/v4/ms/templates/$id/translations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/templates/$id/translations`
 
 ## Beschikbare parameters
 

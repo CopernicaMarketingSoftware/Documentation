@@ -6,7 +6,7 @@ using [version 2](../restv4/rest-api.md) of the REST API.
 You can get the status of your data request by sending an HTTP GET request 
 to the following URL:
 
-`https://api.copernica.com/v4/datarequest/$id/status?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id/status`
 
 where `$id` is the request identifier of interest.
 

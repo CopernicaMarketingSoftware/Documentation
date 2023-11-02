@@ -3,7 +3,7 @@
 A method to edit the properties of an existing rule. It is called using
 the following URL:
 
-`https://api.copernica.com/v4/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v4/rule/$id`
 
 The `$id` needs to be replaced with the ID of the rule you want to edit
 the properties of.

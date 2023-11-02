@@ -2,7 +2,7 @@
 
 Je kunt een bestand/afbeelding toevoegen aan een mediabibliotheek door een HTTP POST-request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/medialibrary/$id/files?access_token=xxxx`
+`https://api.copernica.com/v4/medialibrary/$id/files`
 
 De code $id moet je vervangen door de numerieke identifier of de naam van de mediabibliotheek waar je het bestand of afbeelding in wilt opslaan. 
 

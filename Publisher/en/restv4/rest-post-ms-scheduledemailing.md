@@ -4,7 +4,7 @@ A scheduled mailing is a mailing that was scheduled. It can be send immediately
 or in the future, one or multiple times. You can use the REST API to send 
 a scheduled mailing with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/ms/scheduledemailing/?access_token=xxxx`
+`https://api.copernica.com/v4/ms/scheduledemailing/`
 
 ## Parameters
 

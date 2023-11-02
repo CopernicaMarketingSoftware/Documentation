@@ -6,7 +6,7 @@ is dit handig, zodat je gemakkelijk resultaten kunt vergelijken. Unsubscribes zi
 een van de statistieken die voor een testgroep worden bijgehouden. Je kan deze opvragen met een 
 HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v4/publisher/testgroup/$id/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/testgroup/$id/unsubscribes`
 
 Hier moet `$id` vervangen worden door de ID van de testgroep.
 

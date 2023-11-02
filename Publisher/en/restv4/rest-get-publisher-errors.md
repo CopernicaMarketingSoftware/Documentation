@@ -4,7 +4,7 @@ Each emailing is tracked, which allows Copernica to provide you with
 emailing statistics. Errors are one of these statistics. You can 
 retrieve all errors by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/errors?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/errors`
 
 This method also support the use of the [fields parameter](./rest-fields-parameter) 
 for the **timestamp** field.

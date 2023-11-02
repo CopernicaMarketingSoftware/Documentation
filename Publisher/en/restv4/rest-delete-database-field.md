@@ -3,7 +3,7 @@
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a field from a database:
 
-`https://api.copernica.com/v4/database/$id/field/$id?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/field/$id`
 
 The `$id` needs to be replaced by the numerical identifier, the ID, of the 
 database. The second `$id` needs to be replaced by the ID or the name of the 

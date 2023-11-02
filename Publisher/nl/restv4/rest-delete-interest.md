@@ -2,7 +2,7 @@
 
 Een interesse kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/interest/$id?access_token=xxxx`
+`https://api.copernica.com/v4/interest/$id`
 
 De `$id` moet vervangen worden door de ID van de interesse die je wilt verwijderen.
 

@@ -3,7 +3,7 @@
 Copernica ondersteund ook genestelde selecties. Om een genestelde selectie 
 aan te maken kan er een HTTP post request gestuurd worden naar de volgende URL:
 
-`https://api.copernica.com/v4/view/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/views`
 
 De code `$id` moet hier vervangen worden door de ID of naam van de selectie.
 

@@ -5,7 +5,7 @@ emailing statistics. These are particularly useful in the case of testgroups
 to compare their results. Deliveries are one of these statistics. You can 
 retrieve the deliveries for an emailing by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/testgroup/$id/deliveries?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/testgroup/$id/deliveries`
 
 Where the `$id` should be replaced with the ID of the testgroup.
 

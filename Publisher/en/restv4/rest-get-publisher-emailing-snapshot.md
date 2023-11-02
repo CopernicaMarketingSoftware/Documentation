@@ -2,7 +2,7 @@
 
 You can retrieve a snapshot of a Publisher mailing by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/publisher/emailing/$id/snapshot?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing/$id/snapshot`
 
 Where the `$id` should be replaced with the ID of the mailing.
 

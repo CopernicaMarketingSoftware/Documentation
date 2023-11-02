@@ -3,7 +3,7 @@
 Als je de gegevens van een collectie wilt bijwerken,
 kun je dit doen door een HTTP PUT verzoek naar de volgende URL te sturen:
 
-`https://api.copernica.com/v4/collection/$id?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id`
 
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van de collectie die je wilt bewerken.

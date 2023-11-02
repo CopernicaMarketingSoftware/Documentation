@@ -3,7 +3,7 @@
 This method is used to update an existing senderdomain with the REST API. It uses 
 an HTTP PUT request to the following address:
 
-`https://api.copernica.com/v4/senderdomain/$id?access_token=xxxx`
+`https://api.copernica.com/v4/senderdomain/$id`
 
 Replace the `$id` with the identifier of the senderdomain you want to edit.
 

@@ -5,7 +5,7 @@ Copernica om je meer inzicht te geven in de prestatie hiervan. Clicks zijn
 een van de statistieken die worden bijgehouden. 
 Je kan de clicks voor een specifieke emailing opvragen met een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/emailing/{$emailingID}/clicks?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/{$emailingID}/clicks`
 
 Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestamp** veld.

@@ -3,7 +3,7 @@
 You can request all views (selections that depend on a miniview (miniselection) 
 with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/miniview/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/views`
 
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the miniview you wish to request the views for.

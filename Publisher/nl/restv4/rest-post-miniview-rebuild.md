@@ -3,7 +3,7 @@
 De HTTP POST-methode om een miniselectie opnieuw op te bouwen 
 is beschikbaar op het volgende adres:
 
-`https://api.copernica.com/v4/miniview/$id/rebuild?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/rebuild`
 
 De `$id` moet hier vervangen worden door de unieke identifier van de miniselectie. 
 

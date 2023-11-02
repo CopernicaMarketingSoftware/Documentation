@@ -3,7 +3,7 @@
 It is possible to fetch import information with an HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v4/import/$id?access_token=xxxx`
+`https://api.copernica.com/v4/import/$id`
 
 The `$id` here should be replaced with the numerical identifier of the import.
 

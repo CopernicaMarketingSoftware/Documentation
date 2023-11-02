@@ -2,7 +2,7 @@
 
 You can retrieve the perzonalized Publisher document for a subprofile by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/subprofile/$subprofileID/publisher/document/$documentID?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$subprofileID/publisher/document/$documentID`
 
 Where the `$subprofileID` should be replaced with the ID of the subprofile and the `$documentID` with the ID of the document. 
 

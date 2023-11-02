@@ -3,7 +3,7 @@
 To update existing fields of a subprofile, you need to do an HTTP PUT 
 request to the following URL:
 
-`https://api.copernica.com/v4/subprofile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$id/fields`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, of 
 the subprofile you want to edit the fields of. The name of the field and 

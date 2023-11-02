@@ -2,7 +2,7 @@
 
 Het verwijderen van een profile kan gedaan worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/profile/$id?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id`
 
 De `$id` hier moet vervangen worden door de id van het profile dat je wilt verwijderen.
 

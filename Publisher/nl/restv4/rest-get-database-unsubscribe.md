@@ -7,7 +7,7 @@ profiel moet worden verwijderd of dat het moet worden aangepast.
 Het opvragen van het unsubscribe behavior gaat met een HTTP GET request naar het
 volgende adres:
 
-`https://api.copernica.com/v4/database/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/unsubscribe`
 
 Als `$id` kun je de ID of de naam van een database opgeven.
 

@@ -3,7 +3,7 @@
 Als je de numerieke identifier van een import weet, dan kun je met een HTTP GET-request de
 gegevens van de import ophalen:
 
-`https://api.copernica.com/v4/import/$id?access_token=xxxx`
+`https://api.copernica.com/v4/import/$id`
 
 Als `$id` moet je de numerieke identifier van de import opgeven.
 

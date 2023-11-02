@@ -4,7 +4,7 @@ Each emailing is tracked, which allows Copernica to provide you with
 emailing statistics. Errors are one of these statistics. You can 
 retrieve all errors for a specific emailing by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/ms/emailing/{$emailingID}/errors?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/{$emailingID}/errors`
 
 ## Parameters
 
