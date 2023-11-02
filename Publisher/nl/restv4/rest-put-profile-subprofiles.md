@@ -43,7 +43,7 @@ worden meegegeven in de body.
 De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 URL voorbeeld:  
-`https://api.copernica.com/v4/profile/$profileID/subprofiles/$collectionID?fields[]=customerid==4567@example.com&create=1&access_token=xxx`
+`https://api.copernica.com/v4/profile/$profileID/subprofiles/$collectionID?fields[]=customerid==4567@example.com&create=1`
 
 ```json
 {

@@ -12,7 +12,7 @@ meerdere keren in de URL mag worden gebruikt. In onderstaande URL zie je
 bijvoorbeeld hoe de variabele *fields[]* inderdaad meerdere keren (namelijk 
 twee keer) in een URL voorkomt:
 
-`https://api.copernica.com/v4/database/$id/profiles?fields[]=land%3D%3Dnederland&fields[]=leeftijd%3E16&access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles?fields[]=land%3D%3Dnederland&fields[]=leeftijd%3E16`
 
 ## Ondersteunde waardes
 
@@ -48,7 +48,7 @@ zo uit:
 require_once('copernica_rest_api.php');
 
 // insert your access token
-$api = new CopernicaRestApi("your-access-token", 2);
+$api = new CopernicaRestApi("your-access-token", 4);
 
 // parameters to pass to the call
 $parameters = array(
@@ -73,7 +73,7 @@ Dat ziet er bijvoorbeeld zo uit:
 require_once('copernica_rest_api.php');
 
 // voeg je access token in
-$api = new CopernicaRestApi("jouw-access-token", 2);
+$api = new CopernicaRestApi("jouw-access-token", 4);
 
 // parameters voor het verzoek
 $parameters = array(
@@ -106,7 +106,7 @@ Je kunt dus ook vergelijkingen maken als "id>1000" en "modified<2017-01-01".
 Zoals gezegd moet de *fields* parameters worden toevoegd aan de URL. Om echter een
 geldige URL te behouden, mag de waarde van deze fields parameter natuurlijk niet
 conflicteren met andere elementen van de URL. Hoewel dit evenzeer geldt voor
-alle overige parameters (zoals de *access_token* parameter) is dit met name voor de 
+alle overige parameters is dit met name voor de 
 *fields* parameter een punt van aandacht. In de waardes die je aan deze parameters 
 geeft gebruik je namelijk altijd karakters die niet zonder meer in een URL
 mogen worden geplaatst (zoals "naam=~m%", "leeftijd>=18"). Daarom moet je deze
@@ -133,7 +133,7 @@ In het onderstaande voorbeeld gebruiken we de *fields* parameter tijdens het
 require_once('copernica_rest_api.php');
 
 // voeg je access token in
-$api = new CopernicaRestApi("jouw-access-token", 2);
+$api = new CopernicaRestApi("jouw-access-token", 4);
 
 // parameters voor het verzoek
 $parameters = array(

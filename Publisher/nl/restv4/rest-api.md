@@ -10,15 +10,14 @@ endpoints ondersteunen de traditionele HTTP-acties ("GET", "POST", "PUT" en
 voegen, terwijl "PUT" bedoeld is om data te overschrijven.
 
 * [Overzicht van methodes](./rest-methods.md)
-* [Vorige versie van de REST API (v2)](../restv2/rest-api.md)
-* [Vorige versie van de REST API (v1)](../restv1/rest-api.md)
+* [Vorige versie van de REST API (v3)](../restv3/rest-api.md)
 
 ## API-tokens
 
 Om toegang te krijgen tot de API heb je een API-token nodig. Je voegt dit token als parameter toe aan elke call die je naar de API stuurt. Dat kan bijvoorbeeld als volgt ("MYTOKEN" wordt vervangen door je daadwerkelijke token):
 
 ```
-https://api.copernica.com/v4/path/to/resource?access_token=MYTOKEN
+https://api.copernica.com/v4/path/to/resource
 ```
 
 Je maakt tokens voor je eigen accounts aan in het
@@ -45,7 +44,7 @@ verstuurd. In het onderstaande voorbeeld versturen we een request naar de REST A
 te maken in de database. De body bevat een JSON-object met de eigenschappen van het nieuwe profiel:
 
 ```
-POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
+POST /database/1234/profiles HTTP/1.1
 Host: api.copernica.com
 Content-Type: application/json
 
@@ -60,7 +59,7 @@ Content-Type: application/json
 In plaats van het bovenstaande request (dat gebruik maakt van JSON) had je echter ook een 'traditioneel' HTTP POST-request kunnen versturen:
 
 ```
-POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
+POST /database/1234/profiles HTTP/1.1
 Host: api.copernica.com
 Content-Type: application/x-www-form-urlencoded
 

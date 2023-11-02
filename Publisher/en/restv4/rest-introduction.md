@@ -8,7 +8,7 @@ back in a format that can easily be handled by computers (JSON).
 
 ## REST version
 
-Currently we are using version 2 of the API. In this newest version some calls 
+Currently we are using version 4 of the API. In this newest version some calls 
 were moved to make it clearer which calls were unique to the Marketing Suite 
 or the Publisher. The new version of the API is easier to understand and 
 offers some new calls to help you manage all data surrounding your mailings.
@@ -17,7 +17,7 @@ offers some new calls to help you manage all data surrounding your mailings.
 
 If you are using our CopernicaRestAPI class, your instantiation currently should look somewhat like this:
 
-`$api = new CopernicaRestAPI("your-access-token", 4);`
+`$api = new CopernicaRestAPI("your-access-token", 3);`
 
 This should be simply changed to:
 
@@ -43,7 +43,7 @@ characters that you should pass to each API call. Once you have this access
 token, you can test whether you have access to the API by entering the following
 URL in your browser:
 
-`https://api.copernica.com/v4/identity?access_token=youraccesstoken`
+`https://api.copernica.com/v4/identity`
 
 In the URL you will have to replace the text "youraccesstoken" with you own 
 access token. If you have successfully completed the registration process, 

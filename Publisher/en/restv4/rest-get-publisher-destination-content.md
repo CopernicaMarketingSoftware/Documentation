@@ -3,7 +3,7 @@
 You can retrieve the content per emailing that is sent to the destination. You can 
 retrieve this with the HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/destination/$id/content/$type?access_token=xxx`
+`https://api.copernica.com/v4/publisher/destination/$id/content/$type`
 
 Where the `$id` should be replaced with the ID of the emailing destination. As optional paramater you could add the type (`html, amp, text or subject`) of the content. When you want to retrieve multiple content types you could combine those with `html+text+subject`. When there is no type specified, all types are returned.
 

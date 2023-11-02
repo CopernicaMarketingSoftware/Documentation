@@ -3,7 +3,7 @@
 A list of all available interests in a database can be requested using 
 the following URL:
 
-`https://api.copernica.com/v4/database/$id/interests?access_token=xxx`
+`https://api.copernica.com/v4/database/$id/interests`
 
 The variable `$id` has to be replaced by the numerical identifier or the 
 name of the database of which you want to request the interests.

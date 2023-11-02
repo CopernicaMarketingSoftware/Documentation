@@ -4,7 +4,7 @@ You can start sending HTTP requests to the API endpoint after
 [registering your application](./rest-introduction). The address of the 
 endpoint is:
 
-`https://api.copernica.com/v4/path/to/resource?access_token=yourtoken`
+`https://api.copernica.com/v4/path/to/resource`
 
 Where "/path/to/resource" differs depending on the call you are executing. 
 You should also always add your access token to the call.
@@ -29,7 +29,7 @@ traditional "x-www-form-urlencoded" data. The following example demonstrates the
 request that you should send to the API to add a profile to database with ID 1234:
 
 ```
-    POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
+    POST /database/1234/profiles HTTP/1.1
     Host: api.copernica.com
     Content-Type: application/json
     
@@ -44,7 +44,7 @@ request that you should send to the API to add a profile to database with ID 123
 Instead of JSON encoding, you can also use the old-fashioned form encoding:
 
 ```
-    POST /database/1234/profiles?access_token=yourtoken HTTP/1.1
+    POST /database/1234/profiles HTTP/1.1
     Host: api.copernica.com
     Content-Type: application/x-www-form-urlencoded
     

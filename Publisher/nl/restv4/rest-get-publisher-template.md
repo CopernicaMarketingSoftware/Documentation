@@ -20,7 +20,7 @@ Als `$id` kun je de numerieke identifier van een template opgeven.
                                                                               
 Om de HTML-broncode op te halen kun je `source=true` toevoegen aan de URL:
 
-``https://api.copernica.com/v4/publisher/template/$id?source=true&access_token=xxxx``
+``https://api.copernica.com/v4/publisher/template/$id?source=true``
 
 ### JSON voorbeeld
 

@@ -154,7 +154,7 @@ The below example shows you how you retrieve data from a profile (a
 database record) with its unique ID in Copernica. A call is always
 accompanied with the access token as a query string:
 
-`https://api.copernica.com/v4/profile/{$profileID}?access_token={$token}`
+`https://api.copernica.com/v4/profile/{$profileID}`
 
 View our [REST API documentation](./rest-api.md) for in depth
 information on making API calls.

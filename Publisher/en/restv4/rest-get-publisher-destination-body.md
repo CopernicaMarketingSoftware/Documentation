@@ -18,25 +18,25 @@ HTML stands for HyperText Language Markup/internet markup. To retrieve the
 HTML message body you can send a request to the following 
 URL:
 
-`https://api.copernica.com/v4/publisher/destination/$id/body?access_token=xxx`
+`https://api.copernica.com/v4/publisher/destination/$id/body`
 
 or the following URL:
 
-`https://api.copernica.com/v4/publisher/destination/$id/body/html?access_token=xxx`
+`https://api.copernica.com/v4/publisher/destination/$id/body/html`
 
 ## MIME
 
 Mime is the internet standard for email. To retrieve the email in MIME 
 format you can send the request to the following URL:
 
-`https://api.copernica.com/v4/publisher/destination/$id/body/mime?access_token=xxx`
+`https://api.copernica.com/v4/publisher/destination/$id/body/mime`
 
 ## Text
 
 It's also possible to request the message body in plain text. The corresponding 
 URL for this request is:
 
-`https://api.copernica.com/v4/publisher/destination/$id/body/text?access_token=xxx`
+`https://api.copernica.com/v4/publisher/destination/$id/body/text`
 
 ## PHP example
 

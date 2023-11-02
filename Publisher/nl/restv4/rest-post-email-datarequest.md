@@ -12,7 +12,7 @@ verzoek en de unieke ID die deze methode retourneert.
 Voor het indienen van een data verzoek voor een e-mailadres kun je een HTTP POST verzoek sturen 
 naar de volgende URL:
 
-`https://api.copernica.com/v4/email/$email/datarequest?access_token=xxx`
+`https://api.copernica.com/v4/email/$email/datarequest`
 
 De code `$email` kun je hier vervangen door het e-mailadres waarvoor je 
 het verzoek wil indienen.

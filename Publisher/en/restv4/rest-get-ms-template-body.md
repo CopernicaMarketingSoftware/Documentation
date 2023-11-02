@@ -3,7 +3,7 @@
 If you want to retrieve the body of a template created with Marketing Suite 
 you can send a GET request to the following URL:
 
-`https://api.copernica.com/v4/ms/template/$id/body/$type?access_token=xxx`
+`https://api.copernica.com/v4/ms/template/$id/body/$type`
 
 where `$id` is the ID of the template and `$type` is 
 the format for the message.

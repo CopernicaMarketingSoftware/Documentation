@@ -10,7 +10,7 @@ added after the name of the variable in the URL. The variable may even be
 used multiple times. The following URL demonstrates how the variable *fields[]* 
 can occur twice:
 
-`https://api.copernica.com/v4/database/$id/profiles?fields[]=land%3D%3Dnetherlands&fields[]=age%3E16&access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles?fields[]=land%3D%3Dnetherlands&fields[]=age%3E16`
 
 ## Supported values
 
@@ -99,8 +99,7 @@ This means you can also make comparisons like "id>1000" or "modified<2017-01-01"
 ## Escaping variables
 
 When you add the *fields* parameters to the URL you need to escape variables 
-to keep the URL valid. The same goes for other parameters, like the 
-*access_token* parameter, but this especially important for the *fields* 
+to keep the URL valid. The same goes for other parameters but this especially important for the *fields* 
 parameter. This is because you always use characters that can not occur 
 without interfering with the URL (for example name~=m%). 
 

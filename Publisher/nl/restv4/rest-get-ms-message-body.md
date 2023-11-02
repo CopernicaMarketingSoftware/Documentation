@@ -17,25 +17,25 @@ HTML staat voor HyperText Language Markup/internet markup. Om de HTML
 van een bericht op te vragen kun je een HTTP get verzoek sturen naar de 
 volgende URL:
 
-`https://api.copernica.com/v4/ms/message/$id/body?access_token=xxx`
+`https://api.copernica.com/v4/ms/message/$id/body`
 
 of de volgende URL:
 
-`https://api.copernica.com/v4/ms/message/$id/body/html?access_token=xxx`
+`https://api.copernica.com/v4/ms/message/$id/body/html`
 
 ## MIME
 
 Mime is de internet standaard voor email. Om de MIME van een email op te 
 vragen kun je een verzoek versturen naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/message/$id/body/mime?access_token=xxx`
+`https://api.copernica.com/v4/ms/message/$id/body/mime`
 
 ## Text
 
 Het is ook mogelijk om de tekstversie van een bericht op te vragen. 
 De URL voor dit verzoek is:
 
-`https://api.copernica.com/v4/ms/message/$id/body/text?access_token=xxx`
+`https://api.copernica.com/v4/ms/message/$id/body/text`
 
 ## PHP example
 

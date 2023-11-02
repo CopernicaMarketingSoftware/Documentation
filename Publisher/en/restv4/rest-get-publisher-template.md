@@ -19,7 +19,7 @@ The method returns a JSON object containing the following information:
 * **archived**: The archive status of the template.
 
 To get the HTML source of the template you can add `source=true` to the URL:
-`https://api.copernica.com/v4/publisher/template/$id?source=true&access_token=xxxx`
+`https://api.copernica.com/v4/publisher/template/$id?source=true`
 
 ### JSON Example
 
