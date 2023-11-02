@@ -3,7 +3,7 @@
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a rule:
 
-`https://api.copernica.com/v4/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v4/rule/$id`
 
 The `$id` needs to be replaced by the numerical identifier of the rule
 that you want to remove.

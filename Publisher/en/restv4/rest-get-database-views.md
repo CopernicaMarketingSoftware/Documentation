@@ -3,7 +3,7 @@
 To request which selections are available in a database, do an HTTP GET 
 request to the following URL:
 
-`https://api.copernica.com/v4/database/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/views`
 
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the database you wish to request the selections for.

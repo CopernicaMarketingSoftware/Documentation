@@ -4,7 +4,7 @@ A scheduled mailing is a mailing that was scheduled. It can be send immediately
 or in the future, one or multiple times. You can use the REST API to retrieve 
 a summary of a scheduled mailing with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/ms/scheduledemailing/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/scheduledemailing/$id`
 
 Where `$id` should be replaced with the ID of the mailing you want summarized.
 

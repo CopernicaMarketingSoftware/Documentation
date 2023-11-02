@@ -4,7 +4,7 @@ A minirule is to a collection what a regular rule is to a database.
 A method to request all metadata from a minirule can be called by sending 
 an HTTP GET request to the following URL:
 
-'https://api.copernica.com/v4/minirule/$id?access_token=xxxx'
+'https://api.copernica.com/v4/minirule/$id'
 
 The `$id` needs to be replaced by the numerical identifier or the 
 name of the minirule you wish to request the selections for.

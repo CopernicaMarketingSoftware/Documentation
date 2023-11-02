@@ -3,7 +3,7 @@
 Een methode om een conditie aan een miniregel toe te voegen. De methode kan 
 aangeroepen worden met een HTTP POST verzoek aan de volgende URL:
 
-`https://api.copernica.com/v4/minirule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v4/minirule/$id/conditions`
 
 De `$id` moet hier vervangen worden door de identifier van de miniregel 
 waaraan je een conditie toe wilt voegen.

@@ -4,7 +4,7 @@ A miniview is to a collection what view is to the database. To retrieve
 the rules of such a selection you can send an HTTP GET request to this 
 address:
 
-`https://api.copernica.com/v4/miniview/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/rules`
 
 The `$id` should be replaced with the numeric identifier of the selection
 from which you want to retrieve the rules.

@@ -3,7 +3,7 @@
 Je kan de destinations van een (Marketing Suite) emailing opvragen met 
 een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/emailing/$id/destinations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/$id/destinations`
 
 Hier moet `$id` vervangen worden door de ID van de mailing. Deze methode 
 ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 

@@ -3,7 +3,7 @@
 You can request all subprofiles from a collection with an HTTP GET call 
 to the following URL:
 
-`https://api.copernica.com/v4/collection/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/subprofiles`
 
 The `$id` should be replaced with the numerical identifier of the collection you
 want to fetch the subprofiles of. Since this can be 

@@ -3,7 +3,7 @@
 This is a simple method to fetch all IDs of subprofiles in a collection.
 To use the method send an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/collection/$id/subprofileids?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/subprofileids`
 
 The `$id` should be replaced with the numerical identifier of the collection
 you want to get the IDs of.

@@ -3,7 +3,7 @@
 Methode om een nieuwe database aan te maken. Dit is een HTTP POST methode
 naar het volgende adres:
 
-`https://api.copernica.com/v4/databases?access_token=xxxx`
+`https://api.copernica.com/v4/databases`
 
 ## Beschikbare parameters
 

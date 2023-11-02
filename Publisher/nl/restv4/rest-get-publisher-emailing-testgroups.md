@@ -3,7 +3,7 @@
 Je kunt de test groepen van een Publisher mailing opvragen door een HTTP GET request 
 te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/publisher/emailing/$id/testgroups?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing/$id/testgroups`
 
 Hier moet `$id` vervangen worden door de ID van de mailing.
 

@@ -3,7 +3,7 @@
 You can use the REST API to retrieve a summary of an emailing template 
 with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/ms/template/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id`
 
 Where `$id` should be replaced with the ID of the emailing template you want summarized.
 

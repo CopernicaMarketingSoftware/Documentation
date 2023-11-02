@@ -4,7 +4,7 @@ A collection is similar to a second layer within the database. To add such
 a collection to an existing database you can send an HTTP POST request to 
 the following URL:
 
-`https://api.copernica.com/v4/database/$id/collections?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/collections`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, 
 of the database you want to add an collection to. The name of the 

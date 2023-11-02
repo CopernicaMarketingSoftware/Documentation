@@ -3,7 +3,7 @@
 Je kunt de REST API gebruiken om een overzicht van alle emailing templates op te vragen 
 door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v4/templates?access_token=xxxx`
+`https://api.copernica.com/v4/templates`
 
 ## Beschikbare parameters
 

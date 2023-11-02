@@ -2,7 +2,7 @@
 
 A method to update a minicondition. It is called by sending an HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v4/minicondition/$type/$id?access_token=xxxx`
+`https://api.copernica.com/v4/minicondition/$type/$id`
 
 The `$type` and `$id` need to be replaced by the type and the numerical 
 identifier of the minicondition respectively.

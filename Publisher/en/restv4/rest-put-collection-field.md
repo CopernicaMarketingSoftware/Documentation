@@ -2,7 +2,7 @@
 
 Method to edit a certain field in a collection. To use this method you can make an HTTP PUT request to the following URL:
 
-`https://api.copernica/com/v4/collection/$id/field/$id?access_token=xxxx`
+`https://api.copernica/com/v4/collection/$id/field/$id`
 
 The first `$id` should be the collection you want to edit the field of 
 and the second `$id` should be replaced by the ID of the field you want 

@@ -3,7 +3,7 @@
 A method to update a loop block. This is an HTTP PUT 
 method, accessible at the following address:
 
-`https://api.copernica.com/v4/publisher/document/$id/loopblock/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/document/$id/loopblock/$id`
 
 Replace the first `$id` by the identifier of the document and the second `$id` by the identifier of the loop block you want to edit.
 

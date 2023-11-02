@@ -3,7 +3,7 @@
 Om de status van je dataverzoek op te vragen kun je een HTTP GET request 
 sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/datarequest/$id/status?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id/status`
 
 De code `$id` moet hier vervangen worden door de ID van het relevante dataverzoek.
 

@@ -3,7 +3,7 @@
 Je kunt de REST API gebruiken om alle mailings die bij een emailing template 
 horen door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v4/publisher/template/$id/emailings?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/template/$id/emailings`
 
 Hier moet `$id` vervangen worden door de ID van het template.
 

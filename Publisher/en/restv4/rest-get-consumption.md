@@ -3,7 +3,7 @@ This method can be used if you want to retrieve the account-wide consumption
 statistics. These consist of counters of various services, such as the number 
 of emails or api calls sent. By sending a GET request to the following URL,
 you can fetch the account-wide consumption statistics:
-`https://api.copernica.com/v4/consumption?access_token=xxxx`
+`https://api.copernica.com/v4/consumption`
 
 ## Parameters
 The following parameters are **required**:

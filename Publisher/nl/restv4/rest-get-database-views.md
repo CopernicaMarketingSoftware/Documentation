@@ -3,7 +3,7 @@
 Je kunt bekijken welke selecties beschikbaar zijn door een HTTP GET request te 
 sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/database/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/views`
 
 De `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de selecties van wilt opvragen.

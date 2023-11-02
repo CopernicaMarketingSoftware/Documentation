@@ -4,7 +4,7 @@ What selections are to a database is what miniselections, or miniviews,
 are to a collection. To fetch the miniselections applied to this collection 
 the following HTTP GET request can be used:
 
-`https://api.copernica.com/v4/collection/$id/miniviews?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/miniviews`
 
 The code `$id` should be replaced by the ID of the collection you want to 
 fetch the miniviews of.

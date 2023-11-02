@@ -3,7 +3,7 @@
 If you want to get some general information from a mail sent with Publisher
 you can make a simple a GET request to the following URL:
 
-`https://api.copernica.com/v4/publisher/message/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/message/$id`
 
 where `$id` is the unique string that identifies a message. 
 

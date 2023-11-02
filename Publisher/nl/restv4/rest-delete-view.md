@@ -2,7 +2,7 @@
 
 Om een selectie van profielen te verwijderen kan er een HTTP DELETE verzoek gestuurd worden naar de volgende URL:
 
-`https://api.copernica.com/v4/view/$id?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id`
 
 De `$id` moet vervangen worden door de ID van de selectie die je wilt verwijderen. 
 Met deze methode verwijder je alleen de selectie, niet de profielen die erin zitten. 

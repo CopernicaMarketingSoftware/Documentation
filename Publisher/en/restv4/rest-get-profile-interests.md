@@ -15,7 +15,7 @@ identifier of the profile you're requesting the interests of.
 A list of interest names can be requested by sending an HTTP GET request 
 to the following URL:
 
-`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/interests`
 
 The call returns a simple list of the names of interests. You could 
 use this in code to check if a user has a certain interest.
@@ -25,7 +25,7 @@ use this in code to check if a user has a certain interest.
 A list of interest ID's can be requested by sending an HTTP GET request 
 to the following URL:
 
-`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx&return=ids`
+`https://api.copernica.com/v4/profile/$id/interests&return=ids`
 
 The call returns a simple list of the ID's of interests. You could use this 
 to request the interests themselves.
@@ -35,7 +35,7 @@ to request the interests themselves.
 A list of JSON interest objects can be requested by sending an HTTP GET request 
 to the following URL:
 
-`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx&return=objects`
+`https://api.copernica.com/v4/profile/$id/interests&return=objects`
 
 Each returned object in the array has the following properties:
 

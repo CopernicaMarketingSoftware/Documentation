@@ -3,7 +3,7 @@
 This method is used to fetch an existing webhook with the REST API. It uses 
 an HTTP GET request to the following address:
 
-`https://api.copernica.com/v4/webhook/$id?access_token=xxxx`
+`https://api.copernica.com/v4/webhook/$id`
 
 Replace the `$id` with the identifier of the webhook you want to fetch.
 

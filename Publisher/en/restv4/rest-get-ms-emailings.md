@@ -3,7 +3,7 @@
 A method to request a list of all mailings sent from Marketing Suite.
 This is an HTTP GET call to the following address:
 
-`https://api.copernica.com/v4/ms/emailings?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailings`
 
 You can find the call to retrieve all Publisher emailings [here](./rest-get-emailings).
 

@@ -3,7 +3,7 @@
 If you want to modify multiple subprofiles with a single call to the API, you
 can send a HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v4/profile/$id/subprofiles/$id?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/subprofiles/$id`
 
 The first `$id` should be replaced with the ID of the profile which the
 subprofiles are linked to. The second `$id` should be replaced with the ID or

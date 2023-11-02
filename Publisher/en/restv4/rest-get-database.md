@@ -4,7 +4,7 @@ A method to request all metadata from a database. This method does not
 support parameters. By sending a GET request to the following URL, 
 you can fetch the database metadata:
 
-`https://api.copernica.com/v4/database/$id?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id`
 
 where `$id` should be replaced by the identifier of the database you want 
 to get the metadata of.

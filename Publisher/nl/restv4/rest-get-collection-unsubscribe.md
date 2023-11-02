@@ -8,7 +8,7 @@ worden verwijderd, of moet het subprofiel worden aangepast?
 Het opvragen van het afmeldalgoritme gaat met een HTTP GET request naar het
 volgende adres:
 
-`https://api.copernica.com/v4/collection/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/unsubscribe`
 
 Als `$id` moet je de numerieke identifier van een collectie opgeven.
 

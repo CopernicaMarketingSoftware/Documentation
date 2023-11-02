@@ -2,7 +2,7 @@
 
 You can retrieve the destinations for an emailing by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/ms/emailing/$id/destinations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/$id/destinations`
 
 Where the `$id` should be replaced with the ID of the emailing. This method 
 also support the use of the [fields parameter](./rest-fields-parameter) 

@@ -3,7 +3,7 @@
 You can send an HTTP DELETE request to the following address to delete an 
 interest:
 
-`https://api.copernica.com/v4/interest/$id?access_token=xxxx`
+`https://api.copernica.com/v4/interest/$id`
 
 The `$id` needs to be replaced by the numerical identifier of the interest
 that you want to remove.

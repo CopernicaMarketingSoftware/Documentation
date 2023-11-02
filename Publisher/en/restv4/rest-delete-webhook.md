@@ -3,7 +3,7 @@
 This method is used to delete an existing webhook with the REST API. It uses 
 an HTTP DELETE request to the following address:
 
-`https://api.copernica.com/v4/webhook/$id?access_token=xxxx`
+`https://api.copernica.com/v4/webhook/$id`
 
 The `$id` needs to be replaced by the numerical identifier, the ID, of the 
 webhook.

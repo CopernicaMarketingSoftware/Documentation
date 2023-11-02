@@ -4,7 +4,7 @@ Je kunt alle informatie omtrent databases opvragen
 met de onderstaande methode. Dit is een HTTP GET 
 call naar het volgende adres:
 
-`https://api.copernica.com/v4/databases?access_token=xxxx`
+`https://api.copernica.com/v4/databases`
 
 ## Beschikbare parameters
 

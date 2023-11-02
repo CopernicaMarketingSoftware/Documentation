@@ -2,7 +2,7 @@
 
 You can retrieve the Publisher destinations for a subprofile by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/subprofile/$id/publisher/destinations?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$id/publisher/destinations`
 
 Where the `$id` should be replaced with the ID of the subprofile. This method 
 also support the use of the [fields parameter](./rest-fields-parameter) 

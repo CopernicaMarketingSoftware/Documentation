@@ -4,7 +4,7 @@ You can use the REST API to retrieve a summary of a mailing destination
 including the (sub)profile fields with an HTTP 
 GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/destination/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/destination/$id/fields`
 
 Where `$id` should be replaced with the ID of the mailing destination you want summarized. 
 This method also support the use of the [fields parameter](./rest-fields-parameter) 

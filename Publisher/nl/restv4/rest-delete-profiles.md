@@ -2,7 +2,7 @@
 
 Een lijst met profielen kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles`
 
 De `$id` moet vervangen worden door de ID van de database waarin de profielen staan die je wilt verwijderen.
 

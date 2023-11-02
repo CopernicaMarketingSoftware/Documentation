@@ -4,7 +4,7 @@ Each emailing is tracked, which allows Copernica to provide you with
 emailing statistics. Abuses are one of these statistics. You can 
 retrieve all abuses for an account by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/ms/abuses?access_token=xxxx`
+`https://api.copernica.com/v4/ms/abuses`
 
 ## Parameters
 

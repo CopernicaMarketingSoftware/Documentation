@@ -3,7 +3,7 @@
 Method to add a rule to an existing selection. This is an HTTP POST call to 
 the following URL:
 
-`https://api.copernica.com/v4/view/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/rules`
 
 The `$id` should be replaced by the ID of the view you want to add a rule to. 
 After a successful call the ID of the created request is returned.

@@ -3,7 +3,7 @@
 You can use the REST API to retrieve all emailing templates for an account 
 with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/templates?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/templates`
 
 ## Available parameters
 

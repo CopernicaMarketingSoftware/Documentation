@@ -4,7 +4,7 @@ Profiles can contain folders and subfolders containing files, pertaining
 to that specific profile. Information about these files can be retrieved 
 by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/profile/$id/files?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/files`
 
 The `$id` should be replaced with the numerical identifier of the profile 
 you're requesting the file information about.

@@ -3,7 +3,7 @@
 This method is used to add or update coupons to a campaign with the REST API. It uses 
 an HTTP PUT request to the following address:
 
-`https://api.copernica.com/v4/couponcampaign/$couponcampaign/coupons?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaign/$couponcampaign/coupons`
 
 ## Available parameters
 

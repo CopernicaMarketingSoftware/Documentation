@@ -3,7 +3,7 @@
 De methode om profielen uit een selectie op te vragen is een HTTP GET methode
 beschikbaar op het volgende adres:
 
-`https://api.copernica.com/v4/view/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/profiles`
 
 De code `$id` moet je vervangen door de numerieke identifier van de 
 selectie waar je de profielen van wilt opvragen.

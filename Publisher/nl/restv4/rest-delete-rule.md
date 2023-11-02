@@ -2,7 +2,7 @@
 
 Een regel kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v4/rule/$id`
 
 De `$id` moet vervangen worden door de ID van de regel die je wilt verwijderen.
 

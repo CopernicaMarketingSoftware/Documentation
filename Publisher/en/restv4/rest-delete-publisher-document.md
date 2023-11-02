@@ -3,7 +3,7 @@
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a document:
 
-`https://api.copernica.com/v4/publisher/document/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/document/$id`
 
 The `$id` needs to be replaced by the numerical identifier of the document
 that you want to remove.

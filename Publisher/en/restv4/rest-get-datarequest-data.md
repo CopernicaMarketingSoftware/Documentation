@@ -3,7 +3,7 @@
 You can request the data of your data request by sending an HTTP GET call 
 to the following URL:
 
-`https://api.copernica.com/v4/datarequest/$id/data?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id/data`
 
 where `$id` is the request identifier of interest. You may first want to
 check if the data is available with the [data request status](/rest-get-datarequest-status).

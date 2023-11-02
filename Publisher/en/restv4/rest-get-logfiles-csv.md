@@ -6,7 +6,7 @@ know the filename please see "More information" for instructions. To
 execute the method you can send an HTTP GET request to the following URL 
 for a CSV file without header:
 
-`https://api.copernica.com/v4/logfile/$filename/csv?access_token=xxxx`
+`https://api.copernica.com/v4/logfile/$filename/csv`
 
 In both URLs `$filename` is the name of the file you want to request.
 

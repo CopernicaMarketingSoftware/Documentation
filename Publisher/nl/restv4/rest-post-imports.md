@@ -2,7 +2,7 @@
 
 Je kunt een import starten door een HTTP PUT-request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/imports?access_token=xxxx`
+`https://api.copernica.com/v4/imports`
 
 ## Beschikbare parameters
 

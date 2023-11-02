@@ -3,7 +3,7 @@
 A method to update a template. This is an HTTP PUT 
 method, accessible at the following address:
 
-`https://api.copernica.com/v4/publisher/template/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/template/$id`
 
 Replace the `$id` by the identifier of the template you want to edit.
 

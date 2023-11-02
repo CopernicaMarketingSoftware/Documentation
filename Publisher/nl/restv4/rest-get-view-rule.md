@@ -5,7 +5,7 @@ in de selectie en welke niet. Profielen die tenminste een regel matchen worden
 toegevoegd. Om de informatie van een enkele regel op te vragen kan er een 
 HTTP GET verzoek worden verstuurd naar de volgende URL:
 
-`https://api.copernica.com/v4/view/$id/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/rule/$id`
 
 De eerste `$id` code moet vervangen worden met de numerieke identifier 
 van de selectie waar je een regel uit wilt opvragen. De tweede `$id` 

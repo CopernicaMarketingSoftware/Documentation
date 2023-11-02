@@ -3,7 +3,7 @@
 Methode om een overzicht op te vragen van alle coupons in een couponcampagne.
 Dit is een HTTP GET-call naar het volgende adres:
 
-`https://api.copernica.com/v4/couponcampaign/$id/coupons?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaign/$id/coupons`
 
 Als `$id` moet je de numerieke identifier van de couponcampagne opgeven.
 

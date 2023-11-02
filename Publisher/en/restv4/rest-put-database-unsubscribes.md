@@ -3,7 +3,7 @@
 You can execute the setup unsubscribe behavior of profiles matching certain criteria in a database 
 by sending an HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v4/database/$id/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/unsubscribes`
 
 The variable `$id` should be replaced with the ID of the database in which you want to search for the profiles to unsubscribe.
 

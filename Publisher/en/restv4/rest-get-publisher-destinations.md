@@ -1,7 +1,7 @@
 # REST API: GET destinations (Publisher)
 This method can be used if you want to retrieve the destinations of Publisher (HTML) mailings for a specific period. By sending a GET request to the following URL,
 you can fetch the destinations:
-`https://api.copernica.com/v4/publisher/destinations?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/destinations`
 
 ## Parameters
 * **from**: The timestamp indicating the begin of the period for which the destinations should be retrieved (YYYY-MM-DD format).

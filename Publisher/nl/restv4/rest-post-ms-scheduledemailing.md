@@ -5,7 +5,7 @@ hiervoor kan in het verleden of de toekomst liggen en de emailing kan
 een of meerdere keren verstuurd worden. Je kunt de REST API gebruiken om
 een ingeroosterde emailing aan te maken door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/scheduledemailing?access_token=xxxx`
+`https://api.copernica.com/v4/ms/scheduledemailing`
 
 ## Parameters
 

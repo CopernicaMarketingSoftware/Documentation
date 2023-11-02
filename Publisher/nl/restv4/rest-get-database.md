@@ -4,7 +4,7 @@ Dit is een methode om meta gegevens van een database op te vragen.
 Deze methode ondersteunt geen parameters. De methode is aan te 
 roepen met een HTTP GET request naar de volgende URL:
 
-`https://api.copernica.com/v4/database/$id?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id`
 
 Als `$id` kun je de numerieke identifier van een database opgeven, of de naam
 van een database.

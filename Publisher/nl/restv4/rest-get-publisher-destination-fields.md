@@ -4,7 +4,7 @@ Je kunt de REST API gebruiken om een overzicht van een mailing destination
 inclusief alle (sub)profiel velden op te vragen 
 door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v4/publisher/destination/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/destination/$id`
 
 Hier moet `$id` vervangen worden door de ID van de mailing destination. Deze methode 
 ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 

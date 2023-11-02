@@ -3,7 +3,7 @@
 Methode om de properties van een database bij te werken. Dit is een HTTP PUT
 methode die toegankelijk is via het volgende adres:
 
-`https://api.copernica.com/v4/database/$id?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id`
 
 De variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 of de naam van de database die je wilt bewerken.

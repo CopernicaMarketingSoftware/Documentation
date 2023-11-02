@@ -3,7 +3,7 @@
 This method is used to fetch an existing senderdomain with the REST API. It uses 
 an HTTP GET request to the following address:
 
-`https://api.copernica.com/v4/senderdomain/$id?access_token=xxxx`
+`https://api.copernica.com/v4/senderdomain/$id`
 
 Replace the `$id` with the identifier of the senderdomain you want to fetch.
 

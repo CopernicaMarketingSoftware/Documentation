@@ -3,7 +3,7 @@
 Methode om een nieuw document aan te maken. Dit is een HTTP POST-methode
 naar het volgende adres:
 
-`https://api.copernica.com/v4/publisher/documents?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/documents`
 
 ## Beschikbare parameters
 

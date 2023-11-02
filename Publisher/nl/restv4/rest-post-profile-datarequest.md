@@ -36,7 +36,7 @@ Het resultaat van deze POST call is een uniek ID. Met dit ID kan je controleren
 of de data beschikbaar is en indien dit het geval is ook opvragen. Dit
 kan je doen door een HTTP GET verzoek te sturen naar de volgende URL
 
-`https://api.copernica.com/v4/datarequest/$id?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id`
 
 The code `$id` moet je vervangen door de unieke ID die je via het POST verzoek
 hebt gekregen. Let erop dat dit bestand uiteindelijk verloopt.

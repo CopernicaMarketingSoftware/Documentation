@@ -3,7 +3,7 @@
 Deze methode vraagt een lijst op van alle mailings verstuurd met Publisher. 
 De methode maakt een HTTP call naar het volgende adres:
 
-`https://api.copernica.com/v4/publisher/emailings?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailings`
 
 Je kunt de methode om alle Marketing Suite mailings op te vragen [hier](./rest-get-ms-emailings) vinden.
 

@@ -3,7 +3,7 @@
 Je kunt collecties van een database opvragen middels een HTTP GET 
 request:
 
-`https://api.copernica.com/v4/database/$id/collections?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/collections`
 
 De `$id` moet je vervangen door de numerieke identifier of de naam van 
 de database waar je de collecties van wilt opvragen.

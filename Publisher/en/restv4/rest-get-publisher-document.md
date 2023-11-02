@@ -3,7 +3,7 @@
 You can use the REST API to retrieve a summary of an emailing document 
 with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/document/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/document/$id`
 
 Where `$id` should be replaced with the ID of the emailing document you want summarized.
 

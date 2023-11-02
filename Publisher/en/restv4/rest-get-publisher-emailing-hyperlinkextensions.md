@@ -3,7 +3,7 @@
 This method can be used if you want to retrieve the hyperlink extensions of Publisher (HTML) mailings. By sending a GET request to the following URL,
 you can fetch the hyperlink extensions:
 
-`https://api.copernica.com/v4/publisher/emailing/$id/hyperlinkextensions?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing/$id/hyperlinkextensions`
 
 ```json
 {

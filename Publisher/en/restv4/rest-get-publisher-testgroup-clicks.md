@@ -5,7 +5,7 @@ emailing statistics. These are particularly useful in the case of testgroups
 to compare their results. Clicks are one of these statistics. You can 
 retrieve the clicks for a testgroup by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/testgroup/$id/clicks?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/testgroup/$id/clicks`
 
 Where the `$id` should be replaced with the ID of the testgroup.
 

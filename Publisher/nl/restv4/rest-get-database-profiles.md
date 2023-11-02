@@ -3,7 +3,7 @@
 De methode om profielen uit een database op te vragen is een HTTP GET methode
 beschikbaar op het volgende adres:
 
-`https://api.copernica.com/v4/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles`
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je de profielen van wilt opvragen. Deze methode kan traag zijn 

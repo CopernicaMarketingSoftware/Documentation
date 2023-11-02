@@ -3,7 +3,7 @@
 Een methode om een conditie aan te passen.
 Je kunt de method aanroepen met een HTTP PUT request naar de volgende URL:
 
-`https://api.copernica.com/v4/condition/$type/$id?access_token=xxxx`
+`https://api.copernica.com/v4/condition/$type/$id`
 
 De `$type` en`$id` moeten hier vervangen worden door het type en de ID 
 van de conditie respectievelijk.

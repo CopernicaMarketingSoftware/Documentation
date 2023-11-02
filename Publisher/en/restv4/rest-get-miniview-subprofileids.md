@@ -3,7 +3,7 @@
 A simple method for fetching the identifiers of all subprofiles in a miniselection.
 Execute this method by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/miniview/$id/subprofileids?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/subprofileids`
 
 The `$id` should be replaced by the numerical identifier of the miniselection 
 you want to fetch the IDs of.

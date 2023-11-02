@@ -5,7 +5,7 @@ emailing statistics. These are particularly useful in the case of testgroups
 to compare their results. Impressions are one of these statistics. You can 
 retrieve the impressions for a testgroup by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/emailing/$id/impressions?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing/$id/impressions`
 
 Where the `$id` should be replaced with the ID of the testgroup.
 

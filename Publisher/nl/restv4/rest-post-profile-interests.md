@@ -3,7 +3,7 @@
 Om interesses aan een profiel toe te voegen, kun je een HTTP POST
 request sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/profile/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/subprofiles`
 
 De code `$id` moet je vervangen door de numerieke identifier van het profiel 
 waaraan je interesses wil toevoegen. De inhoud van de interesses kun je in de message body plaatsen.

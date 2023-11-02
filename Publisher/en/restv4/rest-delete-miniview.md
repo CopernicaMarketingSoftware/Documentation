@@ -3,7 +3,7 @@
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a miniview:
 
-`https://api.copernica.com/v4/miniview/$id?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id`
 
 The `$id` needs to be replaced by the numerical identifier of the selection
 that you want to remove. With this method you only remove the miniselection, and

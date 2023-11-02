@@ -3,7 +3,7 @@
 Als je de inhoud van een template gemaakt met de Marketing Suite wil 
 opvragen kun je een GET request sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/template/$id/body/$type?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id/body/$type`
 
 De `$id` is hier de ID van de template en `$type` het formaat waarin je 
 de inhoud op wilt vragen. Deze methode kan niet aangeroepen worden met 

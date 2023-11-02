@@ -3,7 +3,7 @@
 Methode om een database te kopiëren. Dit is een HTTP POST methode
 naar het volgende adres:
 
-`https://api.copernica.com/v4/database/$id/copy?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/copy`
 
 Hier moet de `$id` vervangen worden door de ID van de database die je 
 wil kopiëren. Als het verzoek succesvol wordt uitgevoerd geeft de methode 

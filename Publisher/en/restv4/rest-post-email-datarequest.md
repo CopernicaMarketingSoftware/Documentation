@@ -13,7 +13,7 @@ this method returns.
 
 To create this data request you send an HTTP POST request to the following URL:
 
-`https://api.copernica.com/v4/email/$email/datarequest?access_token=xxxx`
+`https://api.copernica.com/v4/email/$email/datarequest`
 
 The code `email` should be replaced by the email address you want to retrieve 
 data of.
@@ -37,7 +37,7 @@ The result of this POST call is a unique identifier. This identifier can be
 used to check if the data is already available by sending a HTTP GET request
 to the following URL:
 
-`https://api.copernica.com/v4/datarequest/$id?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id`
 
 The code `id` should be replaced with the identifier obtained from your
 HTTP POST request. Note that this file will expire eventually.

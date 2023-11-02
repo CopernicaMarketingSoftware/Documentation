@@ -3,7 +3,7 @@
 A method to request a list of all mailings sent from Marketing Suite to a 
 specific profile. This is an HTTP GET call to the following address:
 
-`https://api.copernica.com/v4/profile/{$profileID}/ms/emailings?access_token=xxxx`
+`https://api.copernica.com/v4/profile/{$profileID}/ms/emailings`
 
 Don't forget to replace `{$profileID}` by the ID of the profile you 
 want to retrieve the emailings for.

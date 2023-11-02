@@ -4,7 +4,7 @@ Een collectie is een "tweede laag" binnen een database. Als je de numerieke
 identifier van een collectie weet, dan kun je met een HTTP GET request de
 gegevens van de collectie ophalen:
 
-`https://api.copernica.com/v4/collection/$id?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id`
 
 Als `$id` moet je de numerieke identifier van de collectie opgeven.
 

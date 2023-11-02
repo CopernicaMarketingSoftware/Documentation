@@ -2,7 +2,7 @@
 
 By sending an HTTP POST request to the following URL it is possible to import data:
 
-`https://api.copernica.com/v4/medialibrary/$id/files?access_token=xxxx`
+`https://api.copernica.com/v4/medialibrary/$id/files`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, 
 or the name of the media library you want to add the file/image to. 

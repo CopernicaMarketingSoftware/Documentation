@@ -5,7 +5,7 @@ Copernica om je meer inzicht te geven in de prestatie hiervan. Abuses zijn
 een van de statistieken die worden bijgehouden. 
 Je kan deze opvragen met een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v4/publisher/abuses?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/abuses`
 
 Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestamp** veld.

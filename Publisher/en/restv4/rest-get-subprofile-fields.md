@@ -3,7 +3,7 @@
 To request the fields from a subprofile you can send an HTTP GET
 request to the following URL:
 
-`https://api.copernica.com/v4/subprofile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$id/fields`
 
 The `$id` should be replaced with the numerical identifier of the subprofile 
 you're requesting the fields of.

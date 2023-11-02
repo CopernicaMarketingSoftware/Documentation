@@ -5,7 +5,7 @@ Copernica om je meer inzicht te geven in de prestatie hiervan. Errors zijn
 een van de statistieken die voor een mailing worden bijgehouden. 
 Je kan deze opvragen met een HTTP GET call naar de volgende URL:
 
-`https://api.copernica.com/v4/publisher/errors?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/errors`
 
 Deze methode ondersteunt ook het gebruik van de [fields parameter](./rest-fields-parameter) 
 voor het **timestamp** veld.

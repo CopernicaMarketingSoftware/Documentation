@@ -2,7 +2,7 @@
 
 Methode om coupons bij te werken of toe te voegen aan een campagne. Dit is een HTTP PUT-methode naar het volgende adres:
 
-`https://api.copernica.com/v4/couponcampaign/$couponcampaign/coupons?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaign/$couponcampaign/coupons`
 
 ## Beschikbare parameters
 

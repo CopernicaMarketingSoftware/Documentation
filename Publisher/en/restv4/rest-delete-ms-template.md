@@ -3,7 +3,7 @@
 When you send an HTTP DELETE request to the following URL, you’ll delete 
 a template:
 
-`https://api.copernica.com/v4/ms/template/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id`
 
 The `$id` needs to be replaced by the numerical identifier of the template
 that you want to remove.

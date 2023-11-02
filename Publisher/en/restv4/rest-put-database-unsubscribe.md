@@ -6,7 +6,7 @@ determines what happens with the profile: should it be edited or removed?
 To set this algorithm using an API call, make an HTTP PUT request to the 
 following URL:
 
-`https://api.copernica.com/v4/database/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/unsubscribe`
 
 In this, the variable `$id` has to be replaced by the numerical identifier 
 of the database you wish to set the unsubscribe behaviour for. The 

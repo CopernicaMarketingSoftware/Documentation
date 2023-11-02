@@ -4,7 +4,7 @@ Deze methode vraagt een lijst op van alle mailings verstuurd met Marketing Suite
 naar een specifiek profiel. 
 De methode maakt een HTTP call naar het volgende adres:
 
-`https://api.copernica.com/v4/profile/{$profileID}/ms/emailings?access_token=xxxx`
+`https://api.copernica.com/v4/profile/{$profileID}/ms/emailings`
 
 Vergeet niet hier `{$profileID}` te vervangen door de ID van het profiel 
 waarvoor je de mailings op wilt vragen.

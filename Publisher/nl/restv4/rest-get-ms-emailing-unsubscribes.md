@@ -5,7 +5,7 @@ Copernica om je meer inzicht te geven in de prestatie hiervan. Uitschrijvingen z
 een van de statistieken die worden bijgehouden. 
 Je kan de uitschrijvingen voor een specifieke emailing opvragen met een HTTP GET-call naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/emailing/{$emailingID}/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/{$emailingID}/unsubscribes`
 
 ## Parameters
 

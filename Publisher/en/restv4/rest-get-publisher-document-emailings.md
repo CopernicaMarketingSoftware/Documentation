@@ -3,7 +3,7 @@
 You can use the REST API to retrieve all emailings in which a document 
 was used with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/publisher/document/$id/emailings?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/document/$id/emailings`
 
 Where `$id` should be replaced with the ID of the document you want to retrieve 
 emailings for.

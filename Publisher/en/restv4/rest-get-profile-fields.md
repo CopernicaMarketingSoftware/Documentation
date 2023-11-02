@@ -3,7 +3,7 @@
 To request the fields from a profile you can send an HTTP GET
 request to the following URL:
 
-`https://api.copernica.com/v4/profile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/fields`
 
 The `$id` should be replaced with the numerical identifier of the profile 
 you're requesting the fields of.

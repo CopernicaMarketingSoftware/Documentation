@@ -3,7 +3,7 @@
 Je kunt het ingestelde uitschrijfgedrag van een subprofiel dat voldoet aan bepaalde criteria in een collectie
 uitvoeren door HTTP PUT request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/collection/$id/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/unsubscribes`
 
 De variabele `$id` moet vervangen worden door de numerieke identifier van de collectie waar je naar het subprofiel wilt zoeken waarvan het uitschrijfgedrag moet worden uitgevoerd.
 

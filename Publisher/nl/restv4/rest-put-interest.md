@@ -3,7 +3,7 @@
 Je kunt een interesse aanpassen door een HTTP PUT request te 
 sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/interest/$id/?access_token=xxxx`
+`https://api.copernica.com/v4/interest/$id/`
 
 De `$id` moet je vervangen door de numerieke identifier van de interesse die 
 je aan wil passen.

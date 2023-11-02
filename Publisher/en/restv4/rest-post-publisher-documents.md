@@ -3,7 +3,7 @@
 This method is used to create a new document with the REST API. It uses 
 an HTTP POST request to the following address:
 
-`https://api.copernica.com/v4/documents?access_token=xxxx`
+`https://api.copernica.com/v4/documents`
 
 After a successful call the ID of the created request is returned.
 

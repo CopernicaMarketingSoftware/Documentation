@@ -2,7 +2,7 @@
 
 Je kan de hyperlinks extensions van een e-mailing opvragen met een HTTP GET-call naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/emailing/$id/hyperlinkextensions?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/$id/hyperlinkextensions`
 
 Hier moet `$id` vervangen worden door de ID van de mailing. 
 

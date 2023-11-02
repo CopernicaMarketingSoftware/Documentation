@@ -3,7 +3,7 @@
 Je kunt de REST API gebruiken om een overzicht van een destination op te vragen 
 door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v4/ms/destination/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/destination/$id`
 
 Hier moet `$id` vervangen worden door de ID van de destination. Dit kan of 
 een numerieke ID zijn of een string van letters en getallen, deze wordt 

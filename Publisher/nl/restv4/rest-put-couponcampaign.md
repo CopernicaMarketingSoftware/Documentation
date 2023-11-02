@@ -2,7 +2,7 @@
 
 Methode om een nieuwe couponcampagne aan te maken. Dit is een HTTP PUT-methode naar het volgende adres:
 
-`https://api.copernica.com/v4/couponcampaign/$id?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaign/$id`
 
 ## Beschikbare parameters
 

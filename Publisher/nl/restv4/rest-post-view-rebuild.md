@@ -3,7 +3,7 @@
 De HTTP POST-methode om een selectie opnieuw op te bouwen 
 is beschikbaar op het volgende adres:
 
-`https://api.copernica.com/v4/view/$id/rebuild?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/rebuild`
 
 De `$id` moet hier vervangen worden door de unieke identifier van de selectie. 
 

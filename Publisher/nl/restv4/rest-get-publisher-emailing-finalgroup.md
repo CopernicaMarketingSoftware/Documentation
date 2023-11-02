@@ -3,7 +3,7 @@
 Je kunt de definitieve groep van een Publisher mailing opvragen door een HTTP GET request 
 te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/publisher/emailing/$id/finalgroup?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing/$id/finalgroup`
 
 Hier moet `$id` vervangen worden door de ID van de mailing.
 

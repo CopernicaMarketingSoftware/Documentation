@@ -3,7 +3,7 @@
 Methode om een nieuw template aan te maken. Dit is een HTTP POST-methode
 naar het volgende adres:
 
-`https://api.copernica.com/v4/publisher/templates?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/templates`
 
 ## Beschikbare parameters
 

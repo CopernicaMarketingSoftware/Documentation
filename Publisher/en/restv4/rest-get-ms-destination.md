@@ -3,7 +3,7 @@
 You can use the REST API to retrieve a summary of a destination with an HTTP 
 GET call to the following URL:
 
-`https://api.copernica.com/v4/ms/destination/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/destination/$id`
 
 Where `$id` should be replaced with the ID of the destination you want summarized. 
 This can either be a numerical ID or the hashed ID, which is a string 

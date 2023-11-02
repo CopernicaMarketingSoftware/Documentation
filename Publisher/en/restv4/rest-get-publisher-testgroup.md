@@ -3,7 +3,7 @@
 You can retrieve a test group from a Publisher mailing by sending an 
 HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/publisher/testgroup/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/testgroup/$id`
 
 Where the `$id` should be replaced with the ID of the testgroup.
 

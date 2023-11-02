@@ -3,7 +3,7 @@
 Dit is een methode om de eigenschappen van een bestaande regel aan te passen.
 Om deze uit te voeren kan er een HTTP PUT verzoek worden verstuurd naar de volgende URL:
 
-`https://api.copernica.com/v4/rule/$id?access_token=xxxx`
+`https://api.copernica.com/v4/rule/$id`
 
 De `$id` moet hier vervangen worden door de ID van de regel waarvan
 je de eigenschappen aan wilt passen.

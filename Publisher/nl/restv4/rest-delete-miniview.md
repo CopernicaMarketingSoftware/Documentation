@@ -2,7 +2,7 @@
 
 Een miniview kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/miniview/$id?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id`
 
 De `$id` hier moet vervangen worden door de ID van de selectie die je wilt verwijderen. 
 Let op dat je alleen de miniview verwijderd op deze manieren, 

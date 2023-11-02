@@ -2,7 +2,7 @@
 
 Een miniregel kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/minirule/$id?access_token=xxxx`
+`https://api.copernica.com/v4/minirule/$id`
 
 De `$id` moet vervangen worden door de ID van de miniregel die je wilt verwijderen.
 

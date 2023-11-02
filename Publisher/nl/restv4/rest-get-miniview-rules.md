@@ -4,7 +4,7 @@ Een miniview is voor een collectie wat een view/selectie is voor een database.
 Om de regels van zo'n miniview op te vragen kun je een HTTP GET verzoek 
 versturen naar de volgende URL:
 
-`https://api.copernica.com/v4/miniview/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/rules`
 
 De `$id` moet vervangen worden door de ID van de selectie van een collectie waarvoor je de regels op wilt vragen.
 

@@ -3,7 +3,7 @@
 A method to request a list of all mailings sent from Marketing Suite to a 
 specific subprofile. This is an HTTP GET call to the following address:
 
-`https://api.copernica.com/v4/subprofile/{$subprofileID}/ms/emailings?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/{$subprofileID}/ms/emailings`
 
 Don't forget to replace `{$subprofileID}` by the ID of the subprofile you 
 want to retrieve the emailings for.

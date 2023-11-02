@@ -13,7 +13,7 @@ identifier van het profiel waar je de interesses van opvraagt.
 Een lijst van namen van interesses kan opgevraagd worden door een HTTP 
 GET request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/interests`
 
 Deze call geeft simpelweg een lijst van namen van interesses terug. Je kunt 
 in je code deze gebruiken om te checken of een profiel een bepaalde interesse 
@@ -24,7 +24,7 @@ heeft, bijvoorbeeld.
 Een lijst van ID's van interesses kan opgevraagd worden door een HTTP 
 GET request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx&return=ids`
+`https://api.copernica.com/v4/profile/$id/interests&return=ids`
 
 Deze call geeft simpelweg een lijst van ID's van interesses terug. Deze 
 kun je ook gebruiken voor vergelijkingen of het opvragen van de interesses zelf.
@@ -34,7 +34,7 @@ kun je ook gebruiken voor vergelijkingen of het opvragen van de interesses zelf.
 Een lijst van JSON interesse objecten kan opgevraagd worden door een HTTP 
 GET request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx&return=objects`
+`https://api.copernica.com/v4/profile/$id/interests&return=objects`
 
 Elk object in de array heeft de volgende eigenschappen:
 

@@ -4,7 +4,7 @@ A method to request all metadata from a selection in a collection
 (miniview). This method does not support parameters. It is called by 
 sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v4/miniview/$id?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id`
 
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the collection you wish to request the miniselections for.

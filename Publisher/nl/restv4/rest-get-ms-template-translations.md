@@ -3,7 +3,7 @@
 Methode om vertaling van een template op te halen. Dit is een HTTP GET-methode
 naar het volgende adres:
 
-`https://api.copernica.com/v4/ms/templates/$id/translations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/templates/$id/translations`
 
 ## Beschikbare parameters
 

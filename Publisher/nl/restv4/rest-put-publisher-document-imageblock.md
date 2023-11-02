@@ -2,7 +2,7 @@
 
 Methode om een afbeeldingsblok bij te werken. Dit is een HTTP PUT-methode die toegankelijk is via het volgende adres:
 
-`https://api.copernica.com/v4/publisher/document/$id/imageblock/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/document/$id/imageblock/$id`
 
 De eerste variabele `$id` in de URL moet worden vervangen door de numerieke identifier
 van het document dat je wilt bewerken. De tweede variabele `$id` moet vervangen worden door de numerieke identifier van het afbeeldingsblok dat je wilt bewerken.

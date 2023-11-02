@@ -3,7 +3,7 @@
 You can retrieve the Marketing Suite destinations for a profile by 
 sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v4/profile/$id/ms/destinations?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/ms/destinations`
 
 Where the `$id` should be replaced with the ID of the profile. This method 
 also support the use of the [fields parameter](./rest-fields-parameter) 

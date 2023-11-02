@@ -3,7 +3,7 @@
 Methode om een selectie te kopiëren. Dit is een HTTP POST methode
 naar het volgende adres:
 
-`https://api.copernica.com/v4/view/$id/copy?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/copy`
 
 Hier moet de `$id` vervangen worden door de ID van de selectie die je 
 wil kopiëren. Als het verzoek succesvol wordt uitgevoerd geeft de methode 

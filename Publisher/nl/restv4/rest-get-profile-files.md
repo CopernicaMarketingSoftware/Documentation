@@ -3,7 +3,7 @@
 Profielen kunnen folders en subfolders bevatten met verschillende soorten bestanden. 
 Je kunt informatie hierover opvragen door een HTTP GET verzoek sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/profile/$id/files?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/files`
 
 De eerste `$id` moet vervangen worden met de ID van het profiel waar de 
 informatie van opgevraagd wordt.

@@ -2,7 +2,7 @@
 
 By sending an HTTP PUT request to the following URL it is possible to unsubscribe a (sub)profile based on a mailing:
 
-`https://api.copernica.com/v4/publisher/emailing/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing/$id/unsubscribe`
 
 ## Available parameters
 

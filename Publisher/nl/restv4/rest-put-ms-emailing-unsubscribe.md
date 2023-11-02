@@ -2,7 +2,7 @@
 
 Door een HTTP PUT-verzoek te sturen naar het volgende adres kun je een (sub)profiel uitschrijven op basis van een verzonden mailing:
 
-`https://api.copernica.com/v4/ms/emailing/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing/$id/unsubscribe`
 
 ## Beschikbare parameters
 

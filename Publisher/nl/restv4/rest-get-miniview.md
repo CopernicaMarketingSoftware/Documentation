@@ -4,7 +4,7 @@ Een methode om alle metadata van een selectie binnen een collectie op
 te vragen. Deze methode ondersteunt geen parameters en wordt aangeroepen 
 met een HTTP GET verzoek aan de volgende URL:
 
-`https://api.copernica.com/v4/miniview/$id?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id`
 
 De `$id` hier moet vervangen worden door de ID of de naam van de collectie 
 waarvoor je de selecties op wil vragen.

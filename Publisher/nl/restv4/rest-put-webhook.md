@@ -2,7 +2,7 @@
 
 Deze methode wordt gebruikt om een bestaande webhook bij te werken met de REST API. Door een HTTP PUT verzoek te sturen naar de volgende URL kun je de webhook bijwerken.
 
-`https://api.copernica.com/v4/webhook/$id?access_token=xxxx`
+`https://api.copernica.com/v4/webhook/$id`
 
 Hier moet `$id` vervangen worden door het ID van de webhook.
 

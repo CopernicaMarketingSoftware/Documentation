@@ -7,7 +7,7 @@ for more information on available logfiles. These logfiles can be downloaded wit
 the API. By sending an HTTP GET request to the following URL you will 
 get a list of all dates we have kept logfiles of.
 
-`https://api.copernica.com/v4/logfiles?access_token=xxxx`
+`https://api.copernica.com/v4/logfiles`
 
 ## Returned fields
 

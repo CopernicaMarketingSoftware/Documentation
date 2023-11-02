@@ -4,7 +4,7 @@ Als je alleen maar de ID's van de profielen in een selectie wilt opvragen,
 kan dat met een heel simpele methode. Je kunt een HTTP GET request sturen 
 naar het volgende adres:
 
-`https://api.copernica.com/v4/view/$id/profileids?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/profileids`
 
 De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de ID's van wilt opvragen.

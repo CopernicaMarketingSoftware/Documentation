@@ -3,7 +3,7 @@
 Je kunt de statistieken van een Publisher emailing document opvragen door een HTTP GET request 
 te sturen naar de volgende URL:
 
-`https://api.copernica.com/v4/publisher/document/$id/statistics?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/document/$id/statistics`
 
 Hier moet `$id` vervangen worden door de ID van het emailing document.
 
