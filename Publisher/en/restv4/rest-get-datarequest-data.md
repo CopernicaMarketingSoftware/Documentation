@@ -3,7 +3,7 @@
 You can request the data of your data request by sending an HTTP GET call 
 to the following URL:
 
-`https://api.copernica.com/v3/datarequest/$id/data?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id/data?access_token=xxxx`
 
 where `$id` is the request identifier of interest. You may first want to
 check if the data is available with the [data request status](/rest-get-datarequest-status).
@@ -32,7 +32,7 @@ If the data are not yet available, this returns in a 404.
 require_once('copernica_rest_api.php');
 
 // insert your access token here
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // get the status of the data request
 $api->get("datarequest/{$requestID}/data")

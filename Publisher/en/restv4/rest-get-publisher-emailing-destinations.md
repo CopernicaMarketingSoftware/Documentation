@@ -2,7 +2,7 @@
 
 You can retrieve the destinations for an emailing by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v3/publisher/emailing/$id/destinations?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing/$id/destinations?access_token=xxxx`
 
 Where the `$id` should be replaced with the ID of the emailing. This method 
 also support the use of the [fields parameter](./rest-fields-parameter) 
@@ -44,7 +44,7 @@ This script demonstrates how to use this API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call
 print_r($api->get("publisher/emailing/{$emailingID}/destinations/"));

@@ -6,7 +6,7 @@ determines what happens with the profile: should it be edited or removed?
 
 You can request your settings using the following URL:
 
-`https://api.copernica.com/v3/database/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/unsubscribe?access_token=xxxx`
 
 The `$id` should be replaced by the numerical identifier or the name of the database.
 
@@ -41,7 +41,7 @@ The following example demonstrates how to use the API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("collection/{$collectionID}/unsubscribe"));

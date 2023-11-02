@@ -2,7 +2,7 @@
 
 By sending an HTTP PUT request to the following URL it is possible to import data:
 
-`https://api.copernica.com/v3/imports?access_token=xxxx`
+`https://api.copernica.com/v4/imports?access_token=xxxx`
 
 ## Available parameters
 
@@ -63,7 +63,7 @@ The following PHP script demonstrates how to use this method.
 require_once('copernica_rest_api.php');
 
 // change this to your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(
@@ -114,7 +114,7 @@ The following example demonstrates how to use this method in combination with su
 require_once('copernica_rest_api.php');
 
 // change this to your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(

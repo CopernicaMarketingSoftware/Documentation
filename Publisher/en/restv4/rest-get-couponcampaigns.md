@@ -3,7 +3,7 @@
 A method to request a list of all coupon campaigns. 
 This is an HTTP GET call to the following address:
 
-`https://api.copernica.com/v3/couponcampaigns?access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaigns?access_token=xxxx`
 
 ## Returned fields
 
@@ -67,7 +67,7 @@ The following PHP scripts is an example of how to call this API method:
 require_once('copernica_rest_api.php');
     
 // change this to your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call and print the result.
 print_r($api->get("couponcampaigns"));

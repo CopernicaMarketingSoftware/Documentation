@@ -4,7 +4,7 @@ Je kunt makkelijk nagaan welke accountgegevens bij een bepaalde
 access token hoort. De onderstaande methode retourneert de 
 gegevens van een specifieke access token. 
 
-`https://api.copernica.com/v3/identity?access_token=xxxx`
+`https://api.copernica.com/v4/identity?access_token=xxxx`
 
 Deze methode is vooral handig als je een applicatie hebt gemaakt 
 die is gekoppeld aan veel verschillende accounts (bijvoorbeeld 
@@ -43,7 +43,7 @@ vanuit een PHP script:
 require_once("copernica_rest_api.php");
 
 // verander dit in je access code access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer de opdracht uit en print het resultaat
 print_r($api->get("identity"));

@@ -4,7 +4,7 @@ Als je de eigenschappen van een databaseveld wilt bijwerken, zoals de naam
 of het type van het veld, dan kun je dit doen door een HTTP PUT request naar
 de volgende URL te sturen:
 
-`https://api.copernica.com/v3/database/$id/field/$id?access_token=XXX`
+`https://api.copernica.com/v4/database/$id/field/$id?access_token=XXX`
 
 De eerste `$id` variabele in de URL moet worden vervangen door de numerieke 
 identifier of de naam van de database waarvan je een veld wilt bewerken. De
@@ -72,7 +72,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica-rest-api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor het verzoek:
 // selectieveld met naam "extra_veld", de opties A, B en C 

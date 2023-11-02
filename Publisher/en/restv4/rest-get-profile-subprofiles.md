@@ -4,7 +4,7 @@ Subprofiles are to a collection what regular profiles are to a database.
 To request the subprofiles that represent a certain profile in a certain
 collections you can send an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v3/profile/$id/subprofiles/$id?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/subprofiles/$id?access_token=xxxx`
 
 The first `$id` should be replaced with the numerical identifier of the profile 
 you're requesting the subprofiles of and the second `$id` should be replaced
@@ -51,7 +51,7 @@ The following PHP script demonstrates how to use the API method.
 require_once('copernica_rest_api.php');
   
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("profile/{$profileID}/subprofiles/{$collectionID}"));

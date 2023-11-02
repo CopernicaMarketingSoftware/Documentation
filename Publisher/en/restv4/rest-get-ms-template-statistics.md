@@ -2,7 +2,7 @@
 
 You can retrieve the statistics of a Marketing Suite template by sending an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v3/ms/template/$id/statistics?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id/statistics?access_token=xxxx`
 
 Where the `$id` should be replaced with the ID of the template.
 
@@ -75,7 +75,7 @@ This script demonstrates how to use this API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // set the period
 $data = array(

@@ -4,7 +4,7 @@ Wat selecties zijn voor een database, zijn miniselecties voor een collectie.
 Om op te vragen welke miniselecties er op een collectie beschikbaar zijn,
 kun je een HTTP GET request naar het volgende adres sturen:
 
-`https://api.copernica.com/v3/collection/$id/miniviews?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/miniviews?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de miniselecties van wilt opvragen.
@@ -63,7 +63,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit in je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de opvraag
 $parameters = array(

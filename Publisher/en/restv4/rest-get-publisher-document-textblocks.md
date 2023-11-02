@@ -3,7 +3,7 @@
 You can use the REST API to retrieve the text blocks of an emailing document 
 with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v3/publisher/document/$id/textblocks?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/document/$id/textblocks?access_token=xxxx`
 
 Where `$id` should be replaced with the ID of the emailing document.
 
@@ -41,7 +41,7 @@ to replace the ID in the URL before executing the call.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call
 print_r($api->get("publisher/document/{$documentID}/textblocks"));

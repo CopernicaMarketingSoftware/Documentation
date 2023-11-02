@@ -2,7 +2,7 @@
 
 Een miniconditie kan verwijderd worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/minicondition/$type/$id?access_token=xxxx`
+`https://api.copernica.com/v4/minicondition/$type/$id?access_token=xxxx`
 
 De `$type` en `$id` moeten vervangen worden door het type en de ID van de 
 miniconditie respectievelijk.
@@ -16,7 +16,7 @@ Het volgende voorbeeld demonstreert hoe je deze methode uitvoert in php:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 $api->delete("minicondition/{$miniconditieType}/{$miniconditieID}");

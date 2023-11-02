@@ -4,7 +4,7 @@ A scheduled mailing is a mailing that was scheduled. It can be send immediately
 or in the future, one or multiple times. You can use the REST API to retrieve 
 a summary of a scheduled mailing with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v3/ms/scheduledemailing/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/scheduledemailing/$id?access_token=xxxx`
 
 Where `$id` should be replaced with the ID of the mailing you want summarized.
 
@@ -77,7 +77,7 @@ to replace the ID in the URL before executing the call.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call
 print_r($api->get("ms/scheduledemailing/{$scheduledemailingID}", $parameters));

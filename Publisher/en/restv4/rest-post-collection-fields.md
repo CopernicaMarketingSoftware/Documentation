@@ -3,7 +3,7 @@
 Method to add a field to an existing collection. This is an HTTP 
 POST call to the following URL:
 
-`https://api.copernica.com/v3/collection/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/fields?access_token=xxxx`
 
 The `$id` should be replaced by the ID of the collection you want to add a
 field to. The name of the field and other values should be added to the 
@@ -67,7 +67,7 @@ The following PHP script demonstrates how to call the API method:
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to pass to the call
 $data = array(

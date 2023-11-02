@@ -6,7 +6,7 @@ are included in the selection. To retrieve the properties and the conditions of 
 single rule in a selection from a collection (miniview) you can send an 
 HTTP GET request to the following URL:
 
-`https://api.copernica.com/v3/miniview/$id/minirule/$id?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/minirule/$id?access_token=xxxx`
 
 The first `$id` code should be replaced with the numeric identifier of the 
 selection from which you want to retrieve a rule. The second `$id` parameter
@@ -63,7 +63,7 @@ selection 1234:
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("miniview/{$miniviewID}/minirule/{$ruleID}"));

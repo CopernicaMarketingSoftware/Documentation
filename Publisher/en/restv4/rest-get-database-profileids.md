@@ -3,7 +3,7 @@
 It’s very easy to request just the IDs of profiles in a database. 
 Just send an HTTP GET request to the following URL:
 
-`https://api.copernica.com/v3/database/$id/profileids?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profileids?access_token=xxxx`
 
 In this, `$id` should be replaced by the unique numerical identifier of 
 the database.
@@ -25,7 +25,7 @@ The following PHP script demonstrates how to use the API method.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("database/{$databaseID}/profileids"));

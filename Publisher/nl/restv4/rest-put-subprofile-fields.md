@@ -3,7 +3,7 @@
 Om de velden van een subprofiel bij te werken, moet je een HTTP PUT request
 sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/subprofile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$id/fields?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van het subprofiel 
 waarvan je de velden wilt veranderen. De nieuwe veldwaardes van het subprofiel
@@ -29,7 +29,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

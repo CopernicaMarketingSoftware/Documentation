@@ -3,7 +3,7 @@
 To add interests to a profile an HTTP post request can be sent to the 
 following URL:
 
-`https://api.copernica.com/v3/profile/$id/interests?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx`
 
 The `$id` should be replaced with the ID of the profile you want to change 
 the interests of. The new interests of the profile can be placed in the 
@@ -47,7 +47,7 @@ After this the interest "football" is added to the second profile.
 require_once('copernica_rest_api.php');
    
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to pass to the call, the new interests
 $data = array(

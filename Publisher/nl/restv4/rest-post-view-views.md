@@ -3,7 +3,7 @@
 Copernica ondersteund ook genestelde selecties. Om een genestelde selectie 
 aan te maken kan er een HTTP post request gestuurd worden naar de volgende URL:
 
-`https://api.copernica.com/v3/view/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/views?access_token=xxxx`
 
 De code `$id` moet hier vervangen worden door de ID of naam van de selectie.
 
@@ -34,7 +34,7 @@ De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de methode
 $data = array(

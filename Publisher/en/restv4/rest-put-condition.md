@@ -2,7 +2,7 @@
 
 A method to update a condition. It is called by sending an HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v3/condition/$type/$id?access_token=xxxx`
+`https://api.copernica.com/v4/condition/$type/$id?access_token=xxxx`
 
 The `$type` and `$id` need to be replaced by the type and the numerical 
 identifier of the condition respectively.
@@ -47,7 +47,7 @@ The following example demonstrates how to use this method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to pass to the call
 $data = array(

@@ -4,7 +4,7 @@ When you want to update the properties of a database field, like the
 name or the type, you can do so by sending an HTTP PUT request to the 
 following URL:
 
-`https://api.copernica.com/v3/database/$id/field/$id?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/field/$id?access_token=xxxx`
 
 In this, the first `$id` has to be replaced by the numerical ID or the 
 name of the database the field you want to edit is in. The second `$id` 
@@ -65,7 +65,7 @@ The following PHP script demonstrates how to use the API method:
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to pass to the call
 $data = array(

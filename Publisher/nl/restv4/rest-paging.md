@@ -45,8 +45,8 @@ beperking tot 1000 profielen kun je deze profielen niet allemaal tegelijk ophale
 je een aantal calls achter elkaar versturen:
 
 ```
-https://api.copernica.com/v3/database/X/profiles?start=0&limit=1000
-https://api.copernica.com/v3/database/X/profiles?start=1000&limit=1000
+https://api.copernica.com/v4/database/X/profiles?start=0&limit=1000
+https://api.copernica.com/v4/database/X/profiles?start=1000&limit=1000
 ```
 
 De eerste aanroep retourneert de eerste 1000 profielen. De tweede aanroep
@@ -66,7 +66,7 @@ API-call de property toch niet uitleest, dan kun je een extra parameter
 toevoegen om dit aan de REST API te laten weten. Dit maakt de call efficiënter:
 
 ```
-https://api.copernica.com/v3/database/X/profiles?start=0&limit=1000&total=false
+https://api.copernica.com/v4/database/X/profiles?start=0&limit=1000&total=false
 ```
 
 ### De 'nextid'-property
@@ -88,16 +88,16 @@ Inmiddels bieden we een elegantere manier om grote datasets op te vragen.
 
 ## Datastreams en grotere datasets
 
-Via het alternatieve endpoint https://rest.copernica.com/v3 (met een andere domeinnaam)
+Via het alternatieve endpoint https://rest.copernica.com/v4 (met een andere domeinnaam)
 kan _voor sommige methodes_ de beperking tot 1000 objecten per keer worden omzeild. In principe
-werken rest.copernica.com/v3 en api.copernica.com/v3 hetzelfde, maar voor een aantal methodes (met
-name methodes om profielen op te vragen) geldt dat rest.copernica.com/v3 limieten groter dan 1000 items ondersteunt:
+werken rest.copernica.com/v4 en api.copernica.com/v4 hetzelfde, maar voor een aantal methodes (met
+name methodes om profielen op te vragen) geldt dat rest.copernica.com/v4 limieten groter dan 1000 items ondersteunt:
 
 * De respons van dergelijke methodes wordt 'gestreamd'.
 * De HTTP-respons-header heeft dan geen 'content-length'-header (omdat de grootte van het resultaat van tevoren nog niet bekend is).
 * Daarvoor in de plaats is er een 'content-transfer-encoding: chunked'-header en wordt het antwoord in delen teruggestuurd.
 
-Als je gebruik maakt van het alternatieve rest.copernica.com/v3 endpoint,
+Als je gebruik maakt van het alternatieve rest.copernica.com/v4 endpoint,
 dan moet je API-koppeling overweg kunnen met twee soorten responses: (1) traditionele antwoorden
 met een content-length-header en (2) datastreams met een content-transfer-encoding-header.
 Meestal krijg je een traditioneel respons terug (met een content-length-header dus), maar ook 
@@ -111,9 +111,9 @@ kan worden aan het omzetten van de methode naar een streaming-implementatie.
 
 We zijn gaandeweg bezig met het omzetten van methodes van een traditionele 'content-length'-implementatie 
 naar de schaalbaardere 'content-transfer-encoding'-implementatie. Je dient er daarom rekening mee te houden 
-dat deze methodes (via rest.copernica.com/v3) data in de toekomst op een andere manier kunnen gaan terugsturen.
+dat deze methodes (via rest.copernica.com/v4) data in de toekomst op een andere manier kunnen gaan terugsturen.
 Methodes die vandaag nog werken met een content-length-header kunnen in de toekomst het resultaat 'chunked'
-gaan terugsturen. Indien je een koppeling maakt met rest.copernica.com/v3 is het daarom aan te raden om hier 
+gaan terugsturen. Indien je een koppeling maakt met rest.copernica.com/v4 is het daarom aan te raden om hier 
 nu al rekening mee te houden en je code compatible te houden met beide responses. Het is echter veiliger om 
-api.copernica.com/v3 te blijven gebruiken omdat daar sowieso geen streaming wordt toegepast.
+api.copernica.com/v4 te blijven gebruiken omdat daar sowieso geen streaming wordt toegepast.
 

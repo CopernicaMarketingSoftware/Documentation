@@ -6,7 +6,7 @@ een of meerdere keren verstuurd worden. Deze methode vraagt een lijst op
 van alle scheduled mailings verstuurd met de 
 Marketing Suite. De methode maakt een HTTP call naar het volgende adres:
 
-`https://api.copernica.com/v3/ms/scheduledemailings?access=token=xxxx`
+`https://api.copernica.com/v4/ms/scheduledemailings?access=token=xxxx`
 
 Je kunt de methode om alle Publisher emailings op te vragen [hier](./rest-get-publisher-emailings) vinden.
 
@@ -92,7 +92,7 @@ van speciale karakters; dit wordt automatisch afgehandeld.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters om aan de call mee te geven
 $parameters = array(

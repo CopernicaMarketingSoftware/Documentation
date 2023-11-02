@@ -3,7 +3,7 @@
 Method to change the properties of a collection. This method can be used by 
 sending an HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v3/collection/$id?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id?access_token=xxxx`
 
 The `$id` should be replaced with the ID of the collection that you want to 
 edit.
@@ -34,7 +34,7 @@ The following PHP script demonstrates how to call the API method:
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(

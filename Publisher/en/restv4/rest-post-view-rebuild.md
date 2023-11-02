@@ -3,7 +3,7 @@
 The HTTP POST call to rebuild a selection can be found at 
 the following address:
 
-`https://api.copernica.com/v3/view/$id/rebuild?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/rebuild?access_token=xxxx`
 
 The `$id` in the URL should be replaced by the unique identifier of the 
 view.
@@ -17,7 +17,7 @@ The following example demonstrates how to use this method.
 require_once('copernica_rest_api.php');
 
 // change this to your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 $api->post("view/{$viewID}/rebuild", $data);

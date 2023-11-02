@@ -8,7 +8,7 @@ voor meer informatie over de verschillende logfiles die beschikbaar zijn.
 Door een HTTP GET verzoek te sturen naar de volgende URL kun je een lijst 
 terugkrijgen van alle datums waarvoor logfiles zijn opgeslagen.
 
-`https://api.copernica.com/v3/logfiles?access_token=xxxx`
+`https://api.copernica.com/v4/logfiles?access_token=xxxx`
 
 ## Geretourneerde velden
 
@@ -25,7 +25,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen vanuit
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit en print het resultaat
 print_r($api->get("logfiles"));

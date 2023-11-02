@@ -4,7 +4,7 @@ You can start sending HTTP requests to the API endpoint after
 [registering your application](./rest-introduction). The address of the 
 endpoint is:
 
-`https://api.copernica.com/v3/path/to/resource?access_token=yourtoken`
+`https://api.copernica.com/v4/path/to/resource?access_token=yourtoken`
 
 Where "/path/to/resource" differs depending on the call you are executing. 
 You should also always add your access token to the call.

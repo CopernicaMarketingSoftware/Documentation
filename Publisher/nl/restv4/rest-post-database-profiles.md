@@ -3,7 +3,7 @@
 Als je een profiel wilt aanmaken, dien je een HTTP POST request te sturen
 naar de volgende URL.
 
-`https://api.copernica.com/v3/database/$id/profiles?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/profiles?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 database waar je het profiel in wilt opslaan. De veldwaardes van het profiel
@@ -53,7 +53,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // de velden voor het nieuwe profiel
 $fields = array(

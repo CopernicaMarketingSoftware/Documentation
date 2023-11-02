@@ -3,7 +3,7 @@
 You can execute the setup unsubscribe behavior of a profile in the collection
 of a database by sending an HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v3/profile/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/unsubscribe?access_token=xxxx`
 
 The variable `$id` should be replaced with the ID of the profile you want to unsubscribe.
 
@@ -21,7 +21,7 @@ The following PHP script demonstrates how the API method can be called.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // body data
 $data = array();

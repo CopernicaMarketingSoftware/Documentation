@@ -3,7 +3,7 @@
 If you want to modify multiple translations with a single call to the API, you
 can send a HTTP PUT request to the following URL:
 
-`https://api.copernica.com/v3/ms/template/$id/translations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id/translations?access_token=xxxx`
 
 The `$id` code should be replaced with the numeric identifier or the name
 of the master template in which you want to modify translations. The new values
@@ -24,7 +24,7 @@ To receive the unique IDs of the elements, you can use the [GET translations met
 
 The following JSON demonstrates how to use the API method:
 
-URL: `https://api.copernica.com/v3/ms/template/{$tempalteID}/translations?languages[]=de_DE&languages[]=nl_NL&access_token=xxx`
+URL: `https://api.copernica.com/v4/ms/template/{$tempalteID}/translations?languages[]=de_DE&languages[]=nl_NL&access_token=xxx`
 
 ```json
 {
@@ -46,7 +46,7 @@ The following PHP script demonstrates how to call the API method:
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to select the languages
 $parameters = array(

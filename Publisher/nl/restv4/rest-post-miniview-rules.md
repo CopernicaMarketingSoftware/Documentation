@@ -4,7 +4,7 @@ Deze methode voegt een regel toe aan een bestaande miniselectie van een collecti
 Om deze methode uit te voeren kan er een HTTP POST-verzoek verstuurd worden 
 naar de volgende URL:
 
-`https://api.copernica.com/v3/miniview/$id/rules?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id/rules?access_token=xxxx`
 
 De `$id` moet hier vervangen worden door de ID van de miniselectie waar een 
 regel aan toegevoegd moet worden. De naam van de regel moet toegevoegd worden aan de message body.
@@ -32,7 +32,7 @@ Het volgende PHP-script demonstreert hoe deze methode gebruikt kan worden:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

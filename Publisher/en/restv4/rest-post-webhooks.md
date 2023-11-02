@@ -3,7 +3,7 @@
 This method is used to create a new webhook with the REST API. It uses 
 an HTTP POST request to the following address:
 
-`https://api.copernica.com/v3/webhooks?access_token=xxxx`
+`https://api.copernica.com/v4/webhooks?access_token=xxxx`
 
 After a successful call the ID of the created webhook is returned.
 
@@ -49,7 +49,7 @@ The following PHP script demonstrates how to use the API method:
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(

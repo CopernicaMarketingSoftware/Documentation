@@ -7,7 +7,7 @@ for more information on available logfiles. These logfiles can be downloaded wit
 the API. By sending an HTTP GET request to the following URL you will 
 get a list of all dates we have kept logfiles of.
 
-`https://api.copernica.com/v3/logfiles?access_token=xxxx`
+`https://api.copernica.com/v4/logfiles?access_token=xxxx`
 
 ## Returned fields
 
@@ -23,7 +23,7 @@ The following PHP script demonstrates how to use the API method:
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("logfiles"));

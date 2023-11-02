@@ -3,7 +3,7 @@
 Om alleen de velden van een subprofiel op te vragen, kun je een HTTP GET
 request sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/subprofile/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$id/fields?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van het subprofiel
 dat je opvraagt.
@@ -21,7 +21,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("subprofile/{$subprofielID}/fields"));

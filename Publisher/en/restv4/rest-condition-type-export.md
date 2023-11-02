@@ -49,7 +49,7 @@ following values should be used:
 require_once("copernica_rest_api.php");
 
 // make a new api object with your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 $data = array(
     // select export condition

@@ -2,7 +2,7 @@
 
 Door een HTTP PUT-verzoek te sturen naar het volgende adres kun je een (sub)profiel uitschrijven op basis van een verzonden mailing:
 
-`https://api.copernica.com/v3/publisher/emailing/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/emailing/$id/unsubscribe?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -35,7 +35,7 @@ Het onderstaande PHP script laat zien hoe je deze API-methode kunt gebruiken.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters om mee te geven aan de call
 $parameters = array(

@@ -2,7 +2,7 @@
 
 Het verwijderen van een template kan gedaan worden door een HTTP DELETE verzoek te sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/ms/template/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id?access_token=xxxx`
 
 De `$id` hier moet vervangen worden door de id van het template dat je wilt verwijderen.
 
@@ -15,7 +15,7 @@ Het volgende voorbeeld demonstreert hoe je gebruik maakt van deze methode met de
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 $api->delete("ms/template/{$templateID}");

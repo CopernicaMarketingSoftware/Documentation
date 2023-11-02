@@ -7,7 +7,7 @@ deze instelling aan wat er in de collectie gebeurt.
 Om de instellingen hiervoor aan te passen kan er een HTTP PUT verzoek
 gedaan worden aan de volgende URL:
 
-`https://api.copernica.com/v3/collection/$id/unsubscribe?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/unsubscribe?access_token=xxxx`
 
 Hier moet de `$id` aangepast worden naar de ID van de collectie waar je
 de instellingen voor aan wilt passen. De nieuwe instellingen zelf moeten
@@ -51,7 +51,7 @@ te zorgen dat deze uitschrijvers geen e-mails meer ontvangen.
 require_once('copernica-rest-api.php');
 
 // verander dit naar je acces token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

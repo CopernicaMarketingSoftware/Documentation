@@ -3,7 +3,7 @@
 De methode om subprofielen uit een selectie op te vragen is een HTTP GET methode
 beschikbaar op het volgende adres:
 
-`https://api.copernica.com/v3/collection/$id/subprofiles?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/subprofiles?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de subprofielen van wilt opvragen. Deze methode kan traag zijn 
@@ -93,7 +93,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de methode
 $parameters = array(

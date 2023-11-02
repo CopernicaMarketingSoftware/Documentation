@@ -3,7 +3,7 @@
 Je kunt de REST API gebruiken om alle mailings die bij een emailing template 
 horen door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v3/publisher/template/$id/emailings?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/template/$id/emailings?access_token=xxxx`
 
 Hier moet `$id` vervangen worden door de ID van het template.
 
@@ -82,7 +82,7 @@ Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 print_r($api->get("publisher/template/{$templateID}/emailings"));

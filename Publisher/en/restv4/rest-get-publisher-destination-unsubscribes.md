@@ -4,7 +4,7 @@ You can retrieve the statistics per emailing destination just like you
 would retrieve the statistics of a mailing. You can 
 retrieve the unsubscribes for an emailing destination by sending an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v3/publisher/destination/$id/unsubscribes?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/destination/$id/unsubscribes?access_token=xxxx`
 
 Where the `$id` should be replaced with the ID of the emailing destination. This method 
 also support the use of the [fields parameter](./rest-fields-parameter) 
@@ -50,7 +50,7 @@ This script demonstrates how to use this API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // set the period
 $parameters = array(

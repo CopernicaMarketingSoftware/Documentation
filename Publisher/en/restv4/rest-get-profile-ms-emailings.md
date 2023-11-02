@@ -3,7 +3,7 @@
 A method to request a list of all mailings sent from Marketing Suite to a 
 specific profile. This is an HTTP GET call to the following address:
 
-`https://api.copernica.com/v3/profile/{$profileID}/ms/emailings?access_token=xxxx`
+`https://api.copernica.com/v4/profile/{$profileID}/ms/emailings?access_token=xxxx`
 
 Don't forget to replace `{$profileID}` by the ID of the profile you 
 want to retrieve the emailings for.
@@ -72,7 +72,7 @@ in the URL; it is done automatically.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("profile/{$profileID}/ms/emailings", array()));

@@ -3,7 +3,7 @@
 Als je een HTTP DELETE request stuurt naar de volgende URL, verwijder je een 
 veld uit een database:
 
-`https://api.copernica.com/v3/database/$id/field/$id?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/field/$id?access_token=xxxx`
 
 De eerste `$id` variabele moet je vervangen door de numerieke identifier of de naam
 van de database. De tweede `$id` moet vervangen worden door het ID of de naam van het veld dat je wilt
@@ -16,7 +16,7 @@ verwijderen.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 $api->delete("database/{$databaseID}/field/{$veldID}");

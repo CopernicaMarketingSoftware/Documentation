@@ -3,7 +3,7 @@
 You can send an HTTP DELETE request to the following address to delete an 
 interest:
 
-`https://api.copernica.com/v3/interest/$id?access_token=xxxx`
+`https://api.copernica.com/v4/interest/$id?access_token=xxxx`
 
 The `$id` needs to be replaced by the numerical identifier of the interest
 that you want to remove.
@@ -17,7 +17,7 @@ The following example demonstrates how to make a call using this method.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // execute the call
 $api->delete("interest/{$interestID}");

@@ -6,7 +6,7 @@ een of meerdere keren verstuurd worden. Deze methode vraagt een scheduled
 mailing verstuurd voor de Publisher op. De methode maakt een HTTP call 
 naar het volgende adres:
 
-`https://api.copernica.com/v3/ms/scheduledemailing/$id?access_token=xxxx`
+`https://api.copernica.com/v4/ms/scheduledemailing/$id?access_token=xxxx`
 
 Je kunt de methode om alle Publisher scheduled emailings op te vragen 
 [hier](./rest-get-publisher-scheduledemailings) vinden.
@@ -88,7 +88,7 @@ van speciale karakters; dit wordt automatisch afgehandeld.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit en print het resultaat
 print_r($api->get("publisher/scheduledemailing/{$emailingID}"));

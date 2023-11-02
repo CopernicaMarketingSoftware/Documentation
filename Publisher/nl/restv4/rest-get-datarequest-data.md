@@ -3,7 +3,7 @@
 De data van een data verzoek kun je opvragen door een HTTP GET request 
 sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/datarequest/$id/data?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id/data?access_token=xxxx`
 
 Waar **$id** de ID van van het betreffende dataverzoek is. Je kan eerst 
 controleren of de data wel beschikbaar zijn via de 
@@ -33,7 +33,7 @@ Als de data nog niet beschikbaar zijn wordt een 404 geretourneerd.
 require_once('copernica_rest_api.php');
 
 // insert your access token here
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // get the status of the data request
 $api->get("datarequest/{$verzoekID}/data")

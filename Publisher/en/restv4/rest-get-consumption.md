@@ -3,7 +3,7 @@ This method can be used if you want to retrieve the account-wide consumption
 statistics. These consist of counters of various services, such as the number 
 of emails or api calls sent. By sending a GET request to the following URL,
 you can fetch the account-wide consumption statistics:
-`https://api.copernica.com/v3/consumption?access_token=xxxx`
+`https://api.copernica.com/v4/consumption?access_token=xxxx`
 
 ## Parameters
 The following parameters are **required**:
@@ -26,7 +26,7 @@ The following PHP script calls this API method:
 // dependencies
 require_once('copernica_rest_api.php');
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 // set the required parameters
 $parameters = array(
     'begin'  => "2020-06-01",

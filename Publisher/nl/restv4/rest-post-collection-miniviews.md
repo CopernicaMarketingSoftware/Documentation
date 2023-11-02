@@ -3,7 +3,7 @@
 Om een nieuwe selectie aan te maken, moet je een HTTP POST-request sturen
 naar de volgende URL. De selectie wordt dan direct onder de collectie aangemaakt.
 
-`https://api.copernica.com/v3/collection/$id/miniviews?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/miniviews?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier of de naam van de 
 collectie waar je een selectie aan wilt toevoegen. De naam van de selectie moet
@@ -37,7 +37,7 @@ Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

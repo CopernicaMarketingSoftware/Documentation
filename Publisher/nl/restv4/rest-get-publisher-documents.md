@@ -3,7 +3,7 @@
 Je kunt de REST API gebruiken om een overzicht van alle emailing documents op te vragen 
 door een HTTP GET verzoek te versturen naar de volgende URL:
 
-`https://api.copernica.com/v3/publisher/documents?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/documents?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -59,7 +59,7 @@ Het onderstaande script demonstreert hoe je deze API methode gebruikt.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor het verzoek (sluit gearchiveerde documenten uit)
 $params = array(

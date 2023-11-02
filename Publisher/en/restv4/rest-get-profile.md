@@ -4,7 +4,7 @@ This is a simple method to request all information from a profile given
 its ID. The profile information can be requested with an HTTP GET call to the
 following URL:
 
-`https://api.copernica.com/v3/profile/$id?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id?access_token=xxxx`
 
 The `$id` should be replaced with the numerical identifier of the profile you're
 requesting the information of.
@@ -55,7 +55,7 @@ The following PHP script demonstrates how to call the API method.
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("profile/{$profileID}"));

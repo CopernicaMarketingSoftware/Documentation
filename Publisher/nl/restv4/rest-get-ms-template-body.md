@@ -3,7 +3,7 @@
 Als je de inhoud van een template gemaakt met de Marketing Suite wil 
 opvragen kun je een GET request sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/ms/template/$id/body/$type?access_token=xxxx`
+`https://api.copernica.com/v4/ms/template/$id/body/$type?access_token=xxxx`
 
 De `$id` is hier de ID van de template en `$type` het formaat waarin je 
 de inhoud op wilt vragen. Deze methode kan niet aangeroepen worden met 
@@ -31,7 +31,7 @@ Vergeet niet de ID in de URL te vervangen voor je het verzoek uitvoert.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 print_r($api->get("ms/template/{$templateID}/body/mime"));

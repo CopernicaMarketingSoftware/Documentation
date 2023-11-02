@@ -5,7 +5,7 @@ accepted messages, etc. These logfiles can be downloaded with the API.
 By sending an HTTP GET request to the following URL you will get a list of
 all log files for a particular date.
 
-`https://api.copernica.com/v3/logfiles?access_token=xxxx&date=$date&type=$type`
+`https://api.copernica.com/v4/logfiles?access_token=xxxx&date=$date&type=$type`
 
 In the URL you can add the `$date` parameter to search for logfiles for a 
 specific date. You can also add `$type` to specify a specific type of 
@@ -50,7 +50,7 @@ to substitute the date in the URL (YYYY-MM-DD format).
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // the array used to specify the date and/or type
 $parameters = array(

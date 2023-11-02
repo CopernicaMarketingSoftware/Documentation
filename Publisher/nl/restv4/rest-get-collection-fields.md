@@ -4,7 +4,7 @@ Een collectie is een geneste tweede laag bij een database. Een collectie
 heeft dus ook velden. Om deze velden op te vragen kun je een HTTP GET request
 sturen naar het volgende adres:
 
-`https://api.copernica.com/v3/collection/$id/fields?access_token=xxxx`
+`https://api.copernica.com/v4/collection/$id/fields?access_token=xxxx`
 
 De code `$id` moet je vervangen door de numerieke identifier van de 
 collectie waar je de velden van wilt opvragen.
@@ -38,7 +38,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit in je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters om mee te geven
 $parameters = array(

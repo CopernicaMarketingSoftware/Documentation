@@ -3,7 +3,7 @@
 Een methode om een miniconditie aan te passen.
 Je kunt de methode aanroepen met een HTTP PUT-request naar de volgende URL:
 
-`https://api.copernica.com/v3/minicondition/$type/$id?access_token=xxxx`
+`https://api.copernica.com/v4/minicondition/$type/$id?access_token=xxxx`
 
 De `$type` en`$id` moeten hier vervangen worden door het type en de ID 
 van de miniconditie respectievelijk.
@@ -41,7 +41,7 @@ Het volgende PHP script demonstreert hoe de API-methode te gebruiken is.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de methode
 $data = array(

@@ -3,7 +3,7 @@
 Dit is een methode om gegevens van een template op te vragen. 
 De methode is aan te roepen met een HTTP GET-request naar de volgende URL:
 
-`https://api.copernica.com/v3/publisher/template/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/template/$id?access_token=xxxx`
 
 Als `$id` kun je de numerieke identifier van een template opgeven.
 
@@ -20,7 +20,7 @@ Als `$id` kun je de numerieke identifier van een template opgeven.
                                                                               
 Om de HTML-broncode op te halen kun je `source=true` toevoegen aan de URL:
 
-``https://api.copernica.com/v3/publisher/template/$id?source=true&access_token=xxxx``
+``https://api.copernica.com/v4/publisher/template/$id?source=true&access_token=xxxx``
 
 ### JSON voorbeeld
 
@@ -47,7 +47,7 @@ Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
 require_once("copernica_rest_api.php");
 
 // verander dit in je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer de opdracht uit en print het resultaat
 print_r($api->get("template/{$templateID}"));

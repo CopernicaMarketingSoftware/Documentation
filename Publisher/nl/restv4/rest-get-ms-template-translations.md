@@ -3,7 +3,7 @@
 Methode om vertaling van een template op te halen. Dit is een HTTP GET-methode
 naar het volgende adres:
 
-`https://api.copernica.com/v3/ms/templates/$id/translations?access_token=xxxx`
+`https://api.copernica.com/v4/ms/templates/$id/translations?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -23,7 +23,7 @@ Het volgende PHP-script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit in je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters om mee te geven
 $parameters = array(

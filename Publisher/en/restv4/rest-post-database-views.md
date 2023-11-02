@@ -4,7 +4,7 @@ In order to create a new selection using the REST API, you need to send
 an HTTP POST request to the following URL. The selection will then be 
 created, nested underneath the database.
 
-`https://api.copernica.com/v3/database/$id/views?access_token=xxxx`
+`https://api.copernica.com/v4/database/$id/views?access_token=xxxx`
 
 In this, `$id` should be replaced by the numerical identifier, the ID, of 
 the database you want to add a selection to. The name of the selection 
@@ -38,7 +38,7 @@ The following PHP example demonstrates how to use the API method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to pass to the call
 $data = array(

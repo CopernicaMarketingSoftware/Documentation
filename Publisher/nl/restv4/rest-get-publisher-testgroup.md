@@ -3,7 +3,7 @@
 Je kunt een testgroep van een Publisher mailing opvragen door een HTTP GET request 
 te sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/publisher/testgroup/$id?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/testgroup/$id?access_token=xxxx`
 
 Hier moet `$id` vervangen worden door de ID van de testgroep.
 
@@ -43,7 +43,7 @@ Het volgende script demonstreert hoe je deze API methode kunt gebruiken:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit
 print_r($api->get("publisher/testgroup/{$testgroupID}/"));

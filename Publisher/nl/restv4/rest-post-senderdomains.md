@@ -2,7 +2,7 @@
 
 Deze methode wordt gebruikt om een senderdomain aan te maken met de REST API. Je doet dit door een HTTP POST verzoek te sturen naar de volgende URL.
 
-`https://api.copernica.com/v3/senderdomains?access_token=xxxx`
+`https://api.copernica.com/v4/senderdomains?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -33,7 +33,7 @@ Het onderstaande PHP script demonstreert hoe je deze API methode gebruikt. Verge
 require_once("copernica_rest_api.php");
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data
 $data = array(

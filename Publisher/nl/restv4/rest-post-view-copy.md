@@ -3,7 +3,7 @@
 Methode om een selectie te kopiëren. Dit is een HTTP POST methode
 naar het volgende adres:
 
-`https://api.copernica.com/v3/view/$id/copy?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id/copy?access_token=xxxx`
 
 Hier moet de `$id` vervangen worden door de ID van de selectie die je 
 wil kopiëren. Als het verzoek succesvol wordt uitgevoerd geeft de methode 
@@ -44,7 +44,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once('copernica-rest-api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // stel de opties voor de kopie in
 $options = array(

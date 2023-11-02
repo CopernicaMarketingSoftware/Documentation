@@ -4,7 +4,7 @@ Je kunt alle informatie omtrent databases opvragen
 met de onderstaande methode. Dit is een HTTP GET 
 call naar het volgende adres:
 
-`https://api.copernica.com/v3/databases?access_token=xxxx`
+`https://api.copernica.com/v4/databases?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -127,7 +127,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen:
 require_once("copernica_rest_api.php");
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de methode
 $parameters = array(

@@ -2,7 +2,7 @@
 
 Dit is een methode om de eigenschappen van een bestaand subprofiel aan te passen. Het kan aangeroepen worden met een HTTP PUT verzoek naar de volgende URL:
 
-`https://api.copernica.com/v3/subprofile/$id?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$id?access_token=xxxx`
 
 De `$id` moet hier vervangen worden door de ID van het subprofiel waarvan je de eigenschappen aan wilt passen.
 
@@ -22,7 +22,7 @@ Het volgende PHP voorbeeld laat zien hoe je deze API methode gebruikt:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

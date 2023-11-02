@@ -4,7 +4,7 @@ A scheduled mailing is a mailing that was scheduled. It can be send immediately
 or in the future, one or multiple times. You can use the REST API to send 
 a scheduled mailing with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v3/ms/scheduledemailing/?access_token=xxxx`
+`https://api.copernica.com/v4/ms/scheduledemailing/?access_token=xxxx`
 
 ## Parameters
 
@@ -48,7 +48,7 @@ to replace the ID in the URL before executing the call.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // set the data for the call
 $data = array(

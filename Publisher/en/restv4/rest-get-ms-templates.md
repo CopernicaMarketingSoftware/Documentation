@@ -3,7 +3,7 @@
 You can use the REST API to retrieve all emailing templates for an account 
 with an HTTP GET call to the following URL:
 
-`https://api.copernica.com/v3/ms/templates?access_token=xxxx`
+`https://api.copernica.com/v4/ms/templates?access_token=xxxx`
 
 ## Available parameters
 
@@ -53,7 +53,7 @@ The script below demonstrates how to use this API method.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters for the call (only retrieve JSON templates)
 $params = array(

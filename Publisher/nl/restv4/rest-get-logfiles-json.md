@@ -6,7 +6,7 @@ bestand met de bestandsnaam. Instructies voor het opvragen van een bestandsnaam
 kun je vinden onder het kopje "Meer informatie". Om deze methode uit te voeren kun je een HTTP GET 
 verzoek sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/logfile/$bestandsnaam/json?access_token=xxxx`
+`https://api.copernica.com/v4/logfile/$bestandsnaam/json?access_token=xxxx`
 
 Hier moet je `$bestandsnaam` vervangen door de bestandsnaam.
 
@@ -60,7 +60,7 @@ te vragen.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer het verzoek uit en print het resultaat
 print_r($api->get("logfile/{$bestandsnaam}/json"));

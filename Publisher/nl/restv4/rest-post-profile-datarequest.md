@@ -12,7 +12,7 @@ verzoek en de unieke ID die deze methode retourneert.
 Voor het indienen van een data verzoek kun je een HTTP POST verzoek sturen 
 naar de volgende URL:
 
-`https://api.copernica.com/v3/profile/$id/datarequest?access_token=xxx`
+`https://api.copernica.com/v4/profile/$id/datarequest?access_token=xxx`
 
 De code `$id` kun je hier vervangen door het ID van het profiel waarvoor je 
 het verzoek wil indienen.
@@ -36,7 +36,7 @@ Het resultaat van deze POST call is een uniek ID. Met dit ID kan je controleren
 of de data beschikbaar is en indien dit het geval is ook opvragen. Dit
 kan je doen door een HTTP GET verzoek te sturen naar de volgende URL
 
-`https://api.copernica.com/v3/datarequest/$id?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id?access_token=xxxx`
 
 The code `$id` moet je vervangen door de unieke ID die je via het POST verzoek
 hebt gekregen. Let erop dat dit bestand uiteindelijk verloopt.
@@ -60,7 +60,7 @@ De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data om aan de methode mee te geven
 $data = array(

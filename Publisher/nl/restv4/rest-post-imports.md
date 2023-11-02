@@ -2,7 +2,7 @@
 
 Je kunt een import starten door een HTTP PUT-request te sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/imports?access_token=xxxx`
+`https://api.copernica.com/v4/imports?access_token=xxxx`
 
 ## Beschikbare parameters
 
@@ -63,7 +63,7 @@ Het volgende PHP script demonstreert hoe je de API-methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(
@@ -113,7 +113,7 @@ Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen in com
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

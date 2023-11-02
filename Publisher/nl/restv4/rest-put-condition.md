@@ -3,7 +3,7 @@
 Een methode om een conditie aan te passen.
 Je kunt de method aanroepen met een HTTP PUT request naar de volgende URL:
 
-`https://api.copernica.com/v3/condition/$type/$id?access_token=xxxx`
+`https://api.copernica.com/v4/condition/$type/$id?access_token=xxxx`
 
 De `$type` en`$id` moeten hier vervangen worden door het type en de ID 
 van de conditie respectievelijk.
@@ -48,7 +48,7 @@ Het volgende PHP script demonstreert hoe de API method te gebruiken is.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor de methode
 $data = array(

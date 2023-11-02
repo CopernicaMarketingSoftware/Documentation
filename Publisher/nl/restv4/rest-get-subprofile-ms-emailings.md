@@ -4,7 +4,7 @@ Deze methode vraagt een lijst op van alle mailings verstuurd met Marketing Suite
 naar een specifiek subprofiel. 
 De methode maakt een HTTP call naar het volgende adres:
 
-`https://api.copernica.com/v3/subprofile/{$subprofileID}/ms/emailings?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/{$subprofileID}/ms/emailings?access_token=xxxx`
 
 Vergeet niet hier `{$subprofileID}` te vervangen door de ID van het subrofiel 
 waarvoor je de mailings op wilt vragen.
@@ -51,7 +51,7 @@ van speciale karakters; dit wordt automatisch afgehandeld.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters om aan de call mee te geven
 $parameters = array(

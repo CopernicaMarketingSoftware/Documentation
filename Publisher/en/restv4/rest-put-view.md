@@ -3,7 +3,7 @@
 A method to edit a selection from a database. It is called using the 
 following URL:
 
-`https://api.copernica.com/v3/view/$id?access_token=xxxx`
+`https://api.copernica.com/v4/view/$id?access_token=xxxx`
 
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the database you wish to create the selections for.
@@ -36,7 +36,7 @@ The following PHP example demonstrates how to use this method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(

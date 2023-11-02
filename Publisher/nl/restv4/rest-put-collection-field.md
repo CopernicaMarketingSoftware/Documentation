@@ -3,7 +3,7 @@
 Methode om een bepaald veld in een collectie aan te passen.
 Om deze methode uit te voeren kun je een HTTP PUT verzoek sturen aan de volgende URL:
 
-`https://api.copernica/com/v3/collection/$id/field/$id?access_token=xxxx`
+`https://api.copernica/com/v4/collection/$id/field/$id?access_token=xxxx`
 
 De eerste `$id` is de collectie waarvan je het veld aan wilt passen en
 de tweede `$id` is de ID van het veld dat je aan wilt passen.
@@ -50,7 +50,7 @@ Het volgende PHP script demonstreert hoe deze methode gebruikt kan worden.
 require_once('copernica-rest-api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(

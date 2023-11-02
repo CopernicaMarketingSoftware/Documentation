@@ -1,12 +1,12 @@
 # REST API: GET data request status
 
 Warning: You are viewing the documentation for the old REST API. We recommend 
-using [version 2](../restv3/rest-api.md) of the REST API.
+using [version 2](../restv4/rest-api.md) of the REST API.
 
 You can get the status of your data request by sending an HTTP GET request 
 to the following URL:
 
-`https://api.copernica.com/v3/datarequest/$id/status?access_token=xxxx`
+`https://api.copernica.com/v4/datarequest/$id/status?access_token=xxxx`
 
 where `$id` is the request identifier of interest.
 
@@ -38,7 +38,7 @@ Example:
 require_once('copernica_rest_api.php');
 
 // insert your access token here
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // get the status of the data request (don't forget the id)
 $api->get("datarequest/{$requestID}/status")

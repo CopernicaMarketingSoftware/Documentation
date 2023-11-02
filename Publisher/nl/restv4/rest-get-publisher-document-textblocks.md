@@ -3,7 +3,7 @@
 Dit is een methode om de tekstblokken van een document op te vragen. 
 De methode is aan te roepen met een HTTP GET-request naar de volgende URL:
 
-`https://api.copernica.com/v3/publisher/document/$id/textblocks?access_token=xxxx`
+`https://api.copernica.com/v4/publisher/document/$id/textblocks?access_token=xxxx`
 
 Als `$id` kun je de numerieke identifier van een document opgeven.
 
@@ -42,7 +42,7 @@ Het volgende PHP-script demonstreert hoe je de API-methode kunt aanroepen:
 require_once("copernica_rest_api.php");
 
 // verander dit in je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer de opdracht uit en print het resultaat
 print_r($api->get("publisher/document/{$documentID}/textblocks"));

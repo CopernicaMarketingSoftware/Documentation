@@ -3,7 +3,7 @@
 A method to add a condition for a minirule. It is called by sending an 
 HTTP POST request to the following URL:
 
-`https://api.copernica.com/v3/minirule/$id/conditions?access_token=xxxx`
+`https://api.copernica.com/v4/minirule/$id/conditions?access_token=xxxx`
 
 In this, `$id` needs to be replaced by the numerical identifier or the 
 name of the minirule you wish to edit the conditions of. After a successful 
@@ -53,7 +53,7 @@ The following example demonstrates how to use this method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to pass to the call
 $data = array(

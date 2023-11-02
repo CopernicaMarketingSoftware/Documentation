@@ -4,7 +4,7 @@ Een miniview is voor een collectie wat een selectie is voor een database.
 Om een miniview aan te passen kan er een HTTP PUT verzoek verstuurd worden
 naar de volgende URL:
 
-`https://api.copernica.com/v3/miniview/$id?access_token=xxxx`
+`https://api.copernica.com/v4/miniview/$id?access_token=xxxx`
 
 De `$id` is de ID van de miniview die je aan wilt passen.
 
@@ -33,7 +33,7 @@ Het volgende voorbeeld demonstreert hoe de methode gebruikt kan worden:
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data voor de methode
 $data = array(

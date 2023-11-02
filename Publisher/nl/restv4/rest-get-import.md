@@ -3,7 +3,7 @@
 Als je de numerieke identifier van een import weet, dan kun je met een HTTP GET-request de
 gegevens van de import ophalen:
 
-`https://api.copernica.com/v3/import/$id?access_token=xxxx`
+`https://api.copernica.com/v4/import/$id?access_token=xxxx`
 
 Als `$id` moet je de numerieke identifier van de import opgeven.
 
@@ -50,7 +50,7 @@ Het volgende PHP script demonstreert hoe je de API-methode kunt aanroepen:
 require_once('copernica_rest_api.php');
 
 // verander dit in je access code access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // voer de opdracht uit en print het resultaat
 print_r($api->get("import/{$importID}"));

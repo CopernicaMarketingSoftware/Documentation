@@ -1,7 +1,7 @@
 # REST API: GET profile interests
 
 Warning: You are viewing the documentation for the old REST API. We recommend 
-using [version 2](../restv3/rest-api.md) of the REST API.
+using [version 2](../restv4/rest-api.md) of the REST API.
 
 There are several different ways to request the interests of a profile. 
 Which method is best depends on how you want to use it. You can request 
@@ -15,7 +15,7 @@ identifier of the profile you're requesting the interests of.
 A list of interest names can be requested by sending an HTTP GET request 
 to the following URL:
 
-`https://api.copernica.com/v3/profile/$id/interests?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx`
 
 The call returns a simple list of the names of interests. You could 
 use this in code to check if a user has a certain interest.
@@ -25,7 +25,7 @@ use this in code to check if a user has a certain interest.
 A list of interest ID's can be requested by sending an HTTP GET request 
 to the following URL:
 
-`https://api.copernica.com/v3/profile/$id/interests?access_token=xxxx&return=ids`
+`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx&return=ids`
 
 The call returns a simple list of the ID's of interests. You could use this 
 to request the interests themselves.
@@ -35,7 +35,7 @@ to request the interests themselves.
 A list of JSON interest objects can be requested by sending an HTTP GET request 
 to the following URL:
 
-`https://api.copernica.com/v3/profile/$id/interests?access_token=xxxx&return=objects`
+`https://api.copernica.com/v4/profile/$id/interests?access_token=xxxx&return=objects`
 
 Each returned object in the array has the following properties:
 
@@ -52,7 +52,7 @@ The following PHP script demonstrates how to use the API method.
 require_once('copernica_rest_api.php');
     
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // do the call, and print result
 print_r($api->get("profile/{profileID}/interests"));

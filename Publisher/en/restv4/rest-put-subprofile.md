@@ -3,7 +3,7 @@
 A method to edit the properties of an existing subprofile. It is called 
 using the following URL:
 
-`https://api.copernica.com/v3/subprofile/$id?access_token=xxxx`
+`https://api.copernica.com/v4/subprofile/$id?access_token=xxxx`
 
 The `$id` needs to be replaced with the ID of the subprofile you want to 
 edit the properties of.
@@ -25,7 +25,7 @@ The following example demonstrates how to use this method:
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data to be sent to the api
 $data = array(

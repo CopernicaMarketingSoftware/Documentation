@@ -3,7 +3,7 @@
 You can update an interest by sending an HTTP PUT request 
 to the following URL:
 
-`https://api.copernica.com/v3/interest/$id/?access_token=xxxx`
+`https://api.copernica.com/v4/interest/$id/?access_token=xxxx`
 
 Replace the `$id` by the ID of the interest that you want to update.
 
@@ -35,7 +35,7 @@ The following PHP script demonstrates how to use this API method:
 require_once('copernica_rest_api.php');
 
 // change this to your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // data for the method
 $data = array(

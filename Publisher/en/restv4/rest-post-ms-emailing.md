@@ -4,7 +4,7 @@ You can post a Marketing Suite mailing with our REST API if you have
 already completed a template and prepared your database. To send a new
 mailing you send an HTTP POST request to the following URL:
 
-`https://api.copernica.com/v3/ms/emailing?access_token=xxxx`
+`https://api.copernica.com/v4/ms/emailing?access_token=xxxx`
 
 ## Available parameters
 
@@ -42,7 +42,7 @@ forget to substitute the parameters for your own target and template.
 require_once('copernica_rest_api.php');
 
 // change this into your access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters to pass to the call
 $parameters = array(

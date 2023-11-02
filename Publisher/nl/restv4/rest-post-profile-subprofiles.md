@@ -3,7 +3,7 @@
 Om een subprofile aan een profiel in een bepaalde collectie toe te voegen,
 kun je een HTTP POST request sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/profile/$id/subprofiles/$id?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/subprofiles/$id?access_token=xxxx`
 
 De eerste `$id` moet vervangen worden door de numerieke identifier van het profiel
 waaraan je een subprofiel wil toevoegen en de tweede `$id` moet vervangen worden
@@ -34,7 +34,7 @@ Het volgende PHP script demonstreert hoe je de API methode kunt aanroepen.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // velden voor het nieuwe subprofiel
 $data = array(

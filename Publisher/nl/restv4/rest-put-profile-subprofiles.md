@@ -3,7 +3,7 @@
 Je kunt een subprofiel bewerken door een HTTP PUT request sturen naar de volgende 
 URL:
 
-`https://api.copernica.com/v3/profile/$id/subprofiles/$id?access_token=xxxx`
+`https://api.copernica.com/v4/profile/$id/subprofiles/$id?access_token=xxxx`
 
 De eerste `$id` moet vervangen worden door de numerieke identifier van het
 profiel waaraan de subprofielen gekoppeld zijn. De tweede `$id` moet vervangen
@@ -43,7 +43,7 @@ worden meegegeven in de body.
 De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
 URL voorbeeld:  
-`https://api.copernica.com/v3/profile/$profileID/subprofiles/$collectionID?fields[]=customerid==4567@example.com&create=1&access_token=xxx`
+`https://api.copernica.com/v4/profile/$profileID/subprofiles/$collectionID?fields[]=customerid==4567@example.com&create=1&access_token=xxx`
 
 ```json
 {
@@ -61,7 +61,7 @@ Het volgende PHP script demonstreert hoe de API methode aan kan worden geroepen.
 require_once('copernica_rest_api.php');
 
 // verander dit naar je access token
-$api = new CopernicaRestAPI("your-access-token", 3);
+$api = new CopernicaRestAPI("your-access-token", 4);
 
 // parameters voor het selecteren van subprofielen
 $parameters = array(
