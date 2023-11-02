@@ -29,7 +29,7 @@ $ID = 4;
 $token = 'xxx';
  
 // the API endpoint for file uploads
-$url = "https://api.copernica.com/v4/medialibrary/{$ID}/files?access_token={$token}";
+$url = "https://api.copernica.com/v4/medialibrary/{$ID}/files";
  
 // open cURL session
 $ch = curl_init($url);

@@ -3,7 +3,7 @@
 Een overzicht van het verbruik in je account kun je opvragen
 met de volgende URL:
 
-`https://api.copernica.com/v4/consumption?access_token=xxx`
+`https://api.copernica.com/v4/consumption`
 
 ## Beschikbare parameters
 

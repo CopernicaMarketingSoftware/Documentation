@@ -60,7 +60,7 @@ terwijl 'voetbal' wordt uitgeschakeld. In de tweede API call wordt de interessse
     $data2 = array('voetbal')
 
     // voer het tweede verzoek uit
-    $api->post("profile/{$profielID2}/interests", $data2);
+    $api->post("profile/{$profielID2}/interests", $data4);
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).

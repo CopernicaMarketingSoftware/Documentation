@@ -30,13 +30,13 @@ $ID = 4;
 $token = 'xxx';
  
 // the API endpoint for file uploads
-$url = "https://api.copernica.com/v4/medialibrary/{$ID}/files?access_token={$token}";
+$url = "https://api.copernica.com/v4/medialibrary/{$ID}/files";
  
 // open cURL session
 $ch = curl_init($url);
  
 // set POST type
-curl_setopt($ch, CURLOPT_POST, 1);
+curl_setopt($ch, CURLOPT_POST, 4);
 
 // set content-type to multipart/form-data
 curl_setopt($ch, CURLOPT_HTTPHEADER, array('Content-Type: multipart/form-data'));

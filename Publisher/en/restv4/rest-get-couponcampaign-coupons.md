@@ -33,7 +33,7 @@ Available filters:
 * **valid**: Boolean. This allows you to indicate whether you want to receive all coupons or only available coupons
 
 **Example**:  
-`https://api.copernica.com/v4/couponcampaign/$id/coupons?fields[]=code==$code&access_token=xxxx`
+`https://api.copernica.com/v4/couponcampaign/$id/coupons?fields[]=code==$code`
 
 More information on this parameter can be found in the [article on the “fields” parameter](rest-fields-parameter).
 

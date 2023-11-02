@@ -12,7 +12,7 @@ verzoek en de unieke ID die deze methode retourneert.
 Voor het indienen van een data verzoek kun je een HTTP POST verzoek sturen 
 naar de volgende URL:
 
-`https://api.copernica.com/v4/profile/$id/datarequest?access_token=xxx`
+`https://api.copernica.com/v4/profile/$id/datarequest`
 
 De code `$id` kun je hier vervangen door het ID van het profiel waarvoor je 
 het verzoek wil indienen.

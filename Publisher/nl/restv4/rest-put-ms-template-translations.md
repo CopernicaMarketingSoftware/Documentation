@@ -18,7 +18,7 @@ Om de unieke ID's van de elementen te ontvangen kun je gebruik maken van de [GET
 
 De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
 
-URL: `https://api.copernica.com/v4/ms/template/{$tempalteID}/translations?languages[]=de_DE&languages[]=nl_NL&access_token=xxx`
+URL: `https://api.copernica.com/v4/ms/template/{$tempalteID}/translations?languages[]=de_DE&languages[]=nl_NL`
 
 ```json
 {

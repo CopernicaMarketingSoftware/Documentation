@@ -12,7 +12,7 @@ van: GET, POST, PUT en DELETE calls.
 Het bovenstaande script kun je gemakkelijk kopiëren en plakken, zodat je het kunt
 gebruiken in je eigen applicatie. Door onderstaande code te implementeren kun je
 vanuit andere scripts ook de API aanroepen. De variabele `$versie` kun je
-vervangen door een '2' om de nieuwste versie van de API te gebruiken.
+vervangen door een '4' om de nieuwste versie van de API te gebruiken.
 
 ```php
 <?php

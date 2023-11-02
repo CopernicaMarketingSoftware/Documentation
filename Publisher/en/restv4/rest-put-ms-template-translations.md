@@ -24,7 +24,7 @@ To receive the unique IDs of the elements, you can use the [GET translations met
 
 The following JSON demonstrates how to use the API method:
 
-URL: `https://api.copernica.com/v4/ms/template/{$tempalteID}/translations?languages[]=de_DE&languages[]=nl_NL&access_token=xxx`
+URL: `https://api.copernica.com/v4/ms/template/{$tempalteID}/translations?languages[]=de_DE&languages[]=nl_NL`
 
 ```json
 {

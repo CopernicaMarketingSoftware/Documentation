@@ -41,7 +41,7 @@ must be passed in the data body.
 The following JSON demonstrates how to use the API method:
 
 URL example:  
-`https://api.copernica.com/v4/profile/$profileID/subprofiles/$collectionID?fields[]=customerid==4567@example.com&create=1&access_token=xxx`
+`https://api.copernica.com/v4/profile/$profileID/subprofiles/$collectionID?fields[]=customerid==4567@example.com&create=1`
 
 ```json
 {
