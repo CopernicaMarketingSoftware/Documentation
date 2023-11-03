@@ -9,15 +9,56 @@ access token. There are two ways to get such a token: via the access
 token generator in the Copernica.com dashboard, and via the official
 OAuth procedure.
 
+## Authorization and API Tokens
+
+All calls to the REST API require the inclusion of an "Authorization" HTTP header containing a token string. This header must be included with every GET, PUT, POST, and DELETE request. For example:
+
+```
+GET /v4/identity HTTP/1.1
+Host: api.copernica.com
+Authorization: Bearer abcd.xyz.klmnop
+```
+
+The example above is simplified; in reality, the tokens are much longer. The authorization header should start with the word "Bearer" and then contain a base64-encoded token string that grants you access to the API.
+
+The tokens are [JSON Web Tokens](https://jwt.io/introduction) (JWT), which store the access rights to the API. If you wish, you can decode the token and read the JSON data, but this is not necessary. Using the tokens as strings works just fine.
+
+To obtain a JWT token, you need to follow three steps:
+
+1. Manually request an API token in the Marketing Suite dashboard. This API token does not provide direct access to the API.
+2. With the API token, you can request a JSON Web Token (JWT) from the authentication server, which is valid for 24 hours and grants you access to the API.
+3. During the 24-hour period, you can use this second token to make calls to the REST API.
+4. After these 24 hours, you should repeat step 2 to request a new token. You can do this earlier if needed.
+
+The first step is generally done manually, while the subsequent steps are usually automated.
+
+### Obtaining an API Token
+
+You can manually create API tokens in the [Marketing Suite dashboard](https://ms.copernica.com/#/admin/account/access-tokens). You can then use an API token to request a temporary JSON Web Token.
+
+### Requesting a JWT
+
+Given an API token (as mentioned above), you can request a JWT from the authorization server. You can use the following URL for this purpose: `https://authenticate.copernica.com/?access_token={your_access_token}`. The response will contain a JWT string that you can use in calls to the API server.
+
+### The Authorization Header
+
+For every call to the REST API (whether it's a GET, POST, PUT, or DELETE call), you must include an "Authorization" header. This header should have the format "Authorization: Bearer {your_json_web_token}." If you are making a call with 'curl,' you can do it like this:
+
+```
+curl https://api.copernica.com/v4/identity -H "Authorization: Bearer {your_json_web_token}"
+```
+
+Please note that a JWT is valid for 24 hours. After this period, you should send a new request to the authentication URL.
+
+## OAuth Authorization
+
 As said, the Copernica API is implemented according to the OAuth 2.0
 Authorization protocol, also utilized by Google, Facebook, Linkedin and
 other major web applications. So if you're already familiar with those,
 you will have your connection up and running within any minutes from
 now.
 
-![This graph depicts the procedure to link an external application to
-Copernica using the OAuth 2.0
-protocol](../images/oauth-copernica.png "This graph depicts the procedure to link an external application to Copernica using the OAuth 2.0 protocol")
+![OAuth 2.0 protocol](../../images/oauth-copernica.png)
 
 This graph depicts the procedure to link an external application to
 Copernica using the OAuth 2.0 protocol
