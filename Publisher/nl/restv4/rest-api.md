@@ -24,7 +24,10 @@ Authorization: Bearer abcd.xyz.klmnop
 ```
 
 Voor de authorization header worden [Javascript Web Tokens](https://jwt.io/introduction) (kortweg: JWT's) gebruikt
-waarin de toegangsrechten tot de API zijn opgeslagen. Om zo'n JWT token te verkrijgen moet je drie stappen zetten:
+waarin de toegangsrechten tot de API zijn opgeslagen. Het voorbeeld hierboven is versimpeld, in werkelijkheid zijn
+de tokens veel langer.
+
+Om zo'n JWT token te verkrijgen moet je drie stappen zetten:
 
 1. Handmatig vraag je een API token aan in het Marketing Suite dashboard. Dit API token is langdurig houdbaar, maar geeft je nog niet rechtstreeks toegang tot de API.
 2. Met het API token kun je bij de authenticatie-server een Javascript Web Token (JWT) opvragen dat 24 uur houdbaar is en waarmee je wel toegang hebt tot de API.
