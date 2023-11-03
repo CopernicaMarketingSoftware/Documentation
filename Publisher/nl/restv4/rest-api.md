@@ -15,7 +15,7 @@ voegen, terwijl "PUT" bedoeld is om data te overschrijven.
 ## Authorisatie en API-tokens
 
 Alle calls naar de REST API vereisen dat er een "Authorization" HTTP header wordt meegestuurd met daarin
-een bearer token. Deze header moet met elk GET, PUT, POST en DELETE request worden meegestuurd. Bijvoorbeeld:
+een token string. Deze header moet met elk GET, PUT, POST en DELETE request worden meegestuurd. Bijvoorbeeld:
 
 ```
 GET /v4/identity HTTP/1.1
@@ -23,9 +23,45 @@ Host: api.copernica.com
 Authorization: Bearer abcd.xyz.klmnop
 ```
 
-Voor de authorization header worden [Javascript Web Tokens](https://jwt.io/introduction) (kortweg: JWT's) gebruikt
-waarin de toegangsrechten tot de API zijn opgeslagen. Het voorbeeld hierboven is versimpeld, in werkelijkheid zijn
-de tokens veel langer.
+Het voorbeeld hierboven is versimpeld, in werkelijkheid zijn de tokens veel langer. De authorization-header
+moet beginnen met het woord "Bearer" en bevat daarna een base64 encoded token string op basis waarmee je
+toegang hebt tot de API. 
+
+De tokens zijn [JSON Web Tokens](https://jwt.io/introduction) (kortweg: JWT) waarin de
+toegangsrechten tot de API zijn opgeslagen. Mocht je dat willen, dan kun je het token dus decoderen en de JSON
+data uitlezen, maar dit is niet nodig. Als je de tokens gewoon gebruikt als strings werkt het ook.
+
+Om een JWT token te verkrijgen moet je drie stappen zetten:
+
+1. Handmatig vraag je een API token aan in het Marketing Suite dashboard. Dit API token geeft je nog niet rechtstreeks toegang tot de API.
+2. Met het API token kun je bij de authenticatie-server een JSON Web Token (JWT) opvragen dat 24 uur houdbaar is en waarmee je wel toegang hebt tot de API.
+3. Gedurende 24 uur kun je daarna met dit tweede token de REST API aanroepen.
+4. Na deze 24 uur moet je stap 2 herhalen om een nieuw token op te vragen. Eerder mag ook.
+
+De eerste stap doe je over het algemeen handmatig. De overige stappen zijn normaal gesproken geautomatiseerd.
+
+### Opvragen van een API token
+
+Je kunt API tokens met de hand aanmaken in het [Marketing Suite-dashboard](https://ms.copernica.com/#/admin/account/access-tokens).
+Een API token kun je vervolgens gebruiken in een tijdelijk JSON Web Token op te vragen.
+
+### Opvragen van een JWT
+
+Gegeven een API token (zie boven) kun je bij de authorisatie-server een JWT aanvragen. Hiervoor kun je het volgende adres gebruiken: 
+`https://authenticate.copernica.com/?access_token={your_access_token}`. De respons bevat een JWT string. Deze string kun je
+daarna gebruiken in de calls naar de API server:
+
+### De Authorization header
+
+Aan elke call naar de REST API (ongeacht of dat een GET, POST, PUT of DELETE call is), moet je een "Authorization" header
+meegegven. Deze header heeft het formaat "Authorization: Bearer {your_json_web_token}". Als je een call maakt met 'curl'
+kan dit op de volgende wijze:
+
+```
+curl https://api.copernica.com/v4/identity -H "Authorization: Bearer {your_json_web_token}"
+```
+
+Houd er rekening mee dat een JWT 24 uur geldig is. Na deze periode moet je een nieuw verzoek naar de authenticatie-URL sturen.
 
 Om zo'n JWT token te verkrijgen moet je drie stappen zetten:
 
