@@ -12,25 +12,63 @@ voegen, terwijl "PUT" bedoeld is om data te overschrijven.
 * [Overzicht van methodes](./rest-methods.md)
 * [Vorige versie van de REST API (v3)](../restv3/rest-api.md)
 
-## API-tokens
+## Authorisatie en API-tokens
 
-Om toegang te krijgen tot de API heb je een API-token nodig. Je voegt dit token als parameter toe aan elke call die je naar de API stuurt. Dat kan bijvoorbeeld als volgt ("MYTOKEN" wordt vervangen door je daadwerkelijke token):
+Alle calls naar de REST API vereisen dat er een "Authorization" HTTP header wordt meegestuurd met daarin
+een token string. Deze header moet met elk GET, PUT, POST en DELETE request worden meegestuurd. Bijvoorbeeld:
 
 ```
-https://api.copernica.com/v4/path/to/resource
+GET /v4/identity HTTP/1.1
+Host: api.copernica.com
+Authorization: Bearer abcd.xyz.klmnop
 ```
 
-Je maakt tokens voor je eigen accounts aan in het
-[Marketing Suite-dashboard](https://ms.copernica.com/#/admin/account/access-tokens).
+Het voorbeeld hierboven is versimpeld, in werkelijkheid zijn de tokens veel langer. De authorization-header
+moet beginnen met het woord "Bearer" en bevat daarna een base64 encoded token string op basis waarmee je
+toegang hebt tot de API. 
+
+De tokens zijn [JSON Web Tokens](https://jwt.io/introduction) (kortweg: JWT) waarin de
+toegangsrechten tot de API zijn opgeslagen. Mocht je dat willen, dan kun je het token dus decoderen en de JSON
+data uitlezen, maar dit is niet nodig. Als je de tokens gewoon gebruikt als strings werkt het ook.
+
+Om een JWT token te verkrijgen moet je drie stappen zetten:
+
+1. Handmatig vraag je een API token aan in het Marketing Suite dashboard. Dit API token geeft je nog niet rechtstreeks toegang tot de API.
+2. Met het API token kun je bij de authenticatie-server een JSON Web Token (JWT) opvragen dat 24 uur houdbaar is en waarmee je wel toegang hebt tot de API.
+3. Gedurende 24 uur kun je daarna met dit tweede token de REST API aanroepen.
+4. Na deze 24 uur moet je stap 2 herhalen om een nieuw token op te vragen. Eerder mag ook.
+
+De eerste stap doe je over het algemeen handmatig. De overige stappen zijn normaal gesproken geautomatiseerd.
+
+### Opvragen van een API token
+
+Je kunt API tokens met de hand aanmaken in het [Marketing Suite-dashboard](https://ms.copernica.com/#/admin/account/access-tokens).
+Een API token kun je vervolgens gebruiken in een tijdelijk JSON Web Token op te vragen.
+
+### Opvragen van een JWT
+
+Gegeven een API token (zie boven) kun je bij de authorisatie-server een JWT aanvragen. Hiervoor kun je het volgende adres gebruiken: 
+`https://authenticate.copernica.com/?access_token={your_access_token}`. De respons bevat een JWT string. Deze string kun je
+daarna gebruiken in de calls naar de API server:
+
+### De Authorization header
+
+Aan elke call naar de REST API (ongeacht of dat een GET, POST, PUT of DELETE call is), moet je een "Authorization" header
+meegegven. Deze header heeft het formaat "Authorization: Bearer {your_json_web_token}". Als je een call maakt met 'curl'
+kan dit op de volgende wijze:
+
+```
+curl https://api.copernica.com/v4/identity -H "Authorization: Bearer {your_json_web_token}"
+```
+
+Houd er rekening mee dat een JWT 24 uur geldig is. Na deze periode moet je een nieuw verzoek naar de authenticatie-URL sturen.
+
+## OAuth-koppeling
 Tokens die toegang verlenen tot accounts van andere bedrijven worden opgevraagd
-door middel van een [OAuth-handshake](./rest-oauth.md). Dat laatste is vooral van toepassing
-wanneer je koppelingen maakt voor derden.
+door middel van een [OAuth-handshake](./rest-oauth.md). Dat laatste is vooral van toepassing wanneer je koppelingen maakt voor derden.
 
-We maken onderscheid tussen API-applicaties en API-tokens. Dat onderscheid is met name relevant voor 
-OAuth-koppelingen. Daarbij moet een buitenstaander het verschil kunnen zien tussen de applicatie die 
-je wilt koppelen (jouw applicatie) en het toegangsrecht dat verkregen wordt (het API-token). 
-Indien je geen OAuth-koppelingen nodig hebt kun je bij het aanmaken van API-tokens volstaan met het 
-gebruik van de standaardapplicatie.
+We maken onderscheid tussen API-applicaties en API-tokens. Dat onderscheid is met name relevant voor OAuth-koppelingen. Daarbij moet een buitenstaander het verschil kunnen zien tussen de applicatie die je wilt koppelen (jouw applicatie) en het toegangsrecht dat verkregen wordt (het API-token). 
+Indien je geen OAuth-koppelingen nodig hebt kun je bij het aanmaken van API-tokens volstaan met het gebruik van de standaardapplicatie.
 
 ## Dataformaat
 
