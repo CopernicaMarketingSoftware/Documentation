@@ -58,7 +58,9 @@ other major web applications. So if you're already familiar with those,
 you will have your connection up and running within any minutes from
 now.
 
-![OAuth 2.0 protocol](../../images/oauth-copernica.png)
+![This graph depicts the procedure to link an external application to
+Copernica using the OAuth 2.0
+protocol](../../images/oauth-copernica.png "This graph depicts the procedure to link an external application to Copernica using the OAuth 2.0 protocol")
 
 This graph depicts the procedure to link an external application to
 Copernica using the OAuth 2.0 protocol
