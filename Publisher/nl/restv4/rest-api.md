@@ -12,25 +12,29 @@ voegen, terwijl "PUT" bedoeld is om data te overschrijven.
 * [Overzicht van methodes](./rest-methods.md)
 * [Vorige versie van de REST API (v3)](../restv3/rest-api.md)
 
-## API-tokens
+## API-tokens & JWT-autorisatie
 
-Om toegang te krijgen tot de API heb je een API-token nodig. Je voegt dit token als parameter toe aan elke call die je naar de API stuurt. Dat kan bijvoorbeeld als volgt ("MYTOKEN" wordt vervangen door je daadwerkelijke token):
+Om toegang te krijgen tot de API heb je een API-token nodig. Je maakt tokens voor je eigen accounts aan in het
+[Marketing Suite-dashboard](https://ms.copernica.com/#/admin/account/access-tokens). 
+
+Met een API-token kun je aan de authenticatie-server een [JWT](https://jwt.io/introduction) opvragen. Een JSON Web Token (JWT) is een open standaard (RFC 7519) waarmee gegevens veilig en compact worden uitgewisseld in de vorm van een JSON-object. Dankzij de digitale handtekening kunnen deze gegevens worden geverifieerd en vertrouwd. 
+
+Om een JWT aan te vragen, kun je het volgende verzoek gebruiken: `https://authenticate.copernica.com/?access_token={your_access_token}`. De respons bevat een JWT met drie hoofdonderdelen: een header, een payload en een handtekening.
+
+Wanneer je een API-oproep doet, voeg je de JWT toe aan de Authorization-header van je verzoek, zoals hieronder weergegeven:
 
 ```
-https://api.copernica.com/v4/path/to/resource
+curl https://api.copernica.com/v4/identity -H "Authorization: Bearer {YOUR_JSON_Web_Token}"
 ```
 
-Je maakt tokens voor je eigen accounts aan in het
-[Marketing Suite-dashboard](https://ms.copernica.com/#/admin/account/access-tokens).
+Houd er rekening mee dat een JWT 24 uur geldig is. Na deze periode moet je een nieuw verzoek naar de authenticatie-URL sturen. In tegenstelling tot voorgaande API-versies is het niet langer noodzakelijk om een access-token mee te sturen in de URL van het verzoek.
+
+## OAuth-koppeling
 Tokens die toegang verlenen tot accounts van andere bedrijven worden opgevraagd
-door middel van een [OAuth-handshake](./rest-oauth.md). Dat laatste is vooral van toepassing
-wanneer je koppelingen maakt voor derden.
+door middel van een [OAuth-handshake](./rest-oauth.md). Dat laatste is vooral van toepassing wanneer je koppelingen maakt voor derden.
 
-We maken onderscheid tussen API-applicaties en API-tokens. Dat onderscheid is met name relevant voor 
-OAuth-koppelingen. Daarbij moet een buitenstaander het verschil kunnen zien tussen de applicatie die 
-je wilt koppelen (jouw applicatie) en het toegangsrecht dat verkregen wordt (het API-token). 
-Indien je geen OAuth-koppelingen nodig hebt kun je bij het aanmaken van API-tokens volstaan met het 
-gebruik van de standaardapplicatie.
+We maken onderscheid tussen API-applicaties en API-tokens. Dat onderscheid is met name relevant voor OAuth-koppelingen. Daarbij moet een buitenstaander het verschil kunnen zien tussen de applicatie die je wilt koppelen (jouw applicatie) en het toegangsrecht dat verkregen wordt (het API-token). 
+Indien je geen OAuth-koppelingen nodig hebt kun je bij het aanmaken van API-tokens volstaan met het gebruik van de standaardapplicatie.
 
 ## Dataformaat
 
