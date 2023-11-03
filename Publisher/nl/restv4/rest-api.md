@@ -63,39 +63,6 @@ curl https://api.copernica.com/v4/identity -H "Authorization: Bearer {your_json_
 
 Houd er rekening mee dat een JWT 24 uur geldig is. Na deze periode moet je een nieuw verzoek naar de authenticatie-URL sturen.
 
-Om zo'n JWT token te verkrijgen moet je drie stappen zetten:
-
-1. Handmatig vraag je een API token aan in het Marketing Suite dashboard. Dit API token is langdurig houdbaar, maar geeft je nog niet rechtstreeks toegang tot de API.
-2. Met het API token kun je bij de authenticatie-server een Javascript Web Token (JWT) opvragen dat 24 uur houdbaar is en waarmee je wel toegang hebt tot de API.
-3. Gedurende 24 uur kun je daarna dit web token gebruiken in de authorization-header bij aanroepen naar de REST API.
-4. Na deze 24 uur moet je stap 2 herhalen om een nieuw token op te vragen. Eerder mag ook.
-
-De eerste stap doe je over het algemeen handmatig. De overige stappen zijn normaal gesproken geautomatiseerd.
-
-### Opvragen van een API token
-
-Je kunt API tokens met de hand aanmaken in het [Marketing Suite-dashboard](https://ms.copernica.com/#/admin/account/access-tokens).
-Een API token kun je vervolgens omzetten in een tijdelijk Javascript Web Token.
-
-### Opvragen van een JWT
-
-Gegeven een API token (zie boven) kun je bij de authorisatie-server een JWT aanvragen. Hiervoor kun je het volgende adres gebruiken: 
-`https://authenticate.copernica.com/?access_token={your_access_token}`. De respons bevat een JWT string. Deze string kun je
-daarna gebruiken in de calls naar de API server:
-
-### De Authorization header
-
-Aan elke call naar de REST API (ongeacht of dat een GET, POST, PUT of DELETE call is), moet je een "Authorization" header
-meegegven. Deze header heeft het formaat "Authorization: Bearer {your_json_web_token}". Als je een call maakt met 'curl'
-kan dit op de volgende wijze:
-
-```
-curl https://api.copernica.com/v4/identity -H "Authorization: Bearer {your_json_web_token}"
-```
-
-Houd er rekening mee dat een JWT 24 uur geldig is. Na deze periode moet je een nieuw verzoek naar de authenticatie-URL sturen.
-
-
 ## OAuth-koppeling
 Tokens die toegang verlenen tot accounts van andere bedrijven worden opgevraagd
 door middel van een [OAuth-handshake](./rest-oauth.md). Dat laatste is vooral van toepassing wanneer je koppelingen maakt voor derden.
