@@ -243,7 +243,7 @@ Hieronder staat de volledige code met commentaar erbij, om het begrijpelijker te
 
          {else}
 
-            foreach $winkel as $store}
+            {foreach $winkel as $store}
                <!-- Zet deze winkel als beste winkel -->
                {$besteWinkel = $store}
             {/foreach}
