@@ -16,7 +16,7 @@ de plaats erbij vinden. Postcodes 1000 tot 1100 zijn bijvoorbeeld regio Amsterda
  - Gebruik voor de veldnamen de namen uit de import.
  - Na de import zou de database er als onderstaande moeten uitzien:
 
- ![](../images/PlaatsenDB.png)
+ ![](../images/PlaatsenDB-MS.png)
 
 Deze database gebruiken we straks om meer informatie uit de postcodes te halen.
 
@@ -37,7 +37,7 @@ Er zitten 4 cijfers in een postcode, daarom staan er 4 sets aan blokhaken, elke 
  - Kies het postcodeveld en geef als vergelijking **voldoet aan reguliere expressie**.
  - Vul bij waarde de bovenstaande reguliere expressie in en je hebt nu een selectie die iedereen uit regio Amsterdam selecteert.
 
- ## Winkels
+## Winkels
 
 Naast het bepalen van de locatie, wil je waarschijnlijk ook weten welke winkel de dichtstbijzijnde is voor een specifiek profiel. We kunnen dit handmatig doen of doormiddel van smarty. Eerst zal de handmatige methode uitgelegd worden om het concept te snappen en daarna zal dieper op de automatische variant ingegaan worden.
 
@@ -45,42 +45,42 @@ Naast het bepalen van de locatie, wil je waarschijnlijk ook weten welke winkel d
 
 De eerste stap is een database aanmaken waar alle winkels in staan. Hierin zet je alle informatie die je wilt tonen in je email, denk hierbij aan adres, url naar een foto en een beschrijving. Het is aan te raden om postcode te splitsen in cijfers en letters, dit is voor een check bij de mailing straks handig. De onderstaande afbeelding geeft een voorbeeld van een Winkel database:
 
-![](../images/winkel_database.png)
+![](../images/winkel_database-MS.png)
 
 Maak een veld **StoreID** aan, dit veld bevat de waarde die uniek is per winkel. Dit kan prima een simpel cijfer zijn maar kan ook een winkel id zijn. We willen dat deze waarde ook bij het profiel komt te staan, zodat bekend is welke winkel het dichtstbij is. Dit doen we als volgt:
 
 
- - Maak een veld **Winkel** aan in je klantendatabase.
- - Zorg dat je een selectie hebt waarin alle profielen uit een bepaalde regio van de winkel vallen.
- - Ga naar Huidige weergave > Meerdere profielen wijzigen/verwijderen en geef alle profielen uit deze selectie de juiste StoreID in het veld Winkel
- -  Hierdoor kunnen we altijd in het profiel terugvinden wat de dichtsbijzijnde winkel is.
+- Maak een veld **Winkel** aan in je klantendatabase.
+- Zorg dat je een selectie hebt waarin alle profielen uit een bepaalde regio van de winkel vallen.
+- Ga naar Configuratie > Profielen bewerken en geef alle profielen uit deze selectie de juiste StoreID in het veld Winkel
+- Hierdoor kunnen we altijd in het profiel terugvinden wat de dichtsbijzijnde winkel is.
 
- ### Winkel informatie in mailings
+### Winkel informatie in mailings
 
- De volgende stap is de winkel informatie tonen in een mailing, voor nu gaan we er vanuit dat alle profielen een gelabelde winkel hebben in het veld Winkel. We willen de gelabelde winkel tonen aan de hand van het profiel, echter staat deze in een andere database. Dit kunnen we doen door de functie [loadprofile]./loadprofile-and-loadsubprofile) te gebruiken, hiermee kunnen we profielen uit een andere database inladen. Met onderstaande code kan de juiste winkel ingeladen worden vanuit ons voorbeeld:
+De volgende stap is de winkel informatie tonen in een mailing, voor nu gaan we er vanuit dat alle profielen een gelabelde winkel hebben in het veld Winkel. We willen de gelabelde winkel tonen aan de hand van het profiel, echter staat deze in een andere database. Dit kunnen we doen door de functie [loadprofile](./loadprofile-and-loadsubprofile) te gebruiken, hiermee kunnen we profielen uit een andere database inladen. Met onderstaande code kan de juiste winkel ingeladen worden vanuit ons voorbeeld:
 
- ```
+```
 
- {loadprofile source="Winkels" StoreID=$Winkel assign="opgehaaldeWinkel"}
+{loadprofile source="Winkels" StoreID=$profile.Winkel assign=opgehaaldeWinkel}
 
- De winkel is gevonden en is {$opgehaaldeWinkel.Naam} {$opgehaaldeWinkel.PostcodeCijfers} {$opgehaaldeWinkel.Plaats}
+De winkel is gevonden en is {$opgehaaldeWinkel.Naam} {$opgehaaldeWinkel.PostcodeCijfers} {$opgehaaldeWinkel.Plaats}
 
- ```
+```
 
- Hierbij is Winkels onze winkel database en wordt het veld Winkel gekoppeld aan het veld StoreID, hierdoor wordt alleen de juiste winkel opgehaald uit de database. Dit geeft als resultaat:
+Hierbij is Winkels onze winkel database en wordt het veld Winkel gekoppeld aan het veld StoreID, hierdoor wordt alleen de juiste winkel opgehaald uit de database. Dit geeft als resultaat:
 
- ```
+```
 
- De winkel is gevonden en is Copernica Amsterdam 1102 Amsterdam Zuidoost
+De winkel is gevonden en is Copernica Amsterdam 1011 Amsterdam
 
- ```
+```
 
- ### Automatische winkel informatie
+### Automatische winkel informatie
 
- De eerder genoemde stappen vereisen wat handwerk om de juiste persoon aan een winkel te koppelen. Hieronder wordt een methode beschreven hoe dit ook automatisch kan. Hiervoor berekenen we de dichtsbijzijnde winkel aan de hand van de postcode, we gaan er in dit senario vanuit dat de dichtsbijzijnde postcode ook de dichtsbijzijnde winkel is. Hiervoor worden meerdere stukken code gebruikt, deze zullen in delen uitgelegd worden en aan het einde van dit artikel staat de volledige code.
+De eerder genoemde stappen vereisen wat handwerk om de juiste persoon aan een winkel te koppelen. Hieronder wordt een methode beschreven hoe dit ook automatisch kan. Hiervoor berekenen we de dichtsbijzijnde winkel aan de hand van de postcode, we gaan er in dit scenario vanuit dat de dichtsbijzijnde postcode ook de dichtsbijzijnde winkel is. Hiervoor worden meerdere stukken code gebruikt, deze zullen in delen uitgelegd worden en aan het einde van dit artikel staat de volledige code.
 
 
- De eerste stap is alleen de cijfers van de postcode te gebruiken, hiervoor gebruiken we [truncate](./personalization-modifiers#truncate) om de eerste 4 waardes te selecteren. Daarnaast hebben we 2 variabelen nodig, de variabele **kortsteAfstand** om de afstand tot de postcode te bereken en de variabele **besteWinkel**, deze bevat uiteindelijk de dichtsbijzijnde winkel.
+De eerste stap is alleen de cijfers van de postcode te gebruiken, hiervoor gebruiken we [truncate](./personalization-modifiers#truncate) om de eerste 4 waardes te selecteren. Daarnaast hebben we 2 variabelen nodig, de variabele **kortsteAfstand** om de afstand tot de postcode te bereken en de variabele **besteWinkel**, deze bevat uiteindelijk de dichtsbijzijnde winkel.
 
 ```html
 
@@ -95,189 +95,187 @@ Maak een veld **StoreID** aan, dit veld bevat de waarde die uniek is per winkel.
 
 ```
 
- Vervolgens laden we meer informatie in over de postcode door loadprofile te gebruiken op de **PlaatsenDB**. Deze wordt toegewezen aan de variabele locatie, hieruit kunnen we alles over de locatie opvragen. Daarnaast willen we alle winkels ophalen waarvan de postcode-cijfers matchen met de postcode-cijfers van een winkel. De kans hierop is echter vrij klein omdat de cijfers exact moeten matchen:
+ Vervolgens laden we meer informatie in over de postcode door loadprofile te gebruiken op de **PlaatsenDB**. Deze wordt toegewezen aan de variabele locatie, hieruit kunnen we alles over de locatie opvragen. Daarnaast willen we alle winkels ophalen waarvan de postcode-cijfers matchen met de postcode-cijfers van het profiel. De kans hierop is echter vrij klein omdat de cijfers exact moeten matchen:
 
 
 ```
 
-<!-- Laat meer informatie uit via postcode op uit de PlaatsenDB -->
+<!-- Laadt meer informatie van de postcode op uit de PlaatsenDB -->
 {loadprofile source="PlaatsenDB" PC=$postcodeCijfers assign="locatie"}
 
 <!-- Haal alle winkels op met dezelfde postcode als het profiel -->
 {loadprofile source="Winkels" PostcodeCijfers=$postcodeCijfers assign="winkel"}
 
- ```
+```
 
- Vervolgens checken we of deze winkel bestaat. Als dit het geval is dan wordt dit de beste winkel, zo niet dan kijken we verder.
+Vervolgens checken we of deze winkel bestaat. Als dit het geval is dan wordt dit de beste winkel, zo niet dan kijken we verder.
 
 
- ```
+```
 
 <!-- Check of de winkel in dezelfde postcode bestaat -->
 {if $winkel}
 
-  <!-- Zet deze winkel als beste winkel -->
-  {$besteWinkel = $winkel}
+   <!-- Deze winkel is de beste winkel -->
+   {$besteWinkel = $winkel}
 
- ```
+```
 
- Als de winkel niet gevonden wordt, dan wordt er gezocht op plaats. Als er een plaats gevonden wordt, zijn er twee opties, er zijn meerdere winkels in de plaats of er is maar 1 winkel in de plaats. Als dat tweede het geval is dan wordt deze winkel automatisch de beste winkel. Als er meerdere winkels zijn dan berekenen we met [math equation](./publisher-personalization-functions#math) het verschil tussen de postcodes uit. De winkel met het laagste verschil wordt dan de beste winkel.
+Als de winkel niet gevonden wordt, dan wordt er gezocht op plaats. Als er een plaats gevonden wordt, zijn er twee opties, er zijn meerdere winkels in de plaats of er is maar 1 winkel in de plaats. Als dat tweede het geval is dan wordt deze winkel automatisch de beste winkel. Als er meerdere winkels zijn dan berekenen we met [math equation](./publisher-personalization-functions#math) het verschil tussen de postcodes uit. De winkel met het laagste verschil wordt dan de beste winkel.
 
 
- ```
+```
 
- <!-- Haal alle winkels op met dezelfde plaats als het profiel -->
+<!-- Haal alle winkels op met dezelfde plaats als het profiel -->
+{loadprofile source="Winkels" Plaats=$locatie.PLAATS assign="winkel" multiple="true"}
+
+   <!-- Check of de winkel in dezelfde plaats bestaat -->
+      {if $winkel}
+         <!-- Check of er meerdere winkels in de plaats zijn -->
+         {if $winkel|count > 1}
+            {foreach $winkel as $store}
+
+               <!-- Bereken het verschil tussen de postcodes-->
+               {capture assign="verschil"}{math equation="abs(x-y)" x=$postcodeCijfers y=$store.PostcodeCijfers}{/capture}
+
+               <!-- Kijk of de nieuwe afstand korter is -->
+               {if $verschil lt $kortsteAfstand}
+
+                  {$kortsteAfstand = $verschil}
+                  <!-- Deze winkel is nu beste winkel -->
+                  {$besteWinkel = $store}
+
+               {/if}
+
+         {/foreach}
+
+         {else}
+
+            {foreach $winkel as $store}
+               <!-- De enige winkel in dezelfde plaats is de beste winkel -->
+               {$besteWinkel = $store}
+
+            {/foreach}
+
+         {/if}
+
+```
+
+Als er op plaats ook geen winkel gevonden kan worden, dan wordt gekeken of er een match gevonden kan worden binnen de provincie. Dit werkt op dezelfde manier als de check op plaats.
+
+
+```
+<!-- Haal alle winkels op met dezelfde provincie als het profiel -->
+{loadprofile source="Winkels" Provincie=$locatie.PROVINCIE assign="winkel" multiple="true"}
+
+   {foreach $winkel as $store}
+
+      <!-- Bereken het verschil tussen de postcodes-->
+      {capture assign="verschil"}{math equation="abs(x-y)" x=$postcodeCijfers y=$store.PostcodeCijfers}{/capture}
+
+      <!-- Kijk of de nieuwe afstand korter is -->
+      {if $verschil lt $kortsteAfstand}
+
+         {$kortsteAfstand = $verschil}
+
+         <!-- Deze winkel is nu de beste winkel -->
+         {$besteWinkel = $store}
+
+      {/if}
+
+   {/foreach}
+
+````
+
+Uiteindelijk zal hier een $besteWinkel uitkomen en hiermee kunnen we alle informatie van de winkel in mailings tonen.
+Hieronder staat de volledige code met commentaar erbij, om het begrijpelijker te maken. Dit zou voor elk account moeten werken als je de bovenstaande stappen gevolgd hebt, let vooral op de veldnamen die kunnen ervoor zorgen dat het niet werkt.
+
+
+```
+
+<!-- Haal de letters van de postcode af -->
+{capture assign="postcodeCijfers"}{$profile.Postcode|truncate:4:""}{/capture}
+
+<!-- Variable om de afstand op te slaan -->
+{assign var = "kortsteAfstand" value=100000}
+
+<!-- Variable die uiteindelijk de juiste winkel bevat -->
+{assign var = "besteWinkel" value=""}
+
+
+<!-- Laadt meer informatie van de postcode op uit de PlaatsenDB -->
+
+{loadprofile source="PlaatsenDB" PC=$postcodeCijfers assign="locatie"}
+
+<!-- Haal alle winkels op met dezelfde postcode als het profiel -->
+{loadprofile source="Winkels" PostcodeCijfers=$postcodeCijfers assign="winkel"}
+
+
+<!-- Check of de winkel in dezelfde postcode bestaat -->
+{if $winkel}
+
+   <!-- Deze winkel is de beste winkel -->
+   {$besteWinkel = $winkel}
+
+{else}
+
+   <!-- Haal alle winkels op met dezelfde plaats als het profiel -->
    {loadprofile source="Winkels" Plaats=$locatie.PLAATS assign="winkel" multiple="true"}
 
       <!-- Check of de winkel in dezelfde plaats bestaat -->
-            {if $winkel}
-       <!-- Check of er meerdere winkels in de plaats zijn -->
-                {if $winkel|count > 1}
-                    {foreach $winkel as $store}
+      {if $winkel}
+         <!-- Check of er meerdere winkels in de plaats zijn -->
+         {if $winkel|count > 1}
+            {foreach $winkel as $store}
 
-         <!-- Bereken het verschil tussen de postcodes-->
-                  {capture assign="verschil"}{math equation="abs(x-y)" x=$postcodeCijfers y=$store.PostcodeCijfers}{/capture}
+               <!-- Bereken het verschil tussen de postcodes-->
+               {capture assign="verschil"}{math equation="abs(x-y)" x=$postcodeCijfers y=$store.PostcodeCijfers}{/capture}
 
-         <!-- Kijk of de nieuwe afstand korter is -->
-                        {if $verschil lt $kortsteAfstand}
+               <!-- Kijk of de nieuwe afstand korter is -->
+               {if $verschil lt $kortsteAfstand}
 
-                           {$kortsteAfstand = $verschil}
-          <!-- Zet deze winkel als beste winkel -->
-                           {$besteWinkel = $store}
+                  {$kortsteAfstand = $verschil}
+                  <!-- Deze winkel is nu de beste winkel -->
+                  {$besteWinkel = $store}
 
-                       {/if}
-
+               {/if}
             {/foreach}
 
          {else}
 
-         {foreach $winkel as $store}
-      <!-- Zet deze winkel als beste winkel -->
-            {$besteWinkel = $store}
-
-         {/foreach}
-
-    {/if}
-
- ```
-
- Als er op plaats ook geen winkel gevonden kan worden, dan wordt gekeken of er een match gevonden kan worden binnen de provincie. Dit werkt op dezelfde manier als de check op plaats.
-
-
-```
- <!-- Haal alle winkels op met dezelfde provincie als het profiel -->
-      {loadprofile source="Winkels" Provincie=$locatie.PROVINCIE assign="winkel" multiple="true"}
-
-            {foreach $winkel as $store}
-
-        <!-- Bereken het verschil tussen de postcodes-->
-            {capture assign="verschil"}{math equation="abs(x-y)" x=$postcodeCijfers y=$store.PostcodeCijfers}{/capture}
-
-       <!-- Kijk of de nieuwe afstand korter is -->
-       {if $verschil lt $kortsteAfstand}
-
-        {$kortsteAfstand = $verschil}
-
-        <!-- Zet deze winkel als beste winkel -->
-                  {$besteWinkel = $store}
-
-                {/if}
-
+            foreach $winkel as $store}
+               <!-- Zet deze winkel als beste winkel -->
+               {$besteWinkel = $store}
             {/foreach}
 
- ````
+         {/if}
 
- Uiteindelijk zal hier een $besteWinkel uitkomen en hiermee kunnen we alle informatie van de winkel in mailings tonen.
- Hieronder staat de volledige code met commentaar erbij, om het begrijpelijker te maken. Dit zou voor elk account moeten werken als je de bovenstaande stappen gevolgd hebt, let vooral op de veldnamen die kunnen ervoor zorgen dat het niet werkt.
-
-
- ```
-
- <!-- Haal de letters van de postcode af -->
-    {capture assign="postcodeCijfers"}{$profile.Postcode|truncate:4:""}{/capture}
-
-    <!-- Variable om de afstand op te slaan -->
-     {assign var = "kortsteAfstand" value=100000}
-
-    <!-- Variable die uiteindelijk de juiste winkel bevat -->
-     {assign var = "besteWinkel" value=""}
-
-
-     <!-- Laat meer informatie uit via postcode op uit de PlaatsenDB -->
-
-    {loadprofile source="PlaatsenDB" PC=$postcodeCijfers assign="locatie"}
-
-    <!-- Haal alle winkels op met dezelfde postcode als het profiel -->
-    {loadprofile source="Winkels" PostcodeCijfers=$postcodeCijfers assign="winkel"}
-
-
-    <!-- Check of de winkel in dezelfde postcode bestaat -->
-    {if $winkel}
-
-      <!-- Zet deze winkel als beste winkel -->
-      {$besteWinkel = $winkel}
-
-    {else}
-
-     <!-- Haal alle winkels op met dezelfde plaats als het profiel -->
-   {loadprofile source="Winkels" Plaats=$locatie.PLAATS assign="winkel" multiple="true"}
-
-      <!-- Check of de winkel in dezelfde plaats bestaat -->
-            {if $winkel}
-       <!-- Check of er meerdere winkels in de plaats zijn -->
-                {if $winkel|count > 1}
-                    {foreach $winkel as $store}
-
-         <!-- Bereken het verschil tussen de postcodes-->
-                  {capture assign="verschil"}{math equation="abs(x-y)" x=$postcodeCijfers y=$store.PostcodeCijfers}{/capture}
-
-         <!-- Kijk of de nieuwe afstand korter is -->
-                        {if $verschil lt $kortsteAfstand}
-
-                           {$kortsteAfstand = $verschil}
-          <!-- Zet deze winkel als beste winkel -->
-                           {$besteWinkel = $store}
-
-                       {/if}
-
-            {/foreach}
       {else}
 
+         <!-- Haal alle winkels op met dezelfde provincie als het profiel -->
+         {loadprofile source="Winkels" Provincie=$locatie.PROVINCIE assign="winkel" multiple="true"}
+
          {foreach $winkel as $store}
-      <!-- Zet deze winkel als beste winkel -->
-            {$besteWinkel = $store}
+
+            <!-- Bereken het verschil tussen de postcodes-->
+            {capture assign="verschil"}{math equation="abs(x-y)" x=$postcodeCijfers y=$store.PostcodeCijfers}{/capture}
+
+            <!-- Kijk of de nieuwe afstand korter is -->
+            {if $verschil lt $kortsteAfstand}
+
+               {$kortsteAfstand = $verschil}
+
+               <!-- Zet deze winkel als beste winkel -->
+               {$besteWinkel = $store}
+
+            {/if}
 
          {/foreach}
 
-    {/if}
+      {/if}
 
-    {else}
+{/if}
 
-     <!-- Haal alle winkels op met dezelfde provincie als het profiel -->
-      {loadprofile source="Winkels" Provincie=$locatie.PROVINCIE assign="winkel" multiple="true"}
+De winkel is gevonden op provincie {$besteWinkel.Naam} {$besteWinkel.PostcodeCijfers} {$besteWinkel.Plaats}
 
-            {foreach $winkel as $store}
-
-        <!-- Bereken het verschil tussen de postcodes-->
-            {capture assign="verschil"}{math equation="abs(x-y)" x=$postcodeCijfers y=$store.PostcodeCijfers}{/capture}
-
-       <!-- Kijk of de nieuwe afstand korter is -->
-       {if $verschil lt $kortsteAfstand}
-
-        {$kortsteAfstand = $verschil}
-
-        <!-- Zet deze winkel als beste winkel -->
-                  {$besteWinkel = $store}
-
-                {/if}
-
-            {/foreach}
-
-    {/if}
-
-    {/if}
-
-    De winkel is gevonden op provincie {$besteWinkel.Naam} {$besteWinkel.PostcodeCijfers}  {$besteWinkel.Plaats}
-
-
- ```
+```
