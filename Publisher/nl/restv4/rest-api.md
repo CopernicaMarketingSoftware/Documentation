@@ -15,7 +15,8 @@ voegen, terwijl "PUT" bedoeld is om data te overschrijven.
 ## Authorisatie en API-tokens
 
 Alle calls naar de REST API vereisen dat er een "Authorization" HTTP header wordt meegestuurd met daarin
-een bearer token. Dit is een [Javascript Web Token](https://jwt.io/introduction) (kortweg: JWT) waarin de
+een bearer token. Deze header moet met elk GET, PUT, POST en DELETE request worden meegestuurd. Copernica
+gebruikt hiervoor [Javascript Web Tokens](https://jwt.io/introduction) (kortweg: JWT's) waarin de
 toegangsrechten tot de API zijn opgeslagen. Om zo'n JWT token te verkrijgen moet je drie stappen zetten:
 
 1. Handmatig vraag je een API token aan in het Marketing Suite dashboard. Dit API token is langdurig houdbaar, maar geeft je nog niet rechtstreeks toegang tot de API.
