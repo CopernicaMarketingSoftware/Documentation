@@ -21,7 +21,7 @@ Binnen je campagne kun je de coupons vanuit je externe systeem importeren door t
 Beide bestandsformaten ondersteunen de volgende kolommen:
 - code (verplicht)
 - validfrom (optioneel)
-- validthrough (optioneel)
+- validuntil (optioneel)
 
 ### CSV-bestand
 Het CSV-bestand moet door een tab, komma of puntkomma gescheiden zijn. Na het uploaden heb je de mogelijkheid om de kolommen uit je bestand aan de juist velden in je couponcampagne te koppelen.
