@@ -43,13 +43,14 @@ De eerste stap doe je over het algemeen handmatig. De overige stappen zijn norma
 ### Opvragen van een API token
 
 Je kunt API tokens met de hand aanmaken in het [Marketing Suite-dashboard](https://ms.copernica.com/#/admin/account/access-tokens).
-Een API token kun je vervolgens gebruiken in een tijdelijk JSON Web Token op te vragen.
+Een API token kun je vervolgens gebruiken om een tijdelijk JSON Web Token op te vragen. Bij het aanmaken van een API token kun je 
+aangeven dat deze alleen beschikbaar mag zijn voor de API v4. Hiermee voorkom je dat het token gebruikt kan worden in de URL van oudere versies van de API.
 
 ### Opvragen van een JWT
 
-Gegeven een API token (zie boven) kun je bij de authorisatie-server een JWT aanvragen. Hiervoor kun je het volgende adres gebruiken: 
-`https://authenticate.copernica.com/?access_token={your_access_token}`. De respons bevat een JWT string. Deze string kun je
-daarna gebruiken in de calls naar de API server:
+Gegeven een API token (zie boven) kun je bij de authorisatie-server een JWT aanvragen. Hiervoor voer je een POST verzoek uit naar: 
+`https://authenticate.copernica.com/`. In de body van de call plaats je de access token: `{'access_token':<your_access_token>}`. 
+De respons bevat een JWT string. Deze string kun je daarna gebruiken in de calls naar de API server:
 
 ### De Authorization header
 
