@@ -25,7 +25,7 @@ To obtain a JWT token, follow these three steps:
 1. Manually request an API token in the Marketing Suite dashboard. This API token does not provide direct access to the API
 2. With the API token, request a JSON Web Token (JWT) from the authentication server, which is valid for 24 hours and grants access to the API.
 3. During the next 24 hours, use this second token to make calls to the REST API.
-4. After 24 hours, repeat step 2 to obtain a new token. You can do this earlier if needed.
+4. After 24 hours, repeat step 2 to obtain a new token. Earlier is also allowed, for example, every 6 hours.
 
 The first step is usually done manually, while the remaining steps are typically automated.
 
@@ -46,6 +46,7 @@ curl https://api.copernica.com/v4/identity -H "Authorization: Bearer {your_json_
 ```
 
 Keep in mind that a JWT is valid for 24 hours. After this period, you need to send a new request to the authentication URL.
+You can request the token again before 24 hours have elapsed, for instance, every 6 hours.
 
 ## OAuth Linking
 
