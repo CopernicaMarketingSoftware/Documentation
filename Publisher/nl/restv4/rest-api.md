@@ -48,8 +48,15 @@ aangeven dat deze alleen beschikbaar mag zijn voor de API v4. Hiermee voorkom je
 
 ### Opvragen van een JWT
 
-Gegeven een API token (zie boven) kun je bij de authorisatie-server een JWT aanvragen. Hiervoor voer je een POST verzoek uit naar: 
-`https://authenticate.copernica.com/`. In de body van de call plaats je de access token: `{'access_token':<your_access_token>}`. 
+Gegeven een API token (zie boven) kun je bij de authorisatie-server een JWT aanvragen. Hiervoor voer je een POST verzoek uit naar 
+`https://authenticate.copernica.com`:
+
+```
+curl -X POST https://authenticate.copernica.com
+   -H "Content-Type: application/x-www-form-urlencoded" 
+   -d "access_token=YOUR_ACCESS_TOKEN"
+```
+
 De respons bevat een JWT string. Deze string kun je daarna gebruiken in de calls naar de API server:
 
 ### De Authorization header
