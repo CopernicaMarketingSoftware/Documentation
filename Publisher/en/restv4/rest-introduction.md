@@ -16,7 +16,7 @@ Host: api.copernica.com
 Authorization: Bearer abcd.xyz.klmnop
 ```
 
-The example above is simplified; in reality, the tokens are much longer. The authorization header must start with the word "Bearer" and then contain a base64-encoded token string that grants access to the API.
+The authorization header must start with the word "Bearer" and then contain a base64-encoded token string that grants access to the API. The above example above is a bit simplified; in reality, the tokens are much longer.
 
 The tokens are [JSON Web Tokens](https://jwt.io/introduction) (JWT), which store access rights to the API. If desired, you can decode the token to read the JSON data, but it is not necessary. Using the tokens as strings works fine.
 
