@@ -36,6 +36,7 @@ You can manually create API tokens in the [Marketing Suite dashboard](https://ms
 ## Obtaining a JWT
 
 Given an API token (see above), you can request a JWT from the authorization server. To do this, send a POST request to `https://authenticate.copernica.com`:
+
 ```
 curl -X POST https://authenticate.copernica.com
    -H "Content-Type: application/x-www-form-urlencoded" 
