@@ -35,7 +35,14 @@ You can manually create API tokens in the [Marketing Suite dashboard](https://ms
 
 ## Obtaining a JWT
 
-Given an API token (see above), you can request a JWT from the authorization server. To do this, send a POST request to: `https://authenticate.copernica.com/`. In the call's body, include the access token: `{'access_token':<your_access_token>}`. The response contains a JWT string, which you can then use in calls to the API server.
+Given an API token (see above), you can request a JWT from the authorization server. To do this, send a POST request to `https://authenticate.copernica.com`:
+```
+curl -X POST https://authenticate.copernica.com
+   -H "Content-Type: application/x-www-form-urlencoded" 
+   -d "access_token=YOUR_ACCESS_TOKEN"
+```
+
+The response contains a JWT string, which you can then use in calls to the API server.
 
 ## The Authorization Header
 
@@ -58,12 +65,12 @@ We distinguish between API applications and API tokens, especially concerning OA
 
 When using POST or PUT to send data to Copernica, you can place the data in the body of your request in various ways. Copernica checks the content-type header to determine the format of the provided data.
 
-JSON offers the most powerful method, allowing the exchange of complex nested data structures with Copernica. However, we also support the traditional method where variables are sent through HTTP POST requests. In the example below, we send a request to the REST API to create a profile with ID 1234 in the database. The body contains a JSON object with the properties of the new profile:
+ offers the most powerful method, allowing the exchange of complex nested data structures with Copernica. However, we also support the traditional method where variables are sent through HTTP POST requests. In the example below, we send a request to the REST API to create a profile with ID 1234 in the database. The body contains a  object with the properties of the new profile:
 
 ```
 POST /database/1234/profiles HTTP/1.1
 Host: api.copernica.com
-Content-Type: application/json
+Content-Type: application/
 
 {
     "fields":
@@ -73,7 +80,7 @@ Content-Type: application/json
 }
 ```
 
-Instead of the above request (using JSON), you could also send a 'traditional' HTTP POST request:
+Instead of the above request (using ), you could also send a 'traditional' HTTP POST request:
 
 ```
 POST /database/1234/profiles HTTP/1.1
