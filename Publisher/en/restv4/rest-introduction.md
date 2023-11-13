@@ -20,22 +20,24 @@ The authorization header must start with the word "Bearer" and then contain a ba
 
 The tokens are [JSON Web Tokens](https://jwt.io/introduction) (JWT), which store access rights to the API. If desired, you can decode the token to read the JSON data, but it is not necessary. Using the tokens as strings works fine.
 
-To obtain a JWT token, follow these three steps:
+To obtain an authorization token, follow these steps:
 
-1. Manually request an API token in the Marketing Suite dashboard. This API token does not provide direct access to the API
-2. With the API token, request a JSON Web Token (JWT) from the authentication server, which is valid for 24 hours and grants access to the API.
-3. During the next 24 hours, use this second token to make calls to the REST API.
-4. After 24 hours, repeat step 2 to obtain a new token. Earlier is also allowed, for example, every 6 hours.
+1. Manually request an API token in the Marketing Suite dashboard. This token does not yet provide direct access to the API, but gives you access to the authorization-API.
+2. With the token from step 1, make an API call to the authentication server to request a JSON web token (JWT). This token will be valid for 24 hours and grants access to the API.
+3. You can use this second token to make calls to the REST API. The token will remain valid for 24 hours.
+4. After 24 hours - or earlier if you like - repeat step 2 to obtain a new token.
 
-The first step is usually done manually, while the remaining steps are typically automated.
+The first step is usually done manually, while the remaining steps are typically automated via API calls. It is permitted that you request a new JWT for each and every call that you make to the API server. For efficiency however, we recommend to cache the tokens and reuse them for up to 24 hours.
 
-## Obtaining an API Token
+### Step 1: obtaining an API Token
 
-You can manually create API tokens in the [Marketing Suite dashboard](https://ms.copernica.com/#/admin/account/access-tokens). You can then use an API token to request a temporary JSON Web Token. When creating an API token, you can specify that it should only be available for API v4, preventing its use in the URL of older API versions.
+You can manually create API tokens in the [Marketing Suite dashboard](https://ms.copernica.com/#/admin/account/access-tokens). You can then use an API token to request a temporary JSON Web Token.
+When creating an API token, you can specify that it should only be available for API v4, preventing its use in the URL of older API versions.
 
-## Obtaining a JWT
+### Step 2: obtaining a JWT
 
-Given an API token (see above), you can request a JWT from the authorization server. To do this, send a POST request to `https://authenticate.copernica.com`:
+Given an API token (see step 1 above), you can request a JWT from the authorization server. To do this, send a HTTP POST request to `https://authenticate.copernica.com`.
+This must be a HTTP POST call, and the body data should contain the API token. With curl this looks like this:
 
 ```
 curl -X POST https://authenticate.copernica.com
@@ -45,15 +47,16 @@ curl -X POST https://authenticate.copernica.com
 
 The response contains a JWT string, which you can then use in calls to the API server.
 
-## The Authorization Header
+### Step 3: making calls using the Authorization header
 
-For every call to the REST API (whether it's a GET, POST, PUT, or DELETE call), include an "Authorization" header. This header has the format "Authorization: Bearer {your_json_web_token}". If making a call with 'curl,' it can be done as follows:
+For every call to the REST API (whether it's a GET, POST, PUT, or DELETE call), you must include an "Authorization" header. This header has the format "Authorization: Bearer {your_json_web_token}". If making a call with 'curl,' it can be done as follows:
 
 ```
 curl https://api.copernica.com/v4/identity -H "Authorization: Bearer {your_json_web_token}"
 ```
 
-Keep in mind that a JWT is valid for 24 hours. After this period, you need to send a new request to the authentication URL.
+Keep in mind that a JWT is valid for 24 hours. After this period, you 
+need to send a new request to the authentication URL.
 You can request the token again before 24 hours have elapsed, for instance, every 6 hours.
 
 ## OAuth Linking
