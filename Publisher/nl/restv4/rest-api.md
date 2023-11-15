@@ -36,20 +36,28 @@ Om een JWT token te verkrijgen moet je drie stappen zetten:
 1. Handmatig vraag je een API token aan in het Marketing Suite dashboard. Dit API token geeft je nog niet rechtstreeks toegang tot de API.
 2. Met het API token kun je bij de authenticatie-server een JSON Web Token (JWT) opvragen dat 24 uur houdbaar is en waarmee je wel toegang hebt tot de API.
 3. Gedurende 24 uur kun je daarna met dit tweede token de REST API aanroepen.
-4. Na deze 24 uur moet je stap 2 herhalen om een nieuw token op te vragen. Eerder mag ook.
+4. Na deze 24 uur moet je stap 2 herhalen om een nieuw token op te vragen. Eerder mag ook, bijvoorbeeld iedere 6 uur.
 
 De eerste stap doe je over het algemeen handmatig. De overige stappen zijn normaal gesproken geautomatiseerd.
 
 ### Opvragen van een API token
 
 Je kunt API tokens met de hand aanmaken in het [Marketing Suite-dashboard](https://ms.copernica.com/#/admin/account/access-tokens).
-Een API token kun je vervolgens gebruiken in een tijdelijk JSON Web Token op te vragen.
+Een API token kun je vervolgens gebruiken om een tijdelijk JSON Web Token op te vragen. Bij het aanmaken van een API token kun je 
+aangeven dat deze alleen beschikbaar mag zijn voor de API v4. Hiermee voorkom je dat het token gebruikt kan worden in de URL van oudere versies van de API.
 
 ### Opvragen van een JWT
 
-Gegeven een API token (zie boven) kun je bij de authorisatie-server een JWT aanvragen. Hiervoor kun je het volgende adres gebruiken: 
-`https://authenticate.copernica.com/?access_token={your_access_token}`. De respons bevat een JWT string. Deze string kun je
-daarna gebruiken in de calls naar de API server:
+Gegeven een API token (zie boven) kun je bij de authorisatie-server een JWT aanvragen. Hiervoor voer je een POST verzoek uit naar 
+`https://authenticate.copernica.com`:
+
+```
+curl -X POST https://authenticate.copernica.com
+   -H "Content-Type: application/x-www-form-urlencoded" 
+   -d "access_token=YOUR_ACCESS_TOKEN"
+```
+
+De respons bevat een JWT string. Deze string kun je daarna gebruiken in de calls naar de API server:
 
 ### De Authorization header
 
@@ -62,6 +70,7 @@ curl https://api.copernica.com/v4/identity -H "Authorization: Bearer {your_json_
 ```
 
 Houd er rekening mee dat een JWT 24 uur geldig is. Na deze periode moet je een nieuw verzoek naar de authenticatie-URL sturen.
+Je kunt het token ook opnieuw aanvragen voordat er 24 uur verstreken zijn, bijvoorbeeld iedere 6 uur.
 
 ## OAuth-koppeling
 Tokens die toegang verlenen tot accounts van andere bedrijven worden opgevraagd
