@@ -1,6 +1,6 @@
 # Productupdate - Introductie REST API v4 en webhooks op specifieke velden
 
-## Introductie van versie 4 van onze REST API
+## Introductie versie 4 van onze REST API
 Vandaag introduceert Copernica versie 4 van de REST API. De REST API biedt directe toegang tot Copernica-functionaliteiten zonder gebruik te hoeven maken van de interface. Hierdoor kun je externe systemen gemakkelijk aan Copernica koppelen.
 
 In deze nieuwe versie zijn verbeteringen doorgevoerd om de veiligheid te vergroten. In ons [blogartikel](https://www.copernica.com/nl/blog/post/nieuwe-rest-api-v4-met-jwt-autorisatie) vind je meer uitleg over wat er nieuw is en wat je moet doen om over te stappen als je gebruik maakt van een eerdere versie.
