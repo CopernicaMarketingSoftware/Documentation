@@ -1,14 +1,14 @@
-# Productupdate - REST API v4 en webhooks op specifieke velden
+# Productupdate - Introductie REST API v4 en webhooks op specifieke velden
 
-## Nieuwe REST API v4 met JWT-autorisatie
-Vandaag introduceert Copernica versie 4 van de REST API. Deze nieuwe versie heeft een ander login- en autorisatiesysteem om de veiligheid te vergroten. De login-tokens maken voortaan niet langer deel uit van de URL en zijn daardoor minder kwetsbaar als een API-URL wordt geknipt en geplakt. Bovendien hebben de tokens een kortere levensduur om de kans verder te verkleinen dat ze in verkeerde handen vallen.
+## Introductie van versie 4 van onze REST API
+Vandaag introduceert Copernica versie 4 van de REST API. De REST API biedt directe toegang tot Copernica-functionaliteiten zonder gebruik te hoeven maken van de interface. Hierdoor kun je externe systemen gemakkelijk aan Copernica koppelen.
 
-In ons [blogartikel](https://www.copernica.com/nl/blog/post/nieuwe-rest-api-v4-met-jwt-autorisatie) lees je wat je moet doen om over te stappen.
+In deze nieuwe versie zijn verbeteringen doorgevoerd om de veiligheid te vergroten. In ons [blogartikel](https://www.copernica.com/nl/blog/post/nieuwe-rest-api-v4-met-jwt-autorisatie) vind je meer uitleg over wat er nieuw is en wat je moet doen om over te stappen als je gebruik maakt van een eerdere versie.
 
 ## Webhooks limiteren op specifieke velden
-Het is nu mogelijk om webhooks alleen uit te voeren wanneer er wijzigingen zijn gedaan in een specifiek veld van een (sub)profiel. Webhooks worden gebruikt om de wijzigingen in Copernica te synchroniseren naar een extern systeem. Door enkel de wijzigingen in een specifiek veld door te sturen, voorkom je onnodige belasting van je server.
+Het is nu mogelijk om webhooks alleen uit te voeren wanneer er wijzigingen zijn gedaan in een specifiek veld van een (sub)profiel. Webhooks worden gebruikt om wijzigingen in Copernica te synchroniseren naar een extern systeem. Door enkel de wijzigingen in een specifiek veld door te sturen, voorkom je onnodige belasting van je server.
 
-Je kunt dit instellen bij de [webhooks](https://ms.copernica.com/#/admin/account/webhooks) die gekoppeld staan aan een database of collectie.
+Het limiteren van [webhooks](https://ms.copernica.com/#/admin/account/webhooks) is mogelijk als deze gekoppeld zijn aan een database of collectie.
 
 ## Verbeteringen Marketing Suite 
 In de [profielen](https://ms.copernica.com/#/profiles)-module wordt nu per gebruiker opgeslagen of de optie om collecties weer te geven in- of uitgeschakeld is. Hierdoor hoef je niet meer dagelijks dezelfde optie aan te vinken om de collecties te bekijken.
