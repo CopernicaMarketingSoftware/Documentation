@@ -49,8 +49,7 @@ for (const i in items)
 {  
 	if (items[i].id == subprofile.id) continue;  
     
-	if (items[i].fields.ProductNaam !=  
-	subprofile.fields.ProductNaam) continue;  
+	if (items[i].fields.ProductNaam != subprofile.fields.ProductNaam) continue;  
 
 	let d1 = Date.parse(items[i].fields.Aanschafdatum);  
 	let d2 = Date.parse(subprofile.fields.Aanschafdatum);  
@@ -136,8 +135,7 @@ for (const i in items)
 {  
 	if (items[i].id == subprofile.id) continue;  
     
-	if (items[i].fields.ProductNaam !=  
-	subprofile.fields.ProductNaam) continue;  
+	if (items[i].fields.ProductNaam != subprofile.fields.ProductNaam) continue;  
 
 	let d1 = Date.parse(items[i].fields.Aanschafdatum);  
 	let d2 = Date.parse(subprofile.fields.Aanschafdatum);  
