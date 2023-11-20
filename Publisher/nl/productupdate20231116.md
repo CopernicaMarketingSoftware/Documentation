@@ -1,12 +1,14 @@
 # Productupdate - Introductie REST API v4 en webhooks op specifieke velden
 
 ## Introductie versie 4 van onze REST API
-Vandaag introduceert Copernica versie 4 van de REST API. De REST API biedt directe toegang tot Copernica-functionaliteiten zonder gebruik te hoeven maken van de interface. Hierdoor kun je externe systemen gemakkelijk aan Copernica koppelen.
+We hebben een nieuwe versie van de REST API uitgebracht. Versie 4 van de REST API heeft een ander authorisatiesysteem waardoor koppelingen wat minder gevoelig zijn voor fouten van gebruikers. Het API-token wordt in deze versie niet meer via de URL meegestuurd, waardoor gebruikers die URL's knippen en plakken niet langer per ongeluk het API-token met anderen kunnen delen.
 
-In deze nieuwe versie zijn verbeteringen doorgevoerd om de veiligheid te vergroten. In ons [blogartikel](https://www.copernica.com/nl/blog/post/nieuwe-rest-api-v4-met-jwt-autorisatie) vind je meer uitleg over wat er nieuw is en wat je moet doen om over te stappen als je gebruik maakt van een eerdere versie.
+In ons [blogartikel](https://www.copernica.com/nl/blog/post/nieuwe-rest-api-v4-met-jwt-autorisatie) vind je meer uitleg over wat er nieuw is en wat je moet doen om over te stappen. Hoewel de vorige versies (v1 tot en met v3) nog actief blijven en je dus nog niet onmiddellijk actie hoeft te ondernemen, is een overstap wel aan te raden.
 
 ## Webhooks limiteren op specifieke velden
-Het is nu mogelijk om webhooks alleen uit te voeren wanneer er wijzigingen zijn gedaan in een specifiek veld van een (sub)profiel. Webhooks worden gebruikt om wijzigingen in Copernica te synchroniseren naar een extern systeem. Door enkel de wijzigingen in een specifiek veld door te sturen, voorkom je onnodige belasting van je server.
+Het is nu mogelijk om webhooks alleen uit te laten voeren wanneer er wijzigingen zijn gedaan in specifieke velden van een (sub)profiel. Webhooks worden gebruikt om wijzigingen in Copernica te synchroniseren naar een extern systeem - bijvoorbeeld naar jouw eigen webserver of database.
+
+Als je voorheen een webhook had geconfigureerd, dan werd er voor élke profiel- of subprofielwijziging een call vanuit Copernica gestuurd naar de webhook, zelfs als dit onbelangrijke of irrelevante wijzigingen waren. Dit webhooksysteem is nu beter te configureren: je kunt voortaan instellen dat je alleen deze calls wilt ontvangen als er een specifiek veld van waarde verandert. Hierdoor wordt jouw server minder belast.
 
 Het limiteren van [webhooks](https://ms.copernica.com/#/admin/account/webhooks) is mogelijk als deze gekoppeld zijn aan een database of collectie.
 
