@@ -31,7 +31,7 @@ De eerste stap nadat de database goed ingesteld staat, is de opvolgactie aanmake
     
 -   Nu rekenen we de wachttijd van de opvolgactie uit. Voeg een Wachttijd blok toe en kies voor "Voer de opvolgactie uit na een vaste wachttijd". Dit doen we met behulp van JavaScript middels onderstaande code:
 ``` javascript
-(subprofile.Hoeveelheid*subprofile.Herhaling-1)*86400;
+(subprofile.fields.Hoeveelheid*subprofile.fields.Herhaling-1)*86400;
 ```
 
 -   Hierbij is **subprofile** het subprofiel dat de opvolgactie start en wordt via de velden 'Hoeveelheid' en 'Herhaling' uitgerekend hoeveel dagen er gewacht dient te worden. In dit specifieke voorbeeld trekken we 1 af van het totaal. Dit zorgt ervoor dat de herhalingsmail een dag eerder wordt verstuurd dan dat de de herbesteltermijn verstrijkt. Tot slot wordt het totaal aantal dagen keer 86400 gedaan, omdat in JavaScript met tijd in seconden wordt gerekend;
@@ -52,8 +52,8 @@ for (const i in items)
 	if (items[i].fields.ProductNaam !=  
 	subprofile.fields.ProductNaam) continue;  
 
-	let d1 = Date.parse(items[i].Aanschafdatum);  
-	let d2 = Date.parse(subprofile.Aanschafdatum);  
+	let d1 = Date.parse(items[i].fields.Aanschafdatum);  
+	let d2 = Date.parse(subprofile.fields.Aanschafdatum);  
 	if (d1 > d2) return false;  
 }  
 return  true; 
@@ -139,8 +139,8 @@ for (const i in items)
 	if (items[i].fields.ProductNaam !=  
 	subprofile.fields.ProductNaam) continue;  
 
-	let d1 = Date.parse(items[i].Aanschafdatum);  
-	let d2 = Date.parse(subprofile.Aanschafdatum);  
+	let d1 = Date.parse(items[i].fields.Aanschafdatum);  
+	let d2 = Date.parse(subprofile.fields.Aanschafdatum);  
 	if (d1 > d2) return false;  
 }  
 return  true; 
