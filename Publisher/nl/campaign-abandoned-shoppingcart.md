@@ -82,7 +82,7 @@ In de <em>foreach-loop</em> en het <em>if-statement</em>:
 ### De complete template ###
 
 
-Voor de overzichtelijkheid is het verstandig om het mandje door middel van losse blokken en structuren vorm te geven. Door al het bovenstaande samen te voegen en in de template te zetten ontstaat de code die je [hier](../downloads/HTML_Shoppingcart) kunt downloaden.
+Voor de overzichtelijkheid is het verstandig om het mandje door middel van losse blokken en structuren vorm te geven. Door al het bovenstaande samen te voegen en in de template te zetten ontstaat de code die je [hier](../downloads/HTML_Shoppingcart.txt) kunt downloaden.
 
 
 
