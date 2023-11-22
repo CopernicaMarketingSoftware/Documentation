@@ -1,117 +1,107 @@
-# Verlaten Winkelwagen
-De verlaten winkelwagencampagne is een e-mail of een reeks e-mails die je stuurt naar klanten die artikelen in hun winkelwagen niet hebben afgerekend. Het doel van deze campagne is om de klant te stimuleren om alsnog over te gaan tot een aankoop. In dit artikel wordt een een campagne opgesteld die ingezet wordt bij een verlaten winkelmandje. We gaan hierbij uit van een werkende integratie tussen de webshop en Copernica, waarbij de artikelen reeds in een database in Copernica te vinden zijn.
+# Verlaten Winkelwagen #
+De verlaten winkelwagencampagne is een e-mail of een reeks e-mails die je stuurt naar klanten die hun winkelmandje achtergelaten hebben. Het doel van deze campagne is om de klant te stimuleren om alsnog over te gaan tot een aankoop.
+Uit een onderzoek blijkt dat het meerendeels van de winkelwagentjes verlaten achterblijft. Hierdoor wordt er jaarlijks veel omzet misgelopen. Het goede nieuws is dat er een manier is om een deel van deze gemiste omzet toch binnen te halen.
 
-## Aanbevolen databasestructuur
-In onderstaande screenshots is een profiel zichtbaar met subprofielen in de collectie 'Orders' en 'OrderItems'. In de 'Orders' collectie staat de algemene informatie van de bestellingen en in de collectie 'OrderItems' de daadwerkelijk producten. Door deze opzet is het mogelijk om door middel van het 'OrderID' de producten in te laden in je template.
+In dit artikel wordt een een campagne opgesteld die ingezet wordt bij een verlaten winkelmandje. We gaan hierbij uit van een werkende integratie tussen de webshop en Copernica, waarbij de lege winkelmandjes dus reeds in een database in Copernica te vinden zijn. Hieronder zie je enkele afbeeldingen van onze demo-webshop.
 
-![](../images/shopping-cart-order.png)
+Hier is een profiel met zijn subprofielen in collectie 'Orders' zichtbaar. In deze collectie staan alle orders, de bijbehorende producten staan in collectie 'OrderItems'. Deze scheiding wordt gemaakt om de losse producten te kunnen groeperen op basis van het ID van de order.
+
+![](../images/shopping-cart-order.png) 
+Dit is collectie 'OrderItems', waarin de losse producten staan. In veld 'OrderID' staat het ID van de order zoals we die in 'Orders' vinden. Verder staat de prijs en een locatie van een afbeelding van het product in het subprofiel.
 
 ![](../images/shopping-cart-orderitems.png)
 
-## Gegevens inladen in je e-mail
-Om de gegevens vanuit de subprofielen te tonen in de e-mail gebruik je de [loadsubprofile](./loadprofile-and-loadsubprofile.md)-functie. Hiervoor vragen we met behulp van <em>loadsubprofile</em> de subprofielen uit de collectie op, waarbij we de <em>limit</em> op 1 zetten en we (omgekeerd) sorteren op de veld 'Timestamp'. Vervolgens zeggen we dat het veld 'Status' gelijk moet zijn aan 'basket'. We willen namelijk geen complete orders tonen. Het resultaat slaan we op in de variabele $Order.
+## De template ##
+
+Nu we de basis van de e-mailcampagne hebben gebouwd, is het tijd om de template op te gaan bouwen. De motor achter de template is de [loadsubprofile](./loadprofile-and-loadsubprofile.md)-functie, waarmee subprofielen uit de database opgehaald kunnen worden (en ook uit andere databases dan die waar het geadresseerde profiel in zit).
+
+### Subprofielen laden met loadsubprofile ###
+Allereerst halen we de meest recente orders met status Basket uit collectie 'Orders'. Hiervoor vragen we met behulp van <em>loadsubprofile</em> de subprofielen uit de collectie op, waarbij we de <em>limit</em> op 1 zetten en we (omgekeerd) sorteren op het veld 'Timestamp'. Vervolgens zeggen we dat het veld 'Status' gelijk moet zijn aan Basket, we willen namelijk geen complete orders tonen. 
+De code:
 
 ```
-{loadsubprofile source="Webshop:Orders" profile=$profile.id assign=Order multiple=false Status="Basket" limit=1 orderby='Timestamp desc'}
-```
 
-Vervolgens willen we alle subprofielen uit de collectie 'OrdersItems' ophalen die horen bij de order die uit bovenstaande code is gekomen. Hiervoor gebruiken we `OrderID=$Order.OrderID`. Daarnaast gebruiken we nu de optie `multiple=true` alle subprofielen die overeenkomen met het OrderID op te halen. Het resultaat slaan we op in de variabele $loadedProducts.
+{loadsubprofile source="Webshop:Orders" profile=$profile.id Status="Basket" assign=Order multiple=false limit=1 orderby='Timestamp desc'}
 
 ```
+
+Vervolgens halen we alle door dit profiel achtergelaten producten op uit de collectie 'OrderItems'. Om ervoor te zorgen dat we alleen de juiste orders ophalen gebruiken het bijbehorende OrderID. Daarnaast gebruiken we nu de parameter <em>multiple</em> om aan te geven dat we meerdere (alle!) subprofielen willen.:
+
+```
+
 {loadsubprofile source="Webshop:OrderItems" profile=$profile.id OrderID=$Order.OrderID assign=loadedProducts multiple=true}
-```
-
-Bij het gebruik van `multiple=true` wordt het resultaat in een array (lijst van elementen) opgeslagen. Om deze gegevens in je template zichtbaar te krijgen, gebruik je [foreach](https://www.smarty.net/docs/en/language.function.foreach.tpl) om door elk element te lopen. De code om bijvoorbeeld de naam van ieder product te tonen is als volgt:
 
 ```
+
+### Een loop met foreach ###
+Nu begint het echte werk. We gaan iteractief door alle opgehaalde subprofielen lopen, waarbij we ze netjes laten zien in een tabel en we de totale prijs van het mandje telkens optellen. Het doorlopen van alle subprofielen gebeurt met <em>foreach</em>. De code om dit te controleren en om alleen bij de juiste subprofielen de naam van het product te laten zien is als volgt:
+
+```
+
 {foreach from=$loadedProducts item=loadedProduct} 
     {$loadedProduct.Product} 
 {/foreach}
-```
-
-### Extra informatie tonen
-Het is voor de klant fijn om een zo compleet mogelijke weergave van z'n winkelmandje te krijgen. In de collectie 'OrderItems' staat bij ieder product de prijs (per product) en welk aantal ervan in het winkelmandje zijn achtergelaten. Met deze gegevens is het mogelijk om de totaalprijs per product te tonen. We bereken de totaalprijs door met [math equation](https://www.smarty.net/docs/en/language.function.math.tpl) de hoeveelheid met de prijs te vermenigvuldigen. De code is als volgt:
 
 ```
+
+### Prijs per product ###
+
+Het is voor de klant natuurlijk prettig om een zo compleet mogelijke weergave van z'n winkelmandje te krijgen. In de database staat voor elk product welk aantal ervan in het winkelmandje zijn achtergelaten. Ook staat de prijs per stuk in de database. We bereken de totaalprijs door met [math equation](./publisher-personalization-functions#math) de hoeveelheid met de prijs te vermenigvuldigen. We willen dat graag in de template laten zien:
+
+```
+
 {foreach from=$loadedProducts item=loadedProduct} 
-     Productnaam: {$loadedProduct.ProductNaam} 
-     Aantal: {$loadedProduct.Hoeveelheid} 
-     Prijs per product: {$loadedProduct.Prijs} 
+     {$loadedProduct.ProductNaam} 
+     {$loadedProduct.Hoeveelheid} 
+     {$loadedProduct.Prijs} 
      {capture assign="ProductTotaal"}{math equation="x*y" x=$loadedProduct.Hoeveelheid y=$loadedProduct.Prijs}{/capture}
-     Totaalprijs: {$productTotaal}
 {/foreach}
+
 ```
-===Tot hier===
-### Totaalprijs
-Om onderaan een totaalprijs van het gehele winkelmandje te kunnen plaatsen, maken we bovenaan in het document een variabele <em>basketTotal</em> aan welke we in de <em>foreach-loop</em> verhogen met de totale prijs van het product.
+### Totaalprijs ###
+
+Om onderaan een totaalprijs van het gehele winkelmandje te kunnen plaatsen, maken we bovenaan in de template een variabele <em>basketTotal</em> aan welke we in de <em>foreach-loop</em> verhogen met de totale prijs van het product.
 
 
 Buiten de <em>foreach-loop</em>:
 ```
+
 {capture assign="basketTotaal"}0{/capture}
+
 ```
 
 In de <em>foreach-loop</em> en het <em>if-statement</em>:
 
 ```
+
 {assign var="basketTotaal" value=$basketTotaal+$productTotaal} 
-```
-
-### Het complete document
-Voor de overzichtelijkheid is het verstandig om het mandje in een tabel weer te geven. Door al het bovenstaande samen te voegen en in een tabel te zetten ontstaat de volgende code:
 
 ```
-<table  align="center" width="600px">
-    <tr align="left"><th></th><th>Product</th><th >Hoeveelheid</th><th >Prijs (1 st.)</th><th>Totaal prijs</th></tr>
 
-    {capture assign="basketTotaal"}0{/capture}  
-    
-	{loadsubprofile source="Webshop:Orders" profile=$profile.id assign=Order multiple=false Status="Basket" limit=1 orderby='Timestamp desc'}
 
-	{loadsubprofile source="Webshop:OrderItems" profile=$profile.id OrderId=$Order.OrderID assign=loadedProducts multiple=true}
-  	{foreach from=$loadedProducts item=loadedProduct}    
-    		<tr>
-       			<td>
-            		<a href="{$loadedProduct.Url}" ><img src="{$loadedProduct.AfbeeldingUrl}" width="80px"> </a>
-          		</td>
-          		<td>
-      				{$loadedProduct.ProductNaam}
-          		</td>
-          		<td>
-            		{$loadedProduct.Hoeveelheid}
-          		</td>
-          		<td>
-          		  €{$loadedProduct.Prijs}
-         		</td>
-         		<td>
-         		   	{capture assign="productTotaal"}{math equation="x*y" x=$loadedProduct.Prijs y=$loadedProduct.Hoeveelheid}{/capture}
-            		€{$productTotaal}
-          		</td>
-        	</tr> 
-	{assign var="basketTotaal" value=$basketTotaal+$productTotaal}
-   	{/foreach} 
-    	<tr>
-		<td></td>
-		<td></td>
-		<td></td>
-    		<td><b>Totaal prijs:</b></td>
-		<td><b>€{$basketTotaal}</b></td>
-	</tr>
-</table>
-```
+### De complete template ###
 
-### Het resultaat
+
+Voor de overzichtelijkheid is het verstandig om het mandje door middel van losse blokken en structuren vorm te geven. Door al het bovenstaande samen te voegen en in de template te zetten ontstaat de code die je [hier](../downloads/HTML_Shoppingcart) kunt downloaden.
+
+
+
+### Het resultaat ###
 
 ![](../images/shopping-cart-result.png)
 
-## De opvolgactie
-Naast dat je document automatisch gevuld wordt, willen we ook dat de mailing automatisch verstuurd wordt. Dit doen we aan de hand van een opvolgactie. De opvolgactie wordt ingesteld op een collectie, waarin we controleren of de status naar Basket is veranderd, vervolgens wacht de opvolgactie de aangegeven tijd. Na deze tijd controleren we nog eenmaal of de order nog steeds status Basket heeft (om te zorgen dat de order niet tussendoor voltooid of gecanceled is) en dan versturen we de mailing. Hieronder wordt stapsgewijs uitgelegd hoe je deze aanmaakt. 
+## De opvolgactie ##
+Naast dat je template automatisch gevuld wordt, willen we ook dat de mailing automatisch verstuurd wordt. Dit doen we aan de hand van een opvolgactie. De opvolgactie wordt ingesteld op een collectie, waarin we controleren of de status naar Basket is veranderd, vervolgens wacht de opvolgactie de aangegeven tijd. Na deze tijd controleren we nog eenmaal of de order nog steeds status Basket heeft (om te zorgen dat de order niet tussendoor voltooid of gecanceled is) en dan versturen we de mailing. Hieronder wordt stapsgewijs uitgelegd hoe je deze aanmaakt. 
 
 ### Instellen
+
  - Ga naar Profielen
  - Selecteer de database en klik op de opvolgactie tab
  - Klik op de collectie Orders en maak een nieuwe opvolgactie aan
- - Kies als aanleiding dat een subprofiel is aangemaakt of gewijzigd en kies het veld Status en de waarde Basket
- - Als Actie kies je verstuur een opgemaakt document per e-mail en stel de wachtijd in
- - Kies vervolgens het verlaten winkelwagen document en als bestemming het profiel zelf
- - Stel als laatst op de actie een conditie in die checkt of het veld Status gelijk is aan Basket
+ - Kies als aanleiding dat een subprofiel is aangemaakt
+ - Voeg als eerste tussenblok 'Bestemming checken' toe en geef aan dat het veld Status gelijk is aan de waarde 'Basket'
+ - Het 'Bestemming Checken' blok verbind je vervolgens met een match link naar het volgende blok
+ - Je kunt nu een wachttijd in te stellen, dit doe je met het wachttijd blok
+ - Na de wachttijd stel je nogmaals een 'Bestemming checken' blok in die kijkt of het veld 'Status' de waarde 'Basket' bevat.
+ - Vervolgens neem je als actie blok 'Verzend e-mail'
+ - Je kunt nu dit blok aanpassen en kies je de verlaten winkelwagen template en als bestemming het profiel zelf
