@@ -1,0 +1,291 @@
+<td class="esd-stripe" align="center">
+    <table class="es-content-body" width="600" cellspacing="0" cellpadding="0" bgcolor="#ffffff" align="center">
+        <tbody>
+            <tr>
+                <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td width="560" class="esd-container-frame" align="center" valign="top">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="esd-block-html esdev-disable-select">
+                                                    <div>{capture assign="basketTotaal"}0{/capture} {loadsubprofile source="Webshop:Orders" profile=$profile.id assign=Order multiple=false Status="Basket" limit=1 orderby='Timestamp desc'} {loadsubprofile source="Webshop:OrderItems" profile=$profile.id OrderId=$Order.OrderID assign=loadedProducts multiple=true}</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
+                    <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="132" valign="top"><![endif]-->
+                    <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                        <tbody>
+                            <tr>
+                                <td width="112" class="es-m-p0r es-m-p20b esd-container-frame" align="center">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="center" class="esd-block-spacer es-p20" style="font-size:0">
+                                                    <table border="0" width="100%" height="100%" cellpadding="0" cellspacing="0">
+                                                        <tbody>
+                                                            <tr>
+                                                                <td style="border-bottom: 0px solid #cccccc; background: unset; height: 1px; width: 100%; margin: 0px;"></td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="es-hidden" width="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td><td width="132" valign="top"><![endif]-->
+                    <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                        <tbody>
+                            <tr>
+                                <td width="112" class="es-m-p20b esd-container-frame" align="center">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" class="esd-block-text">
+                                                    <p>Product<span style="font-size:16px;"></span></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="es-hidden" width="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td><td width="133" valign="top"><![endif]-->
+                    <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                        <tbody>
+                            <tr>
+                                <td width="113" class="es-m-p20b esd-container-frame" align="center">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" class="esd-block-text">
+                                                    <p>Hoeveelheid<span style="font-size:16px;"></span></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="es-hidden" width="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td><td width="113" valign="top"><![endif]-->
+                    <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                        <tbody>
+                            <tr>
+                                <td width="113" align="center" class="esd-container-frame es-m-p20b">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" class="esd-block-text">
+                                                    <p>Prijs (1 st.)<span style="font-size:16px;"></span></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td><td width="20"></td><td width="30" valign="top"><![endif]-->
+                    <table cellpadding="0" cellspacing="0" class="es-right" align="right">
+                        <tbody>
+                            <tr>
+                                <td width="30" align="left" class="esd-container-frame">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="left" class="esd-block-text">
+                                                    <p>Totaal prijs<span style="font-size:16px;"></span></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td></tr></table><![endif]-->
+                </td>
+            </tr>
+            <tr>
+                <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td width="560" class="esd-container-frame" align="center" valign="top">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="esd-block-html esdev-disable-select">
+                                                    <div>{foreach from=$loadedProducts item=loadedProduct} </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
+                    <!--[if mso]><table width="560" cellpadding="0" cellspacing="0"><tr><td width="132" valign="top"><![endif]-->
+                    <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                        <tbody>
+                            <tr>
+                                <td width="112" class="es-m-p0r es-m-p20b esd-container-frame" align="center">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="esd-block-html esdev-disable-select"><a href="{$loadedProduct.Url}"><img src="{$loadedProduct.AfbeeldingUrl}" width="80px"> </a></td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="es-hidden" width="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td><td width="132" valign="top"><![endif]-->
+                    <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                        <tbody>
+                            <tr>
+                                <td width="112" class="es-m-p20b esd-container-frame" align="center">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="esd-block-html esdev-disable-select">
+                                                    <div>{$loadedProduct.ProductNaam}</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="es-hidden" width="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td><td width="133" valign="top"><![endif]-->
+                    <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                        <tbody>
+                            <tr>
+                                <td width="113" class="es-m-p20b esd-container-frame" align="center">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="esd-block-html esdev-disable-select">
+                                                    <div>{$loadedProduct.Hoeveelheid}</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                                <td class="es-hidden" width="20"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td><td width="113" valign="top"><![endif]-->
+                    <table cellpadding="0" cellspacing="0" class="es-left" align="left">
+                        <tbody>
+                            <tr>
+                                <td width="113" align="center" class="esd-container-frame es-m-p20b">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="esd-block-html esdev-disable-select">
+                                                    <div>€{$loadedProduct.Prijs}</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td><td width="20"></td><td width="30" valign="top"><![endif]-->
+                    <table cellpadding="0" cellspacing="0" class="es-right" align="right">
+                        <tbody>
+                            <tr>
+                                <td width="30" align="left" class="esd-container-frame">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="esd-block-html esdev-disable-select">
+                                                    <div> {capture assign="productTotaal"}{math equation="x*y" x=$loadedProduct.Prijs y=$loadedProduct.Hoeveelheid}{/capture} €{$productTotaal}</div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <!--[if mso]></td></tr></table><![endif]-->
+                </td>
+            </tr>
+            <tr>
+                <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td width="560" class="esd-container-frame" align="center" valign="top">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td class="esd-block-html esdev-disable-select">
+                                                    <div>{assign var="basketTotaal" value=$basketTotaal+$productTotaal} <div>{/foreach}</div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+            <tr>
+                <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                        <tbody>
+                            <tr>
+                                <td width="560" class="esd-container-frame" align="center" valign="top">
+                                    <table cellpadding="0" cellspacing="0" width="100%">
+                                        <tbody>
+                                            <tr>
+                                                <td align="right" class="esd-block-text">
+                                                    <p style="font-size: 16px;"><strong>Totaal prijs:€{$basketTotaal}</strong></p>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</td>
