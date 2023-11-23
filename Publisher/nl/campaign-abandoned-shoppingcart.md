@@ -1,6 +1,6 @@
 # Verlaten Winkelwagen #
 De verlaten winkelwagencampagne is een e-mail of een reeks e-mails die je stuurt naar klanten die hun winkelmandje achtergelaten hebben. Het doel van deze campagne is om de klant te stimuleren om alsnog over te gaan tot een aankoop.
-Uit een onderzoek blijkt dat het meerendeels van de winkelwagentjes verlaten achterblijft. Hierdoor wordt er jaarlijks veel omzet misgelopen. Het goede nieuws is dat er een manier is om een deel van deze gemiste omzet toch binnen te halen.
+Uit een onderzoek blijkt dat het meerendeel van de winkelwagentjes verlaten achterblijft. Hierdoor wordt er jaarlijks veel omzet misgelopen. Het goede nieuws is dat er een manier is om een deel van deze gemiste omzet toch binnen te halen.
 
 In dit artikel wordt een een campagne opgesteld die ingezet wordt bij een verlaten winkelmandje. We gaan hierbij uit van een werkende integratie tussen de webshop en Copernica, waarbij de lege winkelmandjes dus reeds in een database in Copernica te vinden zijn. Hieronder zie je enkele afbeeldingen van onze demo-webshop.
 
@@ -98,10 +98,10 @@ Naast dat je template automatisch gevuld wordt, willen we ook dat de mailing aut
  - Ga naar Profielen
  - Selecteer de database en klik op de opvolgactie tab
  - Klik op de collectie Orders en maak een nieuwe opvolgactie aan
- - Kies als aanleiding dat een subprofiel is aangemaakt
+ - Kies de aanleiding dat een subprofiel is aangemaakt
  - Voeg als eerste tussenblok 'Bestemming checken' toe en geef aan dat het veld Status gelijk is aan de waarde 'Basket'
- - Het 'Bestemming Checken' blok verbind je vervolgens met een match link naar het volgende blok
- - Je kunt nu een wachttijd in te stellen, dit doe je met het wachttijd blok
- - Na de wachttijd stel je nogmaals een 'Bestemming checken' blok in die kijkt of het veld 'Status' de waarde 'Basket' bevat.
- - Vervolgens neem je als actie blok 'Verzend e-mail'
- - Je kunt nu dit blok aanpassen en kies je de verlaten winkelwagen template en als bestemming het profiel zelf
+ - Het 'Bestemming Checken' blok verbind je vervolgens met een match link naar het volgende blok. Dit doe je door het blok aan te klikken en te kiezen voor "Een "Match" link aanmaken". Vervolgens sleep je het nieuw verschenen bolletje over het volgende blok. 
+ - Je kunt nu een wachttijd instellen, dit doe je met het wachttijd blok
+ - Na de wachttijd stel je nogmaals een 'Bestemming checken' blok in die kijkt of het veld 'Status' de waarde 'Basket' bevat
+ - Vervolgens kies je het actie blok 'Verzend e-mail'
+ - Als laatst kun je dit blok aanpassen en kies je de verlaten winkelwagen template met als bestemming het profiel zelf
