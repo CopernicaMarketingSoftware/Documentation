@@ -30,12 +30,23 @@ vervolgens niet aankomt kun je dit profiel zo terug zoeken in je eigen database
 en contacteren om het probleem op te lossen.
 
 ## List-Unsubscribe header
-Je kunt ook altijd de List Unsubscribe-header toevoegen. Hiermee plaatsen sommige 
-e-mailclients meteen een uitschrijflink bovenaan de e-mail. Het [uitschrijfgedrag](./database-unsubscribe-behavior) 
-kan ook zelf worden ingesteld. 
+De list-unsubscribe header is extra informatie die wordt toegevoegd aan een e-mail, 
+met daarin instructies om een uitschrijfknop te tonen bij de e-mail. Als iemand 
+van de knop gebruik maakt, gaat  er een bericht terug naar Copernica zodat de 
+afmelding verwerkt kan worden. Hierbij wordt gebruik gemaakt van het ingestelde 
+[uitschrijfgedrag](./database-unsubscribe-behavior) op de bestemming.
 
-Je plaatst altijd minimaal één uitschrijflink. Dit komt 
-je [verzendreputatie](./send-reputation) ten goede.
+In de geavanceerde headers van je template vind je de optie 'Uitschrijfheader'. 
+Deze header staat standaard aan omdat dit belangrijk is voor een goede 
+[verzendreputatie](./send-reputation). Daarnaast worden spamfilters positief 
+beïnvloed als ze een list-unsubscribe header bij je e-mail zien, waardoor zij 
+eenvoudiger je e-mail doorlaten naar de inbox. Het is een soort garantie dat je 
+een legitieme verzender bent. En het maakt het eenvoudiger om je reputatie te 
+monitoren voor de waakhonden van het e-mailverkeer (Return Path, Lashback, Listbox
+, e.a.).
+
+De list-unsubscribe header is geen vervanger voor de eigen uitschrijflink in het
+template of doument.
 
 ## Meer informatie
 * [Templates in Marketing Suite](./emailings-ms-templates)
