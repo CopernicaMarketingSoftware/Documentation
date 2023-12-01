@@ -35,11 +35,23 @@ them for the right email address.
 
 ## Unsubscribe
 
-You can also use the *list unsubscribe* header. This is used to display 
-the unsubscribe link right on the top of the email in some email clients. 
-We recommend always using at least an unsubscribe link. This will help your 
-[sender reputation](./sender-reputation) and you can 
-[set unsubscribe behaviour](./database-unsubscribe-behavior) yourself. 
+The list-unsubscribe header is additional information added to an email, 
+containing instructions to display an unsubscribe button with the e-mail. When someone 
+uses the button, a message goes back to Copernica so that the 
+unsubscribe can be processed. This uses the set 
+[unsubscribe-behavior](./database-unsubscribe-behavior) on the destination.
+
+In the advanced headers of your template you will find the option 'Unsubscribe header'. 
+This header is on by default because it is important for good 
+[sender reputation](./sender-reputation). In addition, spam filters are positively 
+affected if they see a list-unsubscribe header with your email, making it 
+more easily pass your e-mail through to the inbox. It is a kind of guarantee that you are 
+are a legitimate sender. And it makes it easier to monitor your reputation 
+monitor for the watchdogs of e-mail traffic (Return Path, Lashback, Listbox
+, et al).
+
+The list-unsubscribe header is not a replacement for your own unsubscribe link in the
+template or doument. 
 
 ## More information
 
