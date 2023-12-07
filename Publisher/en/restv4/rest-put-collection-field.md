@@ -14,6 +14,7 @@ the HTTP request.
 The following data must be put into the body of the request:
 
 - **name**: Name of the field
+- **description**: Description of the field
 - **type** Type of the field
 - **value**: Value of the field
 - **displayed**: Boolean value to indicate whether or not the field should be placed in 
