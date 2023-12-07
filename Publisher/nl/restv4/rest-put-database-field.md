@@ -16,6 +16,7 @@ De volgende variabelen kunnen in de body van het HTTP PUT commando worden
 geplaatst:
 
 * name:             nieuwe naam van het veld (verplicht);
+* description:      beschrijving van het veld
 * type:             type van het veld;
 * value:            standaardwaarde van het veld;
 * displayed:        boolean waarde om aan te geven dat het veld in de user interface in lijsten en grids moet worden geplaatst;

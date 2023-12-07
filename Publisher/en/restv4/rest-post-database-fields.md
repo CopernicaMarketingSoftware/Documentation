@@ -14,6 +14,7 @@ request is returned.
 The following variables can be put into the message body of the HTTP POST call:
 
 - **name**: the name of the new field (mandatory)
+- **description**: the description of the new field
 - **type**: type of the new field
 - **value**: default value of the new field
 - **displayed**: boolean value to determine whether or not the field should be placed into lists and grids in the user interface

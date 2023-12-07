@@ -13,6 +13,7 @@ has to be the ID of the field itself.
 ## Available data
 
 - **name**: the new name of the field (mandatory)
+- **description**: the new description of the field
 - **type**: type of the field
 - **value**: default value of the field
 - **displayed**: boolean value to determine whether or not the field should be placed into lists and grids in the user interface

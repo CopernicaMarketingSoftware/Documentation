@@ -13,6 +13,7 @@ After a successful call the ID of the created request is returned.
 The following variables can be set in the message body:
 
 - **name**: the title of the new interest field (mandatory)
+- **description**: the description of the new interest field
 - **group**: the group the field belongs to. Interests that belong to the same group are put together in the user interface
 
 ## JSON example

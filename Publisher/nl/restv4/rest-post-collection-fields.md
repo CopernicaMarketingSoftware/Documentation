@@ -14,6 +14,7 @@ andere waardes moeten als message body aan het HTTP request worden toegevoegd.
 De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 
 * **name**: Naam van het nieuw aan te maken veld (verplicht)
+* **description**: Beschrijving van het veld
 * **type**: Type van het nieuwe veld
 * **value**: Standaardwaarde van het nieuwe veld
 * **textlines**: Voor tekstvelden: het aantal regels in formulieren om het veld te bewerken

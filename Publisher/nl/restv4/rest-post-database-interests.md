@@ -14,6 +14,7 @@ en eventuele andere waardes moeten als message body aan het HTTP request worden 
 De volgende variabelen kunnen in de body van de HTTP POST call worden geplaats.
 
 * **name**: Naam van de nieuw aan te maken interesse (verplicht)
+* **description**: Beschrijving van het veld
 * **group**: Optionele groepnaam. Interesses met dezelfde groepnaam worden bij elkaar gezet in de user interface
 
 ## Voorbeeld in JSON

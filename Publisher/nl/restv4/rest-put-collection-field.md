@@ -14,6 +14,7 @@ De rest van de informatie voor het veld moet toegevoegd worden aan de message bo
 De volgende variabelen kunnen meegegeven worden aan de body van het verzoek:
 
 - **name**: Naam van het veld
+- **description**: Beschrijving van het veld
 - **type** Type van het veld
 - **value**: Waarde van het veld
 - **displayed**: Boolean waarde om aan te geven of het veld zichtbaar moet zijn in lijsten en grids in de gebruikers interface
