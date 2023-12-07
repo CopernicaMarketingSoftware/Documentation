@@ -14,6 +14,7 @@ message body. After a successful call the ID of the created request is returned.
 The following variables can be added to the body of the message:
 
 * **name**: name of the new field (mandatory)
+* **description**: the description of the new field
 * **type**: type of the new field
 * **value**: default value of the new field
 * **textlines**: the amount of lines to use in text fields
