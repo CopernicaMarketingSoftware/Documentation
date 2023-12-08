@@ -23,6 +23,7 @@ The following variables can be added to the body of the message:
 * **displayed**: boolean value to indicate whether or not field should be displayed to the user in lists or grids
 * **hidden**: boolean value to indicate that a field should never be displayed to the user interface
 * **ordered**: boolean value to indicate whether profiles should be ordered by this field by default
+* **lock**: boolean value to indicate that the field can only be modified or deleted via the API
 
 A field can have any of the following types:
 

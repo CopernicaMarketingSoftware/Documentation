@@ -21,6 +21,7 @@ has to be the ID of the field itself.
 - **textlines**: number of lines in webforms to edit the field
 - **hidden**: boolean value to make sure a field is never shown in the interface
 - **index**: boolean value, sets whether or not the field should be indexed
+- **lock**: boolean value to indicate that the field can only be modified or deleted via the API
 
 The following types are available for fields:
 

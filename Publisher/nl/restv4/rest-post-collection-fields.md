@@ -23,6 +23,7 @@ De volgende variabelen kunnen in de body van de HTTP POST call worden geplaatst.
 * **displayed**: Boolean waarde om aan te geven dat het veld in de user interface in lijsten en grids moet worden geplaatst
 * **hidden**: Boolean waarde om aan te geven dat een veld nooit zichtbaar mag zijn in de user interface
 * **ordered**: Boolean waarde of profielen standaard op basis van dit veld zijn gesorteerd
+* **lock**: Boolean waarde om aan te geven dat het veld enkel via de API aangepast of verwijderd mag worden
 
 Een veld kan de volgende types hebben:
 

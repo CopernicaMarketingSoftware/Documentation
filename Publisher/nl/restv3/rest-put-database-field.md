@@ -23,7 +23,8 @@ geplaatst:
 * length:           maximum lengte voor teksten;
 * textlines:        voor tekstvelden: het aantal regels in formulieren om het veld te bewerken;
 * hidden:           boolean waarde om aan te geven dat een velt nooit zichtbaar mag zijn in de user interface;
-* index:            boolean waarde of een index op het veld moet worden aangemaakt.
+* index:            boolean waarde of een index op het veld moet worden aangemaakt;
+* lock:             boolean waarde om aan te geven dat het veld enkel via de API aangepast of verwijderd mag worden.
 
 Een veld kan de volgende types hebben:
 
