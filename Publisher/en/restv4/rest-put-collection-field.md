@@ -24,6 +24,7 @@ grids and lists in the user interface
 - **textlines**: Amount of text lines for text fields
 - **hidden**: Boolean value to indicate whether or not to always hide a field from a user
 - **index**: Boolean value to indicate whether or not to create an index on the field
+- **lock**: Boolean value to indicate that the field can only be modified or deleted via the API
 
 ## JSON example
 
