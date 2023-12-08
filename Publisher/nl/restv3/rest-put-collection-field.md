@@ -22,6 +22,7 @@ De volgende variabelen kunnen meegegeven worden aan de body van het verzoek:
 - **textlines**: Hoeveelheid regels beschikbaar in text velden
 - **hidden**: Boolean waarde om aan te geven of een veld altijd verborgen moet worden voor een gebruiker
 - **index**: Boolean waarde om aan te geven of er een index aangemaakt moet worden op het veld
+- **lock**: Boolean waarde om aan te geven dat het veld enkel via de API aangepast of verwijderd mag worden
 
 ## Voorbeeld in JSON
 
