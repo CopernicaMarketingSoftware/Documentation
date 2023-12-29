@@ -45,4 +45,4 @@ Onderin de toolbar kun je, door de checkbox 'Archief' aan te vinken, de gearchiv
 Dit kan ervoor zorgen dat afbeeldingen en bestanden in templates niet meer worden ingeladen.
 
 <!-- Meta tags -->
-<!-- media library media-library bibliotheek -->
+<!-- media library media-library bibliotheek "medialibrary" -->
