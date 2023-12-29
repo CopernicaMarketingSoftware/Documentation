@@ -21,6 +21,8 @@ over lezen in [dit artikel](https://support.google.com/analytics/answer/1033173?
 
 ## Hyperlinks uitbreiden in de Marketing suite
 
+### Stap 1 - Aanmaken van de hyperlinkconfiguratie
+
 Om hyperlinks in de Marketing Suite uit te breiden, open je eerst de E-mail-editor. Hier kies je vervolgens voor 'Gereedschap', rechts van de optie 'Aanmaken'.
 
 In het configuratiescherm dat je zojuist hebt geopend, kies je links voor 'Standaard hyperlinkconfiguraties'.
@@ -29,11 +31,15 @@ Als je al eerder hyperlinkconfiguraties hebt ingesteld, zie je deze hier in een 
 
 Om een nieuwe hyperlinkconfiguratie toe te voegen kies je rechtsboven voor 'Hyperlinkconfiguratie toevoegen'.
 
-Vervolgens kies je weer bovenin voor de optie 'Uitbreiden voor Google Analytics'.
+### Stap 2 - Instellen van de hyperlinkconfiguratie
 
-In dit scherm kun je de standaardinstellingen van je hyperconfiguratie instellen.
+Vervolgens kies je bovenin voor de optie 'Uitbreiden voor Google Analytics'.
+
+In dit scherm kun je de standaardinstellingen van je hyperlinkconfiguratie instellen.
 
 Als alles naar wens is ingesteld, klik je rechtsboven op 'Niet-opgeslagen wijzigingen' om de configuratie op te slaan en een naam te geven.
+
+### Stap 3 - Toepassen van de hyperlinkconfiguratie
 
 Na het instellen van de standaardinstellingen heb je in principe twee opties. Je kunt de zojuist aangemaakte hyperlinkconfiguratie selecteren bij het aanmaken van een nieuw template en je kunt bij een al bestaand template kiezen om de hyperlinkconfiguratie te gebruiken.
 
@@ -41,13 +47,15 @@ Om de hyperlinkconfiguratie bij een nieuw template te gebruiken, kies je in het 
 
 Om de hyperlinkconfiguratie toe te voegen aan een al bestaand template open je eerst het gewenste template, daar ga je naar 'Configuratie' en in het templateconfiguratiescherm kies je vervolgens links in het blauwe menu voor 'Hyperlinks uitbreiden'. Als hier nog geen standaard hyperlinkconfiguratie regels zijn ingesteld, kun je kiezen voor 'Een standaardconfiguratie kiezen'. Ook hier krijg je dan een overzicht te zien van alle reeds aangemaakte hyperlinkconfiguraties waar je uit kunt kiezen.
 
+### Handig
+
 Zodra je een standaard hyperlinkconfiguratie hebt geladen, zie je alle instellingen overzichtelijk onder elkaar.
 
 Wat goed is om te weten, is dat je binnen het configuratiescherm van je template je elke instelling van de hyperlinkconfiguratie afzonderlijk alsnog kan wijzigen zonder dat de standaardconfiguratie wordt gewijzigd.
 
 ## Hyperlinks uitbreiden in de Publisher
 
-Let op: Op deze manier hyperlinks uitbreiden is alleen mogelijk als het nieuwe link tracking systeem wordt gebruikt! [Hyperlings uitbreiden met het oude link tracking systeem werkt net even anders](#met-het-oude-link-tracking-systeem).
+Let op: Op deze manier hyperlinks uitbreiden is alleen mogelijk als het nieuwe link tracking systeem wordt gebruikt! [Hyperlinks uitbreiden met het oude link tracking systeem werkt net even anders](#met-het-oude-link-tracking-systeem).
 
 In het dialoogvenster hyperlinks uitbreiden kun je zowel op template niveau als op document niveau hyperlinks uitbreiden. Deze instellingen worden samengevoegd. Als het document dezelfde parameters gebruikt als in het template worden deze overschreven.
 
