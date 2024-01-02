@@ -47,9 +47,10 @@ Om de hyperlinkconfiguratie bij een nieuw template te gebruiken, kies je in het 
 
 Om de hyperlinkconfiguratie toe te voegen aan een al bestaand template open je eerst het gewenste template, daar ga je naar 'Configuratie' en in het templateconfiguratiescherm kies je vervolgens links in het blauwe menu voor 'Hyperlinks uitbreiden'. Als hier nog geen standaard hyperlinkconfiguratie regels zijn ingesteld, kun je kiezen voor 'Een standaardconfiguratie kiezen'. Ook hier krijg je dan een overzicht te zien van alle reeds aangemaakte hyperlinkconfiguraties waar je uit kunt kiezen.
 
-### Wijzigingen doorvoeren
+### Hyperlinks uitbreidingen aanpassen
 
-Zodra je een standaard hyperlinkconfiguratie hebt geladen, zie je alle instellingen overzichtelijk onder elkaar. Aanpassingen binnen de hyperlinkconfiguratie van je template hebben geen invloed op de standaardconfiguratie.
+Zodra je een standaard hyperlinkconfiguratie hebt geladen, zie je alle instellingen overzichtelijk onder elkaar. 
+Aanpassingen binnen de hyperlinkconfiguratie van je template hebben geen invloed op de standaardconfiguratie.
 
 ## Hyperlinks uitbreiden in de Publisher
 
