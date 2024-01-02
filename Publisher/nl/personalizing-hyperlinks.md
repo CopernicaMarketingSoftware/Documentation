@@ -23,20 +23,11 @@ over lezen in [dit artikel](https://support.google.com/analytics/answer/1033173?
 
 ### Stap 1 - Aanmaken van de hyperlinkconfiguratie
 
-Om hyperlinks in de Marketing Suite uit te breiden, open je eerst de E-mail-editor. Hier kies je vervolgens voor 'Gereedschap', rechts van de optie 'Aanmaken'.
-
-In het configuratiescherm dat je zojuist hebt geopend, kies je links voor 'Standaard hyperlinkconfiguraties'.
-
-Als je al eerder hyperlinkconfiguraties hebt ingesteld, zie je deze hier in een overzicht staan.
-
-Om een nieuwe hyperlinkconfiguratie toe te voegen kies je rechtsboven voor 'Hyperlinkconfiguratie toevoegen'.
+Om hyperlinks in de Marketing Suite uit te breiden, open je eerst de E-mail-editor. Hier kies je vervolgens voor 'Gereedschap', rechts van de optie 'Aanmaken'. In het configuratiescherm, kies je links voor 'Standaard hyperlinkconfiguraties'. Als je al eerder hyperlinkconfiguraties hebt ingesteld, zie je deze hier in een overzicht staan. Om een nieuwe hyperlinkconfiguratie toe te voegen kies je rechtsboven voor 'Hyperlinkconfiguratie toevoegen'.
 
 ### Stap 2 - Instellen van de hyperlinkconfiguratie
 
-Vervolgens kies je bovenin voor de optie 'Uitbreiden voor Google Analytics'.
-
-In dit scherm kun je de standaardinstellingen van je hyperlinkconfiguratie instellen.
-
+Vervolgens kies je bovenin voor de optie 'Uitbreiden voor Google Analytics'. In dit scherm kun je de standaardinstellingen van je hyperlinkconfiguratie instellen.
 Als alles naar wens is ingesteld, klik je rechtsboven op 'Niet-opgeslagen wijzigingen' om de configuratie op te slaan en een naam te geven.
 
 ### Stap 3 - Toepassen van de hyperlinkconfiguratie
