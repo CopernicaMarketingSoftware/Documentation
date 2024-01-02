@@ -13,7 +13,19 @@ De volgende parameters kunnen in de message body van het HTTP PUT command worden
 - **fields**: Velden die het subprofiel bevat en hun waarden
 - **secret**: De geheime code die gelinkt is aan het subprofiel
 
-## Voorbeeld
+## Voorbeeld in JSON
+De volgende JSON demonstreert hoe je de API methode kunt gebruiken:
+
+```json
+{
+    "fields" : {
+        "firstname": "John",
+        "lastname": "Doe"
+    }
+}
+```
+
+## Voorbeeld in PHP
 
 Het volgende PHP voorbeeld laat zien hoe je deze API methode gebruikt:
 

@@ -13,7 +13,6 @@ subprofiel waarvan het uitschrijfgedrag moet worden uitgevoerd.
 Er hoeft geen extra data meegegeven te worden in de body. De [REST API klasse](rest-php)
 vereist wel dat er een body moet worden meegegeven, in dit geval dus een lege array.
 
-
 ## Voorbeeld in PHP
 
 Het volgende PHP script demonstreert hoe de API methode aan kan worden geroepen.

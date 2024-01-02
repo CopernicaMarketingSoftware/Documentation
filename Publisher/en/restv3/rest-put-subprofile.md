@@ -16,6 +16,18 @@ PUT command:
 - **fields**: Fields that the subprofile contains
 - **secret**: The secret code that is associated with the subprofile
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "fields" : {
+        "firstname": "John",
+        "lastname": "Doe"
+    }
+}
+```
+
 ## PHP example
 
 The following example demonstrates how to use this method:

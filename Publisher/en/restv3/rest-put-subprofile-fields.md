@@ -21,6 +21,16 @@ If, however, you’re using a traditional x-www-form-urlencoded format,
 the variables should contain the names of the fields you want to change, 
 and the values should be the new field values.
 
+## JSON example
+The following JSON demonstrates how to use the API method:
+
+```json
+{
+    "firstname": "John",
+    "lastname":"Doe"
+}
+```
+
 ## PHP example
 
 The following example illustrates how to use the API method:
