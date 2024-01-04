@@ -63,3 +63,13 @@ Modules maken het mogelijk om elementen te hergebruiken in meerdere templates. D
 Je maakt een module aan door met je muis over het element te hoveren en te klikken op de drie puntjes. Hier vind je de optie **'Opslaan als module'**. De opgeslagen modules vind je vervolgens onder **'Modules'**. 
 
 Je kunt een naam, beschrijving en tags toevoegen door over de opgeslagen module te hoveren en op de drie puntjes te klikken. Zo kun je binnen je module zoeken op specifieke waarden.
+
+### Modulecategorieën
+Om een categorie aan een Module toe te voegen, voer je de volgende stappen uit:
+- Ga naar de template.
+- Kies voor 'Gereedschap'.
+- Kies voor 'Modulecategorieën' onder 'Drag-and-drop-templates' in het blauwe deel van de pagina.
+- Klik op 'Categorie toevoegen' aan de rechterzijde van de pagina.
+- Kies een naam voor je module en sla de categorie op.
+
+Je ziet je nieuwe categorie in het overzicht van 'Modulecategorieën'. Wanneer je op 'Bewerken' klikt, kun je de naam van de Categorie aanpassen.
