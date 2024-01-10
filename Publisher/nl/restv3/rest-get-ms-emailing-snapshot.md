@@ -12,7 +12,7 @@ Hier moet `$id` vervangen worden door de ID van de mailing.
 Het **data** veld van het teruggegeven JSON object bevat de snapshot informatie. 
 De volgende velden zijn beschikbaar:
 
-* **template**: De ID van het template gebruikt voor de mailing
+* **template**: De ID van de template gebruikt voor de mailing
 * **name**: De naam van de snapshot.
 * **from_address**: Het 'from address' van de mailing.
 * **subject**: Het onderwerp van de mailing.
