@@ -339,6 +339,7 @@ and emailings.
 | GET    | [api.copernica.com/v3/ms/scheduledemailing/$id](./rest-get-ms-scheduledemailing)             | Fetch a scheduled mailing                             |
 | POST   | [api.copernica.com/v3/ms/scheduledemailing](./rest-post-ms-scheduledemailing)                | Create a scheduled mailing                            |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Fetch the destinations for a mailing                  |
+| GET    | [api.copernica.com/v3/ms/emailing/$id/snapshot](./rest-get-ms-emailing-snapshot)             | Fetch the snapshot for a mailing                      |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Fetch the statistics for a mailing                    |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/deliveries](./rest-get-ms-emailing-deliveries)         | Fetch all deliveries for a mailing                    |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/impressions](./rest-get-ms-emailing-impressions)       | Fetch all impressions for a mailing                   |
