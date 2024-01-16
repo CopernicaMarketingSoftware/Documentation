@@ -314,6 +314,7 @@ templates en mailings.
 | GET    | [api.copernica.com/v3/ms/scheduledemailing/$id](./rest-get-ms-scheduledemailing)             | Opvragen van een ingeroosterde mailing                            |
 | POST   | [api.copernica.com/v3/ms/scheduledemailing/](./rest-post-ms-scheduledemailing)               | Aanmaken van een ingeroosterde mailing                            |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/destinations](./rest-get-ms-emailing-destinations)     | Opvragen van destinations voor een mailing                        |
+| GET    | [api.copernica.com/v3/ms/emailing/$id/snapshot](./rest-get-ms-emailing-snapshot)             | Opvragen van een snapshot voor een mailing                        |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/statistics](./rest-get-ms-emailing-statistics)         | Opvragen van statistieken voor een mailing                        |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/deliveries](./rest-get-ms-emailing-deliveries)         | Opvragen van alle deliveries voor een emailing                    |
 | GET    | [api.copernica.com/v3/ms/emailing/$id/impressions](./rest-get-ms-emailing-impressions)       | Opvragen van alle impressions voor een emailing                  |
