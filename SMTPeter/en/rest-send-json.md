@@ -122,6 +122,22 @@ Or to both an email address and a URL:
 
 It is your own responsibility to process the unsubscribes.
 
+### List-Unsubscribe-Post header
+
+To include a "list-unsubscribe-post" header in your email, featuring the 
+"List-Unsubscribe=One-Click" value, incorporate the JSON option 
+"one-click-unsubscribe." If this option is set to true and you have set the 
+unsubscribe header, it will be added to the MIME of the message.
+
+```json
+{
+    "subject": "this is the subject line",
+    "html": "<html> .... </html>",
+    "text": "text version of the email",
+    "unsubscribe": [ "http://www.example.com" ],
+    "unsubscribe-post-one-click": true
+}
+```
 
 ## Extra "x-*" headers
 

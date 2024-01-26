@@ -92,6 +92,23 @@ Of een URL en een e-mailadres:
 }
 ```
 
+### List-Unsubscribe-Post header
+
+Om een "list-unsubscribe-post" header toe te voegen aan je e-mail, met de 
+waarde "List-Unsubscribe=One-Click" voeg je de JSON-optie 
+"one-click-unsubscribe" toe. Als deze optie op true staat en je hebt de 
+unsubscribe-kop ingesteld, wordt deze toegevoegd aan de MIME van het bericht.
+
+```json
+{
+    "subject": "this is the subject line",
+    "html": "<html> .... </html>",
+    "text": "text version of the email",
+    "unsubscribe": [ "http://www.example.com" ],
+    "unsubscribe-post-one-click": true
+}
+```
+
 ## Extra "x-*" headers
 
 De "extra" property kun je gebruiken als je een custom header wilt toevoegen aan je e-mail. Om te voorkomen dat een custom header niet conflicteert met een andere header mag je alleen custom headers toevoegen met een "x-*" prefix.
