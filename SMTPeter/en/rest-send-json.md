@@ -135,7 +135,7 @@ unsubscribe header, it will be added to the MIME of the message.
     "html": "<html> .... </html>",
     "text": "text version of the email",
     "unsubscribe": [ "http://www.example.com" ],
-    "one-click-unsubscribe": "true"
+    "one-click-unsubscribe": true
 }
 ```
 

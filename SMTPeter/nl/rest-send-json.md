@@ -105,7 +105,7 @@ unsubscribe-kop ingesteld, wordt deze toegevoegd aan de MIME van het bericht.
     "html": "<html> .... </html>",
     "text": "text version of the email",
     "unsubscribe": [ "http://www.example.com" ],
-    "one-click-unsubscribe": "true"
+    "one-click-unsubscribe": true
 }
 ```
 
