@@ -59,53 +59,31 @@ De "subject", "text" en "HTML" properties kunnen gebruikt worden om het onderwer
 
 ## Unsubscribe header
 
-Als je een *list-unsubscribe* header wilt toevoegen aan je e-mail kun je de JSON "unsubscribe" optie toevoegen. 
+Als je een *list-unsubscribe* header wilt toevoegen aan je e-mail kun je de JSON "unsubscribe" optie toevoegen. De unsubscribe optie kan een e-mailadres en een url bevatten of een van beide.
 
 ```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
     "text": "text version of the e-mail",
-    "unsubscribe": "unsubscribe@example.com"
+    "unsubscribe": {
+        "email": "unsubscribe@example.com",
+        "url": "http://www.example.com"
+    }
 }
 ```
 
-Je kunt ook een URL aan een "unsubscribe header" toevoegen:
+Om een "list-unsubscribe-post" header toe te voegen aan je e-mail, met de waarde "List-Unsubscribe=One-Click" voeg je de JSON-optie "one-click" aan de "unsubscribe" optie toe. 
 
 ```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
     "text": "text version of the e-mail",
-    "unsubscribe": "http://www.example.com"
-}
-````
-
-Of een URL en een e-mailadres:
-
-```json
-{
-    "subject": "this is the subject line",
-    "html": "<html> .... </html>",
-    "text": "text version of the e-mail",
-    "unsubscribe": [ "http://www.example.com", "unsubscribe@example.com" ]
-}
-```
-
-### List-Unsubscribe-Post header
-
-Om een "list-unsubscribe-post" header toe te voegen aan je e-mail, met de 
-waarde "List-Unsubscribe=One-Click" voeg je de JSON-optie 
-"one-click-unsubscribe" toe. Als deze optie op true staat en je hebt de 
-unsubscribe-kop ingesteld, wordt deze toegevoegd aan de MIME van het bericht.
-
-```json
-{
-    "subject": "this is the subject line",
-    "html": "<html> .... </html>",
-    "text": "text version of the email",
-    "unsubscribe": [ "http://www.example.com" ],
-    "unsubscribe-post-one-click": true
+    "unsubscribe": {
+        "url": "http://www.example.com",
+        "oneclick": true
+    }
 }
 ```
 

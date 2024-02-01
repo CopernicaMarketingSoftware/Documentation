@@ -86,56 +86,34 @@ are self-explanatory.
 ## Unsubscribe header
 
 If you want to add a "list-unsubscribe" header to your email, you can
-add the JSON "unsubscribe" option. You can set it to a string holding
-either a URL or an email address, or an array holding both:
+add the JSON "unsubscribe" option. You can add either an URL or an email address, 
+or both:
 
 ```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
-    "text": "text version of the email",
-    "unsubscribe": "unsubscribe@example.com"
+    "text": "text version of the e-mail",
+    "unsubscribe": {
+        "email": "unsubscribe@example.com",
+        "url": "http://www.example.com"
+    }
 }
 ```
-
-You can also set it to a URL:
-
-```json
-{
-    "subject": "this is the subject line",
-    "html": "<html> .... </html>",
-    "text": "text version of the email",
-    "unsubscribe": "http://www.example.com"
-}
-```
-
-Or to both an email address and a URL:
-
-```json
-{
-    "subject": "this is the subject line",
-    "html": "<html> .... </html>",
-    "text": "text version of the email",
-    "unsubscribe": [ "http://www.example.com", "unsubscribe@example.com" ]
-}
-```
-
-It is your own responsibility to process the unsubscribes.
-
-### List-Unsubscribe-Post header
 
 To include a "list-unsubscribe-post" header in your email, featuring the 
 "List-Unsubscribe=One-Click" value, incorporate the JSON option 
-"one-click-unsubscribe." If this option is set to true and you have set the 
-unsubscribe header, it will be added to the MIME of the message.
+"one-click" to "unsubscribe". 
 
 ```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
-    "text": "text version of the email",
-    "unsubscribe": [ "http://www.example.com" ],
-    "unsubscribe-post-one-click": true
+    "text": "text version of the e-mail",
+    "unsubscribe": {
+        "url": "http://www.example.com",
+        "oneclick": true
+    }
 }
 ```
 
