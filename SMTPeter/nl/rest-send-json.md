@@ -73,7 +73,7 @@ Als je een *list-unsubscribe* header wilt toevoegen aan je e-mail kun je de JSON
 }
 ```
 
-Om een "list-unsubscribe-post" header toe te voegen aan je e-mail, met de waarde "List-Unsubscribe=One-Click" voeg je de JSON-optie "one-click" aan de "unsubscribe" optie toe. 
+Om aan RFC 8085 te voldoen, raden we aan de "list-unsubscribe-post" header in te stellen met de waarde "List-Unsubscribe=One-Click". Dit kan worden gedaan door de "oneclick"-optie in de "unsubscribe"-optie op true te zetten. Het is belangrijk op te merken dat als je deze optie instelt, je verantwoordelijk bent voor het onderscheiden van POST-verzoeken voor onmiddellijke uitschrijvingen en GET-verzoeken die zijn ontworpen om een bevestigingspagina voor uitschrijven weer te geven.
 
 ```json
 {

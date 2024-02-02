@@ -101,9 +101,12 @@ or both:
 }
 ```
 
-To include a "list-unsubscribe-post" header in your email, featuring the 
-"List-Unsubscribe=One-Click" value, incorporate the JSON option 
-"one-click" to "unsubscribe". 
+To adhere to RFC 8085, we recommend setting the "list-unsubscribe-post" header 
+with the "List-Unsubscribe=One-Click" value. This can be done by setting the 
+"oneclick" option in the "unsubcribe" option to true. It's important to note 
+that if you set this option, you are responsible for distinguishing between 
+POST requests, facilitating immediate unsubscribes, and GET requests, designed 
+for displaying a confirmation page for unsubscribing.
 
 ```json
 {
