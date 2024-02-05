@@ -73,7 +73,9 @@ Als je een *list-unsubscribe* header wilt toevoegen aan je e-mail kun je de JSON
 }
 ```
 
-Om aan RFC 8085 te voldoen, raden we aan de "list-unsubscribe-post" header in te stellen met de waarde "List-Unsubscribe=One-Click". Dit kan worden gedaan door de "oneclick"-optie in de "unsubscribe"-optie op true te zetten. Het is belangrijk op te merken dat als je deze optie instelt, je verantwoordelijk bent voor het onderscheiden van POST-verzoeken voor onmiddellijke uitschrijvingen en GET-verzoeken die zijn ontworpen om een bevestigingspagina voor uitschrijven weer te geven.
+Als je afmeldformulier aan [RFC 8058](https://datatracker.ietf.org/doc/html/rfc8058) voldoet, kun je de "oneclick"-optie toevoegen aan de "unsubscribe"-instellingen. Als je deze optie gebruikt, dan wordt er een extra "list-unsubscribe-post" header aan de e-mail toegevoegd. Hierdoor kan ontvangende software zien dat een afmeldpagina onderscheid maakt tussen "one-click" afmeldingen en "gewone" afmeldingen. Let op: als je van deze optie gebruik maakt dan moet de afmeldpagina op je website inderdaad aan deze specificatie voldoen. Afmeldingen die via HTTP POST binnenkomen dienen zonder verdere interactie verwerkt te worden, voor afmeldingen via HTTP GET is het toegestaan dat er eerst een bevestigingspagina wordt getoond.
+
+Het is sterk aan te raden om deze optie te gebruiken omdat sommige ontvangers, waaronder gmail.com, dit laten meewegen bij de deliverability. Maar hier dien je dus eerst je website voor aan te passen om onderscheid te maken tussen HTTP POST afmeldingen en HTTP GET afmeldingen, daarna kun je de "oneclick" optie toevoegen aan de JSON.
 
 ```json
 {

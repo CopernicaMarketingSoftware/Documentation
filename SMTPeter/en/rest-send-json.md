@@ -101,12 +101,9 @@ or both:
 }
 ```
 
-To adhere to RFC 8085, we recommend setting the "list-unsubscribe-post" header 
-with the "List-Unsubscribe=One-Click" value. This can be done by setting the 
-"oneclick" option in the "unsubcribe" option to true. It's important to note 
-that if you set this option, you are responsible for distinguishing between 
-POST requests, facilitating immediate unsubscribes, and GET requests, designed 
-for displaying a confirmation page for unsubscribing.
+If your unsubscribe form complies with [RFC 8058](https://datatracker.ietf.org/doc/html/rfc8058), you can add the "one-click" option to the "unsubscribe" settings. When using this option, an additional "list-unsubscribe-post" header is added to the email. This allows receiving software to recognize that the unsubscribe page distinguishes between "one-click" unsubscribes and regular unsubscribes. Please note that if you choose to use this option, your website's unsubscribe page must indeed adhere to this specification. Unsubscribes received via HTTP POST should be processed without further interaction, while for unsubscribes via HTTP GET, it is allowed to first display a confirmation page.
+
+It is highly recommended to use this option because some recipients, including gmail.com, take this into account for deliverability. However, you need to first modify your website to distinguish between HTTP POST unsubscribes and HTTP GET unsubscribes before adding the "one-click" option to the JSON.
 
 ```json
 {
