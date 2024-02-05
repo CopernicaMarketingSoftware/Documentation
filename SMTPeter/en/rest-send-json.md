@@ -86,56 +86,34 @@ are self-explanatory.
 ## Unsubscribe header
 
 If you want to add a "list-unsubscribe" header to your email, you can
-add the JSON "unsubscribe" option. You can set it to a string holding
-either a URL or an email address, or an array holding both:
+add the JSON "unsubscribe" option. You can add either an URL or an email address, 
+or both:
 
 ```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
-    "text": "text version of the email",
-    "unsubscribe": "unsubscribe@example.com"
+    "text": "text version of the e-mail",
+    "unsubscribe": {
+        "email": "unsubscribe@example.com",
+        "url": "http://www.example.com"
+    }
 }
 ```
 
-You can also set it to a URL:
+If your unsubscribe form complies with [RFC 8058](https://datatracker.ietf.org/doc/html/rfc8058), you can add the "one-click" option to the "unsubscribe" settings. When using this option, an additional "list-unsubscribe-post" header is added to the email. This allows receiving software to recognize that the unsubscribe page distinguishes between "one-click" unsubscribes and regular unsubscribes. Please note that if you choose to use this option, your website's unsubscribe page must indeed adhere to this specification. Unsubscribes received via HTTP POST should be processed without further interaction, while for unsubscribes via HTTP GET, it is allowed to first display a confirmation page.
+
+It is highly recommended to use this option because some recipients, including gmail.com, take this into account for deliverability. However, you need to first modify your website to distinguish between HTTP POST unsubscribes and HTTP GET unsubscribes before adding the "one-click" option to the JSON.
 
 ```json
 {
     "subject": "this is the subject line",
     "html": "<html> .... </html>",
-    "text": "text version of the email",
-    "unsubscribe": "http://www.example.com"
-}
-```
-
-Or to both an email address and a URL:
-
-```json
-{
-    "subject": "this is the subject line",
-    "html": "<html> .... </html>",
-    "text": "text version of the email",
-    "unsubscribe": [ "http://www.example.com", "unsubscribe@example.com" ]
-}
-```
-
-It is your own responsibility to process the unsubscribes.
-
-### List-Unsubscribe-Post header
-
-To include a "list-unsubscribe-post" header in your email, featuring the 
-"List-Unsubscribe=One-Click" value, incorporate the JSON option 
-"one-click-unsubscribe." If this option is set to true and you have set the 
-unsubscribe header, it will be added to the MIME of the message.
-
-```json
-{
-    "subject": "this is the subject line",
-    "html": "<html> .... </html>",
-    "text": "text version of the email",
-    "unsubscribe": [ "http://www.example.com" ],
-    "unsubscribe-post-one-click": true
+    "text": "text version of the e-mail",
+    "unsubscribe": {
+        "url": "http://www.example.com",
+        "oneclick": true
+    }
 }
 ```
 
