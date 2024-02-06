@@ -147,6 +147,24 @@ Als er geen subprofielen zijn
 {/foreach}
 ```
 
+Als je een foreach binnen een `<table>` element wilt gebruiken kun je gebruik maken van een `unchanged` comment. 
+Dit zorgt ervoor dat de drag-and-drop-editor de foreach niet om het `<table>` element plaatst.
+
+```text
+<table>
+    <tr>
+        <td>ID</td>
+        <td>ProductName</td>
+    </tr>
+<!--<unchanged>{foreach $items as $item}</unchanged>-->
+    <tr>
+        <td>{$item.id}</td>
+        <td>{$item.ProductName}</td>
+    </tr>
+<!--<unchanged>{/foreach}</unchanged>-->
+</table>
+```
+
 ## Variabelen
 Je kunt ook variabelen gebruiken. Dit kan bijvoorbeeld handig zijn als je een
 template hebt gemaakt die opeens gebruik moet maken van andere databasevelden.
