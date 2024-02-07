@@ -147,65 +147,61 @@ Als er geen subprofielen zijn
 {/foreach}
 ```
 
-#### Foreach binnen &lt;table&gt;-element
-Bij het opstellen van een drag-and-drop-template waarbij je meerdere subprofielen onder elkaar wilt tonen, bijvoorbeeld voor je verlaten winkelwagen campagne, moet je een foreach-statement gebruiken binnen een &lt;table&gt;-element. Dit is noodzakelijk omdat anders de bovenste regel, waar de kolomnamen in staan, per product herhaald zal worden. Echter verplaatst de drag-and-drop-editor automatisch het foreach-statement buiten het <table>-element bij het opslaan van de code.
+#### Het Gebruik van de <unchanged> Tag in de Drag-and-Drop Editor
+De drag-and-drop editor ondersteunt een speciale <unchanged> tag die je kunt gebruiken om te voorkomen dat de editor HTML-code herschrijft. Normaal gesproken verbetert de editor fouten en inconsistenties in de HTML-code die je handmatig invoert. Echter, als je de oorspronkelijke code wilt behouden, kun je dat doen door gebruik te maken van de <unchanged> tag.
 
-Als voorbeeld gebruiken we onderstaande code:
+De <unchanged> tag is vooral handig bij het combineren van Smarty personalisatiecode met meer complexe HTML-structuren zoals tabellen. Als je Smarty en HTML combineert, dan voer je eigenlijk "ongeldige" HTML code in, die na de personalisatie pas geldig wordt. De editor heeft dit niet altijd in de gaten en kan soms de door jou ingevoerde HTML-code verbeteren, wat mogelijk niet overeenkomt met je bedoelingen. Dit gebeurt bijvoorbeeld wanneer een Smarty-instructie (zoals {foreach} of {if}) wordt opgenomen binnen een HTML-tabel.
+
+Bekijk het volgende voorbeeld:
 ```text
-<td align="left" class="esd-block-text">
-    <table>
-        <tr>
-            <td>ID</td>
-            <td>ProductName</td>
-        </tr>
-        {foreach $items as $item}
-        <tr>
-            <td>{$item.id}</td>
-            <td>{$item.ProductName}</td>
-        </tr>
-        {/foreach}
-    </table>
-</td>
+<table>
+    <tr>
+        <th>Kop 1</th>
+        <th>Kop 2</th>
+    </tr>
+    {foreach $items as $item}
+    <tr>
+        <td>{$item.property1}</td>
+        <td>{$item.property2}</td>
+    </tr>
+    {/foreach}
+</table>
 ```
 
-Na het opslaan van deze code, wordt dit omgezet naar:
+Wanneer je de bovenstaande code opslaat, leest de drag-and-drop editor de HTML-code in en hergroepeert deze. De editor transformeert de code naar zoiets als dit:
 ```text
-<td align="left" class="esd-block-text">{foreach $items as $item} {/foreach}<table class=" cke_show_border">
-        <tbody>
-            <tr>
-                <td>ID</td>
-                <td>ProductName</td>
-            </tr>
-            <tr>
-                <td>{$item.id}</td>
-                <td>{$item.ProductName}</td>
-            </tr>
-        </tbody>
-    </table>
-</td>
+{foreach $items as $item} {/foreach}<table class=" cke_show_border">
+    <tbody>
+        <tr>
+            <th>Kop 1</th>
+            <th>Kop 2</th>
+        </tr>
+        <tr>
+            <td>{$item.property1}</td>
+            <td>{$item.property2}</td>
+        </tr>
+    </tbody>
+</table>
 ```
 
-De foreach wordt hier direct na het openen weer afgesloten, waardoor deze code niet het gewenste resultaat geeft. 
-Om dit op te lossen kun je gebruik maken van de drag-and-drop-template specifieke tag `<!--<unchanged>hier je code</unchanged>-->`. 
-Hierdoor zal de code niet worden verplaatst door de editor.
+Deze wijziging is echter mogelijk niet wenselijk. Met de <unchanged> tag kun je aangeven dat bepaalde code ongewijzigd moet blijven:
 
-Voorbeeld:
 ```text
-<td align="left" class="esd-block-text">
-    <table>
-        <tr>
-            <td>ID</td>
-            <td>ProductName</td>
-        </tr>
-        <!--<unchanged>{foreach $items as $item}</unchanged>-->
-        <tr>
-            <td>{$item.id}</td>
-            <td>{$item.ProductName}</td>
-        </tr>
-        <!--<unchanged>{/foreach}</unchanged>-->
-    </table>
-</td>
+<table>
+    <tr>
+        <th>Kop 1</th>
+        <th>Kop 2</th>
+    </tr>
+    <!--<unchanged>{foreach $items as $item}</unchanged>-->
+    <tr>
+        <td>{$item.property1}</td>
+        <td>{$item.property2}</td>
+    </tr>
+    <!--<unchanged>{/foreach}</unchanged>-->
+</table>
 ```
+
+Zoals je ziet, moet de tag worden ingesloten binnen HTML-commentaar <!-- en -->.
 
 ## Variabelen
 Je kunt ook variabelen gebruiken. Dit kan bijvoorbeeld handig zijn als je een
