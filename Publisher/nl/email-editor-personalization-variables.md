@@ -147,22 +147,64 @@ Als er geen subprofielen zijn
 {/foreach}
 ```
 
-Als je een foreach binnen een `<table>` element wilt gebruiken kun je gebruik maken van een `unchanged` comment. 
-Dit zorgt ervoor dat de drag-and-drop-editor de foreach niet om het `<table>` element plaatst.
+#### Foreach binnen &lt;table&gt;-element
+Bij het opstellen van een drag-and-drop-template waarbij je meerdere subprofielen onder elkaar wilt tonen, bijvoorbeeld voor je verlaten winkelwagen campagne, moet je een foreach-statement gebruiken binnen een &lt;table&gt;-element. Dit is noodzakelijk omdat anders de bovenste regel, waar de kolomnamen in staan, per product herhaald zal worden. Echter verplaatst de drag-and-drop-editor automatisch het foreach-statement buiten het <table>-element bij het opslaan van de code.
 
+Als voorbeeld gebruiken we onderstaande code:
 ```text
-<table>
-    <tr>
-        <td>ID</td>
-        <td>ProductName</td>
-    </tr>
-<!--<unchanged>{foreach $items as $item}</unchanged>-->
-    <tr>
-        <td>{$item.id}</td>
-        <td>{$item.ProductName}</td>
-    </tr>
-<!--<unchanged>{/foreach}</unchanged>-->
-</table>
+<td align="left" class="esd-block-text">
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>ProductName</td>
+        </tr>
+        {foreach $items as $item}
+        <tr>
+            <td>{$item.id}</td>
+            <td>{$item.ProductName}</td>
+        </tr>
+        {/foreach}
+    </table>
+</td>
+```
+
+Na het opslaan van deze code, wordt dit omgezet naar:
+```text
+<td align="left" class="esd-block-text">{foreach $items as $item} {/foreach}<table class=" cke_show_border">
+        <tbody>
+            <tr>
+                <td>ID</td>
+                <td>ProductName</td>
+            </tr>
+            <tr>
+                <td>{$item.id}</td>
+                <td>{$item.ProductName}</td>
+            </tr>
+        </tbody>
+    </table>
+</td>
+```
+
+De foreach wordt hier direct na het openen weer afgesloten, waardoor deze code niet het gewenste resultaat geeft. 
+Om dit op te lossen kun je gebruik maken van de drag-and-drop-template specifieke tag `<!--<unchanged>hier je code</unchanged>-->`. 
+Hierdoor zal de code niet worden verplaatst door de editor.
+
+Voorbeeld:
+```text
+<td align="left" class="esd-block-text">
+    <table>
+        <tr>
+            <td>ID</td>
+            <td>ProductName</td>
+        </tr>
+        <!--<unchanged>{foreach $items as $item}</unchanged>-->
+        <tr>
+            <td>{$item.id}</td>
+            <td>{$item.ProductName}</td>
+        </tr>
+        <!--<unchanged>{/foreach}</unchanged>-->
+    </table>
+</td>
 ```
 
 ## Variabelen
