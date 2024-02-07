@@ -147,8 +147,8 @@ Als er geen subprofielen zijn
 {/foreach}
 ```
 
-#### Het Gebruik van de <unchanged> Tag in de Drag-and-Drop Editor
-De drag-and-drop editor ondersteunt een speciale <unchanged> tag die je kunt gebruiken om te voorkomen dat de editor HTML-code herschrijft. Normaal gesproken verbetert de editor fouten en inconsistenties in de HTML-code die je handmatig invoert. Echter, als je de oorspronkelijke code wilt behouden, kun je dat doen door gebruik te maken van de <unchanged> tag.
+#### Het gebruik van de <unchanged> tag in de drag-and-Drop-editor
+De drag-and-drop-editor ondersteunt een speciale <unchanged> tag die je kunt gebruiken om te voorkomen dat de editor HTML-code herschrijft. Normaal gesproken verbetert de editor fouten en inconsistenties in de HTML-code die je handmatig invoert. Echter, als je de oorspronkelijke code wilt behouden, kun je dat doen door gebruik te maken van de <unchanged> tag.
 
 De <unchanged> tag is vooral handig bij het combineren van Smarty personalisatiecode met meer complexe HTML-structuren zoals tabellen. Als je Smarty en HTML combineert, dan voer je eigenlijk "ongeldige" HTML code in, die na de personalisatie pas geldig wordt. De editor heeft dit niet altijd in de gaten en kan soms de door jou ingevoerde HTML-code verbeteren, wat mogelijk niet overeenkomt met je bedoelingen. Dit gebeurt bijvoorbeeld wanneer een Smarty-instructie (zoals {foreach} of {if}) wordt opgenomen binnen een HTML-tabel.
 
