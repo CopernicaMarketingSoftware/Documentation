@@ -147,10 +147,10 @@ Als er geen subprofielen zijn
 {/foreach}
 ```
 
-#### Het gebruik van de <unchanged> tag in de drag-and-Drop-editor
-De drag-and-drop-editor ondersteunt een speciale <unchanged> tag die je kunt gebruiken om te voorkomen dat de editor HTML-code herschrijft. Normaal gesproken verbetert de editor fouten en inconsistenties in de HTML-code die je handmatig invoert. Echter, als je de oorspronkelijke code wilt behouden, kun je dat doen door gebruik te maken van de <unchanged> tag.
+#### Het gebruik van de &lt;unchanged&gt; tag in de drag-and-Drop-editor
+De drag-and-drop-editor ondersteunt een speciale &lt;unchanged&gt; tag die je kunt gebruiken om te voorkomen dat de editor HTML-code herschrijft. Normaal gesproken verbetert de editor fouten en inconsistenties in de HTML-code die je handmatig invoert. Echter, als je de oorspronkelijke code wilt behouden, kun je dat doen door gebruik te maken van de &lt;unchanged&gt; tag.
 
-De <unchanged> tag is vooral handig bij het combineren van Smarty personalisatiecode met meer complexe HTML-structuren zoals tabellen. Als je Smarty en HTML combineert, dan voer je eigenlijk "ongeldige" HTML code in, die na de personalisatie pas geldig wordt. De editor heeft dit niet altijd in de gaten en kan soms de door jou ingevoerde HTML-code verbeteren, wat mogelijk niet overeenkomt met je bedoelingen. Dit gebeurt bijvoorbeeld wanneer een Smarty-instructie (zoals {foreach} of {if}) wordt opgenomen binnen een HTML-tabel.
+De &lt;unchanged&gt; tag is vooral handig bij het combineren van Smarty personalisatiecode met meer complexe HTML-structuren zoals tabellen. Als je Smarty en HTML combineert, dan voer je eigenlijk "ongeldige" HTML code in, die na de personalisatie pas geldig wordt. De editor heeft dit niet altijd in de gaten en kan soms de door jou ingevoerde HTML-code verbeteren, wat mogelijk niet overeenkomt met je bedoelingen. Dit gebeurt bijvoorbeeld wanneer een Smarty-instructie (zoals {foreach} of {if}) wordt opgenomen binnen een HTML-tabel.
 
 Bekijk het volgende voorbeeld:
 ```text
@@ -184,7 +184,7 @@ Wanneer je de bovenstaande code opslaat, leest de drag-and-drop editor de HTML-c
 </table>
 ```
 
-Deze wijziging is echter mogelijk niet wenselijk. Met de <unchanged> tag kun je aangeven dat bepaalde code ongewijzigd moet blijven:
+Deze wijziging is echter mogelijk niet wenselijk. Met de &lt;unchanged&gt; tag kun je aangeven dat bepaalde code ongewijzigd moet blijven:
 
 ```text
 <table>
