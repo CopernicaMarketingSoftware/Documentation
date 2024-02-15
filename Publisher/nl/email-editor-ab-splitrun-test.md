@@ -79,33 +79,35 @@ In onderstaand voorbeeld ontvangt het resterende deel van de verzendselectie (50
 De statistieken van de losse groepen zijn terug te vinden in de [resultaten-module](https://ms.copernica.com/#/results/sentmailings).
 
 ## Opvolgacties A/B-testen
+Een A/B-test kun je, naast de reguliere ingeplande manier, ook via een opvolgactie versturen. Dit is handig als je bijvoorbeeld direct na een aankoop van een klant waar een subprofiel voor wordt aangemaakt, een mail wilt versturen en wilt testen welk van je templates betere resultaten behaalt.
+
 ### Stap 1 - Opvolgactie aanmaken
 Om een A/B-test uit te voeren via een opvolgactie, ga je naar de gewenste locatie voor de opvolgactie. Dit kan bijvoorbeeld in je database zijn, maar ook in een template of mailing. Vervolgens maak je de opvolgactie aan zoals je dat normaal gesproken zou doen.
 
 ### Stap 2 - Geavanceerde modus aanzetten
-Wanneer het scherm 'Opvolgactie aanpassen' open is, controleer dan eerst of de 'Geavanceerde modus' is aangevinkt. Je kunt dit vinden onder de tussenblokken, acties en annotaties. Als de modus nog niet is aangevinkt, schakel deze dan eerst in. Een pop-up verschijnt met de vraag of je de geavanceerde modus wilt activeren. Kies hier voor de optie 'Schakel de geavanceerde modus in'.
+Wanneer je het scherm voor het aanpassen van de opvolgactie open hebt, controleer dan eerst of de 'Geavanceerde modus' is aangevinkt. Je kunt dit links onderin vinden onder de tussenblokken, acties en annotaties. Als de modus nog niet is aangevinkt, schakel deze dan eerst in door de optie aan te vinken.
 
 ### Stap 3 - JavaScript code toevoegen
-Nu de geavanceerde modus is ingeschakeld, zie je ook opties voor JavaScript, namelijk 'Evalueren' en 'Uitvoeren'. Kies voor de optie 'Evalueren' en begin met het bewerken van dit blok.
+Nu de geavanceerde modus is ingeschakeld, zie je ook opties voor JavaScript, namelijk 'JavaScript-evaluatie' en 'JavaScript-uitvoering'. Kies voor de optie 'JavaScript-evaluatie' en begin met het bewerken van dit blok.
 
 Voeg de volgende JavaScript-code toe in het lege invoergedeelte:
 ```
 var testVar = profile.id;
 if (testVar % 2 == 1) {
-    return true;
+    return 'true';
 } else {
-    return false;
+    return 'false';
 }
 ```
 
 Deze code verdeelt profielen op basis van of hun ID eindigt op een even of oneven getal, waardoor je twee willekeurig gesorteerde groepen krijgt.
 
-Nadat je de code hebt toegevoegd en gecontroleerd, klik je onderaan op de blauwe knop 'Testen' om te controleren of de code werkt. Als je 'true' of 'false' ziet onder 'Resultaat', werkt de code naar behoren en kun je op de groene knop 'Opslaan' klikken.
+Nadat je de code hebt toegevoegd en gecontroleerd, klik je onderaan op de blauwe knop 'Testen' om te controleren of de code werkt. Als je 'true' of 'false' ziet onder 'Resultaat', werkt de code naar behoren en kun je rechts bovenin op de groene knop 'Opslaan' klikken. 
+
+De reden dat ook 'false' betekent dat de code naar behoren werkt, is omdat je met deze code eigenlijk aan het systeem vraagt of het profiel eindigt op een oneven getal. Als dit het geval is, krijg je als resultaat 'true' te zien. Als het profiel eindigt op een even getal zul je dus als resultaat 'false' te zien krijgen.
 
 ### Stap 4 - Splitsing maken
-Na het opslaan keer je terug naar het scherm 'Opvolgactie aanpassen'. Klik hier op de Javascript evaluatiebox die je zojuist hebt aangemaakt en kies voor de optie 'Link aanmaken'. In het scherm voor 'Een nieuwe link aanmaken', kies je onder 'Link' voor '==' en selecteer je rechts 'true'. Klik vervolgens op de groene knop 'Aanmaken'.
-
-Herhaal dit proces voor 'false' om twee verschillende links aan te maken voor de twee mogelijke resultaten.
+Na het opslaan, klik je rechts bovenin op het kruisje om terug te keren naar het scherm om opvolgacties aan te passen. Vervolgens sleep je vanaf het bolletje onderin de JavaScript evaluatiebox om een link match aan te maken. De waarde, die standaard op 1 staat, moet je nog aanpassen naar true. Dit doe je door de link match te selecteren en in het veld 'Waarde' true in te vullen. Doe dit vervolgens nogmaals, maar dan met als waarde false.
 
 ### Stap 5 - Verzenden e-mail voorbereiden
 Verbind aan beide links een actieblok 'Verzend e-mail', waarbij je bij het ene blok kiest voor template A en bij het andere blok voor template B.
