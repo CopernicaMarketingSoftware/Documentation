@@ -77,3 +77,34 @@ In onderstaand voorbeeld ontvangt het resterende deel van de verzendselectie (50
 
 ## Statistieken
 De statistieken van de losse groepen zijn terug te vinden in de [resultaten-module](https://ms.copernica.com/#/results/sentmailings).
+
+## Opvolgacties A/B-testen
+Je kunt een A/B-test niet alleen op de reguliere geplande manier uitvoeren, maar ook via een opvolgactie versturen. Dit is handig wanneer je bijvoorbeeld direct na een klantaankoop, waarvoor een subprofiel wordt aangemaakt, een e-mail wilt versturen en wilt testen welk van je templates betere resultaten oplevert.
+
+### Stap 1 - Opvolgactie aanmaken
+Om een A/B-test uit te voeren via een opvolgactie, ga je naar de gewenste locatie voor de opvolgactie. Dit kan bijvoorbeeld in je database of collectie zijn, maar ook in een template of mailing. Vervolgens maak je de opvolgactie aan zoals je dat normaal gesproken zou doen.
+
+### Stap 2 - Javascript code toevoegen
+Wanneer je het scherm voor het aanpassen van de opvolgactie opent, controleer dan eerst of linksonder de optie 'Geavanceerde modus' is aangevinkt. Als de geavanceerde modus is ingeschakeld, zie je ook tussen alle blokken de opties 'JavaScript-evaluatie' en 'JavaScript-uitvoering'. Het verschil tussen beide blokken is dat je met het evaluatieblok kunt kijken naar waardes binnen het profiel, terwijl je met het uitvoeringsblok daadwerkelijk gegevens van het profiel kunt wijzigen. In dit geval kiezen we voor de optie 'JavaScript-evaluatie'.
+
+Voeg de volgende JavaScript-code toe in het lege invoergedeelte:
+```
+var testVar = profile.id;
+if (testVar % 2 == 1) {
+    return 'true';
+} else {
+    return 'false';
+}
+```
+
+Deze code verdeelt profielen op basis van of hun ID eindigt op een even of oneven getal, waardoor je twee willekeurig gesorteerde groepen krijgt. 
+
+Nadat je de code hebt toegevoegd en gecontroleerd, klik je onderaan op de blauwe knop 'Testen' om te controleren of de code werkt. Als je 'true' of 'false' ziet onder 'Resultaat', werkt de code naar behoren en kun je rechts bovenin op de groene knop 'Opslaan' klikken. 
+
+De reden dat ook 'false' betekent dat de code naar behoren werkt, is omdat je met deze code aan het systeem vraagt of het profiel eindigt op een oneven getal. Als dit het geval is, krijg je als resultaat 'true' te zien. Als het profiel eindigt op een even getal zul je dus als resultaat 'false' te zien krijgen.
+
+### Stap 3 - Splitsing maken
+Na het opslaan klik je rechtsboven op het kruisje om terug te keren naar het scherm waar je opvolgacties kunt aanpassen. Vervolgens sleep je vanaf het bolletje onderin de JavaScript evaluatiebox om een link match aan te maken. De standaardwaarde van deze match is 1, deze moet je nog aanpassen naar 'true'. Dit doe je door de link match te selecteren en in het veld 'Waarde' `true` in te vullen. Herhaal deze stap nogmaals, maar vul nu `false` in als waarde.
+
+### Stap 4 - Verzenden e-mail voorbereiden
+Verbind aan beide links een actieblok 'Verzend e-mail', waarbij je bij het ene blok kiest voor template A en bij het andere blok voor template B. Als alles correct is ingesteld, kun je de opvolgactie opslaan en kun je gebruik maken van de A/B-test via een opvolgactie.
