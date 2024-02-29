@@ -74,4 +74,3 @@ Dit voorbeeld vereist de [REST API-klasse](./rest-php)
 ## Meer informatie
 
 * [Overzicht van alle REST API-calls](./rest-api)
-* [Vraag alle Publisher mailings op](./rest-get-publisher-emailings)
