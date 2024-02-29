@@ -213,6 +213,8 @@ like your customers or orders. The relevant API calls can be found below.
 | GET    | [api.copernica.com/v4/profile/$id/publisher/destinations](./rest-get-profile-publisher-destinations) | Fetch all Publisher destinations for a profile        |
 | GET    | [api.copernica.com/v4/profile/$id/ms/destination](./rest-get-profile-ms-destinations)                | Fetch all Marketing Suite destinations for a profile  |
 | GET    | [api.copernica.com/v4/profile/$id/files](./rest-get-profile-files)                                   | Fetch all files for a profile                         |
+| GET    | [api.copernica.com/v4/profile/$id/file/$id/json](./rest-get-profile-file-json)                       | Fetch information for a file                          |
+| GET    | [api.copernica.com/v4/profile/$id/file/$id/content](./rest-get-profile-file-content)                 | Fetch content for a file                              |
 | POST   | [api.copernica.com/v4/profile/$id/datarequest](./rest-post-profile-datarequest)                      | Create a request for all data stored for a profile    |
 | PUT    | [api.copernica.com/v4/profile/$id/unsubscribe](./rest-put-profile-unsubscribe)                       | Execute unsubscribe behavior of a profile             |
 | GET    | [api.copernica.com/v4/profile/$id/publisher/document/$id](./rest-get-profile-publisher-personalized-document) | Fetch the personalized Publisher document for a profile        |

@@ -173,7 +173,9 @@ in de onderstaande tabel.
 | GET    | [api.copernica.com/v3/profile/$id/ms/emailings](./rest-get-profile-ms-emailings)                     | Opvragen van alle Marketing Suite mailings voor een profiel       |
 | GET    | [api.copernica.com/v3/profile/$id/publisher/destinations](./rest-get-profile-publisher-destinations) | Opvragen van alle Publisher destinations voor een profiel         |
 | GET    | [api.copernica.com/v3/profile/$id/ms/destinations](./rest-get-profile-ms-destinations)               | Opvragen van alle Marketing Suite destinations voor een profiel   |
-| GET    | [api.copernica.com/v3/profile/$id/files](./rest-get-profile-files)                                   | Opvragen van alle files voor een profiel                         |
+| GET    | [api.copernica.com/v3/profile/$id/files](./rest-get-profile-files)                                   | Opvragen van alle files voor een profiel                          |
+| GET    | [api.copernica.com/v3/profile/$id/file/$id/json](./rest-get-profile-file-json)                       | Opvragen van informatie van een file                              |
+| GET    | [api.copernica.com/v3/profile/$id/file/$id/json](./rest-get-profile-file-content)                    | Opvragen van content van een file                                 |
 | POST   | [api.copernica.com/v3/profile/$id/datarequest](./rest-post-profile-datarequest)                      | Aanmaken van een dataverzoek voor een profiel                     |
 | PUT    | [api.copernica.com/v3/profile/$id/unsubscribe](./rest-put-profile-unsubscribe)                       | Uitvoeren van het uitschrijfgedrag van een profiel                |
 | GET    | [api.copernica.com/v3/profile/$id/publisher/document/$id](./rest-get-profile-publisher-personalized-document) | Opvragen van een gepersonaliseerd Publisher document voor een profiel         |
