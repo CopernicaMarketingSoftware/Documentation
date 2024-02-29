@@ -387,6 +387,12 @@ Dit geldt ook voor de voorbeeldcode.
 | GET    | [api.copernica.com/v3/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Opvragen van alle errors voor een bestemming      |
 | GET    | [api.copernica.com/v3/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Opvragen van alle impressions voor een bestemming |
 
+## SMS Mailings
+
+| Type   | Adres                                                                                        | Omschrijving                                                      |
+|--------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
+| GET    | [api.copernica.com/v3/smsmailing/$id](./rest-get-smsmailing)                                 | Opvragen van een SMS mailing                                      |
+
 ## Coupons
 
 | Type | Adres                                                                                                 | Omschrijving                                      |
