@@ -1,4 +1,4 @@
-# The REST API
+# REST API v2
 
 The REST API allows you to retrieve and update the data that is stored inside
 Copernica from out of your own website or app. You can write your own scripts
