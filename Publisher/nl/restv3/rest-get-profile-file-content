@@ -3,7 +3,7 @@
 Profielen kunnen folders en subfolders bevatten met verschillende soorten bestanden. 
 Je kunt informatie hierover opvragen door een HTTP GET verzoek sturen naar de volgende URL:
 
-`https://api.copernica.com/v3/profile/$id/files?access_token=xxxx`
+`https://api.copernica.com/v3/profile/$id/file/$id/content?access_token=xxxx`
 
 De eerste `$id` moet vervangen worden met de ID van het profiel waar de 
 informatie van opgevraagd wordt.
@@ -49,7 +49,7 @@ require_once('copernica_rest_api.php');
 $api = new CopernicaRestAPI("your-access-token", 3);
 
 // voer het verzoek uit en print het resultaat
-print_r($api->get("profile/{$profielID}/files"));
+print_r($api->get("profile/{$profielID}/file/{$fileID}/content"));
 ```
 
 Dit voorbeeld vereist de [REST API klasse](rest-php).
