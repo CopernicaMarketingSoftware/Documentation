@@ -1,4 +1,4 @@
-# REST API Versie 1
+# REST API v1
 
 Waarschuwing: Je bekijkt nu het overzicht voor de oude versie van onze 
 API. Wij raden aan om [versie 2](../restv2/rest-api.md) van de API te gebruiken.
