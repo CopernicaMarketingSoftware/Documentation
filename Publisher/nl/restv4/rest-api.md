@@ -1,4 +1,4 @@
-# De REST API
+# De REST API v4
 
 ## Endpoints
 
