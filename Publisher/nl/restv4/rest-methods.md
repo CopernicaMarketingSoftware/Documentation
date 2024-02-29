@@ -391,7 +391,7 @@ Dit geldt ook voor de voorbeeldcode.
 
 | Type   | Adres                                                                                        | Omschrijving                                                      |
 |--------|----------------------------------------------------------------------------------------------|-------------------------------------------------------------------|
-| GET    | [api.copernica.com/v3/smsmailing/$id](./rest-get-smsmailing)                                 | Opvragen van een SMS mailing                                      |
+| GET    | [api.copernica.com/v4/smsmailing/$id](./rest-get-smsmailing)                                 | Opvragen van een SMS mailing                                      |
 
 ## Coupons
 
