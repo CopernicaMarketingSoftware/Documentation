@@ -1,4 +1,4 @@
-# REST API Version 1
+# REST API v1
 
 Warning: You are viewing the documentation for the old REST API. We recommend 
 using [version 2](../restv2/rest-api.md) of the REST API.
