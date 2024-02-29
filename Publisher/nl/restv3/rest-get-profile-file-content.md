@@ -1,4 +1,4 @@
-# REST API: GET profile files
+# REST API: GET profile file content
 
 Profielen kunnen folders en subfolders bevatten met verschillende soorten bestanden. 
 Je kunt informatie hierover opvragen door een HTTP GET verzoek sturen naar de volgende URL:
