@@ -411,7 +411,14 @@ or vice versa in all of the articles below, including the code examples.
 | GET    | [api.copernica.com/v3/ms/destination/$id/errors](./rest-get-ms-destination-errors)           | Fetch all errors for a destination           |
 | GET    | [api.copernica.com/v3/ms/destination/$id/impressions](./rest-get-ms-destination-impressions) | Fetch all impressions for a destination      |
 
+## SMS mailings
+
+| Type   | Address                                                                                      | Description                                           |
+|--------|----------------------------------------------------------------------------------------------|-------------------------------------------------------|
+| GET    | [api.copernica.com/v3/smsmailing/$id](./rest-get-smsmailing)                                 | Fetch information for a SMS mailing                   |
+
 ## Coupons
+
 | Type | Address                                                                                                 | Omschrijving                                      |
 |------|-------------------------------------------------------------------------------------------------------|--------------------------------------------------|
 | GET  | [https://api.copernica.com/v3/couponcampaigns](./rest-get-couponcampaigns)                     | Fetch all coupon campaigns                 |
