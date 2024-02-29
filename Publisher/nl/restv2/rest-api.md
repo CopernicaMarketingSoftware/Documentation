@@ -1,4 +1,4 @@
-# De REST API v2
+# REST API v2
 
 ## Endpoints
 
