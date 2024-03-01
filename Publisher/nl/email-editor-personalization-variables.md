@@ -203,6 +203,8 @@ Deze wijziging is echter mogelijk niet wenselijk. Met de &lt;unchanged&gt; tag k
 
 Zoals je ziet, moet de tag worden ingesloten binnen HTML-commentaar <!-- en -->.
 
+*Let op: de unchanged-tag moet altijd binnen een table element (table, tr of td) komen te staan*
+
 ## Variabelen
 Je kunt ook variabelen gebruiken. Dit kan bijvoorbeeld handig zijn als je een
 template hebt gemaakt die opeens gebruik moet maken van andere databasevelden.
