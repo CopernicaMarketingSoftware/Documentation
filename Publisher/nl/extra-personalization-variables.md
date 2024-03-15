@@ -27,6 +27,8 @@ Het profiel-object heeft de volgende eigenschappen:
 * **{$profile.referrers}**: een optioneel array van profielen die verwijzen naar dit profiel d.m.v. een referentieveld
 * **{$profile.*veldnaam*}**: biedt personalisatie op basis van alle beschikbare velden binnen het profiel
 * **{$profile.*interesse*}**: biedt personalisatie op basis van alle beschikbare interesses binnen het profiel (deze heeft de waarde 'yes' of 'no')
+* **{$profile.database.id}**: het id van de database waartoe het profiel behoort
+* **{$profile.database.name}**: de naam van de database waartoe het profiel behoort
 * **{$profile.*collectienaam*}**: maakt het mogelijk om alle collecties binnen een subprofiel te benaderen
 
 ## Subprofielen 

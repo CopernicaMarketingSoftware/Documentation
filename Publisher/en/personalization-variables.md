@@ -36,6 +36,8 @@ addressee belongs. The {$profile} object has a number of properties:
 * **{$profile.referrers}**: optional array of profiles that refer to this profile using a *foreign key* field
 * **{$profile.*fieldname*}**: every profile field is accessible through {$profile.*fieldname*}
 * **{$profile.*interest*}**: every profile interest is accessible through {$profile.*interest*}, and has the value "yes" or "no"
+* **{$profile.database.id}**: the id of the database to which this profile belongs
+* **{$profile.database.name}**: the name of the database to which this profile belongs
 * **{$profile.*collection*}**: when a profile has subprofiles, each collection of subprofiles is accessible through {$profile.*collectionname*}
 
 Simple personalizations like {$firstname} and {$lastname} can thus also be written

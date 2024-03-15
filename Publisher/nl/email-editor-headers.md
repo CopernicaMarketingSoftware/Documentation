@@ -13,14 +13,23 @@ Deze headers moeten zijn ingesteld voordat je een mailing kan versturen:
 
 Je kan deze waardes personaliseren met [Smarty](./smarty). 
 
-**Voorbeeld**  
-Je wilt een mailing versturen vanuit het e-mailadres van de accountmanager van een profiel. In de database staat een veld _accountmanager_ waar per profiel wordt bijgehouden wie de accountmanager is. Het kan ook voorkomen dat dit veld niet ingevuld is. In de optie _afzenderadres_ gebruik je de volgende code:
+### Voorbeeld gepersonaliseerde afzendernaam
+Je wilt een mailing versturen vanuit naam van de accountmanager van een profiel. In de database staat een veld _accountmanager_ waar per profiel wordt bijgehouden wie de accountmanager is. Het kan ook voorkomen dat dit veld niet ingevuld is. In de optie _afzenderadres_ gebruik je de volgende code:
 
 ```
-{if $profile.accountmanager == "Frank Bakker"}frank.bakker{else}info{/if}
+{if $profile.accountmanager == "Frank Bakker"}Frank Bakker{else}Copernica Marketing Software{/if}
 ```
 
-In bovenstaand voorbeeld wordt de e-mail verzonden vanuit _frank.bakker@domeinnaam.nl_ als het veld _accountmanager_ overeenkomt met de waarde _Frank Bakker_. Mocht dit niet het geval zijn of de waarde is leeg, wordt de mail verzonden vanuit _info@domeinnaam.nl_.
+In bovenstaand voorbeeld wordt de e-mail verzonden met de afzendernaam _Frank Bakker_ als het veld _accountmanager_ overeenkomt met de waarde _Frank Bakker_. Mocht dit niet het geval zijn of de waarde is leeg, wordt de mail verzonden vanuit de afzendernaam _Copernica Marketing Software_.
+
+### Voorbeeld gepersonaliseerd afzenderadres
+Bij het instellen van het afzenderadres heb je standaard de mogelijkheid om het verzenddomein te kiezen uit een dropdownlijst. Deze lijst wordt gevuld met de [sender domains](./sender-domains) uit je account. Het kan echter voorkomen dat je hetzelfde template wilt versturen vanuit meerdere domeinen op basis van waarden uit het profiel. Zo kun je bijvoorbeeld e-mails sturen naar Nederlandse klanten vanuit @copernica.nl en naar Belgische klanten vanuit @copernica.be. Om dit in te stellen, maak je gebruik van de optie 'Gebruik een gepersonaliseerd afzenderadres met Smarty code'. Hierna heb je de mogelijkheid om met Smarty een variabel afzenderadres te gebruiken. Bijvoorbeeld:
+
+```
+{if $profile.language == "NL"}info@copernica.nl{elseif $profile.language == "BE"}info@copernica.be{else}info@copernica.com[/if}
+```
+
+Het is belangrijk om alleen domeinen te gebruiken die zijn ingesteld als sender domain. Het gebruik van een domein dat niet als verzenddomein is ingesteld, zal resulteren in een foutmelding tijdens het verzenden.
 
 ## Geavanceerde headers
 Naast de essentiële headers kun je geavanceerde headers toevoegen aan je mailing.  
