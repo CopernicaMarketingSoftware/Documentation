@@ -12,48 +12,61 @@ De optie **'Opvolgactie aanmaken'** maakt gebruik van onze krachtige Follow-up-M
 
 ### Trigger
 
-Een opvolgactie wordt altijd uitgevoerd als gevolg van een bepaalde gebeurtenis (een trigger).
-In de **'E-mail-editor'** zijn de volgende triggers beschikbaar:
-
+Een opvolgactie wordt altijd uitgevoerd als gevolg van één of meerdere triggers. Er zijn verschillende standaard triggers beschikbaar in alle soorten opvolgacties:
 * Uitschrijving
 * Link-klik
+* E-mail verzonden
 * E-mailaflevering
-* Elke e-mailimpressie
 * Eerste e-mailimpressie
 * E-mailfout
+
+Daarnaast hebben databases en collecties specifieke triggers:
+
+#### Database
+* Profiel aangemaakt
+* Profiel bewerkt
+
+#### Collectie
+* Subprofiel aangemaakt
+* Subprofiel bewerkt
+* Subprofiel verwijderd
 
 ### Blokken
 
 Zodra je de trigger hebt ingesteld kun je in de Follow-up-Manager blokken toevoegen aan je opvolgactie. 
 
-We maken onderscheid tussen twee blokken: (1) tussenblokken en (2) actieblokken. Een tussenblok geeft de condities aan op basis waarvan het actieblok wordt uitgevoerd. 
+We maken onderscheid tussen drie blokken: (1) tussenblokken, (2) actieblokken en (3) geavanceerde blokken. Een tussenblok geeft de condities aan op basis waarvan het actieblok wordt uitgevoerd. 
 
 De beschikbare blokken zijn:
 
-| Blok                    | Type                                                                                                    |
-|-------------------------|---------------------------------------------------------------------------------------------------------|
-| Is ingeschreven         | Tussenblok                                                                                              |
-| Bestemming checken      | Tussenblok                                                                                              |
-| Check subprofielen      | Tussenblok                                                                                              |
-| Zoek profiel            | Tussenblok                                                                                              |
-| Zoek subprofiel         | Tussenblok                                                                                              |
-| Check geklikte link     | Tussenblok                                                                                              |
-| Wachttijd               | Tussenblok                                                                                              |
-| Bestemming aanpassen    | Actieblok                                                                                               |
-| Profiel aanmaken        | Actieblok                                                                                               |
-| Subprofiel aanmaken     | Actieblok                                                                                               |
-| Bestemming uitschrijven | Actieblok                                                                                               |
-| Bestemming verwijderen  | Actieblok                                                                                               |
-| Verzend e-mail          | Actieblok                                                                                               |
+| Blok                              | Type                                                                                                    |
+|-----------------------------------|---------------------------------------------------------------------------------------------------------|
+| Subprofielen checken van profiel  | Tussenblok                                                                                              |
+| Geklikte link checken             | Tussenblok                                                                                              |
+| (sub)profiel checken              | Tussenblok                                                                                              |
+| E-mailing checken                 | Tussenblok                                                                                              |
+| Fout checken                      | Tussenblok                                                                                              |
+| Inschrijving checken              | Tussenblok                                                                                              |
+| Wachttijd                         | Tussenblok                                                                                              |
+| Profiel aanmaken                  | Actieblok                                                                                               |
+| Subprofiel aanmaken               | Actieblok                                                                                               |
+| Verzend e-mail                    | Actieblok                                                                                               |
+| Verzend SMS                       | Actieblok                                                                                               |
+| (sub)profiel aanpassen            | Actieblok                                                                                               |
+| (sub)profiel verwijderen          | Actieblok                                                                                               |
+| (sub)profiel uitschrijven         | Actieblok                                                                                               |
+| JavaScript-evaluatie              | Geavanceerd                                                                                             |
+| JavaScript-uitvoering             | Geavanceerd                                                                                             |
+| Zoek in alle profielen            | Geavanceerd                                                                                             |
+| Zoek in alle subprofielen         | Geavanceerd                                                                                             |
 
 ### Voorbeeld
 
-Stel dat je een profielveld wilt aanpassen na het versturen van een mailing. Je wilt de aanpassing echter alleen doorvoeren voor profielen
-waarvan het veld **'Mailing'** op **'Aangemeld'** staat. 
+Stel dat je een profielveld wilt aanpassen na het versturen van een mailing, maar je wilt deze aanpassing alleen doorvoeren voor profielen waarvan het veld **'Mailing'** staat op **'Aangemeld'**. 
 
-Je selecteert hiervoor de **'E-mailaflevering'**-trigger. Vervolgens sleep je in de Follow-up-Manager een tussenblok van het type **'Bestemming checken'** op de punt van de lijn onder **'Opvolgactie start'**. Het blok is nu gekoppeld aan de opvolgactie. Vervolgens geef je via **'Aanpassen'** aan dat het veld **'Mailing'** gelijk moet zijn aan **'Aangemeld'**.
+Om dit te doen, selecteer je de **'E-mailaflevering'**-trigger. Vervolgens sleep je in de Follow-up-Manager een tussenblok van het type **'(sub)profiel checken'** onder **'Start van de opvolgactie'**. Je maakt een connectie tussen de twee blokken door op het bolletje onder het bovenste blok te klikken en deze naar het bolletje van het onderste blok te slepen. Hiermee koppel je het blok aan de opvolgactie. Vervolgens geef je aan dat het veld **'Mailing'** gelijk moet zijn aan **'Aangemeld'**.
 
-Je maakt de daadwerkelijke actie (de profielwijziging) aan door te klikken op het blok **'Bestemming checken'** en te kiezen voor **'Match link aanmaken'**. Er verschijnt nu onder het blok een nieuwe lijn waaraan je een nieuw blok kunt koppelen. Vervolgens voeg je het actieblok **'Bestemming aanpassen'** toe. Daarin geef je aan welke gegevens je wilt laten wijzigen.
+Voor de daadwerkelijke actie, de profielwijziging, voeg je het blok **'(sub)profiel aanpassen'** toe. Ook hier maak je een connectie tussen de twee blokken. Standaard wordt een *match*-link gemaakt, wat betekent dat zodra de waarde van het '(sub)profielen checken'-blok overeenkomt met het profiel, het volgende blok wordt uitgevoerd. Door op *match* te klikken, kun je dit wijzigen naar *'Geen match'*. In het blok '(sub)profiel aanpassen' geef je aan welke gegevens je wilt laten wijzigen.
 
 ### JavaScript-blokken in de geavanceerde modus
 
