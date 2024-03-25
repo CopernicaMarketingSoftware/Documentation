@@ -1,5 +1,4 @@
 # Productupdates
-* [25-03-2024 - Nieuw: krachtigere opvolgacties, SMS en meer!](./productupdate20240325)
 * [12-02-2024 - Vernieuwde opvolgactie-editor en Publisher wordt doorverwezen naar Marketing Suite](./productupdate20240212)
 * [20-01-2024 - Verbetingen afmeldverzoeken en instellen verwijdergedrag](./productupdate20240120)
 * [16-11-2023 - Introductie REST API v4 en webhooks op specifieke velden](./productupdate20231116)
