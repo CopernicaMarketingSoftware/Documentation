@@ -31,8 +31,3 @@ Bovendien is het zoeken in de [profielen](https://ms.copernica.com/#/profiles)-m
 Daarnaast zijn de [personalisatievariabalen](https://www.copernica.com/nl/documentation/publisher-personalization-variables) {$profile.database.id} en {$profile.database.name} beschikbaar gemaakt. Hiermee kun je het ID of de naam van de database ophalen waarin het profiel zich bevindt. Dit kan bijvoorbeeld worden gebruikt om dynamisch data op te halen uit een andere database of collectie met behulp van de [load(sub)profile](https://www.copernica.com/nl/documentation/loadprofile-and-loadsubprofile)-tag.
 
 Tot slot hebben we de talen Iers, Oostenrijks, Zwitsers-Duits en Zwitsers-Frans als vertaalopties toegevoegd aan de [vertaalmodule](https://www.copernica.com/nl/documentation/multi-language).
-
-## Stap nu over van Publisher naar Marketing Suite
-Er zijn een aantal klanten die nog steeds vertrouwen op onze verouderde Publisher-omgeving. Dit is opmerkelijk gezien onze nieuwe interface, Marketing Suite, niet alleen gebruiksvriendelijker en krachtiger is, maar ook toegankelijk is voor iedereen met dezelfde inloggegevens. Wij raden iedereen die nog gebruik maakt van Publisher om nu de overstap te maken naar Marketing Suite.
-
-In [dit artikel](https://www.copernica.com/nl/blog/post/stap-nu-over-van-publisher-naar-marketing-suite) behandelen we de belangrijkste voordelen van het gebruik van Marketing Suite ten opzichte van Publisher.
