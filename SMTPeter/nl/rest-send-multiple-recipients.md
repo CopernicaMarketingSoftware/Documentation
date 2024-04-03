@@ -28,7 +28,9 @@ Hieronder staat een voorbeeld van een JSON waarbij de e-mail naar meerdere ontva
 In het bovenstaande voorbeeld ontvangt SMTPeter een JSON van een gebruiker. 
 SMTPeter constateert dat er twee "to" velden zijn. Deze e-mail wordt vervolgens
 naar Alice, Bob en Charles gestuurd. Alice en Bob kunnen niet zien dat ook Charles 
-het bericht ontvangt. Charles wordt in dit geval dus ge-bcc'd.
+het bericht ontvangt. Charles wordt in dit geval dus ge-bcc'd. Onthoud dat het
+aantal ontvangers is beperkt tot 100. Als je e-mails wilt sturen naar meer dan
+100 ontvangers, zul je het in verschillende batches moeten doen.
 
 SMTPeter biedt ook de mogelijkheid om een gepersonaliseerde e-mail naar meerdere 
 ontvangers te versturen. Wil je weten hoe je dat kunt doen? 

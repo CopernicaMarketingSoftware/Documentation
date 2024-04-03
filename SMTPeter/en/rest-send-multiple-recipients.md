@@ -28,7 +28,9 @@ is:
 When a JSON like this is received by SMTPeter, a mail with two "to" fields
 will be constructed. This mail will be sent to Alice, Bob, and Charles. In
 this case Alice and Bob cannot see that this mail was also sent to Charles.
-Charles is in this case bcced.
+Charles is in this case bcced. Please note that the amount of recipients for
+a single mail is limited to 100. If you want to send mail to more than 100
+people, you should split it up in multiple batches.
 
 If you send to multiple people it is still possible to give each email a 
 personal touch. Our article on [personalization](./rest-send-personalize) 

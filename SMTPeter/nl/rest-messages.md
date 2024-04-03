@@ -10,17 +10,17 @@ gebruikt om properties te achterhalen van verstuurde e-mails. Voor het gebruik
 van deze methodes heb je wel een unieke *message ID* nodig. 
 
 ```text
-https://www.smtpeter.com/v1/recipient/MESSAGEID
-https://www.smtpeter.com/v1/envelope/MESSAGEID
-https://www.smtpeter.com/v1/text/MESSAGEID
-https://www.smtpeter.com/v1/html/MESSAGEID
-https://www.smtpeter.com/v1/headers/MESSAGEID
-https://www.smtpeter.com/v1/attachments/MESSAGEID
-https://www.smtpeter.com/v1/attachments/MESSAGEID/NAME
-https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER
-https://www.smtpeter.com/v1/embeds/MESSAGEID
-https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME
-https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
+https://www.smtpeter.com/v2/recipient/MESSAGEID
+https://www.smtpeter.com/v2/envelope/MESSAGEID
+https://www.smtpeter.com/v2/text/MESSAGEID
+https://www.smtpeter.com/v2/html/MESSAGEID
+https://www.smtpeter.com/v2/headers/MESSAGEID
+https://www.smtpeter.com/v2/attachments/MESSAGEID
+https://www.smtpeter.com/v2/attachments/MESSAGEID/NAME
+https://www.smtpeter.com/v2/attachments/MESSAGEID/NUMBER
+https://www.smtpeter.com/v2/embeds/MESSAGEID
+https://www.smtpeter.com/v2/embeds/MESSAGEID/NAME
+https://www.smtpeter.com/v2/embeds/MESSAGEID/NUMBER
 ```
 
 ## Envelope en recipient adres
@@ -31,8 +31,8 @@ met de *recipient* en envelope methode. Beide methoden geven een e-mail
 adres terug in normaal text formaat.
 
 ```text
-https://www.smtpeter.com/v1/envelope/MESSAGEID
-https://www.smtpeter.com/v1/recipient/MESSAGEID
+https://www.smtpeter.com/v2/envelope/MESSAGEID
+https://www.smtpeter.com/v2/recipient/MESSAGEID
 ```
 
 Het is handig om te vermelden dat SMTPeter, normaal gesproken, zelf
@@ -52,9 +52,9 @@ achterhalen door de text of HTML methode. De gehele oorspronkelijke
 op de volgende manier doen:
 
 ```text
-https://www.smtpeter.com/v1/text/MESSAGEID
-https://www.smtpeter.com/v1/html/MESSAGEID
-https://www.smtpeter.com/v1/header/MESSAGEID
+https://www.smtpeter.com/v2/text/MESSAGEID
+https://www.smtpeter.com/v2/html/MESSAGEID
+https://www.smtpeter.com/v2/header/MESSAGEID
 ```
 
 De MESSAGEID is uiteraard de "id" van het bericht en de teruggestuurde 
@@ -66,9 +66,9 @@ tekst is in regulier *plain text* formaat.
 Je kunt de bijlages van een e-mail opvragen via de volgende methode:
 
 ```text
-(1) https://www.smtpeter.com/v1/attachments/MESSAGEID
-(2) https://www.smtpeter.com/v1/attachments/MESSAGEID/NAME
-(3) https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER
+(1) https://www.smtpeter.com/v2/attachments/MESSAGEID
+(2) https://www.smtpeter.com/v2/attachments/MESSAGEID/NAME
+(3) https://www.smtpeter.com/v2/attachments/MESSAGEID/NUMBER
 ```
 
 Hierbij is MESSAGEID de message "id" waar je de bijlages van wil hebben, 
@@ -88,9 +88,9 @@ e-mail gelinkt. De REST API heeft een aantal methodes om alle embedded content,
 wat bij een e-mail hoort, te weergeven.
 
 ```text
-(1) https://www.smtpeter.com/v1/embeds/MESSAGEID
-(2) https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME
-(3) https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
+(1) https://www.smtpeter.com/v2/embeds/MESSAGEID
+(2) https://www.smtpeter.com/v2/embeds/MESSAGEID/NAME
+(3) https://www.smtpeter.com/v2/embeds/MESSAGEID/NUMBER
 ```
 
 Hierbij is MESSAGEID de message "id" waar je de embedded content van wilt hebben,

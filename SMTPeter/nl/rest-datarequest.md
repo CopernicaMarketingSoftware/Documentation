@@ -14,7 +14,7 @@ e-mailadres op te vragen.
 
 Om een data verzoek te creëren stuur je een POST request naar de volgende URL:
 
-`https://www.smtpeter.com/v1/datarequest/`
+`https://www.smtpeter.com/v2/datarequest/`
 
 Voor dit verzoek zijn de volgende parameters beschikbaar:
 
@@ -33,7 +33,7 @@ kunnen worden.
 Je kan de status van een data verzoek opvragen door een HTTP GET request 
 te versturen naar de volgende URL:
 
-`https://www.smtpeter.com/v1/datarequest/$id/status`
+`https://www.smtpeter.com/v2/datarequest/$id/status`
 
 waar **$id** de unieke ID van het verzoek is die je hebt ontvangen na 
 de POST call.
@@ -43,7 +43,7 @@ de POST call.
 Je kan de data van een data verzoek opvragen door een HTTP GET request to
 sturen naar de volgende URL:
 
-`https://www.smtpeter.com/v1/datarequest/$id`
+`https://www.smtpeter.com/v2/datarequest/$id`
 
 waar **$id** de unieke ID van het verzoek is die je hebt ontvangen na 
 de POST call.

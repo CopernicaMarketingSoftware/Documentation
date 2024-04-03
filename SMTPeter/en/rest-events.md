@@ -7,10 +7,10 @@ are only interested in particular events that fulfill a certain requirement
 you can use the events rest call. All calls that are supported are:
 
 ```text
-https://www.smtpeter.com/v1/events/messageid/MESSAGEID
-https://www.smtpeter.com/v1/events/email/EMAILADDRESS
-https://www.smtpeter.com/v1/events/template/TEMPLATE
-https://www.smtpeter.com/v1/events/tags/TAG1;OPTIONALTAG2;OPTIONALTAG3
+https://www.smtpeter.com/v2/events/messageid/MESSAGEID
+https://www.smtpeter.com/v2/events/email/EMAILADDRESS
+https://www.smtpeter.com/v2/events/template/TEMPLATE
+https://www.smtpeter.com/v2/events/tags/TAG1;OPTIONALTAG2;OPTIONALTAG3
 ```
 
 ## Available parameters
@@ -99,7 +99,7 @@ If you want to retrieve the information about a particular message till one
 month after you have sent the message you can make a get request to
 
 ```text
-https://www.smtpeter.com/v1/events/messageid/MESSAGEID
+https://www.smtpeter.com/v2/events/messageid/MESSAGEID
 ```
 where `MESSAGEID` is the messageid of interest. If you want to have events
 for a different period, you can specify the `start` and/or `end` option.
@@ -111,7 +111,7 @@ If you want to retrieve information about a particular email address for
 the last monthly period, you can make a get request to:
 
 ```text
-https://www.smtpeter.com/v1/events/email/EMAILADDRESS
+https://www.smtpeter.com/v2/events/email/EMAILADDRESS
 ```
 where `EMAILADDRESS` is the address you are interested in. If you want to have events
 for a different period, you can specify the `start` and/or `end` option.
@@ -124,7 +124,7 @@ If you want to retrieve the information about a particular template for
 the last monthly period, you can make a get request to:
 
 ```text
-https://www.smtpeter.com/v1/events/template/TEMPLATE
+https://www.smtpeter.com/v2/events/template/TEMPLATE
 ```
 where `TEMPLATE` is the id of the template you are interested in. If you 
 want to have events for a different period, you can specify the `start`
@@ -138,13 +138,13 @@ If you want to retrieve information about one tag, for the last monthly
 period you can make a get request to:
 
 ```text
-https://www.smtpeter.com/v1/events/tags/TAG
+https://www.smtpeter.com/v2/events/tags/TAG
 ```
 where `TAG` is the tag you are interested in. Optionally you can also filter
 on multiple tags. If you want to do so, you can extend the call to:
 
 ```text
-https://www.smtpeter.com/v1/events/tags/TAG1;TAG2;TAG3;...
+https://www.smtpeter.com/v2/events/tags/TAG1;TAG2;TAG3;...
 ```
 The returned JSON will only contain information for messages that have
 all tags set.

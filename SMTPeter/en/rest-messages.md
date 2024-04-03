@@ -12,17 +12,17 @@ is the same identifier that was returned when you injected email with the
 [SMTP API](smtp-api).
 
 ```text
-https://www.smtpeter.com/v1/recipient/MESSAGEID
-https://www.smtpeter.com/v1/envelope/MESSAGEID
-https://www.smtpeter.com/v1/text/MESSAGEID
-https://www.smtpeter.com/v1/html/MESSAGEID
-https://www.smtpeter.com/v1/headers/MESSAGEID
-https://www.smtpeter.com/v1/attachments/MESSAGEID
-https://www.smtpeter.com/v1/attachments/MESSAGEID/NAME
-https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER
-https://www.smtpeter.com/v1/embeds/MESSAGEID
-https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME
-https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
+https://www.smtpeter.com/v2/recipient/MESSAGEID
+https://www.smtpeter.com/v2/envelope/MESSAGEID
+https://www.smtpeter.com/v2/text/MESSAGEID
+https://www.smtpeter.com/v2/html/MESSAGEID
+https://www.smtpeter.com/v2/headers/MESSAGEID
+https://www.smtpeter.com/v2/attachments/MESSAGEID
+https://www.smtpeter.com/v2/attachments/MESSAGEID/NAME
+https://www.smtpeter.com/v2/attachments/MESSAGEID/NUMBER
+https://www.smtpeter.com/v2/embeds/MESSAGEID
+https://www.smtpeter.com/v2/embeds/MESSAGEID/NAME
+https://www.smtpeter.com/v2/embeds/MESSAGEID/NUMBER
 ```
 
 ## Envelope and recipient
@@ -32,8 +32,8 @@ can be retrieved with the "recipient" and "envelope" methods. Both methods
 return the email address in "text/plain" format.
 
 ```text
-https://www.smtpeter.com/v1/envelope/MESSAGEID
-https://www.smtpeter.com/v1/recipient/MESSAGEID
+https://www.smtpeter.com/v2/envelope/MESSAGEID
+https://www.smtpeter.com/v2/recipient/MESSAGEID
 ```
 
 Keep in mind that SMTPeter normally changes the envelope address to
@@ -50,9 +50,9 @@ To get the text or HTML version of a sent message you can simply use the
 the "headers" method. The URLs of these calls are:
 
 ```text
-https://www.smtpeter.com/v1/text/MESSAGEID
-https://www.smtpeter.com/v1/html/MESSAGEID
-https://www.smtpeter.com/v1/header/MESSAGEID
+https://www.smtpeter.com/v2/text/MESSAGEID
+https://www.smtpeter.com/v2/html/MESSAGEID
+https://www.smtpeter.com/v2/header/MESSAGEID
 ```
 
 where "MESSAGEID" is of course the id of the message. The returned data 
@@ -64,9 +64,9 @@ is in text/plain format.
 To get the attachments of a message you can use the following methods:
 
 ```text
-(1) https://www.smtpeter.com/v1/attachments/MESSAGEID
-(2) https://www.smtpeter.com/v1/attachments/MESSAGEID/NAME
-(3) https://www.smtpeter.com/v1/attachments/MESSAGEID/NUMBER
+(1) https://www.smtpeter.com/v2/attachments/MESSAGEID
+(2) https://www.smtpeter.com/v2/attachments/MESSAGEID/NAME
+(3) https://www.smtpeter.com/v2/attachments/MESSAGEID/NUMBER
 ```
 
 MESSAGEID is the message id for which you want to retrieve the attachments,
@@ -87,9 +87,9 @@ that was associated with an email, and to extra one embedded item based on
 its name or ID.
 
 ```text
-(1) https://www.smtpeter.com/v1/embeds/MESSAGEID
-(2) https://www.smtpeter.com/v1/embeds/MESSAGEID/NAME
-(3) https://www.smtpeter.com/v1/embeds/MESSAGEID/NUMBER
+(1) https://www.smtpeter.com/v2/embeds/MESSAGEID
+(2) https://www.smtpeter.com/v2/embeds/MESSAGEID/NAME
+(3) https://www.smtpeter.com/v2/embeds/MESSAGEID/NUMBER
 ```
 
 MESSAGEID stands for the message id for which you want to retrieve the embedded

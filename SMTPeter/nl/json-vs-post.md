@@ -18,7 +18,7 @@ applicatie van de gebuiker en SMTPeter. In dit voorbeeld hebben we ook een stuk
 van de data meegegeven wat daadwerkelijk wordt verstuurd. 
 
 ```text
-POST /v1/send?access_token=YOUR_API_TOKEN HTTP/1.0
+POST /v2/send?access_token=YOUR_API_TOKEN HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/x-www-form-urlencoded
 Content-Length: 1484
@@ -34,7 +34,7 @@ als het versturen van traditionele form data. Echter, je moet natuurlijk wel de 
 omzetten naar 'application/json':
 
 ```text
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 246

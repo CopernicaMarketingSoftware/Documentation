@@ -7,7 +7,7 @@ especially useful if you do not want to bother about setting up a MIME
 string yourself.
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 7391

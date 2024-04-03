@@ -9,11 +9,11 @@ mensen zomaar emails kunnen versturen vanuit jouw naam. Met je
 de volgende URL:
  
 ```text
-https://www.smtpeter.com/v1/METHOD?access_token=YOUR_API_TOKEN
+https://www.smtpeter.com/v2/METHOD?access_token=YOUR_API_TOKEN
 ```
 Je kan alleen gebruik maken van HTTPS connecties. Onveilige HTTP
 'calls' worden niet geacepteerd en geven dan ook een '400 Bad Resquest'
-status code terug. Het 'v1' element in de URL geeft onze ontwikkelaars
+status code terug. Het 'v2' element in de URL geeft onze ontwikkelaars
 de mogelijkheid om de compatibiliteit te verleggen/verbreken in 
 toekomstige versies van de API.
 

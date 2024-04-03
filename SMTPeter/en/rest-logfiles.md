@@ -5,12 +5,12 @@ clicks, opens - all these events are written to log files. These log
 files are accessible through the REST API with the following methods:
 
 ```text
-(1) https://www.smtpeter.com/v1/logfiles
-(2) https://www.smtpeter.com/v1/logfiles/DATE
-(3) https://www.smtpeter.com/v1/logfiles/FILENAME
-(4) https://www.smtpeter.com/v1/logfiles/FILENAME/header
-(5) https://www.smtpeter.com/v1/logfiles/FILENAME/json
-(6) https://www.smtpeter.com/v1/logfiles/FILENAME/xml
+(1) https://www.smtpeter.com/v2/logfiles
+(2) https://www.smtpeter.com/v2/logfiles/DATE
+(3) https://www.smtpeter.com/v2/logfiles/FILENAME
+(4) https://www.smtpeter.com/v2/logfiles/FILENAME/header
+(5) https://www.smtpeter.com/v2/logfiles/FILENAME/json
+(6) https://www.smtpeter.com/v2/logfiles/FILENAME/xml
 ```
 
 The above methods can be used to (1) see for which dates log files are 
@@ -71,7 +71,7 @@ To download a log file in the CSV format you, append the name of a log
 file to the REST API url. You should use a HTTP GET call to get the log file
 
 ```text
-https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log
+https://www.smtpeter.com/v2/logfiles/attempts.2016-03-20.log
 ```
 
 This returns a CSV file without any variable names. If you want to have
@@ -79,7 +79,7 @@ variable names on the first line of your CSV file, you append header to the
 call.
 
 ```text
-https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log/header
+https://www.smtpeter.com/v2/logfiles/attempts.2016-03-20.log/header
 ```
 
 The exact names are given in the articles on the specific logfile (see the
@@ -90,7 +90,7 @@ To download the file in JSON format you add "/json" to the filename you
 want to download.
 
 ```text
-https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log/json
+https://www.smtpeter.com/v2/logfiles/attempts.2016-03-20.log/json
 ```
 
 You JSON that you receive is an array containing JSON objects that have
@@ -101,7 +101,7 @@ Finally if you want to download the files in XML format you add "/xml" to
 the file name you want to download.
 
 ```text
-https://www.smtpeter.com/v1/logfiles/attempts.2016-03-20.log/xml
+https://www.smtpeter.com/v2/logfiles/attempts.2016-03-20.log/xml
 ```
 
 The format of the xml file is as follows:

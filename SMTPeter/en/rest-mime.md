@@ -7,7 +7,7 @@ SMTPeter. The following example shows a very minimal API where just the
 MIME message and the recipient are passed:
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 9827
@@ -57,7 +57,7 @@ Writing your own MIME is optional, you can also pass in individual message
 properties to the REST API. The MIME will then be built by SMTPeter.
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 7391

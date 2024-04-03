@@ -15,7 +15,7 @@ document is sent:
 
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 67
@@ -63,7 +63,7 @@ If you add one of the above properties to your JSON, it will be directly
 copied to your template:
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 116
@@ -81,7 +81,7 @@ different subject and different from address than were set in the template.
 It's also possible to add attachments to a mailing:
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 202
@@ -100,7 +100,7 @@ Content-Length: 202
 Or if you want SMTPeter to download the attachment for you:
 
 ```json
-POST /v1/send?access_token={YOUR_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={YOUR_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 152

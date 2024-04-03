@@ -5,7 +5,7 @@ kunt versturen via het HTTP protocol. Stuur een POST request naar onderstaande U
 om een e-mail te versturen:
 
 ```text
-https://www.smtpeter.com/v1/send?access_token={JOUW_API_TOKEN}
+https://www.smtpeter.com/v2/send?access_token={JOUW_API_TOKEN}
 ```
 
 `{JOUW_API_TOKEN}` is de access token die je via het dashboard kunt opvragen.
@@ -14,7 +14,7 @@ als JSON worden meegegeven. De opmaak van de request ziet er
 dan als volgt uit:
 
 ```text
-POST /v1/send?access_token={JOUW_API_TOKEN} HTTP/1.0
+POST /v2/send?access_token={JOUW_API_TOKEN} HTTP/1.0
 Host: www.smtpeter.com
 Content-Type: application/json
 Content-Length: 246

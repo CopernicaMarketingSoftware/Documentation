@@ -10,9 +10,9 @@ DNS records. The  `/dns` API call can be used to get a list of all
 recommended DNS records that you should copy to your own DNS server.
 
 ```txt
-(1) https://www.smtpeter.com/v1/dns/yourdomain.com/recommended
-(2) https://www.smtpeter.com/v1/dns/yourdomain.com/selfhosted
-(3) https://www.smtpeter.com/v1/dns/yourdomain.com/status
+(1) https://www.smtpeter.com/v2/dns/yourdomain.com/recommended
+(2) https://www.smtpeter.com/v2/dns/yourdomain.com/selfhosted
+(3) https://www.smtpeter.com/v2/dns/yourdomain.com/status
 ```
 
 We support three API calls: one to get the recommended DNS configuration
@@ -86,7 +86,7 @@ Once you've installed the recommended DNS records, you can let us check
 whether you've done that correctly. Use the following API call:
 
 ```txt
-https://www.smtpeter.com/v1/dns/yourdomain.com/status
+https://www.smtpeter.com/v2/dns/yourdomain.com/status
 ```
 
 When you call this method, SMTPeter will query your DNS records and compare
