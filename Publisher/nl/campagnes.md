@@ -13,3 +13,7 @@ graag een custom campagne opstarten? Neem dan contact op met een van onze vele
 * [Profielverrijking](./campaign-profile-enrichment)
 * [Verlaten winkelwagen](./campaign-abandoned-shoppingcart.md)
 * [Geotargeting](./campaign-geotargeting.md)
+* [Retentie](./campaign-retention)
+* [Herhaalaankoop](./campaign-repeat-purchase)
+* [Leadgeneratie](./campaign-leadgeneration)
+* [Review](./campaign-review)
