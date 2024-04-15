@@ -16,24 +16,25 @@ worden. De Marketing Suite biedt een drag-&-drop flow editor. Bij de
 Publisher doorloop je een wizard.
 
 ### Marketing Suite
-In de [flowchart editor](./follow-up-manager-ms) kun je blokken aan elkaar
-linken om geavanceerde campagnes op te zetten met hulp van followups.
-Deze editor is speciaal ontworpen met marketeers in gedachten. Een opvolgactie
-kan aangemaakt worden door te kiezen voor de optie **Opvolgacties** in de toolbar.
+De Marketing Suite opvolgactie-editor werkt met blokken die je aan elkaar kunt 
+koppelen en waarmee je een stroomdiagram maakt. Een blok vertegenwoordigt een 
+trigger (zoals een klik), een vergelijking (zoals woonplaats moet gelijk zijn 
+aan Nederland) of een actie (zoals verstuur een nieuwe e-mail). 
 
+Een opvolgactie maak je aan in de toolbar te kiezen voor de optie **Opvolgacties**.
 Meer informatie over opvolgacties in Marketing Suite vind je [hier](./follow-up-manager-ms).
 
 ### Publisher
-[Opvolgacties in Publisher](./follow-up-manager-publisher) zijn altijd
-beschikbaar in het menu van een **database**, **document**, **enquête**
-of **webformulier**. Opvolgacties in Publisher worden gemaakt door een
-conditie en een actie te definiëren in de menu editor. Publisher heeft
-geen scripting API.
-In de Publisher kan een opvolgactie aangemaakt worden door te gaan
-naar **Databasebeheer** > **Database opvolgacties**. In dit venster worden
-alle opvolgacties aangegeven en hier is het ook mogelijk om nieuwe
-opvolgacties aan te maken. Voor meer informatie over database opvolgacties
-aanmaken in de Publisher klik [hier](./follow-up-manager-publisher).
+*Let op: Oopvolgacties in Publisher zijn minder krachtig dan Marketing Suite. Wij 
+raden daarom aan om gebruik te maken van Marketing Suite.*
+
+Opvolgacties in Publisher worden gemaakt door een conditie en een actie te 
+definiëren in de menu editor. In de Publisher kan een opvolgactie aangemaakt 
+worden door te gaan naar **Databasebeheer** > **Database opvolgacties**. In dit 
+venster worden alle opvolgacties aangegeven en hier is het ook mogelijk om nieuwe
+opvolgacties aan te maken.
+
+Meer informatie over opvolgacties in Publisher vind je [hier](./follow-up-manager-publisher).
 
 ### Script editor
 Programmeurs kunnen alle mogelijkheden van opvolgacties gebruiker door
