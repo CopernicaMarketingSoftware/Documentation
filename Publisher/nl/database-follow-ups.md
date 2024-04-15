@@ -18,16 +18,10 @@ Publisher doorloop je een wizard.
 ### Marketing Suite
 In de [flowchart editor](./follow-up-manager-ms) kun je blokken aan elkaar
 linken om geavanceerde campagnes op te zetten met hulp van followups.
-Deze editor is speciaal ontworpen met marketeers in gedachten. Als je ervaring
-hebt met het programmeren van javascript kun je de krachtige mogelijkheden
-van de geavanceerde modus gebruiken, waarin je je eigen logica kan definiëren
-in Javascript.
-Deze kunnen aangemaakt worden door te klikken op het **tandwiel** in de
-rechterbovenhoek en klik op **Opvolgacties**. In dit menu staan alle
-opvolgacties van een database. Klik op de **groene knop** om een nieuwe
-database opvolgactie aan te maken en kies waarom de opvolgactie gestart wordt.
-Voor informatie over de aanleidingen van opvolgacties klik
-[hier](./follow-up-manager-ms).
+Deze editor is speciaal ontworpen met marketeers in gedachten. Een opvolgactie
+kan aangemaakt worden door te kiezen voor de optie **Opvolgacties** in de toolbar.
+
+Meer informatie over opvolgacties in Marketing Suite vind je [hier](./follow-up-manager-ms).
 
 ### Publisher
 [Opvolgacties in Publisher](./follow-up-manager-publisher) zijn altijd
