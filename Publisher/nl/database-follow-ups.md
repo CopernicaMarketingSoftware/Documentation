@@ -25,7 +25,7 @@ Een opvolgactie maak je aan door in de toolbar te kiezen voor de optie **Opvolga
 Meer informatie over opvolgacties in Marketing Suite vind je [hier](./follow-up-manager-ms).
 
 ### Publisher
-*Let op: Oopvolgacties in Publisher zijn minder krachtig dan Marketing Suite. Wij 
+*Let op: opvolgacties in Publisher zijn minder krachtig dan Marketing Suite. Wij 
 raden daarom aan om gebruik te maken van Marketing Suite.*
 
 In de Publisher kan een opvolgactie aangemaakt worden door te gaan naar 
