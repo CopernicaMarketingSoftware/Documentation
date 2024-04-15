@@ -28,11 +28,10 @@ Meer informatie over opvolgacties in Marketing Suite vind je [hier](./follow-up-
 *Let op: Oopvolgacties in Publisher zijn minder krachtig dan Marketing Suite. Wij 
 raden daarom aan om gebruik te maken van Marketing Suite.*
 
-Opvolgacties in Publisher worden gemaakt door een conditie en een actie te 
-definiëren in de menu editor. In de Publisher kan een opvolgactie aangemaakt 
-worden door te gaan naar **Databasebeheer** > **Database opvolgacties**. In dit 
-venster worden alle opvolgacties aangegeven en hier is het ook mogelijk om nieuwe
-opvolgacties aan te maken.
+In de Publisher kan een opvolgactie aangemaakt worden door te gaan naar 
+**Databasebeheer** > **Database opvolgacties**. In dit venster worden alle 
+opvolgacties aangegeven en hier is het ook mogelijk om nieuwe opvolgacties 
+aan te maken.
 
 Meer informatie over opvolgacties in Publisher vind je [hier](./follow-up-manager-publisher).
 
