@@ -21,7 +21,7 @@ koppelen en waarmee je een stroomdiagram maakt. Een blok vertegenwoordigt een
 trigger (zoals een klik), een vergelijking (zoals woonplaats moet gelijk zijn 
 aan Nederland) of een actie (zoals verstuur een nieuwe e-mail). 
 
-Een opvolgactie maak je aan in de toolbar te kiezen voor de optie **Opvolgacties**.
+Een opvolgactie maak je aan door in de toolbar te kiezen voor de optie **Opvolgacties**.
 Meer informatie over opvolgacties in Marketing Suite vind je [hier](./follow-up-manager-ms).
 
 ### Publisher
