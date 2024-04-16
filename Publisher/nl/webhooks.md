@@ -22,6 +22,7 @@ gaan dieper in op deze types:
 * [Webhooks for deliveries](webhook-deliveries)
 * [Webhooks for clicks](webhook-clicks)
 * [Webhooks for opens](webhook-opens)
+* [Webhooks for unsubscribes](webhook-unsubscribes)
 * [Webhooks for (sub)profile creations](webhook-creates)
 * [Webhooks for (sub)profile updates](webhook-updates)
 * [Webhooks for (sub)profile removals](webhook-deletes)
