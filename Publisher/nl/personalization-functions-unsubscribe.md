@@ -49,6 +49,13 @@ Wanneer je zelfgedefinieerde variabelen wilt gebruiken dien je eerst de URL te d
 {unsubscribe redirect=$url}
 ```
 
+**Toevoegen bevestigingspagina** 
+
+We merken dat steeds vaker antivirussoftware linkjes in een mail probeert om zo spam te detecteren. Om te voorkomen dat zo'n geautomatiseerde klik
+een uitschrijving tot gevolg heeft, kun je aangeven dat er een bevestigingspagina voor de doorverwijzing plaatsvindt (dit is een pagina met daarop
+een uitschrijfknop). Dit kun je doen met de 'confirmation' functie:  
+`{unsubscribe redirect='http://www.eendomein.nl/eigenlandingspagina.html' confirmation=true}` 
+
 ## Meer informatie
 
 * [Personalisatie functies](./publisher-personalization-functions)
