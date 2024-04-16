@@ -11,15 +11,13 @@ Met elk POST bericht worden de volgende variabelen meegestuurd:
 
 | Variabele  | Omschrijving                                             |
 |------------|----------------------------------------------------------|
-| id         | Unieke identifier van het afgeleverde bericht            |
-| type       | Type van de actie die de Webhook triggerde ('delivery')  |
-| timestamp  | Tijdstempel van de aflevering (YYYY-MM-DD HH:MM:SS formaat)  |
-| time       | Unix timestamp van de aflevering                         |
-| recipient  | E-mailadres van de aflevering                            |
-| tags       | Tags geassocieerd met het bericht                        |
-
-De variabelen 'id', 'recipient' en 'tags' stellen je in staat om de
-binnenkomende uitschrijving te koppelen aan de oorspronkelijke mail.
+| id         | Unieke identifier van de uitschrijving                   |
+| type       | Type van de actie die de Webhook triggerde ('unsubscribe')  |
+| timestamp  | Tijdstempel van de uitschrijving (YYYY-MM-DD HH:MM:SS formaat)  |
+| time       | Unix timestamp van de uitschrijving                      |
+| database   | Database waartoe het profiel behoort van de uitschrijving|
+| profile    | Profiel ID van de uitschrijving                          |
+| mailing    | Mailing ID van de uitschrijving                          |
 
 ## Meer informatie
 
