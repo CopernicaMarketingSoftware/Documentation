@@ -141,6 +141,15 @@ The {$mailing} object has more properties, en contains some mailing settings:
 * **{$mailing.snapshot.created}**: time when a snapshot of the document was created (YYYY-MM-DD hh:mm::ss format)
 * **{$mailing.snapshot.subject}**: mailing subject line
 
+## Integrations
+
+You can use information from your integration in smarty. The available variables depend on the integration that you use.
+You can use the nickname of your integration as the variable name:
+
+    {$integrationNickname}
+
+For a full list of available variables for your integration see [Integration properties](./personalization-integration-variables).
+
 ## Extra personalization variables
 
 When you're editing a template, you can add extra personalization variables.
