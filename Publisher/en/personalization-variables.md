@@ -143,8 +143,8 @@ The {$mailing} object has more properties, en contains some mailing settings:
 
 ## Integrations
 
-You can use information from your integration in smarty. The available variables depend on the integration that you use.
-You can use the nickname of your integration as the variable name:
+You can use information from your integration in a template. The available variables depend on the integration that you use.
+The nickname of your integration is the variable name:
 
     {$integrationNickname}
 
