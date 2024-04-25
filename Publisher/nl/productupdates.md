@@ -1,4 +1,5 @@
 # Productupdates
+* [25-04-2024 - Nieuw in Copernica Marketing Suite: Krachtigere opvolgacties en webhooks voor uitschrijvingen](./productupdate20240424)
 * [25-03-2024 - Nieuw: krachtigere opvolgacties, SMS en meer!](./productupdate20240325)
 * [12-02-2024 - Vernieuwde opvolgactie-editor en Publisher wordt doorverwezen naar Marketing Suite](./productupdate20240212)
 * [20-01-2024 - Verbetingen afmeldverzoeken en instellen verwijdergedrag](./productupdate20240120)
