@@ -91,8 +91,8 @@ If there aren't’ any subprofiles
 ```
 #### Native integrations
 
-You can also loop over certain variables in a native integration. 
-Here you can also:
+You can also loop over certain variables in a native integration.     
+Available modifiers are:
 * add filters using the "filter" attribute
 * order using the "orderby" attribute
 * limit the amount of items using the "limit" attribute
