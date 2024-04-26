@@ -98,7 +98,7 @@ Available modifiers are:
 * limit the amount of items using the "limit" modifier
 
 ```text
-{foreach from=$nickname.products|filter:"price":"<":15|orderby:"price"|limit:5 item="product"}
+{foreach from=$*identifier*.products|filter:"price":"<":15|orderby:"price"|limit:5 item="product"}
 {$product.name}
 {/foreach}
 ```

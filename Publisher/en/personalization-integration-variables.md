@@ -6,18 +6,18 @@ This is a list of all the available personalization variables per native integra
 
 You can see which properties are available on each variable by referencing the [Magento API documentation](https://developer.adobe.com/commerce/webapi/rest/quick-reference/)
 
-* **{$nickname.order.orderID}**: fetch an order by its ID
-* **{$nickname.order.orderID.customer}**: fetch the customer for this order
-* **{$nickname.order.orderID.items[].product}**: fetch the product from the order item
-* **{$nickname.product.sku}**: fetch a product by its SKU
-* **{$nickname.cart.cartID}**: fetch a cart by its ID
-* **{$nickname.cart.cartID.customer}**: fetch the customer for this cart
-* **{$nickname.cart.cartID.items[].product}**: fetch the product from the cart item
+* **{$*identifier*.order.*orderID*}**: fetch an order by its ID
+* **{$*identifier*.order.*orderID*.customer}**: fetch the customer for this order
+* **{$*identifier*.order.*orderID*.items[].product}**: fetch the product from the order item
+* **{$*identifier*.product.sku}**: fetch a product by its SKU
+* **{$*identifier*.cart.*cartID*}**: fetch a cart by its ID
+* **{$*identifier*.cart.*cartID*.customer}**: fetch the customer for this cart
+* **{$*identifier*.cart.*cartID*.items[].product}**: fetch the product from the cart item
 
 ### Iterable properties
 
 The following properties can be used in a foreach. You can find an [example on how to use them here](./personalization#native-integrations).
 
-* **{$nickname.products}**: can be used to loop over all the products in the webshop
-* **{$nickname.orders}**: can be used to loop over all the orders in the webshop
-* **{$nickname.carts}**: can be used to loop over all the carts in the webshop
+* **{$*identifier*.products}**: can be used to loop over all the products in the webshop
+* **{$*identifier*.orders}**: can be used to loop over all the orders in the webshop
+* **{$*identifier*.carts}**: can be used to loop over all the carts in the webshop
