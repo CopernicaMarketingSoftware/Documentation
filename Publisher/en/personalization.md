@@ -90,7 +90,10 @@ If there aren't’ any subprofiles
 {/foreach}
 ```
 You can also loop over certain variables in a native integration. 
-Here you can also add filters using the "filter", order using the "orderby" and limit the amount of items using the "limit" attribute.
+Here you can also:
+* add filters using the "filter" attribute
+* order using the "orderby" attribute
+* limit the amount of items using the "limit" attribute
 
 ```text
 {foreach from=$nickname.products|filter:"price":"<":15|orderby:"price"|limit:1 item="product"}
