@@ -11,3 +11,11 @@ You can see which properties are available on each variable by referencing the [
 * **{$nickname.product.sku}**: fetch a product by its SKU
 * **{$nickname.cart.cartID}**: fetch a cart by its ID
 * **{$nickname.cart.cartID.items[].product}**: fetch the product from the cart item
+
+### Foreach properties
+
+The following properties can be used in a foreach.
+
+* **{$nickname.products}**: can be used to loop over all the products in the webshop
+* **{$nickname.orders}**: can be used to loop over all the orders in the webshop
+* **{$nickname.carts}**: can be used to loop over all the carts in the webshop
