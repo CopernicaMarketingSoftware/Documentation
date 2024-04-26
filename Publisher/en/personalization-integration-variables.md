@@ -1,6 +1,6 @@
-# Personalization integration variables
+# Personalization for Native integration variables
 
-This is a list of all the available personalization variables per integration.
+This is a list of all the available personalization variables per native integration.
 
 ## Magento 2
 
