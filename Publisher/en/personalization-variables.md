@@ -146,7 +146,9 @@ The {$mailing} object has more properties, en contains some mailing settings:
 You can use information from your native integration in a template. The available variables depend on the native integration that you use.
 The identifier of your native integration is the variable name:
 
-    {$*integrationIdentifier*}
+```html
+    {$<strong>integrationIdentifier</strong>}
+```
 
 For a full list of available variables for your integration see [Native integration properties](./personalization-integration-variables).
 
