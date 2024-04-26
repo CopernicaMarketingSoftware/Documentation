@@ -89,6 +89,8 @@ If there are subprofiles
 If there aren't’ any subprofiles
 {/foreach}
 ```
+#### Native integrations
+
 You can also loop over certain variables in a native integration. 
 Here you can also:
 * add filters using the "filter" attribute
