@@ -98,7 +98,7 @@ Available modifiers are:
 * limit the amount of items using the "limit" modifier
 
 ```text
-{foreach from=$nickname.products|filter:"price":"<":15|orderby:"price"|limit:1 item="product"}
+{foreach from=$nickname.products|filter:"price":"<":15|orderby:"price"|limit:5 item="product"}
 {$product.name}
 {/foreach}
 ```
@@ -115,7 +115,7 @@ The filter modifier has several variations:
 
 The orderby modifier can be used ascending or descending
 
-orderby:"price" - sorts by price, by default in an ascending direction
+orderby:"price" - sorts by price, by default in an ascending direction    
 orderby:"price":"desc" - sorts by price in an descending direction
 
 
