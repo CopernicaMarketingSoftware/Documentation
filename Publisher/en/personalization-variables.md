@@ -141,14 +141,14 @@ The {$mailing} object has more properties, en contains some mailing settings:
 * **{$mailing.snapshot.created}**: time when a snapshot of the document was created (YYYY-MM-DD hh:mm::ss format)
 * **{$mailing.snapshot.subject}**: mailing subject line
 
-## Integrations
+## Native integrations
 
-You can use information from your integration in a template. The available variables depend on the integration that you use.
-The nickname of your integration is the variable name:
+You can use information from your native integration in a template. The available variables depend on the native integration that you use.
+The nickname of your native integration is the variable name:
 
     {$integrationNickname}
 
-For a full list of available variables for your integration see [Integration properties](./personalization-integration-variables).
+For a full list of available variables for your integration see [Native integration properties](./personalization-integration-variables).
 
 ## Extra personalization variables
 
