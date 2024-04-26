@@ -14,7 +14,7 @@ You can see which properties are available on each variable by referencing the [
 * **{$nickname.cart.cartID.customer}**: fetch the customer for this cart
 * **{$nickname.cart.cartID.items[].product}**: fetch the product from the cart item
 
-### Foreach-able properties
+### Iterable properties
 
 The following properties can be used in a foreach. You can find an [example on how to use them here](./personalization#native-integrations).
 
