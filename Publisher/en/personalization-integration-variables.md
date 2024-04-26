@@ -16,7 +16,7 @@ You can see which properties are available on each variable by referencing the [
 
 ### Foreach properties
 
-The following properties can be used in a foreach. You can find an [example on how to use them here](./personalization#native-integrations)
+The following properties can be used in a foreach. You can find an [example on how to use them here](./personalization#native-integrations).
 
 * **{$nickname.products}**: can be used to loop over all the products in the webshop
 * **{$nickname.orders}**: can be used to loop over all the orders in the webshop
