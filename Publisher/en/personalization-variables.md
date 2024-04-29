@@ -155,7 +155,7 @@ For example if you use the identifier "magento", you can personalize with variab
 * **{$magento.product.shoes.description}**
 * **{$magento.order.1.grand_total}**
 
-All fields that are returned by the API are made available, so not only are the fields "name" and "title" available, but also fields such as "price" and "product_links".
+All fields that are returned by the API of your platform are made available, so not only are the fields "name" and "title" available, but also fields such as "price" and "product_links".
 
 You can check the API documentation of the connected platform to find out which fields are available.
 
