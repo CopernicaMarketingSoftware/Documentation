@@ -143,12 +143,18 @@ The {$mailing} object has more properties, en contains some mailing settings:
 
 ## Native integrations
 
-You can use information from your native integration in a template. The available variables depend on the native integration that you use.
-The identifier of your native integration is the variable name:
+If you connect your platform with Copernica, your product and order information will become available as personalization variables in your templates.
+You can directly use this information in your mailings. When connecting your platform to Copernica you have to enter an identifier. 
+This identifier is the name of the variable that you can use to fetch information from your platform.
 
-```text
-    {$integrationIdentifier}
-```
+For example if you use the identifier "magento", you can personalize with variables such as:
+
+*{$magento.product.shoes.name}
+*{$magento.product.shoes.description}
+*{$magento.order.1.grand_total}
+
+All fields that are returned by the API are made available, so not only are fields such as "name" and "title" available, but also fields such as "price" and "product_links".
+You can check the API documentation of the connected platform to find out which fields are available.
 
 For a full list of available variables for your integration see [Native integration properties](./personalization-integration-variables).
 
