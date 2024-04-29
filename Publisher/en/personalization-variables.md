@@ -144,14 +144,16 @@ The {$mailing} object has more properties, en contains some mailing settings:
 ## Native integrations
 
 If you connect your platform with Copernica, your product and order information will become available as personalization variables in your templates.
-You can directly use this information in your mailings. When connecting your platform to Copernica you have to enter an identifier. 
+You can directly use this information in your mailings. 
+
+When connecting your platform to Copernica you have to enter an identifier. 
 This identifier is the name of the variable that you can use to fetch information from your platform.
 
 For example if you use the identifier "magento", you can personalize with variables such as:
 
-*{$magento.product.shoes.name}
-*{$magento.product.shoes.description}
-*{$magento.order.1.grand_total}
+* **{$magento.product.shoes.name}**
+* **{$magento.product.shoes.description}**
+* **{$magento.order.1.grand_total}**
 
 All fields that are returned by the API are made available, so not only are fields such as "name" and "title" available, but also fields such as "price" and "product_links".
 You can check the API documentation of the connected platform to find out which fields are available.
