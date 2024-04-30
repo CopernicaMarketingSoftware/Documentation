@@ -89,6 +89,35 @@ If there are subprofiles
 If there aren't’ any subprofiles
 {/foreach}
 ```
+#### Native integrations
+
+You can loop over certain variables in a native integration.     
+Available modifiers are:
+* add filters using the "filter" modifier
+* order using the "orderby" modifier
+* limit the amount of items using the "limit" modifier
+
+```text
+{foreach from=$identifier.products|filter:"price":"<":15|orderby:"price"|limit:5 item="product"}
+{$product.name}
+{/foreach}
+```
+
+##### Filter modifier
+
+The filter modifier has several variations:
+
+* filter:"price":">":15 - checks if price is greater than 15
+* filter:"sku":"test" - if operator is omitted, we assume an 'equals' comparison
+* filter:"sku" - if value is also omitted, we do a notnull check
+
+##### Orderby modifier
+
+The orderby modifier can be used ascending or descending
+
+orderby:"price" - sorts by price, by default in an ascending direction    
+orderby:"price":"desc" - sorts by price in an descending direction
+
 
 ## Variables
 

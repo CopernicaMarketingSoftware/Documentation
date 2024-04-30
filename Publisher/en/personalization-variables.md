@@ -141,6 +141,26 @@ The {$mailing} object has more properties, en contains some mailing settings:
 * **{$mailing.snapshot.created}**: time when a snapshot of the document was created (YYYY-MM-DD hh:mm::ss format)
 * **{$mailing.snapshot.subject}**: mailing subject line
 
+## Native integrations
+
+If you connect your platform with Copernica, your product and order information will become available as personalization variables in your templates.
+You can directly use this information in your mailings. 
+
+When connecting your platform to Copernica you have to enter an identifier. 
+This identifier is the name of the variable that you can use to fetch information from your platform.
+
+For example if you use the identifier "magento", you can personalize with variables such as:
+
+* **{$magento.product.shoes.name}**
+* **{$magento.product.shoes.description}**
+* **{$magento.order.1.grand_total}**
+
+All fields that are returned by the API of your platform are made available, so not only are the fields "name" and "title" available, but also fields such as "price" and "product_links".
+
+You can check the API documentation of the connected platform to find out which fields are available.
+
+For a full list of available variables for your integration see [Native integration properties](./personalization-integration-variables).
+
 ## Extra personalization variables
 
 When you're editing a template, you can add extra personalization variables.
