@@ -84,6 +84,22 @@ van de mailing waartoe het bericht behoort:
 * **{$mailing.mass}**: geeft aan of de mailing als bulkmailing is verzonden (true of false)
 * **{$mailing.test}**: geeft aan of de mailing als testmailing is verzonden (true of false)
 
+### Integratie gegevens
+Als je een integratie hebt gekoppeld in de [Web-module](https://ms.copernica.com/#/web/) binnen Marketing Suite, kun je informatie vanuit de webshop direct in je e-mailtemplates gebruiken. Tijdens het toevoegen van een integratie heb je een unieke naam opgegeven als identifier. Deze identifier is tevens de naam van de variabele waarmee je gegevens vanuit de integratie kunt ophalen.
+
+Als je bijvoorbeeld een koppeling met Magento hebt gemaakt en 'magento' als identifier hebt gebruikt, kun je de totaalprijs van een bestelling als volgt ophalen: `{$magento.order.1234.grand_total}`. De mogelijkheden verschillen per integratie.
+
+#### Magento
+Onze integratie is ontwikkeld voor Magento 2.0. De volgende variabelen zijn beschikbaar:
+- [{$identifier.order.ORDER_ID.VELD}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/ordersid#operation/GetV1OrdersId)
+    - Voorbeeld 1: `{$magento.order.1234.grand_total}`
+    - Voorbeeld 2: `
+- [{$identifier.cart.CART_ID.VELD}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
+- [{$identifier.product.SKU.VELD}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
+- [{$identifier.customer.CUSTOMER_ID.VELD}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
+
+Klik op de link van een specifieke variabele om de mogelijke opties te bekijken.
+
 ## Personalisatie modifiers
 Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
