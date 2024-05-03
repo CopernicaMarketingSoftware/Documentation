@@ -21,7 +21,7 @@ Klik op de link van een specifieke variabele om de mogelijke opties te bekijken.
 
 ## Variabelen met meerdere elementen
 
-Er zijn een aantal variabelen waarin meerdere rijen met gegevens kunnen zitten, bijvoorbeeld als je alle producten uit je webshop wilt ophalen.
+Er zijn verschillende variabelen waarin meerdere rijen met gegevens kunnen zitten, bijvoorbeeld als je alle producten uit je webshop wilt ophalen. 
 Hieronder vind je een lijst met variabelen die binnen een foreach-statement kunnen worden gebruikt:
 
 * **{$identifier.products}**: kan worden gebruikt om over alle producten in de webshop te itereren
@@ -36,20 +36,22 @@ Hieronder vind je een lijst met variabelen die binnen een foreach-statement kunn
 ```
 
 ## Modifiers
-Er zijn verschillende modifiers beschikbaar binnen variaebelen met meerdere elementen:
+Binnen variabelen met meerdere elementen zijn verschillende modifiers beschikbaar:
+
 * **filters**: hiermee haal je enkel elementen ophalen die voldoen aan een specifieke waarde
 * **orderby**: hiermee geef je aan in welke volgorde je de elementen wilt ophalen
 * **limit**: hiermee geef je aan hoeveel elementen opgehaald moeten worden
 
 ### Filters
-De volgende filters zijn beschikbaar:
-- price
-- sku
+Je kunt filters toepassen om alleen elementen op te halen die voldoen aan specifieke voorwaarden. 
+Beschikbare filters zijn:
+* **price**: filter op prijs
+* **sku**: filter op SKU
 
-Je hebt hier verschillende variaties voor:
-* `filter:"price":">":15` - hiermee toon je enkel producten waarbij de prijs groter is dan 15
+Je kunt de volgende variaties van filters gebruiken:
+* `filter:"price":">":15` - haalt alleen producten op waarvan de prijs groter is dan 15
 * `filter:"sku":"test"` - als de operator wordt weggelaten, gaan we uit van een 'is gelijk aan'-vergelijking
-* `filter:"sku"` - als de waarde ook is weggelaten, kijken we of er in ieder geval een waarde aanwezig is
+* `filter:"sku"` - als ook de waarde is weggelaten, kijken we of er in ieder geval een waarde aanwezig is
 
 **Voorbeeld:**
 ```text
@@ -57,10 +59,11 @@ Je hebt hier verschillende variaties voor:
     {$product.name}
 {/foreach}
 ```
-Hiermee toon je enkel producten waarbij de waarde in het veld `price` kleiner is dan 15.
+Dit toont alleen producten waarvan de prijs lager is dan 15.
 
 ### Orderby
-De orderby modifier kan oplopend of aflopend worden gebruikt
+Met de orderby modifier kun je de volgorde bepalen waarin de elementen worden opgehaald. 
+Je kunt zowel oplopend als aflopend sorteren op een specifiek veld, bijvoorbeeld prijs.
 
 - * `orderby:"price"` - sorteert op prijs, standaard in oplopende richting    
 - * `orderby:"price":"desc"` - sorteert aflopend op prijs
@@ -73,7 +76,7 @@ De orderby modifier kan oplopend of aflopend worden gebruikt
 ```
 
 ### Limit 
-De limit modifier kan gebruikt worden om aan te geven hoeveel elementen moeten worden opgehaald.
+Met de limit modifier kun je aangeven hoeveel elementen moeten worden opgehaald.
 
 **Voorbeeld:**
 ```text
@@ -81,6 +84,17 @@ De limit modifier kan gebruikt worden om aan te geven hoeveel elementen moeten w
     {$product.name}
 {/foreach}
 ```
+
+### Combinatie van modifiers
+Je kunt verschillende modifiers combineren om specifieke resultaten te krijgen, bijvoorbeeld:
+
+```text
+{foreach from=$identifier.products|filter:"price":"<":15|orderby:"price"|limit:5 item="product"}
+    {$product.name}
+{/foreach}
+```
+
+Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lager is dan 15, gesorteerd op prijs.
 
 ## Voorbeelden
 
