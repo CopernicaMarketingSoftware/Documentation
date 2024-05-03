@@ -35,13 +35,13 @@ Hieronder vind je een lijst met variabelen die binnen een foreach-statement kunn
 {/foreach}
 ```
 
-### Modifiers
+## Modifiers
 Er zijn verschillende modifiers beschikbaar binnen variaebelen met meerdere elementen:
 * **filters**: hiermee haal je enkel elementen ophalen die voldoen aan een specifieke waarde
 * **orderby**: hiermee geef je aan in welke volgorde je de elementen wilt ophalen
 * **limit**: hiermee geef je aan hoeveel elementen opgehaald moeten worden
 
-#### Filters
+### Filters
 De volgende filters zijn beschikbaar:
 - price
 - sku
@@ -59,7 +59,7 @@ Je hebt hier verschillende variaties voor:
 ```
 Hiermee toon je enkel producten waarbij de waarde in het veld `price` kleiner is dan 15.
 
-#### Orderby
+### Orderby
 De orderby modifier kan oplopend of aflopend worden gebruikt
 
 - * `orderby:"price"` - sorteert op prijs, standaard in oplopende richting    
@@ -72,7 +72,7 @@ De orderby modifier kan oplopend of aflopend worden gebruikt
 {/foreach}
 ```
 
-#### Limit 
+### Limit 
 De limit modifier kan gebruikt worden om aan te geven hoeveel elementen moeten worden opgehaald.
 
 **Voorbeeld:**
