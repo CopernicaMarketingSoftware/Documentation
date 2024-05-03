@@ -1,23 +1,27 @@
 # Magento
 
-Onze integratie is ontwikkeld voor Magento 2.0. De volgende variabelen zijn beschikbaar:
-- [{$identifier.order.ORDER_ID.VELD}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/ordersid#operation/GetV1OrdersId)
-    - Voorbeeld 1: `{$magento.order.1234.grand_total}`
-    - Voorbeeld 2: `
-- [{$identifier.cart.CART_ID.VELD}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
-- [{$identifier.product.SKU.VELD}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
-- [{$identifier.customer.CUSTOMER_ID.VELD}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
+De Copernica-integratie met Magento is specifiek ontwikkeld voor Magento 2.0. Na het toevoegen van de integratie in de [Web-module](https://ms.copernica.com/#/web/), zijn direct de volgende variabelen beschikbaar in je drag-and-drop-templates:
 
-Klik op de link van een specifieke variabele om de mogelijke opties te bekijken.
+- **{$identifier.customer.$customerID}**: haal een klant op aan de hand van zijn ID
+- **{$identifier.order.$orderID}**: haal een bestelling op aan de hand van zijn ID
+- **{$identifier.order.$orderID.customer}**: haal de klant op voor deze bestelling
+- **{$identifier.order.$orderID.items[]}**: haal alle items op uit deze bestelling
+- **{$identifier.order.$orderID.items[].product}**: haal het product op uit deze bestelling
+- **{$identifier.product.sku}**: haal een product op aan de hand van zijn SKU
+- **{$identifier.cart.$cartID}**: haal een winkelwagen op aan de hand van zijn ID
+- **{$identifier.cart.$cartID.customer}**: haal de klant op voor deze winkelwagen
+- **{$identifier.cart.$cartID.items[]}**: haal alle items op uit het winkelwagenitem
+- **{$identifier.cart.$cartID.items[].product}**: haal het product op uit het winkelwagenitem
 
-@todo
-* **{$identifier.order.$orderID}**: fetch an order by its ID
-* **{$identifier.order.$orderID.customer}**: fetch the customer for this order
-* **{$identifier.order.$orderID.items[].product}**: fetch the product from the order item
-* **{$identifier.product.sku}**: fetch a product by its SKU
-* **{$identifier.cart.$cartID}**: fetch a cart by its ID
-* **{$identifier.cart.$cartID.customer}**: fetch the customer for this cart
-* **{$identifier.cart.$cartID.items[].product}**: fetch the product from the cart item
+Bij het koppelen van de integratie moest je een identifier invoeren. Deze identifier is tevens de naam van de variabele waarmee je de gegevens vanuit de webshop kunt inladen. Als je bijvoorbeeld "magento" als identifier hebt ingevoerd, gebruik je dus: {$magento.customer.$customerID}.
+
+Om te achterhalen welke waarden de verschillende elementen teruggeven, kun je de Magento-documentatie raadplegen:
+- [order](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/ordersid#operation/GetV1OrdersId)
+- [cart](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
+- [product](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
+- [customer](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
+
+Onderaan dit artikel geven we enkele voorbeelden van veelgebruikte functionaliteiten.
 
 ## Variabelen met meerdere elementen
 
