@@ -1,5 +1,8 @@
 # REST API v2
 
+Warning: You are viewing the documentation for the old REST API. We recommend 
+using [version 3](../restv3/rest-api.md) or higher of the REST API.
+
 The REST API allows you to retrieve and update the data that is stored inside
 Copernica from out of your own website or app. You can write your own scripts
 that send requests and instructions to our servers to fetch this data or
@@ -12,9 +15,9 @@ contains an overview of all API calls.
 * [External OAuth2 links](./rest-oauth)
 * [Paging](./rest-paging)
 
-We are currently on version 2 of the REST API. [This article](./rest-introduction#REST-version)
+We are currently on version 4 of the REST API. [This article](../restv4/rest-introduction#REST-version)
 explains the new version (and how to switch) in full detail. Not ready to switch?
-You can find the documentation for version 1 [here](../restv1/rest-api.md).
+If you want to use previous versions of the API, here is a link to the [v3](../restv3/rest-api.md) documentation.
 
 ## Method types
 
