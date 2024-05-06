@@ -8,7 +8,7 @@ back in a format that can easily be handled by computers (JSON).
 
 ## REST version
 
-Currently we are using version 2 of the API. In this newest version some calls 
+This is version 2 of the Copernica REST API. In this version some calls 
 were moved to make it clearer which calls were unique to the Marketing Suite 
 or the Publisher. The new version of the API is easier to understand and 
 offers some new calls to help you manage all data surrounding your mailings.
