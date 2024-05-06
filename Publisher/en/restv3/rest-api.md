@@ -13,7 +13,7 @@ contains an overview of all API calls.
 * [Paging](./rest-paging)
 
 This documentation is about version 3 of the REST API. [This article](./rest-introduction#REST-version)
-explains version 3 (and how to switch) in full detail. Not ready to switch?
+explains this version (and how to switch) in full detail. Not ready to switch?
 If you want to use previous versions of the API, here is a link to the [v1](../restv1/rest-api.md)
 and [v2](../restv2/rest-api.md) documentation.
 
