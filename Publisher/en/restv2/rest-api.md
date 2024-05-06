@@ -15,9 +15,9 @@ contains an overview of all API calls.
 * [External OAuth2 links](./rest-oauth)
 * [Paging](./rest-paging)
 
-We are currently on version 4 of the REST API. [This article](../restv4/rest-introduction#REST-version)
+We are currently on version 2 of the REST API. [This article](./rest-introduction#REST-version)
 explains the new version (and how to switch) in full detail. Not ready to switch?
-If you want to use previous versions of the API, here is a link to the [v3](../restv3/rest-api.md) documentation.
+You can find the documentation for version 1 [here](../restv1/rest-api.md).
 
 ## Method types
 
