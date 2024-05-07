@@ -99,13 +99,3 @@ Je kunt verschillende modifiers combineren om specifieke resultaten te krijgen, 
 ```
 
 Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lager is dan 15, gesorteerd op prijs.
-
-## Voorbeelden
-
-### Alle producten tonen
-
-
-### Totaal bedrag ophalen van een order
-
-
-### Product informatie ophalen van laatste order
