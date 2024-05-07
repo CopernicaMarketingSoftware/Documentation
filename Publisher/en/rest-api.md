@@ -1,13 +1,7 @@
 # REST API Overview
 
-The REST API allows you to retrieve and update the data that is stored inside
-Copernica from out of your own website or app. You can write your own scripts
-that send requests and instructions to our servers to fetch this data or
-to update it. You can use this API to automatically synchronize the data in
-Copernica with your own system, without any human interference. This page
-contains an overview of all API versions.
-
-## REST API Versions
+The Copernica REST API has multiple versions. This page contains information 
+and links for all versions, along with some details about changes in each version.
 
 The newest version of the API is version 4, which is the recommended version
 to use. However, all of the previous versions are still operational. Here is
@@ -19,7 +13,7 @@ a list of all REST API versions:
 *  [REST API v1](./restv1/rest-api.md)
 
 
-### REST API v4
+## REST API v4
 
 Version 4 of the API uses JWT authorization and contains additional endpoints.
 
