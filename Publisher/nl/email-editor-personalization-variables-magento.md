@@ -121,3 +121,24 @@ Je kunt verschillende modifiers combineren om specifieke resultaten te krijgen, 
 ```
 
 Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lager is dan 15, gesorteerd op prijs.
+
+## Voorbeelden van veelgebruikte mogelijkheden
+
+### Informatie van laatste order binnen een profiel ophalen
+
+Als je binnen je template gebruik wilt maken van gegevens van de laatste order van een profiel,
+
+```text
+{foreach from=$identifier.order.$ORDERID.items item=product}
+    Naam: {$product.name}
+    SKU: {$product.sku}
+    Aantal: {$product.qty_ordered}
+    Prijs: € {$product.price_incl_tax}
+    Totaal: € {$product.row_total_incl_tax}
+{/foreach}
+
+Verzendkosten: € {$identifier.order.$ORDERID.base_shipping_incl_tax}
+Totaal bedrag order: € {$identifier.order.$ORDERID.base_grand_total}
+```
+
+### Alle producten tonen
