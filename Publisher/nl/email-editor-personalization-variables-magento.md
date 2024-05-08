@@ -14,13 +14,13 @@ de [web-module](https://ms.copernica.com/#/web/), zijn direct de volgende variab
 - **{$identifier.cart.$cartID.items[]}**: haal alle items op uit het winkelwagenitem
 - **{$identifier.cart.$cartID.items[].product}**: haal productgegevens op uit het winkelwagenitem
 
-In bovenstaande voorbeelden moet je de variabelen die beginnen met een dollarteken (zoals $identifier, $orderID, enzovoort) vervangen
+In bovenstaande voorbeelden moet je de variabelen die beginnen met een dollarteken (zoals $identifier, $orderID, $sku, enzovoort) vervangen
 door de identifier van de integratie, het order-ID, de stock-keeping-unit, enzovoort. 
 
 De integratie-identifier verwijst naar de naam die de webshop heeft binnen de lijst van integraties, en stelt je in staat om
 gegevens uit meerdere webshops te halen door ze allemaal een andere identifier te geven. Bij het invoeren van de integratie in
 de [web-module](https://ms.copernica.com/#/web/) heb je deze identifier moeten invoeren. Veel gebruikers kiezen als identifier de
-naam van de webshop ("mijnwebshop") of gewoon "magento". Als je "magento" als identifier hebt ingevoerd, gebruik je dus: {$magento.customer.$customerID}.
+naam van de webshop ("mijnwebshop") of gewoon "magento". Als je "magento" als identifier hebt ingevoerd, gebruik je dus: {magento.customer.$customerID}.
 
 ## Welke velden zijn er precies beschikbaar?
 
