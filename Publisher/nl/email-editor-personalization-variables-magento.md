@@ -1,21 +1,35 @@
 # Magento
 
-De Copernica-integratie met Magento is specifiek ontwikkeld voor Magento 2.0. Na het toevoegen van de integratie in de [Web-module](https://ms.copernica.com/#/web/), zijn direct de volgende variabelen beschikbaar in je drag-and-drop-templates:
+De Copernica-integratie met Magento is specifiek ontwikkeld voor Magento 2.0 en hoger. Na het koppelen van een Magento webshop in
+de [web-module](https://ms.copernica.com/#/web/), zijn direct de volgende variabelen beschikbaar in je drag-and-drop-templates:
 
-- **{$identifier.customer.$customerID}**: haal een klant op aan de hand van zijn ID
-- **{$identifier.order.$orderID}**: haal een bestelling op aan de hand van zijn ID
-- **{$identifier.order.$orderID.customer}**: haal de klant op voor deze bestelling
+- **{$identifier.customer.$customerID}**: haal klantgegevens op aan de hand van het ID
+- **{$identifier.order.$orderID}**: haal een bestelling op aan de hand van het ID
+- **{$identifier.order.$orderID.customer}**: haal klantgegevens op voor deze bestelling
 - **{$identifier.order.$orderID.items[]}**: haal alle items op uit deze bestelling
 - **{$identifier.order.$orderID.items[].product}**: haal het product op uit deze bestelling
-- **{$identifier.product.sku}**: haal een product op aan de hand van zijn SKU
-- **{$identifier.cart.$cartID}**: haal een winkelwagen op aan de hand van zijn ID
-- **{$identifier.cart.$cartID.customer}**: haal de klant op voor deze winkelwagen
+- **{$identifier.product.$sku}**: haal een product op aan de hand van de SKU (Stock Keeping Unit)
+- **{$identifier.cart.$cartID}**: haal een winkelwagen op aan de hand van het ID
+- **{$identifier.cart.$cartID.customer}**: haal klantgegevens op voor deze winkelwagen
 - **{$identifier.cart.$cartID.items[]}**: haal alle items op uit het winkelwagenitem
-- **{$identifier.cart.$cartID.items[].product}**: haal het product op uit het winkelwagenitem
+- **{$identifier.cart.$cartID.items[].product}**: haal productgegevens op uit het winkelwagenitem
 
-Bij het koppelen van de integratie moest je een identifier invoeren. Deze identifier is tevens de naam van de variabele waarmee je de gegevens vanuit de webshop kunt inladen. Als je bijvoorbeeld "magento" als identifier hebt ingevoerd, gebruik je dus: {$magento.customer.$customerID}.
+In bovenstaande voorbeelden moet je de variabelen die beginnen met een dollarteken (zoals $identifier, $orderID, enzovoort) vervangen
+door de identifier van de integratie, het order-ID, de stock-keeping-unit, enzovoort. 
 
-Om te achterhalen welke waarden de verschillende elementen teruggeven, kun je de Magento-documentatie raadplegen:
+De integratie-identifier verwijst naar de naam die de webshop heeft binnen de lijst van integraties, en stelt je in staat om
+gegevens uit meerdere webshops te halen door ze allemaal een andere identifier te geven. Bij het invoeren van de integratie in
+de [web-module](https://ms.copernica.com/#/web/) heb je deze identifier moeten invoeren. Veel gebruikers kiezen als identifier de
+naam van de webshop ("mijnwebshop") of gewoon "magento". Als je "magento" als identifier hebt ingevoerd, gebruik je dus: {$magento.customer.$customerID}.
+
+## Welke velden zijn er precies beschikbaar?
+
+De gegevens die je ophaalt worden vanuit de API van Magento ingeladen in je mailing. De velden die de API teruggeeft zijn allemaal
+rechtstreeks beschikbaar als Smarty variabele, dus bijvoorbeeld {$identifier.product.$sku.name} en {$identifier.product.$sku.price}.
+De precies beschikbare velden zijn er te veel om op te noemen, en zijn ook niet voor elke webshop hetzelfde omdat ze afhankelijk kunnen
+zijn van de Magento-versie. Voor een actueel overzicht kun je daarom het best de documentatie van de Magento-API raadplegen. 
+Alle velden die worden teruggegeven door de API kun je gebruiken bij het personalizeren:
+
 - [order](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/ordersid#operation/GetV1OrdersId)
 - [cart](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
 - [product](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
@@ -32,22 +46,30 @@ Hieronder vind je een lijst met variabelen die binnen een foreach-statement kunn
 * **{$identifier.orders}**: kan worden gebruikt om over alle bestellingen in de webshop te itereren
 * **{$identifier.carts}**: kan worden gebruikt om over alle winkelwagens in de webshop te itereren
 
-**Voorbeeld:**
+En, zoals je hierboven al zag, zijn er ook variabelen om alle items van een order of alle items van een winkelwagen op te halen.
+
+**Voorbeeld om alle beschikbare producten te tonen:**
 ```text
 {foreach from=$identifier.products item="product"}
     {$product.name}
 {/foreach}
 ```
 
-## Modifiers
-Binnen variabelen met meerdere elementen zijn verschillende modifiers beschikbaar:
+Overiges, dit zijn voor de meeste webshops nogal veel producten, dus erg zinvol is bovenstaande code vaak niet. Het wordt
+al een stuk handiger als je wat *modifiers* gebruikt om te zoeken naar specifieke producten or bestellingen.
 
-* **filters**: hiermee haal je enkel elementen ophalen die voldoen aan een specifieke waarde
+## Modifiers
+
+Normaal gesproken gebruik je modifiers om teksten te filteren, bijvoorbeeld om hoofdletters om te zetten naar kleine letters, of om
+HTML code te escapen. Modifiers kunnen echter ook worden ingezet om lijsten te filteren en te sorteren. Hiervoor hebben we de 
+volgende modifiers:
+
+* **filter**: hiermee haal je enkel elementen ophalen die voldoen aan een specifieke waarde
 * **orderby**: hiermee geef je aan in welke volgorde je de elementen wilt ophalen
 * **limit**: hiermee geef je aan hoeveel elementen opgehaald moeten worden
 
 ### Filters
-Je kunt filters toepassen om alleen elementen op te halen die voldoen aan specifieke voorwaarden. 
+Je kunt voor Magento filters toepassen om alleen elementen op te halen die voldoen aan specifieke voorwaarden. 
 Beschikbare filters zijn:
 * **price**: filter op prijs
 * **sku**: filter op SKU
@@ -63,7 +85,7 @@ Je kunt de volgende variaties van filters gebruiken:
     {$product.name}
 {/foreach}
 ```
-Dit toont alleen producten waarvan de prijs lager is dan 15.
+Dit toont alle producten uit de webshop waarvan de prijs lager is dan 15.
 
 ### Orderby
 Met de orderby modifier kun je de volgorde bepalen waarin de elementen worden opgehaald. 
