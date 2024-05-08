@@ -84,6 +84,14 @@ van de mailing waartoe het bericht behoort:
 * **{$mailing.mass}**: geeft aan of de mailing als bulkmailing is verzonden (true of false)
 * **{$mailing.test}**: geeft aan of de mailing als testmailing is verzonden (true of false)
 
+### Integraties
+Als je een integratie hebt gekoppeld in de [web-module](https://ms.copernica.com/#/web/) van Marketing Suite, kun je informatie vanuit de integratie direct in je e-mailtemplates gebruiken. Tijdens het toevoegen van een integratie heb je een unieke naam opgegeven als identifier. Deze identifier is tevens de naam van de variabele waarmee je gegevens vanuit de integratie kunt ophalen.
+
+Als je bijvoorbeeld een koppeling met Magento hebt gemaakt en 'magento' als identifier hebt gebruikt, kun je de totaalprijs van een bestelling als volgt ophalen: `{$magento.order.1234.grand_total}`. 
+
+De mogelijkheden verschillen per integratie. Hieronder vind je per integratie hoe je de variabelen kunt gebruiken:
+- [Magento](./email-editor-personalization-variables-magento.md)
+
 ## Personalisatie modifiers
 Je kunt de variabelen, waarmee je e-mails personaliseert, veranderen met behulp
 van *modifiers*. Je doet dit door een `|` toe te voegen na de variabele.
