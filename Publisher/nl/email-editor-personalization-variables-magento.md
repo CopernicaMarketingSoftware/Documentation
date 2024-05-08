@@ -91,8 +91,8 @@ Dit toont alle producten uit de webshop waarvan de prijs lager is dan 15.
 Met de orderby modifier kun je de volgorde bepalen waarin de elementen worden opgehaald. 
 Je kunt zowel oplopend als aflopend sorteren op een specifiek veld, bijvoorbeeld prijs.
 
-- * `orderby:"price"` - sorteert op prijs, standaard in oplopende richting    
-- * `orderby:"price":"desc"` - sorteert aflopend op prijs
+* `orderby:"price"` - sorteert op prijs, standaard in oplopende richting    
+* `orderby:"price":"desc"` - sorteert aflopend op prijs
 
 **Voorbeeld:**
 ```text
