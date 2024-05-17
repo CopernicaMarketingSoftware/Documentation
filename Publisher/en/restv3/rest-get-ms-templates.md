@@ -42,6 +42,7 @@ A single template will look something like this:
    },
    "subject":"Infinity conference",
    "type":"json",
+   "archived":false,
    "directory":"78"
 }
 ```
