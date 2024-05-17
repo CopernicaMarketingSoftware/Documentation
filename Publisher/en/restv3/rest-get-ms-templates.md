@@ -26,6 +26,7 @@ with emailing templates. Each template contains the following information:
 * **subject**: The template subject.
 * **type**: The template type ('json' or 'html').
 * **archived**: Whether or not the database is archived.
+* **directory**: The directory in which the template is located (if any).
 
 ### JSON example
 
@@ -40,7 +41,8 @@ A single template will look something like this:
       "email":"info@valtaf.nl"
    },
    "subject":"Infinity conference",
-   "type":"json"
+   "type":"json",
+   "directory":"78"
 }
 ```
 
