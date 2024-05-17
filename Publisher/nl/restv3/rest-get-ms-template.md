@@ -16,7 +16,9 @@ Deze methode geeft een JSON object terug dat de volgende informatie bevat:
 * **from_address**: Adres van de afzender. Array met een 'name' (naam) en 'email' veld.
 * **subject**: Het onderwerp van de template
 * **type**: Het type van de template ('json' of 'html').
-
+* **archived**: Of de template wel of niet gearchiveerd is.
+* **directory**: De map waarin de template zich bevindt (indien aanwezig).
+  
 ### JSON voorbeeld
 
 De template ziet er dan bijvoorbeeld zo uit:
@@ -30,7 +32,9 @@ De template ziet er dan bijvoorbeeld zo uit:
       "email":"info@valtaf.nl"
    },
    "subject":"Infinity conference",
-   "type":"json"
+   "type":"json",
+   "archived":false,
+   "directory":"78"
 }
 ```
 
