@@ -26,7 +26,8 @@ in het **data** veld. Elke template bevat de volgende informatie:
 * **from_address**: Adres van de afzender. Array met een 'name' (naam) en 'email' veld.
 * **subject**: Het onderwerp van de template
 * **type**: Het type van de template ('json' of 'html').
-* **archived**: Geeft aan of de database wel of niet gearchiveerd is.
+* **archived**: Of de template wel of niet gearchiveerd is.
+* **directory**: De map waarin de template zich bevindt (indien aanwezig).
 
 ### JSON voorbeeld
 
@@ -41,7 +42,9 @@ Een enkele template ziet er bijvoorbeeld zo uit:
       "email":"info@valtaf.nl"
    },
    "subject":"Infinity conference",
-   "type":"json"
+   "type":"json",
+   "archived":false,
+   "directory":"78"
 }
 ```
 
