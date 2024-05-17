@@ -33,7 +33,7 @@ The JSON will look something like this:
    },
    "subject":"Infinity conference",
    "type":"json",
-   "directory": "78"
+   "directory":"78"
 }
 ```
 
