@@ -16,7 +16,7 @@ The method returns a JSON object containing the following information:
 * **from_address**: The from address for the template. Array containing a 'name' and 'email' field.
 * **subject**: The template subject.
 * **type**: The template type ('json' or 'html').
-* **archived**: Whether or not the database is archived.
+* **archived**: Whether or not the template is archived.
 * **directory**: The directory in which the template is located (if any).
 
 ### JSON example 
