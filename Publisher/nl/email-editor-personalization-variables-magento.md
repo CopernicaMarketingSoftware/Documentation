@@ -124,6 +124,13 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 
 ## Voorbeelden van veelgebruikte mogelijkheden
 
+### Laatste 5 producten tonen in je nieuwsbrief
+
+In onderstaande voorbeeldcode laten we zien hoe je binnen je nieuwsbrief de laatste 5 producten die zijn toegevoegd aan je webshop toont:
+```text
+
+```
+
 ### Informatie van laatste order binnen een profiel ophalen
 
 Als je binnen je template gebruik wilt maken van gegevens van de laatste order van een profiel,
