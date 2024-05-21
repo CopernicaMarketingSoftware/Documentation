@@ -122,7 +122,19 @@ Je kunt verschillende modifiers combineren om specifieke resultaten te krijgen, 
 
 Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lager is dan 15, gesorteerd op prijs.
 
-## Voorbeelden van veelgebruikte mogelijkheden
+## Veelgebruikte personalisatie variabelen
+| **Variabele**                                            | **Toepassing**                                                                                                          |
+|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| {$product.name}                                          | Naam van het product                                                                                                    |
+| {$product.price}                                         | Prijs van het product                                                                                                   |
+| {$product.custom_attributes.short_description}           | Korte bedrijving van het product                                                                                        |
+| {$product.custom_attributes.description}                 | Uitgebreide beschrijving van het product                                                                                |
+| {$product.custom_attributes.short_description\|unescape} | Uitgebreide beschrijving van het product zonder HTML-code                                                               |
+| {$product.custom_attributes.image}                       | Afbeeldingsnaam van het product.  VB: https://webshop.domein.nl/media/catalog/prodcut/{$product.custom_attributes.image} |
+| {$product.custom_attributes.url_key}                     | URL van het product.  VB: https://webshop.domein.nl/{$product.custom_attributes.url_key}.html                            |
+
+
+## Voorbeeld
 
 ### Laatste 5 producten tonen in je nieuwsbrief
 
