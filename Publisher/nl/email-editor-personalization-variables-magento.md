@@ -136,11 +136,23 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 
 ## Voorbeeld - 5 meest recent toegevoegde producten tonen
 
-In onderstaand voorbeeld leggen we aan de hand van een stappenplan uit je hoe de laatste 5 toegevoegde producten uit je webshop kan tonen in je e-mailtemplate.
+In onderstaand voorbeeld leggen we aan de hand van een stappenplan uit je hoe de laatste 5 toegevoegde producten uit je webshop onder elkaar kan tonen in je e-mailtemplate.
 
 ### Stap 1 - Structuur elementen toevoegen
+We beginnen met het toevoegen van drie structuren. De eerste en laatst structuur bevatten één container. In het middelste structuur gebruiken we twee containers zodat we links een afbeelding kunnen tonen en rechts de informatie over het product. De linker container van het middelste blok geven we een breedte van 120 mee.
 
 ### Stap 2 - Foreach-statement toevoegen
+In het eerste structuur voegen we een tekstblok toe met het volgende Smarty foreach-statement:
+```
+{foreach from=$identifier.products|orderby:"id":"desc"|limit:5 item="product"}
+```
+
+De waarde 'identifier' zal je moeten aanpassen naar de integratie-identifier zoals je deze hebt opgegeven bij het aanmaken van je integratie.
+
+In de laatste structuur voegen we ook een tekstblok toe waar we het foreach-statement afsluiten:
+```
+{/foreach}
+```
 
 ### Stap 3 - Blokken toevoegen
 
