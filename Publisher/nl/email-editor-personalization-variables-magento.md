@@ -134,16 +134,19 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 | {$product.custom_attributes.url_key}                     | URL van het product.  VB: https://webshop.domein.nl/{$product.custom_attributes.url_key}.html                            |
 
 
-## Voorbeeld
+## Voorbeeld - 5 meest recent toegevoegde producten tonen
 
-### Laatste 5 producten tonen in je nieuwsbrief
+In onderstaand voorbeeld leggen we aan de hand van een stappenplan uit je hoe de laatste 5 toegevoegde producten uit je webshop kan tonen in je e-mailtemplate.
 
-In onderstaande voorbeeldcode laten we zien hoe je binnen je nieuwsbrief de laatste 5 producten die zijn toegevoegd aan je webshop toont:
-```text
+### Stap 1 - Structuur elementen toevoegen
 
-```
+### Stap 2 - Foreach-statement toevoegen
 
-### Informatie van laatste order binnen een profiel ophalen
+### Stap 3 - Blokken toevoegen
+
+### Stap 4 - Smarty code toevoegen aan blok-elementen
+
+## Voorbeeld - Informatie van laatste order binnen een profiel ophalen
 
 Als je binnen je template gebruik wilt maken van gegevens van de laatste order van een profiel,
 
@@ -159,5 +162,3 @@ Als je binnen je template gebruik wilt maken van gegevens van de laatste order v
 Verzendkosten: € {$identifier.order.$ORDERID.base_shipping_incl_tax}
 Totaal bedrag order: € {$identifier.order.$ORDERID.base_grand_total}
 ```
-
-### Alle producten tonen
