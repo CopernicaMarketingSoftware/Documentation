@@ -137,7 +137,7 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 | {$product.custom_attributes.image}                       | Afbeeldingsnaam van het product.  Voorbeeld: https://webshop.domein.nl/media/catalog/prodcut/{$product.custom_attributes.image} |
 | {$product.custom_attributes.url_key}                     | URL van het product.  Voorbeeld: https://webshop.domein.nl/{$product.custom_attributes.url_key}.html                            |
 
-## Voorbeeld - Tonen van de 5 meest recent toegevoegde producten
+## Voorbeeld 1 - Tonen van de 5 meest recent toegevoegde producten
 
 In dit voorbeeld leer je hoe je de vijf nieuwste producten uit je webshop kunt laden in je e-mailtemplate.
 
@@ -204,19 +204,77 @@ en als knoplabel:
 
 In de voorvertoning kun je nu de weergave van de e-mail zien. Je kunt de opmaak van de blokken naar wens aanpassen.
 
-## Voorbeeld - Informatie van laatste order binnen een profiel ophalen
+## Voorbeeld 2 - Tonen van bestellings-informatie 
 
-Als je binnen je template gebruik wilt maken van gegevens van de laatste order van een profiel,
+In dit voorbeeld leer je hoe je de informatie van een bestelling uit je webshop kunt inladen in je e-mailtemplate.
 
-```text
-{foreach from=$identifier.order.$ORDERID.items item=product}
-    Naam: {$product.name}
-    SKU: {$product.sku}
-    Aantal: {$product.qty_ordered}
-    Prijs: € {$product.price_incl_tax}
-    Totaal: € {$product.row_total_incl_tax}
-{/foreach}
+### Stap 1 - Structuurelementen toevoegen
+Begin met het toevoegen van vijf structuren aan je e-mailtemplate. Gebruik hiervoor de volgende container-opties:
+- Eerste structuur: 1 container
+- Tweede structuur: 2 containers, waarbij de linker container een breedte heeft van 120
+- Derde structuur: 1 container
+- Vierde structuur: 1 container
+- Vijfde structuur: 1 container
 
-Verzendkosten: € {$identifier.order.$ORDERID.base_shipping_incl_tax}
-Totaal bedrag order: € {$identifier.order.$ORDERID.base_grand_total}
+### Stap 2 - Foreach-statement toevoegen
+Voeg in het eerste structuurelement een tekstblok toe met het volgende Smarty foreach-statement:
 ```
+{foreach from=$identifier.order.$orderID.items item=order}
+```
+Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie.
+De variabele $orderID vervang je met de order ID van de bestelling.
+
+In het vierde structuurelement voeg je een tekstblok toe om het foreach-statement af te sluiten:
+```
+{/foreach}
+```
+
+### Stap 3 - Tonen van informatie per product
+In het tweede structuurelement heb je nu twee containers, waarbij de linker container een breedte heeft van 120.
+
+#### Linker container
+Voeg een afbeeldingsblok toe in de linker container. Voor het afbeeldingspad in je afbeeldingsblok gebruik je:
+```
+https://webshop.domein.nl/media/catalog/product/{$product.custom_attributes.image}
+```
+
+Voor de link in je afbeeldingsblok gebruik je:
+```
+https://webshop.domein.nl/{$product.custom_attributes.url_key}.html
+```
+
+*Let op: vervang 'webshop.domein.nl' door de URL van je eigen webshop.*
+
+#### Rechter container
+Voeg een tekstblok toe aan de rechter container.
+Hierin plaats je:
+
+```
+{$order.product.name}
+​SKU: {$order.product.sku}
+Aantal: {$order.qty_ordered}
+Prijs: € {$order.price_incl_tax|number_format:2}
+```
+
+De waarde {$order.product.name} maak je dikgedrukt.
+
+### Stap 4 - Tonen van totaal prijs per product 
+Voeg in het vierde structuurelement een tekstblok toe met de volgende tekst:
+```
+Totaal: € {$order.row_total_incl_tax|number_format:2}
+```
+
+Deze tekst lijn je rechts uit.
+
+### Stap 5 - Tonen van informatie gehele bestelling
+In het laatste structuurelement voeg je een tekstblok toe.
+Hierin plaats je:
+```
+Verzendkosten: € {$identifier.order.$orderID.base_shipping_incl_tax|number_format:2}
+Totaal bedrag order: € {$identifier.order.orderID.base_grand_total|number_format:2}
+```
+
+Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie.
+De variabele $orderID vervang je met de order ID van de bestelling.
+
+Deze tekst lijn je rechts uit.
