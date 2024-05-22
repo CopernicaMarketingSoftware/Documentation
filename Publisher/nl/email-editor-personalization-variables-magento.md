@@ -133,30 +133,72 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 | {$product.custom_attributes.image}                       | Afbeeldingsnaam van het product.  VB: https://webshop.domein.nl/media/catalog/prodcut/{$product.custom_attributes.image} |
 | {$product.custom_attributes.url_key}                     | URL van het product.  VB: https://webshop.domein.nl/{$product.custom_attributes.url_key}.html                            |
 
+## Voorbeeld - Tonen van de 5 meest recent toegevoegde producten
 
-## Voorbeeld - 5 meest recent toegevoegde producten tonen
+In dit voorbeeld leer je hoe je de vijf nieuwste producten uit je webshop kunt laden in je e-mailtemplate.
 
-In onderstaand voorbeeld leggen we aan de hand van een stappenplan uit je hoe de laatste 5 toegevoegde producten uit je webshop onder elkaar kan tonen in je e-mailtemplate.
-
-### Stap 1 - Structuur elementen toevoegen
-We beginnen met het toevoegen van drie structuren. De eerste en laatst structuur bevatten één container. In het middelste structuur gebruiken we twee containers zodat we links een afbeelding kunnen tonen en rechts de informatie over het product. De linker container van het middelste blok geven we een breedte van 120 mee.
+### Stap 1 - Structuurelementen toevoegen
+Begin met het toevoegen van drie structuren aan je e-mailtemplate. Gebruik hiervoor de volgende container-opties:
+- Bovenste structuur: 1 container
+- Middelste structuur: 2 containers, waarbij de linker container een breedte heeft van 120
+- Onderste structuur: 1 container
 
 ### Stap 2 - Foreach-statement toevoegen
-In het eerste structuur voegen we een tekstblok toe met het volgende Smarty foreach-statement:
+Voeg in de bovenste structuur een tekstblok toe met het volgende Smarty foreach-statement:
 ```
 {foreach from=$identifier.products|orderby:"id":"desc"|limit:5 item="product"}
 ```
+Dit statement zorgt ervoor dat de vijf meest recent toegevoegde producten worden opgehaald, gesorteerd op ID. Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie.
 
-De waarde 'identifier' zal je moeten aanpassen naar de integratie-identifier zoals je deze hebt opgegeven bij het aanmaken van je integratie.
-
-In de laatste structuur voegen we ook een tekstblok toe waar we het foreach-statement afsluiten:
+In de onderste structuur voeg je een tekstblok toe om het foreach-statement af te sluiten:
 ```
 {/foreach}
 ```
 
-### Stap 3 - Blokken toevoegen
+### Stap 3 - Blokken en Smarty-code toevoegen
+In de middelste structuur heb je nu twee containers, waarbij de linker container een breedte heeft van 120.
 
-### Stap 4 - Smarty code toevoegen aan blok-elementen
+#### Linker container
+Voeg een afbeeldingsblok toe in de linker container. Voor het afbeeldingspad in je afbeeldingsblok gebruik je:
+```
+https://webshop.domein.nl/media/catalog/product/{$product.custom_attributes.image}
+```
+
+Voor de link in je afbeeldingsblok gebruik je:
+```
+https://webshop.domein.nl/{$product.custom_attributes.url_key}.html
+```
+
+*Let op: vervang 'webshop.domein.nl' door de URL van je eigen webshop.*
+
+#### Rechter container
+Voeg drie elementen toe in de rechter container, onder elkaar:
+- tekstblok
+- tekstblok
+- knop
+
+In het eerste tekstblok plaats je:
+```
+{$product.name}
+```
+
+In het tweede tekstblok plaats je:
+```
+{$product.custom_attributes.short_description|unescape}
+```
+De Smarty modifier `|unescape` zorgt ervoor dat HTML in de tekst wordt omgezet naar leesbare code in je template.
+
+Voor de knop gebruik je als link:
+```
+https://webshop.domein.nl/{$product.custom_attributes.url_key}.html
+```
+
+en als knoplabel:
+```
+{$product.price}
+```
+
+In de voorvertoning kun je nu de weergave van de e-mail zien. Je kunt de opmaak van de blokken naar wens aanpassen.
 
 ## Voorbeeld - Informatie van laatste order binnen een profiel ophalen
 
