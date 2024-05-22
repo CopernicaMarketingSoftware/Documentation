@@ -132,9 +132,9 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 | {$product.created_at}                                    | Aanmaakdatum van het product                                                                                                    |
 | {$product.created_at.timestamp}                          | UNIX-tijdstempel van de aanmaakdatum van het product                                                                            |
 | {$product.custom_attributes.short_description}           | Korte bedrijving van het product                                                                                                |
-| {$product.custom_attributes.short_description|unescape}  | Korte beschrijving van het product zonder HTML-code                                                                             |
+| {$product.custom_attributes.short_description\|unescape} | Korte beschrijving van het product zonder HTML-code                                                                             |
 | {$product.custom_attributes.description}                 | Uitgebreide beschrijving van het product                                                                                        |
-| {$product.custom_attributes.description|unescape}        | Uitgebreide beschrijving van het product zonder HTML-code                                                                       |
+| {$product.custom_attributes.description\|unescape}       | Uitgebreide beschrijving van het product zonder HTML-code                                                                       |
 | {$product.custom_attributes.image}                       | Afbeeldingsnaam van het product.  Voorbeeld: https://webshop.domein.nl/media/catalog/prodcut/{$product.custom_attributes.image} |
 | {$product.custom_attributes.url_key}                     | URL van het product.  Voorbeeld: https://webshop.domein.nl/{$product.custom_attributes.url_key}.html                            |
 
