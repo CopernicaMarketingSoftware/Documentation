@@ -123,15 +123,19 @@ Je kunt verschillende modifiers combineren om specifieke resultaten te krijgen, 
 Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lager is dan 15, gesorteerd op prijs.
 
 ## Veelgebruikte personalisatie variabelen
-| **Variabele**                                            | **Toepassing**                                                                                                          |
-|----------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
-| {$product.name}                                          | Naam van het product                                                                                                    |
-| {$product.price}                                         | Prijs van het product                                                                                                   |
-| {$product.custom_attributes.short_description}           | Korte bedrijving van het product                                                                                        |
-| {$product.custom_attributes.description}                 | Uitgebreide beschrijving van het product                                                                                |
-| {$product.custom_attributes.short_description\|unescape} | Uitgebreide beschrijving van het product zonder HTML-code                                                               |
-| {$product.custom_attributes.image}                       | Afbeeldingsnaam van het product.  VB: https://webshop.domein.nl/media/catalog/prodcut/{$product.custom_attributes.image} |
-| {$product.custom_attributes.url_key}                     | URL van het product.  VB: https://webshop.domein.nl/{$product.custom_attributes.url_key}.html                            |
+| **Variabele**                                            | **Toepassing**                                                                                                                  |
+|----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
+| {$product.name}                                          | Naam van het product                                                                                                            |
+| {$product.price}                                         | Prijs van het product                                                                                                           |
+| {$product.price.currency}                                | Toon enkel de currency van het product                                                                                          |
+| {$product.price.value}                                   | Toon enkel de waarde van het product                                                                                            |
+| {$product.created_at}                                    | Aanmaakdatum van het product                                                                                                    |
+| {$product.created_at.timestamp}                          | UNIX-tijdstempel van de aanmaakdatum van het product                                                                            |
+| {$product.custom_attributes.short_description}           | Korte bedrijving van het product                                                                                                |
+| {$product.custom_attributes.description}                 | Uitgebreide beschrijving van het product                                                                                        |
+| {$product.custom_attributes.short_description\|unescape} | Uitgebreide beschrijving van het product zonder HTML-code                                                                       |
+| {$product.custom_attributes.image}                       | Afbeeldingsnaam van het product.  Voorbeeld: https://webshop.domein.nl/media/catalog/prodcut/{$product.custom_attributes.image} |
+| {$product.custom_attributes.url_key}                     | URL van het product.  Voorbeeld: https://webshop.domein.nl/{$product.custom_attributes.url_key}.html                            |
 
 ## Voorbeeld - Tonen van de 5 meest recent toegevoegde producten
 
@@ -195,7 +199,7 @@ https://webshop.domein.nl/{$product.custom_attributes.url_key}.html
 
 en als knoplabel:
 ```
-{$product.price}
+€ {$product.price.value}
 ```
 
 In de voorvertoning kun je nu de weergave van de e-mail zien. Je kunt de opmaak van de blokken naar wens aanpassen.
