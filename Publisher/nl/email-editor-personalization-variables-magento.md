@@ -202,9 +202,14 @@ en als knoplabel:
 € {$product.price.value}
 ```
 
+### Stap 4 - Controle
+Je blok ziet er nu als volgt uit:
+
+![Magento voorbeeld 1](../images/nl/magento_vb1.png)
+
 In de voorvertoning kun je nu de weergave van de e-mail zien. Je kunt de opmaak van de blokken naar wens aanpassen.
 
-## Voorbeeld 2 - Tonen van bestellings-informatie 
+## Voorbeeld 2 - Tonen van informatie van bestelling 
 
 In dit voorbeeld leer je hoe je de informatie van een bestelling uit je webshop kunt inladen in je e-mailtemplate.
 
@@ -221,7 +226,7 @@ Voeg in het eerste structuurelement een tekstblok toe met het volgende Smarty fo
 ```
 {foreach from=$identifier.order.$orderID.items item=order}
 ```
-Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie.
+Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie. 
 De variabele $orderID vervang je met de order ID van de bestelling.
 
 In het vierde structuurelement voeg je een tekstblok toe om het foreach-statement af te sluiten:
@@ -246,8 +251,7 @@ https://webshop.domein.nl/{$product.custom_attributes.url_key}.html
 *Let op: vervang 'webshop.domein.nl' door de URL van je eigen webshop.*
 
 #### Rechter container
-Voeg een tekstblok toe aan de rechter container.
-Hierin plaats je:
+Voeg een tekstblok toe aan de rechter container. Hierin plaats je:
 
 ```
 {$order.product.name}
@@ -274,7 +278,14 @@ Verzendkosten: € {$identifier.order.$orderID.base_shipping_incl_tax|number_for
 Totaal bedrag order: € {$identifier.order.orderID.base_grand_total|number_format:2}
 ```
 
-Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie.
+Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie. 
 De variabele $orderID vervang je met de order ID van de bestelling.
 
-Deze tekst lijn je rechts uit.
+Lijn deze tekst rechts uit.
+
+### Stap 6 - Controle
+Je blok ziet er nu als volgt uit:
+
+![Magento voorbeeld 2](../images/nl/magento_vb2.png)
+
+In de voorvertoning kun je nu de weergave van de e-mail zien. Je kunt de opmaak van de blokken naar wens aanpassen.
