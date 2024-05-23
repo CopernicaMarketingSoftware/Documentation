@@ -189,6 +189,8 @@ In het eerste tekstblok plaats je:
 {$product.name}
 ```
 
+Deze waarde maak je dikgedrukt.
+
 In het tweede tekstblok plaats je:
 ```
 {$product.custom_attributes.short_description|unescape}
@@ -245,12 +247,12 @@ In het tweede structuurelement heb je nu twee containers, waarbij de linker cont
 #### Linker container
 Voeg een afbeeldingsblok toe in de linker container. Voor het afbeeldingspad in je afbeeldingsblok gebruik je:
 ```
-https://webshop.domein.nl/media/catalog/product/{$product.custom_attributes.image}
+https://webshop.domein.nl/media/catalog/product/{$order.product.custom_attributes.image}
 ```
 
 Voor de link in je afbeeldingsblok gebruik je:
 ```
-https://webshop.domein.nl/{$product.custom_attributes.url_key}.html
+https://webshop.domein.nl/{$order.product.custom_attributes.url_key}.html
 ```
 
 *Let op: vervang 'webshop.domein.nl' door de URL van je eigen webshop.*
@@ -268,7 +270,7 @@ Prijs: € {$order.price_incl_tax|number_format:2}
 De waarde {$order.product.name} maak je dikgedrukt.
 
 ### Stap 4 - Tonen van totaal prijs per product 
-Voeg in het vierde structuurelement een tekstblok toe met de volgende tekst:
+Om de totale waarde van een regel uit de bestelling te tonen, voeg je in het derde structuurelement een tekstblok toe met de volgende tekst:
 ```
 Totaal: € {$order.row_total_incl_tax|number_format:2}
 ```
