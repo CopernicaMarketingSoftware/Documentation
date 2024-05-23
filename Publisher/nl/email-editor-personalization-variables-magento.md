@@ -234,7 +234,8 @@ Voeg in het eerste structuurelement een tekstblok toe met het volgende Smarty fo
 {foreach from=$identifier.order.$orderID.items item=order}
 ```
 Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie. 
-De variabele $orderID vervang je met de order ID van de bestelling.
+De variabele $orderID vervang je met de order ID van de bestelling. Bij het invoeren van een vast ordernummer 
+is het dollarteken niet nodig: `{foreach from=$identifier.order.00001.items item=order}`
 
 In het vierde structuurelement voeg je een tekstblok toe om het foreach-statement af te sluiten:
 ```
