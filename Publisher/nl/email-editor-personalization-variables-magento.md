@@ -138,9 +138,9 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 | {$product.custom_attributes.image}                       | Afbeeldingsnaam van het product.  Voorbeeld: https://webshop.domein.nl/media/catalog/prodcut/{$product.custom_attributes.image} |
 | {$product.custom_attributes.url_key}                     | URL van het product.  Voorbeeld: https://webshop.domein.nl/{$product.custom_attributes.url_key}.html                            |
 
-## Voorbeeld 1 - Tonen van de 5 meest recent toegevoegde producten
+## Voorbeeld 1 - Tonen van de 2 meest recent toegevoegde producten
 
-In dit voorbeeld leer je hoe je de vijf nieuwste producten uit je webshop kunt laden in je e-mailtemplate.
+In dit voorbeeld leer je hoe je de twee nieuwste producten uit je webshop kunt laden in je e-mailtemplate.
 
 ![Magento voorbeeld 1](../images/nl/magento_vb1b.png)
 
@@ -153,9 +153,9 @@ Begin met het toevoegen van drie structuren aan je e-mailtemplate. Gebruik hierv
 ### Stap 2 - Foreach-statement toevoegen
 Voeg in de bovenste structuur een tekstblok toe met het volgende Smarty foreach-statement:
 ```
-{foreach from=$identifier.products|orderby:"id":"desc"|limit:5 item="product"}
+{foreach from=$identifier.products|orderby:"id":"desc"|limit:2 item="product"}
 ```
-Dit statement zorgt ervoor dat de vijf meest recent toegevoegde producten worden opgehaald, gesorteerd op ID. Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie.
+Dit statement zorgt ervoor dat de twee meest recent toegevoegde producten worden opgehaald, gesorteerd op ID. Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie.
 
 In de onderste structuur voeg je een tekstblok toe om het foreach-statement af te sluiten:
 ```
