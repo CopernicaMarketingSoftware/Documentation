@@ -235,7 +235,7 @@ Voeg in het eerste structuurelement een tekstblok toe met het volgende Smarty fo
 ```
 Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie. 
 De variabele $orderID vervang je met de order ID van de bestelling. Bij het invoeren van een vast ordernummer 
-is het dollarteken niet nodig: `{foreach from=$identifier.order.00001.items item=order}`
+is het dollarteken niet nodig: `{foreach from=$identifier.order.00001.items item=order}`.
 
 In het vierde structuurelement voeg je een tekstblok toe om het foreach-statement af te sluiten:
 ```
@@ -287,7 +287,8 @@ Totaal bedrag order: € {$identifier.order.orderID.base_grand_total|number_form
 ```
 
 Vervang 'identifier' door de integratie-identifier die je hebt opgegeven bij het aanmaken van je integratie. 
-De variabele $orderID vervang je met de order ID van de bestelling.
+De variabele $orderID vervang je met de order ID van de bestelling. Bij het invoeren van een vast ordernummer 
+is het dollarteken niet nodig: `{foreach from=$identifier.order.00001.items item=order}`.
 
 Lijn deze tekst rechts uit.
 
