@@ -142,6 +142,8 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 
 In dit voorbeeld leer je hoe je de vijf nieuwste producten uit je webshop kunt laden in je e-mailtemplate.
 
+![Magento voorbeeld 1](../images/nl/magento_vb1b.png)
+
 ### Stap 1 - Structuurelementen toevoegen
 Begin met het toevoegen van drie structuren aan je e-mailtemplate. Gebruik hiervoor de volgende container-opties:
 - Bovenste structuur: 1 container
@@ -213,6 +215,8 @@ In de voorvertoning kun je nu de weergave van de e-mail zien. Je kunt de opmaak 
 ## Voorbeeld 2 - Tonen van informatie van bestelling 
 
 In dit voorbeeld leer je hoe je de informatie van een bestelling uit je webshop kunt inladen in je e-mailtemplate.
+
+![Magento voorbeeld 2](../images/nl/magento_vb2b.png)
 
 ### Stap 1 - Structuurelementen toevoegen
 Begin met het toevoegen van vijf structuren aan je e-mailtemplate. Gebruik hiervoor de volgende container-opties:
