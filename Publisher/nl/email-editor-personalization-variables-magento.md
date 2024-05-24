@@ -126,6 +126,7 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 | **Variabele**                                            | **Toepassing**                                                                                                                  |
 |----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
 | {$product.name}                                          | Naam van het product                                                                                                            |
+| {$product.image}                                         | URL van de afbeelding van het product                                                                                           |
 | {$product.price}                                         | Prijs van het product                                                                                                           |
 | {$product.price.currency}                                | Toon enkel de currency van het product                                                                                          |
 | {$product.price.value}                                   | Toon enkel de waarde van het product                                                                                            |
@@ -135,7 +136,6 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 | {$product.custom_attributes.short_description\|unescape} | Korte beschrijving van het product zonder HTML-code                                                                             |
 | {$product.custom_attributes.description}                 | Uitgebreide beschrijving van het product                                                                                        |
 | {$product.custom_attributes.description\|unescape}       | Uitgebreide beschrijving van het product zonder HTML-code                                                                       |
-| {$product.custom_attributes.image}                       | Afbeeldingsnaam van het product.  Voorbeeld: https://webshop.domein.nl/media/catalog/prodcut/{$product.custom_attributes.image} |
 | {$product.custom_attributes.url_key}                     | URL van het product.  Voorbeeld: https://webshop.domein.nl/{$product.custom_attributes.url_key}.html                            |
 
 ## Voorbeeld 1 - Tonen van de 2 meest recent toegevoegde producten
@@ -168,7 +168,7 @@ In de middelste structuur heb je nu twee containers, waarbij de linker container
 #### Linker container
 Voeg een afbeeldingsblok toe in de linker container. Voor het afbeeldingspad in je afbeeldingsblok gebruik je:
 ```
-https://webshop.domein.nl/media/catalog/product/{$product.custom_attributes.image}
+{$product.image}
 ```
 
 Voor de link in je afbeeldingsblok gebruik je:
@@ -248,7 +248,7 @@ In het tweede structuurelement heb je nu twee containers, waarbij de linker cont
 #### Linker container
 Voeg een afbeeldingsblok toe in de linker container. Voor het afbeeldingspad in je afbeeldingsblok gebruik je:
 ```
-https://webshop.domein.nl/media/catalog/product/{$order.product.custom_attributes.image}
+{$order.product.image}
 ```
 
 Voor de link in je afbeeldingsblok gebruik je:
