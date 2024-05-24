@@ -133,10 +133,10 @@ Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lag
 | {$product.price.value}                                   | Toon enkel de waarde van het product                                                                                            |
 | {$product.created_at}                                    | Aanmaakdatum van het product                                                                                                    |
 | {$product.created_at.timestamp}                          | UNIX-tijdstempel van de aanmaakdatum van het product                                                                            |
-| {$product.custom_attributes.short_description}           | Korte bedrijving van het product                                                                                                |
-| {$product.custom_attributes.short_description\|unescape} | Korte beschrijving van het product zonder HTML-code                                                                             |
-| {$product.custom_attributes.description}                 | Uitgebreide beschrijving van het product                                                                                        |
-| {$product.custom_attributes.description\|unescape}       | Uitgebreide beschrijving van het product zonder HTML-code                                                                       |
+| {$product.short_description}                             | Korte bedrijving van het product                                                                                                |
+| {$product.short_description\|unescape}                   | Korte beschrijving van het product zonder HTML-code                                                                             |
+| {$product.description}                                   | Uitgebreide beschrijving van het product                                                                                        |
+| {$product.description\|unescape}                         | Uitgebreide beschrijving van het product zonder HTML-code                                                                       |
 
 ## Voorbeeld 1 - Tonen van de 2 meest recent toegevoegde producten
 
