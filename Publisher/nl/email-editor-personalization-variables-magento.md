@@ -1,41 +1,43 @@
 # Magento
+De Copernica-integratie met Magento is specifiek ontwikkeld voor Magento 2.0 en hoger. 
+Na het koppelen van een Magento-webshop in de [web-module](https://ms.copernica.com/#/web/), 
+krijg je direct toegang via tot alle klant-, bestel-, product- en winkelwagengegevens in je 
+drag-and-drop-templates via Smarty-variabelen.  
 
-De Copernica-integratie met Magento is specifiek ontwikkeld voor Magento 2.0 en hoger. Na het koppelen van een Magento webshop in
-de [web-module](https://ms.copernica.com/#/web/), zijn direct de volgende variabelen beschikbaar in je drag-and-drop-templates:
+## Integratie identifier
 
+De variabelen om gegevens uit je Magento-webshop op te halen, beginnen altijd met een integratie-identifier. 
+Deze identifier verwijst naar de naam die de webshop heeft binnen de lijst van integraties, en stelt je in 
+staat om gegevens uit meerdere webshops te halen door ze allemaal een andere identifier te geven. Bij het 
+invoeren van de integratie in de [web-module](https://ms.copernica.com/#/web/) heb je deze identifier moeten 
+invoeren. Veel gebruikers kiezen als identifier de naam van de webshop ("mijnwebshop") of gewoon "magento". 
+Als je "mijnwebshop" als identifier hebt ingevoerd, gebruik je: {$mijnwebshop.variabele}.
+
+## Welke velden zijn er precies beschikbaar?
+
+De gegevens die je ophaalt, worden vanuit de API van Magento ingeladen in je mailing. De velden die de API teruggeeft, zijn allemaal rechtstreeks beschikbaar als Smarty-variabele, bijvoorbeeld {$identifier.product.$sku.name} en {$identifier.product.$sku.price}. 
+
+Enkele veelvoorkomende Smarty-variabelen zijn:
 - **{$identifier.customer.$customerID}**: haal klantgegevens op aan de hand van het ID
 - **{$identifier.order.$orderID}**: haal een bestelling op aan de hand van het ID
 - **{$identifier.order.$orderID.customer}**: haal klantgegevens op voor deze bestelling
 - **{$identifier.order.$orderID.items[]}**: haal alle items op uit deze bestelling
 - **{$identifier.order.$orderID.items[].product}**: haal het product op uit deze bestelling
 - **{$identifier.product.$sku}**: haal een product op aan de hand van de SKU (Stock Keeping Unit)
+- **{$identifier.product.$sku.image}**: haal de afbeelding van het product op
+- **{$identifier.product.$sku.url}**: haal de afbeelding van het product op
+- **{$identifier.product.$sku.price.currency}**: haal enkel de currency van het product op
+- **{$identifier.product.$sku.price.value}**: haal enkel de waarde van het product op
 - **{$identifier.cart.$cartID}**: haal een winkelwagen op aan de hand van het ID
 - **{$identifier.cart.$cartID.customer}**: haal klantgegevens op voor deze winkelwagen
 - **{$identifier.cart.$cartID.items[]}**: haal alle items op uit het winkelwagenitem
 - **{$identifier.cart.$cartID.items[].product}**: haal productgegevens op uit het winkelwagenitem
 
-In bovenstaande voorbeelden moet je de variabelen die beginnen met een dollarteken (zoals $identifier, $orderID, $sku, enzovoort) vervangen
-door de identifier van de integratie, het order-ID, de stock-keeping-unit, enzovoort. 
-
-De integratie-identifier verwijst naar de naam die de webshop heeft binnen de lijst van integraties, en stelt je in staat om
-gegevens uit meerdere webshops te halen door ze allemaal een andere identifier te geven. Bij het invoeren van de integratie in
-de [web-module](https://ms.copernica.com/#/web/) heb je deze identifier moeten invoeren. Veel gebruikers kiezen als identifier de
-naam van de webshop ("mijnwebshop") of gewoon "magento". Als je "magento" als identifier hebt ingevoerd, gebruik je dus: {magento.customer.$customerID}.
-
-## Welke velden zijn er precies beschikbaar?
-
-De gegevens die je ophaalt worden vanuit de API van Magento ingeladen in je mailing. De velden die de API teruggeeft zijn allemaal
-rechtstreeks beschikbaar als Smarty variabele, dus bijvoorbeeld {$identifier.product.$sku.name} en {$identifier.product.$sku.price}.
-De precies beschikbare velden zijn er te veel om op te noemen, en zijn ook niet voor elke webshop hetzelfde omdat ze afhankelijk kunnen
-zijn van de Magento-versie. Voor een actueel overzicht kun je daarom het best de documentatie van de Magento-API raadplegen. 
-Alle velden die worden teruggegeven door de API kun je gebruiken bij het personalizeren:
-
+Voor een actueel overzicht van beschikbare velden kun je de documentatie van de Magento-API raadplegen:
 - [order](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/ordersid#operation/GetV1OrdersId)
 - [cart](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
 - [product](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
 - [customer](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
-
-Onderaan dit artikel geven we enkele voorbeelden van veelgebruikte functionaliteiten.
 
 ## Variabelen met meerdere elementen
 
@@ -121,22 +123,6 @@ Je kunt verschillende modifiers combineren om specifieke resultaten te krijgen, 
 ```
 
 Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lager is dan 15, gesorteerd op prijs.
-
-## Veelgebruikte personalisatie variabelen
-| **Variabele**                                            | **Toepassing**                                                                                                                  |
-|----------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
-| {$product.name}                                          | Naam van het product                                                                                                            |
-| {$product.image}                                         | AfbeeldingsURL van het product                                                                                                  |
-| {$product.url}                                           | URL van het product.                                                                                                            |
-| {$product.price}                                         | Prijs van het product                                                                                                           |
-| {$product.price.currency}                                | Toon enkel de currency van het product                                                                                          |
-| {$product.price.value}                                   | Toon enkel de waarde van het product                                                                                            |
-| {$product.created_at}                                    | Aanmaakdatum van het product                                                                                                    |
-| {$product.created_at.timestamp}                          | UNIX-tijdstempel van de aanmaakdatum van het product                                                                            |
-| {$product.short_description}                             | Korte bedrijving van het product                                                                                                |
-| {$product.short_description\|unescape}                   | Korte beschrijving van het product zonder HTML-code                                                                             |
-| {$product.description}                                   | Uitgebreide beschrijving van het product                                                                                        |
-| {$product.description\|unescape}                         | Uitgebreide beschrijving van het product zonder HTML-code                                                                       |
 
 ## Voorbeeld 1 - Tonen van de 2 meest recent toegevoegde producten
 
