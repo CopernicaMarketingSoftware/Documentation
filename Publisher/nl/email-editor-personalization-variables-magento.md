@@ -8,7 +8,7 @@ drag-and-drop-templates via Smarty-variabelen.
 In dit artikel geven we uitleg over de volgende onderwerpen:
 
 - [Integratie identifier](#integratie-identifier)
-- [Welke velden zijn er beschikbaar?](#welke-velden-zijn-er-beschikbaar)
+- [Welke variabelen zijn er beschikbaar?](#welke-variabelen-zijn-er-beschikbaar)
 - [Variabelen met meerdere elementen](#variabelen-met-meerdere-elementen)
 - [Modifiers](#modifiers)
 - [Voorbeelden](#voorbeeld1)
@@ -24,7 +24,7 @@ invoeren van de integratie in de [web-module](https://ms.copernica.com/#/web/) h
 invoeren. Veel gebruikers kiezen als identifier de naam van de webshop ("mijnwebshop") of gewoon "magento". 
 Als je "mijnwebshop" als identifier hebt ingevoerd, gebruik je: {$mijnwebshop.variabele}.
 
-## <a name="welke-velden-zijn-er-beschikbaar"></a>Welke velden zijn er beschikbaar?
+## <a name="welke-variabelen-zijn-er-beschikbaar"></a>Welke variabelen zijn er beschikbaar?
 
 De gegevens die je ophaalt, worden vanuit de API van Magento ingeladen in je mailing. De velden die de API teruggeeft, zijn allemaal rechtstreeks beschikbaar als Smarty-variabele, bijvoorbeeld {$identifier.product.$sku.name} en {$identifier.product.$sku.price}. 
 
@@ -44,7 +44,7 @@ Enkele veelvoorkomende Smarty-variabelen zijn:
 - **{$identifier.cart.$cartID.items[]}**: haal alle items op uit het winkelwagenitem
 - **{$identifier.cart.$cartID.items[].product}**: haal productgegevens op uit het winkelwagenitem
 
-Voor een actueel overzicht van beschikbare velden kun je de documentatie van de Magento-API raadplegen:
+Voor een actueel overzicht van beschikbare variabelen kun je de documentatie van de Magento-API raadplegen:
 - [order](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/ordersid#operation/GetV1OrdersId)
 - [cart](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
 - [product](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
