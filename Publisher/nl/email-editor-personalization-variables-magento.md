@@ -4,7 +4,18 @@ Na het koppelen van een Magento-webshop in de [web-module](https://ms.copernica.
 krijg je direct toegang via tot alle klant-, bestel-, product- en winkelwagengegevens in je 
 drag-and-drop-templates via Smarty-variabelen.  
 
-## Integratie identifier
+## Inhoudsopgave
+In dit artikel geven we uitleg over de volgende onderwerpen:
+
+- [Integratie identifier](#integratie-identifier)
+- [Welke velden zijn er beschikbaar?](#welke-velden-zijn-er-beschikbaar)
+- [Variabelen met meerdere elementen](#variabelen-met-meerdere-elementen)
+- [Modifiers](#modifiers)
+- [Voorbeelden](#voorbeeld1)
+    - [Tonen van de 2 meest recent toegevoegde producten](#voorbeeld1)
+    - [Tonen van informatie van bestelling](#voorbeeld2)
+ 
+## <a name="integratie-identifier"></a>Integratie identifier
 
 De variabelen om gegevens uit je Magento-webshop op te halen, beginnen altijd met een integratie-identifier. 
 Deze identifier verwijst naar de naam die de webshop heeft binnen de lijst van integraties, en stelt je in 
@@ -13,7 +24,7 @@ invoeren van de integratie in de [web-module](https://ms.copernica.com/#/web/) h
 invoeren. Veel gebruikers kiezen als identifier de naam van de webshop ("mijnwebshop") of gewoon "magento". 
 Als je "mijnwebshop" als identifier hebt ingevoerd, gebruik je: {$mijnwebshop.variabele}.
 
-## Welke velden zijn er precies beschikbaar?
+## <a name="welke-velden-zijn-er-beschikbaar"></a>Welke velden zijn er beschikbaar?
 
 De gegevens die je ophaalt, worden vanuit de API van Magento ingeladen in je mailing. De velden die de API teruggeeft, zijn allemaal rechtstreeks beschikbaar als Smarty-variabele, bijvoorbeeld {$identifier.product.$sku.name} en {$identifier.product.$sku.price}. 
 
@@ -39,7 +50,7 @@ Voor een actueel overzicht van beschikbare velden kun je de documentatie van de 
 - [product](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
 - [customer](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
 
-## Variabelen met meerdere elementen
+## <a name="variabelen-met-meerdere-elementen"></a>Variabelen met meerdere elementen
 
 Er zijn verschillende variabelen waarin meerdere rijen met gegevens kunnen zitten, bijvoorbeeld als je alle producten uit je webshop wilt ophalen. 
 Hieronder vind je een lijst met variabelen die binnen een foreach-statement kunnen worden gebruikt:
@@ -60,7 +71,7 @@ En, zoals je hierboven al zag, zijn er ook variabelen om alle items van een orde
 Overiges, dit zijn voor de meeste webshops nogal veel producten, dus erg zinvol is bovenstaande code vaak niet. Het wordt
 al een stuk handiger als je wat *modifiers* gebruikt om te zoeken naar specifieke producten or bestellingen.
 
-## Modifiers
+## <a name="modifiers"></a>Modifiers
 
 Normaal gesproken gebruik je modifiers om teksten te filteren, bijvoorbeeld om hoofdletters om te zetten naar kleine letters, of om
 HTML code te escapen. Modifiers kunnen echter ook worden ingezet om lijsten te filteren en te sorteren. Hiervoor hebben we de 
@@ -124,11 +135,9 @@ Je kunt verschillende modifiers combineren om specifieke resultaten te krijgen, 
 
 Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lager is dan 15, gesorteerd op prijs.
 
-## Voorbeeld 1 - Tonen van de 2 meest recent toegevoegde producten
+## <a name="voorbeeld1"></a>Voorbeeld 1 - Tonen van de 2 meest recent toegevoegde producten
 
 In dit voorbeeld leer je hoe je de twee nieuwste producten uit je webshop kunt laden in je e-mailtemplate.
-
-![Magento voorbeeld 1](../images/nl/magento_vb1b.png)
 
 ### Stap 1 - Structuurelementen toevoegen
 Begin met het toevoegen van drie structuren aan je e-mailtemplate. Gebruik hiervoor de volgende container-opties:
@@ -191,18 +200,9 @@ en als knoplabel:
 € {$product.price.value}
 ```
 
-### Stap 4 - Controle
-Je blok ziet er nu als volgt uit:
-
-![Magento voorbeeld 1](../images/nl/magento_vb1.png)
-
-In de voorvertoning kun je nu de weergave van de e-mail zien. Je kunt de opmaak van de blokken naar wens aanpassen.
-
-## Voorbeeld 2 - Tonen van informatie van bestelling 
+## <a name="voorbeeld2"></a>Voorbeeld 2 - Tonen van informatie van bestelling 
 
 In dit voorbeeld leer je hoe je de informatie van een bestelling uit je webshop kunt inladen in je e-mailtemplate.
-
-![Magento voorbeeld 2](../images/nl/magento_vb2b.png)
 
 ### Stap 1 - Structuurelementen toevoegen
 Begin met het toevoegen van vijf structuren aan je e-mailtemplate. Gebruik hiervoor de volgende container-opties:
@@ -273,10 +273,3 @@ De variabele $orderID vervang je met de order ID van de bestelling. Bij het invo
 is het dollarteken niet nodig: `{foreach from=$identifier.order.00001.items item=order}`.
 
 Lijn deze tekst rechts uit.
-
-### Stap 6 - Controle
-Je blok ziet er nu als volgt uit:
-
-![Magento voorbeeld 2](../images/nl/magento_vb2.png)
-
-In de voorvertoning kun je nu de weergave van de e-mail zien. Je kunt de opmaak van de blokken naar wens aanpassen.
