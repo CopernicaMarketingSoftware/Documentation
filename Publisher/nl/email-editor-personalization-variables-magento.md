@@ -37,8 +37,6 @@ Alle velden die worden teruggegeven door de API kun je gebruiken bij het persona
 - [product](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
 - [customer](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
 
-Onderaan dit artikel geven we enkele voorbeelden van veelgebruikte functionaliteiten.
-
 ## Variabelen met meerdere elementen
 
 Er zijn verschillende variabelen waarin meerdere rijen met gegevens kunnen zitten, bijvoorbeeld als je alle producten uit je webshop wilt ophalen. 
