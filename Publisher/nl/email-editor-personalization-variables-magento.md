@@ -119,5 +119,6 @@ Je kunt verschillende modifiers combineren om specifieke resultaten te krijgen, 
 {foreach from=$identifier.products|filter:"price":"<":15|orderby:"price"|limit:5 item="product"}
     {$product.name}
 {/foreach}
+```
 
 Met deze Smarty-code worden de eerste 5 producten opgehaald waarvan de prijs lager is dan 15, gesorteerd op prijs.
