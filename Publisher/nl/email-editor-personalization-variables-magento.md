@@ -25,6 +25,7 @@ Product {$mywebshop.product.123456.title|escape} kost {$mywebshop.product.123456
 ```
 
 ## Welke velden zijn er precies beschikbaar?
+
 De gegevens die je ophaalt worden vanuit de API van Magento ingeladen in je mailing. De velden die de API teruggeeft zijn allemaal
 rechtstreeks beschikbaar als Smarty variabele, dus bijvoorbeeld {$identifier.product.$sku.name} en {$identifier.product.$sku.price}.
 De precies beschikbare velden zijn er te veel om op te noemen, en zijn ook niet voor elke webshop hetzelfde omdat ze afhankelijk kunnen
