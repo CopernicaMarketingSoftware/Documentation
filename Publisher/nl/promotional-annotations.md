@@ -27,8 +27,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 <html>
   <head>
     <script type="application/ld+json">
-    [literal]
-      [{
+      [ {
         "@context": "http://schema.org/",
         "@type": "Organization",
 
@@ -61,8 +60,7 @@ Om eerst te testen of de annotations goed ingesteld staan testen we dit met een 
 
       // EDIT 7 image, 538x138 pixels is best, 3.9 aspect ratio is recommended, use png or jpeg file format
         "image": "https://pix.copernica.com/image/14579892/946b36fc985fa49220b501af8fc6aa4c/image.jpeg"
-      }]
-    [/literal]
+      } ]
   </script>
   </head>
 
@@ -92,11 +90,5 @@ De code van de test e-mail kan vervolgens getest worden in een bestaande mailing
 * Voeg alles tussen de '<head>' tag toe aan de head van een bestaande mailing.
 * Verstuur deze zonder de annotation aan te passen als test naar het Gmail account.
 * Pas item voor item de inhoud aan, verwijder tussendoor telkens de vorige mail en leeg de prullenbak.
-* Als je gebruik wilt maken van smarty personalisatie dan dient de '[literal]' tijdelijk te worden afgesloten. Voor EDIT 3 zou dit het volgende inhouden;
-  
-```
-// EDIT 3 Badge discount description
-  "description": "[/literal]{$profile.VELDNAAM}[literal]",
-```
 
 Op de website van Google bevindt zich een [test-tool](https://developers.google.com/gmail/promotab/overview) om een voorbeeld te krijgen hoe de annotation eruit komt te zien.
