@@ -24,7 +24,7 @@ hierdoor verwijzen naar productinformatie:
 Product {$mywebshop.product.123456.title|escape} kost {$mywebshop.product.123456.price|escape}.
 ```
 
-## Welke variabelen zijn er precies beschikbaar?
+## Welke variabelen zijn er beschikbaar?
 
 De gegevens die je ophaalt worden vanuit de API van Magento ingeladen in je mailing. De velden die de API teruggeeft zijn allemaal
 rechtstreeks beschikbaar als Smarty variabele, dus bijvoorbeeld {$identifier.product.$sku.name} en {$identifier.product.$sku.price}.
