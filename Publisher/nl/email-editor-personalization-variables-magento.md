@@ -27,60 +27,60 @@ Product {$mywebshop.product.123456.title|escape} kost {$mywebshop.product.123456
 ## Welke variabelen zijn er beschikbaar?
 
 De gegevens die je ophaalt worden vanuit de API van Magento ingeladen in je mailing. De velden die de API teruggeeft zijn allemaal
-rechtstreeks beschikbaar als Smarty variabele, dus bijvoorbeeld {$identifier.product.$sku.name} en {$identifier.product.$sku.price}.
+rechtstreeks beschikbaar als Smarty variabele, dus bijvoorbeeld {$mywebshop.product.$sku.name} en {$mywebshop.product.$sku.price}.
 
 De precies beschikbare velden zijn er te veel om op te noemen, en zijn ook niet voor elke webshop hetzelfde omdat ze afhankelijk kunnen
 zijn van de Magento-versie. Voor een actueel overzicht kun je daarom het best de documentatie van de Magento-API raadplegen. 
 Alle velden die worden teruggegeven door de API kun je gebruiken bij het personalizeren:
 
-- [{$identifier.cart}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
-- [{$identifier.customer}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
-- [{$identifier.order}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/ordersid#operation/GetV1OrdersId)
-- [{$identifier.product}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
+- [{$mywebshop.cart}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
+- [{$mywebshop.customer}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
+- [{$mywebshop.order}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/ordersid#operation/GetV1OrdersId)
+- [{$mywebshop.product}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
 
 ### Hoofdelementen
 
 Binnen Smarty zijn de volgende hoofdelementen beschikbaar. Binnen elk hoofdelement heb je de beschikking over de velden zoals vermeld in de Magento-API hierboven,
-dus bijvoorbeeld {$indentifier.order.$orderID.status} en {$identifier.order.$orderID.customer.email}.
+dus bijvoorbeeld {$indentifier.order.$orderID.status} en {$mywebshop.order.$orderID.customer.email}.
 
-- **{$identifier.cart.$cartID}**: haal een winkelwagen op aan de hand van het ID
-- **{$identifier.cart.$cartID.customer}**: haal klantgegevens op voor deze winkelwagen
-- **{$identifier.cart.$cartID.items[]}**: haal alle items op uit het winkelwagenitem
-- **{$identifier.cart.$cartID.items[].product}**: haal productgegevens op uit het winkelwagenitem
-- **{$identifier.customer.$customerID}**: haal klantgegevens op aan de hand van het ID
-- **{$identifier.order.$orderID}**: haal een bestelling op aan de hand van het ID
-- **{$identifier.order.$orderID.customer}**: haal klantgegevens op voor deze bestelling
-- **{$identifier.order.$orderID.items[]}**: haal alle items op uit deze bestelling
-- **{$identifier.order.$orderID.items[].product}**: haal het product op uit deze bestelling
-- **{$identifier.product.$sku}**: haal een product op aan de hand van de SKU (Stock Keeping Unit)
+- **{$mywebshop.cart.$cartID}**: haal een winkelwagen op aan de hand van het ID
+- **{$mywebshop.cart.$cartID.customer}**: haal klantgegevens op voor deze winkelwagen
+- **{$mywebshop.cart.$cartID.items[]}**: haal alle items op uit het winkelwagenitem
+- **{$mywebshop.cart.$cartID.items[].product}**: haal productgegevens op uit het winkelwagenitem
+- **{$mywebshop.customer.$customerID}**: haal klantgegevens op aan de hand van het ID
+- **{$mywebshop.order.$orderID}**: haal een bestelling op aan de hand van het ID
+- **{$mywebshop.order.$orderID.customer}**: haal klantgegevens op voor deze bestelling
+- **{$mywebshop.order.$orderID.items[]}**: haal alle items op uit deze bestelling
+- **{$mywebshop.order.$orderID.items[].product}**: haal het product op uit deze bestelling
+- **{$mywebshop.product.$sku}**: haal een product op aan de hand van de SKU (Stock Keeping Unit)
 
 ### Specifieke Copernica-elementen
 
 Om een aantal veelvoorkomende opties gemakkelijk toegankelijk te maken, hebben we deze als volgt beschikbaar gemaakt:
 
-- **{$identifier.product.$sku.image}**: haal de afbeelding van het product op
-- **{$identifier.product.$sku.url}**: haal de URL van het product op
-- **{$identifier.product.$sku.short_description}**: haal de korte beschrijving van het product op
-- **{$identifier.product.$sku.description}**: haal de uitgebreide beschrijving van het product op
-- **{$identifier.product.$sku.price.currency}**: haal enkel de currency van het product op
-- **{$identifier.product.$sku.price.value}**: haal enkel de waarde van het product op
-- **{$identifier.product.$sku.created_at}**: haal de aanmaakdatum van het product op
-- **{$identifier.product.$sku.created_at.timestamp}**: haal de UNIX-tijdstempel van de aanmaakdatum op
+- **{$mywebshop.product.$sku.image}**: haal de afbeelding van het product op
+- **{$mywebshop.product.$sku.url}**: haal de URL van het product op
+- **{$mywebshop.product.$sku.short_description}**: haal de korte beschrijving van het product op
+- **{$mywebshop.product.$sku.description}**: haal de uitgebreide beschrijving van het product op
+- **{$mywebshop.product.$sku.price.currency}**: haal enkel de currency van het product op
+- **{$mywebshop.product.$sku.price.value}**: haal enkel de waarde van het product op
+- **{$mywebshop.product.$sku.created_at}**: haal de aanmaakdatum van het product op
+- **{$mywebshop.product.$sku.created_at.timestamp}**: haal de UNIX-tijdstempel van de aanmaakdatum op
 
 ### Variabelen met meerdere elementen
 
 Er zijn verschillende variabelen waarin meerdere rijen met gegevens kunnen zitten, bijvoorbeeld als je alle producten uit je webshop wilt ophalen. 
 Hieronder vind je een lijst met variabelen die binnen een foreach-statement kunnen worden gebruikt:
 
-* **{$identifier.products}**: kan worden gebruikt om over alle producten in de webshop te itereren
-* **{$identifier.orders}**: kan worden gebruikt om over alle bestellingen in de webshop te itereren
-* **{$identifier.carts}**: kan worden gebruikt om over alle winkelwagens in de webshop te itereren
+* **{$mywebshop.products}**: kan worden gebruikt om over alle producten in de webshop te itereren
+* **{$mywebshop.orders}**: kan worden gebruikt om over alle bestellingen in de webshop te itereren
+* **{$mywebshop.carts}**: kan worden gebruikt om over alle winkelwagens in de webshop te itereren
 
 En, zoals je hierboven al zag, zijn er ook variabelen om alle items van een order of alle items van een winkelwagen op te halen.
 
 **Voorbeeld om alle beschikbare producten te tonen:**
 ```text
-{foreach from=$identifier.products item="product"}
+{foreach from=$mywebshop.products item="product"}
     {$product.name}
 {/foreach}
 ```
@@ -111,7 +111,7 @@ Je kunt de volgende variaties van filters gebruiken:
 
 **Voorbeeld:**
 ```text
-{foreach from=$identifier.products|filter:"price":"<":15 item="product"}
+{foreach from=$mywebshop.products|filter:"price":"<":15 item="product"}
     {$product.name}
 {/foreach}
 ```
@@ -126,7 +126,7 @@ Je kunt zowel oplopend als aflopend sorteren op een specifiek veld, bijvoorbeeld
 
 **Voorbeeld:**
 ```text
-{foreach from=$identifier.products|orderby:"price":"desc" item="product"}
+{foreach from=$mywebshop.products|orderby:"price":"desc" item="product"}
     {$product.name}
 {/foreach}
 ```
@@ -136,7 +136,7 @@ Met de limit modifier kun je aangeven hoeveel elementen moeten worden opgehaald.
 
 **Voorbeeld:**
 ```text
-{foreach from=$identifier.products|limit:5 item="product"}
+{foreach from=$mywebshop.products|limit:5 item="product"}
     {$product.name}
 {/foreach}
 ```
@@ -145,7 +145,7 @@ Met de limit modifier kun je aangeven hoeveel elementen moeten worden opgehaald.
 Je kunt verschillende modifiers combineren om specifieke resultaten te krijgen, bijvoorbeeld:
 
 ```text
-{foreach from=$identifier.products|filter:"price":"<":15|orderby:"price"|limit:5 item="product"}
+{foreach from=$mywebshop.products|filter:"price":"<":15|orderby:"price"|limit:5 item="product"}
     {$product.name}
 {/foreach}
 ```
