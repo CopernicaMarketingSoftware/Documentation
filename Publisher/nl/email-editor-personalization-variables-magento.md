@@ -1,26 +1,28 @@
-# Magento
+# Personaliseren met gegevens vanuit een Magento-webshop
 
-De Copernica-integratie met Magento is specifiek ontwikkeld voor Magento 2.0 en hoger. Na het koppelen van een Magento webshop in
-de [web-module](https://ms.copernica.com/#/web/), zijn direct de volgende variabelen beschikbaar in je drag-and-drop-templates:
+Als je een Magento-webshop hebt gekoppeld aan je Copernica-account, kun je de data vanuit die webshop benaderen met Smarty-variabelen. 
+Hierdoor kun je eenvoudig mailings voorzien van gegevens over producten, bestellingen, klanten en winkelwagens. De gegevens worden in 
+real-time uitgelezen vanuit de webshop, zodat je altijd actuele prijs- en productinformatie in je mailings hebt.
 
-- **{$identifier.customer.$customerID}**: haal klantgegevens op aan de hand van het ID
-- **{$identifier.order.$orderID}**: haal een bestelling op aan de hand van het ID
-- **{$identifier.order.$orderID.customer}**: haal klantgegevens op voor deze bestelling
-- **{$identifier.order.$orderID.items[]}**: haal alle items op uit deze bestelling
-- **{$identifier.order.$orderID.items[].product}**: haal het product op uit deze bestelling
-- **{$identifier.product.$sku}**: haal een product op aan de hand van de SKU (Stock Keeping Unit)
-- **{$identifier.cart.$cartID}**: haal een winkelwagen op aan de hand van het ID
-- **{$identifier.cart.$cartID.customer}**: haal klantgegevens op voor deze winkelwagen
-- **{$identifier.cart.$cartID.items[]}**: haal alle items op uit het winkelwagenitem
-- **{$identifier.cart.$cartID.items[].product}**: haal productgegevens op uit het winkelwagenitem
+### Hoe koppel je een webshop?
 
-In bovenstaande voorbeelden moet je de variabelen die beginnen met een dollarteken (zoals $identifier, $orderID, $sku, enzovoort) vervangen
-door de identifier van de integratie, het order-ID, de stock-keeping-unit, enzovoort. 
+Je kunt een webshop koppelen in de [web-module](https://ms.copernica.com/#/web/). Dit werkt voor alle Magento webshops vanaf versie 2.0. 
+Lagere versies worden niet ondersteund.
 
-De integratie-identifier verwijst naar de naam die de webshop heeft binnen de lijst van integraties, en stelt je in staat om
-gegevens uit meerdere webshops te halen door ze allemaal een andere identifier te geven. Bij het invoeren van de integratie in
-de [web-module](https://ms.copernica.com/#/web/) heb je deze identifier moeten invoeren. Veel gebruikers kiezen als identifier de
-naam van de webshop ("mijnwebshop") of gewoon "magento". Als je "magento" als identifier hebt ingevoerd, gebruik je dus: {magento.customer.$customerID}.
+## De "webshop identifier"
+
+Als je in de [web-module](https://ms.copernica.com/#/web/) een webshop-koppeling maakt, word je gevraagd om een "webshop identifier" 
+in te voeren. Dit is belangrijk, want dit is tevens de naam van de Smarty-variabele waarmee alle gegevens vanuit de webshop kunnen worden ingeladen. 
+Als je meerdere webshops koppelt, en ze allemaal een andere identifier geeft, dan kun je dus ook de gegevens uit verschillende webshops in je 
+mailings combineren.
+
+Voor het gemak gaan we er nu even van uit dat jouw webshop is gekoppeld met de naam "mywebshop". Hierdoor kun je in je mailings de variabele 
+{$mywebshop} gebruiken om data vanuit de webshop in te laden. Als er in de webshop een product met ID "123456" bestaat, kun je in je mailings 
+hierdoor verwijzen naar productinformatie:
+
+```
+Product {$mywebshop.product.123456.title|escape} kost {$mywebshop.product.123456.price|escape}.
+```
 
 ## Welke velden zijn er precies beschikbaar?
 
@@ -34,8 +36,6 @@ Alle velden die worden teruggegeven door de API kun je gebruiken bij het persona
 - [cart](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
 - [product](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
 - [customer](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
-
-Onderaan dit artikel geven we enkele voorbeelden van veelgebruikte functionaliteiten.
 
 ## Variabelen met meerdere elementen
 
