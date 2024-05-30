@@ -24,20 +24,50 @@ hierdoor verwijzen naar productinformatie:
 Product {$mywebshop.product.123456.title|escape} kost {$mywebshop.product.123456.price|escape}.
 ```
 
-## Welke velden zijn er precies beschikbaar?
+## Welke variabelen zijn er precies beschikbaar?
 
 De gegevens die je ophaalt worden vanuit de API van Magento ingeladen in je mailing. De velden die de API teruggeeft zijn allemaal
 rechtstreeks beschikbaar als Smarty variabele, dus bijvoorbeeld {$identifier.product.$sku.name} en {$identifier.product.$sku.price}.
+
 De precies beschikbare velden zijn er te veel om op te noemen, en zijn ook niet voor elke webshop hetzelfde omdat ze afhankelijk kunnen
 zijn van de Magento-versie. Voor een actueel overzicht kun je daarom het best de documentatie van de Magento-API raadplegen. 
 Alle velden die worden teruggegeven door de API kun je gebruiken bij het personalizeren:
 
-- [order](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/ordersid#operation/GetV1OrdersId)
-- [cart](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
-- [product](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
-- [customer](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
+- [{$identifier.cart}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/cartscartId#operation/GetV1CartsCartId)
+- [{$identifier.customer}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/customerscustomerId#operation/GetV1CustomersCustomerId)
+- [{$identifier.order}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/ordersid#operation/GetV1OrdersId)
+- [{$identifier.product}](https://adobe-commerce.redoc.ly/2.4.7-admin/tag/productssku#operation/GetV1ProductsSku)
 
-## Variabelen met meerdere elementen
+### Hoofdelementen
+
+Binnen Smarty zijn de volgende hoofdelementen beschikbaar. Binnen elk hoofdelement heb je de beschikking over de velden zoals vermeld in de Magento-API hierboven,
+dus bijvoorbeeld {$indentifier.order.$orderID.status} en {$identifier.order.$orderID.customer.email}.
+
+- **{$identifier.cart.$cartID}**: haal een winkelwagen op aan de hand van het ID
+- **{$identifier.cart.$cartID.customer}**: haal klantgegevens op voor deze winkelwagen
+- **{$identifier.cart.$cartID.items[]}**: haal alle items op uit het winkelwagenitem
+- **{$identifier.cart.$cartID.items[].product}**: haal productgegevens op uit het winkelwagenitem
+- **{$identifier.customer.$customerID}**: haal klantgegevens op aan de hand van het ID
+- **{$identifier.order.$orderID}**: haal een bestelling op aan de hand van het ID
+- **{$identifier.order.$orderID.customer}**: haal klantgegevens op voor deze bestelling
+- **{$identifier.order.$orderID.items[]}**: haal alle items op uit deze bestelling
+- **{$identifier.order.$orderID.items[].product}**: haal het product op uit deze bestelling
+- **{$identifier.product.$sku}**: haal een product op aan de hand van de SKU (Stock Keeping Unit)
+
+### Specifieke Copernica-elementen
+
+Om een aantal veelvoorkomende opties gemakkelijk toegankelijk te maken, hebben we deze als volgt beschikbaar gemaakt:
+
+- **{$identifier.product.$sku.image}**: haal de afbeelding van het product op
+- **{$identifier.product.$sku.url}**: haal de URL van het product op
+- **{$identifier.product.$sku.short_description}**: haal de korte beschrijving van het product op
+- **{$identifier.product.$sku.description}**: haal de uitgebreide beschrijving van het product op
+- **{$identifier.product.$sku.price.currency}**: haal enkel de currency van het product op
+- **{$identifier.product.$sku.price.value}**: haal enkel de waarde van het product op
+- **{$identifier.product.$sku.created_at}**: haal de aanmaakdatum van het product op
+- **{$identifier.product.$sku.created_at.timestamp}**: haal de UNIX-tijdstempel van de aanmaakdatum op
+
+### Variabelen met meerdere elementen
 
 Er zijn verschillende variabelen waarin meerdere rijen met gegevens kunnen zitten, bijvoorbeeld als je alle producten uit je webshop wilt ophalen. 
 Hieronder vind je een lijst met variabelen die binnen een foreach-statement kunnen worden gebruikt:
