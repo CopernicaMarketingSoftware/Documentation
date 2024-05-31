@@ -41,7 +41,7 @@ Alle velden die worden teruggegeven door de API kun je gebruiken bij het persona
 ### Hoofdelementen
 
 Binnen Smarty zijn de volgende hoofdelementen beschikbaar. Binnen elk hoofdelement heb je de beschikking over de velden zoals vermeld in de Magento-API hierboven,
-dus bijvoorbeeld {$indentifier.order.$orderID.status} en {$mywebshop.order.$orderID.customer.email}.
+dus bijvoorbeeld {$mywebshop.order.$orderID.status} en {$mywebshop.order.$orderID.customer.email}.
 
 - **{$mywebshop.cart.$cartID}**: haal een winkelwagen op aan de hand van het ID
 - **{$mywebshop.cart.$cartID.customer}**: haal klantgegevens op voor deze winkelwagen
