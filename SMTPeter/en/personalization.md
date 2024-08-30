@@ -287,6 +287,8 @@ to get a `{` and `{rdelim}` to get a `}`. If you have a large text with
 these bracelets you can enclose the text in `{literal}` and `{/literal}`.
 This text will then not be processed.
 
+When using curly braces inside the head section of your template, for example 
+for CSS styling, you have to use [ldelim] and [rdelim].
 
 ## Layout issues
 
