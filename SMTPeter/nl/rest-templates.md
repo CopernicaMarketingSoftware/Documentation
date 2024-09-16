@@ -13,7 +13,7 @@ Dit kun je doen door een *HTTP GET call* te versturen naar de volgende URL
 (vergeet niet om je API sleutel toe te voegen):
 
 ```text
-https://www.smtpeter.com/v1/templates/{start}/{length}
+https://www.smtpeter.com/v2/templates/{start}/{length}
 ```
 
 De templates methode is alleen beschikbaar als je een HTTP GET methode wilt doen.
@@ -43,7 +43,7 @@ een HTTP GET call. Je moet hiervoor wel de specifieke ID van een template weten.
 
 
 ```text
-https://www.smtpeter.com/v1/template/{ID}/{format}
+https://www.smtpeter.com/v2/template/{ID}/{format}
 ```
 
 Je kunt ook hier weer gebruik maken van een specifiek formaat.
@@ -71,7 +71,7 @@ nieuwe templates opslaan door deze met een HTTP POST methode te versturen
 naar SMTPeter:
 
 ```text
-https://www.smtpeter.com/v1/template/{format}
+https://www.smtpeter.com/v2/template/{format}
 ```
 
 Je kunt de templates aanmaken door de JSON code toe te voegen aan de body van de 
@@ -86,14 +86,14 @@ zijn.
 Voorbeeld van een request:
 
 ```json
-POST /v1/template/html?access_token=yourtoken
+POST /v2/template/html?access_token=yourtoken
 Host: www.smtpeter.com
 Content-Type: application/json
 
 { "name" : "template..." }
 
 HTTP/1.1 201 Created
-Location: https://www.smtpeter.com/v1/template/2/html?access_token=yourtoken
+Location: https://www.smtpeter.com/v2/template/2/html?access_token=yourtoken
 Content-Type: application/json
 
 { "id" : 2 }
@@ -106,14 +106,14 @@ een *POST request* een *PUT request* te versturen. Je voegt aan de JSON
 de id toe van de template die je wilt updaten. 
 
 ```json
-PUT /v1/template/html?access_token=yourtoken
+PUT /v2/template/html?access_token=yourtoken
 Host: www.smtpeter.com
 Content-Type: application/json
 
 { "id" : 2 }
 
 HTTP/1.1 201 Created
-Location: https://www.smtpeter.com/v1/template/2/html?access_token=yourtoken
+Location: https://www.smtpeter.com/v2/template/2/html?access_token=yourtoken
 Content-Type: application/json
 
 { "id" : 2 }

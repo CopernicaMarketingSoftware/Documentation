@@ -12,7 +12,7 @@ return it if possible. We will explain the steps in this article.
 In order to create a data request you can make a POST request to the following
 URL:
 
-`https://www.smtpeter.com/v1/datarequest/`
+`https://www.smtpeter.com/v2/datarequest/`
 
 The following parameters are available for this request:
 
@@ -30,7 +30,7 @@ as the output, which can be used to retrieve the data or status of the request.
 You can retrieve the status of a data request by sending an an HTTP GET 
 request to the following URL:
 
-`https://www.smtpeter.com/v1/datarequest/$id/status`
+`https://www.smtpeter.com/v2/datarequest/$id/status`
 
 where **$id** is the unique identifier you have obtained from the POST request. 
 
@@ -39,7 +39,7 @@ where **$id** is the unique identifier you have obtained from the POST request.
 You can retrieve the data from a data request by sending an HTTP GET request
 to the following URL:
 
-`https://www.smtpeter.com/v1/datarequest/$id`
+`https://www.smtpeter.com/v2/datarequest/$id`
 
 where **$id** is the unique identifier you have obtained from the POST request. 
 

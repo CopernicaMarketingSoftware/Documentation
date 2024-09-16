@@ -183,7 +183,7 @@ dag probeert af te leveren.
 
 ## Een bericht opnieuw versturen
 
-Wanneer je een bericht hebt aangeboden via een van de API's en daar een message id als antwoord op hebt gekregen, dan is het mogelijk om op basis van dit message id het bericht opnieuw te versturen. Dit gebeurt met een HTTP POST naar www.smtpeter.com/v1/resend waarbij je enkel *message* als parameter meegeeft:
+Wanneer je een bericht hebt aangeboden via een van de API's en daar een message id als antwoord op hebt gekregen, dan is het mogelijk om op basis van dit message id het bericht opnieuw te versturen. Dit gebeurt met een HTTP POST naar www.smtpeter.com/v2/resend waarbij je enkel *message* als parameter meegeeft:
 
 ```json
 {

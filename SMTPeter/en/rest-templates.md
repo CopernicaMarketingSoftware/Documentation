@@ -12,7 +12,7 @@ of templates. Do this by making a *HTTP GET call* to the following URL
 (don't forget to add your API key):
 
 ```text
-https://www.smtpeter.com/v1/templates/{start}/{length}
+https://www.smtpeter.com/v2/templates/{start}/{length}
 ```
 
 The template method is only available when making a HTTP GET call.
@@ -44,7 +44,7 @@ HTTP GET call. Note that you need to have a specific ID from a certain
 template.
 
 ```text
-https://www.smtpeter.com/v1/template/{ID}/{format}
+https://www.smtpeter.com/v2/template/{ID}/{format}
 ```
 
 You can specify what format you want the returned content to be. You do
@@ -73,7 +73,7 @@ within the SMTPeter dashboard. But you also can create a new template
 by using a HTTP POST method and sending it to SMTPeter:
 
 ```text
-https://www.smtpeter.com/v1/template/{format}
+https://www.smtpeter.com/v2/template/{format}
 ```
 
 Creating templates is done by adding the JSON code to the body of a POST request.
@@ -85,14 +85,14 @@ A JSON object is also sent back, containing the template ID.
 The data you put in the body must be JSON. It looks like this:
 
 ```json
-POST /v1/template/html?access_token=yourtoken
+POST /v2/template/html?access_token=yourtoken
 Host: www.smtpeter.com
 Content-Type: application/json
 
 { "name" : "template..." }
 
 HTTP/1.1 201 Created
-Location: https://www.smtpeter.com/v1/template/2/html?access_token=yourtoken
+Location: https://www.smtpeter.com/v2/template/2/html?access_token=yourtoken
 Content-Type: application/json
 
 { "id" : 2 }
@@ -105,14 +105,14 @@ you make a PUT request. You add the template ID to your JSON from the
 template you want to update.
 
 ```json
-PUT /v1/template/html?access_token=yourtoken
+PUT /v2/template/html?access_token=yourtoken
 Host: www.smtpeter.com
 Content-Type: application/json
 
 { "id" : 2 }
 
 HTTP/1.1 201 Created
-Location: https://www.smtpeter.com/v1/template/2/html?access_token=yourtoken
+Location: https://www.smtpeter.com/v2/template/2/html?access_token=yourtoken
 Content-Type: application/json
 
 { "id" : 2 }

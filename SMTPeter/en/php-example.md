@@ -47,7 +47,7 @@ class SMTPeter
     public function post($method, array $fields)
     {
         // construct a CURL resource
-        $curl = curl_init("https://www.smtpeter.com/v1/$method?access_token=".urlencode($this->token));
+        $curl = curl_init("https://www.smtpeter.com/v2/$method?access_token=".urlencode($this->token));
         
         // set curl options
         curl_setopt_array($curl, array(
@@ -94,7 +94,7 @@ class SMTPeter
         $params["access_token"] = $this->token;
         
         // construct the curl
-        $curl = curl_init($url = "https://www.smtpeter.com/v1/$method?".http_build_query($params));
+        $curl = curl_init($url = "https://www.smtpeter.com/v2/$method?".http_build_query($params));
         
         // url options to set
         curl_setopt_array($curl, array(

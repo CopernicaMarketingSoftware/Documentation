@@ -8,10 +8,10 @@ De flexibele API geeft je de mogelijkheid om het event naar keuze op te vragen.
 Je doet dit middels een van de volgende URls:
 
 ```text
-https://www.smtpeter.com/v1/events/messageid/MESSAGEID
-https://www.smtpeter.com/v1/events/email/EMAILADRES
-https://www.smtpeter.com/v1/events/template/TEMPLATEID
-https://www.smtpeter.com/v1/events/tags/TAG1/OPTIONEELTAG2/OPTIONEELTAG3
+https://www.smtpeter.com/v2/events/messageid/MESSAGEID
+https://www.smtpeter.com/v2/events/email/EMAILADRES
+https://www.smtpeter.com/v2/events/template/TEMPLATEID
+https://www.smtpeter.com/v2/events/tags/TAG1/OPTIONEELTAG2/OPTIONEELTAG3
 ```
 
 ## Beschikbare parameters
@@ -105,7 +105,7 @@ De volgende URL kan gebruikt worden om events, die betrekking
 hebben op een bepaalde message ID, op te vragen.
 
 ```text
-https://www.smtpeter.com/v1/events/messageid/MESSAGEID
+https://www.smtpeter.com/v2/events/messageid/MESSAGEID
 ```
 
 Hierbij is de `MESSAGE ID` het betreffende message ID. Je krijgt vervolgens de
@@ -120,7 +120,7 @@ De volgende URL kan gebruikt worden om informatie met betrekking tot
 een bepaald e-mailadres op te vragen.
 
 ```text
-https://www.smtpeter.com/v1/events/email/EMAILADDRESS
+https://www.smtpeter.com/v2/events/email/EMAILADDRESS
 ```
 
 Hierbij is `EMAILADDRESS` het betreffende e-mailadres. Je krijgt de events
@@ -135,7 +135,7 @@ De volgende URL kan gebruikt worden om alle informatie met betrekking tot
 een bepaalde template adres op te vragen.
 
 ```text
-https://www.smtpeter.com/v1/events/template/TEMPLATEID
+https://www.smtpeter.com/v2/events/template/TEMPLATEID
 ```
 
 Hierbij is `TEMPLATEID` de ID van de betreffende template. Je krijgt vervolgens
@@ -151,7 +151,7 @@ De volgende URL kan gebruikt worden om informatie met een tag op te
 vragen.
 
 ```text
-https://www.smtpeter.com/v1/tags/TAG
+https://www.smtpeter.com/v2/tags/TAG
 ```
 
 Hierbij is `TAG` de betreffende tag. Je krijgt vervolgens alle events
@@ -159,7 +159,7 @@ tot een maand geleden. De events voor andere periodes kunnen worden
 gedownload door de optionele parameters `start` en/of `end` op te geven.
 
 ```text
-https://www.smtpeter.com/v1/tags/TAG1;TAG2;TAG3;...
+https://www.smtpeter.com/v2/tags/TAG1;TAG2;TAG3;...
 ```
 
 De geretourneerde JSON bevat alleen de informatie van berichten die alle
